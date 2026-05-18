@@ -9,17 +9,17 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --black:    #0C0B09;
-      --surface:  #131210;
-      --raised:   #1B1A17;
-      --border:   #272420;
-      --border2:  #332F2A;
-      --cream:    #EAE4D8;
-      --cream2:   #B8B0A0;
-      --cream3:   #6A6460;
-      --gold:     #C8A86A;
-      --gold2:    #8A6E3A;
-      --gold3:    #2A2015;
+      --black:    #0A0908;
+      --surface:  #100F0D;
+      --raised:   #181613;
+      --border:   #242018;
+      --border2:  #2E2920;
+      --cream:    #F0EAE0;
+      --cream2:   #C0B8A8;
+      --cream3:   #706860;
+      --gold:     #C8A96E;
+      --gold2:    #926E38;
+      --gold3:    #221A0C;
       --serif:    'IBM Plex Serif', Georgia, serif;
       --sans:     'IBM Plex Sans', system-ui, sans-serif;
     }
@@ -95,6 +95,7 @@
       gap: 0;
       position: relative;
       overflow: hidden;
+      background: radial-gradient(ellipse 80% 60% at 70% 50%, #1a140a 0%, var(--black) 70%);
     }
     .hero::after {
       content: '';
@@ -209,10 +210,10 @@
     /* ─── TICKER ───────────────────────────────────────── */
     .ticker {
       overflow: hidden;
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 1rem 0;
+      background: var(--gold3);
+      border-top: 1px solid var(--gold2);
+      border-bottom: 1px solid var(--gold2);
+      padding: 0.9rem 0;
       position: relative; z-index: 10;
     }
     .ticker-inner {
@@ -231,7 +232,7 @@
       font-size: 0.68rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--cream3);
+      color: var(--cream2);
       white-space: nowrap;
     }
     .ticker-dot { width: 3px; height: 3px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
@@ -242,6 +243,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       border-bottom: 1px solid var(--border);
+      background: var(--surface);
     }
     .stat-item {
       padding: 3rem 3.5rem;
@@ -359,25 +361,48 @@
       border: 1px solid var(--gold2);
     }
     .service-quote {
-      margin-top: 1.25rem;
-      padding: 1.25rem;
-      border-left: 1px solid var(--gold2);
-      background: var(--surface);
+      margin-top: 1.75rem;
+      padding: 1.75rem 1.75rem 1.75rem 2rem;
+      border-left: 2px solid var(--gold);
+      background: linear-gradient(135deg, var(--surface) 0%, var(--raised) 100%);
+      position: relative;
+    }
+    .service-quote::before {
+      content: '\201C';
+      position: absolute;
+      top: 0.5rem; left: 1.5rem;
+      font-family: var(--serif);
+      font-size: 4rem;
+      font-weight: 300;
+      color: var(--gold2);
+      line-height: 1;
+      pointer-events: none;
     }
     .service-quote p {
-      font-size: 0.82rem;
-      
-      color: var(--cream2);
-      line-height: 1.65;
+      font-family: var(--serif);
+      font-size: 0.92rem;
+      color: var(--cream);
+      line-height: 1.7;
+      padding-top: 1.5rem;
     }
     .service-quote cite {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
       font-style: normal;
       font-size: 0.68rem;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--cream3);
-      margin-top: 0.75rem;
+      color: var(--gold);
+      margin-top: 1rem;
+    }
+    .service-quote cite::before {
+      content: '';
+      display: block;
+      width: 1.5rem;
+      height: 1px;
+      background: var(--gold2);
+      flex-shrink: 0;
     }
 
     /* ─── PHILOSOPHY ───────────────────────────────────── */
@@ -704,7 +729,7 @@
       Scaling startups from zero to eight figures. Led the #1 global crowdfunded STEM Kickstarter campaign. Built ventures across Europe, India, and beyond. Formerly at Airbus and Bayer.
     </p>
     <div class="hero-actions reveal reveal-d3">
-      <a href="#contact" class="btn-primary">Work with me</a>
+      <a href="https://www.linkedin.com/in/pratikrenuse/" target="_blank" class="btn-primary">Work with me</a>
       <a href="#services" class="btn-ghost">See services</a>
     </div>
   </div>
@@ -880,33 +905,15 @@
       <ul class="about-facts">
         <li class="about-fact"><span class="about-fact-arrow">→</span><span><strong>Vipassana Practitioner</strong>I regularly serve and practice 10-day meditation courses — a discipline that keeps me grounded, focused, and honest.</span></li>
         <li class="about-fact"><span class="about-fact-arrow">→</span><span><strong>Traveler at Heart</strong>Solo-travelled across Europe for 3 months, 20+ countries — seeking perspectives, not just places.</span></li>
-        <li class="about-fact"><span class="about-fact-arrow">→</span><span><strong>Global Trajectory</strong>Born in Pune. Career through Amsterdam, Berlin, Geneva, London, Barcelona.</span></li>
+        <li class="about-fact"><span class="about-fact-arrow">→</span><span><strong>Global Trajectory</strong>Career built across Amsterdam, Berlin, Geneva, London, and Barcelona.</span></li>
         <li class="about-fact"><span class="about-fact-arrow">→</span><span><strong>Vinnyana Visuals</strong>I turn complex ideas into simple illustrations. 10,000+ people now share this practice.</span></li>
       </ul>
     </div>
 
     <div class="reveal reveal-d1">
-      <div class="ventures">
-        <div class="ventures-label">Currently building</div>
-        <div class="venture-card">
-          <div>
-            <div class="venture-name">Bueno</div>
-            <div class="venture-desc">Human-first fintech for foreign property owners in Spain. Founding team, Marketing Lead.</div>
-          </div>
-          <div class="venture-badge">€2M raised</div>
-        </div>
-        <div class="venture-card">
-          <div>
-            <div class="venture-name">VU Switzerland</div>
-            <div class="venture-desc">D2C venture scaling in the Swiss market.</div>
-          </div>
-          <div class="venture-badge">Active</div>
-        </div>
-      </div>
-
-      <div style="margin-top: 3rem; padding: 2.5rem; background: var(--surface); border: 1px solid var(--border);">
-        <div class="ventures-label">Principle</div>
-        <div style="font-family: var(--serif); font-size: 1.35rem; font-weight: 300;  color: var(--cream); line-height: 1.4;">
+      <div style="padding: 2.5rem; background: var(--surface); border: 1px solid var(--border);">
+        <div class="ventures-label">A principle I live by</div>
+        <div style="font-family: var(--serif); font-size: 1.35rem; font-weight: 300; color: var(--cream); line-height: 1.5;">
           "Simplicity is the ultimate sophistication."
         </div>
         <div style="font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream3); margin-top: 1rem;">
@@ -987,10 +994,7 @@
           <div class="contact-link-icon">in</div>
           linkedin.com/in/pratikrenuse
         </a>
-        <a href="https://www.instagram.com/pratikrenuse" target="_blank" class="contact-link">
-          <div class="contact-link-icon">ig</div>
-          @pratikrenuse
-        </a>
+
       </div>
     </div>
 
@@ -1029,7 +1033,6 @@
 <!-- FOOTER -->
 <footer>
   <span>© 2025 Pratik Renuse</span>
-  <span>Pune, India &nbsp;·&nbsp; Building globally</span>
   <a href="https://www.linkedin.com/in/pratikrenuse/" target="_blank">LinkedIn</a>
 </footer>
 
