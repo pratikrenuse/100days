@@ -40,8 +40,8 @@
     .nav-btn:hover { background: var(--gold); }
 
     /* HERO */
-    .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 380px; align-items: end; padding: 0 4rem; padding-top: 5rem; overflow: hidden; }
-    .hero-left { padding-bottom: 5.5rem; }
+    .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 44%; align-items: end; padding-top: 5rem; padding-left: 4rem; padding-right: 0; overflow: hidden; }
+    .hero-left { padding-bottom: 5.5rem; padding-right: 3rem; }
     .eyebrow { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 2rem; }
     .eyebrow-line { width: 2rem; height: 1px; background: var(--gold); }
     .eyebrow-text { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
@@ -54,9 +54,9 @@
     .btn-ghost { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink3); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: color 0.2s; }
     .btn-ghost:hover { color: var(--gold); }
     .btn-ghost::after { content: '↓'; }
-    .hero-right { display: flex; align-items: flex-end; height: 100vh; position: relative; }
-    .hero-photo { width: 100%; height: 88vh; object-fit: cover; object-position: center top; display: block; filter: grayscale(15%); }
-    .hero-badge { position: absolute; bottom: 4rem; left: -2.5rem; background: var(--ink); color: var(--bg); padding: 1.1rem 1.4rem; min-width: 185px; }
+    .hero-right { display: flex; align-items: flex-end; height: 100vh; position: relative; margin-right: 0; }
+    .hero-photo { width: 100%; height: 100vh; object-fit: cover; object-position: center 15%; display: block; filter: grayscale(15%); }
+    .hero-badge { position: absolute; bottom: 3.5rem; left: -2rem; background: var(--ink); color: var(--bg); padding: 1rem 1.25rem; min-width: 175px; }
     .hero-badge-val { font-family: var(--serif); font-size: 1.5rem; font-weight: 300; color: var(--gold-mid); line-height: 1; margin-bottom: 0.3rem; }
     .hero-badge-lbl { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink4); line-height: 1.45; }
 
@@ -424,9 +424,7 @@
       </div>
     </div>
     <div class="about-photo-wrap">
-      <div class="about-photo-placeholder">
-        <span>Add a second photo here</span>
-      </div>
+      <img src="about.jpg" alt="Pratik kayaking in Amsterdam" style="width:100%; height:380px; object-fit:cover; object-position:center 40%; display:block; filter:grayscale(8%);">
     </div>
   </div>
 
