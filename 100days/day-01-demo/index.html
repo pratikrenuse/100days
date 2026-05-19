@@ -78,6 +78,25 @@
       .stat { min-width: 50%; }
       footer { flex-direction: column; gap: 0.5rem; padding: 1rem; text-align: center; }
     }
+
+    /* EMAIL SIGNUP */
+    .signup-strip { background: var(--surface); border-top: 1px solid var(--border); padding: 2rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-shrink: 0; }
+    .signup-strip-text { font-size: 0.88rem; color: var(--ink3); }
+    .signup-strip-text strong { color: var(--ink); font-weight: 500; display: block; margin-bottom: 0.2rem; font-family: var(--serif); font-size: 1rem; }
+    .signup-strip-form { display: flex; gap: 0; flex-shrink: 0; }
+    .signup-strip-form input { background: var(--bg); border: 1px solid var(--border); border-right: none; padding: 0.7rem 1rem; font-size: 0.85rem; color: var(--ink); font-family: var(--sans); font-weight: 300; outline: none; width: 220px; transition: border-color 0.2s; }
+    .signup-strip-form input:focus { border-color: var(--gold); }
+    .signup-strip-form input::placeholder { color: var(--ink4); }
+    .signup-strip-form button { background: var(--ink); color: var(--bg); border: none; padding: 0.7rem 1.2rem; font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; font-family: var(--sans); cursor: pointer; transition: background 0.2s; white-space: nowrap; }
+    .signup-strip-form button:hover { background: var(--gold); }
+    .signup-ok { font-size: 0.82rem; color: var(--gold); display: none; padding: 0.7rem 0; font-family: var(--serif); }
+    @media (max-width: 768px) {
+      .signup-strip { flex-direction: column; align-items: flex-start; padding: 2rem 1.25rem; }
+      .signup-strip-form { width: 100%; }
+      .signup-strip-form input { flex: 1; width: auto; border-right: 1px solid var(--border); border-bottom: none; }
+      .signup-strip-form { flex-direction: column; }
+      .signup-strip-form button { width: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -115,6 +134,24 @@
     <span class="reading-time" id="speak-time">Speak time: 0 min</span>
   </div>
 </main>
+
+<!-- EMAIL SIGNUP STRIP -->
+<div class="signup-strip">
+  <div class="signup-strip-text">
+    <strong>A new product ships tomorrow</strong>
+    Get each one delivered to your inbox the day it launches.
+  </div>
+  <div>
+    <div id="proj-form-wrap" style="display:flex; align-items:center; gap:0;">
+      <div class="signup-strip-form">
+        <input type="email" id="proj-email" placeholder="Your email address">
+        <button onclick="projSignup()">Follow along</button>
+      </div>
+    </div>
+    <div class="signup-ok" id="proj-ok">You are in. See you tomorrow.</div>
+  </div>
+</div>
+
 
 <footer>
   <span>Day 01 of 100</span>
@@ -160,6 +197,57 @@
   }
 
   input.addEventListener('input', update);
+</script>
+
+<script>
+
+  // ─── Supabase email signup ───────────────────────────────
+  // 1. Go to supabase.com, create a free project
+  // 2. In the SQL editor run:
+  //    CREATE TABLE subscribers (
+  //      id bigint generated always as identity primary key,
+  //      email text unique not null,
+  //      name text,
+  //      source text,
+  //      created_at timestamptz default now()
+  //    );
+  //    ALTER TABLE subscribers ENABLE ROW LEVEL SECURITY;
+  //    CREATE POLICY "allow insert" ON subscribers FOR INSERT TO anon WITH CHECK (true);
+  // 3. Replace the two placeholders below with your project URL and anon key
+  const SUPABASE_URL  = 'https://naqkunidxjpgwanfbbiu.supabase.co';   // e.g. https://xxxx.supabase.co
+  const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hcWt1bmlkeGpwZ3dhbmZiYml1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5Mjg1ODEsImV4cCI6MjA5NDUwNDU4MX0.zEypDQmNQGyCcFCjeLMP_Wgbdr3HJJxHXUhqHlMEl9I';
+
+  async function supabaseSignup(email, name, source) {
+    if (!email || !email.includes('@')) return false;
+    try {
+      const res = await fetch(SUPABASE_URL + '/rest/v1/subscribers', {
+        method: 'POST',
+        headers: {
+          'apikey': SUPABASE_KEY,
+          'Authorization': 'Bearer ' + SUPABASE_KEY,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify({ email, name: name || null, source })
+      });
+      // 201 = created, 409 = duplicate email (already subscribed)
+      return res.status === 201 || res.status === 409;
+    } catch { return false; }
+  }
+  // ─────────────────────────────────────────────────────────
+
+  async function projSignup() {
+    const btn = document.querySelector('.signup-strip-form button');
+    btn.textContent = 'Sending...';
+    const email = document.getElementById('proj-email').value;
+    const ok = await supabaseSignup(email, null, '100days-project-day01');
+    if (ok) {
+      document.getElementById('proj-form-wrap').style.display = 'none';
+      document.getElementById('proj-ok').style.display = 'block';
+    } else {
+      btn.textContent = 'Try again';
+    }
+  }
 </script>
 </body>
 </html>

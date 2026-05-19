@@ -79,6 +79,36 @@
     @media (max-width: 480px) {
       .projects-grid { grid-template-columns: 1fr; }
     }
+
+    /* TICKER */
+    .ticker { overflow: hidden; background: var(--ink); padding: 0.7rem 0; }
+    .ticker-track { display: flex; animation: tick 30s linear infinite; width: max-content; }
+    .ticker-track:hover { animation-play-state: paused; }
+    @keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .tick-item { display: flex; align-items: center; gap: 1.5rem; padding: 0 2rem; font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: #6A6058; white-space: nowrap; }
+    .tick-dot { width: 3px; height: 3px; background: var(--gold-mid); border-radius: 50%; flex-shrink: 0; }
+    .tick-item strong { color: var(--gold-mid); font-weight: 400; }
+
+    /* EMAIL SIGNUP BAND */
+    .signup-band { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 3rem 4rem; }
+    .signup-band-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: 900px; }
+    .signup-band h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 300; color: var(--ink); margin-bottom: 0.5rem; }
+    .signup-band p { font-size: 0.85rem; color: var(--ink3); line-height: 1.7; }
+    .signup-row { display: flex; gap: 0; }
+    .signup-row input { flex: 1; background: var(--bg); border: 1px solid var(--border); border-right: none; padding: 0.8rem 1rem; font-size: 0.88rem; color: var(--ink); font-family: var(--sans); font-weight: 300; outline: none; transition: border-color 0.2s; }
+    .signup-row input:focus { border-color: var(--gold); }
+    .signup-row input::placeholder { color: var(--ink4); }
+    .signup-row button { background: var(--ink); color: var(--bg); border: none; padding: 0.8rem 1.5rem; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; font-family: var(--sans); cursor: pointer; transition: background 0.2s; white-space: nowrap; }
+    .signup-row button:hover { background: var(--gold); }
+    .signup-note { font-size: 0.62rem; color: var(--ink4); margin-top: 0.6rem; letter-spacing: 0.06em; }
+    .signup-ok { display: none; font-family: var(--serif); font-size: 1rem; color: var(--gold); padding: 0.5rem 0; }
+    @media (max-width: 960px) {
+      .signup-band { padding: 2.5rem 1.5rem; }
+      .signup-band-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+      .signup-row { flex-direction: column; }
+      .signup-row input { border-right: 1px solid var(--border); border-bottom: none; }
+      .signup-row button { width: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -87,6 +117,25 @@
   <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
   <a href="/" class="nav-back">Back to main site</a>
 </nav>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="tick-item"><div class="tick-dot"></div>Building in public</div>
+    <div class="tick-item"><div class="tick-dot"></div><strong>Day 01</strong> Word Counter — Live</div>
+    <div class="tick-item"><div class="tick-dot"></div>One product every day</div>
+    <div class="tick-item"><div class="tick-dot"></div>100 days · 100 products</div>
+    <div class="tick-item"><div class="tick-dot"></div>No agencies. No polish theatre.</div>
+    <div class="tick-item"><div class="tick-dot"></div>Follow along below</div>
+    <div class="tick-item"><div class="tick-dot"></div>Building in public</div>
+    <div class="tick-item"><div class="tick-dot"></div><strong>Day 01</strong> Word Counter — Live</div>
+    <div class="tick-item"><div class="tick-dot"></div>One product every day</div>
+    <div class="tick-item"><div class="tick-dot"></div>100 days · 100 products</div>
+    <div class="tick-item"><div class="tick-dot"></div>No agencies. No polish theatre.</div>
+    <div class="tick-item"><div class="tick-dot"></div>Follow along below</div>
+  </div>
+</div>
+
 
 <div class="header">
   <div class="eyebrow">
@@ -140,11 +189,79 @@
   </div>
 </div>
 
+<!-- EMAIL SIGNUP -->
+<div class="signup-band">
+  <div class="signup-band-inner">
+    <div>
+      <h3>Get each product the day it ships</h3>
+      <p>One short email daily. What was built, what was learned, and what comes next.</p>
+    </div>
+    <div>
+      <div id="gal-form-wrap">
+        <div class="signup-row">
+          <input type="email" id="gal-email" placeholder="Your email address" required>
+          <button onclick="galSignup()">Subscribe</button>
+        </div>
+        <div class="signup-note">No spam. Unsubscribe any time.</div>
+      </div>
+      <div class="signup-ok" id="gal-ok">You are in. See you tomorrow.</div>
+    </div>
+  </div>
+</div>
+
+
 <footer>
   <span>© 2026 Pratik Renuse</span>
   <span>100 days · 100 products · all public</span>
   <a href="/">pratikrenuse.com</a>
 </footer>
 
+
+<script>
+
+  // ─── Supabase email signup ───────────────────────────────
+  // 1. Go to supabase.com, create a free project
+  // 2. In the SQL editor run:
+  //    CREATE TABLE subscribers (
+  //      id bigint generated always as identity primary key,
+  //      email text unique not null,
+  //      name text,
+  //      source text,
+  //      created_at timestamptz default now()
+  //    );
+  //    ALTER TABLE subscribers ENABLE ROW LEVEL SECURITY;
+  //    CREATE POLICY "allow insert" ON subscribers FOR INSERT TO anon WITH CHECK (true);
+  // 3. Replace the two placeholders below with your project URL and anon key
+  const SUPABASE_URL  = 'https://naqkunidxjpgwanfbbiu.supabase.co';   // e.g. https://xxxx.supabase.co
+  const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hcWt1bmlkeGpwZ3dhbmZiYml1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5Mjg1ODEsImV4cCI6MjA5NDUwNDU4MX0.zEypDQmNQGyCcFCjeLMP_Wgbdr3HJJxHXUhqHlMEl9I';
+
+  async function supabaseSignup(email, name, source) {
+    if (!email || !email.includes('@')) return false;
+    try {
+      const res = await fetch(SUPABASE_URL + '/rest/v1/subscribers', {
+        method: 'POST',
+        headers: {
+          'apikey': SUPABASE_KEY,
+          'Authorization': 'Bearer ' + SUPABASE_KEY,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify({ email, name: name || null, source })
+      });
+      // 201 = created, 409 = duplicate email (already subscribed)
+      return res.status === 201 || res.status === 409;
+    } catch { return false; }
+  }
+  // ─────────────────────────────────────────────────────────
+
+  async function galSignup() {
+    const email = document.getElementById('gal-email').value;
+    const ok = await supabaseSignup(email, null, '100days-gallery');
+    if (ok) {
+      document.getElementById('gal-form-wrap').style.display = 'none';
+      document.getElementById('gal-ok').style.display = 'block';
+    }
+  }
+</script>
 </body>
 </html>

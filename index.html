@@ -279,6 +279,37 @@
       .books-grid { grid-template-columns: 1fr; }
       .svc-quote { padding: 0.9rem 1rem; }
     }
+
+    /* 100 DAYS SECTION */
+    .hundred { background: var(--ink); color: #EDE8DF; }
+    .hundred-inner { padding: 5.5rem 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+    .hundred .lbl-line { background: var(--gold-mid); }
+    .hundred .lbl-text { color: var(--gold-mid); }
+    .hundred h2.sec-h { color: #EDE8DF; margin-bottom: 1rem; }
+    .hundred-desc { font-size: 0.98rem; color: #9A9088; line-height: 1.85; margin-bottom: 2rem; }
+    .hundred-progress { margin-bottom: 2rem; }
+    .hundred-progress-label { display: flex; justify-content: space-between; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: #6A6058; margin-bottom: 0.6rem; }
+    .hundred-progress-bar { height: 2px; background: #2A2520; }
+    .hundred-progress-fill { height: 100%; background: var(--gold-mid); width: 1%; transition: width 1s ease; }
+    .hundred-cta { display: inline-flex; align-items: center; gap: 0.75rem; background: var(--gold); color: var(--ink); text-decoration: none; padding: 0.9rem 2rem; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 400; transition: background 0.2s; }
+    .hundred-cta:hover { background: #EDE8DF; }
+    .hundred-right {}
+    .signup-box { background: #131210; border: 1px solid #2A2520; padding: 2.5rem; }
+    .signup-box-title { font-family: var(--serif); font-size: 1.25rem; font-weight: 300; color: #EDE8DF; margin-bottom: 0.5rem; }
+    .signup-box-sub { font-size: 0.82rem; color: #6A6058; line-height: 1.65; margin-bottom: 1.75rem; }
+    .signup-form { display: flex; flex-direction: column; gap: 0.75rem; }
+    .signup-input { background: #1C1916; border: 1px solid #2A2520; padding: 0.8rem 1rem; font-size: 0.9rem; color: #EDE8DF; font-family: var(--sans); font-weight: 300; outline: none; transition: border-color 0.2s; width: 100%; }
+    .signup-input:focus { border-color: var(--gold); }
+    .signup-input::placeholder { color: #4A4440; }
+    .signup-btn { background: var(--gold); color: var(--ink); border: none; padding: 0.85rem; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; font-family: var(--sans); cursor: pointer; transition: background 0.2s; font-weight: 400; }
+    .signup-btn:hover { background: #EDE8DF; }
+    .signup-note { font-size: 0.65rem; color: #4A4440; letter-spacing: 0.06em; }
+    .signup-success { display: none; text-align: center; padding: 1.5rem; }
+    .signup-success-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+    .signup-success-text { font-family: var(--serif); font-size: 1rem; color: var(--gold-mid); }
+    @media (max-width: 960px) {
+      .hundred-inner { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 1.5rem; }
+    }
   </style>
 </head>
 <body>
@@ -508,6 +539,46 @@
   </div>
 </section>
 
+
+<!-- 100 DAYS OF BUILDING -->
+<section class="hundred" id="100days">
+  <div class="hundred-inner r">
+    <div>
+      <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Side project</div></div>
+      <h2 class="sec-h">100 Days of <span>Building</span></h2>
+      <p class="hundred-desc">One software product shipped every day for 100 days. No agencies. No polish theatre. Just consistent output, in public — tools, apps, and experiments that solve real problems.</p>
+      <div class="hundred-progress">
+        <div class="hundred-progress-label">
+          <span>Day 1 of 100</span>
+          <span>1% complete</span>
+        </div>
+        <div class="hundred-progress-bar">
+          <div class="hundred-progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+      <a href="/100days/" class="hundred-cta">See all projects →</a>
+    </div>
+    <div class="hundred-right">
+      <div class="signup-box">
+        <div class="signup-box-title">Follow along</div>
+        <div class="signup-box-sub">One email each day. The new product, what I learned building it, and what I would do differently. No noise.</div>
+        <div id="signup-form-wrap">
+          <form class="signup-form" onsubmit="handleSignup(event, this)">
+            <input class="signup-input" type="text" name="name" placeholder="Your name" required>
+            <input class="signup-input" type="email" name="email" placeholder="Your email address" required>
+            <button type="submit" class="signup-btn">Get daily updates</button>
+            <div class="signup-note">No spam. Unsubscribe any time.</div>
+          </form>
+        </div>
+        <div class="signup-success" id="signup-success">
+          <div class="signup-success-icon">✓</div>
+          <div class="signup-success-text">You are in. See you tomorrow.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- BOOKS -->
 <section class="sec sec-alt" id="books">
   <div class="r">
@@ -619,6 +690,68 @@
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
   }, { threshold: 0.06 });
   document.querySelectorAll('.r').forEach(el => obs.observe(el));
+
+  // Animate progress bar when section scrolls into view
+  const fillEl = document.getElementById('progress-fill');
+  if (fillEl) {
+    const progObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) fillEl.style.width = '1%'; });
+    }, { threshold: 0.3 });
+    progObs.observe(fillEl.closest('.hundred'));
+  }
+
+
+  // ─── Supabase email signup ───────────────────────────────
+  // 1. Go to supabase.com, create a free project
+  // 2. In the SQL editor run:
+  //    CREATE TABLE subscribers (
+  //      id bigint generated always as identity primary key,
+  //      email text unique not null,
+  //      name text,
+  //      source text,
+  //      created_at timestamptz default now()
+  //    );
+  //    ALTER TABLE subscribers ENABLE ROW LEVEL SECURITY;
+  //    CREATE POLICY "allow insert" ON subscribers FOR INSERT TO anon WITH CHECK (true);
+  // 3. Replace the two placeholders below with your project URL and anon key
+  const SUPABASE_URL  = 'https://naqkunidxjpgwanfbbiu.supabase.co';   // e.g. https://xxxx.supabase.co
+  const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hcWt1bmlkeGpwZ3dhbmZiYml1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5Mjg1ODEsImV4cCI6MjA5NDUwNDU4MX0.zEypDQmNQGyCcFCjeLMP_Wgbdr3HJJxHXUhqHlMEl9I';
+
+  async function supabaseSignup(email, name, source) {
+    if (!email || !email.includes('@')) return false;
+    try {
+      const res = await fetch(SUPABASE_URL + '/rest/v1/subscribers', {
+        method: 'POST',
+        headers: {
+          'apikey': SUPABASE_KEY,
+          'Authorization': 'Bearer ' + SUPABASE_KEY,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify({ email, name: name || null, source })
+      });
+      // 201 = created, 409 = duplicate email (already subscribed)
+      return res.status === 201 || res.status === 409;
+    } catch { return false; }
+  }
+  // ─────────────────────────────────────────────────────────
+
+  async function handleSignup(e, form) {
+    e.preventDefault();
+    const btn = form.querySelector('.signup-btn');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    const email = form.querySelector('[name="email"]').value;
+    const name  = form.querySelector('[name="name"]').value;
+    const ok = await supabaseSignup(email, name, 'homepage-100days');
+    if (ok) {
+      document.getElementById('signup-form-wrap').style.display = 'none';
+      document.getElementById('signup-success').style.display = 'block';
+    } else {
+      btn.textContent = 'Try again';
+      btn.disabled = false;
+    }
+  }
 </script>
 </body>
 </html>
