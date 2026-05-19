@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Days of Building — Pratik Renuse</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #F6F2F1; --surface: #EEE8E4; --border: #D0C8C0;
+      --ink: #1A1512; --ink2: #38302A; --ink3: #504840; --ink4: #786E66;
+      --gold: #8C6A18; --gold-mid: #B8903A;
+      --serif: 'IBM Plex Serif', Georgia, serif;
+      --sans: 'IBM Plex Sans', system-ui, sans-serif;
+    }
+    body { background: var(--bg); color: var(--ink2); font-family: var(--sans); font-weight: 300; line-height: 1.65; }
+
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 4rem; border-bottom: 1px solid var(--border);
+      background: rgba(246,242,241,0.95); backdrop-filter: blur(20px);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-logo { font-family: var(--serif); font-size: 0.95rem; font-weight: 400; color: var(--ink); text-decoration: none; }
+    .nav-logo span { color: var(--gold); }
+    .nav-back { font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink3); text-decoration: none; transition: color 0.2s; display: flex; align-items: center; gap: 0.5rem; }
+    .nav-back:hover { color: var(--gold); }
+    .nav-back::before { content: '←'; }
+
+    .header { padding: 5rem 4rem 4rem; border-bottom: 1px solid var(--border); }
+    .eyebrow { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+    .eyebrow-line { width: 1.75rem; height: 1px; background: var(--gold); }
+    .eyebrow-text { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+    h1 { font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 300; color: var(--ink); line-height: 1.1; margin-bottom: 1.25rem; }
+    h1 span { color: var(--gold); }
+    .header-desc { font-size: 1rem; color: var(--ink3); max-width: 560px; line-height: 1.75; }
+    .header-meta { display: flex; gap: 3rem; margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border); }
+    .meta-item-num { font-family: var(--serif); font-size: 2rem; font-weight: 300; color: var(--ink); line-height: 1; }
+    .meta-item-num span { color: var(--gold); font-size: 1.1rem; }
+    .meta-item-label { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink4); margin-top: 0.3rem; }
+
+    .grid-section { padding: 4rem; }
+    .grid-label { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink4); margin-bottom: 2rem; }
+    .projects-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .project-card {
+      background: var(--bg); padding: 1.75rem;
+      text-decoration: none; display: block;
+      transition: background 0.2s;
+      position: relative;
+    }
+    .project-card:hover { background: var(--surface); }
+    .project-card.locked { cursor: default; }
+    .card-day { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink4); margin-bottom: 0.75rem; }
+    .card-title { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--ink); line-height: 1.3; margin-bottom: 0.5rem; }
+    .card-desc { font-size: 0.78rem; color: var(--ink3); line-height: 1.55; }
+    .card-tag { display: inline-block; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); background: #F0E4C4; padding: 0.2rem 0.6rem; margin-top: 0.75rem; border: 1px solid #D4B870; }
+    .card-tag.soon { color: var(--ink4); background: var(--surface); border-color: var(--border); }
+    .card-arrow { position: absolute; top: 1.75rem; right: 1.75rem; font-size: 0.85rem; color: var(--border); transition: color 0.2s; }
+    .project-card:hover .card-arrow { color: var(--gold); }
+
+    footer {
+      padding: 1.25rem 4rem; border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--ink4); background: var(--surface);
+    }
+    footer a { color: var(--ink4); text-decoration: none; }
+    footer a:hover { color: var(--gold); }
+
+    @media (max-width: 960px) {
+      nav { padding: 1rem 1.5rem; }
+      .header { padding: 3.5rem 1.5rem 3rem; }
+      .header-meta { gap: 2rem; }
+      .grid-section { padding: 3rem 1.5rem; }
+      .projects-grid { grid-template-columns: 1fr 1fr; }
+      footer { flex-direction: column; gap: 0.5rem; padding: 1.25rem; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
+  <a href="/" class="nav-back">Back to main site</a>
+</nav>
+
+<div class="header">
+  <div class="eyebrow">
+    <div class="eyebrow-line"></div>
+    <div class="eyebrow-text">100 Days of Building</div>
+  </div>
+  <h1>One product.<br><span>Every day.</span></h1>
+  <p class="header-desc">Building and shipping one software product every day for 100 days. No frameworks required. No perfection expected. Just consistent output, in public.</p>
+  <div class="header-meta">
+    <div>
+      <div class="meta-item-num">1 <span>/ 100</span></div>
+      <div class="meta-item-label">Days Complete</div>
+    </div>
+    <div>
+      <div class="meta-item-num">1</div>
+      <div class="meta-item-label">Projects Live</div>
+    </div>
+    <div>
+      <div class="meta-item-num">99</div>
+      <div class="meta-item-label">Days Remaining</div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-section">
+  <div class="grid-label">All projects</div>
+  <div class="projects-grid">
+
+    <!-- Day 01 — live demo -->
+    <a href="day-01-demo/" class="project-card">
+      <div class="card-day">Day 01</div>
+      <div class="card-title">Word Counter</div>
+      <div class="card-desc">A clean, distraction-free tool for counting words, characters, and reading time.</div>
+      <div class="card-tag">Live</div>
+      <div class="card-arrow">↗</div>
+    </a>
+
+    <!-- Days 02-100 — coming soon placeholders -->
+    <script>
+      for (let i = 2; i <= 100; i++) {
+        document.write(`
+          <div class="project-card locked">
+            <div class="card-day">Day ${String(i).padStart(2,'0')}</div>
+            <div class="card-title" style="color:var(--ink4)">Coming soon</div>
+            <div class="card-tag soon">Upcoming</div>
+          </div>
+        `);
+      }
+    </script>
+
+  </div>
+</div>
+
+<footer>
+  <span>© 2026 Pratik Renuse</span>
+  <span>100 days · 100 products · all public</span>
+  <a href="/">pratikrenuse.com</a>
+</footer>
+
+</body>
+</html>
