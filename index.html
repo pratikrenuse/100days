@@ -3,700 +3,220 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pratik Renuse — Growth Marketing Leader</title>
+  <title>Pratik Renuse, Growth Marketing Leader</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --black:    #0A0908;
-      --surface:  #100F0D;
-      --raised:   #181613;
-      --border:   #242018;
-      --border2:  #2E2920;
-      --cream:    #F0EAE0;
-      --cream2:   #C0B8A8;
-      --cream3:   #706860;
-      --gold:     #C8A96E;
-      --gold2:    #926E38;
-      --gold3:    #221A0C;
+      --bg:       #F6F2F1;
+      --surface:  #EEE8E4;
+      --raised:   #E5DDD7;
+      --border:   #D0C8C0;
+      --border2:  #BCB3AA;
+      --ink:      #1A1512;
+      --ink2:     #38302A;
+      --ink3:     #504840;
+      --ink4:     #786E66;
+      --gold:     #8C6A18;
+      --gold-bg:  #F0E4C4;
+      --gold-mid: #B8903A;
       --serif:    'IBM Plex Serif', Georgia, serif;
       --sans:     'IBM Plex Sans', system-ui, sans-serif;
+      font-size:  17px;
     }
 
     html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--ink2); font-family: var(--sans); font-weight: 300; line-height: 1.7; overflow-x: hidden; }
 
-    body {
-      background: var(--black);
-      color: var(--cream);
-      font-family: var(--sans);
-      font-weight: 300;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* GRAIN OVERLAY */
-    body::before {
-      content: '';
-      position: fixed; inset: 0; z-index: 0; pointer-events: none;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      background-size: 180px;
-      opacity: 0.35;
-    }
-
-    /* ─── NAV ──────────────────────────────────────────── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 1.5rem 3.5rem;
-      border-bottom: 1px solid var(--border);
-      background: rgba(12,11,9,0.85);
-      backdrop-filter: blur(20px);
-    }
-    .nav-logo {
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      font-weight: 300;
-      letter-spacing: 0.06em;
-      color: var(--cream);
-      text-decoration: none;
-    }
-    .nav-logo span { color: var(--gold);  }
-    .nav-links { display: flex; gap: 3rem; list-style: none; }
-    .nav-links a {
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--cream3);
-      text-decoration: none;
-      transition: color 0.25s;
-    }
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(246,242,241,0.94); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+    .nav-logo { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--ink); text-decoration: none; letter-spacing: 0.03em; }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink3); text-decoration: none; transition: color 0.2s; }
     .nav-links a:hover { color: var(--gold); }
-    .nav-cta {
-      font-size: 0.7rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--black);
-      background: var(--gold);
-      padding: 0.6rem 1.4rem;
-      text-decoration: none;
-      transition: background 0.25s;
-    }
-    .nav-cta:hover { background: var(--cream); }
+    .nav-btn { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--bg); background: var(--ink); padding: 0.6rem 1.4rem; text-decoration: none; transition: background 0.2s; font-weight: 400; }
+    .nav-btn:hover { background: var(--gold); }
 
-    /* ─── HERO ─────────────────────────────────────────── */
-    .hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 420px;
-      align-items: end;
-      padding: 0 3.5rem 0 3.5rem;
-      padding-top: 5rem;
-      gap: 0;
-      position: relative;
-      overflow: hidden;
-      background: radial-gradient(ellipse 80% 60% at 70% 50%, #1a140a 0%, var(--black) 70%);
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      top: 0; right: 0;
-      width: 50%; height: 100%;
-      background: linear-gradient(to right, var(--black) 0%, transparent 40%);
-      z-index: 1; pointer-events: none;
-    }
-
-    .hero-content {
-      position: relative; z-index: 2;
-      display: flex; flex-direction: column;
-      justify-content: flex-end;
-      padding-bottom: 5rem;
-    }
-    .hero-pre {
-      display: flex; align-items: center; gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    .hero-pre-line { width: 2.5rem; height: 1px; background: var(--gold); }
-    .hero-pre-text {
-      font-size: 0.68rem;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
-    h1.hero-name {
-      font-family: var(--serif);
-      font-size: clamp(4.5rem, 8.5vw, 8rem);
-      font-weight: 300;
-      line-height: 0.95;
-      letter-spacing: -0.02em;
-      margin-bottom: 2.5rem;
-    }
-    h1.hero-name .gold {
-      color: var(--gold);
-      display: block;
-    }
-    .gold { color: var(--gold); }
-    .hero-desc {
-      font-size: 1rem;
-      color: var(--cream2);
-      line-height: 1.75;
-      max-width: 460px;
-      margin-bottom: 3rem;
-      font-weight: 300;
-    }
-    .hero-actions { display: flex; align-items: center; gap: 2rem; }
-    .btn-primary {
-      display: inline-block;
-      background: var(--gold);
-      color: var(--black);
-      text-decoration: none;
-      padding: 0.9rem 2.2rem;
-      font-size: 0.72rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      font-weight: 400;
-      transition: background 0.25s, color 0.25s;
-    }
-    .btn-primary:hover { background: var(--cream); }
-    .btn-ghost {
-      display: inline-flex; align-items: center; gap: 0.6rem;
-      font-size: 0.72rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--cream3);
-      text-decoration: none;
-      transition: color 0.25s;
-    }
+    /* HERO */
+    .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 380px; align-items: end; padding: 0 4rem; padding-top: 5rem; overflow: hidden; }
+    .hero-left { padding-bottom: 5.5rem; }
+    .eyebrow { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 2rem; }
+    .eyebrow-line { width: 2rem; height: 1px; background: var(--gold); }
+    .eyebrow-text { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+    h1.name { font-family: var(--serif); font-size: clamp(4rem, 7.5vw, 7rem); font-weight: 300; line-height: 1; letter-spacing: -0.02em; margin-bottom: 1.75rem; color: var(--ink); }
+    h1.name span { color: var(--gold); display: block; }
+    .hero-desc { font-size: 1.05rem; color: var(--ink3); line-height: 1.75; max-width: 430px; margin-bottom: 2.5rem; }
+    .hero-btns { display: flex; align-items: center; gap: 2rem; }
+    .btn-dark { display: inline-block; background: var(--ink); color: var(--bg); text-decoration: none; padding: 0.9rem 2.1rem; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 400; transition: background 0.2s; }
+    .btn-dark:hover { background: var(--gold); }
+    .btn-ghost { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink3); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: color 0.2s; }
     .btn-ghost:hover { color: var(--gold); }
     .btn-ghost::after { content: '↓'; }
+    .hero-right { display: flex; align-items: flex-end; height: 100vh; position: relative; }
+    .hero-photo { width: 100%; height: 88vh; object-fit: cover; object-position: center top; display: block; filter: grayscale(15%); }
+    .hero-badge { position: absolute; bottom: 4rem; left: -2.5rem; background: var(--ink); color: var(--bg); padding: 1.1rem 1.4rem; min-width: 185px; }
+    .hero-badge-val { font-family: var(--serif); font-size: 1.5rem; font-weight: 300; color: var(--gold-mid); line-height: 1; margin-bottom: 0.3rem; }
+    .hero-badge-lbl { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink4); line-height: 1.45; }
 
-    .hero-image-col {
-      position: relative; z-index: 2;
-      display: flex; align-items: flex-end;
-      height: 100vh;
-    }
-    .hero-photo {
-      width: 100%;
-      height: 85vh;
-      object-fit: cover;
-      object-position: top center;
-      display: block;
-      filter: grayscale(30%) contrast(1.05);
-    }
-    .hero-badge {
-      position: absolute;
-      bottom: 4rem; left: -3rem;
-      background: var(--surface);
-      border: 1px solid var(--border2);
-      padding: 1.25rem 1.5rem;
-      min-width: 200px;
-    }
-    .hero-badge-val {
-      font-family: var(--serif);
-      font-size: 1.8rem;
-      font-weight: 300;
-      
-      color: var(--gold);
-      line-height: 1;
-      margin-bottom: 0.3rem;
-    }
-    .hero-badge-label {
-      font-size: 0.68rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--cream3);
-    }
+    /* LOGOS */
+    .logos { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1.75rem 4rem; background: var(--surface); }
+    .logos-row { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
+    .logo-item { display: flex; align-items: center; justify-content: center; padding: 0.6rem 2rem; border-right: 1px solid var(--border); }
+    .logo-item:last-child { border-right: none; }
+    .logo-item img { height: 18px; width: auto; filter: grayscale(100%); opacity: 0.38; transition: opacity 0.2s; object-fit: contain; }
+    .logo-item:hover img { opacity: 0.65; }
+    .logo-txt { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink4); font-weight: 400; }
+    .logo-item:hover .logo-txt { color: var(--ink3); }
 
-    /* ─── TICKER ───────────────────────────────────────── */
-    .ticker {
-      overflow: hidden;
-      background: var(--gold3);
-      border-top: 1px solid var(--gold2);
-      border-bottom: 1px solid var(--gold2);
-      padding: 0.9rem 0;
-      position: relative; z-index: 10;
-    }
-    .ticker-inner {
-      display: flex; gap: 0;
-      animation: ticker 28s linear infinite;
-      width: max-content;
-    }
-    .ticker-inner:hover { animation-play-state: paused; }
-    @keyframes ticker {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
-    }
-    .ticker-item {
-      display: flex; align-items: center; gap: 2rem;
-      padding: 0 2.5rem;
-      font-size: 0.68rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--cream2);
-      white-space: nowrap;
-    }
-    .ticker-dot { width: 3px; height: 3px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
-    .ticker-item strong { color: var(--gold); font-weight: 400; }
+    /* SECTION PRIMITIVES */
+    .sec { padding: 5.5rem 4rem; }
+    .sec-alt { background: var(--surface); }
+    .lbl { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; }
+    .lbl-line { width: 1.75rem; height: 1px; background: var(--gold); }
+    .lbl-text { font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+    h2.sec-h { font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.9rem); font-weight: 300; line-height: 1.15; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 3rem; }
+    h2.sec-h span { color: var(--gold); }
 
-    /* ─── STATS BAR ────────────────────────────────────── */
-    .stats-bar {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      border-bottom: 1px solid var(--border);
-      background: var(--surface);
-    }
-    .stat-item {
-      padding: 3rem 3.5rem;
-      border-right: 1px solid var(--border);
-      position: relative;
-    }
-    .stat-item:last-child { border-right: none; }
-    .stat-item::before {
-      content: '';
-      position: absolute; top: 0; left: 3.5rem;
-      width: 2rem; height: 2px;
-      background: var(--gold);
-    }
-    .stat-number {
-      font-family: var(--serif);
-      font-size: clamp(2.5rem, 4vw, 3.5rem);
-      font-weight: 300;
-      
-      color: var(--cream);
-      line-height: 1;
-      margin-bottom: 0.5rem;
-    }
-    .stat-number span { color: var(--gold); }
-    .stat-desc {
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--cream3);
-      line-height: 1.5;
-    }
+    /* SERVICES */
+    .svc { display: grid; grid-template-columns: 64px 210px 1fr; gap: 2.5rem; padding: 2.75rem 0; border-top: 1px solid var(--border); align-items: start; }
+    .svc:last-child { border-bottom: 1px solid var(--border); }
+    .svc-num { font-family: var(--serif); font-size: 0.82rem; color: var(--ink4); letter-spacing: 0.08em; padding-top: 0.25rem; }
+    .svc-name { font-family: var(--serif); font-size: 1.55rem; font-weight: 400; color: var(--ink); line-height: 1.2; }
+    .svc-pts { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.5rem; }
+    .svc-pt { font-size: 0.92rem; color: var(--ink2); display: flex; align-items: flex-start; gap: 0.65rem; line-height: 1.5; }
+    .svc-pt::before { content: '—'; color: var(--gold); font-size: 0.8rem; flex-shrink: 0; margin-top: 0.18rem; }
+    .svc-quote { padding: 1.3rem 1.5rem; border-left: 2px solid var(--gold); background: var(--bg); }
+    .svc-qt { font-family: var(--serif); font-size: 0.98rem; color: var(--ink2); line-height: 1.72; }
+    .svc-by { margin-top: 0.75rem; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); display: flex; align-items: center; gap: 0.6rem; }
+    .svc-by::before { content: ''; display: block; width: 1.25rem; height: 1px; background: var(--border2); flex-shrink: 0; }
+    .invest-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+    .invest-pill { font-size: 0.78rem; color: var(--ink2); background: var(--raised); border: 1px solid var(--border); padding: 0.35rem 0.9rem; display: flex; align-items: center; gap: 0.45rem; transition: border-color 0.2s; }
+    .invest-pill:hover { border-color: var(--gold); }
+    .invest-pill img { height: 13px; width: auto; object-fit: contain; filter: grayscale(100%); opacity: 0.45; }
 
-    /* ─── SECTION HEADER ───────────────────────────────── */
-    .sec-pre {
-      display: flex; align-items: center; gap: 1rem;
-      margin-bottom: 1rem;
-    }
-    .sec-pre-line { width: 2rem; height: 1px; background: var(--gold); }
-    .sec-pre-text {
-      font-size: 0.68rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
-    h2.sec-title {
-      font-family: var(--serif);
-      font-size: clamp(2.2rem, 4vw, 3.5rem);
-      font-weight: 300;
-      line-height: 1.1;
-      letter-spacing: -0.01em;
-    }
-    h2.sec-title em {  color: var(--gold); }
+    /* TESTIMONIALS SCROLL */
+    .testi-scroll { overflow: hidden; padding: 3rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--raised); }
+    .testi-track { display: flex; gap: 1.5rem; animation: tscroll 55s linear infinite; width: max-content; padding: 0 1.5rem; }
+    .testi-track:hover { animation-play-state: paused; }
+    @keyframes tscroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .testi-card { width: 340px; flex-shrink: 0; background: var(--bg); border: 1px solid var(--border); padding: 1.75rem; }
+    .testi-mark { font-family: var(--serif); font-size: 3rem; font-weight: 300; color: var(--gold-mid); line-height: 0.9; margin-bottom: 0.9rem; opacity: 0.5; }
+    .testi-text { font-family: var(--serif); font-size: 0.92rem; color: var(--ink2); line-height: 1.7; }
+    .testi-foot { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+    .testi-name { font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink); }
+    .testi-role { font-size: 0.7rem; color: var(--ink4); margin-top: 0.15rem; }
 
-    /* ─── SERVICES ─────────────────────────────────────── */
-    .services { padding: 6rem 3.5rem; }
-    .services-header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      margin-bottom: 5rem;
-      align-items: end;
-    }
-    .services-intro {
-      font-size: 0.95rem;
-      color: var(--cream2);
-      line-height: 1.8;
-      margin-top: 1.5rem;
-    }
-    .services-list { display: flex; flex-direction: column; }
-    .service-row {
-      display: grid;
-      grid-template-columns: 80px 1fr 1fr;
-      gap: 2rem;
-      padding: 2.5rem 0;
-      border-top: 1px solid var(--border);
-      align-items: start;
-      transition: background 0.2s;
-      cursor: default;
-    }
-    .service-row:last-child { border-bottom: 1px solid var(--border); }
-    .service-row:hover .service-row-num { color: var(--gold); }
-    .service-row-num {
-      font-family: var(--serif);
-      font-size: 0.85rem;
-      font-weight: 300;
-      color: var(--cream3);
-      letter-spacing: 0.1em;
-      padding-top: 0.35rem;
-      transition: color 0.2s;
-    }
-    .service-row-name {
-      font-family: var(--serif);
-      font-size: 1.6rem;
-      font-weight: 300;
-      
-      color: var(--cream);
-      line-height: 1.2;
-    }
-    .service-row-body { padding-top: 0.25rem; }
-    .service-row-desc {
-      font-size: 0.85rem;
-      color: var(--cream2);
-      line-height: 1.75;
-      margin-bottom: 1rem;
-    }
-    .service-row-stats {
-      display: flex; flex-wrap: wrap; gap: 0.5rem;
-    }
-    .service-tag {
-      font-size: 0.68rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gold);
-      background: var(--gold3);
-      padding: 0.3rem 0.75rem;
-      border: 1px solid var(--gold2);
-    }
-    .service-quote {
-      margin-top: 1.75rem;
-      padding: 1.75rem 1.75rem 1.75rem 2rem;
-      border-left: 2px solid var(--gold);
-      background: linear-gradient(135deg, var(--surface) 0%, var(--raised) 100%);
-      position: relative;
-    }
-    .service-quote::before {
-      content: '\201C';
-      position: absolute;
-      top: 0.5rem; left: 1.5rem;
-      font-family: var(--serif);
-      font-size: 4rem;
-      font-weight: 300;
-      color: var(--gold2);
-      line-height: 1;
-      pointer-events: none;
-    }
-    .service-quote p {
-      font-family: var(--serif);
-      font-size: 0.92rem;
-      color: var(--cream);
-      line-height: 1.7;
-      padding-top: 1.5rem;
-    }
-    .service-quote cite {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-style: normal;
-      font-size: 0.68rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-top: 1rem;
-    }
-    .service-quote cite::before {
-      content: '';
-      display: block;
-      width: 1.5rem;
-      height: 1px;
-      background: var(--gold2);
-      flex-shrink: 0;
-    }
+    /* PHILOSOPHY */
+    .philosophy { padding: 6.5rem 4rem; text-align: center; position: relative; overflow: hidden; background: var(--ink); }
+    .philosophy::before { content: '\201C'; position: absolute; top: -5rem; left: 50%; transform: translateX(-50%); font-family: var(--serif); font-size: 22rem; font-weight: 300; color: rgba(255,255,255,0.04); line-height: 1; pointer-events: none; }
+    .philosophy blockquote { font-family: var(--serif); font-size: clamp(1.55rem, 2.8vw, 2.5rem); font-weight: 300; color: #EDE8DF; line-height: 1.45; max-width: 740px; margin: 0 auto 1.5rem; position: relative; z-index: 1; }
+    .philosophy cite { font-size: 0.68rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold-mid); font-style: normal; position: relative; z-index: 1; }
 
-    /* ─── PHILOSOPHY ───────────────────────────────────── */
-    .philosophy {
-      padding: 8rem 3.5rem;
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .philosophy::before {
-      content: '"';
-      position: absolute;
-      top: -2rem; left: 50%;
-      transform: translateX(-50%);
-      font-family: var(--serif);
-      font-size: 20rem;
-      font-weight: 300;
-      color: var(--border2);
-      line-height: 1;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .philosophy-inner { position: relative; z-index: 1; }
-    .philosophy blockquote {
-      font-family: var(--serif);
-      font-size: clamp(1.8rem, 3.5vw, 3rem);
-      font-weight: 300;
-      
-      color: var(--cream);
-      line-height: 1.35;
-      max-width: 800px;
-      margin: 0 auto 2rem;
-    }
-    .philosophy cite {
-      font-size: 0.7rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-style: normal;
-    }
+    /* ABOUT (merged) */
+    .about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-bottom: 4rem; }
+    .about-bio p { font-size: 0.98rem; color: var(--ink2); line-height: 1.88; margin-bottom: 1.25rem; }
+    .about-bio p:last-child { margin-bottom: 0; }
+    .about-photo-wrap { margin-top: 2rem; }
+    .about-photo-wrap img { width: 100%; height: 320px; object-fit: cover; object-position: center top; filter: grayscale(15%); display: block; }
+    .about-photo-placeholder { width: 100%; height: 260px; background: var(--raised); border: 1px dashed var(--border2); display: flex; align-items: center; justify-content: center; }
+    .about-photo-placeholder span { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink4); }
+    .about-right-pull { padding: 2rem; background: var(--raised); border-left: 3px solid var(--gold); margin-bottom: 2.5rem; }
+    .about-right-pull p { font-family: var(--serif); font-size: 1.05rem; color: var(--ink); line-height: 1.6; margin-bottom: 0.75rem; }
+    .about-right-pull span { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink3); }
+    .about-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); }
+    .about-card { padding: 2.25rem; border-right: 1px solid var(--border); }
+    .about-card:last-child { border-right: none; }
+    .about-card-icon { font-size: 1.4rem; margin-bottom: 1rem; }
+    .about-card-title { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; color: var(--ink); margin-bottom: 0.7rem; line-height: 1.2; }
+    .about-card-body { font-size: 0.88rem; color: var(--ink3); line-height: 1.75; }
+    .about-card-link { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.9rem; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-bg); padding-bottom: 0.1rem; transition: border-color 0.2s; }
+    .about-card-link:hover { border-color: var(--gold); }
+    .about-card-link::after { content: '↗'; }
 
-    /* ─── ABOUT ────────────────────────────────────────── */
-    .about { padding: 6rem 3.5rem; }
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 6rem;
-      align-items: start;
-    }
-    .about-body {
-      font-size: 0.95rem;
-      color: var(--cream2);
-      line-height: 1.85;
-      margin: 2rem 0;
-    }
-    .about-facts { display: flex; flex-direction: column; margin-top: 2rem; }
-    .about-fact {
-      display: grid;
-      grid-template-columns: 2.5rem 1fr;
-      gap: 1rem;
-      padding: 1.25rem 0;
-      border-bottom: 1px solid var(--border);
-      font-size: 0.88rem;
-      color: var(--cream2);
-      align-items: start;
-    }
-    .about-fact:first-child { border-top: 1px solid var(--border); }
-    .about-fact-arrow { color: var(--gold); font-size: 0.9rem; margin-top: 0.05rem; }
-    .about-fact strong { color: var(--cream); font-weight: 400; display: block; margin-bottom: 0.2rem; }
-    .ventures { margin-top: 3rem; }
-    .ventures-label {
-      font-size: 0.68rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1.25rem;
-      display: flex; align-items: center; gap: 0.75rem;
-    }
-    .ventures-label::before { content: ''; display: block; width: 1.5rem; height: 1px; background: var(--gold); }
-    .venture-card {
-      padding: 1.5rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      margin-bottom: 0.75rem;
-      display: flex; justify-content: space-between; align-items: start;
-      transition: border-color 0.2s;
-    }
-    .venture-card:hover { border-color: var(--gold2); }
-    .venture-name {
-      font-family: var(--serif);
-      font-size: 1.1rem;
-      font-weight: 300;
-      
-      color: var(--cream);
-      margin-bottom: 0.3rem;
-    }
-    .venture-desc { font-size: 0.8rem; color: var(--cream3); }
-    .venture-badge {
-      font-size: 0.65rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gold);
-      background: var(--gold3);
-      padding: 0.25rem 0.6rem;
-      border: 1px solid var(--gold2);
-      white-space: nowrap;
-      flex-shrink: 0;
-      margin-left: 1rem;
-      margin-top: 0.1rem;
-    }
+    /* BOOKS */
+    .books-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
+    .books-cat { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
+    .books-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
+    .books-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; padding: 0.55rem 0; border-bottom: 1px solid var(--surface); }
+    .books-list li:last-child { border-bottom: none; }
+    .bl-title { font-family: var(--serif); font-size: 0.92rem; font-weight: 400; color: var(--ink); flex: 1; line-height: 1.3; }
+    .bl-auth { font-size: 0.7rem; color: var(--ink4); white-space: nowrap; flex-shrink: 0; }
 
-    /* ─── BOOKS ────────────────────────────────────────── */
-    .books {
-      padding: 6rem 3.5rem;
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-    }
-    .books-header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: end;
-      margin-bottom: 4rem;
-    }
-    .books-intro { font-size: 0.9rem; color: var(--cream2); line-height: 1.75; }
-    .books-tabs {
-      display: flex; gap: 0;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 2.5rem;
-    }
-    .tab-btn {
-      padding: 0.75rem 1.75rem;
-      font-size: 0.68rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--cream3);
-      background: none; border: none; cursor: pointer;
-      border-bottom: 1px solid transparent;
-      margin-bottom: -1px;
-      transition: all 0.2s;
-      font-family: var(--sans);
-    }
-    .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
-    .tab-btn:hover { color: var(--cream); }
-    .books-panel { display: none; }
-    .books-panel.active { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
-    .book-card {
-      padding: 1.75rem;
-      background: var(--black);
-      transition: background 0.2s;
-    }
-    .book-card:hover { background: var(--raised); }
-    .book-num {
-      font-family: var(--serif);
-      font-size: 2.5rem;
-      font-weight: 300;
-      
-      color: var(--border2);
-      line-height: 1;
-      margin-bottom: 0.75rem;
-    }
-    .book-title {
-      font-family: var(--serif);
-      font-size: 0.98rem;
-      font-weight: 300;
-      
-      color: var(--cream);
-      line-height: 1.3;
-      margin-bottom: 0.35rem;
-    }
-    .book-author { font-size: 0.7rem; letter-spacing: 0.08em; color: var(--cream3); }
-    .book-desc { font-size: 0.78rem; color: var(--cream3); margin-top: 0.85rem; line-height: 1.55; }
+    /* CONTACT */
+    .cf-wrap { max-width: 680px; margin: 0 auto; }
+    .cf-form { display: flex; flex-direction: column; gap: 1rem; }
+    .cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .cf-label { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink3); display: block; margin-bottom: 0.35rem; }
+    .cf-input, .cf-select, .cf-textarea { width: 100%; background: var(--bg); border: 1px solid var(--border); padding: 0.8rem 1rem; font-size: 0.9rem; color: var(--ink); font-family: var(--sans); font-weight: 300; outline: none; transition: border-color 0.2s; }
+    .cf-input:focus, .cf-select:focus, .cf-textarea:focus { border-color: var(--gold); }
+    .cf-textarea { resize: vertical; min-height: 90px; }
+    .cf-select { appearance: none; cursor: pointer; }
+    .cf-submit { background: var(--ink); color: var(--bg); border: none; padding: 0.85rem 2.25rem; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--sans); cursor: pointer; transition: background 0.2s; margin-top: 0.25rem; }
+    .cf-submit:hover { background: var(--gold); }
+    .cf-alts { display: flex; gap: 1.5rem; margin-top: 1.5rem; justify-content: center; }
+    .cf-alt-link { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; font-size: 0.8rem; color: var(--ink3); transition: color 0.2s; }
+    .cf-alt-link:hover { color: var(--gold); }
+    .cf-alt-icon { width: 1.75rem; height: 1.75rem; background: var(--raised); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 0.65rem; color: var(--gold); font-family: var(--serif); flex-shrink: 0; }
 
-    /* ─── CONTACT ──────────────────────────────────────── */
-    .contact { padding: 6rem 3.5rem; border-top: 1px solid var(--border); }
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8rem;
-      align-items: start;
-    }
-    .contact-body {
-      font-size: 0.92rem;
-      color: var(--cream2);
-      line-height: 1.85;
-      margin: 1.5rem 0 2.5rem;
-    }
-    .contact-links { display: flex; flex-direction: column; gap: 0.75rem; }
-    .contact-link {
-      display: flex; align-items: center; gap: 1.25rem;
-      color: var(--cream2);
-      text-decoration: none;
-      font-size: 0.82rem;
-      padding: 1.1rem 1.5rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      transition: border-color 0.2s, color 0.2s;
-    }
-    .contact-link:hover { border-color: var(--gold2); color: var(--gold); }
-    .contact-link-icon {
-      width: 2rem; height: 2rem;
-      background: var(--raised);
-      border: 1px solid var(--border2);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 0.72rem;
-      color: var(--gold);
-      flex-shrink: 0;
-      font-family: var(--serif);
-      
-    }
-    .interests { display: flex; flex-direction: column; }
-    .interest-row {
-      display: grid;
-      grid-template-columns: 1.5rem 1fr;
-      gap: 1rem;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid var(--border);
-      align-items: start;
-    }
-    .interest-row:first-child { border-top: 1px solid var(--border); }
-    .interest-num {
-      font-family: var(--serif);
-      font-size: 0.8rem;
-      color: var(--gold);
-      
-      margin-top: 0.05rem;
-    }
-    .interest-title {
-      font-family: var(--serif);
-      font-size: 1rem;
-      font-weight: 300;
-      
-      color: var(--cream);
-      margin-bottom: 0.3rem;
-    }
-    .interest-desc { font-size: 0.8rem; color: var(--cream3); line-height: 1.6; }
-
-    /* ─── FOOTER ───────────────────────────────────────── */
-    footer {
-      padding: 1.5rem 3.5rem;
-      border-top: 1px solid var(--border);
-      display: flex; justify-content: space-between; align-items: center;
-      font-size: 0.68rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--cream3);
-    }
-    footer a { color: var(--cream3); text-decoration: none; transition: color 0.2s; }
+    /* FOOTER */
+    footer { padding: 1.25rem 4rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink4); background: var(--surface); }
+    footer a { color: var(--ink4); text-decoration: none; transition: color 0.2s; }
     footer a:hover { color: var(--gold); }
 
-    /* ─── ANIMATIONS ───────────────────────────────────── */
-    .reveal {
-      opacity: 0; transform: translateY(30px);
-      transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
-    }
-    .reveal.on { opacity: 1; transform: none; }
-    .reveal-d1 { transition-delay: 0.1s; }
-    .reveal-d2 { transition-delay: 0.2s; }
-    .reveal-d3 { transition-delay: 0.3s; }
+    /* REVEAL */
+    .r { opacity: 0; transform: translateY(20px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
+    .r.on { opacity: 1; transform: none; }
+    .rd1 { transition-delay: 0.1s; }
+    .rd2 { transition-delay: 0.2s; }
 
-    /* ─── RESPONSIVE ───────────────────────────────────── */
+    /* RESPONSIVE */
+    @media (max-width: 1100px) {
+      .svc { grid-template-columns: 52px 1fr; }
+      .about-cards { grid-template-columns: 1fr; }
+      .about-card { border-right: none; border-bottom: 1px solid var(--border); }
+      .about-card:last-child { border-bottom: none; }
+      .books-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    }
     @media (max-width: 960px) {
+      :root { font-size: 15px; }
       nav { padding: 1rem 1.5rem; }
-      .nav-links, .nav-cta { display: none; }
-      .hero { grid-template-columns: 1fr; padding: 6rem 1.5rem 3rem; min-height: auto; }
-      .hero::after { display: none; }
-      .hero-image-col { display: none; }
-      .stats-bar { grid-template-columns: 1fr 1fr; }
-      .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
-      .services, .about, .books, .contact { padding: 4rem 1.5rem; }
-      .services-header, .about-grid, .books-header, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .service-row { grid-template-columns: 50px 1fr; }
-      .service-row-body { grid-column: 2; }
-      .books-panel.active { grid-template-columns: 1fr; }
-      .books-tabs { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
-      .tab-btn { white-space: nowrap; padding: 0.75rem 1.1rem; }
-      footer { flex-direction: column; gap: 0.75rem; text-align: center; padding: 1.5rem; }
+      .nav-links { display: none; }
+      .nav-btn { font-size: 0.65rem; padding: 0.5rem 1rem; letter-spacing: 0.1em; }
+      .hero { grid-template-columns: 1fr; padding: 5.5rem 1.5rem 3rem; min-height: auto; }
+      .hero-right { display: none; }
+      .hero-left { padding-bottom: 3rem; }
+      h1.name { font-size: clamp(3rem, 10vw, 4.5rem); }
+      .hero-desc { font-size: 0.95rem; max-width: 100%; }
+      .sec { padding: 3.5rem 1.5rem; }
+      .logos { padding: 1.25rem 1.5rem; }
+      .logos-row { gap: 0; }
+      .logo-item { padding: 0.5rem 1rem; }
+      .about-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .about-cards { grid-template-columns: 1fr; }
+      .about-photo-wrap { margin-top: 1.5rem; }
+      .books-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .cf-row { grid-template-columns: 1fr; }
+      .cf-wrap { max-width: 100%; }
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.25rem; }
       .philosophy { padding: 4rem 1.5rem; }
-      .philosophy::before { font-size: 10rem; top: -1rem; }
-      .stat-number { font-size: 2.2rem; }
-      .sec-title { font-size: 2rem; }
-      h1.hero-name { font-size: 3.8rem; }
-      .service-row-stats { flex-direction: column; }
-      .hero-pre-text { font-size: 0.6rem; }
+      .philosophy blockquote { font-size: 1.35rem; }
+      .svc { grid-template-columns: 1fr; gap: 0.6rem; padding: 2rem 0; }
+      .svc-num { display: none; }
+      .svc-name { font-size: 1.3rem; }
+      .testi-card { width: 280px; }
+      .lbl { flex-wrap: wrap; }
     }
     @media (max-width: 480px) {
-      .stats-bar { grid-template-columns: 1fr; }
-      .service-row { grid-template-columns: 1fr; gap: 0.5rem; }
-      .service-row-num { display: none; }
-      .service-row-body { grid-column: 1; }
-      h1.hero-name { font-size: 3rem; }
+      :root { font-size: 14px; }
+      h1.name { font-size: 2.8rem; }
+      .hero-btns { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .eyebrow-text { font-size: 0.6rem; letter-spacing: 0.16em; }
+      .books-grid { grid-template-columns: 1fr; }
+      .logos-row { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding: 0 1.5rem; }
+      .logo-item { flex-shrink: 0; }
+      .testi-track { animation-duration: 40s; }
     }
   </style>
 </head>
@@ -706,347 +226,340 @@
 <nav>
   <a href="#" class="nav-logo">Pratik <span>Renuse</span></a>
   <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
+    <li><a href="#services">Expertise</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#books">Reading</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Work together</a>
+  <a href="https://www.linkedin.com/in/pratikrenuse/" target="_blank" class="nav-btn">Connect on LinkedIn</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
-    <div class="hero-pre reveal">
-      <div class="hero-pre-line"></div>
-      <div class="hero-pre-text">Growth Marketing Leader &nbsp;·&nbsp; TEDx Speaker &nbsp;·&nbsp; Startup Builder</div>
+  <div class="hero-left">
+    <div class="eyebrow r">
+      <div class="eyebrow-line"></div>
+      <div class="eyebrow-text">Growth Marketing Leader &nbsp;·&nbsp; TEDx Speaker &nbsp;·&nbsp; Startup Builder</div>
     </div>
-    <h1 class="hero-name reveal reveal-d1">
-      Pratik
-      <span class="gold">Renuse</span>
-    </h1>
-    <p class="hero-desc reveal reveal-d2">
-      Scaling startups from zero to eight figures. Led the #1 global crowdfunded STEM Kickstarter campaign. Built ventures across Europe, India, and beyond. Formerly at Airbus and Bayer.
-    </p>
-    <div class="hero-actions reveal reveal-d3">
-      <a href="https://www.linkedin.com/in/pratikrenuse/" target="_blank" class="btn-primary">Work with me</a>
+    <h1 class="name r rd1">Pratik<span>Renuse</span></h1>
+    <p class="hero-desc r rd2">Scaling startups from zero to eight figures across Europe, the USA, and Asia. Led the #1 STEM crowdfunded campaign on Kickstarter. Mentor to 100+ founders across Techstars, EBRD, and the UN. Formerly worked at Airbus and Bayer.</p>
+    <div class="hero-btns r rd2">
+      <a href="#contact" class="btn-dark">Work with me</a>
       <a href="#services" class="btn-ghost">See services</a>
     </div>
   </div>
-
-  <div class="hero-image-col">
-    <img class="hero-photo"
-      src="hero.jpg"
-      alt="Pratik Renuse — TEDx Speaker">
+  <div class="hero-right">
+    <img class="hero-photo" src="hero.jpg" alt="Pratik Renuse on stage at TEDx">
     <div class="hero-badge">
       <div class="hero-badge-val">Top 1%</div>
-      <div class="hero-badge-label">Marketing Consultant<br>Globally — MarketerHire</div>
+      <div class="hero-badge-lbl">Marketing Consultant<br>Globally, MarketerHire</div>
     </div>
   </div>
 </section>
 
-<!-- TICKER -->
-<div class="ticker">
-  <div class="ticker-inner" id="ticker">
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>$32M</strong> Revenue Generated</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>$7M</strong> Ad Budget Managed</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>500+</strong> Graduates Coached</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>100+</strong> Founders Mentored</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>3</strong> TEDx Talks</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>50+</strong> Speeches in 14 Countries</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>Techstars Berlin</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>Seedstars Switzerland</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>UN Climate Accelerator</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>Harvard · Oxford · HEC Paris</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>Airbus · Bayer</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>$848K</strong> Kickstarter Campaign</div>
-    <!-- repeat for seamless loop -->
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>$32M</strong> Revenue Generated</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>$7M</strong> Ad Budget Managed</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>500+</strong> Graduates Coached</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>100+</strong> Founders Mentored</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>3</strong> TEDx Talks</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>50+</strong> Speeches in 14 Countries</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>Techstars Berlin</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>Seedstars Switzerland</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>UN Climate Accelerator</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>Harvard · Oxford · HEC Paris</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>Airbus · Bayer</div>
-    <div class="ticker-item"><div class="ticker-dot"></div><strong>$848K</strong> Kickstarter Campaign</div>
-  </div>
-</div>
-
-<!-- STATS -->
-<div class="stats-bar reveal">
-  <div class="stat-item">
-    <div class="stat-number"><span>$</span>32M</div>
-    <div class="stat-desc">Revenue<br>Generated</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">500<span>+</span></div>
-    <div class="stat-desc">Graduates<br>Coached</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">3</div>
-    <div class="stat-desc">TEDx<br>Talks Delivered</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">20<span>+</span></div>
-    <div class="stat-desc">Countries<br>Travelled & Worked</div>
+<!-- LOGOS -->
+<div class="logos r">
+  <div class="logos-row">
+    <div class="logo-item"><img src="https://logo.clearbit.com/airbus.com" alt="Airbus" onerror="this.style.display='none'"><span class="logo-txt">Airbus</span></div>
+    <div class="logo-item"><img src="https://logo.clearbit.com/bayer.com" alt="Bayer" onerror="this.style.display='none'"><span class="logo-txt">Bayer</span></div>
+    <div class="logo-item"><img src="https://logo.clearbit.com/techstars.com" alt="Techstars" onerror="this.style.display='none'"><span class="logo-txt">Techstars</span></div>
+    <div class="logo-item"><img src="https://logo.clearbit.com/ebrd.com" alt="EBRD" onerror="this.style.display='none'"><span class="logo-txt">EBRD</span></div>
+    <div class="logo-item"><img src="https://logo.clearbit.com/seedstars.com" alt="Seedstars" onerror="this.style.display='none'"><span class="logo-txt">Seedstars</span></div>
+    <div class="logo-item"><span class="logo-txt">Masters' Union</span></div>
+    <div class="logo-item"><span class="logo-txt">Tetr College</span></div>
   </div>
 </div>
 
 <!-- SERVICES -->
-<section class="services" id="services">
-  <div class="services-header reveal">
-    <div>
-      <div class="sec-pre">
-        <div class="sec-pre-line"></div>
-        <div class="sec-pre-text">Expertise</div>
-      </div>
-      <h2 class="sec-title">What I<br><span class="gold">bring</span></h2>
-    </div>
-    <p class="services-intro">
-      Whether you need a growth strategist embedded in your team, an advisor who has seen the trenches, a coach for your best talent, or a speaker who moves rooms — this is where I operate.
-    </p>
+<section class="sec" id="services">
+  <div class="r">
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Expertise</div></div>
+    <h2 class="sec-h">How I can <span>help you</span></h2>
   </div>
+  <div class="r">
 
-  <div class="services-list">
-    <div class="service-row reveal">
-      <div class="service-row-num">01</div>
-      <div class="service-row-name">Consulting</div>
-      <div class="service-row-body">
-        <p class="service-row-desc">I work directly with CMOs, Heads of Marketing, and Founders of seed-funded startups on their growth architecture — from channel strategy to full-funnel execution.</p>
-        <div class="service-row-stats">
-          <span class="service-tag">$7M ad budget</span>
-          <span class="service-tag">$32M revenue</span>
-          <span class="service-tag">MarketerHire Top 1%</span>
+    <div class="svc">
+      <div class="svc-num">01</div>
+      <div class="svc-name">Consulting</div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">MarketerHire Top 1% globally</div>
+          <div class="svc-pt">$32M in revenue generated for clients across Europe and North America</div>
         </div>
-        <div class="service-quote">
-          <p>"Pratik saved our season. His help during our last season helped get our holiday houses fully booked after all the cancellations."</p>
-          <cite>Wilbert Elferink — Founder, Font Neuve</cite>
+        <div class="svc-quote">
+          <div class="svc-qt">"Pratik saved our season. I thank him very much for all his help during our last season helping to get our holiday houses fully booked after all the cancellations. It has been a pleasure working with him."</div>
+          <div class="svc-by">Wilbert Elferink · Founder, Font Neuve</div>
         </div>
       </div>
     </div>
 
-    <div class="service-row reveal">
-      <div class="service-row-num">02</div>
-      <div class="service-row-name">Advising</div>
-      <div class="service-row-body">
-        <p class="service-row-desc">I mentor and advise startup marketing teams and founders at any stage on growth strategy and leadership — bringing pattern recognition from 100+ companies.</p>
-        <div class="service-row-stats">
-          <span class="service-tag">100+ founders</span>
-          <span class="service-tag">9.7/10 CXO rating</span>
-          <span class="service-tag">Techstars · Seedstars</span>
+    <div class="svc">
+      <div class="svc-num">02</div>
+      <div class="svc-name">Advising</div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">100+ founders mentored across Techstars, EBRD, Seedstars, and the UN</div>
+          <div class="svc-pt">9.7 / 10 average rating by CXOs and founders</div>
         </div>
-        <div class="service-quote">
-          <p>"Pratik was our driving force. He listened to our unique needs, ensuring we could get the ideal solution."</p>
-          <cite>Emmanuel Odi — Founder, CSM (Seedstars · UN Accelerator)</cite>
+        <div class="svc-quote">
+          <div class="svc-qt">"Pratik has a knack for building effective outreach pipelines, refining value proposition communication, and providing invaluable fundraising insights. His support goes beyond scheduled sessions."</div>
+          <div class="svc-by">Artur Kolishenko · Techstars Berlin</div>
         </div>
       </div>
     </div>
 
-    <div class="service-row reveal">
-      <div class="service-row-num">03</div>
-      <div class="service-row-name">Graduate Coaching</div>
-      <div class="service-row-body">
-        <p class="service-row-desc">I coach graduates at Ivy League colleges on career clarity, positioning in marketing, and the decisions that shape the first decade of a career.</p>
-        <div class="service-row-stats">
-          <span class="service-tag">500+ coached</span>
-          <span class="service-tag">87% return rate</span>
-          <span class="service-tag">Harvard · HEC · Yale · Stanford</span>
+    <div class="svc">
+      <div class="svc-num">03</div>
+      <div class="svc-name">Speaking</div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">3 TEDx talks delivered across Europe</div>
+          <div class="svc-pt">50+ keynotes in 14 countries, US, Europe, Middle East, Asia</div>
         </div>
-        <div class="service-quote">
-          <p>"Impactful and inspiring. Incredibly generous with his wisdom while giving tangible, clear advice."</p>
-          <cite>Valerie Zh — MBA Graduate, Harvard University</cite>
+        <div class="svc-quote">
+          <div class="svc-qt">"Pratik is a great speaker, very knowledgeable and the audience loved him. He delivered an engaging talk and presented in perfect English. I would recommend him as a speaker for any event."</div>
+          <div class="svc-by">Peter Szabo · Curator, TEDx</div>
         </div>
       </div>
     </div>
 
-    <div class="service-row reveal">
-      <div class="service-row-num">04</div>
-      <div class="service-row-name">Speaking</div>
-      <div class="service-row-body">
-        <p class="service-row-desc">I share growth case studies and leadership frameworks at conferences across the US, Europe, Middle East, and Asia — with three TEDx talks delivered.</p>
-        <div class="service-row-stats">
-          <span class="service-tag">3 TEDx talks</span>
-          <span class="service-tag">20+ keynotes</span>
-          <span class="service-tag">50+ speeches · 14 countries</span>
+    <div class="svc">
+      <div class="svc-num">04</div>
+      <div class="svc-name">Coaching</div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">500+ graduates coached on marketing careers and decision-making</div>
+          <div class="svc-pt">Harvard, HEC Paris, Yale, Oxford, LSE, IIM, and others</div>
         </div>
-        <div class="service-quote">
-          <p>"Very knowledgeable and the audience loved him. He delivered an engaging talk that was easy to coordinate throughout the organising process."</p>
-          <cite>Peter Szabo — Curator, TEDx</cite>
+        <div class="svc-quote">
+          <div class="svc-qt">"Impactful and inspiring, incredibly generous with his wisdom and time, while giving tangible pieces of clear advice. I am really impressed by Pratik's approach and coaching style."</div>
+          <div class="svc-by">Valerie Zh · MBA Graduate, Harvard University</div>
         </div>
       </div>
     </div>
+
+    <div class="svc">
+      <div class="svc-num">05</div>
+      <div class="svc-name">Investing</div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">Angel investor in fintech, consumer tech, and AI</div>
+          <div class="svc-pt">Portfolio: Perplexity AI, Nothing, Atom Bank, Plum</div>
+        </div>
+        <div class="svc-quote">
+          <div class="svc-qt">"Pratik is extremely knowledgeable and has helped us greatly to wrap our heads around our strategy. On top of being an expert in his field he is always supportive and encouraging. I would recommend Pratik to any startup."</div>
+          <div class="svc-by">Katya Rozenoer · Co-founder, Blastra</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-num">06</div>
+      <div class="svc-name">Teaching</div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">Visiting Professor at Masters' Union, Tetr College of Business, and IE Business School, Spain</div>
+          <div class="svc-pt">5,000+ students taught across MBA and undergraduate programmes</div>
+        </div>
+        <div class="svc-quote">
+          <div class="svc-qt">"It was incredibly thought-provoking and extremely insightful, delivered with real-world examples. I got some great comments and feedback from the audience. Looking forward to more in the future."</div>
+          <div class="svc-by">Jonathan Francis · Growth Marketer, Serviceform</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+
+<!-- TESTIMONIALS SCROLL -->
+<div style="background:var(--raised); border-top:1px solid var(--border); padding:2.5rem 4rem 0; text-align:center;">
+  <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; margin-bottom:0;">
+    <div style="width:1.75rem; height:1px; background:var(--gold);"></div>
+    <span style="font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold);">What clients & collaborators say</span>
+    <div style="width:1.75rem; height:1px; background:var(--gold);"></div>
+  </div>
+</div>
+<div class="testi-scroll">
+  <div class="testi-track">
+    <!-- set 1 -->
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik's mentorship was a crucial asset during our time at Techstars. His feedback was insightful and actionable, allowing us to refine our customer strategy and storytelling. He was always ready to lend support when needed.</div><div class="testi-foot"><div class="testi-name">Alexander Blum</div><div class="testi-role">VoiceKitt, Techstars Accelerator</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">The level of patience, commitment, knowledge and resources that Pratik brings to the table are very singular. I wish more people had the opportunity of working with him.</div><div class="testi-foot"><div class="testi-name">Luimar Silva</div><div class="testi-role">Business Strategist, CTCN Academy</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">It has been a pleasure to be mentored by Pratik. He has consistently added value in each discussion, including insightful input to our marketing strategy. Particularly helpful during the planning of our investor outreach.</div><div class="testi-foot"><div class="testi-name">Felix Hughes</div><div class="testi-role">Co-Founder, Bueno</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Working with Pratik has been great. He brings years of experience and real-life results to the conversation while understanding that everything isn't one size fits all. Every conversation sparks ideas and increases motivation.</div><div class="testi-foot"><div class="testi-name">Kevin Mathis</div><div class="testi-role">Marketing Leader</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik focused on tangible, actionable steps throughout our 6 months at the NewChip accelerator. His wealth of knowledge in market frameworks and strategy has accelerated our growth and helped us plan ahead with clear direction.</div><div class="testi-foot"><div class="testi-name">Erin Houston</div><div class="testi-role">Founder, NewChip Accelerator</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik is like a fighter jet, once he locks in on a target he will work relentlessly to hit it. He will not shy away from doing the hard work with dedication and attention to detail. A real pleasure to work with.</div><div class="testi-foot"><div class="testi-name">Andi Piftor</div><div class="testi-role">Senior Marketing Manager</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik has shown himself as reliable and eager to learn. Going above and beyond to get the job done, he thought on his feet and executed at a high quality. Very good at distilling complex processes into a simple story.</div><div class="testi-foot"><div class="testi-name">Sarah Fronckevic</div><div class="testi-role">CMO, Former Amazon</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">During the CTCN Climate Innovation Lab, Pratik was our biggest motivation and driving force. With him as a mentor, our startup grew from an idea to a valid and sustainable service. I highly recommend Pratik.</div><div class="testi-foot"><div class="testi-name">Emmanuel Odii</div><div class="testi-role">Founder, Community Smart Microgrids, Seedstars / UN</div></div></div>
+    <!-- duplicate for seamless loop -->
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik's mentorship was a crucial asset during our time at Techstars. His feedback was insightful and actionable, allowing us to refine our customer strategy and storytelling. He was always ready to lend support when needed.</div><div class="testi-foot"><div class="testi-name">Alexander Blum</div><div class="testi-role">VoiceKitt, Techstars Accelerator</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">The level of patience, commitment, knowledge and resources that Pratik brings to the table are very singular. I wish more people had the opportunity of working with him.</div><div class="testi-foot"><div class="testi-name">Luimar Silva</div><div class="testi-role">Business Strategist, CTCN Academy</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">It has been a pleasure to be mentored by Pratik. He has consistently added value in each discussion, including insightful input to our marketing strategy. Particularly helpful during the planning of our investor outreach.</div><div class="testi-foot"><div class="testi-name">Felix Hughes</div><div class="testi-role">Co-Founder, Bueno</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Working with Pratik has been great. He brings years of experience and real-life results to the conversation while understanding that everything isn't one size fits all. Every conversation sparks ideas and increases motivation.</div><div class="testi-foot"><div class="testi-name">Kevin Mathis</div><div class="testi-role">Marketing Leader</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik focused on tangible, actionable steps throughout our 6 months at the NewChip accelerator. His wealth of knowledge in market frameworks and strategy has accelerated our growth and helped us plan ahead with clear direction.</div><div class="testi-foot"><div class="testi-name">Erin Houston</div><div class="testi-role">Founder, NewChip Accelerator</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik is like a fighter jet, once he locks in on a target he will work relentlessly to hit it. He will not shy away from doing the hard work with dedication and attention to detail. A real pleasure to work with.</div><div class="testi-foot"><div class="testi-name">Andi Piftor</div><div class="testi-role">Senior Marketing Manager</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik has shown himself as reliable and eager to learn. Going above and beyond to get the job done, he thought on his feet and executed at a high quality. Very good at distilling complex processes into a simple story.</div><div class="testi-foot"><div class="testi-name">Sarah Fronckevic</div><div class="testi-role">CMO, Former Amazon</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">During the CTCN Climate Innovation Lab, Pratik was our biggest motivation and driving force. With him as a mentor, our startup grew from an idea to a valid and sustainable service. I highly recommend Pratik.</div><div class="testi-foot"><div class="testi-name">Emmanuel Odii</div><div class="testi-role">Founder, Community Smart Microgrids, Seedstars / UN</div></div></div>
+  </div>
+</div>
 
 <!-- PHILOSOPHY -->
 <section class="philosophy">
-  <div class="philosophy-inner reveal">
-    <blockquote>"Give to the world the best you have, and the best will come back to you."</blockquote>
-    <cite>The principle I build everything by</cite>
-  </div>
+  <blockquote>"Give to the world the best you have, and the best will come back to you."</blockquote>
+  <cite>The principle I build everything by</cite>
 </section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="about-grid">
-    <div class="reveal">
-      <div class="sec-pre">
-        <div class="sec-pre-line"></div>
-        <div class="sec-pre-text">The person</div>
-      </div>
-      <h2 class="sec-title">Beyond the<br><span class="gold">resume</span></h2>
-      <p class="about-body">
-        I thrive in the 0-to-1 world: building ventures from scratch, scaling ideas into thriving businesses, and mentoring ambitious founders and students across the globe. Beyond work, I value silence, simplicity, and experiences that push me to grow.
-      </p>
-      <ul class="about-facts">
-        <li class="about-fact"><span class="about-fact-arrow">→</span><span><strong>Vipassana Practitioner</strong>I regularly serve and practice 10-day meditation courses — a discipline that keeps me grounded, focused, and honest.</span></li>
-        <li class="about-fact"><span class="about-fact-arrow">→</span><span><strong>Traveler at Heart</strong>Solo-travelled across Europe for 3 months, 20+ countries — seeking perspectives, not just places.</span></li>
-        <li class="about-fact"><span class="about-fact-arrow">→</span><span><strong>Global Trajectory</strong>Career built across Amsterdam, Berlin, Geneva, London, and Barcelona.</span></li>
-        <li class="about-fact"><span class="about-fact-arrow">→</span><span><strong>Vinnyana Visuals</strong>I turn complex ideas into simple illustrations. 10,000+ people now share this practice.</span></li>
-      </ul>
-    </div>
+<!-- ABOUT (merged) -->
+<section class="sec" id="about">
+  <div class="r">
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">The person</div></div>
+    <h2 class="sec-h">The person <span>behind the work</span></h2>
+  </div>
 
-    <div class="reveal reveal-d1">
-      <div style="padding: 2.5rem; background: var(--surface); border: 1px solid var(--border);">
-        <div class="ventures-label">A principle I live by</div>
-        <div style="font-family: var(--serif); font-size: 1.35rem; font-weight: 300; color: var(--cream); line-height: 1.5;">
-          "Simplicity is the ultimate sophistication."
-        </div>
-        <div style="font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream3); margin-top: 1rem;">
-          The lens through which I build, advise, and communicate.
-        </div>
+  <div class="about-layout r">
+    <div class="about-bio">
+      <p>Over the last decade I have built startups from zero, taking Infento from zero to eight-figure revenue, raising $848K on Kickstarter for the #1 STEM project in the US, and taking VU Switzerland to Olympic-level recognition. I have mentored 100+ founders through Techstars, EBRD, Seedstars, and the UN; coached graduates at Harvard, LSE, HEC Paris, and Oxford; and spoken at conferences across four continents including three TEDx stages.</p>
+      <p>Beyond the work, I am a Vipassana practitioner, a solo traveler across 20+ countries, and the creator of Vinnyana Visuals, a community of 10,000+ people who share the joy of turning complex ideas into simple illustrations.</p>
+      <div style="margin-top:1.75rem; padding:1.5rem; background:var(--raised); border-left:3px solid var(--gold);">
+        <div style="font-family:var(--serif); font-size:1.05rem; color:var(--ink); line-height:1.55; margin-bottom:0.5rem;">"Simplicity is the ultimate sophistication."</div>
+        <div style="font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink3);">The lens through which I build, advise, and communicate.</div>
       </div>
+    </div>
+    <div class="about-photo-wrap">
+      <div class="about-photo-placeholder">
+        <span>Add a second photo here</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-cards r">
+    <div class="about-card">
+      <div class="about-card-icon">🧘</div>
+      <div class="about-card-title">Vipassana Practitioner</div>
+      <div class="about-card-body">I serve and practice 10-day silent meditation courses regularly. A discipline that has fundamentally shaped how I approach decisions, leadership, and communication. It keeps me grounded in environments that move fast.</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card-icon">✏️</div>
+      <div class="about-card-title">Vinnyana Visuals</div>
+      <div class="about-card-body">I turn complex ideas into simple, shareable illustrations. What started as a personal habit, sketching quotes from books, grew into a community of over 10,000 people who share the same joy of making ideas visual.</div>
+    </div>
+    <div class="about-card">
+      <div class="about-card-icon">🌍</div>
+      <div class="about-card-title">Traveler</div>
+      <div class="about-card-body">Solo-travelled across 20+ countries. My career has taken me through Amsterdam, Berlin, Geneva, London, and Barcelona, each city leaving its mark on how I think about people, markets, and building things that last.</div>
     </div>
   </div>
 </section>
 
 <!-- BOOKS -->
-<section class="books" id="books">
-  <div class="books-header reveal">
-    <div>
-      <div class="sec-pre">
-        <div class="sec-pre-line"></div>
-        <div class="sec-pre-text">Reading list</div>
-      </div>
-      <h2 class="sec-title">Books I<br><span class="gold">recommend</span></h2>
-    </div>
-    <p class="books-intro">
-      Every book listed here has shaped how I think about growth, leadership, decisions, or attention. I return to most of them repeatedly.
-    </p>
+<section class="sec sec-alt" id="books">
+  <div class="r">
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Reading</div></div>
+    <h2 class="sec-h">Books I <span>recommend</span></h2>
   </div>
+  <div class="books-grid r">
+    <div class="books-col">
+      <div class="books-cat">Marketing</div>
+      <ul class="books-list">
+        <li><span class="bl-title">Obviously Awesome</span><span class="bl-auth">April Dunford</span></li>
+        <li><span class="bl-title">Contagious</span><span class="bl-auth">Jonah Berger</span></li>
+        <li><span class="bl-title">Hacking Growth</span><span class="bl-auth">Sean Ellis &amp; Morgan Brown</span></li>
+        <li><span class="bl-title">Building a StoryBrand</span><span class="bl-auth">Donald Miller</span></li>
+        <li><span class="bl-title">Made to Stick</span><span class="bl-auth">Chip &amp; Dan Heath</span></li>
+      </ul>
+    </div>
+    <div class="books-col">
+      <div class="books-cat">Leadership</div>
+      <ul class="books-list">
+        <li><span class="bl-title">Principles</span><span class="bl-auth">Ray Dalio</span></li>
+        <li><span class="bl-title">The Hard Thing About Hard Things</span><span class="bl-auth">Ben Horowitz</span></li>
+        <li><span class="bl-title">Measure What Matters</span><span class="bl-auth">John Doerr</span></li>
+        <li><span class="bl-title">Radical Candor</span><span class="bl-auth">Kim Scott</span></li>
+        <li><span class="bl-title">Thinking in Bets</span><span class="bl-auth">Annie Duke</span></li>
+      </ul>
+    </div>
+    <div class="books-col">
+      <div class="books-cat">Startups</div>
+      <ul class="books-list">
+        <li><span class="bl-title">Zero to One</span><span class="bl-auth">Peter Thiel</span></li>
+        <li><span class="bl-title">Lean Startup</span><span class="bl-auth">Eric Ries</span></li>
+        <li><span class="bl-title">Play Bigger</span><span class="bl-auth">Ramadan, Peterson, Lochhead</span></li>
+        <li><span class="bl-title">The Cold Start Problem</span><span class="bl-auth">Andrew Chen</span></li>
+        <li><span class="bl-title">Hooked</span><span class="bl-auth">Nir Eyal</span></li>
+      </ul>
+    </div>
 
-  <div class="reveal">
-    <div class="books-tabs">
-      <button class="tab-btn active" onclick="showTab('marketing',this)">Marketing & Growth</button>
-      <button class="tab-btn" onclick="showTab('leadership',this)">Leadership</button>
-      <button class="tab-btn" onclick="showTab('startups',this)">Startups</button>
-      <button class="tab-btn" onclick="showTab('mindfulness',this)">Mindfulness</button>
-    </div>
-    <div class="books-panel active" id="tab-marketing">
-      <div class="book-card"><div class="book-num">01</div><div class="book-title">Obviously Awesome</div><div class="book-author">April Dunford</div><div class="book-desc">The definitive guide to positioning your product and owning your market niche.</div></div>
-      <div class="book-card"><div class="book-num">02</div><div class="book-title">Contagious</div><div class="book-author">Jonah Berger</div><div class="book-desc">Why certain products and ideas catch on — and how to engineer that.</div></div>
-      <div class="book-card"><div class="book-num">03</div><div class="book-title">Hacking Growth</div><div class="book-author">Sean Ellis & Morgan Brown</div><div class="book-desc">The growth playbook behind Dropbox, Airbnb, and other breakout companies.</div></div>
-      <div class="book-card"><div class="book-num">04</div><div class="book-title">Building a StoryBrand</div><div class="book-author">Donald Miller</div><div class="book-desc">Craft messages that are clear, human, and drive people to act.</div></div>
-      <div class="book-card"><div class="book-num">05</div><div class="book-title">Made to Stick</div><div class="book-author">Chip & Dan Heath</div><div class="book-desc">The science of ideas that survive and messages that resonate.</div></div>
-    </div>
-    <div class="books-panel" id="tab-leadership">
-      <div class="book-card"><div class="book-num">01</div><div class="book-title">Principles</div><div class="book-author">Ray Dalio</div><div class="book-desc">Timeless decision-making and leadership frameworks from a legendary investor.</div></div>
-      <div class="book-card"><div class="book-num">02</div><div class="book-title">The Hard Thing About Hard Things</div><div class="book-author">Ben Horowitz</div><div class="book-desc">The real-world experience of building and leading through the toughest moments.</div></div>
-      <div class="book-card"><div class="book-num">03</div><div class="book-title">Measure What Matters</div><div class="book-author">John Doerr</div><div class="book-desc">OKRs and building teams that perform with clarity and accountability.</div></div>
-      <div class="book-card"><div class="book-num">04</div><div class="book-title">Radical Candor</div><div class="book-author">Kim Scott</div><div class="book-desc">Leading with honesty, genuine care, and clear communication.</div></div>
-      <div class="book-card"><div class="book-num">05</div><div class="book-title">Thinking in Bets</div><div class="book-author">Annie Duke</div><div class="book-desc">Decision-making under uncertainty through the lens of a poker champion.</div></div>
-    </div>
-    <div class="books-panel" id="tab-startups">
-      <div class="book-card"><div class="book-num">01</div><div class="book-title">Zero to One</div><div class="book-author">Peter Thiel</div><div class="book-desc">A framework for building truly original companies that create new value.</div></div>
-      <div class="book-card"><div class="book-num">02</div><div class="book-title">Lean Startup</div><div class="book-author">Eric Ries</div><div class="book-desc">Validated learning and rapid experimentation done right.</div></div>
-      <div class="book-card"><div class="book-num">03</div><div class="book-title">Play Bigger</div><div class="book-author">Ramadan, Peterson, Lochhead</div><div class="book-desc">How to design and dominate entirely new market categories.</div></div>
-      <div class="book-card"><div class="book-num">04</div><div class="book-title">The Cold Start Problem</div><div class="book-author">Andrew Chen</div><div class="book-desc">Building network effects from zero and achieving breakout growth.</div></div>
-      <div class="book-card"><div class="book-num">05</div><div class="book-title">Hooked</div><div class="book-author">Nir Eyal</div><div class="book-desc">A framework for creating products that form genuine habits.</div></div>
-    </div>
-    <div class="books-panel" id="tab-mindfulness">
-      <div class="book-card"><div class="book-num">01</div><div class="book-title">The Art of Living</div><div class="book-author">William Hart</div><div class="book-desc">Foundational text on Vipassana meditation and its real-world transformation.</div></div>
-      <div class="book-card"><div class="book-num">02</div><div class="book-title">The Daily Stoic</div><div class="book-author">Ryan Holiday</div><div class="book-desc">366 meditations on wisdom, equanimity, and resilience.</div></div>
-      <div class="book-card"><div class="book-num">03</div><div class="book-title">Stillness is the Key</div><div class="book-author">Ryan Holiday</div><div class="book-desc">Why real power comes from calmness and deliberate clarity.</div></div>
-      <div class="book-card"><div class="book-num">04</div><div class="book-title">The Power of Now</div><div class="book-author">Eckhart Tolle</div><div class="book-desc">A guide to living fully and completely in the present moment.</div></div>
-      <div class="book-card"><div class="book-num">05</div><div class="book-title">The Discourse Summaries</div><div class="book-author">S.N. Goenka</div><div class="book-desc">Core teachings from 10-day Vipassana — distilled and precise.</div></div>
-    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="contact-grid reveal">
-    <div>
-      <div class="sec-pre">
-        <div class="sec-pre-line"></div>
-        <div class="sec-pre-text">Get in touch</div>
+<section class="sec" id="contact">
+  <div class="r" style="max-width:680px; margin:0 auto; text-align:center;">
+    <div class="lbl" style="justify-content:center;"><div class="lbl-line"></div><div class="lbl-text">Get in touch</div><div class="lbl-line"></div></div>
+    <h2 class="sec-h" style="margin-bottom:1rem;">Let's work <span>together</span></h2>
+    <p style="font-size:0.98rem; color:var(--ink3); line-height:1.8; margin-bottom:2.5rem;">Whether you are a founder seeking growth clarity, a student navigating your career, or an event looking for a speaker, reach out. I respond to every message personally.</p>
+  </div>
+  <div class="cf-wrap r">
+    <form class="cf-form" onsubmit="handleForm(event)">
+      <div class="cf-row">
+        <div>
+          <label class="cf-label">Your name</label>
+          <input class="cf-input" type="text" placeholder="Name" required>
+        </div>
+        <div>
+          <label class="cf-label">Email address</label>
+          <input class="cf-input" type="email" placeholder="email@example.com" required>
+        </div>
       </div>
-      <h2 class="sec-title">Let's work<br><span class="gold">together</span></h2>
-      <p class="contact-body">
-        Whether you are a founder seeking a growth strategist, a student navigating your first decade in marketing, or an event needing a speaker who delivers — reach out directly.
-      </p>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/pratikrenuse/" target="_blank" class="contact-link">
-          <div class="contact-link-icon">in</div>
-          linkedin.com/in/pratikrenuse
-        </a>
+      <div>
+        <label class="cf-label">I am reaching out about</label>
+        <select class="cf-select cf-input">
+          <option value="">Select a topic</option>
+          <option>Consulting</option>
+          <option>Advising</option>
+          <option>Speaking</option>
+          <option>Coaching</option>
+          <option>Investing</option>
+          <option>Teaching</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label class="cf-label">Message</label>
+        <textarea class="cf-textarea" placeholder="Tell me a little about what you are working on..." required></textarea>
+      </div>
+      <button type="submit" class="cf-submit">Send message</button>
+    </form>
 
-      </div>
-    </div>
-
-    <div>
-      <div class="sec-pre" style="margin-bottom: 0.5rem;">
-        <div class="sec-pre-line"></div>
-        <div class="sec-pre-text">Current focus</div>
-      </div>
-      <div class="interests">
-        <div class="interest-row">
-          <div class="interest-num">I</div>
-          <div>
-            <div class="interest-title">Scaling Fintech & D2C brands</div>
-            <div class="interest-desc">Data-driven growth strategies from 0 to 1 and beyond — with full-funnel ownership.</div>
-          </div>
-        </div>
-        <div class="interest-row">
-          <div class="interest-num">II</div>
-          <div>
-            <div class="interest-title">Functional AI</div>
-            <div class="interest-desc">Building and deploying AI tools that cut through noise and accelerate startup velocity.</div>
-          </div>
-        </div>
-        <div class="interest-row">
-          <div class="interest-num">III</div>
-          <div>
-            <div class="interest-title">Mentoring Future Leaders</div>
-            <div class="interest-desc">Helping founders, executives, and graduates unlock clarity, confidence, and direction.</div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <span>© 2025 Pratik Renuse</span>
+  <span>"Simplicity is the ultimate sophistication."</span>
   <a href="https://www.linkedin.com/in/pratikrenuse/" target="_blank">LinkedIn</a>
 </footer>
 
 <script>
-  function showTab(tab, btn) {
-    document.querySelectorAll('.books-panel').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById('tab-' + tab).classList.add('active');
-    btn.classList.add('active');
+  function bTab(id, btn) {
+    document.querySelectorAll('.bpanel').forEach(p => p.classList.remove('on'));
+    document.querySelectorAll('.btab').forEach(b => b.classList.remove('on'));
+    document.getElementById('bt-' + id).classList.add('on');
+    btn.classList.add('on');
   }
-  const io = new IntersectionObserver((entries) => {
+
+  function handleForm(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.cf-submit');
+    btn.textContent = 'Message sent ✓';
+    btn.style.background = 'var(--gold)';
+    e.target.reset();
+    setTimeout(() => { btn.textContent = 'Send message →'; btn.style.background = ''; }, 3000);
+  }
+
+  const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  }, { threshold: 0.06 });
+  document.querySelectorAll('.r').forEach(el => obs.observe(el));
 </script>
 </body>
 </html>
