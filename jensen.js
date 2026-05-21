@@ -1,7 +1,7 @@
 const SUPABASE_URL = process.env.SUPABASE_URL || 'https://naqkunidxjpgwanfbbiu.supabase.co';
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY;
+const SERPER_KEY  = process.env.SERPER_API_KEY;
 const GNEWS_KEY   = process.env.GNEWS_API_KEY;
-const NEWS_KEY    = process.env.NEWS_API_KEY;
 
 function fetchWithTimeout(url, options = {}, ms = 15000) {
   const controller = new AbortController();
@@ -14,8 +14,15 @@ export default async function handler(req, res) {
   res.setHeader('Cache-Control', 's-maxage=600, stale-while-revalidate');
   if (req.method === 'OPTIONS') { res.status(200).end(); return; }
 
+  const debug = {
+    serper: SERPER_KEY ? 'key_set' : 'key_missing',
+    gnews:  GNEWS_KEY  ? 'key_set' : 'key_missing',
+    supa:   SUPABASE_KEY ? 'key_set' : 'key_missing',
+    claude: process.env.ANTHROPIC_API_KEY ? 'key_set' : 'key_missing'
+  };
+
   try {
-    // ── 1. Serve from Supabase cache if fresh ─────────────
+    // ── 1. Check Supabase cache ────────────────────────────
     if (SUPABASE_KEY) {
       try {
         const cr = await fetchWithTimeout(
@@ -27,55 +34,72 @@ export default async function handler(req, res) {
           if (cache && cache.length > 0) {
             const age = Date.now() - new Date(cache[0].created_at).getTime();
             if (age < 24 * 60 * 60 * 1000) {
-              return res.status(200).json({ ...cache[0].data, cached: true });
+              return res.status(200).json({ ...cache[0].data, cached: true, debug });
             }
+            debug.cache = `stale_${Math.round(age/3600000)}h_old`;
+          } else {
+            debug.cache = 'empty';
           }
+        } else {
+          debug.cache = `error_${cr.status}`;
         }
-      } catch {}
+      } catch(e) { debug.cache = `exception_${e.message}`; }
     }
 
-    // ── 2. Fetch live news ─────────────────────────────────
+    // ── 2. Serper.dev (primary — works on all servers) ────
     let articles = [];
 
-    // Primary: GNews
-    if (GNEWS_KEY && articles.length === 0) {
+    if (SERPER_KEY) {
+      try {
+        const r = await fetchWithTimeout('https://google.serper.dev/news', {
+          method: 'POST',
+          headers: { 'X-API-KEY': SERPER_KEY, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ q: 'Jensen Huang Nvidia', num: 10, gl: 'us', hl: 'en' })
+        });
+        debug.serper_status = r.status;
+        if (r.ok) {
+          const data = await r.json();
+          articles = (data.news || []).map(a => ({
+            title:   a.title   || '',
+            source:  a.source  || '',
+            link:    a.link    || '',
+            pubDate: a.date    || ''
+          }));
+          debug.serper_articles = articles.length;
+        } else {
+          const err = await r.text();
+          debug.serper_error = err.substring(0, 200);
+        }
+      } catch(e) { debug.serper_exception = e.message; }
+    }
+
+    // ── 3. GNews fallback ─────────────────────────────────
+    if (articles.length === 0 && GNEWS_KEY) {
       try {
         const url = `https://gnews.io/api/v4/search?q=Jensen+Huang+Nvidia&lang=en&max=10&apikey=${GNEWS_KEY}`;
         const r = await fetchWithTimeout(url);
+        debug.gnews_status = r.status;
         if (r.ok) {
           const data = await r.json();
           articles = (data.articles || []).map(a => ({
-            title:   a.title,
-            source:  a.source?.name || '',
-            link:    a.url || '',
-            pubDate: a.publishedAt || ''
+            title:   a.title            || '',
+            source:  a.source?.name     || '',
+            link:    a.url              || '',
+            pubDate: a.publishedAt      || ''
           }));
+          debug.gnews_articles = articles.length;
+        } else {
+          const err = await r.text();
+          debug.gnews_error = err.substring(0, 200);
         }
-      } catch {}
-    }
-
-    // Fallback: NewsAPI
-    if (NEWS_KEY && articles.length === 0) {
-      try {
-        const url = `https://newsapi.org/v2/everything?q=Jensen+Huang+Nvidia&language=en&sortBy=publishedAt&pageSize=10&apiKey=${NEWS_KEY}`;
-        const r = await fetchWithTimeout(url);
-        if (r.ok) {
-          const data = await r.json();
-          articles = (data.articles || []).map(a => ({
-            title:   a.title,
-            source:  a.source?.name || '',
-            link:    a.url || '',
-            pubDate: a.publishedAt || ''
-          }));
-        }
-      } catch {}
+      } catch(e) { debug.gnews_exception = e.message; }
     }
 
     if (articles.length === 0) {
-      return res.status(200).json({ articles: [], insights: null, error: 'Both news APIs failed' });
+      return res.status(200).json({ articles: [], insights: null, debug });
     }
 
-    // ── 3. Claude insights ─────────────────────────────────
+    // ── 4. Claude insights ─────────────────────────────────
     const apiKey = process.env.ANTHROPIC_API_KEY;
     let insights = null;
 
@@ -92,13 +116,14 @@ export default async function handler(req, res) {
           })
         }, 15000);
         const cd = await cr.json();
-        insights = JSON.parse(cd.content[0].text.replace(/```json|```/g,'').trim());
-      } catch {}
+        insights = JSON.parse(cd.content[0].text.replace(/```json|```/g, '').trim());
+        debug.claude = 'ok';
+      } catch(e) { debug.claude_error = e.message; }
     }
 
     const payload = { articles, insights };
 
-    // ── 4. Cache in Supabase ───────────────────────────────
+    // ── 5. Cache in Supabase ───────────────────────────────
     if (SUPABASE_KEY) {
       try {
         await fetchWithTimeout(SUPABASE_URL + '/rest/v1/jensen_cache', {
@@ -106,12 +131,13 @@ export default async function handler(req, res) {
           headers: { apikey: SUPABASE_KEY, Authorization: 'Bearer ' + SUPABASE_KEY, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
           body: JSON.stringify({ data: payload })
         }, 8000);
-      } catch {}
+        debug.cache_write = 'ok';
+      } catch(e) { debug.cache_write = `failed_${e.message}`; }
     }
 
-    return res.status(200).json({ ...payload, cached: false });
+    return res.status(200).json({ ...payload, cached: false, debug });
 
   } catch (err) {
-    return res.status(500).json({ error: err.message, articles: [], insights: null });
+    return res.status(500).json({ error: err.message, articles: [], insights: null, debug });
   }
 }
