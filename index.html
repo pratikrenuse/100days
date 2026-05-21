@@ -252,6 +252,7 @@
       .about-cards { grid-template-columns: 1fr; }
       .about-card { padding: 1.75rem; }
       .about-photo-wrap { margin-top: 1.5rem; }
+      .about-photo-wrap img { height: 260px !important; }
 
       /* BOOKS */
       .books-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -261,6 +262,7 @@
       /* CONTACT */
       .cf-row { grid-template-columns: 1fr; }
       .cf-wrap { max-width: 100%; padding: 0; }
+      .cf-submit { width: 100%; }
 
       /* FOOTER */
       footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.25rem 1.5rem; }
@@ -309,10 +311,15 @@
     .signup-success-text { font-family: var(--serif); font-size: 1rem; color: var(--gold-mid); }
     @media (max-width: 960px) {
       .hundred-inner { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 1.5rem; }
+      .signup-box { padding: 1.75rem; }
+    }
+    @media (max-width: 480px) {
+      .hundred-inner { padding: 3rem 1.25rem; }
+      .hundred-cta { width: 100%; justify-content: center; }
     }
   </style>
 
-  <!-- Google Analytics 4 — create property at analytics.google.com, replace G-K5BP5TE71L -->
+  <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -321,7 +328,7 @@
     gtag('config', 'G-K5BP5TE71L');
   </script>
 
-  <!-- Microsoft Clarity — create project at clarity.microsoft.com, replace XXXXXXXXXX -->
+  <!-- Microsoft Clarity -->
   <script>
     (function(c,l,a,r,i,t,y){
       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
