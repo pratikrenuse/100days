@@ -1015,17 +1015,30 @@ async function submitSituation() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ situation })
     });
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({ error: 'Something went wrong reading your situation. Try again in a moment.' }));
-      throw new Error(err.error);
+
+    // Try to parse JSON first. If that fails, we're getting back HTML or empty body,
+    // which usually means a 404 (function not deployed) or 500 (function crashed before
+    // responding). Surface that clearly so the user knows it's not their content.
+    let data;
+    try {
+      data = await res.json();
+    } catch (parseErr) {
+      if (res.status === 404) {
+        throw new Error('The reading service is not reachable. The API function may not be deployed yet.');
+      }
+      throw new Error('The reading service returned an unexpected response. Try again in a moment.');
     }
-    const data = await res.json();
+
+    if (!res.ok) {
+      throw new Error(data.error || `The reading service returned a ${res.status} error.`);
+    }
+
     currentResult = data;
     renderResult(data);
     if (typeof gtag === 'function') gtag('event', 'reframe_completed', { day: 3, project: 'still-early' });
   } catch (e) {
     $('form-section').style.display = 'block';
-    showError(e.message || 'Something went wrong. Try again.');
+    showError(e.message || 'Something unexpected happened. Try again in a moment.');
   } finally {
     $('loading').classList.remove('visible');
     $('submit-btn').disabled = false;
