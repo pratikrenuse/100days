@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Still Early · Day 03 · 100 Days of Building</title>
+<meta name="description" content="You are not behind. The MIT data on 2.7 million founders puts the average top-0.1% founder at 45. Tell us what's making you feel behind, get a reading grounded in real timelines, with one thing to do in the next hour.">
+<meta property="og:title" content="Still Early by Pratik Renuse">
+<meta property="og:description" content="A quiet, evidence-based reframe for the moment you feel left behind. Real stories. Real data. One concrete next step.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+<style>
+:root {
+  --bg:      #F6F2F1;
+  --surface: #EEE8E4;
+  --raised:  #E5DDD7;
+  --border:  #D0C8C0;
+  --border2: #BCB3AA;
+  --ink:     #1A1512;
+  --ink2:    #38302A;
+  --ink3:    #504840;
+  --ink4:    #786E66;
+  --gold:    #8C6A18;
+  --gold-mid:#B8903A;
+  --gold-bg: #F0E4C4;
+  --dark:    #0F0E0C;
+  --serif:   'IBM Plex Serif', Georgia, serif;
+  --sans:    'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 18px;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink2);
+  font-family: var(--sans);
+  font-weight: 400;
+  line-height: 1.65;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+p { max-width: 65ch; margin: 0 0 1.15rem; }
+
+/* ── NAV ── */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 4rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(246,242,241,0.95);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-logo { font-family: var(--serif); font-size: 0.95rem; font-weight: 400; color: var(--ink); text-decoration: none; }
+.nav-logo span { color: var(--gold); }
+.nav-left { display: flex; align-items: center; gap: 1.25rem; }
+.nav-div { color: var(--border); }
+.nav-title { font-size: 0.88rem; color: var(--ink2); }
+.nav-badge {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--gold-bg);
+  padding: 0.3rem 0.7rem;
+  border: 1px solid #D4B870;
+  font-weight: 500;
+}
+.nav-back {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  text-decoration: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+}
+.nav-back:hover { color: var(--gold); }
+.nav-back::before { content: '←'; }
+
+/* ── SECTION LABEL ── */
+.lbl { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.9rem; }
+.lbl-line { width: 1.75rem; height: 1px; background: var(--gold); }
+.lbl-text {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+/* ── HEADINGS ── */
+h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0 0 1.75rem;
+  max-width: 22ch;
+}
+h1 em { font-style: italic; color: var(--gold); }
+h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.1rem, 3.2vw, 2.9rem);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 2.5rem;
+  max-width: 22ch;
+}
+h2 em, h2 span { font-style: italic; color: var(--gold); }
+h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: var(--ink);
+  margin: 0 0 0.6rem;
+  line-height: 1.3;
+}
+
+/* ── SECTIONS ── */
+.sec { padding: 6rem 4rem; }
+.sec-narrow { padding: 6rem 4rem; max-width: 1100px; margin: 0 auto; }
+.sec-dark { background: var(--dark); color: #C8C0B8; }
+.sec-dark h2 { color: #EDE8DF; }
+.sec-dark .lbl-line { background: var(--gold-mid); }
+.sec-dark .lbl-text { color: var(--gold-mid); }
+.sec-dark h2 em { color: var(--gold-mid); }
+
+/* ── HERO ── */
+.hero {
+  padding: 5rem 4rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.hero-lead {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  color: var(--ink2);
+  line-height: 1.6;
+  margin: 0 0 2.5rem;
+  max-width: 38rem;
+  font-weight: 400;
+}
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  max-width: 38rem;
+  margin-bottom: 3rem;
+}
+.hero-stat { background: var(--bg); padding: 1.5rem 1.4rem; }
+.hero-stat-num {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.hero-stat-label {
+  font-size: 0.88rem;
+  color: var(--ink2);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* ── FORM SECTION (the page's primary action) ── */
+.form-section {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 5rem 4rem;
+}
+.form-wrap { max-width: 720px; margin: 0 auto; }
+.form-lbl {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.form-prompt {
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 2.6vw, 2.1rem);
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0 0 0.7rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+.form-help {
+  font-size: 1.02rem;
+  color: var(--ink2);
+  line-height: 1.55;
+  margin: 0 0 2rem;
+  max-width: 38rem;
+}
+.field-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 0.6rem;
+  display: block;
+  font-weight: 500;
+}
+textarea.field {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 1.1rem 1.2rem;
+  font-size: 1.05rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 400;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+  min-height: 160px;
+  line-height: 1.6;
+}
+textarea.field:focus { border-color: var(--gold); }
+textarea.field::placeholder { color: var(--ink4); }
+.prompts {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.prompt {
+  font-size: 0.88rem;
+  padding: 0.55rem 0.95rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--ink2);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--sans);
+  font-weight: 400;
+}
+.prompt:hover { background: var(--gold-bg); border-color: #D4B870; color: var(--ink); }
+.btn-submit {
+  background: var(--ink);
+  color: var(--bg);
+  border: none;
+  padding: 1.15rem 2.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 1.5rem;
+  min-height: 52px;
+}
+.btn-submit:hover { background: var(--gold); }
+.btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+.form-foot {
+  font-size: 0.92rem;
+  color: var(--ink3);
+  margin-top: 1.5rem;
+  line-height: 1.55;
+  font-family: var(--serif);
+  font-style: italic;
+}
+
+/* ── ERROR ── */
+.error {
+  display: none;
+  background: #FAF0E8;
+  border-left: 3px solid var(--gold);
+  padding: 1rem 1.3rem;
+  color: var(--ink2);
+  font-size: 0.98rem;
+  margin-top: 1rem;
+  font-family: var(--serif);
+  max-width: 50ch;
+}
+.error.visible { display: block; }
+
+/* ── LOADING ── */
+.loading { display: none; text-align: center; padding: 5rem 2rem; max-width: 720px; margin: 0 auto; }
+.loading.visible { display: block; }
+.loading-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--ink2);
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+.loading-spinner {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--border);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── RESULT ── */
+.result { display: none; max-width: 760px; margin: 0 auto; padding: 5rem 4rem; }
+.result.visible { display: block; }
+.result-acknowledge {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gold);
+  margin: 0 0 0.7rem;
+}
+.result-diag-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.4vw, 2.7rem);
+  font-weight: 300;
+  line-height: 1.18;
+  color: var(--ink);
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.01em;
+  max-width: 22ch;
+}
+.result-diag-title em { font-style: italic; color: var(--gold); }
+.result-diag-body {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: var(--ink2);
+  max-width: 38rem;
+  margin: 0 0 4rem;
+  font-weight: 400;
+}
+
+/* ── STORIES ── */
+.stories-intro {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.stories-intro::before {
+  content: '';
+  display: block;
+  width: 1.75rem;
+  height: 1px;
+  background: var(--gold);
+}
+.stories-heading {
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 2.5vw, 2.1rem);
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0 0 2.5rem;
+  line-height: 1.25;
+  max-width: 24ch;
+}
+.stories-list { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 4rem; }
+.story-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 2.5rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.story-header { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.story-num {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 400;
+}
+.story-name {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+}
+.story-oneliner {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--ink2);
+  line-height: 1.55;
+  padding: 0 0 0 1rem;
+  border-left: 2px solid var(--gold);
+  max-width: 55ch;
+}
+.story-detail {
+  font-size: 1rem;
+  color: var(--ink2);
+  line-height: 1.6;
+  max-width: 60ch;
+  font-weight: 400;
+}
+.story-detail-lbl {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.story-rel {
+  font-size: 0.98rem;
+  color: var(--ink2);
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  max-width: 60ch;
+}
+.story-rel-lbl {
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.story-source {
+  font-size: 0.82rem;
+  color: var(--ink3);
+  margin-top: 0.6rem;
+  font-style: italic;
+  line-height: 1.5;
+  font-family: var(--serif);
+}
+
+/* ── REFRAME ── */
+.reframe-block {
+  background: var(--gold-bg);
+  border: 1px solid #D4B870;
+  padding: 3rem 2.5rem;
+  margin-bottom: 3rem;
+}
+.reframe-lbl {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.reframe-head {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 2.6vw, 2.05rem);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--ink);
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.005em;
+  max-width: 25ch;
+}
+.reframe-body {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--ink2);
+  max-width: 55ch;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ── ACTION ── */
+.action-block {
+  background: var(--dark);
+  color: #C8C0B8;
+  padding: 3rem 2.5rem;
+  margin-bottom: 3rem;
+}
+.action-lbl {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-mid);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.action-title {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  font-weight: 400;
+  color: #EDE8DF;
+  margin: 0 0 1.25rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  max-width: 25ch;
+}
+.action-body {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: #D4CCC4;
+  max-width: 55ch;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ── CLOSING ── */
+.closing-block {
+  text-align: center;
+  padding: 2rem 0 0;
+  margin: 0 0 3rem;
+  border-top: 1px solid var(--border);
+  padding-top: 2.5rem;
+}
+.closing-lead {
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.closing-line {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--ink);
+  max-width: 38rem;
+  margin: 0 auto;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+/* ── RESULT ACTIONS ── */
+.result-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+.action-btn {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 1.1rem 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink2);
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+  min-height: 52px;
+}
+.action-btn:hover { background: var(--gold-bg); border-color: var(--gold); color: var(--ink); }
+
+/* ── DATA ── */
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: #2A2521;
+  border: 1px solid #2A2521;
+  max-width: 900px;
+}
+.data-card { background: var(--dark); padding: 2.25rem 2rem; }
+.data-num {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--gold-mid);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.data-label {
+  font-size: 1rem;
+  color: #C8C0B8;
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 45ch;
+}
+.data-source {
+  font-size: 0.85rem;
+  color: #9A8E83;
+  margin-top: 3rem;
+  font-family: var(--serif);
+  font-style: italic;
+  max-width: 55ch;
+  line-height: 1.5;
+}
+.dark-lead {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  color: #C8C0B8;
+  max-width: 38rem;
+  margin: 0 0 3rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* ── HOW IT WORKS ── */
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 900px;
+}
+.how-step {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 2.25rem 2rem;
+}
+.how-num {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--gold);
+  font-style: italic;
+  margin-bottom: 0.9rem;
+  font-weight: 400;
+}
+.how-title {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0 0 0.9rem;
+  line-height: 1.3;
+}
+.how-desc {
+  font-size: 1rem;
+  color: var(--ink2);
+  line-height: 1.65;
+  font-weight: 400;
+  margin: 0;
+  max-width: 50ch;
+}
+
+/* ── TRUTHS ── */
+.truths-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 900px;
+}
+.truth-card { background: var(--dark); border: 1px solid #2A2521; padding: 2.5rem 2.25rem; }
+.truth-num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gold-mid);
+  margin-bottom: 0.9rem;
+  font-weight: 400;
+}
+.truth-title {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #EDE8DF;
+  margin: 0 0 1rem;
+  line-height: 1.3;
+}
+.truth-desc {
+  font-size: 1rem;
+  color: #C8C0B8;
+  line-height: 1.65;
+  font-weight: 400;
+  margin: 0;
+  max-width: 50ch;
+}
+
+/* ── SIGNUP STRIP ── */
+.signup-strip {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.signup-strip-text { font-size: 1rem; color: var(--ink2); line-height: 1.55; max-width: 40ch; }
+.signup-strip-text strong {
+  color: var(--ink);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+}
+.signup-strip-form { display: flex; }
+.signup-strip-form input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-right: none;
+  padding: 0.85rem 1.1rem;
+  font-size: 1rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 400;
+  outline: none;
+  width: 260px;
+  min-height: 48px;
+}
+.signup-strip-form input:focus { border-color: var(--gold); }
+.signup-strip-form input::placeholder { color: var(--ink4); }
+.signup-strip-form button {
+  background: var(--ink);
+  color: var(--bg);
+  border: none;
+  padding: 0.85rem 1.4rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--sans);
+  cursor: pointer;
+  font-weight: 500;
+  min-height: 48px;
+}
+.signup-strip-form button:hover { background: var(--gold); }
+.signup-ok {
+  font-size: 1.05rem;
+  color: var(--gold);
+  display: none;
+  padding: 0.85rem 0;
+  font-family: var(--serif);
+}
+
+/* ── FOOTER ── */
+footer {
+  padding: 1.5rem 4rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  background: var(--surface);
+  font-weight: 500;
+}
+footer a { color: var(--ink3); text-decoration: none; }
+footer a:hover { color: var(--gold); }
+
+/* ── MOBILE ── */
+@media (max-width: 960px) {
+  :root { font-size: 17px; }
+  nav { padding: 1rem 1.25rem; gap: 1rem; }
+  .nav-left { gap: 0.75rem; }
+  .nav-title { display: none; }
+  .sec, .sec-narrow { padding: 3.5rem 1.25rem; }
+  .hero { padding: 3rem 1.25rem 2rem; }
+  .form-section { padding: 3.5rem 1.25rem; }
+  .hero-stats { grid-template-columns: repeat(3, 1fr); max-width: none; }
+  .hero-stat { padding: 1.2rem 1rem; }
+  .hero-stat-num { font-size: 1.75rem; }
+  .data-grid, .how-grid, .truths-grid { grid-template-columns: 1fr; max-width: 100%; }
+  .signup-strip { flex-direction: column; align-items: flex-start; padding: 2rem 1.25rem; }
+  .signup-strip-form { flex-direction: column; width: 100%; }
+  .signup-strip-form input { width: 100%; border-right: 1px solid var(--border); border-bottom: none; }
+  .signup-strip-form button { width: 100%; }
+  .result { padding: 3rem 1.25rem; }
+  .result-actions { grid-template-columns: 1fr; }
+  footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.25rem; font-size: 0.78rem; }
+  p, .hero-lead, .form-help, .result-diag-body, .reframe-body, .action-body,
+  .story-detail, .story-rel, .truth-desc, .how-desc, .data-label, .dark-lead { max-width: 100%; }
+  .story-card { padding: 2rem 1.5rem; }
+  .reframe-block, .action-block { padding: 2.25rem 1.5rem; }
+}
+@media (max-width: 480px) {
+  :root { font-size: 16px; }
+  .hero-stats { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
+    <span class="nav-div">/</span>
+    <span class="nav-title">STILL EARLY</span>
+    <span class="nav-badge">Day 03</span>
+  </div>
+  <a href="/100days/" class="nav-back">All projects</a>
+</nav>
+
+<section class="hero">
+  <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">For the moment you feel left behind</div></div>
+  <h1>You are not behind. The <em>data and the timelines</em> say so.</h1>
+  <p class="hero-lead">A quiet reading for the moment you open your phone and feel like everyone else is ahead. Tell us what is making you feel behind. Get a diagnosis of the trap, three real people whose timelines looked like yours, and one specific thing to do in the next hour.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">45</div>
+      <div class="hero-stat-label">Average age of the top 0.1% fastest-growing founders, per MIT data on 2.7 million companies.</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">2×</div>
+      <div class="hero-stat-label">A 50-year-old founder is twice as likely to have a runaway success as a 30-year-old.</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">39</div>
+      <div class="hero-stat-label">Toni Morrison's age when her first novel came out. The Nobel came 23 years later.</div>
+    </div>
+  </div>
+</section>
+
+<section class="form-section" id="form-section">
+  <div class="form-wrap">
+    <div class="form-lbl">Step one of two</div>
+    <h2 class="form-prompt">What is making you feel behind right now?</h2>
+    <p class="form-help">A sentence or three. Be specific. Who are you comparing yourself to, or what timeline are you measuring against?</p>
+    <label class="field-label" for="situation">Your situation</label>
+    <textarea class="field" id="situation" placeholder="I am 31 and watching a friend from college close their Series A while I am still figuring out what to build. I feel like I should have shipped something real by now."></textarea>
+    <div class="prompts">
+      <span class="prompt" onclick="usePrompt(this)">My friend just got promoted again</span>
+      <span class="prompt" onclick="usePrompt(this)">I have been building for years and nothing</span>
+      <span class="prompt" onclick="usePrompt(this)">I think I am too old to start now</span>
+      <span class="prompt" onclick="usePrompt(this)">My feed is making me sulk</span>
+    </div>
+    <button class="btn-submit" id="submit-btn" onclick="submitSituation()">Show me where I actually am</button>
+    <div class="error" id="error-box"></div>
+    <p class="form-foot">Not stored. Not shared. Read once, then forgotten.</p>
+  </div>
+</section>
+
+<div class="loading" id="loading">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">Reading what you wrote, matching the stories whose timelines resemble yours…</div>
+</div>
+
+<div class="result" id="result">
+  <p class="result-acknowledge">You named it. Here is what is actually happening.</p>
+  <h2 class="result-diag-title" id="diag-title"></h2>
+  <p class="result-diag-body" id="diag-body"></p>
+
+  <div class="stories-intro"><span>Three people whose timeline resembles yours</span></div>
+  <h3 class="stories-heading">The real timelines</h3>
+  <div class="stories-list" id="stories-list"></div>
+
+  <div class="reframe-block">
+    <div class="reframe-lbl">The reframe</div>
+    <h3 class="reframe-head" id="reframe-head"></h3>
+    <p class="reframe-body" id="reframe-body"></p>
+  </div>
+
+  <div class="action-block">
+    <div class="action-lbl">Your next hour</div>
+    <h3 class="action-title" id="action-title"></h3>
+    <p class="action-body" id="action-body"></p>
+  </div>
+
+  <div class="closing-block">
+    <div class="closing-lead">One more thing</div>
+    <p class="closing-line" id="closing-line"></p>
+  </div>
+
+  <div class="result-actions">
+    <button class="action-btn" onclick="copyResult()">Copy this reading</button>
+    <button class="action-btn" onclick="resetForm()">Start a new reading</button>
+    <button class="action-btn" onclick="scrollToTop()">Read this again later</button>
+  </div>
+</div>
+
+<section class="sec sec-dark">
+  <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">The data behind the reframe</div></div>
+  <h2>The 20-year-old <em>wunderkind</em> is the exception, not the rule.</h2>
+  <p class="dark-lead">In 2018, MIT and the US Census Bureau looked at 2.7 million people who started companies between 2007 and 2014. The numbers were nothing like the Silicon Valley story.</p>
+  <div class="data-grid">
+    <div class="data-card">
+      <div class="data-num">45</div>
+      <div class="data-label">Average age of founders of the fastest-growing 0.1% of new ventures.</div>
+    </div>
+    <div class="data-card">
+      <div class="data-num">42</div>
+      <div class="data-label">Average age of founders who built a company that hired at least one employee.</div>
+    </div>
+    <div class="data-card">
+      <div class="data-num">2×</div>
+      <div class="data-label">A 50-year-old founder is nearly twice as likely to have a runaway success as a 30-year-old.</div>
+    </div>
+    <div class="data-card">
+      <div class="data-num">&lt;1%</div>
+      <div class="data-label">Fraction of high-performing startups founded by 20-year-olds.</div>
+    </div>
+  </div>
+  <p class="data-source">Source: Azoulay, Jones, Kim, Miranda. Age and High-Growth Entrepreneurship. MIT, Census Bureau, NBER. Published HBR, July 2018.</p>
+</section>
+
+<section class="sec">
+  <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">How this works</div></div>
+  <h2>Four steps, <em>no platitudes</em>.</h2>
+  <div class="how-grid">
+    <div class="how-step">
+      <div class="how-num">No. 01</div>
+      <h3 class="how-title">You tell it what is making you feel behind</h3>
+      <p class="how-desc">One paragraph is enough. Be specific about who you are comparing yourself to or what timeline you are measuring against. The more honest you are, the sharper the reading.</p>
+    </div>
+    <div class="how-step">
+      <div class="how-num">No. 02</div>
+      <h3 class="how-title">It names the trap you fell into</h3>
+      <p class="how-desc">There are about a dozen specific comparison patterns that make smart people feel behind. Survivorship bias. The highlight reel. Single-comparison fixation. The late-starter myth. You are probably in one of them.</p>
+    </div>
+    <div class="how-step">
+      <div class="how-num">No. 03</div>
+      <h3 class="how-title">It matches you to real stories and one action</h3>
+      <p class="how-desc">Three verified late-bloomer stories whose timelines actually resemble yours. A reframe grounded in real data. One specific thing to do in the next 60 minutes, small enough that you can do it sulking and tired.</p>
+    </div>
+    <div class="how-step">
+      <div class="how-num">No. 04</div>
+      <h3 class="how-title">You do the thing, or save it for later</h3>
+      <p class="how-desc">The action is small and concrete on purpose. Most people do not need motivation. They need one specific next step that feels possible right now. Save the reading and come back to it the next time the feeling shows up.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark">
+  <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Four truths nobody posts about</div></div>
+  <h2>The race you think <em>you are in</em> is not the race you are in.</h2>
+  <div class="truths-grid">
+    <div class="truth-card">
+      <div class="truth-num">No. 01</div>
+      <h3 class="truth-title">You are comparing your floor to their ceiling</h3>
+      <p class="truth-desc">The post that made you feel behind is the highest point of someone else's quarter, year, or decade, run through three drafts. You are measuring it against the average Tuesday of your own life. The two are not comparable.</p>
+    </div>
+    <div class="truth-card">
+      <div class="truth-num">No. 02</div>
+      <h3 class="truth-title">Survivorship bias is the entire feed</h3>
+      <p class="truth-desc">The people who quit do not post. The people who pivoted three times do not post about the failed two. You see the one percent who broke through, presented as a baseline. The other ninety-nine percent on the same timeline did not.</p>
+    </div>
+    <div class="truth-card">
+      <div class="truth-num">No. 03</div>
+      <h3 class="truth-title">You are mentally compressing their timeline</h3>
+      <p class="truth-desc">It took Jensen Huang 32 years to build the world's most valuable company. It took Toni Morrison 23 years from first novel to Nobel Prize. You are comparing yourself to the highlight, not the duration that produced it.</p>
+    </div>
+    <div class="truth-card">
+      <div class="truth-num">No. 04</div>
+      <h3 class="truth-title">The starting line is not where you think</h3>
+      <p class="truth-desc">The MIT data on 2.7 million founders puts the average top-0.1% founder at 45 years old. The 20-year-old wunderkind is the statistical exception, not the rule. The race you think you are in does not exist.</p>
+    </div>
+  </div>
+</section>
+
+<div class="signup-strip">
+  <div class="signup-strip-text">
+    <strong>A new product ships tomorrow</strong>
+    Get each one delivered to your inbox the day it launches.
+  </div>
+  <div>
+    <div id="proj-form-wrap">
+      <div class="signup-strip-form">
+        <input type="email" id="proj-email" placeholder="Your email address">
+        <button onclick="projSignup()">Send me each one</button>
+      </div>
+    </div>
+    <div class="signup-ok" id="proj-ok">You are in. The next product lands tomorrow morning.</div>
+  </div>
+</div>
+
+<footer>
+  <span>Day 03 of 100 · Built by Pratik Renuse</span>
+  <a href="/100days/">← All projects</a>
+</footer>
+
+<script>
+const SUPA_URL = 'https://naqkunidxjpgwanfbbiu.supabase.co';
+const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hcWt1bmlkeGpwZ3dhbmZiYml1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5Mjg1ODEsImV4cCI6MjA5NDUwNDU4MX0.zEypDQmNQGyCcFCjeLMP_Wgbdr3HJJxHXUhqHlMEl9I';
+
+const $ = id => document.getElementById(id);
+
+function usePrompt(el) {
+  const phrases = {
+    'My friend just got promoted again': 'A close friend just got promoted again, third one this year. I am still in the same role I was in two years ago and I cannot tell if I am stuck or just slower.',
+    'I have been building for years and nothing': 'I have been building things on the side for years and nothing has really worked. Watching people who started after me ship products and get traction is making me wonder if I am just not good at this.',
+    'I think I am too old to start now': 'I am in my mid thirties and just realized what I actually want to do. It feels stupid to start now when everyone in this field is younger and has years of head start.',
+    'My feed is making me sulk': 'I opened my feed ten minutes ago and now I want to delete every project I have ever started. Everyone is shipping, raising, hiring, posting wins. I am just sitting here.'
+  };
+  $('situation').value = phrases[el.textContent] || el.textContent;
+  $('situation').focus();
+}
+
+let currentResult = null;
+
+async function submitSituation() {
+  const situation = $('situation').value.trim();
+  if (situation.length < 10) {
+    showError('Tell me a bit more about what is making you feel behind. One full sentence is enough.');
+    return;
+  }
+  hideError();
+  $('submit-btn').disabled = true;
+  $('submit-btn').textContent = 'Reading your situation…';
+  $('result').classList.remove('visible');
+  $('form-section').style.display = 'none';
+  $('loading').classList.add('visible');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  try {
+    const res = await fetch('/api/reframe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ situation })
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Something went wrong reading your situation. Try again in a moment.' }));
+      throw new Error(err.error);
+    }
+    const data = await res.json();
+    currentResult = data;
+    renderResult(data);
+    if (typeof gtag === 'function') gtag('event', 'reframe_completed', { day: 3, project: 'still-early' });
+  } catch (e) {
+    $('form-section').style.display = 'block';
+    showError(e.message || 'Something went wrong. Try again.');
+  } finally {
+    $('loading').classList.remove('visible');
+    $('submit-btn').disabled = false;
+    $('submit-btn').textContent = 'Show me where I actually am';
+  }
+}
+
+function renderResult(d) {
+  $('diag-title').innerHTML = escapeHtml(d.diagnosis_title || '');
+  $('diag-body').textContent = d.diagnosis_body || '';
+
+  const list = $('stories-list');
+  list.innerHTML = '';
+  (d.stories || []).forEach((s, i) => {
+    const rel = (d.story_relevance && d.story_relevance[s.id]) || '';
+    const card = document.createElement('div');
+    card.className = 'story-card';
+    card.innerHTML = `
+      <div class="story-header">
+        <div class="story-num">No. ${String(i+1).padStart(2,'0')}</div>
+        <div class="story-name">${escapeHtml(s.name)}</div>
+      </div>
+      <p class="story-oneliner">${escapeHtml(s.one_liner)}</p>
+      <div class="story-detail"><span class="story-detail-lbl">Where they were</span>${escapeHtml(s.early_state)}</div>
+      <div class="story-detail"><span class="story-detail-lbl">Where they got to</span>${escapeHtml(s.win_at)}</div>
+      <div class="story-rel">
+        <div class="story-rel-lbl">Why this matches you</div>
+        ${escapeHtml(rel)}
+      </div>
+      <p class="story-source">Source: ${escapeHtml(s.source)}</p>
+    `;
+    list.appendChild(card);
+  });
+
+  $('reframe-head').textContent = d.reframe_headline || '';
+  $('reframe-body').textContent = d.reframe_body || '';
+  $('action-title').textContent = d.next_action_title || '';
+  $('action-body').textContent = d.next_action_body || '';
+  $('closing-line').textContent = d.closing_line || '';
+
+  $('result').classList.add('visible');
+  setTimeout(() => $('result').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+}
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+}
+
+function showError(msg) {
+  const e = $('error-box');
+  e.textContent = msg;
+  e.classList.add('visible');
+}
+function hideError() { $('error-box').classList.remove('visible'); }
+
+function resetForm() {
+  $('situation').value = '';
+  $('result').classList.remove('visible');
+  $('form-section').style.display = 'block';
+  currentResult = null;
+  scrollToTop();
+  setTimeout(() => $('situation').focus(), 300);
+}
+
+function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+function copyResult() {
+  if (!currentResult) return;
+  const d = currentResult;
+  const lines = [
+    d.diagnosis_title || '', '',
+    d.diagnosis_body || '', '',
+    'THREE PEOPLE WHOSE TIMELINE RESEMBLES YOURS', ''
+  ];
+  (d.stories || []).forEach((s, i) => {
+    lines.push(`${i+1}. ${s.name}`);
+    lines.push(s.one_liner);
+    lines.push(`   Where they were: ${s.early_state}`);
+    lines.push(`   Where they got to: ${s.win_at}`);
+    if (d.story_relevance && d.story_relevance[s.id]) lines.push(`   Why this matches you: ${d.story_relevance[s.id]}`);
+    lines.push('');
+  });
+  lines.push('THE REFRAME');
+  lines.push(d.reframe_headline || '');
+  lines.push(d.reframe_body || '');
+  lines.push('');
+  lines.push('YOUR NEXT HOUR');
+  lines.push(d.next_action_title || '');
+  lines.push(d.next_action_body || '');
+  lines.push('');
+  lines.push(d.closing_line || '');
+  lines.push('');
+  lines.push('via pratikrenuse.com/100days/day-03-still-early');
+
+  navigator.clipboard.writeText(lines.join('\n'));
+  if (event && event.target) {
+    const orig = event.target.textContent;
+    event.target.textContent = 'Copied to clipboard';
+    setTimeout(() => { if (event.target) event.target.textContent = orig; }, 2000);
+  }
+}
+
+async function projSignup() {
+  const email = $('proj-email').value;
+  if (!email || !email.includes('@')) return;
+  const btn = document.querySelector('.signup-strip-form button');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  try {
+    const res = await fetch(SUPA_URL + '/rest/v1/subscribers', {
+      method: 'POST',
+      headers: { apikey: SUPA_KEY, Authorization: 'Bearer ' + SUPA_KEY, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+      body: JSON.stringify({ email, source: 'day-03-still-early' })
+    });
+    if (res.status === 201 || res.status === 409) {
+      $('proj-form-wrap').style.display = 'none';
+      $('proj-ok').style.display = 'block';
+    } else {
+      btn.textContent = 'Try again';
+      btn.disabled = false;
+    }
+  } catch {
+    btn.textContent = 'Try again';
+    btn.disabled = false;
+  }
+}
+</script>
+
+</body>
+</html>
