@@ -263,7 +263,7 @@ ${JSON.stringify(META_STATS, null, 2)}`;
     // 25-second timeout (well under Vercel's 60s function ceiling on Pro,
     // and gives Anthropic enough time to respond even on slow days).
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 25000);
+    const timeoutId = setTimeout(() => controller.abort(), 9000);
 
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
@@ -273,8 +273,8 @@ ${JSON.stringify(META_STATS, null, 2)}`;
         'anthropic-version': '2023-06-01'
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 2000,
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 1500,
         system: systemPrompt,
         messages: [
           {
