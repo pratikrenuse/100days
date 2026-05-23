@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pratik Renuse, Growth Marketing Leader</title>
-  <meta name="description" content="Growth marketing leader. $32M built for clients across Europe, USA, and Asia. Mentor to 100+ founders through Techstars, EBRD, and the UN.">
+  <meta name="description" content="Growth marketing leader, TEDx speaker, and startup builder. Built three startups from zero, led the #1 STEM Kickstarter, and mentor 100+ founders through Techstars, EBRD, and the UN.">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Google Analytics 4 -->
@@ -210,56 +210,23 @@
 
     /* ── 100 DAYS ───────────────────────────────────────── */
     .hundred { background: var(--ink); color: var(--dark-text); }
-    .hundred-inner { padding: 6rem 4rem; display: grid; grid-template-columns: 1.05fr 1fr; gap: 6rem; align-items: center; }
+    .hundred-inner-single { padding: 6rem 4rem; max-width: 760px; margin: 0 auto; text-align: center; }
+    .hundred-inner-single .lbl { justify-content: center; }
     .hundred .lbl-line { background: var(--gold-mid); }
     .hundred .lbl-text { color: var(--gold-mid); }
     .hundred h2.sec-h { color: #EDE8DF; margin-bottom: 1.25rem; }
     .hundred h2.sec-h span { color: var(--gold-mid); }
-    .hundred-desc { font-size: 1.08rem; color: var(--dark-text); line-height: 1.7; margin-bottom: 2.5rem; max-width: 38rem; font-weight: 400; }
-    .hundred-progress { margin-bottom: 2.5rem; max-width: 38rem; }
-    .hundred-progress-label { display: flex; justify-content: space-between; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-meta); margin-bottom: 0.7rem; font-weight: 500; }
-    .hundred-progress-bar { height: 2px; background: #2A2520; }
-    .hundred-progress-fill { height: 100%; background: var(--gold-mid); width: 1%; transition: width 1s ease; }
-    .hundred-link {
-      display: inline-flex; align-items: center; gap: 0.55rem;
-      color: var(--gold-mid); text-decoration: none;
-      font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase;
-      font-weight: 500;
-      padding-bottom: 0.4rem; border-bottom: 1px solid rgba(184,144,58,0.3);
-      transition: color 0.2s, border-color 0.2s;
+    .hundred-desc { font-size: 1.08rem; color: var(--dark-text); line-height: 1.7; margin: 0 auto 2.5rem; max-width: 38rem; font-weight: 400; }
+    .hundred-cta {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: var(--gold); color: var(--ink); text-decoration: none;
+      padding: 1.05rem 2.4rem;
+      font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase;
+      font-weight: 600; transition: background 0.2s, transform 0.2s;
     }
-    .hundred-link:hover { color: #EDE8DF; border-color: #EDE8DF; }
-    .hundred-link::after { content: '→'; transition: transform 0.2s; }
-    .hundred-link:hover::after { transform: translateX(4px); }
-
-    /* signup box - the primary action on this section */
-    .signup-box { background: #131210; border: 1px solid #2A2520; padding: 2.75rem; }
-    .signup-box-lbl { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
-    .signup-box-lbl-line { width: 1.5rem; height: 1px; background: var(--gold-mid); }
-    .signup-box-lbl-text { font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-mid); font-weight: 500; }
-    .signup-box-title { font-family: var(--serif); font-size: 1.6rem; font-weight: 400; color: #EDE8DF; line-height: 1.25; margin-bottom: 0.85rem; }
-    .signup-box-sub { font-size: 0.98rem; color: var(--dark-text); line-height: 1.6; margin-bottom: 2rem; font-weight: 400; max-width: none; }
-    .signup-form { display: flex; flex-direction: column; gap: 0.85rem; }
-    .signup-input { background: #1C1916; border: 1px solid #2A2520; padding: 1rem 1.15rem; font-size: 1rem; color: #EDE8DF; font-family: var(--sans); font-weight: 400; outline: none; transition: border-color 0.2s; width: 100%; }
-    .signup-input:focus { border-color: var(--gold-mid); }
-    .signup-input::placeholder { color: #6A6058; }
-    .signup-btn {
-      background: var(--gold); color: var(--ink); border: none;
-      padding: 1.05rem 1.5rem; font-size: 0.82rem; letter-spacing: 0.14em;
-      text-transform: uppercase; font-family: var(--sans); cursor: pointer;
-      transition: background 0.2s; font-weight: 600;
-      display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem;
-    }
-    .signup-btn::after { content: '→'; transition: transform 0.2s; }
-    .signup-btn:hover { background: #EDE8DF; }
-    .signup-btn:hover::after { transform: translateX(4px); }
-    .signup-btn:disabled { opacity: 0.6; cursor: not-allowed; }
-    .signup-note { font-size: 0.82rem; color: var(--dark-meta); letter-spacing: 0.04em; margin-top: 0.5rem; font-weight: 400; }
-
-    .signup-success { display: none; padding: 0.5rem 0; }
-    .signup-success-title { font-family: var(--serif); font-size: 1.5rem; color: var(--gold-mid); margin-bottom: 0.75rem; font-weight: 400; }
-    .signup-success-text { font-size: 1rem; color: var(--dark-text); line-height: 1.65; font-weight: 400; max-width: none; }
-    .signup-success-text strong { color: #EDE8DF; font-weight: 500; }
+    .hundred-cta::after { content: '→'; transition: transform 0.2s; }
+    .hundred-cta:hover { background: #EDE8DF; }
+    .hundred-cta:hover::after { transform: translateX(4px); }
 
     /* ── BOOKS ──────────────────────────────────────────── */
     .books-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
@@ -381,8 +348,7 @@
       .about-card { padding: 2rem; }
       .about-photo-wrap img { height: 320px; }
 
-      .hundred-inner { grid-template-columns: 1fr; gap: 3rem; padding: 4.5rem 1.5rem; }
-      .signup-box { padding: 2rem; }
+      .hundred-inner-single { padding: 4rem 1.5rem; }
 
       .books-grid { grid-template-columns: 1fr; gap: 2.25rem; }
       .books-list li { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
@@ -423,16 +389,26 @@
     .cases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
     .case { background: var(--bg); padding: 2.5rem; display: flex; flex-direction: column; transition: background 0.2s; }
     .case:hover { background: var(--surface); }
-    .case-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+    .case-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); gap: 0.75rem; }
     .case-co { font-family: var(--serif); font-size: 1.3rem; font-weight: 500; color: var(--ink); }
-    .case-yr { font-size: 0.82rem; color: var(--ink4); letter-spacing: 0.04em; font-weight: 500; }
-    .case-role { font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; font-weight: 500; }
-    .case-headline { font-family: var(--serif); font-size: 1.25rem; line-height: 1.35; color: var(--ink); margin-bottom: 1.1rem; font-weight: 400; }
+    .case-loc { font-size: 0.82rem; letter-spacing: 0.04em; color: var(--ink4); font-weight: 500; }
+    .case-link {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.82rem; letter-spacing: 0.02em;
+      color: var(--ink4); text-decoration: none;
+      margin-top: 1.25rem; font-weight: 400;
+      transition: color 0.2s;
+      align-self: flex-start;
+    }
+    .case-link::after { content: '↗'; font-size: 0.78rem; opacity: 0.6; transition: opacity 0.2s, transform 0.2s; }
+    .case-link:hover { color: var(--gold); }
+    .case-link:hover::after { opacity: 1; transform: translate(2px, -2px); }
+    .case-headline { font-family: var(--serif); font-size: 1.6rem; line-height: 1.25; color: var(--ink); margin-top: 0.25rem; margin-bottom: 1.25rem; font-weight: 400; letter-spacing: -0.005em; }
     .case-body { font-size: 1rem; color: var(--ink2); line-height: 1.7; margin-bottom: 1.75rem; max-width: none; font-weight: 400; flex: 1; }
     .case-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: auto; }
-    .case-stat { background: var(--bg); padding: 1rem 0.85rem; }
-    .case-stat-val { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; color: var(--gold); line-height: 1; margin-bottom: 0.35rem; }
-    .case-stat-lbl { font-size: 0.72rem; color: var(--ink4); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.3; font-weight: 500; }
+    .case-stat { background: var(--bg); padding: 1.1rem 0.95rem; }
+    .case-stat-val { font-family: var(--serif); font-size: 1.4rem; font-weight: 500; color: var(--gold); line-height: 1; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
+    .case-stat-lbl { font-size: 0.78rem; color: var(--ink4); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.35; font-weight: 500; }
 
     /* ── VIDEO REEL (TEDx) ─────────────────────────────── */
     .video-sec { background: var(--surface); padding: 6rem 4rem; }
@@ -528,12 +504,12 @@
   <div class="hero-left">
     <div class="eyebrow r">
       <div class="eyebrow-line"></div>
-      <div class="eyebrow-text">Growth marketing leader, $32M built</div>
+      <div class="eyebrow-text">Growth Marketing Leader &nbsp;·&nbsp; TEDx Speaker &nbsp;·&nbsp; Startup Builder</div>
     </div>
     <h1 class="name r rd1">Pratik<span>Renuse</span></h1>
     <p class="hero-desc r rd2">
       <strong>I help founders scale from zero to eight figures.</strong>
-      Across Europe, the USA, and Asia, I have generated $32M in client revenue, led the #1 STEM Kickstarter, and mentored 100+ founders through Techstars, EBRD, and the UN. Formerly Airbus and Bayer.
+      Across Europe, the USA, and Asia, I have built three startups from zero, led the #1 STEM Kickstarter, and mentored 100+ founders through Techstars, EBRD, and the UN. Formerly Airbus and Bayer.
     </p>
     <div class="hero-btns r rd2">
       <a href="#contact" class="btn-dark">Start a conversation</a>
@@ -571,7 +547,7 @@
   <div class="results-grid">
     <div class="results-item">
       <div class="results-val">$32<span>M</span></div>
-      <div class="results-lbl">Client revenue<br>generated</div>
+      <div class="results-lbl">Startup revenue<br>generated</div>
     </div>
     <div class="results-item">
       <div class="results-val">100<span>+</span></div>
@@ -602,7 +578,7 @@
       <div>
         <div class="svc-pts">
           <div class="svc-pt">MarketerHire Top 1% globally</div>
-          <div class="svc-pt">$32M in revenue generated for clients across Europe and North America</div>
+          <div class="svc-pt">Three startups built from zero, two to eight-figure outcomes</div>
         </div>
         <div class="svc-quote">
           <div class="svc-qt">"Pratik saved our season. He helped us get our holiday houses fully booked after all the cancellations. A pleasure working with him."</div>
@@ -745,27 +721,28 @@
     <div class="case">
       <div class="case-head">
         <div class="case-co">Bueno</div>
+        <div class="case-loc">Based in Spain</div>
       </div>
-      <div class="case-role">Founding member, growth lead</div>
       <div class="case-headline">Banking built for Europe's foreign property owners.</div>
       <div class="case-body">Owning customer acquisition end to end, from positioning and paid channels to partnerships and lifecycle.</div>
       <div class="case-stats">
         <div class="case-stat">
           <div class="case-stat-val">15K+</div>
-          <div class="case-stat-lbl">Early-access<br>email list</div>
+          <div class="case-stat-lbl">Subscribers</div>
         </div>
         <div class="case-stat">
           <div class="case-stat-val">0 → €M</div>
           <div class="case-stat-lbl">ARR<br>milestone</div>
         </div>
       </div>
+      <a href="https://getbueno.com" target="_blank" rel="noopener" class="case-link">getbueno.com</a>
     </div>
 
     <div class="case">
       <div class="case-head">
         <div class="case-co">Infento</div>
+        <div class="case-loc">Based in the Netherlands</div>
       </div>
-      <div class="case-role">Founding member, growth lead</div>
       <div class="case-headline">From zero to an eight-figure D2C STEM brand.</div>
       <div class="case-body">Built the full online funnel, led the Kickstarter campaign, and ran demand generation across the US and Europe.</div>
       <div class="case-stats">
@@ -778,13 +755,14 @@
           <div class="case-stat-lbl">YoY revenue growth</div>
         </div>
       </div>
+      <a href="https://infento.com" target="_blank" rel="noopener" class="case-link">infento.com</a>
     </div>
 
     <div class="case">
       <div class="case-head">
-        <div class="case-co">VU Switzerland</div>
+        <div class="case-co">VU</div>
+        <div class="case-loc">Based in Switzerland</div>
       </div>
-      <div class="case-role">Founding member, growth lead</div>
       <div class="case-headline">The #1 Swiss ski and snowboard brand.</div>
       <div class="case-body">Launched the brand, built the D2C playbook, and earned adoption from the Swiss Olympic team in 2022, 2023, and 2024.</div>
       <div class="case-stats">
@@ -797,6 +775,7 @@
           <div class="case-stat-lbl">Olympic cycles</div>
         </div>
       </div>
+      <a href="https://vertical-unit.com" target="_blank" rel="noopener" class="case-link">vertical-unit.com</a>
     </div>
 
   </div>
@@ -811,13 +790,10 @@
 
   <div class="about-layout r">
     <div class="about-bio">
-      <p>I work best in the zero-to-one phase, where there's no playbook, no team, no clarity. The job is to find the loop that grows the company and run it until it does. I have done this multiple times across consumer hardware, SaaS, marketplaces, and fintech.</p>
-      <p>My approach is shaped by two things outside the work. Vipassana meditation, which I have practiced and served at silent retreats for years, taught me that most decisions stall because of emotion, not information. And travel across 20+ countries taught me that what works in one market rarely transfers cleanly to the next, so I start every engagement by listening before I plan.</p>
-      <p>I am happy to be reached for serious consulting, advisory, board, and angel work. I respond to every message personally.</p>
-      <div class="about-pull">
-        <div class="about-pull-q">"Simplicity is the ultimate sophistication."</div>
-        <div class="about-pull-by">The lens through which I build, advise, and communicate</div>
-      </div>
+      <p>I thrive in the zero-to-one phase: no playbook, no team, no clarity. The job is to find the loop that grows the company and run it until it does. Building something from nothing is the most fulfilling work I know.</p>
+      <p>Today my attention is on AI: where it changes how marketers operate, how growth loops compound, and where the next generation of products will be built. The same operator instincts that made consumer hardware and fintech work apply here, only faster.</p>
+      <p>Outside the work, I am shaped by a long practice of stillness and travel across many countries. Both taught me to listen before I plan, and to back the people I work with as much as the work itself.</p>
+      <p>If we could create value together, write to me. I read every message personally.</p>
     </div>
     <div class="about-photo-wrap">
       <img src="about.jpg" alt="Pratik kayaking in Amsterdam">
@@ -828,17 +804,17 @@
     <div class="about-card">
       <div class="about-card-icon">— Practice</div>
       <div class="about-card-title">Vipassana Practitioner</div>
-      <p class="about-card-body">I serve and practice 10-day silent meditation courses regularly. A discipline that has shaped how I approach decisions, leadership, and communication. It keeps me grounded in environments that move fast.</p>
+      <p class="about-card-body">I serve and practice 10-day silent meditation courses. The discipline keeps me grounded in environments that move fast.</p>
     </div>
     <div class="about-card">
       <div class="about-card-icon">— Craft</div>
       <div class="about-card-title">Vinnyana Visuals</div>
-      <p class="about-card-body">I turn complex ideas into simple, shareable illustrations. What started as a personal habit, sketching quotes from books, grew into a community of over 10,000 people who share the joy of making ideas visual.</p>
+      <p class="about-card-body">I turn complex ideas into simple illustrations. What started as a personal habit grew into a community of 10,000+ people.</p>
     </div>
     <div class="about-card">
       <div class="about-card-icon">— Journey</div>
       <div class="about-card-title">Traveler</div>
-      <p class="about-card-body">Solo-travelled across 20+ countries. My career has taken me through Amsterdam, Berlin, Geneva, London, and Barcelona, each city leaving its mark on how I think about people, markets, and building things that last.</p>
+      <p class="about-card-body">Solo-travelled across 20+ countries. Lived and worked in Amsterdam, Berlin, Geneva, London, and Barcelona.</p>
     </div>
   </div>
 </section>
@@ -859,67 +835,19 @@
     </div>
     <div>
       <div class="video-frame">
-        <!-- TEDx EMBED: replace VIDEO_ID below with the YouTube ID when ready -->
-        <!-- Example final form: <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Pratik Renuse TEDx talk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <div class="video-frame-placeholder">
-          <div class="video-frame-placeholder-mark">▶</div>
-          <div class="video-frame-placeholder-text">TEDx talk · YouTube embed</div>
-        </div>
+        <iframe src="https://www.youtube.com/embed/kQVNTK8MWZg" title="Pratik Renuse TEDx talk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-    </div>
-  </div>
-
-  <div class="venues r">
-    <div class="venues-lbl">Selected venues</div>
-    <div class="venues-row">
-      <div class="venue-item"><div class="venue-name">TEDx</div><div class="venue-detail">3 talks · Europe</div></div>
-      <div class="venue-item"><div class="venue-name">Asia Pacific Digital Marketing Conclave</div><div class="venue-detail">Keynote speaker</div></div>
-      <div class="venue-item"><div class="venue-name">Russian Stream Conference</div><div class="venue-detail">Featured speaker</div></div>
-      <div class="venue-item"><div class="venue-name">Harvard, Oxford, LSE</div><div class="venue-detail">University guest lectures</div></div>
     </div>
   </div>
 </section>
 
 <!-- 100 DAYS OF BUILDING -->
 <section class="hundred" id="100days">
-  <div class="hundred-inner r">
-    <div>
-      <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Side project</div></div>
-      <h2 class="sec-h">100 Days of <span>Building</span></h2>
-      <p class="hundred-desc">One software product shipped every day for 100 days. No agencies. No polish theatre. Just consistent output, in public. Tools and apps that solve real problems for marketers.</p>
-      <div class="hundred-progress">
-        <div class="hundred-progress-label">
-          <span>Day 1 of 100</span>
-          <span>1% complete</span>
-        </div>
-        <div class="hundred-progress-bar">
-          <div class="hundred-progress-fill" id="progress-fill"></div>
-        </div>
-      </div>
-      <a href="/100days/" class="hundred-link">Browse the 100 projects</a>
-    </div>
-    <div>
-      <div class="signup-box">
-        <div class="signup-box-lbl">
-          <div class="signup-box-lbl-line"></div>
-          <div class="signup-box-lbl-text">Get each build in your inbox</div>
-        </div>
-        <div class="signup-box-title">A new product ships tomorrow.</div>
-        <div class="signup-box-sub">One email each day, the day a product launches. The product, what I learned building it, and what I would do differently. Built for marketers.</div>
-        <div id="signup-form-wrap">
-          <form class="signup-form" onsubmit="handleSignup(event, this)">
-            <input class="signup-input" type="text" name="name" placeholder="Your name" required>
-            <input class="signup-input" type="email" name="email" placeholder="Your email address" required>
-            <button type="submit" class="signup-btn">Send me each day's build</button>
-            <div class="signup-note">No spam. Unsubscribe any time.</div>
-          </form>
-        </div>
-        <div class="signup-success" id="signup-success">
-          <div class="signup-success-title">You're in.</div>
-          <div class="signup-success-text">First build lands in your inbox <strong>tomorrow morning</strong>. Reply to any email and it comes straight to me.</div>
-        </div>
-      </div>
-    </div>
+  <div class="hundred-inner-single r">
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Side project</div></div>
+    <h2 class="sec-h">100 Days of <span>Building</span></h2>
+    <p class="hundred-desc">One software product shipped every day for 100 days. No agencies. No polish theatre. Just consistent output, in public. Tools and apps that solve real problems for marketers.</p>
+    <a href="/100days/" class="hundred-cta">Browse the 100 projects</a>
   </div>
 </section>
 
@@ -1023,16 +951,7 @@
   }, { threshold: 0.06 });
   document.querySelectorAll('.r').forEach(el => obs.observe(el));
 
-  // Progress bar fill on scroll into view
-  const fillEl = document.getElementById('progress-fill');
-  if (fillEl) {
-    const progObs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) fillEl.style.width = '1%'; });
-    }, { threshold: 0.3 });
-    progObs.observe(fillEl.closest('.hundred'));
-  }
-
-  // ─── Supabase signup ───
+  // ─── Supabase ───
   const SUPABASE_URL  = 'https://naqkunidxjpgwanfbbiu.supabase.co';
   const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hcWt1bmlkeGpwZ3dhbmZiYml1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5Mjg1ODEsImV4cCI6MjA5NDUwNDU4MX0.zEypDQmNQGyCcFCjeLMP_Wgbdr3HJJxHXUhqHlMEl9I';
 
@@ -1050,26 +969,6 @@
       });
       return res.status === 201 || res.status === 409;
     } catch { return false; }
-  }
-
-  async function handleSignup(e, form) {
-    e.preventDefault();
-    const btn = form.querySelector('.signup-btn');
-    const orig = btn.textContent;
-    btn.textContent = 'Sending';
-    btn.disabled = true;
-    const email = form.querySelector('[name="email"]').value.trim();
-    const name  = form.querySelector('[name="name"]').value.trim();
-    if (!email.includes('@')) { btn.textContent = 'Check your email'; btn.disabled = false; return; }
-    const ok = await supabaseInsert({ email, name: name || null, source: 'homepage-100days' });
-    if (ok) {
-      document.getElementById('signup-form-wrap').style.display = 'none';
-      document.getElementById('signup-success').style.display = 'block';
-    } else {
-      btn.textContent = 'Try again';
-      btn.disabled = false;
-      setTimeout(() => { btn.textContent = orig; }, 2500);
-    }
   }
 
   // ─── Contact form ───
