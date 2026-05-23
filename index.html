@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pratik Renuse, Growth Marketing Leader</title>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta name="description" content="Growth marketing leader. $32M built for clients across Europe, USA, and Asia. Mentor to 100+ founders through Techstars, EBRD, and the UN.">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+  <!-- Microsoft Clarity -->
+  <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -21,174 +29,318 @@
       --gold:     #8C6A18;
       --gold-bg:  #F0E4C4;
       --gold-mid: #B8903A;
+      --dark-text: #C8C0B8;   /* dark-section body text minimum */
+      --dark-meta: #A89E94;   /* dark-section metadata only */
       --serif:    'IBM Plex Serif', Georgia, serif;
       --sans:     'IBM Plex Sans', system-ui, sans-serif;
-      font-size:  17px;
+      font-size:  18px;        /* readable-web base */
     }
 
     html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--ink2); font-family: var(--sans); font-weight: 300; line-height: 1.7; overflow-x: hidden; }
+    body {
+      background: var(--bg);
+      color: var(--ink2);
+      font-family: var(--sans);
+      font-weight: 400;        /* readable-web: body min weight 400 */
+      line-height: 1.65;       /* readable-web */
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    p { max-width: 65ch; margin: 0 0 1.15rem; }
 
-    /* NAV */
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(246,242,241,0.94); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
-    .nav-logo { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--ink); text-decoration: none; letter-spacing: 0.03em; }
+    /* ── NAV ────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.1rem 4rem;
+      background: rgba(246,242,241,0.94);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--ink); text-decoration: none; letter-spacing: 0.02em; }
     .nav-logo span { color: var(--gold); }
-    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-    .nav-links a { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink3); text-decoration: none; transition: color 0.2s; }
+    .nav-links { display: flex; gap: 0.5rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--ink3); text-decoration: none;
+      padding: 0.85rem 0.85rem;            /* 44px tap target, tighter horizontal */
+      transition: color 0.2s;
+    }
     .nav-links a:hover { color: var(--gold); }
-    .nav-btn { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--bg); background: var(--ink); padding: 0.6rem 1.4rem; text-decoration: none; transition: background 0.2s; font-weight: 400; }
+    .nav-btn {
+      font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--bg); background: var(--ink);
+      padding: 0.75rem 1.4rem; text-decoration: none;
+      transition: background 0.2s; font-weight: 500;
+    }
     .nav-btn:hover { background: var(--gold); }
 
-    /* HERO */
+    /* ── HERO ───────────────────────────────────────────── */
     .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 44%; align-items: end; padding-top: 5rem; padding-left: 4rem; padding-right: 0; overflow: hidden; }
-    .hero-left { padding-bottom: 5.5rem; padding-right: 3rem; }
-    .eyebrow { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 2rem; }
+    .hero-left { padding-bottom: 6rem; padding-right: 3.5rem; }
+
+    .eyebrow { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 2rem; }
     .eyebrow-line { width: 2rem; height: 1px; background: var(--gold); }
-    .eyebrow-text { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+    .eyebrow-text { font-size: 0.82rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+
     h1.name { font-family: var(--serif); font-size: clamp(4rem, 7.5vw, 7rem); font-weight: 300; line-height: 1; letter-spacing: -0.02em; margin-bottom: 1.75rem; color: var(--ink); }
     h1.name span { color: var(--gold); display: block; }
-    .hero-desc { font-size: 1.05rem; color: var(--ink3); line-height: 1.75; max-width: 430px; margin-bottom: 2.5rem; }
-    .hero-btns { display: flex; align-items: center; gap: 2rem; }
-    .btn-dark { display: inline-block; background: var(--ink); color: var(--bg); text-decoration: none; padding: 0.9rem 2.1rem; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 400; transition: background 0.2s; }
-    .btn-dark:hover { background: var(--gold); }
-    .btn-ghost { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink3); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: color 0.2s; }
-    .btn-ghost:hover { color: var(--gold); }
-    .btn-ghost::after { content: '↓'; }
-    .hero-right { display: flex; align-items: flex-end; height: 100vh; position: relative; margin-right: 0; }
-    .hero-photo { width: 100%; height: 100vh; object-fit: cover; object-position: center 8%; display: block; filter: grayscale(15%); }
-    .hero-badge { position: absolute; bottom: 3.5rem; left: -2rem; background: var(--ink); color: var(--bg); padding: 1rem 1.25rem; min-width: 175px; }
-    .hero-badge-val { font-family: var(--serif); font-size: 1.5rem; font-weight: 300; color: var(--gold-mid); line-height: 1; margin-bottom: 0.3rem; }
-    .hero-badge-lbl { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink4); line-height: 1.45; }
 
-    /* LOGOS */
+    .hero-desc {
+      font-size: 1.1rem; color: var(--ink2); line-height: 1.7;
+      max-width: 38rem; margin-bottom: 2.5rem; font-weight: 400;
+    }
+    .hero-desc strong { font-weight: 500; color: var(--ink); }
+
+    .hero-btns { display: flex; align-items: center; gap: 2.5rem; }
+
+    .btn-dark {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: var(--ink); color: var(--bg); text-decoration: none;
+      padding: 1rem 2.2rem;             /* 48px tap target */
+      font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase;
+      font-weight: 500; transition: background 0.2s, transform 0.2s;
+    }
+    .btn-dark::after { content: '→'; transition: transform 0.2s; }
+    .btn-dark:hover { background: var(--gold); }
+    .btn-dark:hover::after { transform: translateX(4px); }
+
+    .btn-ghost {
+      font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--ink4); text-decoration: none;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.85rem 0;                /* tap target via height */
+      transition: color 0.2s;
+    }
+    .btn-ghost::after { content: '↓'; transition: transform 0.2s; }
+    .btn-ghost:hover { color: var(--gold); }
+    .btn-ghost:hover::after { transform: translateY(2px); }
+
+    .hero-right { display: flex; align-items: flex-end; height: 100vh; position: relative; }
+    .hero-photo { width: 100%; height: 100vh; object-fit: cover; object-position: center 8%; display: block; filter: grayscale(15%); }
+    .hero-badge {
+      position: absolute; bottom: 3.5rem; left: -2rem;
+      background: var(--bg); color: var(--ink);
+      padding: 1.25rem 1.5rem; min-width: 210px;
+      border-top: 2px solid var(--gold);
+      box-shadow: 0 1px 0 var(--border), 0 20px 40px -20px rgba(26,21,18,0.25);
+    }
+    .hero-badge-val { font-family: var(--serif); font-size: 1.65rem; font-weight: 400; color: var(--gold); line-height: 1; margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+    .hero-badge-lbl { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); line-height: 1.5; font-weight: 500; }
+
+    /* ── LOGOS ──────────────────────────────────────────── */
     .logos { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1.75rem 4rem; background: var(--surface); }
     .logos-row { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
     .logo-item { display: flex; align-items: center; justify-content: center; padding: 0.6rem 2rem; border-right: 1px solid var(--border); }
     .logo-item:last-child { border-right: none; }
-    .logo-item img { height: 18px; width: auto; filter: grayscale(100%); opacity: 0.38; transition: opacity 0.2s; object-fit: contain; }
-    .logo-item:hover img { opacity: 0.65; }
-    .logo-txt { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink4); font-weight: 400; }
-    .logo-item:hover .logo-txt { color: var(--ink3); }
+    .logo-item img { height: 20px; width: auto; filter: grayscale(100%); opacity: 0.42; transition: opacity 0.2s; object-fit: contain; }
+    .logo-item:hover img { opacity: 0.7; }
+    .logo-txt { font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); font-weight: 500; }
 
-    /* SECTION PRIMITIVES */
-    .sec { padding: 5.5rem 4rem; }
+    /* ── SECTION PRIMITIVES ─────────────────────────────── */
+    .sec { padding: 6rem 4rem; }
     .sec-alt { background: var(--surface); }
-    .lbl { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; }
-    .lbl-line { width: 1.75rem; height: 1px; background: var(--gold); }
-    .lbl-text { font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
-    h2.sec-h { font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.9rem); font-weight: 300; line-height: 1.15; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 3rem; }
+    .lbl { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.75rem; }
+    .lbl-line { width: 2rem; height: 1px; background: var(--gold); }
+    .lbl-text { font-size: 0.82rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+    h2.sec-h { font-family: var(--serif); font-size: clamp(2rem, 3vw, 2.9rem); font-weight: 300; line-height: 1.15; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 3rem; }
     h2.sec-h span { color: var(--gold); }
 
-    /* SERVICES */
-    .svc { display: grid; grid-template-columns: 64px 210px 1fr; gap: 2.5rem; padding: 2.75rem 0; border-top: 1px solid var(--border); align-items: start; }
+    /* ── SERVICES ───────────────────────────────────────── */
+    .svc { display: grid; grid-template-columns: 64px 220px 1fr; gap: 2.5rem; padding: 2.75rem 0; border-top: 1px solid var(--border); align-items: start; }
     .svc:last-child { border-bottom: 1px solid var(--border); }
-    .svc-num { font-family: var(--serif); font-size: 0.82rem; color: var(--ink4); letter-spacing: 0.08em; padding-top: 0.25rem; }
-    .svc-name { font-family: var(--serif); font-size: 1.55rem; font-weight: 400; color: var(--ink); line-height: 1.2; }
-    .svc-pts { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.5rem; }
-    .svc-pt { font-size: 0.92rem; color: var(--ink2); display: flex; align-items: flex-start; gap: 0.65rem; line-height: 1.5; }
-    .svc-pt::before { content: '—'; color: var(--gold); font-size: 0.8rem; flex-shrink: 0; margin-top: 0.18rem; }
-    .svc-quote { padding: 1.3rem 1.5rem; border-left: 2px solid var(--gold); background: var(--bg); }
-    .svc-qt { font-family: var(--serif); font-size: 0.98rem; color: var(--ink2); line-height: 1.72; }
-    .svc-by { margin-top: 0.75rem; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); display: flex; align-items: center; gap: 0.6rem; }
+    .svc-num { font-family: var(--serif); font-size: 0.95rem; color: var(--ink4); letter-spacing: 0.06em; padding-top: 0.3rem; font-weight: 400; }
+    .svc-name { font-family: var(--serif); font-size: 1.65rem; font-weight: 400; color: var(--ink); line-height: 1.2; }
+    .svc-pts { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 1.5rem; }
+    .svc-pt {
+      font-size: 1rem; color: var(--ink2); display: flex; align-items: flex-start;
+      gap: 0.7rem; line-height: 1.55; font-weight: 400;
+    }
+    .svc-pt::before { content: ''; display: block; width: 0.7rem; height: 1px; background: var(--gold); flex-shrink: 0; margin-top: 0.75rem; }
+    .svc-quote { padding: 1.4rem 1.6rem; border-left: 2px solid var(--gold); background: var(--bg); }
+    .svc-qt { font-family: var(--serif); font-size: 1.02rem; color: var(--ink2); line-height: 1.7; font-weight: 400; }
+    .svc-by { margin-top: 0.85rem; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink3); display: flex; align-items: center; gap: 0.6rem; font-weight: 500; }
     .svc-by::before { content: ''; display: block; width: 1.25rem; height: 1px; background: var(--border2); flex-shrink: 0; }
-    .invest-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
-    .invest-pill { font-size: 0.78rem; color: var(--ink2); background: var(--raised); border: 1px solid var(--border); padding: 0.35rem 0.9rem; display: flex; align-items: center; gap: 0.45rem; transition: border-color 0.2s; }
-    .invest-pill:hover { border-color: var(--gold); }
-    .invest-pill img { height: 13px; width: auto; object-fit: contain; filter: grayscale(100%); opacity: 0.45; }
 
-    /* TESTIMONIALS SCROLL */
-    .testi-scroll { overflow: hidden; padding: 3rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--raised); }
+    /* ── TESTIMONIALS SCROLL ────────────────────────────── */
+    .testi-label-wrap { background: var(--raised); border-top: 1px solid var(--border); padding: 2.75rem 4rem 0; text-align: center; }
+    .testi-label-row { display: flex; align-items: center; justify-content: center; gap: 0.85rem; }
+    .testi-label-row .lbl-text { font-weight: 500; }
+
+    .testi-scroll { overflow: hidden; padding: 3rem 0; border-bottom: 1px solid var(--border); background: var(--raised); }
     .testi-track { display: flex; gap: 1.5rem; animation: tscroll 55s linear infinite; width: max-content; padding: 0 1.5rem; }
     .testi-track:hover { animation-play-state: paused; }
     @keyframes tscroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-    .testi-card { width: 340px; flex-shrink: 0; background: var(--bg); border: 1px solid var(--border); padding: 1.75rem; }
+    .testi-card { width: 360px; flex-shrink: 0; background: var(--bg); border: 1px solid var(--border); padding: 2rem; }
     .testi-mark { font-family: var(--serif); font-size: 3rem; font-weight: 300; color: var(--gold-mid); line-height: 0.9; margin-bottom: 0.9rem; opacity: 0.5; }
-    .testi-text { font-family: var(--serif); font-size: 0.92rem; color: var(--ink2); line-height: 1.7; }
-    .testi-foot { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); }
-    .testi-name { font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink); }
-    .testi-role { font-size: 0.7rem; color: var(--ink4); margin-top: 0.15rem; }
+    .testi-text { font-family: var(--serif); font-size: 0.98rem; color: var(--ink2); line-height: 1.7; font-weight: 400; }
+    .testi-text strong {
+      color: var(--ink);
+      font-weight: 500;
+      background-image: linear-gradient(180deg, transparent 65%, var(--gold-bg) 65%, var(--gold-bg) 95%, transparent 95%);
+      background-repeat: no-repeat;
+      padding: 0 0.08em;
+    }
+    .testi-foot { margin-top: 1.4rem; padding-top: 1.1rem; border-top: 1px solid var(--border); }
+    .testi-name { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; color: var(--ink); }
+    .testi-role { font-size: 0.82rem; color: var(--ink4); margin-top: 0.2rem; font-weight: 400; }
 
-    /* PHILOSOPHY */
-    .philosophy { padding: 6.5rem 4rem; text-align: center; position: relative; overflow: hidden; background: var(--ink); }
-    .philosophy::before { content: '\201C'; position: absolute; top: -5rem; left: 50%; transform: translateX(-50%); font-family: var(--serif); font-size: 22rem; font-weight: 300; color: rgba(255,255,255,0.04); line-height: 1; pointer-events: none; }
-    .philosophy blockquote { font-family: var(--serif); font-size: clamp(1.55rem, 2.8vw, 2.5rem); font-weight: 300; color: #EDE8DF; line-height: 1.45; max-width: 740px; margin: 0 auto 1.5rem; position: relative; z-index: 1; }
-    .philosophy cite { font-size: 0.68rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold-mid); font-style: normal; position: relative; z-index: 1; }
+    /* ── PHILOSOPHY ─────────────────────────────────────── */
+    .philosophy { padding: 7rem 4rem; text-align: center; position: relative; overflow: hidden; background: var(--ink); }
+    .philosophy::before { content: '\201C'; position: absolute; top: -5rem; left: 50%; transform: translateX(-50%); font-family: var(--serif); font-size: 22rem; font-weight: 300; color: rgba(255,255,255,0.035); line-height: 1; pointer-events: none; }
+    .philosophy blockquote { font-family: var(--serif); font-size: clamp(1.6rem, 2.6vw, 2.4rem); font-weight: 300; color: #EDE8DF; line-height: 1.45; max-width: 740px; margin: 0 auto 1.75rem; position: relative; z-index: 1; }
+    .philosophy cite { font-size: 0.82rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-mid); font-style: normal; position: relative; z-index: 1; font-weight: 500; }
 
-    /* ABOUT (merged) */
+    /* ── ABOUT ──────────────────────────────────────────── */
     .about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-bottom: 4rem; }
-    .about-bio p { font-size: 0.98rem; color: var(--ink2); line-height: 1.88; margin-bottom: 1.25rem; }
-    .about-bio p:last-child { margin-bottom: 0; }
-    .about-photo-wrap { margin-top: 2rem; }
-    .about-photo-wrap img { width: 100%; height: 320px; object-fit: cover; object-position: center top; filter: grayscale(15%); display: block; }
-    .about-photo-placeholder { width: 100%; height: 260px; background: var(--raised); border: 1px dashed var(--border2); display: flex; align-items: center; justify-content: center; }
-    .about-photo-placeholder span { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink4); }
-    .about-right-pull { padding: 2rem; background: var(--raised); border-left: 3px solid var(--gold); margin-bottom: 2.5rem; }
-    .about-right-pull p { font-family: var(--serif); font-size: 1.05rem; color: var(--ink); line-height: 1.6; margin-bottom: 0.75rem; }
-    .about-right-pull span { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink3); }
-    .about-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); }
-    .about-card { padding: 2.25rem; border-right: 1px solid var(--border); }
-    .about-card:last-child { border-right: none; }
-    .about-card-icon { font-size: 1.4rem; margin-bottom: 1rem; }
-    .about-card-title { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; color: var(--ink); margin-bottom: 0.7rem; line-height: 1.2; }
-    .about-card-body { font-size: 0.88rem; color: var(--ink3); line-height: 1.75; }
-    .about-card-link { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.9rem; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-bg); padding-bottom: 0.1rem; transition: border-color 0.2s; }
-    .about-card-link:hover { border-color: var(--gold); }
-    .about-card-link::after { content: '↗'; }
+    .about-bio p { font-size: 1.08rem; color: var(--ink2); line-height: 1.75; margin-bottom: 1.25rem; max-width: 38rem; font-weight: 400; }
+    .about-bio p:last-of-type { margin-bottom: 0; }
+    .about-photo-wrap img { width: 100%; height: 420px; object-fit: cover; object-position: center 40%; filter: grayscale(8%); display: block; }
+    .about-pull { margin-top: 1.75rem; padding: 1.75rem; background: var(--raised); border-left: 3px solid var(--gold); }
+    .about-pull-q { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); line-height: 1.55; margin-bottom: 0.65rem; font-weight: 400; max-width: none; }
+    .about-pull-by { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); font-weight: 500; }
 
-    /* BOOKS */
+    .about-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .about-card { padding: 2.5rem; background: var(--bg); transition: background 0.2s; }
+    .about-card:hover { background: var(--surface); }
+    .about-card-icon { font-family: var(--serif); font-size: 0.85rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; font-weight: 500; }
+    .about-card-title { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; color: var(--ink); margin-bottom: 0.85rem; line-height: 1.25; }
+    .about-card-body { font-size: 1rem; color: var(--ink2); line-height: 1.7; font-weight: 400; max-width: none; margin: 0; }
+
+    /* ── 100 DAYS ───────────────────────────────────────── */
+    .hundred { background: var(--ink); color: var(--dark-text); }
+    .hundred-inner { padding: 6rem 4rem; display: grid; grid-template-columns: 1.05fr 1fr; gap: 6rem; align-items: center; }
+    .hundred .lbl-line { background: var(--gold-mid); }
+    .hundred .lbl-text { color: var(--gold-mid); }
+    .hundred h2.sec-h { color: #EDE8DF; margin-bottom: 1.25rem; }
+    .hundred h2.sec-h span { color: var(--gold-mid); }
+    .hundred-desc { font-size: 1.08rem; color: var(--dark-text); line-height: 1.7; margin-bottom: 2.5rem; max-width: 38rem; font-weight: 400; }
+    .hundred-progress { margin-bottom: 2.5rem; max-width: 38rem; }
+    .hundred-progress-label { display: flex; justify-content: space-between; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-meta); margin-bottom: 0.7rem; font-weight: 500; }
+    .hundred-progress-bar { height: 2px; background: #2A2520; }
+    .hundred-progress-fill { height: 100%; background: var(--gold-mid); width: 1%; transition: width 1s ease; }
+    .hundred-link {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      color: var(--gold-mid); text-decoration: none;
+      font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase;
+      font-weight: 500;
+      padding-bottom: 0.4rem; border-bottom: 1px solid rgba(184,144,58,0.3);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .hundred-link:hover { color: #EDE8DF; border-color: #EDE8DF; }
+    .hundred-link::after { content: '→'; transition: transform 0.2s; }
+    .hundred-link:hover::after { transform: translateX(4px); }
+
+    /* signup box - the primary action on this section */
+    .signup-box { background: #131210; border: 1px solid #2A2520; padding: 2.75rem; }
+    .signup-box-lbl { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
+    .signup-box-lbl-line { width: 1.5rem; height: 1px; background: var(--gold-mid); }
+    .signup-box-lbl-text { font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-mid); font-weight: 500; }
+    .signup-box-title { font-family: var(--serif); font-size: 1.6rem; font-weight: 400; color: #EDE8DF; line-height: 1.25; margin-bottom: 0.85rem; }
+    .signup-box-sub { font-size: 0.98rem; color: var(--dark-text); line-height: 1.6; margin-bottom: 2rem; font-weight: 400; max-width: none; }
+    .signup-form { display: flex; flex-direction: column; gap: 0.85rem; }
+    .signup-input { background: #1C1916; border: 1px solid #2A2520; padding: 1rem 1.15rem; font-size: 1rem; color: #EDE8DF; font-family: var(--sans); font-weight: 400; outline: none; transition: border-color 0.2s; width: 100%; }
+    .signup-input:focus { border-color: var(--gold-mid); }
+    .signup-input::placeholder { color: #6A6058; }
+    .signup-btn {
+      background: var(--gold); color: var(--ink); border: none;
+      padding: 1.05rem 1.5rem; font-size: 0.82rem; letter-spacing: 0.14em;
+      text-transform: uppercase; font-family: var(--sans); cursor: pointer;
+      transition: background 0.2s; font-weight: 600;
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem;
+    }
+    .signup-btn::after { content: '→'; transition: transform 0.2s; }
+    .signup-btn:hover { background: #EDE8DF; }
+    .signup-btn:hover::after { transform: translateX(4px); }
+    .signup-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    .signup-note { font-size: 0.82rem; color: var(--dark-meta); letter-spacing: 0.04em; margin-top: 0.5rem; font-weight: 400; }
+
+    .signup-success { display: none; padding: 0.5rem 0; }
+    .signup-success-title { font-family: var(--serif); font-size: 1.5rem; color: var(--gold-mid); margin-bottom: 0.75rem; font-weight: 400; }
+    .signup-success-text { font-size: 1rem; color: var(--dark-text); line-height: 1.65; font-weight: 400; max-width: none; }
+    .signup-success-text strong { color: #EDE8DF; font-weight: 500; }
+
+    /* ── BOOKS ──────────────────────────────────────────── */
     .books-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
-    .books-cat { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
-    .books-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
-    .books-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; padding: 0.55rem 0; border-bottom: 1px solid var(--surface); }
+    .books-cat { font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; padding-bottom: 0.85rem; border-bottom: 1px solid var(--border); font-weight: 500; }
+    .books-list { list-style: none; display: flex; flex-direction: column; }
+    .books-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 0.9rem; padding: 0.7rem 0; border-bottom: 1px solid var(--surface); }
     .books-list li:last-child { border-bottom: none; }
-    .bl-title { font-family: var(--serif); font-size: 0.92rem; font-weight: 400; color: var(--ink); flex: 1; line-height: 1.3; }
-    .bl-auth { font-size: 0.7rem; color: var(--ink4); white-space: nowrap; flex-shrink: 0; }
+    .bl-title { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--ink); flex: 1; line-height: 1.35; }
+    .bl-auth { font-size: 0.85rem; color: var(--ink4); white-space: nowrap; flex-shrink: 0; font-weight: 400; }
 
-    /* CONTACT */
+    /* ── CONTACT ────────────────────────────────────────── */
+    .cf-intro { max-width: 680px; margin: 0 auto 3rem; text-align: center; }
+    .cf-intro .lbl { justify-content: center; }
+    .cf-intro h2.sec-h { margin-bottom: 1.25rem; }
+    .cf-intro p { font-size: 1.08rem; color: var(--ink2); line-height: 1.7; margin: 0 auto; max-width: 38rem; font-weight: 400; }
+
     .cf-wrap { max-width: 680px; margin: 0 auto; }
-    .cf-form { display: flex; flex-direction: column; gap: 1rem; }
-    .cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .cf-label { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink3); display: block; margin-bottom: 0.35rem; }
-    .cf-input, .cf-select, .cf-textarea { width: 100%; background: var(--bg); border: 1px solid var(--border); padding: 0.8rem 1rem; font-size: 0.9rem; color: var(--ink); font-family: var(--sans); font-weight: 300; outline: none; transition: border-color 0.2s; }
+    .cf-form { display: flex; flex-direction: column; gap: 1.25rem; }
+    .cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .cf-label { font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); display: block; margin-bottom: 0.4rem; font-weight: 500; }
+    .cf-input, .cf-select, .cf-textarea {
+      width: 100%; background: var(--bg); border: 1px solid var(--border);
+      padding: 0.95rem 1.1rem; font-size: 1rem; color: var(--ink);
+      font-family: var(--sans); font-weight: 400; outline: none;
+      transition: border-color 0.2s;
+    }
+    .cf-input::placeholder, .cf-textarea::placeholder { color: var(--ink4); }
     .cf-input:focus, .cf-select:focus, .cf-textarea:focus { border-color: var(--gold); }
-    .cf-textarea { resize: vertical; min-height: 90px; }
-    .cf-select { appearance: none; cursor: pointer; }
-    .cf-submit { background: var(--ink); color: var(--bg); border: none; padding: 0.85rem 2.25rem; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--sans); cursor: pointer; transition: background 0.2s; margin-top: 0.25rem; }
+    .cf-input.error, .cf-select.error, .cf-textarea.error { border-color: #B85C3A; }
+    .cf-err { font-size: 0.85rem; color: #B85C3A; margin-top: 0.4rem; display: none; }
+    .cf-err.show { display: block; }
+    .cf-textarea { resize: vertical; min-height: 120px; }
+    .cf-select { appearance: none; cursor: pointer; background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23786E66' d='M6 8L0 0h12z'/%3e%3c/svg%3e"); background-repeat: no-repeat; background-position: right 1.1rem center; padding-right: 2.5rem; }
+    .cf-submit {
+      background: var(--ink); color: var(--bg); border: none;
+      padding: 1.05rem 2.25rem; font-size: 0.82rem; letter-spacing: 0.14em;
+      text-transform: uppercase; font-family: var(--sans); cursor: pointer;
+      transition: background 0.2s; margin-top: 0.5rem; font-weight: 500;
+      align-self: flex-start;
+      display: inline-flex; align-items: center; gap: 0.6rem;
+    }
+    .cf-submit::after { content: '→'; transition: transform 0.2s; }
     .cf-submit:hover { background: var(--gold); }
-    .cf-alts { display: flex; gap: 1.5rem; margin-top: 1.5rem; justify-content: center; }
-    .cf-alt-link { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; font-size: 0.8rem; color: var(--ink3); transition: color 0.2s; }
-    .cf-alt-link:hover { color: var(--gold); }
-    .cf-alt-icon { width: 1.75rem; height: 1.75rem; background: var(--raised); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 0.65rem; color: var(--gold); font-family: var(--serif); flex-shrink: 0; }
+    .cf-submit:hover::after { transform: translateX(4px); }
 
-    /* FOOTER */
-    footer { padding: 1.25rem 4rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink4); background: var(--surface); }
-    footer a { color: var(--ink4); text-decoration: none; transition: color 0.2s; }
+    .cf-success { display: none; padding: 2.5rem; background: var(--surface); border-left: 3px solid var(--gold); text-align: left; }
+    .cf-success-title { font-family: var(--serif); font-size: 1.65rem; color: var(--ink); margin-bottom: 1rem; font-weight: 400; }
+    .cf-success-text { font-size: 1.08rem; color: var(--ink2); line-height: 1.65; margin-bottom: 1.25rem; font-weight: 400; max-width: 38rem; }
+    .cf-success-sig { font-family: var(--serif); font-size: 1rem; color: var(--ink3); font-style: italic; font-weight: 400; }
+
+    /* ── FOOTER ─────────────────────────────────────────── */
+    footer {
+      padding: 1.5rem 4rem; border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.82rem; color: var(--ink4); background: var(--surface);
+      font-weight: 400;
+    }
+    footer .foot-tag { font-family: var(--serif); font-style: italic; max-width: 50ch; }
+    footer a { color: var(--ink3); text-decoration: none; transition: color 0.2s; padding: 0.5rem 0; font-weight: 500; letter-spacing: 0.04em; }
     footer a:hover { color: var(--gold); }
 
-    /* REVEAL */
+    /* ── REVEAL ─────────────────────────────────────────── */
     .r { opacity: 0; transform: translateY(20px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
     .r.on { opacity: 1; transform: none; }
     .rd1 { transition-delay: 0.1s; }
     .rd2 { transition-delay: 0.2s; }
 
-    /* RESPONSIVE */
+    /* ── RESPONSIVE ─────────────────────────────────────── */
     @media (max-width: 1100px) {
       .svc { grid-template-columns: 52px 1fr; }
       .about-cards { grid-template-columns: 1fr; }
-      .about-card { border-right: none; border-bottom: 1px solid var(--border); }
-      .about-card:last-child { border-bottom: none; }
       .books-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
     }
 
     @media (max-width: 960px) {
-      :root { font-size: 15px; }
+      :root { font-size: 17px; }   /* still above readable-web min */
 
-      /* NAV */
-      nav { padding: 1rem 1.5rem; gap: 0.75rem; }
+      nav { padding: 1rem 1.25rem; gap: 0.5rem; }
       .nav-links { display: none; }
-      .nav-btn { font-size: 0.6rem; padding: 0.5rem 0.9rem; letter-spacing: 0.08em; white-space: nowrap; }
+      .nav-btn { font-size: 0.7rem; padding: 0.65rem 1rem; letter-spacing: 0.1em; white-space: nowrap; }
 
-      /* HERO — show image below text on mobile */
       .hero {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
@@ -196,146 +348,165 @@
         min-height: auto;
         align-items: start;
       }
-      .hero-left {
-        padding: 2.5rem 1.5rem 2rem;
-        padding-right: 1.5rem;
-        order: 1;
-      }
-      .hero-right {
-        display: block;
-        height: 60vw;
-        min-height: 260px;
-        max-height: 400px;
-        width: 100%;
-        position: relative;
-        order: 2;
-      }
-      .hero-photo {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center 12%;
-      }
+      .hero-left { padding: 2.5rem 1.5rem 2.5rem; order: 1; }
+      .hero-right { display: block; height: 60vw; min-height: 280px; max-height: 420px; width: 100%; position: relative; order: 2; }
+      .hero-photo { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; }
       .hero-badge { display: none; }
-      h1.name { font-size: clamp(2.8rem, 9vw, 4.2rem); margin-bottom: 1.25rem; }
-      .hero-desc { font-size: 0.92rem; max-width: 100%; margin-bottom: 2rem; }
+      h1.name { font-size: clamp(2.9rem, 9vw, 4.2rem); margin-bottom: 1.25rem; }
+      .hero-desc { font-size: 1.02rem; max-width: 100%; margin-bottom: 2rem; }
       .eyebrow { margin-bottom: 1.5rem; }
+      .hero-btns { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+      .btn-dark { width: 100%; justify-content: center; }
 
-      /* SECTIONS */
-      .sec { padding: 3.5rem 1.5rem; }
+      .sec { padding: 4rem 1.5rem; }
       .logos { padding: 1.25rem 0; overflow-x: auto; }
       .logos-row { flex-wrap: nowrap; padding: 0 1.5rem; gap: 0; min-width: max-content; }
-      .logo-item { border-right: 1px solid var(--border); padding: 0.5rem 1.25rem; flex-shrink: 0; }
-      .logo-item:last-child { border-right: none; }
+      .logo-item { padding: 0.5rem 1.25rem; flex-shrink: 0; }
 
-      /* SERVICES */
-      .svc { grid-template-columns: 1fr; gap: 0.5rem; padding: 2rem 0; }
+      .svc { grid-template-columns: 1fr; gap: 0.75rem; padding: 2.25rem 0; }
       .svc-num { display: none; }
-      .svc-name { font-size: 1.25rem; }
-      .svc-pts { margin-bottom: 1rem; }
-      .svc-pt { font-size: 0.88rem; }
-      .svc-quote { padding: 1rem 1.1rem; }
-      .svc-qt { font-size: 0.9rem; }
+      .svc-name { font-size: 1.35rem; }
+      .svc-pts { margin-bottom: 1.25rem; }
+      .svc-pt { font-size: 0.98rem; }
 
-      /* TESTIMONIALS LABEL */
-      .testi-label-wrap { padding: 2rem 1.5rem 0 !important; }
-      .testi-card { width: 280px; padding: 1.5rem; }
-      .testi-text { font-size: 0.88rem; }
+      .testi-label-wrap { padding: 2rem 1.5rem 0; }
+      .testi-card { width: 290px; padding: 1.65rem; }
 
-      /* PHILOSOPHY */
-      .philosophy { padding: 4rem 1.5rem; }
-      .philosophy::before { font-size: 12rem; top: -2rem; }
-      .philosophy blockquote { font-size: 1.3rem; }
+      .philosophy { padding: 4.5rem 1.5rem; }
+      .philosophy::before { font-size: 13rem; top: -2.5rem; }
+      .philosophy blockquote { font-size: 1.35rem; }
 
-      /* ABOUT */
-      .about-layout { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2.5rem; }
+      .about-layout { grid-template-columns: 1fr; gap: 2.5rem; margin-bottom: 3rem; }
       .about-cards { grid-template-columns: 1fr; }
-      .about-card { padding: 1.75rem; }
-      .about-photo-wrap { margin-top: 1.5rem; }
-      .about-photo-wrap img { height: 260px !important; }
+      .about-card { padding: 2rem; }
+      .about-photo-wrap img { height: 320px; }
 
-      /* BOOKS */
-      .books-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .books-list li { flex-direction: column; align-items: flex-start; gap: 0.15rem; }
+      .hundred-inner { grid-template-columns: 1fr; gap: 3rem; padding: 4.5rem 1.5rem; }
+      .signup-box { padding: 2rem; }
+
+      .books-grid { grid-template-columns: 1fr; gap: 2.25rem; }
+      .books-list li { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
       .bl-auth { white-space: normal; }
 
-      /* CONTACT */
       .cf-row { grid-template-columns: 1fr; }
-      .cf-wrap { max-width: 100%; padding: 0; }
-      .cf-submit { width: 100%; }
+      .cf-wrap { padding: 0; }
+      .cf-submit { width: 100%; justify-content: center; }
+      .cf-intro { margin-bottom: 2.5rem; }
 
-      /* FOOTER */
-      footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.25rem 1.5rem; }
+      footer { flex-direction: column; gap: 0.85rem; text-align: center; padding: 1.5rem; }
+      footer .foot-tag { font-size: 0.9rem; }
 
-      /* MISC */
       .lbl { flex-wrap: wrap; }
     }
 
     @media (max-width: 480px) {
-      :root { font-size: 14px; }
-      h1.name { font-size: 2.6rem; }
-      .hero-btns { flex-direction: column; align-items: flex-start; gap: 0.85rem; }
-      .eyebrow-text { font-size: 0.58rem; letter-spacing: 0.14em; }
-      .hero-right { height: 70vw; min-height: 220px; }
-      .testi-track { animation-duration: 40s; }
-      .books-grid { grid-template-columns: 1fr; }
-      .svc-quote { padding: 0.9rem 1rem; }
+      :root { font-size: 16px; }   /* readable-web mobile floor */
+      h1.name { font-size: 2.7rem; }
+      .testi-track { animation-duration: 45s; }
     }
 
-    /* 100 DAYS SECTION */
-    .hundred { background: var(--ink); color: #EDE8DF; }
-    .hundred-inner { padding: 5.5rem 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
-    .hundred .lbl-line { background: var(--gold-mid); }
-    .hundred .lbl-text { color: var(--gold-mid); }
-    .hundred h2.sec-h { color: #EDE8DF; margin-bottom: 1rem; }
-    .hundred-desc { font-size: 0.98rem; color: #9A9088; line-height: 1.85; margin-bottom: 2rem; }
-    .hundred-progress { margin-bottom: 2rem; }
-    .hundred-progress-label { display: flex; justify-content: space-between; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: #6A6058; margin-bottom: 0.6rem; }
-    .hundred-progress-bar { height: 2px; background: #2A2520; }
-    .hundred-progress-fill { height: 100%; background: var(--gold-mid); width: 1%; transition: width 1s ease; }
-    .hundred-cta { display: inline-flex; align-items: center; gap: 0.75rem; background: var(--gold); color: var(--ink); text-decoration: none; padding: 0.9rem 2rem; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 400; transition: background 0.2s; }
-    .hundred-cta:hover { background: #EDE8DF; }
-    .hundred-right {}
-    .signup-box { background: #131210; border: 1px solid #2A2520; padding: 2.5rem; }
-    .signup-box-title { font-family: var(--serif); font-size: 1.25rem; font-weight: 300; color: #EDE8DF; margin-bottom: 0.5rem; }
-    .signup-box-sub { font-size: 0.82rem; color: #6A6058; line-height: 1.65; margin-bottom: 1.75rem; }
-    .signup-form { display: flex; flex-direction: column; gap: 0.75rem; }
-    .signup-input { background: #1C1916; border: 1px solid #2A2520; padding: 0.8rem 1rem; font-size: 0.9rem; color: #EDE8DF; font-family: var(--sans); font-weight: 300; outline: none; transition: border-color 0.2s; width: 100%; }
-    .signup-input:focus { border-color: var(--gold); }
-    .signup-input::placeholder { color: #4A4440; }
-    .signup-btn { background: var(--gold); color: var(--ink); border: none; padding: 0.85rem; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; font-family: var(--sans); cursor: pointer; transition: background 0.2s; font-weight: 400; }
-    .signup-btn:hover { background: #EDE8DF; }
-    .signup-note { font-size: 0.65rem; color: #4A4440; letter-spacing: 0.06em; }
-    .signup-success { display: none; text-align: center; padding: 1.5rem; }
-    .signup-success-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
-    .signup-success-text { font-family: var(--serif); font-size: 1rem; color: var(--gold-mid); }
+    /* ── RESULTS SECTION ────────────────────────────────── */
+    .results-sec { padding: 5rem 4rem 5.5rem; background: var(--bg); }
+    .results-head { margin-bottom: 3.5rem; }
+    .results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; max-width: 1200px; }
+    .results-item { padding: 0.5rem 2rem 0.5rem 0; border-right: 1px solid var(--border); }
+    .results-item:last-child { border-right: none; padding-right: 0; }
+    .results-item:not(:first-child) { padding-left: 2rem; }
+    .results-val { font-family: var(--serif); font-size: clamp(2.25rem, 3.5vw, 3.25rem); font-weight: 300; color: var(--ink); line-height: 1; margin-bottom: 0.85rem; letter-spacing: -0.02em; }
+    .results-val span { color: var(--gold); }
+    .results-lbl { font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink3); font-weight: 500; line-height: 1.45; }
+
+    /* ── CASE STUDIES ──────────────────────────────────── */
+    .cases-intro { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; gap: 2rem; flex-wrap: wrap; }
+    .cases-intro h2 { margin-bottom: 0; }
+    .cases-intro-sub { font-size: 1.05rem; color: var(--ink3); max-width: 36ch; font-weight: 400; line-height: 1.55; margin: 0; }
+    .cases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .case { background: var(--bg); padding: 2.5rem; display: flex; flex-direction: column; transition: background 0.2s; }
+    .case:hover { background: var(--surface); }
+    .case-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+    .case-co { font-family: var(--serif); font-size: 1.3rem; font-weight: 500; color: var(--ink); }
+    .case-yr { font-size: 0.82rem; color: var(--ink4); letter-spacing: 0.04em; font-weight: 500; }
+    .case-role { font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; font-weight: 500; }
+    .case-headline { font-family: var(--serif); font-size: 1.25rem; line-height: 1.35; color: var(--ink); margin-bottom: 1.1rem; font-weight: 400; }
+    .case-body { font-size: 1rem; color: var(--ink2); line-height: 1.7; margin-bottom: 1.75rem; max-width: none; font-weight: 400; flex: 1; }
+    .case-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: auto; }
+    .case-stat { background: var(--bg); padding: 1rem 0.85rem; }
+    .case-stat-val { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; color: var(--gold); line-height: 1; margin-bottom: 0.35rem; }
+    .case-stat-lbl { font-size: 0.72rem; color: var(--ink4); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.3; font-weight: 500; }
+
+    /* ── VIDEO REEL (TEDx) ─────────────────────────────── */
+    .video-sec { background: var(--surface); padding: 6rem 4rem; }
+    .video-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: center; max-width: 1400px; margin: 0 auto; }
+    .video-text h2 { margin-bottom: 1.25rem; }
+    .video-text p { font-size: 1.05rem; color: var(--ink2); line-height: 1.7; margin-bottom: 1.75rem; max-width: 38rem; font-weight: 400; }
+    .video-meta { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
+    .video-meta-item { display: flex; align-items: baseline; gap: 0.85rem; font-size: 0.95rem; color: var(--ink2); font-weight: 400; }
+    .video-meta-item::before { content: ''; display: block; width: 1.5rem; height: 1px; background: var(--gold); flex-shrink: 0; transform: translateY(-3px); }
+    .video-meta-item strong { font-weight: 500; color: var(--ink); }
+    .video-link {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      color: var(--gold); text-decoration: none;
+      font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase;
+      font-weight: 500;
+      padding-bottom: 0.4rem; border-bottom: 1px solid rgba(140,106,24,0.3);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .video-link::after { content: '→'; transition: transform 0.2s; }
+    .video-link:hover { color: var(--ink); border-color: var(--ink); }
+    .video-link:hover::after { transform: translateX(4px); }
+    .video-frame { position: relative; aspect-ratio: 16 / 9; background: var(--ink); border: 1px solid var(--border); overflow: hidden; }
+    .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .video-frame-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--dark-text); gap: 1rem; padding: 2rem; text-align: center; }
+    .video-frame-placeholder-mark { font-family: var(--serif); font-size: 3.5rem; color: var(--gold-mid); line-height: 1; font-weight: 300; }
+    .video-frame-placeholder-text { font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dark-meta); font-weight: 500; }
+
+    /* ── VENUES (in Speaking section) ──────────────────── */
+    .venues { max-width: 1400px; margin: 4rem auto 0; padding-top: 3rem; border-top: 1px solid var(--border); }
+    .venues-lbl { font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink4); font-weight: 500; margin-bottom: 1.75rem; }
+    .venues-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+    .venue-item { padding: 0 1.75rem; border-right: 1px solid var(--border); }
+    .venue-item:first-child { padding-left: 0; }
+    .venue-item:last-child { border-right: none; padding-right: 0; }
+    .venue-name { font-family: var(--serif); font-size: 1.1rem; color: var(--ink); font-weight: 400; line-height: 1.3; margin-bottom: 0.45rem; }
+    .venue-detail { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink4); font-weight: 500; }
+
+    /* ── RESULTS / CASE / VIDEO / PRESS RESPONSIVE ─────── */
+    @media (max-width: 1100px) {
+      .results-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem 0; }
+      .results-item { border-right: none; padding: 0 2rem 0 0; }
+      .results-item:nth-child(2n) { padding-right: 0; padding-left: 2rem; border-left: 1px solid var(--border); }
+      .results-item:not(:first-child) { padding-left: 0; }
+      .results-item:nth-child(2n) { padding-left: 2rem; }
+      .cases-grid { grid-template-columns: 1fr; }
+    }
     @media (max-width: 960px) {
-      .hundred-inner { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 1.5rem; }
-      .signup-box { padding: 1.75rem; }
+      .results-sec { padding: 3.5rem 1.5rem 4rem; }
+      .results-head { margin-bottom: 2.5rem; }
+      .results-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem 0; }
+      .results-item { padding: 0 1rem 0 0 !important; }
+      .results-item:nth-child(2n) { padding-left: 1rem !important; padding-right: 0 !important; border-left: 1px solid var(--border); }
+
+      .cases-intro { flex-direction: column; align-items: flex-start; gap: 1rem; margin-bottom: 2.5rem; }
+      .case { padding: 2rem; }
+
+      .video-sec { padding: 4rem 1.5rem; }
+      .video-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+
+      .venues { margin-top: 3rem; padding-top: 2rem; }
+      .venues-row { grid-template-columns: 1fr 1fr; gap: 1.5rem 0; }
+      .venue-item { padding: 0 1rem; border-right: 1px solid var(--border); }
+      .venue-item:nth-child(2n) { border-right: none; padding-right: 0; }
+      .venue-item:nth-child(2n+1) { padding-left: 0; }
     }
     @media (max-width: 480px) {
-      .hundred-inner { padding: 3rem 1.25rem; }
-      .hundred-cta { width: 100%; justify-content: center; }
+      .results-val { font-size: 2rem; }
+      .results-lbl { font-size: 0.72rem; }
+      .case-headline { font-size: 1.15rem; }
+      .venues-row { grid-template-columns: 1fr; gap: 1.5rem; }
+      .venue-item { padding: 0 !important; border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 1.25rem !important; }
+      .venue-item:last-child { border-bottom: none; padding-bottom: 0 !important; }
     }
   </style>
-
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-K5BP5TE71L');
-  </script>
-
-  <!-- Microsoft Clarity -->
-  <script>
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "wtfjq58y0n");
-  </script>
 </head>
 <body>
 
@@ -344,6 +515,8 @@
   <a href="#" class="nav-logo">Pratik <span>Renuse</span></a>
   <ul class="nav-links">
     <li><a href="#services">Expertise</a></li>
+    <li><a href="#case-studies">Case studies</a></li>
+    <li><a href="#speaking">Speaking</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -355,20 +528,23 @@
   <div class="hero-left">
     <div class="eyebrow r">
       <div class="eyebrow-line"></div>
-      <div class="eyebrow-text">Growth Marketing Leader &nbsp;·&nbsp; TEDx Speaker &nbsp;·&nbsp; Startup Builder</div>
+      <div class="eyebrow-text">Growth marketing leader, $32M built</div>
     </div>
     <h1 class="name r rd1">Pratik<span>Renuse</span></h1>
-    <p class="hero-desc r rd2">Scaling startups from zero to eight figures across Europe, the USA, and Asia. Led the #1 STEM crowdfunded campaign on Kickstarter. Mentor to 100+ founders across Techstars, EBRD, and the UN. Formerly worked at Airbus and Bayer.</p>
+    <p class="hero-desc r rd2">
+      <strong>I help founders scale from zero to eight figures.</strong>
+      Across Europe, the USA, and Asia, I have generated $32M in client revenue, led the #1 STEM Kickstarter, and mentored 100+ founders through Techstars, EBRD, and the UN. Formerly Airbus and Bayer.
+    </p>
     <div class="hero-btns r rd2">
-      <a href="#contact" class="btn-dark">Work with me</a>
-      <a href="#services" class="btn-ghost">See services</a>
+      <a href="#contact" class="btn-dark">Start a conversation</a>
+      <a href="#services" class="btn-ghost">See what I do</a>
     </div>
   </div>
   <div class="hero-right">
     <img class="hero-photo" src="hero.jpg" alt="Pratik Renuse on stage at TEDx">
     <div class="hero-badge">
       <div class="hero-badge-val">Top 1%</div>
-      <div class="hero-badge-lbl">Marketing Consultant<br>Globally, MarketerHire</div>
+      <div class="hero-badge-lbl">Marketing consultant<br>globally, MarketerHire</div>
     </div>
   </div>
 </section>
@@ -385,6 +561,32 @@
     <div class="logo-item"><span class="logo-txt">Tetr College</span></div>
   </div>
 </div>
+
+<!-- RESULTS SECTION -->
+<section class="results-sec r">
+  <div class="results-head">
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">A decade in numbers</div></div>
+    <h2 class="sec-h" style="margin-bottom:0;">Track record <span>at a glance</span></h2>
+  </div>
+  <div class="results-grid">
+    <div class="results-item">
+      <div class="results-val">$32<span>M</span></div>
+      <div class="results-lbl">Client revenue<br>generated</div>
+    </div>
+    <div class="results-item">
+      <div class="results-val">100<span>+</span></div>
+      <div class="results-lbl">Founders mentored<br>via Techstars, EBRD, UN</div>
+    </div>
+    <div class="results-item">
+      <div class="results-val">5,000<span>+</span></div>
+      <div class="results-lbl">MBA &amp; undergraduate<br>students taught</div>
+    </div>
+    <div class="results-item">
+      <div class="results-val">14</div>
+      <div class="results-lbl">Countries spoken in,<br>3 TEDx stages</div>
+    </div>
+  </div>
+</section>
 
 <!-- SERVICES -->
 <section class="sec" id="services">
@@ -403,8 +605,8 @@
           <div class="svc-pt">$32M in revenue generated for clients across Europe and North America</div>
         </div>
         <div class="svc-quote">
-          <div class="svc-qt">"Pratik saved our season. I thank him very much for all his help during our last season helping to get our holiday houses fully booked after all the cancellations. It has been a pleasure working with him."</div>
-          <div class="svc-by">Wilbert Elferink · Founder, Font Neuve</div>
+          <div class="svc-qt">"Pratik saved our season. He helped us get our holiday houses fully booked after all the cancellations. A pleasure working with him."</div>
+          <div class="svc-by">Wilbert Elferink, Founder, Font Neuve</div>
         </div>
       </div>
     </div>
@@ -419,7 +621,7 @@
         </div>
         <div class="svc-quote">
           <div class="svc-qt">"Pratik has a knack for building effective outreach pipelines, refining value proposition communication, and providing invaluable fundraising insights. His support goes beyond scheduled sessions."</div>
-          <div class="svc-by">Artur Kolishenko · Techstars Berlin</div>
+          <div class="svc-by">Artur Kolishenko, Techstars Berlin</div>
         </div>
       </div>
     </div>
@@ -430,11 +632,11 @@
       <div>
         <div class="svc-pts">
           <div class="svc-pt">3 TEDx talks delivered across Europe</div>
-          <div class="svc-pt">50+ keynotes in 14 countries, US, Europe, Middle East, Asia</div>
+          <div class="svc-pt">50+ keynotes in 14 countries across US, Europe, Middle East, and Asia</div>
         </div>
         <div class="svc-quote">
-          <div class="svc-qt">"Pratik is a great speaker, very knowledgeable and the audience loved him. He delivered an engaging talk and presented in perfect English. I would recommend him as a speaker for any event."</div>
-          <div class="svc-by">Peter Szabo · Curator, TEDx</div>
+          <div class="svc-qt">"Pratik is a great speaker, very knowledgeable and the audience loved him. He delivered an engaging talk. I would recommend him as a speaker for any event."</div>
+          <div class="svc-by">Peter Szabo, Curator, TEDx</div>
         </div>
       </div>
     </div>
@@ -448,8 +650,8 @@
           <div class="svc-pt">Harvard, HEC Paris, Yale, Oxford, LSE, IIM, and others</div>
         </div>
         <div class="svc-quote">
-          <div class="svc-qt">"Impactful and inspiring, incredibly generous with his wisdom and time, while giving tangible pieces of clear advice. I am really impressed by Pratik's approach and coaching style."</div>
-          <div class="svc-by">Valerie Zh · MBA Graduate, Harvard University</div>
+          <div class="svc-qt">"Pratik was my mentor. He was a great listener and a master of problem-solving. He helped me clarify the goals, laid out a roadmap, and gave concrete examples on how to execute."</div>
+          <div class="svc-by">Linda Chen, Software Engineer II, Amazon Web Services</div>
         </div>
       </div>
     </div>
@@ -463,8 +665,8 @@
           <div class="svc-pt">Portfolio: Perplexity AI, Nothing, Atom Bank, Plum</div>
         </div>
         <div class="svc-quote">
-          <div class="svc-qt">"Pratik is extremely knowledgeable and has helped us greatly to wrap our heads around our strategy. On top of being an expert in his field he is always supportive and encouraging. I would recommend Pratik to any startup."</div>
-          <div class="svc-by">Katya Rozenoer · Co-founder, Blastra</div>
+          <div class="svc-qt">"Pratik is extremely knowledgeable and helped us greatly to wrap our heads around our strategy. He is an expert in his field, always supportive and encouraging. I would recommend Pratik to any startup."</div>
+          <div class="svc-by">Katya Rozenoer, Co-founder and CEO, Blastra</div>
         </div>
       </div>
     </div>
@@ -478,8 +680,8 @@
           <div class="svc-pt">5,000+ students taught across MBA and undergraduate programmes</div>
         </div>
         <div class="svc-quote">
-          <div class="svc-qt">"It was incredibly thought-provoking and extremely insightful, delivered with real-world examples. I got some great comments and feedback from the audience. Looking forward to more in the future."</div>
-          <div class="svc-by">Jonathan Francis · Growth Marketer, Serviceform</div>
+          <div class="svc-qt">"Pratik added great value. Due to his thoroughness and hard work we executed the right measures. His communication is clear and consistent, and he always had the patience to explain and help me understand what he was doing."</div>
+          <div class="svc-by">Jet Oesterreicher, Marcel Wanders Studio, Amsterdam</div>
         </div>
       </div>
     </div>
@@ -488,33 +690,37 @@
 </section>
 
 <!-- TESTIMONIALS SCROLL -->
-<div class="testi-label-wrap" style="background:var(--raised); border-top:1px solid var(--border); padding:2.5rem 4rem 0; text-align:center;">
-  <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; margin-bottom:0;">
-    <div style="width:1.75rem; height:1px; background:var(--gold);"></div>
-    <span style="font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold);">What clients & collaborators say</span>
-    <div style="width:1.75rem; height:1px; background:var(--gold);"></div>
+<div class="testi-label-wrap">
+  <div class="testi-label-row">
+    <div class="lbl-line"></div>
+    <span class="lbl-text">What clients and collaborators say</span>
+    <div class="lbl-line"></div>
   </div>
 </div>
 <div class="testi-scroll">
   <div class="testi-track">
     <!-- set 1 -->
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik's mentorship was a crucial asset during our time at Techstars. His feedback was insightful and actionable, allowing us to refine our customer strategy and storytelling. He was always ready to lend support when needed.</div><div class="testi-foot"><div class="testi-name">Alexander Blum</div><div class="testi-role">VoiceKitt, Techstars Accelerator</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">The level of patience, commitment, knowledge and resources that Pratik brings to the table are very singular. I wish more people had the opportunity of working with him.</div><div class="testi-foot"><div class="testi-name">Luimar Silva</div><div class="testi-role">Business Strategist, CTCN Academy</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">It has been a pleasure to be mentored by Pratik. He has consistently added value in each discussion, including insightful input to our marketing strategy. Particularly helpful during the planning of our investor outreach.</div><div class="testi-foot"><div class="testi-name">Felix Hughes</div><div class="testi-role">Co-Founder, Bueno</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Working with Pratik has been great. He brings years of experience and real-life results to the conversation while understanding that everything isn't one size fits all. Every conversation sparks ideas and increases motivation.</div><div class="testi-foot"><div class="testi-name">Kevin Mathis</div><div class="testi-role">Marketing Leader</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik focused on tangible, actionable steps throughout our 6 months at the NewChip accelerator. His wealth of knowledge in market frameworks and strategy has accelerated our growth and helped us plan ahead with clear direction.</div><div class="testi-foot"><div class="testi-name">Erin Houston</div><div class="testi-role">Founder, NewChip Accelerator</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik is like a fighter jet, once he locks in on a target he will work relentlessly to hit it. He will not shy away from doing the hard work with dedication and attention to detail. A real pleasure to work with.</div><div class="testi-foot"><div class="testi-name">Andi Piftor</div><div class="testi-role">Senior Marketing Manager</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik has shown himself as reliable and eager to learn. Going above and beyond to get the job done, he thought on his feet and executed at a high quality. Very good at distilling complex processes into a simple story.</div><div class="testi-foot"><div class="testi-name">Sarah Fronckevic</div><div class="testi-role">CMO, Former Amazon</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">During the CTCN Climate Innovation Lab, Pratik was our biggest motivation and driving force. With him as a mentor, our startup grew from an idea to a valid and sustainable service. I highly recommend Pratik.</div><div class="testi-foot"><div class="testi-name">Emmanuel Odii</div><div class="testi-role">Founder, Community Smart Microgrids, Seedstars / UN</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik's mentorship was a <strong>crucial asset</strong> during our time at the Techstars accelerator. His feedback was <strong>insightful and actionable</strong>, allowing us to refine our customer strategy, improve communication, and enhance our storytelling. His responsiveness set him apart, always ready to lend support when needed.</div><div class="testi-foot"><div class="testi-name">Alexander Blum</div><div class="testi-role">Head of AFC Compliance, Trade Republic</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">The level of patience, commitment, knowledge and resources that Pratik brings to the table are <strong>very singular</strong>. I wish more people had the opportunity of working with him.</div><div class="testi-foot"><div class="testi-name">Luimar Silva</div><div class="testi-role">Transformation Manager, BANCO BAI</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik proves to be an <strong>excellent mentor for startups</strong>. His quick responsiveness is especially valuable in the fast-paced startup environment. He takes a <strong>proactive approach to growth</strong>, leveraging his strong expertise.</div><div class="testi-foot"><div class="testi-name">Misha Zanka</div><div class="testi-role">Co-Founder, Parsera</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Working with Pratik has been great. He brings <strong>years of experience and real-life results</strong> to the conversation while understanding that everything isn't one size fits all. Every conversation sparks ideas and increases motivation.</div><div class="testi-foot"><div class="testi-name">Kevin Mathis</div><div class="testi-role">Enterprise Sales Director, Integrate</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik focused in on <strong>tangible, actionable steps</strong>. His wealth of knowledge in market frameworks and strategy <strong>accelerated our growth</strong> and helped us plan ahead with clear direction.</div><div class="testi-foot"><div class="testi-name">Erin Houston</div><div class="testi-role">Partner, Next Chapter Designs</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik is like a <strong>fighter jet</strong>, once he locks in on a target he will <strong>work relentlessly</strong> to hit it. He will not shy away from doing the hard work with dedication and attention to detail.</div><div class="testi-foot"><div class="testi-name">Andi Piftor</div><div class="testi-role">Product Marketing Manager, GreenFlux</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik was my mentor. He was a great listener and a <strong>master of problem-solving</strong>. He helped me clarify the goals, laid out a roadmap, and gave concrete examples on how to execute.</div><div class="testi-foot"><div class="testi-name">Linda Chen</div><div class="testi-role">Software Engineer II, Amazon Web Services</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">During the CTCN Climate Innovation Lab, Pratik was our <strong>biggest motivation and driving force</strong>. With him as a mentor, Community Based Smart Microgrids grew from an idea to a valid and sustainable service. I highly recommend Pratik.</div><div class="testi-foot"><div class="testi-name">Emmanuel Odii</div><div class="testi-role">Researcher, CIBI, Seedstars / UN</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik has worked with me as a <strong>tech CEO mentor</strong>. He has <strong>excellent insight</strong> into the strategic, tactical and operational aspects of marketing, especially in the context of a tech start-up.</div><div class="testi-foot"><div class="testi-name">Michael Egner</div><div class="testi-role">CFO, RIOT Network</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik had just the <strong>right attitude for growing our start-up</strong>. Thinking outside the box, applying growth hacking whenever he can, putting in extra hours. He was very professional in his communication with both B2B and B2C contacts.</div><div class="testi-foot"><div class="testi-name">Veronika Kartovenko</div><div class="testi-role">Global Head of Loyalty, Just Eat Takeaway</div></div></div>
     <!-- duplicate for seamless loop -->
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik's mentorship was a crucial asset during our time at Techstars. His feedback was insightful and actionable, allowing us to refine our customer strategy and storytelling. He was always ready to lend support when needed.</div><div class="testi-foot"><div class="testi-name">Alexander Blum</div><div class="testi-role">VoiceKitt, Techstars Accelerator</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">The level of patience, commitment, knowledge and resources that Pratik brings to the table are very singular. I wish more people had the opportunity of working with him.</div><div class="testi-foot"><div class="testi-name">Luimar Silva</div><div class="testi-role">Business Strategist, CTCN Academy</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">It has been a pleasure to be mentored by Pratik. He has consistently added value in each discussion, including insightful input to our marketing strategy. Particularly helpful during the planning of our investor outreach.</div><div class="testi-foot"><div class="testi-name">Felix Hughes</div><div class="testi-role">Co-Founder, Bueno</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Working with Pratik has been great. He brings years of experience and real-life results to the conversation while understanding that everything isn't one size fits all. Every conversation sparks ideas and increases motivation.</div><div class="testi-foot"><div class="testi-name">Kevin Mathis</div><div class="testi-role">Marketing Leader</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik focused on tangible, actionable steps throughout our 6 months at the NewChip accelerator. His wealth of knowledge in market frameworks and strategy has accelerated our growth and helped us plan ahead with clear direction.</div><div class="testi-foot"><div class="testi-name">Erin Houston</div><div class="testi-role">Founder, NewChip Accelerator</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik is like a fighter jet, once he locks in on a target he will work relentlessly to hit it. He will not shy away from doing the hard work with dedication and attention to detail. A real pleasure to work with.</div><div class="testi-foot"><div class="testi-name">Andi Piftor</div><div class="testi-role">Senior Marketing Manager</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik has shown himself as reliable and eager to learn. Going above and beyond to get the job done, he thought on his feet and executed at a high quality. Very good at distilling complex processes into a simple story.</div><div class="testi-foot"><div class="testi-name">Sarah Fronckevic</div><div class="testi-role">CMO, Former Amazon</div></div></div>
-    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">During the CTCN Climate Innovation Lab, Pratik was our biggest motivation and driving force. With him as a mentor, our startup grew from an idea to a valid and sustainable service. I highly recommend Pratik.</div><div class="testi-foot"><div class="testi-name">Emmanuel Odii</div><div class="testi-role">Founder, Community Smart Microgrids, Seedstars / UN</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik's mentorship was a <strong>crucial asset</strong> during our time at the Techstars accelerator. His feedback was <strong>insightful and actionable</strong>, allowing us to refine our customer strategy, improve communication, and enhance our storytelling. His responsiveness set him apart, always ready to lend support when needed.</div><div class="testi-foot"><div class="testi-name">Alexander Blum</div><div class="testi-role">Head of AFC Compliance, Trade Republic</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">The level of patience, commitment, knowledge and resources that Pratik brings to the table are <strong>very singular</strong>. I wish more people had the opportunity of working with him.</div><div class="testi-foot"><div class="testi-name">Luimar Silva</div><div class="testi-role">Transformation Manager, BANCO BAI</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik proves to be an <strong>excellent mentor for startups</strong>. His quick responsiveness is especially valuable in the fast-paced startup environment. He takes a <strong>proactive approach to growth</strong>, leveraging his strong expertise.</div><div class="testi-foot"><div class="testi-name">Misha Zanka</div><div class="testi-role">Co-Founder, Parsera</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Working with Pratik has been great. He brings <strong>years of experience and real-life results</strong> to the conversation while understanding that everything isn't one size fits all. Every conversation sparks ideas and increases motivation.</div><div class="testi-foot"><div class="testi-name">Kevin Mathis</div><div class="testi-role">Enterprise Sales Director, Integrate</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik focused in on <strong>tangible, actionable steps</strong>. His wealth of knowledge in market frameworks and strategy <strong>accelerated our growth</strong> and helped us plan ahead with clear direction.</div><div class="testi-foot"><div class="testi-name">Erin Houston</div><div class="testi-role">Partner, Next Chapter Designs</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik is like a <strong>fighter jet</strong>, once he locks in on a target he will <strong>work relentlessly</strong> to hit it. He will not shy away from doing the hard work with dedication and attention to detail.</div><div class="testi-foot"><div class="testi-name">Andi Piftor</div><div class="testi-role">Product Marketing Manager, GreenFlux</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik was my mentor. He was a great listener and a <strong>master of problem-solving</strong>. He helped me clarify the goals, laid out a roadmap, and gave concrete examples on how to execute.</div><div class="testi-foot"><div class="testi-name">Linda Chen</div><div class="testi-role">Software Engineer II, Amazon Web Services</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">During the CTCN Climate Innovation Lab, Pratik was our <strong>biggest motivation and driving force</strong>. With him as a mentor, Community Based Smart Microgrids grew from an idea to a valid and sustainable service. I highly recommend Pratik.</div><div class="testi-foot"><div class="testi-name">Emmanuel Odii</div><div class="testi-role">Researcher, CIBI, Seedstars / UN</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik has worked with me as a <strong>tech CEO mentor</strong>. He has <strong>excellent insight</strong> into the strategic, tactical and operational aspects of marketing, especially in the context of a tech start-up.</div><div class="testi-foot"><div class="testi-name">Michael Egner</div><div class="testi-role">CFO, RIOT Network</div></div></div>
+    <div class="testi-card"><div class="testi-mark">"</div><div class="testi-text">Pratik had just the <strong>right attitude for growing our start-up</strong>. Thinking outside the box, applying growth hacking whenever he can, putting in extra hours. He was very professional in his communication with both B2B and B2C contacts.</div><div class="testi-foot"><div class="testi-name">Veronika Kartovenko</div><div class="testi-role">Global Head of Loyalty, Just Eat Takeaway</div></div></div>
   </div>
 </div>
 
@@ -524,7 +730,79 @@
   <cite>The principle I build everything by</cite>
 </section>
 
-<!-- ABOUT (merged) -->
+<!-- CASE STUDIES -->
+<section class="sec sec-alt" id="case-studies">
+  <div class="r">
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Selected work</div></div>
+    <div class="cases-intro">
+      <h2 class="sec-h">Companies built <span>from zero</span></h2>
+      <p class="cases-intro-sub">Three engagements where I led growth from day zero. Each is a founding-team role, not a consulting project.</p>
+    </div>
+  </div>
+
+  <div class="cases-grid r">
+
+    <div class="case">
+      <div class="case-head">
+        <div class="case-co">Bueno</div>
+      </div>
+      <div class="case-role">Founding member, growth lead</div>
+      <div class="case-headline">Banking built for Europe's foreign property owners.</div>
+      <div class="case-body">Owning customer acquisition end to end, from positioning and paid channels to partnerships and lifecycle.</div>
+      <div class="case-stats">
+        <div class="case-stat">
+          <div class="case-stat-val">15K+</div>
+          <div class="case-stat-lbl">Early-access<br>email list</div>
+        </div>
+        <div class="case-stat">
+          <div class="case-stat-val">0 → €M</div>
+          <div class="case-stat-lbl">ARR<br>milestone</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div class="case-co">Infento</div>
+      </div>
+      <div class="case-role">Founding member, growth lead</div>
+      <div class="case-headline">From zero to an eight-figure D2C STEM brand.</div>
+      <div class="case-body">Built the full online funnel, led the Kickstarter campaign, and ran demand generation across the US and Europe.</div>
+      <div class="case-stats">
+        <div class="case-stat">
+          <div class="case-stat-val">$848K</div>
+          <div class="case-stat-lbl">Kickstarter raised</div>
+        </div>
+        <div class="case-stat">
+          <div class="case-stat-val">42%</div>
+          <div class="case-stat-lbl">YoY revenue growth</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div class="case-co">VU Switzerland</div>
+      </div>
+      <div class="case-role">Founding member, growth lead</div>
+      <div class="case-headline">The #1 Swiss ski and snowboard brand.</div>
+      <div class="case-body">Launched the brand, built the D2C playbook, and earned adoption from the Swiss Olympic team in 2022, 2023, and 2024.</div>
+      <div class="case-stats">
+        <div class="case-stat">
+          <div class="case-stat-val">0 → €100K+</div>
+          <div class="case-stat-lbl">ARR in one season</div>
+        </div>
+        <div class="case-stat">
+          <div class="case-stat-val">3×</div>
+          <div class="case-stat-lbl">Olympic cycles</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
 <section class="sec" id="about">
   <div class="r">
     <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">The person</div></div>
@@ -533,37 +811,74 @@
 
   <div class="about-layout r">
     <div class="about-bio">
-      <p>Over the last decade I have built startups from zero, taking Infento from zero to eight-figure revenue, raising $848K on Kickstarter for the #1 STEM project in the US, and taking VU Switzerland to Olympic-level recognition. I have mentored 100+ founders through Techstars, EBRD, Seedstars, and the UN; coached graduates at Harvard, LSE, HEC Paris, and Oxford; and spoken at conferences across four continents including three TEDx stages.</p>
-      <p>Beyond the work, I am a Vipassana practitioner, a solo traveler across 20+ countries, and the creator of Vinnyana Visuals, a community of 10,000+ people who share the joy of turning complex ideas into simple illustrations.</p>
-      <div style="margin-top:1.75rem; padding:1.5rem; background:var(--raised); border-left:3px solid var(--gold);">
-        <div style="font-family:var(--serif); font-size:1.05rem; color:var(--ink); line-height:1.55; margin-bottom:0.5rem;">"Simplicity is the ultimate sophistication."</div>
-        <div style="font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink3);">The lens through which I build, advise, and communicate.</div>
+      <p>I work best in the zero-to-one phase, where there's no playbook, no team, no clarity. The job is to find the loop that grows the company and run it until it does. I have done this multiple times across consumer hardware, SaaS, marketplaces, and fintech.</p>
+      <p>My approach is shaped by two things outside the work. Vipassana meditation, which I have practiced and served at silent retreats for years, taught me that most decisions stall because of emotion, not information. And travel across 20+ countries taught me that what works in one market rarely transfers cleanly to the next, so I start every engagement by listening before I plan.</p>
+      <p>I am happy to be reached for serious consulting, advisory, board, and angel work. I respond to every message personally.</p>
+      <div class="about-pull">
+        <div class="about-pull-q">"Simplicity is the ultimate sophistication."</div>
+        <div class="about-pull-by">The lens through which I build, advise, and communicate</div>
       </div>
     </div>
     <div class="about-photo-wrap">
-      <img src="about.jpg" alt="Pratik kayaking in Amsterdam" style="width:100%; height:380px; object-fit:cover; object-position:center 40%; display:block; filter:grayscale(8%);">
+      <img src="about.jpg" alt="Pratik kayaking in Amsterdam">
     </div>
   </div>
 
   <div class="about-cards r">
     <div class="about-card">
-      <div class="about-card-icon">🧘</div>
+      <div class="about-card-icon">— Practice</div>
       <div class="about-card-title">Vipassana Practitioner</div>
-      <div class="about-card-body">I serve and practice 10-day silent meditation courses regularly. A discipline that has fundamentally shaped how I approach decisions, leadership, and communication. It keeps me grounded in environments that move fast.</div>
+      <p class="about-card-body">I serve and practice 10-day silent meditation courses regularly. A discipline that has shaped how I approach decisions, leadership, and communication. It keeps me grounded in environments that move fast.</p>
     </div>
     <div class="about-card">
-      <div class="about-card-icon">✏️</div>
+      <div class="about-card-icon">— Craft</div>
       <div class="about-card-title">Vinnyana Visuals</div>
-      <div class="about-card-body">I turn complex ideas into simple, shareable illustrations. What started as a personal habit, sketching quotes from books, grew into a community of over 10,000 people who share the same joy of making ideas visual.</div>
+      <p class="about-card-body">I turn complex ideas into simple, shareable illustrations. What started as a personal habit, sketching quotes from books, grew into a community of over 10,000 people who share the joy of making ideas visual.</p>
     </div>
     <div class="about-card">
-      <div class="about-card-icon">🌍</div>
+      <div class="about-card-icon">— Journey</div>
       <div class="about-card-title">Traveler</div>
-      <div class="about-card-body">Solo-travelled across 20+ countries. My career has taken me through Amsterdam, Berlin, Geneva, London, and Barcelona, each city leaving its mark on how I think about people, markets, and building things that last.</div>
+      <p class="about-card-body">Solo-travelled across 20+ countries. My career has taken me through Amsterdam, Berlin, Geneva, London, and Barcelona, each city leaving its mark on how I think about people, markets, and building things that last.</p>
     </div>
   </div>
 </section>
 
+<!-- SPEAKING / TEDx VIDEO -->
+<section class="video-sec" id="speaking">
+  <div class="video-grid r">
+    <div class="video-text">
+      <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">On stage</div></div>
+      <h2 class="sec-h">TEDx and <span>keynotes</span></h2>
+      <p>Three TEDx talks across Europe. Fifty-plus keynotes in fourteen countries on growth, marketing, and the operator mindset. Recent venues include Asia Pacific Digital Marketing Conclave, Russian Stream Conference, and university lectures at Harvard, Oxford, and LSE.</p>
+      <div class="video-meta">
+        <div class="video-meta-item"><span><strong>3 TEDx talks</strong> delivered across Europe</span></div>
+        <div class="video-meta-item"><span><strong>50+ keynotes</strong> in 14 countries</span></div>
+        <div class="video-meta-item"><span><strong>4 continents:</strong> US, Europe, Middle East, Asia</span></div>
+      </div>
+      <a href="#contact" class="video-link">Book me to speak</a>
+    </div>
+    <div>
+      <div class="video-frame">
+        <!-- TEDx EMBED: replace VIDEO_ID below with the YouTube ID when ready -->
+        <!-- Example final form: <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Pratik Renuse TEDx talk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <div class="video-frame-placeholder">
+          <div class="video-frame-placeholder-mark">▶</div>
+          <div class="video-frame-placeholder-text">TEDx talk · YouTube embed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="venues r">
+    <div class="venues-lbl">Selected venues</div>
+    <div class="venues-row">
+      <div class="venue-item"><div class="venue-name">TEDx</div><div class="venue-detail">3 talks · Europe</div></div>
+      <div class="venue-item"><div class="venue-name">Asia Pacific Digital Marketing Conclave</div><div class="venue-detail">Keynote speaker</div></div>
+      <div class="venue-item"><div class="venue-name">Russian Stream Conference</div><div class="venue-detail">Featured speaker</div></div>
+      <div class="venue-item"><div class="venue-name">Harvard, Oxford, LSE</div><div class="venue-detail">University guest lectures</div></div>
+    </div>
+  </div>
+</section>
 
 <!-- 100 DAYS OF BUILDING -->
 <section class="hundred" id="100days">
@@ -571,7 +886,7 @@
     <div>
       <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Side project</div></div>
       <h2 class="sec-h">100 Days of <span>Building</span></h2>
-      <p class="hundred-desc">One software product shipped every day for 100 days. No agencies. No polish theatre. Just consistent output, in public — tools, apps, and experiments that solve real problems.</p>
+      <p class="hundred-desc">One software product shipped every day for 100 days. No agencies. No polish theatre. Just consistent output, in public. Tools and apps that solve real problems for marketers.</p>
       <div class="hundred-progress">
         <div class="hundred-progress-label">
           <span>Day 1 of 100</span>
@@ -581,26 +896,80 @@
           <div class="hundred-progress-fill" id="progress-fill"></div>
         </div>
       </div>
-      <a href="/100days/" class="hundred-cta">See all projects →</a>
+      <a href="/100days/" class="hundred-link">Browse the 100 projects</a>
     </div>
-    <div class="hundred-right">
+    <div>
       <div class="signup-box">
-        <div class="signup-box-title">Follow along</div>
-        <div class="signup-box-sub">One email each day. The new product, what I learned building it, and what I would do differently. No noise.</div>
+        <div class="signup-box-lbl">
+          <div class="signup-box-lbl-line"></div>
+          <div class="signup-box-lbl-text">Get each build in your inbox</div>
+        </div>
+        <div class="signup-box-title">A new product ships tomorrow.</div>
+        <div class="signup-box-sub">One email each day, the day a product launches. The product, what I learned building it, and what I would do differently. Built for marketers.</div>
         <div id="signup-form-wrap">
           <form class="signup-form" onsubmit="handleSignup(event, this)">
             <input class="signup-input" type="text" name="name" placeholder="Your name" required>
             <input class="signup-input" type="email" name="email" placeholder="Your email address" required>
-            <button type="submit" class="signup-btn">Get daily updates</button>
+            <button type="submit" class="signup-btn">Send me each day's build</button>
             <div class="signup-note">No spam. Unsubscribe any time.</div>
           </form>
         </div>
         <div class="signup-success" id="signup-success">
-          <div class="signup-success-icon">✓</div>
-          <div class="signup-success-text">You are in. See you tomorrow.</div>
+          <div class="signup-success-title">You're in.</div>
+          <div class="signup-success-text">First build lands in your inbox <strong>tomorrow morning</strong>. Reply to any email and it comes straight to me.</div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec" id="contact">
+  <div class="cf-intro r">
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Get in touch</div><div class="lbl-line"></div></div>
+    <h2 class="sec-h">Let's work <span>together</span></h2>
+    <p>Founder, student, or event organiser, send me a note. I read and reply to every message personally, usually within 48 hours.</p>
+  </div>
+  <div class="cf-wrap r" id="contact-form-wrap">
+    <form class="cf-form" id="contact-form" onsubmit="handleContact(event)" novalidate>
+      <div class="cf-row">
+        <div>
+          <label class="cf-label" for="cf-name">Your name</label>
+          <input class="cf-input" id="cf-name" name="name" type="text" placeholder="Full name" required>
+          <div class="cf-err" data-for="cf-name">Please share your name</div>
+        </div>
+        <div>
+          <label class="cf-label" for="cf-email">Email address</label>
+          <input class="cf-input" id="cf-email" name="email" type="email" placeholder="you@email.com" required>
+          <div class="cf-err" data-for="cf-email">Please enter a valid email</div>
+        </div>
+      </div>
+      <div>
+        <label class="cf-label" for="cf-topic">I am reaching out about</label>
+        <select class="cf-select cf-input" id="cf-topic" name="topic" required>
+          <option value="">Pick a topic so I know how to help</option>
+          <option value="Consulting">Consulting</option>
+          <option value="Advising">Advising</option>
+          <option value="Speaking">Speaking</option>
+          <option value="Coaching">Coaching</option>
+          <option value="Investing">Investing</option>
+          <option value="Teaching">Teaching</option>
+          <option value="Other">Other</option>
+        </select>
+        <div class="cf-err" data-for="cf-topic">Pick a topic so I know how to help</div>
+      </div>
+      <div>
+        <label class="cf-label" for="cf-msg">Your message</label>
+        <textarea class="cf-textarea" id="cf-msg" name="message" placeholder="Tell me a little about what you are working on" required></textarea>
+        <div class="cf-err" data-for="cf-msg">Add a short message so I can reply with context</div>
+      </div>
+      <button type="submit" class="cf-submit">Send Pratik this message</button>
+    </form>
+  </div>
+  <div class="cf-success cf-wrap" id="contact-success">
+    <div class="cf-success-title">Got it.</div>
+    <div class="cf-success-text">Your message landed in my inbox. I read every one personally and reply within 48 hours, often sooner.</div>
+    <div class="cf-success-sig">— Pratik</div>
   </div>
 </section>
 
@@ -616,7 +985,6 @@
       <ul class="books-list">
         <li><span class="bl-title">Obviously Awesome</span><span class="bl-auth">April Dunford</span></li>
         <li><span class="bl-title">Contagious</span><span class="bl-auth">Jonah Berger</span></li>
-        <li><span class="bl-title">Hacking Growth</span><span class="bl-auth">Sean Ellis &amp; Morgan Brown</span></li>
         <li><span class="bl-title">Building a StoryBrand</span><span class="bl-auth">Donald Miller</span></li>
         <li><span class="bl-title">Made to Stick</span><span class="bl-auth">Chip &amp; Dan Heath</span></li>
       </ul>
@@ -625,7 +993,6 @@
       <div class="books-cat">Leadership</div>
       <ul class="books-list">
         <li><span class="bl-title">Principles</span><span class="bl-auth">Ray Dalio</span></li>
-        <li><span class="bl-title">The Hard Thing About Hard Things</span><span class="bl-auth">Ben Horowitz</span></li>
         <li><span class="bl-title">Measure What Matters</span><span class="bl-auth">John Doerr</span></li>
         <li><span class="bl-title">Radical Candor</span><span class="bl-auth">Kim Scott</span></li>
         <li><span class="bl-title">Thinking in Bets</span><span class="bl-auth">Annie Duke</span></li>
@@ -636,87 +1003,27 @@
       <ul class="books-list">
         <li><span class="bl-title">Zero to One</span><span class="bl-auth">Peter Thiel</span></li>
         <li><span class="bl-title">Lean Startup</span><span class="bl-auth">Eric Ries</span></li>
-        <li><span class="bl-title">Play Bigger</span><span class="bl-auth">Ramadan, Peterson, Lochhead</span></li>
         <li><span class="bl-title">The Cold Start Problem</span><span class="bl-auth">Andrew Chen</span></li>
         <li><span class="bl-title">Hooked</span><span class="bl-auth">Nir Eyal</span></li>
       </ul>
     </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="sec" id="contact">
-  <div class="r" style="max-width:680px; margin:0 auto; text-align:center;">
-    <div class="lbl" style="justify-content:center;"><div class="lbl-line"></div><div class="lbl-text">Get in touch</div><div class="lbl-line"></div></div>
-    <h2 class="sec-h" style="margin-bottom:1rem;">Let's work <span>together</span></h2>
-    <p style="font-size:0.98rem; color:var(--ink3); line-height:1.8; margin-bottom:2.5rem;">Whether you are a founder seeking growth clarity, a student navigating your career, or an event looking for a speaker, reach out. I respond to every message personally.</p>
-  </div>
-  <div class="cf-wrap r">
-    <form class="cf-form" onsubmit="handleForm(event)">
-      <div class="cf-row">
-        <div>
-          <label class="cf-label">Your name</label>
-          <input class="cf-input" type="text" placeholder="Name" required>
-        </div>
-        <div>
-          <label class="cf-label">Email address</label>
-          <input class="cf-input" type="email" placeholder="email@example.com" required>
-        </div>
-      </div>
-      <div>
-        <label class="cf-label">I am reaching out about</label>
-        <select class="cf-select cf-input">
-          <option value="">Select a topic</option>
-          <option>Consulting</option>
-          <option>Advising</option>
-          <option>Speaking</option>
-          <option>Coaching</option>
-          <option>Investing</option>
-          <option>Teaching</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div>
-        <label class="cf-label">Message</label>
-        <textarea class="cf-textarea" placeholder="Tell me a little about what you are working on..." required></textarea>
-      </div>
-      <button type="submit" class="cf-submit">Send message</button>
-    </form>
-
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <span>© 2026 Pratik Renuse</span>
-  <span>Built 0→1 companies. Kayaked Amsterdam's canals. Sat in silence for 10 days at a time. Not always in that order.</span>
-  <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Back to top</a>
+  <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
 </footer>
 
 <script>
-  function bTab(id, btn) {
-    document.querySelectorAll('.bpanel').forEach(p => p.classList.remove('on'));
-    document.querySelectorAll('.btab').forEach(b => b.classList.remove('on'));
-    document.getElementById('bt-' + id).classList.add('on');
-    btn.classList.add('on');
-  }
-
-  function handleForm(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('.cf-submit');
-    btn.textContent = 'Message sent ✓';
-    btn.style.background = 'var(--gold)';
-    e.target.reset();
-    setTimeout(() => { btn.textContent = 'Send message →'; btn.style.background = ''; }, 3000);
-  }
-
+  // Reveal on scroll
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
   }, { threshold: 0.06 });
   document.querySelectorAll('.r').forEach(el => obs.observe(el));
 
-  // Animate progress bar when section scrolls into view
+  // Progress bar fill on scroll into view
   const fillEl = document.getElementById('progress-fill');
   if (fillEl) {
     const progObs = new IntersectionObserver(entries => {
@@ -725,25 +1032,11 @@
     progObs.observe(fillEl.closest('.hundred'));
   }
 
-
-  // ─── Supabase email signup ───────────────────────────────
-  // 1. Go to supabase.com, create a free project
-  // 2. In the SQL editor run:
-  //    CREATE TABLE subscribers (
-  //      id bigint generated always as identity primary key,
-  //      email text unique not null,
-  //      name text,
-  //      source text,
-  //      created_at timestamptz default now()
-  //    );
-  //    ALTER TABLE subscribers ENABLE ROW LEVEL SECURITY;
-  //    CREATE POLICY "allow insert" ON subscribers FOR INSERT TO anon WITH CHECK (true);
-  // 3. Replace the two placeholders below with your project URL and anon key
-  const SUPABASE_URL  = 'https://naqkunidxjpgwanfbbiu.supabase.co';   // e.g. https://xxxx.supabase.co
+  // ─── Supabase signup ───
+  const SUPABASE_URL  = 'https://naqkunidxjpgwanfbbiu.supabase.co';
   const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hcWt1bmlkeGpwZ3dhbmZiYml1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5Mjg1ODEsImV4cCI6MjA5NDUwNDU4MX0.zEypDQmNQGyCcFCjeLMP_Wgbdr3HJJxHXUhqHlMEl9I';
 
-  async function supabaseSignup(email, name, source) {
-    if (!email || !email.includes('@')) return false;
+  async function supabaseInsert(payload) {
     try {
       const res = await fetch(SUPABASE_URL + '/rest/v1/subscribers', {
         method: 'POST',
@@ -753,25 +1046,75 @@
           'Content-Type': 'application/json',
           'Prefer': 'return=minimal'
         },
-        body: JSON.stringify({ email, name: name || null, source })
+        body: JSON.stringify(payload)
       });
-      // 201 = created, 409 = duplicate email (already subscribed)
       return res.status === 201 || res.status === 409;
     } catch { return false; }
   }
-  // ─────────────────────────────────────────────────────────
 
   async function handleSignup(e, form) {
     e.preventDefault();
     const btn = form.querySelector('.signup-btn');
-    btn.textContent = 'Sending...';
+    const orig = btn.textContent;
+    btn.textContent = 'Sending';
     btn.disabled = true;
-    const email = form.querySelector('[name="email"]').value;
-    const name  = form.querySelector('[name="name"]').value;
-    const ok = await supabaseSignup(email, name, 'homepage-100days');
+    const email = form.querySelector('[name="email"]').value.trim();
+    const name  = form.querySelector('[name="name"]').value.trim();
+    if (!email.includes('@')) { btn.textContent = 'Check your email'; btn.disabled = false; return; }
+    const ok = await supabaseInsert({ email, name: name || null, source: 'homepage-100days' });
     if (ok) {
       document.getElementById('signup-form-wrap').style.display = 'none';
       document.getElementById('signup-success').style.display = 'block';
+    } else {
+      btn.textContent = 'Try again';
+      btn.disabled = false;
+      setTimeout(() => { btn.textContent = orig; }, 2500);
+    }
+  }
+
+  // ─── Contact form ───
+  function showErr(id, show) {
+    const input = document.getElementById(id);
+    const err = document.querySelector('.cf-err[data-for="' + id + '"]');
+    if (show) { input.classList.add('error'); err.classList.add('show'); }
+    else { input.classList.remove('error'); err.classList.remove('show'); }
+  }
+
+  // clear errors on input
+  ['cf-name','cf-email','cf-topic','cf-msg'].forEach(id => {
+    document.getElementById(id).addEventListener('input', () => showErr(id, false));
+    document.getElementById(id).addEventListener('change', () => showErr(id, false));
+  });
+
+  async function handleContact(e) {
+    e.preventDefault();
+    const name  = document.getElementById('cf-name').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const topic = document.getElementById('cf-topic').value;
+    const msg   = document.getElementById('cf-msg').value.trim();
+
+    let valid = true;
+    if (!name) { showErr('cf-name', true); valid = false; }
+    if (!email || !email.includes('@') || !email.includes('.')) { showErr('cf-email', true); valid = false; }
+    if (!topic) { showErr('cf-topic', true); valid = false; }
+    if (!msg) { showErr('cf-msg', true); valid = false; }
+    if (!valid) return;
+
+    const btn = document.querySelector('.cf-submit');
+    btn.textContent = 'Sending';
+    btn.disabled = true;
+
+    // Store in subscribers table with topic + message in source
+    const ok = await supabaseInsert({
+      email,
+      name,
+      source: 'contact:' + topic + ' | ' + msg.slice(0, 500)
+    });
+
+    if (ok) {
+      document.getElementById('contact-form-wrap').style.display = 'none';
+      document.getElementById('contact-success').style.display = 'block';
+      document.getElementById('contact-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
     } else {
       btn.textContent = 'Try again';
       btn.disabled = false;
