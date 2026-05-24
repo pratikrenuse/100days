@@ -487,23 +487,16 @@
 
 
 <script>
-  const SUPABASE_URL  = 'https://naqkunidxjpgwanfbbiu.supabase.co';
-  const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hcWt1bmlkeGpwZ3dhbmZiYml1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5Mjg1ODEsImV4cCI6MjA5NDUwNDU4MX0.zEypDQmNQGyCcFCjeLMP_Wgbdr3HJJxHXUhqHlMEl9I';
-
   async function supabaseSignup(email, name, source) {
     if (!email || !email.includes('@')) return false;
     try {
-      const res = await fetch(SUPABASE_URL + '/rest/v1/subscribers', {
+      const res = await fetch('/api/subscribe', {
         method: 'POST',
-        headers: {
-          'apikey': SUPABASE_KEY,
-          'Authorization': 'Bearer ' + SUPABASE_KEY,
-          'Content-Type': 'application/json',
-          'Prefer': 'return=minimal'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, name: name || null, source })
       });
-      return res.status === 201 || res.status === 409;
+      const data = await res.json();
+      return data.ok === true;
     } catch { return false; }
   }
 
