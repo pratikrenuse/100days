@@ -408,7 +408,7 @@
     .case-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: auto; }
     .case-stat { background: var(--bg); padding: 1.1rem 0.95rem; }
     .case-stat-val { font-family: var(--serif); font-size: 1.4rem; font-weight: 500; color: var(--gold); line-height: 1; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
-    .case-stat-lbl { font-size: 0.78rem; color: var(--ink4); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.35; font-weight: 500; }
+    .case-stat-lbl { font-size: 0.7rem; color: var(--ink4); letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.4; font-weight: 500; }
 
     /* ── VIDEO REEL (TEDx) ─────────────────────────────── */
     .video-sec { background: var(--surface); padding: 6rem 4rem; }
@@ -525,18 +525,80 @@
   </div>
 </section>
 
-<!-- LOGOS -->
-<div class="logos r">
-  <div class="logos-row">
-    <div class="logo-item"><img src="https://logo.clearbit.com/airbus.com" alt="Airbus" onerror="this.style.display='none'"><span class="logo-txt">Airbus</span></div>
-    <div class="logo-item"><img src="https://logo.clearbit.com/bayer.com" alt="Bayer" onerror="this.style.display='none'"><span class="logo-txt">Bayer</span></div>
-    <div class="logo-item"><img src="https://logo.clearbit.com/techstars.com" alt="Techstars" onerror="this.style.display='none'"><span class="logo-txt">Techstars</span></div>
-    <div class="logo-item"><img src="https://logo.clearbit.com/ebrd.com" alt="EBRD" onerror="this.style.display='none'"><span class="logo-txt">EBRD</span></div>
-    <div class="logo-item"><img src="https://logo.clearbit.com/seedstars.com" alt="Seedstars" onerror="this.style.display='none'"><span class="logo-txt">Seedstars</span></div>
-    <div class="logo-item"><span class="logo-txt">Masters' Union</span></div>
-    <div class="logo-item"><span class="logo-txt">Tetr College</span></div>
+<!-- CASE STUDIES -->
+<section class="sec sec-alt" id="case-studies">
+  <div class="r">
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Selected work</div></div>
+    <div class="cases-intro">
+      <h2 class="sec-h">Companies built <span>from zero</span></h2>
+      <p class="cases-intro-sub">Three engagements where I led growth from day zero. Each is a founding-team role.</p>
+    </div>
   </div>
-</div>
+
+  <div class="cases-grid r">
+
+    <div class="case">
+      <div class="case-head">
+        <div class="case-co">Bueno</div>
+        <div class="case-loc">Based in Spain</div>
+      </div>
+      <div class="case-headline">Banking built for Europe's foreign property owners.</div>
+      <div class="case-body">Owning customer acquisition end to end, from positioning and paid channels to partnerships and lifecycle.</div>
+      <div class="case-stats">
+        <div class="case-stat">
+          <div class="case-stat-val">0 → 15K+</div>
+          <div class="case-stat-lbl">Subscribers in 2 years</div>
+        </div>
+        <div class="case-stat">
+          <div class="case-stat-val">0 → 28</div>
+          <div class="case-stat-lbl">Customers from 28 countries</div>
+        </div>
+      </div>
+      <a href="https://getbueno.com" target="_blank" rel="noopener" class="case-link">getbueno.com</a>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div class="case-co">Infento</div>
+        <div class="case-loc">Based in the Netherlands</div>
+      </div>
+      <div class="case-headline">From zero to an eight-figure D2C STEM brand.</div>
+      <div class="case-body">Built the full online funnel, led the Kickstarter campaign, and ran demand generation across the US and Europe.</div>
+      <div class="case-stats">
+        <div class="case-stat">
+          <div class="case-stat-val">#1</div>
+          <div class="case-stat-lbl">STEM Kickstarter, $848K raised</div>
+        </div>
+        <div class="case-stat">
+          <div class="case-stat-val">0 → $2M</div>
+          <div class="case-stat-lbl">Annual DTC revenue</div>
+        </div>
+      </div>
+      <a href="https://infento.com" target="_blank" rel="noopener" class="case-link">infento.com</a>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div class="case-co">VU</div>
+        <div class="case-loc">Based in Switzerland</div>
+      </div>
+      <div class="case-headline">The #1 Swiss ski and snowboard brand.</div>
+      <div class="case-body">Launched the brand, built the D2C playbook, and earned adoption from the Swiss Olympic team in 2022, 2023, and 2024.</div>
+      <div class="case-stats">
+        <div class="case-stat">
+          <div class="case-stat-val">3×</div>
+          <div class="case-stat-lbl">Olympic cycles</div>
+        </div>
+        <div class="case-stat">
+          <div class="case-stat-val">20K+</div>
+          <div class="case-stat-lbl">Subscribers in 3 years</div>
+        </div>
+      </div>
+      <a href="https://vertical-unit.com" target="_blank" rel="noopener" class="case-link">vertical-unit.com</a>
+    </div>
+
+  </div>
+</section>
 
 <!-- RESULTS SECTION -->
 <section class="results-sec r">
@@ -551,7 +613,7 @@
     </div>
     <div class="results-item">
       <div class="results-val">100<span>+</span></div>
-      <div class="results-lbl">Founders mentored<br>via Techstars, EBRD, UN</div>
+      <div class="results-lbl">Founders mentored<br>via Techstars, EBRD</div>
     </div>
     <div class="results-item">
       <div class="results-val">5,000<span>+</span></div>
@@ -665,6 +727,19 @@
   </div>
 </section>
 
+<!-- LOGOS -->
+<div class="logos r">
+  <div class="logos-row">
+    <div class="logo-item"><img src="https://logo.clearbit.com/airbus.com" alt="Airbus" onerror="this.style.display='none'"><span class="logo-txt">Airbus</span></div>
+    <div class="logo-item"><img src="https://logo.clearbit.com/bayer.com" alt="Bayer" onerror="this.style.display='none'"><span class="logo-txt">Bayer</span></div>
+    <div class="logo-item"><img src="https://logo.clearbit.com/techstars.com" alt="Techstars" onerror="this.style.display='none'"><span class="logo-txt">Techstars</span></div>
+    <div class="logo-item"><img src="https://logo.clearbit.com/ebrd.com" alt="EBRD" onerror="this.style.display='none'"><span class="logo-txt">EBRD</span></div>
+    <div class="logo-item"><img src="https://logo.clearbit.com/seedstars.com" alt="Seedstars" onerror="this.style.display='none'"><span class="logo-txt">Seedstars</span></div>
+    <div class="logo-item"><span class="logo-txt">Masters' Union</span></div>
+    <div class="logo-item"><span class="logo-txt">Tetr College</span></div>
+  </div>
+</div>
+
 <!-- TESTIMONIALS SCROLL -->
 <div class="testi-label-wrap">
   <div class="testi-label-row">
@@ -704,81 +779,6 @@
 <section class="philosophy">
   <blockquote>"Give to the world the best you have, and the best will come back to you."</blockquote>
   <cite>The principle I build everything by</cite>
-</section>
-
-<!-- CASE STUDIES -->
-<section class="sec sec-alt" id="case-studies">
-  <div class="r">
-    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Selected work</div></div>
-    <div class="cases-intro">
-      <h2 class="sec-h">Companies built <span>from zero</span></h2>
-      <p class="cases-intro-sub">Three engagements where I led growth from day zero. Each is a founding-team role, not a consulting project.</p>
-    </div>
-  </div>
-
-  <div class="cases-grid r">
-
-    <div class="case">
-      <div class="case-head">
-        <div class="case-co">Bueno</div>
-        <div class="case-loc">Based in Spain</div>
-      </div>
-      <div class="case-headline">Banking built for Europe's foreign property owners.</div>
-      <div class="case-body">Owning customer acquisition end to end, from positioning and paid channels to partnerships and lifecycle.</div>
-      <div class="case-stats">
-        <div class="case-stat">
-          <div class="case-stat-val">15K+</div>
-          <div class="case-stat-lbl">Subscribers</div>
-        </div>
-        <div class="case-stat">
-          <div class="case-stat-val">0 → €M</div>
-          <div class="case-stat-lbl">ARR<br>milestone</div>
-        </div>
-      </div>
-      <a href="https://getbueno.com" target="_blank" rel="noopener" class="case-link">getbueno.com</a>
-    </div>
-
-    <div class="case">
-      <div class="case-head">
-        <div class="case-co">Infento</div>
-        <div class="case-loc">Based in the Netherlands</div>
-      </div>
-      <div class="case-headline">From zero to an eight-figure D2C STEM brand.</div>
-      <div class="case-body">Built the full online funnel, led the Kickstarter campaign, and ran demand generation across the US and Europe.</div>
-      <div class="case-stats">
-        <div class="case-stat">
-          <div class="case-stat-val">$848K</div>
-          <div class="case-stat-lbl">Kickstarter raised</div>
-        </div>
-        <div class="case-stat">
-          <div class="case-stat-val">42%</div>
-          <div class="case-stat-lbl">YoY revenue growth</div>
-        </div>
-      </div>
-      <a href="https://infento.com" target="_blank" rel="noopener" class="case-link">infento.com</a>
-    </div>
-
-    <div class="case">
-      <div class="case-head">
-        <div class="case-co">VU</div>
-        <div class="case-loc">Based in Switzerland</div>
-      </div>
-      <div class="case-headline">The #1 Swiss ski and snowboard brand.</div>
-      <div class="case-body">Launched the brand, built the D2C playbook, and earned adoption from the Swiss Olympic team in 2022, 2023, and 2024.</div>
-      <div class="case-stats">
-        <div class="case-stat">
-          <div class="case-stat-val">0 → €100K+</div>
-          <div class="case-stat-lbl">ARR in one season</div>
-        </div>
-        <div class="case-stat">
-          <div class="case-stat-val">3×</div>
-          <div class="case-stat-lbl">Olympic cycles</div>
-        </div>
-      </div>
-      <a href="https://vertical-unit.com" target="_blank" rel="noopener" class="case-link">vertical-unit.com</a>
-    </div>
-
-  </div>
 </section>
 
 <!-- ABOUT -->
