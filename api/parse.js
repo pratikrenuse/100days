@@ -2,13 +2,32 @@
 // Lives in the repo root /api/ folder (Vercel auto-discovers only there).
 
 export default async function handler(req, res) {
+  // Allow the browser to read responses and handle preflight cleanly.
+  res.setHeader('Content-Type', 'application/json');
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { transcript, tasks, projects } = req.body || {};
+  // Vercel may give req.body as an object, a JSON string, or nothing.
+  // Read it robustly so we never crash on destructuring.
+  let body = req.body;
+  if (typeof body === 'string') {
+    try { body = JSON.parse(body); } catch { body = {}; }
+  }
+  if (!body || typeof body !== 'object') {
+    // Fall back to reading the raw stream if body wasn't populated.
+    try {
+      const chunks = [];
+      for await (const c of req) chunks.push(c);
+      const raw = Buffer.concat(chunks).toString('utf8');
+      body = raw ? JSON.parse(raw) : {};
+    } catch { body = {}; }
+  }
+
+  const { transcript, tasks, projects } = body || {};
   if (!transcript || typeof transcript !== 'string') {
-    return res.status(400).json({ error: 'Missing transcript' });
+    return res.status(400).json({ error: 'Missing transcript in request body' });
   }
 
   const apiKey = process.env.ANTHROPIC_API_KEY;
