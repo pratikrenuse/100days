@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Tasks — Pratik Renuse</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+  <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+
+  <style>
+    :root {
+      --bg:#F6F2F1; --surface:#EEE8E4; --raised:#E5DDD7; --border:#D0C8C0; --border2:#BCB3AA;
+      --ink:#1A1512; --ink2:#38302A; --ink3:#504840; --ink4:#786E66;
+      --gold:#8C6A18; --gold-mid:#B8903A; --gold-bg:#F0E4C4; --dark:#0F0E0C;
+      --serif:'IBM Plex Serif',Georgia,serif; --sans:'IBM Plex Sans',system-ui,sans-serif;
+      font-size:18px;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink2); font-family:var(--sans); font-weight:400; line-height:1.65; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+
+    /* NAV */
+    nav { display:flex; align-items:center; justify-content:space-between; padding:1.1rem 4rem; border-bottom:1px solid var(--border); background:rgba(246,242,241,0.95); backdrop-filter:blur(20px); position:sticky; top:0; z-index:100; }
+    .nav-logo { font-family:var(--serif); font-size:0.9rem; font-weight:400; color:var(--ink); text-decoration:none; }
+    .nav-logo span { color:var(--gold); }
+    .nav-left { display:flex; align-items:center; gap:1.25rem; }
+    .nav-div { color:var(--border); }
+    .nav-title { font-size:0.78rem; color:var(--ink3); }
+    .nav-badge { font-size:0.58rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); background:var(--gold-bg); padding:0.2rem 0.6rem; border:1px solid #D4B870; }
+    .nav-back { font-size:0.65rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink4); text-decoration:none; transition:color 0.2s; }
+    .nav-back:hover { color:var(--gold); }
+
+    /* LABEL */
+    .lbl { display:flex; align-items:center; gap:0.75rem; margin-bottom:0.6rem; }
+    .lbl-line { width:1.75rem; height:1px; background:var(--gold); }
+    .lbl-text { font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); }
+
+    h1 { font-family:var(--serif); font-size:clamp(1.9rem,3.5vw,2.7rem); font-weight:300; line-height:1.2; letter-spacing:-0.01em; color:var(--ink); margin:0 0 0.4rem; }
+    h1 span { color:var(--gold); }
+    .lede { color:var(--ink3); max-width:48ch; margin:0; }
+
+    .wrap { max-width:760px; margin:0 auto; padding:3.5rem 1.5rem 5rem; }
+
+    /* GATE */
+    #gate { max-width:380px; margin:0 auto; padding:6rem 1.5rem; text-align:center; }
+    #gate h1 { font-size:1.8rem; }
+    #gate p { color:var(--ink3); margin:0.5rem auto 2rem; }
+    #gate input { width:100%; background:var(--bg); border:1px solid var(--border); padding:0.9rem 1rem; font-size:1rem; color:var(--ink); font-family:var(--sans); outline:none; }
+    #gate input:focus { border-color:var(--gold); }
+    #gate button { width:100%; margin-top:0.75rem; background:var(--ink); color:var(--bg); border:none; padding:0.9rem; font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; font-family:var(--sans); font-weight:500; cursor:pointer; }
+    #gate button:hover { background:var(--gold); }
+    #gate-err { color:#A4341C; font-size:0.85rem; min-height:1.2rem; margin-top:0.6rem; }
+
+    #app { display:none; }
+
+    /* CAPTURE BAR */
+    .capture { background:var(--surface); border:1px solid var(--border); padding:1.75rem; margin:2.25rem 0; }
+    .capture-row { display:flex; gap:0.75rem; align-items:stretch; }
+    #say {
+      flex:0 0 auto; width:64px; height:64px; border-radius:50%; border:none; cursor:pointer;
+      background:var(--ink); color:var(--bg); font-size:1.4rem; display:flex; align-items:center; justify-content:center;
+      transition:background 0.2s, transform 0.1s;
+    }
+    #say:hover { background:var(--gold); }
+    #say.live { background:#A4341C; animation:pulse 1.2s infinite; }
+    @keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.07);} }
+    #typed { flex:1; background:var(--bg); border:1px solid var(--border); padding:0.9rem 1rem; font-size:1rem; color:var(--ink); font-family:var(--sans); outline:none; }
+    #typed:focus { border-color:var(--gold); }
+    #send { flex:0 0 auto; background:var(--ink); color:var(--bg); border:none; padding:0 1.5rem; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; font-family:var(--sans); font-weight:500; cursor:pointer; }
+    #send:hover { background:var(--gold); }
+    .capture-hint { font-size:0.82rem; color:var(--ink4); margin:0.9rem 0 0; }
+    .capture-status { font-size:0.85rem; color:var(--gold); font-family:var(--serif); min-height:1.3rem; margin:0.6rem 0 0; }
+
+    /* PROJECT GROUPS */
+    .proj { margin-bottom:2.5rem; }
+    .proj-head { display:flex; align-items:baseline; gap:0.6rem; margin-bottom:0.9rem; padding-bottom:0.5rem; border-bottom:1px solid var(--border); }
+    .proj-name { font-family:var(--serif); font-size:1.15rem; font-weight:400; color:var(--ink); }
+    .proj-count { font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink4); }
+
+    .task { display:flex; align-items:flex-start; gap:0.85rem; padding:0.85rem 0; border-bottom:1px solid rgba(208,200,192,0.5); }
+    .task:last-child { border-bottom:none; }
+    .check {
+      flex:0 0 auto; width:24px; height:24px; margin-top:1px; border:1.5px solid var(--border2); background:var(--bg);
+      cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:0.85rem; color:var(--bg); transition:all 0.15s;
+    }
+    .check:hover { border-color:var(--gold); }
+    .task.done .check { background:var(--gold); border-color:var(--gold); color:var(--bg); }
+    .task-text { flex:1; font-size:1rem; color:var(--ink2); line-height:1.5; }
+    .task.done .task-text { color:var(--ink4); text-decoration:line-through; }
+    .task-del { flex:0 0 auto; background:none; border:none; color:var(--ink4); cursor:pointer; font-size:0.95rem; padding:0.2rem 0.4rem; opacity:0; transition:opacity 0.15s,color 0.15s; }
+    .task:hover .task-del { opacity:1; }
+    .task-del:hover { color:#A4341C; }
+
+    .empty { color:var(--ink4); font-size:0.95rem; padding:2rem 0; text-align:center; }
+
+    .toast { position:fixed; bottom:1.5rem; left:50%; transform:translateX(-50%) translateY(120%); background:var(--ink); color:var(--bg); padding:0.8rem 1.4rem; font-size:0.88rem; font-family:var(--serif); transition:transform 0.3s; z-index:200; max-width:90vw; }
+    .toast.show { transform:translateX(-50%) translateY(0); }
+
+    footer { padding:1.1rem 4rem; border-top:1px solid var(--border); display:flex; justify-content:space-between; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink4); background:var(--surface); }
+    footer a { color:var(--ink4); text-decoration:none; }
+    footer a:hover { color:var(--gold); }
+
+    @media (max-width:960px) {
+      :root { font-size:17px; }
+      nav { padding:1rem 1.25rem; }
+      .nav-title,.nav-back { display:none; }
+      footer { padding:1rem; flex-direction:column; gap:0.5rem; text-align:center; }
+    }
+    @media (max-width:480px) { :root { font-size:16px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
+    <span class="nav-div">/</span>
+    <span class="nav-title">Voice Tasks</span>
+    <span class="nav-badge">Private</span>
+  </div>
+  <a href="/100days/" class="nav-back">All projects</a>
+</nav>
+
+<!-- PASSWORD GATE (convenience lock, not real security — see note in script) -->
+<div id="gate">
+  <div class="lbl" style="justify-content:center;"><div class="lbl-line"></div><div class="lbl-text">Private</div></div>
+  <h1>Your tasks, <span>by voice</span></h1>
+  <p>This space is just yours. Enter your passphrase to open it.</p>
+  <input type="password" id="gate-input" placeholder="Passphrase" autocomplete="current-password">
+  <button onclick="unlock()">Open my list</button>
+  <div id="gate-err"></div>
+</div>
+
+<!-- APP -->
+<div id="app">
+  <div class="wrap">
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Speak it, it sorts itself</div></div>
+    <h1>What needs <span>doing?</span></h1>
+    <p class="lede">Hold the mic and talk the way you think. Add, finish, move between projects, all in one breath.</p>
+
+    <div class="capture">
+      <div class="capture-row">
+        <button id="say" title="Hold to speak" aria-label="Hold to speak">🎤</button>
+        <input id="typed" placeholder="…or type here, e.g. add test the signup form to Day 12" aria-label="Type an instruction">
+        <button id="send" onclick="runText()">Send</button>
+      </div>
+      <p class="capture-status" id="status"></p>
+      <p class="capture-hint">Try: "Mark the landing page copy done, add write the launch tweet under marketing, and move the contrast fix to Day 12."</p>
+    </div>
+
+    <div id="lists"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<footer>
+  <span>Private build · Pratik Renuse</span>
+  <a href="/100days/">← All projects</a>
+</footer>
+
+<script>
+/* ─────────────────────────────────────────────────────────
+   CONFIG
+   ───────────────────────────────────────────────────────── */
+const SUPA_URL = 'https://naqkunidxjpgwanfbbiu.supabase.co';
+const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hcWt1bmlkeGpwZ3dhbmZiYml1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5Mjg1ODEsImV4cCI6MjA5NDUwNDU4MX0.zEypDQmNQGyCcFCjeLMP_Wgbdr3HJJxHXUhqHlMEl9I';
+
+// Convenience passphrase. CHANGE THIS to whatever you want.
+// NOTE: this is visible to anyone who reads page source. It keeps casual
+// visitors out, nothing more. For real protection, gate /api/ + the table
+// behind Supabase Auth instead.
+const PASS = '12Billionaireme';
+
+const TABLE = 'voice_tasks'; // see setup SQL provided in chat
+
+/* ─────────────────────────────────────────────────────────
+   STATE
+   ───────────────────────────────────────────────────────── */
+let TASKS = [];
+
+/* ─────────────────────────────────────────────────────────
+   GATE
+   ───────────────────────────────────────────────────────── */
+function unlock() {
+  const v = document.getElementById('gate-input').value;
+  if (v === PASS) {
+    sessionStorage.setItem('vt_open', '1');
+    showApp();
+  } else {
+    document.getElementById('gate-err').textContent = 'That passphrase did not match. Try again.';
+  }
+}
+document.getElementById('gate-input').addEventListener('keydown', e => { if (e.key === 'Enter') unlock(); });
+
+function showApp() {
+  document.getElementById('gate').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  loadTasks();
+  setupVoice();
+}
+if (sessionStorage.getItem('vt_open') === '1') showApp();
+
+/* ─────────────────────────────────────────────────────────
+   SUPABASE HELPERS
+   ───────────────────────────────────────────────────────── */
+const headers = {
+  apikey: SUPA_KEY,
+  Authorization: 'Bearer ' + SUPA_KEY,
+  'Content-Type': 'application/json'
+};
+
+async function loadTasks() {
+  try {
+    const r = await fetch(`${SUPA_URL}/rest/v1/${TABLE}?select=*&order=sort_order.asc,created_at.asc`, { headers });
+    TASKS = r.ok ? await r.json() : [];
+  } catch { TASKS = []; }
+  render();
+}
+
+async function addTask(text, project) {
+  const body = { text, project: project || 'Inbox', done: false, sort_order: Date.now() };
+  await fetch(`${SUPA_URL}/rest/v1/${TABLE}`, { method:'POST', headers:{...headers, Prefer:'return=minimal'}, body: JSON.stringify(body) });
+}
+async function patchTask(id, fields) {
+  await fetch(`${SUPA_URL}/rest/v1/${TABLE}?id=eq.${id}`, { method:'PATCH', headers:{...headers, Prefer:'return=minimal'}, body: JSON.stringify(fields) });
+}
+async function removeTask(id) {
+  await fetch(`${SUPA_URL}/rest/v1/${TABLE}?id=eq.${id}`, { method:'DELETE', headers:{...headers, Prefer:'return=minimal'} });
+}
+
+/* ─────────────────────────────────────────────────────────
+   APPLY ACTIONS FROM CLAUDE
+   ───────────────────────────────────────────────────────── */
+async function applyActions(actions) {
+  let added=0, done=0, moved=0, deleted=0, other=0;
+  for (const a of actions) {
+    if (a.action === 'add') { await addTask(a.text, a.project); added++; }
+    else if (a.action === 'complete') { await patchTask(a.id, { done:true }); done++; }
+    else if (a.action === 'uncomplete') { await patchTask(a.id, { done:false }); other++; }
+    else if (a.action === 'delete') { await removeTask(a.id); deleted++; }
+    else if (a.action === 'move') { await patchTask(a.id, { project:a.project }); moved++; }
+    else if (a.action === 'edit') { await patchTask(a.id, { text:a.text }); other++; }
+    else if (a.action === 'rename_project') {
+      const hits = TASKS.filter(t => (t.project||'Inbox') === a.from);
+      for (const t of hits) { await patchTask(t.id, { project:a.to }); moved++; }
+    }
+  }
+  await loadTasks();
+  const bits = [];
+  if (added) bits.push(`${added} added`);
+  if (done) bits.push(`${done} done`);
+  if (moved) bits.push(`${moved} moved`);
+  if (deleted) bits.push(`${deleted} removed`);
+  if (other) bits.push(`${other} updated`);
+  toast(bits.length ? bits.join(' · ') : 'Nothing to change');
+}
+
+/* ─────────────────────────────────────────────────────────
+   PARSE VIA CLAUDE
+   ───────────────────────────────────────────────────────── */
+async function process(transcript) {
+  if (!transcript || !transcript.trim()) return;
+  status('Reading what you said…');
+  const projects = [...new Set(TASKS.map(t => t.project || 'Inbox'))];
+  try {
+    const r = await fetch('/api/parse', {
+      method:'POST',
+      headers:{ 'Content-Type':'application/json' },
+      body: JSON.stringify({ transcript, tasks: TASKS, projects })
+    });
+    const data = await r.json();
+    if (!r.ok || !data.actions) { status('Could not read that. Try again or type it.'); return; }
+    status('');
+    await applyActions(data.actions);
+  } catch {
+    status('Connection problem. Try again.');
+  }
+}
+
+function runText() {
+  const el = document.getElementById('typed');
+  const v = el.value;
+  el.value = '';
+  process(v);
+}
+document.getElementById('typed').addEventListener('keydown', e => { if (e.key === 'Enter') runText(); });
+
+/* ─────────────────────────────────────────────────────────
+   VOICE (Web Speech API)
+   ───────────────────────────────────────────────────────── */
+let recog = null, listening = false;
+function setupVoice() {
+  const Speech = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const btn = document.getElementById('say');
+  if (!Speech) {
+    btn.style.display = 'none';
+    document.querySelector('.capture-hint').textContent = 'Voice is not supported in this browser, so type your instruction. Chrome on desktop or Android works best.';
+    return;
+  }
+  recog = new Speech();
+  recog.lang = 'en-IN';
+  recog.interimResults = true;
+  recog.continuous = false;
+
+  let finalText = '';
+  recog.onresult = e => {
+    let interim = '';
+    finalText = '';
+    for (let i=0; i<e.results.length; i++) {
+      const t = e.results[i][0].transcript;
+      if (e.results[i].isFinal) finalText += t; else interim += t;
+    }
+    status('“' + (finalText || interim) + '”');
+  };
+  recog.onerror = () => { status('Did not catch that. Hold the mic and try again.'); stopListen(); };
+  recog.onend = () => {
+    stopListen();
+    if (finalText.trim()) process(finalText);
+  };
+
+  // Hold to talk (mouse + touch)
+  const start = ev => { ev.preventDefault(); startListen(); };
+  const end = ev => { ev.preventDefault(); if (listening) recog.stop(); };
+  btn.addEventListener('mousedown', start);
+  btn.addEventListener('mouseup', end);
+  btn.addEventListener('mouseleave', () => { if (listening) recog.stop(); });
+  btn.addEventListener('touchstart', start, { passive:false });
+  btn.addEventListener('touchend', end, { passive:false });
+}
+function startListen() {
+  if (listening) return;
+  listening = true;
+  document.getElementById('say').classList.add('live');
+  status('Listening…');
+  try { recog.start(); } catch {}
+}
+function stopListen() {
+  listening = false;
+  document.getElementById('say').classList.remove('live');
+}
+
+/* ─────────────────────────────────────────────────────────
+   RENDER
+   ───────────────────────────────────────────────────────── */
+function render() {
+  const host = document.getElementById('lists');
+  if (!TASKS.length) {
+    host.innerHTML = '<div class="empty">No tasks yet. Hold the mic and say your first one.</div>';
+    return;
+  }
+  // group by project, Inbox first, then alpha
+  const groups = {};
+  TASKS.forEach(t => { const p = t.project || 'Inbox'; (groups[p] = groups[p] || []).push(t); });
+  const names = Object.keys(groups).sort((a,b) => a==='Inbox'?-1:b==='Inbox'?1:a.localeCompare(b));
+
+  host.innerHTML = names.map(name => {
+    const items = groups[name];
+    const openCount = items.filter(t => !t.done).length;
+    const rows = items.map(t => `
+      <div class="task ${t.done?'done':''}">
+        <div class="check" onclick="toggle(${t.id}, ${!t.done})">${t.done?'✓':''}</div>
+        <div class="task-text">${escapeHtml(t.text)}</div>
+        <button class="task-del" onclick="del(${t.id})" title="Remove" aria-label="Remove task">✕</button>
+      </div>`).join('');
+    return `
+      <div class="proj">
+        <div class="proj-head">
+          <span class="proj-name">${escapeHtml(name)}</span>
+          <span class="proj-count">${openCount} open · ${items.length} total</span>
+        </div>
+        ${rows}
+      </div>`;
+  }).join('');
+}
+
+async function toggle(id, done) { await patchTask(id, { done }); await loadTasks(); }
+async function del(id) { await removeTask(id); await loadTasks(); }
+
+function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+/* ─────────────────────────────────────────────────────────
+   FEEDBACK
+   ───────────────────────────────────────────────────────── */
+function status(msg) { document.getElementById('status').textContent = msg; }
+let toastTimer;
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 2600);
+}
+</script>
+
+</body>
+</html>
