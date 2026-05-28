@@ -76,6 +76,13 @@
     .capture-status { font-size:0.9rem; color:var(--gold); font-family:var(--serif); margin:0; min-height:1.3rem; flex:1; }
     .capture-status.err { color:#A4341C; }
     .capture-hint { font-size:0.85rem; color:var(--ink4); margin:0.9rem 0 0; max-width:60ch; }
+    .keybox { margin-top:1rem; border-top:1px solid var(--border); padding-top:0.85rem; }
+    .keybox summary { font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink4); cursor:pointer; }
+    .keybox summary:hover { color:var(--gold); }
+    .keybox-note { font-size:0.82rem; color:var(--ink4); margin:0.7rem 0; max-width:62ch; line-height:1.55; }
+    .keybox-note code { background:var(--raised); padding:0.1rem 0.3rem; font-size:0.9em; }
+    #local-key { width:100%; background:var(--bg); border:1px solid var(--border); padding:0.7rem 0.9rem; font-size:0.9rem; color:var(--ink); font-family:var(--sans); outline:none; }
+    #local-key:focus { border-color:var(--gold); }
 
     /* PROJECT GROUPS */
     .proj { margin-bottom:2.5rem; }
@@ -159,6 +166,11 @@
         <button id="send" onclick="runText()">Send to Claude</button>
       </div>
       <p class="capture-hint">Write naturally. You can stack several things in one message: add tasks, finish them, set due dates and priority, move between projects, clear finished ones.</p>
+      <details class="keybox">
+        <summary>Local test mode (paste API key)</summary>
+        <p class="keybox-note">For testing on your own machine before deploying. The app first tries the deployed <code>/api/parse</code>; if that is not reachable, it uses this key to call Claude directly. The key stays in memory for this tab only and is never saved. On the live Vercel site you can leave this empty, since the server key is used there.</p>
+        <input type="password" id="local-key" placeholder="sk-ant-... (only for local testing)" autocomplete="off">
+      </details>
     </div>
 
     <div id="lists"></div>
@@ -286,12 +298,38 @@ async function process(transcript) {
   if (!text) { status('Type something first.', true); return false; }
   setBusy(true);
   status('Claude is reading it…');
-  const projects = [...new Set(TASKS.map(t => t.project || 'Inbox'))];
 
-  // Opus can take a while on cold start; allow up to 60s before giving up.
+  // 1) Try the deployed serverless function first.
+  let actions = await tryServer(text);
+
+  // 2) If the server is unreachable AND a local key is present, call Claude directly.
+  if (actions === 'UNREACHABLE') {
+    const key = document.getElementById('local-key').value.trim();
+    if (key) {
+      status('Server not reachable, using local test key…');
+      actions = await tryDirect(text, key);
+    } else {
+      status('Could not reach /api/parse. Deploy to Vercel, or paste a key under "Local test mode" to test here.', true);
+      setBusy(false);
+      return false;
+    }
+  }
+
+  if (actions === 'ERROR' || actions === null) { setBusy(false); return false; }
+  if (!Array.isArray(actions)) { status('Claude did not return a clear action. Try rephrasing.', true); setBusy(false); return false; }
+  if (actions.length === 0) { status('Nothing actionable in that. Try naming the task or project.', true); setBusy(false); return false; }
+
+  status('');
+  await applyActions(actions);
+  setBusy(false);
+  return true;
+}
+
+// Returns: array of actions | 'UNREACHABLE' | 'ERROR'
+async function tryServer(text) {
+  const projects = [...new Set(TASKS.map(t => t.project || 'Inbox'))];
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), 60000);
-
   try {
     const r = await fetch('/api/parse', {
       method:'POST',
@@ -300,42 +338,57 @@ async function process(transcript) {
       signal: ctrl.signal
     });
     clearTimeout(timer);
-
-    let data = {};
-    let rawText = '';
+    let rawText = '', data = {};
     try { rawText = await r.text(); data = rawText ? JSON.parse(rawText) : {}; } catch { data = {}; }
-
     if (!r.ok) {
-      // surface the real server reason so we are not guessing
-      const reason = (data && data.error) ? data.error
-                   : (rawText ? rawText.slice(0, 160) : ('Server error ' + r.status));
+      const reason = (data && data.error) ? data.error : (rawText ? rawText.slice(0,160) : ('Server error ' + r.status));
       status(reason + ' (your text is still here)', true);
-      setBusy(false);
-      return false;
+      return 'ERROR';
     }
-    if (!Array.isArray(data.actions)) {
-      status('Claude did not return a clear action. Try rephrasing.', true);
-      setBusy(false);
-      return false;
-    }
-    if (data.actions.length === 0) {
-      status('Nothing actionable in that. Try naming the task or project.', true);
-      setBusy(false);
-      return false;
-    }
-
-    status('');
-    await applyActions(data.actions);
-    setBusy(false);
-    return true;
+    return Array.isArray(data.actions) ? data.actions : [];
   } catch (err) {
     clearTimeout(timer);
-    const detail = err && err.name === 'AbortError'
-      ? 'The request timed out after 60 seconds. Try again.'
-      : ('Could not reach /api/parse. ' + (err && err.message ? err.message : '') + ' If you are viewing this file locally, it must be deployed to Vercel for the API to work.');
-    status(detail, true);
-    setBusy(false);
-    return false;
+    if (err && err.name === 'AbortError') { status('The request timed out after 60 seconds. Try again.', true); return 'ERROR'; }
+    return 'UNREACHABLE'; // network error reaching /api/parse
+  }
+}
+
+// Direct browser call to Claude, used only for local testing with a pasted key.
+async function tryDirect(text, key) {
+  const projects = [...new Set(TASKS.map(t => t.project || 'Inbox'))].join(', ') || '(none yet)';
+  const taskList = TASKS.map(t => `- id:${t.id} | project:"${t.project||'Inbox'}" | done:${t.done} | priority:${t.priority||'normal'} | due:${t.due||'none'} | "${t.text}"`).join('\n') || '(no tasks yet)';
+  const today = new Date().toISOString().slice(0,10);
+  const dayName = new Date().toLocaleDateString('en-US', { weekday:'long' });
+  const system = `You are the brain of a personal to-do app. Convert one written instruction into a JSON array of edit actions. Output ONLY the JSON array, no prose, no markdown, no backticks.
+Today is ${today} (${dayName}).
+Valid actions:
+{"action":"add","text":"<task>","project":"<project>","priority":"high|normal|low","due":"YYYY-MM-DD or null"}
+{"action":"complete","id":<id>} {"action":"uncomplete","id":<id>} {"action":"delete","id":<id>}
+{"action":"move","id":<id>,"project":"<project>"} {"action":"edit","id":<id>,"text":"<new>"}
+{"action":"set_priority","id":<id>,"priority":"high|normal|low"} {"action":"set_due","id":<id>,"due":"YYYY-MM-DD or null"}
+{"action":"rename_project","from":"<old>","to":"<new>"} {"action":"clear_done","project":"<name or ALL>"}
+Rules: match vague references to real ids; resolve relative dates against today; infer priority from words like urgent/ASAP (high) or whenever/someday (low); strip filler from new task text; default project "Inbox"; one instruction can yield several actions; never invent ids; if nothing actionable return [].`;
+  const user = `CURRENT PROJECTS: ${projects}\n\nCURRENT TASKS:\n${taskList}\n\nINSTRUCTION:\n"${text}"\n\nReturn only the JSON array.`;
+  try {
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'x-api-key': key,
+        'anthropic-version':'2023-06-01',
+        'anthropic-dangerous-direct-browser-access':'true'
+      },
+      body: JSON.stringify({ model:'claude-opus-4-7', max_tokens:1024, system, messages:[{role:'user',content:user}] })
+    });
+    const data = await r.json();
+    if (!r.ok) { status('Claude API: ' + ((data.error&&data.error.message)||('error '+r.status)), true); return 'ERROR'; }
+    let out = (data.content||[]).filter(b=>b.type==='text').map(b=>b.text).join('').replace(/```json/gi,'').replace(/```/g,'').trim();
+    let parsed; try { parsed = JSON.parse(out); } catch { const s=out.indexOf('['),e=out.lastIndexOf(']'); parsed = (s>=0&&e>s)? JSON.parse(out.slice(s,e+1)) : null; }
+    if (parsed === null) { status('Claude returned an unreadable response.', true); return 'ERROR'; }
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (err) {
+    status('Direct call failed: ' + (err && err.message ? err.message : err), true);
+    return 'ERROR';
   }
 }
 
