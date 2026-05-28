@@ -58,21 +58,24 @@
 
     /* CAPTURE BAR */
     .capture { background:var(--surface); border:1px solid var(--border); padding:1.75rem; margin:2.25rem 0; }
-    .capture-row { display:flex; gap:0.75rem; align-items:stretch; }
-    #say {
-      flex:0 0 auto; width:64px; height:64px; border-radius:50%; border:none; cursor:pointer;
-      background:var(--ink); color:var(--bg); font-size:1.4rem; display:flex; align-items:center; justify-content:center;
-      transition:background 0.2s, transform 0.1s;
+    #typed {
+      width:100%; background:var(--bg); border:1px solid var(--border); padding:1rem 1.1rem;
+      font-size:1.05rem; line-height:1.55; color:var(--ink); font-family:var(--sans); font-weight:400;
+      outline:none; resize:vertical; min-height:5.5rem; transition:border-color 0.2s;
     }
-    #say:hover { background:var(--gold); }
-    #say.live { background:#A4341C; animation:pulse 1.2s infinite; }
-    @keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.07);} }
-    #typed { flex:1; background:var(--bg); border:1px solid var(--border); padding:0.9rem 1rem; font-size:1rem; color:var(--ink); font-family:var(--sans); outline:none; }
     #typed:focus { border-color:var(--gold); }
-    #send { flex:0 0 auto; background:var(--ink); color:var(--bg); border:none; padding:0 1.5rem; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; font-family:var(--sans); font-weight:500; cursor:pointer; }
+    #typed::placeholder { color:var(--ink4); }
+    #typed:disabled { opacity:0.6; }
+    .capture-actions { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-top:0.9rem; }
+    #send {
+      flex:0 0 auto; background:var(--ink); color:var(--bg); border:none; padding:0.85rem 1.6rem;
+      font-size:0.7rem; letter-spacing:0.14em; text-transform:uppercase; font-family:var(--sans); font-weight:500; cursor:pointer; transition:background 0.2s;
+    }
     #send:hover { background:var(--gold); }
-    .capture-hint { font-size:0.82rem; color:var(--ink4); margin:0.9rem 0 0; }
-    .capture-status { font-size:0.85rem; color:var(--gold); font-family:var(--serif); min-height:1.3rem; margin:0.6rem 0 0; }
+    #send:disabled { background:var(--ink4); cursor:default; }
+    .capture-status { font-size:0.9rem; color:var(--gold); font-family:var(--serif); margin:0; min-height:1.3rem; flex:1; }
+    .capture-status.err { color:#A4341C; }
+    .capture-hint { font-size:0.85rem; color:var(--ink4); margin:0.9rem 0 0; max-width:60ch; }
 
     /* PROJECT GROUPS */
     .proj { margin-bottom:2.5rem; }
@@ -114,6 +117,8 @@
       nav { padding:1rem 1.25rem; }
       .nav-title,.nav-back { display:none; }
       footer { padding:1rem; flex-direction:column; gap:0.5rem; text-align:center; }
+      .capture-actions { flex-direction:column; align-items:stretch; }
+      #send { width:100%; }
     }
     @media (max-width:480px) { :root { font-size:16px; } }
   </style>
@@ -143,18 +148,17 @@
 <!-- APP -->
 <div id="app">
   <div class="wrap">
-    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Speak it, it sorts itself</div></div>
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Write it, it sorts itself</div></div>
     <h1>What needs <span>doing?</span></h1>
-    <p class="lede">Hold the mic and talk the way you think. Add, finish, move between projects, all in one breath.</p>
+    <p class="lede">Type the way you think. Add tasks, finish them, set due dates, move between projects, all in one message. Claude reads it and organises everything.</p>
 
     <div class="capture">
-      <div class="capture-row">
-        <button id="say" title="Hold to speak" aria-label="Hold to speak">🎤</button>
-        <input id="typed" placeholder="…or type here, e.g. add test the signup form to Day 12" aria-label="Type an instruction">
-        <button id="send" onclick="runText()">Send</button>
+      <textarea id="typed" rows="3" placeholder="Tell me what to do, the way you'd type to Claude. e.g. Add write the launch tweet under Marketing by Friday, mark the landing page copy done, make the contrast fix urgent." aria-label="Type an instruction"></textarea>
+      <div class="capture-actions">
+        <p class="capture-status" id="status"></p>
+        <button id="send" onclick="runText()">Send to Claude</button>
       </div>
-      <p class="capture-status" id="status"></p>
-      <p class="capture-hint">Try: "Add write the launch tweet under marketing by Friday, mark the landing page copy done, make the contrast fix urgent, and clear the finished ones."</p>
+      <p class="capture-hint">Write naturally. You can stack several things in one message: add tasks, finish them, set due dates and priority, move between projects, clear finished ones.</p>
     </div>
 
     <div id="lists"></div>
@@ -206,7 +210,7 @@ function showApp() {
   document.getElementById('gate').style.display = 'none';
   document.getElementById('app').style.display = 'block';
   loadTasks();
-  setupVoice();
+  document.getElementById('typed').focus();
 }
 if (sessionStorage.getItem('vt_open') === '1') showApp();
 
@@ -279,9 +283,9 @@ async function applyActions(actions) {
    ───────────────────────────────────────────────────────── */
 async function process(transcript) {
   const text = (transcript || '').trim();
-  if (!text) { status('Type or say something first.'); return false; }
+  if (!text) { status('Type something first.', true); return false; }
   setBusy(true);
-  status('Thinking it through…');
+  status('Claude is reading it…');
   const projects = [...new Set(TASKS.map(t => t.project || 'Inbox'))];
   try {
     const r = await fetch('/api/parse', {
@@ -289,18 +293,34 @@ async function process(transcript) {
       headers:{ 'Content-Type':'application/json' },
       body: JSON.stringify({ transcript: text, tasks: TASKS, projects })
     });
-    const data = await r.json();
-    if (!r.ok || !Array.isArray(data.actions)) {
-      status('Could not read that. Try rephrasing.');
+
+    let data = {};
+    try { data = await r.json(); } catch { data = {}; }
+
+    if (!r.ok) {
+      // surface the real server reason so we are not guessing
+      const reason = data && data.error ? data.error : ('Server error ' + r.status);
+      status(reason + '. Your text is still here.', true);
       setBusy(false);
       return false;
     }
+    if (!Array.isArray(data.actions)) {
+      status('Claude did not return a clear action. Try rephrasing.', true);
+      setBusy(false);
+      return false;
+    }
+    if (data.actions.length === 0) {
+      status('Nothing actionable in that. Try naming the task or project.', true);
+      setBusy(false);
+      return false;
+    }
+
     status('');
     await applyActions(data.actions);
     setBusy(false);
     return true;
-  } catch {
-    status('Connection problem. Your text is still here, try again.');
+  } catch (err) {
+    status('Could not reach the server. Check your connection and try again.', true);
     setBusy(false);
     return false;
   }
@@ -309,9 +329,9 @@ async function process(transcript) {
 async function runText() {
   const el = document.getElementById('typed');
   const v = el.value;
-  if (!v.trim()) { status('Type something first.'); return; }
+  if (!v.trim()) { status('Type something first.', true); return; }
   const ok = await process(v);
-  if (ok) el.value = '';   // only clear when it actually worked
+  if (ok) { el.value = ''; el.focus(); }   // only clear when it actually worked
 }
 
 function setBusy(on) {
@@ -319,67 +339,17 @@ function setBusy(on) {
   const input = document.getElementById('typed');
   send.disabled = on;
   input.disabled = on;
-  send.textContent = on ? 'Working' : 'Send';
+  send.textContent = on ? 'Working' : 'Send to Claude';
 }
 
+// Enter sends, Shift+Enter makes a new line (like a chat box)
 const typedEl = document.getElementById('typed');
 typedEl.addEventListener('keydown', e => {
-  if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); runText(); }
-});
-
-/* ─────────────────────────────────────────────────────────
-   VOICE (Web Speech API)
-   ───────────────────────────────────────────────────────── */
-let recog = null, listening = false;
-function setupVoice() {
-  const Speech = window.SpeechRecognition || window.webkitSpeechRecognition;
-  const btn = document.getElementById('say');
-  if (!Speech) {
-    btn.style.display = 'none';
-    document.querySelector('.capture-hint').textContent = 'Voice is not supported in this browser, so type your instruction. Chrome on desktop or Android works best.';
-    return;
+  if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) {
+    e.preventDefault();
+    runText();
   }
-  recog = new Speech();
-  recog.lang = 'en-IN';
-  recog.interimResults = true;
-  recog.continuous = false;
-
-  let finalText = '';
-  recog.onresult = e => {
-    let interim = '';
-    finalText = '';
-    for (let i=0; i<e.results.length; i++) {
-      const t = e.results[i][0].transcript;
-      if (e.results[i].isFinal) finalText += t; else interim += t;
-    }
-    status('“' + (finalText || interim) + '”');
-  };
-  recog.onerror = () => { status('Did not catch that. Hold the mic and try again.'); stopListen(); };
-  recog.onend = () => {
-    stopListen();
-    if (finalText.trim()) process(finalText);
-  };
-
-  // Hold to talk (mouse + touch)
-  const start = ev => { ev.preventDefault(); startListen(); };
-  const end = ev => { ev.preventDefault(); if (listening) recog.stop(); };
-  btn.addEventListener('mousedown', start);
-  btn.addEventListener('mouseup', end);
-  btn.addEventListener('mouseleave', () => { if (listening) recog.stop(); });
-  btn.addEventListener('touchstart', start, { passive:false });
-  btn.addEventListener('touchend', end, { passive:false });
-}
-function startListen() {
-  if (listening) return;
-  listening = true;
-  document.getElementById('say').classList.add('live');
-  status('Listening…');
-  try { recog.start(); } catch {}
-}
-function stopListen() {
-  listening = false;
-  document.getElementById('say').classList.remove('live');
-}
+});
 
 /* ─────────────────────────────────────────────────────────
    RENDER
@@ -387,7 +357,7 @@ function stopListen() {
 function render() {
   const host = document.getElementById('lists');
   if (!TASKS.length) {
-    host.innerHTML = '<div class="empty">No tasks yet. Hold the mic or type a line to add your first one.</div>';
+    host.innerHTML = '<div class="empty">No tasks yet. Type a line above to add your first one.</div>';
     return;
   }
   // group by project, Inbox first, then alpha
@@ -451,7 +421,11 @@ function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;'
 /* ─────────────────────────────────────────────────────────
    FEEDBACK
    ───────────────────────────────────────────────────────── */
-function status(msg) { document.getElementById('status').textContent = msg; }
+function status(msg, isError) {
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  el.classList.toggle('err', !!isError);
+}
 let toastTimer;
 function toast(msg) {
   const el = document.getElementById('toast');

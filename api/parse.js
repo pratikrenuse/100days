@@ -13,7 +13,7 @@ export default async function handler(req, res) {
 
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
-    return res.status(500).json({ error: 'Server not configured' });
+    return res.status(500).json({ error: 'ANTHROPIC_API_KEY is not set in Vercel env vars' });
   }
 
   // Give Claude the current state so it can reference real task IDs.
@@ -80,26 +80,45 @@ Return only the JSON array of actions.`;
 
     const data = await r.json();
     if (!r.ok) {
-      return res.status(502).json({ error: 'Model call failed', detail: data });
+      const msg = (data && data.error && data.error.message) ? data.error.message : 'Model call failed';
+      return res.status(502).json({ error: 'Claude API: ' + msg });
     }
 
-    const text = (data.content || [])
+    let text = (data.content || [])
       .filter(b => b.type === 'text')
       .map(b => b.text)
       .join('')
-      .replace(/```json|```/g, '')
+      .replace(/```json/gi, '')
+      .replace(/```/g, '')
       .trim();
 
-    let actions;
-    try {
-      actions = JSON.parse(text);
-    } catch {
-      return res.status(502).json({ error: 'Could not parse model output', raw: text });
+    let actions = tryParseActions(text);
+
+    if (actions === null) {
+      // Fallback: pull the first [...] array out of any surrounding prose
+      const start = text.indexOf('[');
+      const end = text.lastIndexOf(']');
+      if (start !== -1 && end !== -1 && end > start) {
+        actions = tryParseActions(text.slice(start, end + 1));
+      }
+    }
+
+    if (actions === null) {
+      return res.status(502).json({ error: 'Claude returned an unreadable response', raw: text.slice(0, 300) });
     }
 
     if (!Array.isArray(actions)) actions = [];
     return res.status(200).json({ actions });
   } catch (err) {
-    return res.status(500).json({ error: 'Request failed', detail: String(err) });
+    return res.status(500).json({ error: 'Request failed: ' + String(err && err.message ? err.message : err) });
+  }
+}
+
+function tryParseActions(s) {
+  try {
+    const v = JSON.parse(s);
+    return v;
+  } catch {
+    return null;
   }
 }
