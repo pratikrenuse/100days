@@ -90,6 +90,12 @@
     .task.done .check { background:var(--gold); border-color:var(--gold); color:var(--bg); }
     .task-text { flex:1; font-size:1rem; color:var(--ink2); line-height:1.5; }
     .task.done .task-text { color:var(--ink4); text-decoration:line-through; }
+    .task-body { flex:1; }
+    .dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:0.55rem; vertical-align:middle; }
+    .dot.high { background:#A4341C; }
+    .dot.low { background:var(--border2); }
+    .due { display:inline-block; margin-top:0.25rem; font-size:0.74rem; letter-spacing:0.04em; color:var(--ink4); }
+    .due.over { color:#A4341C; font-weight:500; }
     .task-del { flex:0 0 auto; background:none; border:none; color:var(--ink4); cursor:pointer; font-size:0.95rem; padding:0.2rem 0.4rem; opacity:0; transition:opacity 0.15s,color 0.15s; }
     .task:hover .task-del { opacity:1; }
     .task-del:hover { color:#A4341C; }
@@ -119,7 +125,7 @@
     <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
     <span class="nav-div">/</span>
     <span class="nav-title">Voice Tasks</span>
-    <span class="nav-badge">Private</span>
+    <span class="nav-badge">Day 04 · Private</span>
   </div>
   <a href="/100days/" class="nav-back">All projects</a>
 </nav>
@@ -148,7 +154,7 @@
         <button id="send" onclick="runText()">Send</button>
       </div>
       <p class="capture-status" id="status"></p>
-      <p class="capture-hint">Try: "Mark the landing page copy done, add write the launch tweet under marketing, and move the contrast fix to Day 12."</p>
+      <p class="capture-hint">Try: "Add write the launch tweet under marketing by Friday, mark the landing page copy done, make the contrast fix urgent, and clear the finished ones."</p>
     </div>
 
     <div id="lists"></div>
@@ -221,8 +227,8 @@ async function loadTasks() {
   render();
 }
 
-async function addTask(text, project) {
-  const body = { text, project: project || 'Inbox', done: false, sort_order: Date.now() };
+async function addTask(text, project, priority, due) {
+  const body = { text, project: project || 'Inbox', done: false, priority: priority || 'normal', due: due || null, sort_order: Date.now() };
   await fetch(`${SUPA_URL}/rest/v1/${TABLE}`, { method:'POST', headers:{...headers, Prefer:'return=minimal'}, body: JSON.stringify(body) });
 }
 async function patchTask(id, fields) {
@@ -236,17 +242,25 @@ async function removeTask(id) {
    APPLY ACTIONS FROM CLAUDE
    ───────────────────────────────────────────────────────── */
 async function applyActions(actions) {
-  let added=0, done=0, moved=0, deleted=0, other=0;
+  let added=0, done=0, moved=0, deleted=0, other=0, cleared=0;
   for (const a of actions) {
-    if (a.action === 'add') { await addTask(a.text, a.project); added++; }
+    if (a.action === 'add') { await addTask(a.text, a.project, a.priority, a.due); added++; }
     else if (a.action === 'complete') { await patchTask(a.id, { done:true }); done++; }
     else if (a.action === 'uncomplete') { await patchTask(a.id, { done:false }); other++; }
     else if (a.action === 'delete') { await removeTask(a.id); deleted++; }
     else if (a.action === 'move') { await patchTask(a.id, { project:a.project }); moved++; }
     else if (a.action === 'edit') { await patchTask(a.id, { text:a.text }); other++; }
+    else if (a.action === 'set_priority') { await patchTask(a.id, { priority:a.priority }); other++; }
+    else if (a.action === 'set_due') { await patchTask(a.id, { due:a.due || null }); other++; }
     else if (a.action === 'rename_project') {
       const hits = TASKS.filter(t => (t.project||'Inbox') === a.from);
       for (const t of hits) { await patchTask(t.id, { project:a.to }); moved++; }
+    }
+    else if (a.action === 'clear_done') {
+      const scope = a.project && a.project !== 'ALL'
+        ? TASKS.filter(t => t.done && (t.project||'Inbox') === a.project)
+        : TASKS.filter(t => t.done);
+      for (const t of scope) { await removeTask(t.id); cleared++; }
     }
   }
   await loadTasks();
@@ -255,6 +269,7 @@ async function applyActions(actions) {
   if (done) bits.push(`${done} done`);
   if (moved) bits.push(`${moved} moved`);
   if (deleted) bits.push(`${deleted} removed`);
+  if (cleared) bits.push(`${cleared} cleared`);
   if (other) bits.push(`${other} updated`);
   toast(bits.length ? bits.join(' · ') : 'Nothing to change');
 }
@@ -263,31 +278,54 @@ async function applyActions(actions) {
    PARSE VIA CLAUDE
    ───────────────────────────────────────────────────────── */
 async function process(transcript) {
-  if (!transcript || !transcript.trim()) return;
-  status('Reading what you said…');
+  const text = (transcript || '').trim();
+  if (!text) { status('Type or say something first.'); return false; }
+  setBusy(true);
+  status('Thinking it through…');
   const projects = [...new Set(TASKS.map(t => t.project || 'Inbox'))];
   try {
     const r = await fetch('/api/parse', {
       method:'POST',
       headers:{ 'Content-Type':'application/json' },
-      body: JSON.stringify({ transcript, tasks: TASKS, projects })
+      body: JSON.stringify({ transcript: text, tasks: TASKS, projects })
     });
     const data = await r.json();
-    if (!r.ok || !data.actions) { status('Could not read that. Try again or type it.'); return; }
+    if (!r.ok || !Array.isArray(data.actions)) {
+      status('Could not read that. Try rephrasing.');
+      setBusy(false);
+      return false;
+    }
     status('');
     await applyActions(data.actions);
+    setBusy(false);
+    return true;
   } catch {
-    status('Connection problem. Try again.');
+    status('Connection problem. Your text is still here, try again.');
+    setBusy(false);
+    return false;
   }
 }
 
-function runText() {
+async function runText() {
   const el = document.getElementById('typed');
   const v = el.value;
-  el.value = '';
-  process(v);
+  if (!v.trim()) { status('Type something first.'); return; }
+  const ok = await process(v);
+  if (ok) el.value = '';   // only clear when it actually worked
 }
-document.getElementById('typed').addEventListener('keydown', e => { if (e.key === 'Enter') runText(); });
+
+function setBusy(on) {
+  const send = document.getElementById('send');
+  const input = document.getElementById('typed');
+  send.disabled = on;
+  input.disabled = on;
+  send.textContent = on ? 'Working' : 'Send';
+}
+
+const typedEl = document.getElementById('typed');
+typedEl.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); runText(); }
+});
 
 /* ─────────────────────────────────────────────────────────
    VOICE (Web Speech API)
@@ -349,7 +387,7 @@ function stopListen() {
 function render() {
   const host = document.getElementById('lists');
   if (!TASKS.length) {
-    host.innerHTML = '<div class="empty">No tasks yet. Hold the mic and say your first one.</div>';
+    host.innerHTML = '<div class="empty">No tasks yet. Hold the mic or type a line to add your first one.</div>';
     return;
   }
   // group by project, Inbox first, then alpha
@@ -357,15 +395,36 @@ function render() {
   TASKS.forEach(t => { const p = t.project || 'Inbox'; (groups[p] = groups[p] || []).push(t); });
   const names = Object.keys(groups).sort((a,b) => a==='Inbox'?-1:b==='Inbox'?1:a.localeCompare(b));
 
+  const prioRank = { high:0, normal:1, low:2 };
+  const todayStr = new Date().toISOString().slice(0,10);
+
   host.innerHTML = names.map(name => {
-    const items = groups[name];
+    const items = groups[name].slice().sort((a,b) => {
+      if (a.done !== b.done) return a.done ? 1 : -1;                 // open first
+      const pr = (prioRank[a.priority]??1) - (prioRank[b.priority]??1);
+      if (pr !== 0) return pr;                                       // high priority first
+      const ad = a.due || '9999', bd = b.due || '9999';
+      return ad.localeCompare(bd);                                   // soonest due first
+    });
     const openCount = items.filter(t => !t.done).length;
-    const rows = items.map(t => `
+    const rows = items.map(t => {
+      const prio = t.priority && t.priority !== 'normal'
+        ? `<span class="dot ${t.priority}" title="${t.priority} priority"></span>` : '';
+      let due = '';
+      if (t.due && !t.done) {
+        const overdue = t.due < todayStr;
+        due = `<span class="due ${overdue?'over':''}">${overdue?'Overdue · ':''}${fmtDate(t.due)}</span>`;
+      }
+      return `
       <div class="task ${t.done?'done':''}">
         <div class="check" onclick="toggle(${t.id}, ${!t.done})">${t.done?'✓':''}</div>
-        <div class="task-text">${escapeHtml(t.text)}</div>
+        <div class="task-body">
+          <div class="task-text">${prio}${escapeHtml(t.text)}</div>
+          ${due}
+        </div>
         <button class="task-del" onclick="del(${t.id})" title="Remove" aria-label="Remove task">✕</button>
-      </div>`).join('');
+      </div>`;
+    }).join('');
     return `
       <div class="proj">
         <div class="proj-head">
@@ -375,6 +434,13 @@ function render() {
         ${rows}
       </div>`;
   }).join('');
+}
+
+function fmtDate(d) {
+  try {
+    const dt = new Date(d + 'T00:00:00');
+    return dt.toLocaleDateString('en-IN', { day:'numeric', month:'short' });
+  } catch { return d; }
 }
 
 async function toggle(id, done) { await patchTask(id, { done }); await loadTasks(); }

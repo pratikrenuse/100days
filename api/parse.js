@@ -18,36 +18,46 @@ export default async function handler(req, res) {
 
   // Give Claude the current state so it can reference real task IDs.
   const taskList = (tasks || [])
-    .map(t => `- id:${t.id} | project:"${t.project || 'Inbox'}" | done:${t.done} | "${t.text}"`)
+    .map(t => `- id:${t.id} | project:"${t.project || 'Inbox'}" | done:${t.done} | priority:${t.priority || 'normal'} | due:${t.due || 'none'} | "${t.text}"`)
     .join('\n') || '(no tasks yet)';
 
   const projectList = (projects || []).join(', ') || '(none yet)';
 
-  const system = `You convert a person's spoken instruction into a list of edit actions on their to-do list. You ONLY output JSON. No prose, no markdown, no backticks.
+  const today = new Date().toISOString().slice(0, 10);
+  const dayName = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+
+  const system = `You are the brain of a personal to-do app. You convert one written instruction into a list of edit actions on the user's task list. You ONLY output JSON: a single array. No prose, no markdown, no backticks, no explanation.
+
+Today is ${today} (${dayName}).
 
 Output schema — an array of action objects. Valid actions:
-{"action":"add","text":"<task text>","project":"<project name>"}
-{"action":"complete","id":<existing id>}
-{"action":"uncomplete","id":<existing id>}
-{"action":"delete","id":<existing id>}
-{"action":"move","id":<existing id>,"project":"<project name>"}
-{"action":"edit","id":<existing id>,"text":"<new text>"}
+{"action":"add","text":"<task text>","project":"<project>","priority":"high|normal|low","due":"YYYY-MM-DD or null"}
+{"action":"complete","id":<id>}
+{"action":"uncomplete","id":<id>}
+{"action":"delete","id":<id>}
+{"action":"move","id":<id>,"project":"<project>"}
+{"action":"edit","id":<id>,"text":"<new text>"}
+{"action":"set_priority","id":<id>,"priority":"high|normal|low"}
+{"action":"set_due","id":<id>,"due":"YYYY-MM-DD or null"}
 {"action":"rename_project","from":"<old>","to":"<new>"}
+{"action":"clear_done","project":"<project name or ALL>"}
 
-Rules:
-- Match tasks the person refers to against the existing list by meaning, and use that task's real id.
-- If they describe a new task with no clear project, set project to "Inbox".
-- If they mention a project that does not exist yet, just use that name in add/move; it will be created automatically.
-- A single sentence can produce multiple actions. Return them in the order spoken.
-- If nothing actionable is found, return [].
-- Never invent ids that are not in the list.`;
+Interpretation rules:
+- Match vague references ("the copy task", "that contrast thing") to existing tasks by meaning and use the real id.
+- Resolve relative dates against today. "tomorrow", "by Friday", "next Monday", "in 3 days", "end of week" all become a concrete YYYY-MM-DD. If no date is mentioned, due is null.
+- Infer priority from language. "urgent", "ASAP", "critical", "important", "must" => high. "whenever", "someday", "low priority", "nice to have" => low. Otherwise normal.
+- For new tasks: keep the text short and action-first (verb + object). Strip filler like "I need to" or "remind me to". "remind me to email the client tomorrow" => text "Email the client", due tomorrow's date.
+- If no clear project, use "Inbox". A project named in the instruction that does not exist yet is fine; it gets created.
+- "clear the done ones" or "clean up finished tasks" => clear_done with the relevant project, or "ALL" if not scoped.
+- One instruction can yield several actions. Return them in a sensible order: completions and edits before adds is fine.
+- Never invent ids not in the list. If nothing is actionable, return [].`;
 
   const user = `CURRENT PROJECTS: ${projectList}
 
 CURRENT TASKS:
 ${taskList}
 
-SPOKEN INSTRUCTION:
+INSTRUCTION:
 "${transcript}"
 
 Return only the JSON array of actions.`;
@@ -62,7 +72,7 @@ Return only the JSON array of actions.`;
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
-        max_tokens: 1500,
+        max_tokens: 2000,
         system,
         messages: [{ role: 'user', content: user }]
       })
