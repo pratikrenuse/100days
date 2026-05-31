@@ -17,20 +17,20 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:       #F6F2F1;
-      --surface:  #EEE8E4;
-      --raised:   #E5DDD7;
-      --border:   #D0C8C0;
-      --border2:  #BCB3AA;
-      --ink:      #1A1512;
-      --ink2:     #38302A;
-      --ink3:     #504840;
-      --ink4:     #786E66;
-      --gold:     #8C6A18;
-      --gold-bg:  #F0E4C4;
-      --gold-mid: #B8903A;
-      --dark-text: #C8C0B8;   /* dark-section body text minimum */
-      --dark-meta: #A89E94;   /* dark-section metadata only */
+      --bg:       #F5F1E9;
+      --surface:  #EBE5D9;
+      --raised:   #E2DBCC;
+      --border:   #D5CDBE;
+      --border2:  #C0B6A3;
+      --ink:      #19140F;
+      --ink2:     #38312A;
+      --ink3:     #4F473E;
+      --ink4:     #776D5F;
+      --gold:     #9A7B22;
+      --gold-bg:  #F1E6C6;
+      --gold-mid: #BC9438;
+      --dark-text: #CAC2B6;   /* dark-section body text minimum */
+      --dark-meta: #ABA191;   /* dark-section metadata only */
       --serif:    'IBM Plex Serif', Georgia, serif;
       --sans:     'IBM Plex Sans', system-ui, sans-serif;
       font-size:  18px;        /* readable-web base */
@@ -78,10 +78,10 @@
 
     /* ── HERO ───────────────────────────────────────────── */
     .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 44%; align-items: end; padding-top: 5rem; padding-left: 4rem; padding-right: 0; overflow: hidden; }
-    .hero-left { padding-bottom: 6rem; padding-right: 3.5rem; }
+    .hero-left { padding-bottom: 6rem; padding-right: 3.5rem; position: relative; }
 
     .eyebrow { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 2rem; }
-    .eyebrow-line { width: 2rem; height: 1px; background: var(--gold); }
+    .eyebrow-line { width: 30px; height: 15px; background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='30'%20height='15'%20viewBox='0%200%2030%2015'%3E%3Cline%20x1='0'%20y1='13.5'%20x2='30'%20y2='13.5'%20stroke='%239A7B22'%20stroke-width='1'/%3E%3Cpath%20d='M9%2013.5a6%206%200%200%201%2012%200'%20fill='none'%20stroke='%239A7B22'%20stroke-width='1'/%3E%3C/svg%3E") no-repeat left bottom; flex-shrink: 0; }
     .eyebrow-text { font-size: 0.82rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
 
     h1.name { font-family: var(--serif); font-size: clamp(4rem, 7.5vw, 7rem); font-weight: 300; line-height: 1; letter-spacing: -0.02em; margin-bottom: 1.75rem; color: var(--ink); }
@@ -130,10 +130,10 @@
     .hero-badge-lbl { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); line-height: 1.5; font-weight: 500; }
 
     /* ── SECTION PRIMITIVES ─────────────────────────────── */
-    .sec { padding: 6rem 4rem; }
+    .sec { padding: 7rem 4rem; }
     .sec-alt { background: var(--surface); }
     .lbl { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.75rem; }
-    .lbl-line { width: 2rem; height: 1px; background: var(--gold); }
+    .lbl-line { width: 30px; height: 15px; background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='30'%20height='15'%20viewBox='0%200%2030%2015'%3E%3Cline%20x1='0'%20y1='13.5'%20x2='30'%20y2='13.5'%20stroke='%239A7B22'%20stroke-width='1'/%3E%3Cpath%20d='M9%2013.5a6%206%200%200%201%2012%200'%20fill='none'%20stroke='%239A7B22'%20stroke-width='1'/%3E%3C/svg%3E") no-repeat left bottom; flex-shrink: 0; }
     .lbl-text { font-size: 0.82rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
     h2.sec-h { font-family: var(--serif); font-size: clamp(2rem, 3vw, 2.9rem); font-weight: 300; line-height: 1.15; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 3rem; }
     h2.sec-h span { color: var(--gold); }
@@ -143,6 +143,8 @@
     .svc:last-child { border-bottom: 1px solid var(--border); }
     .svc-num { font-family: var(--serif); font-size: 0.95rem; color: var(--ink4); letter-spacing: 0.06em; padding-top: 0.3rem; font-weight: 400; }
     .svc-name { font-family: var(--serif); font-size: 1.65rem; font-weight: 400; color: var(--ink); line-height: 1.2; }
+    .svc-illus { margin-top: 1.1rem; width: 100%; max-width: 200px; line-height: 0; }
+    .svc-illus svg { width: 100%; height: auto; display: block; }
     .svc-pts { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 1.5rem; }
     .svc-pt {
       font-size: 1rem; color: var(--ink2); display: flex; align-items: flex-start;
@@ -178,7 +180,13 @@
     .testi-role { font-size: 0.82rem; color: var(--ink4); margin-top: 0.2rem; font-weight: 400; }
 
     /* ── PHILOSOPHY ─────────────────────────────────────── */
+    /* ── atmospheric accents ── */
+    .hero-horizon { position: absolute; left: 0; right: 0; bottom: 0; height: 90px; opacity: 0.55; pointer-events: none; line-height: 0; z-index: 0; }
+    .hero-horizon svg, .philo-mist svg { width: 100%; height: 100%; display: block; }
+    .mist-divider { height: 1px; width: min(1100px, 82%); margin: 0 auto; background: linear-gradient(90deg, transparent, var(--border2) 50%, transparent); }
+    .philo-mist { position: absolute; left: 0; right: 0; bottom: 0; height: 110px; opacity: 0.13; pointer-events: none; line-height: 0; z-index: 0; }
     .philosophy { padding: 7rem 4rem; text-align: center; position: relative; overflow: hidden; background: var(--ink); }
+    .philosophy::after { content: ''; position: absolute; width: 60rem; height: 60rem; left: 50%; top: 50%; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(188,148,56,0.10) 0%, rgba(188,148,56,0) 62%); pointer-events: none; z-index: 0; }
     .philosophy::before { content: '\201C'; position: absolute; top: -5rem; left: 50%; transform: translateX(-50%); font-family: var(--serif); font-size: 22rem; font-weight: 300; color: rgba(255,255,255,0.035); line-height: 1; pointer-events: none; }
     .philosophy blockquote { font-family: var(--serif); font-size: clamp(1.6rem, 2.6vw, 2.4rem); font-weight: 300; color: #EDE8DF; line-height: 1.45; max-width: 740px; margin: 0 auto 1.75rem; position: relative; z-index: 1; }
     .philosophy cite { font-size: 0.82rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-mid); font-style: normal; position: relative; z-index: 1; font-weight: 500; }
@@ -220,13 +228,29 @@
     .hundred-cta:hover::after { transform: translateX(4px); }
 
     /* ── BOOKS ──────────────────────────────────────────── */
-    .books-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
-    .books-cat { font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; padding-bottom: 0.85rem; border-bottom: 1px solid var(--border); font-weight: 500; }
-    .books-list { list-style: none; display: flex; flex-direction: column; }
-    .books-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 0.9rem; padding: 0.7rem 0; border-bottom: 1px solid var(--surface); }
-    .books-list li:last-child { border-bottom: none; }
-    .bl-title { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--ink); flex: 1; line-height: 1.35; }
-    .bl-auth { font-size: 0.85rem; color: var(--ink4); white-space: nowrap; flex-shrink: 0; font-weight: 400; }
+    /* ---- Interactive book tiles ---- */
+    .books-filter { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+    .books-tab { font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.06em; font-weight: 500; color: var(--ink3); background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 0.5rem 1.1rem; cursor: pointer; transition: all 0.2s ease; }
+    .books-tab:hover { border-color: var(--gold-mid); color: var(--ink); }
+    .books-tab.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .books-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+    .book-tile { position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; padding: 1.35rem 1.25rem 1.2rem; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; cursor: default; transition: transform 0.28s cubic-bezier(.2,.7,.3,1), box-shadow 0.28s ease, border-color 0.28s ease; }
+    .book-tile::before { content: ""; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--gold); opacity: 0.55; transition: opacity 0.28s ease, width 0.28s ease; }
+    .book-tile:hover { transform: translateY(-6px); box-shadow: 0 14px 30px -12px rgba(26,21,18,0.32); border-color: var(--gold-mid); }
+    .book-tile:hover::before { opacity: 1; width: 6px; }
+    .book-cat-tag { font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+    .book-title { font-family: var(--serif); font-size: 1.18rem; line-height: 1.25; color: var(--ink); margin: 0.9rem 0 0; font-weight: 500; }
+    .book-auth { font-size: 0.86rem; color: var(--ink4); margin-top: 0.55rem; }
+    .book-tile.hide { display: none; }
+
+    /* ── ATMOSPHERE (closing illustration band) ──────────── */
+    .atmosphere { position: relative; background: var(--bg); padding: 6rem 0 0; overflow: hidden; }
+    .atmo-cap { max-width: 640px; margin: 0 auto; text-align: center; padding: 0 1.5rem; position: relative; z-index: 2; }
+    .atmo-eyebrow { font-size: 0.82rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 1.25rem; }
+    .atmo-h { font-family: var(--serif); font-size: clamp(1.9rem, 2.8vw, 2.7rem); font-weight: 300; color: var(--ink); line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 1.1rem; }
+    .atmo-sub { font-size: 1.05rem; color: var(--ink3); line-height: 1.6; max-width: 44ch; margin: 0 auto; font-weight: 400; }
+    .atmo-art { width: 100%; line-height: 0; margin-top: -2rem; }
+    .atmo-art svg { width: 100%; height: auto; display: block; }
 
     /* ── CONTACT ────────────────────────────────────────── */
     .cf-intro { max-width: 680px; margin: 0 auto 3rem; text-align: center; }
@@ -289,7 +313,7 @@
     @media (max-width: 1100px) {
       .svc { grid-template-columns: 52px 1fr; }
       .about-cards { grid-template-columns: 1fr; }
-      .books-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .books-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
     }
 
     @media (max-width: 960px) {
@@ -328,6 +352,8 @@
       .testi-card { width: 290px; padding: 1.65rem; }
 
       .philosophy { padding: 4.5rem 1.5rem; }
+      .atmosphere { padding: 4rem 0 0; }
+      .atmo-art { margin-top: -0.5rem; }
       .philosophy::before { font-size: 13rem; top: -2.5rem; }
       .philosophy blockquote { font-size: 1.35rem; }
 
@@ -338,9 +364,9 @@
 
       .hundred-inner-single { padding: 4rem 1.5rem; }
 
-      .books-grid { grid-template-columns: 1fr; gap: 2.25rem; }
-      .books-list li { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
-      .bl-auth { white-space: normal; }
+      .books-grid { grid-template-columns: repeat(2, 1fr); gap: 0.9rem; }
+      .book-tile { min-height: 168px; padding: 1.1rem 1rem; }
+      .book-title { font-size: 1.05rem; }
 
       .cf-row { grid-template-columns: 1fr; }
       .cf-wrap { padding: 0; }
@@ -394,7 +420,7 @@
     .case-headline { font-family: var(--serif); font-size: 1.45rem; line-height: 1.3; color: var(--ink); margin-top: 0.25rem; margin-bottom: 1rem; font-weight: 400; letter-spacing: -0.005em; }
     .case-body { font-size: 0.92rem; color: var(--ink2); line-height: 1.65; margin-bottom: 1.5rem; max-width: none; font-weight: 400; flex: 1; }
     .case-stats { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: auto; }
-    .case-stat { background: var(--bg); padding: 0.9rem 1rem; display: flex; align-items: baseline; gap: 0.85rem; }
+    .case-stat { background: var(--bg); padding: 0.9rem 1rem; display: flex; align-items: center; gap: 0.85rem; min-height: 4rem; }
     .case-stat-val { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; color: var(--gold); line-height: 1; letter-spacing: -0.01em; flex-shrink: 0; min-width: 5.5rem; }
     .case-stat-lbl { font-size: 0.7rem; color: var(--ink4); letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.4; font-weight: 500; }
 
@@ -466,7 +492,7 @@
       .results-val { font-size: 2rem; }
       .results-lbl { font-size: 0.72rem; }
       .case-headline { font-size: 1.2rem; }
-      .case-stat { padding: 0.85rem 0.9rem; gap: 0.7rem; }
+      .case-stat { padding: 0.85rem 0.9rem; gap: 0.7rem; min-height: 3.6rem; }
       .case-stat-val { font-size: 1.15rem; min-width: 5rem; }
       .case-stat-lbl { font-size: 0.65rem; letter-spacing: 0.04em; line-height: 1.35; }
       .venues-row { grid-template-columns: 1fr; gap: 1.5rem; }
@@ -494,7 +520,6 @@
 <section class="hero">
   <div class="hero-left">
     <div class="eyebrow r">
-      <div class="eyebrow-line"></div>
       <div class="eyebrow-text">Growth Marketing Leader &nbsp;·&nbsp; TEDx Speaker</div>
     </div>
     <h1 class="name r rd1">Pratik<span>Renuse</span></h1>
@@ -506,6 +531,7 @@
       <a href="#contact" class="btn-dark">Start a conversation</a>
       <a href="#services" class="btn-ghost">See what I do</a>
     </div>
+    <div class="hero-horizon" aria-hidden="true"><svg viewBox="0 0 700 90" xmlns="http://www.w3.org/2000/svg"><defs><filter id="hSoft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter></defs><g filter="url(#hSoft)" fill="#FCFAF5"><ellipse cx="120" cy="74" rx="150" ry="20"/><ellipse cx="430" cy="80" rx="200" ry="22"/><ellipse cx="640" cy="76" rx="120" ry="18"/></g><line x1="0" y1="80" x2="700" y2="80" stroke="#9A7B22" stroke-width="1" opacity="0.4"/></svg></div>
   </div>
   <div class="hero-right">
     <img class="hero-photo" src="hero.jpg" alt="Pratik Renuse on stage at TEDx">
@@ -537,10 +563,6 @@
       <div class="case-body">Owning customer acquisition end to end, from positioning and paid channels to partnerships and lifecycle.</div>
       <div class="case-stats">
         <div class="case-stat">
-          <div class="case-stat-val">0 → 15K+</div>
-          <div class="case-stat-lbl">Subscribers in 2 years</div>
-        </div>
-        <div class="case-stat">
           <div class="case-stat-val">0 → 28</div>
           <div class="case-stat-lbl">Customers from 28 countries</div>
         </div>
@@ -556,10 +578,6 @@
       <div class="case-headline">From zero to an eight-figure D2C STEM brand.</div>
       <div class="case-body">Built the full online funnel, led the Kickstarter campaign, and ran demand generation across the US and Europe.</div>
       <div class="case-stats">
-        <div class="case-stat">
-          <div class="case-stat-val">#1</div>
-          <div class="case-stat-lbl">Kickstarter, $848K raised</div>
-        </div>
         <div class="case-stat">
           <div class="case-stat-val">0 → $2M</div>
           <div class="case-stat-lbl">Annual DTC revenue</div>
@@ -577,12 +595,8 @@
       <div class="case-body">Launched the brand, built the D2C playbook, and earned adoption from the Swiss Olympic team in 2022, 2023, and 2024.</div>
       <div class="case-stats">
         <div class="case-stat">
-          <div class="case-stat-val">3×</div>
-          <div class="case-stat-lbl">Olympic cycles</div>
-        </div>
-        <div class="case-stat">
           <div class="case-stat-val">20K+</div>
-          <div class="case-stat-lbl">Subscribers in 3 years</div>
+          <div class="case-stat-lbl">Customers from DACH</div>
         </div>
       </div>
       <a href="https://vertical-unit.com" target="_blank" rel="noopener" class="case-link">vertical-unit.com</a>
@@ -591,106 +605,7 @@
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="sec" id="services">
-  <div class="r">
-    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Expertise</div></div>
-    <h2 class="sec-h">How I can <span>help you</span></h2>
-  </div>
-  <div class="r">
-
-    <div class="svc">
-      <div class="svc-num">01</div>
-      <div class="svc-name">Consulting</div>
-      <div>
-        <div class="svc-pts">
-          <div class="svc-pt">MarketerHire Top 1% globally</div>
-          <div class="svc-pt">Three startups built from zero, two to eight-figure outcomes</div>
-        </div>
-        <div class="svc-quote">
-          <div class="svc-qt">"Pratik saved our season. He helped us get our holiday houses fully booked after all the cancellations. A pleasure working with him."</div>
-          <div class="svc-by">Wilbert Elferink, Founder, Font Neuve</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="svc">
-      <div class="svc-num">02</div>
-      <div class="svc-name">Advising</div>
-      <div>
-        <div class="svc-pts">
-          <div class="svc-pt">100+ founders mentored across Techstars, EBRD, Seedstars, and the UN</div>
-          <div class="svc-pt">9.7 / 10 average rating by CXOs and founders</div>
-        </div>
-        <div class="svc-quote">
-          <div class="svc-qt">"Pratik has a knack for building effective outreach pipelines, refining value proposition communication, and providing invaluable fundraising insights. His support goes beyond scheduled sessions."</div>
-          <div class="svc-by">Artur Kolishenko, Techstars Berlin</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="svc">
-      <div class="svc-num">03</div>
-      <div class="svc-name">Speaking</div>
-      <div>
-        <div class="svc-pts">
-          <div class="svc-pt">3 TEDx talks delivered across Europe</div>
-          <div class="svc-pt">50+ keynotes in 14 countries across US, Europe, Middle East, and Asia</div>
-        </div>
-        <div class="svc-quote">
-          <div class="svc-qt">"Pratik is a great speaker, very knowledgeable and the audience loved him. He delivered an engaging talk. I would recommend him as a speaker for any event."</div>
-          <div class="svc-by">Peter Szabo, Curator, TEDx</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="svc">
-      <div class="svc-num">04</div>
-      <div class="svc-name">Coaching</div>
-      <div>
-        <div class="svc-pts">
-          <div class="svc-pt">500+ graduates coached on marketing careers and decision-making</div>
-          <div class="svc-pt">Harvard, HEC Paris, Yale, Oxford, LSE, IIM, and others</div>
-        </div>
-        <div class="svc-quote">
-          <div class="svc-qt">"Pratik was my mentor. He was a great listener and a master of problem-solving. He helped me clarify the goals, laid out a roadmap, and gave concrete examples on how to execute."</div>
-          <div class="svc-by">Linda Chen, Software Engineer II, Amazon Web Services</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="svc">
-      <div class="svc-num">05</div>
-      <div class="svc-name">Investing</div>
-      <div>
-        <div class="svc-pts">
-          <div class="svc-pt">Angel investor in fintech, consumer tech, and AI</div>
-          <div class="svc-pt">Portfolio: Perplexity AI, Nothing, Atom Bank, Plum</div>
-        </div>
-        <div class="svc-quote">
-          <div class="svc-qt">"Pratik is extremely knowledgeable and helped us greatly to wrap our heads around our strategy. He is an expert in his field, always supportive and encouraging. I would recommend Pratik to any startup."</div>
-          <div class="svc-by">Katya Rozenoer, Co-founder and CEO, Blastra</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="svc">
-      <div class="svc-num">06</div>
-      <div class="svc-name">Teaching</div>
-      <div>
-        <div class="svc-pts">
-          <div class="svc-pt">Visiting Professor at Masters' Union, Tetr College of Business, and IE Business School, Spain</div>
-          <div class="svc-pt">5,000+ students taught across MBA and undergraduate programmes</div>
-        </div>
-        <div class="svc-quote">
-          <div class="svc-qt">"Pratik added great value. Due to his thoroughness and hard work we executed the right measures. His communication is clear and consistent, and he always had the patience to explain and help me understand what he was doing."</div>
-          <div class="svc-by">Jet Oesterreicher, Marcel Wanders Studio, Amsterdam</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+<div class="mist-divider"></div>
 
 <!-- RESULTS SECTION -->
 <section class="results-sec r">
@@ -715,6 +630,125 @@
       <div class="results-val">14</div>
       <div class="results-lbl">Countries spoken in,<br>3 TEDx stages</div>
     </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <div class="r">
+    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Expertise</div></div>
+    <h2 class="sec-h">How I can <span>help you</span></h2>
+  </div>
+  <div class="r">
+
+    <div class="svc">
+      <div class="svc-num">01</div>
+      <div class="svc-head">
+        <div class="svc-name">Consulting</div>
+        <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint1" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft1" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="58" rx="84" ry="44" fill="#C9A24A" opacity="0.12" filter="url(#soft1)"/><g filter="url(#paint1)"><rect x="34" y="96" width="20" height="28" fill="url(#wash1)"/><rect x="66" y="84" width="20" height="40" fill="url(#wash1)"/><rect x="98" y="70" width="20" height="54" fill="url(#wash1)"/><rect x="130" y="52" width="20" height="72" fill="url(#wash1)"/></g><path d="M28 110 C70 96 102 80 134 62 C146 55 156 50 166 44" fill="none" stroke="#2a2825" stroke-width="3" stroke-linecap="round" filter="url(#paint1)"/><path d="M166 44 L155 45 M166 44 L162 55" fill="none" stroke="#2a2825" stroke-width="3" stroke-linecap="round" filter="url(#paint1)"/><g filter="url(#soft1)"><ellipse cx="92" cy="122" rx="74" ry="9" fill="#FBF7EF" opacity="0.8"/></g></svg></div>
+      </div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">MarketerHire Top 1% globally</div>
+          <div class="svc-pt">Three startups built from zero, two to eight-figure outcomes</div>
+        </div>
+        <div class="svc-quote">
+          <div class="svc-qt">"Pratik saved our season. He helped us get our holiday houses fully booked after all the cancellations. A pleasure working with him."</div>
+          <div class="svc-by">Wilbert Elferink, Founder, Font Neuve</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-num">02</div>
+      <div class="svc-head">
+        <div class="svc-name">Advising</div>
+        <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint2" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="19" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="54" rx="86" ry="46" fill="#C9A24A" opacity="0.12" filter="url(#soft2)"/><g filter="url(#soft2)"><path d="M100 36 L22 16 L24 34 Z" fill="#E9C766" opacity="0.22"/><path d="M100 36 L178 16 L176 34 Z" fill="#E9C766" opacity="0.22"/><path d="M100 36 L28 60 L30 74 Z" fill="#E9C766" opacity="0.15"/></g><g filter="url(#paint2)"><path d="M54 122 Q100 104 146 122 Z" fill="url(#wash2)"/></g><g filter="url(#paint2)"><path d="M88 118 L94 40 L106 40 L112 118 Z" fill="#3a3733"/><path d="M89.5 102 L110.5 102 L111.4 114 L88.6 114 Z" fill="#C2622B" opacity="0.85"/><path d="M91 78 L109 78 L109.8 88 L90.2 88 Z" fill="#C2622B" opacity="0.7"/><rect x="85" y="37" width="30" height="4" fill="#2a2825"/><rect x="92" y="26" width="16" height="12" fill="#F3ECDD" stroke="#2a2825" stroke-width="1.3"/><path d="M90 26 L100 16 L110 26 Z" fill="#2a2825"/></g><circle cx="100" cy="33" r="9" fill="#E9C766" opacity="0.6" filter="url(#soft2)"/><circle cx="100" cy="33" r="3.4" fill="#F2DE9A"/><g filter="url(#paint2)"><path d="M150 116 L168 116 L164 122 L154 122 Z" fill="#2a2825"/><path d="M159 116 L159 104 L168 114 Z" fill="#F3ECDD" stroke="#2a2825" stroke-width="0.8"/></g><g filter="url(#soft2)"><ellipse cx="68" cy="124" rx="56" ry="10" fill="#FBF7EF" opacity="0.9"/><ellipse cx="140" cy="126" rx="52" ry="9" fill="#FBF7EF" opacity="0.85"/></g></svg></div>
+      </div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">100+ founders mentored across Techstars, EBRD, Seedstars, and the UN</div>
+          <div class="svc-pt">9.7 / 10 average rating by CXOs and founders</div>
+        </div>
+        <div class="svc-quote">
+          <div class="svc-qt">"Pratik has a knack for building effective outreach pipelines, refining value proposition communication, and providing invaluable fundraising insights. His support goes beyond scheduled sessions."</div>
+          <div class="svc-by">Artur Kolishenko, Techstars Berlin</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-num">03</div>
+      <div class="svc-head">
+        <div class="svc-name">Speaking</div>
+        <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint3" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="31" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="46" rx="74" ry="34" fill="#C9A24A" opacity="0.12" filter="url(#soft3)"/><path d="M100 12 L64 80 L136 80 Z" fill="#E9C766" opacity="0.20" filter="url(#soft3)"/><ellipse cx="100" cy="80" rx="44" ry="8" fill="#E9C766" opacity="0.35"/><line x1="44" y1="80" x2="156" y2="80" stroke="#2a2825" stroke-width="1.4"/><g filter="url(#paint3)"><circle cx="100" cy="56" r="5" fill="#2a2825"/><path d="M95.5 61 Q100 57 104.5 61 L106 80 Q100 82 94 80 Z" fill="#2a2825"/><path d="M104 65 L114 60" stroke="#2a2825" stroke-width="2.4" stroke-linecap="round"/></g><g filter="url(#paint3)"><g fill="#6d6a63" opacity="0.85"><circle cx="50" cy="94" r="4"/><circle cx="70" cy="94" r="4"/><circle cx="90" cy="94" r="4"/><circle cx="110" cy="94" r="4"/><circle cx="130" cy="94" r="4"/><circle cx="150" cy="94" r="4"/></g><g fill="#4a4640"><circle cx="44" cy="108" r="5"/><circle cx="66" cy="108" r="5"/><circle cx="88" cy="108" r="5"/><circle cx="110" cy="108" r="5"/><circle cx="132" cy="108" r="5"/><circle cx="154" cy="108" r="5"/></g><g fill="#2a2825"><circle cx="40" cy="124" r="6"/><circle cx="64" cy="124" r="6"/><circle cx="88" cy="124" r="6"/><circle cx="112" cy="124" r="6"/><circle cx="136" cy="124" r="6"/><circle cx="160" cy="124" r="6"/></g></g></svg></div>
+      </div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">3 TEDx talks delivered across Europe</div>
+          <div class="svc-pt">50+ keynotes in 14 countries across US, Europe, Middle East, and Asia</div>
+        </div>
+        <div class="svc-quote">
+          <div class="svc-qt">"Pratik is a great speaker, very knowledgeable and the audience loved him. He delivered an engaging talk. I would recommend him as a speaker for any event."</div>
+          <div class="svc-by">Peter Szabo, Curator, TEDx</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-num">04</div>
+      <div class="svc-head">
+        <div class="svc-name">Coaching</div>
+        <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint4" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="44" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="58" rx="84" ry="44" fill="#C9A24A" opacity="0.12" filter="url(#soft4)"/><g filter="url(#paint4)"><path d="M12 128 L12 122 Q70 96 128 64 Q150 52 186 46 L186 128 Z" fill="url(#wash4)"/></g><line x1="162" y1="46" x2="162" y2="24" stroke="#2a2825" stroke-width="2" stroke-linecap="round"/><path d="M162 26 L180 31 L162 37 Z" fill="#C2622B"/><g filter="url(#paint4)"><circle cx="142" cy="50" r="5.5" fill="#2a2825"/><path d="M137 56 Q142 51 147 56 L149 74 Q142 77 135 74 Z" fill="#2a2825"/><path d="M136 60 L122 74" stroke="#2a2825" stroke-width="2.6" stroke-linecap="round"/></g><g filter="url(#paint4)"><circle cx="104" cy="82" r="5.5" fill="#4a4640"/><path d="M99 88 Q104 83 109 88 L111 106 Q104 109 97 106 Z" fill="#4a4640"/><path d="M109 86 L122 74" stroke="#4a4640" stroke-width="2.6" stroke-linecap="round"/></g><g filter="url(#soft4)"><ellipse cx="64" cy="122" rx="54" ry="10" fill="#FBF7EF" opacity="0.85"/></g></svg></div>
+      </div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">500+ graduates coached on marketing careers and decision-making</div>
+          <div class="svc-pt">Harvard, HEC Paris, Yale, Oxford, LSE, IIM, and others</div>
+        </div>
+        <div class="svc-quote">
+          <div class="svc-qt">"Pratik was my mentor. He was a great listener and a master of problem-solving. He helped me clarify the goals, laid out a roadmap, and gave concrete examples on how to execute."</div>
+          <div class="svc-by">Linda Chen, Software Engineer II, Amazon Web Services</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-num">05</div>
+      <div class="svc-head">
+        <div class="svc-name">Investing</div>
+        <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint5" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="52" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft5" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="58" rx="82" ry="42" fill="#C9A24A" opacity="0.12" filter="url(#soft5)"/><path d="M126 50 L128 57 L135 59 L128 61 L126 68 L124 61 L117 59 L124 57 Z" fill="#C9A24A" opacity="0.7" filter="url(#paint5)"/><g filter="url(#paint5)"><path d="M100 102 C100 88 100 80 100 62" fill="none" stroke="#3a3733" stroke-width="3" stroke-linecap="round"/><path d="M100 80 Q85 74 76 80 Q87 87 100 82 Z" fill="url(#wash5)"/><path d="M100 70 Q115 64 124 70 Q113 77 100 72 Z" fill="url(#wash5)"/></g><circle cx="100" cy="100" r="17" fill="#E7C97A" stroke="#9A7B22" stroke-width="2" filter="url(#paint5)"/><circle cx="100" cy="100" r="10.5" fill="none" stroke="#C28A2C" stroke-width="1.2"/><ellipse cx="94" cy="94" rx="4" ry="2.4" fill="#FBF1D2" opacity="0.7"/><g filter="url(#paint5)"><path d="M50 108 Q100 96 150 108 L150 124 Q100 130 50 124 Z" fill="#4a4640" opacity="0.9"/></g></svg></div>
+      </div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">Angel investor in fintech, consumer tech, and AI</div>
+          <div class="svc-pt">Portfolio: Perplexity AI, Nothing, Atom Bank, Plum</div>
+        </div>
+        <div class="svc-quote">
+          <div class="svc-qt">"Pratik is extremely knowledgeable and helped us greatly to wrap our heads around our strategy. He is an expert in his field, always supportive and encouraging. I would recommend Pratik to any startup."</div>
+          <div class="svc-by">Katya Rozenoer, Co-founder and CEO, Blastra</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-num">06</div>
+      <div class="svc-head">
+        <div class="svc-name">Teaching</div>
+        <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint6" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="63" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft6" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="56" rx="84" ry="42" fill="#C9A24A" opacity="0.12" filter="url(#soft6)"/><line x1="20" y1="118" x2="180" y2="118" stroke="#2a2825" stroke-width="1" opacity="0.4"/><g filter="url(#paint6)"><rect x="118" y="46" width="56" height="42" rx="2" fill="#FBF8F0" stroke="#2a2825" stroke-width="1.6"/></g><path d="M126 88 L122 118 M166 88 L170 118" stroke="#2a2825" stroke-width="2" stroke-linecap="round"/><path d="M126 80 C140 72 150 60 166 52" fill="none" stroke="#C2622B" stroke-width="2.2" stroke-linecap="round" filter="url(#paint6)"/><path d="M166 52 L156 52 M166 52 L163 61" fill="none" stroke="#C2622B" stroke-width="2.2" stroke-linecap="round"/><g filter="url(#paint6)"><circle cx="56" cy="56" r="6" fill="#2a2825"/><path d="M48 63 Q56 57 64 63 L66 116 Q56 119 46 116 Z" fill="#2a2825"/><path d="M64 72 L84 64" stroke="#2a2825" stroke-width="3" stroke-linecap="round"/></g><g filter="url(#paint6)" fill="#4a4640"><circle cx="92" cy="86" r="5"/><path d="M86 92 Q92 87 98 92 L100 116 L84 116 Z"/><circle cx="110" cy="88" r="5"/><path d="M104 94 Q110 89 116 94 L118 116 L102 116 Z"/></g><g filter="url(#soft6)"><ellipse cx="100" cy="122" rx="74" ry="8" fill="#FBF7EF" opacity="0.6"/></g></svg></div>
+      </div>
+      <div>
+        <div class="svc-pts">
+          <div class="svc-pt">Visiting Professor at Masters' Union, Tetr College of Business, and IE Business School, Spain</div>
+          <div class="svc-pt">5,000+ students taught across MBA and undergraduate programmes</div>
+        </div>
+        <div class="svc-quote">
+          <div class="svc-qt">"Pratik added great value. Due to his thoroughness and hard work we executed the right measures. His communication is clear and consistent, and he always had the patience to explain and help me understand what he was doing."</div>
+          <div class="svc-by">Jet Oesterreicher, Marcel Wanders Studio, Amsterdam</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -757,6 +791,7 @@
 <section class="philosophy">
   <blockquote>"Give to the world the best you have, and the best will come back to you."</blockquote>
   <cite>The principle I build everything by</cite>
+  <div class="philo-mist" aria-hidden="true"><svg viewBox="0 0 700 110" xmlns="http://www.w3.org/2000/svg"><defs><filter id="phSoft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="9"/></filter></defs><g filter="url(#phSoft)" fill="#EDE8DF"><ellipse cx="150" cy="96" rx="190" ry="22"/><ellipse cx="520" cy="102" rx="230" ry="26"/><ellipse cx="700" cy="94" rx="140" ry="20"/></g></svg></div>
 </section>
 
 <!-- ABOUT -->
@@ -819,16 +854,6 @@
   </div>
 </section>
 
-<!-- 100 DAYS OF BUILDING -->
-<section class="hundred" id="100days">
-  <div class="hundred-inner-single r">
-    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Side project</div></div>
-    <h2 class="sec-h">100 Days of <span>Building</span></h2>
-    <p class="hundred-desc">One software product shipped every day for 100 days. No agencies. No polish theatre. Just consistent output, in public. Tools and apps that solve real problems for marketers.</p>
-    <a href="/100days/" class="hundred-cta">Browse the 100 projects</a>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section class="sec" id="contact">
   <div class="cf-intro r">
@@ -879,40 +904,53 @@
   </div>
 </section>
 
-<!-- BOOKS -->
-<section class="sec sec-alt" id="books">
-  <div class="r">
-    <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Reading</div></div>
-    <h2 class="sec-h">Books I <span>recommend</span></h2>
+<!-- ATMOSPHERE -->
+<section class="atmosphere" id="ethos">
+  <div class="atmo-cap r">
+    <div class="atmo-eyebrow">Stillness</div>
+    <h2 class="atmo-h">“The quiet mind builds what the busy one cannot.”</h2>
   </div>
-  <div class="books-grid r">
-    <div class="books-col">
-      <div class="books-cat">Marketing</div>
-      <ul class="books-list">
-        <li><span class="bl-title">Obviously Awesome</span><span class="bl-auth">April Dunford</span></li>
-        <li><span class="bl-title">Contagious</span><span class="bl-auth">Jonah Berger</span></li>
-        <li><span class="bl-title">Building a StoryBrand</span><span class="bl-auth">Donald Miller</span></li>
-        <li><span class="bl-title">Made to Stick</span><span class="bl-auth">Chip &amp; Dan Heath</span></li>
-      </ul>
-    </div>
-    <div class="books-col">
-      <div class="books-cat">Leadership</div>
-      <ul class="books-list">
-        <li><span class="bl-title">Principles</span><span class="bl-auth">Ray Dalio</span></li>
-        <li><span class="bl-title">Measure What Matters</span><span class="bl-auth">John Doerr</span></li>
-        <li><span class="bl-title">Radical Candor</span><span class="bl-auth">Kim Scott</span></li>
-        <li><span class="bl-title">Thinking in Bets</span><span class="bl-auth">Annie Duke</span></li>
-      </ul>
-    </div>
-    <div class="books-col">
-      <div class="books-cat">Startups</div>
-      <ul class="books-list">
-        <li><span class="bl-title">Zero to One</span><span class="bl-auth">Peter Thiel</span></li>
-        <li><span class="bl-title">Lean Startup</span><span class="bl-auth">Eric Ries</span></li>
-        <li><span class="bl-title">The Cold Start Problem</span><span class="bl-auth">Andrew Chen</span></li>
-        <li><span class="bl-title">Hooked</span><span class="bl-auth">Nir Eyal</span></li>
-      </ul>
-    </div>
+  <div class="atmo-art" aria-hidden="true">
+    <svg viewBox="0 0 1440 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A lone figure on a sea of soft clouds at sunrise">
+      <defs>
+        <linearGradient id="atmoSky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#EEE7D7"/>
+          <stop offset="0.55" stop-color="#F5EFE3"/>
+          <stop offset="1" stop-color="#FBF7EF"/>
+        </linearGradient>
+        <radialGradient id="atmoSun" cx="50%" cy="44%" r="44%">
+          <stop offset="0" stop-color="#F7ECCD" stop-opacity="0.95"/>
+          <stop offset="0.42" stop-color="#F2E6C2" stop-opacity="0.45"/>
+          <stop offset="1" stop-color="#F2E6C2" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="atmoCore" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#C99B34" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#C99B34" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="atmoSoft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="7"/></filter>
+        <filter id="atmoSoft2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="15"/></filter>
+      </defs>
+      <rect width="1440" height="540" fill="url(#atmoSky)"/>
+      <circle cx="720" cy="240" r="440" fill="url(#atmoSun)"/>
+      <circle cx="720" cy="238" r="130" fill="url(#atmoCore)"/>
+      <g filter="url(#atmoSoft2)" opacity="0.7">
+        <ellipse cx="380" cy="338" rx="320" ry="34" fill="#FBF8F1"/>
+        <ellipse cx="1000" cy="330" rx="360" ry="38" fill="#FBF8F1"/>
+        <ellipse cx="720" cy="352" rx="430" ry="44" fill="#FCFAF4"/>
+      </g>
+      <path filter="url(#atmoSoft)" fill="#FCFAF5" d="M0,540 L0,432 C90,420 150,388 250,398 C330,406 380,432 470,420 C560,408 600,372 700,382 C788,390 828,428 920,418 C1010,408 1060,376 1170,388 C1260,398 1320,424 1440,414 L1440,540 Z"/>
+      <path fill="#F1E9D9" d="M0,540 L0,452 C100,440 150,408 260,420 C350,430 392,460 500,448 C600,437 640,402 740,412 C828,420 872,456 968,446 C1060,437 1110,406 1220,418 C1300,427 1360,452 1440,442 L1440,540 Z"/>
+      <g filter="url(#atmoSoft)" fill="#E7DECB" opacity="0.9">
+        <ellipse cx="240" cy="502" rx="230" ry="46"/>
+        <ellipse cx="770" cy="514" rx="310" ry="52"/>
+        <ellipse cx="1240" cy="500" rx="250" ry="48"/>
+      </g>
+      <g>
+        <ellipse cx="720" cy="431" rx="32" ry="5.5" fill="#19140F" opacity="0.16"/>
+        <circle cx="720" cy="373" r="8.5" fill="#19140F"/>
+        <path d="M710,383 Q720,377 730,383 L736,429 Q720,435 704,429 Z" fill="#19140F"/>
+      </g>
+    </svg>
   </div>
 </section>
 
