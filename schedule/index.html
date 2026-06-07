@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule a call — Pratik Renuse</title>
+  <meta name="description" content="Book a 30-minute call with Pratik Renuse — DTC & performance marketing leader, TEDx speaker, and startup builder.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Schedule a call — Pratik Renuse">
+  <meta property="og:description" content="Pick a time that works for you and let's talk growth, marketing, or your next zero-to-one move.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.pratikrenuse.com/schedule">
+  <meta property="og:image" content="https://www.pratikrenuse.com/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.pratikrenuse.com/schedule">
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+  <!-- Microsoft Clarity -->
+  <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #F5F1E9;
+      --surface:  #EBE5D9;
+      --raised:   #E2DBCC;
+      --border:   #D5CDBE;
+      --border2:  #C0B6A3;
+      --ink:      #19140F;
+      --ink2:     #38312A;
+      --ink3:     #4F473E;
+      --ink4:     #776D5F;
+      --gold:     #9A7B22;
+      --gold-bg:  #F1E6C6;
+      --gold-mid: #BC9438;
+      --serif:    'IBM Plex Serif', Georgia, serif;
+      --sans:     'IBM Plex Sans', system-ui, sans-serif;
+      font-size:  18px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink2);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    p { max-width: 65ch; margin: 0 0 1.15rem; }
+
+    /* ── NAV ────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.1rem 4rem;
+      background: rgba(246,242,241,0.94);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--ink); text-decoration: none; letter-spacing: 0.02em; }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 0.5rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--ink3); text-decoration: none;
+      padding: 0.85rem 0.85rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-btn {
+      font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--bg); background: var(--ink);
+      padding: 0.75rem 1.4rem; text-decoration: none;
+      transition: background 0.2s; font-weight: 500;
+    }
+    .nav-btn:hover { background: var(--gold); }
+
+    /* ── SECTION PRIMITIVES ─────────────────────────────── */
+    main { flex: 1 0 auto; }
+    .sec { padding: 7rem 4rem; }
+    .sec-alt { background: var(--surface); }
+    .lbl { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.75rem; }
+    .lbl-line { width: 30px; height: 15px; background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='30'%20height='15'%20viewBox='0%200%2030%2015'%3E%3Cline%20x1='0'%20y1='13.5'%20x2='30'%20y2='13.5'%20stroke='%239A7B22'%20stroke-width='1'/%3E%3Cpath%20d='M9%2013.5a6%206%200%200%201%2012%200'%20fill='none'%20stroke='%239A7B22'%20stroke-width='1'/%3E%3C/svg%3E") no-repeat left bottom; flex-shrink: 0; }
+    .lbl-text { font-size: 0.82rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+    h2.sec-h { font-family: var(--serif); font-size: clamp(2rem, 3vw, 2.9rem); font-weight: 300; line-height: 1.15; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 3rem; }
+    h2.sec-h span { color: var(--gold); }
+
+    /* ── BOOKING (page-specific, built on site primitives) ─ */
+    .book-section { padding-top: 9rem; }
+    .book-intro { max-width: 680px; margin: 0 auto 0; text-align: center; }
+    .book-intro .lbl { justify-content: center; }
+    .book-intro h2.sec-h { margin-bottom: 1.25rem; }
+    .book-intro p { font-size: 1.08rem; color: var(--ink2); line-height: 1.7; margin: 0 auto; max-width: 38rem; font-weight: 400; }
+
+    .book-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem 2.25rem; margin-top: 2.25rem; }
+    .book-meta-item { display: inline-flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--ink2); font-weight: 400; }
+    .book-meta-item::before { content: ''; display: block; width: 1.5rem; height: 1px; background: var(--gold); flex-shrink: 0; }
+    .book-meta-item strong { font-weight: 500; color: var(--ink); }
+
+    .cal-wrap { max-width: 920px; margin: 3.5rem auto 0; }
+    .cal-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--gold);
+      padding: 1rem;
+      box-shadow: 0 1px 0 var(--border), 0 24px 48px -28px rgba(26,21,18,0.28);
+    }
+    .tidycal-embed { min-height: 660px; }
+    .cal-fallback { text-align: center; font-size: 0.9rem; color: var(--ink4); margin-top: 1.5rem; font-weight: 400; }
+    .cal-fallback a { color: var(--gold); text-decoration: none; transition: color 0.2s; }
+    .cal-fallback a:hover { color: var(--ink); }
+
+    /* ── FOOTER ─────────────────────────────────────────── */
+    footer {
+      padding: 1.5rem 4rem; border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.82rem; color: var(--ink4); background: var(--surface);
+      font-weight: 400;
+    }
+    footer .foot-tag { font-family: var(--serif); font-style: italic; max-width: 50ch; }
+    footer a { color: var(--ink3); text-decoration: none; transition: color 0.2s; padding: 0.5rem 0; font-weight: 500; letter-spacing: 0.04em; }
+    footer a:hover { color: var(--gold); }
+
+    /* ── REVEAL ─────────────────────────────────────────── */
+    .r { opacity: 0; transform: translateY(20px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
+    .r.on { opacity: 1; transform: none; }
+    .rd1 { transition-delay: 0.1s; }
+
+    /* ── RESPONSIVE ─────────────────────────────────────── */
+    @media (max-width: 960px) {
+      :root { font-size: 17px; }
+      nav { padding: 1rem 1.25rem; gap: 0.5rem; }
+      .nav-links { display: none; }
+      .nav-btn { font-size: 0.7rem; padding: 0.65rem 1rem; letter-spacing: 0.1em; white-space: nowrap; }
+      .sec { padding: 4rem 1.5rem; }
+      .book-section { padding-top: 6.5rem; }
+      .lbl { flex-wrap: wrap; }
+      footer { flex-direction: column; gap: 0.85rem; text-align: center; padding: 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      :root { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
+  <ul class="nav-links">
+    <li><a href="/#services">Expertise</a></li>
+    <li><a href="/#case-studies">Case studies</a></li>
+    <li><a href="/#speaking">Speaking</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+  <a href="https://www.linkedin.com/in/pratikrenuse/" target="_blank" class="nav-btn">Connect on LinkedIn</a>
+</nav>
+
+<main>
+  <!-- BOOKING -->
+  <section class="sec sec-alt book-section">
+    <div class="book-intro r">
+      <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Schedule a call</div><div class="lbl-line"></div></div>
+      <h2 class="sec-h">Let's find a <span>time to talk</span></h2>
+      <p>Founder, student, or event organiser — grab a 30-minute slot below. Pick a time that works for you and I'll see you there.</p>
+      <div class="book-meta">
+        <div class="book-meta-item"><span><strong>30 minutes</strong></span></div>
+        <div class="book-meta-item"><span>Video call</span></div>
+        <div class="book-meta-item"><span>Your timezone</span></div>
+      </div>
+    </div>
+
+    <div class="cal-wrap r rd1">
+      <div class="cal-card">
+        <!-- TidyCal embed -->
+        <div class="tidycal-embed" data-path="pratik/30-minutes"></div>
+      </div>
+      <p class="cal-fallback">
+        Calendar not loading? Book directly at
+        <a href="https://tidycal.com/pratik/30-minutes" target="_blank" rel="noopener">tidycal.com/pratik/30-minutes</a>.
+      </p>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 Pratik Renuse</span>
+  <a href="/">Back to home ↑</a>
+</footer>
+
+<script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+<script>
+  // Reveal on scroll (matches main site)
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+  }, { threshold: 0.06 });
+  document.querySelectorAll('.r').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
