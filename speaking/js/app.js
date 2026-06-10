@@ -118,12 +118,14 @@
     if (!wheel) return;
     const cards = $$('.scene__card', wheel);
     const N = cards.length;
-    // 360° wheel: cards arranged around a circle, each rotated to face outward
-    // from the centre. Scroll rotates the wheel so each card takes its turn.
+    // 360° wheel: cards arranged around a circle. Radius is computed from the
+    // ACTUAL card width so the polygon stays tight on mobile (where cards shrink).
     const angleStep = 360 / N;
-    const radius    = Math.round(280 / (2 * Math.tan(Math.PI / N)) + 60);
 
     const layoutWheel = () => {
+      const cw = cards[0].offsetWidth || 280;
+      const fudge = Math.max(18, cw * 0.22);
+      const radius = Math.round(cw / (2 * Math.tan(Math.PI / N)) + fudge);
       cards.forEach((card, i) => {
         card.style.transform = `rotateY(${i * angleStep}deg) translateZ(${radius}px)`;
       });
@@ -358,7 +360,8 @@
         const cards = $$('.scene__card', wheel);
         const N = cards.length;
         const step = 360 / N;
-        const r    = Math.round(280 / (2 * Math.tan(Math.PI / N)) + 60);
+        const cw = cards[0].offsetWidth || 280;
+        const r = Math.round(cw / (2 * Math.tan(Math.PI / N)) + Math.max(18, cw * 0.22));
         cards.forEach((card, i) => {
           card.style.transform = `rotateY(${i * step}deg) translateZ(${r}px)`;
         });
