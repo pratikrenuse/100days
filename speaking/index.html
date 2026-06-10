@@ -1,189 +1,468 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="is-blocked">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Speaking — Pratik Renuse · TEDx & Keynote Speaker</title>
 <meta name="description" content="Three TEDx talks across Europe. Fifty-plus keynotes in fourteen countries. Growth, marketing, and the operator mindset." />
+<meta name="theme-color" content="#0E0B08" />
+<link rel="icon" type="image/png" href="/icons/favicon-48x48.png" sizes="48x48" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
 
-<!-- Google Analytics 4 -->
+<!-- SVG filters for distortion + glow -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="distort">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="3" result="noise">
+        <animate attributeName="baseFrequency" dur="14s" values="0.010;0.022;0.010" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="24"/>
+    </filter>
+    <filter id="goo">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" mode="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10" result="goo"/>
+      <feBlend in="SourceGraphic" in2="goo"/>
+    </filter>
+  </defs>
+</svg>
+
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
 </head>
 <body>
 
-<!-- 1. Loader -->
-<div id="loader">
-  <div class="loader-brand">ON STAGE</div>
-  <div id="loader-bar"><span id="loader-bar-fill"></span></div>
-  <div id="loader-percent">0%</div>
+<!-- ░░░░░ Intro splash ░░░░░ -->
+<div class="site-intro" id="intro">
+  <div class="intro__logo" aria-hidden="true">
+    <span class="bar bar--v bar--v1"></span>
+    <span class="bar bar--v bar--v2"></span>
+    <span class="bar bar--h bar--h1"></span>
+    <span class="bar bar--v bar--v3"></span>
+    <span class="bar bar--v bar--v4"></span>
+  </div>
+  <div class="intro__sweep" aria-hidden="true"></div>
 </div>
 
-<!-- 2. Header (mix-blend-mode: difference) -->
-<header class="site-header">
-  <nav>
-    <a class="logo" href="/">PRATIK RENUSE</a>
-    <ul>
-      <li><a href="#origin">Origin</a></li>
-      <li><a href="#talks">Talks</a></li>
-      <li><a href="#stages">Stages</a></li>
-      <li><a href="#topics">Topics</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a class="nav-cta" href="/#contact">Book me</a></li>
-    </ul>
-  </nav>
-</header>
+<div class="site-wrapper" id="site">
 
-<!-- 3. Hero (standalone 100vh) -->
-<section class="hero-standalone">
-  <div class="hero-inner">
-    <span class="section-label">2014 — Present · TEDx & Keynote Speaker</span>
-    <h1 class="hero-heading">
-      <span>On</span> <span>Stage.</span>
-    </h1>
-    <p class="hero-tagline">Three TEDx talks. Fifty-plus keynotes. Fourteen countries. One operator with a microphone.</p>
-  </div>
-  <div class="scroll-indicator">
-    <span>Scroll</span>
-    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" aria-hidden="true">
-      <path d="M7 1v20m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- ░░░░░ Site head ░░░░░ -->
+  <header class="site-head">
+    <div class="head__inner">
+
+      <a href="/" class="head__logo" aria-label="Pratik Renuse — Home">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <path d="M40 0v44h-4V0h-8v44h-4V0h-8v48h24V0h-8Z" class="logo-fill"/>
+          <path d="M0 0v48h8V4h4v44h8V0H0Z" class="logo-fill"/>
+        </svg>
+        <span class="u-sr">Pratik Renuse</span>
+      </a>
+
+      <nav class="head__menu" aria-label="Primary">
+        <ul>
+          <li><a href="#about" class="menu-link"><span>About</span></a></li>
+          <li><a href="#stages" class="menu-link"><span>Moments</span></a></li>
+          <li><a href="#contact" class="menu-link"><span>Book</span></a></li>
+          <li><a href="/" class="menu-link"><span>Home</span></a></li>
+        </ul>
+      </nav>
+
+      <aside class="head__avail">
+        <p>
+          <span class="line"><span class="dot"></span> Speaking globally from Amsterdam.</span>
+          <span class="line">Available for keynotes → <a href="/#contact">Book me</a></span>
+        </p>
+      </aside>
+
+    </div>
+  </header>
+
+  <!-- ░░░░░ Hero ░░░░░ -->
+  <section class="s-hero" id="top">
+    <!-- Animated SVG waves -->
+    <svg class="hero__waves" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true">
+      <path class="wave wave--1" d="M0,300 C240,200 480,400 720,300 C960,200 1200,400 1440,300 L1440,600 L0,600 Z"/>
+      <path class="wave wave--2" d="M0,340 C240,240 480,440 720,340 C960,240 1200,440 1440,340 L1440,600 L0,600 Z"/>
+      <path class="wave wave--3" d="M0,380 C240,280 480,480 720,380 C960,280 1200,480 1440,380 L1440,600 L0,600 Z"/>
     </svg>
+
+    <div class="hero__content">
+
+      <div class="ticker-sep" aria-hidden="true">
+        <span class="tk__tri"></span>
+        <div class="tk__track">
+          <div class="tk__row">
+            <span>TEDx EUROPE</span><span class="tk__dot">·</span>
+            <span>ASIA PACIFIC DIGITAL MARKETING CONCLAVE</span><span class="tk__dot">·</span>
+            <span>RUSSIAN STREAM CONFERENCE</span><span class="tk__dot">·</span>
+            <span>FOUNDER SUMMITS</span><span class="tk__dot">·</span>
+            <span>CORPORATE OFFSITES</span><span class="tk__dot">·</span>
+            <span>FIRESIDE CHATS</span><span class="tk__dot">·</span>
+            <span>WORKSHOPS</span><span class="tk__dot">·</span>
+          </div>
+        </div>
+        <span class="tk__tri"></span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="word" data-word>On</span>
+        <span class="hero__star" aria-hidden="true">
+          <svg width="64" height="64" viewBox="0 0 49 49" fill="none">
+            <path fill="currentColor" d="m24.5 0 3.3 21.2L49 24.5l-21.2 3.3L24.5 49l-3.3-21.2L0 24.5l21.2-3.3L24.5 0z"/>
+          </svg>
+        </span>
+        <span class="word word--accent" data-word>Stage.</span>
+      </h1>
+
+      <div class="ticker-sep ticker-sep--reverse" aria-hidden="true">
+        <span class="tk__tri"></span>
+        <div class="tk__track">
+          <div class="tk__row">
+            <span>GROWTH</span><span class="tk__dot">·</span>
+            <span>MARKETING</span><span class="tk__dot">·</span>
+            <span>OPERATING</span><span class="tk__dot">·</span>
+            <span>DTC</span><span class="tk__dot">·</span>
+            <span>PERFORMANCE</span><span class="tk__dot">·</span>
+            <span>BRAND</span><span class="tk__dot">·</span>
+            <span>STARTUPS</span><span class="tk__dot">·</span>
+            <span>GROWTH</span><span class="tk__dot">·</span>
+            <span>MARKETING</span><span class="tk__dot">·</span>
+            <span>OPERATING</span><span class="tk__dot">·</span>
+            <span>DTC</span><span class="tk__dot">·</span>
+            <span>PERFORMANCE</span><span class="tk__dot">·</span>
+            <span>BRAND</span><span class="tk__dot">·</span>
+            <span>STARTUPS</span><span class="tk__dot">·</span>
+          </div>
+        </div>
+        <span class="tk__tri"></span>
+      </div>
+
+      <p class="hero__tagline">
+        Three TEDx talks. Fifty-plus keynotes. Fourteen countries. One operator with a microphone.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░ About ░░░░░ -->
+  <section class="s-about" id="about">
+    <div class="about__inner">
+
+      <div class="about__block about__block--text">
+        <h2 class="block__title">About</h2>
+        <div class="block__content">
+          <p>I'm a DTC and performance marketing leader who picked up a microphone in 2014 and never put it down.</p>
+          <p>Three <strong>TEDx</strong> stages across Europe. Fifty-plus keynotes in fourteen countries, across four continents. Conferences from <strong>Asia Pacific Digital Marketing Conclave</strong> to <strong>Russian Stream Conference</strong>, plus founder summits, corporate offsites, and fireside chats in between.</p>
+          <p>Every talk is written fresh from what I've shipped — growth, marketing, and the operator mindset. What worked, what failed publicly, and the unglamorous middle that separates the two.</p>
+        </div>
+      </div>
+
+      <div class="about__block about__block--awards">
+        <h2 class="block__title">Numbers</h2>
+        <ul class="awards">
+          <li class="award award--counter award--tedx" data-award>
+            <span class="award__inner">
+              <span class="award__name">TEDx</span>
+              <span class="award__counter">(Talks × 3)</span><span class="award__counter">(Europe × 3)</span>
+            </span>
+            <span class="award__mask"></span>
+          </li>
+          <li class="award award--counter award--keynotes" data-award>
+            <span class="award__inner">
+              <span class="award__name">Keynotes</span>
+              <span class="award__counter">(Delivered × 50+)</span><span class="award__counter">(Continents × 4)</span>
+            </span>
+            <span class="award__mask"></span>
+          </li>
+          <li class="award award--counter award--countries" data-award>
+            <span class="award__inner">
+              <span class="award__name">Countries</span>
+              <span class="award__counter">(Stages × 14)</span><span class="award__counter">(Cities × 30+)</span>
+            </span>
+            <span class="award__mask"></span>
+          </li>
+          <li class="award award--text" data-award>
+            <span class="award__inner">
+              <span class="award__text">TEDx Curator endorsement — Peter Szabo</span>
+            </span>
+            <span class="award__mask"></span>
+          </li>
+          <li class="award award--text" data-award>
+            <span class="award__inner">
+              <span class="award__text">10+ years on stage · since 2014</span>
+            </span>
+            <span class="award__mask"></span>
+          </li>
+          <li class="award award--text" data-award>
+            <span class="award__inner">
+              <span class="award__text">Russian Stream Conf · Asia Pacific Digital Marketing Conclave</span>
+            </span>
+            <span class="award__mask"></span>
+          </li>
+          <li class="award award--text" data-award>
+            <span class="award__inner">
+              <span class="award__text">YouTube · 2 TEDx talks live</span>
+            </span>
+            <span class="award__mask"></span>
+          </li>
+          <li class="award award--blank">
+            <svg width="80" height="90" viewBox="0 0 80 90" fill="none">
+              <ellipse cx="40" cy="45" rx="38" ry="42" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
+              <ellipse cx="40" cy="45" rx="32" ry="38" stroke="currentColor" stroke-width="1" fill="none" opacity="0.45" transform="rotate(15 40 45)"/>
+              <ellipse cx="40" cy="45" rx="26" ry="32" stroke="currentColor" stroke-width="1" fill="none" opacity="0.3" transform="rotate(30 40 45)"/>
+            </svg>
+            <svg width="22" height="22" viewBox="0 0 49 49" fill="none"><path fill="currentColor" d="m24.5 0 3.3 21.2L49 24.5l-21.2 3.3L24.5 49l-3.3-21.2L0 24.5l21.2-3.3L24.5 0z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 49 49" fill="none"><path fill="currentColor" d="m24.5 0 3.3 21.2L49 24.5l-21.2 3.3L24.5 49l-3.3-21.2L0 24.5l21.2-3.3L24.5 0z"/></svg>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░ Ticker separator — stats ░░░░░ -->
+  <div class="ticker-sep ticker-sep--solo" aria-hidden="true">
+    <span class="tk__tri"></span>
+    <div class="tk__track">
+      <div class="tk__row">
+        <span class="tk__num">03</span><span class="tk__lbl">TEDx talks</span><span class="tk__dot">·</span>
+        <span class="tk__num">50+</span><span class="tk__lbl">keynotes delivered</span><span class="tk__dot">·</span>
+        <span class="tk__num">14</span><span class="tk__lbl">countries</span><span class="tk__dot">·</span>
+        <span class="tk__num">04</span><span class="tk__lbl">continents</span><span class="tk__dot">·</span>
+        <span class="tk__num">10+</span><span class="tk__lbl">years on stage</span><span class="tk__dot">·</span>
+        <span class="tk__num">03</span><span class="tk__lbl">TEDx talks</span><span class="tk__dot">·</span>
+        <span class="tk__num">50+</span><span class="tk__lbl">keynotes delivered</span><span class="tk__dot">·</span>
+        <span class="tk__num">14</span><span class="tk__lbl">countries</span><span class="tk__dot">·</span>
+        <span class="tk__num">04</span><span class="tk__lbl">continents</span><span class="tk__dot">·</span>
+        <span class="tk__num">10+</span><span class="tk__lbl">years on stage</span><span class="tk__dot">·</span>
+      </div>
+    </div>
+    <span class="tk__tri"></span>
   </div>
-</section>
 
-<!-- 4. Canvas (revealed via circle-wipe) -->
-<div class="canvas-wrap">
-  <canvas id="canvas"></canvas>
-</div>
+  <!-- ░░░░░ Stages (Talks carousel) ░░░░░ -->
+  <section class="s-stages" id="stages">
 
-<!-- 5. Dark overlay (for stats section) -->
-<div id="dark-overlay"></div>
+    <h2 class="stages__title" aria-label="Moments">
+      <span class="letter">M</span><span class="letter">O</span><span class="letter">M</span><span class="letter">E</span><span class="letter">N</span><span class="letter">T</span><span class="letter">S</span>
+    </h2>
 
-<!-- 6. Marquee -->
-<div class="marquee-wrap" data-scroll-speed="-25" data-enter="38" data-leave="62">
-  <div class="marquee-text">ON STAGE · ON STAGE · ON STAGE · ON STAGE · ON STAGE ·</div>
-</div>
-
-<!-- 7. Scroll container (900vh) -->
-<div id="scroll-container">
-
-  <!-- 001 Origin -->
-  <section id="origin" class="scroll-section section-content align-left"
-           data-enter="8" data-leave="20" data-animation="slide-left">
-    <div class="section-inner">
-      <span class="section-label">001 / Origin</span>
-      <h2 class="section-heading">A keynote, then a habit.</h2>
-      <p class="section-body">It started with one talk in front of a small audience. A decade later, three TEDx stages across Europe and fifty-plus keynotes. The job each time is the same — take a room of strangers somewhere they wouldn't have gone alone.</p>
-    </div>
-  </section>
-
-  <!-- 002 The talks -->
-  <section id="talks" class="scroll-section section-content align-right"
-           data-enter="22" data-leave="34" data-animation="slide-right">
-    <div class="section-inner">
-      <span class="section-label">002 / The talks</span>
-      <h2 class="section-heading">Three TEDx talks. Europe.</h2>
-      <p class="section-body">On growth, marketing, and the operator mindset. Written from what I've shipped — what worked, what failed publicly, and the unglamorous middle that separates the two.</p>
-      <p class="section-note"><a href="https://www.youtube.com/watch?v=kQVNTK8MWZg" target="_blank" rel="noopener">Watch on YouTube →</a></p>
-    </div>
-  </section>
-
-  <!-- 003 The room -->
-  <section id="room" class="scroll-section section-content align-left"
-           data-enter="36" data-leave="48" data-animation="clip-reveal">
-    <div class="section-inner">
-      <span class="section-label">003 / The room</span>
-      <h2 class="section-heading">Fifty-plus keynotes.</h2>
-      <p class="section-body">Fourteen countries. Four continents — US, Europe, Middle East, Asia. Conferences, universities, corporate offsites. Every talk written fresh for the room it's delivered in.</p>
-    </div>
-  </section>
-
-  <!-- Stats -->
-  <section class="scroll-section section-stats"
-           data-enter="52" data-leave="66" data-animation="stagger-up">
-    <div class="stats-grid">
-      <div class="stat">
-        <span class="stat-number" data-value="3" data-decimals="0">0</span>
-        <span class="stat-label">TEDx talks</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number" data-value="50" data-decimals="0">0</span>
-        <span class="stat-suffix">+</span>
-        <span class="stat-label">Keynotes</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number" data-value="14" data-decimals="0">0</span>
-        <span class="stat-label">Countries</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number" data-value="4" data-decimals="0">0</span>
-        <span class="stat-label">Continents</span>
+    <div class="stages__scene" id="scene">
+      <div class="scene__wheel" id="wheel">
+        <figure class="scene__card" data-card>
+          <img src="../hero.jpg" alt="" loading="lazy">
+          <figcaption>
+            <span class="card__name">TEDx · Europe</span>
+            <span class="card__key">#mom-01</span>
+          </figcaption>
+        </figure>
+        <figure class="scene__card" data-card>
+          <img src="frames/frame_01_stage.jpg" alt="" loading="lazy">
+          <figcaption>
+            <span class="card__name">TEDx · headset, live</span>
+            <span class="card__key">#mom-02</span>
+          </figcaption>
+        </figure>
+        <figure class="scene__card" data-card>
+          <img src="frames/frame_02_teach.jpg" alt="" loading="lazy">
+          <figcaption>
+            <span class="card__name">Workshop · whiteboard</span>
+            <span class="card__key">#mom-03</span>
+          </figcaption>
+        </figure>
+        <figure class="scene__card" data-card>
+          <img src="../about.jpg" alt="" loading="lazy">
+          <figcaption>
+            <span class="card__name">Between talks · portrait</span>
+            <span class="card__key">#mom-04</span>
+          </figcaption>
+        </figure>
+        <figure class="scene__card" data-card>
+          <img src="frames/Image%203.jpeg" alt="" loading="lazy">
+          <figcaption>
+            <span class="card__name">On the road · Barcelona</span>
+            <span class="card__key">#mom-05</span>
+          </figcaption>
+        </figure>
       </div>
     </div>
+
+    <p class="stages__caption">
+      <em>5</em> of <em>50+</em> moments · stages, workshops, and the road in between
+    </p>
   </section>
 
-  <!-- 004 Topics -->
-  <section id="topics" class="scroll-section section-content align-right"
-           data-enter="68" data-leave="78" data-animation="rotate-in">
-    <div class="section-inner">
-      <span class="section-label">004 / Topics</span>
-      <h2 class="section-heading">Growth. Marketing. Operating.</h2>
-      <p class="section-body"><strong>Growth</strong> — what actually moves the needle when the easy levers are gone.</p>
-      <p class="section-body"><strong>Marketing</strong> — DTC, performance, and brand for the operator who has to sell.</p>
-      <p class="section-body"><strong>Operating</strong> — founding, shipping, and failing in public.</p>
+  <!-- ░░░░░ Ticker — topics ░░░░░ -->
+  <div class="ticker-sep ticker-sep--solo" aria-hidden="true">
+    <span class="tk__tri"></span>
+    <div class="tk__track">
+      <div class="tk__row">
+        <span class="tk__lbl">What I speak about</span><span class="tk__dot">·</span>
+        <span class="tk__num">01</span><span class="tk__lbl">Growth</span><span class="tk__dot">·</span>
+        <span class="tk__num">02</span><span class="tk__lbl">Marketing</span><span class="tk__dot">·</span>
+        <span class="tk__num">03</span><span class="tk__lbl">Operating</span><span class="tk__dot">·</span>
+        <span class="tk__lbl">What I speak about</span><span class="tk__dot">·</span>
+        <span class="tk__num">01</span><span class="tk__lbl">Growth</span><span class="tk__dot">·</span>
+        <span class="tk__num">02</span><span class="tk__lbl">Marketing</span><span class="tk__dot">·</span>
+        <span class="tk__num">03</span><span class="tk__lbl">Operating</span><span class="tk__dot">·</span>
+      </div>
     </div>
-  </section>
-
-  <!-- 005 Recent -->
-  <section id="stages" class="scroll-section section-content align-left"
-           data-enter="80" data-leave="88" data-animation="scale-up">
-    <div class="section-inner">
-      <span class="section-label">005 / Recent stages</span>
-      <h2 class="section-heading">Where I've been speaking.</h2>
-      <p class="section-body">Asia Pacific Digital Marketing Conclave · Russian Stream Conference · university lectures at Harvard, Oxford, and LSE.</p>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="scroll-section section-cta"
-           data-enter="92" data-leave="100" data-animation="fade-up" data-persist="true">
-    <div class="section-inner cta-inner">
-      <span class="section-label">Bring me to your stage</span>
-      <h2 class="section-heading">Available now.</h2>
-      <p class="section-body">Keynotes, TEDx-style talks, fireside chats, university lectures. I read every booking note personally.</p>
-      <a class="cta-button" href="/#contact">Book me to speak →</a>
-      <span class="section-note">Reply within 48 hours</span>
-    </div>
-  </section>
-
-</div>
-
-<!-- Build / sub-CTA -->
-<section class="build-cta">
-  <div class="build-cta-inner">
-    <span class="build-cta-label">What organisers say</span>
-    <h3 class="build-cta-heading">"The audience loved him."</h3>
-    <p class="build-cta-body">"Pratik is a great speaker, very knowledgeable. He delivered an engaging talk. I would recommend him as a speaker for any event." — Peter Szabo, Curator, TEDx</p>
-    <div class="build-cta-actions">
-      <a class="build-cta-button primary" href="https://www.youtube.com/watch?v=kQVNTK8MWZg" target="_blank" rel="noopener">Watch the TEDx talk →</a>
-      <a class="build-cta-button secondary" href="https://www.linkedin.com/in/pratikrenuse/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-    </div>
+    <span class="tk__tri"></span>
   </div>
-</section>
 
-<!-- Course footer -->
-<footer class="course-footer">
-  <div class="course-footer-inner">
-    <span class="course-footer-label">Get in touch</span>
-    <h3 class="course-footer-heading">Bring me to your stage.</h3>
-    <p class="course-footer-body">Tell me about the room, the audience, and the takeaway you want them to leave with. I'll come back with a shape for the talk within 48 hours.</p>
-    <a class="course-footer-cta" href="/#contact">Send me a note →</a>
+  <!-- ░░░░░ What I speak about ░░░░░ -->
+  <section class="s-topics" id="topics">
+    <h2 class="topics__title" aria-label="What I speak about">
+      <span class="word" data-word>What</span>
+      <span class="word word--accent" data-word>I&nbsp;speak</span>
+      <span class="word" data-word>about.</span>
+    </h2>
+
+    <div class="topics__grid">
+
+      <article class="topic-card" data-topic>
+        <div class="topic__num">01</div>
+        <h3 class="topic__name">Growth</h3>
+        <p class="topic__body">What actually moves the needle when the easy levers are gone. Acquisition, retention, the math of compounding when budgets stop scaling.</p>
+        <ul class="topic__tags">
+          <li>Acquisition</li><li>Retention</li><li>Compounding</li><li>Frameworks</li>
+        </ul>
+        <div class="topic__halo" aria-hidden="true"></div>
+      </article>
+
+      <article class="topic-card" data-topic>
+        <div class="topic__num">02</div>
+        <h3 class="topic__name">Marketing</h3>
+        <p class="topic__body">DTC, performance, brand. Built for operators who have to sell — not for VPs who get to delegate.</p>
+        <ul class="topic__tags">
+          <li>DTC</li><li>Performance</li><li>Brand</li><li>Operator-friendly</li>
+        </ul>
+        <div class="topic__halo" aria-hidden="true"></div>
+      </article>
+
+      <article class="topic-card" data-topic>
+        <div class="topic__num">03</div>
+        <h3 class="topic__name">Operating</h3>
+        <p class="topic__body">Founding, shipping, and failing in public. The unglamorous middle between a great idea and a real business.</p>
+        <ul class="topic__tags">
+          <li>Founding</li><li>Shipping</li><li>Failing</li><li>Compounding habits</li>
+        </ul>
+        <div class="topic__halo" aria-hidden="true"></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░ Ticker separator — booking ░░░░░ -->
+  <div class="ticker-sep ticker-sep--solo ticker-sep--reverse" aria-hidden="true">
+    <span class="tk__tri"></span>
+    <div class="tk__track">
+      <div class="tk__row">
+        <span class="tk__lbl">Available for keynotes</span><span class="tk__dot">·</span>
+        <span class="tk__lbl">Speaking globally</span><span class="tk__dot">·</span>
+        <span class="tk__lbl">Reply within 48h</span><span class="tk__dot">·</span>
+        <span class="tk__lbl">Operator on stage since 2014</span><span class="tk__dot">·</span>
+        <span class="tk__lbl">Available for keynotes</span><span class="tk__dot">·</span>
+        <span class="tk__lbl">Speaking globally</span><span class="tk__dot">·</span>
+        <span class="tk__lbl">Reply within 48h</span><span class="tk__dot">·</span>
+        <span class="tk__lbl">Operator on stage since 2014</span><span class="tk__dot">·</span>
+      </div>
+    </div>
+    <span class="tk__tri"></span>
   </div>
-</footer>
+
+  <!-- ░░░░░ Catcher ─ Speaking since 2014 ░░░░░ -->
+  <section class="s-catcher">
+
+    <svg class="catcher__smiley" viewBox="0 0 77.8 77.8" aria-hidden="true">
+      <circle cx="38.9" cy="38.9" r="38.4" fill="none" stroke="currentColor" stroke-width="1"/>
+      <path fill="currentColor"
+        d="M25.5 23.1c-1.9 0-3.5 2-4.1 5.1l-.1.3 3 2.2-2.9 2.2.1.3c.6 2.5 1.5 5.1 4.1 5.1 2.4 0 4.2-3.3 4.2-7.6s-2.4-7.6-4.3-7.6zm26.6 0c-1.9 0-3.5 2-4.1 5.1v.3l3 2.2-3 2.2.1.3c.6 2.5 1.5 5.1 4.1 5.1 2.4 0 4.2-3.3 4.2-7.6s-2.3-7.6-4.3-7.6zM62 39c0-.3-.2-.5-.5-.5s-.5.2-.5.5c0 12.2-9.9 22.1-22.1 22.1-12.2 0-22.1-9.9-22.1-22.1 0-.3-.2-.5-.5-.5s-.5.2-.5.5c0 12.7 10.4 23.1 23.1 23.1S62 51.7 62 39z"/>
+    </svg>
+
+    <div class="catcher__distorted-wrap" aria-hidden="true">
+      <div class="catcher__text catcher__text--distorted">
+        Speaking<br>
+        my way<br>
+        since<br>
+        2014
+      </div>
+    </div>
+
+    <div class="catcher__normal">
+      <div class="catcher__text">
+        Speaking<br>
+        my way<br>
+        since<br>
+        2014
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ░░░░░ CTA ░░░░░ -->
+  <section class="s-cta" id="contact">
+    <div class="cta__inner">
+
+      <div class="cta__lines">
+        <div class="cta__line">
+          <span class="cta__char"><span>B</span><span>B</span><span>B</span><span>B</span></span>
+          <span class="cta__char"><span>O</span><span>O</span><span>O</span><span>O</span></span>
+          <span class="cta__char"><span>O</span><span>O</span><span>O</span><span>O</span></span>
+          <span class="cta__char"><span>K</span><span>K</span><span>K</span><span>K</span></span>
+        </div>
+        <div class="cta__line cta__line--bottom">
+          <span class="cta__char"><span>M</span><span>M</span><span>M</span><span>M</span></span>
+          <span class="cta__char"><span>E</span><span>E</span><span>E</span><span>E</span></span>
+          <span class="cta__char"><span>.</span><span>.</span><span>.</span><span>.</span></span>
+        </div>
+      </div>
+
+      <a href="/#contact" class="cta__btn">
+        <span class="cta__btn__inner">
+          <span class="cta__btn__text">GO →</span>
+        </span>
+      </a>
+
+      <div class="cta__stars" aria-hidden="true">
+        <svg viewBox="0 0 49 49"><path fill="currentColor" d="m24.5 0 3.3 21.2L49 24.5l-21.2 3.3L24.5 49l-3.3-21.2L0 24.5l21.2-3.3L24.5 0z"/></svg>
+        <svg viewBox="0 0 49 49"><path fill="currentColor" d="m24.5 0 3.3 21.2L49 24.5l-21.2 3.3L24.5 49l-3.3-21.2L0 24.5l21.2-3.3L24.5 0z"/></svg>
+        <svg viewBox="0 0 49 49"><path fill="currentColor" d="m24.5 0 3.3 21.2L49 24.5l-21.2 3.3L24.5 49l-3.3-21.2L0 24.5l21.2-3.3L24.5 0z"/></svg>
+        <svg viewBox="0 0 49 49"><path fill="currentColor" d="m24.5 0 3.3 21.2L49 24.5l-21.2 3.3L24.5 49l-3.3-21.2L0 24.5l21.2-3.3L24.5 0z"/></svg>
+      </div>
+
+      <p class="cta__sub">
+        <a href="https://www.youtube.com/watch?v=kQVNTK8MWZg" target="_blank" rel="noopener">Watch TEDx ①</a>
+        ·
+        <a href="https://www.youtube.com/watch?v=ndVPPHX4w04" target="_blank" rel="noopener">Watch TEDx ②</a>
+        ·
+        <a href="https://www.linkedin.com/in/pratikrenuse/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░ Footer ░░░░░ -->
+  <footer class="site-foot">
+    <a href="/" class="foot__logo" aria-label="Pratik Renuse — Home">
+      <svg width="120" height="120" viewBox="0 0 48 48" fill="none">
+        <path d="M40 0v44h-4V0h-8v44h-4V0h-8v48h24V0h-8Z" class="logo-fill"/>
+        <path d="M0 0v48h8V4h4v44h8V0H0Z" class="logo-fill"/>
+      </svg>
+    </a>
+  </footer>
+
+</div><!-- /site-wrapper -->
+
+<!-- Custom scrollbar -->
+<div class="site-scrollbar" aria-hidden="true">
+  <div class="sb__track"></div>
+  <div class="sb__thumb" id="sb-thumb"></div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>

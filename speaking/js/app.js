@@ -1,6 +1,7 @@
 /* =====================================================
    Pratik Renuse — /speaking/
-   Scroll engine + image-sequence canvas (Royal-Pop pattern)
+   Wodniack-style choreography: intro splash, hero waves,
+   binary code, photo wheel, catcher distortion, scrollbar
    ===================================================== */
 
 (() => {
@@ -8,381 +9,388 @@
   const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ─── 1. LOADER ─────────────────────────────────────────── */
-  const loader = $('#loader');
-  const fill   = $('#loader-bar-fill');
-  const pct    = $('#loader-percent');
-
-  function fakeLoader(done) {
-    let p = 0;
-    const step = () => {
-      p += (100 - p) * 0.08 + 0.6;
-      if (p >= 99.5) p = 100;
-      fill.style.width = p + '%';
-      pct.textContent  = Math.round(p) + '%';
-      if (p < 100) requestAnimationFrame(step);
-      else setTimeout(done, 220);
-    };
-    requestAnimationFrame(step);
-  }
-
-  /* ─── 2. CANVAS (image sequence) ────────────────────────── */
-  // We don't have an extracted JPG sequence, so we simulate it with
-  // the hero.jpg drawn at progressively different crops/zooms — gives
-  // the same scroll-driven motion feel as Royal Pop's frame sequence.
-  const canvas = $('#canvas');
-  const ctx    = canvas ? canvas.getContext('2d', { alpha: false }) : null;
-  const heroImg  = new Image();
-  const aboutImg = new Image();
-  heroImg.src  = '../hero.jpg';
-  aboutImg.src = '../about.jpg';
-  let canvasReady = false;
-  let dpr = Math.min(window.devicePixelRatio || 1, 2);
-  let cw = 0, ch = 0;
-
-  function resizeCanvas() {
-    if (!canvas) return;
-    cw = window.innerWidth;
-    ch = window.innerHeight;
-    canvas.width  = cw * dpr;
-    canvas.height = ch * dpr;
-    canvas.style.width  = cw + 'px';
-    canvas.style.height = ch + 'px';
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  }
-  window.addEventListener('resize', () => {
-    resizeCanvas();
-    drawCanvasAtProgress(currentP);
+  /* ─── Split text helpers ────────────────────────────────── */
+  $$('[data-word]').forEach(word => {
+    const text = word.textContent;
+    word.textContent = '';
+    for (const ch of text) {
+      const span = document.createElement('span');
+      span.className = 'char';
+      span.textContent = ch === ' ' ? ' ' : ch;
+      word.appendChild(span);
+    }
   });
 
-  // progress 0 → 1 across the whole scroll-container
-  let currentP = 0;
-  function drawCanvasAtProgress(p) {
-    if (!canvasReady || !ctx) return;
-    currentP = p;
-    ctx.fillStyle = '#0E0B08';
-    ctx.fillRect(0, 0, cw, ch);
-
-    // Pick which image dominates: hero.jpg for the first 60%, then crossfade to about.jpg
-    const xfade = Math.max(0, Math.min(1, (p - 0.5) / 0.25));
-
-    // Draw hero (full → zoomed-in pan as p grows)
-    drawCover(heroImg, p, 1 - xfade);
-    if (aboutImg.complete && aboutImg.naturalWidth) {
-      drawCover(aboutImg, 1 - p, xfade);
+  /* ─── Wrap binary code chars for cycling ────────────────── */
+  $$('[data-cycle]').forEach(el => {
+    const txt = el.textContent;
+    el.textContent = '';
+    for (const ch of txt) {
+      const span = document.createElement('span');
+      span.className = 'char';
+      span.textContent = ch === ' ' ? ' ' : ch;
+      // (binary cycler removed)
+      if (ch === '0' || ch === '1') span.setAttribute('data-bit', ch);
+      el.appendChild(span);
     }
+  });
 
-    // Vignette
-    const grd = ctx.createRadialGradient(cw/2, ch/2, Math.min(cw,ch)*0.2, cw/2, ch/2, Math.max(cw,ch)*0.7);
-    grd.addColorStop(0, 'rgba(0,0,0,0)');
-    grd.addColorStop(1, 'rgba(0,0,0,0.55)');
-    ctx.fillStyle = grd;
-    ctx.fillRect(0, 0, cw, ch);
-  }
-
-  // Draw `img` to cover the canvas, with a Ken-Burns pan/zoom driven by progress
-  function drawCover(img, p, alpha) {
-    if (!img.complete || !img.naturalWidth || alpha <= 0) return;
-    const iw = img.naturalWidth;
-    const ih = img.naturalHeight;
-    const canvasAR = cw / ch;
-    const imgAR    = iw / ih;
-
-    // Start zoomed out a touch, zoom in slightly as p grows
-    const zoom = 1.05 + p * 0.18;        // 1.05 → 1.23
-    let dw, dh, dx, dy;
-    if (imgAR > canvasAR) {
-      // image is wider than canvas — fit to canvas height
-      dh = ch * zoom;
-      dw = dh * imgAR;
-    } else {
-      dw = cw * zoom;
-      dh = dw / imgAR;
-    }
-    // Pan: slight horizontal drift + vertical drift driven by p
-    const panX = (cw - dw) / 2 + (p - 0.5) * 80;
-    const panY = (ch - dh) / 2 - (p - 0.5) * 60;
-    dx = panX; dy = panY;
-
-    ctx.save();
-    ctx.globalAlpha = alpha;
-    ctx.drawImage(img, dx, dy, dw, dh);
-    ctx.restore();
-  }
-
-  function preloadImages() {
+  /* ─── Intro splash ──────────────────────────────────────── */
+  function runIntro() {
     return new Promise(resolve => {
-      let pending = 2;
-      const done = () => { if (--pending <= 0) resolve(); };
-      heroImg.onload = done;
-      heroImg.onerror = done;
-      aboutImg.onload = done;
-      aboutImg.onerror = done;
-      // Safety
-      setTimeout(resolve, 2500);
+      if (prefersReduced) {
+        $('#intro').style.display = 'none';
+        document.documentElement.classList.remove('is-blocked');
+        resolve();
+        return;
+      }
+      const tl = gsap.timeline({
+        defaults: { ease: 'expo.inOut' },
+        onComplete: () => {
+          $('#intro').style.display = 'none';
+          document.documentElement.classList.remove('is-blocked');
+          resolve();
+        }
+      });
+      tl.to('.intro__logo .bar--v', { scaleY: 1, duration: 0.55, stagger: 0.06, ease: 'expo.out' }, 0.15)
+        .to('.intro__logo .bar--h', { scaleX: 1, duration: 0.6, ease: 'expo.out' }, 0.5)
+        .to('.intro__logo .bar', { y: -8, duration: 0.45, ease: 'sine.inOut' }, '+=0.35')
+        .to('.intro__logo .bar', { y: 0,  duration: 0.45, ease: 'sine.inOut' })
+        .to('.intro__logo', { scale: 0.92, opacity: 0, duration: 0.55, ease: 'expo.in' }, '+=0.2')
+        .to('.intro__sweep', { scaleY: 1, duration: 0.65, ease: 'expo.inOut' }, '-=0.4')
+        .to('#intro', { opacity: 0, duration: 0.4 }, '+=0.1');
     });
   }
 
-  /* ─── 3. INIT ───────────────────────────────────────────── */
-  let started = false;
-  const start = () => {
-    if (started) return;
-    started = true;
-    fakeLoader(() => {
-      loader.classList.add('hidden');
-      init();
-    });
-  };
-  window.addEventListener('load', start);
-  setTimeout(start, 1800);
-
-  async function init() {
-    if (canvas) {
-      resizeCanvas();
-      await preloadImages();
-      canvasReady = true;
-      drawCanvasAtProgress(0);
-    }
-
-    if (prefersReduced || !window.gsap || !window.ScrollTrigger || !window.Lenis) {
-      fallback();
+  /* ─── Reveal site content after intro ───────────────────── */
+  function revealSite() {
+    if (prefersReduced) {
+      gsap.set('.site-wrapper', { opacity: 1 });
       return;
     }
-    gsap.registerPlugin(ScrollTrigger);
+    const tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
+    tl.to('.site-wrapper', { opacity: 1, duration: 0.6 }, 0)
+      .from('.site-head', { y: -40, opacity: 0, duration: 0.9 }, 0.1)
+      .to('.hero__title .word > *', { y: 0, duration: 1.2, stagger: 0.04 }, 0.2)
+      .from('.hero__tagline', { y: 30, opacity: 0, duration: 0.9 }, 0.7)
+      .from('.ticker-sep', { opacity: 0, duration: 0.6, stagger: 0.1 }, 0.5);
+  }
 
-    // Lenis smooth scroll
+  /* ─── Hero waves ────────────────────────────────────────── */
+  function animateWaves() {
+    if (prefersReduced) return;
+    const waves = $$('.hero__waves .wave');
+    waves.forEach((w, i) => {
+      gsap.to(w, {
+        xPercent: i % 2 ? 6 : -6,
+        yPercent: 1 + i,
+        duration: 6 + i * 1.5,
+        ease: 'sine.inOut',
+        repeat: -1,
+        yoyo: true,
+        delay: i * 0.2,
+      });
+    });
+  }
+
+  /* ─── Binary code shimmer (cycle 1/0 randomly) ──────────── */
+  function shimmerBinary() {
+    if (prefersReduced) return;
+    const bits = $$('.bin__code .char[data-bit]');
+    setInterval(() => {
+      // Flip ~6 random bits per tick
+      for (let i = 0; i < 6; i++) {
+        const el = bits[Math.floor(Math.random() * bits.length)];
+        if (!el) continue;
+        const cur = el.getAttribute('data-bit');
+        const flipped = cur === '0' ? '1' : '0';
+        el.setAttribute('data-bit', flipped);
+        el.textContent = flipped;
+      }
+    }, 220);
+  }
+
+  /* ─── Awards hover (handled by CSS) — no JS needed ──────── */
+
+  /* ─── Stages photo wheel ────────────────────────────────── */
+  function setupWheel(lenis) {
+    const wheel = $('#wheel');
+    if (!wheel) return;
+    const cards = $$('.scene__card', wheel);
+    const N = cards.length;
+    // 360° wheel: cards arranged around a circle, each rotated to face outward
+    // from the centre. Scroll rotates the wheel so each card takes its turn.
+    const angleStep = 360 / N;
+    const radius    = Math.round(280 / (2 * Math.tan(Math.PI / N)) + 60);
+
+    const layoutWheel = () => {
+      cards.forEach((card, i) => {
+        card.style.transform = `rotateY(${i * angleStep}deg) translateZ(${radius}px)`;
+      });
+    };
+    layoutWheel();
+    window.addEventListener('resize', layoutWheel);
+
+    // Scroll-driven full rotation. Heavy scrub for that velvety follow.
+    if (window.ScrollTrigger) {
+      gsap.to(wheel, {
+        rotationY: 360,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.s-stages',
+          start: 'top 80%',
+          end:   'bottom 20%',
+          scrub: 3,
+        },
+      });
+      // Subtle vertical parallax / tilt for depth
+      gsap.fromTo(wheel,
+        { rotationX: 4, y: 30 },
+        {
+          rotationX: -2, y: -30,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: '.s-stages',
+            start: 'top bottom',
+            end:   'bottom top',
+            scrub: 2,
+          },
+        }
+      );
+      // Idle "breathing" — small back-and-forth so the wheel feels alive at rest
+      gsap.to(wheel, {
+        rotationY: '+=5',
+        duration: 6,
+        ease: 'sine.inOut',
+        yoyo: true,
+        repeat: -1,
+      });
+    }
+
+    // Stages title letter stagger on scroll-in
+    gsap.from('.stages__title .letter', {
+      y: '100%', opacity: 0,
+      duration: 0.9, ease: 'expo.out',
+      stagger: 0.06,
+      scrollTrigger: {
+        trigger: '.s-stages',
+        start: 'top 75%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+  }
+
+  /* ─── Custom scrollbar ──────────────────────────────────── */
+  function setupScrollbar(lenis) {
+    const thumb = $('#sb-thumb');
+    if (!thumb) return;
+    const update = () => {
+      const max = document.body.scrollHeight - window.innerHeight;
+      const p = max > 0 ? window.scrollY / max : 0;
+      const trackH = window.innerHeight;
+      const thumbH = thumb.offsetHeight;
+      thumb.style.transform = `translateY(${p * (trackH - thumbH)}px)`;
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
+  /* ─── About awards stagger on enter ─────────────────────── */
+  function setupAwards() {
+    gsap.from('[data-award]', {
+      y: 16, opacity: 0,
+      duration: 0.7, ease: 'expo.out',
+      stagger: 0.06,
+      scrollTrigger: {
+        trigger: '.about__block--awards',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+    gsap.from('.about__block--text > *', {
+      y: 28, opacity: 0,
+      duration: 0.9, ease: 'expo.out',
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: '.about__block--text',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+  }
+
+  /* ─── Catcher: subtle parallax on smiley ────────────────── */
+  function setupCatcher() {
+    gsap.fromTo('.catcher__smiley',
+      { y: 40, opacity: 0 },
+      {
+        y: -20, opacity: 1,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.s-catcher',
+          start: 'top bottom',
+          end:   'bottom top',
+          scrub: 1,
+        },
+      }
+    );
+    // Catcher text slight Y parallax for depth
+    gsap.fromTo('.catcher__normal .catcher__text',
+      { y: 60 },
+      {
+        y: -60, ease: 'none',
+        scrollTrigger: {
+          trigger: '.s-catcher',
+          start: 'top bottom',
+          end:   'bottom top',
+          scrub: 1,
+        },
+      }
+    );
+    gsap.fromTo('.catcher__text--distorted',
+      { y: 30 },
+      {
+        y: -30, ease: 'none',
+        scrollTrigger: {
+          trigger: '.s-catcher',
+          start: 'top bottom',
+          end:   'bottom top',
+          scrub: 1.4,
+        },
+      }
+    );
+  }
+
+  /* ─── Topics section reveal ─────────────────────────────── */
+  function setupTopics() {
+    // Title letters slam up
+    gsap.fromTo('.topics__title .word > *',
+      { y: '110%' },
+      {
+        y: 0, duration: 1.0, ease: 'expo.out',
+        stagger: 0.035,
+        scrollTrigger: { trigger: '.s-topics', start: 'top 70%', toggleActions: 'play none none reverse' },
+      }
+    );
+    // Cards rise + fade
+    gsap.from('.topic-card', {
+      y: 60, opacity: 0,
+      duration: 1.1, ease: 'expo.out',
+      stagger: 0.14,
+      scrollTrigger: { trigger: '.topics__grid', start: 'top 80%', toggleActions: 'play none none reverse' },
+    });
+    // Mouse-follow halo on each card
+    $$('.topic-card').forEach(card => {
+      const halo = card.querySelector('.topic__halo');
+      if (!halo) return;
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = e.clientX - r.left;
+        const y = e.clientY - r.top;
+        halo.style.top = y + 'px';
+        halo.style.left = x + 'px';
+      });
+    });
+  }
+
+  /* ─── CTA reveal ────────────────────────────────────────── */
+  function setupCta() {
+    gsap.from('.cta__line', {
+      opacity: 0, y: 50,
+      duration: 1.0, ease: 'expo.out',
+      stagger: 0.18,
+      scrollTrigger: { trigger: '.s-cta', start: 'top 80%', toggleActions: 'play none none reverse' },
+    });
+    gsap.from('.cta__btn', {
+      scale: 0, opacity: 0,
+      duration: 1.0, ease: 'expo.out',
+      scrollTrigger: { trigger: '.s-cta', start: 'top 70%', toggleActions: 'play none none reverse' },
+    });
+    gsap.from('.cta__stars svg', {
+      scale: 0, opacity: 0,
+      duration: 0.7, ease: 'back.out(2)',
+      stagger: 0.08,
+      scrollTrigger: { trigger: '.s-cta', start: 'top 70%', toggleActions: 'play none none reverse' },
+    });
+    gsap.from('.cta__sub', {
+      y: 18, opacity: 0,
+      duration: 0.8, ease: 'expo.out',
+      scrollTrigger: { trigger: '.s-cta', start: 'top 70%', toggleActions: 'play none none reverse' },
+    });
+  }
+
+  /* ─── Magnetic CTA button ───────────────────────────────── */
+  function setupMagneticButton() {
+    const btn = $('.cta__btn');
+    if (!btn || window.matchMedia('(hover: none)').matches) return;
+    let rect;
+    const onEnter = () => { rect = btn.getBoundingClientRect(); };
+    const onMove = (e) => {
+      if (!rect) rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      gsap.to(btn, { x: x * 0.35, y: y * 0.35, duration: 0.6, ease: 'expo.out' });
+    };
+    const onLeave = () => {
+      gsap.to(btn, { x: 0, y: 0, duration: 0.7, ease: 'elastic.out(1, 0.5)' });
+    };
+    btn.addEventListener('mouseenter', onEnter);
+    btn.addEventListener('mousemove', onMove);
+    btn.addEventListener('mouseleave', onLeave);
+  }
+
+  /* ─── Boot ──────────────────────────────────────────────── */
+  let booted = false;
+  const boot = async () => {
+    if (booted) return;
+    booted = true;
+
+    await runIntro();
+    revealSite();
+
+    if (!window.gsap || !window.ScrollTrigger || !window.Lenis || prefersReduced) {
+      animateWaves();
+      shimmerBinary();
+      // Static fallback for wheel
+      const wheel = $('#wheel');
+      if (wheel) {
+        const cards = $$('.scene__card', wheel);
+        const N = cards.length;
+        const step = 360 / N;
+        const r    = Math.round(280 / (2 * Math.tan(Math.PI / N)) + 60);
+        cards.forEach((card, i) => {
+          card.style.transform = `rotateY(${i * step}deg) translateZ(${r}px)`;
+        });
+      }
+      return;
+    }
+
+    gsap.registerPlugin(ScrollTrigger);
     const lenis = new Lenis({
-      duration: 1.15,
+      duration: 1.4,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
       smoothTouch: false,
-      wheelMultiplier: 0.95,
     });
     lenis.on('scroll', ScrollTrigger.update);
     gsap.ticker.add((time) => lenis.raf(time * 1000));
     gsap.ticker.lagSmoothing(0);
 
-    setupHero();
-    setupCanvasReveal();
-    setupCanvasScrub();
-    setupSections();
-    setupStats();
-    setupMarquee();
-    setupDarkOverlay();
+    animateWaves();
+    shimmerBinary();
+    setupWheel(lenis);
+    setupAwards();
+    setupTopics();
+    setupCatcher();
+    setupCta();
+    setupMagneticButton();
+    setupScrollbar(lenis);
+
     ScrollTrigger.refresh();
-  }
+  };
 
-  function fallback() {
-    $$('.scroll-section').forEach(s => {
-      s.style.position = 'relative';
-      s.style.opacity = 1;
-      s.style.pointerEvents = 'auto';
-    });
-    const sc = $('#scroll-container'); if (sc) sc.style.height = 'auto';
-    const cw_ = $('.canvas-wrap'); if (cw_) cw_.style.clipPath = 'circle(150% at 50% 50%)';
-  }
-
-  /* ─── HERO entrance ─────────────────────────────────────── */
-  function setupHero() {
-    gsap.from('.hero-heading span', {
-      yPercent: 110,
-      duration: 1.2,
-      ease: 'expo.out',
-      stagger: 0.12,
-      delay: 0.15,
-    });
-    gsap.from('.hero-tagline, .hero-inner .section-label', {
-      opacity: 0, y: 24,
-      duration: 0.9, ease: 'power3.out',
-      delay: 0.5, stagger: 0.1,
-    });
-  }
-
-  /* ─── Canvas circle-wipe reveal ─────────────────────────── */
-  function setupCanvasReveal() {
-    gsap.to('.canvas-wrap', {
-      clipPath: 'circle(150% at 50% 50%)',
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '#scroll-container',
-        start: 'top 90%',
-        end:   'top 20%',
-        scrub: 1,
-      },
-    });
-  }
-
-  /* ─── Canvas scrub — drive image transform via scroll ───── */
-  function setupCanvasScrub() {
-    if (!canvas) return;
-    const sc = $('#scroll-container');
-    ScrollTrigger.create({
-      trigger: sc,
-      start: 'top top',
-      end:   'bottom bottom',
-      onUpdate: (self) => drawCanvasAtProgress(self.progress),
-    });
-  }
-
-  /* ─── SECTIONS — clean opacity fade, no fighting transforms ─ */
-  function setupSections() {
-    const sc = $('#scroll-container');
-    const total = sc.offsetHeight;
-
-    $$('.scroll-section').forEach(section => {
-      const enter = parseFloat(section.dataset.enter || 0) / 100;
-      const leave = parseFloat(section.dataset.leave || 100) / 100;
-      const anim  = section.dataset.animation || 'fade-up';
-      const persist = section.dataset.persist === 'true';
-
-      const inFrom  = animFrom(anim);
-
-      // Initial state
-      gsap.set(section, { ...inFrom, opacity: 0 });
-
-      // ── IN: fade up + small transform during the first slice
-      const inStart = enter * total;
-      const inEnd   = inStart + window.innerHeight * 0.6;
-      gsap.to(section, {
-        opacity: 1, x: 0, y: 0, scale: 1, rotate: 0,
-        clipPath: 'inset(0% 0% 0% 0%)',
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: sc,
-          start: `${inStart}px top`,
-          end:   `${inEnd}px top`,
-          scrub: 1,
-          onEnter:     () => section.classList.add('is-active'),
-          onLeaveBack: () => section.classList.remove('is-active'),
-        },
-      });
-
-      if (!persist) {
-        // ── OUT: fade only (no slide-out — Royal-Pop pattern)
-        const outStart = (leave * total) - window.innerHeight * 0.6;
-        const outEnd   = leave * total;
-        gsap.to(section, {
-          opacity: 0,
-          ease: 'power2.in',
-          scrollTrigger: {
-            trigger: sc,
-            start: `${outStart}px top`,
-            end:   `${outEnd}px top`,
-            scrub: 1,
-            onLeave: () => section.classList.remove('is-active'),
-          },
-        });
-      }
-    });
-  }
-
-  function animFrom(key) {
-    switch (key) {
-      case 'slide-left':   return { x: -40 };
-      case 'slide-right':  return { x:  40 };
-      case 'clip-reveal':  return { clipPath: 'inset(0% 0% 100% 0%)' };
-      case 'stagger-up':   return { y: 30 };
-      case 'rotate-in':    return { rotate: -2, y: 20 };
-      case 'scale-up':     return { scale: 0.96, y: 16 };
-      case 'fade-up':
-      default:             return { y: 24 };
-    }
-  }
-
-  /* ─── STATS — count up ──────────────────────────────────── */
-  function setupStats() {
-    const sc = $('#scroll-container');
-    const total = sc.offsetHeight;
-    $$('.stat-number').forEach(el => {
-      const target = parseFloat(el.dataset.value);
-      const dec = parseInt(el.dataset.decimals || '0', 10);
-      const obj = { v: 0 };
-      ScrollTrigger.create({
-        trigger: sc,
-        start: `${0.52 * total}px top`,
-        end:   `${0.58 * total}px top`,
-        once: true,
-        onEnter: () => {
-          gsap.to(obj, {
-            v: target,
-            duration: 1.6,
-            ease: 'power2.out',
-            onUpdate: () => { el.textContent = obj.v.toFixed(dec); },
-          });
-        },
-      });
-    });
-  }
-
-  /* ─── MARQUEE ───────────────────────────────────────────── */
-  function setupMarquee() {
-    const wrap = $('.marquee-wrap');
-    if (!wrap) return;
-    const text = $('.marquee-text', wrap);
-    const sc = $('#scroll-container');
-    const total = sc.offsetHeight;
-    const enter = parseFloat(wrap.dataset.enter || 38) / 100;
-    const leave = parseFloat(wrap.dataset.leave || 62) / 100;
-
-    gsap.to(wrap, {
-      opacity: 1, ease: 'none',
-      scrollTrigger: {
-        trigger: sc,
-        start: `${enter * total}px top`,
-        end:   `${enter * total + window.innerHeight * 0.4}px top`,
-        scrub: 1,
-      },
-    });
-    gsap.to(wrap, {
-      opacity: 0, ease: 'none',
-      scrollTrigger: {
-        trigger: sc,
-        start: `${leave * total - window.innerHeight * 0.4}px top`,
-        end:   `${leave * total}px top`,
-        scrub: 1,
-      },
-    });
-    gsap.fromTo(text,
-      { xPercent: 10 },
-      {
-        xPercent: -60, ease: 'none',
-        scrollTrigger: {
-          trigger: sc,
-          start: 'top top',
-          end:   'bottom bottom',
-          scrub: 1,
-        },
-      }
-    );
-  }
-
-  /* ─── DARK OVERLAY (deepens during stats) ──────────────── */
-  function setupDarkOverlay() {
-    const ov = $('#dark-overlay');
-    if (!ov) return;
-    const sc = $('#scroll-container');
-    const total = sc.offsetHeight;
-    gsap.fromTo(ov,
-      { opacity: 0 },
-      {
-        opacity: 0.72, ease: 'none',
-        scrollTrigger: {
-          trigger: sc,
-          start: `${0.48 * total}px top`,
-          end:   `${0.56 * total}px top`,
-          scrub: 1,
-        },
-      }
-    );
-    gsap.to(ov, {
-      opacity: 0, ease: 'none',
-      scrollTrigger: {
-        trigger: sc,
-        start: `${0.66 * total}px top`,
-        end:   `${0.74 * total}px top`,
-        scrub: 1,
-      },
-    });
-  }
+  window.addEventListener('load', boot);
+  setTimeout(boot, 2200); // safety net
 
 })();
