@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Pratik's Journey — a tiny RPG career walk</title>
+  <meta name="description" content="Walk Pratik Renuse's career left to right, from Airbus in 2016 to today. Visit each stop to see what he built.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+  <!-- Microsoft Clarity -->
+  <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+
+  <style>
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    :root {
+      --gold:#C9A24A; --ink:#14110D; --cream:#F1E9D4; --line:#3a3326;
+      --px:'Press Start 2P', monospace; --sans:'IBM Plex Sans', system-ui, sans-serif;
+    }
+    html,body { height:100%; }
+    body { background:#0c0a07; color:var(--cream); font-family:var(--sans);
+      -webkit-font-smoothing:antialiased; overflow-x:hidden; display:flex; flex-direction:column; min-height:100vh; }
+
+    .bar { display:flex; align-items:center; justify-content:space-between; gap:0.75rem;
+      padding:0.7rem 1rem; border-bottom:1px solid var(--line); background:#100d09; }
+    .bar a { text-decoration:none; }
+    .bar .home { font-family:var(--px); font-size:0.6rem; color:var(--gold); }
+    .bar .back { font-family:var(--px); font-size:0.5rem; color:#9a8f78; }
+    .bar .back:hover { color:var(--gold); }
+
+    /* timeline hud */
+    .hud { display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; justify-content:center;
+      padding:0.55rem 1rem; background:#100d09; border-bottom:1px solid var(--line); }
+    .hud-label { font-family:var(--px); font-size:0.5rem; color:#9a8f78; margin-right:0.25rem; }
+    .tl { display:flex; gap:0.3rem; flex-wrap:wrap; justify-content:center; }
+    .chip { font-family:var(--px); font-size:0.5rem; color:#5a5141; background:#16130d;
+      border:1px solid var(--line); border-radius:3px; padding:0.4rem 0.5rem; transition:all 0.25s; white-space:nowrap; }
+    .chip.current { border-color:var(--gold); color:var(--gold); }
+    .chip.done { background:var(--gold); color:var(--ink); border-color:var(--gold); }
+
+    .stage { flex:1; display:flex; align-items:center; justify-content:center; padding:1rem; }
+    .frame { position:relative; width:100%; max-width:900px; }
+    canvas { width:100%; height:auto; display:block; image-rendering:pixelated; image-rendering:crisp-edges;
+      border:3px solid var(--line); background:#4a8b40; border-radius:4px; touch-action:none; }
+
+    .overlay { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:1.2rem; text-align:center; }
+    .panel { background:rgba(16,13,9,0.94); border:3px solid var(--gold); border-radius:6px; max-width:470px; width:100%; padding:1.6rem 1.4rem; }
+    h1.t { font-family:var(--px); font-size:1.05rem; line-height:1.5; color:var(--gold); margin-bottom:1rem; }
+    .panel p { font-size:0.92rem; line-height:1.6; color:var(--cream); margin-bottom:0.9rem; }
+    .panel p.small { font-size:0.82rem; color:#bdb39a; }
+    .keys { font-family:var(--px); font-size:0.52rem; color:#bdb39a; line-height:2.1; margin:0.8rem 0 1.1rem; }
+    .keys b { color:var(--gold); }
+    .btn { font-family:var(--px); font-size:0.62rem; cursor:pointer; background:var(--gold); color:var(--ink);
+      border:none; border-radius:4px; padding:0.85rem 1.1rem; transition:transform 0.1s, background 0.2s; line-height:1.5; }
+    .btn:hover { background:#e0b85e; } .btn:active { transform:scale(0.96); }
+    .btn.ghost { background:transparent; color:var(--gold); border:2px solid var(--gold); }
+    .btn-row { display:flex; gap:0.7rem; flex-wrap:wrap; justify-content:center; margin-top:0.4rem; }
+
+    .dlg { position:absolute; left:2.5%; right:2.5%; bottom:3%; background:rgba(16,13,9,0.96);
+      border:3px solid var(--gold); border-radius:6px; padding:0.95rem 1.05rem; display:none; }
+    .dlg.show { display:block; }
+    .dlg-name { font-family:var(--px); font-size:0.58rem; color:var(--gold); margin-bottom:0.6rem; line-height:1.5; }
+    .dlg-text { font-size:0.95rem; line-height:1.55; color:var(--cream); min-height:3.2em; }
+    .dlg-metric { display:none; margin-top:0.8rem; padding-top:0.7rem; border-top:1px solid var(--line); text-align:center; }
+    .dlg-num { font-family:var(--px); font-size:1.5rem; color:var(--gold); line-height:1.3; }
+    .dlg-mlabel { display:block; font-size:0.8rem; color:#bdb39a; margin-top:0.45rem; }
+    .dlg-opts { margin-top:0.8rem; display:flex; justify-content:flex-end; }
+    .cont { font-family:var(--px); font-size:0.56rem; cursor:pointer; background:var(--gold); color:var(--ink);
+      border:none; border-radius:4px; padding:0.7rem 0.9rem; line-height:1.5; }
+    .cont:hover { background:#e0b85e; }
+    .dlg-hint { font-family:var(--px); font-size:0.5rem; color:#9a8f78; margin-top:0.5rem; text-align:right; }
+
+    .controls { display:none; padding:0.6rem 1rem 1.2rem; gap:1rem; align-items:center; justify-content:space-between; }
+    .dpad { display:grid; grid-template-columns:repeat(3,46px); grid-template-rows:repeat(3,46px); gap:4px; }
+    .dpad button { font-family:var(--px); font-size:0.7rem; background:#2a241b; color:var(--cream);
+      border:2px solid var(--line); border-radius:6px; cursor:pointer; }
+    .dpad button:active { background:var(--gold); color:var(--ink); }
+    .dpad .up{grid-area:1/2;} .dpad .left{grid-area:2/1;} .dpad .mid{grid-area:2/2;visibility:hidden;}
+    .dpad .right{grid-area:2/3;} .dpad .down{grid-area:3/2;}
+    .a-btn { width:74px; height:74px; border-radius:50%; background:var(--gold); color:var(--ink);
+      border:none; font-family:var(--px); font-size:0.8rem; cursor:pointer; }
+    .a-btn:active { transform:scale(0.94); }
+    .hint-bar { text-align:center; font-family:var(--px); font-size:0.5rem; color:#7a7160; padding:0.4rem 1rem 1rem; }
+
+    @media (max-width:720px) {
+      .controls { display:flex; }
+      .hint-bar.desktop { display:none; }
+      h1.t { font-size:0.85rem; }
+      .dlg-text { font-size:0.88rem; }
+      .hud-label { display:none; }
+    }
+    @media (min-width:721px) { .controls { display:none; } }
+  </style>
+</head>
+<body>
+
+<div class="bar">
+  <a href="/" class="home">PRATIK'S&nbsp;JOURNEY</a>
+  <a href="/" class="back">&larr; EXIT</a>
+</div>
+
+<div class="hud">
+  <span class="hud-label">CAREER</span>
+  <div class="tl" id="tl">
+    <div class="chip" data-i="0">AIRBUS</div>
+    <div class="chip" data-i="1">BAYER</div>
+    <div class="chip" data-i="2">INFENTO</div>
+    <div class="chip" data-i="3">GROWACK</div>
+    <div class="chip" data-i="4">VU</div>
+    <div class="chip" data-i="5">BUENO</div>
+    <div class="chip" data-i="6">MENTOR</div>
+  </div>
+</div>
+
+<div class="stage">
+  <div class="frame">
+    <canvas id="game" width="800" height="416"></canvas>
+
+    <div class="dlg" id="dlg">
+      <div class="dlg-name" id="dlgName"></div>
+      <div class="dlg-text" id="dlgText"></div>
+      <div class="dlg-metric" id="dlgMetric"><span class="dlg-num" id="dlgNum"></span><span class="dlg-mlabel" id="dlgMlabel"></span></div>
+      <div class="dlg-opts" id="dlgOpts"></div>
+      <div class="dlg-hint" id="dlgHint">▶ space / tap A</div>
+    </div>
+
+    <div class="overlay" id="titleScreen">
+      <div class="panel">
+        <h1 class="t">PRATIK'S<br>JOURNEY</h1>
+        <p class="small">Walk Pratik's career from left to right — Airbus 2016 to today. Reach each stop to see what he built; the gate ahead opens once you do.</p>
+        <div class="keys"><span><b>← →</b> / A&nbsp;D &nbsp;walk</span><br><span><b>SPACE</b> / tap A &nbsp;continue</span></div>
+        <button class="btn" id="startBtn">PRESS START</button>
+      </div>
+    </div>
+
+    <div class="overlay" id="winScreen" style="display:none;">
+      <div class="panel">
+        <h1 class="t">THE WHOLE<br>JOURNEY</h1>
+        <p>From Airbus to Bueno: 3 startups built from zero — €2M+ DTC revenue, 24x acquisition efficiency, a brand worn by Olympians — plus 100+ founders mentored.</p>
+        <p class="small">Want this operator building your growth? He's one message away.</p>
+        <div class="btn-row">
+          <a href="https://www.pratikrenuse.com/#contact" id="winCta"><button class="btn">START A CONVERSATION</button></a>
+          <button class="btn ghost" id="playAgain">WALK AGAIN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="dpad">
+    <button class="up" data-dir="up">▲</button>
+    <button class="left" data-dir="left">◀</button>
+    <button class="mid">·</button>
+    <button class="right" data-dir="right">▶</button>
+    <button class="down" data-dir="down">▼</button>
+  </div>
+  <button class="a-btn" id="aBtn">A</button>
+</div>
+<div class="hint-bar desktop">← → or A D to walk · follow the glowing arrow · Space to continue</div>
+
+<script>
+(function(){
+  "use strict";
+  var TILE=32, VIEW_COLS=25, VIEW_ROWS=13, VIEW_W=VIEW_COLS*TILE, VIEW_H=VIEW_ROWS*TILE;
+  var MAP_COLS=52, MAP_W=MAP_COLS*TILE, MAX_OFF=MAP_W-VIEW_W;
+  var cv=document.getElementById('game'), ctx=cv.getContext('2d'); ctx.imageSmoothingEnabled=false;
+
+  /* chapters, in time order, by column on the path */
+  var CH=[
+    { col:4,  color:'#5b86b0', npc:'#5b86b0', sign:"2016", title:'AIRBUS · 2016 · Munich',
+      story:["Where the operator story begins — Airbus, the aerospace giant.","Pratik led branding and online marketing for the EU project NEOShield."],
+      metric:{from:0,to:127,prefix:'+',suffix:'%',dec:0}, label:'organic social reach lift' },
+    { col:11, color:'#7aa05a', npc:'#7aa05a', sign:"2017", title:'BAYER · 2017 · Berlin',
+      story:["Next, Bayer in Berlin — running their premier global executive event.","Senior leaders from 50+ countries, one flawless production."],
+      metric:{from:0,to:250,prefix:'€',suffix:'K',dec:0}, label:'budget managed · 50+ countries' },
+    { col:18, color:'#3f7bd0', npc:'#3f7bd0', sign:"2017", title:'INFENTO · 2017–2019 · Amsterdam',
+      story:["Then he went zero-to-one. Founding team at Infento, kids' ride-on kits.","He built DTC from scratch and led an $848K Kickstarter — the #1 STEM project worldwide."],
+      metric:{from:0,to:2,prefix:'€',suffix:'M',dec:0}, label:'ARR from €0 · 3 design awards · team to 25+' },
+    { col:25, color:'#c0563a', npc:'#c0563a', sign:"2020", title:'GROWACK · 2020 · Amsterdam',
+      story:["A year sharpening the craft at Growack, a B2B growth agency.","Recognised among the best — ranked in the global top 1% of marketers."],
+      metric:{from:0,to:1,prefix:'Top ',suffix:'%',dec:0}, label:'of marketers worldwide · Clutch Top B2B' },
+    { col:32, color:'#1d9e75', npc:'#1d9e75', sign:"2021", title:'VU · 2021–2025 · Geneva',
+      story:["A Swiss ski brand, built end-to-end against global giants.","Premium positioning — adopted by Olympians, the #1 Swiss brand for pros."],
+      metric:{from:0,to:4.4,prefix:'',suffix:'x',dec:1}, label:'peak-season growth · €275K+ revenue' },
+    { col:39, color:'#C9A24A', npc:'#C9A24A', sign:"2022", title:'BUENO · 2022–now · Spain',
+      story:["Bueno: banking for Europe's foreign property owners.","Pratik built acquisition single-handedly — €0 to €300K+ ARR across 28 countries."],
+      metric:{from:0,to:24,prefix:'',suffix:'x',dec:0}, label:'LTV/CAC — €700 earned per €30 spent' },
+    { col:46, color:'#7F77DD', npc:'#7F77DD', sign:"2022", title:'GIVING BACK · Mentor & Professor', finale:true,
+      story:["Building isn't the whole story — Pratik gives back, too.","Mentor at Techstars & EBRD; Visiting Professor at Masters' Union & Tetr."],
+      metric:{from:0,to:100,prefix:'',suffix:'+',dec:0}, label:'founders mentored · 500+ students taught' }
+  ];
+  var GATE_COLS=[8,15,22,29,36,43]; /* gate g opens when CH[g].done */
+
+  function firstNotDone(){ for(var i=0;i<CH.length;i++) if(!CH[i].done) return i; return -1; }
+  function gateClosedAt(x){ for(var g=0;g<GATE_COLS.length;g++) if(GATE_COLS[g]===x) return !CH[g].done; return false; }
+  function solid(x,y){
+    if(x<1||x>=MAP_COLS-1||y<5||y>9) return true;       // walls + corridor bounds (rows 5-9 walkable)
+    if(gateClosedAt(x)) return true;
+    return false;
+  }
+
+  var player={x:2,y:7,dir:'right',moving:false,t:0,fromX:2,fromY:7,step:0}, DUR=120;
+  var state='title', held={};
+
+  var dirKeys={ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right',w:'up',s:'down',a:'left',d:'right',W:'up',S:'down',A:'left',D:'right'};
+  window.addEventListener('keydown',function(e){
+    if(dirKeys[e.key]){held[dirKeys[e.key]]=true;e.preventDefault();}
+    else if(e.key===' '||e.key==='Enter'){e.preventDefault();action();}
+  });
+  window.addEventListener('keyup',function(e){ if(dirKeys[e.key]) held[dirKeys[e.key]]=false; });
+  document.querySelectorAll('.dpad button[data-dir]').forEach(function(b){
+    var dir=b.dataset.dir;
+    var on=function(e){e.preventDefault();held[dir]=true;}; var off=function(e){e.preventDefault();held[dir]=false;};
+    b.addEventListener('touchstart',on,{passive:false}); b.addEventListener('touchend',off);
+    b.addEventListener('mousedown',on); b.addEventListener('mouseup',off); b.addEventListener('mouseleave',off);
+  });
+  document.getElementById('aBtn').addEventListener('click',action);
+  function action(){ if(state==='chapter') advance(); }
+
+  /* ── DIALOGUE / CHAPTER ── */
+  var D={i:-1,queue:[],typing:false,full:'',shown:'',timer:null,phase:'story'};
+  var dlg=document.getElementById('dlg'),dN=document.getElementById('dlgName'),dT=document.getElementById('dlgText'),
+      dMetric=document.getElementById('dlgMetric'),dNum=document.getElementById('dlgNum'),dMlabel=document.getElementById('dlgMlabel'),
+      dO=document.getElementById('dlgOpts'),dH=document.getElementById('dlgHint');
+
+  function openChapter(i){
+    state='chapter'; D.i=i; D.phase='story';
+    dN.textContent=CH[i].title; dMetric.style.display='none'; dO.innerHTML=''; dlg.classList.add('show');
+    D.queue=CH[i].story.slice(); nextLine();
+    gtag('event','journey_chapter',{step:i});
+  }
+  function nextLine(){
+    if(D.queue.length){ typeLine(D.queue.shift()); }
+    else { showMetric(D.i); }
+  }
+  function typeLine(text){
+    D.typing=true; D.full=text; D.shown=''; dT.textContent=''; dH.textContent='▶ space / tap A';
+    clearInterval(D.timer); var i=0;
+    D.timer=setInterval(function(){ D.shown+=D.full[i++]; dT.textContent=D.shown;
+      if(i>=D.full.length){ clearInterval(D.timer); D.typing=false; } },18);
+  }
+  function advance(){
+    if(D.typing){ clearInterval(D.timer); dT.textContent=D.full; D.typing=false; return; }
+    if(D.phase==='story') nextLine();
+    else continueChapter();
+  }
+  function showMetric(i){
+    D.phase='metric'; var m=CH[i].metric;
+    dMetric.style.display='block'; dMlabel.textContent=CH[i].label; dH.textContent='▶ continue';
+    var t0=performance.now();
+    (function step(t){ var p=Math.min(1,(t-t0)/900); var e=1-Math.pow(1-p,3); var v=m.from+(m.to-m.from)*e;
+      dNum.textContent=m.prefix+(m.dec?v.toFixed(m.dec):Math.round(v))+m.suffix;
+      if(p<1) requestAnimationFrame(step); else dNum.textContent=m.prefix+(m.dec?m.to.toFixed(m.dec):m.to)+m.suffix;
+    })(t0);
+    dO.innerHTML='';
+    var b=document.createElement('button'); b.className='cont';
+    b.textContent=CH[i].finale?'Finish the tour ▸':'Continue ▸'; b.onclick=continueChapter; dO.appendChild(b);
+  }
+  function continueChapter(){
+    var i=D.i; CH[i].done=true; markTimeline();
+    dlg.classList.remove('show'); dMetric.style.display='none';
+    if(CH[i].finale){ winGame(); } else { state='walk'; }
+  }
+
+  /* ── TIMELINE HUD ── */
+  var chips=[].slice.call(document.querySelectorAll('.chip'));
+  function markTimeline(){
+    var cur=firstNotDone();
+    chips.forEach(function(c,i){ c.classList.toggle('done',!!CH[i].done); c.classList.toggle('current',i===cur); });
+  }
+
+  /* ── MOVEMENT ── */
+  function tryMove(dir){
+    player.dir=dir; var nx=player.x,ny=player.y;
+    if(dir==='up')ny--; else if(dir==='down')ny++; else if(dir==='left')nx--; else nx++;
+    if(!solid(nx,ny)){ player.fromX=player.x; player.fromY=player.y; player.x=nx; player.y=ny; player.moving=true; player.t=0; player.step^=1; }
+  }
+  function checkTrigger(){
+    var cur=firstNotDone();
+    if(cur>=0 && player.x===CH[cur].col) openChapter(cur);
+  }
+
+  /* ── DRAW HELPERS ── */
+  function rr(x,y,w,h,c){ ctx.fillStyle=c; ctx.fillRect(x,y,w,h); }
+  function grass(px,py){ rr(px,py,TILE,TILE,'#4a8b40'); ctx.fillStyle='#3f7d3a'; ctx.fillRect(px+5,py+7,3,3); ctx.fillRect(px+21,py+18,3,3); }
+  function path(px,py){ rr(px,py,TILE,TILE,'#caa86e'); ctx.fillStyle='#bd9a5c'; ctx.fillRect(px+4,py+10,5,4); ctx.fillRect(px+20,py+20,5,4); }
+  function flower(px,py){ grass(px,py); ctx.fillStyle='#e8c84a'; ctx.fillRect(px+13,py+13,5,5); ctx.fillStyle='#d65a8a'; ctx.fillRect(px+8,py+19,4,4); ctx.fillRect(px+20,py+19,4,4); }
+  function tree(px,py){ rr(px,py,TILE,TILE,'#3f7d3a'); rr(px+14,py+20,4,8,'#6b4a2a'); ctx.fillStyle='#2f6b2c'; ctx.beginPath(); ctx.arc(px+16,py+14,11,0,7); ctx.fill(); ctx.fillStyle='#3d8237'; ctx.beginPath(); ctx.arc(px+12,py+12,6,0,7); ctx.fill(); }
+  function fence(px,py){ ctx.fillStyle='#7a5a36'; ctx.fillRect(px+4,py+4,5,TILE-8); ctx.fillRect(px+23,py+4,5,TILE-8); ctx.fillRect(px,py+9,TILE,4); ctx.fillRect(px,py+20,TILE,4); }
+  function building(sx,sy,color){
+    rr(sx+4,sy+34,88,58,'#cdbfa0');                       // wall
+    rr(sx+4,sy+34,88,4,'rgba(0,0,0,0.12)');
+    ctx.fillStyle=color; ctx.beginPath(); ctx.moveTo(sx,sy+38); ctx.lineTo(sx+48,sy+4); ctx.lineTo(sx+96,sy+38); ctx.closePath(); ctx.fill();
+    rr(sx+40,sy+60,16,32,'#6b4a2a');                      // door
+    rr(sx+16,sy+48,14,14,'#9fd0e8'); rr(sx+66,sy+48,14,14,'#9fd0e8'); // windows
+    ctx.strokeStyle='rgba(0,0,0,0.18)'; ctx.strokeRect(sx+16,sy+48,14,14); ctx.strokeRect(sx+66,sy+48,14,14);
+  }
+  function sign(sx,sy,txt){
+    rr(sx+13,sy+12,5,16,'#6b4a2a');
+    rr(sx-6,sy-4,44,16,'#efe3c6'); ctx.strokeStyle='#6b4a2a'; ctx.lineWidth=2; ctx.strokeRect(sx-6,sy-4,44,16);
+    ctx.fillStyle='#5d4f3c'; ctx.font='8px "Press Start 2P",monospace'; ctx.textAlign='center'; ctx.fillText(txt,sx+16,sy+7); ctx.textAlign='left';
+  }
+  function ch(px,py,c,dir,step,isP){
+    ctx.fillStyle='rgba(0,0,0,0.28)'; ctx.beginPath(); ctx.ellipse(px+16,py+29,9,3,0,0,7); ctx.fill();
+    var bob=(player.moving&&isP)?(step?-1:0):0, ty=py+bob;
+    rr(px+11,ty+24,4,5,'#2a2a30'); rr(px+17,ty+24,4,5,'#2a2a30');
+    if(step) rr(px+11,ty+27,4,2,'#1a1a1f'); else rr(px+17,ty+27,4,2,'#1a1a1f');
+    rr(px+9,ty+13,14,12,c); rr(px+9,ty+13,14,2,'rgba(255,255,255,0.18)');
+    rr(px+10,ty+4,12,11,'#e8c39e'); rr(px+10,ty+3,12,4,'#3a2a1c');
+    ctx.fillStyle='#1a1410';
+    if(dir==='down'){ ctx.fillRect(px+13,ty+9,2,2); ctx.fillRect(px+18,ty+9,2,2); }
+    else if(dir==='up'){ rr(px+10,ty+7,12,5,'#3a2a1c'); }
+    else if(dir==='left'){ ctx.fillRect(px+12,ty+9,2,2); }
+    else { ctx.fillRect(px+19,ty+9,2,2); }
+  }
+  var FLOWERS={};[[6,9],[10,5],[14,9],[20,5],[24,9],[30,5],[34,9],[38,9],[44,5]].forEach(function(p){FLOWERS[p[0]+','+p[1]]=1;});
+
+  /* ── MAIN LOOP ── */
+  var last=performance.now(), bob=0;
+  function loop(now){
+    var dt=now-last; last=now; bob+=dt*0.005;
+
+    if(state==='walk'){
+      if(player.moving){ player.t+=dt/DUR; if(player.t>=1){ player.moving=false; player.t=0; checkTrigger(); } }
+      else { var d=held.left?'left':held.right?'right':held.up?'up':held.down?'down':null; if(d) tryMove(d); }
+    }
+
+    var rx=player.x, ry=player.y;
+    if(player.moving){ var e=player.t; rx=player.fromX+(player.x-player.fromX)*e; ry=player.fromY+(player.y-player.fromY)*e; }
+    var offsetX=Math.max(0,Math.min(MAX_OFF, Math.round(rx*TILE+16-VIEW_W/2)));
+    var c0=Math.max(0,Math.floor(offsetX/TILE)), c1=Math.min(MAP_COLS,c0+VIEW_COLS+2);
+
+    for(var y=0;y<VIEW_ROWS;y++){
+      for(var x=c0;x<c1;x++){
+        var px=x*TILE-offsetX, py=y*TILE;
+        if(x===0||x===MAP_COLS-1||y<=1||y>=10){ tree(px,py); }
+        else if(y===7){ path(px,py); }
+        else if(FLOWERS[x+','+y]){ flower(px,py); }
+        else { grass(px,py); }
+        if(gateClosedAt(x) && y>=5 && y<=9) fence(px,py);
+      }
+    }
+    // buildings + signs
+    CH.forEach(function(s){
+      var bx=(s.col-1)*TILE-offsetX;
+      if(bx>-110 && bx<VIEW_W+10){
+        building(bx, 2*TILE, s.color);
+        sign(s.col*TILE-offsetX, 5*TILE, s.sign);
+        ch(s.col*TILE-offsetX, 6*TILE, s.npc, 'down', 0, false);
+      }
+    });
+    // next-stop arrow + done checks
+    var cur=firstNotDone();
+    CH.forEach(function(s,i){
+      var ax=s.col*TILE-offsetX+16;
+      if(ax<-20||ax>VIEW_W+20) return;
+      if(s.done){ ctx.fillStyle='#6ab04c'; ctx.font='14px "Press Start 2P",monospace'; ctx.textAlign='center'; ctx.fillText('✓',ax,2*TILE-6); ctx.textAlign='left'; }
+      else if(i===cur){ ctx.fillStyle='#C9A24A'; ctx.font='16px "Press Start 2P",monospace'; ctx.textAlign='center'; ctx.fillText('▼',ax,2*TILE-8+Math.sin(bob*2)*3); ctx.textAlign='left'; }
+    });
+    // player
+    ch(Math.round(rx*TILE-offsetX), Math.round(ry*TILE), '#C9A24A', player.dir, player.step, true);
+
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+  /* ── SCREENS ── */
+  document.getElementById('startBtn').onclick=function(){
+    document.getElementById('titleScreen').style.display='none';
+    state='walk'; markTimeline(); gtag('event','journey_start');
+  };
+  function winGame(){ state='win'; gtag('event','journey_complete'); document.getElementById('winScreen').style.display='flex'; }
+  document.getElementById('winCta').onclick=function(){ gtag('event','journey_cta_contact'); };
+  document.getElementById('playAgain').onclick=function(){
+    CH.forEach(function(s){ s.done=false; }); markTimeline();
+    player.x=2; player.y=7; player.dir='right'; player.moving=false;
+    document.getElementById('winScreen').style.display='none'; state='walk';
+  };
+})();
+</script>
+</body>
+</html>
