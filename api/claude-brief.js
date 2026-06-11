@@ -97,8 +97,8 @@ const NEWS_QUERIES = [
 ];
 
 const WINDOW_HOURS = 26;
-const MAX_ITEMS_FOR_AI = 150;
-const SNIPPET_LEN = 280;
+const MAX_ITEMS_FOR_AI = 100;
+const SNIPPET_LEN = 200;
 
 // ---------------------------------------------------------------- helpers ---
 
@@ -258,20 +258,26 @@ function buildSystemPrompt() {
   const peopleList = Object.entries(PEOPLE)
     .map(([cat, names]) => cat + ': ' + names.join(', ')).join('\n');
 
-  return `You are the intelligence analyst behind a private daily briefing for Pratik, a builder who tracks the cutting edge of AI, Robotics, and the long-term Future. He follows these people because they have substance, not just popularity:
+  return `You are a private futures analyst, not a news editor. Your client is Pratik: a builder and marketer in India who ships software products, and who wants ONE thing from you: to understand where the future of AI, Robotics, and humanity's trajectory is actually heading. He tracks these people because they have substance:
 
 ${peopleList}
 
-You will receive today's raw haul of items from newsletters, lab blogs, company pages, podcasts, and news queries. Your job:
-1. Select only what has LONG-TERM significance: new ideas, research results, strong arguments, real capability shifts, notable essays or interviews from or about the tracked people, plus genuinely significant frontier developments even if no tracked person is named. The test for every item: will this still matter in five years? If unsure, exclude it.
-2. Hard exclusions: trivial news, gossip, personnel drama, incremental model version updates, funding round chatter, stock-price noise, product marketing, rumor recycling, listicles, duplicate coverage of the same story (keep the best single item), and anything stale.
-3. For each selected item, lead with the CORE INSIGHT: the underlying idea or shift, stated plainly in the first sentence, then 1-2 sentences on why it matters for the long-term future. Not "X announced Y" but what the announcement reveals or changes. No hype. No emojis. No em dashes, use commas, colons, or full stops.
-4. Sort each category by importance. 5 to 8 items per category. If a category has fewer than 5 worthwhile items, include only what is worthwhile, never pad.
-5. Write one "top_signal" line: the single most important long-term shift across everything today.
+You will receive today's raw haul of items from newsletters, lab blogs, company pages, podcasts, and news queries. Do NOT summarize items one by one. That is a news digest, and he explicitly does not want news. Instead, think like an analyst:
+
+1. Read everything. Discard noise ruthlessly: announcements without substance, gossip, personnel drama, incremental model releases, funding chatter, stock noise, marketing, duplicate coverage.
+2. CLUSTER what remains into underlying SIGNALS: multiple items pointing at the same deeper shift. A real signal answers: what is actually changing about where the world is going? One strong essay or research result can be a signal on its own if it genuinely reframes something.
+3. Report 2-4 signals maximum. Zero is an acceptable answer on a quiet day, never pad. A signal that would not matter in five years is not a signal.
+4. For each signal write four parts, plain language, no hype, no emojis, no em dashes (use commas, colons, full stops):
+   - "happening": 2-3 sentences synthesizing what the evidence collectively shows. Name the people/labs involved.
+   - "future": where this leads in 2-5 years if it continues. State it as a claim about the future, with the reasoning visible.
+   - "watch": the one concrete thing that would confirm or break this trajectory.
+   - "for_you": what this means specifically for a builder and marketer in India shipping software products: an opportunity, a threat, or a timing call. Be concrete, not generic advice.
+5. "trajectory": one opening paragraph (3-4 sentences), the single most important thing today's evidence says about where the future is heading. Written as analysis, not a headline.
+6. "quiet": 0-3 one-liners, things too early to be signals but worth radar space.
 
 Respond with JSON only, in this exact shape:
-{"top_signal":"...","sections":[{"category":"AI","items":[{"idx":0,"title":"...","summary":"..."}]},{"category":"Robotics","items":[]},{"category":"Future","items":[]}]}
-"idx" is the [number] of the source item. Keep titles under 90 characters, rewrite vague ones.`;
+{"trajectory":"...","signals":[{"title":"...","happening":"...","future":"...","watch":"...","for_you":"...","idxs":[0,5]}],"quiet":["..."]}
+"idxs" are the [numbers] of the source items behind each signal (1-4 of the strongest). Signal titles are claims, under 80 characters: "Robot learning is consolidating around foundation models", not "Robotics roundup". If today is genuinely quiet, return an empty signals array and say so honestly in trajectory.`;
 }
 
 function extractJson(text) {
@@ -295,7 +301,7 @@ async function rankWithClaude(items) {
     },
     body: JSON.stringify({
       model: CLAUDE_MODEL,
-      max_tokens: 4000,
+      max_tokens: 2500,
       system: buildSystemPrompt(),
       messages: [{ role: 'user', content: 'Today\'s raw items:\n' + itemLines }]
     })
@@ -345,55 +351,68 @@ async function tgSendLong(text) {
   for (const p of parts) await tgSend(p);
 }
 
+function signalSources(sig, items) {
+  return (sig.idxs || []).filter(i => items[i]).slice(0, 4)
+    .map(i => '<a href="' + esc(items[i].url) + '">' + esc(items[i].source) + '</a>').join(' · ');
+}
+
 function formatTelegram(brief, items) {
   const messages = [];
-  let head = '<b>Daily Insight Brief (Claude)</b> · ' + esc(istDate());
-  if (brief.top_signal) head += '\n\n<b>Top signal:</b> ' + esc(brief.top_signal);
+  let head = '<b>Future Brief</b> · ' + esc(istDate());
+  if (brief.trajectory) head += '\n\n' + esc(brief.trajectory);
   messages.push(head);
 
-  const labels = { AI: 'AI', Robotics: 'ROBOTICS', Future: 'FUTURE' };
-  for (const sec of brief.sections || []) {
-    const its = (sec.items || []).filter(x => items[x.idx]);
-    if (!its.length) continue;
-    let msg = '<b>' + (labels[sec.category] || esc(sec.category).toUpperCase()) + '</b>';
-    for (const x of its) {
-      const src = items[x.idx];
-      msg += '\n\n<b>' + esc(x.title || src.title) + '</b>\n' + esc(x.summary || '') +
-        '\n<a href="' + esc(src.url) + '">' + esc(src.source) + '</a>';
-    }
+  for (const sig of brief.signals || []) {
+    let msg = '<b>Signal: ' + esc(sig.title) + '</b>' +
+      '\n\n<b>What is happening:</b> ' + esc(sig.happening || '') +
+      '\n\n<b>Where it leads:</b> ' + esc(sig.future || '') +
+      '\n\n<b>Watch:</b> ' + esc(sig.watch || '') +
+      '\n\n<b>For you:</b> ' + esc(sig.for_you || '');
+    const srcs = signalSources(sig, items);
+    if (srcs) msg += '\n\n' + srcs;
     messages.push(msg);
+  }
+
+  if (brief.quiet && brief.quiet.length) {
+    messages.push('<b>Quiet signals</b>\n\n' + brief.quiet.map(qs => '· ' + esc(qs)).join('\n'));
   }
   return messages;
 }
 
 function formatEmailHtml(brief, items) {
-  const sectionsHtml = (brief.sections || []).map(sec => {
-    const its = (sec.items || []).filter(x => items[x.idx]);
-    if (!its.length) return '';
-    const itemsHtml = its.map(x => {
-      const src = items[x.idx];
-      return `<div style="margin:0 0 22px;">
-        <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17px;font-weight:500;color:#1A1512;margin-bottom:6px;">${esc(x.title || src.title)}</div>
-        <div style="font-size:15px;line-height:1.65;color:#38302A;margin-bottom:6px;">${esc(x.summary || '')}</div>
-        <a href="${esc(src.url)}" style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#8C6A18;text-decoration:none;">${esc(src.source)} &rarr;</a>
-      </div>`;
-    }).join('');
-    return `<div style="margin:0 0 30px;">
-      <div style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#8C6A18;border-top:2px solid #8C6A18;display:inline-block;padding-top:8px;margin-bottom:16px;">${esc(sec.category)}</div>
-      ${itemsHtml}
+  const part = (label, text) => text ? `<div style="margin:0 0 10px;"><span style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#8C6A18;">${label}</span><div style="font-size:15px;line-height:1.65;color:#38302A;">${esc(text)}</div></div>` : '';
+
+  const signalsHtml = (brief.signals || []).map(sig => {
+    const srcs = (sig.idxs || []).filter(i => items[i]).slice(0, 4)
+      .map(i => `<a href="${esc(items[i].url)}" style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#8C6A18;text-decoration:none;">${esc(items[i].source)} &rarr;</a>`).join(' &nbsp; ');
+    return `<div style="margin:0 0 30px;padding:20px;background:#EEE8E4;border:1px solid #D0C8C0;">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:18px;font-weight:500;color:#1A1512;margin-bottom:14px;">${esc(sig.title)}</div>
+      ${part('What is happening', sig.happening)}
+      ${part('Where it leads', sig.future)}
+      ${part('Watch', sig.watch)}
+      ${part('For you', sig.for_you)}
+      ${srcs ? `<div style="margin-top:12px;">${srcs}</div>` : ''}
     </div>`;
   }).join('');
 
+  const quietHtml = (brief.quiet && brief.quiet.length)
+    ? `<div style="margin:0 0 30px;">
+        <div style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#8C6A18;border-top:2px solid #8C6A18;display:inline-block;padding-top:8px;margin-bottom:12px;">Quiet signals</div>
+        ${brief.quiet.map(qs => `<div style="font-size:14px;line-height:1.65;color:#504840;margin-bottom:6px;">&middot; ${esc(qs)}</div>`).join('')}
+      </div>`
+    : '';
+
   return `<!DOCTYPE html><html><body style="margin:0;padding:0;background:#F6F2F1;">
   <div style="max-width:600px;margin:0 auto;padding:32px 24px;background:#F6F2F1;font-family:'IBM Plex Sans',system-ui,sans-serif;">
-    <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:300;color:#1A1512;margin-bottom:4px;">Daily Insight Brief</div>
-    <div style="font-size:13px;color:#786E66;margin-bottom:24px;">${esc(istDate())} &middot; Claude edition</div>
-    ${brief.top_signal ? `<div style="background:#F0E4C4;border:1px solid #D4B870;padding:16px;margin-bottom:30px;">
-      <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#8C6A18;margin-bottom:6px;">Top signal</div>
-      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16px;line-height:1.5;color:#1A1512;">${esc(brief.top_signal)}</div>
+    <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:300;color:#1A1512;margin-bottom:4px;">Future Brief</div>
+    <div style="font-size:13px;color:#786E66;margin-bottom:24px;">${esc(istDate())}</div>
+    ${brief.trajectory ? `<div style="background:#F0E4C4;border:1px solid #D4B870;padding:16px;margin-bottom:30px;">
+      <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#8C6A18;margin-bottom:6px;">Trajectory</div>
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16px;line-height:1.6;color:#1A1512;">${esc(brief.trajectory)}</div>
     </div>` : ''}
-    ${sectionsHtml}
-    <div style="border-top:1px solid #D0C8C0;padding-top:14px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#786E66;">Curated from 56 tracked sources &middot; Built by Pratik Renuse</div>
+    ${signalsHtml}
+    ${quietHtml}
+    <div style="border-top:1px solid #D0C8C0;padding-top:14px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#786E66;">Synthesized from 56 tracked sources &middot; Built by Pratik Renuse</div>
   </div>
   </body></html>`;
 }
@@ -409,7 +428,7 @@ async function sendEmail(brief, items) {
     body: JSON.stringify({
       from: BRIEF_FROM,
       to: [BRIEF_TO],
-      subject: 'Daily Insight Brief · ' + istDate(),
+      subject: 'Future Brief · ' + istDate(),
       html: formatEmailHtml(brief, items)
     })
   });
@@ -458,28 +477,24 @@ module.exports = async (req, res) => {
     fresh = fresh.slice(0, MAX_ITEMS_FOR_AI);
 
     if (!fresh.length) {
-      await tgSend('<b>Daily Insight Brief (Claude)</b>\n\nQuiet day: no new items from any tracked source in the last 26 hours.');
+      await tgSend('<b>Future Brief</b>\n\nQuiet day: no new items from any tracked source in the last 26 hours.');
       return res.status(200).json({ ok: true, gathered: gathered.length, fresh: 0, sent: 'quiet-day notice' });
     }
 
     const brief = await rankWithClaude(fresh);
 
-    let pickedCount = 0;
-    for (const sec of brief.sections || []) pickedCount += (sec.items || []).length;
+    const signalCount = (brief.signals || []).length;
 
-    let emailStatus = 'not attempted';
-    if (pickedCount === 0) {
-      await tgSend('<b>Daily Insight Brief (Claude)</b>\n\nQuiet day: ' + fresh.length + ' new items came in, none cleared the long-term significance bar.');
-    } else {
-      for (const m of formatTelegram(brief, fresh)) await tgSendLong(m);
-      emailStatus = await sendEmail(brief, fresh);
-    }
+    // Always deliver to Telegram: on quiet days the trajectory paragraph says so honestly.
+    for (const m of formatTelegram(brief, fresh)) await tgSendLong(m);
+    let emailStatus = 'skipped (quiet day)';
+    if (signalCount > 0) emailStatus = await sendEmail(brief, fresh);
 
     await markSeen(fresh.map(it => it.url));
 
     return res.status(200).json({
       ok: true, brain: CLAUDE_MODEL, gathered: gathered.length,
-      fresh: fresh.length, selected: pickedCount, email: emailStatus
+      fresh: fresh.length, signals: signalCount, email: emailStatus
     });
   } catch (e) {
     try {

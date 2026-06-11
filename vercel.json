@@ -1,7 +1,4 @@
 {
-  "crons": [
-    { "path": "/api/claude-brief", "schedule": "30 1 * * *" }
-  ],
   "functions": {
     "api/*.js": {
       "memory": 1024,
