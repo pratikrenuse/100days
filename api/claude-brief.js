@@ -97,7 +97,7 @@ const NEWS_QUERIES = [
 ];
 
 const WINDOW_HOURS = 26;
-const MAX_ITEMS_FOR_AI = 100;
+const MAX_ITEMS_FOR_AI = 80;
 const SNIPPET_LEN = 200;
 
 // ---------------------------------------------------------------- helpers ---
@@ -288,8 +288,9 @@ function extractJson(text) {
 }
 
 async function rankWithClaude(items) {
+  // News-query items carry junk snippets, send title only. Real sources keep their snippet.
   const itemLines = items.map((it, i) =>
-    `[${i}] (${it.cat} | ${it.source}) ${it.title}` + (it.snippet ? ` :: ${it.snippet}` : '')
+    `[${i}] (${it.cat} | ${it.source}) ${it.title}` + (it.snippet && it.source !== 'News' ? ` :: ${it.snippet}` : '')
   ).join('\n');
 
   const r = await fetch('https://api.anthropic.com/v1/messages', {
@@ -356,25 +357,32 @@ function signalSources(sig, items) {
     .map(i => '<a href="' + esc(items[i].url) + '">' + esc(items[i].source) + '</a>').join(' · ');
 }
 
+const DIVIDER = '━━━━━━━━━━━━━━';
+
 function formatTelegram(brief, items) {
   const messages = [];
-  let head = '<b>Future Brief</b> · ' + esc(istDate());
-  if (brief.trajectory) head += '\n\n' + esc(brief.trajectory);
+  const total = (brief.signals || []).length;
+
+  let head = DIVIDER + '\n<b>FUTURE BRIEF</b>\n' + esc(istDate()) + '\n' + DIVIDER;
+  if (brief.trajectory) head += '\n\n<i>' + esc(brief.trajectory) + '</i>';
+  if (total) head += '\n\n' + total + (total === 1 ? ' signal today' : ' signals today');
   messages.push(head);
 
+  let n = 0;
   for (const sig of brief.signals || []) {
-    let msg = '<b>Signal: ' + esc(sig.title) + '</b>' +
-      '\n\n<b>What is happening:</b> ' + esc(sig.happening || '') +
-      '\n\n<b>Where it leads:</b> ' + esc(sig.future || '') +
-      '\n\n<b>Watch:</b> ' + esc(sig.watch || '') +
-      '\n\n<b>For you:</b> ' + esc(sig.for_you || '');
+    n++;
+    let msg = '<b>' + n + ' / ' + total + ' · ' + esc(sig.title.toUpperCase()) + '</b>' +
+      '\n\n▸ <b>Happening</b>\n' + esc(sig.happening || '') +
+      '\n\n▸ <b>Where it leads</b>\n' + esc(sig.future || '') +
+      '\n\n▸ <b>Watch</b>\n' + esc(sig.watch || '') +
+      '\n\n▸ <b>For you</b>\n' + esc(sig.for_you || '');
     const srcs = signalSources(sig, items);
     if (srcs) msg += '\n\n' + srcs;
     messages.push(msg);
   }
 
   if (brief.quiet && brief.quiet.length) {
-    messages.push('<b>Quiet signals</b>\n\n' + brief.quiet.map(qs => '· ' + esc(qs)).join('\n'));
+    messages.push('<b>ON THE RADAR</b>\n\n' + brief.quiet.map(qs => '◦ ' + esc(qs)).join('\n\n'));
   }
   return messages;
 }
