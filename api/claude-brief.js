@@ -428,6 +428,25 @@ module.exports = async (req, res) => {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
+  // Setup helper: discover your Telegram chat ID (visit /api/claude-brief?whoami=1).
+  if (q.whoami) {
+    try {
+      const r = await fetch('https://api.telegram.org/bot' + process.env.TELEGRAM_BOT_TOKEN + '/getUpdates');
+      const data = await r.json();
+      const chats = {};
+      for (const u of data.result || []) {
+        const c = (u.message && u.message.chat) || (u.channel_post && u.channel_post.chat);
+        if (c) chats[c.id] = (c.first_name || '') + ' ' + (c.last_name || '') + (c.username ? ' @' + c.username : '');
+      }
+      return res.status(200).json({
+        hint: 'Send your bot a message first if this is empty. Use the chat id as TELEGRAM_CHAT_ID in Vercel.',
+        chats
+      });
+    } catch (e) {
+      return res.status(500).json({ error: 'Could not reach Telegram. Is TELEGRAM_BOT_TOKEN set?' });
+    }
+  }
+
   const missing = ['SUPABASE_URL', 'SUPABASE_SERVICE_KEY', 'ANTHROPIC_API_KEY', 'TELEGRAM_BOT_TOKEN', 'TELEGRAM_CHAT_ID']
     .filter(k => !process.env[k]);
   if (missing.length) return res.status(500).json({ error: 'Missing env vars: ' + missing.join(', ') });

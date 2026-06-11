@@ -1,16 +1,11 @@
 {
   "crons": [
-    { "path": "/api/daily-brief", "schedule": "30 1 * * *" },
     { "path": "/api/claude-brief", "schedule": "30 1 * * *" }
   ],
   "functions": {
     "api/*.js": {
       "memory": 256,
       "maxDuration": 30
-    },
-    "api/daily-brief.js": {
-      "memory": 1024,
-      "maxDuration": 300
     },
     "api/claude-brief.js": {
       "memory": 1024,
