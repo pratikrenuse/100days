@@ -280,7 +280,12 @@ order.forEach(k=>{
   tabsEl.appendChild(b);
 });
 
-function shotUrl(u){ return 'https://image.thum.io/get/width/600/crop/400/noanimate/https://'+u; }
+// Screenshot providers, tried in order. If all fail, the favicon fallback shows.
+const PROVIDERS = [
+  u => 'https://image.thum.io/get/width/800/https://'+u,
+  u => 'https://s0.wp.com/mshots/v1/'+encodeURIComponent('https://'+u)+'?w=800&h=500',
+  u => 'https://api.microlink.io/?url='+encodeURIComponent('https://'+u)+'&screenshot=true&embed=screenshot.url&meta=false'
+];
 function favUrl(u){ return 'https://www.google.com/s2/favicons?domain='+u.split('/')[0]+'&sz=128'; }
 
 function makeCard(s){
@@ -291,7 +296,7 @@ function makeCard(s){
     <div class="shot">
       <span class="cat-tag">${CATS[s.c]}</span>
       <div class="fallback"><img src="${favUrl(s.u)}" alt="" loading="lazy"><span>Preview unavailable</span></div>
-      <img alt="Screenshot of ${s.n}'s site" loading="lazy" data-src="${shotUrl(s.u)}">
+      <img alt="Screenshot of ${s.n}'s site" loading="lazy" data-url="${s.u}" data-p="0">
     </div>
     <div class="card-body">
       <div class="card-head">
@@ -311,9 +316,13 @@ const io = new IntersectionObserver((entries)=>{
     if(!e.isIntersecting) return;
     const img=e.target;
     io.unobserve(img);
-    img.src=img.dataset.src;
-    img.onload=()=>img.classList.add('loaded');
-    img.onerror=()=>{ img.style.display='none'; }; // fallback (favicon block) stays visible
+    img.onload=()=>{ if(img.naturalWidth>1) img.classList.add('loaded'); else img.onerror(); };
+    img.onerror=()=>{
+      let p=parseInt(img.dataset.p,10)+1;
+      if(p<PROVIDERS.length){ img.dataset.p=p; img.src=PROVIDERS[p](img.dataset.url); }
+      else { img.style.display='none'; } // all failed → favicon fallback block stays visible
+    };
+    img.src=PROVIDERS[0](img.dataset.url);
   });
 },{rootMargin:'300px'});
 
@@ -330,7 +339,7 @@ function render(){
   const frag=document.createDocumentFragment();
   list.forEach(s=>frag.appendChild(makeCard(s)));
   grid.appendChild(frag);
-  grid.querySelectorAll('.shot img[data-src]').forEach(img=>io.observe(img));
+  grid.querySelectorAll('.shot img[data-url]').forEach(img=>io.observe(img));
 }
 
 searchEl.addEventListener('input',e=>{ query=e.target.value; render(); });
