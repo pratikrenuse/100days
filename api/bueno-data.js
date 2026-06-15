@@ -1,184 +1,239 @@
-// api/bueno-data.js
-// Password-gated, server-side Meta Ads data for the Bueno dashboard (v2).
-// The Meta token never leaves the server. Data is only returned when the
-// posted password matches DASHBOARD_PASSWORD.
+// api/bueno-data.js  (v3)
+// Password-gated, server-side Meta Ads data for the Bueno dashboard.
+// Adds market (Norwegian/Swedish/English/Other) + goal (Leads / Conversions & Clicks)
+// segmentation, market×goal matrix, per-market daily trends, efficiency leaderboard,
+// and auto-generated alerts. Token never leaves the server.
 //
-// Actions (POST body { password, action, since, until }):
-//   overview    -> KPIs (current + previous period), daily time series,
-//                  funnel totals, and campaign/adset/ad tables
-//   breakdowns  -> account-level splits: country, placement, device, age, gender
+// POST body { password, action, since, until, includePaused }
+//   action "overview"   -> KPIs(+prev), daily series, per-market daily series, funnel,
+//                          markets[], goals[], matrix, campaigns/adsets/ads (tagged),
+//                          leaderboard, alerts
+//   action "breakdowns" -> country, placement, device, age, gender
 //
-// Env vars (Vercel → Settings → Environment Variables):
-//   META_TOKEN           - Meta System User token with ads_read
-//   DASHBOARD_PASSWORD   - password required to view the dashboard
-//   BUENO_AD_ACCOUNT_ID  - optional; defaults to the Bueno (NOK) account
+// Env: META_TOKEN, DASHBOARD_PASSWORD, BUENO_AD_ACCOUNT_ID(optional)
 
 const API = "https://graph.facebook.com/v23.0";
 const ACCT = process.env.BUENO_AD_ACCOUNT_ID || "2716642581960365";
-
-const CACHE = new Map(); // key -> { at, payload }
+const CACHE = new Map();
 const CACHE_TTL_MS = 10 * 60 * 1000;
-
 const N = (x) => (x == null || x === "" ? 0 : Number(x));
 
-/* ---------------- Meta helpers ---------------- */
-function tr(since, until) { return JSON.stringify({ since, until }); }
-
+/* ---------- Meta helpers ---------- */
+const tr = (s, u) => JSON.stringify({ since: s, until: u });
 async function gget(path, params) {
-  const u = new URL(`${API}/${path}`);
-  u.searchParams.set("access_token", process.env.META_TOKEN);
-  for (const [k, v] of Object.entries(params || {})) u.searchParams.set(k, v);
-  const res = await fetch(u);
-  const json = await res.json();
-  if (json.error) throw new Error(`${path}: ${json.error.message}`);
-  return json;
+  const url = new URL(`${API}/${path}`);
+  url.searchParams.set("access_token", process.env.META_TOKEN);
+  for (const [k, v] of Object.entries(params || {})) url.searchParams.set(k, v);
+  const r = await fetch(url); const j = await r.json();
+  if (j.error) throw new Error(`${path}: ${j.error.message}`);
+  return j;
 }
 async function gall(path, params) {
-  let out = [], json = await gget(path, params);
-  out = out.concat(json.data || []);
-  let next = json.paging && json.paging.next, guard = 0;
-  while (next && guard++ < 25) {
-    const res = await fetch(next); json = await res.json();
-    if (json.error) break;
-    out = out.concat(json.data || []);
-    next = json.paging && json.paging.next;
+  let out = [], j = await gget(path, params);
+  out = out.concat(j.data || []);
+  let next = j.paging && j.paging.next, g = 0;
+  while (next && g++ < 30) {
+    const r = await fetch(next); j = await r.json();
+    if (j.error) break; out = out.concat(j.data || []);
+    next = j.paging && j.paging.next;
   }
   return out;
 }
 
-/* ---------------- action parsing ---------------- */
-function actionVal(actions, types) {
+/* ---------- action parsing ---------- */
+function actionVal(actions, subs) {
   if (!Array.isArray(actions)) return 0;
-  let sum = 0;
-  for (const a of actions) {
-    const t = (a.action_type || "").toLowerCase();
-    if (types.some((x) => t.includes(x))) sum += N(a.value);
-  }
-  return sum;
+  let s = 0;
+  for (const a of actions) { const t = (a.action_type || "").toLowerCase(); if (subs.some((x) => t.includes(x))) s += N(a.value); }
+  return s;
 }
-function leadsOf(actions) { return actionVal(actions, ["leadgen", "lead_grouped"]) || actionVal(actions, ["lead"]); }
-function regsOf(actions) {
-  if (!Array.isArray(actions)) return 0;
-  let r = 0;
-  for (const a of actions) {
-    const t = (a.action_type || "").toLowerCase();
-    if (t.includes("registration page") || (t.includes("fb_pixel_custom") && t.includes("registration"))) r += N(a.value);
-  }
+const leadsOf = (a) => actionVal(a, ["leadgen", "lead_grouped"]) || actionVal(a, ["onsite_conversion.lead"]) || actionVal(a, ["lead"]);
+function regsOf(a) {
+  if (!Array.isArray(a)) return 0; let r = 0;
+  for (const x of a) { const t = (x.action_type || "").toLowerCase();
+    if (t.includes("registration page") || (t.includes("fb_pixel_custom") && t.includes("registration"))) r += N(x.value); }
   return r;
 }
-function linkClicksOf(actions) { return actionVal(actions, ["link_click"]); }
-function lpViewsOf(actions) { return actionVal(actions, ["landing_page_view"]); }
+const linkClicksOf = (a) => actionVal(a, ["link_click"]);
+const lpViewsOf = (a) => actionVal(a, ["landing_page_view"]);
 
-function primaryResult(actions) {
-  const l = leadsOf(actions), r = regsOf(actions);
-  if (l > 0) return { label: "leads", value: l };
-  if (r > 0) return { label: "registrations", value: r };
-  return { label: "—", value: 0 };
+/* ---------- classification ---------- */
+function classifyMarket(name) {
+  const toks = String(name || "").toUpperCase().split(/[^A-ZÅÄÖØÆ]+/).filter(Boolean);
+  const has = (...xs) => xs.some((x) => toks.includes(x));
+  if (has("ENG", "EN", "ENGLISH", "BRITISH", "UK", "GB", "IRELAND")) return "English";
+  if (has("SE", "SWEDEN", "SWEDISH", "SVERIGE")) return "Swedish";
+  if (has("NO", "NOR", "NORWAY", "NORWEGIAN", "NORGE")) return "Norwegian";
+  return "Other";
 }
+function classifyGoal(objective) {
+  const o = String(objective || "").toUpperCase();
+  if (o.includes("LEAD")) return "Leads";
+  if (o.includes("SALES") || o.includes("TRAFFIC") || o.includes("LINK_CLICKS") || o.includes("CONVERSION")) return "Conversions & Clicks";
+  return "Other";
+}
+const MARKETS = ["Norwegian", "Swedish", "English", "Other"];
+const GOALS = ["Leads", "Conversions & Clicks", "Other"];
 
-function shapeEntity(row, idKey, nameKey) {
-  const spend = N(row.spend);
-  const res = primaryResult(row.actions);
+/* ---------- shaping ---------- */
+function shape(row, idKey, nameKey) {
+  const spend = N(row.spend), leads = leadsOf(row.actions), regs = regsOf(row.actions);
   return {
     id: row[idKey], name: row[nameKey] || "(unnamed)",
     campaign_id: row.campaign_id || null, adset_id: row.adset_id || null,
-    objective: row.objective || null,
     spend, impressions: N(row.impressions), clicks: N(row.clicks),
     ctr: N(row.ctr), cpc: N(row.cpc), cpm: N(row.cpm),
-    resultLabel: res.label, resultValue: res.value,
-    costPer: res.value > 0 ? spend / res.value : null,
+    leads, registrations: regs,
+    linkClicks: linkClicksOf(row.actions), lpViews: lpViewsOf(row.actions),
   };
 }
+// primary result depends on goal: Leads->leads, else registrations
+function primaryFor(goal, e) {
+  if (goal === "Leads") return { label: "leads", value: e.leads };
+  return { label: "registrations", value: e.registrations };
+}
 
-/* ---------------- date helpers ---------------- */
-function isoDay(d) { return d.toISOString().slice(0, 10); }
+/* ---------- dates ---------- */
+const isoDay = (d) => d.toISOString().slice(0, 10);
 function previousWindow(since, until) {
   const s = new Date(since + "T00:00:00Z"), u = new Date(until + "T00:00:00Z");
-  const days = Math.round((u - s) / 86400000) + 1;
-  const prevUntil = new Date(s); prevUntil.setUTCDate(prevUntil.getUTCDate() - 1);
-  const prevSince = new Date(prevUntil); prevSince.setUTCDate(prevSince.getUTCDate() - (days - 1));
-  return { since: isoDay(prevSince), until: isoDay(prevUntil) };
+  const days = Math.round((u - s) / 864e5) + 1;
+  const pu = new Date(s); pu.setUTCDate(pu.getUTCDate() - 1);
+  const ps = new Date(pu); ps.setUTCDate(ps.getUTCDate() - (days - 1));
+  return { since: isoDay(ps), until: isoDay(pu) };
 }
 
-/* ---------------- totals + funnel ---------------- */
+/* ---------- totals + funnel ---------- */
 async function accountTotals(since, until) {
-  const rows = await gall(`act_${ACCT}/insights`, {
-    time_range: tr(since, until),
-    fields: "spend,impressions,reach,frequency,clicks,ctr,cpc,cpm,actions",
-  });
-  const a = rows[0] || {};
-  const leads = leadsOf(a.actions), regs = regsOf(a.actions);
-  const result = leads || regs;
-  const spend = N(a.spend);
-  return {
-    spend, impressions: N(a.impressions), reach: N(a.reach), frequency: N(a.frequency),
+  const a = (await gall(`act_${ACCT}/insights`, { time_range: tr(since, until),
+    fields: "spend,impressions,reach,frequency,clicks,ctr,cpc,cpm,actions" }))[0] || {};
+  const leads = leadsOf(a.actions), regs = regsOf(a.actions), result = leads || regs, spend = N(a.spend);
+  return { spend, impressions: N(a.impressions), reach: N(a.reach), frequency: N(a.frequency),
     clicks: N(a.clicks), ctr: N(a.ctr), cpc: N(a.cpc), cpm: N(a.cpm),
     linkClicks: linkClicksOf(a.actions), lpViews: lpViewsOf(a.actions),
-    leads, registrations: regs,
-    result, resultLabel: leads ? "leads" : (regs ? "registrations" : "results"),
+    leads, registrations: regs, result, resultLabel: leads ? "leads" : "registrations",
     costPerResult: result > 0 ? spend / result : null,
-    date_start: a.date_start || since, date_stop: a.date_stop || until,
-  };
+    date_start: a.date_start || since, date_stop: a.date_stop || until };
 }
-
 async function dailySeries(since, until) {
-  const rows = await gall(`act_${ACCT}/insights`, {
-    time_range: tr(since, until), time_increment: "1",
-    fields: "spend,impressions,clicks,ctr,actions",
-  });
-  return rows.map((d) => ({
-    date: d.date_start,
-    spend: N(d.spend), impressions: N(d.impressions), clicks: N(d.clicks), ctr: N(d.ctr),
-    leads: leadsOf(d.actions), registrations: regsOf(d.actions),
-  }));
+  return (await gall(`act_${ACCT}/insights`, { time_range: tr(since, until), time_increment: "1",
+    fields: "spend,impressions,clicks,ctr,actions" }))
+    .map((d) => ({ date: d.date_start, spend: N(d.spend), impressions: N(d.impressions),
+      clicks: N(d.clicks), ctr: N(d.ctr), leads: leadsOf(d.actions), registrations: regsOf(d.actions) }));
 }
 
-/* ---------------- entity tables ---------------- */
+/* ---------- entities ---------- */
 async function entities(level, idKey, nameKey, since, until, fields, limit) {
-  const rows = await gall(`act_${ACCT}/insights`, {
-    level, time_range: tr(since, until), limit: String(limit), fields,
-  });
-  return rows.map((r) => shapeEntity(r, idKey, nameKey));
+  return (await gall(`act_${ACCT}/insights`, { level, time_range: tr(since, until), limit: String(limit), fields }))
+    .map((r) => shape(r, idKey, nameKey));
 }
-async function statusMap(edge, params) {
-  const m = {};
-  try { for (const e of await gall(`act_${ACCT}/${edge}`, params)) m[e.id] = e.effective_status; }
-  catch (_) {}
+async function statusMap(edge) {
+  const m = {}; try { for (const e of await gall(`act_${ACCT}/${edge}`, { fields: "id,effective_status", limit: "2000" })) m[e.id] = e.effective_status; } catch (_) {}
+  return m;
+}
+async function objectiveMap() {
+  const m = {}; try { for (const c of await gall(`act_${ACCT}/campaigns`, { fields: "id,objective", limit: "500" })) m[c.id] = c.objective; } catch (_) {}
   return m;
 }
 
-async function buildOverview(since, until) {
+/* ---------- aggregation ---------- */
+function blankAgg() { return { spend: 0, impressions: 0, clicks: 0, leads: 0, registrations: 0 }; }
+function addAgg(t, e) { t.spend += e.spend; t.impressions += e.impressions; t.clicks += e.clicks; t.leads += e.leads; t.registrations += e.registrations; }
+function finishAgg(t, resultKind) {
+  const ctr = t.impressions ? (t.clicks / t.impressions) * 100 : 0;
+  const cpc = t.clicks ? t.spend / t.clicks : 0;
+  const result = resultKind === "leads" ? t.leads : (resultKind === "registrations" ? t.registrations : t.leads + t.registrations);
+  return { ...t, ctr, cpc, result, costPer: result > 0 ? t.spend / result : null };
+}
+
+async function buildOverview(since, until, includePaused) {
   const prev = previousWindow(since, until);
-  const [cur, previous, series, camps, campsPrev, sets, ads, cs, ss, as] = await Promise.all([
+  const [cur, previous, series, camps, campsPrev, sets, setsPrev, ads, objMap, csA, ssA, asA, setDaily] = await Promise.all([
     accountTotals(since, until),
     accountTotals(prev.since, prev.until),
     dailySeries(since, until),
     entities("campaign", "campaign_id", "campaign_name", since, until,
-      "campaign_id,campaign_name,objective,spend,impressions,clicks,ctr,cpc,cpm,actions", 200),
+      "campaign_id,campaign_name,objective,spend,impressions,clicks,ctr,cpc,cpm,actions", 300),
     entities("campaign", "campaign_id", "campaign_name", prev.since, prev.until,
-      "campaign_id,campaign_name,spend,impressions,clicks,ctr,cpc,cpm,actions", 200),
+      "campaign_id,campaign_name,spend,impressions,clicks,ctr,cpc,cpm,actions", 300),
     entities("adset", "adset_id", "adset_name", since, until,
-      "adset_id,adset_name,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions", 400),
+      "adset_id,adset_name,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions", 500),
+    entities("adset", "adset_id", "adset_name", prev.since, prev.until,
+      "adset_id,adset_name,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions", 500),
     entities("ad", "ad_id", "ad_name", since, until,
-      "ad_id,ad_name,adset_id,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions", 500),
-    statusMap("campaigns", { fields: "id,effective_status", limit: "500" }),
-    statusMap("adsets", { fields: "id,effective_status", limit: "1000" }),
-    statusMap("ads", { fields: "id,effective_status", limit: "2000" }),
+      "ad_id,ad_name,adset_id,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions", 600),
+    objectiveMap(),
+    statusMap("campaigns"), statusMap("adsets"), statusMap("ads"),
+    gall(`act_${ACCT}/insights`, { level: "adset", time_range: tr(since, until), time_increment: "1",
+      fields: "adset_id,adset_name,spend,clicks,actions", limit: "500" }),
   ]);
-  const prevById = {};
-  campsPrev.forEach((c) => (prevById[c.id] = c));
-  camps.forEach((c) => {
-    const p = prevById[c.id];
-    c.spendPrev = p ? p.spend : 0;
-    c.resultPrev = p ? p.resultValue : 0;
-    c.spendDelta = c.spend - c.spendPrev;
-    c.resultDelta = c.resultValue - c.resultPrev;
-  });
-  camps.forEach((c) => (c.status = cs[c.id] || "UNKNOWN"));
-  sets.forEach((s) => (s.status = ss[s.id] || "UNKNOWN"));
-  ads.forEach((a) => (a.status = as[a.id] || "UNKNOWN"));
 
-  // funnel from current totals
+  // attach goal (from objective) to campaigns; market to campaigns by name
+  camps.forEach((c) => { c.objective = objMap[c.id]; c.goal = classifyGoal(c.objective); c.market = classifyMarket(c.name); c.status = csA[c.id] || "UNKNOWN"; });
+  const goalByCampaign = {}; camps.forEach((c) => (goalByCampaign[c.id] = c.goal));
+  // movers: per-campaign prev result
+  const cPrev = {}; campsPrev.forEach((c) => (cPrev[c.id] = c));
+  camps.forEach((c) => { const p = cPrev[c.id]; const goal = c.goal;
+    const curR = primaryFor(goal, c).value; const prevR = p ? primaryFor(goal, p).value : 0;
+    c.resultValue = curR; c.resultLabel = primaryFor(goal, c).label;
+    c.spendPrev = p ? p.spend : 0; c.resultPrev = prevR; c.resultDelta = curR - prevR; c.spendDelta = c.spend - c.spendPrev; });
+
+  // adsets: market (name) + goal (campaign objective)
+  const tagSet = (s) => { s.market = classifyMarket(s.name); s.goal = goalByCampaign[s.campaign_id] || classifyGoal(""); const pr = primaryFor(s.goal, s); s.resultLabel = pr.label; s.resultValue = pr.value; s.costPer = pr.value > 0 ? s.spend / pr.value : null; };
+  sets.forEach((s) => { tagSet(s); s.status = ssA[s.id] || "UNKNOWN"; });
+  setsPrev.forEach((s) => tagSet(s));
+  ads.forEach((a) => { const parent = sets.find((s) => s.id === a.adset_id); a.market = parent ? parent.market : classifyMarket(a.name); a.goal = parent ? parent.goal : "Other"; const pr = primaryFor(a.goal, a); a.resultLabel = pr.label; a.resultValue = pr.value; a.costPer = pr.value > 0 ? a.spend / pr.value : null; a.status = asA[a.id] || "UNKNOWN"; });
+
+  const active = (e) => /ACTIVE/i.test(e.status || "");
+  const setsScope = includePaused ? sets : sets.filter((s) => active(s) || s.spend > 0);
+
+  // market aggregates (current + prev)
+  const mAgg = {}, mAggP = {}; MARKETS.forEach((m) => { mAgg[m] = blankAgg(); mAggP[m] = blankAgg(); });
+  setsScope.forEach((s) => addAgg(mAgg[s.market], s));
+  setsPrev.forEach((s) => addAgg(mAggP[s.market], s));
+  const markets = MARKETS.map((m) => {
+    const cur2 = finishAgg({ ...mAgg[m] }, "both"); const prv = finishAgg({ ...mAggP[m] }, "both");
+    return { market: m, ...cur2, spendPrev: prv.spend, resultPrev: prv.result,
+      spendShare: 0, leadsCostPer: mAgg[m].leads ? mAgg[m].spend ? mAgg[m].spend / mAgg[m].leads : null : null,
+      regsCostPer: mAgg[m].registrations ? mAgg[m].spend / mAgg[m].registrations : null };
+  }).filter((m) => m.spend > 0 || m.result > 0);
+  const totSpend = markets.reduce((a, b) => a + b.spend, 0) || 1;
+  markets.forEach((m) => (m.spendShare = (m.spend / totSpend) * 100));
+
+  // goal aggregates
+  const gAgg = {}; GOALS.forEach((g) => (gAgg[g] = blankAgg()));
+  setsScope.forEach((s) => addAgg(gAgg[s.goal], s));
+  const goals = GOALS.map((g) => {
+    const kind = g === "Leads" ? "leads" : (g === "Conversions & Clicks" ? "registrations" : "both");
+    return { goal: g, ...finishAgg({ ...gAgg[g] }, kind) };
+  }).filter((g) => g.spend > 0 || g.result > 0);
+
+  // market x goal matrix (cost per result)
+  const cell = {}; MARKETS.forEach((m) => { cell[m] = {}; GOALS.forEach((g) => (cell[m][g] = blankAgg())); });
+  setsScope.forEach((s) => addAgg(cell[s.market][s.goal], s));
+  const matrix = { markets: MARKETS, goals: GOALS, cells: {} };
+  MARKETS.forEach((m) => { matrix.cells[m] = {}; GOALS.forEach((g) => {
+    const kind = g === "Leads" ? "leads" : (g === "Conversions & Clicks" ? "registrations" : "both");
+    const f = finishAgg({ ...cell[m][g] }, kind);
+    matrix.cells[m][g] = { spend: f.spend, result: f.result, costPer: f.costPer };
+  }); });
+
+  // per-market daily series (spend + result)
+  const setMarket = {}; sets.forEach((s) => (setMarket[s.id] = s.market));
+  const dayMap = {}; // date -> {market -> {spend, result}}
+  for (const r of setDaily) {
+    const m = setMarket[r.adset_id] || classifyMarket(r.adset_name);
+    const goal = goalByCampaign[r.campaign_id] || "Other";
+    const d = r.date_start; dayMap[d] = dayMap[d] || {}; dayMap[d][m] = dayMap[d][m] || { spend: 0, result: 0 };
+    dayMap[d][m].spend += N(r.spend);
+    dayMap[d][m].result += (goal === "Leads") ? leadsOf(r.actions) : regsOf(r.actions);
+  }
+  const seriesByMarket = {}; MARKETS.forEach((m) => (seriesByMarket[m] = []));
+  Object.keys(dayMap).sort().forEach((d) => MARKETS.forEach((m) => {
+    seriesByMarket[m].push({ date: d, spend: (dayMap[d][m] || {}).spend || 0, result: (dayMap[d][m] || {}).result || 0 });
+  }));
+
+  // funnel (account)
   const funnel = [
     { stage: "Impressions", value: cur.impressions },
     { stage: "Link clicks", value: cur.linkClicks || cur.clicks },
@@ -186,87 +241,78 @@ async function buildOverview(since, until) {
     { stage: cur.resultLabel.charAt(0).toUpperCase() + cur.resultLabel.slice(1), value: cur.result },
   ];
 
-  return {
-    currency: "NOK", generated_at: new Date().toISOString(),
-    range: { since, until }, previousRange: prev,
-    current: cur, previous, series, funnel,
-    campaigns: camps, adsets: sets, ads,
-  };
-}
+  // leaderboard: ad sets by efficiency (spend>0)
+  const lb = setsScope.filter((s) => s.spend > 0);
+  const best = lb.filter((s) => s.costPer != null).sort((a, b) => a.costPer - b.costPer).slice(0, 5);
+  const worst = lb.filter((s) => s.costPer != null).sort((a, b) => b.costPer - a.costPer).slice(0, 5);
 
-async function breakdown(dim, since, until) {
-  const rows = await gall(`act_${ACCT}/insights`, {
-    time_range: tr(since, until), breakdowns: dim, limit: "200",
-    fields: "spend,impressions,clicks,ctr,actions",
+  // alerts
+  const acctCpr = cur.costPerResult || 0;
+  const alerts = [];
+  setsScope.forEach((s) => {
+    if (active(s) && s.spend >= 500 && s.resultValue === 0)
+      alerts.push({ severity: "high", text: `“${s.name}” spent ${Math.round(s.spend)} ${"NOK"} with 0 ${s.resultLabel}.`, market: s.market });
+    if (acctCpr && s.costPer && s.costPer > acctCpr * 2 && s.spend >= 300)
+      alerts.push({ severity: "med", text: `“${s.name}” cost/${s.resultLabel.replace(/s$/, "")} is ${Math.round(s.costPer)} — over 2× account avg.`, market: s.market });
   });
-  return rows.map((r) => {
-    const res = primaryResult(r.actions);
-    return {
-      key: r[dim] ?? "(unknown)",
-      spend: N(r.spend), impressions: N(r.impressions), clicks: N(r.clicks), ctr: N(r.ctr),
-      resultLabel: res.label, resultValue: res.value,
-    };
-  }).sort((a, b) => b.spend - a.spend);
+  camps.forEach((c) => {
+    if (c.resultPrev >= 5 && c.resultDelta < 0 && Math.abs(c.resultDelta) / c.resultPrev > 0.4)
+      alerts.push({ severity: "med", text: `“${c.name}” ${c.resultLabel} down ${Math.round(Math.abs(c.resultDelta) / c.resultPrev * 100)}% vs last period.`, market: c.market });
+  });
+
+  return { currency: "NOK", generated_at: new Date().toISOString(), range: { since, until }, previousRange: prev,
+    includePaused: !!includePaused, current: cur, previous, series, seriesByMarket, funnel,
+    markets, goals, matrix, leaderboard: { best, worst }, alerts,
+    campaigns: camps, adsets: sets, ads };
 }
 
+/* ---------- breakdowns ---------- */
+async function breakdown(dim, since, until) {
+  return (await gall(`act_${ACCT}/insights`, { time_range: tr(since, until), breakdowns: dim, limit: "300",
+    fields: "spend,impressions,clicks,ctr,actions" }))
+    .map((r) => ({ key: r[dim] ?? "(unknown)", spend: N(r.spend), impressions: N(r.impressions),
+      clicks: N(r.clicks), ctr: N(r.ctr), leads: leadsOf(r.actions), registrations: regsOf(r.actions),
+      result: (leadsOf(r.actions) || regsOf(r.actions)) }))
+    .sort((a, b) => b.spend - a.spend);
+}
 async function buildBreakdowns(since, until) {
   const [country, placement, device, age, gender] = await Promise.all([
-    breakdown("country", since, until),
-    breakdown("publisher_platform", since, until),
-    breakdown("impression_device", since, until),
-    breakdown("age", since, until),
-    breakdown("gender", since, until),
+    breakdown("country", since, until), breakdown("publisher_platform", since, until),
+    breakdown("impression_device", since, until), breakdown("age", since, until), breakdown("gender", since, until),
   ]);
-  return {
-    currency: "NOK", generated_at: new Date().toISOString(),
-    range: { since, until },
-    country, placement, device, age, gender,
-  };
+  return { currency: "NOK", generated_at: new Date().toISOString(), range: { since, until }, country, placement, device, age, gender };
 }
 
-/* ---------------- password ---------------- */
+/* ---------- password ---------- */
 function pwOk(input) {
   const a = String(input || ""), b = String(process.env.DASHBOARD_PASSWORD || "");
   if (!b || a.length !== b.length) return false;
-  let diff = 0;
-  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
-  return diff === 0;
+  let d = 0; for (let i = 0; i < a.length; i++) d |= a.charCodeAt(i) ^ b.charCodeAt(i); return d === 0;
 }
 
-/* ---------------- handler ---------------- */
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
-
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
   if (!process.env.META_TOKEN || !process.env.DASHBOARD_PASSWORD)
     return res.status(500).json({ error: "Server not configured (missing env vars)." });
-
-  let body = req.body;
-  if (typeof body === "string") { try { body = JSON.parse(body); } catch { body = {}; } }
+  let body = req.body; if (typeof body === "string") { try { body = JSON.parse(body); } catch { body = {}; } }
   body = body || {};
   if (!pwOk(body.password)) return res.status(401).json({ error: "Wrong password" });
 
   const action = body.action === "breakdowns" ? "breakdowns" : "overview";
   let since = body.since, until = body.until;
   if (!DATE_RE.test(since || "") || !DATE_RE.test(until || "")) {
-    // default to last 30 days
-    const u = new Date(); const s = new Date(); s.setUTCDate(s.getUTCDate() - 29);
-    since = isoDay(s); until = isoDay(u);
+    const u = new Date(), s = new Date(); s.setUTCDate(s.getUTCDate() - 29); since = isoDay(s); until = isoDay(u);
   }
   if (since > until) { const t = since; since = until; until = t; }
-
-  const key = `${action}:${since}:${until}`;
+  const includePaused = !!body.includePaused;
+  const key = `${action}:${since}:${until}:${includePaused}`;
   const hit = CACHE.get(key);
-  if (hit && Date.now() - hit.at < CACHE_TTL_MS)
-    return res.status(200).json({ ...hit.payload, cached: true });
+  if (hit && Date.now() - hit.at < CACHE_TTL_MS) return res.status(200).json({ ...hit.payload, cached: true });
 
   try {
-    const payload = action === "breakdowns"
-      ? await buildBreakdowns(since, until)
-      : await buildOverview(since, until);
+    const payload = action === "breakdowns" ? await buildBreakdowns(since, until) : await buildOverview(since, until, includePaused);
     CACHE.set(key, { at: Date.now(), payload });
     return res.status(200).json(payload);
-  } catch (e) {
-    return res.status(502).json({ error: "Meta API error: " + e.message });
-  }
+  } catch (e) { return res.status(502).json({ error: "Meta API error: " + e.message }); }
 }
