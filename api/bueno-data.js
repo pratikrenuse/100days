@@ -51,16 +51,15 @@ function actionVal(actions, subs) {
   return s;
 }
 const leadsOf = (a) => actionVal(a, ["leadgen", "lead_grouped"]) || actionVal(a, ["onsite_conversion.lead"]) || actionVal(a, ["lead"]);
-// CONVERSION GOAL = "Registration Page" custom pixel event (active register/sales campaigns)
+// CONVERSION GOAL = "Registration Page" custom pixel event ONLY.
+// Must NOT match "Registration Success" (a separate, deeper event we do not track).
 const regsOf = (a) => {
   if (!Array.isArray(a)) return 0; let r = 0;
   for (const x of a) { const t = (x.action_type || "").toLowerCase();
-    if (t.includes("fb_pixel_custom") && t.includes("registration")) r += N(x.value);
-    else if (t.includes("registration page")) r += N(x.value);
-    else if (t.includes("complete_registration")) r += N(x.value); }
+    if (t.includes("registration page")) r += N(x.value); }
   return r;
 };
-// NORTH-STAR final conversion = "Dashboard" custom pixel event (legacy / deepest)
+// NORTH-STAR final conversion = "Dashboard" custom pixel event (deepest / legacy)
 const dashOf = (a) => {
   if (!Array.isArray(a)) return 0; let r = 0;
   for (const x of a) { const t = (x.action_type || "").toLowerCase();
@@ -134,7 +133,7 @@ async function dailySeries(since, until) {
   return (await gall(`act_${ACCT}/insights`, { time_range: tr(since, until), time_increment: "1",
     fields: "spend,impressions,clicks,ctr,actions" }))
     .map((d) => ({ date: d.date_start, spend: N(d.spend), impressions: N(d.impressions), clicks: N(d.clicks),
-      ctr: N(d.ctr), leads: leadsOf(d.actions), registrations: regsOf(d.actions), dashboard: dashOf(d.actions) }));
+      ctr: N(d.ctr), linkClicks: linkClicksOf(d.actions), leads: leadsOf(d.actions), registrations: regsOf(d.actions), dashboard: dashOf(d.actions) }));
 }
 
 /* ---------- entities ---------- */
@@ -152,8 +151,8 @@ async function objectiveMap() {
 }
 
 /* ---------- aggregation ---------- */
-const blankAgg = () => ({ spend: 0, impressions: 0, clicks: 0, leads: 0, registrations: 0, dashboard: 0 });
-const addAgg = (t, e) => { t.spend += e.spend; t.impressions += e.impressions; t.clicks += e.clicks; t.leads += e.leads; t.registrations += e.registrations; t.dashboard += e.dashboard; };
+const blankAgg = () => ({ spend: 0, impressions: 0, clicks: 0, linkClicks: 0, leads: 0, registrations: 0, dashboard: 0 });
+const addAgg = (t, e) => { t.spend += e.spend; t.impressions += e.impressions; t.clicks += e.clicks; t.linkClicks += (e.linkClicks || 0); t.leads += e.leads; t.registrations += e.registrations; t.dashboard += e.dashboard; };
 function finishAgg(t, kind) {
   const ctr = t.impressions ? (t.clicks / t.impressions) * 100 : 0;
   const cpc = t.clicks ? t.spend / t.clicks : 0;
@@ -163,8 +162,8 @@ function finishAgg(t, kind) {
 
 async function buildOverview(since, until, includePaused) {
   const prev = previousWindow(since, until);
-  const [cur, previous, series, camps, campsPrev, sets, setsPrev, ads, objMap, csA, ssA, asA, setDaily] = await Promise.all([
-    accountTotals(since, until), accountTotals(prev.since, prev.until), dailySeries(since, until),
+  const [cur, previous, series, seriesPrev, camps, campsPrev, sets, setsPrev, ads, objMap, csA, ssA, asA, setDaily] = await Promise.all([
+    accountTotals(since, until), accountTotals(prev.since, prev.until), dailySeries(since, until), dailySeries(prev.since, prev.until),
     entities("campaign", "campaign_id", "campaign_name", since, until,
       "campaign_id,campaign_name,objective,spend,impressions,clicks,ctr,cpc,cpm,actions", 300),
     entities("campaign", "campaign_id", "campaign_name", prev.since, prev.until,
@@ -236,13 +235,21 @@ async function buildOverview(since, until, includePaused) {
   for (const r of setDaily) {
     const m = setMarket[r.adset_id] || classifyMarket(r.adset_name);
     const goal = goalByCampaign[r.campaign_id] || "Other";
-    const d = r.date_start; dayMap[d] = dayMap[d] || {}; dayMap[d][m] = dayMap[d][m] || { spend: 0, result: 0 };
-    dayMap[d][m].spend += N(r.spend);
-    dayMap[d][m].result += goal === "Leads" ? leadsOf(r.actions) : regsOf(r.actions);
+    const d = r.date_start; dayMap[d] = dayMap[d] || {};
+    dayMap[d][m] = dayMap[d][m] || { spend: 0, result: 0, linkClicks: 0, registrations: 0, dashboard: 0, leads: 0 };
+    const cell = dayMap[d][m];
+    cell.spend += N(r.spend);
+    cell.linkClicks += linkClicksOf(r.actions);
+    cell.registrations += regsOf(r.actions);
+    cell.dashboard += dashOf(r.actions);
+    cell.leads += leadsOf(r.actions);
+    cell.result += goal === "Leads" ? leadsOf(r.actions) : regsOf(r.actions);
   }
   const seriesByMarket = {}; MARKETS.forEach((m) => (seriesByMarket[m] = []));
-  Object.keys(dayMap).sort().forEach((d) => MARKETS.forEach((m) =>
-    seriesByMarket[m].push({ date: d, spend: (dayMap[d][m] || {}).spend || 0, result: (dayMap[d][m] || {}).result || 0 })));
+  Object.keys(dayMap).sort().forEach((d) => MARKETS.forEach((m) => { const x = dayMap[d][m] || {};
+    seriesByMarket[m].push({ date: d, spend: x.spend || 0, result: x.result || 0, linkClicks: x.linkClicks || 0,
+      registrations: x.registrations || 0, dashboard: x.dashboard || 0, leads: x.leads || 0,
+      costPer: x.result > 0 ? x.spend / x.result : null }); }));
 
   // per-goal daily series (spend + result + cost per result) for CPA trend
   const goalDay = {};
@@ -298,7 +305,7 @@ async function buildOverview(since, until, includePaused) {
   const insights = buildInsights({ since, until, prev, cur, previous, markets, goals, matrix, leaderboard: { best, worst }, seriesByGoal, byHour, camps, alerts });
 
   return { currency: "NOK", generated_at: new Date().toISOString(), range: { since, until }, previousRange: prev,
-    includePaused: !!includePaused, current: cur, previous, series, seriesByMarket, seriesByGoal, byHour, funnel,
+    includePaused: !!includePaused, current: cur, previous, series, seriesPrev, seriesByMarket, seriesByGoal, byHour, funnel,
     markets, goals, matrix, leaderboard: { best, worst }, alerts, insights, campaigns: camps, adsets: sets, ads };
 }
 
@@ -380,6 +387,55 @@ function buildInsights(d) {
     }
   }
 
+  // 8) Funnel efficiency — click → registration
+  const clicks = cur.linkClicks || cur.clicks || 0;
+  if (clicks && cur.registrations) {
+    const c2r = (cur.registrations / clicks) * 100;
+    const prevClicks = previous.linkClicks || previous.clicks || 0;
+    const c2rPrev = prevClicks && previous.registrations ? (previous.registrations / prevClicks) * 100 : null;
+    const dlt = c2rPrev != null ? pct(c2r, c2rPrev) : null;
+    out.push({ kind: "funnel", tone: dlt == null ? "neutral" : (dlt >= 0 ? "good" : "bad"),
+      title: "Click → registration rate", metric: `${c2r.toFixed(1)}%`,
+      sub: dlt != null ? `${dlt >= 0 ? "+" : ""}${dlt.toFixed(0)}% vs prior period` : "of link clicks register",
+      body: `${nok(clicks)} link clicks produced ${nok(cur.registrations)} registrations. Every 1pp lift here is roughly ${nok(clicks / 100)} more registrations at no extra spend — a landing-page and offer lever, not a media one.` });
+  }
+
+  // 9) Registration → Dashboard quality
+  if (cur.registrations && cur.dashboard) {
+    const r2d = (cur.dashboard / cur.registrations) * 100;
+    out.push({ kind: "quality", tone: r2d >= 15 ? "good" : "bad",
+      title: "Registration → Dashboard", metric: `${r2d.toFixed(0)}%`, sub: "of registrations reach the final step",
+      body: `${nok(cur.dashboard)} of ${nok(cur.registrations)} registrations made it to the Dashboard. ${r2d >= 15 ? "That hand-off is holding up." : "A large drop here is a product/onboarding problem, not a media one — worth flagging to the product team."}` });
+  }
+
+  // 10) Pacing & projection
+  if (days >= 3 && cur.spend) {
+    const perDay = cur.spend / days;
+    const projReg = (cur.registrations / days) * 30, projLead = (cur.leads / days) * 30;
+    out.push({ kind: "pacing", tone: "neutral", title: "Run-rate & projection", metric: `${nok(perDay)} NOK/day`,
+      sub: "at the current pace", body: `That projects to ${nok(perDay * 30)} NOK over 30 days, delivering roughly ${nok(projReg)} registrations and ${nok(projLead)} leads if efficiency holds.` });
+  }
+
+  // 11) Spend concentration
+  const spenders = (camps || []).filter((c) => c.spend > 0).sort((a, b) => b.spend - a.spend);
+  if (spenders.length >= 2) {
+    const top = spenders[0], totalCamp = spenders.reduce((s, c) => s + c.spend, 0) || 1;
+    const share = (top.spend / totalCamp) * 100;
+    out.push({ kind: "concentration", tone: share > 70 ? "bad" : "neutral",
+      title: "Budget concentration", metric: `${share.toFixed(0)}%`, sub: `in “${top.name}”`,
+      body: `${share.toFixed(0)}% of spend sits in one campaign across ${spenders.length} active campaigns. ${share > 70 ? "That's heavy concentration — one campaign's swing moves the whole account, so watch it closely." : "Spread is reasonable; no single campaign dominates the account."}` });
+  }
+
+  // 12) Recommendation — synthesised next action
+  const recs = [];
+  if (up && up.chg > 15) recs.push(`scale “${up.name}” while it's compounding`);
+  if (leaderboard.worst && leaderboard.worst[0] && leaderboard.worst[0].costPer > (cur.costPerReg || cur.costPerLead || 0) * 1.8)
+    recs.push(`cut or rework “${leaderboard.worst[0].name}” (worst cost per result)`);
+  const mEff = markets.filter((m) => m.result > 0 && m.costPer != null).sort((a, b) => a.costPer - b.costPer)[0];
+  if (mEff) recs.push(`shift budget toward ${mEff.market}, your cheapest market`);
+  if (recs.length) out.push({ kind: "reco", tone: "neutral", title: "What I'd do next", metric: "Priorities", sub: "this week",
+    body: recs.slice(0, 3).map((r, i) => `${i + 1}. ${r[0].toUpperCase() + r.slice(1)}.`).join(" ") });
+
   return out;
 }
 
@@ -388,7 +444,7 @@ async function breakdown(dim, since, until) {
   return (await gall(`act_${ACCT}/insights`, { time_range: tr(since, until), breakdowns: dim, limit: "300",
     fields: "spend,impressions,clicks,ctr,actions" }))
     .map((r) => ({ key: r[dim] ?? "(unknown)", spend: N(r.spend), impressions: N(r.impressions), clicks: N(r.clicks),
-      ctr: N(r.ctr), leads: leadsOf(r.actions), registrations: regsOf(r.actions),
+      ctr: N(r.ctr), linkClicks: linkClicksOf(r.actions), leads: leadsOf(r.actions), registrations: regsOf(r.actions), dashboard: dashOf(r.actions),
       result: leadsOf(r.actions) + regsOf(r.actions) }))
     .sort((a, b) => b.spend - a.spend);
 }
