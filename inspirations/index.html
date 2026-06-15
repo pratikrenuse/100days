@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Portfolio Inspirations — Pratik Renuse</title>
+  <meta name="description" content="A hand-checked reference list of 100 great personal portfolio websites — minimalist, design-engineer, animated, WebGL/3D and editorial. Curated by Pratik Renuse.">
+  <!-- Unlisted page: not linked from anywhere, kept out of search. -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:#F5F1E9; --surface:#EBE5D9; --raised:#E2DBCC; --border:#D5CDBE; --border2:#C0B6A3;
+      --ink:#19140F; --ink2:#38312A; --ink3:#4F473E; --ink4:#776D5F;
+      --gold:#9A7B22; --gold-bg:#F1E6C6; --gold-mid:#BC9438;
+      --serif:'IBM Plex Serif', Georgia, serif;
+      --sans:'IBM Plex Sans', system-ui, sans-serif;
+      font-size:18px;
+    }
+    html { scroll-behavior:smooth; }
+    body { background:var(--bg); color:var(--ink2); font-family:var(--sans); font-weight:400;
+      line-height:1.65; overflow-x:hidden; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+
+    /* NAV */
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center;
+      justify-content:space-between; padding:1.1rem 4rem; background:rgba(246,242,241,0.94);
+      backdrop-filter:blur(20px); border-bottom:1px solid var(--border); }
+    .nav-logo { font-family:var(--serif); font-size:1.25rem; font-weight:400; color:var(--ink); text-decoration:none; letter-spacing:-0.01em; }
+    .nav-logo span { color:var(--gold); }
+    .nav-back { font-size:0.82rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink4);
+      text-decoration:none; font-weight:500; transition:color 0.2s; display:inline-flex; align-items:center; gap:0.5rem; }
+    .nav-back::before { content:'←'; transition:transform 0.2s; }
+    .nav-back:hover { color:var(--gold); }
+    .nav-back:hover::before { transform:translateX(-3px); }
+
+    /* HEADER */
+    header { padding:9rem 4rem 2.5rem; max-width:1280px; margin:0 auto; }
+    .eyebrow { display:flex; align-items:center; gap:0.85rem; margin-bottom:1.5rem; }
+    .eyebrow-line { width:30px; height:15px; background:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='30'%20height='15'%20viewBox='0%200%2030%2015'%3E%3Cline%20x1='0'%20y1='13.5'%20x2='30'%20y2='13.5'%20stroke='%239A7B22'%20stroke-width='1'/%3E%3Cpath%20d='M9%2013.5a6%206%200%200%201%2012%200'%20fill='none'%20stroke='%239A7B22'%20stroke-width='1'/%3E%3C/svg%3E") no-repeat left bottom; flex-shrink:0; }
+    .eyebrow-text { font-size:0.82rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); font-weight:500; }
+    h1 { font-family:var(--serif); font-size:clamp(2.6rem,6vw,4.6rem); font-weight:300; line-height:1; letter-spacing:-0.02em; color:var(--ink); margin-bottom:1.5rem; }
+    h1 span { color:var(--gold); }
+    .lede { font-size:1.12rem; color:var(--ink2); line-height:1.7; max-width:60ch; }
+    .lede strong { font-weight:500; color:var(--ink); }
+    .note { margin-top:1.5rem; font-size:0.92rem; color:var(--ink4); max-width:60ch; padding:0.9rem 1.15rem; background:var(--surface); border-left:3px solid var(--gold-mid); }
+
+    /* CONTROLS */
+    .controls { position:sticky; top:64px; z-index:50; background:rgba(246,242,241,0.94); backdrop-filter:blur(12px);
+      border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:1rem 4rem; }
+    .controls-inner { max-width:1280px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; gap:1rem; justify-content:space-between; }
+    .tabs { display:flex; flex-wrap:wrap; gap:0.5rem; }
+    .tab { font-family:var(--sans); font-size:0.8rem; letter-spacing:0.04em; font-weight:500; color:var(--ink3);
+      background:var(--surface); border:1px solid var(--border); border-radius:999px; padding:0.45rem 1.05rem; cursor:pointer; transition:all 0.2s ease; }
+    .tab:hover { border-color:var(--gold-mid); color:var(--ink); }
+    .tab.active { background:var(--ink); color:var(--bg); border-color:var(--ink); }
+    .tab .c { opacity:0.6; font-variant-numeric:tabular-nums; }
+    .search-wrap { position:relative; }
+    .search { font-family:var(--sans); font-size:0.9rem; color:var(--ink); background:var(--bg);
+      border:1px solid var(--border); border-radius:999px; padding:0.5rem 1rem 0.5rem 2.2rem; width:230px; outline:none; transition:border-color 0.2s; }
+    .search:focus { border-color:var(--gold); }
+    .search-wrap::before { content:'⌕'; position:absolute; left:0.85rem; top:50%; transform:translateY(-50%); color:var(--ink4); font-size:1rem; }
+
+    /* GRID */
+    main { padding:2.5rem 4rem 5rem; max-width:1280px; margin:0 auto; }
+    .count { font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink4); margin-bottom:1.5rem; font-weight:500; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+
+    .card { position:relative; display:flex; flex-direction:column; background:var(--bg); border:1px solid var(--border);
+      border-radius:6px; overflow:hidden; text-decoration:none; color:inherit;
+      transition:transform 0.28s cubic-bezier(.2,.7,.3,1), box-shadow 0.28s ease, border-color 0.28s ease; }
+    .card:hover { transform:translateY(-6px); box-shadow:0 16px 34px -14px rgba(26,21,18,0.34); border-color:var(--gold-mid); }
+    .card.hide { display:none; }
+
+    .shot { position:relative; aspect-ratio:16/10; background:var(--surface); overflow:hidden; border-bottom:1px solid var(--border); }
+    .shot img { width:100%; height:100%; object-fit:cover; object-position:top center; display:block; opacity:0; transition:opacity 0.4s ease; }
+    .shot img.loaded { opacity:1; }
+    .shot .fallback { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.6rem;
+      background:linear-gradient(160deg, var(--raised), var(--surface)); }
+    .shot .fallback img { width:38px; height:38px; opacity:1; border-radius:8px; }
+    .shot .fallback span { font-size:0.72rem; letter-spacing:0.08em; color:var(--ink4); text-transform:uppercase; }
+    .cat-tag { position:absolute; top:0.7rem; left:0.7rem; z-index:2; font-size:0.62rem; letter-spacing:0.14em;
+      text-transform:uppercase; font-weight:600; color:var(--ink); background:rgba(245,241,233,0.92); border:1px solid var(--border);
+      padding:0.28rem 0.6rem; border-radius:999px; backdrop-filter:blur(4px); }
+
+    .card-body { padding:1.15rem 1.25rem 1.3rem; display:flex; flex-direction:column; flex:1; }
+    .card-head { display:flex; align-items:center; gap:0.6rem; margin-bottom:0.5rem; }
+    .card-fav { width:20px; height:20px; border-radius:4px; flex-shrink:0; }
+    .card-name { font-family:var(--serif); font-size:1.18rem; font-weight:500; color:var(--ink); line-height:1.2; }
+    .card-url { font-size:0.78rem; color:var(--gold); letter-spacing:0.02em; margin-bottom:0.7rem; word-break:break-all; }
+    .card-desc { font-size:0.92rem; color:var(--ink3); line-height:1.55; flex:1; }
+    .card-arrow { margin-top:0.9rem; font-size:0.74rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink4); font-weight:500; display:inline-flex; align-items:center; gap:0.4rem; transition:color 0.2s; }
+    .card-arrow::after { content:'↗'; transition:transform 0.2s; }
+    .card:hover .card-arrow { color:var(--gold); }
+    .card:hover .card-arrow::after { transform:translate(2px,-2px); }
+
+    .empty { grid-column:1/-1; text-align:center; padding:4rem 1rem; color:var(--ink4); font-family:var(--serif); font-size:1.2rem; }
+
+    footer { padding:1.75rem 4rem; border-top:1px solid var(--border); display:flex; justify-content:space-between;
+      align-items:center; gap:1rem; font-size:0.82rem; color:var(--ink4); background:var(--surface); font-weight:400; flex-wrap:wrap; }
+    footer .foot-tag { font-family:var(--serif); font-style:italic; }
+    footer a { color:var(--ink3); text-decoration:none; transition:color 0.2s; font-weight:500; }
+    footer a:hover { color:var(--gold); }
+
+    @media (max-width:1024px) { .grid { grid-template-columns:repeat(2,1fr); } }
+    @media (max-width:768px) {
+      nav { padding:1rem 1.5rem; } header { padding:7rem 1.5rem 2rem; }
+      .controls { padding:1rem 1.5rem; top:60px; } main { padding:2rem 1.5rem 4rem; }
+      footer { padding:1.5rem; flex-direction:column; text-align:center; }
+      .grid { grid-template-columns:1fr; } .search { width:100%; }
+      .search-wrap { width:100%; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
+  <a href="/" class="nav-back">Back to site</a>
+</nav>
+
+<header>
+  <div class="eyebrow"><span class="eyebrow-line"></span><span class="eyebrow-text">Personal reference · unlisted</span></div>
+  <h1>100 portfolio <span>inspirations</span></h1>
+  <p class="lede">A hand-checked collection of <strong>100 standout personal portfolio websites</strong> — the ones worth studying before you build your own. Spanning minimalist and content-first sites, obsessive design-engineer craft, animated award-winners, immersive WebGL/3D worlds, and bold editorial work.</p>
+  <p class="note">Every link was verified live as of June 2026. Personal domains lapse — click before relying on any single one. This page is intentionally unlisted: not linked from the homepage or anywhere else.</p>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <div class="tabs" id="tabs"></div>
+    <div class="search-wrap"><input type="text" class="search" id="search" placeholder="Search name, site, style…" aria-label="Search portfolios"></div>
+  </div>
+</div>
+
+<main>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  <span class="foot-tag">Curated by Pratik Renuse · 100 sites</span>
+  <a href="/">pratikrenuse.com →</a>
+</footer>
+
+<script>
+const CATS = {
+  min:  'Minimalist',
+  de:   'Design-engineer',
+  anim: 'Animated',
+  webgl:'WebGL / 3D',
+  ed:   'Editorial'
+};
+
+const SITES = [
+  {n:"Brittany Chiang", u:"brittanychiang.com", c:"min", d:"Most-referenced dev portfolio. Loads instantly, dark theme, one accent, four featured projects."},
+  {n:"Josh Comeau", u:"joshwcomeau.com", c:"min", d:"Portfolio as a writing engine. Tiny delightful interactions everywhere without losing readability."},
+  {n:"Rauno Freiberg", u:"rauno.me", c:"de", d:"Built like an operating system: dock, interface sounds, side-scrolling feed, killer dark mode."},
+  {n:"Adham Dannaway", u:"adhamdannaway.com", c:"min", d:"Hero splits his face design-half / code-half. One strong concept, cleanly executed."},
+  {n:"Meagan Fisher Couldwell", u:"owltastic.com", c:"ed", d:"15+ years of taste. Balances warmth and professionalism. Reference for the hybrid designer-dev."},
+  {n:"Dennis Snellenberg", u:"dennissnellenberg.com", c:"anim", d:"Awwwards-tier scroll, transitions and page reveals. So good it's been widely cloned."},
+  {n:"Cassie Evans", u:"cassie.codes", c:"webgl", d:"Custom illustrated desk scene, playful GSAP/SVG work. Personality without clutter."},
+  {n:"Bruno Simon", u:"bruno-simon.com", c:"webgl", d:"Drive a tiny car around a 3D world to reach his projects. Awwwards Site of the Year."},
+  {n:"Henry Heffernan", u:"henryheffernan.com", c:"webgl", d:"A 3D 90s bedroom with a usable retro computer inside it. Got him hired at Vercel."},
+  {n:"Robby Leonardi", u:"rleonardi.com/interactive-resume/", c:"webgl", d:"The classic. Your scroll becomes a Mario-style platformer through his CV."},
+  {n:"Jesse Zhou", u:"jesse-zhou.com", c:"webgl", d:"A fully modeled 3D ramen shop you explore to find his work."},
+  {n:"Lynn Fisher", u:"lynnandtonic.com", c:"ed", d:"Redesigns her whole site every year, with wild responsive illustrations that transform as you resize."},
+  {n:"Lee Robinson", u:"leerob.com", c:"min", d:"Ultra-minimal, fast, content-first. Vercel's VP of Product (formerly leerob.io)."},
+  {n:"Kent C. Dodds", u:"kentcdodds.com", c:"min", d:"Personal site as a teaching and content hub."},
+  {n:"Anurag Hazra", u:"anuraghazra.dev", c:"min", d:"Clean React portfolio, open-sourced."},
+  {n:"Vijay Verma", u:"vjy.me", c:"min", d:"Tight minimalist single-pager."},
+  {n:"Ashish Vishwakarma", u:"asrvd.me", c:"min", d:"Stripped-down dev minimal."},
+  {n:"Micah Lindley", u:"micahlindley.com", c:"min", d:"Clean Vue build, warm palette."},
+  {n:"Braydon Coyer", u:"braydoncoyer.dev", c:"min", d:"Blog plus projects, Notion-powered."},
+  {n:"Abhishek Jha", u:"abhishekjha.me", c:"min", d:"Minimal, content-led."},
+  {n:"Michael Pumo", u:"michaelpumo.com", c:"min", d:"Quiet, typographic minimal."},
+  {n:"David Heckhoff", u:"david-hckh.com", c:"min", d:"Spare, confident minimal with WebGL touches."},
+  {n:"Paco Coursey", u:"paco.me", c:"de", d:"Obsessive interaction detail, from a Linear engineer."},
+  {n:"Amelia Wattenberger", u:"wattenberger.com", c:"de", d:"Novel data-driven UIs and essays. Reference for thinking in interface."},
+  {n:"Brian Lovin", u:"brianlovin.com", c:"de", d:"App-like personal site with native-feeling navigation."},
+  {n:"Maxime Heckel", u:"blog.maximeheckel.com", c:"webgl", d:"Shader and 3D deep-dives with live interactive demos."},
+  {n:"Szymon Kaliski", u:"szymonkaliski.com", c:"de", d:"Experimental tools and research, very spare."},
+  {n:"Maggie Appleton", u:"maggieappleton.com", c:"de", d:"Illustrated digital garden. Hand-drawn warmth."},
+  {n:"Jhey Tompkins", u:"jhey.dev", c:"de", d:"CSS-playground energy from a known animation wizard."},
+  {n:"Robb Owen", u:"robbowen.digital", c:"de", d:"Characterful dev personality."},
+  {n:"Flo", u:"floguo.com", c:"de", d:"Design-engineer digital garden with playful detail."},
+  {n:"Josh Puckett", u:"joshpuckett.me", c:"de", d:"Design-engineering writing plus micro-tools."},
+  {n:"Benji Taylor", u:"benji.org", c:"de", d:"Spare design-engineer personal site."},
+  {n:"Daniel Petho", u:"danielpetho.com", c:"de", d:"Creative components and toys (CMYK emulator, etc.)."},
+  {n:"Ahmad Shadeed", u:"ishadeed.com", c:"min", d:"CSS deep-dives, content-first."},
+  {n:"Trys Mudford", u:"trysmudford.com", c:"de", d:"Design-engineer blog, clean and readable."},
+  {n:"Ishaan Dey", u:"ishaand.com", c:"min", d:"Design engineer, tools plus writing."},
+  {n:"Jacek Jeznach", u:"jacekjeznach.com", c:"anim", d:"Bold dark animated, GSAP-heavy."},
+  {n:"Olaolu Olawuyi", u:"olaolu.dev", c:"anim", d:"Bold color, big type."},
+  {n:"Oluwadare Oluwaseyi", u:"seyi.dev", c:"anim", d:"GSAP motion, dark and modern."},
+  {n:"Rick Waalders", u:"rickwaalders.com", c:"anim", d:"Smooth motion, Next.js."},
+  {n:"Israel Mitolu", u:"israelmitolu.netlify.app", c:"anim", d:"GSAP interactions (Netlify-hosted)."},
+  {n:"Charles Bruyerre", u:"itssharl.ee", c:"anim", d:"Playful, interactive."},
+  {n:"Patrick David", u:"bepatrickdavid.com", c:"anim", d:"Bold, eclectic, memorable."},
+  {n:"Matthew Farley", u:"mattfarley.ca", c:"anim", d:"Fun, personality-forward."},
+  {n:"Van Holtz", u:"vanholtz.co", c:"anim", d:"Animated, polished studio portfolio."},
+  {n:"Sean Halpin", u:"seanhalpin.xyz", c:"anim", d:"Illustration plus character."},
+  {n:"Alec Babala", u:"alecbabala.com", c:"anim", d:"GSAP plus Contentful, smooth."},
+  {n:"Oluwakemi Adeleke", u:"kemiadeleke.com", c:"anim", d:"Clean designer-dev."},
+  {n:"Marieflor Bawanan", u:"marieflor.dev", c:"anim", d:"Next.js plus GSAP."},
+  {n:"Jason Lengstorf", u:"jason.af", c:"min", d:"Personable, content-driven."},
+  {n:"Jan Baszczok", u:"yasio.dev", c:"anim", d:"Sleek dark one-pager with a faux code-editor about section."},
+  {n:"Patrick Heng", u:"patrickheng.com", c:"webgl", d:"Nuxt plus Three.js, interactive."},
+  {n:"Cyd Stumpel", u:"cydstumpel.nl", c:"webgl", d:"WebGL, award-winning."},
+  {n:"Aristide Benoist", u:"aristidebenoist.com", c:"webgl", d:"WebGL craft, Awwwards regular."},
+  {n:"Robin Mastromarino", u:"robinmastromarino.com", c:"webgl", d:"WebGL displacement slider, GSAP."},
+  {n:"Tamal Sen", u:"tamalsen.dev", c:"webgl", d:"Dark dev with WebGL touches."},
+  {n:"Keita Yamada", u:"p5aholic.me", c:"webgl", d:"Experimental Japanese WebGL and creative coding."},
+  {n:"Tobias van Schneider", u:"vanschneider.com", c:"ed", d:"Designer and creative director. Editorial, confident, Semplice-built."},
+  {n:"Lea Verou", u:"lea.verou.me", c:"min", d:"Web standards leader. Prolific blog, specs, open-source index."},
+  {n:"Sara Soueidan", u:"sarasoueidan.com", c:"min", d:"Inclusive UI engineer. Clean, accessible, content-first."},
+  {n:"Andy Bell", u:"bell.bz", c:"min", d:"Front-end dev and educator. Lean home with blog and feed."},
+  {n:"Chris Coyier", u:"chriscoyier.net", c:"min", d:"CodePen and CSS-Tricks founder. Playful personal blog."},
+  {n:"Una Kravets", u:"una.im", c:"min", d:"Google CSS advocate. Blog, talks and project links."},
+  {n:"Adam Argyle", u:"nerdy.dev", c:"de", d:"Chrome CSS DevRel. Experimental, highly crafted personal site."},
+  {n:"Cassidy Williams", u:"cassidoo.co", c:"min", d:"Engineer. Newsletter, blog, memes and open-source site."},
+  {n:"Dan Abramov", u:"overreacted.io", c:"min", d:"React core alum. Iconic minimalist long-form technical blog."},
+  {n:"Robin Wieruch", u:"robinwieruch.de", c:"min", d:"React and Next educator. Massive tutorial blog and courses."},
+  {n:"Florin Pop", u:"florin-pop.com", c:"min", d:"Indie hacker. Build-in-public journey, projects, income posts."},
+  {n:"Hassan Mustapha", u:"hassan.dev", c:"min", d:"Software engineer. Spare typographic journal, projects, bookcase."},
+  {n:"Delba Oliveira", u:"delba.dev", c:"min", d:"Vercel DX engineer. Clean text-first work and writing."},
+  {n:"Manu Arora", u:"manuarora.in", c:"de", d:"Aceternity UI founder. Animated design-engineering personal site."},
+  {n:"Tim Holman", u:"tholman.com", c:"de", d:"Creative engineer. Playful experiments and generative toy showcase."},
+  {n:"Rafael Conde", u:"rafa.design", c:"de", d:"Design engineer. Richly crafted apps and side-projects showcase."},
+  {n:"Tania Rascia", u:"taniarascia.com", c:"min", d:"Engineer. Long-running digital-garden blog, notes and projects."},
+  {n:"Wes Bos", u:"wesbos.com", c:"min", d:"JS educator. Courses, tips, blog and the Syntax podcast."},
+  {n:"Shawn 'swyx' Wang", u:"swyx.io", c:"min", d:"Writer and founder. Learn-in-public essays, talks and AI content."},
+  {n:"Dave Rupert", u:"daverupert.com", c:"min", d:"Web developer and podcaster. Long-running personal blog and projects."},
+  {n:"Sam Selikoff", u:"samselikoff.com", c:"de", d:"Frontend educator. Polished personal site with projects and talks."},
+  {n:"Emil Kowalski", u:"emilkowal.ski", c:"de", d:"Linear design engineer. Animation-focused craft portfolio and writing."},
+  {n:"Samuel Kraft", u:"samuelkraft.com", c:"de", d:"Raycast design engineer. Interface-craft projects and blog posts."},
+  {n:"Guillermo Rauch", u:"rauchg.com", c:"min", d:"Vercel CEO. Ultra-minimal essay-list personal blog."},
+  {n:"Shu Ding", u:"shud.in", c:"min", d:"Vercel designer-developer. Spare, typography-driven layout."},
+  {n:"Sebastian Garcia", u:"sebastiangarcia.com", c:"anim", d:"Award-style creative developer portfolio."},
+  {n:"Lorenzo Bocchi", u:"lorenzobocchi.com", c:"anim", d:"Sydney designer-developer. Awwwards-honored interactive portfolio."},
+  {n:"Diana Smith", u:"diana-adrianne.com", c:"webgl", d:"UI engineer famed for pure-CSS painterly portrait art."},
+  {n:"Aleksandr Tkachev", u:"tkachev.me", c:"anim", d:"Animated creative developer portfolio."},
+  {n:"Filippo Bello", u:"filippobello.com", c:"anim", d:"3D artist and motion designer. Drag-to-explore animated portfolio."},
+  {n:"Pedro Almeida", u:"pedroalmeida.io", c:"webgl", d:"WebGL/3D creative developer crafting cinematic digital experiences."},
+  {n:"Luis Henrique Bizarro", u:"lhbzr.com", c:"webgl", d:"Creative technologist specializing in real-time WebGL and shaders."},
+  {n:"Robert Borghesi", u:"dghez.com", c:"webgl", d:"Creative developer. Immersive WebGL and motion work."},
+  {n:"Bartosz Ciechanowski", u:"ciechanow.ski", c:"webgl", d:"Legendary interactive explainer essays with hand-built simulations."},
+  {n:"Olivier Larose", u:"olivierlarose.com", c:"anim", d:"Montreal front-end developer. Animation-heavy folio with Locomotive projects."},
+  {n:"Yuri Artiukh", u:"akella.org", c:"webgl", d:"Creative coder known for live-stream shader and WebGL tutorials."},
+  {n:"Mate Steinforth", u:"mate.steinforth.com", c:"webgl", d:"Director and 3D designer. Cinematic motion and CGI."},
+  {n:"Jean Helfenstein", u:"jeanhelfenstein.com", c:"webgl", d:"French creative developer in LA. Real-time 3D work."},
+  {n:"Anderson Mancini", u:"andersonmancini.dev", c:"webgl", d:"Brazilian Three.js expert. Immersive 3D web experiences."},
+  {n:"Yugo Nakamura", u:"yugop.com", c:"webgl", d:"Pioneering interaction designer (tha.jp). Experimental web art."},
+  {n:"Tao Tajima", u:"taotajima.jp", c:"webgl", d:"Tokyo filmmaker and director. Visually immersive motion portfolio."},
+  {n:"William Candillon", u:"williamcandillon.com", c:"anim", d:"'Can it be done in React Native' creator. Animation expert."}
+];
+
+const grid = document.getElementById('grid');
+const tabsEl = document.getElementById('tabs');
+const countEl = document.getElementById('count');
+const searchEl = document.getElementById('search');
+let activeCat = 'all';
+let query = '';
+
+// Build tabs with counts
+const counts = SITES.reduce((a,s)=>{a[s.c]=(a[s.c]||0)+1;return a;},{});
+const order = ['all','min','de','anim','webgl','ed'];
+order.forEach(k=>{
+  const b=document.createElement('button');
+  b.className='tab'+(k==='all'?' active':'');
+  b.dataset.cat=k;
+  const label = k==='all'?'All':CATS[k];
+  const num = k==='all'?SITES.length:(counts[k]||0);
+  b.innerHTML = label+' <span class="c">'+num+'</span>';
+  b.onclick=()=>{ activeCat=k; document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t===b)); render(); };
+  tabsEl.appendChild(b);
+});
+
+function shotUrl(u){ return 'https://image.thum.io/get/width/600/crop/400/noanimate/https://'+u; }
+function favUrl(u){ return 'https://www.google.com/s2/favicons?domain='+u.split('/')[0]+'&sz=128'; }
+
+function makeCard(s){
+  const a=document.createElement('a');
+  a.className='card';
+  a.href='https://'+s.u; a.target='_blank'; a.rel='noopener';
+  a.innerHTML=`
+    <div class="shot">
+      <span class="cat-tag">${CATS[s.c]}</span>
+      <div class="fallback"><img src="${favUrl(s.u)}" alt="" loading="lazy"><span>Preview unavailable</span></div>
+      <img alt="Screenshot of ${s.n}'s site" loading="lazy" data-src="${shotUrl(s.u)}">
+    </div>
+    <div class="card-body">
+      <div class="card-head">
+        <img class="card-fav" src="${favUrl(s.u)}" alt="" loading="lazy">
+        <span class="card-name">${s.n}</span>
+      </div>
+      <div class="card-url">${s.u}</div>
+      <div class="card-desc">${s.d}</div>
+      <span class="card-arrow">Visit site</span>
+    </div>`;
+  return a;
+}
+
+// Lazy-load screenshots only when near viewport (keeps the page fast)
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const img=e.target;
+    io.unobserve(img);
+    img.src=img.dataset.src;
+    img.onload=()=>img.classList.add('loaded');
+    img.onerror=()=>{ img.style.display='none'; }; // fallback (favicon block) stays visible
+  });
+},{rootMargin:'300px'});
+
+function render(){
+  grid.innerHTML='';
+  const q=query.trim().toLowerCase();
+  const list=SITES.filter(s=>{
+    const catOk = activeCat==='all' || s.c===activeCat;
+    const qOk = !q || (s.n+' '+s.u+' '+s.d+' '+CATS[s.c]).toLowerCase().includes(q);
+    return catOk && qOk;
+  });
+  countEl.textContent = list.length+' of '+SITES.length+' sites'+(activeCat!=='all'?' · '+CATS[activeCat]:'');
+  if(!list.length){ grid.innerHTML='<div class="empty">No sites match that search.</div>'; return; }
+  const frag=document.createDocumentFragment();
+  list.forEach(s=>frag.appendChild(makeCard(s)));
+  grid.appendChild(frag);
+  grid.querySelectorAll('.shot img[data-src]').forEach(img=>io.observe(img));
+}
+
+searchEl.addEventListener('input',e=>{ query=e.target.value; render(); });
+render();
+</script>
+</body>
+</html>
