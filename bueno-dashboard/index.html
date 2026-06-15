@@ -10,7 +10,7 @@
   :root{ color-scheme:light; --bd:#e8eaed; --mut:#6b7280; --blue:#2563eb; --amber:#f59e0b; --green:#10b981; --grey:#9ca3af; --good:#1a7f37; --bad:#b42318; --ink:#1a1d21; }
   *{ box-sizing:border-box; }
   body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:#f4f5f7; color:var(--ink); font-size:14px; line-height:1.45; }
-  .wrap{ max-width:1200px; margin:0 auto; padding:22px; }
+  .wrap{ max-width:1220px; margin:0 auto; padding:22px; }
   #gate{ max-width:360px; margin:14vh auto; background:#fff; border:1px solid var(--bd); border-radius:14px; padding:26px; text-align:center; }
   #gate h1{ font-size:18px; margin:0 0 4px; } #gate p{ color:var(--mut); font-size:13px; margin:0 0 18px; }
   #gate input{ width:100%; padding:11px 12px; border:1px solid #d6dae0; border-radius:9px; font-size:14px; margin-bottom:10px; }
@@ -21,13 +21,12 @@
   .datebar{ display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin:14px 0 6px; }
   .datebar button,.toggle{ border:1px solid #d6dae0; background:#fff; color:#374151; padding:6px 11px; border-radius:8px; cursor:pointer; font-size:13px; font-weight:500; }
   .datebar button.active{ background:var(--blue); border-color:var(--blue); color:#fff; }
-  .datebar input[type=date]{ border:1px solid #d6dae0; border-radius:8px; padding:5px 8px; font-size:13px; }
-  .datebar .sep{ color:#9ca3af; }
+  .datebar input[type=date]{ border:1px solid #d6dae0; border-radius:8px; padding:5px 8px; font-size:13px; } .datebar .sep{ color:#9ca3af; }
   .toggle.on{ background:#eef2ff; border-color:var(--blue); color:var(--blue); }
   .tabs{ display:flex; gap:2px; border-bottom:1px solid var(--bd); margin:14px 0 18px; flex-wrap:wrap; }
   .tabs button{ border:0; background:none; padding:9px 14px; font-size:14px; font-weight:600; color:var(--mut); cursor:pointer; border-bottom:2px solid transparent; }
   .tabs button.active{ color:var(--blue); border-bottom-color:var(--blue); }
-  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-bottom:18px; }
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(145px,1fr)); gap:12px; margin-bottom:18px; }
   .card{ background:#fff; border:1px solid var(--bd); border-radius:12px; padding:13px 15px; }
   .card .label{ color:var(--mut); font-size:11px; text-transform:uppercase; letter-spacing:.04em; }
   .card .val{ font-size:21px; font-weight:750; margin-top:3px; }
@@ -44,7 +43,7 @@
   th,td{ text-align:right; padding:8px 10px; border-bottom:1px solid #f0f1f3; white-space:nowrap; }
   th:first-child,td:first-child{ text-align:left; }
   th{ color:var(--mut); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.03em; cursor:pointer; user-select:none; }
-  tr:last-child td{ border-bottom:none; }
+  tr:last-child td{ border-bottom:none; } td.g{ color:var(--good); font-weight:600; } td.r{ color:var(--bad); font-weight:600; }
   .pill{ display:inline-block; padding:2px 8px; border-radius:999px; font-size:11px; font-weight:600; }
   .pill.active{ background:#e7f6ec; color:var(--good); } .pill.paused{ background:#fdecec; color:var(--bad); }
   .tag{ display:inline-block; padding:1px 7px; border-radius:6px; font-size:11px; font-weight:600; margin-left:6px; }
@@ -53,15 +52,12 @@
   .lvl-adset td,.lvl-ad td{ background:#fafbfc; }
   .mv{ display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f0f1f3; font-size:13px; } .mv:last-child{ border-bottom:0; }
   .mv .d.up{ color:var(--good); font-weight:600; } .mv .d.down{ color:var(--bad); font-weight:600; }
-  .alert{ display:flex; gap:9px; padding:9px 11px; border-radius:9px; margin-bottom:7px; font-size:13px; }
-  .alert.high{ background:#fdecec; } .alert.med{ background:#fff8eb; }
-  .alert .ic{ font-size:14px; }
+  .alert{ display:flex; gap:9px; padding:9px 11px; border-radius:9px; margin-bottom:7px; font-size:13px; } .alert.high{ background:#fdecec; } .alert.med{ background:#fff8eb; } .alert .ic{ font-size:14px; }
   .hm{ border-collapse:separate; border-spacing:4px; } .hm td{ border:0; border-radius:8px; text-align:center; padding:12px 10px; color:#fff; font-weight:700; }
   .hm td.lab{ background:none; color:var(--ink); font-weight:600; text-align:right; } .hm th{ text-align:center; }
   .foot{ color:#9ca3af; font-size:11.5px; margin-top:6px; }
   .hidden{ display:none !important; }
   #busy{ position:fixed; top:10px; right:14px; background:#111827; color:#fff; font-size:12px; padding:6px 12px; border-radius:999px; opacity:0; transition:.2s; } #busy.on{ opacity:.9; }
-  .legend{ display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:var(--mut); margin-top:8px; }
   .dot{ display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:5px; vertical-align:middle; }
 </style>
 </head>
@@ -76,24 +72,20 @@
 <div id="busy">Loading…</div>
 
 <div class="wrap hidden" id="app">
-  <div class="head">
-    <div><h1 class="t">Bueno Ads Dashboard</h1><div class="sub" id="sub"></div></div>
-  </div>
+  <div class="head"><div><h1 class="t">Bueno Ads Dashboard</h1><div class="sub" id="sub"></div></div></div>
 
   <div class="datebar" id="datebar">
     <button data-preset="7">7d</button><button data-preset="30" class="active">30d</button>
     <button data-preset="90">90d</button><button data-preset="tm">This month</button><button data-preset="lm">Last month</button>
-    <span class="sep">|</span>
-    <input type="date" id="from"><span class="sep">→</span><input type="date" id="to"><button id="apply">Apply</button>
-    <span class="sep">|</span>
-    <span class="toggle" id="pausedToggle">Include paused</span>
+    <span class="sep">|</span><input type="date" id="from"><span class="sep">→</span><input type="date" id="to"><button id="apply">Apply</button>
+    <span class="sep">|</span><span class="toggle" id="pausedToggle">Include paused</span>
   </div>
 
   <div class="tabs" id="tabs">
     <button data-tab="overview" class="active">Overview</button>
     <button data-tab="markets">Markets</button>
     <button data-tab="goals">Goals</button>
-    <button data-tab="breakdowns">Breakdowns</button>
+    <button data-tab="audience">Audience &amp; timing</button>
     <button data-tab="detail">Detail</button>
   </div>
 
@@ -102,12 +94,15 @@
     <div id="alertsTop"></div>
     <div class="cards" id="cards"></div>
     <div class="section">
-      <h2>Daily trend</h2>
-      <div class="selectline" id="metricSel"></div>
+      <h2>Daily trend</h2><div class="selectline" id="metricSel"></div>
       <div class="chartbox"><canvas id="trendChart"></canvas></div>
     </div>
+    <div class="section">
+      <h2>Cost per result over time <span class="hint">CPA trend — lower is better</span></h2>
+      <div class="chartbox"><canvas id="cpaChart"></canvas></div>
+    </div>
     <div class="row2">
-      <div class="section"><h2>Funnel</h2><div class="chartbox sm"><canvas id="funnelChart"></canvas></div><div class="foot" id="funnelFoot"></div></div>
+      <div class="section"><h2>Conversion path</h2><div class="chartbox sm"><canvas id="funnelChart"></canvas></div><div class="foot" id="funnelFoot"></div></div>
       <div class="section"><h2>What moved <span class="hint">vs previous period</span></h2><div id="movers"></div></div>
     </div>
   </div>
@@ -116,17 +111,14 @@
   <div id="tab-markets" class="hidden">
     <div class="cards" id="marketCards"></div>
     <div class="row3">
-      <div class="section">
-        <h2>Daily trend by market</h2>
-        <div class="selectline" id="mMetricSel"></div>
-        <div class="chartbox"><canvas id="marketTrend"></canvas></div>
-      </div>
+      <div class="section"><h2>Daily trend by market</h2><div class="selectline" id="mMetricSel"></div><div class="chartbox"><canvas id="marketTrend"></canvas></div></div>
       <div class="section"><h2>Spend share</h2><div class="chartbox sm"><canvas id="marketDonut"></canvas></div></div>
     </div>
-    <div class="section">
-      <h2>Cost per result — market × goal <span class="hint">greener = cheaper</span></h2>
-      <div id="heatmap"></div>
+    <div class="row2">
+      <div class="section"><h2>Cost per lead by market</h2><div class="chartbox sm"><canvas id="mCPL"></canvas></div></div>
+      <div class="section"><h2>Cost per conversion by market</h2><div class="chartbox sm"><canvas id="mCPC"></canvas></div></div>
     </div>
+    <div class="section"><h2>Cost per result — market × goal <span class="hint">greener = cheaper</span></h2><div id="heatmap"></div></div>
     <div class="section"><h2>Market detail</h2><div id="marketTable"></div></div>
   </div>
 
@@ -140,8 +132,8 @@
     <div class="section"><h2>Goal detail</h2><div id="goalTable"></div></div>
   </div>
 
-  <!-- BREAKDOWNS -->
-  <div id="tab-breakdowns" class="hidden">
+  <!-- AUDIENCE & TIMING -->
+  <div id="tab-audience" class="hidden">
     <div class="row2">
       <div class="section"><h2>By country</h2><div class="chartbox sm"><canvas id="bdCountry"></canvas></div></div>
       <div class="section"><h2>By placement</h2><div class="chartbox sm"><canvas id="bdPlacement"></canvas></div></div>
@@ -150,27 +142,32 @@
       <div class="section"><h2>By device</h2><div class="chartbox sm"><canvas id="bdDevice"></canvas></div></div>
       <div class="section"><h2>By age</h2><div class="chartbox sm"><canvas id="bdAge"></canvas></div></div>
     </div>
-    <div class="section"><h2>By gender</h2><div class="chartbox sm"><canvas id="bdGender"></canvas></div></div>
+    <div class="row2">
+      <div class="section"><h2>By gender</h2><div class="chartbox sm"><canvas id="bdGender"></canvas></div></div>
+      <div class="section"><h2>Best hours <span class="hint">conversions by hour</span></h2><div class="chartbox sm"><canvas id="bdHour"></canvas></div></div>
+    </div>
+    <div class="section"><h2>Best days of week</h2><div class="chartbox sm"><canvas id="bdWeekday"></canvas></div></div>
   </div>
 
   <!-- DETAIL -->
   <div id="tab-detail" class="hidden">
+    <div class="section">
+      <h2>Efficiency map <span class="hint">ad sets — spend vs cost per result; bubble = results</span></h2>
+      <div class="chartbox"><canvas id="scatter"></canvas></div>
+    </div>
     <div class="row2">
-      <div class="section"><h2>Top performers <span class="hint">cheapest cost/result</span></h2><div id="lbBest"></div></div>
-      <div class="section"><h2>Needs attention <span class="hint">most expensive</span></h2><div id="lbWorst"></div></div>
+      <div class="section"><h2>Top ad sets <span class="hint">cheapest cost/result</span></h2><div id="lbBest"></div></div>
+      <div class="section"><h2>Top ads <span class="hint">by results</span></h2><div id="topAds"></div></div>
     </div>
     <div class="section">
       <h2>Campaigns → ad sets → ads</h2>
       <div class="selectline" id="detailFilters"></div>
-      <table id="tbl">
-        <thead><tr>
-          <th data-k="name">Name</th><th data-k="status">Status</th><th data-k="spend">Spend</th>
-          <th data-k="impressions">Impr.</th><th data-k="clicks">Clicks</th><th data-k="ctr">CTR</th>
-          <th data-k="cpc">CPC</th><th data-k="resultValue">Result</th><th data-k="costPer">Cost/res</th>
-        </tr></thead>
-        <tbody id="tbody"></tbody>
-      </table>
-      <div class="foot">Click a campaign to expand ad sets, then an ad set to expand ads. Tags: market.</div>
+      <table id="tbl"><thead><tr>
+        <th data-k="name">Name</th><th data-k="status">Status</th><th data-k="spend">Spend</th>
+        <th data-k="impressions">Impr.</th><th data-k="clicks">Clicks</th><th data-k="ctr">CTR</th>
+        <th data-k="cpc">CPC</th><th data-k="resultValue">Result</th><th data-k="costPer">Cost/res</th>
+      </tr></thead><tbody id="tbody"></tbody></table>
+      <div class="foot">Click a campaign to expand ad sets, then an ad set to expand ads.</div>
     </div>
   </div>
 </div>
@@ -179,253 +176,199 @@
 const CUR="NOK";
 const MK_COLOR={ "Norwegian":"#2563eb","Swedish":"#f59e0b","English":"#10b981","Other":"#9ca3af" };
 const MK_TAG={ "Norwegian":"NO","Swedish":"SE","English":"EN","Other":"OT" };
+const WD=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 let PW=null, OV=null, BD=null, TAB="overview", RANGE=null, INCL=false;
-let charts={}; let trendMetric="spend", mMetric="spend", sortKey="spend", sortDir=-1;
-let fMarket="all", fGoal="all";
+let charts={}; let trendMetric="spend", mMetric="spend", sortKey="spend", sortDir=-1, fMarket="all", fGoal="all";
 const expanded={ camp:new Set(), set:new Set() };
 
 const money=n=>CUR+" "+(+n||0).toLocaleString("en-US",{maximumFractionDigits:0});
 const money2=n=>CUR+" "+(+n||0).toLocaleString("en-US",{maximumFractionDigits:2});
 const int=n=>(+n||0).toLocaleString("en-US");
 const pct=n=>(+n||0).toFixed(2)+"%";
-const cap=s=>s?s.charAt(0).toUpperCase()+s.slice(1):s;
 function pill(s){ const a=/ACTIVE/i.test(s||""); return '<span class="pill '+(a?"active":"paused")+'">'+(a?"Active":"Paused")+'</span>'; }
 function mtag(m){ return '<span class="tag '+(MK_TAG[m]||"OT")+'">'+(MK_TAG[m]||"?")+'</span>'; }
 function busy(on){ document.getElementById("busy").classList.toggle("on",on); }
 function destroy(id){ if(charts[id]){ charts[id].destroy(); delete charts[id]; } }
 
-/* dates */
 const isoDay=d=>d.toISOString().slice(0,10);
 function presetRange(p){ const t=new Date(); t.setHours(12,0,0,0);
-  if(p==="tm"){ return {since:isoDay(new Date(t.getFullYear(),t.getMonth(),1)),until:isoDay(t)}; }
-  if(p==="lm"){ return {since:isoDay(new Date(t.getFullYear(),t.getMonth()-1,1)),until:isoDay(new Date(t.getFullYear(),t.getMonth(),0))}; }
+  if(p==="tm")return {since:isoDay(new Date(t.getFullYear(),t.getMonth(),1)),until:isoDay(t)};
+  if(p==="lm")return {since:isoDay(new Date(t.getFullYear(),t.getMonth()-1,1)),until:isoDay(new Date(t.getFullYear(),t.getMonth(),0))};
   const s=new Date(t); s.setDate(s.getDate()-(+p-1)); return {since:isoDay(s),until:isoDay(t)}; }
 
-async function api(action){
-  busy(true);
-  try{
-    const r=await fetch("/api/bueno-data",{ method:"POST", headers:{"Content-Type":"application/json"},
+async function api(action){ busy(true);
+  try{ const r=await fetch("/api/bueno-data",{ method:"POST", headers:{"Content-Type":"application/json"},
       body:JSON.stringify({ password:PW, action, since:RANGE.since, until:RANGE.until, includePaused:INCL }) });
     if(r.status===401) throw new Error("401");
     if(!r.ok){ const j=await r.json().catch(()=>({})); throw new Error(j.error||("HTTP "+r.status)); }
-    return await r.json();
-  } finally{ busy(false); }
-}
+    return await r.json(); } finally{ busy(false); } }
 
-async function unlock(){
-  PW=document.getElementById("pw").value; RANGE=presetRange("30");
+async function unlock(){ PW=document.getElementById("pw").value; RANGE=presetRange("30");
   const err=document.getElementById("gateErr"); err.textContent="Loading…";
-  try{ OV=await api("overview"); } catch(e){ err.textContent=e.message==="401"?"Wrong password.":e.message; return; }
+  try{ OV=await api("overview"); }catch(e){ err.textContent=e.message==="401"?"Wrong password.":e.message; return; }
   sessionStorage.setItem("bueno_pw",PW);
   document.getElementById("gate").classList.add("hidden"); document.getElementById("app").classList.remove("hidden");
-  syncDates(); showTab("overview");
-}
+  syncDates(); showTab("overview"); }
 function syncDates(){ document.getElementById("from").value=RANGE.since; document.getElementById("to").value=RANGE.until; }
 function updateSub(){ document.getElementById("sub").textContent =
   "Bueno ("+CUR+") · "+OV.range.since+" → "+OV.range.until+" · vs "+OV.previousRange.since+" → "+OV.previousRange.until+
   (OV.includePaused?" · incl. paused":"")+" · updated "+new Date(OV.generated_at).toLocaleString(); }
 
-async function reload(){
-  BD=null;
-  try{ OV=await api("overview"); }catch(e){ alert(e.message); return; }
-  expanded.camp.clear(); expanded.set.clear();
-  renderActiveTab();
-}
+async function reload(){ BD=null; try{ OV=await api("overview"); }catch(e){ alert(e.message); return; }
+  expanded.camp.clear(); expanded.set.clear(); renderActiveTab(); }
 function renderActiveTab(){ updateSub();
-  if(TAB==="overview") renderOverview();
-  else if(TAB==="markets") renderMarkets();
-  else if(TAB==="goals") renderGoals();
-  else if(TAB==="breakdowns") openBreakdowns();
-  else renderDetail();
-}
+  ({overview:renderOverview,markets:renderMarkets,goals:renderGoals,audience:openAudience,detail:renderDetail}[TAB])(); }
 
-/* ---------- deltas ---------- */
 function deltaHtml(cur,prev,lowerBetter){
   if(!prev && !cur) return '<div class="delta flat">no change</div>';
   if(!prev) return '<div class="delta up">new</div>';
   const ch=(cur-prev)/Math.abs(prev)*100, up=ch>=0, good=lowerBetter?!up:up;
-  return '<div class="delta '+(Math.abs(ch)<0.05?"flat":(good?"up":"down"))+'">'+(up?"▲":"▼")+" "+Math.abs(ch).toFixed(1)+'%</div>';
-}
+  return '<div class="delta '+(Math.abs(ch)<0.05?"flat":(good?"up":"down"))+'">'+(up?"▲":"▼")+" "+Math.abs(ch).toFixed(1)+'%</div>'; }
 
 /* ---------- OVERVIEW ---------- */
 function renderOverview(){
   const c=OV.current,p=OV.previous;
-  const leadGoal=(OV.goals||[]).find(g=>g.goal==="Leads");
-  const convGoal=(OV.goals||[]).find(g=>g.goal==="Conversions & Clicks");
+  const lead=(OV.goals||[]).find(g=>g.goal==="Leads"), conv=(OV.goals||[]).find(g=>g.goal==="Conversions");
   const cards=[
     ["Spend",money(c.spend),deltaHtml(c.spend,p.spend,false)],
     ["Leads",int(c.leads),deltaHtml(c.leads,p.leads,false)],
-    ["Registrations",int(c.registrations),deltaHtml(c.registrations,p.registrations,false)],
-    ["Cost / lead", leadGoal&&leadGoal.costPer?money2(leadGoal.costPer):"—",""],
-    ["Cost / reg", convGoal&&convGoal.costPer?money2(convGoal.costPer):"—",""],
+    ["Conversions",int(c.conversions),deltaHtml(c.conversions,p.conversions,false)],
+    ["Cost / lead",lead&&lead.costPer?money2(lead.costPer):"—",""],
+    ["Cost / conversion",conv&&conv.costPer?money2(conv.costPer):"—",""],
     ["CTR",pct(c.ctr),deltaHtml(c.ctr,p.ctr,false)],
     ["CPC",money2(c.cpc),deltaHtml(c.cpc,p.cpc,true)],
+    ["Frequency",(c.frequency||0).toFixed(2),deltaHtml(c.frequency,p.frequency,true)],
   ];
   document.getElementById("cards").innerHTML=cards.map(([l,v,d])=>'<div class="card"><div class="label">'+l+'</div><div class="val">'+v+'</div>'+d+'</div>').join("");
-
-  // alerts (top, max 4)
   const al=(OV.alerts||[]).slice(0,4);
-  document.getElementById("alertsTop").innerHTML = al.length? '<div class="section">'+al.map(a=>
-    '<div class="alert '+(a.severity==="high"?"high":"med")+'"><span class="ic">'+(a.severity==="high"?"🔴":"🟠")+'</span><span>'+a.text+'</span></div>').join("")+'</div>' : "";
+  document.getElementById("alertsTop").innerHTML=al.length?'<div class="section">'+al.map(a=>'<div class="alert '+(a.severity==="high"?"high":"med")+'"><span class="ic">'+(a.severity==="high"?"🔴":"🟠")+'</span><span>'+a.text+'</span></div>').join("")+'</div>':"";
 
-  // metric selector + trend
-  const metrics=[["spend","Spend"],["clicks","Clicks"],["leads","Leads"],["registrations","Registrations"],["ctr","CTR"]];
+  const metrics=[["spend","Spend"],["clicks","Clicks"],["leads","Leads"],["conversions","Conversions"],["ctr","CTR"]];
   document.getElementById("metricSel").innerHTML=metrics.map(([k,l])=>'<button data-m="'+k+'" class="'+(k===trendMetric?"active":"")+'">'+l+'</button>').join("");
   document.querySelectorAll("#metricSel button").forEach(b=>b.onclick=()=>{ trendMetric=b.dataset.m; document.querySelectorAll("#metricSel button").forEach(x=>x.classList.toggle("active",x===b)); drawTrend(); });
-  drawTrend(); drawFunnel(); renderMovers();
+  drawTrend(); drawCPA(); drawFunnel(); renderMovers();
 }
-function drawTrend(){
-  const s=OV.series; destroy("trend");
+function drawTrend(){ const s=OV.series; destroy("trend");
   charts.trend=new Chart(document.getElementById("trendChart"),{ type:"line",
     data:{ labels:s.map(d=>d.date), datasets:[{ data:s.map(d=>d[trendMetric]||0), borderColor:"#2563eb", backgroundColor:"rgba(37,99,235,.12)", fill:true, tension:.25, pointRadius:0, borderWidth:2 }] },
-    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{ x:{ticks:{maxTicksLimit:8}}, y:{beginAtZero:true} } } });
-}
-function drawFunnel(){
-  const f=OV.funnel; destroy("funnel");
+    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{ x:{ticks:{maxTicksLimit:8}}, y:{beginAtZero:true} } } }); }
+function drawCPA(){ const g=OV.seriesByGoal||{Leads:[],Conversions:[]}; const labels=(g.Leads.length?g.Leads:g.Conversions).map(d=>d.date); destroy("cpa");
+  charts.cpa=new Chart(document.getElementById("cpaChart"),{ type:"line",
+    data:{ labels, datasets:[
+      { label:"Cost / lead", data:g.Leads.map(d=>d.costPer), borderColor:"#2563eb", spanGaps:true, tension:.25, pointRadius:0, borderWidth:2 },
+      { label:"Cost / conversion", data:g.Conversions.map(d=>d.costPer), borderColor:"#f59e0b", spanGaps:true, tension:.25, pointRadius:0, borderWidth:2 } ] },
+    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:"bottom"}}, scales:{ x:{ticks:{maxTicksLimit:8}}, y:{beginAtZero:true,title:{display:true,text:CUR+" / result"}} } } }); }
+function drawFunnel(){ const f=OV.funnel; destroy("funnel");
   charts.funnel=new Chart(document.getElementById("funnelChart"),{ type:"bar",
     data:{ labels:f.map(x=>x.stage), datasets:[{ data:f.map(x=>x.value), backgroundColor:["#93c5fd","#60a5fa","#3b82f6","#1d4ed8"], borderRadius:6 }] },
     options:{ indexAxis:"y", responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{x:{beginAtZero:true}} } });
   let foot=[]; for(let i=1;i<f.length;i++){ const pr=f[i-1].value||0,cu=f[i].value||0; foot.push(f[i].stage+": "+(pr?((cu/pr)*100).toFixed(1):"0")+"%"); }
-  document.getElementById("funnelFoot").textContent=foot.join(" · ");
-}
-function renderMovers(){
-  const cs=OV.campaigns.filter(c=>c.spend>0||c.spendPrev>0).slice().sort((a,b)=>b.resultDelta-a.resultDelta);
+  document.getElementById("funnelFoot").textContent=foot.join(" · "); }
+function renderMovers(){ const cs=OV.campaigns.filter(c=>c.spend>0||c.spendPrev>0).slice().sort((a,b)=>b.resultDelta-a.resultDelta);
   const up=cs.filter(c=>c.resultDelta>0).slice(0,3), down=cs.filter(c=>c.resultDelta<0).slice(-3).reverse();
   const line=(c,s)=>'<div class="mv"><span>'+c.name+mtag(c.market)+'</span><span class="d '+(s>0?"up":"down")+'">'+(s>0?"+":"")+int(c.resultDelta)+" "+c.resultLabel+'</span></div>';
-  document.getElementById("movers").innerHTML=
-    '<div style="font-size:12px;color:#6b7280;margin-bottom:4px;">Improving</div>'+(up.length?up.map(c=>line(c,1)).join(""):'<div class="foot">None up.</div>')+
-    '<div style="font-size:12px;color:#6b7280;margin:12px 0 4px;">Declining</div>'+(down.length?down.map(c=>line(c,-1)).join(""):'<div class="foot">None down.</div>');
-}
+  document.getElementById("movers").innerHTML='<div style="font-size:12px;color:#6b7280;margin-bottom:4px;">Improving</div>'+(up.length?up.map(c=>line(c,1)).join(""):'<div class="foot">None up.</div>')+'<div style="font-size:12px;color:#6b7280;margin:12px 0 4px;">Declining</div>'+(down.length?down.map(c=>line(c,-1)).join(""):'<div class="foot">None down.</div>'); }
 
 /* ---------- MARKETS ---------- */
-function renderMarkets(){
-  const ms=OV.markets;
-  document.getElementById("marketCards").innerHTML=ms.map(m=>
-    '<div class="card"><div class="label"><span class="dot" style="background:'+(MK_COLOR[m.market]||"#999")+'"></span>'+m.market+'</div>'+
-    '<div class="val">'+money(m.spend)+'</div>'+
-    '<div class="delta flat">'+m.spendShare.toFixed(0)+'% spend · '+int(m.result)+' results</div>'+
-    deltaHtml(m.result,m.resultPrev,false)+'</div>').join("");
-
+function renderMarkets(){ const ms=OV.markets;
+  document.getElementById("marketCards").innerHTML=ms.map(m=>'<div class="card"><div class="label"><span class="dot" style="background:'+(MK_COLOR[m.market]||"#999")+'"></span>'+m.market+'</div><div class="val">'+money(m.spend)+'</div><div class="delta flat">'+m.spendShare.toFixed(0)+'% spend · '+int(m.result)+' results</div>'+deltaHtml(m.result,m.resultPrev,false)+'</div>').join("");
   const metrics=[["spend","Spend"],["result","Results"]];
   document.getElementById("mMetricSel").innerHTML=metrics.map(([k,l])=>'<button data-m="'+k+'" class="'+(k===mMetric?"active":"")+'">'+l+'</button>').join("");
   document.querySelectorAll("#mMetricSel button").forEach(b=>b.onclick=()=>{ mMetric=b.dataset.m; document.querySelectorAll("#mMetricSel button").forEach(x=>x.classList.toggle("active",x===b)); drawMarketTrend(); });
-  drawMarketTrend(); drawMarketDonut(); renderHeatmap(); renderMarketTable();
-}
-function drawMarketTrend(){
-  const sbm=OV.seriesByMarket||{}; const labels=(sbm["Norwegian"]||sbm["English"]||sbm["Swedish"]||sbm["Other"]||[]).map(d=>d.date);
-  const ds=Object.keys(sbm).filter(m=>(sbm[m]||[]).some(d=>d.spend>0||d.result>0)).map(m=>(
-    { label:m, data:sbm[m].map(d=>d[mMetric]||0), borderColor:MK_COLOR[m], backgroundColor:MK_COLOR[m], fill:false, tension:.25, pointRadius:0, borderWidth:2 }));
-  destroy("mTrend");
-  charts.mTrend=new Chart(document.getElementById("marketTrend"),{ type:"line", data:{ labels, datasets:ds },
-    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:"bottom"}}, scales:{ x:{ticks:{maxTicksLimit:8}}, y:{beginAtZero:true} } } });
-}
-function drawMarketDonut(){
-  const ms=OV.markets; destroy("mDonut");
-  charts.mDonut=new Chart(document.getElementById("marketDonut"),{ type:"doughnut",
-    data:{ labels:ms.map(m=>m.market), datasets:[{ data:ms.map(m=>m.spend), backgroundColor:ms.map(m=>MK_COLOR[m.market]||"#999") }] },
-    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:"bottom"}} } });
-}
-function renderHeatmap(){
-  const mx=OV.matrix; const vals=[];
+  drawMarketTrend(); drawMarketDonut();
+  cbar("mCPL",ms.map(m=>m.market),ms.map(m=>m.costPerLead||0),"#2563eb");
+  cbar("mCPC",ms.map(m=>m.market),ms.map(m=>m.costPerConv||0),"#f59e0b");
+  renderHeatmap(); renderMarketTable(); }
+function cbar(id,labels,data,color){ destroy(id);
+  charts[id]=new Chart(document.getElementById(id),{ type:"bar", data:{ labels, datasets:[{ data, backgroundColor:color, borderRadius:6 }] },
+    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true,title:{display:true,text:CUR}}} } }); }
+function drawMarketTrend(){ const sbm=OV.seriesByMarket||{}; const labels=(sbm["Norwegian"]||sbm["English"]||sbm["Swedish"]||sbm["Other"]||[]).map(d=>d.date);
+  const ds=Object.keys(sbm).filter(m=>(sbm[m]||[]).some(d=>d.spend>0||d.result>0)).map(m=>({ label:m, data:sbm[m].map(d=>d[mMetric]||0), borderColor:MK_COLOR[m], backgroundColor:MK_COLOR[m], fill:false, tension:.25, pointRadius:0, borderWidth:2 }));
+  destroy("mTrend"); charts.mTrend=new Chart(document.getElementById("marketTrend"),{ type:"line", data:{ labels, datasets:ds },
+    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:"bottom"}}, scales:{ x:{ticks:{maxTicksLimit:8}}, y:{beginAtZero:true} } } }); }
+function drawMarketDonut(){ const ms=OV.markets; destroy("mDonut");
+  charts.mDonut=new Chart(document.getElementById("marketDonut"),{ type:"doughnut", data:{ labels:ms.map(m=>m.market), datasets:[{ data:ms.map(m=>m.spend), backgroundColor:ms.map(m=>MK_COLOR[m.market]||"#999") }] },
+    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:"bottom"}} } }); }
+function renderHeatmap(){ const mx=OV.matrix; const vals=[];
   mx.markets.forEach(m=>mx.goals.forEach(g=>{ const c=mx.cells[m][g]; if(c.costPer!=null) vals.push(c.costPer); }));
   const min=Math.min(...vals), max=Math.max(...vals);
-  const color=v=>{ if(v==null) return "#eef0f2"; const t=max>min?(v-min)/(max-min):0; // 0 green ->1 red
-    const r=Math.round(16+t*(220-16)), g=Math.round(150-t*(150-50)), b=Math.round(90-t*(90-50)); return "rgb("+r+","+g+","+b+")"; };
+  const color=v=>{ if(v==null) return "#eef0f2"; const t=max>min?(v-min)/(max-min):0; const r=Math.round(16+t*(220-16)),g=Math.round(150-t*(150-50)),b=Math.round(90-t*(90-50)); return "rgb("+r+","+g+","+b+")"; };
   let html='<table class="hm"><thead><tr><th></th>'+mx.goals.map(g=>'<th>'+g+'</th>').join("")+'</tr></thead><tbody>';
   mx.markets.forEach(m=>{ html+='<tr><td class="lab">'+m+'</td>'+mx.goals.map(g=>{ const c=mx.cells[m][g];
-    return c.costPer!=null? '<td style="background:'+color(c.costPer)+'">'+money(c.costPer)+'<div style="font-size:10px;font-weight:500;opacity:.85">'+int(c.result)+' res</div></td>'
-      : '<td style="background:#eef0f2;color:#9ca3af;font-weight:500">—</td>'; }).join("")+'</tr>'; });
-  html+='</tbody></table><div class="foot">Cost per result (leads for Leads goal, registrations for Conversions). Empty = no spend.</div>';
-  document.getElementById("heatmap").innerHTML=html;
-}
-function renderMarketTable(){
-  const ms=OV.markets;
-  let h='<table><thead><tr><th>Market</th><th>Spend</th><th>Share</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Leads</th><th>Regs</th><th>Cost/lead</th><th>Cost/reg</th></tr></thead><tbody>';
-  ms.forEach(m=>{ h+='<tr><td>'+mtag(m.market)+m.market+'</td><td>'+money(m.spend)+'</td><td>'+m.spendShare.toFixed(0)+'%</td><td>'+int(m.impressions)+'</td><td>'+int(m.clicks)+'</td><td>'+pct(m.ctr)+'</td><td>'+int(m.leads)+'</td><td>'+int(m.registrations)+'</td><td>'+(m.leadsCostPer?money2(m.leadsCostPer):"—")+'</td><td>'+(m.regsCostPer?money2(m.regsCostPer):"—")+'</td></tr>'; });
-  document.getElementById("marketTable").innerHTML=h+'</tbody></table>';
-}
+    return c.costPer!=null?'<td style="background:'+color(c.costPer)+'">'+money(c.costPer)+'<div style="font-size:10px;font-weight:500;opacity:.85">'+int(c.result)+' res</div></td>':'<td style="background:#eef0f2;color:#9ca3af;font-weight:500">—</td>'; }).join("")+'</tr>'; });
+  document.getElementById("heatmap").innerHTML=html+'</tbody></table><div class="foot">Cost per result — leads for Leads, Dashboard conversions for Conversions. Empty = no spend.</div>'; }
+function renderMarketTable(){ const ms=OV.markets;
+  let h='<table><thead><tr><th>Market</th><th>Spend</th><th>Share</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Leads</th><th>Conv.</th><th>Cost/lead</th><th>Cost/conv</th></tr></thead><tbody>';
+  ms.forEach(m=>{ h+='<tr><td>'+mtag(m.market)+m.market+'</td><td>'+money(m.spend)+'</td><td>'+m.spendShare.toFixed(0)+'%</td><td>'+int(m.impressions)+'</td><td>'+int(m.clicks)+'</td><td>'+pct(m.ctr)+'</td><td>'+int(m.leads)+'</td><td>'+int(m.conversions)+'</td><td>'+(m.costPerLead?money2(m.costPerLead):"—")+'</td><td>'+(m.costPerConv?money2(m.costPerConv):"—")+'</td></tr>'; });
+  document.getElementById("marketTable").innerHTML=h+'</tbody></table>'; }
 
 /* ---------- GOALS ---------- */
-function renderGoals(){
-  const gs=OV.goals;
-  document.getElementById("goalCards").innerHTML=gs.map(g=>
-    '<div class="card"><div class="label">'+g.goal+'</div><div class="val">'+money(g.spend)+'</div>'+
-    '<div class="delta flat">'+int(g.result)+' results · '+(g.costPer?money2(g.costPer)+"/res":"—")+'</div></div>').join("");
-  destroy("gSpend"); charts.gSpend=new Chart(document.getElementById("goalSpend"),{ type:"bar",
-    data:{ labels:gs.map(g=>g.goal), datasets:[{ data:gs.map(g=>g.spend), backgroundColor:"#2563eb", borderRadius:6 }] },
-    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true}} } });
-  destroy("gRes"); charts.gRes=new Chart(document.getElementById("goalResult"),{ type:"bar",
-    data:{ labels:gs.map(g=>g.goal), datasets:[{ data:gs.map(g=>g.result), backgroundColor:"#f59e0b", borderRadius:6 }] },
-    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true}} } });
-  let h='<table><thead><tr><th>Goal</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>CPC</th><th>Results</th><th>Cost/res</th></tr></thead><tbody>';
-  gs.forEach(g=>{ h+='<tr><td>'+g.goal+'</td><td>'+money(g.spend)+'</td><td>'+int(g.impressions)+'</td><td>'+int(g.clicks)+'</td><td>'+pct(g.ctr)+'</td><td>'+money2(g.cpc)+'</td><td>'+int(g.result)+'</td><td>'+(g.costPer?money2(g.costPer):"—")+'</td></tr>'; });
-  document.getElementById("goalTable").innerHTML=h+'</tbody></table>';
-}
+function renderGoals(){ const gs=OV.goals;
+  document.getElementById("goalCards").innerHTML=gs.map(g=>'<div class="card"><div class="label">'+g.goal+'</div><div class="val">'+money(g.spend)+'</div><div class="delta flat">'+int(g.result)+' results · '+(g.costPer?money2(g.costPer)+"/res":"—")+'</div></div>').join("");
+  cbar("gSpend",gs.map(g=>g.goal),gs.map(g=>g.spend),"#2563eb");
+  cbar("gRes",gs.map(g=>g.goal),gs.map(g=>g.result),"#f59e0b");
+  let h='<table><thead><tr><th>Goal</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>CPC</th><th>Results</th><th>Conv. rate</th><th>Cost/res</th></tr></thead><tbody>';
+  gs.forEach(g=>{ const cvr=g.clicks?(g.result/g.clicks*100):0; h+='<tr><td>'+g.goal+'</td><td>'+money(g.spend)+'</td><td>'+int(g.impressions)+'</td><td>'+int(g.clicks)+'</td><td>'+pct(g.ctr)+'</td><td>'+money2(g.cpc)+'</td><td>'+int(g.result)+'</td><td>'+pct(cvr)+'</td><td>'+(g.costPer?money2(g.costPer):"—")+'</td></tr>'; });
+  document.getElementById("goalTable").innerHTML=h+'</tbody></table>'; }
 
-/* ---------- BREAKDOWNS ---------- */
-async function openBreakdowns(){
-  if(!BD){ try{ BD=await api("breakdowns"); }catch(e){ alert(e.message); return; } }
-  bar("bdCountry",BD.country.slice(0,10)); bar("bdPlacement",BD.placement);
-  bar("bdDevice",BD.device); bar("bdAge",BD.age); bar("bdGender",BD.gender);
-}
-function bar(id,rows){
-  destroy(id);
-  charts[id]=new Chart(document.getElementById(id),{ type:"bar",
-    data:{ labels:rows.map(r=>r.key), datasets:[
+/* ---------- AUDIENCE & TIMING ---------- */
+async function openAudience(){ if(!BD){ try{ BD=await api("breakdowns"); }catch(e){ alert(e.message); return; } }
+  abar("bdCountry",BD.country.slice(0,10)); abar("bdPlacement",BD.placement); abar("bdDevice",BD.device); abar("bdAge",BD.age); abar("bdGender",BD.gender);
+  drawHour(); drawWeekday(); }
+function abar(id,rows){ destroy(id);
+  charts[id]=new Chart(document.getElementById(id),{ type:"bar", data:{ labels:rows.map(r=>r.key), datasets:[
       { label:"Spend", data:rows.map(r=>r.spend), backgroundColor:"#2563eb", borderRadius:5, yAxisID:"y" },
       { label:"Results", data:rows.map(r=>r.result), backgroundColor:"#f59e0b", borderRadius:5, yAxisID:"y1" } ] },
-    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:"bottom"}},
-      scales:{ y:{beginAtZero:true,position:"left",title:{display:true,text:CUR}}, y1:{beginAtZero:true,position:"right",grid:{drawOnChartArea:false},title:{display:true,text:"results"}} } } });
-}
+    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:"bottom"}}, scales:{ y:{beginAtZero:true,position:"left",title:{display:true,text:CUR}}, y1:{beginAtZero:true,position:"right",grid:{drawOnChartArea:false},title:{display:true,text:"results"}} } } }); }
+function drawHour(){ const h=OV.byHour||[]; destroy("bdHour");
+  charts.bdHour=new Chart(document.getElementById("bdHour"),{ type:"bar", data:{ labels:h.map(x=>x.hour+":00"), datasets:[{ label:"Conversions", data:h.map(x=>x.conversions), backgroundColor:"#10b981", borderRadius:4, yAxisID:"y" },{ label:"Spend", type:"line", data:h.map(x=>x.spend), borderColor:"#9ca3af", pointRadius:0, yAxisID:"y1" }] },
+    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:"bottom"}}, scales:{ y:{beginAtZero:true,title:{display:true,text:"conv"}}, y1:{beginAtZero:true,position:"right",grid:{drawOnChartArea:false},title:{display:true,text:CUR}} } } }); }
+function drawWeekday(){ const s=OV.series||[]; const agg=Array.from({length:7},()=>({spend:0,conv:0,leads:0}));
+  s.forEach(d=>{ const wd=new Date(d.date+"T00:00:00Z").getUTCDay(); agg[wd].spend+=d.spend; agg[wd].conv+=d.conversions; agg[wd].leads+=d.leads; });
+  destroy("bdWeekday"); charts.bdWeekday=new Chart(document.getElementById("bdWeekday"),{ type:"bar", data:{ labels:WD, datasets:[
+      { label:"Conversions", data:agg.map(a=>a.conv), backgroundColor:"#10b981", borderRadius:5 },
+      { label:"Leads", data:agg.map(a=>a.leads), backgroundColor:"#2563eb", borderRadius:5 } ] },
+    options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:"bottom"}}, scales:{y:{beginAtZero:true}} } }); }
 
 /* ---------- DETAIL ---------- */
 function renderDetail(){
-  // leaderboards
+  drawScatter();
   const lb=OV.leaderboard||{best:[],worst:[]};
   const lbLine=s=>'<div class="mv"><span>'+s.name+mtag(s.market)+'</span><span>'+(s.costPer?money2(s.costPer):"—")+' · '+int(s.resultValue)+' '+s.resultLabel+'</span></div>';
   document.getElementById("lbBest").innerHTML=lb.best.length?lb.best.map(lbLine).join(""):'<div class="foot">No data.</div>';
-  document.getElementById("lbWorst").innerHTML=lb.worst.length?lb.worst.map(lbLine).join(""):'<div class="foot">No data.</div>';
+  const topAds=(OV.ads||[]).filter(a=>a.resultValue>0).sort((a,b)=>b.resultValue-a.resultValue).slice(0,6);
+  document.getElementById("topAds").innerHTML=topAds.length?topAds.map(a=>'<div class="mv"><span>'+a.name+mtag(a.market)+'</span><span>'+int(a.resultValue)+' '+a.resultLabel+' · '+(a.costPer?money2(a.costPer):"—")+'</span></div>').join(""):'<div class="foot">No ad-level results in range.</div>';
 
-  // filters
-  const mkOpts=["all","Norwegian","Swedish","English","Other"], goOpts=["all","Leads","Conversions & Clicks","Other"];
-  document.getElementById("detailFilters").innerHTML=
-    mkOpts.map(m=>'<button data-f="market" data-v="'+m+'" class="'+(fMarket===m?"active":"")+'">'+(m==="all"?"All markets":m)+'</button>').join("")+
-    '<span style="width:10px"></span>'+
-    goOpts.map(g=>'<button data-f="goal" data-v="'+g+'" class="'+(fGoal===g?"active":"")+'">'+(g==="all"?"All goals":g)+'</button>').join("");
+  const mkOpts=["all","Norwegian","Swedish","English","Other"], goOpts=["all","Leads","Conversions","Other"];
+  document.getElementById("detailFilters").innerHTML=mkOpts.map(m=>'<button data-f="market" data-v="'+m+'" class="'+(fMarket===m?"active":"")+'">'+(m==="all"?"All markets":m)+'</button>').join("")+'<span style="width:10px"></span>'+goOpts.map(g=>'<button data-f="goal" data-v="'+g+'" class="'+(fGoal===g?"active":"")+'">'+(g==="all"?"All goals":g)+'</button>').join("");
   document.querySelectorAll("#detailFilters button").forEach(b=>b.onclick=()=>{ if(b.dataset.f==="market")fMarket=b.dataset.v; else fGoal=b.dataset.v; renderDetail(); });
 
   const passC=c=>(fMarket==="all"||c.market===fMarket||OV.adsets.some(s=>s.campaign_id===c.id&&s.market===fMarket))&&(fGoal==="all"||c.goal===fGoal);
   const passS=s=>(fMarket==="all"||s.market===fMarket)&&(fGoal==="all"||s.goal===fGoal);
   const camps=OV.campaigns.filter(passC).slice().sort((a,b)=>{ const va=a[sortKey],vb=b[sortKey]; return (typeof va==="string"?(va>vb?1:-1):(va-vb))*sortDir; });
   const rows=[];
-  camps.forEach(c=>{ rows.push(row(c,"camp",c.id,c.market,c.goal));
-    if(expanded.camp.has(c.id)){ OV.adsets.filter(s=>s.campaign_id===c.id&&passS(s)).sort((a,b)=>b.spend-a.spend).forEach(s=>{
-      rows.push(row(s,"set",s.id,s.market,s.goal));
-      if(expanded.set.has(s.id)) OV.ads.filter(a=>a.adset_id===s.id).sort((a,b)=>b.spend-a.spend).forEach(a=>rows.push(row(a,"ad",a.id,a.market,a.goal)));
-    }); } });
+  camps.forEach(c=>{ rows.push(row(c,"camp",c.id,c.market));
+    if(expanded.camp.has(c.id)){ OV.adsets.filter(s=>s.campaign_id===c.id&&passS(s)).sort((a,b)=>b.spend-a.spend).forEach(s=>{ rows.push(row(s,"set",s.id,s.market));
+      if(expanded.set.has(s.id)) OV.ads.filter(a=>a.adset_id===s.id).sort((a,b)=>b.spend-a.spend).forEach(a=>rows.push(row(a,"ad",a.id,a.market))); }); } });
   document.getElementById("tbody").innerHTML=rows.join("");
   document.querySelectorAll('#tbody tr[data-lvl=camp]').forEach(tr=>tr.onclick=()=>{ const id=tr.dataset.id; expanded.camp.has(id)?expanded.camp.delete(id):expanded.camp.add(id); renderDetail(); });
   document.querySelectorAll('#tbody tr[data-lvl=set]').forEach(tr=>tr.onclick=()=>{ const id=tr.dataset.id; expanded.set.has(id)?expanded.set.delete(id):expanded.set.add(id); renderDetail(); });
 }
-function row(e,lvl,id,market,goal){
-  const result=e.resultValue?int(e.resultValue)+" "+e.resultLabel:"—";
-  const cls=lvl==="set"?"lvl-adset":(lvl==="ad"?"lvl-ad":"");
-  const caret=lvl==="ad"?"":(((lvl==="camp"&&expanded.camp.has(id))||(lvl==="set"&&expanded.set.has(id)))?"▾ ":"▸ ");
-  const tagHtml=lvl==="ad"?"":mtag(market);
-  return '<tr class="'+cls+'" data-lvl="'+lvl+'" data-id="'+id+'" style="cursor:'+(lvl==="ad"?"default":"pointer")+'">'+
-    '<td>'+caret+e.name+tagHtml+'</td><td>'+pill(e.status)+'</td><td>'+money(e.spend)+'</td>'+
-    '<td>'+int(e.impressions)+'</td><td>'+int(e.clicks)+'</td><td>'+pct(e.ctr)+'</td>'+
-    '<td>'+money2(e.cpc)+'</td><td>'+result+'</td><td>'+(e.costPer?money2(e.costPer):"—")+'</td></tr>';
-}
+function drawScatter(){ const sets=(OV.adsets||[]).filter(s=>s.spend>0&&s.costPer!=null);
+  const ds=["Norwegian","Swedish","English","Other"].map(m=>({ label:m, backgroundColor:MK_COLOR[m]+"cc",
+    data:sets.filter(s=>s.market===m).map(s=>({ x:s.spend, y:s.costPer, r:Math.max(4,Math.sqrt(s.resultValue||1)*3), nm:s.name })) }));
+  destroy("scatter"); charts.scatter=new Chart(document.getElementById("scatter"),{ type:"bubble", data:{ datasets:ds },
+    options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{position:"bottom"}, tooltip:{ callbacks:{ label:c=>c.raw.nm+": "+money(c.raw.x)+" spend, "+money2(c.raw.y)+"/result" } } },
+      scales:{ x:{title:{display:true,text:"Spend ("+CUR+")"},beginAtZero:true}, y:{title:{display:true,text:"Cost per result"},beginAtZero:true} } } }); }
+function row(e,lvl,id,market){ const result=e.resultValue?int(e.resultValue)+" "+e.resultLabel:"—";
+  const cls=lvl==="set"?"lvl-adset":(lvl==="ad"?"lvl-ad":""); const caret=lvl==="ad"?"":(((lvl==="camp"&&expanded.camp.has(id))||(lvl==="set"&&expanded.set.has(id)))?"▾ ":"▸ ");
+  return '<tr class="'+cls+'" data-lvl="'+lvl+'" data-id="'+id+'" style="cursor:'+(lvl==="ad"?"default":"pointer")+'"><td>'+caret+e.name+(lvl==="ad"?"":mtag(market))+'</td><td>'+pill(e.status)+'</td><td>'+money(e.spend)+'</td><td>'+int(e.impressions)+'</td><td>'+int(e.clicks)+'</td><td>'+pct(e.ctr)+'</td><td>'+money2(e.cpc)+'</td><td>'+result+'</td><td>'+(e.costPer?money2(e.costPer):"—")+'</td></tr>'; }
 
-/* ---------- tabs + events ---------- */
+/* ---------- tabs ---------- */
 function showTab(t){ TAB=t;
   document.querySelectorAll("#tabs button").forEach(b=>b.classList.toggle("active",b.dataset.tab===t));
-  ["overview","markets","goals","breakdowns","detail"].forEach(x=>document.getElementById("tab-"+x).classList.toggle("hidden",x!==t));
-  updateSub();
-  if(t==="overview")renderOverview(); else if(t==="markets")renderMarkets(); else if(t==="goals")renderGoals();
-  else if(t==="breakdowns")openBreakdowns(); else renderDetail();
-}
+  ["overview","markets","goals","audience","detail"].forEach(x=>document.getElementById("tab-"+x).classList.toggle("hidden",x!==t));
+  updateSub(); renderActiveTab(); }
 document.getElementById("go").addEventListener("click",unlock);
 document.getElementById("pw").addEventListener("keydown",e=>{ if(e.key==="Enter")unlock(); });
 document.getElementById("tabs").addEventListener("click",e=>{ const b=e.target.closest("button"); if(b)showTab(b.dataset.tab); });
