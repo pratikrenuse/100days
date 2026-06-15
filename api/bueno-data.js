@@ -68,6 +68,10 @@ const dashOf = (a) => {
 };
 const linkClicksOf = (a) => actionVal(a, ["link_click"]);
 const lpViewsOf = (a) => actionVal(a, ["landing_page_view"]);
+// IMPORTANT: custom pixel events (Registration Page, Dashboard) live in the `conversions`
+// field, NOT `actions`. Leads/clicks/LP-views live in `actions`. Merge both before extracting.
+const acts = (row) => [].concat(row && row.actions ? row.actions : [], row && row.conversions ? row.conversions : []);
+const INSIGHT_METRIC_FIELDS = "spend,impressions,reach,frequency,clicks,ctr,cpc,cpm,actions,conversions";
 
 /* ---------- classification ---------- */
 function classifyMarket(name) {
@@ -89,14 +93,14 @@ const GOALS = ["Leads", "Conversions", "Other"];
 
 /* ---------- shaping ---------- */
 function shape(row, idKey, nameKey) {
-  const spend = N(row.spend);
+  const spend = N(row.spend); const a = acts(row);
   return {
     id: row[idKey], name: row[nameKey] || "(unnamed)",
     campaign_id: row.campaign_id || null, adset_id: row.adset_id || null,
     spend, impressions: N(row.impressions), clicks: N(row.clicks),
     ctr: N(row.ctr), cpc: N(row.cpc), cpm: N(row.cpm),
-    leads: leadsOf(row.actions), registrations: regsOf(row.actions), dashboard: dashOf(row.actions),
-    linkClicks: linkClicksOf(row.actions), lpViews: lpViewsOf(row.actions),
+    leads: leadsOf(a), registrations: regsOf(a), dashboard: dashOf(a),
+    linkClicks: linkClicksOf(a), lpViews: lpViewsOf(a),
   };
 }
 // primary result by goal: Leads -> leads, Conversions -> registrations (Registration Page)
@@ -118,11 +122,12 @@ function previousWindow(since, until) {
 /* ---------- totals + funnel ---------- */
 async function accountTotals(since, until) {
   const a = (await gall(`act_${ACCT}/insights`, { time_range: tr(since, until),
-    fields: "spend,impressions,reach,frequency,clicks,ctr,cpc,cpm,actions" }))[0] || {};
-  const spend = N(a.spend), leads = leadsOf(a.actions), regs = regsOf(a.actions), dash = dashOf(a.actions);
+    fields: INSIGHT_METRIC_FIELDS }))[0] || {};
+  const m = acts(a);
+  const spend = N(a.spend), leads = leadsOf(m), regs = regsOf(m), dash = dashOf(m);
   return { spend, impressions: N(a.impressions), reach: N(a.reach), frequency: N(a.frequency),
     clicks: N(a.clicks), ctr: N(a.ctr), cpc: N(a.cpc), cpm: N(a.cpm),
-    linkClicks: linkClicksOf(a.actions), lpViews: lpViewsOf(a.actions),
+    linkClicks: linkClicksOf(m), lpViews: lpViewsOf(m),
     leads, registrations: regs, dashboard: dash,
     costPerLead: leads ? spend / leads : null,
     costPerReg: regs ? spend / regs : null,
@@ -131,9 +136,9 @@ async function accountTotals(since, until) {
 }
 async function dailySeries(since, until) {
   return (await gall(`act_${ACCT}/insights`, { time_range: tr(since, until), time_increment: "1",
-    fields: "spend,impressions,clicks,ctr,actions" }))
-    .map((d) => ({ date: d.date_start, spend: N(d.spend), impressions: N(d.impressions), clicks: N(d.clicks),
-      ctr: N(d.ctr), linkClicks: linkClicksOf(d.actions), leads: leadsOf(d.actions), registrations: regsOf(d.actions), dashboard: dashOf(d.actions) }));
+    fields: "spend,impressions,clicks,ctr,actions,conversions" }))
+    .map((d) => { const m = acts(d); return { date: d.date_start, spend: N(d.spend), impressions: N(d.impressions), clicks: N(d.clicks),
+      ctr: N(d.ctr), linkClicks: linkClicksOf(m), leads: leadsOf(m), registrations: regsOf(m), dashboard: dashOf(m) }; });
 }
 
 /* ---------- entities ---------- */
@@ -165,18 +170,18 @@ async function buildOverview(since, until, includePaused) {
   const [cur, previous, series, seriesPrev, camps, campsPrev, sets, setsPrev, ads, objMap, csA, ssA, asA, setDaily] = await Promise.all([
     accountTotals(since, until), accountTotals(prev.since, prev.until), dailySeries(since, until), dailySeries(prev.since, prev.until),
     entities("campaign", "campaign_id", "campaign_name", since, until,
-      "campaign_id,campaign_name,objective,spend,impressions,clicks,ctr,cpc,cpm,actions", 300),
+      "campaign_id,campaign_name,objective,spend,impressions,clicks,ctr,cpc,cpm,actions,conversions", 300),
     entities("campaign", "campaign_id", "campaign_name", prev.since, prev.until,
-      "campaign_id,campaign_name,spend,impressions,clicks,ctr,cpc,cpm,actions", 300),
+      "campaign_id,campaign_name,spend,impressions,clicks,ctr,cpc,cpm,actions,conversions", 300),
     entities("adset", "adset_id", "adset_name", since, until,
-      "adset_id,adset_name,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions", 500),
+      "adset_id,adset_name,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions,conversions", 500),
     entities("adset", "adset_id", "adset_name", prev.since, prev.until,
-      "adset_id,adset_name,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions", 500),
+      "adset_id,adset_name,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions,conversions", 500),
     entities("ad", "ad_id", "ad_name", since, until,
-      "ad_id,ad_name,adset_id,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions", 600),
+      "ad_id,ad_name,adset_id,campaign_id,spend,impressions,clicks,ctr,cpc,cpm,actions,conversions", 600),
     objectiveMap(), statusMap("campaigns"), statusMap("adsets"), statusMap("ads"),
     gall(`act_${ACCT}/insights`, { level: "adset", time_range: tr(since, until), time_increment: "1",
-      fields: "adset_id,adset_name,campaign_id,spend,clicks,actions", limit: "500" }),
+      fields: "adset_id,adset_name,campaign_id,spend,clicks,actions,conversions", limit: "500" }),
   ]);
 
   camps.forEach((c) => { c.objective = objMap[c.id]; c.goal = classifyGoal(c.objective); c.market = classifyMarket(c.name); c.status = csA[c.id] || "UNKNOWN"; });
@@ -237,13 +242,13 @@ async function buildOverview(since, until, includePaused) {
     const goal = goalByCampaign[r.campaign_id] || "Other";
     const d = r.date_start; dayMap[d] = dayMap[d] || {};
     dayMap[d][m] = dayMap[d][m] || { spend: 0, result: 0, linkClicks: 0, registrations: 0, dashboard: 0, leads: 0 };
-    const cell = dayMap[d][m];
+    const cell = dayMap[d][m]; const ra = acts(r);
     cell.spend += N(r.spend);
-    cell.linkClicks += linkClicksOf(r.actions);
-    cell.registrations += regsOf(r.actions);
-    cell.dashboard += dashOf(r.actions);
-    cell.leads += leadsOf(r.actions);
-    cell.result += goal === "Leads" ? leadsOf(r.actions) : regsOf(r.actions);
+    cell.linkClicks += linkClicksOf(ra);
+    cell.registrations += regsOf(ra);
+    cell.dashboard += dashOf(ra);
+    cell.leads += leadsOf(ra);
+    cell.result += goal === "Leads" ? leadsOf(ra) : regsOf(ra);
   }
   const seriesByMarket = {}; MARKETS.forEach((m) => (seriesByMarket[m] = []));
   Object.keys(dayMap).sort().forEach((d) => MARKETS.forEach((m) => { const x = dayMap[d][m] || {};
@@ -254,10 +259,10 @@ async function buildOverview(since, until, includePaused) {
   // per-goal daily series (spend + result + cost per result) for CPA trend
   const goalDay = {};
   for (const r of setDaily) {
-    const goal = goalByCampaign[r.campaign_id] || "Other"; const d = r.date_start;
+    const goal = goalByCampaign[r.campaign_id] || "Other"; const d = r.date_start; const ra = acts(r);
     goalDay[d] = goalDay[d] || {}; goalDay[d][goal] = goalDay[d][goal] || { spend: 0, result: 0 };
     goalDay[d][goal].spend += N(r.spend);
-    goalDay[d][goal].result += goal === "Leads" ? leadsOf(r.actions) : regsOf(r.actions);
+    goalDay[d][goal].result += goal === "Leads" ? leadsOf(ra) : regsOf(ra);
   }
   const seriesByGoal = { Leads: [], Conversions: [] };
   Object.keys(goalDay).sort().forEach((d) => ["Leads", "Conversions"].forEach((g) => {
@@ -278,9 +283,9 @@ async function buildOverview(since, until, includePaused) {
   let byHour = [];
   try {
     byHour = (await gall(`act_${ACCT}/insights`, { time_range: tr(since, until),
-      breakdowns: "hourly_stats_aggregated_by_advertiser_time_zone", fields: "spend,clicks,actions", limit: "50" }))
-      .map((r) => ({ hour: String(r.hourly_stats_aggregated_by_advertiser_time_zone || "").slice(0, 2),
-        spend: N(r.spend), clicks: N(r.clicks), leads: leadsOf(r.actions), registrations: regsOf(r.actions) }))
+      breakdowns: "hourly_stats_aggregated_by_advertiser_time_zone", fields: "spend,clicks,actions,conversions", limit: "50" }))
+      .map((r) => { const ra = acts(r); return { hour: String(r.hourly_stats_aggregated_by_advertiser_time_zone || "").slice(0, 2),
+        spend: N(r.spend), clicks: N(r.clicks), leads: leadsOf(ra), registrations: regsOf(ra) }; })
       .sort((a, b) => a.hour.localeCompare(b.hour));
   } catch (_) {}
 
@@ -442,10 +447,10 @@ function buildInsights(d) {
 /* ---------- breakdowns ---------- */
 async function breakdown(dim, since, until) {
   return (await gall(`act_${ACCT}/insights`, { time_range: tr(since, until), breakdowns: dim, limit: "300",
-    fields: "spend,impressions,clicks,ctr,actions" }))
-    .map((r) => ({ key: r[dim] ?? "(unknown)", spend: N(r.spend), impressions: N(r.impressions), clicks: N(r.clicks),
-      ctr: N(r.ctr), linkClicks: linkClicksOf(r.actions), leads: leadsOf(r.actions), registrations: regsOf(r.actions), dashboard: dashOf(r.actions),
-      result: leadsOf(r.actions) + regsOf(r.actions) }))
+    fields: "spend,impressions,clicks,ctr,actions,conversions" }))
+    .map((r) => { const ra = acts(r); return { key: r[dim] ?? "(unknown)", spend: N(r.spend), impressions: N(r.impressions), clicks: N(r.clicks),
+      ctr: N(r.ctr), linkClicks: linkClicksOf(ra), leads: leadsOf(ra), registrations: regsOf(ra), dashboard: dashOf(ra),
+      result: leadsOf(ra) + regsOf(ra) }; })
     .sort((a, b) => b.spend - a.spend);
 }
 async function buildBreakdowns(since, until) {

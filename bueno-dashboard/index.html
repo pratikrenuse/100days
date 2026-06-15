@@ -232,6 +232,7 @@
 
   <!-- MARKETS -->
   <div id="tab-markets" class="hidden">
+    <div class="cards" id="marketKpis"></div>
     <div class="cards" id="marketCards"></div>
     <div class="row3">
       <div class="section"><h2>Daily trend by market</h2><div class="selectline" id="mMetricSel"></div><div class="chartbox"><canvas id="marketTrend"></canvas></div></div>
@@ -247,6 +248,7 @@
 
   <!-- GOALS -->
   <div id="tab-goals" class="hidden">
+    <div class="cards" id="goalKpis"></div>
     <div class="cards" id="goalCards"></div>
     <div class="row2">
       <div class="section"><h2>Spend by goal</h2><div class="chartbox sm"><canvas id="goalSpend"></canvas></div></div>
@@ -261,6 +263,7 @@
       <span class="hint" style="margin-right:10px;">Rank breakdowns by</span>
       <span class="selectline" id="audMetricSel" style="display:inline-flex;margin-bottom:0;"></span>
     </div>
+    <div class="cards" id="audCards"></div>
     <div class="row2">
       <div class="section"><h2>By country</h2><div class="chartbox sm"><canvas id="bdCountry"></canvas></div></div>
       <div class="section"><h2>By placement</h2><div class="chartbox sm"><canvas id="bdPlacement"></canvas></div></div>
@@ -278,6 +281,7 @@
 
   <!-- DETAIL -->
   <div id="tab-detail" class="hidden">
+    <div class="cards" id="detailKpis"></div>
     <div class="section">
       <h2>Efficiency map <span class="hint">ad sets — spend vs cost per result; bubble = results</span></h2>
       <div class="chartbox"><canvas id="scatter"></canvas></div>
@@ -314,6 +318,8 @@ const money2=n=>CUR+" "+(+n||0).toLocaleString("en-US",{maximumFractionDigits:2}
 const int=n=>(+n||0).toLocaleString("en-US");
 const pct=n=>(+n||0).toFixed(2)+"%";
 function pill(s){ const a=/ACTIVE/i.test(s||""); return '<span class="pill '+(a?"active":"paused")+'">'+(a?"Active":"Paused")+'</span>'; }
+function cardsHtml(arr){ return arr.map(c=>{ const l=c[0],v=c[1],d=c[2]||""; return '<div class="card"><div class="label">'+l+'</div><div class="val">'+v+'</div>'+(d?(d.indexOf("<")===0?d:'<div class="delta flat">'+d+'</div>'):"")+'</div>'; }).join(""); }
+const rate=(n,d)=>d?(n/d*100):0;
 function mtag(m){ return '<span class="tag '+(MK_TAG[m]||"OT")+'">'+(MK_TAG[m]||"?")+'</span>'; }
 function busy(on){ document.getElementById("busy").classList.toggle("on",on); }
 function destroy(id){ if(charts[id]){ charts[id].destroy(); delete charts[id]; } }
@@ -448,11 +454,20 @@ function renderOverview(){
     ["Dashboard (final)",int(c.dashboard),deltaHtml(c.dashboard,p.dashboard,false)],
     ["Cost / lead",lead&&lead.costPer?money2(lead.costPer):"—",""],
     ["Cost / registration",conv&&conv.costPer?money2(conv.costPer):"—",""],
+    ["Cost / Dashboard",c.costPerDash?money2(c.costPerDash):"—",""],
+    ["Impressions",int(c.impressions),deltaHtml(c.impressions,p.impressions,false)],
+    ["Reach",int(c.reach),deltaHtml(c.reach,p.reach,false)],
+    ["Link clicks",int(c.linkClicks||c.clicks),deltaHtml(c.linkClicks||c.clicks,p.linkClicks||p.clicks,false)],
+    ["Landing-page views",int(c.lpViews),deltaHtml(c.lpViews,p.lpViews,false)],
     ["CTR",pct(c.ctr),deltaHtml(c.ctr,p.ctr,false)],
     ["CPC",money2(c.cpc),deltaHtml(c.cpc,p.cpc,true)],
+    ["CPM",money2(c.cpm),deltaHtml(c.cpm,p.cpm,true)],
     ["Frequency",(c.frequency||0).toFixed(2),deltaHtml(c.frequency,p.frequency,true)],
+    ["Click → reg.",rate(c.registrations,c.linkClicks||c.clicks).toFixed(1)+"%","of link clicks register"],
+    ["Reg. → Dashboard",rate(c.dashboard,c.registrations).toFixed(0)+"%","reach final step"],
+    ["Active campaigns",int((OV.campaigns||[]).filter(x=>/ACTIVE/i.test(x.status||"")).length),"running now"],
   ];
-  document.getElementById("cards").innerHTML=cards.map(([l,v,d])=>'<div class="card"><div class="label">'+l+'</div><div class="val">'+v+'</div>'+d+'</div>').join("");
+  document.getElementById("cards").innerHTML=cardsHtml(cards);
   const al=(OV.alerts||[]).slice(0,4);
   document.getElementById("alertsTop").innerHTML=al.length?'<div class="section">'+al.map(a=>'<div class="alert '+(a.severity==="high"?"high":"med")+'"><span class="ic">'+(a.severity==="high"?"🔴":"🟠")+'</span><span>'+a.text+'</span></div>').join("")+'</div>':"";
 
@@ -489,7 +504,27 @@ function renderMovers(){ const cs=OV.campaigns.filter(c=>c.spend>0||c.spendPrev>
 
 /* ---------- MARKETS ---------- */
 function renderMarkets(){ const ms=OV.markets;
-  document.getElementById("marketCards").innerHTML=ms.map(m=>'<div class="card"><div class="label"><span class="dot" style="background:'+(MK_COLOR[m.market]||"#999")+'"></span>'+m.market+'</div><div class="val">'+money(m.spend)+'</div><div class="delta flat">'+m.spendShare.toFixed(0)+'% spend · '+int(m.result)+' results</div>'+deltaHtml(m.result,m.resultPrev,false)+'</div>').join("");
+  // summary KPI row
+  const byField=(f,dir)=>ms.slice().filter(m=>m[f]!=null).sort((a,b)=>dir*((a[f]||0)-(b[f]||0)))[0];
+  const topSpend=byField("spend",-1), mostReg=byField("registrations",-1), mostLead=byField("leads",-1);
+  const cheapReg=ms.slice().filter(m=>m.costPerReg).sort((a,b)=>a.costPerReg-b.costPerReg)[0];
+  const bestCtr=byField("ctr",-1);
+  const kpis=[
+    ["Markets active",int(ms.length),"with spend or results"],
+    ["Top market (spend)",topSpend?topSpend.market:"—",topSpend?money(topSpend.spend)+" · "+topSpend.spendShare.toFixed(0)+"%":""],
+    ["Most registrations",mostReg&&mostReg.registrations?mostReg.market:"—",mostReg?int(mostReg.registrations)+" regs":""],
+    ["Cheapest cost / reg.",cheapReg?cheapReg.market:"—",cheapReg?money2(cheapReg.costPerReg):""],
+    ["Most leads",mostLead&&mostLead.leads?mostLead.market:"—",mostLead?int(mostLead.leads)+" leads":""],
+    ["Best CTR",bestCtr?bestCtr.market:"—",bestCtr?pct(bestCtr.ctr):""],
+  ];
+  document.getElementById("marketKpis").innerHTML=cardsHtml(kpis);
+  document.getElementById("marketCards").innerHTML=ms.map(m=>'<div class="card"><div class="label"><span class="dot" style="background:'+(MK_COLOR[m.market]||"#999")+'"></span>'+m.market+'</div><div class="val">'+money(m.spend)+'</div>'+
+    '<div class="delta flat">'+m.spendShare.toFixed(0)+'% of spend</div>'+
+    '<div style="font-size:12px;color:#6b7280;margin-top:6px;line-height:1.7">'+
+      int(m.leads)+' leads · '+int(m.registrations)+' regs · '+int(m.dashboard||0)+' dash<br>'+
+      'CTR '+pct(m.ctr)+' · CPC '+money2(m.cpc)+'<br>'+
+      'Cost/reg '+(m.costPerReg?money2(m.costPerReg):"—")+' · Cost/lead '+(m.costPerLead?money2(m.costPerLead):"—")+
+    '</div>'+deltaHtml(m.result,m.resultPrev,false)+'</div>').join("");
   const metrics=[["spend","Spend"],["result","Results"],["linkClicks","Link clicks"],["registrations","Registrations"],["dashboard","Dashboard"],["costPer","Cost / result"]];
   document.getElementById("mMetricSel").innerHTML=metrics.map(([k,l])=>'<button data-m="'+k+'" class="'+(k===mMetric?"active":"")+'">'+l+'</button>').join("");
   document.querySelectorAll("#mMetricSel button").forEach(b=>b.onclick=()=>{ mMetric=b.dataset.m; document.querySelectorAll("#mMetricSel button").forEach(x=>x.classList.toggle("active",x===b)); drawMarketTrend(); });
@@ -524,8 +559,26 @@ function renderMarketTable(){ const ms=OV.markets;
 
 /* ---------- GOALS ---------- */
 const GOAL_METRICS=[["result","Results"],["registrations","Registrations"],["dashboard","Dashboard"],["linkClicks","Link clicks"],["costPer","Cost / result"]];
-function renderGoals(){ const gs=OV.goals;
-  document.getElementById("goalCards").innerHTML=gs.map(g=>'<div class="card"><div class="label">'+g.goal+'</div><div class="val">'+money(g.spend)+'</div><div class="delta flat">'+int(g.result)+' results · '+(g.costPer?money2(g.costPer)+"/res":"—")+'</div></div>').join("");
+function renderGoals(){ const gs=OV.goals; const c=OV.current;
+  const lead=gs.find(g=>g.goal==="Leads")||{spend:0,result:0}, conv=gs.find(g=>g.goal==="Conversions")||{spend:0,result:0};
+  const totSpend=gs.reduce((s,g)=>s+g.spend,0)||1, totRes=gs.reduce((s,g)=>s+g.result,0);
+  const kpis=[
+    ["Total results",int(totRes),"leads + registrations"],
+    ["Lead spend share",(lead.spend/totSpend*100).toFixed(0)+"%",money(lead.spend)],
+    ["Conversion spend share",(conv.spend/totSpend*100).toFixed(0)+"%",money(conv.spend)],
+    ["Cost / lead",lead.costPer?money2(lead.costPer):"—",int(lead.result)+" leads"],
+    ["Cost / registration",conv.costPer?money2(conv.costPer):"—",int(conv.result)+" regs"],
+    ["Dashboard (final)",int(c.dashboard),"deepest conversion"],
+  ];
+  document.getElementById("goalKpis").innerHTML=cardsHtml(kpis);
+  document.getElementById("goalCards").innerHTML=gs.map(g=>{ const cvr=rate(g.result,g.clicks);
+    return '<div class="card"><div class="label">'+g.goal+'</div><div class="val">'+money(g.spend)+'</div>'+
+    '<div class="delta flat">'+(g.spend/totSpend*100).toFixed(0)+'% of spend</div>'+
+    '<div style="font-size:12px;color:#6b7280;margin-top:6px;line-height:1.7">'+
+      int(g.result)+' results · '+(g.costPer?money2(g.costPer)+"/res":"—")+'<br>'+
+      int(g.linkClicks||g.clicks)+' link clicks · CTR '+pct(g.ctr)+'<br>'+
+      'Conv. rate '+pct(cvr)+
+    '</div></div>'; }).join("");
   cbar("goalSpend",gs.map(g=>g.goal),gs.map(g=>g.spend),"#2563eb");
   document.getElementById("goalMetricSel").innerHTML=GOAL_METRICS.map(([k,l])=>'<button data-m="'+k+'" class="'+(k===goalMetric?"active":"")+'">'+l+'</button>').join("");
   document.querySelectorAll("#goalMetricSel button").forEach(b=>b.onclick=()=>{ goalMetric=b.dataset.m; document.querySelectorAll("#goalMetricSel button").forEach(x=>x.classList.toggle("active",x===b)); drawGoalMetric(); });
@@ -545,8 +598,30 @@ function drawGoalMetric(){ const gs=OV.goals; const lbl=(GOAL_METRICS.find(m=>m[
 const AUD_METRICS=[["spend","Spend"],["linkClicks","Link clicks"],["leads","Leads"],["registrations","Registrations"],["dashboard","Dashboard"],["result","Results"]];
 async function openAudience(){ if(!BD){ try{ BD=await api("breakdowns"); }catch(e){ alert(e.message); return; } }
   document.getElementById("audMetricSel").innerHTML=AUD_METRICS.map(([k,l])=>'<button data-m="'+k+'" class="'+(k===audMetric?"active":"")+'">'+l+'</button>').join("");
-  document.querySelectorAll("#audMetricSel button").forEach(b=>b.onclick=()=>{ audMetric=b.dataset.m; document.querySelectorAll("#audMetricSel button").forEach(x=>x.classList.toggle("active",x===b)); drawAudience(); });
-  drawAudience(); drawHour(); drawWeekday(); }
+  document.querySelectorAll("#audMetricSel button").forEach(b=>b.onclick=()=>{ audMetric=b.dataset.m; document.querySelectorAll("#audMetricSel button").forEach(x=>x.classList.toggle("active",x===b)); drawAudience(); renderAudCards(); });
+  renderAudCards(); drawAudience(); drawHour(); drawWeekday(); }
+function renderAudCards(){ const m=audMetric, lbl=(AUD_METRICS.find(x=>x[0]===m)||["","metric"])[1].toLowerCase();
+  const fmt=v=>m==="spend"?money(v):int(v);
+  const top=(rows)=>{ const r=(rows||[]).slice().filter(x=>x.key&&x.key!=="(unknown)").sort((a,b)=>(b[m]||0)-(a[m]||0))[0]; return r; };
+  const tc=top(BD.country),tp=top(BD.placement),td=top(BD.device),ta=top(BD.age),tg=top(BD.gender);
+  // best hour & weekday from OV
+  const hrs=(OV.byHour||[]).map(h=>({k:h.hour+":00",v:(h.registrations||0)+(h.leads||0),spend:h.spend})).filter(h=>h.v>0).sort((a,b)=>b.v-a.v)[0];
+  const wd=Array.from({length:7},()=>({res:0}));(OV.series||[]).forEach(d=>{ const i=new Date(d.date+"T00:00:00Z").getUTCDay(); wd[i].res+=(d.registrations||0)+(d.leads||0); });
+  let bw=-1,bwv=-1; wd.forEach((x,i)=>{ if(x.res>bwv){bwv=x.res;bw=i;} });
+  // mobile vs desktop
+  const dev=BD.device||[]; const sum=k=>dev.filter(x=>new RegExp(k,"i").test(x.key)).reduce((s,x)=>s+(x.spend||0),0);
+  const mob=sum("mobile|phone|android|iphone"), desk=sum("desktop"); const devTot=mob+desk||1;
+  const cards=[
+    ["Top country",tc?tc.key:"—",tc?fmt(tc[m])+" "+lbl:""],
+    ["Top placement",tp?tp.key:"—",tp?fmt(tp[m])+" "+lbl:""],
+    ["Top device",td?td.key:"—",td?fmt(td[m])+" "+lbl:""],
+    ["Top age group",ta?ta.key:"—",ta?fmt(ta[m])+" "+lbl:""],
+    ["Top gender",tg?tg.key:"—",tg?fmt(tg[m])+" "+lbl:""],
+    ["Mobile share",(mob/devTot*100).toFixed(0)+"%","of spend on mobile"],
+    ["Best hour",hrs?hrs.k:"—",hrs?int(hrs.v)+" results":""],
+    ["Best weekday",bw>=0?WD[bw]:"—",bwv>0?int(bwv)+" results":""],
+  ];
+  document.getElementById("audCards").innerHTML=cardsHtml(cards); }
 function drawAudience(){ abar("bdCountry",BD.country); abar("bdPlacement",BD.placement); abar("bdDevice",BD.device); abar("bdAge",BD.age); abar("bdGender",BD.gender); }
 function abar(id,rows){ destroy(id);
   const lbl=(AUD_METRICS.find(m=>m[0]===audMetric)||["","Metric"])[1];
@@ -572,6 +647,26 @@ function drawWeekday(){ const s=OV.series||[]; const agg=Array.from({length:7},(
 function renderDetail(){
   drawScatter();
   const lb=OV.leaderboard||{best:[],worst:[]};
+  // KPI / counts row
+  const allCamps=OV.campaigns||[], setsAll=OV.adsets||[], adsAll=OV.ads||[];
+  const actC=allCamps.filter(c=>/ACTIVE/i.test(c.status||"")).length;
+  const actS=setsAll.filter(s=>/ACTIVE/i.test(s.status||"")).length;
+  const actA=adsAll.filter(a=>/ACTIVE/i.test(a.status||"")).length;
+  const topSpendC=allCamps.slice().sort((a,b)=>b.spend-a.spend)[0];
+  const topAd=adsAll.filter(a=>a.resultValue>0).sort((a,b)=>b.resultValue-a.resultValue)[0];
+  const best=lb.best&&lb.best[0], worst=lb.worst&&lb.worst[0];
+  const zeroSpenders=setsAll.filter(s=>s.spend>=300&&s.resultValue===0).length;
+  const dk=[
+    ["Campaigns",int(camps.length),actC+" active"],
+    ["Ad sets",int(setsAll.length),actS+" active"],
+    ["Ads",int(adsAll.length),actA+" active"],
+    ["Highest spend",topSpendC?topSpendC.name:"—",topSpendC?money(topSpendC.spend):""],
+    ["Cheapest ad set",best?money2(best.costPer):"—",best?best.name:""],
+    ["Priciest ad set",worst?money2(worst.costPer):"—",worst?worst.name:""],
+    ["Top ad (results)",topAd?int(topAd.resultValue)+" "+topAd.resultLabel:"—",topAd?topAd.name:""],
+    ["Spending, 0 results",int(zeroSpenders),"ad sets ≥300 NOK"],
+  ];
+  document.getElementById("detailKpis").innerHTML=cardsHtml(dk);
   const lbLine=s=>'<div class="mv"><span>'+s.name+mtag(s.market)+'</span><span>'+(s.costPer?money2(s.costPer):"—")+' · '+int(s.resultValue)+' '+s.resultLabel+'</span></div>';
   document.getElementById("lbBest").innerHTML=lb.best.length?lb.best.map(lbLine).join(""):'<div class="foot">No data.</div>';
   const topAds=(OV.ads||[]).filter(a=>a.resultValue>0).sort((a,b)=>b.resultValue-a.resultValue).slice(0,6);
