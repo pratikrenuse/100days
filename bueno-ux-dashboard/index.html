@@ -16,21 +16,23 @@
      Accents (restrained): teal #0B7374 / #00BFAF, rust #C43402, sage #BEBE9C, warm yellow #FCC662
      Corporate font: FS Siena (sans). Logo wordmark: serif. */
   :root{ color-scheme:light;
-    --navy:#010221; --navy2:#292A49; --paleblue:#CBE8FF; --lightgrey:#D9D9D9;
-    --teal:#0B7374; --teal2:#00BFAF; --rust:#C43402; --sage:#BEBE9C; --yellow:#FCC662;
-    --bg:#F1EFEA; --card:#FFFFFF; --ink:#010221; --mut:rgba(1,2,33,.62); --mut2:rgba(1,2,33,.45); --bd:rgba(1,2,33,.12);
-    --good:#0B7374; --bad:#C43402; --warn:#8a5a00;
+    --navy:#010221; --navy2:#23254A; --paleblue:#CBE8FF; --lightgrey:#D9D9D9;
+    --teal:#0B7374; --teal2:#0E8F86; --rust:#B23A04; --sage:#BEBE9C; --yellow:#FCC662;
+    --bg:#F7F6F2; --card:#FFFFFF; --ink:#101225; --head:#010221; --mut:#5A5D72; --mut2:#8A8C9C; --bd:#E8E5DD;
+    --good:#0B7374; --bad:#B23A04; --warn:#8a5a00;
+    /* readable light text for use on the navy panels */
+    --on-navy:#EEF0F7; --on-navy-soft:#C3C7DA; --on-navy-faint:#9BA0BC;
     --sans:'FS Siena','Jost','Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;
     --logo:'Cormorant Garamond',Georgia,'Times New Roman',serif;
-    --radius:14px; --shadow:0 1px 2px rgba(1,2,33,.04),0 8px 28px rgba(1,2,33,.07); }
+    --radius:16px; --shadow:0 1px 2px rgba(1,2,33,.05),0 10px 30px rgba(1,2,33,.05); }
   *{ box-sizing:border-box; }
-  body{ margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); font-size:14px; line-height:1.5; }
-  .wrap{ max-width:1200px; margin:0 auto; padding:22px; }
+  body{ margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); font-size:15px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  .wrap{ max-width:1160px; margin:0 auto; padding:26px 24px 60px; }
   a{ color:var(--teal); }
 
   /* gate */
   #gate{ max-width:380px; margin:13vh auto; background:var(--card); border:1px solid var(--bd); border-radius:18px; padding:32px 28px; text-align:center; box-shadow:var(--shadow); }
-  #gate .mk{ font-family:var(--logo); font-size:40px; font-weight:600; color:var(--navy); letter-spacing:.04em; line-height:1; }
+  #gate .mk{ font-family:var(--logo); font-variant:small-caps; font-size:42px; font-weight:600; color:var(--navy); letter-spacing:.07em; line-height:1; }
   #gate .pay{ font-size:9.5px; letter-spacing:.24em; text-transform:uppercase; color:var(--mut); margin-top:8px; }
   #gate h1{ font-size:15px; margin:20px 0 4px; font-weight:500; letter-spacing:.01em; } #gate p{ color:var(--mut); font-size:13px; margin:0 0 18px; }
   #gate input{ width:100%; padding:12px; border:1px solid var(--bd); border-radius:10px; font-size:14px; margin-bottom:10px; font-family:var(--sans); }
@@ -66,8 +68,8 @@
 
   .barrow{ display:flex; align-items:center; gap:12px; margin:10px 0; font-size:13px; }
   .barrow .nm{ width:120px; flex-shrink:0; color:var(--ink); font-weight:400; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .barrow .track{ flex:1; height:10px; background:#ECEAE4; border-radius:6px; overflow:hidden; }
-  .barrow .fill{ height:100%; border-radius:6px; background:linear-gradient(90deg,var(--navy2),var(--teal)); }
+  .barrow .track{ flex:1; height:10px; background:#EAE8E1; border-radius:6px; overflow:hidden; }
+  .barrow .fill{ height:100%; border-radius:6px; background:var(--teal); }
   .barrow .vv{ width:96px; text-align:right; font-weight:500; font-size:12.5px; flex-shrink:0; } .barrow .vv small{ color:var(--mut); font-weight:400; }
 
   table{ width:100%; border-collapse:collapse; font-size:13px; }
@@ -82,31 +84,29 @@
   .foot{ color:var(--mut); font-size:11.5px; margin-top:8px; }
 
   /* ============ Bueno-branded Executive Brief ============ */
-  .exec{ background:var(--navy); color:#F2F0EA; border-radius:20px; overflow:hidden; margin-bottom:18px; box-shadow:0 20px 60px rgba(1,2,33,.30); }
+  .exec{ background:var(--navy); color:var(--on-navy); border-radius:18px; overflow:hidden; margin-bottom:18px; box-shadow:0 14px 44px rgba(1,2,33,.16); }
   .exec *{ box-sizing:border-box; }
-  .exec .ex-hero{ position:relative; padding:46px 46px 38px;
-    background:radial-gradient(circle at 84% 10%, rgba(203,232,255,.16), transparent 50%),
-               radial-gradient(circle at 6% 98%, rgba(11,115,116,.20), transparent 48%),
-               linear-gradient(160deg,#010221 0%,#0a0c22 50%,#292A49 100%); }
-  .exec .ex-kicker{ font-family:var(--sans); letter-spacing:.24em; text-transform:uppercase; font-size:11px; color:var(--paleblue); display:flex; align-items:center; gap:10px; margin-bottom:18px; font-weight:400; }
+  .exec .ex-hero{ position:relative; padding:48px 48px 40px;
+    background:radial-gradient(120% 90% at 100% 0%, rgba(203,232,255,.10), transparent 55%), var(--navy); }
+  .exec .ex-kicker{ font-family:var(--sans); letter-spacing:.2em; text-transform:uppercase; font-size:11px; color:var(--paleblue); display:flex; align-items:center; gap:9px; margin-bottom:20px; font-weight:500; }
   .exec .ex-kicker .bdot{ width:6px; height:6px; border-radius:50%; background:var(--teal2); display:inline-block; }
-  .exec h1.ex-title{ font-family:var(--sans); font-weight:300; font-size:clamp(28px,4.4vw,46px); line-height:1.08; margin:0 0 14px; letter-spacing:.01em; color:#fff; }
-  .exec .ex-lede{ font-family:var(--sans); font-weight:300; font-size:clamp(15px,1.7vw,18px); line-height:1.6; color:rgba(242,240,234,.82); max-width:790px; margin:0; }
-  .exec .ex-period{ margin-top:18px; font-size:12px; letter-spacing:.04em; color:rgba(203,232,255,.6); }
+  .exec h1.ex-title{ font-family:var(--sans); font-weight:400; font-size:clamp(27px,4vw,42px); line-height:1.12; margin:0 0 16px; letter-spacing:0; color:#fff; }
+  .exec .ex-lede{ font-family:var(--sans); font-weight:400; font-size:clamp(15px,1.5vw,17px); line-height:1.7; color:var(--on-navy); max-width:820px; margin:0; }
+  .exec .ex-period{ margin-top:20px; font-size:12px; letter-spacing:.03em; color:var(--on-navy-faint); }
   .exec .ex-bignums{ display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid rgba(203,232,255,.16); }
-  .exec .bn{ padding:24px 28px; border-right:1px solid rgba(203,232,255,.12); }
+  .exec .bn{ padding:24px 28px; border-right:1px solid rgba(203,232,255,.14); }
   .exec .bn:last-child{ border-right:0; }
-  .exec .bn .k{ font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:rgba(203,232,255,.7); margin-bottom:8px; }
-  .exec .bn .v{ font-family:var(--sans); font-weight:300; font-size:clamp(24px,3.2vw,36px); line-height:1; color:#fff; }
-  .exec .bn .v .u{ font-size:.42em; color:var(--paleblue); margin-left:5px; font-weight:400; }
-  .exec .bn .d{ margin-top:9px; font-size:12px; font-weight:500; }
-  .exec .bn .d.up{ color:var(--teal2); } .exec .bn .d.down{ color:#ff9b7a; } .exec .bn .d.flat{ color:rgba(203,232,255,.55); }
+  .exec .bn .k{ font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--on-navy-soft); margin-bottom:10px; }
+  .exec .bn .v{ font-family:var(--sans); font-weight:400; font-size:clamp(24px,3vw,34px); line-height:1; color:#fff; }
+  .exec .bn .v .u{ font-size:.42em; color:var(--paleblue); margin-left:5px; font-weight:500; }
+  .exec .bn .d{ margin-top:10px; font-size:12.5px; font-weight:500; }
+  .exec .bn .d.up{ color:#7ad6c0; } .exec .bn .d.down{ color:#ff9b7a; } .exec .bn .d.flat{ color:var(--on-navy-faint); }
   @media(max-width:820px){ .exec .ex-bignums{ grid-template-columns:repeat(2,1fr); } .exec .bn:nth-child(2n){border-right:0;} .exec .ex-hero{ padding:32px 24px 28px; } }
   .exec .ex-substrip{ display:grid; grid-template-columns:repeat(6,1fr); border-top:1px solid rgba(203,232,255,.12); }
   .exec .ss{ padding:16px 18px; border-right:1px solid rgba(203,232,255,.1); }
   .exec .ss:last-child{ border-right:0; }
-  .exec .ss .k{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:rgba(203,232,255,.6); margin-bottom:6px; }
-  .exec .ss .v{ font-family:var(--sans); font-size:20px; font-weight:300; color:#fff; }
+  .exec .ss .k{ font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--on-navy-faint); margin-bottom:7px; }
+  .exec .ss .v{ font-family:var(--sans); font-size:20px; font-weight:400; color:#fff; }
   @media(max-width:820px){ .exec .ex-substrip{ grid-template-columns:repeat(3,1fr); } .exec .ss:nth-child(3n){border-right:0;} }
   @media(max-width:520px){ .exec .ex-substrip{ grid-template-columns:repeat(2,1fr); } .exec .ss:nth-child(odd){border-right:0;} }
   .exec .ex-block{ padding:34px 46px 6px; } @media(max-width:820px){ .exec .ex-block{ padding:26px 24px 4px; } }
@@ -114,22 +114,22 @@
   .exec .ex-funnel{ display:flex; flex-direction:column; gap:10px; }
   .exec .fn-row{ display:grid; grid-template-columns:180px 1fr; gap:16px; align-items:center; }
   @media(max-width:560px){ .exec .fn-row{ grid-template-columns:1fr; gap:4px; } }
-  .exec .fn-label{ font-size:13px; color:rgba(242,240,234,.85); } .exec .fn-label .fn-rate{ color:var(--teal2); font-size:11.5px; margin-left:8px; }
-  .exec .fn-bar{ position:relative; height:34px; border-radius:8px; background:rgba(203,232,255,.08); overflow:hidden; }
-  .exec .fn-fill{ position:absolute; left:0; top:0; bottom:0; border-radius:8px; background:linear-gradient(90deg,var(--navy2),var(--teal)); display:flex; align-items:center; padding:0 12px; min-width:64px; }
-  .exec .fn-fill.gold{ background:linear-gradient(90deg,#caa24a,var(--yellow)); }
-  .exec .fn-val{ font-family:var(--sans); font-weight:500; font-size:14px; color:#fff; white-space:nowrap; }
+  .exec .fn-label{ font-size:13.5px; color:var(--on-navy); } .exec .fn-label .fn-rate{ color:#7ad6c0; font-size:11.5px; margin-left:8px; }
+  .exec .fn-bar{ position:relative; height:36px; border-radius:8px; background:rgba(203,232,255,.07); overflow:hidden; }
+  .exec .fn-fill{ position:absolute; left:0; top:0; bottom:0; border-radius:8px; background:#2D6E6C; display:flex; align-items:center; padding:0 12px; min-width:66px; }
+  .exec .fn-fill.gold{ background:#0E8F86; }
+  .exec .fn-val{ font-family:var(--sans); font-weight:500; font-size:13.5px; color:#fff; white-space:nowrap; }
   .exec .ex-insights{ padding:38px 46px 14px; }
   .exec .ex-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
   @media(max-width:820px){ .exec .ex-grid{ grid-template-columns:1fr; } .exec .ex-insights{ padding:28px 24px 12px; } }
   .exec .icard{ position:relative; border-radius:16px; padding:22px 24px 20px; background:linear-gradient(155deg,rgba(255,255,255,.06),rgba(255,255,255,.02)); border:1px solid rgba(203,232,255,.12); overflow:hidden; }
   .exec .icard::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--paleblue); }
   .exec .icard.good::before{ background:var(--teal2); } .exec .icard.bad::before{ background:var(--rust); } .exec .icard.neutral::before{ background:var(--paleblue); }
-  .exec .icard .ic-title{ font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:rgba(203,232,255,.72); font-weight:500; margin-bottom:5px; }
-  .exec .icard .ic-body{ font-family:var(--sans); font-weight:300; font-size:14.5px; line-height:1.62; color:rgba(242,240,234,.92); margin:0; }
-  .exec .icard .ic-body b{ color:#fff; font-weight:500; }
-  .exec .ex-foot{ padding:22px 46px 30px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:16px; border-top:1px solid rgba(203,232,255,.12); font-size:11.5px; color:rgba(203,232,255,.5); }
-  .exec .ex-wordmark{ font-family:var(--logo); font-size:24px; color:#fff; font-weight:600; letter-spacing:.03em; }
+  .exec .icard .ic-title{ font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--on-navy-soft); font-weight:600; margin-bottom:7px; }
+  .exec .icard .ic-body{ font-family:var(--sans); font-weight:400; font-size:14.5px; line-height:1.68; color:var(--on-navy); margin:0; }
+  .exec .icard .ic-body b{ color:#fff; font-weight:600; }
+  .exec .ex-foot{ padding:22px 48px 30px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:16px; border-top:1px solid rgba(203,232,255,.12); font-size:11.5px; color:var(--on-navy-faint); }
+  .exec .ex-wordmark{ font-family:var(--logo); font-variant:small-caps; font-size:26px; color:#fff; font-weight:600; letter-spacing:.06em; }
   .uxnote{ background:var(--paleblue); border-radius:10px; padding:9px 13px; font-size:12px; color:var(--navy); display:inline-block; margin-bottom:14px; }
 
   /* light insight cards (UX / Landing / Ads tabs) */
@@ -148,10 +148,10 @@
   .actions{ display:flex; flex-direction:column; gap:0; }
   .act{ display:grid; grid-template-columns:38px 1fr; gap:16px; padding:18px 0; border-bottom:1px solid rgba(203,232,255,.14); }
   .act:last-child{ border-bottom:0; }
-  .act .n{ width:30px; height:30px; border-radius:50%; border:1px solid rgba(203,232,255,.4); display:flex; align-items:center; justify-content:center; font-size:14px; color:var(--paleblue); font-weight:500; }
-  .act .ac-t{ font-family:var(--sans); font-size:16px; font-weight:400; color:#fff; margin:0 0 5px; letter-spacing:.005em; }
-  .act .ac-b{ font-size:13.5px; line-height:1.6; color:rgba(242,240,234,.82); margin:0; } .act .ac-b b{ color:#fff; font-weight:500; }
-  .act .ac-imp{ display:inline-block; margin-top:8px; font-size:11px; letter-spacing:.04em; color:var(--teal2); background:rgba(0,191,175,.1); border:1px solid rgba(0,191,175,.22); padding:3px 10px; border-radius:999px; }
+  .act .n{ width:30px; height:30px; border-radius:50%; border:1px solid rgba(203,232,255,.45); display:flex; align-items:center; justify-content:center; font-size:14px; color:var(--paleblue); font-weight:500; }
+  .act .ac-t{ font-family:var(--sans); font-size:16px; font-weight:500; color:#fff; margin:0 0 6px; letter-spacing:0; }
+  .act .ac-b{ font-size:13.5px; line-height:1.65; color:var(--on-navy); margin:0; } .act .ac-b b{ color:#fff; font-weight:600; }
+  .act .ac-imp{ display:inline-block; margin-top:9px; font-size:11px; letter-spacing:.03em; color:#7ad6c0; background:rgba(14,143,134,.16); border:1px solid rgba(14,143,134,.34); padding:3px 10px; border-radius:999px; }
   /* light action list (non-navy tabs) */
   .acts-light .act{ border-bottom:1px solid #efece6; }
   .acts-light .act .n{ border-color:var(--bd); color:var(--navy); }
@@ -164,12 +164,36 @@
   .devcard .drow{ display:flex; justify-content:space-between; font-size:12.5px; padding:5px 0; border-bottom:1px solid #f4f1eb; } .devcard .drow:last-child{ border-bottom:0; }
   .devcard .drow .dk{ color:var(--mut); } .devcard .drow .dv{ font-weight:600; color:var(--ink); }
   .devcard .drow .dv.flag{ color:var(--rust); }
+
+  /* ---- readability pass ---- */
+  body{ font-size:15.5px; line-height:1.62; }
+  .sub{ font-size:13px; color:#4B4E63; }
+  .tabs button{ font-size:14.5px; }
+  .section .ph{ font-size:13px; color:#4B4E63; } .section .hint{ font-size:12.5px; color:#4B4E63; }
+  table{ font-size:13.5px; } td{ color:#0E1024; } th{ font-size:11.5px; color:#4B4E63; }
+  .card .label{ font-size:11.5px; color:#4B4E63; } .card .val{ font-weight:500; } .delta{ font-size:12.5px; }
+  .barrow{ font-size:13.5px; } .barrow .nm{ color:#0E1024; }
+  .devcard .drow{ font-size:13px; } .devcard .drow .dk{ color:#4B4E63; }
+  .pg{ font-size:12.5px; }
+  .lcard .lt{ font-size:11.5px; color:#4B4E63; }
+  .lcard .lb{ font-size:14.5px; line-height:1.65; color:#0E1024; }
+  .lcard .lfix{ font-size:13px; color:#4B4E63; line-height:1.6; }
+  /* on navy — brighter, larger */
+  .exec .ex-lede{ color:#F2F3F9; font-size:clamp(16px,1.5vw,18px); }
+  .exec .bn .k, .exec .ss .k{ color:#D2D6E4; }
+  .exec .ex-period, .exec .ex-foot{ color:#B2B7CC; }
+  .exec .ex-sechead{ color:#DCE6FF; }
+  .exec .fn-label{ color:#F2F3F9; font-size:14px; }
+  .exec .icard .ic-title{ color:#D2D6E4; font-size:11.5px; }
+  .exec .icard .ic-body{ color:#F2F3F9; font-size:15px; line-height:1.72; }
+  .exec .act .ac-b{ color:#EFF1F8; font-size:14px; line-height:1.7; }
+  .exec .act .ac-t{ font-size:16.5px; }
 </style>
 </head>
 <body>
 
 <div id="gate">
-  <div class="mk">BUENO</div>
+  <div class="mk">Bueno</div>
   <div class="pay">Property · Banking · Simplified</div>
   <h1>UX &amp; Growth Dashboard</h1><p>Enter the password to view.</p>
   <input id="pw" type="password" placeholder="Password" autocomplete="current-password">
@@ -218,14 +242,21 @@
         <div class="ex-sechead">Priority actions — ranked by impact</div>
         <div class="actions" id="exActions"></div>
       </div>
-      <div class="ex-foot"><span id="exFootSrc"></span><span class="ex-wordmark">BUENO</span></div>
+      <div class="ex-foot"><span id="exFootSrc"></span><span class="ex-wordmark">Bueno</span></div>
     </div>
   </div>
 
   <!-- UX BEHAVIOUR -->
   <div id="tab-ux" class="hidden">
+    <div class="exec" style="margin-bottom:16px">
+      <div class="ex-hero" style="padding:34px 40px 26px">
+        <div class="ex-kicker"><span class="bdot"></span> Bueno · Behaviour analytics</div>
+        <h1 class="ex-title" id="uxHeroTitle" style="font-size:clamp(23px,3vw,33px)">Behaviour at a glance</h1>
+        <p class="ex-lede" id="uxHeroLede"></p>
+      </div>
+      <div class="ex-bignums" id="uxBand"></div>
+    </div>
     <div class="uxnote" id="uxAsOf"></div>
-    <div class="cards" id="uxCards"></div>
     <div class="row2">
       <div class="section"><h2>Traffic &amp; engagement <span class="hint">weekly</span></h2><div class="ph">Sessions and pageviews per week (Mouseflow)</div><div class="chartbox"><canvas id="uxTraffic"></canvas></div></div>
       <div class="section"><h2>Friction score per session <span class="hint">lower is better</span></h2><div class="ph">Spikes flag UX pain points</div><div class="chartbox"><canvas id="uxFriction"></canvas></div></div>
@@ -248,13 +279,23 @@
       <table><thead><tr><th>Entry page</th><th>Sessions started</th><th>Session friction</th><th>Read</th></tr></thead><tbody id="uxEntry"></tbody></table>
     </div>
 
-    <div class="ex-sechead" style="color:var(--navy);letter-spacing:.18em;margin:26px 0 14px">UX actions to take</div>
-    <div class="lcards" id="uxInsights"></div>
-    <div class="section"><div class="actions acts-light" id="uxActions"></div></div>
+    <div class="exec">
+      <div class="ex-insights"><div class="ex-sechead">What the behaviour is telling us</div><div class="ex-grid" id="uxInsights"></div></div>
+      <div class="ex-insights" style="padding-top:4px"><div class="ex-sechead">UX actions to take</div><div class="actions" id="uxActions"></div></div>
+      <div class="ex-foot"><span>Mouseflow · getbueno.com</span><span class="ex-wordmark">Bueno</span></div>
+    </div>
   </div>
 
   <!-- LANDING PAGES -->
   <div id="tab-landing" class="hidden">
+    <div class="exec" style="margin-bottom:16px">
+      <div class="ex-hero" style="padding:34px 40px 26px">
+        <div class="ex-kicker"><span class="bdot"></span> Bueno · Landing &amp; page experience</div>
+        <h1 class="ex-title" id="lpHeroTitle" style="font-size:clamp(23px,3vw,33px)">Where paid clicks land</h1>
+        <p class="ex-lede" id="lpHeroLede"></p>
+      </div>
+      <div class="ex-bignums" id="lpBand"></div>
+    </div>
     <div class="uxnote" id="lpAsOf"></div>
     <div class="section" style="padding:10px 14px 4px">
       <h2 style="padding:8px 6px 0">Page experience <span class="hint">scroll depth, exit rate, friction &amp; render time</span></h2>
@@ -273,12 +314,24 @@
 
     <div class="ex-sechead" style="color:var(--navy);letter-spacing:.18em;margin:26px 0 14px">Page-by-page fixes</div>
     <div class="lcards" id="lpFixCards"></div>
-    <div class="section"><div class="actions acts-light" id="lpActions"></div></div>
+    <div class="exec">
+      <div class="ex-insights"><div class="ex-sechead">What the pages are telling us</div><div class="ex-grid" id="lpInsights2"></div></div>
+      <div class="ex-insights" style="padding-top:4px"><div class="ex-sechead">Landing-page actions</div><div class="actions" id="lpActions"></div></div>
+      <div class="ex-foot"><span>Mouseflow · getbueno.com</span><span class="ex-wordmark">Bueno</span></div>
+    </div>
   </div>
 
   <!-- ADS -->
   <div id="tab-ads" class="hidden">
-    <div class="cards" id="adCards"></div>
+    <div class="exec" style="margin-bottom:16px">
+      <div class="ex-hero" style="padding:34px 40px 26px">
+        <div class="ex-kicker"><span class="bdot"></span> Bueno · Paid media</div>
+        <h1 class="ex-title" id="adHeroTitle" style="font-size:clamp(23px,3vw,33px)">Paid performance</h1>
+        <p class="ex-lede" id="adHeroLede"></p>
+      </div>
+      <div class="ex-bignums" id="adBand"></div>
+      <div class="ex-substrip" id="adSub"></div>
+    </div>
     <div class="section"><h2>Spend &amp; CTR <span class="hint">daily (Meta, live)</span></h2><div class="chartbox"><canvas id="adTrend"></canvas></div></div>
     <div class="row2">
       <div class="section"><h2>Conversion path</h2><div class="ph">Impressions → clicks → landing page → registration → dashboard</div><div class="chartbox sm"><canvas id="adFunnel"></canvas></div></div>
@@ -286,9 +339,11 @@
     </div>
     <div class="section" style="padding:10px 14px 4px"><h2 style="padding:8px 6px 0">Top ads <span class="hint">by spend</span></h2><table><thead><tr><th>Ad</th><th>Spend</th><th>CTR</th><th>CPC</th><th>Result</th><th>Cost/res</th></tr></thead><tbody id="adTopAds"></tbody></table></div>
 
-    <div class="ex-sechead" style="color:var(--navy);letter-spacing:.18em;margin:26px 0 14px">Ad &amp; budget actions</div>
-    <div class="lcards" id="adInsights"></div>
-    <div class="section"><div class="actions acts-light" id="adActions"></div></div>
+    <div class="exec">
+      <div class="ex-insights"><div class="ex-sechead">What the spend is telling us</div><div class="ex-grid" id="adInsights"></div></div>
+      <div class="ex-insights" style="padding-top:4px"><div class="ex-sechead">Ad &amp; budget actions</div><div class="actions" id="adActions"></div></div>
+      <div class="ex-foot"><span>Meta Ads · Bueno (NOK)</span><span class="ex-wordmark">Bueno</span></div>
+    </div>
   </div>
 </div>
 
@@ -306,7 +361,7 @@ function busy(on){ $("busy").classList.toggle("on",on); }
 function destroy(id){ if(charts[id]){ charts[id].destroy(); delete charts[id]; } }
 
 // brand palette for charts
-const C={navy:"#010221",navy2:"#292A49",pale:"#CBE8FF",teal:"#0B7374",teal2:"#00BFAF",rust:"#C43402",sage:"#BEBE9C",yellow:"#FCC662"};
+const C={navy:"#010221",navy2:"#23254A",pale:"#9FC2E0",teal:"#0B7374",teal2:"#3E9C97",rust:"#B23A04",sage:"#BEBE9C",yellow:"#FCC662"};
 
 function presetRange(p){ const t=new Date(); t.setHours(12,0,0,0);
   if(p==="tm")return {since:isoDay(new Date(t.getFullYear(),t.getMonth(),1)),until:isoDay(t)};
@@ -327,7 +382,7 @@ async function unlock(){ PW=$("pw").value; RANGE=presetRange("30");
   $("gate").classList.add("hidden"); $("app").classList.remove("hidden");
   $("from").value=RANGE.since; $("to").value=RANGE.until; showTab("exec"); }
 
-async function reload(){ try{ DATA=await api(); }catch(e){ alert(e.message); return; } render(); }
+async function reload(){ if(location.protocol==="file:"){ DATA=DEMO; render(); return; } try{ DATA=await api(); }catch(e){ alert(e.message); return; } render(); }
 function updateSub(){ $("sub").textContent="Bueno ("+CUR+") · "+DATA.range.since+" → "+DATA.range.until+" · ads vs "+DATA.previousRange.since+" → "+DATA.previousRange.until+(DATA.includePaused?" · incl. paused":"")+" · updated "+new Date(DATA.generated_at).toLocaleString(); }
 
 function deltaHtml(cur,prev,lowerBetter){
@@ -407,15 +462,14 @@ function renderUX(){
   const ux=DATA.ux, w=ux.wow;
   $("uxAsOf").textContent="Mouseflow behaviour data · as of "+ux.as_of+" · full window "+ux.window.since+" → "+ux.window.until+(ux.source==="snapshot"?"":" · live overlay on");
   const t=ux.totals;
-  const cards=[
-    ["Sessions",int(t.sessions),deltaHtml(w.last.sessions,w.prev.sessions,false)],
-    ["Unique visitors",int(t.visitors),deltaHtml(w.last.visitors,w.prev.visitors,false)],
-    ["Pageviews",int(t.pageviews),deltaHtml(w.last.pageviews,w.prev.pageviews,false)],
-    ["Avg visit",dur(t.avgVisitMs),deltaHtml(w.last.avgVisitMs,w.prev.avgVisitMs,false)],
-    ["Friction / session",t.friction.toFixed(2),deltaHtml(w.last.friction,w.prev.friction,true)],
-    ["JS errors / session",(t.jsErrPerSession*100).toFixed(2)+"%",""]
-  ];
-  $("uxCards").innerHTML=cards.map(c=>'<div class="card"><div class="label">'+c[0]+'</div><div class="val">'+c[1]+'</div>'+(c[2]||"")+'</div>').join("");
+  $("uxHeroTitle").textContent=int(t.sessions)+" sessions · "+int(t.visitors)+" visitors";
+  $("uxHeroLede").textContent="Mouseflow tracked "+int(t.sessions)+" sessions on getbueno.com at a friction score of "+t.friction.toFixed(2)+" per session. Three problems dominate: desktop is rage-clicking, mobile renders slowly, and the homepage breaks on first touch.";
+  band("uxBand",[
+    {k:"Sessions",v:int(t.sessions),d:exDelta(w.last.sessions,w.prev.sessions,false)},
+    {k:"Unique visitors",v:int(t.visitors),d:exDelta(w.last.visitors,w.prev.visitors,false)},
+    {k:"Friction / session",v:t.friction.toFixed(2),d:exDelta(w.last.friction,w.prev.friction,true)},
+    {k:"Avg visit",v:dur(t.avgVisitMs),d:exDelta(w.last.avgVisitMs,w.prev.avgVisitMs,false)}
+  ]);
 
   const lab=ux.weekly.map(x=>{const d=new Date(x.week);return d.toLocaleDateString("en-US",{month:"short",day:"numeric"});});
   destroy("uxTraffic"); charts.uxTraffic=new Chart($("uxTraffic"),{data:{labels:lab,datasets:[
@@ -448,16 +502,26 @@ function renderUX(){
 
   const dDesk=dE.find(d=>d.name==="Desktop")||{}, dPh=dE.find(d=>d.name==="Phone")||{}, dTb=dE.find(d=>d.name==="Tablet")||{};
   const he=(ux.entryPages||[]).find(e=>e.page==="/")||{}, noE=(ux.entryPages||[]).find(e=>e.page==="/no")||{}, seE=(ux.entryPages||[]).find(e=>e.page==="/se")||{};
-  lcards("uxInsights",[
-    {t:"Desktop dead-clicks",sev:"High",tone:"bad",b:"Desktop averages <b>"+dDesk.clicksPerView+" clicks per pageview</b> — 1.5× phone and 5× tablet — with the deepest scroll (58%) and fastest render (0.37s). Speed and reading are fine, so the extra clicks are frustration, not engagement.",fix:"Run click-heatmaps on / and /no; find the element absorbing clicks (likely a styled-but-dead button or a link that looks clickable) and wire it up."},
-    {t:"Homepage first-touch friction",sev:"High",tone:"bad",b:"Sessions that <b>start</b> on / carry friction <b>"+he.friction+"</b> vs the page's mid-journey 0.14. The first impression is where the journey breaks.",fix:"Treat / as a landing page: clarify the hero CTA, ensure every visible control responds, and A/B a simplified above-the-fold."},
-    {t:"Norwegian & Swedish entries struggle",sev:"Watch",tone:"watch",b:"<b>/no ("+noE.friction+")</b> and <b>/se ("+seE.friction+")</b> entries run ~4× the friction of the /all-usp-norsk bridge (0.15). Localised routes are starting visits badly.",fix:"Check locale rendering — broken translations, layout shift, or a region-specific script error. Compare a /no replay against /."},
-    {t:"Mobile is slow where it matters",sev:"Watch",tone:"watch",b:"Phone render <b>"+(dPh.renderMs/1000).toFixed(1)+"s</b> and tablet <b>"+(dTb.renderMs/1000).toFixed(1)+"s</b> against desktop "+(dDesk.renderMs/1000).toFixed(2)+"s. Tablet scroll is just 20% — people may be leaving before paint completes.",fix:"Compress/serve next-gen hero images, lazy-load below the fold, and defer analytics/3rd-party tags on mobile."}
+  const spain=(ux.countries.find(c=>c.name==="Spain")||{}).sessions||0, norway=(ux.countries.find(c=>c.name==="Norway")||{}).sessions||0;
+  const social=(ux.referrers.find(r=>r.name==="Social")||{}).sessions||0, totSess=ux.totals.sessions||1;
+  icards("uxInsights",[
+    {t:"Desktop is rage-clicking",tone:"bad",b:"Desktop averages <b>"+dDesk.clicksPerView+" clicks per pageview</b> — 1.5× phone and 5× tablet — with the deepest scroll (58%) and fastest render (0.37s). Speed and reading are fine, so the extra clicks are frustration on a dead element, not engagement."},
+    {t:"The homepage breaks on first touch",tone:"bad",b:"Sessions that <b>start</b> on / carry friction <b>"+he.friction+"</b> — about 8× the page's calm mid-journey 0.14. The first impression is where the visit goes wrong, and "+int(he.sessions)+" sessions begin here."},
+    {t:"Localised entries underperform",tone:"bad",b:"<b>/no ("+noE.friction+")</b> and <b>/se ("+seE.friction+")</b> start visits at ~4× the friction of the /all-usp-norsk bridge (0.15). The Norwegian and Swedish routes — your core markets — are the worst first touches."},
+    {t:"Mobile paints far too slowly",tone:"neutral",b:"Phone renders in <b>"+(dPh.renderMs/1000).toFixed(1)+"s</b> and tablet in <b>"+(dTb.renderMs/1000).toFixed(1)+"s</b> against desktop's "+(dDesk.renderMs/1000).toFixed(2)+"s. With phone+tablet at ~"+Math.round((dPh.pageviews+dTb.pageviews)/(dDesk.pageviews+dPh.pageviews+dTb.pageviews)*100)+"% of pageviews, slow paint is hitting most of the audience."},
+    {t:"Tablet barely engages",tone:"bad",b:"Tablet scroll is just <b>20%</b> at "+(dTb.renderMs/1000).toFixed(1)+"s render and 0.37 clicks/view — effectively dead weight. Either fix the tablet layout or stop optimising for it and focus phone + desktop."},
+    {t:"Friction is climbing",tone:"neutral",b:"Friction per session rose from a low of <b>0.17</b> (week of 31 May) to <b>"+w.last.friction.toFixed(2)+"</b> in the latest week, up "+(((w.last.friction-w.prev.friction)/w.prev.friction)*100).toFixed(0)+"% week-over-week. Something shipped in mid-June is degrading the experience."},
+    {t:"Spain is the largest audience",tone:"neutral",b:"<b>"+int(spain)+" sessions</b> ("+Math.round(spain/totSess*100)+"%) come from Spain — ahead of Norway's "+int(norway)+". Confirm this is qualified (expat property owners) and that the funnel speaks to them, or it is inflating traffic without converting."},
+    {t:"Half the traffic is social",tone:"neutral",b:"Social drives <b>"+int(social)+" sessions</b> ("+Math.round(social/totSess*100)+"%), second only to direct. Volume rides on creative quality — the same fatigue you see in the Ads tab will show up here first."},
+    {t:"Engagement is shallow",tone:"neutral",b:"Average visit is ~"+dur(ux.totals.avgVisitMs)+" but engaged time is only ~"+dur(ux.totals.avgEngMs)+" — most of the visit is idle or away. Attention is thin; the first screen has to land fast."},
+    {t:"The experience holds when load is light",tone:"good",b:"The week of 24 May (<b>11,164 sessions</b>) ran at friction 0.28 — proof the site copes with scale when render and traffic mix are healthy. Replicate those conditions, don't fear volume."}
   ]);
   actionList("uxActions",[
-    {t:"Capture desktop replays on / and /no",b:"Filter Mouseflow recordings to Desktop + high friction on these two entries and watch 10–15. The "+dDesk.clicksPerView+" clicks/view points to one repeatable dead interaction.",imp:"Pinpoints the rage-click element"},
-    {t:"Set a mobile performance budget",b:"Target render under 1.5s on phone and tablet (currently "+(dPh.renderMs/1000).toFixed(1)+"s / "+(dTb.renderMs/1000).toFixed(1)+"s). Start with hero media weight and deferring third-party scripts.",imp:"Lifts mobile scroll past today's 20–37%"},
-    {t:"Audit the /no and /se locales",b:"Their entry friction ("+noE.friction+" / "+seE.friction+") is 4× the best bridge. Compare a localised replay to the EN path for layout shift or script errors.",imp:"Brings two paid markets toward 0.2"}
+    {t:"Watch desktop replays on / and /no",b:"Filter Mouseflow to Desktop + high friction on these two entries and watch 10–15. The "+dDesk.clicksPerView+" clicks/view points to one repeatable dead interaction.",imp:"Pinpoints the rage-click element"},
+    {t:"Set a mobile performance budget under 1.5s",b:"Phone "+(dPh.renderMs/1000).toFixed(1)+"s and tablet "+(dTb.renderMs/1000).toFixed(1)+"s vs desktop "+(dDesk.renderMs/1000).toFixed(2)+"s. Compress hero media, lazy-load below the fold, defer third-party tags.",imp:"Lifts mobile scroll past today's 20–37%"},
+    {t:"Treat the homepage as a landing page",b:"Entry friction "+he.friction+" means / fails as a first touch. Clarify one hero CTA, make every visible control respond, A/B a simplified above-the-fold.",imp:"Cuts the single biggest entry-friction source"},
+    {t:"Audit the /no and /se locales",b:"Entry friction "+noE.friction+" / "+seE.friction+" is 4× the best bridge. Compare a localised replay to the EN path for layout shift, broken translations or script errors.",imp:"Brings two core markets toward 0.2"},
+    {t:"Qualify the Spanish traffic",b:"Spain is "+Math.round(spain/totSess*100)+"% of sessions. Segment it in Mouseflow and check whether it scrolls, registers and converts — or trim the spend feeding it.",imp:"Stops vanity traffic hiding real conversion"}
   ]);
 }
 function bars(elId,rows){ const max=Math.max(...rows.map(r=>r.s),1);
@@ -467,6 +531,18 @@ function bars(elId,rows){ const max=Math.max(...rows.map(r=>r.s),1);
 function renderLanding(){
   const ux=DATA.ux;
   $("lpAsOf").textContent="Page experience from Mouseflow · as of "+ux.as_of;
+  const bridges=["/all-usp-norsk","/dd-en","/all-usp","/lifestyle-svenska"];
+  const bridgeS=(ux.entryPages||[]).filter(e=>bridges.indexOf(e.page)>=0).reduce((s,e)=>s+e.sessions,0);
+  const worstExit=ux.pages.slice().sort((a,b)=>b.exit-a.exit)[0]||{}, slowest=ux.pages.slice().sort((a,b)=>b.renderMs-a.renderMs)[0]||{};
+  const regP=ux.pages.find(x=>x.page.includes("register"))||{friction:0};
+  $("lpHeroTitle").textContent=int(bridgeS)+" paid clicks land on dead-end pages";
+  $("lpHeroLede").textContent="Four single-screen ad bridges take "+int(bridgeS)+" entries and lose 96–99% on arrival. The homepage and onboarding pages prove the experience can hold attention — the paid landing pages and the registration form are where it leaks.";
+  band("lpBand",[
+    {k:"Paid-bridge entries",v:int(bridgeS)},
+    {k:"Worst exit rate",v:worstExit.exit?worstExit.exit.toFixed(1)+"%":"—"},
+    {k:"Slowest render",v:slowest.renderMs?(slowest.renderMs/1000).toFixed(1)+"s":"—"},
+    {k:"Registration friction",v:regP.friction.toFixed(2)}
+  ]);
   const fpill=f=>f<0.2?'<span class="pill good">'+f.toFixed(2)+'</span>':f<0.35?'<span class="pill warn">'+f.toFixed(2)+'</span>':'<span class="pill bad">'+f.toFixed(2)+'</span>';
   const epill=e=>e<60?e.toFixed(1)+'%':'<span class="pill bad">'+e.toFixed(1)+'%</span>';
   const rpill=ms=>ms>1500?'<span class="pill warn">'+(ms/1000).toFixed(1)+'s</span>':(ms/1000).toFixed(ms<100?2:1)+'s';
@@ -498,10 +574,20 @@ function renderLanding(){
     {t:"/user/register-user",sev:"1,094 exits",tone:"watch",b:"Highest core-page friction (0.50) and a top exit, yet 90% scroll — intent is high, the form is the blocker.",fix:"Reduce fields to the minimum, inline-validate, and add reassurance ('2 minutes · no card needed · cancel anytime')."},
     {t:"/landing",sev:"mid-funnel",tone:"watch",b:"Ends 4,265 sessions despite ~1,573 entries — an internal hop where people stall.",fix:"Trace the inbound path in Mouseflow journeys; clarify the next step or remove the dead-end."}
   ]);
+  icards("lpInsights2",[
+    {t:"Scroll dies above the fold",tone:"bad",b:"The four ad bridges all sit under <b>23% scroll</b> — visitors never reach the offer or CTA because there's nothing below the first screen worth scrolling to."},
+    {t:"Render time predicts exit",tone:"neutral",b:"The three slowest pages (3.1–3.2s) are also among the highest-exit. Speed isn't a side issue here — it's the shared cause behind the worst landing pages."},
+    {t:"Content pages hold far better than bridges",tone:"good",b:"<b>/no</b> exits 59.7% versus 96–99% on the thin bridges. Localised content pages retain 2× better — point paid traffic at pages like /no, not one-screen bridges."},
+    {t:"Post-signup experience is strong",tone:"good",b:"<b>/onboarding</b> (73% scroll) and <b>/transactions</b> (80% scroll, 26% exit) engage deeply. The product UX works — the entire gap is pre-signup acquisition pages."},
+    {t:"Registration is high-intent but blocked",tone:"bad",b:"<b>/user/register-user</b> reaches 89.6% scroll yet carries 0.50 friction and ends 1,094 sessions. People want to sign up; the form is stopping them."},
+    {t:"/landing is an internal dead-end",tone:"neutral",b:"It ends <b>4,265 sessions</b> from only ~1,573 direct entries — visitors hop here mid-journey and stall. Trace the inbound path and fix the next step."}
+  ]);
   actionList("lpActions",[
-    {t:"Give every paid bridge a real fold",b:"The four high-exit pages take 30k+ paid entries. A headline + 3 benefits + one CTA above the fold is the minimum to convert a paid click.",imp:"Highest-leverage conversion fix on the site"},
-    {t:"Standardise landing-page render <1.5s",b:"Pages receiving ad clicks render at 1.8–3.2s. Slow paint on the exact pages you pay to reach directly inflates exit.",imp:"Lower exit on 30k+ paid sessions"},
-    {t:"Shorten and reassure the registration form",b:"/user/register-user shows high intent (90% scroll) but high friction (0.50) and 1,094 exits — a form problem, not a traffic one.",imp:"Recovers bottom-funnel revenue already paid for"}
+    {t:"Give every paid bridge a real fold",b:"The four high-exit pages take 30k+ paid entries. A headline that restates the ad promise + 3 benefits + one CTA above the fold is the minimum to convert a paid click.",imp:"Highest-leverage conversion fix on the site"},
+    {t:"Route ads to content pages, not thin bridges",b:"/no retains 2× better than the bridges. Send paid traffic to richer localised pages and measure exit against the 99% bridges.",imp:"Recovers a large share of 30k+ wasted sessions"},
+    {t:"Standardise landing render under 1.5s",b:"Ad-destination pages render at 1.8–3.2s. Compress hero assets, lazy-load, defer third-party tags on the exact pages you pay to reach.",imp:"Lower exit across paid pages"},
+    {t:"Shorten and reassure the registration form",b:"High intent (90% scroll) but 0.50 friction and 1,094 exits — a form problem, not traffic. Cut fields, inline-validate, add reassurance.",imp:"Recovers bottom-funnel revenue already paid for"},
+    {t:"Borrow from the homepage",b:"/ holds 54.7% scroll at sub-second render. Mirror its structure and speed on the bridges instead of designing them as standalone one-screen ads.",imp:"A proven in-house template to copy"}
   ]);
 }
 
@@ -509,17 +595,15 @@ function renderLanding(){
 function renderAds(){
   const ad=DATA.ads, c=ad.current, p=ad.previous;
   const ctr=c.impressions?c.clicks/c.impressions*100:0, ctrP=p.impressions?p.clicks/p.impressions*100:0;
-  const cards=[
-    ["Spend",money(c.spend),deltaHtml(c.spend,p.spend,false)],
-    ["Clicks",int(c.clicks),deltaHtml(c.clicks,p.clicks,false)],
-    ["CTR",pct(ctr),deltaHtml(ctr,ctrP,false)],
-    ["CPC",money2(c.cpc),deltaHtml(c.cpc,p.cpc,true)],
-    ["Leads",int(c.leads),deltaHtml(c.leads,p.leads,false)],
-    ["Cost / lead",c.costPerLead?money2(c.costPerLead):"—",deltaHtml(c.costPerLead||0,p.costPerLead||0,true)],
-    ["Registrations",int(c.registrations),deltaHtml(c.registrations,p.registrations,false)],
-    ["Reach",int(c.reach),""]
-  ];
-  $("adCards").innerHTML=cards.map(x=>'<div class="card"><div class="label">'+x[0]+'</div><div class="val">'+x[1]+'</div>'+(x[2]||"")+'</div>').join("");
+  $("adHeroTitle").textContent=int(c.leads)+" leads from "+money(c.spend);
+  $("adHeroLede").textContent="Lead generation is the efficient engine at "+money2(c.costPerLead||0)+" per lead. Registration ads cost multiples more, click cost is already low, and the latest weeks show CTR fatigue — the leak now is after the click, not the click itself.";
+  band("adBand",[
+    {k:"Spend",v:money(c.spend),d:exDelta(c.spend,p.spend,false)},
+    {k:"Leads",v:int(c.leads),d:exDelta(c.leads,p.leads,false)},
+    {k:"Cost / lead",v:c.costPerLead?money2(c.costPerLead):"—",d:exDelta(c.costPerLead||0,p.costPerLead||0,true)},
+    {k:"CTR",v:pct(ctr),d:exDelta(ctr,ctrP,false)}
+  ]);
+  substrip("adSub",[["Clicks",int(c.clicks)],["CPC",money2(c.cpc)],["Registrations",int(c.registrations)],["Reach",int(c.reach)],["Impressions",int(c.impressions)],["Frequency",(c.frequency||0).toFixed(1)]]);
 
   const s=ad.series, lab=s.map(d=>{const dt=new Date(d.date);return dt.toLocaleDateString("en-US",{month:"short",day:"numeric"});});
   destroy("adTrend"); charts.adTrend=new Chart($("adTrend"),{data:{labels:lab,datasets:[
@@ -528,7 +612,7 @@ function renderAds(){
   ]},options:{...baseOpts(),scales:{x:{grid:{display:false}},y:{position:"left",beginAtZero:true},y1:{position:"right",beginAtZero:true,grid:{drawOnChartArea:false},ticks:{callback:v=>v+"%"}}}}});
 
   destroy("adFunnel"); charts.adFunnel=new Chart($("adFunnel"),{type:"bar",data:{labels:ad.funnel.map(f=>f.stage),datasets:[
-    {label:"Count",data:ad.funnel.map(f=>f.value),backgroundColor:[C.navy,C.navy2,C.teal,C.teal2,C.yellow],borderRadius:5}
+    {label:"Count",data:ad.funnel.map(f=>f.value),backgroundColor:[C.navy,C.navy2,"#2D6E6C",C.teal,"#3E9C97"],borderRadius:5}
   ]},options:{...baseOpts(),indexAxis:"y",plugins:{legend:{display:false}}}});
 
   $("adCampaigns").innerHTML=ad.campaigns.map(c2=>'<tr><td><span class="objtag">'+(c2.goal||"")+'</span><br>'+esc(c2.name)+'</td><td>'+money(c2.spend)+'</td><td>'+pct(c2.ctr)+'</td><td>'+int(c2.result)+' '+c2.resultLabel+'</td><td>'+(c2.costPer?money2(c2.costPer):"—")+'</td></tr>').join("");
@@ -538,21 +622,33 @@ function renderAds(){
   const ads=ad.topAds.slice(), withCpr=ads.filter(a=>a.costPer);
   const best=withCpr.slice().sort((a,b)=>a.costPer-b.costPer)[0]||{}, worst=withCpr.slice().sort((a,b)=>b.costPer-a.costPer)[0]||{};
   const top=ad.campaigns[0]||{}, totC=ad.campaigns.reduce((s,x)=>s+x.spend,0)||1, share=top.spend?(top.spend/totC*100).toFixed(0):0;
-  lcards("adInsights",[
-    {t:"Leads vs registrations gap",sev:"Key",tone:"good",b:"Lead ads convert at <b>"+money2(c.costPerLead||0)+"/lead</b>; registration ads run far higher. The cheapest result is <b>"+esc(best.name||"—")+"</b> ("+(best.costPer?money2(best.costPer):"—")+"), the most expensive <b>"+esc(worst.name||"—")+"</b> ("+(worst.costPer?money2(worst.costPer):"—")+").",fix:"Move budget down the cost-per-result curve: scale "+esc(best.name||"the cheapest ad")+", trim "+esc(worst.name||"the priciest")+"."},
-    {t:"CTR fatigue, rising CPC",sev:"Watch",tone:"watch",b:"After a late-May spike, the latest weeks settled to ~1.7% CTR and the most expensive CPC of the quarter while reach kept growing — a frequency/creative-fatigue signature.",fix:"Refresh the top-spending creatives, cap frequency, and exclude recent converters from prospecting audiences."},
-    {t:"Budget concentration",sev:share>60?"Watch":"OK",tone:share>60?"watch":"neutral",b:"<b>"+share+"%</b> of spend sits in “"+esc(top.name||"—")+"”. One campaign's swing moves the whole account.",fix:share>60?"Diversify into a second proven angle so results don't hinge on one campaign.":"Spread is reasonable — keep monitoring."},
-    {t:"Landing page is the real lever now",sev:"Cross-cut",tone:"neutral",b:"Click cost is already efficient on lead ads; the leak is after the click — 96–99% exit on the bridges and a high-friction registration form.",fix:"Pair every scaled ad set with the matching landing-page fix in the Landing pages tab — media + page must improve together."}
+  const lc=c.linkClicks||c.clicks||0, c2r=lc&&c.registrations?(c.registrations/lc*100):0;
+  icards("adInsights",[
+    {t:"Lead generation is the efficient core",tone:"good",b:"Lead ads convert at <b>"+money2(c.costPerLead||0)+" per lead</b> — the two lead creatives are within NOK 0.07 of each other. This is the reliable, scalable engine of the account."},
+    {t:"Registration ads cost 4–27× more",tone:"bad",b:"The cheapest result is <b>"+esc(best.name||"—")+"</b> ("+(best.costPer?money2(best.costPer):"—")+"); the most expensive is <b>"+esc(worst.name||"—")+"</b> ("+(worst.costPer?money2(worst.costPer):"—")+"). The spread between ads is enormous and fixable."},
+    {t:"The funnel collapses after the click",tone:"bad",b:"~"+int(lc)+" link clicks produced just <b>"+int(c.registrations)+" registrations</b> ("+c2r.toFixed(1)+"%). Click cost is fine; the loss is on the landing page and form — a UX lever, not a media one."},
+    {t:"CTR fatigue, rising CPC",tone:"neutral",b:"After a late-May spike the latest weeks settled to ~1.7% CTR and the quarter's most expensive CPC while reach kept growing — the signature of creative fatigue and frequency build-up."},
+    {t:"Budget is concentrated in one campaign",tone:share>60?"bad":"neutral",b:"<b>"+share+"%</b> of spend sits in “"+esc(top.name||"—")+"”. "+(share>60?"One campaign's swing moves the whole account — risky.":"Spread is reasonable, but watch it.")},
+    {t:"Direct Debits is the standout creative",tone:"good",b:"The Direct Debits ad runs <b>~30% CTR at ~NOK 62/registration</b> — multiples better than the average registration ad. It's the template the others should copy."},
+    {t:"Two ads are draining budget",tone:"bad",b:"<b>Story – Customer service</b> (~NOK 557/reg) and <b>Cards</b> (~NOK 223/reg) sit 4–9× above the lead cost with little to show. They're the clearest cut."},
+    {t:"A late-May creative briefly went viral",tone:"neutral",b:"One week hit <b>11.3% CTR at NOK 0.66 CPC</b> — far above the norm. Pull that creative and audience apart; whatever worked is worth rebuilding deliberately."},
+    {t:"Reach grows while CTR falls",tone:"neutral",b:"Reach keeps climbing as CTR declines — the audience is saturating. Without fresh hooks or wider prospecting, CPC will keep rising."},
+    {t:"The landing page is the real lever now",tone:"neutral",b:"Media efficiency is largely solved on the lead side. The next gains are on the Landing pages tab — bridge exits and the registration form — not in the ad account."}
   ]);
   actionList("adActions",[
-    {t:"Scale the efficient lead engine",b:"Lead creatives convert near "+money2(c.costPerLead||0)+"; push budget there and into the Direct Debits creative (30% CTR, ~NOK 62/reg) while efficiency holds.",imp:"More volume at the lowest cost/result"},
-    {t:"Pause or rework the costly registration ads",b:"Story–Customer service (~NOK 557/reg) and Cards (~NOK 223/reg) sit 4–9× above the lead cost. Cut or rebuild them.",imp:"Frees spend for NOK 20–62 results"},
-    {t:"Refresh fatigued creative",b:"Rising CPC with growing reach = saturation. Rotate new hooks on the top spenders and cap frequency.",imp:"Reverses the CTR decline"}
+    {t:"Scale the lead engine and Direct Debits",b:"Push budget into the lead creatives ("+money2(c.costPerLead||0)+"/lead) and the Direct Debits ad (~30% CTR, ~NOK 62/reg) while efficiency holds.",imp:"More volume at the lowest cost per result"},
+    {t:"Pause the two budget-drainers",b:"Story – Customer service (~NOK 557/reg) and Cards (~NOK 223/reg) are 4–9× the lead cost. Cut or rebuild them this week.",imp:"Frees spend for NOK 20–62 results"},
+    {t:"Refresh fatigued creative & cap frequency",b:"Rising CPC with growing reach is saturation. Rotate new hooks on the top spenders and cap frequency on prospecting.",imp:"Reverses the CTR decline"},
+    {t:"Fix the click→registration drop",b:"Only "+c2r.toFixed(1)+"% of clicks register. Pair every scaled ad set with the matching landing-page and form fix — media and page must improve together.",imp:"Every +1pp ≈ "+int(lc/100)+" more registrations at no extra spend"},
+    {t:"Reverse-engineer the late-May winner",b:"Document the creative, hook and audience behind the 11.3% CTR week and rebuild it as a repeatable format.",imp:"A proven high-CTR pattern to scale"}
   ]);
 }
 
 function lcards(elId,arr){ $(elId).innerHTML=arr.map(i=>'<div class="lcard '+i.tone+'"><div class="lt">'+i.t+(i.sev?' <span class="sev">'+i.sev+'</span>':'')+'</div><p class="lb">'+i.b+'</p>'+(i.fix?'<div class="lfix"><b>Do:</b> '+i.fix+'</div>':'')+'</div>').join(""); }
 function actionList(elId,arr){ $(elId).innerHTML=arr.map((a,i)=>'<div class="act"><div class="n">'+(i+1)+'</div><div><div class="ac-t">'+a.t+'</div><p class="ac-b">'+a.b+'</p>'+(a.imp?'<span class="ac-imp">'+a.imp+'</span>':'')+'</div></div>').join(""); }
+function icards(elId,arr){ $(elId).innerHTML=arr.map(i=>'<div class="icard '+i.tone+'"><div class="ic-title">'+i.t+'</div><p class="ic-body">'+i.b+'</p></div>').join(""); }
+function band(elId,arr){ $(elId).innerHTML=arr.map(b=>'<div class="bn"><div class="k">'+b.k+'</div><div class="v">'+b.v+'</div>'+(b.d||"")+'</div>').join(""); }
+function substrip(elId,arr){ $(elId).innerHTML=arr.map(s=>'<div class="ss"><div class="k">'+s[0]+'</div><div class="v">'+s[1]+'</div></div>').join(""); }
 function esc(s){ return String(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
 function baseOpts(noLegend){ return { responsive:true, maintainAspectRatio:false,
   plugins:{ legend:{ display:!noLegend, labels:{ boxWidth:12, usePointStyle:true, pointStyle:"circle", color:"#010221", font:{family:"Jost"} } } },
@@ -569,7 +665,36 @@ $("apply").addEventListener("click",()=>{ const f=$("from").value,t=$("to").valu
   RANGE={since:f<=t?f:t,until:f<=t?t:f}; reload(); });
 $("pausedToggle").addEventListener("click",()=>{ INCL=!INCL; $("pausedToggle").classList.toggle("on",INCL); reload(); });
 
-(function(){ const saved=sessionStorage.getItem("bueno_pw"); if(saved){ $("pw").value=saved; unlock(); } })();
+// Sample dataset — used only for local preview (file://). Live deploy always uses /api/bueno-ux-data.
+const DEMO={ currency:"NOK", generated_at:new Date().toISOString(), range:{since:"2026-05-25",until:"2026-06-24"}, previousRange:{since:"2026-04-24",until:"2026-05-24"}, includePaused:false,
+  ux:{ as_of:"2026-06-24", window:{since:"2026-03-26",until:"2026-06-24"}, source:"snapshot",
+    totals:{sessions:55267,visitors:38580,pageviews:113717,avgVisitMs:181459,avgEngMs:46349,friction:0.4381,jsErrPerSession:0.00125},
+    wow:{last:{sessions:2274,visitors:1888,pageviews:5654,friction:0.7146,avgVisitMs:208543},prev:{sessions:2620,visitors:2161,pageviews:6770,friction:0.6531,avgVisitMs:205418}},
+    weekly:[{week:"2026-03-22",sessions:1582,visitors:1389,pageviews:3292,friction:0.477},{week:"2026-03-29",sessions:2851,visitors:2357,pageviews:6844,friction:0.521},{week:"2026-04-05",sessions:3008,visitors:2472,pageviews:7416,friction:0.544},{week:"2026-04-12",sessions:2640,visitors:2092,pageviews:7015,friction:0.647},{week:"2026-04-19",sessions:3100,visitors:2554,pageviews:7633,friction:0.626},{week:"2026-04-26",sessions:3259,visitors:2614,pageviews:7392,friction:0.532},{week:"2026-05-03",sessions:3672,visitors:2658,pageviews:8174,friction:0.516},{week:"2026-05-10",sessions:6747,visitors:4205,pageviews:12165,friction:0.323},{week:"2026-05-17",sessions:4315,visitors:3342,pageviews:8671,friction:0.437},{week:"2026-05-24",sessions:11164,visitors:8712,pageviews:18589,friction:0.277},{week:"2026-05-31",sessions:5929,visitors:5013,pageviews:8695,friction:0.170},{week:"2026-06-07",sessions:2898,visitors:2394,pageviews:7221,friction:0.691},{week:"2026-06-14",sessions:3000,visitors:2429,pageviews:7836,friction:0.696},{week:"2026-06-21",sessions:1102,visitors:932,pageviews:2774,friction:0.730}],
+    devices:[{name:"Phone",sessions:28672,friction:0.388},{name:"Tablet",sessions:13750,friction:0.174},{name:"Desktop",sessions:12817,friction:0.832}],
+    countries:[{name:"Spain",sessions:24251},{name:"Norway",sessions:19697},{name:"Sweden",sessions:5680},{name:"United States",sessions:1092},{name:"United Kingdom",sessions:867},{name:"Germany",sessions:464},{name:"France",sessions:463},{name:"Netherlands",sessions:311}],
+    referrers:[{name:"Direct",sessions:24663},{name:"Social",sessions:19282},{name:"Search",sessions:4438},{name:"Link / referral",sessions:3899},{name:"Internal",sessions:2978}],
+    pages:[{page:"/",pageviews:20239,scroll:54.7,exit:38.6,friction:0.144,renderMs:842},{page:"/all-usp-norsk",pageviews:16798,scroll:12.4,exit:98.9,friction:0.105,renderMs:2639},{page:"/landing",pageviews:11722,scroll:49.0,exit:57.3,friction:0.323,renderMs:2},{page:"/dd-en",pageviews:7775,scroll:12.9,exit:99.5,friction:0.141,renderMs:3116},{page:"/lifestyle-svenska",pageviews:6668,scroll:22.5,exit:96.3,friction:0.197,renderMs:1762},{page:"/all-usp",pageviews:6275,scroll:16.3,exit:97.2,friction:0.151,renderMs:3198},{page:"/no",pageviews:5593,scroll:20.8,exit:59.7,friction:0.209,renderMs:926},{page:"/onboarding",pageviews:3176,scroll:73.0,exit:51.1,friction:0.400,renderMs:2},{page:"/transactions",pageviews:2666,scroll:80.5,exit:25.8,friction:0.237,renderMs:2},{page:"/user/register-user",pageviews:2598,scroll:89.6,exit:52.5,friction:0.496,renderMs:1500},{page:"/home",pageviews:2542,scroll:70.5,exit:25.9,friction:0.213,renderMs:2},{page:"/spanish-lifestyle-norwegian",pageviews:1617,scroll:21.9,exit:97.4,friction:0.226,renderMs:1817}],
+    entryPages:[{page:"/all-usp-norsk",sessions:12506,friction:0.15},{page:"/",sessions:6063,friction:1.13},{page:"/dd-en",sessions:5946,friction:0.20},{page:"/lifestyle-svenska",sessions:5772,friction:0.25},{page:"/no",sessions:4759,friction:0.83},{page:"/all-usp",sessions:4691,friction:0.22},{page:"/landing",sessions:1573,friction:0.60},{page:"/spanish-lifestyle-norwegian",sessions:1498,friction:0.26},{page:"/property-nor",sessions:1073,friction:0.41},{page:"/se",sessions:753,friction:0.84}],
+    exitPages:[{page:"/all-usp-norsk",sessions:12452},{page:"/dd-en",sessions:5933},{page:"/lifestyle-svenska",sessions:5632},{page:"/all-usp",sessions:4609},{page:"/landing",sessions:4265},{page:"/",sessions:3705},{page:"/no",sessions:3027},{page:"/spanish-lifestyle-norwegian",sessions:1484},{page:"/user/register-user",sessions:1094},{page:"/property-nor",sessions:946}],
+    deviceExp:[{name:"Desktop",pageviews:47414,scroll:58.0,renderMs:368,friction:0.225,clicks:89570,clicksPerView:1.89},{name:"Phone",pageviews:46647,scroll:37.1,renderMs:1287,friction:0.239,clicks:60268,clicksPerView:1.29},{name:"Tablet",pageviews:19618,scroll:20.3,renderMs:2993,friction:0.122,clicks:7307,clicksPerView:0.37}] },
+  ads:{ current:{spend:48438,impressions:715401,reach:230807,frequency:3.1,clicks:30654,ctr:4.28,cpc:1.58,cpm:67.7,linkClicks:25600,lpViews:18300,leads:891,registrations:198,dashboard:1,costPerLead:20.57,costPerReg:242.1},
+    previous:{spend:50120,impressions:701200,reach:225000,clicks:28110,ctr:4.01,cpc:1.78,leads:842,registrations:181,costPerLead:22.10,costPerReg:255.0},
+    previousRange:{since:"2026-04-24",until:"2026-05-24"},
+    series:[{date:"2026-05-25",spend:1620,ctr:4.1},{date:"2026-05-27",spend:1710,ctr:3.8},{date:"2026-05-29",spend:1890,ctr:6.2},{date:"2026-05-31",spend:2010,ctr:9.4},{date:"2026-06-02",spend:1750,ctr:5.1},{date:"2026-06-04",spend:1580,ctr:3.0},{date:"2026-06-06",spend:1490,ctr:2.6},{date:"2026-06-08",spend:1620,ctr:2.4},{date:"2026-06-10",spend:1700,ctr:2.2},{date:"2026-06-12",spend:1650,ctr:2.0},{date:"2026-06-14",spend:1580,ctr:1.9},{date:"2026-06-16",spend:1520,ctr:1.8},{date:"2026-06-18",spend:1470,ctr:1.7},{date:"2026-06-20",spend:1440,ctr:1.66},{date:"2026-06-22",spend:1410,ctr:1.6},{date:"2026-06-24",spend:1380,ctr:1.6}],
+    campaigns:[{name:"Dashboard LP",goal:"Sales",spend:22713,ctr:7.70,result:0,resultLabel:"registrations",costPer:null},{name:"Leads",goal:"Leads",spend:18327,ctr:1.36,result:891,resultLabel:"leads",costPer:20.57},{name:"Registers LP",goal:"Sales",spend:7397,ctr:12.27,result:120,resultLabel:"registrations",costPer:61.6}],
+    topAds:[{name:"PDF – New",spend:10816,ctr:1.24,cpc:3.05,result:527,resultLabel:"leads",costPer:20.52},{name:"NO PDF – new branding",spend:7496,ctr:1.56,cpc:2.81,result:364,resultLabel:"leads",costPer:20.59},{name:"DD video – LP",spend:6128,ctr:9.59,cpc:0.74,result:69,resultLabel:"registrations",costPer:88.82},{name:"Mortgages – Copy",spend:5619,ctr:2.18,cpc:6.50,result:62,resultLabel:"registrations",costPer:90.62},{name:"USP: Direct Debits – New LP",spend:3988,ctr:30.37,cpc:0.63,result:64,resultLabel:"registrations",costPer:62.31},{name:"USP: Joint Account",spend:3807,ctr:2.01,cpc:6.46,result:19,resultLabel:"registrations",costPer:200.35},{name:"Cards",spend:3347,ctr:2.94,cpc:4.69,result:15,resultLabel:"registrations",costPer:223.13},{name:"Story – Customer service",spend:1671,ctr:9.66,cpc:1.57,result:3,resultLabel:"registrations",costPer:557.04},{name:"LP: UGC – Lifestyle",spend:1491,ctr:22.14,cpc:0.81,result:11,resultLabel:"registrations",costPer:135.58},{name:"DD New",spend:1150,ctr:2.22,cpc:5.21,result:13,resultLabel:"registrations",costPer:88.49}],
+    funnel:[{stage:"Impressions",value:715401},{stage:"Link clicks",value:25600},{stage:"Landing page views",value:18300},{stage:"Registrations",value:198},{stage:"Dashboard (final)",value:1}] } };
+
+(function(){
+  if(location.protocol==="file:"){ // local preview — sample data, no backend/password
+    RANGE=presetRange("30"); DATA=DEMO;
+    $("from").value=RANGE.since; $("to").value=RANGE.until;
+    $("gate").classList.add("hidden"); $("app").classList.remove("hidden"); showTab("exec");
+    return;
+  }
+  const saved=sessionStorage.getItem("bueno_pw"); if(saved){ $("pw").value=saved; unlock(); }
+})();
 </script>
 </body>
 </html>
