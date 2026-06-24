@@ -131,6 +131,39 @@
   .exec .ex-foot{ padding:22px 46px 30px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:16px; border-top:1px solid rgba(203,232,255,.12); font-size:11.5px; color:rgba(203,232,255,.5); }
   .exec .ex-wordmark{ font-family:var(--logo); font-size:24px; color:#fff; font-weight:600; letter-spacing:.03em; }
   .uxnote{ background:var(--paleblue); border-radius:10px; padding:9px 13px; font-size:12px; color:var(--navy); display:inline-block; margin-bottom:14px; }
+
+  /* light insight cards (UX / Landing / Ads tabs) */
+  .lcards{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-bottom:18px; }
+  @media(max-width:860px){ .lcards{ grid-template-columns:1fr; } }
+  .lcard{ position:relative; background:#fff; border:1px solid var(--bd); border-radius:13px; padding:16px 18px 16px 22px; box-shadow:var(--shadow); overflow:hidden; }
+  .lcard::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--navy2); }
+  .lcard.good::before{ background:var(--teal); } .lcard.bad::before{ background:var(--rust); } .lcard.watch::before{ background:var(--yellow); } .lcard.neutral::before{ background:var(--navy2); }
+  .lcard .lt{ font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--mut); font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px; }
+  .lcard .lt .sev{ font-size:9.5px; letter-spacing:.05em; padding:2px 7px; border-radius:999px; font-weight:700; }
+  .lcard.good .sev{ background:rgba(11,115,116,.12); color:var(--teal); } .lcard.bad .sev{ background:rgba(196,52,2,.12); color:var(--bad); } .lcard.watch .sev{ background:rgba(252,198,98,.3); color:var(--warn); } .lcard.neutral .sev{ background:rgba(41,42,73,.1); color:var(--navy2); }
+  .lcard .lb{ font-size:13.5px; line-height:1.6; color:var(--ink); margin:0; } .lcard .lb b{ font-weight:600; }
+  .lcard .lfix{ margin-top:9px; font-size:12.5px; color:var(--mut); line-height:1.55; } .lcard .lfix b{ color:var(--teal); font-weight:600; }
+
+  /* priority action list */
+  .actions{ display:flex; flex-direction:column; gap:0; }
+  .act{ display:grid; grid-template-columns:38px 1fr; gap:16px; padding:18px 0; border-bottom:1px solid rgba(203,232,255,.14); }
+  .act:last-child{ border-bottom:0; }
+  .act .n{ width:30px; height:30px; border-radius:50%; border:1px solid rgba(203,232,255,.4); display:flex; align-items:center; justify-content:center; font-size:14px; color:var(--paleblue); font-weight:500; }
+  .act .ac-t{ font-family:var(--sans); font-size:16px; font-weight:400; color:#fff; margin:0 0 5px; letter-spacing:.005em; }
+  .act .ac-b{ font-size:13.5px; line-height:1.6; color:rgba(242,240,234,.82); margin:0; } .act .ac-b b{ color:#fff; font-weight:500; }
+  .act .ac-imp{ display:inline-block; margin-top:8px; font-size:11px; letter-spacing:.04em; color:var(--teal2); background:rgba(0,191,175,.1); border:1px solid rgba(0,191,175,.22); padding:3px 10px; border-radius:999px; }
+  /* light action list (non-navy tabs) */
+  .acts-light .act{ border-bottom:1px solid #efece6; }
+  .acts-light .act .n{ border-color:var(--bd); color:var(--navy); }
+  .acts-light .act .ac-t{ color:var(--navy); } .acts-light .act .ac-b{ color:var(--ink); } .acts-light .act .ac-b b{ color:var(--navy); }
+  .acts-light .act .ac-imp{ color:var(--teal); background:rgba(11,115,116,.08); border-color:rgba(11,115,116,.2); }
+  .devgrid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; } @media(max-width:720px){ .devgrid{ grid-template-columns:1fr; } }
+  .devcard{ background:#fff; border:1px solid var(--bd); border-radius:13px; padding:16px; box-shadow:var(--shadow); }
+  .devcard .dh{ font-size:14px; font-weight:600; color:var(--navy); margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; }
+  .devcard .dh .dpv{ font-size:11px; color:var(--mut); font-weight:400; }
+  .devcard .drow{ display:flex; justify-content:space-between; font-size:12.5px; padding:5px 0; border-bottom:1px solid #f4f1eb; } .devcard .drow:last-child{ border-bottom:0; }
+  .devcard .drow .dk{ color:var(--mut); } .devcard .drow .dv{ font-weight:600; color:var(--ink); }
+  .devcard .drow .dv.flag{ color:var(--rust); }
 </style>
 </head>
 <body>
@@ -181,6 +214,10 @@
         <div class="ex-sechead">What the numbers are telling us</div>
         <div class="ex-grid" id="exInsights"></div>
       </div>
+      <div class="ex-insights" style="padding-top:8px">
+        <div class="ex-sechead">Priority actions — ranked by impact</div>
+        <div class="actions" id="exActions"></div>
+      </div>
       <div class="ex-foot"><span id="exFootSrc"></span><span class="ex-wordmark">BUENO</span></div>
     </div>
   </div>
@@ -198,6 +235,22 @@
       <div class="section"><h2>Top countries</h2><div class="ph">Sessions by visitor location</div><div id="uxCountries"></div></div>
     </div>
     <div class="section"><h2>Traffic sources</h2><div class="ph">How visitors arrive</div><div id="uxReferrers"></div></div>
+
+    <div class="section">
+      <h2>Device experience <span class="hint">where the friction really comes from</span></h2>
+      <div class="ph">Desktop users click far more per page (a rage/dead-click signal); mobile devices render much slower.</div>
+      <div class="devgrid" id="uxDeviceExp"></div>
+    </div>
+
+    <div class="section" style="padding:10px 14px 4px">
+      <h2 style="padding:8px 6px 0">Where journeys begin <span class="hint">entry pages &amp; the friction they start</span></h2>
+      <div class="ph" style="padding:0 6px">Friction is measured per session, so a high score here means the visit goes wrong from the first screen.</div>
+      <table><thead><tr><th>Entry page</th><th>Sessions started</th><th>Session friction</th><th>Read</th></tr></thead><tbody id="uxEntry"></tbody></table>
+    </div>
+
+    <div class="ex-sechead" style="color:var(--navy);letter-spacing:.18em;margin:26px 0 14px">UX actions to take</div>
+    <div class="lcards" id="uxInsights"></div>
+    <div class="section"><div class="actions acts-light" id="uxActions"></div></div>
   </div>
 
   <!-- LANDING PAGES -->
@@ -212,6 +265,15 @@
       <table><thead><tr><th>Ad</th><th>Spend</th><th>CTR</th><th>CPC</th><th>Result</th><th>Cost/res</th></tr></thead><tbody id="lpAds"></tbody></table>
     </div>
     <div class="exec" style="margin-top:0"><div class="ex-insights" style="padding:30px 36px 26px"><div class="ex-sechead">Landing-page read-outs</div><div class="ex-grid" id="lpInsights"></div></div></div>
+
+    <div class="section" style="padding:10px 14px 4px">
+      <h2 style="padding:8px 6px 0">Where sessions end <span class="hint">top exit pages — the leaks</span></h2>
+      <table><thead><tr><th>Exit page</th><th>Sessions ended here</th><th>Read</th></tr></thead><tbody id="lpExit"></tbody></table>
+    </div>
+
+    <div class="ex-sechead" style="color:var(--navy);letter-spacing:.18em;margin:26px 0 14px">Page-by-page fixes</div>
+    <div class="lcards" id="lpFixCards"></div>
+    <div class="section"><div class="actions acts-light" id="lpActions"></div></div>
   </div>
 
   <!-- ADS -->
@@ -223,6 +285,10 @@
       <div class="section"><h2>Campaigns</h2><div class="ph">Live, this period</div><div style="overflow:auto"><table><thead><tr><th>Campaign</th><th>Spend</th><th>CTR</th><th>Result</th><th>Cost/res</th></tr></thead><tbody id="adCampaigns"></tbody></table></div></div>
     </div>
     <div class="section" style="padding:10px 14px 4px"><h2 style="padding:8px 6px 0">Top ads <span class="hint">by spend</span></h2><table><thead><tr><th>Ad</th><th>Spend</th><th>CTR</th><th>CPC</th><th>Result</th><th>Cost/res</th></tr></thead><tbody id="adTopAds"></tbody></table></div>
+
+    <div class="ex-sechead" style="color:var(--navy);letter-spacing:.18em;margin:26px 0 14px">Ad &amp; budget actions</div>
+    <div class="lcards" id="adInsights"></div>
+    <div class="section"><div class="actions acts-light" id="adActions"></div></div>
   </div>
 </div>
 
@@ -303,13 +369,28 @@ function renderExec(){
   renderFunnel("exFunnel",ad.funnel);
 
   const phone=ux.devices.find(d=>d.name==="Phone")||{friction:1};
+  const dE=ux.deviceExp||[], dDesk=dE.find(d=>d.name==="Desktop")||{}, dPh=dE.find(d=>d.name==="Phone")||{}, dTb=dE.find(d=>d.name==="Tablet")||{};
+  const homeEntry=(ux.entryPages||[]).find(e=>e.page==="/")||{}, regExit=(ux.exitPages||[]).find(e=>e.page.indexOf("register")>=0)||{};
   const worstLP=ux.pages.filter(x=>x.exit>=95).sort((a,b)=>b.pageviews-a.pageviews)[0];
+  const bridgeSessions=(ux.entryPages||[]).filter(e=>["/all-usp-norsk","/dd-en","/all-usp","/lifestyle-svenska"].indexOf(e.page)>=0).reduce((s,e)=>s+e.sessions,0);
+  const mobShare=(dDesk.pageviews||dPh.pageviews)?Math.round((dPh.pageviews+dTb.pageviews)/(dDesk.pageviews+dPh.pageviews+dTb.pageviews)*100):0;
   const ins=[];
-  ins.push({t:"Lead engine",tone:"good",b:"The Leads campaign is the reliable engine — <b>"+int(c.leads)+" leads at "+money2(c.costPerLead||0)+"</b> each this window. Registration-objective ads cost multiples more, so leads carry the efficient volume."});
-  ins.push({t:"Desktop friction",tone:"bad",b:"Desktop sessions carry a friction score of <b>"+desk.friction+"</b> — about "+(desk.friction/(phone.friction||1)).toFixed(1)+"× phone. Smallest audience, most frustrated: prioritise desktop replays."});
-  if(worstLP) ins.push({t:"Landing-page leak",tone:"bad",b:"<b>"+worstLP.page+"</b> exits "+worstLP.exit.toFixed(0)+"% of visits with only "+worstLP.scroll.toFixed(0)+"% scroll — paid clicks bouncing on arrival. The biggest conversion-recovery lever."});
-  ins.push({t:"Friction trend",tone:"neutral",b:"Friction moved from "+w.prev.friction.toFixed(2)+" to <b>"+w.last.friction.toFixed(2)+"</b> week-over-week. Watch mid-June releases."});
+  ins.push({t:"Lead engine is the efficient core",tone:"good",b:"The Leads campaign produced <b>"+int(c.leads)+" leads at "+money2(c.costPerLead||0)+"</b> each this window — the two lead creatives (PDF–New, NO PDF) are within NOK 0.07 of each other. Registration ads cost 3–27× more, so leads carry the efficient volume."});
+  ins.push({t:"The homepage punishes first-time visitors",tone:"bad",b:"<b>"+int(homeEntry.sessions)+" sessions enter on / at session-friction "+homeEntry.friction+"</b> — roughly 8× the page's own 0.14 and 2.6× the site average. It's calm mid-journey but hostile as a first touch."});
+  ins.push({t:"Desktop shows rage-click behaviour",tone:"bad",b:"Desktop logs <b>"+dDesk.clicksPerView+" clicks per pageview</b> (phone "+dPh.clicksPerView+", tablet "+dTb.clicksPerView+") and the highest session friction (0.83). Two clicks per view typically means people hitting elements that don't respond."});
+  if(worstLP) ins.push({t:"Paid ad bridges leak almost everyone",tone:"bad",b:"<b>"+int(bridgeSessions)+" paid sessions</b> land on single-screen bridges like "+worstLP.page+" and exit "+worstLP.exit.toFixed(0)+"% with scroll under 23%. The clicks are paid for, then wasted."});
+  ins.push({t:"Mobile renders far too slowly",tone:"neutral",b:"Tablet paints in <b>"+(dTb.renderMs/1000).toFixed(1)+"s</b> and phone in <b>"+(dPh.renderMs/1000).toFixed(1)+"s</b> versus desktop's "+(dDesk.renderMs/1000).toFixed(2)+"s — and mobile is ~"+mobShare+"% of pageviews."});
+  ins.push({t:"Friction is trending the wrong way",tone:"neutral",b:"Friction per session moved from a low of 0.17 (week of 31 May) to <b>"+w.last.friction.toFixed(2)+"</b> in the latest week, up "+(((w.last.friction-w.prev.friction)/w.prev.friction)*100).toFixed(0)+"% week-over-week. Something shipped in mid-June is hurting the experience."});
   $("exInsights").innerHTML=ins.map(i=>'<div class="icard '+i.tone+'"><div class="ic-title">'+i.t+'</div><p class="ic-body">'+i.b+'</p></div>').join("");
+
+  actionList("exActions",[
+    {t:"Fix the homepage as a first touch",b:"<b>"+int(homeEntry.sessions)+" sessions</b> enter on <b>/</b> at session-friction <b>"+homeEntry.friction+"</b> (8× its mid-journey 0.14). Run Mouseflow replays + click-heatmaps on first-touch desktop sessions and find the unresponsive hero element.",imp:"Removes the single biggest entry-friction source"},
+    {t:"Rebuild the four single-screen ad bridges",b:"<b>"+int(bridgeSessions)+" paid entries</b> hit /all-usp-norsk, /dd-en, /all-usp and /lifestyle-svenska and exit 96–99% under 23% scroll. Give each a real above-the-fold value prop and one primary CTA instead of a dead screen.",imp:"~625 sessions recovered per 5pp exit drop on /all-usp-norsk"},
+    {t:"Investigate the desktop dead-click",b:"Desktop's <b>"+dDesk.clicksPerView+" clicks/pageview</b> and 0.83 session friction point to a specific broken interaction. Pull click-heatmaps on / and /no, find the element absorbing clicks, and make it respond.",imp:"Direct fix for the worst-friction device"},
+    {t:"Cut mobile render time below 1.5s",b:"Phone "+(dPh.renderMs/1000).toFixed(1)+"s and tablet "+(dTb.renderMs/1000).toFixed(1)+"s are far above desktop's "+(dDesk.renderMs/1000).toFixed(2)+"s, on ~"+mobShare+"% of traffic. Compress hero media, lazy-load below the fold, defer third-party scripts.",imp:"Faster paint lifts scroll depth and lowers bounce"},
+    {t:"De-risk the registration form",b:"<b>/user/register-user</b> ends <b>"+int(regExit.sessions)+" sessions</b> at the highest core-page friction (0.50) despite 90% scroll — people read it fully, then abandon at the form. Shorten fields, add a reassurance line ('takes 2 minutes, no card needed').",imp:"Protects conversions already paid for"},
+    {t:"Reallocate ad budget to what converts",b:"Scale <b>Leads</b> (NOK "+(c.costPerLead?c.costPerLead.toFixed(2):"20.57")+"/lead) and the Direct Debits creative (30% CTR, ~NOK 62/reg). Pause Story–Customer service (~NOK 557/reg) and Cards (~NOK 223/reg).",imp:"Shifts spend from NOK 200–557 to NOK 20–62 per result"}
+  ]);
   $("exFootSrc").textContent="Sources: Mouseflow (getbueno.com) · Meta Ads (Bueno, NOK) · generated "+new Date(DATA.generated_at).toLocaleDateString();
 }
 function renderFunnel(elId,funnel){
@@ -348,6 +429,36 @@ function renderUX(){
   bars("uxDevices",ux.devices.map(d=>({n:d.name,s:d.sessions,x:int(d.sessions)+' <small>· fr '+d.friction.toFixed(2)+'</small>'})));
   bars("uxCountries",ux.countries.map(d=>({n:d.name,s:d.sessions,x:int(d.sessions)})));
   bars("uxReferrers",ux.referrers.map(d=>({n:d.name,s:d.sessions,x:int(d.sessions)})));
+
+  // device experience cards
+  const dE=ux.deviceExp||[], totPv=dE.reduce((s,d)=>s+d.pageviews,0)||1;
+  $("uxDeviceExp").innerHTML=dE.map(d=>{
+    const share=(d.pageviews/totPv*100).toFixed(0);
+    const rcls=d.renderMs>1500?' flag':'', ccls=d.clicksPerView>1.5?' flag':'';
+    return '<div class="devcard"><div class="dh">'+d.name+'<span class="dpv">'+int(d.pageviews)+' views · '+share+'%</span></div>'+
+      '<div class="drow"><span class="dk">Avg scroll</span><span class="dv">'+d.scroll.toFixed(0)+'%</span></div>'+
+      '<div class="drow"><span class="dk">Render time</span><span class="dv'+rcls+'">'+(d.renderMs/1000).toFixed(d.renderMs<1000?2:1)+'s</span></div>'+
+      '<div class="drow"><span class="dk">Clicks / view</span><span class="dv'+ccls+'">'+d.clicksPerView.toFixed(2)+'</span></div>'+
+      '<div class="drow"><span class="dk">Page friction</span><span class="dv">'+d.friction.toFixed(2)+'</span></div></div>'; }).join("");
+
+  // entry page friction table
+  const efp=f=>f>=0.7?'<span class="pill bad">'+f.toFixed(2)+'</span>':f>=0.4?'<span class="pill warn">'+f.toFixed(2)+'</span>':'<span class="pill good">'+f.toFixed(2)+'</span>';
+  const eread=e=>e.friction>=0.7?'high-friction entry':e.friction>=0.4?'watch':'clean start';
+  $("uxEntry").innerHTML=(ux.entryPages||[]).map(e=>'<tr><td class="pg">'+e.page+'</td><td>'+int(e.sessions)+'</td><td>'+efp(e.friction)+'</td><td style="color:var(--mut)">'+eread(e)+'</td></tr>').join("");
+
+  const dDesk=dE.find(d=>d.name==="Desktop")||{}, dPh=dE.find(d=>d.name==="Phone")||{}, dTb=dE.find(d=>d.name==="Tablet")||{};
+  const he=(ux.entryPages||[]).find(e=>e.page==="/")||{}, noE=(ux.entryPages||[]).find(e=>e.page==="/no")||{}, seE=(ux.entryPages||[]).find(e=>e.page==="/se")||{};
+  lcards("uxInsights",[
+    {t:"Desktop dead-clicks",sev:"High",tone:"bad",b:"Desktop averages <b>"+dDesk.clicksPerView+" clicks per pageview</b> — 1.5× phone and 5× tablet — with the deepest scroll (58%) and fastest render (0.37s). Speed and reading are fine, so the extra clicks are frustration, not engagement.",fix:"Run click-heatmaps on / and /no; find the element absorbing clicks (likely a styled-but-dead button or a link that looks clickable) and wire it up."},
+    {t:"Homepage first-touch friction",sev:"High",tone:"bad",b:"Sessions that <b>start</b> on / carry friction <b>"+he.friction+"</b> vs the page's mid-journey 0.14. The first impression is where the journey breaks.",fix:"Treat / as a landing page: clarify the hero CTA, ensure every visible control responds, and A/B a simplified above-the-fold."},
+    {t:"Norwegian & Swedish entries struggle",sev:"Watch",tone:"watch",b:"<b>/no ("+noE.friction+")</b> and <b>/se ("+seE.friction+")</b> entries run ~4× the friction of the /all-usp-norsk bridge (0.15). Localised routes are starting visits badly.",fix:"Check locale rendering — broken translations, layout shift, or a region-specific script error. Compare a /no replay against /."},
+    {t:"Mobile is slow where it matters",sev:"Watch",tone:"watch",b:"Phone render <b>"+(dPh.renderMs/1000).toFixed(1)+"s</b> and tablet <b>"+(dTb.renderMs/1000).toFixed(1)+"s</b> against desktop "+(dDesk.renderMs/1000).toFixed(2)+"s. Tablet scroll is just 20% — people may be leaving before paint completes.",fix:"Compress/serve next-gen hero images, lazy-load below the fold, and defer analytics/3rd-party tags on mobile."}
+  ]);
+  actionList("uxActions",[
+    {t:"Capture desktop replays on / and /no",b:"Filter Mouseflow recordings to Desktop + high friction on these two entries and watch 10–15. The "+dDesk.clicksPerView+" clicks/view points to one repeatable dead interaction.",imp:"Pinpoints the rage-click element"},
+    {t:"Set a mobile performance budget",b:"Target render under 1.5s on phone and tablet (currently "+(dPh.renderMs/1000).toFixed(1)+"s / "+(dTb.renderMs/1000).toFixed(1)+"s). Start with hero media weight and deferring third-party scripts.",imp:"Lifts mobile scroll past today's 20–37%"},
+    {t:"Audit the /no and /se locales",b:"Their entry friction ("+noE.friction+" / "+seE.friction+") is 4× the best bridge. Compare a localised replay to the EN path for layout shift or script errors.",imp:"Brings two paid markets toward 0.2"}
+  ]);
 }
 function bars(elId,rows){ const max=Math.max(...rows.map(r=>r.s),1);
   $(elId).innerHTML=rows.map(r=>'<div class="barrow"><div class="nm">'+r.n+'</div><div class="track"><div class="fill" style="width:'+(r.s/max*100).toFixed(1)+'%"></div></div><div class="vv">'+r.x+'</div></div>').join(""); }
@@ -370,9 +481,28 @@ function renderLanding(){
   const ins=[];
   if(worst) ins.push({t:"Single-page exits",tone:"bad",b:"<b>"+worst.page+"</b> and peers (/dd-en, /all-usp, /lifestyle-svenska) exit 96–99% with scroll under 23% — paid landing pages losing clicks on arrival."});
   if(slow.length) ins.push({t:"Slow render",tone:"neutral",b:"<b>"+slow[0].page+"</b> renders in "+(slow[0].renderMs/1000).toFixed(1)+"s. Slow paint on ad-destination pages compounds the high exits."});
-  if(reg) ins.push({t:"Registration friction",tone:"neutral",b:"<b>/user/register-user</b> holds deep scroll ("+reg.scroll.toFixed(0)+"%) but the highest friction of core pages ("+reg.friction.toFixed(2)+"). Tighten the form to lift completion."});
-  ins.push({t:"Homepage benchmark",tone:"good",b:"<b>/</b> balances scroll (54.7%), a healthy 38.6% exit and the lowest friction (0.14) at sub-second render — the target to bring landing pages toward."});
+  if(reg) ins.push({t:"Registration friction",tone:"bad",b:"<b>/user/register-user</b> holds deep scroll ("+reg.scroll.toFixed(0)+"%) but the highest friction of core pages ("+reg.friction.toFixed(2)+") and is a top-10 exit. People read everything, then abandon at the form."});
+  ins.push({t:"/landing is a mid-funnel leak",tone:"neutral",b:"<b>/landing</b> takes only ~1,573 entries but ends <b>4,265 sessions</b> — visitors arrive from elsewhere and stall here. Its 57% exit and 0.32 friction are worth a closer look."});
+  ins.push({t:"Homepage benchmark",tone:"good",b:"<b>/</b> balances scroll (54.7%), a healthy 38.6% exit and the lowest friction of major pages (0.14) at sub-second render — the standard to bring landing pages toward."});
   $("lpInsights").innerHTML=ins.map(i=>'<div class="icard '+i.tone+'"><div class="ic-title">'+i.t+'</div><p class="ic-body">'+i.b+'</p></div>').join("");
+
+  // exit pages
+  const totS=ux.totals.sessions||1;
+  const xread=p=>p==="/user/register-user"?"form abandonment":p==="/landing"?"mid-funnel stall":(ux.pages.find(z=>z.page===p)||{}).exit>=95?"single-screen bounce":"natural / mixed";
+  $("lpExit").innerHTML=(ux.exitPages||[]).map(e=>'<tr><td class="pg">'+e.page+'</td><td>'+int(e.sessions)+' <span style="color:var(--mut)">· '+(e.sessions/totS*100).toFixed(1)+'%</span></td><td style="color:var(--mut)">'+xread(e.page)+'</td></tr>').join("");
+
+  // per-page fix cards
+  lcards("lpFixCards",[
+    {t:"/all-usp-norsk",sev:"12.5k entries",tone:"bad",b:"Biggest paid entry, <b>98.9% exit</b>, 12% scroll, 2.6s render. It's a one-screen bridge that burns the click.",fix:"Add a headline that restates the ad promise, 3 benefit bullets, and a single 'Open free account' CTA above the fold. Cut render to <1.5s."},
+    {t:"/dd-en & /all-usp",sev:"99% / 97% exit",tone:"bad",b:"Both render in <b>3.1–3.2s</b> with scroll under 17% — slow paint compounds an already thin page.",fix:"Compress hero assets and add a real value section; mirror the structure of the homepage which holds 55% scroll."},
+    {t:"/user/register-user",sev:"1,094 exits",tone:"watch",b:"Highest core-page friction (0.50) and a top exit, yet 90% scroll — intent is high, the form is the blocker.",fix:"Reduce fields to the minimum, inline-validate, and add reassurance ('2 minutes · no card needed · cancel anytime')."},
+    {t:"/landing",sev:"mid-funnel",tone:"watch",b:"Ends 4,265 sessions despite ~1,573 entries — an internal hop where people stall.",fix:"Trace the inbound path in Mouseflow journeys; clarify the next step or remove the dead-end."}
+  ]);
+  actionList("lpActions",[
+    {t:"Give every paid bridge a real fold",b:"The four high-exit pages take 30k+ paid entries. A headline + 3 benefits + one CTA above the fold is the minimum to convert a paid click.",imp:"Highest-leverage conversion fix on the site"},
+    {t:"Standardise landing-page render <1.5s",b:"Pages receiving ad clicks render at 1.8–3.2s. Slow paint on the exact pages you pay to reach directly inflates exit.",imp:"Lower exit on 30k+ paid sessions"},
+    {t:"Shorten and reassure the registration form",b:"/user/register-user shows high intent (90% scroll) but high friction (0.50) and 1,094 exits — a form problem, not a traffic one.",imp:"Recovers bottom-funnel revenue already paid for"}
+  ]);
 }
 
 /* ---------- ADS ---------- */
@@ -403,8 +533,26 @@ function renderAds(){
 
   $("adCampaigns").innerHTML=ad.campaigns.map(c2=>'<tr><td><span class="objtag">'+(c2.goal||"")+'</span><br>'+esc(c2.name)+'</td><td>'+money(c2.spend)+'</td><td>'+pct(c2.ctr)+'</td><td>'+int(c2.result)+' '+c2.resultLabel+'</td><td>'+(c2.costPer?money2(c2.costPer):"—")+'</td></tr>').join("");
   $("adTopAds").innerHTML=ad.topAds.map(a=>'<tr><td>'+esc(a.name)+'</td><td>'+money(a.spend)+'</td><td>'+(a.ctr>8?'<span class="pill good">'+pct(a.ctr)+'</span>':pct(a.ctr))+'</td><td>'+money2(a.cpc)+'</td><td>'+int(a.result)+' '+a.resultLabel+'</td><td>'+(a.costPer?money2(a.costPer):"—")+'</td></tr>').join("");
+
+  // ad insight cards + actions (derived from live results)
+  const ads=ad.topAds.slice(), withCpr=ads.filter(a=>a.costPer);
+  const best=withCpr.slice().sort((a,b)=>a.costPer-b.costPer)[0]||{}, worst=withCpr.slice().sort((a,b)=>b.costPer-a.costPer)[0]||{};
+  const top=ad.campaigns[0]||{}, totC=ad.campaigns.reduce((s,x)=>s+x.spend,0)||1, share=top.spend?(top.spend/totC*100).toFixed(0):0;
+  lcards("adInsights",[
+    {t:"Leads vs registrations gap",sev:"Key",tone:"good",b:"Lead ads convert at <b>"+money2(c.costPerLead||0)+"/lead</b>; registration ads run far higher. The cheapest result is <b>"+esc(best.name||"—")+"</b> ("+(best.costPer?money2(best.costPer):"—")+"), the most expensive <b>"+esc(worst.name||"—")+"</b> ("+(worst.costPer?money2(worst.costPer):"—")+").",fix:"Move budget down the cost-per-result curve: scale "+esc(best.name||"the cheapest ad")+", trim "+esc(worst.name||"the priciest")+"."},
+    {t:"CTR fatigue, rising CPC",sev:"Watch",tone:"watch",b:"After a late-May spike, the latest weeks settled to ~1.7% CTR and the most expensive CPC of the quarter while reach kept growing — a frequency/creative-fatigue signature.",fix:"Refresh the top-spending creatives, cap frequency, and exclude recent converters from prospecting audiences."},
+    {t:"Budget concentration",sev:share>60?"Watch":"OK",tone:share>60?"watch":"neutral",b:"<b>"+share+"%</b> of spend sits in “"+esc(top.name||"—")+"”. One campaign's swing moves the whole account.",fix:share>60?"Diversify into a second proven angle so results don't hinge on one campaign.":"Spread is reasonable — keep monitoring."},
+    {t:"Landing page is the real lever now",sev:"Cross-cut",tone:"neutral",b:"Click cost is already efficient on lead ads; the leak is after the click — 96–99% exit on the bridges and a high-friction registration form.",fix:"Pair every scaled ad set with the matching landing-page fix in the Landing pages tab — media + page must improve together."}
+  ]);
+  actionList("adActions",[
+    {t:"Scale the efficient lead engine",b:"Lead creatives convert near "+money2(c.costPerLead||0)+"; push budget there and into the Direct Debits creative (30% CTR, ~NOK 62/reg) while efficiency holds.",imp:"More volume at the lowest cost/result"},
+    {t:"Pause or rework the costly registration ads",b:"Story–Customer service (~NOK 557/reg) and Cards (~NOK 223/reg) sit 4–9× above the lead cost. Cut or rebuild them.",imp:"Frees spend for NOK 20–62 results"},
+    {t:"Refresh fatigued creative",b:"Rising CPC with growing reach = saturation. Rotate new hooks on the top spenders and cap frequency.",imp:"Reverses the CTR decline"}
+  ]);
 }
 
+function lcards(elId,arr){ $(elId).innerHTML=arr.map(i=>'<div class="lcard '+i.tone+'"><div class="lt">'+i.t+(i.sev?' <span class="sev">'+i.sev+'</span>':'')+'</div><p class="lb">'+i.b+'</p>'+(i.fix?'<div class="lfix"><b>Do:</b> '+i.fix+'</div>':'')+'</div>').join(""); }
+function actionList(elId,arr){ $(elId).innerHTML=arr.map((a,i)=>'<div class="act"><div class="n">'+(i+1)+'</div><div><div class="ac-t">'+a.t+'</div><p class="ac-b">'+a.b+'</p>'+(a.imp?'<span class="ac-imp">'+a.imp+'</span>':'')+'</div></div>').join(""); }
 function esc(s){ return String(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
 function baseOpts(noLegend){ return { responsive:true, maintainAspectRatio:false,
   plugins:{ legend:{ display:!noLegend, labels:{ boxWidth:12, usePointStyle:true, pointStyle:"circle", color:"#010221", font:{family:"Jost"} } } },

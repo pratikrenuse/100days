@@ -80,6 +80,33 @@ const UX_SNAPSHOT = {
     { page: "/user/register-user", pageviews: 2598, scroll: 89.6, exit: 52.5, friction: 0.496, renderMs: 1500 },
     { page: "/home", pageviews: 2542, scroll: 70.5, exit: 25.9, friction: 0.213, renderMs: 2 },
     { page: "/spanish-lifestyle-norwegian", pageviews: 1617, scroll: 21.9, exit: 97.4, friction: 0.226, renderMs: 1817 }
+  ],
+  // friction is per-SESSION here (accumulates across the visit) — entry pages that
+  // start high-friction journeys are the most urgent to fix.
+  entryPages: [
+    { page: "/all-usp-norsk", sessions: 12506, friction: 0.15 },
+    { page: "/", sessions: 6063, friction: 1.13 },
+    { page: "/dd-en", sessions: 5946, friction: 0.20 },
+    { page: "/lifestyle-svenska", sessions: 5772, friction: 0.25 },
+    { page: "/no", sessions: 4759, friction: 0.83 },
+    { page: "/all-usp", sessions: 4691, friction: 0.22 },
+    { page: "/landing", sessions: 1573, friction: 0.60 },
+    { page: "/spanish-lifestyle-norwegian", sessions: 1498, friction: 0.26 },
+    { page: "/property-nor", sessions: 1073, friction: 0.41 },
+    { page: "/se", sessions: 753, friction: 0.84 }
+  ],
+  exitPages: [
+    { page: "/all-usp-norsk", sessions: 12452 }, { page: "/dd-en", sessions: 5933 },
+    { page: "/lifestyle-svenska", sessions: 5632 }, { page: "/all-usp", sessions: 4609 },
+    { page: "/landing", sessions: 4265 }, { page: "/", sessions: 3705 },
+    { page: "/no", sessions: 3027 }, { page: "/spanish-lifestyle-norwegian", sessions: 1484 },
+    { page: "/user/register-user", sessions: 1094 }, { page: "/property-nor", sessions: 946 }
+  ],
+  // pageview-level experience by device (scroll %, render ms, clicks-per-view)
+  deviceExp: [
+    { name: "Desktop", pageviews: 47414, scroll: 58.0, renderMs: 368, friction: 0.225, clicks: 89570, clicksPerView: 1.89 },
+    { name: "Phone", pageviews: 46647, scroll: 37.1, renderMs: 1287, friction: 0.239, clicks: 60268, clicksPerView: 1.29 },
+    { name: "Tablet", pageviews: 19618, scroll: 20.3, renderMs: 2993, friction: 0.122, clicks: 7307, clicksPerView: 0.37 }
   ]
 };
 
