@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bueno · UX &amp; Growth Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+<style>
+  /* ---- Bueno identity tokens (per identity guidelines) ----
+     Core: navy #010221, secondary navy #292A49
+     Backgrounds: pale blue #CBE8FF, light grey #D9D9D9
+     Accents (restrained): teal #0B7374 / #00BFAF, rust #C43402, sage #BEBE9C, warm yellow #FCC662
+     Corporate font: FS Siena (sans). Logo wordmark: serif. */
+  :root{ color-scheme:light;
+    --navy:#010221; --navy2:#292A49; --paleblue:#CBE8FF; --lightgrey:#D9D9D9;
+    --teal:#0B7374; --teal2:#00BFAF; --rust:#C43402; --sage:#BEBE9C; --yellow:#FCC662;
+    --bg:#F1EFEA; --card:#FFFFFF; --ink:#010221; --mut:rgba(1,2,33,.62); --mut2:rgba(1,2,33,.45); --bd:rgba(1,2,33,.12);
+    --good:#0B7374; --bad:#C43402; --warn:#8a5a00;
+    --sans:'FS Siena','Jost','Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;
+    --logo:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+    --radius:14px; --shadow:0 1px 2px rgba(1,2,33,.04),0 8px 28px rgba(1,2,33,.07); }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); font-size:14px; line-height:1.5; }
+  .wrap{ max-width:1200px; margin:0 auto; padding:22px; }
+  a{ color:var(--teal); }
+
+  /* gate */
+  #gate{ max-width:380px; margin:13vh auto; background:var(--card); border:1px solid var(--bd); border-radius:18px; padding:32px 28px; text-align:center; box-shadow:var(--shadow); }
+  #gate .mk{ font-family:var(--logo); font-size:40px; font-weight:600; color:var(--navy); letter-spacing:.04em; line-height:1; }
+  #gate .pay{ font-size:9.5px; letter-spacing:.24em; text-transform:uppercase; color:var(--mut); margin-top:8px; }
+  #gate h1{ font-size:15px; margin:20px 0 4px; font-weight:500; letter-spacing:.01em; } #gate p{ color:var(--mut); font-size:13px; margin:0 0 18px; }
+  #gate input{ width:100%; padding:12px; border:1px solid var(--bd); border-radius:10px; font-size:14px; margin-bottom:10px; font-family:var(--sans); }
+  #gate button{ width:100%; padding:12px; border:0; border-radius:10px; background:var(--navy); color:#fff; font-weight:500; font-size:14px; letter-spacing:.02em; cursor:pointer; font-family:var(--sans); }
+  #gateErr{ color:var(--bad); font-size:12.5px; min-height:16px; margin-top:8px; }
+
+  #busy{ position:fixed; top:12px; right:16px; background:var(--navy); color:#fff; font-size:12px; padding:7px 13px; border-radius:999px; opacity:0; transition:.2s; z-index:99; } #busy.on{ opacity:.92; }
+  .hidden{ display:none !important; }
+
+  .head{ display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  h1.t{ font-family:var(--sans); font-size:23px; margin:0; font-weight:400; letter-spacing:.01em; color:var(--navy); }
+  .sub{ color:var(--mut); font-size:12.5px; margin-top:3px; }
+  .datebar{ display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin:16px 0 6px; }
+  .datebar button,.toggle{ border:1px solid var(--bd); background:#fff; color:var(--ink); padding:7px 12px; border-radius:9px; cursor:pointer; font-size:13px; font-weight:400; font-family:var(--sans); }
+  .datebar button.active{ background:var(--navy); border-color:var(--navy); color:#fff; }
+  .datebar input[type=date]{ border:1px solid var(--bd); border-radius:9px; padding:6px 9px; font-size:13px; font-family:var(--sans); } .datebar .sep{ color:var(--mut2); }
+  .toggle.on{ background:var(--paleblue); border-color:var(--navy2); color:var(--navy); }
+  .tabs{ display:flex; gap:2px; border-bottom:1px solid var(--bd); margin:16px 0 20px; flex-wrap:wrap; }
+  .tabs button{ border:0; background:none; padding:10px 16px; font-size:14px; font-weight:500; color:var(--mut); cursor:pointer; border-bottom:2px solid transparent; font-family:var(--sans); }
+  .tabs button.active{ color:var(--navy); border-bottom-color:var(--teal); }
+
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:13px; margin-bottom:18px; }
+  .card{ background:#fff; border:1px solid var(--bd); border-radius:13px; padding:14px 16px; box-shadow:var(--shadow); }
+  .card .label{ color:var(--mut); font-size:11px; text-transform:uppercase; letter-spacing:.06em; }
+  .card .val{ font-family:var(--sans); font-size:25px; font-weight:400; margin-top:5px; color:var(--navy); letter-spacing:.005em; }
+  .delta{ font-size:12px; font-weight:500; margin-top:4px; } .delta.up{ color:var(--good); } .delta.down{ color:var(--bad); } .delta.flat{ color:var(--mut); }
+  .section{ background:#fff; border:1px solid var(--bd); border-radius:14px; padding:18px 20px; margin-bottom:18px; box-shadow:var(--shadow); }
+  .section h2{ font-family:var(--sans); font-size:17px; margin:0 0 4px; font-weight:500; color:var(--navy); letter-spacing:.005em; } .section .hint{ color:var(--mut); font-size:12px; font-weight:400; }
+  .section .ph{ color:var(--mut); font-size:12.5px; margin:0 0 14px; }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  @media(max-width:860px){ .row2{ grid-template-columns:1fr; } }
+  .chartbox{ position:relative; height:270px; } .chartbox.sm{ height:230px; }
+
+  .barrow{ display:flex; align-items:center; gap:12px; margin:10px 0; font-size:13px; }
+  .barrow .nm{ width:120px; flex-shrink:0; color:var(--ink); font-weight:400; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .barrow .track{ flex:1; height:10px; background:#ECEAE4; border-radius:6px; overflow:hidden; }
+  .barrow .fill{ height:100%; border-radius:6px; background:linear-gradient(90deg,var(--navy2),var(--teal)); }
+  .barrow .vv{ width:96px; text-align:right; font-weight:500; font-size:12.5px; flex-shrink:0; } .barrow .vv small{ color:var(--mut); font-weight:400; }
+
+  table{ width:100%; border-collapse:collapse; font-size:13px; }
+  th,td{ text-align:right; padding:9px 10px; border-bottom:1px solid #efece6; white-space:nowrap; }
+  th:first-child,td:first-child{ text-align:left; }
+  th{ color:var(--mut); font-weight:500; font-size:11px; text-transform:uppercase; letter-spacing:.04em; }
+  tr:last-child td{ border-bottom:none; }
+  .pg{ font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--teal); }
+  .pill{ display:inline-block; padding:2px 8px; border-radius:7px; font-size:11px; font-weight:600; }
+  .pill.good{ background:rgba(11,115,116,.12); color:var(--teal); } .pill.warn{ background:rgba(252,198,98,.28); color:var(--warn); } .pill.bad{ background:rgba(196,52,2,.12); color:var(--bad); }
+  .objtag{ font-size:10px; color:var(--mut); font-weight:600; text-transform:uppercase; letter-spacing:.05em; }
+  .foot{ color:var(--mut); font-size:11.5px; margin-top:8px; }
+
+  /* ============ Bueno-branded Executive Brief ============ */
+  .exec{ background:var(--navy); color:#F2F0EA; border-radius:20px; overflow:hidden; margin-bottom:18px; box-shadow:0 20px 60px rgba(1,2,33,.30); }
+  .exec *{ box-sizing:border-box; }
+  .exec .ex-hero{ position:relative; padding:46px 46px 38px;
+    background:radial-gradient(circle at 84% 10%, rgba(203,232,255,.16), transparent 50%),
+               radial-gradient(circle at 6% 98%, rgba(11,115,116,.20), transparent 48%),
+               linear-gradient(160deg,#010221 0%,#0a0c22 50%,#292A49 100%); }
+  .exec .ex-kicker{ font-family:var(--sans); letter-spacing:.24em; text-transform:uppercase; font-size:11px; color:var(--paleblue); display:flex; align-items:center; gap:10px; margin-bottom:18px; font-weight:400; }
+  .exec .ex-kicker .bdot{ width:6px; height:6px; border-radius:50%; background:var(--teal2); display:inline-block; }
+  .exec h1.ex-title{ font-family:var(--sans); font-weight:300; font-size:clamp(28px,4.4vw,46px); line-height:1.08; margin:0 0 14px; letter-spacing:.01em; color:#fff; }
+  .exec .ex-lede{ font-family:var(--sans); font-weight:300; font-size:clamp(15px,1.7vw,18px); line-height:1.6; color:rgba(242,240,234,.82); max-width:790px; margin:0; }
+  .exec .ex-period{ margin-top:18px; font-size:12px; letter-spacing:.04em; color:rgba(203,232,255,.6); }
+  .exec .ex-bignums{ display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid rgba(203,232,255,.16); }
+  .exec .bn{ padding:24px 28px; border-right:1px solid rgba(203,232,255,.12); }
+  .exec .bn:last-child{ border-right:0; }
+  .exec .bn .k{ font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:rgba(203,232,255,.7); margin-bottom:8px; }
+  .exec .bn .v{ font-family:var(--sans); font-weight:300; font-size:clamp(24px,3.2vw,36px); line-height:1; color:#fff; }
+  .exec .bn .v .u{ font-size:.42em; color:var(--paleblue); margin-left:5px; font-weight:400; }
+  .exec .bn .d{ margin-top:9px; font-size:12px; font-weight:500; }
+  .exec .bn .d.up{ color:var(--teal2); } .exec .bn .d.down{ color:#ff9b7a; } .exec .bn .d.flat{ color:rgba(203,232,255,.55); }
+  @media(max-width:820px){ .exec .ex-bignums{ grid-template-columns:repeat(2,1fr); } .exec .bn:nth-child(2n){border-right:0;} .exec .ex-hero{ padding:32px 24px 28px; } }
+  .exec .ex-substrip{ display:grid; grid-template-columns:repeat(6,1fr); border-top:1px solid rgba(203,232,255,.12); }
+  .exec .ss{ padding:16px 18px; border-right:1px solid rgba(203,232,255,.1); }
+  .exec .ss:last-child{ border-right:0; }
+  .exec .ss .k{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:rgba(203,232,255,.6); margin-bottom:6px; }
+  .exec .ss .v{ font-family:var(--sans); font-size:20px; font-weight:300; color:#fff; }
+  @media(max-width:820px){ .exec .ex-substrip{ grid-template-columns:repeat(3,1fr); } .exec .ss:nth-child(3n){border-right:0;} }
+  @media(max-width:520px){ .exec .ex-substrip{ grid-template-columns:repeat(2,1fr); } .exec .ss:nth-child(odd){border-right:0;} }
+  .exec .ex-block{ padding:34px 46px 6px; } @media(max-width:820px){ .exec .ex-block{ padding:26px 24px 4px; } }
+  .exec .ex-sechead{ font-family:var(--sans); font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--paleblue); margin:0 0 20px; font-weight:400; }
+  .exec .ex-funnel{ display:flex; flex-direction:column; gap:10px; }
+  .exec .fn-row{ display:grid; grid-template-columns:180px 1fr; gap:16px; align-items:center; }
+  @media(max-width:560px){ .exec .fn-row{ grid-template-columns:1fr; gap:4px; } }
+  .exec .fn-label{ font-size:13px; color:rgba(242,240,234,.85); } .exec .fn-label .fn-rate{ color:var(--teal2); font-size:11.5px; margin-left:8px; }
+  .exec .fn-bar{ position:relative; height:34px; border-radius:8px; background:rgba(203,232,255,.08); overflow:hidden; }
+  .exec .fn-fill{ position:absolute; left:0; top:0; bottom:0; border-radius:8px; background:linear-gradient(90deg,var(--navy2),var(--teal)); display:flex; align-items:center; padding:0 12px; min-width:64px; }
+  .exec .fn-fill.gold{ background:linear-gradient(90deg,#caa24a,var(--yellow)); }
+  .exec .fn-val{ font-family:var(--sans); font-weight:500; font-size:14px; color:#fff; white-space:nowrap; }
+  .exec .ex-insights{ padding:38px 46px 14px; }
+  .exec .ex-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  @media(max-width:820px){ .exec .ex-grid{ grid-template-columns:1fr; } .exec .ex-insights{ padding:28px 24px 12px; } }
+  .exec .icard{ position:relative; border-radius:16px; padding:22px 24px 20px; background:linear-gradient(155deg,rgba(255,255,255,.06),rgba(255,255,255,.02)); border:1px solid rgba(203,232,255,.12); overflow:hidden; }
+  .exec .icard::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--paleblue); }
+  .exec .icard.good::before{ background:var(--teal2); } .exec .icard.bad::before{ background:var(--rust); } .exec .icard.neutral::before{ background:var(--paleblue); }
+  .exec .icard .ic-title{ font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:rgba(203,232,255,.72); font-weight:500; margin-bottom:5px; }
+  .exec .icard .ic-body{ font-family:var(--sans); font-weight:300; font-size:14.5px; line-height:1.62; color:rgba(242,240,234,.92); margin:0; }
+  .exec .icard .ic-body b{ color:#fff; font-weight:500; }
+  .exec .ex-foot{ padding:22px 46px 30px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:16px; border-top:1px solid rgba(203,232,255,.12); font-size:11.5px; color:rgba(203,232,255,.5); }
+  .exec .ex-wordmark{ font-family:var(--logo); font-size:24px; color:#fff; font-weight:600; letter-spacing:.03em; }
+  .uxnote{ background:var(--paleblue); border-radius:10px; padding:9px 13px; font-size:12px; color:var(--navy); display:inline-block; margin-bottom:14px; }
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="mk">BUENO</div>
+  <div class="pay">Property · Banking · Simplified</div>
+  <h1>UX &amp; Growth Dashboard</h1><p>Enter the password to view.</p>
+  <input id="pw" type="password" placeholder="Password" autocomplete="current-password">
+  <button id="go">Unlock dashboard</button><div id="gateErr"></div>
+</div>
+
+<div id="busy">Loading…</div>
+
+<div class="wrap hidden" id="app">
+  <div class="head"><div><h1 class="t">Bueno · UX &amp; Growth</h1><div class="sub" id="sub"></div></div></div>
+
+  <div class="datebar" id="datebar">
+    <button data-preset="7">7d</button><button data-preset="30" class="active">30d</button>
+    <button data-preset="90">90d</button><button data-preset="tm">This month</button><button data-preset="lm">Last month</button>
+    <span class="sep">|</span><input type="date" id="from"><span class="sep">→</span><input type="date" id="to"><button id="apply">Apply</button>
+    <span class="sep">|</span><span class="toggle" id="pausedToggle">Include paused</span>
+  </div>
+
+  <div class="tabs" id="tabs">
+    <button data-tab="exec" class="active">Executive brief</button>
+    <button data-tab="ux">UX behaviour</button>
+    <button data-tab="landing">Landing pages</button>
+    <button data-tab="ads">Ads</button>
+  </div>
+
+  <!-- EXECUTIVE BRIEF -->
+  <div id="tab-exec">
+    <div class="exec">
+      <div class="ex-hero">
+        <div class="ex-kicker"><span class="bdot"></span> Bueno · UX &amp; Growth Executive Brief</div>
+        <h1 class="ex-title" id="exTitle">Performance at a glance</h1>
+        <p class="ex-lede" id="exLede"></p>
+        <div class="ex-period" id="exPeriod"></div>
+      </div>
+      <div class="ex-bignums" id="exBigNums"></div>
+      <div class="ex-substrip" id="exSubStrip"></div>
+      <div class="ex-block">
+        <div class="ex-sechead">The acquisition funnel, end to end</div>
+        <div class="ex-funnel" id="exFunnel"></div>
+      </div>
+      <div class="ex-insights">
+        <div class="ex-sechead">What the numbers are telling us</div>
+        <div class="ex-grid" id="exInsights"></div>
+      </div>
+      <div class="ex-foot"><span id="exFootSrc"></span><span class="ex-wordmark">BUENO</span></div>
+    </div>
+  </div>
+
+  <!-- UX BEHAVIOUR -->
+  <div id="tab-ux" class="hidden">
+    <div class="uxnote" id="uxAsOf"></div>
+    <div class="cards" id="uxCards"></div>
+    <div class="row2">
+      <div class="section"><h2>Traffic &amp; engagement <span class="hint">weekly</span></h2><div class="ph">Sessions and pageviews per week (Mouseflow)</div><div class="chartbox"><canvas id="uxTraffic"></canvas></div></div>
+      <div class="section"><h2>Friction score per session <span class="hint">lower is better</span></h2><div class="ph">Spikes flag UX pain points</div><div class="chartbox"><canvas id="uxFriction"></canvas></div></div>
+    </div>
+    <div class="row2">
+      <div class="section"><h2>Sessions by device</h2><div class="ph">Friction score shown per device</div><div id="uxDevices"></div></div>
+      <div class="section"><h2>Top countries</h2><div class="ph">Sessions by visitor location</div><div id="uxCountries"></div></div>
+    </div>
+    <div class="section"><h2>Traffic sources</h2><div class="ph">How visitors arrive</div><div id="uxReferrers"></div></div>
+  </div>
+
+  <!-- LANDING PAGES -->
+  <div id="tab-landing" class="hidden">
+    <div class="uxnote" id="lpAsOf"></div>
+    <div class="section" style="padding:10px 14px 4px">
+      <h2 style="padding:8px 6px 0">Page experience <span class="hint">scroll depth, exit rate, friction &amp; render time</span></h2>
+      <table><thead><tr><th>Page</th><th>Pageviews</th><th>Scroll</th><th>Exit</th><th>Friction</th><th>Render</th></tr></thead><tbody id="lpPages"></tbody></table>
+    </div>
+    <div class="section" style="padding:10px 14px 4px">
+      <h2 style="padding:8px 6px 0">Paid landing-page ads <span class="hint">live · spend, CTR &amp; cost per result</span></h2>
+      <table><thead><tr><th>Ad</th><th>Spend</th><th>CTR</th><th>CPC</th><th>Result</th><th>Cost/res</th></tr></thead><tbody id="lpAds"></tbody></table>
+    </div>
+    <div class="exec" style="margin-top:0"><div class="ex-insights" style="padding:30px 36px 26px"><div class="ex-sechead">Landing-page read-outs</div><div class="ex-grid" id="lpInsights"></div></div></div>
+  </div>
+
+  <!-- ADS -->
+  <div id="tab-ads" class="hidden">
+    <div class="cards" id="adCards"></div>
+    <div class="section"><h2>Spend &amp; CTR <span class="hint">daily (Meta, live)</span></h2><div class="chartbox"><canvas id="adTrend"></canvas></div></div>
+    <div class="row2">
+      <div class="section"><h2>Conversion path</h2><div class="ph">Impressions → clicks → landing page → registration → dashboard</div><div class="chartbox sm"><canvas id="adFunnel"></canvas></div></div>
+      <div class="section"><h2>Campaigns</h2><div class="ph">Live, this period</div><div style="overflow:auto"><table><thead><tr><th>Campaign</th><th>Spend</th><th>CTR</th><th>Result</th><th>Cost/res</th></tr></thead><tbody id="adCampaigns"></tbody></table></div></div>
+    </div>
+    <div class="section" style="padding:10px 14px 4px"><h2 style="padding:8px 6px 0">Top ads <span class="hint">by spend</span></h2><table><thead><tr><th>Ad</th><th>Spend</th><th>CTR</th><th>CPC</th><th>Result</th><th>Cost/res</th></tr></thead><tbody id="adTopAds"></tbody></table></div>
+  </div>
+</div>
+
+<script>
+const CUR="NOK";
+let PW=null, DATA=null, TAB="exec", RANGE=null, INCL=false, charts={};
+const $=id=>document.getElementById(id);
+const money=n=>CUR+" "+Math.round(+n||0).toLocaleString("en-US");
+const money2=n=>CUR+" "+(+n||0).toLocaleString("en-US",{maximumFractionDigits:2});
+const int=n=>Math.round(+n||0).toLocaleString("en-US");
+const pct=n=>(+n||0).toFixed(2)+"%";
+const dur=ms=>{const s=Math.round((+ms||0)/1000);return Math.floor(s/60)+"m "+String(s%60).padStart(2,"0")+"s";};
+const isoDay=d=>d.toISOString().slice(0,10);
+function busy(on){ $("busy").classList.toggle("on",on); }
+function destroy(id){ if(charts[id]){ charts[id].destroy(); delete charts[id]; } }
+
+// brand palette for charts
+const C={navy:"#010221",navy2:"#292A49",pale:"#CBE8FF",teal:"#0B7374",teal2:"#00BFAF",rust:"#C43402",sage:"#BEBE9C",yellow:"#FCC662"};
+
+function presetRange(p){ const t=new Date(); t.setHours(12,0,0,0);
+  if(p==="tm")return {since:isoDay(new Date(t.getFullYear(),t.getMonth(),1)),until:isoDay(t)};
+  if(p==="lm")return {since:isoDay(new Date(t.getFullYear(),t.getMonth()-1,1)),until:isoDay(new Date(t.getFullYear(),t.getMonth(),0))};
+  const s=new Date(t); s.setDate(s.getDate()-(+p-1)); return {since:isoDay(s),until:isoDay(t)}; }
+
+async function api(){ busy(true);
+  try{ const r=await fetch("/api/bueno-ux-data",{ method:"POST", headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({ password:PW, since:RANGE.since, until:RANGE.until, includePaused:INCL }) });
+    if(r.status===401) throw new Error("401");
+    if(!r.ok){ const j=await r.json().catch(()=>({})); throw new Error(j.error||("HTTP "+r.status)); }
+    return await r.json(); } finally{ busy(false); } }
+
+async function unlock(){ PW=$("pw").value; RANGE=presetRange("30");
+  const err=$("gateErr"); err.textContent="Loading…";
+  try{ DATA=await api(); }catch(e){ err.textContent=e.message==="401"?"Wrong password.":e.message; return; }
+  sessionStorage.setItem("bueno_pw",PW);
+  $("gate").classList.add("hidden"); $("app").classList.remove("hidden");
+  $("from").value=RANGE.since; $("to").value=RANGE.until; showTab("exec"); }
+
+async function reload(){ try{ DATA=await api(); }catch(e){ alert(e.message); return; } render(); }
+function updateSub(){ $("sub").textContent="Bueno ("+CUR+") · "+DATA.range.since+" → "+DATA.range.until+" · ads vs "+DATA.previousRange.since+" → "+DATA.previousRange.until+(DATA.includePaused?" · incl. paused":"")+" · updated "+new Date(DATA.generated_at).toLocaleString(); }
+
+function deltaHtml(cur,prev,lowerBetter){
+  if(!prev && !cur) return '<div class="delta flat">no change</div>';
+  if(!prev) return '<div class="delta flat">—</div>';
+  const ch=(cur-prev)/Math.abs(prev)*100, up=ch>=0, good=lowerBetter?!up:up;
+  return '<div class="delta '+(Math.abs(ch)<0.05?"flat":(good?"up":"down"))+'">'+(up?"▲":"▼")+" "+Math.abs(ch).toFixed(1)+'% vs prev</div>'; }
+function exDelta(cur,prev,lowerBetter){
+  if(!prev) return '<div class="d flat">—</div>';
+  const ch=(cur-prev)/Math.abs(prev)*100, up=ch>=0, good=lowerBetter?!up:up;
+  return '<div class="d '+(Math.abs(ch)<0.05?"flat":(good?"up":"down"))+'">'+(up?"▲":"▼")+" "+Math.abs(ch).toFixed(1)+'%</div>'; }
+
+function showTab(t){ TAB=t;
+  document.querySelectorAll("#tabs button").forEach(b=>b.classList.toggle("active",b.dataset.tab===t));
+  ["exec","ux","landing","ads"].forEach(x=>$("tab-"+x).classList.toggle("hidden",x!==t));
+  render(); }
+function render(){ if(!DATA) return; updateSub();
+  ({exec:renderExec,ux:renderUX,landing:renderLanding,ads:renderAds}[TAB])(); }
+
+/* ---------- EXECUTIVE BRIEF ---------- */
+function renderExec(){
+  const ux=DATA.ux, ad=DATA.ads, c=ad.current, p=ad.previous, w=ux.wow;
+  const desk=ux.devices.find(d=>d.name==="Desktop")||{friction:0};
+  $("exTitle").textContent = int(c.leads)+" leads · "+int(ux.totals.sessions)+" sessions tracked";
+  $("exLede").textContent = "Over the selected window Bueno spent "+money(c.spend)+" on Meta, producing "+int(c.leads)+" leads (at "+money2(c.costPerLead||0)+" each) and "+int(c.registrations)+" registrations. Mouseflow tracked "+int(ux.totals.sessions)+" sessions on getbueno.com at a friction score of "+ux.totals.friction.toFixed(2)+" per session — desktop is the friction hotspot at "+desk.friction+".";
+  $("exPeriod").textContent = "Ads "+DATA.range.since+" → "+DATA.range.until+"  ·  UX snapshot as of "+ux.as_of+" (full window "+ux.window.since+" → "+ux.window.until+")";
+
+  const big=[
+    {k:"Sessions tracked",v:int(ux.totals.sessions),d:exDelta(w.last.sessions,w.prev.sessions,false)},
+    {k:"Friction / session",v:ux.totals.friction.toFixed(2),d:exDelta(w.last.friction,w.prev.friction,true)},
+    {k:"Ad spend",v:money(c.spend),d:exDelta(c.spend,p.spend,false)},
+    {k:"Cost / lead",v:c.costPerLead?money2(c.costPerLead):"—",d:exDelta(c.costPerLead||0,p.costPerLead||0,true)}
+  ];
+  $("exBigNums").innerHTML=big.map(b=>'<div class="bn"><div class="k">'+b.k+'</div><div class="v">'+b.v+'</div>'+b.d+'</div>').join("");
+
+  const ctr=c.impressions?c.clicks/c.impressions*100:0;
+  const sub=[["Visitors",int(ux.totals.visitors)],["Pageviews",int(ux.totals.pageviews)],["Avg visit",dur(ux.totals.avgVisitMs)],["Leads",int(c.leads)],["CTR",pct(ctr)],["Registrations",int(c.registrations)]];
+  $("exSubStrip").innerHTML=sub.map(s=>'<div class="ss"><div class="k">'+s[0]+'</div><div class="v">'+s[1]+'</div></div>').join("");
+  renderFunnel("exFunnel",ad.funnel);
+
+  const phone=ux.devices.find(d=>d.name==="Phone")||{friction:1};
+  const worstLP=ux.pages.filter(x=>x.exit>=95).sort((a,b)=>b.pageviews-a.pageviews)[0];
+  const ins=[];
+  ins.push({t:"Lead engine",tone:"good",b:"The Leads campaign is the reliable engine — <b>"+int(c.leads)+" leads at "+money2(c.costPerLead||0)+"</b> each this window. Registration-objective ads cost multiples more, so leads carry the efficient volume."});
+  ins.push({t:"Desktop friction",tone:"bad",b:"Desktop sessions carry a friction score of <b>"+desk.friction+"</b> — about "+(desk.friction/(phone.friction||1)).toFixed(1)+"× phone. Smallest audience, most frustrated: prioritise desktop replays."});
+  if(worstLP) ins.push({t:"Landing-page leak",tone:"bad",b:"<b>"+worstLP.page+"</b> exits "+worstLP.exit.toFixed(0)+"% of visits with only "+worstLP.scroll.toFixed(0)+"% scroll — paid clicks bouncing on arrival. The biggest conversion-recovery lever."});
+  ins.push({t:"Friction trend",tone:"neutral",b:"Friction moved from "+w.prev.friction.toFixed(2)+" to <b>"+w.last.friction.toFixed(2)+"</b> week-over-week. Watch mid-June releases."});
+  $("exInsights").innerHTML=ins.map(i=>'<div class="icard '+i.tone+'"><div class="ic-title">'+i.t+'</div><p class="ic-body">'+i.b+'</p></div>').join("");
+  $("exFootSrc").textContent="Sources: Mouseflow (getbueno.com) · Meta Ads (Bueno, NOK) · generated "+new Date(DATA.generated_at).toLocaleDateString();
+}
+function renderFunnel(elId,funnel){
+  const max=Math.max(...funnel.map(f=>f.value),1);
+  $(elId).innerHTML=funnel.map((f,i)=>{ const w=Math.max(f.value/max*100,5);
+    const rate=i>0&&funnel[i-1].value?(f.value/funnel[i-1].value*100).toFixed(1)+"% of prev":"";
+    const gold=i===funnel.length-1?" gold":"";
+    return '<div class="fn-row"><div class="fn-label">'+f.stage+(rate?'<span class="fn-rate">'+rate+'</span>':'')+'</div>'+
+      '<div class="fn-bar"><div class="fn-fill'+gold+'" style="width:'+w+'%"><span class="fn-val">'+int(f.value)+'</span></div></div></div>'; }).join("");
+}
+
+/* ---------- UX BEHAVIOUR ---------- */
+function renderUX(){
+  const ux=DATA.ux, w=ux.wow;
+  $("uxAsOf").textContent="Mouseflow behaviour data · as of "+ux.as_of+" · full window "+ux.window.since+" → "+ux.window.until+(ux.source==="snapshot"?"":" · live overlay on");
+  const t=ux.totals;
+  const cards=[
+    ["Sessions",int(t.sessions),deltaHtml(w.last.sessions,w.prev.sessions,false)],
+    ["Unique visitors",int(t.visitors),deltaHtml(w.last.visitors,w.prev.visitors,false)],
+    ["Pageviews",int(t.pageviews),deltaHtml(w.last.pageviews,w.prev.pageviews,false)],
+    ["Avg visit",dur(t.avgVisitMs),deltaHtml(w.last.avgVisitMs,w.prev.avgVisitMs,false)],
+    ["Friction / session",t.friction.toFixed(2),deltaHtml(w.last.friction,w.prev.friction,true)],
+    ["JS errors / session",(t.jsErrPerSession*100).toFixed(2)+"%",""]
+  ];
+  $("uxCards").innerHTML=cards.map(c=>'<div class="card"><div class="label">'+c[0]+'</div><div class="val">'+c[1]+'</div>'+(c[2]||"")+'</div>').join("");
+
+  const lab=ux.weekly.map(x=>{const d=new Date(x.week);return d.toLocaleDateString("en-US",{month:"short",day:"numeric"});});
+  destroy("uxTraffic"); charts.uxTraffic=new Chart($("uxTraffic"),{data:{labels:lab,datasets:[
+    {type:"bar",label:"Sessions",data:ux.weekly.map(x=>x.sessions),backgroundColor:C.navy2,borderRadius:5,order:2},
+    {type:"line",label:"Pageviews",data:ux.weekly.map(x=>x.pageviews),borderColor:C.teal,backgroundColor:C.teal,tension:.35,pointRadius:3,borderWidth:2,order:1}
+  ]},options:baseOpts()});
+  destroy("uxFriction"); charts.uxFriction=new Chart($("uxFriction"),{type:"line",data:{labels:lab,datasets:[
+    {label:"Friction / session",data:ux.weekly.map(x=>x.friction),borderColor:C.rust,backgroundColor:"rgba(196,52,2,.10)",fill:true,tension:.35,pointRadius:3,borderWidth:2}
+  ]},options:baseOpts(true)});
+
+  bars("uxDevices",ux.devices.map(d=>({n:d.name,s:d.sessions,x:int(d.sessions)+' <small>· fr '+d.friction.toFixed(2)+'</small>'})));
+  bars("uxCountries",ux.countries.map(d=>({n:d.name,s:d.sessions,x:int(d.sessions)})));
+  bars("uxReferrers",ux.referrers.map(d=>({n:d.name,s:d.sessions,x:int(d.sessions)})));
+}
+function bars(elId,rows){ const max=Math.max(...rows.map(r=>r.s),1);
+  $(elId).innerHTML=rows.map(r=>'<div class="barrow"><div class="nm">'+r.n+'</div><div class="track"><div class="fill" style="width:'+(r.s/max*100).toFixed(1)+'%"></div></div><div class="vv">'+r.x+'</div></div>').join(""); }
+
+/* ---------- LANDING PAGES ---------- */
+function renderLanding(){
+  const ux=DATA.ux;
+  $("lpAsOf").textContent="Page experience from Mouseflow · as of "+ux.as_of;
+  const fpill=f=>f<0.2?'<span class="pill good">'+f.toFixed(2)+'</span>':f<0.35?'<span class="pill warn">'+f.toFixed(2)+'</span>':'<span class="pill bad">'+f.toFixed(2)+'</span>';
+  const epill=e=>e<60?e.toFixed(1)+'%':'<span class="pill bad">'+e.toFixed(1)+'%</span>';
+  const rpill=ms=>ms>1500?'<span class="pill warn">'+(ms/1000).toFixed(1)+'s</span>':(ms/1000).toFixed(ms<100?2:1)+'s';
+  $("lpPages").innerHTML=ux.pages.map(p=>'<tr><td class="pg">'+p.page+'</td><td>'+int(p.pageviews)+'</td><td>'+p.scroll.toFixed(1)+'%</td><td>'+epill(p.exit)+'</td><td>'+fpill(p.friction)+'</td><td>'+rpill(p.renderMs)+'</td></tr>').join("");
+
+  const ads=DATA.ads.topAds;
+  $("lpAds").innerHTML=ads.map(a=>'<tr><td>'+esc(a.name)+'</td><td>'+money(a.spend)+'</td><td>'+(a.ctr>8?'<span class="pill good">'+pct(a.ctr)+'</span>':pct(a.ctr))+'</td><td>'+money2(a.cpc)+'</td><td>'+int(a.result)+' '+a.resultLabel+'</td><td>'+(a.costPer?money2(a.costPer):"—")+'</td></tr>').join("");
+
+  const worst=ux.pages.filter(x=>x.exit>=95).sort((a,b)=>b.pageviews-a.pageviews).slice(0,1)[0];
+  const slow=ux.pages.filter(x=>x.renderMs>=2000).sort((a,b)=>b.renderMs-a.renderMs);
+  const reg=ux.pages.find(x=>x.page.includes("register"));
+  const ins=[];
+  if(worst) ins.push({t:"Single-page exits",tone:"bad",b:"<b>"+worst.page+"</b> and peers (/dd-en, /all-usp, /lifestyle-svenska) exit 96–99% with scroll under 23% — paid landing pages losing clicks on arrival."});
+  if(slow.length) ins.push({t:"Slow render",tone:"neutral",b:"<b>"+slow[0].page+"</b> renders in "+(slow[0].renderMs/1000).toFixed(1)+"s. Slow paint on ad-destination pages compounds the high exits."});
+  if(reg) ins.push({t:"Registration friction",tone:"neutral",b:"<b>/user/register-user</b> holds deep scroll ("+reg.scroll.toFixed(0)+"%) but the highest friction of core pages ("+reg.friction.toFixed(2)+"). Tighten the form to lift completion."});
+  ins.push({t:"Homepage benchmark",tone:"good",b:"<b>/</b> balances scroll (54.7%), a healthy 38.6% exit and the lowest friction (0.14) at sub-second render — the target to bring landing pages toward."});
+  $("lpInsights").innerHTML=ins.map(i=>'<div class="icard '+i.tone+'"><div class="ic-title">'+i.t+'</div><p class="ic-body">'+i.b+'</p></div>').join("");
+}
+
+/* ---------- ADS ---------- */
+function renderAds(){
+  const ad=DATA.ads, c=ad.current, p=ad.previous;
+  const ctr=c.impressions?c.clicks/c.impressions*100:0, ctrP=p.impressions?p.clicks/p.impressions*100:0;
+  const cards=[
+    ["Spend",money(c.spend),deltaHtml(c.spend,p.spend,false)],
+    ["Clicks",int(c.clicks),deltaHtml(c.clicks,p.clicks,false)],
+    ["CTR",pct(ctr),deltaHtml(ctr,ctrP,false)],
+    ["CPC",money2(c.cpc),deltaHtml(c.cpc,p.cpc,true)],
+    ["Leads",int(c.leads),deltaHtml(c.leads,p.leads,false)],
+    ["Cost / lead",c.costPerLead?money2(c.costPerLead):"—",deltaHtml(c.costPerLead||0,p.costPerLead||0,true)],
+    ["Registrations",int(c.registrations),deltaHtml(c.registrations,p.registrations,false)],
+    ["Reach",int(c.reach),""]
+  ];
+  $("adCards").innerHTML=cards.map(x=>'<div class="card"><div class="label">'+x[0]+'</div><div class="val">'+x[1]+'</div>'+(x[2]||"")+'</div>').join("");
+
+  const s=ad.series, lab=s.map(d=>{const dt=new Date(d.date);return dt.toLocaleDateString("en-US",{month:"short",day:"numeric"});});
+  destroy("adTrend"); charts.adTrend=new Chart($("adTrend"),{data:{labels:lab,datasets:[
+    {type:"bar",label:"Spend (NOK)",data:s.map(d=>d.spend),backgroundColor:C.navy2,borderRadius:4,yAxisID:"y"},
+    {type:"line",label:"CTR %",data:s.map(d=>d.ctr),borderColor:C.teal,backgroundColor:C.teal,tension:.3,pointRadius:0,borderWidth:2,yAxisID:"y1"}
+  ]},options:{...baseOpts(),scales:{x:{grid:{display:false}},y:{position:"left",beginAtZero:true},y1:{position:"right",beginAtZero:true,grid:{drawOnChartArea:false},ticks:{callback:v=>v+"%"}}}}});
+
+  destroy("adFunnel"); charts.adFunnel=new Chart($("adFunnel"),{type:"bar",data:{labels:ad.funnel.map(f=>f.stage),datasets:[
+    {label:"Count",data:ad.funnel.map(f=>f.value),backgroundColor:[C.navy,C.navy2,C.teal,C.teal2,C.yellow],borderRadius:5}
+  ]},options:{...baseOpts(),indexAxis:"y",plugins:{legend:{display:false}}}});
+
+  $("adCampaigns").innerHTML=ad.campaigns.map(c2=>'<tr><td><span class="objtag">'+(c2.goal||"")+'</span><br>'+esc(c2.name)+'</td><td>'+money(c2.spend)+'</td><td>'+pct(c2.ctr)+'</td><td>'+int(c2.result)+' '+c2.resultLabel+'</td><td>'+(c2.costPer?money2(c2.costPer):"—")+'</td></tr>').join("");
+  $("adTopAds").innerHTML=ad.topAds.map(a=>'<tr><td>'+esc(a.name)+'</td><td>'+money(a.spend)+'</td><td>'+(a.ctr>8?'<span class="pill good">'+pct(a.ctr)+'</span>':pct(a.ctr))+'</td><td>'+money2(a.cpc)+'</td><td>'+int(a.result)+' '+a.resultLabel+'</td><td>'+(a.costPer?money2(a.costPer):"—")+'</td></tr>').join("");
+}
+
+function esc(s){ return String(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+function baseOpts(noLegend){ return { responsive:true, maintainAspectRatio:false,
+  plugins:{ legend:{ display:!noLegend, labels:{ boxWidth:12, usePointStyle:true, pointStyle:"circle", color:"#010221", font:{family:"Jost"} } } },
+  scales:{ x:{ grid:{ display:false }, ticks:{ color:"rgba(1,2,33,.6)" } }, y:{ beginAtZero:true, grid:{ color:"rgba(1,2,33,.07)" }, ticks:{ color:"rgba(1,2,33,.6)" } } } }; }
+
+$("go").addEventListener("click",unlock);
+$("pw").addEventListener("keydown",e=>{ if(e.key==="Enter") unlock(); });
+document.querySelectorAll("#tabs button").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tab)));
+document.querySelectorAll("#datebar [data-preset]").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#datebar [data-preset]").forEach(x=>x.classList.remove("active")); b.classList.add("active");
+  RANGE=presetRange(b.dataset.preset); $("from").value=RANGE.since; $("to").value=RANGE.until; reload(); }));
+$("apply").addEventListener("click",()=>{ const f=$("from").value,t=$("to").value; if(!f||!t)return;
+  document.querySelectorAll("#datebar [data-preset]").forEach(x=>x.classList.remove("active"));
+  RANGE={since:f<=t?f:t,until:f<=t?t:f}; reload(); });
+$("pausedToggle").addEventListener("click",()=>{ INCL=!INCL; $("pausedToggle").classList.toggle("on",INCL); reload(); });
+
+(function(){ const saved=sessionStorage.getItem("bueno_pw"); if(saved){ $("pw").value=saved; unlock(); } })();
+</script>
+</body>
+</html>
