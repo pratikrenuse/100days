@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Roast My Landing Page — get brutally, usefully torn apart</title>
+<meta name="description" content="Paste your landing page. Get a savage, specific, actually-useful teardown in 30 seconds. Scored 1–10 with named burns and exact fixes." />
+<meta property="og:title" content="Roast My Landing Page" />
+<meta property="og:description" content="Paste your URL. Get brutally roasted with fixes you can actually ship." />
+<meta property="og:type" content="website" />
+<style>
+  :root {
+    --bg: #0e0d11;
+    --panel: #17151b;
+    --panel-2: #1f1c24;
+    --ink: #f5f2ef;
+    --muted: #a29aa9;
+    --fire: #ff5a1f;
+    --fire-2: #ffab00;
+    --line: #2a2730;
+    --good: #35c88a;
+    --bad: #ff4d61;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: radial-gradient(1200px 600px at 50% -10%, #241016 0%, var(--bg) 55%);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 4rem 1.25rem 6rem; }
+  .kicker { color: var(--fire-2); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: .78rem; }
+  h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.05; margin: .6rem 0 .8rem; font-weight: 800; letter-spacing: -0.02em; }
+  h1 .flame { background: linear-gradient(100deg, var(--fire), var(--fire-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { color: var(--muted); font-size: 1.12rem; max-width: 34rem; }
+
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 1.6rem; margin-top: 2rem; }
+
+  form { display: flex; gap: .6rem; flex-wrap: wrap; }
+  input[type=url] {
+    flex: 1 1 320px; min-width: 0;
+    background: var(--panel-2); border: 1px solid var(--line); color: var(--ink);
+    padding: 1rem 1.1rem; border-radius: 12px; font-size: 1.05rem;
+  }
+  input[type=url]::placeholder { color: #6f6878; }
+  input[type=url]:focus { outline: none; border-color: var(--fire); }
+  button.primary {
+    background: linear-gradient(100deg, var(--fire), var(--fire-2));
+    color: #1a0d05; border: 0; font-weight: 800; font-size: 1.05rem;
+    padding: 1rem 1.6rem; border-radius: 12px; cursor: pointer; white-space: nowrap;
+  }
+  button.primary:disabled { opacity: .6; cursor: not-allowed; }
+  .hint { color: var(--muted); font-size: .85rem; margin-top: .7rem; }
+
+  /* loading */
+  .loading { display: none; margin-top: 2rem; text-align: center; color: var(--muted); }
+  .loading.show { display: block; }
+  .flames { font-size: 2.4rem; animation: flicker 1s infinite alternate; }
+  @keyframes flicker { from { opacity: .5; transform: scale(.96); } to { opacity: 1; transform: scale(1.04); } }
+  .loading .step { margin-top: .6rem; font-size: .95rem; }
+
+  /* results */
+  .results { display: none; margin-top: 2rem; }
+  .results.show { display: block; }
+  .scorewrap { display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+  .bigscore { font-size: 3.4rem; font-weight: 800; line-height: 1; }
+  .bigscore small { font-size: 1.2rem; color: var(--muted); font-weight: 600; }
+  .verdict { color: var(--ink); font-size: 1.1rem; margin: 0; }
+  .headline { font-size: 1.35rem; font-weight: 800; margin: 1.2rem 0 0; color: var(--fire-2); }
+
+  .section { border-top: 1px solid var(--line); padding: 1.3rem 0; }
+  .section:first-of-type { border-top: 0; }
+  .srow { display: flex; align-items: baseline; gap: .7rem; }
+  .sname { font-weight: 800; font-size: 1.1rem; }
+  .sscore { margin-left: auto; font-weight: 800; font-size: 1.1rem; }
+  .burn { margin: .5rem 0 .7rem; font-size: 1.05rem; }
+  .fix { background: var(--panel-2); border-left: 3px solid var(--good); padding: .7rem .9rem; border-radius: 8px; color: var(--muted); font-size: .96rem; }
+  .fix b { color: var(--good); }
+
+  .locked { position: relative; }
+  .locked .section.blur { filter: blur(6px); pointer-events: none; user-select: none; }
+  .gate { text-align: center; padding: 1.6rem; }
+  .gate h3 { margin: .2rem 0 .4rem; font-size: 1.25rem; }
+  .gate p { color: var(--muted); margin: 0 0 1rem; }
+  .gate form { justify-content: center; }
+
+  .share { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1.6rem; }
+  button.ghost { background: var(--panel-2); color: var(--ink); border: 1px solid var(--line); font-weight: 700; padding: .85rem 1.2rem; border-radius: 12px; cursor: pointer; font-size: .98rem; }
+  button.ghost:hover { border-color: var(--fire); }
+
+  .err { display:none; margin-top: 1rem; color: var(--bad); font-weight: 600; }
+  .err.show { display:block; }
+
+  canvas { display: none; }
+  .cardprev { margin-top: 1.2rem; border-radius: 12px; max-width: 100%; border: 1px solid var(--line); }
+
+  footer { text-align: center; color: #5f5867; font-size: .82rem; margin-top: 3rem; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">🔥 Roast My Landing Page</div>
+  <h1>Your landing page is <span class="flame">probably lying to you.</span></h1>
+  <p class="sub">Paste your URL. In 30 seconds you get a scored, specific, screenshot-worthy teardown — with the exact fixes to ship next.</p>
+
+  <div class="card">
+    <form id="roastForm">
+      <input id="urlInput" type="url" placeholder="yoursite.com" autocomplete="off" required />
+      <button class="primary" type="submit" id="roastBtn">Roast my page 🔥</button>
+    </form>
+    <div class="hint">Free scan. We browse the live page and score your hero, CTA, proof, and pricing.</div>
+    <div class="err" id="errBox"></div>
+  </div>
+
+  <div class="loading" id="loading">
+    <div class="flames">🔥</div>
+    <div class="step" id="loadStep">Loading your page…</div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="card">
+      <div class="scorewrap">
+        <div class="bigscore" id="bigScore">–<small>/10</small></div>
+        <div>
+          <p class="verdict" id="verdict"></p>
+        </div>
+      </div>
+      <p class="headline" id="headline"></p>
+    </div>
+
+    <div class="card" id="sectionsCard"></div>
+
+    <div class="share">
+      <button class="ghost" id="dlCard">⬇️ Download share card</button>
+      <button class="ghost" id="tweetBtn">𝕏 Post the score</button>
+      <button class="ghost" id="againBtn">↺ Roast another</button>
+    </div>
+    <img class="cardprev" id="cardPrev" alt="Your roast share card" style="display:none" />
+  </div>
+
+  <footer>
+    Built with <a href="https://github.com/pratikrenuse/100days" target="_blank" rel="noopener">Hermes</a> · the brain that browses & burns.
+  </footer>
+</div>
+
+<canvas id="shareCanvas" width="1200" height="630"></canvas>
+
+<script>
+const form = document.getElementById('roastForm');
+const urlInput = document.getElementById('urlInput');
+const btn = document.getElementById('roastBtn');
+const loading = document.getElementById('loading');
+const loadStep = document.getElementById('loadStep');
+const results = document.getElementById('results');
+const errBox = document.getElementById('errBox');
+const bigScore = document.getElementById('bigScore');
+const verdict = document.getElementById('verdict');
+const headline = document.getElementById('headline');
+const sectionsCard = document.getElementById('sectionsCard');
+const cardPrev = document.getElementById('cardPrev');
+
+let lastRoast = null;
+
+const steps = [
+  "Loading your page…",
+  "Reading your hero line… oh no.",
+  "Inspecting that CTA button…",
+  "Looking for actual social proof…",
+  "Checking if your pricing makes sense…",
+  "Sharpening the knife…"
+];
+let stepTimer = null;
+
+function showErr(msg) {
+  errBox.textContent = msg;
+  errBox.classList.add('show');
+}
+function clearErr() { errBox.classList.remove('show'); errBox.textContent = ''; }
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  clearErr();
+  results.classList.remove('show');
+  const url = urlInput.value.trim();
+  if (!url) return;
+
+  btn.disabled = true;
+  loading.classList.add('show');
+  let i = 0;
+  loadStep.textContent = steps[0];
+  stepTimer = setInterval(() => { i = (i + 1) % steps.length; loadStep.textContent = steps[i]; }, 3500);
+
+  try {
+    const res = await fetch('/api/roast', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url })
+    });
+    const data = await res.json();
+    if (!res.ok || data.error) {
+      showErr(data.error || 'Something went wrong. Try again.');
+      return;
+    }
+    lastRoast = data;
+    renderRoast(data);
+  } catch (err) {
+    showErr('The roast engine timed out. Big pages take a moment — try again.');
+  } finally {
+    clearInterval(stepTimer);
+    loading.classList.remove('show');
+    btn.disabled = false;
+  }
+});
+
+function scoreColor(s) {
+  if (s >= 8) return 'var(--good)';
+  if (s >= 5) return 'var(--fire-2)';
+  return 'var(--bad)';
+}
+
+function renderRoast(d) {
+  bigScore.innerHTML = `${d.overall_score}<small>/10</small>`;
+  bigScore.style.color = scoreColor(d.overall_score);
+  verdict.textContent = d.verdict || '';
+  headline.textContent = '“' + (d.headline_burn || '') + '”';
+
+  // Core loop: show all sections (email gate comes in v2)
+  sectionsCard.innerHTML = '';
+  (d.sections || []).forEach(sec => {
+    const div = document.createElement('div');
+    div.className = 'section';
+    div.innerHTML = `
+      <div class="srow">
+        <span class="sname">${escapeHtml(sec.name)}</span>
+        <span class="sscore" style="color:${scoreColor(sec.score)}">${sec.score}/10</span>
+      </div>
+      <p class="burn">${escapeHtml(sec.burn)}</p>
+      <div class="fix"><b>Fix:</b> ${escapeHtml(sec.fix)}</div>
+    `;
+    sectionsCard.appendChild(div);
+  });
+
+  results.classList.add('show');
+  results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  drawShareCard(d);
+}
+
+function escapeHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// ---- Share card (canvas) ----
+function drawShareCard(d) {
+  const c = document.getElementById('shareCanvas');
+  const ctx = c.getContext('2d');
+  const W = 1200, H = 630;
+
+  // bg
+  const g = ctx.createLinearGradient(0, 0, W, H);
+  g.addColorStop(0, '#1a0c10');
+  g.addColorStop(1, '#0e0d11');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, W, H);
+
+  // top label
+  ctx.fillStyle = '#ffab00';
+  ctx.font = '700 30px -apple-system, Segoe UI, Roboto, sans-serif';
+  ctx.fillText('🔥 ROAST MY LANDING PAGE', 70, 90);
+
+  // score circle
+  const cx = 1000, cy = 150, r = 70;
+  ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2);
+  ctx.fillStyle = '#17151b'; ctx.fill();
+  ctx.lineWidth = 8;
+  ctx.strokeStyle = d.overall_score >= 8 ? '#35c88a' : d.overall_score >= 5 ? '#ffab00' : '#ff4d61';
+  ctx.stroke();
+  ctx.fillStyle = ctx.strokeStyle;
+  ctx.textAlign = 'center';
+  ctx.font = '800 58px -apple-system, Segoe UI, Roboto, sans-serif';
+  ctx.fillText(d.overall_score, cx, cy + 15);
+  ctx.font = '600 20px -apple-system, Segoe UI, Roboto, sans-serif';
+  ctx.fillStyle = '#a29aa9';
+  ctx.fillText('/10', cx, cy + 45);
+  ctx.textAlign = 'left';
+
+  // headline burn (wrapped)
+  ctx.fillStyle = '#f5f2ef';
+  ctx.font = '800 52px -apple-system, Segoe UI, Roboto, sans-serif';
+  const line = '“' + (d.headline_burn || '') + '”';
+  wrapText(ctx, line, 70, 300, 860, 62);
+
+  // url
+  ctx.fillStyle = '#a29aa9';
+  ctx.font = '600 26px -apple-system, Segoe UI, Roboto, sans-serif';
+  let host = d.url;
+  try { host = new URL(d.url).hostname.replace(/^www\./, ''); } catch {}
+  ctx.fillText(host, 70, H - 60);
+
+  // cta
+  ctx.fillStyle = '#ff5a1f';
+  ctx.font = '700 26px -apple-system, Segoe UI, Roboto, sans-serif';
+  ctx.textAlign = 'right';
+  ctx.fillText('Roast yours →', W - 70, H - 60);
+  ctx.textAlign = 'left';
+
+  const dataUrl = c.toDataURL('image/png');
+  cardPrev.src = dataUrl;
+  cardPrev.style.display = 'block';
+}
+
+function wrapText(ctx, text, x, y, maxW, lh) {
+  const words = text.split(' ');
+  let line = '';
+  for (const w of words) {
+    const test = line + w + ' ';
+    if (ctx.measureText(test).width > maxW && line) {
+      ctx.fillText(line.trim(), x, y);
+      line = w + ' ';
+      y += lh;
+    } else {
+      line = test;
+    }
+  }
+  ctx.fillText(line.trim(), x, y);
+}
+
+document.getElementById('dlCard').addEventListener('click', () => {
+  if (!lastRoast) return;
+  const c = document.getElementById('shareCanvas');
+  const a = document.createElement('a');
+  a.download = 'my-landing-page-roast.png';
+  a.href = c.toDataURL('image/png');
+  a.click();
+});
+
+document.getElementById('tweetBtn').addEventListener('click', () => {
+  if (!lastRoast) return;
+  const host = (() => { try { return new URL(lastRoast.url).hostname.replace(/^www\./,''); } catch { return lastRoast.url; } })();
+  const text = `My landing page (${host}) scored ${lastRoast.overall_score}/10 🔥\n\n“${lastRoast.headline_burn}”\n\nRoast yours:`;
+  const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(location.origin);
+  window.open(url, '_blank');
+});
+
+document.getElementById('againBtn').addEventListener('click', () => {
+  results.classList.remove('show');
+  urlInput.value = '';
+  urlInput.focus();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>
