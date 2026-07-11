@@ -54,6 +54,39 @@ User browser → Vercel tool (serverless fn, holds the key)
 - **Firewall:** Hetzner cloud firewall allows only 22/80/443 inbound. Port 8642 is NOT reachable directly from the internet (verified) — only through Caddy.
 - **Models:** Hermes default = DeepSeek (direct API, cheap). Claude/GPT available via OpenRouter — switch from Slack: `hermes config set model.provider "openrouter"` + `hermes config set model.default "anthropic/claude-sonnet-4.5"`, then `reset`. Back to default: provider `"deepseek"`, model `"deepseek-chat"`, base_url `"https://api.deepseek.com"`.
 
+## Data capture: Supabase (leads / form submissions)
+
+Two paths — pick by trust level:
+
+- **Public tools (form/lead capture) → write to Supabase DIRECTLY from the serverless function.** Use the **anon** key + insert-only RLS. Fast, deterministic, and safe. Do NOT route public data capture through Hermes.
+- **Hermes' `supabase` skill (service_role key, full DB access)** is reserved for Pratik's own use (Slack, trusted backend jobs). NEVER expose the Hermes+service_role path to public/unauthenticated input — a malicious prompt could dump or wipe the DB.
+
+Why: Hermes won't "automatically" save leads — each API call is stateless and the model only writes to Supabase if that request's prompt tells it to. For guaranteed capture, write directly.
+
+### One-time DB setup
+Run `_shared/supabase-leads-rls.sql` in Supabase → SQL Editor (enables RLS + anon insert-only on the `leads` table).
+
+### Reusable insert snippet (Vercel or Cloudflare serverless)
+Env vars in the tool's project: `SUPABASE_URL`, `SUPABASE_ANON_KEY` (both from Supabase → Settings → API; anon key is safe to use here).
+
+```js
+async function saveLead({ name, email, message, source = "web" }) {
+  const r = await fetch(`${process.env.SUPABASE_URL}/rest/v1/leads`, {
+    method: "POST",
+    headers: {
+      apikey: process.env.SUPABASE_ANON_KEY,
+      Authorization: `Bearer ${process.env.SUPABASE_ANON_KEY}`,
+      "Content-Type": "application/json",
+      Prefer: "return=minimal", // required: anon can't read back
+    },
+    body: JSON.stringify({ name, email, message, source }),
+  });
+  if (!r.ok) throw new Error("Lead insert failed: " + (await r.text()));
+}
+```
+
+Supabase project: ref `spymrfgkwfjrcealulfh`, URL `https://spymrfgkwfjrcealulfh.supabase.co`. Keys in `secrets.local.md`.
+
 ## Security rules (non-negotiable)
 
 - The Hermes API key stays server-side (Vercel env vars / `secrets.local.md`). Never in client JS, never committed.

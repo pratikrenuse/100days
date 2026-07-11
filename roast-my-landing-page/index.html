@@ -4,107 +4,85 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Roast My Landing Page — get brutally, usefully torn apart</title>
-<meta name="description" content="Paste your landing page. Get a savage, specific, actually-useful teardown in 30 seconds. Scored 1–10 with named burns and exact fixes." />
+<meta name="description" content="Paste your landing page. Get a savage, specific, actually-useful teardown in 30 seconds. Scored 1–10 with named burns, exact fixes, and a voice roast." />
 <meta property="og:title" content="Roast My Landing Page" />
 <meta property="og:description" content="Paste your URL. Get brutally roasted with fixes you can actually ship." />
 <meta property="og:type" content="website" />
 <style>
-  :root {
-    --bg: #0e0d11;
-    --panel: #17151b;
-    --panel-2: #1f1c24;
-    --ink: #f5f2ef;
-    --muted: #a29aa9;
-    --fire: #ff5a1f;
-    --fire-2: #ffab00;
-    --line: #2a2730;
-    --good: #35c88a;
-    --bad: #ff4d61;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    background: radial-gradient(1200px 600px at 50% -10%, #241016 0%, var(--bg) 55%);
-    color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    min-height: 100vh;
-  }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 4rem 1.25rem 6rem; }
-  .kicker { color: var(--fire-2); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: .78rem; }
-  h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.05; margin: .6rem 0 .8rem; font-weight: 800; letter-spacing: -0.02em; }
-  h1 .flame { background: linear-gradient(100deg, var(--fire), var(--fire-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .sub { color: var(--muted); font-size: 1.12rem; max-width: 34rem; }
-
-  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 1.6rem; margin-top: 2rem; }
-
-  form { display: flex; gap: .6rem; flex-wrap: wrap; }
-  input[type=url] {
-    flex: 1 1 320px; min-width: 0;
-    background: var(--panel-2); border: 1px solid var(--line); color: var(--ink);
-    padding: 1rem 1.1rem; border-radius: 12px; font-size: 1.05rem;
-  }
-  input[type=url]::placeholder { color: #6f6878; }
-  input[type=url]:focus { outline: none; border-color: var(--fire); }
-  button.primary {
-    background: linear-gradient(100deg, var(--fire), var(--fire-2));
-    color: #1a0d05; border: 0; font-weight: 800; font-size: 1.05rem;
-    padding: 1rem 1.6rem; border-radius: 12px; cursor: pointer; white-space: nowrap;
-  }
-  button.primary:disabled { opacity: .6; cursor: not-allowed; }
-  .hint { color: var(--muted); font-size: .85rem; margin-top: .7rem; }
-
-  /* loading */
-  .loading { display: none; margin-top: 2rem; text-align: center; color: var(--muted); }
-  .loading.show { display: block; }
-  .flames { font-size: 2.4rem; animation: flicker 1s infinite alternate; }
-  @keyframes flicker { from { opacity: .5; transform: scale(.96); } to { opacity: 1; transform: scale(1.04); } }
-  .loading .step { margin-top: .6rem; font-size: .95rem; }
-
-  /* results */
-  .results { display: none; margin-top: 2rem; }
-  .results.show { display: block; }
-  .scorewrap { display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
-  .bigscore { font-size: 3.4rem; font-weight: 800; line-height: 1; }
-  .bigscore small { font-size: 1.2rem; color: var(--muted); font-weight: 600; }
-  .verdict { color: var(--ink); font-size: 1.1rem; margin: 0; }
-  .headline { font-size: 1.35rem; font-weight: 800; margin: 1.2rem 0 0; color: var(--fire-2); }
-
-  .section { border-top: 1px solid var(--line); padding: 1.3rem 0; }
-  .section:first-of-type { border-top: 0; }
-  .srow { display: flex; align-items: baseline; gap: .7rem; }
-  .sname { font-weight: 800; font-size: 1.1rem; }
-  .sscore { margin-left: auto; font-weight: 800; font-size: 1.1rem; }
-  .burn { margin: .5rem 0 .7rem; font-size: 1.05rem; }
-  .fix { background: var(--panel-2); border-left: 3px solid var(--good); padding: .7rem .9rem; border-radius: 8px; color: var(--muted); font-size: .96rem; }
-  .fix b { color: var(--good); }
-
-  .locked { position: relative; }
-  .locked .section.blur { filter: blur(6px); pointer-events: none; user-select: none; }
-  .gate { text-align: center; padding: 1.6rem; }
-  .gate h3 { margin: .2rem 0 .4rem; font-size: 1.25rem; }
-  .gate p { color: var(--muted); margin: 0 0 1rem; }
-  .gate form { justify-content: center; }
-
-  .share { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1.6rem; }
-  button.ghost { background: var(--panel-2); color: var(--ink); border: 1px solid var(--line); font-weight: 700; padding: .85rem 1.2rem; border-radius: 12px; cursor: pointer; font-size: .98rem; }
-  button.ghost:hover { border-color: var(--fire); }
-
-  .err { display:none; margin-top: 1rem; color: var(--bad); font-weight: 600; }
-  .err.show { display:block; }
-
-  canvas { display: none; }
-  .cardprev { margin-top: 1.2rem; border-radius: 12px; max-width: 100%; border: 1px solid var(--line); }
-
-  footer { text-align: center; color: #5f5867; font-size: .82rem; margin-top: 3rem; }
-  footer a { color: var(--muted); }
+  :root{--bg:#0e0d11;--panel:#17151b;--panel-2:#1f1c24;--ink:#f5f2ef;--muted:#a29aa9;--fire:#ff5a1f;--fire-2:#ffab00;--line:#2a2730;--good:#35c88a;--bad:#ff4d61}
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  body{background:radial-gradient(1200px 600px at 50% -10%,#241016 0%,var(--bg) 55%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;min-height:100vh}
+  .wrap{max-width:760px;margin:0 auto;padding:4rem 1.25rem 6rem}
+  .kicker{color:var(--fire-2);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:.78rem}
+  h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;margin:.6rem 0 .8rem;font-weight:800;letter-spacing:-0.02em}
+  h1 .flame{background:linear-gradient(100deg,var(--fire),var(--fire-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:1.12rem;max-width:34rem}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1.6rem;margin-top:2rem}
+  form{display:flex;gap:.6rem;flex-wrap:wrap}
+  input[type=url],input[type=email]{flex:1 1 320px;min-width:0;background:var(--panel-2);border:1px solid var(--line);color:var(--ink);padding:1rem 1.1rem;border-radius:12px;font-size:1.05rem}
+  input::placeholder{color:#6f6878}
+  input:focus{outline:none;border-color:var(--fire)}
+  button.primary{background:linear-gradient(100deg,var(--fire),var(--fire-2));color:#1a0d05;border:0;font-weight:800;font-size:1.05rem;padding:1rem 1.6rem;border-radius:12px;cursor:pointer;white-space:nowrap}
+  button.primary:disabled{opacity:.6;cursor:not-allowed}
+  .hint{color:var(--muted);font-size:.85rem;margin-top:.7rem}
+  .loading{display:none;margin-top:2rem;text-align:center;color:var(--muted)}
+  .loading.show{display:block}
+  .flames{font-size:2.4rem;animation:flicker 1s infinite alternate}
+  @keyframes flicker{from{opacity:.5;transform:scale(.96)}to{opacity:1;transform:scale(1.04)}}
+  .loading .step{margin-top:.6rem;font-size:.95rem}
+  .results{display:none;margin-top:2rem}
+  .results.show{display:block}
+  .scorewrap{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+  .bigscore{font-size:3.4rem;font-weight:800;line-height:1}
+  .bigscore small{font-size:1.2rem;color:var(--muted);font-weight:600}
+  .verdict{color:var(--ink);font-size:1.1rem;margin:0}
+  .headline{font-size:1.35rem;font-weight:800;margin:1.2rem 0 0;color:var(--fire-2)}
+  .bench{margin-top:.9rem;font-size:.92rem;color:var(--muted);border-left:3px solid var(--fire);padding:.5rem .8rem;background:var(--panel-2);border-radius:8px}
+  .section{border-top:1px solid var(--line);padding:1.3rem 0}
+  .section:first-of-type{border-top:0}
+  .srow{display:flex;align-items:baseline;gap:.7rem}
+  .sname{font-weight:800;font-size:1.1rem}
+  .sscore{margin-left:auto;font-weight:800;font-size:1.1rem}
+  .burn{margin:.5rem 0 .7rem;font-size:1.05rem}
+  .fix{background:var(--panel-2);border-left:3px solid var(--good);padding:.7rem .9rem;border-radius:8px;color:var(--muted);font-size:.96rem}
+  .fix b{color:var(--good)}
+  .locked{position:relative;overflow:hidden}
+  .locked .inner{filter:blur(7px);pointer-events:none;user-select:none}
+  .gate{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:1rem}
+  .gatebox{background:rgba(23,21,27,.86);border:1px solid var(--line);border-radius:14px;padding:1.4rem;text-align:center;max-width:420px;backdrop-filter:blur(2px)}
+  .gatebox h3{margin:.1rem 0 .3rem;font-size:1.2rem}
+  .gatebox p{color:var(--muted);margin:0 0 1rem;font-size:.95rem}
+  .share{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.6rem}
+  button.ghost{background:var(--panel-2);color:var(--ink);border:1px solid var(--line);font-weight:700;padding:.85rem 1.2rem;border-radius:12px;cursor:pointer;font-size:.98rem}
+  button.ghost:hover{border-color:var(--fire)}
+  .err{display:none;margin-top:1rem;color:var(--bad);font-weight:600}
+  .err.show{display:block}
+  canvas{display:none}
+  .cardprev{margin-top:1.2rem;border-radius:12px;max-width:100%;border:1px solid var(--line)}
+  audio{width:100%;margin-top:1rem}
+  .voicewrap{margin-top:1.4rem}
+  .lb{margin-top:3rem}
+  .lb h2{font-size:1.4rem;margin:0 0 .3rem}
+  .lb .lbsub{color:var(--muted);font-size:.9rem;margin:0 0 1rem}
+  .lbrow{display:flex;align-items:center;gap:.8rem;padding:.7rem 0;border-top:1px solid var(--line)}
+  .lbrow:first-child{border-top:0}
+  .lbrank{color:var(--muted);font-weight:800;width:1.6rem;text-align:right}
+  .lbhost{font-weight:700}
+  .lbburn{color:var(--muted);font-size:.85rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .lbscore{margin-left:auto;font-weight:800}
+  .stats{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+  .stat{background:var(--panel-2);border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;flex:1 1 100px;text-align:center}
+  .stat b{display:block;font-size:1.5rem}
+  .stat span{color:var(--muted);font-size:.78rem}
+  footer{text-align:center;color:#5f5867;font-size:.82rem;margin-top:3rem}
+  footer a{color:var(--muted)}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="kicker">🔥 Roast My Landing Page</div>
   <h1>Your landing page is <span class="flame">probably lying to you.</span></h1>
-  <p class="sub">Paste your URL. In 30 seconds you get a scored, specific, screenshot-worthy teardown — with the exact fixes to ship next.</p>
+  <p class="sub">Paste your URL. In 30 seconds you get a scored, specific, screenshot-worthy teardown — with the exact fixes to ship next, benchmarked against your real category winner.</p>
 
   <div class="card">
     <form id="roastForm">
@@ -124,14 +102,37 @@
     <div class="card">
       <div class="scorewrap">
         <div class="bigscore" id="bigScore">–<small>/10</small></div>
-        <div>
-          <p class="verdict" id="verdict"></p>
-        </div>
+        <div><p class="verdict" id="verdict"></p></div>
       </div>
       <p class="headline" id="headline"></p>
+      <div class="bench" id="bench" style="display:none"></div>
     </div>
 
-    <div class="card" id="sectionsCard"></div>
+    <!-- free: hero -->
+    <div class="card" id="freeCard"></div>
+
+    <!-- locked: cta/proof/pricing + voice -->
+    <div class="card locked" id="lockedCard" style="display:none">
+      <div class="inner" id="lockedInner"></div>
+      <div class="gate" id="gate">
+        <div class="gatebox">
+          <h3>🔒 Unlock the full teardown</h3>
+          <p>3 more brutal sections + your 30-second voice roast. Drop your email — no spam, just the roast.</p>
+          <form id="emailForm">
+            <input id="emailInput" type="email" placeholder="you@startup.com" required />
+            <button class="primary" type="submit">Unlock the roast 🔓</button>
+          </form>
+          <div class="err" id="gateErr"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- voice roast (revealed after unlock) -->
+    <div class="card voicewrap" id="voiceCard" style="display:none">
+      <div class="srow"><span class="sname">🎧 Your voice roast</span></div>
+      <p class="hint" id="voiceStatus">Generating your 30-second roast…</p>
+      <audio id="voicePlayer" controls style="display:none"></audio>
+    </div>
 
     <div class="share">
       <button class="ghost" id="dlCard">⬇️ Download share card</button>
@@ -141,215 +142,220 @@
     <img class="cardprev" id="cardPrev" alt="Your roast share card" style="display:none" />
   </div>
 
-  <footer>
-    Built with <a href="https://github.com/pratikrenuse/100days" target="_blank" rel="noopener">Hermes</a> · the brain that browses & burns.
-  </footer>
+  <!-- leaderboard -->
+  <div class="lb" id="lb" style="display:none">
+    <h2>🔥 Wall of Shame</h2>
+    <p class="lbsub">The most brutally-scored landing pages. Live.</p>
+    <div class="stats" id="stats"></div>
+    <div id="lbList"></div>
+  </div>
+
+  <footer>Built with <a href="https://github.com/pratikrenuse/100days" target="_blank" rel="noopener">Hermes</a> · the brain that browses & burns.</footer>
 </div>
 
 <canvas id="shareCanvas" width="1200" height="630"></canvas>
 
-<script>
-const form = document.getElementById('roastForm');
-const urlInput = document.getElementById('urlInput');
-const btn = document.getElementById('roastBtn');
-const loading = document.getElementById('loading');
-const loadStep = document.getElementById('loadStep');
-const results = document.getElementById('results');
-const errBox = document.getElementById('errBox');
-const bigScore = document.getElementById('bigScore');
-const verdict = document.getElementById('verdict');
-const headline = document.getElementById('headline');
-const sectionsCard = document.getElementById('sectionsCard');
-const cardPrev = document.getElementById('cardPrev');
+<script type="module">
+// ===== CONFIG =====
+// After `npx convex dev`, paste your deployment URL here (looks like https://xxxx-xxxx-123.convex.cloud).
+// Leave as-is and the app still works — it just skips the gate/leaderboard until this is set.
+const CONVEX_URL = "https://YOUR-DEPLOYMENT.convex.cloud";
 
-let lastRoast = null;
-
-const steps = [
-  "Loading your page…",
-  "Reading your hero line… oh no.",
-  "Inspecting that CTA button…",
-  "Looking for actual social proof…",
-  "Checking if your pricing makes sense…",
-  "Sharpening the knife…"
-];
-let stepTimer = null;
-
-function showErr(msg) {
-  errBox.textContent = msg;
-  errBox.classList.add('show');
-}
-function clearErr() { errBox.classList.remove('show'); errBox.textContent = ''; }
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  clearErr();
-  results.classList.remove('show');
-  const url = urlInput.value.trim();
-  if (!url) return;
-
-  btn.disabled = true;
-  loading.classList.add('show');
-  let i = 0;
-  loadStep.textContent = steps[0];
-  stepTimer = setInterval(() => { i = (i + 1) % steps.length; loadStep.textContent = steps[i]; }, 3500);
-
+let convex = null, anyApi = null, convexReady = false;
+if (CONVEX_URL && !CONVEX_URL.includes("YOUR-DEPLOYMENT")) {
   try {
-    const res = await fetch('/api/roast', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url })
-    });
-    const data = await res.json();
-    if (!res.ok || data.error) {
-      showErr(data.error || 'Something went wrong. Try again.');
-      return;
-    }
-    lastRoast = data;
-    renderRoast(data);
-  } catch (err) {
-    showErr('The roast engine timed out. Big pages take a moment — try again.');
-  } finally {
-    clearInterval(stepTimer);
-    loading.classList.remove('show');
-    btn.disabled = false;
-  }
-});
-
-function scoreColor(s) {
-  if (s >= 8) return 'var(--good)';
-  if (s >= 5) return 'var(--fire-2)';
-  return 'var(--bad)';
+    const [{ ConvexClient }, srv] = await Promise.all([
+      import("https://esm.sh/convex@1.17.0/browser"),
+      import("https://esm.sh/convex@1.17.0/server"),
+    ]);
+    anyApi = srv.anyApi;
+    convex = new ConvexClient(CONVEX_URL);
+    convexReady = true;
+  } catch (e) { console.warn("Convex not loaded:", e); }
 }
 
-function renderRoast(d) {
-  bigScore.innerHTML = `${d.overall_score}<small>/10</small>`;
-  bigScore.style.color = scoreColor(d.overall_score);
-  verdict.textContent = d.verdict || '';
-  headline.textContent = '“' + (d.headline_burn || '') + '”';
+// ===== refs =====
+const $ = (id) => document.getElementById(id);
+const form=$("roastForm"),urlInput=$("urlInput"),btn=$("roastBtn"),loading=$("loading"),loadStep=$("loadStep"),
+results=$("results"),errBox=$("errBox"),bigScore=$("bigScore"),verdict=$("verdict"),headline=$("headline"),bench=$("bench"),
+freeCard=$("freeCard"),lockedCard=$("lockedCard"),lockedInner=$("lockedInner"),gate=$("gate"),emailForm=$("emailForm"),
+emailInput=$("emailInput"),gateErr=$("gateErr"),voiceCard=$("voiceCard"),voiceStatus=$("voiceStatus"),voicePlayer=$("voicePlayer"),
+cardPrev=$("cardPrev"),lb=$("lb"),lbList=$("lbList"),statsEl=$("stats");
 
-  // Core loop: show all sections (email gate comes in v2)
-  sectionsCard.innerHTML = '';
-  (d.sections || []).forEach(sec => {
-    const div = document.createElement('div');
-    div.className = 'section';
-    div.innerHTML = `
-      <div class="srow">
-        <span class="sname">${escapeHtml(sec.name)}</span>
-        <span class="sscore" style="color:${scoreColor(sec.score)}">${sec.score}/10</span>
-      </div>
-      <p class="burn">${escapeHtml(sec.burn)}</p>
-      <div class="fix"><b>Fix:</b> ${escapeHtml(sec.fix)}</div>
-    `;
-    sectionsCard.appendChild(div);
-  });
+let lastRoast=null, currentScanId=null;
 
-  results.classList.add('show');
-  results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+// ref attribution: ?ref=<scanId>
+const refFrom = new URLSearchParams(location.search).get("ref");
+if (refFrom && convexReady) { convex.mutation(anyApi.roasts.logVisit, { refScanId: refFrom }).catch(()=>{}); }
+
+// live leaderboard
+if (convexReady) {
+  lb.style.display = "block";
+  convex.onUpdate(anyApi.roasts.topBrutal, {}, (rows) => renderLeaderboard(rows||[]));
+  convex.onUpdate(anyApi.roasts.funnelStats, {}, (s) => renderStats(s));
+}
+
+const steps=["Loading your page…","Reading your hero line… oh no.","Inspecting that CTA button…","Pulling your category's real winner…","Looking for actual social proof…","Checking if your pricing makes sense…","Sharpening the knife…"];
+let stepTimer=null;
+const showErr=(el,m)=>{el.textContent=m;el.classList.add("show")};
+const clearErr=(el)=>{el.classList.remove("show");el.textContent=""};
+const scoreColor=(s)=>s>=8?"var(--good)":s>=5?"var(--fire-2)":"var(--bad)";
+const esc=(s)=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+form.addEventListener("submit", async (e)=>{
+  e.preventDefault(); clearErr(errBox); results.classList.remove("show");
+  const url=urlInput.value.trim(); if(!url) return;
+  btn.disabled=true; loading.classList.add("show");
+  let i=0; loadStep.textContent=steps[0];
+  stepTimer=setInterval(()=>{i=(i+1)%steps.length;loadStep.textContent=steps[i];},3500);
+  try{
+    const res=await fetch("/api/roast",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({url})});
+    const data=await res.json();
+    if(!res.ok||data.error){showErr(errBox,data.error||"Something went wrong. Try again.");return;}
+    lastRoast=data;
+    await renderRoast(data);
+  }catch{ showErr(errBox,"The roast engine timed out. Big pages take a moment — try again."); }
+  finally{ clearInterval(stepTimer); loading.classList.remove("show"); btn.disabled=false; }
+});
+
+async function renderRoast(d){
+  bigScore.innerHTML=`${d.overall_score}<small>/10</small>`;
+  bigScore.style.color=scoreColor(d.overall_score);
+  verdict.textContent=d.verdict||"";
+  headline.textContent="“"+(d.headline_burn||"")+"”";
+  if(d.benchmark_cite){bench.style.display="block";bench.innerHTML="📊 <b>Benchmark:</b> "+esc(d.benchmark_cite);}
+  else bench.style.display="none";
+
+  const secs=d.sections||[];
+  const gateOn = convexReady; // only gate when we can capture the email
+  // free = first section (Hero); locked = rest
+  freeCard.innerHTML="";
+  if(secs[0]) freeCard.appendChild(sectionEl(secs[0]));
+
+  if(gateOn && secs.length>1){
+    lockedInner.innerHTML="";
+    secs.slice(1).forEach(s=>lockedInner.appendChild(sectionEl(s)));
+    lockedCard.style.display="block"; gate.style.display="flex";
+    voiceCard.style.display="none";
+  } else {
+    // no convex → show everything, no gate
+    lockedInner.innerHTML="";
+    secs.slice(1).forEach(s=>lockedInner.appendChild(sectionEl(s)));
+    lockedCard.style.display= secs.length>1 ? "block":"none";
+    lockedCard.classList.remove("locked"); gate.style.display="none";
+    voiceCard.style.display="none";
+  }
+
+  results.classList.add("show");
+  results.scrollIntoView({behavior:"smooth",block:"start"});
   drawShareCard(d);
-}
 
-function escapeHtml(s) {
-  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-
-// ---- Share card (canvas) ----
-function drawShareCard(d) {
-  const c = document.getElementById('shareCanvas');
-  const ctx = c.getContext('2d');
-  const W = 1200, H = 630;
-
-  // bg
-  const g = ctx.createLinearGradient(0, 0, W, H);
-  g.addColorStop(0, '#1a0c10');
-  g.addColorStop(1, '#0e0d11');
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, W, H);
-
-  // top label
-  ctx.fillStyle = '#ffab00';
-  ctx.font = '700 30px -apple-system, Segoe UI, Roboto, sans-serif';
-  ctx.fillText('🔥 ROAST MY LANDING PAGE', 70, 90);
-
-  // score circle
-  const cx = 1000, cy = 150, r = 70;
-  ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2);
-  ctx.fillStyle = '#17151b'; ctx.fill();
-  ctx.lineWidth = 8;
-  ctx.strokeStyle = d.overall_score >= 8 ? '#35c88a' : d.overall_score >= 5 ? '#ffab00' : '#ff4d61';
-  ctx.stroke();
-  ctx.fillStyle = ctx.strokeStyle;
-  ctx.textAlign = 'center';
-  ctx.font = '800 58px -apple-system, Segoe UI, Roboto, sans-serif';
-  ctx.fillText(d.overall_score, cx, cy + 15);
-  ctx.font = '600 20px -apple-system, Segoe UI, Roboto, sans-serif';
-  ctx.fillStyle = '#a29aa9';
-  ctx.fillText('/10', cx, cy + 45);
-  ctx.textAlign = 'left';
-
-  // headline burn (wrapped)
-  ctx.fillStyle = '#f5f2ef';
-  ctx.font = '800 52px -apple-system, Segoe UI, Roboto, sans-serif';
-  const line = '“' + (d.headline_burn || '') + '”';
-  wrapText(ctx, line, 70, 300, 860, 62);
-
-  // url
-  ctx.fillStyle = '#a29aa9';
-  ctx.font = '600 26px -apple-system, Segoe UI, Roboto, sans-serif';
-  let host = d.url;
-  try { host = new URL(d.url).hostname.replace(/^www\./, ''); } catch {}
-  ctx.fillText(host, 70, H - 60);
-
-  // cta
-  ctx.fillStyle = '#ff5a1f';
-  ctx.font = '700 26px -apple-system, Segoe UI, Roboto, sans-serif';
-  ctx.textAlign = 'right';
-  ctx.fillText('Roast yours →', W - 70, H - 60);
-  ctx.textAlign = 'left';
-
-  const dataUrl = c.toDataURL('image/png');
-  cardPrev.src = dataUrl;
-  cardPrev.style.display = 'block';
-}
-
-function wrapText(ctx, text, x, y, maxW, lh) {
-  const words = text.split(' ');
-  let line = '';
-  for (const w of words) {
-    const test = line + w + ' ';
-    if (ctx.measureText(test).width > maxW && line) {
-      ctx.fillText(line.trim(), x, y);
-      line = w + ' ';
-      y += lh;
-    } else {
-      line = test;
-    }
+  // persist scan → get scanId (also the share ref)
+  if(convexReady){
+    try{
+      currentScanId=await convex.mutation(anyApi.roasts.createScan,{
+        url:d.url, hostname:d.hostname||host(d.url),
+        overallScore:Number(d.overall_score)||0,
+        headlineBurn:d.headline_burn||"", verdict:d.verdict||"",
+        benchmarkCite:d.benchmark_cite||"",
+        sections:secs.map(s=>({name:String(s.name),score:Number(s.score)||0,burn:String(s.burn),fix:String(s.fix)})),
+        refFrom: refFrom||undefined,
+      });
+    }catch(e){ console.warn("createScan failed",e); }
   }
-  ctx.fillText(line.trim(), x, y);
 }
 
-document.getElementById('dlCard').addEventListener('click', () => {
-  if (!lastRoast) return;
-  const c = document.getElementById('shareCanvas');
-  const a = document.createElement('a');
-  a.download = 'my-landing-page-roast.png';
-  a.href = c.toDataURL('image/png');
-  a.click();
+function sectionEl(sec){
+  const div=document.createElement("div"); div.className="section";
+  div.innerHTML=`<div class="srow"><span class="sname">${esc(sec.name)}</span>
+    <span class="sscore" style="color:${scoreColor(sec.score)}">${sec.score}/10</span></div>
+    <p class="burn">${esc(sec.burn)}</p>
+    <div class="fix"><b>Fix:</b> ${esc(sec.fix)}</div>`;
+  return div;
+}
+
+// ===== email gate =====
+emailForm.addEventListener("submit", async (e)=>{
+  e.preventDefault(); clearErr(gateErr);
+  const email=emailInput.value.trim(); if(!email) return;
+  try{
+    if(convexReady && currentScanId){
+      await convex.mutation(anyApi.roasts.unlockScan,{scanId:currentScanId,email});
+    }
+    // reveal
+    lockedCard.classList.remove("locked"); gate.style.display="none";
+    // voice roast
+    generateVoice(lastRoast);
+  }catch{ showErr(gateErr,"Couldn't save that — try again."); }
 });
 
-document.getElementById('tweetBtn').addEventListener('click', () => {
-  if (!lastRoast) return;
-  const host = (() => { try { return new URL(lastRoast.url).hostname.replace(/^www\./,''); } catch { return lastRoast.url; } })();
-  const text = `My landing page (${host}) scored ${lastRoast.overall_score}/10 🔥\n\n“${lastRoast.headline_burn}”\n\nRoast yours:`;
-  const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(location.origin);
-  window.open(url, '_blank');
-});
+// ===== voice roast (ElevenLabs) =====
+async function generateVoice(d){
+  voiceCard.style.display="block";
+  voiceStatus.style.display="block"; voiceStatus.textContent="Generating your 30-second roast…";
+  voicePlayer.style.display="none";
+  const text = `${d.headline_burn}. Here's the verdict. ${d.verdict} Your worst section: ${worst(d)}.`;
+  try{
+    const res=await fetch("/api/voice",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({text})});
+    if(!res.ok){ voiceStatus.textContent="Voice roast unavailable right now."; return; }
+    const blob=await res.blob();
+    voicePlayer.src=URL.createObjectURL(blob);
+    voicePlayer.style.display="block"; voiceStatus.style.display="none";
+    voicePlayer.play().catch(()=>{});
+  }catch{ voiceStatus.textContent="Voice roast failed. The text roast still stands."; }
+}
+function worst(d){ const s=(d.sections||[]).slice().sort((a,b)=>a.score-b.score)[0]; return s?`${s.name}. ${s.burn}`:""; }
 
-document.getElementById('againBtn').addEventListener('click', () => {
-  results.classList.remove('show');
-  urlInput.value = '';
-  urlInput.focus();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+// ===== share card =====
+function host(u){ try{return new URL(u).hostname.replace(/^www\./,"");}catch{return u;} }
+function drawShareCard(d){
+  const c=$("shareCanvas"),ctx=c.getContext("2d"),W=1200,H=630;
+  const g=ctx.createLinearGradient(0,0,W,H); g.addColorStop(0,"#1a0c10"); g.addColorStop(1,"#0e0d11");
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  ctx.fillStyle="#ffab00"; ctx.font="700 30px -apple-system,Segoe UI,Roboto,sans-serif";
+  ctx.fillText("🔥 ROAST MY LANDING PAGE",70,90);
+  const cx=1000,cy=150,r=70;
+  ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2); ctx.fillStyle="#17151b"; ctx.fill();
+  ctx.lineWidth=8; ctx.strokeStyle=d.overall_score>=8?"#35c88a":d.overall_score>=5?"#ffab00":"#ff4d61"; ctx.stroke();
+  ctx.fillStyle=ctx.strokeStyle; ctx.textAlign="center";
+  ctx.font="800 58px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.fillText(d.overall_score,cx,cy+15);
+  ctx.font="600 20px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.fillStyle="#a29aa9"; ctx.fillText("/10",cx,cy+45);
+  ctx.textAlign="left"; ctx.fillStyle="#f5f2ef"; ctx.font="800 52px -apple-system,Segoe UI,Roboto,sans-serif";
+  wrapText(ctx,"“"+(d.headline_burn||"")+"”",70,300,860,62);
+  ctx.fillStyle="#a29aa9"; ctx.font="600 26px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.fillText(host(d.url),70,H-60);
+  ctx.fillStyle="#ff5a1f"; ctx.font="700 26px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.textAlign="right";
+  ctx.fillText("Roast yours →",W-70,H-60); ctx.textAlign="left";
+  cardPrev.src=c.toDataURL("image/png"); cardPrev.style.display="block";
+}
+function wrapText(ctx,text,x,y,maxW,lh){const words=text.split(" ");let line="";for(const w of words){const t=line+w+" ";if(ctx.measureText(t).width>maxW&&line){ctx.fillText(line.trim(),x,y);line=w+" ";y+=lh;}else line=t;}ctx.fillText(line.trim(),x,y);}
+
+function shareUrl(){ return currentScanId ? `${location.origin}/?ref=${currentScanId}` : location.origin; }
+
+$("dlCard").addEventListener("click",()=>{ if(!lastRoast)return; const c=$("shareCanvas"); const a=document.createElement("a"); a.download="my-landing-page-roast.png"; a.href=c.toDataURL("image/png"); a.click(); if(convexReady&&currentScanId)convex.mutation(anyApi.roasts.logShare,{scanId:currentScanId}).catch(()=>{}); });
+$("tweetBtn").addEventListener("click",()=>{ if(!lastRoast)return; const text=`My landing page (${host(lastRoast.url)}) scored ${lastRoast.overall_score}/10 🔥\n\n“${lastRoast.headline_burn}”\n\nRoast yours:`; window.open("https://twitter.com/intent/tweet?text="+encodeURIComponent(text)+"&url="+encodeURIComponent(shareUrl()),"_blank"); if(convexReady&&currentScanId)convex.mutation(anyApi.roasts.logShare,{scanId:currentScanId}).catch(()=>{}); });
+$("againBtn").addEventListener("click",()=>{ results.classList.remove("show"); urlInput.value=""; urlInput.focus(); window.scrollTo({top:0,behavior:"smooth"}); });
+
+// ===== leaderboard render =====
+function renderLeaderboard(rows){
+  lbList.innerHTML="";
+  rows.forEach((r,i)=>{
+    const div=document.createElement("div"); div.className="lbrow";
+    div.innerHTML=`<span class="lbrank">${i+1}</span>
+      <div style="min-width:0"><div class="lbhost">${esc(r.hostname)}</div>
+      <div class="lbburn">“${esc(r.headlineBurn)}”</div></div>
+      <span class="lbscore" style="color:${scoreColor(r.overallScore)}">${r.overallScore}/10</span>`;
+    lbList.appendChild(div);
+  });
+  if(!rows.length) lbList.innerHTML='<p class="hint">No roasts yet. Be the first casualty.</p>';
+}
+function renderStats(s){
+  if(!s){statsEl.innerHTML="";return;}
+  statsEl.innerHTML=`
+    <div class="stat"><b>${s.totalScans}</b><span>SCANS</span></div>
+    <div class="stat"><b>${s.totalSignups}</b><span>EMAILS</span></div>
+    <div class="stat"><b>${s.totalShares}</b><span>SHARES</span></div>
+    <div class="stat"><b>${s.referredScans}</b><span>REFERRED SCANS</span></div>`;
+}
 </script>
 </body>
 </html>

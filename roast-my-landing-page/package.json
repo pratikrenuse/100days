@@ -1,0 +1,13 @@
+{
+  "name": "roast-my-landing-page",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Paste a landing page, get a savage-but-useful roast. Hermes brain + Linkup + ElevenLabs, funnel in Convex.",
+  "scripts": {
+    "dev": "convex dev",
+    "deploy:convex": "convex deploy"
+  },
+  "devDependencies": {
+    "convex": "^1.17.0"
+  }
+}
