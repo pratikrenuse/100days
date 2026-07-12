@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Startup Idea Dating Profile · Day 07 · 100 Days of Building</title>
+<meta name="description" content="Type your startup idea, get its brutally honest dating profile: green flags, red flags, toxic traits, and the customer it should be matching with.">
+<meta property="og:title" content="Startup Idea Dating Profile">
+<meta property="og:description" content="Would you date your own startup idea? Get its profile: green flags, red flags, toxic traits.">
+<style>
+  :root{
+    --bg:#f7f4ee; --bg2:#efeade; --card:#fdfcf8;
+    --ink:#1c1a16; --ink2:#4a463e; --ink3:#7d7768; --ink4:#b3ac9b;
+    --gold:#9a7c2e; --gold2:#c9a84c; --line:#e2dccb;
+    --good:#4c7a3f; --bad:#a13030;
+    --serif:Georgia,'Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;border-bottom:1px solid var(--line);font-size:13px}
+  nav .crumb{color:var(--ink3)} nav .crumb a{text-decoration:none;color:var(--ink)}
+  nav .crumb .day{margin-left:10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+  nav .all{text-decoration:none;color:var(--ink3);font-size:12px}
+  .hero{padding:72px 0 40px}
+  .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+  .eyebrow .line{width:36px;height:1px;background:var(--gold)}
+  .eyebrow .txt{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5.4vw,54px);line-height:1.12;max-width:16ch}
+  h1 em{font-style:italic;color:var(--gold)}
+  .hero p.sub{margin-top:20px;max-width:56ch;color:var(--ink2);font-size:16px}
+  .ask{background:var(--card);border:1px solid var(--line);border-top:2px solid var(--gold);padding:30px 28px;margin:24px 0 20px}
+  .ask .step{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+  .ask h2{font-family:var(--serif);font-weight:400;font-size:24px;margin-bottom:18px}
+  label{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px}
+  textarea,input[type=email]{width:100%;padding:14px 16px;font-size:15px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:2px;font-family:var(--sans)}
+  textarea{min-height:110px;resize:vertical}
+  textarea:focus,input:focus{outline:2px solid var(--gold2);border-color:var(--gold2)}
+  .go{display:inline-block;width:100%;padding:16px 24px;background:var(--ink);color:var(--bg);font-size:15px;font-weight:600;border:none;border-radius:2px;cursor:pointer;margin-top:16px}
+  .go:hover{background:#000}
+  .go:disabled{opacity:.55;cursor:wait}
+  .reassure{margin-top:12px;font-size:12.5px;color:var(--ink3);text-align:center}
+  .err{display:none;margin-top:14px;padding:12px 14px;border:1px solid var(--gold2);background:#f6efdb;color:#6b5518;font-size:14px;border-radius:2px}
+  .err.show{display:block}
+  .loading{display:none;text-align:center;padding:38px 0 8px}
+  .loading.show{display:block}
+  .spin{width:26px;height:26px;border:2px solid var(--line);border-top-color:var(--gold);border-radius:50%;margin:0 auto 16px;animation:sp 1s linear infinite}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .loading .stepline{font-size:14px;color:var(--ink2);font-style:italic;font-family:var(--serif)}
+  #results{display:none;padding-bottom:10px}
+  #results.show{display:block}
+  .sec-label{display:flex;align-items:center;gap:12px;margin:42px 0 16px}
+  .sec-label .line{width:28px;height:1px;background:var(--gold)}
+  .sec-label .txt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  .profile{background:var(--ink);color:var(--bg);padding:32px 30px}
+  .pname{font-family:var(--serif);font-size:34px;line-height:1.15}
+  .ptag{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--gold2);margin-top:8px}
+  .pmeta{margin-top:14px;font-size:13.5px;color:#cfc9ba}
+  .pbio{margin-top:18px;padding-top:16px;border-top:1px solid #3a372f;font-size:15.5px;color:#e8e4d8;max-width:64ch}
+  .pcompat{margin-top:18px;font-size:13px;color:#cfc9ba}
+  .pcompat b{font-family:var(--serif);font-size:26px;color:var(--gold2);font-weight:400}
+  .flags{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .fcard{background:var(--card);border:1px solid var(--line);padding:20px 22px}
+  .fcard.green{border-top:2px solid var(--good)}
+  .fcard.red{border-top:2px solid var(--bad)}
+  .fcard .fk{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:12px}
+  .fcard.green .fk{color:var(--good)} .fcard.red .fk{color:var(--bad)}
+  .fitem{margin-bottom:12px}
+  .fitem b{font-size:14.5px;display:block}
+  .fitem p{font-size:13.5px;color:var(--ink2)}
+  .matches{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .mcard{background:var(--card);border:1px solid var(--line);padding:20px 22px}
+  .mcard .mk{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px}
+  .mcard .mwho{font-family:var(--serif);font-size:17px;margin-bottom:6px}
+  .mcard p{font-size:13.5px;color:var(--ink2)}
+  .exes{background:var(--card);border:1px solid var(--line);border-left:2px solid var(--gold);padding:18px 22px;font-size:14.5px;color:var(--ink2);font-style:italic;font-family:var(--serif)}
+  .firstdate{background:var(--card);border:1px solid var(--line);padding:22px 24px}
+  .firstdate .fk{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px}
+  .firstdate p{font-size:15.5px}
+  .actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+  .actions button{padding:12px 20px;font-size:14px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:2px}
+  .actions button:hover{background:var(--ink);color:var(--bg)}
+  .signup{background:var(--bg2);border:1px solid var(--line);padding:26px 28px;margin-top:64px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .signup h3{font-family:var(--serif);font-weight:400;font-size:20px}
+  .signup p{font-size:13px;color:var(--ink3)}
+  .signup .row{display:flex;gap:10px;flex-wrap:wrap}
+  .signup input{width:auto;flex:1 1 220px}
+  .signup button{padding:14px 20px;background:var(--ink);color:var(--bg);border:none;border-radius:2px;font-weight:600;cursor:pointer;font-size:14px}
+  .signup .ok{display:none;color:var(--good);font-size:14px}
+  footer{margin-top:70px;border-top:1px solid var(--line);padding:26px 32px;display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink3)}
+  footer a{color:var(--ink3)}
+  @media(max-width:720px){.flags,.matches{grid-template-columns:1fr}nav{padding:16px 20px}footer{flex-direction:column;gap:6px}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+</head>
+<body>
+
+<nav>
+  <div class="crumb"><a href="/">Pratik Renuse</a> <span style="color:var(--ink4)">/</span> Idea Dating Profile <span class="day">Day 07</span></div>
+  <a class="all" href="/100days/">All projects</a>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow"><div class="line"></div><div class="txt">For the idea you can't stop thinking about</div></div>
+    <h1>Would you date <em>your own startup idea?</em></h1>
+    <p class="sub">Describe your idea. Claude writes its dating profile: the bio it would use, the green flags, the red flags it hides until month three, its toxic traits, and the customer it should actually be matching with. Funny on the surface. Real analysis underneath.</p>
+  </div>
+
+  <div class="ask" id="ask">
+    <div class="step">Step one of one</div>
+    <h2>Introduce us to the idea</h2>
+    <form id="form">
+      <label for="idea">Your startup idea, in a sentence or three</label>
+      <textarea id="idea" maxlength="1200" placeholder="e.g. A WhatsApp bot that chases unpaid invoices for freelancers in India, politely but relentlessly" required></textarea>
+      <button class="go" id="go" type="submit">Write its profile</button>
+      <div class="reassure">Free. Nothing stored. Takes about 20 seconds.</div>
+    </form>
+    <div class="err" id="err" role="alert"></div>
+  </div>
+
+  <div class="loading" id="loading" aria-live="polite">
+    <div class="spin" aria-hidden="true"></div>
+    <div class="stepline" id="stepline">Interviewing your idea…</div>
+  </div>
+
+  <div id="results" aria-live="polite">
+    <div class="sec-label"><div class="line"></div><div class="txt">The profile</div></div>
+    <div class="profile">
+      <div class="pname" id="r-name"></div>
+      <div class="ptag" id="r-tag"></div>
+      <div class="pmeta" id="r-meta"></div>
+      <div class="pbio" id="r-bio"></div>
+      <div class="pcompat">Compatibility with product-market love: <b id="r-compat"></b><span id="r-compat-sub">/100</span></div>
+    </div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">The flags</div></div>
+    <div class="flags">
+      <div class="fcard green"><div class="fk">Green flags</div><div id="r-green"></div></div>
+      <div class="fcard red"><div class="fk">Red flags</div><div id="r-red"></div></div>
+    </div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">Toxic traits</div></div>
+    <div class="fcard" style="border-top:2px solid var(--gold)"><div id="r-toxic"></div></div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">The matches</div></div>
+    <div class="matches">
+      <div class="mcard"><div class="mk">Best match</div><div class="mwho" id="r-best"></div><p id="r-best-why"></p></div>
+      <div class="mcard"><div class="mk">Worst match</div><div class="mwho" id="r-worst"></div><p id="r-worst-why"></p></div>
+    </div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">The exes</div></div>
+    <div class="exes" id="r-exes"></div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">The first date</div></div>
+    <div class="firstdate"><div class="fk">The cheapest experiment to run this week</div><p id="r-date"></p></div>
+
+    <div class="actions">
+      <button id="copy" type="button">Copy this profile</button>
+      <button id="tweet" type="button">Post it</button>
+      <button id="again" type="button">Profile another idea</button>
+    </div>
+  </div>
+
+  <div class="signup">
+    <div><h3>One product ships every day.</h3><p>Day 07 of 100. Get each one in your inbox the day it goes live.</p></div>
+    <div>
+      <div class="row" id="su-row"><input type="email" id="su-email" placeholder="you@email.com"><button id="su-go" type="button">Send me each one</button></div>
+      <div class="ok" id="su-ok">You are in. The next one lands tomorrow.</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span>Day 07 of 100 · Built with Claude · every result is auto-scored by a Claude judge</span>
+  <a href="/100days/">← All projects</a>
+</footer>
+
+<script>
+const form=document.getElementById('form'),go=document.getElementById('go'),err=document.getElementById('err'),
+loading=document.getElementById('loading'),stepline=document.getElementById('stepline'),results=document.getElementById('results');
+const steps=['Interviewing your idea…','Checking its dating history…','Calling its exes…','Writing the bio it deserves…'];
+let timer=null,last=null;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+form.addEventListener('submit',async e=>{
+  e.preventDefault();err.classList.remove('show');results.classList.remove('show');
+  const idea=document.getElementById('idea').value.trim();
+  if(!idea)return;
+  go.disabled=true;loading.classList.add('show');
+  let i=0;stepline.textContent=steps[0];
+  timer=setInterval(()=>{i=(i+1)%steps.length;stepline.textContent=steps[i];},3500);
+  try{
+    const res=await fetch('/api/dating-profile',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({idea})});
+    const data=await res.json();
+    if(!res.ok||data.error){showErr(data.error||'Something went wrong. Try again.');return;}
+    last=data;render(data,idea);
+  }catch{showErr('Timed out. Try again.');}
+  finally{clearInterval(timer);loading.classList.remove('show');go.disabled=false;}
+});
+
+function showErr(m){err.textContent=m;err.classList.add('show');}
+
+function render(d,idea){
+  document.getElementById('r-name').textContent=d.profile_name||'';
+  document.getElementById('r-tag').textContent='“'+(d.tagline||'')+'”';
+  document.getElementById('r-meta').textContent=(d.age||'')+' · Looking for: '+(d.looking_for||'');
+  document.getElementById('r-bio').textContent=d.bio||'';
+  document.getElementById('r-compat').textContent=d.compatibility_score??'–';
+  const g=document.getElementById('r-green');g.innerHTML='';
+  (d.green_flags||[]).forEach(f=>g.insertAdjacentHTML('beforeend','<div class="fitem"><b>'+esc(f.flag)+'</b><p>'+esc(f.why)+'</p></div>'));
+  const r=document.getElementById('r-red');r.innerHTML='';
+  (d.red_flags||[]).forEach(f=>r.insertAdjacentHTML('beforeend','<div class="fitem"><b>'+esc(f.flag)+'</b><p>'+esc(f.why)+'</p></div>'));
+  const t=document.getElementById('r-toxic');t.innerHTML='';
+  (d.toxic_traits||[]).forEach(f=>t.insertAdjacentHTML('beforeend','<div class="fitem"><b>'+esc(f.trait)+'</b><p>'+esc(f.why)+'</p></div>'));
+  document.getElementById('r-best').textContent=d.best_match?.who||'';
+  document.getElementById('r-best-why').textContent=d.best_match?.why||'';
+  document.getElementById('r-worst').textContent=d.worst_match?.who||'';
+  document.getElementById('r-worst-why').textContent=d.worst_match?.why||'';
+  document.getElementById('r-exes').textContent=d.exes||'';
+  document.getElementById('r-date').textContent=d.first_date||'';
+  results.classList.add('show');
+  results.scrollIntoView({behavior:'smooth',block:'start'});
+  fetch('/api/log-eval',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tool:'dating-profile',input:idea.slice(0,1500),output:d})}).catch(()=>{});
+}
+
+document.getElementById('again').addEventListener('click',()=>{
+  results.classList.remove('show');document.getElementById('idea').value='';
+  document.getElementById('ask').scrollIntoView({behavior:'smooth'});document.getElementById('idea').focus();
+});
+document.getElementById('tweet').addEventListener('click',()=>{
+  if(!last)return;
+  const text=(last.share_line||('My startup idea scored '+last.compatibility_score+'/100 on compatibility with product-market love.'))+'\n\nProfile yours:';
+  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(location.origin+'/100days/day-07-idea-dating/'),'_blank');
+});
+document.getElementById('copy').addEventListener('click',async e=>{
+  if(!last)return;const d=last;
+  const lines=['STARTUP IDEA DATING PROFILE — '+(d.profile_name||''),'“'+(d.tagline||'')+'”','',d.bio||'','','Compatibility: '+(d.compatibility_score??'–')+'/100','','GREEN FLAGS:'];
+  (d.green_flags||[]).forEach(f=>lines.push('+ '+f.flag+' — '+f.why));
+  lines.push('','RED FLAGS:');
+  (d.red_flags||[]).forEach(f=>lines.push('- '+f.flag+' — '+f.why));
+  lines.push('','TOXIC TRAITS:');
+  (d.toxic_traits||[]).forEach(f=>lines.push('! '+f.trait+' — '+f.why));
+  lines.push('','Best match: '+(d.best_match?.who||'')+' — '+(d.best_match?.why||''));
+  lines.push('Exes: '+(d.exes||''));
+  lines.push('First date: '+(d.first_date||''));
+  lines.push('','Generated at pratikrenuse.com/100days/day-07-idea-dating/');
+  try{await navigator.clipboard.writeText(lines.join('\n'));e.target.textContent='Copied';setTimeout(()=>e.target.textContent='Copy this profile',2000);}catch{}
+});
+document.getElementById('su-go').addEventListener('click',async()=>{
+  const email=document.getElementById('su-email').value.trim();
+  if(!email||!email.includes('@'))return;
+  try{
+    const r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,source:'day-07-idea-dating'})});
+    const d=await r.json();
+    if(d.ok){document.getElementById('su-row').style.display='none';document.getElementById('su-ok').style.display='block';}
+  }catch{}
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fine Print Rage Meter · Day 06 · 100 Days of Building</title>
+<meta name="description" content="Paste any terms of service or privacy policy. Get the five most outrageous clauses in plain English and a 0–100 rage score.">
+<meta property="og:title" content="Fine Print Rage Meter">
+<meta property="og:description" content="You didn't read the terms. It read you. Paste any ToS, get the 5 worst clauses in plain English.">
+<style>
+  :root{
+    --bg:#f7f4ee; --bg2:#efeade; --card:#fdfcf8;
+    --ink:#1c1a16; --ink2:#4a463e; --ink3:#7d7768; --ink4:#b3ac9b;
+    --gold:#9a7c2e; --gold2:#c9a84c; --line:#e2dccb;
+    --bad:#a13030;
+    --serif:Georgia,'Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;border-bottom:1px solid var(--line);font-size:13px}
+  nav .crumb{color:var(--ink3)} nav .crumb a{text-decoration:none;color:var(--ink)}
+  nav .crumb .day{margin-left:10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+  nav .all{text-decoration:none;color:var(--ink3);font-size:12px;letter-spacing:.06em}
+  nav .all:hover{color:var(--ink)}
+  .hero{padding:72px 0 40px}
+  .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+  .eyebrow .line{width:36px;height:1px;background:var(--gold)}
+  .eyebrow .txt{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5.4vw,54px);line-height:1.12;max-width:16ch}
+  h1 em{font-style:italic;color:var(--gold)}
+  .hero p.sub{margin-top:20px;max-width:56ch;color:var(--ink2);font-size:16px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:44px 0}
+  .stat{background:var(--card);padding:22px 20px}
+  .stat .num{font-family:var(--serif);font-size:30px}
+  .stat .lbl{font-size:12.5px;color:var(--ink3);margin-top:6px;line-height:1.45}
+  .ask{background:var(--card);border:1px solid var(--line);border-top:2px solid var(--gold);padding:30px 28px;margin:8px 0 20px}
+  .ask .step{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+  .ask h2{font-family:var(--serif);font-weight:400;font-size:24px;margin-bottom:18px}
+  label{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px}
+  textarea,input[type=email]{width:100%;padding:14px 16px;font-size:15px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:2px;font-family:var(--sans)}
+  textarea{min-height:120px;resize:vertical}
+  textarea:focus,input:focus{outline:2px solid var(--gold2);outline-offset:0;border-color:var(--gold2)}
+  .go{display:inline-block;width:100%;padding:16px 24px;background:var(--ink);color:var(--bg);font-size:15px;font-weight:600;border:none;border-radius:2px;cursor:pointer;margin-top:16px}
+  .go:hover{background:#000}
+  .go:disabled{opacity:.55;cursor:wait}
+  .reassure{margin-top:12px;font-size:12.5px;color:var(--ink3);text-align:center}
+  .err{display:none;margin-top:14px;padding:12px 14px;border:1px solid var(--gold2);background:#f6efdb;color:#6b5518;font-size:14px;border-radius:2px}
+  .err.show{display:block}
+  .loading{display:none;text-align:center;padding:38px 0 8px}
+  .loading.show{display:block}
+  .spin{width:26px;height:26px;border:2px solid var(--line);border-top-color:var(--gold);border-radius:50%;margin:0 auto 16px;animation:sp 1s linear infinite}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .loading .stepline{font-size:14px;color:var(--ink2);font-style:italic;font-family:var(--serif)}
+  #results{display:none;padding-bottom:10px}
+  #results.show{display:block}
+  .sec-label{display:flex;align-items:center;gap:12px;margin:42px 0 16px}
+  .sec-label .line{width:28px;height:1px;background:var(--gold)}
+  .sec-label .txt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  .scorecard{background:var(--ink);color:var(--bg);padding:30px 28px;display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap}
+  .bigscore{font-family:var(--serif);font-size:64px;line-height:1;min-width:130px}
+  .bigscore small{font-size:18px;color:#8f8a7c}
+  .scoreside{flex:1 1 300px}
+  .scoreside .v{font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.4;color:var(--gold2)}
+  .scoreside .r{margin-top:10px;font-size:14px;color:#cfc9ba}
+  .meter{height:6px;background:#3a372f;margin-top:18px;position:relative}
+  .meter .fill{height:100%;background:linear-gradient(90deg,var(--gold2),#c25b5b)}
+  .clauses{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+  .clause{background:var(--card);padding:22px 24px}
+  .crow{display:flex;align-items:baseline;gap:12px}
+  .ctitle{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);font-weight:600}
+  .sev{margin-left:auto;font-size:12px;color:var(--bad);letter-spacing:.1em}
+  .cquote{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--ink3);margin:10px 0;border-left:2px solid var(--line);padding-left:14px}
+  .ctrans{font-size:15px}
+  .ctrans b{color:var(--bad)}
+  .silver{background:var(--card);border:1px solid var(--line);border-left:2px solid #4c7a3f;padding:18px 22px;font-size:14.5px;color:var(--ink2)}
+  .actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+  .actions button{padding:12px 20px;font-size:14px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:2px}
+  .actions button:hover{background:var(--ink);color:var(--bg)}
+  .signup{background:var(--bg2);border:1px solid var(--line);padding:26px 28px;margin-top:64px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .signup h3{font-family:var(--serif);font-weight:400;font-size:20px}
+  .signup p{font-size:13px;color:var(--ink3)}
+  .signup .row{display:flex;gap:10px;flex-wrap:wrap}
+  .signup input{width:auto;flex:1 1 220px}
+  .signup button{padding:14px 20px;background:var(--ink);color:var(--bg);border:none;border-radius:2px;font-weight:600;cursor:pointer;font-size:14px}
+  .signup .ok{display:none;color:#4c7a3f;font-size:14px}
+  footer{margin-top:70px;border-top:1px solid var(--line);padding:26px 32px;display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink3)}
+  footer a{color:var(--ink3)}
+  @media(max-width:720px){.stats{grid-template-columns:1fr}nav{padding:16px 20px}footer{flex-direction:column;gap:6px}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+</head>
+<body>
+
+<nav>
+  <div class="crumb"><a href="/">Pratik Renuse</a> <span style="color:var(--ink4)">/</span> Fine Print Rage Meter <span class="day">Day 06</span></div>
+  <a class="all" href="/100days/">All projects</a>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow"><div class="line"></div><div class="txt">For the checkbox you always lie about</div></div>
+    <h1>You didn't read the terms. <em>The terms read you.</em></h1>
+    <p class="sub">Paste any terms of service or privacy policy, or just its URL. Claude reads all of it, so you never have to, and returns the five most outrageous clauses translated into plain English, plus a rage score from 0 to 100.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num">~9,000</div><div class="lbl">Words in an average terms-of-service document. Nobody has ever read one for fun.</div></div>
+    <div class="stat"><div class="num">5</div><div class="lbl">Clauses we surface: the most invasive, one-sided, or absurd things you agreed to.</div></div>
+    <div class="stat"><div class="num">0–100</div><div class="lbl">The rage score. Under 20 is surprisingly fair. Over 90 means call a lawyer.</div></div>
+  </div>
+
+  <div class="ask" id="ask">
+    <div class="step">Step one of one</div>
+    <h2>What did you agree to?</h2>
+    <form id="form">
+      <label for="source">Paste the policy text, or just its URL</label>
+      <textarea id="source" placeholder="https://example.com/terms — or paste the whole document here" required></textarea>
+      <button class="go" id="go" type="submit">Rate my rage</button>
+      <div class="reassure">Free. Nothing stored. Takes about 30 seconds.</div>
+    </form>
+    <div class="err" id="err" role="alert"></div>
+  </div>
+
+  <div class="loading" id="loading" aria-live="polite">
+    <div class="spin" aria-hidden="true"></div>
+    <div class="stepline" id="stepline">Reading the fine print…</div>
+  </div>
+
+  <div id="results" aria-live="polite">
+    <div class="sec-label"><div class="line"></div><div class="txt">The verdict</div></div>
+    <div class="scorecard">
+      <div class="bigscore" id="r-score">–<small>/100</small></div>
+      <div class="scoreside">
+        <div class="v" id="r-verdict"></div>
+        <div class="r" id="r-read"></div>
+        <div class="meter"><div class="fill" id="r-meter" style="width:0%"></div></div>
+      </div>
+    </div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">What you actually agreed to</div></div>
+    <div class="clauses" id="r-clauses"></div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">The silver lining</div></div>
+    <div class="silver" id="r-silver"></div>
+
+    <div class="actions">
+      <button id="copy" type="button">Copy this report</button>
+      <button id="tweet" type="button">Post my rage score</button>
+      <button id="again" type="button">Rate another document</button>
+    </div>
+  </div>
+
+  <div class="signup">
+    <div><h3>One product ships every day.</h3><p>Day 06 of 100. Get each one in your inbox the day it goes live.</p></div>
+    <div>
+      <div class="row" id="su-row"><input type="email" id="su-email" placeholder="you@email.com"><button id="su-go" type="button">Send me each one</button></div>
+      <div class="ok" id="su-ok">You are in. The next one lands tomorrow.</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span>Day 06 of 100 · Built with Claude · every result is auto-scored by a Claude judge</span>
+  <a href="/100days/">← All projects</a>
+</footer>
+
+<script>
+const form=document.getElementById('form'),go=document.getElementById('go'),err=document.getElementById('err'),
+loading=document.getElementById('loading'),stepline=document.getElementById('stepline'),results=document.getElementById('results');
+const steps=['Reading the fine print…','Finding what they buried in section 14…','Translating lawyer into English…','Measuring the audacity…'];
+let timer=null,last=null;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+form.addEventListener('submit',async e=>{
+  e.preventDefault();err.classList.remove('show');results.classList.remove('show');
+  const source=document.getElementById('source').value.trim();
+  if(!source)return;
+  go.disabled=true;loading.classList.add('show');
+  let i=0;stepline.textContent=steps[0];
+  timer=setInterval(()=>{i=(i+1)%steps.length;stepline.textContent=steps[i];},4000);
+  try{
+    const res=await fetch('/api/rage',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({source})});
+    const data=await res.json();
+    if(!res.ok||data.error){showErr(data.error||'Something went wrong. Try again.');return;}
+    last=data;render(data);
+    fetch('/api/log-eval',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tool:'rage-meter',input:source.slice(0,1500),output:data})}).catch(()=>{});
+  }catch{showErr('Timed out. Long documents take a moment. Try again.');}
+  finally{clearInterval(timer);loading.classList.remove('show');go.disabled=false;}
+});
+
+function showErr(m){err.textContent=m;err.classList.add('show');}
+
+function render(d){
+  const s=Math.max(0,Math.min(100,+d.rage_score||0));
+  document.getElementById('r-score').innerHTML=s+'<small>/100</small>';
+  document.getElementById('r-score').style.color=s>=71?'#d47070':s>=46?'#c9a84c':'#7fae6f';
+  document.getElementById('r-verdict').textContent='“'+(d.rage_verdict||'')+'”';
+  document.getElementById('r-read').textContent=d.doc_read||'';
+  document.getElementById('r-meter').style.width=s+'%';
+  const list=document.getElementById('r-clauses');list.innerHTML='';
+  (d.clauses||[]).forEach(c=>{
+    const sev=Math.max(1,Math.min(5,+c.severity||1));
+    list.insertAdjacentHTML('beforeend',
+      '<div class="clause"><div class="crow"><span class="ctitle">'+esc(c.title)+'</span><span class="sev">'+('▮'.repeat(sev)+'▯'.repeat(5-sev))+' severity '+sev+'/5</span></div>'+
+      '<div class="cquote">“'+esc(c.quote)+'”</div>'+
+      '<div class="ctrans"><b>Meaning:</b> '+esc(c.translation)+'</div></div>');
+  });
+  document.getElementById('r-silver').textContent=d.silver_lining||'None found.';
+  results.classList.add('show');
+  results.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.getElementById('again').addEventListener('click',()=>{
+  results.classList.remove('show');document.getElementById('source').value='';
+  document.getElementById('ask').scrollIntoView({behavior:'smooth'});document.getElementById('source').focus();
+});
+document.getElementById('tweet').addEventListener('click',()=>{
+  if(!last)return;
+  const text=(last.share_line||('This document scored '+last.rage_score+'/100 on the Fine Print Rage Meter.'))+'\n\nRate yours:';
+  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(location.origin+'/100days/day-06-rage-meter/'),'_blank');
+});
+document.getElementById('copy').addEventListener('click',async e=>{
+  if(!last)return;const d=last;
+  const lines=['FINE PRINT RAGE REPORT — '+(d.rage_score)+'/100','',d.doc_read||'',d.rage_verdict||'',''];
+  (d.clauses||[]).forEach((c,i)=>{lines.push((i+1)+'. '+c.title+' (severity '+c.severity+'/5)','   "'+c.quote+'"','   Meaning: '+c.translation,'');});
+  lines.push('Silver lining: '+(d.silver_lining||'None found.'),'','Generated by the Fine Print Rage Meter · pratikrenuse.com/100days/day-06-rage-meter/');
+  try{await navigator.clipboard.writeText(lines.join('\n'));e.target.textContent='Copied';setTimeout(()=>e.target.textContent='Copy this report',2000);}catch{}
+});
+document.getElementById('su-go').addEventListener('click',async()=>{
+  const email=document.getElementById('su-email').value.trim();
+  if(!email||!email.includes('@'))return;
+  try{
+    const r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,source:'day-06-rage-meter'})});
+    const d=await r.json();
+    if(d.ok){document.getElementById('su-row').style.display='none';document.getElementById('su-ok').style.display='block';}
+  }catch{}
+});
+</script>
+</body>
+</html>

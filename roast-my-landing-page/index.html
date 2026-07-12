@@ -3,124 +3,188 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Roast My Landing Page — get brutally, usefully torn apart</title>
+<title>Roast My Landing Page · Day 05 · 100 Days of Building</title>
 <meta name="description" content="Paste your landing page. Get a savage, specific, actually-useful teardown in 30 seconds. Scored 1–10 with named burns, exact fixes, and a voice roast." />
 <meta property="og:title" content="Roast My Landing Page" />
 <meta property="og:description" content="Paste your URL. Get brutally roasted with fixes you can actually ship." />
 <meta property="og:type" content="website" />
 <style>
-  :root{--bg:#0e0d11;--panel:#17151b;--panel-2:#1f1c24;--ink:#f5f2ef;--muted:#a29aa9;--fire:#ff5a1f;--fire-2:#ffab00;--line:#2a2730;--good:#35c88a;--bad:#ff4d61}
-  *{box-sizing:border-box}html,body{margin:0;padding:0}
-  body{background:radial-gradient(1200px 600px at 50% -10%,#241016 0%,var(--bg) 55%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;min-height:100vh}
-  .wrap{max-width:760px;margin:0 auto;padding:4rem 1.25rem 6rem}
-  .kicker{color:var(--fire-2);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:.78rem}
-  h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;margin:.6rem 0 .8rem;font-weight:800;letter-spacing:-0.02em}
-  h1 .flame{background:linear-gradient(100deg,var(--fire),var(--fire-2));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .sub{color:var(--muted);font-size:1.12rem;max-width:34rem}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1.6rem;margin-top:2rem}
-  form{display:flex;gap:.6rem;flex-wrap:wrap}
-  input[type=url],input[type=email]{flex:1 1 320px;min-width:0;background:var(--panel-2);border:1px solid var(--line);color:var(--ink);padding:1rem 1.1rem;border-radius:12px;font-size:1.05rem}
-  input::placeholder{color:#6f6878}
-  input:focus{outline:none;border-color:var(--fire)}
-  button.primary{background:linear-gradient(100deg,var(--fire),var(--fire-2));color:#1a0d05;border:0;font-weight:800;font-size:1.05rem;padding:1rem 1.6rem;border-radius:12px;cursor:pointer;white-space:nowrap}
-  button.primary:disabled{opacity:.6;cursor:not-allowed}
-  .hint{color:var(--muted);font-size:.85rem;margin-top:.7rem}
-  .loading{display:none;margin-top:2rem;text-align:center;color:var(--muted)}
+  :root{
+    --bg:#f7f4ee; --bg2:#efeade; --card:#fdfcf8;
+    --ink:#1c1a16; --ink2:#4a463e; --ink3:#7d7768; --ink4:#b3ac9b;
+    --gold:#9a7c2e; --gold2:#c9a84c; --line:#e2dccb;
+    --good:#4c7a3f; --bad:#a13030;
+    --serif:Georgia,'Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+  nav{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;border-bottom:1px solid var(--line);font-size:13px}
+  nav .crumb{color:var(--ink3)} nav .crumb a{text-decoration:none;color:var(--ink)}
+  nav .crumb .day{margin-left:10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+  nav .all{text-decoration:none;color:var(--ink3);font-size:12px;letter-spacing:.06em}
+  nav .all:hover{color:var(--ink)}
+
+  .hero{padding:72px 0 40px}
+  .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+  .eyebrow .line{width:36px;height:1px;background:var(--gold)}
+  .eyebrow .txt{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5.4vw,54px);line-height:1.12;letter-spacing:-.01em;max-width:16ch}
+  h1 em{font-style:italic;color:var(--gold)}
+  .hero p.sub{margin-top:20px;max-width:56ch;color:var(--ink2);font-size:16px}
+
+  .ask{background:var(--card);border:1px solid var(--line);border-top:2px solid var(--gold);padding:30px 28px;margin:24px 0 20px}
+  .ask .step{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+  label{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px}
+  form.rowform{display:flex;gap:10px;flex-wrap:wrap}
+  input[type=url],input[type=email]{flex:1 1 300px;min-width:0;padding:14px 16px;font-size:16px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:2px;font-family:var(--sans)}
+  input::placeholder{color:var(--ink4)}
+  input:focus{outline:2px solid var(--gold2);outline-offset:0;border-color:var(--gold2)}
+  button.primary{padding:14px 26px;background:var(--ink);color:var(--bg);font-size:15px;font-weight:600;border:none;border-radius:2px;cursor:pointer;letter-spacing:.02em;white-space:nowrap}
+  button.primary:hover{background:#000}
+  button.primary:disabled{opacity:.55;cursor:wait}
+  .hint{color:var(--ink3);font-size:12.5px;margin-top:12px}
+  .err{display:none;margin-top:14px;padding:12px 14px;border:1px solid var(--gold2);background:#f6efdb;color:#6b5518;font-size:14px;border-radius:2px}
+  .err.show{display:block}
+
+  .loading{display:none;text-align:center;padding:38px 0 8px}
   .loading.show{display:block}
-  .flames{font-size:2.4rem;animation:flicker 1s infinite alternate}
-  @keyframes flicker{from{opacity:.5;transform:scale(.96)}to{opacity:1;transform:scale(1.04)}}
-  .loading .step{margin-top:.6rem;font-size:.95rem}
-  .results{display:none;margin-top:2rem}
+  .spin{width:26px;height:26px;border:2px solid var(--line);border-top-color:var(--gold);border-radius:50%;margin:0 auto 16px;animation:sp 1s linear infinite}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .loading .step{font-size:14px;color:var(--ink2);font-style:italic;font-family:var(--serif)}
+
+  .results{display:none;padding-bottom:10px}
   .results.show{display:block}
-  .scorewrap{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
-  .bigscore{font-size:3.4rem;font-weight:800;line-height:1}
-  .bigscore small{font-size:1.2rem;color:var(--muted);font-weight:600}
-  .verdict{color:var(--ink);font-size:1.1rem;margin:0}
-  .headline{font-size:1.35rem;font-weight:800;margin:1.2rem 0 0;color:var(--fire-2)}
-  .bench{margin-top:.9rem;font-size:.92rem;color:var(--muted);border-left:3px solid var(--fire);padding:.5rem .8rem;background:var(--panel-2);border-radius:8px}
-  .section{border-top:1px solid var(--line);padding:1.3rem 0}
-  .section:first-of-type{border-top:0}
-  .srow{display:flex;align-items:baseline;gap:.7rem}
-  .sname{font-weight:800;font-size:1.1rem}
-  .sscore{margin-left:auto;font-weight:800;font-size:1.1rem}
-  .burn{margin:.5rem 0 .7rem;font-size:1.05rem}
-  .fix{background:var(--panel-2);border-left:3px solid var(--good);padding:.7rem .9rem;border-radius:8px;color:var(--muted);font-size:.96rem}
+  .sec-label{display:flex;align-items:center;gap:12px;margin:42px 0 16px}
+  .sec-label .line{width:28px;height:1px;background:var(--gold)}
+  .sec-label .txt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600}
+
+  .scorecard{background:var(--ink);color:var(--bg);padding:30px 28px;display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap}
+  .bigscore{font-family:var(--serif);font-size:64px;line-height:1;min-width:120px}
+  .bigscore small{font-size:20px;color:#8f8a7c}
+  .scoreside{flex:1 1 300px}
+  .verdict{font-size:15.5px;color:#cfc9ba;max-width:60ch}
+  .headline{font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.35;margin-top:14px;color:var(--gold2)}
+  .bench{margin-top:16px;padding-top:14px;border-top:1px solid #3a372f;font-size:13.5px;color:#cfc9ba}
+  .bench b{color:var(--bg)}
+
+  .sections{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+  .section{background:var(--card);padding:22px 24px}
+  .srow{display:flex;align-items:baseline;gap:12px}
+  .sname{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+  .sscore{margin-left:auto;font-family:var(--serif);font-size:20px}
+  .burn{font-family:var(--serif);font-size:17.5px;line-height:1.5;margin:10px 0 12px}
+  .fix{border-left:2px solid var(--good);padding:8px 0 8px 16px;color:var(--ink2);font-size:14px}
   .fix b{color:var(--good)}
+
   .locked{position:relative;overflow:hidden}
   .locked .inner{filter:blur(7px);pointer-events:none;user-select:none}
-  .gate{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:1rem}
-  .gatebox{background:rgba(23,21,27,.86);border:1px solid var(--line);border-radius:14px;padding:1.4rem;text-align:center;max-width:420px;backdrop-filter:blur(2px)}
-  .gatebox h3{margin:.1rem 0 .3rem;font-size:1.2rem}
-  .gatebox p{color:var(--muted);margin:0 0 1rem;font-size:.95rem}
-  .share{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.6rem}
-  button.ghost{background:var(--panel-2);color:var(--ink);border:1px solid var(--line);font-weight:700;padding:.85rem 1.2rem;border-radius:12px;cursor:pointer;font-size:.98rem}
-  button.ghost:hover{border-color:var(--fire)}
-  .err{display:none;margin-top:1rem;color:var(--bad);font-weight:600}
-  .err.show{display:block}
+  .gate{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:16px}
+  .gatebox{background:rgba(253,252,248,.92);border:1px solid var(--gold);padding:26px;text-align:center;max-width:440px;backdrop-filter:blur(2px)}
+  .gatebox h3{font-family:var(--serif);font-weight:400;font-size:20px;margin-bottom:6px}
+  .gatebox p{color:var(--ink3);margin-bottom:16px;font-size:13.5px}
+
+  .voicewrap{background:var(--card);border:1px solid var(--line);padding:22px 24px;margin-top:14px}
+  audio{width:100%;margin-top:12px}
+
+  .share{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  button.ghost{padding:12px 20px;font-size:14px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:2px}
+  button.ghost:hover{background:var(--ink);color:var(--bg)}
   canvas{display:none}
-  .cardprev{margin-top:1.2rem;border-radius:12px;max-width:100%;border:1px solid var(--line)}
-  audio{width:100%;margin-top:1rem}
-  .voicewrap{margin-top:1.4rem}
-  .lb{margin-top:3rem}
-  .lb h2{font-size:1.4rem;margin:0 0 .3rem}
-  .lb .lbsub{color:var(--muted);font-size:.9rem;margin:0 0 1rem}
-  .lbrow{display:flex;align-items:center;gap:.8rem;padding:.7rem 0;border-top:1px solid var(--line)}
-  .lbrow:first-child{border-top:0}
-  .lbrank{color:var(--muted);font-weight:800;width:1.6rem;text-align:right}
-  .lbhost{font-weight:700}
-  .lbburn{color:var(--muted);font-size:.85rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .lbscore{margin-left:auto;font-weight:800}
-  .stats{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
-  .stat{background:var(--panel-2);border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;flex:1 1 100px;text-align:center}
-  .stat b{display:block;font-size:1.5rem}
-  .stat span{color:var(--muted);font-size:.78rem}
-  footer{text-align:center;color:#5f5867;font-size:.82rem;margin-top:3rem}
-  footer a{color:var(--muted)}
+  .cardprev{margin-top:16px;max-width:100%;border:1px solid var(--line)}
+
+  .lb{margin-top:64px;border-top:1px solid var(--line);padding-top:40px}
+  .lb h2{font-family:var(--serif);font-weight:400;font-size:26px}
+  .lb h2 em{font-style:italic;color:var(--gold)}
+  .lb .lbsub{color:var(--ink3);font-size:13.5px;margin:4px 0 18px}
+  .lbrow{display:flex;align-items:center;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+  .lbrank{color:var(--ink4);font-family:var(--serif);width:24px;text-align:right}
+  .lbhost{font-weight:600;font-size:14.5px}
+  .lbburn{color:var(--ink3);font-size:13px;font-style:italic;font-family:var(--serif);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .lbscore{margin-left:auto;font-family:var(--serif);font-size:18px}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:18px}
+  .stat{background:var(--card);padding:14px;text-align:center}
+  .stat b{display:block;font-family:var(--serif);font-size:24px;font-weight:400}
+  .stat span{color:var(--ink3);font-size:10.5px;letter-spacing:.12em}
+
+  footer{margin-top:70px;border-top:1px solid var(--line);padding:26px 32px;display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink3)}
+  footer a{color:var(--ink3)}
+  @media(max-width:720px){
+    nav{padding:16px 20px}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    footer{flex-direction:column;gap:6px}
+  }
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K5BP5TE71L');
+</script>
 </head>
 <body>
-<div class="wrap">
-  <div class="kicker">🔥 Roast My Landing Page</div>
-  <h1>Your landing page is <span class="flame">probably lying to you.</span></h1>
-  <p class="sub">Paste your URL. In 30 seconds you get a scored, specific, screenshot-worthy teardown — with the exact fixes to ship next, benchmarked against your real category winner.</p>
 
-  <div class="card">
-    <form id="roastForm">
-      <input id="urlInput" type="url" placeholder="yoursite.com" autocomplete="off" required />
-      <button class="primary" type="submit" id="roastBtn">Roast my page 🔥</button>
-    </form>
-    <div class="hint">Free scan. We browse the live page and score your hero, CTA, proof, and pricing.</div>
-    <div class="err" id="errBox"></div>
+<nav>
+  <div class="crumb"><a href="/">Pratik Renuse</a> <span style="color:var(--ink4)">/</span> Roast My Landing Page <span class="day">Day 05</span></div>
+  <a class="all" href="/100days/">All projects</a>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow"><div class="line"></div><div class="txt">For the page you are too close to</div></div>
+    <h1>Your landing page is <em>probably lying to you.</em></h1>
+    <p class="sub">Paste your URL. In 30 seconds you get a scored, specific, screenshot-worthy teardown: your hero, CTA, proof, and pricing, each with a named burn and the exact fix to ship next. Benchmarked against your real category winner where we can find one.</p>
   </div>
 
-  <div class="loading" id="loading">
-    <div class="flames">🔥</div>
+  <div class="ask">
+    <div class="step">Step one of one</div>
+    <label for="urlInput">Your landing page URL</label>
+    <form id="roastForm" class="rowform">
+      <input id="urlInput" type="url" placeholder="yoursite.com" autocomplete="off" required />
+      <button class="primary" type="submit" id="roastBtn">Roast my page</button>
+    </form>
+    <div class="hint">Free scan. We read the live page and score your hero, CTA, proof, and pricing. Savage, but every burn comes with the fix.</div>
+    <div class="err" id="errBox" role="alert"></div>
+  </div>
+
+  <div class="loading" id="loading" aria-live="polite">
+    <div class="spin" aria-hidden="true"></div>
     <div class="step" id="loadStep">Loading your page…</div>
   </div>
 
-  <div class="results" id="results">
-    <div class="card">
-      <div class="scorewrap">
-        <div class="bigscore" id="bigScore">–<small>/10</small></div>
-        <div><p class="verdict" id="verdict"></p></div>
+  <div class="results" id="results" aria-live="polite">
+
+    <div class="sec-label"><div class="line"></div><div class="txt">The verdict</div></div>
+    <div class="scorecard">
+      <div class="bigscore" id="bigScore">–<small>/10</small></div>
+      <div class="scoreside">
+        <p class="verdict" id="verdict"></p>
+        <p class="headline" id="headline"></p>
+        <div class="bench" id="bench" style="display:none"></div>
       </div>
-      <p class="headline" id="headline"></p>
-      <div class="bench" id="bench" style="display:none"></div>
     </div>
 
-    <!-- free: hero -->
-    <div class="card" id="freeCard"></div>
+    <div class="sec-label"><div class="line"></div><div class="txt">Section by section</div></div>
 
-    <!-- locked: cta/proof/pricing + voice -->
-    <div class="card locked" id="lockedCard" style="display:none">
+    <!-- free: hero -->
+    <div class="sections" id="freeCard"></div>
+
+    <!-- locked: cta/proof/pricing -->
+    <div class="sections locked" id="lockedCard" style="display:none;margin-top:14px">
       <div class="inner" id="lockedInner"></div>
       <div class="gate" id="gate">
         <div class="gatebox">
-          <h3>🔒 Unlock the full teardown</h3>
-          <p>3 more brutal sections + your 30-second voice roast. Drop your email — no spam, just the roast.</p>
-          <form id="emailForm">
+          <h3>Unlock the full teardown</h3>
+          <p>Three more sections plus your 30-second voice roast. Your email, no spam, just the roast.</p>
+          <form id="emailForm" class="rowform">
             <input id="emailInput" type="email" placeholder="you@startup.com" required />
-            <button class="primary" type="submit">Unlock the roast 🔓</button>
+            <button class="primary" type="submit">Unlock</button>
           </form>
           <div class="err" id="gateErr"></div>
         </div>
@@ -128,30 +192,34 @@
     </div>
 
     <!-- voice roast (revealed after unlock) -->
-    <div class="card voicewrap" id="voiceCard" style="display:none">
-      <div class="srow"><span class="sname">🎧 Your voice roast</span></div>
+    <div class="voicewrap" id="voiceCard" style="display:none">
+      <div class="srow"><span class="sname">Your voice roast</span></div>
       <p class="hint" id="voiceStatus">Generating your 30-second roast…</p>
       <audio id="voicePlayer" controls style="display:none"></audio>
     </div>
 
     <div class="share">
-      <button class="ghost" id="dlCard">⬇️ Download share card</button>
-      <button class="ghost" id="tweetBtn">𝕏 Post the score</button>
-      <button class="ghost" id="againBtn">↺ Roast another</button>
+      <button class="ghost" id="dlCard">Download share card</button>
+      <button class="ghost" id="tweetBtn">Post the score</button>
+      <button class="ghost" id="againBtn">Roast another</button>
     </div>
     <img class="cardprev" id="cardPrev" alt="Your roast share card" style="display:none" />
   </div>
 
   <!-- leaderboard -->
   <div class="lb" id="lb" style="display:none">
-    <h2>🔥 Wall of Shame</h2>
+    <h2>The <em>wall of shame.</em></h2>
     <p class="lbsub">The most brutally-scored landing pages. Live.</p>
     <div class="stats" id="stats"></div>
     <div id="lbList"></div>
   </div>
 
-  <footer>Day 05 of 100 · Built with <a href="https://github.com/pratikrenuse/100days" target="_blank" rel="noopener">Claude</a> · every roast is auto-scored by a Claude judge · <a href="/100days/">All projects</a>.</footer>
 </div>
+
+<footer>
+  <span>Day 05 of 100 · Built with Claude · every roast is auto-scored by a Claude judge</span>
+  <a href="/100days/">← All projects</a>
+</footer>
 
 <canvas id="shareCanvas" width="1200" height="630"></canvas>
 
@@ -199,7 +267,8 @@ const steps=["Loading your page…","Reading your hero line… oh no.","Inspecti
 let stepTimer=null;
 const showErr=(el,m)=>{el.textContent=m;el.classList.add("show")};
 const clearErr=(el)=>{el.classList.remove("show");el.textContent=""};
-const scoreColor=(s)=>s>=8?"var(--good)":s>=5?"var(--fire-2)":"var(--bad)";
+const scoreColor=(s)=>s>=8?"var(--good)":s>=5?"var(--gold)":"var(--bad)";
+const scoreColorDark=(s)=>s>=8?"#7fae6f":s>=5?"#c9a84c":"#d47070";
 const esc=(s)=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
 form.addEventListener("submit", async (e)=>{
@@ -222,10 +291,10 @@ form.addEventListener("submit", async (e)=>{
 
 async function renderRoast(d){
   bigScore.innerHTML=`${d.overall_score}<small>/10</small>`;
-  bigScore.style.color=scoreColor(d.overall_score);
+  bigScore.style.color=scoreColorDark(d.overall_score);
   verdict.textContent=d.verdict||"";
   headline.textContent="“"+(d.headline_burn||"")+"”";
-  if(d.benchmark_cite){bench.style.display="block";bench.innerHTML="📊 <b>Benchmark:</b> "+esc(d.benchmark_cite);}
+  if(d.benchmark_cite){bench.style.display="block";bench.innerHTML="<b>Benchmark:</b> "+esc(d.benchmark_cite);}
   else bench.style.display="none";
 
   const secs=d.sections||[];
@@ -237,13 +306,13 @@ async function renderRoast(d){
   if(gateOn && secs.length>1){
     lockedInner.innerHTML="";
     secs.slice(1).forEach(s=>lockedInner.appendChild(sectionEl(s)));
-    lockedCard.style.display="block"; gate.style.display="flex";
+    lockedCard.style.display="grid"; gate.style.display="flex";
     voiceCard.style.display="none";
   } else {
     // no convex → show everything, no gate
     lockedInner.innerHTML="";
     secs.slice(1).forEach(s=>lockedInner.appendChild(sectionEl(s)));
-    lockedCard.style.display= secs.length>1 ? "block":"none";
+    lockedCard.style.display= secs.length>1 ? "grid":"none";
     lockedCard.classList.remove("locked"); gate.style.display="none";
     voiceCard.style.display="none";
   }
@@ -312,21 +381,26 @@ function worst(d){ const s=(d.sections||[]).slice().sort((a,b)=>a.score-b.score)
 function host(u){ try{return new URL(u).hostname.replace(/^www\./,"");}catch{return u;} }
 function drawShareCard(d){
   const c=$("shareCanvas"),ctx=c.getContext("2d"),W=1200,H=630;
-  const g=ctx.createLinearGradient(0,0,W,H); g.addColorStop(0,"#1a0c10"); g.addColorStop(1,"#0e0d11");
-  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
-  ctx.fillStyle="#ffab00"; ctx.font="700 30px -apple-system,Segoe UI,Roboto,sans-serif";
-  ctx.fillText("🔥 ROAST MY LANDING PAGE",70,90);
-  const cx=1000,cy=150,r=70;
-  ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2); ctx.fillStyle="#17151b"; ctx.fill();
-  ctx.lineWidth=8; ctx.strokeStyle=d.overall_score>=8?"#35c88a":d.overall_score>=5?"#ffab00":"#ff4d61"; ctx.stroke();
+  ctx.fillStyle="#f7f4ee"; ctx.fillRect(0,0,W,H);
+  ctx.strokeStyle="#e2dccb"; ctx.lineWidth=2; ctx.strokeRect(24,24,W-48,H-48);
+  // eyebrow
+  ctx.fillStyle="#9a7c2e"; ctx.font="600 24px -apple-system,Segoe UI,Roboto,sans-serif";
+  ctx.fillText("ROAST MY LANDING PAGE · DAY 05 OF 100",70,100);
+  ctx.fillRect(70,116,44,2);
+  // score circle
+  const cx=1010,cy=160,r=72;
+  ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2); ctx.fillStyle="#fdfcf8"; ctx.fill();
+  ctx.lineWidth=6; ctx.strokeStyle=d.overall_score>=8?"#4c7a3f":d.overall_score>=5?"#9a7c2e":"#a13030"; ctx.stroke();
   ctx.fillStyle=ctx.strokeStyle; ctx.textAlign="center";
-  ctx.font="800 58px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.fillText(d.overall_score,cx,cy+15);
-  ctx.font="600 20px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.fillStyle="#a29aa9"; ctx.fillText("/10",cx,cy+45);
-  ctx.textAlign="left"; ctx.fillStyle="#f5f2ef"; ctx.font="800 52px -apple-system,Segoe UI,Roboto,sans-serif";
-  wrapText(ctx,"“"+(d.headline_burn||"")+"”",70,300,860,62);
-  ctx.fillStyle="#a29aa9"; ctx.font="600 26px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.fillText(host(d.url),70,H-60);
-  ctx.fillStyle="#ff5a1f"; ctx.font="700 26px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.textAlign="right";
-  ctx.fillText("Roast yours →",W-70,H-60); ctx.textAlign="left";
+  ctx.font="400 60px Georgia,serif"; ctx.fillText(d.overall_score,cx,cy+16);
+  ctx.font="600 20px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.fillStyle="#7d7768"; ctx.fillText("/10",cx,cy+46);
+  // headline burn
+  ctx.textAlign="left"; ctx.fillStyle="#1c1a16"; ctx.font="italic 400 50px Georgia,serif";
+  wrapText(ctx,"“"+(d.headline_burn||"")+"”",70,300,850,62);
+  // footer
+  ctx.fillStyle="#7d7768"; ctx.font="600 26px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.fillText(host(d.url),70,H-70);
+  ctx.fillStyle="#9a7c2e"; ctx.font="700 26px -apple-system,Segoe UI,Roboto,sans-serif"; ctx.textAlign="right";
+  ctx.fillText("Roast yours → pratikrenuse.com",W-70,H-70); ctx.textAlign="left";
   cardPrev.src=c.toDataURL("image/png"); cardPrev.style.display="block";
 }
 function wrapText(ctx,text,x,y,maxW,lh){const words=text.split(" ");let line="";for(const w of words){const t=line+w+" ";if(ctx.measureText(t).width>maxW&&line){ctx.fillText(line.trim(),x,y);line=w+" ";y+=lh;}else line=t;}ctx.fillText(line.trim(),x,y);}
@@ -334,7 +408,7 @@ function wrapText(ctx,text,x,y,maxW,lh){const words=text.split(" ");let line="";
 function shareUrl(){ return currentScanId ? `${location.origin}/?ref=${currentScanId}` : location.origin; }
 
 $("dlCard").addEventListener("click",()=>{ if(!lastRoast)return; const c=$("shareCanvas"); const a=document.createElement("a"); a.download="my-landing-page-roast.png"; a.href=c.toDataURL("image/png"); a.click(); if(convexReady&&currentScanId)convex.mutation(anyApi.roasts.logShare,{scanId:currentScanId}).catch(()=>{}); });
-$("tweetBtn").addEventListener("click",()=>{ if(!lastRoast)return; const text=`My landing page (${host(lastRoast.url)}) scored ${lastRoast.overall_score}/10 🔥\n\n“${lastRoast.headline_burn}”\n\nRoast yours:`; window.open("https://twitter.com/intent/tweet?text="+encodeURIComponent(text)+"&url="+encodeURIComponent(shareUrl()),"_blank"); if(convexReady&&currentScanId)convex.mutation(anyApi.roasts.logShare,{scanId:currentScanId}).catch(()=>{}); });
+$("tweetBtn").addEventListener("click",()=>{ if(!lastRoast)return; const text=`My landing page (${host(lastRoast.url)}) scored ${lastRoast.overall_score}/10\n\n“${lastRoast.headline_burn}”\n\nRoast yours:`; window.open("https://twitter.com/intent/tweet?text="+encodeURIComponent(text)+"&url="+encodeURIComponent(shareUrl()),"_blank"); if(convexReady&&currentScanId)convex.mutation(anyApi.roasts.logShare,{scanId:currentScanId}).catch(()=>{}); });
 $("againBtn").addEventListener("click",()=>{ results.classList.remove("show"); urlInput.value=""; urlInput.focus(); window.scrollTo({top:0,behavior:"smooth"}); });
 
 // ===== leaderboard render =====
