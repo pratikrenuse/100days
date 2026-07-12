@@ -284,7 +284,7 @@ form.addEventListener("submit", async (e)=>{
     lastRoast=data;
     await renderRoast(data);
     // L5 auto-eval: every production roast gets judged + logged (fire-and-forget)
-    fetch("/api/score-roast",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({url,roast:data})}).catch(()=>{});
+    fetch("/api/log-eval",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({tool:"roast",url,roast:data})}).catch(()=>{});
   }catch{ showErr(errBox,"The roast engine timed out. Big pages take a moment — try again."); }
   finally{ clearInterval(stepTimer); loading.classList.remove("show"); btn.disabled=false; }
 });

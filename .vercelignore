@@ -1,0 +1,10 @@
+# Vercel Hobby allows max 12 serverless functions per deployment.
+# These tools were consolidated into api/tool.js (router) and api/log-eval.js.
+# The files stay in git for reference but are excluded from deployment.
+api/pricing.js
+api/rage.js
+api/dating-profile.js
+api/cold-email.js
+api/product-page.js
+api/graveyard.js
+api/score-roast.js

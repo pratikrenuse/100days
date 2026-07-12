@@ -196,7 +196,7 @@ form.addEventListener('submit',async e=>{
   let i=0;stepline.textContent=steps[0];
   timer=setInterval(()=>{i=(i+1)%steps.length;stepline.textContent=steps[i];},3500);
   try{
-    const res=await fetch('/api/dating-profile',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({idea})});
+    const res=await fetch('/api/tool',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tool:'dating-profile',idea})});
     const data=await res.json();
     if(!res.ok||data.error){showErr(data.error||'Something went wrong. Try again.');return;}
     last=data;render(data,idea);
