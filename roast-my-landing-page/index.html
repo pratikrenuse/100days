@@ -150,7 +150,7 @@
     <div id="lbList"></div>
   </div>
 
-  <footer>Built with <a href="https://github.com/pratikrenuse/100days" target="_blank" rel="noopener">Hermes</a> · the brain that browses & burns.</footer>
+  <footer>Day 05 of 100 · Built with <a href="https://github.com/pratikrenuse/100days" target="_blank" rel="noopener">Claude</a> · every roast is auto-scored by a Claude judge · <a href="/100days/">All projects</a>.</footer>
 </div>
 
 <canvas id="shareCanvas" width="1200" height="630"></canvas>
@@ -214,6 +214,8 @@ form.addEventListener("submit", async (e)=>{
     if(!res.ok||data.error){showErr(errBox,data.error||"Something went wrong. Try again.");return;}
     lastRoast=data;
     await renderRoast(data);
+    // L5 auto-eval: every production roast gets judged + logged (fire-and-forget)
+    fetch("/api/score-roast",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({url,roast:data})}).catch(()=>{});
   }catch{ showErr(errBox,"The roast engine timed out. Big pages take a moment — try again."); }
   finally{ clearInterval(stepTimer); loading.classList.remove("show"); btn.disabled=false; }
 });

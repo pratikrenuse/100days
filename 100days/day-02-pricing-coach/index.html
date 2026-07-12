@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Coach · Day 02 · 100 Days of Building</title>
+<meta name="description" content="Paste your product URL. Get a pricing recommendation grounded in real frameworks and case studies: value metric, model, three tiers, and three changes to ship this week.">
+<meta property="og:title" content="Pricing Coach by Pratik Renuse">
+<meta property="og:description" content="Paste your product URL, get a consultant-grade pricing recommendation in 30 seconds.">
+<style>
+  :root{
+    --bg:#f7f4ee; --bg2:#efeade; --card:#fdfcf8;
+    --ink:#1c1a16; --ink2:#4a463e; --ink3:#7d7768; --ink4:#b3ac9b;
+    --gold:#9a7c2e; --gold2:#c9a84c; --line:#e2dccb;
+    --serif:Georgia,'Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+  nav{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;border-bottom:1px solid var(--line);font-size:13px}
+  nav .crumb{color:var(--ink3)} nav .crumb a{text-decoration:none;color:var(--ink)}
+  nav .crumb .day{margin-left:10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+  nav .all{text-decoration:none;color:var(--ink3);font-size:12px;letter-spacing:.06em}
+  nav .all:hover{color:var(--ink)}
+
+  .hero{padding:72px 0 40px;text-align:left}
+  .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+  .eyebrow .line{width:36px;height:1px;background:var(--gold)}
+  .eyebrow .txt{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5.4vw,54px);line-height:1.12;letter-spacing:-.01em;max-width:15ch}
+  h1 em{font-style:italic;color:var(--gold)}
+  .hero p.sub{margin-top:20px;max-width:56ch;color:var(--ink2);font-size:16px}
+
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:44px 0}
+  .stat{background:var(--card);padding:22px 20px}
+  .stat .num{font-family:var(--serif);font-size:30px;color:var(--ink)}
+  .stat .lbl{font-size:12.5px;color:var(--ink3);margin-top:6px;line-height:1.45}
+
+  .ask{background:var(--card);border:1px solid var(--line);border-top:2px solid var(--gold);padding:30px 28px;margin:8px 0 20px}
+  .ask .step{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+  .ask h2{font-family:var(--serif);font-weight:400;font-size:24px;margin-bottom:18px}
+  label{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px}
+  input[type=url],input[type=text]{width:100%;padding:14px 16px;font-size:16px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:2px;font-family:var(--sans)}
+  input:focus{outline:2px solid var(--gold2);outline-offset:0;border-color:var(--gold2)}
+  .field{margin-bottom:16px}
+  .go{display:inline-block;width:100%;padding:16px 24px;background:var(--ink);color:var(--bg);font-size:15px;font-weight:600;border:none;border-radius:2px;cursor:pointer;letter-spacing:.02em}
+  .go:hover{background:#000}
+  .go:disabled{opacity:.55;cursor:wait}
+  .reassure{margin-top:12px;font-size:12.5px;color:var(--ink3);text-align:center}
+  .err{display:none;margin-top:14px;padding:12px 14px;border:1px solid #c9a84c;background:#f6efdb;color:#6b5518;font-size:14px;border-radius:2px}
+  .err.show{display:block}
+
+  .loading{display:none;text-align:center;padding:38px 0 8px}
+  .loading.show{display:block}
+  .spin{width:26px;height:26px;border:2px solid var(--line);border-top-color:var(--gold);border-radius:50%;margin:0 auto 16px;animation:sp 1s linear infinite}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .loading .stepline{font-size:14px;color:var(--ink2);font-style:italic;font-family:var(--serif)}
+
+  #results{display:none;padding-bottom:10px}
+  #results.show{display:block}
+  .sec-label{display:flex;align-items:center;gap:12px;margin:42px 0 16px}
+  .sec-label .line{width:28px;height:1px;background:var(--gold)}
+  .sec-label .txt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  .read{background:var(--card);border:1px solid var(--line);padding:24px 26px;font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--ink)}
+  .read .cat{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin-top:12px}
+  .critique{border-left:2px solid var(--gold);padding:6px 0 6px 20px;margin-top:16px;color:var(--ink2);font-size:15px}
+
+  .model{background:var(--ink);color:var(--bg);padding:30px 28px;margin-top:8px}
+  .model .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);font-weight:600;margin-bottom:10px}
+  .model .name{font-family:var(--serif);font-size:26px;line-height:1.25}
+  .model .why{margin-top:12px;color:#cfc9ba;font-size:15px;max-width:64ch}
+  .metric{margin-top:20px;padding-top:18px;border-top:1px solid #3a372f;font-size:14.5px;color:#cfc9ba}
+  .metric b{color:var(--bg)}
+
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
+  .tier{background:var(--card);border:1px solid var(--line);padding:22px 20px;position:relative}
+  .tier.mid{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+  .tier .flag{position:absolute;top:-9px;left:18px;background:var(--gold);color:#fff;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:2px 8px}
+  .tier .tname{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+  .tier .price{font-family:var(--serif);font-size:26px;margin:8px 0 4px}
+  .tier .who{font-size:12.5px;color:var(--gold);margin-bottom:10px}
+  .tier .inc{font-size:13.5px;color:var(--ink2);line-height:1.5}
+
+  .wins{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+  .win{background:var(--card);padding:18px 22px;display:grid;grid-template-columns:44px 1fr;gap:14px}
+  .win .n{font-family:var(--serif);font-size:20px;color:var(--gold)}
+  .win .t{font-weight:600;font-size:15px}
+  .win .d{font-size:14px;color:var(--ink2);margin-top:3px}
+
+  .grounding{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .gcard{background:var(--card);border:1px solid var(--line);padding:20px 22px}
+  .gcard .gk{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:10px}
+  .gcard .fw{margin-bottom:12px}
+  .gcard .fw b{font-size:14.5px}
+  .gcard .fw p{font-size:13.5px;color:var(--ink2)}
+  .gcard .cs-co{font-family:var(--serif);font-size:19px;margin-bottom:6px}
+  .gcard .cs-l{font-size:14px;color:var(--ink2)}
+  .conf{margin-top:16px;font-size:13px;color:var(--ink3)}
+  .conf b{color:var(--ink2);text-transform:capitalize}
+
+  .actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+  .actions button{padding:12px 20px;font-size:14px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:2px}
+  .actions button:hover{background:var(--ink);color:var(--bg)}
+
+  .how{margin:64px 0 0;border-top:1px solid var(--line);padding-top:44px}
+  .how h3{font-family:var(--serif);font-weight:400;font-size:26px;margin-bottom:26px}
+  .how h3 em{font-style:italic;color:var(--gold)}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .hstep .no{font-size:11px;letter-spacing:.14em;color:var(--gold);margin-bottom:8px}
+  .hstep b{font-size:15px;display:block;margin-bottom:6px}
+  .hstep p{font-size:13.5px;color:var(--ink2)}
+
+  footer{margin-top:70px;border-top:1px solid var(--line);padding:26px 32px;display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink3)}
+  footer a{color:var(--ink3)}
+  @media(max-width:720px){
+    .stats,.tiers,.grounding,.steps{grid-template-columns:1fr}
+    nav{padding:16px 20px}
+    footer{flex-direction:column;gap:6px}
+  }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K5BP5TE71L');
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="crumb"><a href="/">Pratik Renuse</a> <span style="color:var(--ink4)">/</span> Pricing Coach <span class="day">Day 02</span></div>
+  <a class="all" href="/100days/">All projects</a>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow"><div class="line"></div><div class="txt">For the moment you have to pick a number</div></div>
+    <h1>Charge what it's worth, <em>not what feels safe.</em></h1>
+    <p class="sub">Paste your product URL. Claude reads your live page and returns the pricing a good consultant would charge for: the value metric to bill on, a recommended model, three concrete tiers, and three changes you can ship this week. Every call grounded in a named framework or a real company's playbook.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num">10–40%</div><div class="lbl">Revenue-per-user lift from a well-built three-tier structure, per HBR research on Good-Better-Best.</div></div>
+    <div class="stat"><div class="num">1/10th</div><div class="lbl">Of the measurable value you create is a defensible price. Most founders charge far less.</div></div>
+    <div class="stat"><div class="num">No. 1</div><div class="lbl">Highest-leverage pricing decision: the value metric, the axis you charge along.</div></div>
+  </div>
+
+  <div class="ask" id="ask">
+    <div class="step">Step one of one</div>
+    <h2>What are we pricing?</h2>
+    <form id="form">
+      <div class="field">
+        <label for="url">Your product URL</label>
+        <input type="url" id="url" placeholder="yourproduct.com" autocomplete="url" required>
+      </div>
+      <div class="field">
+        <label for="notes">Anything we should know? Optional</label>
+        <input type="text" id="notes" maxlength="800" placeholder="e.g. B2B, 200 users, currently free, competitors charge $50/mo">
+      </div>
+      <button class="go" id="go" type="submit">Get my pricing recommendation</button>
+      <div class="reassure">Free. Nothing stored. Takes about 30 seconds.</div>
+    </form>
+    <div class="err" id="err" role="alert"></div>
+  </div>
+
+  <div class="loading" id="loading" aria-live="polite">
+    <div class="spin" aria-hidden="true"></div>
+    <div class="stepline" id="stepline">Loading your page…</div>
+  </div>
+
+  <div id="results" aria-live="polite">
+
+    <div class="sec-label"><div class="line"></div><div class="txt">What we understood</div></div>
+    <div class="read">
+      <div id="r-read"></div>
+      <div class="cat" id="r-cat"></div>
+      <div class="critique" id="r-current"></div>
+    </div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">The recommendation</div></div>
+    <div class="model">
+      <div class="k">Recommended model</div>
+      <div class="name" id="r-model"></div>
+      <div class="why" id="r-model-why"></div>
+      <div class="metric" id="r-metric"></div>
+    </div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">Your three tiers</div></div>
+    <div class="tiers" id="r-tiers"></div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">Ship this week</div></div>
+    <div class="wins" id="r-wins"></div>
+
+    <div class="sec-label"><div class="line"></div><div class="txt">Why we're saying this</div></div>
+    <div class="grounding">
+      <div class="gcard"><div class="gk">Frameworks applied</div><div id="r-frameworks"></div></div>
+      <div class="gcard"><div class="gk">Case study</div><div class="cs-co" id="r-cs-co"></div><div class="cs-l" id="r-cs-l"></div></div>
+    </div>
+    <div class="conf" id="r-conf"></div>
+
+    <div class="actions">
+      <button id="copy" type="button">Copy this recommendation</button>
+      <button id="again" type="button">Price another product</button>
+    </div>
+  </div>
+
+  <div class="how">
+    <h3>Three steps, <em>no guesswork.</em></h3>
+    <div class="steps">
+      <div class="hstep"><div class="no">No. 01</div><b>It reads your live page</b><p>The product, the audience, the promise, and whatever pricing you show today.</p></div>
+      <div class="hstep"><div class="no">No. 02</div><b>Claude applies the frameworks</b><p>Value metric selection, Good-Better-Best, anchoring, the 10x rule. Only the ones that fit.</p></div>
+      <div class="hstep"><div class="no">No. 03</div><b>You get numbers, not vibes</b><p>Three named tiers with prices, plus three changes small enough to ship this week.</p></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span>Day 02 of 100 · Built by Pratik Renuse</span>
+  <a href="/100days/">← All projects</a>
+</footer>
+
+<script>
+const form=document.getElementById('form'),go=document.getElementById('go'),err=document.getElementById('err'),
+loading=document.getElementById('loading'),stepline=document.getElementById('stepline'),results=document.getElementById('results');
+const steps=['Loading your live page…','Reading what the product promises…','Finding the value metric…','Testing tier structures against the frameworks…','Writing your recommendation…'];
+let timer=null,last=null;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  err.classList.remove('show');results.classList.remove('show');
+  const url=document.getElementById('url').value.trim();
+  const notes=document.getElementById('notes').value.trim();
+  if(!url)return;
+  go.disabled=true;loading.classList.add('show');
+  let i=0;stepline.textContent=steps[0];
+  timer=setInterval(()=>{i=(i+1)%steps.length;stepline.textContent=steps[i];},4000);
+  try{
+    const res=await fetch('/api/pricing',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url,notes})});
+    const data=await res.json();
+    if(!res.ok||data.error){showErr(data.error||'Something went wrong. Try again.');return;}
+    last=data;render(data);
+  }catch{showErr('The analysis timed out. Big pages take a moment. Try again.');}
+  finally{clearInterval(timer);loading.classList.remove('show');go.disabled=false;}
+});
+
+function showErr(m){err.textContent=m;err.classList.add('show');}
+
+function render(d){
+  document.getElementById('r-read').textContent=d.product_read||'';
+  document.getElementById('r-cat').textContent=d.category?('Category: '+d.category):'';
+  document.getElementById('r-current').textContent=d.current_pricing_read||'';
+  document.getElementById('r-model').textContent=d.model?.name||'';
+  document.getElementById('r-model-why').textContent=d.model?.why||'';
+  document.getElementById('r-metric').innerHTML=d.value_metric?('<b>Charge along: '+esc(d.value_metric.metric)+'.</b> '+esc(d.value_metric.why)):'';
+  const tiers=document.getElementById('r-tiers');tiers.innerHTML='';
+  (d.tiers||[]).slice(0,3).forEach((t,i)=>{
+    tiers.insertAdjacentHTML('beforeend',
+      '<div class="tier'+(i===1?' mid':'')+'">'+(i===1?'<div class="flag">Anchor here</div>':'')+
+      '<div class="tname">'+esc(t.name)+'</div><div class="price">'+esc(t.price)+'</div>'+
+      '<div class="who">'+esc(t.who)+'</div><div class="inc">'+esc(t.includes)+'</div></div>');
+  });
+  const wins=document.getElementById('r-wins');wins.innerHTML='';
+  (d.quick_wins||[]).slice(0,3).forEach((w,i)=>{
+    wins.insertAdjacentHTML('beforeend','<div class="win"><div class="n">0'+(i+1)+'</div><div><div class="t">'+esc(w.title)+'</div><div class="d">'+esc(w.detail)+'</div></div></div>');
+  });
+  const fw=document.getElementById('r-frameworks');fw.innerHTML='';
+  (d.frameworks_applied||[]).forEach(f=>{
+    fw.insertAdjacentHTML('beforeend','<div class="fw"><b>'+esc(f.name)+'</b><p>'+esc(f.application)+'</p></div>');
+  });
+  document.getElementById('r-cs-co').textContent=d.case_study?.company||'';
+  document.getElementById('r-cs-l').textContent=d.case_study?.lesson||'';
+  document.getElementById('r-conf').innerHTML=d.confidence?('Confidence: <b>'+esc(d.confidence)+'</b>. '+esc(d.confidence_note||'')):'';
+  results.classList.add('show');
+  results.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.getElementById('again').addEventListener('click',()=>{
+  results.classList.remove('show');
+  document.getElementById('url').value='';document.getElementById('notes').value='';
+  document.getElementById('ask').scrollIntoView({behavior:'smooth'});
+  document.getElementById('url').focus();
+});
+
+document.getElementById('copy').addEventListener('click',async e=>{
+  if(!last)return;
+  const d=last;
+  const lines=['PRICING RECOMMENDATION — '+(d.hostname||''),'',
+  d.product_read||'','','MODEL: '+(d.model?.name||''),d.model?.why||'','',
+  'VALUE METRIC: '+(d.value_metric?.metric||''),d.value_metric?.why||'','','TIERS:'];
+  (d.tiers||[]).forEach(t=>lines.push('- '+t.name+' · '+t.price+' · '+t.who+' · '+t.includes));
+  lines.push('','SHIP THIS WEEK:');
+  (d.quick_wins||[]).forEach((w,i)=>lines.push((i+1)+'. '+w.title+' — '+w.detail));
+  lines.push('','Generated by Pricing Coach · pratikrenuse.com/100days/day-02-pricing-coach/');
+  try{await navigator.clipboard.writeText(lines.join('\n'));e.target.textContent='Copied';setTimeout(()=>e.target.textContent='Copy this recommendation',2000);}catch{}
+});
+</script>
+</body>
+</html>

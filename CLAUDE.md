@@ -87,6 +87,14 @@ async function saveLead({ name, email, message, source = "web" }) {
 
 Supabase project: ref `spymrfgkwfjrcealulfh`, URL `https://spymrfgkwfjrcealulfh.supabase.co`. Keys in `secrets.local.md`.
 
+## Observability: Langfuse (centralized in Hermes — tools need nothing)
+
+Tracing is handled by Hermes' built-in `observability/langfuse` plugin on the server, NOT per tool. Because every tool calls the Hermes API, the plugin automatically traces every conversation turn, LLM generation, and tool call — Slack sessions AND all API calls from tools — to Langfuse Cloud (US region, us.cloud.langfuse.com). Tools require zero tracing code.
+
+- Enabled on the server with `hermes plugins enable observability/langfuse`.
+- Keys live in `/home/hermes/.hermes/.env` as `HERMES_LANGFUSE_PUBLIC_KEY` / `HERMES_LANGFUSE_SECRET_KEY` / `HERMES_LANGFUSE_BASE_URL` (values in `secrets.local.md`).
+- Fail-open: missing SDK/keys/errors = silent no-op, never impacts the agent.
+
 ## Security rules (non-negotiable)
 
 - The Hermes API key stays server-side (Vercel env vars / `secrets.local.md`). Never in client JS, never committed.

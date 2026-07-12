@@ -1,0 +1,135 @@
+{
+  "_note": "STARTER SET — Pratik: correct the `signal` and `horizon10y` labels to YOUR judgment. That is the ground truth the eval grades against. signal=true means data-backed (study/stat/technical result), not hype. horizon10y=true means it plausibly still matters in ~10 years.",
+  "recent_brief_items": [
+    "AlphaFold3 predicts protein-ligand complexes, used across drug pipelines",
+    "Waymo scales paid robotaxi rides across multiple US cities"
+  ],
+  "items": [
+    {
+      "id": "swe-agents",
+      "headline": "SOTA coding agents autonomously resolve 30% of real GitHub issues on SWE-bench Verified",
+      "snippet": "New benchmark results show autonomous agents resolving ~30% of verified real-world issues, up from ~4% in 2023.",
+      "source": "arXiv / SWE-bench",
+      "domain": "AI",
+      "signal": true,
+      "horizon10y": true
+    },
+    {
+      "id": "ai-takes-jobs",
+      "headline": "AI will take all our jobs, expert warns",
+      "snippet": "An opinion piece argues AI will eliminate most work within years. No data or study cited.",
+      "source": "OpEd blog",
+      "domain": "AI",
+      "signal": false,
+      "horizon10y": false
+    },
+    {
+      "id": "tsmc-2nm",
+      "headline": "TSMC begins risk production of 2nm (N2) with gate-all-around transistors",
+      "snippet": "First N2 customer silicon expected 2026; ~15% performance or ~30% power improvement over N3 claimed.",
+      "source": "TSMC / industry filing",
+      "domain": "Compute",
+      "signal": true,
+      "horizon10y": true
+    },
+    {
+      "id": "agi-clickbait",
+      "headline": "Is AGI already here? Why 2026 changes everything",
+      "snippet": "Speculative think-piece with no benchmarks, no data — pure vibes.",
+      "source": "Medium",
+      "domain": "AI",
+      "signal": false,
+      "horizon10y": false
+    },
+    {
+      "id": "callcenter-agents",
+      "headline": "Study: AI agents now handle ~10% of call-center interaction volume at surveyed firms",
+      "snippet": "Survey of contact centers finds ~10% of interactions fully handled by AI agents, projected to rise.",
+      "source": "Industry research report",
+      "domain": "AI",
+      "signal": true,
+      "horizon10y": true
+    },
+    {
+      "id": "fusion-sparc",
+      "headline": "Commonwealth Fusion's SPARC tokamak achieves first plasma",
+      "snippet": "Milestone toward net-energy target; commercial ARC plant planned early 2030s.",
+      "source": "CFS / Nature",
+      "domain": "Energy",
+      "signal": true,
+      "horizon10y": true
+    },
+    {
+      "id": "iphone-rumor",
+      "headline": "Next iPhone rumored to add more AI features",
+      "snippet": "Supply-chain rumor about upcoming consumer phone AI features.",
+      "source": "Rumor blog",
+      "domain": "Consumer",
+      "signal": false,
+      "horizon10y": false
+    },
+    {
+      "id": "perovskite-solar",
+      "headline": "Perovskite-silicon tandem solar cells reach 34% efficiency with 1000h stability",
+      "snippet": "Peer-reviewed result pushes past single-junction silicon limits; stability improving toward commercial viability.",
+      "source": "Nature Energy",
+      "domain": "Energy",
+      "signal": true,
+      "horizon10y": true
+    },
+    {
+      "id": "robot-dog-viral",
+      "headline": "Robot dog goes viral dancing on TikTok",
+      "snippet": "A quadruped robot dance clip racks up millions of views.",
+      "source": "Social media",
+      "domain": "Robotics",
+      "signal": false,
+      "horizon10y": false
+    },
+    {
+      "id": "neuralink-bps",
+      "headline": "Neuralink participant controls cursor at ~8 bits/s, approaching able-bodied mouse control",
+      "snippet": "Second human implant shows improved bitrate; still early, small n.",
+      "source": "Company update / press",
+      "domain": "Neurotech",
+      "signal": true,
+      "horizon10y": true
+    },
+    {
+      "id": "quantum-funding",
+      "headline": "Quantum computing startup raises $50M Series B",
+      "snippet": "Funding round announced; no new technical benchmark or result disclosed.",
+      "source": "Press release",
+      "domain": "Quantum",
+      "signal": false,
+      "horizon10y": true
+    },
+    {
+      "id": "alphafold-repeat",
+      "headline": "AlphaFold3 continues to expand protein-ligand structure predictions used in drug discovery",
+      "snippet": "Ongoing coverage of AlphaFold3's role in pharma pipelines (already covered this week).",
+      "source": "News aggregator",
+      "domain": "Biotech",
+      "signal": true,
+      "horizon10y": true
+    },
+    {
+      "id": "bitcoin-200k",
+      "headline": "Bitcoin could hit $200k, analyst predicts",
+      "snippet": "Market speculation, no bearing on long-horizon technology signal.",
+      "source": "Finance blog",
+      "domain": "Crypto",
+      "signal": false,
+      "horizon10y": false
+    },
+    {
+      "id": "gene-editing-trial",
+      "headline": "In-vivo CRISPR base-editing trial lowers LDL cholesterol durably in first patients",
+      "snippet": "Early clinical results show durable single-dose effect; platform generalizable to other targets.",
+      "source": "NEJM / trial data",
+      "domain": "Biotech",
+      "signal": true,
+      "horizon10y": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "daily-futures-brief-evals",
+  "version": "0.1.0",
+  "private": true,
+  "description": "L3 eval for the Daily Futures Brief agent — scores signal-vs-noise, 10yr horizon, factuality, etc. via Braintrust, judged by Hermes.",
+  "scripts": {
+    "eval": "braintrust eval futures-brief.eval.ts"
+  },
+  "devDependencies": {
+    "braintrust": "latest",
+    "autoevals": "latest",
+    "typescript": "^5.6.0"
+  }
+}
