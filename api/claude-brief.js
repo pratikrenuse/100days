@@ -8,8 +8,10 @@
 // Optional: RESEND_API_KEY (enables email), BRIEF_TO (default pratik.y.renuse@gmail.com),
 // BRIEF_FROM (default onboarding@resend.dev until your domain is verified in Resend), CRON_SECRET.
 //
-// Manual endpoints:
-//   /api/claude-brief?test=1   -> runs the full pipeline immediately
+// On-demand only, no cron. Endpoints:
+//   /api/claude-brief           -> shows a page with a "Send today's brief" button, no API cost
+//   /api/claude-brief?run=1     -> runs the full pipeline (Claude API is called only here)
+//   /api/claude-brief?whoami=1  -> Telegram chat id helper
 
 const CLAUDE_MODEL = process.env.CLAUDE_BRIEF_MODEL || 'claude-sonnet-4-6';
 const SEEN_TABLE = 'brief_seen_claude';
@@ -444,6 +446,47 @@ async function sendEmail(brief, items) {
   return 'sent';
 }
 
+// ---------------------------------------------------------- trigger page ----
+
+function triggerPage() {
+  return `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Insight Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+body{background:#F6F2F1;color:#38302A;font-family:'IBM Plex Sans',system-ui,sans-serif;font-weight:400;line-height:1.65;margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:1.5rem;}
+.card{background:#EEE8E4;border:1px solid #D0C8C0;padding:2.5rem;max-width:26rem;width:100%;}
+h1{font-family:'IBM Plex Serif',Georgia,serif;font-weight:300;font-size:1.6rem;color:#1A1512;margin:0 0 0.5rem;}
+p{margin:0 0 1.5rem;font-size:0.95rem;color:#504840;}
+button{background:#1A1512;color:#F6F2F1;border:none;padding:0.9rem 1.4rem;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;font-family:'IBM Plex Sans',sans-serif;font-weight:500;cursor:pointer;width:100%;min-height:44px;}
+button:hover{background:#8C6A18;}
+button:disabled{background:#786E66;cursor:wait;}
+#out{display:none;margin-top:1.25rem;font-size:0.88rem;font-family:'IBM Plex Serif',Georgia,serif;color:#8C6A18;}
+#out.err{color:#1A1512;}
+</style></head><body>
+<div class="card">
+<h1>Daily Insight Brief</h1>
+<p>Runs the full pipeline once: gathers all tracked sources, has Claude curate them, and sends the brief to your Telegram. Costs a few cents per run. Nothing runs on its own.</p>
+<button id="go" onclick="runBrief()">Send today's brief</button>
+<div id="out"></div>
+</div>
+<script>
+async function runBrief(){
+  const btn=document.getElementById('go'),out=document.getElementById('out');
+  btn.disabled=true;btn.textContent='Working, 1 to 2 minutes';
+  out.style.display='none';out.className='';
+  try{
+    const key=new URLSearchParams(location.search).get('key');
+    const r=await fetch(location.pathname+'?run=1'+(key?'&key='+encodeURIComponent(key):''));
+    const d=await r.json();
+    if(d.ok){out.textContent='Brief sent to Telegram. '+(d.signals||0)+' signals from '+(d.fresh||0)+' new items.';}
+    else{out.className='err';out.textContent='Failed: '+(d.error||'unknown error');}
+  }catch(e){out.className='err';out.textContent='Failed: '+e.message;}
+  out.style.display='block';
+  btn.disabled=false;btn.textContent="Send today's brief";
+}
+</script></body></html>`;
+}
+
 // --------------------------------------------------------------- handler ----
 
 module.exports = async (req, res) => {
@@ -453,6 +496,13 @@ module.exports = async (req, res) => {
   const auth = (req.headers && req.headers.authorization) || '';
   if (secret && auth !== 'Bearer ' + secret && q.key !== secret) {
     return res.status(401).json({ error: 'Unauthorized' });
+  }
+
+  // No cron. The Claude API is called only on an explicit ?run=1 request.
+  // A plain visit gets the trigger page and costs nothing.
+  if (q.run !== '1' && !q.whoami) {
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    return res.status(200).send(triggerPage());
   }
 
   // Setup helper: discover your Telegram chat ID (visit /api/claude-brief?whoami=1).
