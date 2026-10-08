@@ -125,6 +125,7 @@ select{background:var(--panel);border:1px solid var(--ink2);padding:6px 8px;bord
 .cdisp{font-family:var(--mono);font-size:1.4rem;text-align:right;padding:12px;overflow:hidden;white-space:nowrap}
 .ckeys{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
 .ckeys button{background:var(--panel);border:0;border-radius:0;min-height:44px;font-family:var(--mono)}.ckeys .fn{background:var(--soft)}
+.tv i,.scv i{font-style:normal;font-size:.35em;color:var(--ink2);margin-left:.15em}
 /* whiteboard */
 .wb{position:fixed;left:16px;bottom:76px;width:min(560px,calc(100vw - 32px));height:min(400px,60vh);background:var(--panel);border:1px solid var(--ink2);z-index:14;box-shadow:0 8px 28px rgba(0,0,0,.25);display:flex;flex-direction:column}
 .wb.big{left:16px;right:16px;top:72px;bottom:76px;width:auto;height:auto}
@@ -209,7 +210,7 @@ function weightedPick(cands, score, rnd){
 // Returns the ids to administer next (one item, or a whole passage / multi-source set).
 function pickNext(k, path, theta, seen, rnd){
   const used = new Set(path), pool = BANK.items.filter(q => q.sec===k && !used.has(q.id));
-  const pen = (q) => seen[q.id] ? 0.35 : 1;
+  const pen = (q) => seen[q.id] ? 0.05 : 1;
   const target = theta + STRETCH;
   const single = (cands) => [weightedPick(cands, q => pen(q)/Math.pow(0.15+Math.abs(q.b-target),2), rnd).id];
   const set = (cands) => { const groups = {}; cands.forEach(q => (groups[q.stim] = groups[q.stim] || []).push(q));
@@ -296,7 +297,7 @@ function tick(){
 }
 
 /* ---------- flow ---------- */
-function startExam(){ S = fresh(); S.order = ui.mode==='full' ? (ui.order || 'QVD') : ui.mode; S.phase = 'secintro'; WB.strokes = []; lsSet(WBKEY, []); save(); render(); }
+function startExam(){ S = fresh(); S.order = ui.mode==='full' ? 'QVD' : ui.mode; S.phase = 'secintro'; WB.strokes = []; lsSet(WBKEY, []); save(); render(); }
 function administer(){
   const k = secKey();
   if (!S.queue.length){ const th = eap(responses(k), 1.5); S.queue = pickNext(k, S.path[k], th, lsGet(SEENKEY) || {}, Math.random); }
@@ -414,7 +415,7 @@ function home(){
    <div><b>Data Insights</b><span>20 questions, 45 minutes</span><small>All five question types, full exam scope, with calculator.</small></div>
   </div>
   <section><h2>Rules, same as test day</h2><ul class="rules">
-   <li>You choose the section order before you start. It cannot be changed later.</li>
+   <li>The full exam runs Quant, then Verbal, then Data Insights.</li>
    <li>Each section opens at medium difficulty and adapts after every answer. Right answers bring harder questions, quickly.</li>
    <li>Each section has its own 45-minute clock. The clock does not pause.</li>
    <li>You must answer a question to move on. You cannot go back until the end of the section.</li>
@@ -425,11 +426,10 @@ function home(){
   </ul></section>
   ${storageOK() ? '' : '<div class="flash" role="alert">This browser is blocking saved data (private window or strict settings). The exam will run, but progress will not survive a refresh. Use a normal window.</div>'}
   <section><h2>What do you want to sit today?</h2><div class="orders">${modes.map(m=>`<label class="order"><input type="radio" name="mode" value="${m[0]}" ${ui.mode===m[0]?'checked':''}><span><b>${m[1]}</b><br><small>${m[2]}</small></span></label>`).join('')}</div></section>
-  <section ${ui.mode==='full'?'':'hidden'}><h2>Choose your section order</h2><div class="orders">${ORDERS.map(o=>`<label class="order"><input type="radio" name="order" value="${o}" ${ui.order===o?'checked':''}><span>${o.split('').map(k=>SECTIONS[k].short).join('<i>, then </i>')}</span></label>`).join('')}</div></section>
   <section><button class="primary big" id="start">${ui.mode==='full'?'Start the exam':'Start '+SECTIONS[ui.mode].short}</button>
   <p class="hint">Once the page has loaded it needs no internet. Every answer and the clock are saved in this browser each second, so if the connection drops, the tab closes or the laptop restarts, reopen this address in the same browser and the exam resumes where it stopped. Your result appears the moment you finish.</p></section>
   ${hist.length ? `<section><h2>Past results on this device</h2><div class="scrollx"><table class="dt rt"><thead><tr><th>Date</th><th>Sat</th><th>Total</th><th>Quant</th><th>Verbal</th><th>Data Insights</th></tr></thead><tbody>${hist.map(h=>`<tr><td>${new Date(h.at).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}</td><td>${h.order.length===3?'Full exam':SECTIONS[h.order].short+' only'}</td><td>${h.total||''}</td>${'QVD'.split('').map(k=>`<td>${h.sc[k]!=null?h.sc[k]+' ('+ord(pct(k,h.sc[k]))+')':''}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>` : ''}
-  <section class="note"><h2>What is and is not identical to the real exam</h2><p>Structure, timing, question types, navigation rules, the three-edit review, the break and the score scales match the real GMAT Focus. The adaptive engine uses the same family of model the real test uses (item response theory): it estimates your ability after each answer and serves the most informative question for that level. Two things cannot be matched by anyone outside GMAC: the real question bank holds thousands of statistically calibrated questions and this one holds 202 with expert-assigned difficulty, and the real scoring algorithm is confidential. This mock is tuned to run slightly tougher than test day: it serves questions a little above your current level and marks a little below it, so a score here should be one you can match or beat on the real exam. Treat it as accurate to about 30 points either way.</p></section></div>`;
+</div>`;
 }
 function secIntro(){
   const s = sec();
@@ -502,13 +502,13 @@ function results(){
   const total = totalScore(sum);
   const groups = {};
   for (const k of SECS) for (const q of items(k)){ const key = SECTIONS[k].short+': '+(k==='Q'?q.topic:q.kind); (groups[key] = groups[key] || {r:0,n:0,t:0}); groups[key].n++; groups[key].t += S.times[q.id]||0; if (correct(q)) groups[key].r++; }
-  const secCard = (k) => { const r = R[k], s = SECTIONS[k]; return `<div class="sc"><span class="scn">${s.short}</span><span class="scv">${r.scaled}</span><span class="scp">${ord(pct(k,r.scaled))} percentile</span><span class="scd">${r.right} of ${r.n} correct${r.un?`, ${r.un} unanswered`:''}</span><span class="track"><i style="width:${(r.scaled-60)/30*100}%"></i></span></div>`; };
+  const secCard = (k) => { const r = R[k], s = SECTIONS[k]; return `<div class="sc"><span class="scn">${s.short}</span><span class="scv">${r.scaled}<i> / 90</i></span><span class="scp">${ord(pct(k,r.scaled))} percentile</span><span class="scd">${r.right} of ${r.n} correct${r.un?`, ${r.un} unanswered`:''}</span><span class="track"><i style="width:${(r.scaled-60)/30*100}%"></i></span></div>`; };
   const rows = (k) => items(k).map((q,i)=>{ const ok = correct(q), t = S.times[q.id]||0, open = ui.open[q.id];
     return `<tr class="${ok?'':'miss'}"><td>${i+1}</td><td>${q.kind==='Problem Solving'?q.topic:q.kind}<small>${q.sub}</small></td><td>${diff(q.b)}</td><td><span class="pill ${ok?'ok':(complete(q)?'no':'un')}">${ok?'Correct':(complete(q)?'Wrong':'Unanswered')}</span></td><td class="${t>180?'slow':''}">${fmt(t)}</td><td><button class="link" data-open="${q.id}">${open?'Hide':'Review'}</button></td></tr>` +
     (open?`<tr class="detail"><td colspan="6"><div class="dwrap">${q.stim?`<div class="stim flat">${stimHTML(q,false)}</div>`:''}<div class="stem">${q.stem}</div>${answerHTML(q,true,true)}<div class="expl"><b>Explanation</b><p>${q.expl}</p></div></div></td></tr>`:''); }).join('');
   return `<div class="page"><header class="hero"><p class="eyebrow">Unofficial score report</p><h1>${full ? 'Estimated total score' : 'Estimated '+SECTIONS[SECS].short+' score'}</h1>
-  ${full ? `<div class="total"><span class="tv">${total}</span><span class="tp">${ord(pct('T',total))} percentile<small>Scale 205 to 805. Likely range ${Math.max(205,total-30)} to ${Math.min(805,total+30)}.</small></span></div>`
-   : `<div class="total"><span class="tv">${R[SECS].scaled}</span><span class="tp">${ord(pct(SECS,R[SECS].scaled))} percentile<small>Section scale 60 to 90. Likely range ${Math.max(60,R[SECS].scaled-2)} to ${Math.min(90,R[SECS].scaled+2)}. ${R[SECS].right} of ${R[SECS].n} correct${R[SECS].un?', '+R[SECS].un+' unanswered':''}. No total score is given for a single section.</small></span></div>`}</header>
+  ${full ? `<div class="total"><span class="tv">${total}<i> / 805</i></span><span class="tp">${ord(pct('T',total))} percentile<small>Score ${total} out of a maximum 805 (scale 205 to 805). Likely range ${Math.max(205,total-30)} to ${Math.min(805,total+30)}.</small></span></div>`
+   : `<div class="total"><span class="tv">${R[SECS].scaled}<i> / 90</i></span><span class="tp">${ord(pct(SECS,R[SECS].scaled))} percentile<small>Score ${R[SECS].scaled} out of a maximum 90 (section scale 60 to 90). Likely range ${Math.max(60,R[SECS].scaled-2)} to ${Math.min(90,R[SECS].scaled+2)}. ${R[SECS].right} of ${R[SECS].n} correct${R[SECS].un?', '+R[SECS].un+' unanswered':''}. No total score is given for a single section.</small></span></div>`}</header>
   ${full ? `<div class="scs">${SECS.split('').map(secCard).join('')}</div>` : ''}${skillTable()}
   <section><h2>Accuracy and pace by area</h2><div class="scrollx"><table class="dt rt"><thead><tr><th>Area</th><th>Correct</th><th>Average time</th></tr></thead><tbody>${Object.entries(groups).map(([k,g])=>`<tr><td>${k}</td><td>${g.r} of ${g.n}</td><td>${fmt(g.t/g.n)}</td></tr>`).join('')}</tbody></table></div></section>
   ${SECS.split('').map(k=>`<section><h2>${SECTIONS[k].name}</h2>${pathChart(k)}<p class="hint">Target pace is about ${k==='Q'?'2:09':k==='V'?'1:57':'2:15'} per question. Times over 3:00 are highlighted.</p><div class="scrollx"><table class="dt rt"><thead><tr><th>#</th><th>Type</th><th>Level</th><th>Result</th><th>Time</th><th></th></tr></thead><tbody>${rows(k)}</tbody></table></div></section>`).join('')}
