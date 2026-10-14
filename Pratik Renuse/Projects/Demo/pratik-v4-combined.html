@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pratik Renuse — From Zero to One</title>
+<meta name="description" content="Pratik Renuse — a 0-to-1 growth marketing leader. Founding marketer behind Infento, VU, and Bueno. TEDx speaker, Techstars & EBRD mentor, angel investor. Read the story, or play it." />
+<meta property="og:title" content="Pratik Renuse — From Zero to One" />
+<meta property="og:description" content="A founding marketer who builds companies from nothing — read the story, or play it as an RPG." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=EB+Garamond:ital@0;1&family=Montserrat:wght@400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+<!-- Supabase client (used by the form at the bottom) -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+  :root{
+    --paper:#f4efe6;--paper-2:#efe8dc;--paper-3:#ece4d6;--panel:#fbf8f2;
+    --ink:#1c1b19;--ink-75:rgba(28,27,25,.74);--ink-55:rgba(28,27,25,.55);--ink-45:rgba(28,27,25,.45);
+    --muted:#736d63;--accent:#9c4a2f;--accent-soft:#bb6244;--gold:#c2883b;
+    --line:rgba(28,27,25,.16);--line-soft:rgba(28,27,25,.09);
+    --display:'Cormorant Garamond',Georgia,serif;
+    --serif:'EB Garamond',Georgia,serif;
+    --label:'Montserrat',-apple-system,Helvetica,Arial,sans-serif;
+    --pixel:'Press Start 2P',monospace;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--serif);background:var(--paper);color:var(--ink);line-height:1.6;font-size:18px;
+    -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  .pixel{font-family:var(--pixel)}
+  em{font-style:italic}
+  .label{font-family:var(--label);font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-55)}
+  .accent{color:var(--accent)}
+
+  /* ---------- Nav ---------- */
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:60;
+    background:linear-gradient(var(--paper) 64%,rgba(245,241,234,0));padding-bottom:18px}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  .logo{font-family:var(--display);font-size:22px;letter-spacing:.02em}
+  .logo .dot{color:var(--accent)}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{font-family:var(--label);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-55);transition:color .25s}
+  .nav-links a:hover{color:var(--ink)}
+  .pill{font-family:var(--label);font-size:11.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+    background:var(--ink);color:var(--paper);padding:12px 22px;border-radius:100px;transition:.25s;display:inline-block}
+  .pill:hover{background:var(--accent);color:#fff}
+  .pill-ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .pill-ghost:hover{background:var(--ink);color:var(--paper)}
+  .menu-btn{display:none;background:none;border:0;color:var(--ink);font-size:22px;cursor:pointer;font-family:var(--serif)}
+  @media(max-width:820px){
+    .nav-links{position:fixed;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);
+      border-top:1px solid var(--line);padding:8px 0;display:none}
+    .nav-links.open{display:flex}
+    .nav-links a{padding:14px 32px}
+    .nav-links .pill{margin:12px 32px;text-align:center}
+    .menu-btn{display:block}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:130px 0 60px;position:relative}
+  .hero .sun{position:absolute;top:9%;left:50%;transform:translateX(-50%);width:min(760px,92vw);opacity:.5;pointer-events:none;color:var(--accent)}
+  .hero-eyebrow{margin-bottom:26px}
+  .hero h1{font-family:var(--display);font-weight:300;font-size:clamp(46px,9vw,104px);line-height:.98;letter-spacing:-.015em;max-width:11ch}
+  .hero h1 em{font-style:italic;color:var(--accent)}
+  .hero .sub{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.4vw,23px);color:var(--ink-75);max-width:30ch;margin:30px auto 0;line-height:1.5}
+  .hero-cta{margin-top:40px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+  .path{width:100%;max-width:920px;margin:60px auto 0;padding:0 8px}
+  .path svg{width:100%;height:auto;display:block;overflow:visible}
+  .path .pl{font-family:var(--label);font-size:11px;letter-spacing:.16em;text-transform:uppercase;fill:var(--ink-55)}
+  .path .pn{font-family:var(--display);font-size:15px;fill:var(--ink);font-style:italic}
+  .scroll-hint{margin-top:42px;font-family:var(--label);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--ink-55);display:flex;flex-direction:column;align-items:center;gap:10px}
+  .scroll-hint .ln{width:1px;height:42px;background:linear-gradient(var(--ink-55),transparent)}
+
+  /* ---------- Section frame ---------- */
+  section{padding:118px 0;position:relative}
+  .center{text-align:center}
+  .sec-eyebrow{margin-bottom:20px}
+  .sec-title{font-family:var(--display);font-weight:300;font-size:clamp(32px,5vw,56px);line-height:1.08;letter-spacing:-.01em}
+  .sec-title em{font-style:italic;color:var(--accent)}
+  .divider{width:46px;height:1px;background:var(--ink);opacity:.5;margin:28px auto 0}
+
+  /* ---------- Letter ---------- */
+  .letter{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .letter .inner{max-width:660px;margin:0 auto;text-align:center}
+  .letter .label{margin-bottom:34px}
+  .letter p{font-family:var(--serif);font-size:20px;line-height:1.85;color:var(--ink-75);text-align:left;margin-bottom:22px}
+  .letter p strong{color:var(--ink);font-weight:600}
+  .letter p em{color:var(--accent)}
+  .letter .sign{font-family:var(--display);font-style:italic;font-size:26px;color:var(--ink);text-align:left;margin-top:38px}
+  .letter .sign small{display:block;font-family:var(--label);font-style:normal;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-55);margin-top:8px}
+
+  /* ---------- Stats ---------- */
+  .pstats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:64px}
+  .pstat{text-align:center;padding:0 6px}
+  .pstat .n{font-family:var(--display);font-weight:300;font-size:clamp(40px,5.4vw,64px);line-height:1;color:var(--ink)}
+  .pstat .n em{color:var(--accent);font-style:italic}
+  .pstat .c{font-family:var(--serif);font-size:15px;color:var(--ink-75);margin-top:16px;line-height:1.45}
+  @media(max-width:780px){.pstats .grid{grid-template-columns:repeat(2,1fr);gap:42px 24px}}
+
+  /* ---------- Values ---------- */
+  .values{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .vrow{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:72px}
+  .vcard{text-align:center;display:flex;flex-direction:column;align-items:center}
+  .vart{width:108px;height:108px;color:var(--accent);margin-bottom:30px}
+  .vart svg{width:100%;height:100%;display:block;overflow:visible}
+  .vcard h3{font-family:var(--display);font-weight:400;font-size:25px;letter-spacing:.01em;margin-bottom:6px}
+  .vcard .vsub{font-family:var(--label);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-55);margin-bottom:16px}
+  .vcard p{font-family:var(--serif);font-size:16.5px;color:var(--ink-75);line-height:1.6;max-width:30ch}
+  @media(max-width:780px){.vrow{grid-template-columns:1fr;gap:60px}}
+
+  /* ---------- Work ---------- */
+  .work .list{margin-top:64px;border-top:1px solid var(--line)}
+  .role{display:grid;grid-template-columns:0.9fr 1.3fr;gap:40px;padding:40px 0;border-bottom:1px solid var(--line);align-items:start}
+  .role .co{font-family:var(--display);font-size:30px;font-weight:400;line-height:1.1}
+  .role .pos{font-family:var(--label);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-55);margin-top:12px}
+  .role .yr{font-family:var(--label);font-size:11px;letter-spacing:.16em;color:var(--ink-55);margin-top:6px}
+  .role .ctx{font-family:var(--serif);font-style:italic;font-size:16px;color:var(--accent);margin-bottom:16px}
+  .role .desc p{font-family:var(--serif);font-size:17px;color:var(--ink-75);line-height:1.6;margin-bottom:10px;padding-left:22px;position:relative}
+  .role .desc p:before{content:"—";position:absolute;left:0;color:var(--ink-55)}
+  @media(max-width:780px){.role{grid-template-columns:1fr;gap:18px;padding:34px 0}}
+
+  /* ---------- Community marquee ---------- */
+  .community{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding-bottom:118px}
+  .marquee{margin-top:60px;width:100%;overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+  .track{display:flex;gap:18px;width:max-content;animation:scroll 46s linear infinite}
+  .community:hover .track{animation-play-state:paused}
+  .chip{flex:0 0 auto;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px 34px;min-width:210px;text-align:center}
+  .chip .cn{font-family:var(--display);font-size:23px;color:var(--ink)}
+  .chip .cr{font-family:var(--label);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-55);margin-top:8px}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center}}
+
+  /* ---------- Teaching ---------- */
+  .teach .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:64px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .tcell{background:var(--paper);padding:44px 34px;text-align:center}
+  .tcell .ti{width:54px;height:54px;color:var(--accent);margin:0 auto 22px}
+  .tcell h4{font-family:var(--display);font-size:23px;font-weight:400;margin-bottom:12px}
+  .tcell p{font-family:var(--serif);font-size:16px;color:var(--ink-75);line-height:1.55}
+  .tcell .tags{margin-top:18px;font-family:var(--label);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-55);line-height:2}
+  @media(max-width:780px){.teach .grid{grid-template-columns:1fr}}
+
+  /* ---------- Invest ---------- */
+  .invest{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .irow{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:56px}
+  .ipill{font-family:var(--display);font-size:21px;border:1px solid var(--line);background:var(--paper);border-radius:100px;padding:16px 30px;color:var(--ink)}
+  .ipill small{font-family:var(--label);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-55);margin-left:10px}
+
+  /* =====================================================================
+     EMBEDDED RPG  (all scoped with .q- / #q ids to avoid collisions)
+     ===================================================================== */
+  .quest{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .q-cabinet{margin-top:54px;border:1px solid var(--ink);border-radius:18px;overflow:hidden;
+    box-shadow:10px 10px 0 var(--accent);background:var(--panel);height:min(72vh,640px);display:flex;flex-direction:column;position:relative}
+  .q-hud{display:flex;align-items:center;gap:16px;padding:12px 16px;border-bottom:1px solid var(--line);
+    background:linear-gradient(var(--paper),rgba(244,239,230,.65));flex-wrap:wrap;z-index:6}
+  .q-who{display:flex;align-items:center;gap:11px}
+  .q-token{width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--paper);display:flex;align-items:center;
+    justify-content:center;font-family:var(--pixel);font-size:9px;box-shadow:0 0 0 3px var(--panel),0 0 0 4px var(--accent);flex:none}
+  .q-nm{font-family:var(--display);font-size:18px;line-height:1}
+  .q-cl{font-size:8px;letter-spacing:.12em;color:var(--accent);font-family:var(--pixel);margin-top:5px}
+  .q-xpwrap{flex:1 1 150px;min-width:130px}
+  .q-xprow{display:flex;justify-content:space-between;font-family:var(--pixel);font-size:7.5px;color:var(--ink-75);margin-bottom:5px}
+  .q-xpbar{height:10px;border:1px solid var(--ink);border-radius:3px;background:var(--paper-2);overflow:hidden;padding:1px}
+  .q-xpfill{height:100%;width:0;background:repeating-linear-gradient(90deg,var(--gold),var(--gold) 6px,var(--accent-soft) 6px,var(--accent-soft) 12px);border-radius:2px;transition:width .7s cubic-bezier(.5,1.4,.4,1)}
+  .q-stats{display:flex;gap:10px;flex:1 1 280px;flex-wrap:wrap}
+  .q-stat{flex:1 1 100px;min-width:96px}
+  .q-stat .q-sl{display:flex;justify-content:space-between;font-family:var(--pixel);font-size:7px;color:var(--ink-75);margin-bottom:4px}
+  .q-stat .q-sb{height:7px;border:1px solid var(--line);border-radius:2px;background:var(--paper-2);overflow:hidden}
+  .q-stat .q-sf{height:100%;width:0;background:var(--accent);transition:width .8s ease}
+  .q-tools{display:flex;gap:7px;flex:none}
+  .q-tbtn{font-family:var(--pixel);font-size:8px;background:var(--panel);border:1px solid var(--ink);border-radius:4px;padding:8px 9px;color:var(--ink);box-shadow:2px 2px 0 var(--line)}
+  .q-tbtn:hover{background:var(--ink);color:var(--paper)}
+
+  .q-stage{flex:1;position:relative;overflow:hidden;background:var(--paper)}
+  #qWorld{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none}
+  .q-tracker{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:4;display:flex;align-items:center;gap:10px;
+    background:rgba(251,248,242,.86);border:1px solid var(--line);border-radius:30px;padding:7px 14px;backdrop-filter:blur(3px)}
+  .q-tracker .q-tl{font-family:var(--pixel);font-size:7.5px;letter-spacing:.1em;color:var(--ink-75)}
+  .q-tracker .q-dots{display:flex;gap:5px}
+  .q-tracker .q-d{width:9px;height:9px;border-radius:50%;border:1px solid var(--accent);background:transparent}
+  .q-tracker .q-d.on{background:var(--accent)}
+  #qPrompt{position:absolute;z-index:5;transform:translate(-50%,-100%);pointer-events:none;font-family:var(--pixel);font-size:8.5px;
+    letter-spacing:.06em;color:#fff;background:var(--ink);padding:8px 12px;border-radius:6px;white-space:nowrap;box-shadow:3px 3px 0 var(--accent);display:none}
+  #qPrompt:after{content:"";position:absolute;left:50%;bottom:-5px;transform:translateX(-50%);border:5px solid transparent;border-top-color:var(--ink);border-bottom:0}
+  #qPrompt.show{display:block;animation:qbob 1.2s ease-in-out infinite}
+  @keyframes qbob{50%{transform:translate(-50%,-118%)}}
+
+  /* start overlay (inside cabinet) */
+  .q-overlay{position:absolute;inset:0;z-index:8;background:var(--paper);display:flex;flex-direction:column;
+    align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity .5s ease}
+  .q-overlay.hide{opacity:0;pointer-events:none}
+  .q-overlay .qk{font-family:var(--pixel);font-size:10px;letter-spacing:.18em;color:var(--accent);margin-bottom:18px}
+  .q-overlay h3{font-family:var(--display);font-weight:300;font-size:clamp(30px,5vw,52px);line-height:1}
+  .q-overlay h3 em{font-style:italic;color:var(--accent)}
+  .q-overlay .qstart{margin-top:30px;background:var(--ink);color:var(--paper);border:0;font-family:var(--pixel);font-size:11px;
+    letter-spacing:.18em;padding:16px 26px;border-radius:5px;box-shadow:4px 4px 0 var(--accent);transition:transform .12s,box-shadow .12s}
+  .q-overlay .qstart:hover{transform:translate(-1px,-1px);box-shadow:6px 6px 0 var(--accent)}
+  .q-overlay .qctrl{margin-top:22px;font-family:var(--pixel);font-size:8px;letter-spacing:.1em;color:var(--ink-45);line-height:2}
+
+  /* touch */
+  .q-touch{position:absolute;inset:0;z-index:5;pointer-events:none;display:none}
+  .q-touch.on{display:block}
+  .q-dpad{position:absolute;left:16px;bottom:16px;width:138px;height:138px;pointer-events:auto}
+  .q-db{position:absolute;width:46px;height:46px;background:rgba(251,248,242,.92);border:1px solid var(--ink);border-radius:10px;
+    color:var(--ink);font-family:var(--pixel);font-size:10px;display:flex;align-items:center;justify-content:center;box-shadow:2px 2px 0 var(--line);user-select:none}
+  .q-db:active{background:var(--ink);color:var(--paper)}
+  .q-du{left:46px;top:0}.q-dd{left:46px;top:92px}.q-dl{left:0;top:46px}.q-dr{left:92px;top:46px}
+  .q-ab{position:absolute;right:20px;bottom:38px;width:68px;height:68px;border-radius:50%;pointer-events:auto;background:var(--accent);
+    color:#fff;border:0;font-family:var(--pixel);font-size:11px;box-shadow:3px 3px 0 rgba(28,27,25,.4)}
+  .q-ab:active{transform:translate(2px,2px);box-shadow:1px 1px 0 rgba(28,27,25,.4)}
+  .q-help{margin-top:18px;text-align:center;font-family:var(--pixel);font-size:8px;letter-spacing:.08em;color:var(--ink-45);line-height:2}
+
+  /* encounter modal (full-screen overlay) */
+  .q-scrim{position:fixed;inset:0;z-index:80;background:rgba(28,27,25,.42);display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(2px)}
+  .q-scrim.show{display:flex}
+  .q-modal{width:min(560px,94vw);max-height:90vh;overflow:auto;background:var(--panel);border:1px solid var(--ink);border-radius:14px;
+    box-shadow:10px 10px 0 var(--accent);transform:translateY(12px) scale(.98);opacity:0;transition:.32s}
+  .q-scrim.show .q-modal{transform:none;opacity:1}
+  .q-mtop{padding:26px 30px 20px;border-bottom:1px solid var(--line-soft)}
+  .q-mk{font-family:var(--pixel);font-size:9px;letter-spacing:.16em;color:var(--accent)}
+  .q-mname{font-family:var(--display);font-weight:400;font-size:40px;line-height:1.04;margin-top:10px}
+  .q-mplace{font-family:var(--pixel);font-size:8px;letter-spacing:.14em;color:var(--ink-45);margin-top:10px}
+  .q-mbody{padding:24px 30px 8px}
+  .q-mstory{font-family:var(--serif);font-size:18px;line-height:1.7;color:var(--ink-75);font-style:italic}
+  .q-mchal{margin-top:20px;font-family:var(--pixel);font-size:8.5px;letter-spacing:.1em;color:var(--ink-45)}
+  .q-loot{margin-top:14px;display:flex;flex-direction:column;gap:9px}
+  .q-loot li{list-style:none;font-family:var(--serif);font-size:16.5px;color:var(--ink);padding:11px 14px;border:1px solid var(--line-soft);
+    border-radius:8px;background:var(--paper);display:flex;gap:10px;align-items:flex-start;opacity:0;transform:translateX(-10px)}
+  .q-loot li.in{opacity:1;transform:none;transition:.4s}
+  .q-loot li b{font-family:var(--pixel);font-size:9px;color:var(--accent);flex:none;margin-top:2px}
+  .q-gains{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .q-gain{font-family:var(--pixel);font-size:8px;padding:7px 10px;border-radius:20px;border:1px solid var(--accent);color:var(--accent);background:var(--paper)}
+  .q-gain.xp{border-color:var(--gold);color:#9a6a23}
+  .q-mfoot{padding:18px 30px 26px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .q-mprog{font-family:var(--pixel);font-size:8px;color:var(--ink-45)}
+  .q-mbtn{font-family:var(--pixel);font-size:10px;letter-spacing:.12em;background:var(--ink);color:var(--paper);border:0;padding:15px 22px;
+    border-radius:5px;box-shadow:3px 3px 0 var(--accent);transition:transform .1s,box-shadow .1s;text-decoration:none;display:inline-block}
+  .q-mbtn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--accent)}
+  .q-mbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--accent)}
+  .q-mbtn.ghost{background:var(--panel);color:var(--ink);border:1px solid var(--ink);box-shadow:3px 3px 0 var(--line)}
+  .q-vic{text-align:center;padding:40px 30px 36px}
+  .q-vic .ring{width:120px;height:120px;margin:0 auto 24px;color:var(--accent)}
+  .q-vic .qk2{font-family:var(--pixel);font-size:10px;letter-spacing:.18em;color:var(--accent)}
+  .q-vic h2{font-family:var(--display);font-weight:300;font-size:clamp(34px,6vw,54px);line-height:1.05;margin-top:16px}
+  .q-vic h2 em{font-style:italic;color:var(--accent)}
+  .q-vic p{font-family:var(--serif);font-size:18px;color:var(--ink-75);max-width:38ch;margin:18px auto 28px;line-height:1.6}
+  .q-vic .acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .q-vic .score{font-family:var(--pixel);font-size:9px;letter-spacing:.1em;color:var(--ink-45);margin-top:26px;line-height:2}
+  #qToast{position:fixed;left:50%;top:16%;transform:translateX(-50%) translateY(-14px);z-index:90;font-family:var(--pixel);font-size:11px;
+    letter-spacing:.14em;color:#fff;background:var(--accent);padding:14px 22px;border-radius:6px;box-shadow:4px 4px 0 rgba(28,27,25,.4);opacity:0;pointer-events:none;transition:.3s}
+  #qToast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  @media(max-width:760px){.q-cabinet{height:min(78vh,600px)}.q-nm{font-size:16px}.q-mname{font-size:32px}}
+
+  /* ---------- Contact + Form ---------- */
+  .contact{text-align:center}
+  .contact .breath{width:110px;height:110px;margin:0 auto 34px;color:var(--accent)}
+  .contact h2{font-family:var(--display);font-weight:300;font-size:clamp(34px,6vw,64px);line-height:1.04;letter-spacing:-.01em;max-width:16ch;margin:0 auto}
+  .contact h2 em{font-style:italic;color:var(--accent)}
+  .contact .csub{font-family:var(--serif);font-size:18px;color:var(--ink-75);max-width:36ch;margin:24px auto 0;line-height:1.6}
+  .form{max-width:560px;margin:48px auto 0;text-align:left}
+  .frow{display:flex;gap:16px;flex-wrap:wrap}
+  .field{flex:1 1 220px;margin-bottom:20px}
+  .field.full{flex-basis:100%}
+  .field label{display:block;font-family:var(--label);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-55);margin-bottom:9px}
+  .field input,.field textarea{width:100%;font-family:var(--serif);font-size:17px;color:var(--ink);background:var(--panel);
+    border:1px solid var(--line);border-radius:8px;padding:13px 15px;transition:border-color .2s,box-shadow .2s}
+  .field textarea{min-height:120px;resize:vertical}
+  .field input:focus,.field textarea:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px rgba(156,74,47,.12)}
+  .intent{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+  .intent label{flex:1 1 160px;display:flex;align-items:center;gap:11px;cursor:pointer;font-family:var(--serif);font-size:16px;
+    color:var(--ink-75);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;transition:.2s}
+  .intent input{accent-color:var(--accent);width:16px;height:16px;flex:none}
+  .intent label:has(input:checked){border-color:var(--accent);color:var(--ink);box-shadow:0 0 0 2px rgba(156,74,47,.12)}
+  .form-submit{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .btn-submit{font-family:var(--label);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;background:var(--accent);
+    color:#fff;border:0;border-radius:100px;padding:16px 32px;cursor:pointer;transition:.2s}
+  .btn-submit:hover{background:var(--accent-soft)}
+  .btn-submit:disabled{opacity:.6;cursor:default}
+  .form-note{font-family:var(--serif);font-size:15px;color:var(--ink-55)}
+  #formMsg{margin-top:18px;font-family:var(--serif);font-size:16px;min-height:24px}
+  #formMsg.ok{color:#3c6b46}#formMsg.err{color:var(--accent)}
+  .alt-contact{margin-top:40px;font-family:var(--label);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-55)}
+  .alt-contact a:hover{color:var(--accent)}
+
+  /* ---------- Footer ---------- */
+  footer{border-top:1px solid var(--line);padding:40px 0}
+  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-family:var(--label);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-55)}
+  .foot a:hover{color:var(--ink)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity 1s ease,transform 1s ease}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="#top" class="logo">Pratik Renuse<span class="dot">.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#letter">Story</a>
+      <a href="#work">Work</a>
+      <a href="#quest">Play</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact" class="pill">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <svg class="sun" viewBox="0 0 760 380" fill="none" aria-hidden="true">
+      <g stroke="currentColor" stroke-width="1" opacity="0.55">
+        <path d="M80 360 A300 300 0 0 1 680 360"/><path d="M150 360 A230 230 0 0 1 610 360"/>
+        <path d="M220 360 A160 160 0 0 1 540 360"/><path d="M290 360 A90 90 0 0 1 470 360"/>
+      </g>
+      <g stroke="currentColor" stroke-width="1" opacity="0.4">
+        <line x1="380" y1="40" x2="380" y2="120"/><line x1="220" y1="80" x2="260" y2="145"/>
+        <line x1="540" y1="80" x2="500" y2="145"/><line x1="110" y1="190" x2="180" y2="220"/><line x1="650" y1="190" x2="580" y2="220"/>
+      </g>
+      <circle cx="380" cy="360" r="6" fill="currentColor"/>
+    </svg>
+    <div class="hero-eyebrow label reveal">Growth &amp; Performance Marketing</div>
+    <h1 class="reveal">From <em>zero</em><br>to one.</h1>
+    <p class="sub reveal">A founding marketer who builds companies from nothing — and teaches others to do the same.</p>
+    <div class="hero-cta reveal">
+      <a href="#letter" class="pill">Read the story</a>
+      <a href="#quest" class="pill pill-ghost">▶ Play the quest</a>
+    </div>
+    <div class="path reveal" aria-hidden="true">
+      <svg viewBox="0 0 900 130" fill="none">
+        <path d="M30 96 C 180 96, 200 54, 320 54 S 520 96, 600 70 S 780 40, 870 40" stroke="var(--accent)" stroke-width="1.4" opacity="0.55"/>
+        <circle cx="30" cy="96" r="5" fill="var(--ink)"/><circle cx="240" cy="63" r="4" fill="var(--ink)"/>
+        <circle cx="460" cy="78" r="4" fill="var(--ink)"/><circle cx="660" cy="61" r="4" fill="var(--ink)"/><circle cx="870" cy="40" r="6" fill="var(--accent)"/>
+        <g text-anchor="middle">
+          <text class="pl" x="30" y="120">Zero</text><text class="pn" x="240" y="44">build</text>
+          <text class="pn" x="460" y="59">scale</text><text class="pn" x="660" y="42">teach</text><text class="pl" x="870" y="22">One</text>
+        </g>
+      </svg>
+    </div>
+    <div class="scroll-hint reveal"><span>Scroll</span><span class="ln"></span></div>
+  </section>
+
+  <!-- ===== LETTER ===== -->
+  <section class="letter" id="letter">
+    <div class="wrap inner">
+      <div class="label reveal">A note</div>
+      <div class="reveal">
+        <p>Over the last decade of working across Europe, I learned where I do my best work: the <strong>"0 to 1"</strong> — the quiet, uncertain space of building something real out of nothing at all.</p>
+        <p>I didn't set out with a grand plan. I joined small teams and made myself useful: I built Infento's web shop from <em>nothing</em> to €2M, helped take the Swiss brand VU from zero to the Olympic stage, and grew the fintech Bueno from a blank page to €300K+ ARR across 28 countries.</p>
+        <p>Along the way I noticed the part I love most isn't the launch — it's the teaching. Sharing what a decade of building taught me, and watching someone start to believe in themselves, is the most fulfilling work I know.</p>
+        <p>If there's value we could create together, I'd love to meet. I'm always happy to know good people building from nothing.</p>
+      </div>
+      <div class="sign reveal">Pratik<small>Netherlands · working globally</small></div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="pstats center">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">In numbers</div>
+      <h2 class="sec-title reveal">A decade of building, measured.</h2>
+      <div class="divider reveal"></div>
+      <div class="grid">
+        <div class="pstat reveal"><div class="n">€<em>2</em>M</div><div class="c">DTC revenue built from zero at Infento</div></div>
+        <div class="pstat reveal"><div class="n"><em>24</em>×</div><div class="c">LTV/CAC scaling Bueno across 28 countries</div></div>
+        <div class="pstat reveal"><div class="n">$<em>848</em>K</div><div class="c">#1 most-funded STEM Kickstarter, globally</div></div>
+        <div class="pstat reveal"><div class="n"><em>3</em>×</div><div class="c">TEDx talks &amp; 50+ speeches in 14+ countries</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VALUES ===== -->
+  <section class="values center">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">How I work</div>
+      <h2 class="sec-title reveal">Three things, <em>done well</em>.</h2>
+      <div class="divider reveal"></div>
+      <div class="vrow">
+        <div class="vcard reveal">
+          <div class="vart"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <circle cx="50" cy="84" r="3.5" fill="currentColor" stroke="none"/><path d="M50 84 C50 64 50 50 50 38"/>
+            <path d="M50 56 C38 54 30 46 28 34 C42 34 50 42 50 54"/><path d="M50 48 C62 46 70 38 72 26 C58 26 50 34 50 46"/><circle cx="50" cy="26" r="4"/></svg></div>
+          <h3>Build from zero</h3><div class="vsub">Ground up</div>
+          <p>Founding-team marketer who stands up brand, site, paid media and lifecycle from a blank page — three times over.</p>
+        </div>
+        <div class="vcard reveal">
+          <div class="vart"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 80 H84" opacity="0.5"/><path d="M18 80 V20" opacity="0.5"/><path d="M24 72 C40 70 46 50 56 44 S74 30 82 24"/>
+            <circle cx="24" cy="72" r="3" fill="currentColor" stroke="none"/><circle cx="52" cy="47" r="3" fill="currentColor" stroke="none"/><circle cx="82" cy="24" r="4" fill="currentColor" stroke="none"/></svg></div>
+          <h3>Engineer growth</h3><div class="vsub">Compounding systems</div>
+          <p>Performance marketing grounded in CAC / LTV / MER modelling, CRO, SEO and multi-channel attribution.</p>
+        </div>
+        <div class="vcard reveal">
+          <div class="vart"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4">
+            <circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="18" opacity="0.8"/>
+            <circle cx="50" cy="50" r="30" opacity="0.55"/><circle cx="50" cy="50" r="42" opacity="0.3"/></svg></div>
+          <h3>Teach &amp; mentor</h3><div class="vsub">Pass it on</div>
+          <p>100+ startups mentored via Techstars, EBRD &amp; Seedstars; 500+ graduates coached. 9.7/10 average rating.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EMBEDDED RPG ===== -->
+  <section class="quest center" id="quest">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">Or — play it</div>
+      <h2 class="sec-title reveal">The same decade,<br>as an <em>RPG</em>.</h2>
+      <p class="csub" style="margin-top:22px">Walk my career as a little explorer. Visit each stage, collect the real achievements as loot, level up. Use <b>WASD / arrows</b>, walk up to a building, press <b>Enter</b>.</p>
+
+      <div class="q-cabinet reveal" id="qCabinet" tabindex="0">
+        <!-- HUD -->
+        <div class="q-hud">
+          <div class="q-who">
+            <div class="q-token">PR</div>
+            <div><div class="q-nm">Pratik Renuse</div><div class="q-cl pixel">LV <span id="qLevel">1</span> · GROWTH OPERATOR</div></div>
+          </div>
+          <div class="q-xpwrap">
+            <div class="q-xprow"><span>XP</span><span id="qXpText">0 / 150</span></div>
+            <div class="q-xpbar"><div class="q-xpfill" id="qXpFill"></div></div>
+          </div>
+          <div class="q-stats">
+            <div class="q-stat"><div class="q-sl"><span>BUILD</span><span id="qvBuild">15</span></div><div class="q-sb"><div class="q-sf" id="qbBuild"></div></div></div>
+            <div class="q-stat"><div class="q-sl"><span>GROWTH</span><span id="qvGrowth">12</span></div><div class="q-sb"><div class="q-sf" id="qbGrowth"></div></div></div>
+            <div class="q-stat"><div class="q-sl"><span>BRAND</span><span id="qvBrand">14</span></div><div class="q-sb"><div class="q-sf" id="qbBrand"></div></div></div>
+            <div class="q-stat"><div class="q-sl"><span>MENTOR</span><span id="qvMentor">6</span></div><div class="q-sb"><div class="q-sf" id="qbMentor"></div></div></div>
+          </div>
+          <div class="q-tools">
+            <button class="q-tbtn" id="qSound">♪ ON</button>
+            <button class="q-tbtn" id="qFull">⛶</button>
+            <button class="q-tbtn" id="qReset">↺</button>
+          </div>
+        </div>
+        <!-- WORLD -->
+        <div class="q-stage">
+          <canvas id="qWorld"></canvas>
+          <div class="q-tracker"><span class="q-tl pixel">STAGES</span><div class="q-dots" id="qDots"></div></div>
+          <div id="qPrompt" class="pixel">↵ ENGAGE</div>
+          <div class="q-touch" id="qTouch">
+            <div class="q-dpad">
+              <button class="q-db q-du" data-dir="up">▲</button><button class="q-db q-dd" data-dir="down">▼</button>
+              <button class="q-db q-dl" data-dir="left">◀</button><button class="q-db q-dr" data-dir="right">▶</button>
+            </div>
+            <button class="q-ab" id="qABtn">↵</button>
+          </div>
+          <!-- start overlay -->
+          <div class="q-overlay" id="qOverlay">
+            <div class="qk pixel">PRESS START</div>
+            <h3>The <em>0→1</em> Quest</h3>
+            <button class="qstart" id="qStart">▶ PRESS START</button>
+            <div class="qctrl pixel">WASD / ARROWS · WALK TO A STAGE · ENTER</div>
+          </div>
+        </div>
+      </div>
+      <div class="q-help pixel">CLICK THE GAME TO PLAY · IT ONLY CAPTURES KEYS WHILE HOVERED</div>
+    </div>
+  </section>
+
+  <!-- ===== WORK ===== -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">Selected work</div>
+      <h2 class="sec-title reveal">Founding-team marketing across<br>consumer, sport &amp; fintech.</h2>
+      <div class="list">
+        <div class="role reveal">
+          <div><div class="co">Bueno</div><div class="pos">Growth Lead · Founding Team · Shareholder</div><div class="yr">2022 — Present</div></div>
+          <div class="desc"><div class="ctx">Award-winning fintech for foreign property owners in Spain.</div>
+            <p>Built marketing single-handedly from €0 to 2,000+ paying subscribers and €300K+ ARR across 28 countries at 24× LTV/CAC.</p>
+            <p>Drove 1M+ organic visits, outranking Revolut and Wise on target SEO keywords.</p>
+            <p>Grew 15,000+ newsletter subscribers at 70% open rate; 13% convert within 3 months.</p></div>
+        </div>
+        <div class="role reveal">
+          <div><div class="co">VU</div><div class="pos">Head of Marketing · Founding Team</div><div class="yr">2021 — 2025</div></div>
+          <div class="desc"><div class="ctx">The #1 Swiss brand for professional skiers and snowboarders.</div>
+            <p>Recommended and used by Olympians.</p><p>Drove €275K+ in revenue and 4.4× peak-season growth.</p>
+            <p>Built VU's full digital presence end-to-end: brand, site, paid media, lifecycle and community.</p></div>
+        </div>
+        <div class="role reveal">
+          <div><div class="co">Infento</div><div class="pos">Online Marketing Lead · Founding Team</div><div class="yr">2017 — 2019</div></div>
+          <div class="desc"><div class="ctx">Consumer hardware &amp; STEM products, Amsterdam.</div>
+            <p>Built marketing from zero, scaling the DTC web shop from €0 to €2M ARR.</p>
+            <p>Led the $848K Kickstarter — #1 most-funded STEM project globally in 2018.</p>
+            <p>Won Red Dot, German Design Award &amp; Parent's Choice Gold (US).</p></div>
+        </div>
+        <div class="role reveal">
+          <div><div class="co">Bayer &amp; Airbus</div><div class="pos">Marketing · Project Management</div><div class="yr">2016 — 2017</div></div>
+          <div class="desc"><div class="ctx">Fortune 500 — Berlin &amp; Munich, Germany.</div>
+            <p>Managed a €250K budget for GIM, Bayer's premier global executive event across 50+ countries.</p>
+            <p>Lifted Airbus' organic social reach 127% and led SEO to #1 for the NEOShield project.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMUNITY ===== -->
+  <section class="community center">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">The rooms I've been in</div>
+      <h2 class="sec-title reveal">Built, mentored &amp; <em>taught</em> with —</h2>
+    </div>
+    <div class="marquee reveal">
+      <div class="track" id="track">
+        <div class="chip"><div class="cn">Infento</div><div class="cr">Founding Team</div></div>
+        <div class="chip"><div class="cn">VU</div><div class="cr">Head of Marketing</div></div>
+        <div class="chip"><div class="cn">Bueno</div><div class="cr">Growth Lead</div></div>
+        <div class="chip"><div class="cn">Techstars</div><div class="cr">Mentor</div></div>
+        <div class="chip"><div class="cn">EBRD</div><div class="cr">Mentor</div></div>
+        <div class="chip"><div class="cn">TEDx</div><div class="cr">3× Speaker</div></div>
+        <div class="chip"><div class="cn">Harvard</div><div class="cr">Coached grads</div></div>
+        <div class="chip"><div class="cn">Bayer</div><div class="cr">Project Lead</div></div>
+        <div class="chip"><div class="cn">Airbus</div><div class="cr">Marketing</div></div>
+        <div class="chip"><div class="cn">Masters' Union</div><div class="cr">Professor</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEACHING ===== -->
+  <section class="teach center" id="teaching">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">Speaking &amp; teaching</div>
+      <h2 class="sec-title reveal">Sharing what building taught me.</h2>
+      <div class="grid">
+        <div class="tcell reveal">
+          <div class="ti"><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <path d="M14 38 V20 a6 6 0 0 1 6-6 h16 a6 6 0 0 1 6 6 v10 a6 6 0 0 1 -6 6 H24 l-10 8 z"/><path d="M22 24 h12 M22 30 h8"/></svg></div>
+          <h4>Keynote Speaker</h4><p>3 TEDx talks and 50+ speeches across 14+ countries on the future of marketing and how startups scale.</p>
+          <div class="tags">TEDx · APAC Digital Conclave · Russian Stream</div>
+        </div>
+        <div class="tcell reveal">
+          <div class="ti"><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M28 12 L44 20 L28 28 L12 20 Z"/><path d="M18 24 v9 c0 3 5 6 10 6 s10 -3 10 -6 v-9"/><path d="M44 20 v10"/></svg></div>
+          <h4>Startup Mentor</h4><p>100+ founders mentored on go-to-market, growth and fundraising. 9.7/10 average CXO satisfaction.</p>
+          <div class="tags">Techstars · EBRD · Seedstars · Founder Institute</div>
+        </div>
+        <div class="tcell reveal">
+          <div class="ti"><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 22 L28 14 L46 22 L28 30 Z"/><path d="M28 30 v8"/><path d="M20 26 v9 a8 4 0 0 0 16 0 v-9"/></svg></div>
+          <h4>Visiting Professor</h4><p>500+ graduates coached on growth, brand and believing in their own potential.</p>
+          <div class="tags">Harvard · LSE · HEC Paris · Masters' Union</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INVEST ===== -->
+  <section class="invest center" id="investing">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">Angel investing</div>
+      <h2 class="sec-title reveal">Backing the builders<br>I believe in.</h2>
+      <div class="divider reveal"></div>
+      <div class="irow reveal">
+        <div class="ipill">Perplexity <small>AI Search</small></div>
+        <div class="ipill">Nothing <small>Consumer Tech</small></div>
+        <div class="ipill">Atom Bank <small>Digital Banking</small></div>
+        <div class="ipill">Plum <small>Fintech</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT + FORM ===== -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="breath reveal" aria-hidden="true">
+        <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="60" cy="60" r="10" fill="currentColor" stroke="none" opacity="0.9"/>
+          <circle cx="60" cy="60" r="26" opacity="0.6"/><circle cx="60" cy="60" r="42" opacity="0.35"/><circle cx="60" cy="60" r="56" opacity="0.18"/>
+        </svg>
+      </div>
+      <h2 class="reveal">Let's build the<br><em>next one</em> together.</h2>
+      <p class="csub reveal">Subscribe for the occasional note on growth and building — or reach out if there's something we should make.</p>
+
+      <form class="form reveal" id="contactForm" novalidate>
+        <div class="frow">
+          <div class="field"><label for="cfName">Name</label><input id="cfName" name="name" type="text" autocomplete="name" required placeholder="Your name" /></div>
+          <div class="field"><label for="cfEmail">Email</label><input id="cfEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com" /></div>
+        </div>
+        <div class="intent">
+          <label><input type="radio" name="intent" value="subscribe" checked /> Subscribe to updates</label>
+          <label><input type="radio" name="intent" value="reachout" /> I'd like to get in touch</label>
+          <label><input type="radio" name="intent" value="both" /> Both</label>
+        </div>
+        <div class="field full"><label for="cfMsg">Message <span style="text-transform:none;letter-spacing:0;color:var(--ink-45)">(optional)</span></label>
+          <textarea id="cfMsg" name="message" placeholder="What's on your mind?"></textarea></div>
+        <div class="form-submit">
+          <button class="btn-submit" id="cfSubmit" type="submit">Send</button>
+          <span class="form-note">No spam. Unsubscribe anytime.</span>
+        </div>
+        <div id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+
+      <div class="alt-contact reveal">
+        Prefer email? <a href="mailto:pratik@pratikrenuse.com">pratik@pratikrenuse.com</a> &nbsp;·&nbsp;
+        <a href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="yr"></span> Pratik Renuse</div>
+    <div>Built from zero, like everything else.</div>
+    <div><a href="mailto:pratik@pratikrenuse.com">Email</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div>
+</footer>
+
+<!-- encounter overlay (shared, fixed) -->
+<div class="q-scrim" id="qScrim"><div class="q-modal" id="qModal"></div></div>
+<div id="qToast" class="pixel"></div>
+
+<!-- ============================ PAGE SCRIPT (nav, reveal, marquee) ============================ -->
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var mb=document.getElementById('menuBtn'), nl=document.getElementById('navLinks');
+  mb.addEventListener('click',function(){ nl.classList.toggle('open'); });
+  nl.addEventListener('click',function(e){ if(e.target.tagName==='A') nl.classList.remove('open'); });
+  var track=document.getElementById('track'); if(track){ track.innerHTML+=track.innerHTML; }
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+
+<!-- ============================ GAME SCRIPT ============================ -->
+<script>
+(function(){
+  const LEVELS=[
+   {key:'AIRBUS',label:'AIRBUS',place:'MUNICH · 2016',type:'air',title:'Airbus',tag:'THE ORIGINS',
+    story:'Where the journey began — six months at a Fortune 500, learning to make a brand move at scale.',
+    challenge:'CHALLENGE · Launch an EU-wide project from the inside',
+    loot:[['+127%','Lifted organic social reach in 2 months'],['SEO','Ranked the NEOShield site #1 on Google'],['BRAND','Ran branding for an EU-wide aerospace project']],
+    gains:{brand:8,growth:6},xp:90,x:300,y:880},
+   {key:'BAYER',label:'BAYER',place:'BERLIN · 2017',type:'lab',title:'Bayer',tag:'THE BIG LEAGUES',
+    story:'A short, high-stakes contract reporting to a Director — proof you can hold a budget and a global stage.',
+    challenge:'CHALLENGE · Run a global executive event without dropping a stitch',
+    loot:[['€250K','Managed the budget for GIM, the flagship exec event'],['50+','Countries represented at the summit'],['TRUST','Earned the confidence of senior Bayer leadership']],
+    gains:{brand:6,build:6},xp:110,x:620,y:560},
+   {key:'INFENTO',label:'INFENTO',place:'AMSTERDAM · 2017–19',type:'seed',title:'Infento',tag:'★ FIRST 0→1 BOSS',
+    story:'The blank page. You joined a founding team and grew a DTC web shop out of literally nothing.',
+    challenge:'BOSS FIGHT · Turn €0 into a real business',
+    loot:[['€2M','Scaled the DTC web shop from zero to €2M ARR'],['$848K','Led the #1 most-funded STEM Kickstarter, globally'],['×3','Red Dot · German Design · Parent’s Choice Gold']],
+    gains:{build:18,growth:14,brand:10},xp:220,x:960,y:900},
+   {key:'VU',label:'VU',place:'GENEVA · 2021–25',type:'mtn',title:'VU',tag:'THE OLYMPIC PEAK',
+    story:'A Swiss D2C brand for pro skiers. You built its entire digital presence and took it to the summit.',
+    challenge:'CHALLENGE · Reach the Olympic stage',
+    loot:[['OLYMPIANS','Recommended and used at the highest level'],['€275K+','Revenue driven, 4.4× peak-season growth'],['END-TO-END','Brand, site, paid, lifecycle & community']],
+    gains:{brand:16,build:10,growth:8},xp:190,x:1280,y:470},
+   {key:'BUENO',label:'BUENO',place:'SPAIN · 2022–NOW',type:'coin',title:'Bueno',tag:'★ FINTECH FRONTIER',
+    story:'A fintech for foreign property owners. Founding marketer again — this time across 28 countries.',
+    challenge:'BOSS FIGHT · Build a 24× growth engine, solo',
+    loot:[['€300K+','ARR built single-handedly, 2,000+ subscribers'],['24×','LTV/CAC across 28 countries'],['#1 SEO','Out-ranked Revolut & Wise on target keywords']],
+    gains:{growth:20,build:14,brand:8},xp:230,x:1640,y:840},
+   {key:'STAGE',label:'SPEAKER',place:'WORLD STAGES',type:'mic',title:'Speaker’s Stage',tag:'SIDE QUEST',
+    story:'Step to the mic. A decade of lessons, shared with rooms across the world.',
+    challenge:'SIDE QUEST · Hold the room',
+    loot:[['3× TEDx','Including a talk on the future of marketing'],['50+','Speeches across 14+ countries'],['KEYNOTE','APAC Digital Conclave · Russian Stream']],
+    gains:{brand:12,mentor:8},xp:120,x:1920,y:470},
+   {key:'GUILD',label:'MENTOR',place:'5 CONTINENTS',type:'guild',title:'Mentor Guild',tag:'SIDE QUEST',
+    story:'Join the guild. Founders and graduates, leveled up by what you learned the hard way.',
+    challenge:'SIDE QUEST · Make others stronger than you',
+    loot:[['100+','Startups mentored on GTM, growth & fundraising'],['9.7/10','Average satisfaction from CXOs & founders'],['500+','Graduates coached — Harvard, LSE, HEC Paris']],
+    gains:{mentor:24,growth:6},xp:160,x:2120,y:820},
+   {key:'VAULT',label:'INVESTOR',place:'THE CAP TABLE',type:'vault',title:'Investor’s Vault',tag:'FINAL STAGE',
+    story:'The last door. Backing the next generation of builders with your own conviction.',
+    challenge:'CHALLENGE · Bet on the future',
+    loot:[['PERPLEXITY','AI search — backed early'],['NOTHING','Consumer tech disruptor'],['ATOM · PLUM','UK digital banking & fintech']],
+    gains:{growth:8,build:6,mentor:6},xp:150,x:2320,y:470}
+  ];
+  const WORLD={w:2560,h:1280};
+  const STAT_START={build:15,growth:12,brand:14,mentor:6};
+  const state={started:false,paused:true,focused:false,completed:new Set(),level:1,xp:0,need:150,stats:{...STAT_START},nearest:-1};
+  const player={x:300,y:1020,w:26,h:34,speed:230,face:'down',step:0};
+
+  let actx=null,muted=false;
+  function tone(f,d=0.08,t='square',v=0.05){ if(muted)return; try{
+    actx=actx||new (window.AudioContext||window.webkitAudioContext)();
+    const o=actx.createOscillator(),g=actx.createGain();o.type=t;o.frequency.value=f;g.gain.value=v;
+    o.connect(g);g.connect(actx.destination);o.start();
+    g.gain.exponentialRampToValueAtTime(0.0001,actx.currentTime+d);o.stop(actx.currentTime+d);}catch(e){}}
+  const sPick=()=>{tone(540,0.05);setTimeout(()=>tone(720,0.07),60);};
+  const sClaim=()=>{[523,659,880].forEach((f,i)=>setTimeout(()=>tone(f,0.09),i*70));};
+  const sLevel=()=>{[523,659,784,1046,1318].forEach((f,i)=>setTimeout(()=>tone(f,0.11,'triangle',0.06),i*90));};
+
+  const $=id=>document.getElementById(id);
+  const cv=$('qWorld'),ctx=cv.getContext('2d');
+  const scrim=$('qScrim'),modal=$('qModal'),promptEl=$('qPrompt'),cabinet=$('qCabinet');
+  let VW=0,VH=0,DPR=1;
+  function resize(){ const r=cv.getBoundingClientRect(); if(!r.width)return;
+    VW=r.width;VH=r.height;DPR=Math.min(window.devicePixelRatio||1,2);
+    cv.width=VW*DPR;cv.height=VH*DPR;ctx.setTransform(DPR,0,0,DPR,0,0); }
+  window.addEventListener('resize',resize);
+
+  const keys={up:false,down:false,left:false,right:false};
+  const KMAP={ArrowUp:'up',KeyW:'up',ArrowDown:'down',KeyS:'down',ArrowLeft:'left',KeyA:'left',ArrowRight:'right',KeyD:'right'};
+  function typing(){ const a=document.activeElement; return a && (a.tagName==='INPUT'||a.tagName==='TEXTAREA'); }
+  function active(){ return state.started && state.focused && !typing(); }
+  // focus gating: only capture keys while pointer is over / cabinet focused
+  cabinet.addEventListener('mouseenter',()=>state.focused=true);
+  cabinet.addEventListener('mouseleave',()=>{state.focused=false;keys.up=keys.down=keys.left=keys.right=false;});
+  cabinet.addEventListener('focus',()=>state.focused=true);
+  cabinet.addEventListener('click',()=>state.focused=true);
+  document.addEventListener('keydown',e=>{
+    if(scrim.classList.contains('show')){
+      if(e.key==='Escape') closeModal();
+      if(e.key==='Enter'){ const b=$('qClaim')||$('qClose'); if(b) b.click(); }
+      return;
+    }
+    if(!active()) return;
+    if(KMAP[e.code]){ keys[KMAP[e.code]]=true; e.preventDefault(); }
+    if(e.key==='Enter'||e.key===' '){ e.preventDefault(); interact(); }
+    if(e.key.toLowerCase()==='m') toggleSound();
+  });
+  document.addEventListener('keyup',e=>{ if(KMAP[e.code]) keys[KMAP[e.code]]=false; });
+
+  function bindTouch(){
+    document.querySelectorAll('.q-db').forEach(b=>{
+      const dir=b.dataset.dir, on=e=>{e.preventDefault();state.focused=true;keys[dir]=true;}, off=e=>{e.preventDefault();keys[dir]=false;};
+      b.addEventListener('touchstart',on,{passive:false});b.addEventListener('touchend',off);
+      b.addEventListener('mousedown',on);b.addEventListener('mouseup',off);b.addEventListener('mouseleave',off);
+    });
+    $('qABtn').addEventListener('click',()=>{state.focused=true;interact();});
+    if(('ontouchstart'in window)||navigator.maxTouchPoints>0) $('qTouch').classList.add('on');
+  }
+
+  const TAU=Math.PI*2;
+  const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+  function rectsOverlap(ax,ay,aw,ah,bx,by,bw,bh){return ax<bx+bw&&ax+aw>bx&&ay<by+bh&&ay+ah>by;}
+  function buildingRect(lv){return {x:lv.x-70,y:lv.y-60,w:140,h:96};}
+  function collides(px,py){ const pw=player.w*0.7,ph=player.h*0.5,ax=px-pw/2,ay=py-ph/2+8;
+    for(const lv of LEVELS){const b=buildingRect(lv); if(rectsOverlap(ax,ay,pw,ph,b.x,b.y,b.w,b.h))return true;} return false; }
+
+  function update(dt){
+    if(state.paused)return;
+    let dx=(keys.right?1:0)-(keys.left?1:0), dy=(keys.down?1:0)-(keys.up?1:0);
+    if(dx&&dy){const k=Math.SQRT1_2;dx*=k;dy*=k;}
+    if(dx>0)player.face='right';else if(dx<0)player.face='left';else if(dy>0)player.face='down';else if(dy<0)player.face='up';
+    player.step += (dx||dy)? dt*9:0;
+    let nx=player.x+dx*player.speed*dt; if(!collides(nx,player.y))player.x=nx;
+    let ny=player.y+dy*player.speed*dt; if(!collides(player.x,ny))player.y=ny;
+    player.x=clamp(player.x,20,WORLD.w-20); player.y=clamp(player.y,20,WORLD.h-20);
+    let best=-1,bd=1e9;
+    LEVELS.forEach((lv,i)=>{const d=Math.hypot(lv.x-player.x,(lv.y+40)-player.y); if(d<150&&d<bd){bd=d;best=i;}});
+    state.nearest=best;
+  }
+  function interact(){ if(state.paused||state.nearest<0)return; sPick(); openEncounter(state.nearest); }
+
+  let cam={x:0,y:0};
+  function render(t){
+    cam.x=clamp(player.x-VW/2,0,Math.max(0,WORLD.w-VW));
+    cam.y=clamp(player.y-VH/2,0,Math.max(0,WORLD.h-VH));
+    if(WORLD.w<VW)cam.x=(WORLD.w-VW)/2; if(WORLD.h<VH)cam.y=(WORLD.h-VH)/2;
+    ctx.clearRect(0,0,VW,VH); ctx.save(); ctx.translate(-cam.x,-cam.y);
+    drawGround();drawPath();drawDecor(t);
+    const ds=[]; LEVELS.forEach((lv,i)=>ds.push({y:lv.y,fn:()=>drawStage(lv,i,t)}));
+    ds.push({y:player.y,fn:()=>drawPlayer()}); ds.sort((a,b)=>a.y-b.y).forEach(d=>d.fn());
+    ctx.restore();
+    if(!state.paused&&state.nearest>=0){ const lv=LEVELS[state.nearest];
+      promptEl.style.left=(lv.x-cam.x)+'px'; promptEl.style.top=(lv.y-cam.y-64)+'px';
+      promptEl.textContent='↵ ENTER · '+lv.title.toUpperCase()+(state.completed.has(state.nearest)?'  ✓':'');
+      promptEl.classList.add('show');
+    } else promptEl.classList.remove('show');
+  }
+  function drawGround(){ ctx.fillStyle='#f4efe6'; ctx.fillRect(cam.x,cam.y,VW,VH);
+    ctx.strokeStyle='rgba(28,27,25,0.05)';ctx.lineWidth=1; const g=48,x0=Math.floor(cam.x/g)*g,y0=Math.floor(cam.y/g)*g;
+    ctx.beginPath(); for(let x=x0;x<cam.x+VW;x+=g){ctx.moveTo(x,cam.y);ctx.lineTo(x,cam.y+VH);} for(let y=y0;y<cam.y+VH;y+=g){ctx.moveTo(cam.x,y);ctx.lineTo(cam.x+VW,y);} ctx.stroke(); }
+  function drawPath(){ ctx.lineCap='round';ctx.lineJoin='round'; ctx.beginPath(); ctx.moveTo(300,1040); ctx.lineTo(LEVELS[0].x,LEVELS[0].y+40);
+    for(let i=0;i<LEVELS.length-1;i++){const a=LEVELS[i],b=LEVELS[i+1],mx=(a.x+b.x)/2,my=(a.y+b.y)/2;
+      ctx.quadraticCurveTo(a.x,(a.y+b.y)/2,mx,my); ctx.quadraticCurveTo(b.x,(a.y+b.y)/2,b.x,b.y+40);}
+    ctx.strokeStyle='rgba(156,74,47,0.16)';ctx.lineWidth=22;ctx.stroke();
+    ctx.strokeStyle='rgba(156,74,47,0.5)';ctx.lineWidth=2;ctx.setLineDash([2,9]);ctx.stroke();ctx.setLineDash([]); }
+  function drawDecor(t){ DECOR.forEach(d=>{
+    if(d.t==='tree'){ ctx.strokeStyle='rgba(28,27,25,0.4)';ctx.lineWidth=2;
+      ctx.beginPath();ctx.moveTo(d.x,d.y);ctx.lineTo(d.x,d.y-18);ctx.stroke();
+      ctx.beginPath();ctx.arc(d.x,d.y-26,11,0,TAU);ctx.fillStyle='#efe8dc';ctx.fill();ctx.strokeStyle='rgba(28,27,25,0.35)';ctx.stroke();
+      ctx.fillStyle='rgba(156,74,47,0.55)';ctx.beginPath();ctx.arc(d.x+3,d.y-29,2.2,0,TAU);ctx.fill();
+    } else if(d.t==='stone'){ ctx.fillStyle='rgba(28,27,25,0.12)';ctx.beginPath();ctx.ellipse(d.x,d.y,9,6,0,0,TAU);ctx.fill();
+    } else { ctx.strokeStyle='rgba(156,74,47,0.22)';ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(d.x,d.y,d.r+Math.sin(t/700+d.x)*1.5,0,TAU);ctx.stroke(); }
+  }); }
+  function drawStage(lv,i,t){ const done=state.completed.has(i),cx=lv.x,cy=lv.y;
+    ctx.fillStyle='rgba(28,27,25,0.10)';ctx.beginPath();ctx.ellipse(cx,cy+44,74,16,0,0,TAU);ctx.fill();
+    roundRect(cx-66,cy-56,132,92,12);ctx.fillStyle='#fbf8f2';ctx.fill();
+    ctx.lineWidth=2;ctx.strokeStyle=done?'#9c4a2f':'rgba(28,27,25,0.2)';ctx.stroke();
+    roundRect(cx-66,cy-56,132,16,12);ctx.fillStyle=done?'#9c4a2f':'#efe8dc';ctx.fill();
+    ctx.save();ctx.translate(cx,cy-6);ctx.strokeStyle=done?'#9c4a2f':'#1c1b19';ctx.fillStyle=ctx.strokeStyle;ctx.lineWidth=2;ctx.lineCap='round';ctx.lineJoin='round';drawIcon(lv.type);ctx.restore();
+    ctx.font='8px "Press Start 2P",monospace';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle='rgba(28,27,25,0.55)';ctx.fillText(lv.label,cx,cy+50);
+    const fy=cy-56; ctx.strokeStyle='rgba(28,27,25,0.4)';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(cx+52,fy);ctx.lineTo(cx+52,fy-26);ctx.stroke();
+    if(done){ ctx.fillStyle='#9c4a2f';ctx.beginPath();ctx.moveTo(cx+52,fy-26);ctx.lineTo(cx+74,fy-21);ctx.lineTo(cx+52,fy-14);ctx.closePath();ctx.fill();
+      ctx.strokeStyle='#fff';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(cx+56,fy-20);ctx.lineTo(cx+60,fy-16);ctx.lineTo(cx+68,fy-23);ctx.stroke();
+    } else { const pr=6+Math.sin(t/300)*1.6; ctx.fillStyle='rgba(156,74,47,'+(0.5+Math.sin(t/300)*0.25)+')';
+      ctx.beginPath();ctx.moveTo(cx+52,fy-26);ctx.lineTo(cx+72,fy-21);ctx.lineTo(cx+52,fy-15);ctx.closePath();ctx.fill();
+      ctx.fillStyle='rgba(156,74,47,0.35)';ctx.beginPath();ctx.arc(cx,cy+40,pr,0,TAU);ctx.fill(); } }
+  function drawIcon(type){ ctx.beginPath(); switch(type){
+    case 'air':ctx.moveTo(-14,8);ctx.lineTo(0,-12);ctx.lineTo(14,8);ctx.moveTo(0,-12);ctx.lineTo(0,12);ctx.stroke();break;
+    case 'lab':ctx.moveTo(-6,-12);ctx.lineTo(-6,-2);ctx.lineTo(-12,10);ctx.quadraticCurveTo(-12,14,-8,14);ctx.lineTo(8,14);ctx.quadraticCurveTo(12,14,12,10);ctx.lineTo(6,-2);ctx.lineTo(6,-12);ctx.moveTo(-8,-12);ctx.lineTo(8,-12);ctx.stroke();break;
+    case 'seed':ctx.moveTo(0,14);ctx.lineTo(0,-4);ctx.moveTo(0,6);ctx.quadraticCurveTo(-12,2,-13,-9);ctx.quadraticCurveTo(-2,-9,0,2);ctx.moveTo(0,0);ctx.quadraticCurveTo(12,-4,13,-13);ctx.quadraticCurveTo(2,-13,0,-2);ctx.stroke();break;
+    case 'mtn':ctx.moveTo(-15,12);ctx.lineTo(-2,-12);ctx.lineTo(5,2);ctx.lineTo(9,-4);ctx.lineTo(15,12);ctx.closePath();ctx.stroke();break;
+    case 'coin':ctx.arc(0,0,12,0,TAU);ctx.moveTo(0,-9);ctx.lineTo(0,9);ctx.stroke();ctx.beginPath();ctx.arc(-3,-4,4,-1.2,1.2);ctx.stroke();break;
+    case 'mic':(ctx.roundRect?ctx.roundRect(-5,-13,10,17,5):ctx.rect(-5,-13,10,17));ctx.stroke();ctx.beginPath();ctx.arc(0,0,9,0.1,Math.PI-0.1);ctx.moveTo(0,9);ctx.lineTo(0,14);ctx.stroke();break;
+    case 'guild':ctx.arc(-5,-4,4,0,TAU);ctx.moveTo(-12,12);ctx.quadraticCurveTo(-12,4,-5,4);ctx.quadraticCurveTo(2,4,2,12);ctx.moveTo(7,-3);ctx.arc(7,-3,3,0,TAU);ctx.moveTo(2,10);ctx.quadraticCurveTo(4,2,12,4);ctx.stroke();break;
+    case 'vault':(ctx.roundRect?ctx.roundRect(-13,-11,26,22,3):ctx.rect(-13,-11,26,22));ctx.stroke();ctx.beginPath();ctx.arc(0,0,6,0,TAU);ctx.moveTo(0,-9);ctx.lineTo(0,-7);ctx.moveTo(0,7);ctx.lineTo(0,9);ctx.stroke();break;
+  } }
+  function drawPlayer(){ const x=player.x,y=player.y,moving=(keys.up||keys.down||keys.left||keys.right);
+    const bob=Math.abs(Math.sin(player.step))*(moving?3:0), by=y-bob;
+    ctx.fillStyle='rgba(28,27,25,0.18)';ctx.beginPath();ctx.ellipse(x,y+16,13,5,0,0,TAU);ctx.fill();
+    ctx.fillStyle='#1c1b19';roundRect(x-9,by-6,18,22,8);ctx.fill();
+    ctx.fillStyle='#9c4a2f';roundRect(x-9,by+2,18,5,2);ctx.fill();
+    ctx.fillStyle='#f4efe6';ctx.beginPath();ctx.arc(x,by-12,8,0,TAU);ctx.fill();ctx.strokeStyle='#1c1b19';ctx.lineWidth=2;ctx.stroke();
+    ctx.fillStyle='#1c1b19';let fx=0,fy=0;if(player.face==='left')fx=-3;else if(player.face==='right')fx=3;else if(player.face==='up')fy=-3;else fy=2;
+    ctx.beginPath();ctx.arc(x+fx,by-12+fy,1.8,0,TAU);ctx.fill(); }
+  function roundRect(x,y,w,h,r){ ctx.beginPath(); if(ctx.roundRect){ctx.roundRect(x,y,w,h,r);return;}
+    ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath(); }
+
+  const DECOR=[];
+  (function seedDecor(){ let s=42; const rnd=()=>{s=(s*1103515245+12345)&0x7fffffff;return s/0x7fffffff;};
+    for(let i=0;i<46;i++){ const x=60+rnd()*(WORLD.w-120),y=60+rnd()*(WORLD.h-120); let ok=true;
+      for(const lv of LEVELS){if(Math.hypot(lv.x-x,lv.y-y)<130){ok=false;break;}} if(!ok){i--;continue;}
+      const r=rnd(); DECOR.push({x,y,t:r<0.5?'tree':r<0.78?'stone':'ring',r:14+rnd()*16}); }
+  })();
+
+  function openEncounter(i){ state.paused=true;
+    const lv=LEVELS[i],done=state.completed.has(i),last=(state.completed.size===LEVELS.length-1&&!done);
+    const gains=Object.entries(lv.gains).map(([k,v])=>'<span class="q-gain">+'+v+' '+k.toUpperCase()+'</span>').join('');
+    modal.innerHTML='<div class="q-mtop"><div class="q-mk pixel">'+lv.tag+'</div><div class="q-mname">'+lv.title+'</div>'+
+      '<div class="q-mplace pixel">'+lv.place+'</div></div><div class="q-mbody"><p class="q-mstory">'+lv.story+'</p>'+
+      '<div class="q-mchal pixel">'+lv.challenge+'</div><ul class="q-loot" id="qLoot">'+
+      lv.loot.map(l=>'<li><b>'+l[0]+'</b><span>'+l[1]+'</span></li>').join('')+'</ul>'+
+      '<div class="q-gains"><span class="q-gain xp">+'+lv.xp+' XP</span>'+gains+'</div></div>'+
+      '<div class="q-mfoot"><span class="q-mprog pixel">'+state.completed.size+' / '+LEVELS.length+' CLEARED</span>'+
+      (done?'<button class="q-mbtn ghost pixel" id="qClose">CLEARED ✓ · CLOSE</button>':'<button class="q-mbtn pixel" id="qClaim">'+(last?'CLAIM & FINISH':'CLAIM REWARD')+'</button>')+'</div>';
+    scrim.classList.add('show');
+    [...document.querySelectorAll('#qLoot li')].forEach((el,k)=>setTimeout(()=>{el.classList.add('in');tone(600+k*80,0.04,'square',0.03);},120+k*130));
+    if(!done) $('qClaim').addEventListener('click',()=>claim(i)); else $('qClose').addEventListener('click',closeModal);
+  }
+  function closeModal(){ scrim.classList.remove('show'); state.paused=false; }
+  function claim(i){ const lv=LEVELS[i]; state.completed.add(i);
+    for(const [k,v] of Object.entries(lv.gains)) state.stats[k]=Math.min(99,state.stats[k]+v);
+    state.xp+=lv.xp; let leveled=false;
+    while(state.xp>=state.need){state.xp-=state.need;state.level++;state.need=Math.round(state.need*1.35);leveled=true;}
+    sClaim();updateHUD();updateDots();
+    if(leveled) setTimeout(()=>{sLevel();toast('LEVEL UP! → LV '+state.level);},280);
+    closeModal();
+    if(state.completed.size===LEVELS.length) setTimeout(victory,650); else toast('STAGE CLEARED');
+  }
+  function updateHUD(){ $('qLevel').textContent=state.level; $('qXpText').textContent=state.xp+' / '+state.need;
+    $('qXpFill').style.width=Math.min(100,(state.xp/state.need)*100)+'%';
+    for(const k of ['build','growth','brand','mentor']){ $('qv'+cap(k)).textContent=state.stats[k]; $('qb'+cap(k)).style.width=state.stats[k]+'%'; } }
+  const cap=s=>s.charAt(0).toUpperCase()+s.slice(1);
+  function buildDots(){ $('qDots').innerHTML=LEVELS.map((_,i)=>'<span class="q-d" id="qDot'+i+'"></span>').join(''); }
+  function updateDots(){ LEVELS.forEach((_,i)=>$('qDot'+i).classList.toggle('on',state.completed.has(i))); }
+  let toastT; function toast(m){ const t=$('qToast');t.textContent=m;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),1700); }
+
+  function victory(){ state.paused=true;
+    modal.innerHTML='<div class="q-vic"><div class="ring"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.2">'+
+     '<circle cx="60" cy="60" r="10" fill="currentColor" stroke="none"/><circle cx="60" cy="60" r="26" opacity=".6"/>'+
+     '<circle cx="60" cy="60" r="42" opacity=".35"/><circle cx="60" cy="60" r="56" opacity=".18"/></svg></div>'+
+     '<div class="qk2 pixel">QUEST COMPLETE</div><h2>You explored <em>the whole map</em>.<br>Let’s build the next one.</h2>'+
+     '<p>That’s a decade of zero-to-one. The next blank page could be yours — scroll down and say hello.</p>'+
+     '<div class="acts"><a class="q-mbtn pixel" href="#contact" id="qGoContact">SAY HELLO ↓</a>'+
+     '<a class="q-mbtn ghost pixel" href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">LINKEDIN</a></div>'+
+     '<div class="score pixel">FINAL · LV '+state.level+' &nbsp;·&nbsp; BUILD '+state.stats.build+' · GROWTH '+state.stats.growth+' · BRAND '+state.stats.brand+' · MENTOR '+state.stats.mentor+'<br>'+
+     '<button class="q-tbtn" id="qAgain" style="margin-top:16px">↺ PLAY AGAIN</button></div></div>';
+    scrim.classList.add('show'); sLevel();
+    $('qAgain').addEventListener('click',resetGame);
+    $('qGoContact').addEventListener('click',()=>closeModal());
+  }
+  function resetGame(){ state.completed=new Set();state.level=1;state.xp=0;state.need=150;state.stats={...STAT_START};
+    player.x=300;player.y=1020; closeModal();updateHUD();updateDots();toast('NEW GAME'); }
+
+  function startGame(){ if(state.started)return; state.started=true; state.focused=true;
+    try{actx=new (window.AudioContext||window.webkitAudioContext)();}catch(e){}
+    resize(); $('qOverlay').classList.add('hide'); state.paused=false; sLevel();
+    setTimeout(resize,60); }
+  function toggleSound(){ muted=!muted; $('qSound').textContent=muted?'♪ OFF':'♪ ON'; if(!muted) sPick(); }
+
+  $('qStart').addEventListener('click',startGame);
+  $('qSound').addEventListener('click',toggleSound);
+  $('qReset').addEventListener('click',resetGame);
+  $('qFull').addEventListener('click',()=>{ if(!document.fullscreenElement){ cabinet.requestFullscreen&&cabinet.requestFullscreen(); } else document.exitFullscreen(); });
+  document.addEventListener('fullscreenchange',()=>setTimeout(resize,80));
+  scrim.addEventListener('click',e=>{ if(e.target===scrim) closeModal(); });
+
+  buildDots();updateHUD();bindTouch();
+  // size canvas once the cabinet has layout
+  requestAnimationFrame(()=>{resize();requestAnimationFrame(resize);});
+  let last=performance.now();
+  function loop(now){ const dt=Math.min(0.05,(now-last)/1000); last=now; update(dt); render(now); requestAnimationFrame(loop); }
+  requestAnimationFrame(loop);
+})();
+</script>
+
+<!-- ============================ SUPABASE FORM ============================ -->
+<script>
+(function(){
+  /* ─────────────────────────────────────────────────────────────
+     SUPABASE CONFIG  ▸ paste your two values here (see SUPABASE_SETUP.md)
+     Both are safe to expose publicly — the anon key is meant for the browser.
+     ───────────────────────────────────────────────────────────── */
+  const SUPABASE_URL = "https://zzupgtrzjhcnyarfmjbv.supabase.co";
+  const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6dXBndHJ6amhjbnlhcmZtamJ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3NzY3NTcsImV4cCI6MjA5NzM1Mjc1N30.wF7g8ECEp5gG6kt-Z9Kp1SHzwLfmHs07lMDmsx7pdTE";
+  const TABLE = "leads";
+
+  const form=document.getElementById('contactForm');
+  const msg=document.getElementById('formMsg');
+  const btn=document.getElementById('cfSubmit');
+  const configured = SUPABASE_URL.indexOf('YOUR_')===-1 && SUPABASE_ANON_KEY.indexOf('YOUR_')===-1 && window.supabase;
+  let sb=null;
+  if(configured){ try{ sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY); }catch(e){ console.error(e); } }
+
+  function show(t,kind){ msg.textContent=t; msg.className=kind||''; }
+  function valid(email){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const name=form.name.value.trim();
+    const email=form.email.value.trim();
+    const message=form.message.value.trim();
+    const intent=(form.querySelector('input[name="intent"]:checked')||{}).value||'subscribe';
+    if(!name){ show('Please add your name.','err'); form.name.focus(); return; }
+    if(!valid(email)){ show('That email looks off — mind checking it?','err'); form.email.focus(); return; }
+
+    btn.disabled=true; const label=btn.textContent; btn.textContent='Sending…'; show('');
+
+    // Fallback when Supabase isn't wired up yet → open email client.
+    if(!sb){
+      const body=encodeURIComponent('Name: '+name+'\nIntent: '+intent+'\n\n'+message);
+      const subject=encodeURIComponent('Hello from your site ('+intent+')');
+      show('Supabase isn’t connected yet — opening your email app instead.','');
+      window.location.href='mailto:pratik@pratikrenuse.com?subject='+subject+'&body='+body;
+      btn.disabled=false; btn.textContent=label; return;
+    }
+
+    try{
+      const { error } = await sb.from(TABLE).insert([{ name, email, message: message||null, intent,
+        source:'website', user_agent: navigator.userAgent.slice(0,250) }]);
+      if(error) throw error;
+      form.reset();
+      show('Thank you, '+name.split(' ')[0]+' — you’re in. I’ll be in touch.','ok');
+    }catch(err){
+      console.error(err);
+      show('Something went wrong saving that. Try again, or email me directly.','err');
+    }finally{
+      btn.disabled=false; btn.textContent=label;
+    }
+  });
+})();
+</script>
+</body>
+</html>

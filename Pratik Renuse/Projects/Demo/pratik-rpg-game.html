@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>PratikRPG — The Growth Kingdom | A Playable Career RPG</title>
+<meta name="description" content="Walk the Growth Kingdom and meet the legends of Pratik Renuse's career — a playable retro RPG built from a real resume." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#ffd23f;--gold-d:#c9971b;--ink:#eceaff;--dim:#9c97d6;
+  --green:#46e6a0;--cyan:#48d6ff;--red:#ff4d6d;--purple:#b18cff;
+  --panel:#1b1840;--line:#3a3380;--shadow:#05040f;--bg:#07060f;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{
+  font-family:'Press Start 2P',monospace;background:#05040d;color:var(--ink);
+  display:flex;align-items:center;justify-content:center;min-height:100vh;
+  overflow:hidden;padding:8px;
+  background:radial-gradient(circle at 50% 0%,#16133a,#05040d 70%);
+}
+#stage{
+  position:relative;width:100%;max-width:900px;aspect-ratio:880/560;
+  border:4px solid var(--line);box-shadow:0 0 0 4px var(--shadow),0 0 40px #6c4fd955;
+  background:#0a3d1f;overflow:hidden;image-rendering:pixelated;
+}
+canvas{display:block;width:100%;height:100%;image-rendering:pixelated}
+
+/* scanlines */
+#stage::after{content:"";position:absolute;inset:0;z-index:60;pointer-events:none;
+  background:repeating-linear-gradient(0deg,rgba(0,0,0,.16) 0,rgba(0,0,0,.16) 1px,transparent 2px,transparent 3px);mix-blend-mode:multiply;opacity:.5}
+
+/* HUD */
+#hud{position:absolute;top:0;left:0;right:0;z-index:30;display:flex;gap:8px;
+  align-items:center;padding:8px 10px;pointer-events:none;
+  background:linear-gradient(#05040dcc,#05040d00);font-size:.5rem}
+#hud .lv{color:var(--gold);white-space:nowrap}
+#xpwrap{flex:1;max-width:240px;height:14px;background:#0a0820;border:2px solid var(--line);position:relative}
+#xpwrap i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--green),var(--green) 5px,#2fbf85 5px,#2fbf85 10px);transition:width .4s}
+#qtrack{color:var(--cyan);white-space:nowrap}
+#qtrack b{color:var(--gold)}
+
+/* prompt */
+#prompt{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);z-index:35;
+  font-size:.55rem;color:#1a1430;background:var(--gold);border:3px solid var(--gold-d);
+  padding:8px 12px;display:none;box-shadow:3px 3px 0 #05040f;animation:pp 1s steps(2) infinite}
+@keyframes pp{50%{opacity:.6}}
+
+/* dialogue */
+#dialog{position:absolute;left:10px;right:10px;bottom:10px;z-index:40;display:none;
+  background:#100d2e;border:4px solid var(--gold-d);box-shadow:0 0 0 4px var(--shadow);padding:14px 16px}
+#dlgspk{font-size:.6rem;color:var(--gold);margin-bottom:10px}
+#dlgtxt{font-family:'VT323',monospace;font-size:1.35rem;line-height:1.3;color:var(--ink);min-height:74px}
+#dlgtxt b{color:var(--green)}
+#dlgmore{font-size:.5rem;color:var(--cyan);text-align:right;margin-top:8px;animation:pp 1s steps(2) infinite}
+
+/* overlays (title / complete) */
+.overlay{position:absolute;inset:0;z-index:50;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;padding:24px;
+  background:radial-gradient(circle at 50% 40%,#1a1545ee,#05040df2)}
+.overlay h1{font-size:1.3rem;color:var(--gold);text-shadow:4px 4px 0 var(--shadow);line-height:1.5;margin-bottom:14px}
+.overlay h2{font-size:.7rem;color:var(--cyan);line-height:1.7;margin-bottom:20px}
+.overlay p{font-family:'VT323',monospace;font-size:1.4rem;color:var(--dim);line-height:1.3;max-width:560px;margin-bottom:18px}
+.start{font-size:.7rem;color:var(--gold);animation:pp 1.1s steps(2) infinite;margin-top:10px}
+.keys{font-size:.5rem;color:var(--dim);line-height:2.2;margin-top:14px}
+.keys b{color:var(--ink)}
+.btn{font-family:'Press Start 2P',monospace;font-size:.6rem;background:var(--gold);color:#1a1430;
+  border:none;box-shadow:0 0 0 4px var(--shadow),5px 5px 0 var(--gold-d);padding:14px 18px;margin:8px;
+  cursor:pointer;text-decoration:none;display:inline-block}
+.btn:active{transform:translate(2px,2px)}
+.btn.alt{background:var(--panel);color:var(--gold);box-shadow:0 0 0 4px var(--shadow),5px 5px 0 var(--line)}
+#complete{display:none}
+.avatarbig{width:64px;height:64px;margin-bottom:16px;background:linear-gradient(135deg,#2b2470,#150f3a);
+  border:4px solid var(--gold);box-shadow:0 0 0 4px var(--shadow),0 0 20px #ffd23f66;
+  display:flex;align-items:center;justify-content:center;font-size:1.8rem;animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+
+/* touch controls */
+#touch{position:absolute;inset:0;z-index:45;pointer-events:none;display:none}
+#dpad{position:absolute;left:14px;bottom:14px;width:128px;height:128px}
+#dpad .b{position:absolute;width:42px;height:42px;background:#1b1840cc;border:3px solid var(--line);
+  color:var(--gold);font-size:.7rem;display:flex;align-items:center;justify-content:center;pointer-events:auto;user-select:none}
+#dpad .up{left:43px;top:0}#dpad .dn{left:43px;top:86px}#dpad .lf{left:0;top:43px}#dpad .rt{left:86px;top:43px}
+#abtn{position:absolute;right:18px;bottom:30px;width:70px;height:70px;border-radius:50%;
+  background:var(--gold);color:#1a1430;border:4px solid var(--gold-d);font-size:.8rem;
+  display:flex;align-items:center;justify-content:center;pointer-events:auto;user-select:none;box-shadow:0 0 0 4px var(--shadow)}
+.note{position:absolute;bottom:4px;left:0;right:0;text-align:center;font-size:.4rem;color:#5a5590;z-index:25}
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="cv" width="880" height="560"></canvas>
+
+  <div id="hud">
+    <span class="lv">LV <b id="lvn" style="color:var(--green)">1</b></span>
+    <div id="xpwrap"><i id="xpfill"></i></div>
+    <span id="qtrack">QUESTS <b id="qn">0</b>/9</span>
+  </div>
+
+  <div id="prompt">▶ PRESS <b>E</b> / TAP <b>A</b></div>
+
+  <div id="dialog">
+    <div id="dlgspk">SPEAKER</div>
+    <div id="dlgtxt">...</div>
+    <div id="dlgmore">▶ MORE (E / TAP)</div>
+  </div>
+
+  <!-- TOUCH -->
+  <div id="touch">
+    <div id="dpad">
+      <div class="b up" data-d="up">▲</div><div class="b dn" data-d="down">▼</div>
+      <div class="b lf" data-d="left">◀</div><div class="b rt" data-d="right">▶</div>
+    </div>
+    <div id="abtn">A</div>
+  </div>
+
+  <!-- TITLE -->
+  <div class="overlay" id="title">
+    <div class="avatarbig">🧙‍♂️</div>
+    <h1>PRATIK<span style="color:var(--cyan)">RPG</span></h1>
+    <h2>THE GROWTH KINGDOM</h2>
+    <p>A playable career RPG. Explore the kingdom, meet the legends behind a decade of 0→1 campaigns, collect XP, and clear all 9 quests.</p>
+    <div class="start">▶ PRESS ENTER / TAP TO START ◀</div>
+    <div class="keys"><b>MOVE</b> — WASD / ARROWS &nbsp;·&nbsp; <b>TALK</b> — E or SPACE</div>
+  </div>
+
+  <!-- COMPLETE -->
+  <div class="overlay" id="complete">
+    <div class="avatarbig">👑</div>
+    <h1>QUEST COMPLETE!</h1>
+    <h2 id="finalrank">★ THE GROWTH ARCHITECT ★</h2>
+    <p id="finaltxt">You've met every legend of the kingdom. A decade of 0→1, from €0 to €2M+, three TEDx stages, and a record-setting Kickstarter. Now — let's build the next one together.</p>
+    <div>
+      <a class="btn" href="mailto:pratik@pratikrenuse.com">▶ START A QUEST TOGETHER</a>
+      <a class="btn alt" href="https://linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">+ ADD TO PARTY</a>
+    </div>
+    <div class="keys" style="margin-top:18px"><span id="replay" style="cursor:pointer;pointer-events:auto;color:var(--gold)">↻ EXPLORE AGAIN</span></div>
+  </div>
+
+  <div class="note">PratikRPG · pratikrenuse.com · built from a real resume</div>
+</div>
+
+<script>
+const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+const W=cv.width,H=cv.height;
+const WORLD={w:1680,h:1180};
+let state='title'; // title | play | dialog | complete
+
+// ---------- STATIONS (buildings) ----------
+// door = interaction point (world coords); pages = [{s:speaker, t:text}]
+const stations=[
+  {id:'bueno',name:'BUENO BANK',x:150,y:120,w:230,h:150,c:'#2f6df0',roof:'#1c47a8',icon:'🏦',visited:false,
+   door:{x:265,y:300},
+   pages:[
+     {s:'GUARD OF BUENO',t:'Halt, traveler! This is BUENO — a UK-Gov award-winning fintech for Europe\'s foreign property owners. Spain, France, Portugal, Germany...'},
+     {s:'GUARD OF BUENO',t:'Pratik built our growth engine <b>single-handedly</b> — from <b>0 to 2,000+ paying subscribers</b> and <b>€300K+ ARR</b> across 28 countries.'},
+     {s:'GUARD OF BUENO',t:'The legendary stat? A <b>24x LTV/CAC</b> (€700/€30). He out-ranked Revolut & Wise on SEO, drew <b>1M+ organic visits</b>, and built a 15,000-strong newsletter at 70% open.'},
+     {s:'GUARD OF BUENO',t:'Founding team, shareholder, still on the quest today. +100 XP!'}
+   ]},
+  {id:'vu',name:'VU SUMMIT',x:560,y:110,w:230,h:150,c:'#48d6ff',roof:'#2596c4',icon:'⛷️',visited:false,
+   door:{x:675,y:290},
+   pages:[
+     {s:'OLYMPIAN OF VU',t:'You smell of fresh snow! VU is the <b>#1 Swiss brand</b> for pro skiers & snowboarders — recommended and used by Olympians.'},
+     {s:'OLYMPIAN OF VU',t:'As Head of Marketing & founding member, Pratik drove <b>€275K+ revenue</b> and <b>4.4x peak-season growth</b>.'},
+     {s:'OLYMPIAN OF VU',t:'Brand identity, site, paid media, lifecycle, community — built end-to-end. Gear that reached the <b>Olympics</b>. +100 XP!'}
+   ]},
+  {id:'infento',name:'INFENTO FORGE',x:990,y:120,w:240,h:150,c:'#ff9f4d',roof:'#c96f1b',icon:'⚙️',visited:false,
+   door:{x:1110,y:300},
+   pages:[
+     {s:'INFENTO ENGINEER',t:'Welcome to the FORGE — consumer hardware & STEM build kits. This is where legends are minted.'},
+     {s:'INFENTO ENGINEER',t:'Pratik scaled our DTC shop from <b>€0 to €2M ARR</b>, and led a <b>$848K Kickstarter</b> — the <b>#1 most-funded STEM project on Earth, 2018</b>.'},
+     {s:'INFENTO ENGINEER',t:'Three design trophies followed: <b>Red Dot</b>, German Design Award, Parent\'s Choice Gold. Paid budgets at a tight 12-15% CAC. Founding member; we grew to 25+. +100 XP!'}
+   ]},
+  {id:'growack',name:'GROWACK HALL',x:1390,y:130,w:220,h:150,c:'#46e6a0',roof:'#23a06b',icon:'📈',visited:false,
+   door:{x:1500,y:310},
+   pages:[
+     {s:'GROWACK STRATEGIST',t:'A B2B inbound & growth guild serving all of Western Europe. We don\'t guess — we model.'},
+     {s:'GROWACK STRATEGIST',t:'Pratik led inbound & growth ops here as Head of Marketing. A recognised <b>HubSpot Partner</b> and <b>Clutch 2021 Top B2B Company</b> in W. Europe. +100 XP!'}
+   ]},
+  {id:'airbus',name:'AIRBUS SPIRE',x:170,y:760,w:220,h:150,c:'#8aa0c0',roof:'#54627d',icon:'🛰️',visited:false,
+   door:{x:280,y:940},
+   pages:[
+     {s:'AIRBUS OFFICER',t:'A Fortune-500 aerospace stronghold. Pratik handled branding & online marketing for the EU-wide \'NEOShield\' project.'},
+     {s:'AIRBUS OFFICER',t:'He lifted organic social reach <b>+127%</b> in two months and drove SEO to <b>rank #1</b> on Google — single-threaded across the whole project. +100 XP!'}
+   ]},
+  {id:'bayer',name:'BAYER KEEP',x:590,y:770,w:220,h:150,c:'#2fb6a8',roof:'#1c7a72',icon:'⚗️',visited:false,
+   door:{x:700,y:950},
+   pages:[
+     {s:'BAYER STEWARD',t:'A Fortune-500 life-sciences keep in Berlin. Big stakes, bigger budgets.'},
+     {s:'BAYER STEWARD',t:'Pratik managed a <b>€250K budget</b> for GIM — Bayer\'s premier global senior-executive event, spanning <b>50+ countries</b>. +100 XP!'}
+   ]},
+  {id:'trophy',name:'TROPHY HALL',x:980,y:770,w:240,h:160,c:'#ffd23f',roof:'#c9971b',icon:'🏆',visited:false,
+   door:{x:1100,y:960},
+   pages:[
+     {s:'KEEPER OF TROPHIES',t:'Behold the rare drops! 🏆 <b>#1 STEM Kickstarter</b> globally ($848K). 🎙️ <b>3x TEDx</b> speaker.'},
+     {s:'KEEPER OF TROPHIES',t:'🌍 <b>50+ speeches</b> across 14+ countries · 🥇 three design awards · ⭐ a <b>9.7/10</b> mentor rating from CXOs & founders.'},
+     {s:'KEEPER OF TROPHIES',t:'🧑‍🏫 <b>100+ startups</b> mentored & <b>500+ graduates</b> coached across 5 continents. +100 XP!'}
+   ]},
+  {id:'guild',name:'THE GUILD',x:1370,y:780,w:220,h:160,c:'#b18cff',roof:'#7d54c4',icon:'🛡️',visited:false,
+   door:{x:1480,y:970},
+   pages:[
+     {s:'GUILDMASTER',t:'The mentors\' guild. Pratik rides with <b>Techstars</b> (#1 global accelerator) and <b>EBRD</b> (Star Venture, 25 countries).'},
+     {s:'GUILDMASTER',t:'Also Seedstars & Founder Institute, plus Visiting Professor at <b>Tetr</b> & <b>Masters\' Union</b>, coaching grads of Harvard, LSE, HEC, Yale & Oxford. +100 XP!'}
+   ]},
+  {id:'treasury',name:'THE TREASURY',x:760,y:1000,w:230,h:130,c:'#d4a72b',roof:'#9a7714',icon:'💰',visited:false,
+   door:{x:875,y:990},
+   pages:[
+     {s:'TREASURER',t:'The vault of bets placed wisely. ⚡ <b>Atom Bank</b> (£5.3B+ loan balances), 🔔 <b>Nothing</b>.'},
+     {s:'TREASURER',t:'🔮 <b>Perplexity</b> — one of the fastest-growing consumer AI products, and 🪙 <b>Plum</b>. An angel\'s instinct for what scales. +100 XP!'}
+   ]}
+];
+
+// solids = building bodies (block movement). Doors are passable gaps handled by distance check.
+function solids(){return stations.map(s=>({x:s.x,y:s.y,w:s.w,h:s.h}));}
+const SOLIDS=solids();
+
+// XP gems scattered around the world
+let gems=[
+  {x:430,y:430},{x:870,y:430},{x:1280,y:470},{x:430,y:660},{x:920,y:640},
+  {x:1300,y:700},{x:200,y:520},{x:1560,y:520},{x:700,y:560},{x:1120,y:560},
+  {x:560,y:1010},{x:1180,y:1040}
+];
+
+// ---------- PLAYER ----------
+const player={x:820,y:560,w:26,h:30,spd:3.4,dir:'down',moving:false,anim:0};
+let xp=0, level=1, questsDone=0;
+const XP_PER_LEVEL=300;
+
+// ---------- INPUT ----------
+const keys={};
+const held={up:false,down:false,left:false,right:false};
+addEventListener('keydown',e=>{
+  const k=e.key.toLowerCase();
+  if(['arrowup','arrowdown','arrowleft','arrowright',' '].includes(k))e.preventDefault();
+  keys[k]=true;
+  if(state==='title' && (k==='enter'||k===' ')) startGame();
+  else if(state==='play' && (k==='e'||k===' ')) tryInteract();
+  else if(state==='dialog' && (k==='e'||k===' '||k==='enter')) advanceDialog();
+});
+addEventListener('keyup',e=>{keys[e.key.toLowerCase()]=false;});
+
+// touch
+const touchEl=document.getElementById('touch');
+if('ontouchstart' in window || navigator.maxTouchPoints>0){touchEl.style.display='block';}
+document.querySelectorAll('#dpad .b').forEach(b=>{
+  const d=b.dataset.d;
+  const on=e=>{e.preventDefault();held[d]=true};
+  const off=e=>{e.preventDefault();held[d]=false};
+  b.addEventListener('touchstart',on);b.addEventListener('touchend',off);b.addEventListener('touchcancel',off);
+  b.addEventListener('mousedown',on);b.addEventListener('mouseup',off);b.addEventListener('mouseleave',off);
+});
+const ab=document.getElementById('abtn');
+const aPress=e=>{e.preventDefault(); if(state==='play')tryInteract(); else if(state==='dialog')advanceDialog();};
+ab.addEventListener('touchstart',aPress);ab.addEventListener('mousedown',aPress);
+
+// tap title / advance dialog by clicking stage
+document.getElementById('stage').addEventListener('click',()=>{
+  if(state==='title')startGame();
+  else if(state==='dialog')advanceDialog();
+});
+
+// ---------- GAME FLOW ----------
+function startGame(){
+  document.getElementById('title').style.display='none';
+  state='play';
+}
+let nearStation=null, dlgStation=null, dlgIdx=0;
+
+function tryInteract(){
+  if(!nearStation)return;
+  dlgStation=nearStation;dlgIdx=0;state='dialog';
+  document.getElementById('dialog').style.display='block';
+  document.getElementById('prompt').style.display='none';
+  renderDialog();
+}
+function renderDialog(){
+  const p=dlgStation.pages[dlgIdx];
+  document.getElementById('dlgspk').textContent='◆ '+p.s;
+  document.getElementById('dlgtxt').innerHTML=p.t;
+  document.getElementById('dlgmore').textContent = dlgIdx<dlgStation.pages.length-1?'▶ MORE (E / TAP)':'▶ CLOSE (E / TAP)';
+}
+function advanceDialog(){
+  dlgIdx++;
+  if(dlgIdx>=dlgStation.pages.length){
+    document.getElementById('dialog').style.display='none';
+    if(!dlgStation.visited){dlgStation.visited=true;questsDone++;addXP(100);updateHUD();}
+    state='play';dlgStation=null;
+    if(questsDone>=stations.length) winGame();
+    return;
+  }
+  renderDialog();
+}
+function addXP(n){
+  xp+=n;
+  while(xp>=level*XP_PER_LEVEL){xp-=level*XP_PER_LEVEL;level++;}
+  updateHUD();
+}
+function updateHUD(){
+  document.getElementById('lvn').textContent=level;
+  document.getElementById('qn').textContent=questsDone;
+  document.getElementById('xpfill').style.width=Math.min(100,(xp/(level*XP_PER_LEVEL))*100)+'%';
+}
+function winGame(){
+  state='complete';
+  document.getElementById('complete').style.display='flex';
+}
+document.getElementById('replay').addEventListener('click',()=>{
+  stations.forEach(s=>s.visited=false);
+  questsDone=0;xp=0;level=1;updateHUD();
+  player.x=820;player.y=560;
+  document.getElementById('complete').style.display='none';
+  state='play';
+});
+
+// ---------- PHYSICS ----------
+function rectHit(x,y,w,h,r){return x<r.x+r.w&&x+w>r.x&&y<r.y+r.h&&y+h>r.y;}
+function move(dx,dy){
+  // X
+  let nx=player.x+dx;
+  if(nx<0)nx=0; if(nx+player.w>WORLD.w)nx=WORLD.w-player.w;
+  if(!SOLIDS.some(r=>rectHit(nx,player.y,player.w,player.h,r)))player.x=nx;
+  // Y
+  let ny=player.y+dy;
+  if(ny<0)ny=0; if(ny+player.h>WORLD.h)ny=WORLD.h-player.h;
+  if(!SOLIDS.some(r=>rectHit(player.x,ny,player.w,player.h,r)))player.y=ny;
+}
+function update(){
+  if(state!=='play')return;
+  let dx=0,dy=0;
+  if(keys['arrowup']||keys['w']||held.up)dy-=1;
+  if(keys['arrowdown']||keys['s']||held.down)dy+=1;
+  if(keys['arrowleft']||keys['a']||held.left)dx-=1;
+  if(keys['arrowright']||keys['d']||held.right)dx+=1;
+  player.moving=(dx||dy)!==0;
+  if(dx&&dy){dx*=0.707;dy*=0.707;}
+  if(dx)player.dir=dx<0?'left':'right';
+  else if(dy)player.dir=dy<0?'up':'down';
+  if(player.moving){move(dx*player.spd,dy*player.spd);player.anim+=0.25;}
+
+  // gems
+  const pcx=player.x+player.w/2,pcy=player.y+player.h/2;
+  gems=gems.filter(g=>{
+    if(Math.hypot(g.x-pcx,g.y-pcy)<26){addXP(25);return false;}
+    return true;
+  });
+
+  // near station?
+  nearStation=null;
+  for(const s of stations){
+    if(Math.hypot(s.door.x-pcx,s.door.y-pcy)<74){nearStation=s;break;}
+  }
+  const pr=document.getElementById('prompt');
+  pr.style.display = (nearStation && state==='play')?'block':'none';
+  if(nearStation) pr.innerHTML='▶ '+(nearStation.visited?'REVISIT ':'ENTER ')+nearStation.name+' — <b>E</b>/<b>A</b>';
+}
+
+// ---------- RENDER ----------
+let cam={x:0,y:0};
+function draw(){
+  // camera
+  cam.x=Math.max(0,Math.min(WORLD.w-W, player.x+player.w/2-W/2));
+  cam.y=Math.max(0,Math.min(WORLD.h-H, player.y+player.h/2-H/2));
+
+  // ground
+  ctx.fillStyle='#0e7a3a';ctx.fillRect(0,0,W,H);
+  // grass texture (parallax-free, world-fixed)
+  drawGrass();
+  // paths
+  drawPaths();
+  // gems
+  for(const g of gems)drawGem(g.x-cam.x,g.y-cam.y);
+  // buildings (sorted by y for depth)
+  [...stations].sort((a,b)=>(a.y+a.h)-(b.y+b.h)).forEach(drawBuilding);
+  // player
+  drawPlayer();
+  // edges vignette
+  ctx.fillStyle='rgba(0,0,0,0.18)';
+  ctx.fillRect(0,0,W,8);ctx.fillRect(0,H-8,W,8);ctx.fillRect(0,0,8,H);ctx.fillRect(W-8,0,8,H);
+}
+function drawGrass(){
+  const t=24;
+  const ox=-(cam.x%t),oy=-(cam.y%t);
+  for(let y=oy-t;y<H+t;y+=t){
+    for(let x=ox-t;x<W+t;x+=t){
+      const wx=Math.round(x+cam.x),wy=Math.round(y+cam.y);
+      if(((wx/t|0)+(wy/t|0))%2===0){ctx.fillStyle='#0c6f34';ctx.fillRect(x,y,t,t);}
+      // little blades
+      if(((wx*7+wy*3)%97)<6){ctx.fillStyle='#1c9a4d';ctx.fillRect(x+10,y+8,2,6);ctx.fillRect(x+14,y+10,2,4);}
+    }
+  }
+}
+function drawPaths(){
+  ctx.fillStyle='#b9925a';
+  const P=[
+    [120,360,1500,60],   // top horizontal
+    [120,560,1500,60],   // mid horizontal
+    [120,940,1480,60],   // bottom horizontal
+    [240,360,60,640],    // verticals
+    [650,260,60,760],
+    [1080,360,60,640],
+    [1470,360,60,640],
+    [840,560,60,470]
+  ];
+  for(const[x,y,w,h]of P){
+    ctx.fillStyle='#9c7a45';ctx.fillRect(x-cam.x,y-cam.y,w,h);
+    ctx.fillStyle='#b9925a';ctx.fillRect(x-cam.x+3,y-cam.y+3,w-6,h-6);
+  }
+}
+function drawGem(x,y){
+  if(x<-20||x>W+20||y<-20||y>H+20)return;
+  const f=Math.sin(Date.now()/250)*3;
+  ctx.save();ctx.translate(x,y+f);
+  ctx.fillStyle='#48d6ff';ctx.beginPath();
+  ctx.moveTo(0,-9);ctx.lineTo(7,0);ctx.lineTo(0,11);ctx.lineTo(-7,0);ctx.closePath();ctx.fill();
+  ctx.fillStyle='#bff0ff';ctx.beginPath();ctx.moveTo(0,-9);ctx.lineTo(3,-2);ctx.lineTo(-3,-2);ctx.closePath();ctx.fill();
+  ctx.restore();
+}
+function drawBuilding(s){
+  const x=s.x-cam.x,y=s.y-cam.y;
+  if(x>W||x+s.w<0||y>H||y+s.h<0)return;
+  // shadow
+  ctx.fillStyle='rgba(0,0,0,0.25)';ctx.fillRect(x+6,y+s.h-6,s.w,14);
+  // body
+  ctx.fillStyle=s.c;ctx.fillRect(x,y+26,s.w,s.h-26);
+  ctx.fillStyle='rgba(0,0,0,0.18)';ctx.fillRect(x,y+s.h-18,s.w,18); // base trim
+  // windows
+  ctx.fillStyle='rgba(255,255,255,0.18)';
+  for(let wx=x+18;wx<x+s.w-30;wx+=46){ctx.fillRect(wx,y+44,26,24);}
+  // roof
+  ctx.fillStyle=s.roof;
+  ctx.beginPath();ctx.moveTo(x-8,y+30);ctx.lineTo(x+s.w/2,y-6);ctx.lineTo(x+s.w+8,y+30);ctx.closePath();ctx.fill();
+  ctx.fillStyle='rgba(0,0,0,0.2)';ctx.fillRect(x-8,y+28,s.w+16,5);
+  // door
+  const dw=40,dh=46;const dx=x+s.w/2-dw/2,dy=y+s.h-dh;
+  ctx.fillStyle=s.visited?'#3a3360':'#241c12';ctx.fillRect(dx,dy,dw,dh);
+  ctx.fillStyle=s.visited?'#46e6a0':'#ffd23f';ctx.fillRect(dx+dw-8,dy+dh/2-3,5,6); // knob/check
+  // icon flag
+  ctx.font='20px serif';ctx.textAlign='center';ctx.fillText(s.icon,x+s.w/2,y+20);
+  // sign label
+  ctx.font='9px "Press Start 2P", monospace';ctx.textAlign='center';
+  const lw=ctx.measureText(s.name).width;
+  ctx.fillStyle='#100d2e';ctx.fillRect(x+s.w/2-lw/2-6,y+s.h+6,lw+12,18);
+  ctx.fillStyle=s.visited?'#46e6a0':'#ffd23f';ctx.fillText(s.name,x+s.w/2,y+s.h+19);
+  if(s.visited){ctx.fillStyle='#46e6a0';ctx.fillText('✓ CLEARED',x+s.w/2,y+s.h+34);}
+}
+function drawPlayer(){
+  const x=Math.round(player.x-cam.x),y=Math.round(player.y-cam.y);
+  const bob=player.moving?Math.abs(Math.sin(player.anim))*3:0;
+  // shadow
+  ctx.fillStyle='rgba(0,0,0,0.3)';ctx.beginPath();ctx.ellipse(x+13,y+30,12,4,0,0,7);ctx.fill();
+  // body (robe)
+  ctx.fillStyle='#6c4fd9';ctx.fillRect(x+4,y+14-bob,18,16);
+  ctx.fillStyle='#8a6cf0';ctx.fillRect(x+4,y+14-bob,18,4);
+  // head
+  ctx.fillStyle='#f2c79b';ctx.fillRect(x+7,y+4-bob,12,11);
+  // hair/hat
+  ctx.fillStyle='#2b2470';ctx.fillRect(x+6,y+2-bob,14,5);
+  // eyes by direction
+  ctx.fillStyle='#1a1430';
+  if(player.dir==='left'){ctx.fillRect(x+8,y+9-bob,2,2);}
+  else if(player.dir==='right'){ctx.fillRect(x+16,y+9-bob,2,2);}
+  else if(player.dir==='up'){/* none */}
+  else{ctx.fillRect(x+9,y+9-bob,2,2);ctx.fillRect(x+15,y+9-bob,2,2);}
+  // gold belt
+  ctx.fillStyle='#ffd23f';ctx.fillRect(x+4,y+24-bob,18,3);
+  // legs
+  ctx.fillStyle='#3a2f6e';
+  const step=player.moving?Math.sin(player.anim)*3:0;
+  ctx.fillRect(x+6,y+30,5,6+step);ctx.fillRect(x+15,y+30,5,6-step);
+}
+
+// ---------- LOOP ----------
+function loop(){update();draw();requestAnimationFrame(loop);}
+document.fonts.ready.then(()=>{updateHUD();loop();});
+loop(); // start immediately too (font loads in)
+</script>
+</body>
+</html>

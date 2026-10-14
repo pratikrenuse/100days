@@ -1,0 +1,2132 @@
+Mochary Method Curriculum — Volume 1 — Part 5 of 8
+============================================================
+
+## Chapter 77: Matt’s Book: The Great CEO Within (online)
+
+*Source: https://docs.google.com/document/d/1ZJZbv4J6FZ8Dnb0JuMhJxTnwl-dwqx5xl0s65DE3wO8/edit*  
+*(several hours)*  
+
+## **✨** 
+
+## **We have released a new and updated version of** 
+
+## [**this book on Amazon**](https://www.amazon.com/Great-CEO-Within-Tactical-Building-ebook/dp/B07ZLGQZYC)
+
+If you have read this free book (below) and it has created value for you, please leave a written review on the Amazon link above.  Even better, buy a book on Amazon (so that you will be marked as a Verified Purchaser when you review), and then leave a review.  Thanks\!\!
+
+## **✨** 
+
+  
+
+## **The Great CEO Within**  
+(Formerly: *Founder to CEO*)
+
+How to build a category-killing company from the ground up
+
+  
+
+**By Matt Mochary**
+
+  
+
+## Table of Contents 
+
+Introduction
+
+Essential Reading
+
+  
+
+Part I -- The Beginning
+
+Chapter 1:  Getting Started
+
+Chapter 2:  The Team
+
+  
+
+Part II — Individual Habits
+
+Chapter 3:  Getting Things Done
+
+Chapter 4:  Inbox Zero
+
+Chapter 5:  Top Goal
+
+Chapter 6:  On Time and Present
+
+Chapter 7:  When You Say It Twice, Write It Down
+
+Chapter 8: Gratitude and Appreciation
+
+Chapter 9:       Energy Audit and Zone of Genius
+
+Chapter 10:  Health
+
+ 
+
+Part III — Group Habits
+
+Chapter 11:   Decision-Making
+
+Chapter 12:    Loudest Voice in the Room
+
+Chapter 13:   Impeccable Agreements and Consequences
+
+Chapter 14:   Transparency
+
+Chapter 15:  Conflict Resolution and Issue Identification
+
+Chapter 16:      Conscious Leadership
+
+Chapter 17:      Customer Obsession
+
+Chapter 18:      Culture
+
+  
+
+Part IV — Infrastructure
+
+Chapter 19:    Company Folder system and Wiki
+
+Chapter 20:    Goal-Tracking System
+
+Chapter 21:    Areas of Responsibility (AORs)
+
+Chapter 22:    No Single Point of Failure
+
+Chapter 23:    Key Performance Indicators (KPIs)
+
+  
+
+Part V — Collaboration
+
+Chapter 24:     Meetings
+
+Chapter 25:     Feedback
+
+Chapter 26:     Organizational Structure
+
+ 
+
+Part VI — Processes
+
+Chapter 27:    Fundraising
+
+Chapter 28:   Recruiting
+
+Chapter 29:    Sales
+
+Chapter 30:    Marketing
+
+ 
+
+Part VII — Other Departments
+
+Chapter 31:    Executive
+
+Chapter 32:    Product
+
+Chapter 33:    Engineering
+
+Chapter 34:    Human Resources
+
+Chapter 35:    Finance
+
+Chapter 36:    Legal
+
+  
+
+Essential Reading
+
+Acknowledgments
+
+About the author
+
+  
+  
+
+Part VIII -- Appendices 
+
+Appendix A:  Summary of Conscious Leadership
+
+Appendix B:  The Challenge of the Technical Founder
+
+Appendix C:  Recruiting Process
+
+Appendix D:  Sample Area of Responsibility (AOR) List
+
+Appendix E:  Board of Directors
+
+Appendix F:  To IPO, or not to IPO?
+
+Appendix G:  Personal
+
+  
+
+ 
+
+About the Author
+
+Acknowledgements
+
+  
+  
+
+## Introduction
+
+  
+
+Who am I? Why am I writing this book?  
+
+  
+
+I coach tech startup CEOs (and tech investors) in Silicon Valley,  most of whom are young technical founders. They include the CEOs of Reddit, Postmates, Plaid, Brex, Coinbase, OpenAI, OpenDoor, Grammarly, Atrium, Clearbit, Newfront, Front, Lambda School and Rippling.
+
+  
+
+In my coaching, I found several things:  
+  
+
+1.  My mentees and I repeatedly solve the same core issues.   
+      
+2.  While there are many books out there with excellent and relevant knowledge for the founding CEO, there is no single book that is a compendium of all the things she needs to learn.  
+      
+3.  Becoming a great CEO requires training.  
+      
+4.  For a founding CEO, there is precious little time to get that training, especially if her company is succeeding.
+
+  
+
+In this book, I have simply written down the solutions that my mentees and I have came up with. Hopefully it will serve as a compendium so that you can become a great CEO in the very little time you have to do so.
+
+  
+
+This book goes from high-level (an outline of many of the issues that a CEO will face) to the mid-level (a recommended initial process for each of these issues, written in such a way that it can be copy-and-pasted into a company playbook) to the low-level (specific suggestions of phrases to use in specific oft-recurring situations).  The book, therefore, has both breadth and depth.
+
+  
+
+If you are a CEO, new or experienced, this book is meant for you.  If you are a first-time CEO, then this book will give you frameworks and answers for your current and future challenges.  If you are an experienced CEO, this book will be a good checklist of best practice benchmarks against which you can rate your company’s performance as an organization, and your performance individually.  In the areas where you discover that you are wanting, the book will give you the target to hit, and tools to implement immediately.
+
+  
+
+This book is organized into 8 sections:  
+
+  - The Beginning
+  - Individual Habits
+  - Group Habits
+  - Infrastructure
+  - Collaboration
+  - Processes
+  - Other Departments
+  - Appendices
+
+  
+
+The Beginning briefly covers how best to start a company and launch a team.  
+
+  
+
+Individual Habits covers the most crucial habits to be an effective individual in a company, no matter what your position is.  This includes organization (GTD, Inbox Zero) and effectiveness (Top Goal, On Time, Write it Down).
+
+  
+
+Group Habits covers the most crucial habits to be an effective group, no matter what the group’s function or size (Writing vs Talking, Decision-Making, Agreements, Transparency, Conscious Leadership, Customer Obsession and Culture).
+
+  
+
+Infrastructure covers the tools used to facilitate company effectiveness (Wiki, Goal-Tracking, AORs, KPIs, No Single Point of Failure).
+
+  
+
+Collaboration reviews techniques used to keep an organization working well together (Meetings, Feedback, Org Structure).
+
+  
+
+Process covers the systems used for each major function of the company (Fundraising, Recruiting, Sales and Marketing).  
+
+  
+
+Other Departments covers the remaining functions in a company (Executive, Product, Engineering, People, Finance and Legal).
+
+  
+
+And finally, the Appendices cover a variety of things that didn’t neatly fit anywhere else (Essential Reading, Challenge of the Technical CEO, Recruiting Process, Sample AOR List, Board of Directors, IPO, Personal).
+
+## Part I -- The Beginning
+
+### Chapter 1: Getting Started
+
+  
+
+There are many ways to create a company, but only one good one:  To deeply understand real customers (living humans\!) and their problem, and then solve that problem.   
+
+  
+
+This is explained clearly and thoroughly in *Disciplined Entrepreneurship* by Bill Aulet.  I won’t repeat or even summarize what he wrote.  If you haven’t yet launched or achieved Product Market Fit (\>$1 million of revenue), go read Bill’s book first. 
+
+  
+
+### Chapter 2:  The Team
+
+#### Co-Founders
+
+Starting a company is hard.  There are long hours, constant fear of failing, many rejections, etc.  This burden is further intensified if you try to do it alone.  Solo founders have high rates of burnout.  The emotional burden is just too high.  As with any trend, there are exceptions.  But the rule generally holds.  
+
+  
+
+YCombinator has a strong bias toward accepting co-founder teams (versus solo founders) for this reason.  Owning much of something is better than owning 100% of nothing.  Find a partner, someone who has complimentary skills to yours.  Share the emotional burden with them.  That will ease the load significantly.  Give up a large percentage of the company.  It’s worth it.
+
+  
+
+Your partner’s purpose is not to be value-add forever.  As your company grows, you will likely find people with far greater skills whom you will hire.  That’s OK.  Your co-founder’s purpose is to help you achieve success in your march to Product-Market Fit. Once you get there and begin the blitz-scaling process, be pleased if they continue to add value beyond that point.
+
+  
+
+And when you do find a partner, avoid one cardinal mistake: do not create a 50/50 partnership.  While 50/50 sounds like an ideal, it actually leads to real pain if there is no easy way to break a deadlock.  Unanimous decisions are tiresome to create day after day after day.  Knowing that one person has the ability to decide actually eases the burden for all involved, and leads to far better outcomes.
+
+  
+
+As Alex MacCaw, Founder and CEO of Clearbit writes: “This is key. Two of my previous companies were destroyed by a 50/50 split.”
+
+  
+
+From Peter Reinhardt, Founder and CEO of Segment, shares a different perspective:  “There are ways to avoid deadlock (e.g. third co-founder with small stake a la Charm), and splitting evenly aside from that has been totally fine in my experience with both Segment and Charm. Over time, vesting, cash investment, or differential compensation is a natural way that ownership can diverge.”
+
+  
+
+And in all of this, there is a big exception.  If you have done this before, have the majority of skills (technical, social, financial) needed to start a company, and are a masochist, then by all means begin on your own.  
+
+  
+
+From Alex MacCaw: “The key for me in doing it alone is a strong friend group that supports me.”
+
+#### The Team
+
+  
+
+While it is critical to have a partner to share the emotional burden of starting a company, each additional team member (co-founder, partner or employee) adds additional complexity in geometric fashion.  Each new member must somehow grock the priorities, vision and actions of the other team members in order to place their efforts in the same direction.  The more team members you have, the geometrically harder it is to share what is currently going on with everyone, as well as have everyone be emotionally bought in to the decisions being made.  Do not underestimate this cost.  It is much larger than most founders think.
+
+  
+
+YC has another strong belief:  Founding teams should never grow beyond six until there is true product-market fit.  (Later, I will dive deeper into what Product-Market Fit is, but for now, let’s say it’s greater than $1mm in recurring revenue for an enterprise company.)   
+
+  
+
+Why?  Three main reasons:
+
+  
+
+1.  Morale. Until Product-Market Fit is achieved, the company must be able to adapt to negative customer feedback and potentially pivot the company.  No matter what you say to them, when someone joins a 10-plus-person company, they expect stability.  If, after six months, you launch your first product and customers don’t instantly rave about it (which is what will happen), the team will become de-moralized.  It doesn’t matter how many times you’ve announced beforehand that you’re still a startup and the team should be ready for this.  They will hear the words, but not internalize them.  
+      
+    By contrast, with six or less people, the environment feels like a team in battle.  Chaos is expected.  So when chaos is actually encountered, the team meets it with glee.  People who join small teams crave the challenge of new things.  They want things to be hard.   
+      
+2.  Communication and organization.  When you are a few people in a room, you all know what each other is working on without having to formally report to each other.  This has tremendous value as it allows you all to stay in sync without requiring a formal management system, which would suck up significant time and headspace even if done very efficiently.    
+      
+    Once your team grows large enough to not be able to sit next to each other in one room (ie- more than twenty in one space, or even one remote worker), then suddenly information-sharing by osmosis disappears.  Now you will need a formal management system to succeed.  And that requires overhead (usually one full day per week … for everyone\!).  
+      
+3.  Efficiency.  When you are just a few programmers, then there is no choice but to write “prototype code”.  This is code that is meant only to create a prototype (and brings along with it a lot of technical debt), as opposed to industrial code which is meant to be easily de-bugged, handle many users, etc.    
+      
+    The reality is that your first product should always be viewed as a prototype.  You are using it to gather customer feedback only.  And that feedback will inevitably vastly alter what your product is, usually to the point of it becoming a completely different product.  So, all the effort you put into making this initial code beautiful will likely be wasted.  If you are small, there will be no temptation to write beautiful unnecessary code.
+
+  
+
+If you are a startup in Silicon Valley and have discovered a large potential market, then you will be able to raise significant capital early.  This will allow you to hire many people.  Investors may well pressure you to do so in order to “win the race to market share”.  Resist this pressure.  It is misplaced.  
+
+  
+
+Startups don’t usually fail because they grow too late.  They usually fail because they grow too early (ie- before they have achieved Product Market Fit). 
+
+#### Product-Market Fit  
+  
+
+What is Product-Market Fit? I define it has having created a product that customers are finding so much value in that they are willing to both buy it (after their test phase) and recommend it.  Metrics that show whether PMF has been achieved include:  revenue, renewal rates, NPS (net promoter score).  
+
+  
+
+The first goal of the company should be to achieve real PMF, not metrics that fool people inside and outside the company that PMF has been achieved. 
+
+  
+
+For a B2B company, know that enterprise customers have budgets just for testing new technology, and will buy your product to do just that.  This does not mean that you have achieved PMF.  For these types of customers, only long-term contracts are an indication that they actually value your product and want to use it.
+
+  
+
+There is no magic metric, but for a B2B company, it’s hard to imagine PMF at anything less than $1mm ARR.
+
+#### Scaling
+
+  
+Once you have achieved Product-Market Fit, that is the right time to blitz scale and win the race to market share.  To do this, you will need to create massive awareness (Marketing), walk many customers through the sales process (Sales), hold those customers hands as they set up and use your product or service (Customer Success), harden your infrastructure to withstand many users at once (DevOps), get rid of technical debt as well as add all the features promised in your roadmap (Engineering), update the product roadmap to meet the most urgent needs of your customers (Product), and all of the non-technical operations (People \[Recruiting, Training and HR\], Finance, Legal, Office).  All of this requires hiring talented and experienced people to fulfill those functions.  First raise the money needed to hire this team, and then begin hiring.  
+
+  
+
+Once you bring on remote workers, and your team scales beyond 15-20 people, most likely things will begin to fall apart.  You will hire very talented people and they simply won’t perform in the way that you hope or expect.  You will end up doing more and more work yourself, working longer and longer hours, just to keep the company afloat. You will extrapolate this trend, and realize that soon you will break.  
+
+  
+
+It is at that moment that you need to implement a formal management system.  It will be painful.  You will no longer be able to just “work on the product”.  You and your team will likely have to spend one full day per week preparing for and participating in team and one-on-one meetings.  These meetings and this system will feel like pure overhead.  They are.  And without them, your company will never scale successfully.  
+
+  
+
+The good news is that the same system that allows your company to operate well with 25 people, will also allow it to work well with 25,000.  Neither the system nor the amount of overhead will change.  It is a one-time hit.
+
+  
+
+The rest of this book walks through the implementation of such a system.
+
+## # Part II — Individual Habits
+
+Great companies are made up of great individual performers who work well together as a team. As CEO, you are both the architect of the culture and the central hub in the wheel of information flow that enables the team to function effectively. Your example inspires your team, and your efficiency determines the efficiency of the team. Therefore, the first thing to optimize is yourself.
+
+ 
+
+I have found the following habits and methods to be the most effective for fostering individual productivity.
+
+### Chapter 3: Getting Things Done (GTD)
+
+Everyone needs an organizational system to track goals, priorities, and tasks. The majority of successful CEOs that I know use the system outlined in the book *Getting Things Done: The art of stress-free productivity*, by David Allen. While the book is dense, it is definitely worth reading in its entirety. The essence of Allen’s system is:
+
+  
+
+Each day, process every single item in your Inbox (defined broadly as all Inboxes \[email, Slack, text\] and all to-do’s).  **If the action takes \<2 minutes to complete, do it immediately.** If not, then write down what the required action is, and place it on one of the following lists:  
+
+  
+
+1\. **Next Actions:** These are the next tasks on your priority list separated into areas of context. 
+
+  - Computer (actions where you need access to your computer)
+  - Calls (phone calls that can be completed when you don’t have access to a computer, eg- riding in a car)
+  - Outside (actions that can only be completed outside, such as errands)
+  - Home (actions that can only be completed at home).   
+      
+
+Tasks should be written as single actions (as opposed to broad goals).  The key is to not have to think about what needs to be done again once the Next Action has been written down.  The Next Action should be written so clearly that all you need to do is follow its direction when you read it next.
+
+  
+
+Computer  
+ Write first draft of 10-year Company Vision and 3-month Roadmap
+
+Write first draft of Sales Playbook
+
+  
+ Calls
+
+John 650-555-3452 schedule company offsite
+
+Mary 415-555-1234    review draft financing docs, paragraph by paragraph
+
+  
+
+Outside
+
+Walgreens - pick up prescription
+
+  
+
+Home
+
+Clean out garage
+
+  
+
+2\. **Waiting For**: This is the list of things that you have asked others to do, and are waiting for them to complete. List the person to whom you have delegated, the requested action, and the date on which you made the request. You can then easily scan your Waiting For list and see which aging requests are still outstanding. Move these aging requests to your Next Action list and ask the person again for the item.
+
+  
+
+Waiting For
+
+Sarah- feedback on Sales Playbook, 3-18
+
+Jim - Write-up issue for next Leadership Team Meeting, 3-19
+
+Bill- time to meet, 3-19
+
+  
+3\. **Someday/Maybe:** This is the list of things that you one day want to do, but don’t need to get done now (e.g. read a book).
+
+  
+
+Someday/Maybe
+
+Schedule a guitar lesson
+
+Order the book Getting Things Done by David Allen
+
+  
+4\. **Agenda:** Inefficient leaders waste a lot of time reaching out about, or responding to, one-off issues in real-time. A much more efficient method is to batch your issues and discuss them all at once. This does not apply for urgent issues.  Those need to be addressed immediately.  But by addressing many issues on a regular basis, soon urgent issues will disappear.
+
+  
+
+To do this, create and use an Agenda list.  This is your list of regular meetings. When you think of something that you want to discuss with someone with whom you meet regularly, write it down on your Agenda list. Then, when you meet with that person, check your Agenda list and review everything accumulated there. 
+
+  
+
+Spouse
+
+What should we do for our winter holiday?
+
+Connect- listen to each other’s day for 10 minutes each
+
+  
+
+Leadership Team
+
+Are we having enough fun?
+
+10-year Company Vision
+
+3-month Company Roadmap
+
+  
+5\. **Projects:** This list is for projects that have more than one Next Action that can only be done one after the other (serially). Write out all of the Next Actions required to get to completion. Then simply add them chronologically to your Next Actions list as the previous action is completed.
+
+  
+
+6\.  **Review:**  This is your cadence for reviewing the lists above.   
+  
+  Daily: Next Action and Waiting For
+
+Weekly: Someday/Maybe, Agenda and Projects
+
+  
+
+And finally, use your calendar to schedule Next Actions that need to happen on a certain day or at a certain time.  I recommend that you actually put your reviews (\#6 above) in your calendar.
+
+  
+
+7\.   **Goals:**   This is not part of Allen’s GTD, but I use it and find it very helpful.  Later in the book, I recommend that you create for your company a 10 Year Vision and Quarterly OKRs, as well as Department, Team and Individual quarterly OKRs.  I keep a copy of this Vision and these OKRs on the Goals list.  I refer to it regularly to flesh out my Next Action list.
+
+  
+
+Tools:  There are many tools that will help you maintain a GTD system, from the simple (Evernote) to the potent (Omnifocus).  Choose one that fits your level of willingness to learn new functionality.
+
+### Chapter 4: Inbox Zero
+
+  
+
+We all get deluged on a daily basis with Inbox messages from email, text, Slack, CRMs and other online tools. It’s critical to have a thoughtful methodology for dealing with them all—otherwise, you’ll be buried in communications and you’ll risk missing time-sensitive messages.
+
+ 
+
+Think of your combined inboxes as a single triage room at a hospital. Some cases that come in are urgent, others not so much. It is critical to notice the urgent cases immediately, and get them in to see a doctor now. To do so, you must keep the triage room clear. If you use the triage room as a waiting room as well, then a new patient can enter the room, sit down in a chair, and bleed out from his stab wound before you even realize he is there. For this reason, every well-functioning hospital separates its triage room from its waiting room, and keeps the triage room absolutely clear. To be efficient, you must do the same with your inbox. This means addressing all the urgent cases right away, and maintaining Inbox Zero every day.
+
+ 
+
+If you check your email incessantly, multiple times an hour, you are wasting hours of productivity. Instead, batch your time and clean out your entire inbox at those times. I recommend checking your inbox only twice a day (once in the morning, once in the afternoon). Each time, follow this process:
+
+ 
+
+1\. If the email/message takes less than two minutes to address, do it immediately.
+
+  
+2\. If it takes more than two minutes, write down a Next Action for it (according to the Getting Things Done methodology) and then place the email in its correct location (Next Action, Waiting For, Someday/Maybe, or Reference).
+
+  
+
+ The best way that I have found to do this when using Gmail is to read and implement Andreas Klinger’s [iconic blogpost](http://klinger.io/post/71640845938/dont-drown-in-email-how-to-use-gmail-more) on GTD in Gmail. In it, Andreas explains how to use Gmail’s Multiple Inbox feature to create an inbox for Next Action, Waiting For, Someday/Maybe, and Reference.  You can set the system up in 15 minutes.  
+
+  
+3\. Repeat until you get to Inbox Zero.  If you are truly fearless, you get can get to Inbox Zero within the hour (yes, even if you have 1,000s of emails in your Inbox right now).
+
+  
+
+### Chapter 5: Top Goal
+
+In startups, fires never cease to burn. One of the most common complaints I hear from CEOs is that on a day-to-day basis they seem to have infinite things to do, yet weeks will go by and they don’t feel like they have accomplished anything. This is the result of getting bogged down with the small immediate things and losing track of the important long-term ones.  
+  
+
+The Top Goal framework will help you fix this. Greg McKeown, who wrote a phenomenal book on productivity called [Essentialism](https://smile.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382/ref=sr_1_1?ie=UTF8&qid=1479153913&sr=8-1&keywords=essentialism), boils this down to one key concept: **Schedule two hours each day (ie- put an Event in your calendar) to work on your Top Goal only. And do this every single work day. Period.**  
+  
+
+The earlier in the day you schedule this Top Goal time, the better, so as to avoid other issues (and people) from pressing for your attention.  There is also strong researched-backed evidence to show that we have more decision and thought-processing energy early in the day when our brain is freshly rested.  Take advantage of this high-quality brain functioning by doing the important stuff first.  
+  
+
+During this Top Goal time, do not respond to emails, texts, calls, and messages.  Only work on your top priority (your top goal for the current quarter \[3 months\]) during these two hours. If you follow this pattern each workday, you will achieve amazing things.
+
+  
+
+If you have never scheduled this kind of focused work time, starting off with two hours a day will likely be too great of a leap.  Instead, start by scheduling 30 minutes for tomorrow early in the day.  If that goes well, then schedule 30 minutes each weekday morning for a week.  If that goes well, increase the daily scheduled time to one hour.  Continue increasing each week until you find the right balance, knowing that the recommended target is two hours.
+
+  
+  
+
+### Chapter 6: On Time and Present
+
+  
+
+It is critical to be on time for every appointment that you have made, or to **let the others involved in the meeting know that you will be late as soon as you realize it.** This is common decency, yes, but it has a greater importance. 
+
+  
+
+There is someone else on the other side of your agreement to start the meeting at a certain time. They have stopped what they are working on to attend the meeting on time. If you do not show up on time, they cannot start the meeting, but they also cannot leave, because they don’t know if you’ll show up the next minute or not. 
+
+  
+
+Each minute that they are away from their work is a minute of productivity that you have stolen from them. This is not only disrespectful but also counterproductive. If they are a customer, investor, or recruit, they will not engage with your company. If they report to you, they will keep quiet but resent you. There is no winning scenario when you waste someone’s time.
+
+  
+
+But life happens. A previous call or meeting may run late. Traffic doesn’t always cooperate. Even with careful planning, it’s not possible to be on time for every meeting.  The good news is that you don’t need to be.  
+
+  
+
+It is only critical to let the other members of the meeting know that you will be late as soon as you realize that you will be. And you must come to this realization (and let the other attendees know) before the meeting starts, through whatever channel will get to them the fastest. Ideally, you’d let them know about the delay before they have to break away from whatever they are doing before the meeting.
+
+  
+
+In addition to being on time, you must also be present. Being present means that you are composed, prepared, and focused on the subject matter. It can take a few minutes to “get present” -- prepare for the meeting, research the topic and the attendees, go to the bathroom between back-to-back meetings, get a drink/snack, and so on.  
+
+  
+
+Therefore, I recommend that you plan to arrive to an outside meeting fifteen minutes before it is scheduled to begin. For a meeting in your office, wrap up your current project or previous meeting five to ten minutes prior to the scheduled time for the next meeting.  
+
+  
+
+To make this easy, I recommend scheduling 25 and 50 minute meetings only (Google Calendar even has an automated setting for this).  This will give you 5 minutes each half-hour and 10 minutes each hour to maintain yourself.
+
+  
+
+When in the meeting, I often see CEOs making the mistake of constantly checking their messages. They cannot get away from being “on,” if even for a second. This is not only disrespectful, but it defeats the purpose of the meeting, which is collaboration with the attendees present. It sends a message that the meeting’s content is relatively unimportant. Furthermore, it also breeds a bad habit for the entire company—one that will be hard, if not impossible, to break down the line. 
+
+  
+
+During every meeting, leave your phone in your pocket or face-down. Sticking with the strategies in Chapter 4 (“Inbox Zero”) will help you to focus on your meetings and make the most out of your assembled—and expensive—talent.  And if the meeting is not efficient, then make it so (see Chapter 21).
+
+### Chapter 7: When you say it twice, write it down
+
+Whenever you find yourself saying something for a second time (to a second audience, or in a second situation), it is highly likely that you will end up saying it again and again in the future.  To vastly improve the quality of the communication, and reduce the amount of time that you spend communicating it … **write it down**.  
+
+  
+
+Then, the next time you need to communicate that message, you can simply share it in written form.  If it is something that all members of the team should know and remember, put it in a company-wide Wiki.  If it is truly seminal to the organization, post it on a wall for all to see.
+
+  
+
+From Alex MacCaw, Founder and CEO of Clearbit:
+
+“Once you see this system working for yourself, start encouraging others in your company to do likewise. Everytime you see a question answered on Slack (for example), prompt the questioner to document the response in your company wiki.” 
+
+### Chapter 8: Gratitude
+
+Confirmation bias is the phenomenon that whatever belief we start out with, we will discover evidence to support it.  A corollary to this is that whatever question we ask, we will focus on the answer. 
+
+  
+
+In any situation, we can ask ourselves “What is wrong here?” or “What is right here?”  From an early age, our parents, teachers, and employers have taught us to ask the former question.  They cannot be faulted.  They had the best intentions.  In the earliest years of our life, they were trying to keep us alive.  Unfortunately, an unintended consequence is that we learned to focus on the negative, and so we continually see the negative.  This leads to objectively very successful people being not fully satisfied with their lives, themselves, etc.  If that is where it ended, I wouldn’t touch it, as this book is about becoming a great CEO, not about maximizing a feeling of fulfillment.  However, that is not where it ends.
+
+  
+
+It turns out that we perform our best when we are having fun and feeling good about ourselves.  
+
+  
+
+If you want proof of this, go to any kid sports event where you know the names of the kids.  Start cheering positively for the team that is losing, with specific compliments to specific kids:  “Great pass Jimmy.”  “Way to be in position, George.”  When a kid takes a shot but misses … “Good idea Joey, it was the right thing to do.”  Within 5-10 minutes, the tide of the game will start to change toward the team that you are giving specific compliments to.  (I have done this many times.  And it has worked every time\!)
+
+  
+
+If you are not a parent, and don’t have access to kid sports, you can try the same technique at the adult sports games that you (or someone you know) participates in.  It works just as well (actually, often better) with adults.
+
+  
+
+So, how do we take advantage of this knowledge to generate a good feeling in ourselves?  We ask the right question:  “What is good about this situation?”  “What is good about this team member?” “What is good about my company?”  “What is good about my life?”  Or, we simply fill in the overarching statement:  **“I am grateful for \_\_\_\_\_\_\_\_.”**   Be as specific as possible: names of people, specific actions they did, etc.
+
+  
+
+I recommend making this a daily practice.  I do it first thing every morning.  To remember to do it, create a trigger for yourself.  
+
+  
+
+A trigger is something that you will see at the time that you want to do the action. Using a trigger allows you to easily create a habit.  The easiest trigger, in this case, is a piece of paper with the word “Gratitude” printed on it, taped to your night-table, or wall by your bed, or mirror in your bathroom.  When you see it each morning, you say the phrase “I am grateful for \_\_\_\_\_\_” five times with a different ending each time.  (You don’t have to say it out loud; you can say it silently to yourself.)  The key is to be specific as possible when you declare what you are grateful for.
+
+  
+
+Another way to make this a regular habit is to use a journal like the [The Five-Minute Journal](https://www.amazon.com/Five-Minute-Journal-Happier-Minutes/dp/0991846206/ref=sr_1_2?ie=UTF8&qid=1531248905&sr=8-2&keywords=five+minute+journal).  Keeping the book by your bedside is itself the trigger, as you will see it when you wake up, and just before you go to sleep.  
+
+  
+
+If you do this gratitude practice regularly (don’t worry if you miss days here and there), your view of your life and yourself will begin to change for the better.  And soon afterward you will begin to perform better in life as well, just like the kids on the sports field.
+
+  
+
+For the cynics out there, being grateful doesn’t mean that you will suddenly ignore all of the areas of your life or your company that could use improvement.  Just the opposite.  It only means that you will bring an attitude of joy, as opposed to desperation, when addressing those areas. 
+
+  
+
+Life and company-building don’t have to be hard or painful.  Daily gratitude helps us realize that.
+
+#### Appreciation
+
+Appreciation is simply an outward extension of gratitude.  In gratitude, you speak to yourself. In appreciation, you speak to others.  The content is the same. 
+
+  
+
+When you catch yourself feeling grateful about someone or something that they have done, let them know.  When you hear something nice said about someone, let them know.
+
+  
+
+The benefits of this practice are threefold:  
+  
+
+1.  The recipient will feel better about themselves.  And we now know what happens when people feel better about themselves.  
+      
+2.  The recipient will feel connected and appreciative to you for having brought them this good feeling.  
+      
+3.  You will start to view the recipient more positively, since you are now focusing on a positive aspect about them.
+
+  
+
+Chris Fralic of First Round Capital in his [iconic blogpost on networking](http://firstround.com/review/how-to-become-insanely-well-connected/) says that he reserves one hour each week for follow-ups and outreach, most of which include appreciations.  I recommend that you do the same.
+
+  
+
+Just as with gratitude, giving appreciation should be as specific as possible, as in this example:  “John, I appreciate you for writing down our sales process and adding it to the wiki.  Thank you.”
+
+  
+
+And when receiving appreciation, there is only one correct response:  “Thank you.”  Do not feign humility by downplaying the act with statements like “It was nothing, anyone could have done it.”   No.  The person is trying to make you feel appreciated.  Anything other than “thank you” will rob them of their goal.
+
+### Chapter 9: Energy Audit
+
+It is important to maximize your energy.  You perform best when you are doing things that energize you.  Your goal should be to spend most of your time (75-80%) doing things that energize you.  If you do, magic will occur.
+
+  
+
+Get two highlighters, pens, or pencils of different colors (red and green are ideal, but any will do).  Print out the last week of your calendar when you were working.  Go through each workday hour-by-hour and ask yourself “Did that activity give me energy or drain my energy?”  Highlight in green those that gave you energy, and in red those that drained your energy.  There are no neutrals, ever hour must be marked one color or the other.
+
+  
+
+When finished, look for patterns of where and how your energy is drained.  Now think of ways to outsource or eliminate those activities.
+
+  
+
+Keep doing this Energy Audit each month until 75% or more of your time is spent doing things that give you energy.  If you do, you will be able to achieve far more in less time.  Because you will perform far better.  You will be in your Zone of Genius.
+
+  
+
+#### Zone of Genius
+
+  
+
+What is the Zone of Genius?  Well, there are four zones.  
+  
+
+1.  Zone of Incompetence.
+2.  Zone of Competence.
+3.  Zone of Excellence.
+4.  Zone of Genius.
+
+  
+
+Zone of Incompetence are the things that other people probably do better than you (ie- fix your car), and therefore you should outsource if they don’t give you joy.
+
+  
+
+Zone of Competence are the things that you do just fine, but others are as good as you (ie- clean your bathroom) and therefore you should outsource if they don’t give you joy.
+
+  
+
+Zone of Excellence are the things that you do better than others, but don’t love doing.  This is the danger zone.  Many people will want you to keep doing these things (as those people gain derive benefit from you doing them), but this is the area that you should also look to move away from.  This is the hard one\!
+
+  
+
+Zone of Genius are the things that you are uniquely good at in the world, and that you love to do, so much so that time and space likely disappear when you do them.  This is where you can add most value to the world and yourself.  This is where you should be driving toward spending most, if not all, of your time.
+
+  
+
+Some people worry that if each of us operates solely in our Zone of Genius that no one will be available to do the un-fun stuff.  This is a false fear.  There are many personality types.  For every activity that feels un-fun to you, there is someone out there who not only excels at it, but loves it. (Yes, even the “horrible” tasks, like firing people.)  The key in any organization is for people to be transparent about what their Zone of Genius is, and then map all activities to the right people through an AORs list (see Chapter 20).
+
+### Chapter 10: Health
+
+  
+
+*By Alex MacCaw*
+
+  
+
+Building a company will take a physical and mental toll. All the work you put towards your company will be for naught if it costs you your health. It is incredibly important that you focus on both your physical and mental health, and take active measures to improve them.
+
+  
+
+Ideally take some form of exercise everyday, but at least ensure that you’re working out multiple days a week. Figure out what exercise works for you, be that lifting, running, or boxing. If you find your self-motivation is slipping, get a buddy to train with, sign up for group activities (e.g. Barry's Bootcamp), or get a trainer. If you can’t afford a trainer, get the company to pay for it. Your investors won’t mind; your physical health is paramount.
+
+  
+
+Company building takes an emotional toll too. It is important that you have someone to speak to, listen to you, and help feelings flow through you. The alternative is bottling up anger, sadness, fear until you and your company self-destruct. Build a CEO support group comprised of your peers. Learn to be vulnerable in front of the company and practice Conscious Leadership (Chapter 15). Get a therapist; even if you think you don’t need one, you will invariably find it useful.
+
+  
+
+Meditation is also tool to help focus and quiet the mind. A good company perk is to buy a team account for a meditation app like Calm (calm.com) or Headspace (headspace.com), and then set aside a room in your office for meditating. Stick an event in your calendar every day to remind you to meditate, and make it public to the company to lead by example.
+
+## Part III — Group Habits
+
+No matter how original and innovative your ideas might be, and no matter how efficient and productive your own habits might be, you won’t be able to build a truly exceptional organization alone. Your company’s success depends on how well its members work together. Just as individuals develop habits, so do groups. And just as with individuals, it’s much easier to start off with good group habits rather than have to change your bad group habits down the line.
+
+  
+
+### Chapter 11: Decision-Making
+
+#### Writing vs Talking
+
+  
+
+When two people are discussing an issue, the need to be efficient is important. When a team is discussing an issue, the need to be efficient is paramount, because each inefficient minute is multiplied by the number of people in the discussion.
+
+  
+
+If you want the most effective and efficient decision-making process, **require that anyone who wants to discuss an issue write it up, along with the desired solution, ahead of time.** The goal of this write-up is to be thorough enough that at the time of decision-meeting, there are few or no questions. This can be achieved one of two ways:
+
+  
+
+1\. The hard way: Write an extraordinarily thorough analysis from the get-go.
+
+2\. The easy way: Write a draft, circulate it to the meeting participants before the meeting, and invite comments and questions. Then write out responses to all of these comments and questions prior to the meeting.
+
+ 
+
+Jeff Bezos, founder and CEO of Amazon, is famous for using this written method. He requires that anyone who wants to bring up an issue or proposal must write up the item fully prior to the decision meeting (with someone else writing up a counterproposal if necessary). The meeting is then spent reading the write-ups. Once the decision-making team has read them all, a decision is made.  If consensus is not reached, an appointed decision-maker makes the call.  If there are still open questions, then the decision-maker assigns one or more people to research, and of course write, the needed follow-up.  At the end of the next meeting, the decision is made.
+
+  
+
+This method, though time-consuming for the sponsor, yields extraordinarily thoughtful decisions in a very short amount of time. The extra effort and work by one person creates a net savings in time and energy across the whole group.
+
+  
+
+Imposing this process on a group is daunting.  Here is a way to ease a group into it:
+
+  
+1\. Reserve the first 15 minutes of the meeting for all participants to write out their updates and issues.  Then use another 10 minutes of the meeting for all participants to read each other’s updates and issues.  Then discuss and decide.  Use this method for 2-3 meetings, then ...
+
+  
+2\.  Require that all participants write their updates and issues prior to the meeting.  Do not allow people to bring up an issue that they have not already written up.  Use the first 10 minutes of the meeting for all participants to read each other’s updates and issues.  Use this method for 1-2 meetings, then …
+
+  
+3\.  Require that all participants write their updates and issues by a certain time prior to the meeting (eg- 6pm the evening before).  Require that all participants read and comment on each other’s updates and issues prior to the meeting.  People prove that they have read the docs by having their comments in the docs themselves.  Do not allow people to make comments in the meeting if they haven't already commented on the docs themselves.  This will make your meetings much more efficient and ensure that meeting time is spent effectively.
+
+  
+
+#### Getting Buy-In 
+
+  
+
+One of the core challenges in leadership is how to get your team to buy into a decision. It’s often easy to make a decision, but it can be much harder to get your team to invest emotionally in that decision. 
+
+  
+
+From Alex MacCaw of Clearbit:  “It is important for your team to be invested in a decision as otherwise their execution will be half-hearted (or won’t even happen).”
+
+  
+
+You create buy-in when you make people feel they are part of the decision, and that their input contributes to the final outcome. The more influence they feel they have on the outcome, the more they’ll be invested in the final result.
+
+  
+
+Broadly, there are three ways to make a decision. Each has a different time requirement, and creates a different level of buy-in. There are no free lunches here, unfortunately—the method that creates the most buy-in also takes the most time.
+
+  
+
+The methods are:
+
+  
+
+1\. Manager makes the decision, announces it to the team, and answers questions.
+
+Pro:  Takes very little time.
+
+Con:   Creates very little buy-in from the team.  And gets no benefit from their collective knowledge and experience.   
+  
+
+2\. Manager creates (or assigns someone to create) a written straw man (a hypothetical answer designed to inspire discussion), shares it with the team, invites team to give feedback (written and verbal), facilitates group discussion, determines final answer.
+
+Pro:  Creates more buy-in. Gets some minimal benefit from the collective wisdom of the team.
+
+Con:   Takes more time.
+
+  
+
+3\.  Manager invites team to a meeting where dilemma is discussed from scratch with no straw man. Manager and team equally share ideas. Final decision is determined by consensus if possible.
+
+Pro:  Creates the most buy-in. Gets a lot of benefit from the collective wisdom of the team.
+
+         Con:   Takes the most time, and is the hardest to push in the direction you think you want.
+
+ 
+
+Not surprisingly, the greatest benefits require the most work. If you want more buy-in and a better decision, you need to take more time in making the decision.
+
+  
+
+So, which method should you use? It depends on how significant the decision is, and how important buy-in is. For everyday, low-impact issues (eg- the venue for the holiday party), Method 1 is sufficient. For major, core issues (eg- Company 10-Year Vision), Method 3 is necessary. For everything in between (the vast majority of important decisions), Method 2 is optimal.
+
+#### Issues and Proposed Solutions
+
+Team members will often want to bring up an issue and discuss it verbally.  This is both inefficient (writing takes longer than reading) and ineffective (only the most forward people speak up and get heard).
+
+  
+
+Instead, require that anyone who presents an Issue at a team meeting do so in writing.  The write-up should include both a detailed description of the Issue as well as their Proposed Solution.  They may say “I don’t know the answer.”  It doesn’t matter.  They should take a guess.  Even if they only have 10% confidence that their answer is the right one.  And they should phrase the Proposed Solution in very bold, directive terms.  (“Do this ….”)  This may seem aggressive, but creates a flag in the sand which generates a much more productive discussion and a quicker decision-time, which ultimately is the more important than appearing to be humble.
+
+  
+
+I recommend that all Issues/Proposed Solutions be presented at the weekly Team Meeting.  Allow 5 minutes of discussion for each Proposed Solution.  If in that time, consensus is reached, great.  The Solution is turned into a Next Action with a DRI (Directly Responsible Individual) and Due Date.
+
+  
+
+If not, DO NOT spend more time talking about the Issue.  Instead turn to the RAPID framework described below.
+
+  
+
+#### RAPID Decision-Making
+
+  
+
+Emilie Choi, VP of Corporate and Business Development at Coinbase, introduced me to a tool developed by Bain Consulting to make fully-informed decisions with buy-in when:  
+  
+
+  -  A team has become too large to easily get all of the needed voices in one room
+  -  Consensus cannot be reached within 5 minutes of discussion
+
+  
+
+It is called [RAPID](https://www.bain.com/insights/rapid-tool-to-clarify-decision-accountability/).  In this process:
+
+  
+
+1.  Someone identifies an issue or decision that needs to be made.  They write up:
+      
+    1.  The Issue
+    2.  The Proposed Solution
+    3.  The list of people needed to make and implement the decision:
+          
+        1.  R (Recommend) = the one who first proposed the Issue and Solution
+        2.  A (Agree) = those people whose input must be incorporated in the decision
+              
+            1.  This is usually Legal, who are ensuring that no one is breaking the law\!
+        3.  P (Perform) = those people who will have to enact any decision and therefore should be heard
+        4.  I (Input) = those people whose input is worth considering
+        5.  D (Decide) = the one who will make the decision 
+              
+            1.  (See section below for an explanation of this Amazon modification.) 
+                  
+                1.  If a Type 1 decision (irreversible), this should be the CEO.
+                2.  If a Type 2 decision (reversible), this should be someone other than the CEO.
+    4.  A section on the document for each person above to write their comments.  
+          
+2.  The R then reaches out to all the As, Ps and Is to solicit their input. Once this input is received, the document is ready to be reviewed by the D.  
+      
+3.  The R schedules a Decision Meeting and invites the D, As, Is and Ps.
+      
+    1.  If the issue is urgent, the R schedules this Decision Meeting as soon as it needs to be.
+    2.  If the issue is non-urgent, the R can use the next Team Meeting as the Decision Meeting.  (This is much more efficient, and should be done whenever the issue is non-urgent.)  
+          
+4.  At the Decision Meeting, the D reads through the document.  If she has any questions, she asks them.  If her questions can be fully answered in 5 minutes, she decides.  If they cannot be answered in 5 minutes, she asks for another round of written responses on the document to answer her questions.  At the next Team Meeting, she reviews these responses, and decides.
+
+  
+
+1.  Once the D decides, she writes up the Decision (or asks the R to do so) along with all the Next Actions (each with a DRI and Due Date).  The D then publishes this decision to the company.
+
+  
+
+Here is an [example.](https://docs.google.com/document/d/1vkxl-OI_XHbBWqgRCbpP86SJwSnEgCIzVOjbhWCHZng/edit)
+
+  
+
+Once a company starts this process, it is helpful to both track all of the RAPIDs that are in process, as well as collect feedback on how to improve the process.  For each of these, I recommend a doc:  
+  
+
+1.  Create a Sheet to track each RAPID that has been created (with a link to the RAPID document), who the R and D are, when the Decision Meeting will take (or has taken) place, and finally when all of the Next Actions are completed.  
+      
+2.  Create a Doc for Feedback (Like/Wish That) on the RAPID process.  After each Decision Meeting, ask the participants to write in their feedback until the process is working smoothly.
+
+#### Type 1 vs Type 2 Decisions
+
+  
+
+In his iconic [2015 Shareholder Letter](http://phx.corporate-ir.net/phoenix.zhtml?c=97664&p=irol-reportsannual), Amazon’s Jeff Bezos introduced us to light-weight, distributed decision-making.  He wrote:
+
+  
+
+“Some decisions are consequential and irreversible or nearly irreversible – one-way doors – and these decisions must be made methodically, carefully, slowly, with great deliberation and consultation. If you walk through and don’t like what you see on the other side, you can’t get back to where you were before. We can call these Type 1 decisions. But most decisions aren’t like that – they are changeable, reversible – they’re two-way doors. If you’ve made a suboptimal Type 2 decision, you don’t have to live with the consequences for that long. You can reopen the door and go back through. Type 2 decisions can and should be made quickly by high judgment individuals or small groups. 
+
+  
+
+As organizations get larger, there seems to be a tendency to use the heavy-weight Type 1 decision-making process on most decisions, including many Type 2 decisions. The end result of this is slowness, unthoughtful risk aversion, failure to experiment sufficiently, and consequently diminished invention.1 We’ll have to figure out how to fight that tendency.”
+
+  
+
+Each time there is a decision to be made, rate it as Type 1 or Type 2.  If Type 2, allow one of your reports to be the D (Decision-Maker in the RAPID process).  The decision will be made faster, your report will get the chance to exercise their decision-making muscle, and you will have the chance to gain confidence in your reports’ ability to make decisions well.  
+
+  
+
+### Chapter 12: Loudest Voice in the Room
+
+  
+
+(This chapter was inspired by a conversation with Anthony Ghosn, CEO of Shogun.)
+
+  
+
+Whenever you choose to use Method 3 to get full buy-in, know that, as CEO, your voice will be the “loudest in the room”.  In order to get full buy-in, you will have to elicit people’s truest thoughts.  Once people hear your perspective, some percentage will naturally alter their own views to more closely match yours.  This % is much higher than you might imagine. People assume that as CEO you have more information than they do, and therefore your perspective is probably more correct.  Later, these same people will not feel fully bought-in to the outcome, because internally they will know that their true thought was not actually heard.  
+
+  
+
+So, in order to get the full benefit of your team’s knowledge and to make sure that they get to full buy-in, be careful not to “tip your hand” before all others have shared theirs.  The most effective way to do this is to either have people write down their vote or their thoughts prior to you sharing your perspective. Or by having everyone give a simultaneous thumbs-up / thumbs down vote”
+
+  
+
+For an excellent example of this phenomenon and the solution, CJ Reim of Amity Ventures pointed me to [*13 Days*](https://smile.amazon.com/Thirteen-Days-Memoir-Missile-Crisis/dp/0393318346/ref=sr_1_1?s=books&ie=UTF8&qid=1501172138&sr=1-1&keywords=13+days) by Robert F Kennedy about the Cuban Missile Crisis.
+
+  
+
+From Peter Reinhardt, CEO and co-founder of Segment:  “Apparently at Amazon they require the most junior people to speak and ask questions first. Also becomes a great way to show off junior talent, give more senior folks a chance to observe and give feedback, etc.”
+
+### Chapter 13: Impeccable Agreements and Consequences
+
+  
+
+A very common cause of inefficiency in startups is sloppy agreements. People don’t show up to meetings on time, and they don’t complete the goals that they declare (or they don’t declare goals at all). The result is a spreading virus of unproductiveness and decreasing morale.
+
+  
+
+The antidote for this is simple: Impeccable Agreements. These are 1) precisely defined, and 2) fully agreed to (which almost always means written) by all relevant people.
+
+  
+
+“Precisely defined” means that a successful follow-through of the agreement can be judged by an objective third party.  For example, “We’ll start back up again after lunch” is not precisely defined. A participant could have lunch, take a two-hour walk, and then come back to the meeting and still have adhered to the “start after lunch” requirement. An Impeccable Agreement would be: “It is 12:04 pm now. We will start the meeting again at 1:00 pm. We all agree to be in our seats and present prior to 1:00 pm.” The agreement is now precisely defined, including calibration of time shown on each person’s device.
+
+  
+
+An Impeccable Agreement should be written down in a location that is easily accessible by all participants. The only exception is when the agreement is so small, or so regular, that all participants are sure not to forget what the exact agreement is.
+
+  
+
+As discussed in Chapter 6, “On Time and Present,” there will, of course, be times when you realize you will not be able to keep an agreement you have made. No problem. As soon as you realize you won’t be able to keep the agreement, you let the other members of the agreement circle know. You also let them know what you *can* do. This gives them the opportunity to adjust and maintain productivity.
+
+  
+
+Examples:
+
+  
+
+1\. You agreed to be at the Team Meeting by 10:00. But because of unusual traffic you estimate that you will reach the office at 10:05. You immediately contact your team and let them know that you will be at the meeting by 10:10. The other attendees can begin with agenda items that don’t require your input.
+
+  
+2\. You are the VP of Sales, and you agreed to bring in more than three new customers and more than a million dollars in new annual revenue by the end of the quarter. By the end of the second month of the quarter, the pipeline shows only one new customer potentially closing before quarter-end. You immediately let your CEO know that you are not going to hit this goal, and you tell him what you realistically will be able to do. He can then jump in to help process customer leads to help meet the target.
+
+  
+
+If, however, you fail to inform the agreement circle, then you have broken that agreement. The other attendees are unable to adjust and both productivity and morale slip.
+
+ 
+
+There must be consequences for breaking agreements. Implementing these consequences is a two-part process. The first time someone doesn’t meet an agreement, you point it out to them immediately. If they apologize, you respond that apologies are not needed, and all that is required is that they only make agreements that they can commit to, and that they meet all of the agreements they make, whether by adherence or by prompt communication that they need to alter the agreement.
+
+ 
+
+If the person continues to fail at these, there is only one consequence that makes sense: They can no longer be part of the company. 
+
+### Chapter 14: Transparency
+
+Your team members are smart. When there are problems, they know it. Hiding negative information from them does not make them feel better. If anything, it makes them more anxious.
+
+  
+
+Just as you don’t know if your team members will share negative information with you until they do so for the first time, your team members don’t know if you are willing to share negative information with them until you do. Our imaginations are much more powerful than reality. 
+
+  
+
+Share all relevant information with your team, both negative and positive. This will give them great comfort and enable them to use their brilliance and talents to adapt.
+
+ 
+
+There are only two pieces of information most companies choose not share openly: 1) compensation and 2) performance reviews (particularly performance improvement plans). Public knowledge of these items often causes heated debates, relative comparisons, and even shame, all of which are big distractions.
+
+ 
+
+However, there are some companies that choose radical transparency, sharing both of these with success. Such complete sharing should only be done if the entire company is trained in radical transparency. 
+
+  
+
+One such training comes from the Conscious Leadership Group (see Chapter 15).
+
+  
+
+### Chapter 15: Conflict Resolution and Issue Identification
+
+  
+
+#### Conflict Resolution
+
+  
+
+Interpersonal conflict arises often.  And almost always it is due to people:
+
+1.  Not fully sharing their feelings and thoughts.
+2.  Not feeling heard. 
+
+  
+
+There is a laughably simple method to solving this issue.  Stephen Covey shared the technique in his iconic *The 7 Habits of Highly Effective People:  Powerful Lessons in Personal Change*.  Michael Rosenberg codified it in *Nonviolent Communication: A Language of Life*.  And Chris Voss showed its effectiveness in his excellent *Never Split the Difference: Negotiating As If Your Life Depended On It*.   I recommend reading all three of these books to get fully immersed in their techniques, but here is the thousand-foot view:
+
+  
+
+Most feel hatred for each other, because they feel unheard.  For me to respect you, I don’t need for you to agree with me.  But I do need for you to hear what I have to say.  When I tell you my perspective (which I of course believe to be right) and you aren’t immediately convinced, then I assume that you didn’t really hear or understand what I said.  If you start sharing your perspective, I will be uncompelled and unwilling to truly listen, because you haven’t been willing to consider mine.  And the cycle spirals downward to hate and acrimony.
+
+  
+
+There is a simple fix.  I only need to prove to you that I have “heard” you.  And to do that, I only need to repeat back what you’ve said (summarized, of course) until you say “That’s right\!”  Then you will feel heard.  You will now be open to hearing what I have to say.  
+
+  
+
+(Here is an experiment that proves this principle.  The next time you encounter a person who is repeating themselves, stop them and ask if you can state back what they’ve already said.  They will say “yes.”  You then summarize what they’ve said and ask if you got it right.  If they say “yes” again, then watch to see if they continue to repeat themselves.  They will not.)
+
+  
+
+To resolve conflict, you only need to get each person to state their deepest, darkest thoughts, and then prove that each has heard what the other has said.  This can be done verbally or in writing.  I far prefer the written method as it takes about ⅓ the time, requires almost no facilitation (ie- its easy to stay on script), and the action items that come out of it are impeccable agreements.  
+  
+If you are the facilitator, here’s how it works (the written method):
+
+  
+
+**Step 1:**  Ask each person to write down their deepest thoughts about the other person.
+
+  
+
+You say:
+
+1.  “Open up a Doc.  Please give me (the facilitator) access, but do not give access to the other person yet.”  
+2.  “On the doc, write 5 categories:  
+      
+    1.  Anger (present)
+    2.  Fear (future)
+    3.  Sadness (past)
+    4.  Joy (present and past)
+    5.  Excitement (future)”
+3.  “In every major relationship that we have, we have feelings of Anger, Fear, Sadness, Joy and Excitement.  When you think about the other person, and you focus on the Anger that you feel, what thoughts come to mind?  Please state those thoughts in the following way:  
+      
+    1.  Feeling.  I felt anger when …
+    2.  Fact.  I saw you doing ….  (This should be only what a video camera would have seen; no opinion, thought or judgement.)
+    3.  Story.  The thought (or judgement) that I had was ….”
+4.  Here is an example:
+      
+    1.  Anger:  
+          
+        1.  I felt anger when I saw you walk by me the other day and I didn’t hear the word “hello”.  
+              
+            1.  The thought that I had was that you purposely ignored me, and thus were really saying “screw you\!” to me.
+
+  
+
+As facilitator, look at both docs and make sure that they are filled out correctly.  Encourage the separation of fact and judgement as much as possible.  Make sure they are as specific as possible about the actions the other person did and how it made them feel. Realize that any conclusions drawn from the other person’s actions are simply stories in their head, only the feelings one has and any specific actions are facts. Make sure there are no sweeping statements or value judgements.
+
+  
+
+If one or both are reluctant to say anything, which is often the case, you supply the thoughts that you might have if you were in their shoes.  Be dramatic.  Become an actor.  Get into the role.  State the thoughts as explicitly as they would appear in your own mind.  Use swear words.
+
+  
+
+The person will start to guide you.  They are likely to say:  “That’s close, but not quite it.  The thoughts I have are more like …”  When they slow down or don’t seem willing to go further, again state the thoughts for them.  Each time you do so, it allows them to go further.  Do this until each person has written down their raw, unvarnished thoughts around Anger toward the other.  Once they get that right, they can usually get through Fear, Sadness, Joy and Excitement on their own.
+
+  
+
+Now ask each participant to cut-and-paste the Joy and Excitement sections to the top of the doc.  For the person sharing their emotions and thoughts, it is hard to feel Joy and Excitement until they have first written down their thoughts around Anger and Fear.  But when the recipient reads the doc, it is best for them to first see how the sharer actually has positive thoughts about the recipient.  This validates the relationship and motivates the recipient to do what is needed to repair that relationship.  Therefore, it is important for the recipient to read the thoughts around Joy and Excitement first.
+
+  
+
+**Step 2:**   Person A (the person with less power in the relationship) shares access to their doc with Person B.
+
+  
+
+Person B reads Person A’s thoughts around Joy and Excitement about Person B.  Person B should simply say “thank you” to Person A when she reads these thoughts.
+
+  
+
+Person B then reads Person A’s first thought around Anger about Person B.  You, the facilitator, then follow this script:  
+  
+
+1.  Facilitator asks Person B:  “Do you want to make Person A feel Anger and have these thoughts?”    
+      
+2.  Person B:  “No.”    
+      
+      
+    1.  If the answer is “yes”, then the two should not be in relationship together.  That means that one will likely need to be let go from the organization.  Regardless of seniority, the person to be let go should usually be the person who wants the other to feel anger.  That person will likely create toxic relationships with others as well, and eventually will have to leave the company anyway.  
+          
+3.  Facilitator to Person A:  “What request do you have of Person B?”   
+      
+4.  Person A:  “Please do the following:  ….”  
+      
+5.  If Person B agrees, have Person B write down the action item (with their initials and a due date) just below the fact/judgement of Person A.  
+      
+      
+    1.  The goal here is to co-create a plan so that misunderstanding and acrimony do not enter the relationship again.   Person A goes first.  Person B adds their thoughts.  They go back and forth until they have agreed on a written plan.  
+          
+    2.  Verbal agreements are not impeccable.  We all understand words a little bit differently. To make this agreement impeccable, one of the participants writes down the plan and the other adds their initials and a “+1” to note their agreement.   
+          
+6.  Facilitator to Person A:  “Do you feel heard?  Do you feel that Person B wants to have a positive relationship with you?”  
+      
+7.  Person A:  “Yes.”  
+      
+      
+    1.  If the answer is “no”, get curious and find out why.  Repeat the steps above again until the answer is “yes”.  
+          
+8.  Do not move on to a second Anger item yet.
+
+  
+
+**Step 3:**  Person B shares access to their doc with Person A.
+
+  
+
+Repeat the same script as in Step 2.  
+
+  
+
+Now both Person A and Person B have:  
+  
+
+1.  Affirmed that they want to be in positive relationship with each other.  
+      
+2.  Have accepted the feedback and created an action item to resolve it.
+
+  
+
+**Step 4:**  When the ah-ha moment of understanding occurs, seal it with a physical connection: a hug, a handshake, a high-5.
+
+  
+
+When Step 3 is complete, there will usually be a moment of understanding and compassion for each other.  When this moment occurs, seal it with a physical connection.  If the two have hugged in the past, ask them to do so again now.  If the most they have done in the past is shake hands or high-five, then ask them to do that now.  This physical connection symbolizes the new understanding and puts a capstone on the event.
+
+  
+
+**Step 5:**  Ask each person for feedback on the process.
+
+  
+
+What did they like that you (as facilitator) did?  What did they wish that you had done differently?
+
+  
+
+**Step 6:**  Set a meeting for 1-2 weeks out between Person A, Person B and the Facilitator.  
+
+  
+
+At that meeting, confirm that both Person A and B have completed their action items.  This will prove to each other that there is a real desire for a positive relationship.
+
+  
+
+Do Steps 2-4 on the remainder of issues identified under Anger and Fear for each person.
+
+  
+
+In my experience, when two people, who previously felt hatred towards each other, have shared their thoughts (and been heard) around all five of the basic emotions they feel toward the other, the two create an understanding and respect for each other, if even they still do not agree with the others’ positions.  Please let me know if you experience something different.
+
+#### Issue Identification
+
+  
+
+There are two excellent ways that I know of to encourage people to identify the key issues in the company that need to be solved.
+
+  
+
+The first: 
+
+  
+
+Ask each person to imagine that they are the CEO and ask themselves the question:  “What are the most important issues (maximum 3) for me to solve in the next 90 days?”  Allowing people permission to put themselves in the CEO role gives them permission to think like an owner.
+
+  
+
+The second:
+
+  
+
+Just as people’s fullest thoughts about someone can be drawn out by sourcing Anger, Fear, Sadness, Joy and Excitement, so too can someone’s thoughts about the company.  
+
+  
+
+At every quarterly offsite that I facilitate:  
+  
+
+1.  I ask all team members to open a doc that only they have access to and write down their thoughts about the company when they source their Joy, Excitement, Sadness, Anger, and Fear.  
+      
+2.  For their thoughts of Anger and Fear, each person writes:  
+      
+      
+    1.  Fact.  This is what a video camera captured.  There is no judgement or opinion here. Only physical actions that have occurred that no one would dispute.  Keep this short.  
+          
+    2.  Story.  These are all the thoughts, opinions and judgements that you have on the facts above.  
+          
+    3.  Proposed Solution.  These should be very specific action items with DRIs and due dates.  
+          
+3.  While they are doing that I create a doc with those headings and give access to all.  
+      
+4.  I then ask everyone to copy-and-paste their writings (with no attribution) under the correct heading in the group doc.  
+      
+5.  We all read the doc.  
+      
+      
+    1.  The writings of Joy and Excitement make us all feel inspired and renew our feeling of group success.  
+          
+    2.  The writings of Sadness allow us to feel bonded over shared loss.  
+          
+    3.  The Issues/Solutions posed in Anger and Fear give us an Issues Roadmap to be unpacked and resolved one-by-one over the course of the upcoming quarter.
+
+  
+
+It is a very simple and very effective exercise.  I recommend that you do it with everyone in the company on a quarterly basis.
+
+### Chapter 16: Conscious Leadership
+
+  
+
+Conscious Leadership is about being more interested in learning than being right. When our egos make us afraid to be wrong, that fear leads us to defend our ideas at all costs, and to work hard to convince others that we are right—often with anger. Conscious Leadership is about:  
+  
+
+1.  Recognizing when these emotions (fear, anger, sadness) have gripped our thought processes.  
+      
+2.  Releasing these emotions, and shifting back to a state of curiosity where we are receptive to all ideas and creativity, even if they seem to contradict our own. It is in a state of playful curiosity that truly elegant solutions are achieved.
+
+  
+
+Jim Dethmer, Diana Chapman, and Kaley Warner Klemp explain this concept thoroughly in their book [*The 15 Commitments of Conscious Leadership*](https://www.amazon.com/15-Commitments-Conscious-Leadership-Sustainable/dp/0990976904/ref=sr_1_1?s=books&ie=UTF8&qid=1535308434&sr=1-1&keywords=15+commitments+of+conscious+leadership)*.*
+
+  
+
+The challenge of course is to shift from wanting to be right to wanting to learn.  Here are some videos that help with that shift.
+
+  
+
+[Where am I?](http://conscious.is/video/locating-yourself-a-key-to-conscious-leadership)
+
+[The Drama Triangle](http://conscious.is/video/understanding-the-drama-triangle-vs-presence)
+
+[100% Responsibility](http://conscious.is/video/are-you-taking-100-responsibility)
+
+[Revealing or Concealing](http://conscious.is/video/candor-are-you-revealing-or-concealing)
+
+#### Empathy
+
+  
+Spiritual teacher and author David Deida goes one step further and teaches that empathy is the key to success. To truly feel the feelings of those around you—customers, investors, and team members alike—you must get very curious about their situations and then really imagine yourself in their shoes. If you do this, people will sense it and immediately trust and like you, because they will feel that you care about them and understand their circumstances. They’ll trust you to lead them because they know you’ll truly consider their interests in your guidance.
+
+#### Joy vs Fear
+
+  
+When people start diving into the Conscious Leadership work, they quickly lose their fear.  And just as quickly, they realize that fear was their primary motivator. Fear of failure, fear of letting people down. Once fear is gone, their life becomes much better, but their business suffers.  
+
+  
+
+If you find yourself in this situation, keep pushing forward with the Conscious Leadership work quickly to get to a place where you are motivated by joy. Then you will have the best of all worlds.  Joy is an even better motivator than fear, so your business will thrive. And your life will be amazing\!
+
+#### Summary
+
+  
+
+Many CEOs that I coach have deeply embraced the principles of Conscious Leadership.  Alex MacCaw, founder and CEO of Clearbit, is one of them.  He has written this [excellent summary of the Conscious Leadership principles](https://docs.google.com/document/d/1eB7oR51qoHKiO058aWWxeuuCDIpltLTap3RYUWRXDwE/edit#), found in Appendix A.
+
+### Chapter 17: Customer Obsession
+
+  
+
+So what does it mean, for practical purposes, to be conscious, and to have empathy for your customers? Remember that you are not making a product—you are solving a customer problem. It is therefore critical that you continually live that customer problem. Only then can you solve it well. To live the customer problem, you must sit with the customer, ask them about their lives, and observe their daily routine, on a regular and constant basis.   
+ 
+
+This focus should permeate every part of the company, from sales to engineering. It is particularly important to instill this mindset in your engineering department, because the engineering department tends to sit the farthest away from the customer and only hears about the customer in abstract terms. 
+
+  
+
+The solution is to have customer support and sales leaders distill feedback and meet with the product team once a month to ensure feedback gets in the next cycle.
+
+  
+
+Your sales department will already have a customer-centric mindset but it is important for them to not prioritize every customer request. Customers know exactly what pain they are feeling, and they know that they want relief. But they don’t know how feasible each solution is. You do.
+
+ 
+
+If you actively listen to your customers’ pain, they will trust you to decide which solution will best erase that pain. If you do not listen to your customers’ pain, then they will do the thinking and make demands about what the solutions should be, no matter how impractical. Once those demands are voiced, it’s hard to walk them back.
+
+ 
+
+Build trust with your customers quickly by actively listening to their pain. Really imagine what it’s like to have their needs and frustrations. Voice what you perceive back to the customer.  (“It seems that you feel anger when ….”)  When your customer says “That’s right\!”, trust will be established.  Teach this methodology to everyone in your company, and have them practice it regularly using role-play. 
+
+### Chapter 18: Culture
+
+Culture is the unspoken set of rules that people in a group follow when interacting with each other. You act differently when you’re in a bar than when you’re at a family dinner. That’s because the rules that run the interactions between the different nodes in the networks have changed. Culture is the name for those rules.
+
+#### Values
+
+*By Alex MacCaw*
+
+  
+
+Values are a critical element in your company’s culture, and your company will function at its most efficient if your employees understand and share them. Once your team has a referenceable shared set of values they can make decisions without you, and more importantly evaluate candidates for culture fit. As the team grows interactions between new hires and the core team, who defined the company values, diminishes. Having a set of established and referenceable values helps disseminate those values to new team members without daily interactions.
+
+  
+
+One misnomer CEOs sometimes have is thinking they get to choose the values. By the time you’re 30 or so employees your company has a set of values whether you like it or not. It’s now your job to codify what’s already there. While it is possible to change a value, it will take a lot of work.
+
+  
+
+Agreeing on what your values are is the kind of statement that needs maximum buy-in, so it should involve your whole company. Send out a survey and gather contributions from everyone. Ask your team to suggest both a value and the name of an employee who exemplifies it. Then arrange all the suggestions into common themes and have your leadership team vote on the final cut.
+
+  
+
+Once you have agreed upon your values, use them to guide your hiring and firing. Bring in people who want to live by these principles and let go of people who don’t. Otherwise, your values will have no meaning. 
+
+  
+
+Distribute your values, print them out and repeat them until your team knows them back-to-front. Every week at the all-hands highlight a value and a person who’s actions best exemplifies that value that week. 
+
+  
+
+The following are an example of Clearbit’s values. They combine a short pithy statement (easily rememberable), with a longer description for clarity.
+
+  
+
+  - Care (Give a shit). Empathize with customers. Take the time to understand their frustrations, needs, and desires.  
+      
+  - Craft (Master it). Own your craft. Never stop learning and improving.  
+      
+  - Team (Work together). Teamwork makes the dream work. Fill gaps. There’s no such thing as “it’s not my job.”  
+      
+  - Truth (Say it). Be upfront and candid. Say it like it is. Hold yourself and others accountable.  
+      
+  - Initiative (Be resourceful). Don’t wait for permission. Figure it out — or figure out who can.  
+      
+  - Fun (Have it). Don’t take yourself too seriously — life is short.
+
+  
+
+#### Fun
+
+When creating company culture, do not underestimate the value of *fun*. If people are having fun, they spend more time, energy, and awareness at the company. This leads to better problem-solving and collaboration, which leads to a stronger company that creates more value.
+
+ 
+
+Host events that you enjoy, and then invite (but don’t require) your teammates to join you. Your litmus test is whether your teammates are hanging out with you and each other outside of work. If yes, you are likely creating good culture. If not, increase your efforts to practice Conscious Leadership (Chapter 15) and keep working to create buy-in for your values.
+
+  
+
+Alex MacCaw, CEO/Founder of Clearbit shares his favorite fun company-wide activities:
+
+1\. Boozy fridays, take the team out for lunch at a local restaurant
+
+2\. Suggested times for lunch (with cal event)
+
+3\. Really awesome offsites in international locations (e.g. Tulum)
+
+4\. Team sports like dodgeball & soccer
+
+5\. Renting out a local movie theater.  (They are almost always available for a morning screening.)
+
+  
+
+#### Celebration
+
+  
+
+Most companies are so focused on improving that they forget to celebrate.  But celebration, like fun, is a key to building positive morale.  Celebration doesn’t mean lavish drunken parties.  Quite the opposite. Celebration means taking a moment to appreciate the good that the company has achieved, as well as the good that departments, teams and individuals have achieved. 
+
+  
+
+To celebrate:  
+  
+
+  - Publicly acknowledge these achievements at All Hands and team meetings.  
+      
+      - Remember to celebrate the very necessary but often overlooked teams on the core product.  
+      - You don’t need to celebrate every team at every meeting.  Create a rotation.  
+          
+  - Create a standing demo meeting where teams can show off their most recent creations.  
+      
+      - This should not be a required meeting, but rather should occur over a meal (lunch) or drinks (Friday afternoon).
+
+#### Hours
+
+  
+The question of working hours is inevitable in every company. Should you enforce specific starting and ending times? Total number of hours?
+
+ 
+
+Remember, the key metric is output, not hours. If you impose hours, people often will simply put in the required hours, but without effort or enthusiasm, and you’ll make little progress. The key is to inspire and motivate your team so that long, hard-working hours are not an imposition, but a choice.
+
+ 
+
+If you are creating and tracking goals, habits, agreements, and key performance indicators (KPIs), openly receiving and providing feedback (Chapters 19-23) and creating fun, then people will be naturally motivated to work hard. They’ll see where the company is going, how it’s moving forward, and how their efforts and their team members’ efforts are contributing. They’ll know that they are heard and they’ll be having fun.
+
+  
+
+Furthermore, if your team are hitting their individual goals and OKRs, ask yourself does enforcing set times in the office really matter, or are you just enforcing them for appearance sake? The same goes for working at home - it’s really all about the output rather than the location or time spent working.  
+  
+Remember to always lead by example. Be the first one to show up each day. Be the last one to leave. Once you have department heads, they should also set this example for their departments. Do not hire department heads who are unwilling to do so. 
+
+ 
+
+Whatever your teams’ working hours end up being, make sure there is a **core period of the day when everybody shows up in the office so that collaboration can occur**. Set a regular meeting (a short stand-up) in the morning at the beginning of this core set of hours.
+
+#### Meals
+
+  
+
+Offering meals is a particularly positive benefit.  It allows team members to bond organically and with a wide range of people.  Having people go out to get their own food usually causes them to stick with the same small subgroup each day.  
+
+  
+
+Offering lunch thus creates a more bonded overall team.  Offering breakfast and dinner allows people to easefully extend their work day.  Thus, there are benefits to offering meals beyond simply the pre-tax calculus.
+
+  
+
+(The pre-tax calculus is that meals are a commodity.  If you provide the meals company-wide, then you can deduct the expense as a business expense.  If you do not, your teammates must use post-tax dollars to buy those meals.  Thus, providing meals is a way of providing benefits to your team on a pre-tax basis.)
+
+  
+
+Encourage team members to be “present” at meals so that they interact with each other.  This means no electronics (phones or laptops) at the meal table. Encourage the team to meet at the same time each day by creating a shared calendar event. All this will improve team bonding and trust.
+
+  
+
+#### Cross-team communication
+
+  
+
+As your company grows you’ll find that communication between members of disparate teams slows to a halt. This is especially prevalent between engineers and the rest of the company. This is only amplified if a good portion of your team is remote.
+
+  
+
+One solution that I’ve seen work is to randomly assign team members every week to meet, get a coffee, or hang-out virtually. There are tools like [Donut](https://www.donut.com/) to facilitate with this.
+
+  
+
+#### Politics
+
+  
+
+In this context, “politics” means lobbying to gain personal benefit. Politics are poison for a company. They direct energy away from customer problem-solving, and once they take hold the result is a quick race to the bottom.
+
+ 
+
+Politics are created when someone successfully lobbies the CEO or their manager for some kind of benefit. Others see this, so they in turn lobby. They then gain benefit, and the virus spreads quickly throughout the organization.
+
+ 
+
+It often begins very innocently: “Excuse me, can I please talk to you about a raise? I have been at this company for a year now, and have shown utter dedication by doing such-and-such, and I believe that I now deserve a raise…”
+
+ 
+
+This sounds compelling, and you, of course, want to reward dedication. But if you give a raise based on this conversation, then the whole company will learn that the way to get a raise is to simply ask you for it. 
+
+  
+
+Suddenly everyone will be trying to curry your favor.  Be very careful here. You may enjoy this behavior, but it is toxic for the company.
+
+  
+
+The only way to prevent politics is to never allow lobbying to be successful, and the only way to do this is to have a written policy about as many situations as possible, particularly around compensation, raises, and promotions. Apply this policy to all team members, all the time.
+
+ 
+
+It is difficult to create objective criteria for compensation, raises, and promotions, but there are models. The most successful method I know of is called [Grade Level Planning](https://docs.google.com/spreadsheets/d/1AeS9TDfedHUGnsY2JRNCJtNsZJRCDGUssmYgz3-JLD8/edit#gid=380521419)—at least, that’s what Tesla calls it. It calls for a very detailed definition of every position in the company, and every seniority level, along with specific compensation metrics for each position and level. This is then shared throughout the company. Team members can then clearly see what they need to do to receive the next compensation and title level. Managers must not deviate from this written schema.
+
+ 
+
+When a company is smaller (fewer than fifty employees or so) and growing fast, there is often so much fluidity that it can be difficult to implement Grade Level Planning (GLP). Most companies end up doing GLP at 150+ employees, but that is often too late. The compromise is somewhere in the middle. I recommend starting to think about GLP at twenty-five to fifty employees, and then implementing as soon as is practical after that.
+
+#### Lord of the Flies
+
+Inevitably, conflict arises in any organization.  When it does, it is up to you to teach your team members how to give and receive non-violent feedback, and ensure that they do.
+
+  
+
+Many managers do not enjoy dealing with people in conflict, and therefore instead say “You two, work it out amongst yourselves.”  But unless your team is already proficient at non-violent communication and radical candor, then the two will likely not be able to work it out on their own.   If you continue to stay at arms-length, the result will be … Lord of the Flies.  The absence of governance leads to civil war.  This is not healthy.
+
+  
+
+To stop this behavior, you must step in to adjudicate when your team members are unable to work it out on their own.   Give them one chance to do so.   If they are not able to, then step in to decide the issue, or mediate the conflict.  If you don’t want to do it yourself, hire a coach to teach and facilitate the feedback sessions.  Whatever you do, do not simply leave the participants on their own to work it out.  If you do, you will be responsible for the emotional bloodshed that ensues.
+
+## Part IV — Infrastructure
+
+Just as an efficient city requires comprehensive and trustworthy systems to move its traffic, goods, and byproducts, your company requires reliable systems to maintain its data and communications flow. Without a solid infrastructure, your brilliant and talented team members won’t be able to function to their full potential.
+
+### Chapter 19: Company Folder system and Wiki
+
+  
+
+It may seem obvious, but every company should have a structured folder system for storing documents, such as Google Drive. Each department should have their own folder, and all team members should have access (at least for viewing, if not editing) to all folders except for the one containing compensation, performance reviews, and performance improvement plans.
+
+  
+
+You should also create a Wiki page, which need be nothing more complicated than a document containing links to all of the other important company documents. Make sure that reading this Wiki from beginning to end is part of every employee onboarding.  As of 2018, [Notion.so](https://www.notion.so/) is my favorite template for a Wiki.
+
+#### When you do it twice, write it down
+
+After creating a Wiki, the question then becomes:  “What should we document?”  And here is the painful answer:  “Everything.” 
+
+  
+
+A well-run company documents every aspect of its operations, so that its team members can easily step into a new role when needed.  
+
+  
+
+An easy way to do this is:  **Whenever you find yourself doing something twice, write down exactly what it is that you did.**  Place these written processes in the company Wiki.  This allows the other members of your team to learn from your experience.  
+
+  
+
+Require that all members of the team also follow this practice to share their knowledge.
+
+1.  Create a Sheet to track all processes ([see example](https://docs.google.com/spreadsheets/d/1ky1BNH7f1xVa-hw7WOxI298a2nNP81OdORpbKdxLCj4/edit?usp=sharing)).
+2.  Ask each Department head to: 
+      
+    1.  List the processes in their department.
+    2.  Assign a writer and due date to each process.
+          
+        1.  Space the due dates out so that each writer need only document one process per week.
+    3.  Each write links their process write-up to the spreadsheet, so that you can verify that all have been created.
+
+  
+If you use this process, and spread the writings amongst the whole company, you can likely document every process in your company within 3 months.
+
+  
+
+These written processes then became your company’s onboarding curriculum.  Each new hire reads all the processes they will be asked to do.  You can now safely scale your team knowing that they will have effective onboarding.
+
+  
+
+Ryan Breslow, Founder/CEO of Bolt shares: “We have noticed that whenever we hire a new manager, they want to instantly bring in their own processes.  But then we lose all of our hard-won institutional knowledge that led to the creation of our original process.  So, we now require that all managers use the existing Bolt processes for at least 3 months before making any changes. After they know our system in this way, they are free to make the changes they want to.  And yet most make relatively minor changes after that.” 
+
+### Chapter 20: Goal-Tracking Tools
+
+In each company, dozens of new challenges arise each week. Some might be critical, but others will be mere distractions, cluttering up your team’s time and energy. Commit to a systematic Goal-Tracking System to maintain focus and to prevent the clutter from overwhelming your operation.
+
+#### Individual  
+  
+
+Keep it simple. [Evernote](https://evernote.com/), [Omnifocus](https://www.omnigroup.com/omnifocus/) and [Things](https://culturedcode.com/things/) are great tools to track individual goals and tasks.  For maximum benefit, use them to implement the GTD system (Chapter 3). They are inexpensive and easy to use. 
+
+  
+
+#### Group
+
+  
+
+For small groups, there is no need for a dedicated group system—it’s easy enough to track company goals in a Google Doc. But as soon as you grow to more than a handful of people, you will need a dedicated group Goal-Tracking System. 
+
+  
+
+There are many excellent systems. They broadly break down between task-tracking ([Asana](https://asana.com/) and [Trello](https://trello.com)) and goal-tracking ([Betterworks](https://www.betterworks.com/), [15Five](https://www.15five.com/), [Lattice](https://lattice.com/)).  
+
+  
+
+Task-tracking systems are excellent at transforming Issues to Next Actions and tracking progress from meeting to meeting. They’re a key part of forming Impeccable Agreements (Chapter 12) between people. Whenever two people form an agreement, it should be recorded in the Task-tracking system, have an owner, a comprehensive description, and due date.
+
+  
+
+Goal-tracking systems are much better at showing the team their progress over many weeks and months, and therefore boosting morale.
+
+ 
+
+Whatever system you choose, be careful to use it judiciously, as it is very common for people to become overwhelmed with actions from your tracking system.   When this happens, they’ll stop using the system altogether. To avoid this, follow two simple rules:
+
+ 
+
+1.  Never assign someone an action without them agreeing to it verbally or in writing.  
+      
+2.  Encourage people to use a separate (and simpler) tool for tracking their individual actions that aren’t being tracked by the group. Group-tracking tools simply have more overhead per action than individualized tools, and therefore should only be used sparingly.
+
+### Chapter 21: Areas of Responsibility (AORs)
+
+  
+
+“Tragedy of the commons”.  When several people share responsibility for an action or process, often that action doesn’t get done well, or at all.
+
+  
+
+To prevent this from happening, group tasks into categories, and assign each category to one—and only one— person. These are your Areas of Responsibility. Apple is famous for having pioneered AORs in Silicon Valley, but now most successful tech companies use this method.
+
+ 
+
+Create a document listing every possible function in the company. Next to each function, list the directly responsible individual (DRI). This is the AOR list. It serves as a routing layer for any questions and ensures that no functions fall through the cracks. Make sure everybody in the company knows how to access the list, and update it as new functions arise or as responsibilities shift.
+
+ 
+
+For an example, see Appendix C for a [**sample AOR**](https://docs.google.com/spreadsheets/d/1Zi2rmuOH3_WqE-4Qir35XpKZMxcghz_OVowNySBpqbE/edit#gid=0).
+
+  
+
+### Chapter 22: No single point of failure
+
+A single point of failure is a function that one person performs, when no one else has full knowledge of how that function works. If that person becomes sick or leaves the company, functionality suffers. A well-run company has no single point of failure. To create a team with no single points of failure, do two things:
+
+ 
+
+1\. Write down all processes. As soon as you or your team members find yourselves doing something for the second time (see Chapter 7), you should write down the steps of that process exactly. Place these written processes in a firm-wide Wiki.    
+  
+
+2\. Cross-train a second person for each role. Map each function in the company (from the AORs) to a backup person. Have the backup person co-work with the primary until the backup knows how to perform the role.  (Of course, having all of the processes already written down will vastly improve this training process.  So have your team write down all the processes first.)
+
+### Chapter 23: Key Performance Indicators (KPIs)
+
+  
+
+It is critical to objectively measure the performance of the company.  You can only manage what you can measure. Key Performance Indicators (KPIs) allow you to do this. KPIs are the one or two significant metrics for each major function that show the entire team in an instant how the company is doing, and where the issues are. Here are some examples:
+
+  
+  
+
+|  |  |
+| :-: | :-: |
+| \*\*Department\*\* | \*\*Metric\*\* |
+| Finance | Monthly Cash Burn; Cash in the Bank |
+| Sales | Monthly Recurring Revenue (MRR) |
+| Engineering | Percentage of tickets closed |
+| Recruiting | Percentage of offers accepted |
+
+ 
+
+It is important to determine the company’s five or six most significant KPIs, then track them religiously and make them available for the entire company to easily see on a daily basis. Post the metrics on a TV screen in a central place in the office, using a tool such as Geckoboard.
+
+ 
+
+As we learn from Andy Grove, former Intel CEO and author of the book *High Output Management*, it is also important to define and track counter-metrics to provide necessary context, because metrics are sometimes optimized to a fault. 
+
+  
+
+For example, engineering tickets will vary in importance, so if your engineers have closed the critical tickets, they’re doing better than if they close most tickets but only the easiest ones. Similarly, if the half of candidates that accept your job offers are less skilled than the half that decline, then you’re doing worse than the raw percentage indicates.   
+  
+Create and measure your metrics carefully and in context to give your team the best possible view of your company’s heath. 
+
+## Part IV — Collaboration
+
+  
+
+One of the most dangerous transitions that a company makes is going from less than ten team members, to more than twenty.  During this time, communication and productivity usually break down.  The system of group organization that existed when the company was all sitting in the same room together (no system at all) suddenly no longer works when team members are not all sitting next to each other.  Once your company has over 20 team members, you will hire great people, but they won’t know what to do, and you will be frustrated by their lack of output.  
+
+  
+
+Luckily, there is an answer.  It has a time-cost.  But once you implement it, it will allow your company to become productive again, and will continue to be effective as your company scales from 10s of team members to 100s to 1,000s to 10,000s.
+
+  
+
+Every successful large technology company uses this system. It has no single name—Google, for example, calls theirs “Objectives and Key Results (OKRs)”—but the systems are essentially the same from company to company. They share the following key functions:
+
+ 
+
+1.  Setting vision and goals for the company, each department, and each individual on a regular basis (usually quarterly).  
+      
+2.  Communicating that vision and those goals to every team member.  
+      
+3.  Tracking and reporting progress toward those goals on a regular timetable (usually weekly).  
+      
+4.  Eliciting feedback from all team members on what is going right, and (much more importantly) what is not going right and needs to be changed.
+
+ 
+
+The system streamlines and organizes:   
+  
+
+  - information flow out, so the CEO can inform team members of the company priorities,
+  - Information flow in, so team members can provide feedback to the CEO about what is and isn’t working.
+
+  
+
+This information exchange takes place through a deliberate series of goal-oriented meetings, which comprise the core of the system.
+
+  
+
+In my experience, it is very easy to copy this system if you see it in operation.  But it is very difficult to implement such a system by reading instructions (including these).  When you get to this point in your company’s life cycle, I recommend doing one of two things:  
+  
+
+1.  Hire a COO who was a manager at a large, well-managed company (over 200 employees) to implement and run this system for you.   
+      
+2.  Hire an x-CEO to come in as a “1 day a week CEO” to implement this system.  She should be able to do so in 6-8 weeks.  Have her then watch you run the system for 2 weeks to ensure that you are doing it correctly.   Then run it yourself going forward.  
+      
+
+The remaining chapters in this Part, give you a blueprint for such a system.  But, again, it is impossible for me to convey in writing the detail and nuance.  The following chapters serve more as a notional checklist than a set of instructions. 
+
+  
+
+One of the measures that you have successfully implemented this system is that your original team members continue to perform as excellent managers even as their departments grow massively.   If there is no system, then you will be forced to hire ever-more-experienced managers who will layer over your original team members.  When that happens, a tremendous amount of institutional knowledge is lost, and ultimately the company can never perform as well.  
+
+  
+
+This dichotomy is clear when looking at NBA teams.  The Golden State Warriors were a mediocre team under Mark Jackson.  Once Steve Kerr joined and brought an effective system, the exact same roster of players become dominant and won the championship.  (Yes, they brought in Kevin Durant, but that was only later.)  By contrast, the Cleveland Cavaliers and Houston Rockets had no system and simply relied on individual talent.  Even against remarkable talent, the system inevitably wins.
+
+  
+
+The dichotomy can be seen in companies as well.  Many members of Facebook’s original leadership team continue to be on the leadership team today.  This is because Sheryl brought a management system to the company that elevated all who used it.  By contrast, Twitter has not developed a similarly effective system.  Instead, they have hired individual superstars.  And while the people at Twitter are remarkably talented, the company as a whole does not function nearly as well as Facebook.  
+
+### Chapter 24: Meetings
+
+  
+
+For an organization to work well, three things must occur at every level of the organization.
+
+  
+
+1.  Accountability 
+2.  Coaching
+3.  Transparency
+
+  
+
+(I use these particular words only because they form an easy-to-remember acronym:  ACT.)
+
+  
+
+Accountability is declaring:  
+  
+
+1.  A destination (Vision, OKRs, KPIs)
+2.  The action steps to get there (Actions)
+3.  Whether or not those actions steps were taken (and eventually the destination achieved).
+
+  
+
+Coaching is declaring:  
+  
+
+1.  The current health of the entity (individual, team, department, company).  Both the Good and the Not Good.
+2.  With the Not Good, describing in detail what the Issue is, and declaring a Proposed Solution.   (This is where reports can make requests for help from their manager.)
+
+  
+
+Transparency is declaring:  
+  
+
+1.  Feedback to people on what they are doing.  This should be to a person’s:
+      
+    1.  Manager
+    2.  Peers
+    3.  Reports  
+          
+2.  Using the following framework:
+      
+    1.  Like.  
+
+<!-- end list -->
+
+1.  “These are the specific actions that I like that you are doing.”
+
+<!-- end list -->
+
+1.  Wish That.  
+      
+    1.  “These are the specific actions that I wish that you would do differently.”
+
+  
+
+This accountability, coaching and transparency needs to happen in both directions (from CEO to the company, and from the company to the CEO) at every level (company, department, team and individual).
+
+  
+
+This is best achieved through a regular series of meetings:
+
+  
+
+1.  One-on-One 
+2.  Team 
+3.  Company-wide (All Hands)
+4.  Office hours 
+5.  Company-wide social event
+6.  Quarterly planning offsite
+
+  
+
+Each manager should plan to devote a full day each week to internal meetings.  The weekly team meeting will be the longest (up to three hours in the beginning, until teams learn the habit of writing down all input prior to the meeting, then it can get down to 30 minutes).  The weekly one-on-one meetings and office hours will consume the remainder of the day. This timing determines how many team members a single manager can effectively oversee. If one of your managers can’t fit all the necessary meetings into a single day, she’s got too many people reporting directly to her, and you need to re-organize, or she needs to run more efficient meetings.  
+
+  
+
+The overhead—twenty percent of the standard work week—can feel tremendous to a startup CEO who is accustomed to the organic information flow of a small group working together in the same room. But without this one-day-per-week investment, a larger team will never fully know what to do, nor will the CEO get the needed feedback on her performance or the company’s performance.
+
+#### Calendar Cadence
+
+Paul Graham, of YCombinator, famously points out that makers (engineers) need long stretches of uninterrupted time to be productive, whereas managers are most effective when meeting. The compromise is to schedule days when no meetings are allowed. The schedule that works best for a five-day work week is:
+
+ 
+
+\-    1 day of internal meetings
+
+\-    1 day of external meetings (i.e. interviewing candidates)
+
+\-    3 days of no meetings
+
+ 
+
+It isn’t critical when these days are, although it helps to space the two meeting days apart from each other.
+
+ 
+
+The above schedule often comes under fire from recruiters, who worry that:  
+  
+
+1.  It will be difficult to conduct all onsite interviews on a single day.  
+      
+2.  Many qualified candidates won’t be able to make it in on the appointed day.
+
+ 
+
+First, your hire and close rate for candidates should be very high (approx. 75%)— otherwise, you are losing incredible amounts of time by doing all-day in-person interviews with many candidates that you don’t want to hire, or that don’t want to work for you. Therefore, unless you are already hitting the 75% metric, you should start screening candidates more effectively (ie- brutally) in your phone interviews and lower the number of in-person interviews.
+
+ 
+
+Second, it is true that some candidates can only come on specific days or times. However, the benefits of having meetings on only one set day, as measured by increased productivity of the company, far outweigh the cost of losing out on a few candidates. Additionally, if the candidate cannot find the time to make it on the set day within two or three weeks, it is quite likely that they won’t take the job anyway.
+
+  
+
+There are many other high-level candidates out there. You can find another one. But there are only a finite number of productive work hours within the company. Once lost, there is no way to recapture them.
+
+ 
+
+There are two exceptions to the advice above:  
+  
+
+1.  In the very early days of a company when a department has just one person. At that stage, the department lead can set a recruiting schedule that works for her as she builds her team.   
+      
+2.  Departments that are entirely non-technical and don’t require focused work time.
+
+  
+
+The guidelines above are for when there is already a team in place, which requires uninterrupted days for its work.  This is particularly important for the Engineering team.
+
+#### Meeting Order
+
+When creating the schedule for the day of internal meetings, I recommend the following order:  
+  
+
+  - 1-on-1 meetings
+  - Leadership Team Meeting
+  - All Hands Meeting
+  - CEO Open Office Hour
+  - Company-wide social event
+
+  
+
+The 1-1 meetings are a time to ensure that each report is fully prepared for the team meeting.  (As reports begin to prepare fully for their 1-1 meeting in advance, then their Accountability and Coaching can be pushed into the Team Meeting, allowing more time for Transparency during the 1-1).
+
+  
+
+At the Leadership Team meeting, all Issues are surfaced and either resolved or moved to a RAPID decision-making process.  All decisions from the Leadership Team meeting can then be shared at the All Hands meeting.  The CEO Open Office Hour (which I highly recommend) can be scheduled anytime in the day.  And finally, if you have a regular company social event (which I also recommend), the internal meeting day is a logical day to have it, as this is the day when the majority of your team will be in the office.
+
+  
+
+As the company grows, Department meetings (both 1-1s and Team) will likely have to happen on a different day.  Just as the 1-1s are prep for the team meeting, the Department meetings are prep for the Leadership meetings.  I therefore recommend scheduling Department meetings the day prior to the Leadership meetings.
+
+#### Meeting Leads
+
+  
+
+It is important that each meeting have a designated Meeting Lead, who is sometimes, but not necessarily, the group’s manager. This person is responsible for making the meeting run well, which also means ensuring that all meeting participants submit their updates and issues in writing in advance and show up on time. The Meeting Lead must be ruthless about sticking to the timeline and, whenever something off-topic comes up, they should note it but schedule the discussion for another time. Without an effective Meeting Lead, meetings quickly become inefficient, and people come to resent them.
+
+#### One-On-One Meetings  
+  
+
+To understand the basis for these meetings, I recommend that all team members read the same book to get on the same page about what the purpose and structure of these meetings will be.
+
+  
+
+If you manage managers, then that book should be the best one:  Andy Grove’s *High Output Management.*  This book is the gold standard for how to effectively manage a team.  But it is not short.
+
+  
+
+If you manage individual contributors who are unlikely to read a long book like *High Output Management,* then instead ask the team to read *The One Minute Manager*, by Kenneth Blanchard and Spencer Johnson. It’s a very short read (30 minutes) and it contains simple, effective advice.  Assigning it uniformly will make sure your whole team has a common basis for proceeding.  
+  
+The first One-On-One Meeting should occur soon after the onboarding process is complete. Have both the manager and the team member come to the meeting with written, measurable OKRs for the new team member. When the manager and team member reach a consensus on a set of OKRs (ideally three or fewer), merge these into one list.  
+  
+Run subsequent meetings according to the following template.    
+  
+
+Team member:
+
+1.  Accountability (goals and actions): 
+      
+    1.  Last Week
+          
+        1.  For each of your stated actions from last week, did you get them done, yes/no?
+              
+            1.  If no, what blocked you?
+            2.  What habit can you adopt so that you don’t encounter that obstacle again?
+    2.  Next Week
+          
+        1.  For each of your OKRs, what one action can you take to advance toward each of them?
+2.  Coaching (issues and solutions):
+      
+    1.  Show your OKRs in traffic light fashion (green-yellow-red).  
+          
+        1.  Green= on-track.  
+        2.  Yellow= slightly off-track.  
+        3.  Red= far off-track.
+    2.  Show your KPIs in traffic light fashion.
+    3.  Show any pipelines that are relevant (Recruiting, Sales, Customer Success, Engineering Roadmap, etc)
+    4.  If I were to dig into these updates, what would I discover in your department that is:
+          
+        1.  Good
+        2.  Not Good
+              
+            1.  Please describe the Issue in detail, as well as your Proposed Solution.  This Proposed Solution should include:
+                  
+                1.  What you can do to solve the Issue.
+                2.  What I (your manager) can do to help unblock you.
+    5.  Please list any other Issues that you see in the company, with peers, with the product, in your own life, etc.  
+          
+        1.  For each, please list your Proposed Solution. Even if you are unsure of what the right course of action is, take a stab at a definitive roadmap.  It will help advance the conversation. 
+3.  Transparency (feedback): 
+      
+    1.  What did you like that I did as manager?
+    2.  What do you wish that I would do differently as manager?
+          
+        1.  Please think of the feedback that you are afraid to give me because you think that it will hurt my feelings.  Please give me that feedback.
+
+  
+
+Manager:
+
+1.  Transparency:
+      
+    1.  Get feedback from your report.
+          
+        1.  Elicit negative feedback about your actions. Do this any way you can.  Ask for it, appreciate it, and act on it. This is the key to making a team member feel heard and valued.
+        2.  Once you have gotten critical feedback, then either
+              
+            1.  Accept
+                  
+                1.  If you accept, co-create a written action step that you can take to act on it.  Put this action step on your group task manager so that your report can see that you actually do it.
+            2.  Not Accept
+                  
+                1.  In some rare cases, there will be feedback that you do not accept.  That is OK, as long as you are clear about why you do not accept the request.  
+                      
+    2.  Give feedback to your report.  Declare:
+          
+        1.  Since the previous meeting, what actions your report did that you liked.  Be specific.
+        2.  What actions you wish that your report would do differently.  State these as specific future actions. Example:
+              
+            1.  “I wish that you would ask for feedback from your direct reports in your 1-1s.”  
+                  
+    3.  Update the team member’s goals: 
+          
+        1.  Ensure that the OKRs are still relevant.
+        2.  Ensure that their declared actions for the upcoming week are the straightest line to achieving their OKRs.
+        3.  Ensure that their Proposed Solutions are the straightest line to solving the Issue.
+        4.  Ensure that they have copied and pasted all of their actions (from OKRs and Issues/Solutions) into the group task manager.  
+              
+
+Schedule these meetings regularly, at a fixed day and time. The schedule is usually weekly, but can be bi-weekly or even monthly once a team member develops expertise at her tasks if her goals remain consistent over time.  Another alternative is to set different paces for Accountability, Coaching and Transparencies.  Ie- Meet weekly for Coaching and Transparency, but do Accountability on a bi-weekly or monthly cadence.  
+  
+On your day set aside for meetings, schedule One-On-One meetings prior to the team meeting. Schedule them back-to-back, and allot twenty-five to fifty minutes for each one. If there is a serious issue to discuss, such as serious job dissatisfaction, then use your Open Office Hour (see below) later that day to fully address the issue.  
+  
+One-On-One and Team Meetings can be merged if a team is small enough, but be cautious about giving negative feedback in a group setting. Unless your team has agreed to radical transparency and actively wants this public negative feedback, shame is likely to arise. Most companies, therefore, opt to provide negative feedback only during One-On-One meetings. 
+
+  
+
+That being said, I do recommend moving to a culture of radical transparency. Doing so will allow you to merge all One-On-One meetings into the Team meeting.  This can save you 4-6 hours on your day of internal meetings.
+
+  
+
+But radical transparency first requires explicit buy-in from every team member, and training in how to do it effectively.  Conscious Leadership Group runs excellent 1-day trainings in radical transparency. The investment of time may seem large, but usually pays itself back within a few weeks (ie- saving a half-day per week).
+
+#### Team Meeting
+
+In order to support the company’s quarterly goals, each team must meet weekly (or bi-weekly if the team is very smooth-running) to:  
+  
+
+  - Hold each other accountable to the actions they need to perform
+  - Surface and resolve any issues in the company
+  - Give each other feedback
+
+  
+
+In order to ensure that all participants are prepared for this meeting, I recommend holding all 1-1s in the morning just prior to the team meeting.  The 1-1s then serve as preparation for the team meeting.
+
+  
+
+During the team meeting, each attendee should:
+
+ 
+
+1.  Report whether they accomplished their declared Actions from the previous meeting.  This should be a simple YES or NO.  If NO, they should also write WHY? they didn’t do the action.  And what HABIT? they can adopt to make sure they never encounter that obstacle again.  Here is an example:
+      
+    1.  Get feedback from Joe.  **NO**
+          
+        1.  **\*\*Why?  I forgot about it, and therefore didn’t ask for feedback when I met with Joe.\*\***
+        2.  **\*\*Habit?   Create an Agenda list.  Look at this list each time I meet with someone.\*\*\*\*  &#10;  &#10;\*\***
+2.  Report their department updates
+      
+    1.  Show 
+          
+        1.  Link to traffic-lighted KPIs
+        2.  Link to traffic-lighted OKRs
+    2.  The written update should be a deep dive into these metrics to share what has happened that is
+          
+        1.  Good
+        2.  Not Good.
+              
+            1.  What exactly is the Issue.
+            2.  What is your Proposed Solution for correcting the Issue.
+                  
+                1.  Many people will say that they do not know what the solution is and want guidance.  That is fine.  But the discussion will be much more fruitful if they declare definitively what they THINK the solution is, even if they have very little confidence in their proposal.  
+                      
+3.  Declare what actions they will do until the next meeting:
+      
+    1.  Toward their OKRs
+    2.  As part of Proposed Solutions  
+          
+4.  Provide feedback to the team leader and peers in the Like and Wish That format.
+      
+    1.  Peer to Peer
+          
+        1.  Each peer gives feedback to one other peer per meeting (on a rotating basis)
+    2.  Reports to Manager
+          
+        1.  If these were done in the 1-1, then it is good to show them in the team meeting
+    3.  Manager to Reports 
+          
+        1.  Only if the company is practicing radical transparency, otherwise this remains in the 1-1
+
+  
+
+The agenda for the meeting then becomes:
+
+  
+
+  - Updates from each team member (1, 2 and 3 from above).  
+      
+  - Discuss Issues and Proposed Solutions.
+      
+      - Time-box each Issue.  
+          
+          - If a Solution is agreed upon in that time, turn it into Action Items with DRIs and Due Dates.
+          - If a Solution is not agreed upon, turn the Issue into a RAPID.  
+              
+  - Write and review Feedback to each other
+
+  
+
+Team Meetings follow the same information flow as the 1-1s:  Accountability, Coaching and Transparency.  In fact, as the team is effectively preparing in writing in advance for its meetings, the Accountability and Coaching portion of the 1-1s can simply be moved to the Team Meeting.  This is actually more effective and efficient, allowing more time during the 1-1s for Transparency.
+
+  
+
+It is important to time-box all agenda items, so that the meetings don’t run on, and all issues get addressed. This is done by putting a number before each agenda item. Five minutes is indicated as \[5\]. At the end of the allotted time, move on. If there are still decisions to be made, create a RAPID.  
+
+  
+
+It is critical that everyone submit all of their updates, issues and feedback in writing prior to the meeting, as discussed in Chapter 8 (“Writing vs. Talking”). This allows others to read the submissions, make comments, and ask questions prior to the meeting. This massively increases information flow, and allows for consensus to be reached before the team meeting even begins.  Team meetings that take 3 hours when done verbally can take 30 minutes (and be more effective) when done in writing.
+
+#### Open Office Hour     
+          
+
+Each manager should set aside one hour each week for an open office hour, during which anyone can come introduce an issue. This ensures that all employees feel that they can be heard, but limits the amount of time required to a predictable level for the manager.
+
+  
+
+#### Company-Wide Meeting
+
+  
+
+On a cadence that varies between once a week and once a month, it is important to have a Company-Wide Meeting where the results of the most recent leadership team meeting are shared. Follow the same format. Allow time, as always, for anyone in the company to bring up their own issues or to provide feedback.
+
+  
+
+For another perspective, Peter Reinhardt of Segment shares:  “We use all hands for sharing across teams of what teams are accomplishing, working on, celebrating wins (reinforce our values), and recognition broadly... plus bringing in customers to talk. I find this much healthier than an obsession with whatever leadership team is talking about (although we do present the board deck + board topics once per quarter.)”
+
+#### Quarterly Offsites
+
+  
+Once a quarter, the leadership team (and eventually the entire company), which consists of all the department heads, should take a day or two to:

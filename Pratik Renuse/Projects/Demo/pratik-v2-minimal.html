@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pratik Renuse — From Zero to One</title>
+<meta name="description" content="Pratik Renuse — a 0-to-1 growth marketing leader. Founding marketer behind Infento, VU, and Bueno. TEDx speaker, Techstars & EBRD mentor, visiting professor, angel investor." />
+<meta property="og:title" content="Pratik Renuse — From Zero to One" />
+<meta property="og:description" content="A founding marketer who builds companies from nothing — and teaches others to do the same." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=EB+Garamond:ital@0;1&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f5f1ea;
+    --paper-2:#efe8dc;
+    --paper-3:#ece4d6;
+    --ink:#1c1b19;
+    --ink-75:rgba(28,27,25,.74);
+    --ink-55:rgba(28,27,25,.55);
+    --muted:#736d63;
+    --accent:#9c4a2f;        /* clay — used sparingly */
+    --line:rgba(28,27,25,.13);
+    --display:'Cormorant Garamond',Georgia,serif;
+    --serif:'EB Garamond',Georgia,serif;
+    --label:'Montserrat',-apple-system,Helvetica,Arial,sans-serif;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--serif);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    font-size:18px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+
+  /* labels */
+  .label{
+    font-family:var(--label);
+    font-size:12px;
+    font-weight:500;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--ink-55);
+  }
+  .accent{color:var(--accent)}
+  em{font-style:italic}
+
+  /* ---------- Nav ---------- */
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:60;
+    background:linear-gradient(var(--paper) 64%, rgba(245,241,234,0));padding-bottom:18px}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;
+    max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  .logo{font-family:var(--display);font-size:22px;letter-spacing:.02em}
+  .logo .dot{color:var(--accent)}
+  .nav-links{display:flex;gap:34px;align-items:center}
+  .nav-links a{font-family:var(--label);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-55);transition:color .25s}
+  .nav-links a:hover{color:var(--ink)}
+  .pill{
+    font-family:var(--label);font-size:11.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+    background:var(--ink);color:var(--paper);padding:12px 22px;border-radius:100px;transition:.25s;
+  }
+  .pill:hover{background:var(--accent);color:#fff}
+  .menu-btn{display:none;background:none;border:0;color:var(--ink);font-size:22px;cursor:pointer;font-family:var(--serif)}
+  @media(max-width:780px){
+    .nav-links{position:fixed;top:64px;left:0;right:0;flex-direction:column;gap:0;
+      background:var(--paper);border-top:1px solid var(--line);padding:8px 0;display:none}
+    .nav-links.open{display:flex}
+    .nav-links a{padding:14px 32px}
+    .nav-links .pill{margin:12px 32px;text-align:center}
+    .menu-btn{display:block}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:130px 0 60px;position:relative}
+  .hero .sun{position:absolute;top:8%;left:50%;transform:translateX(-50%);width:min(760px,92vw);
+    opacity:.5;pointer-events:none;color:var(--accent)}
+  .hero-eyebrow{margin-bottom:26px}
+  .hero h1{font-family:var(--display);font-weight:300;font-size:clamp(46px,9vw,104px);line-height:.98;
+    letter-spacing:-.015em;max-width:11ch}
+  .hero h1 em{font-style:italic;color:var(--accent)}
+  .hero .sub{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.4vw,23px);color:var(--ink-75);
+    max-width:30ch;margin:30px auto 0;line-height:1.5}
+  .hero-cta{margin-top:40px}
+
+  /* journey path */
+  .path{width:100%;max-width:920px;margin:64px auto 0;padding:0 8px}
+  .path svg{width:100%;height:auto;display:block;overflow:visible}
+  .path .pl{font-family:var(--label);font-size:11px;letter-spacing:.16em;text-transform:uppercase;fill:var(--ink-55)}
+  .path .pn{font-family:var(--display);font-size:15px;fill:var(--ink);font-style:italic}
+
+  .scroll-hint{margin-top:44px;font-family:var(--label);font-size:10.5px;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--ink-55);display:flex;flex-direction:column;align-items:center;gap:10px}
+  .scroll-hint .ln{width:1px;height:42px;background:linear-gradient(var(--ink-55),transparent)}
+
+  /* ---------- Section frame ---------- */
+  section{padding:120px 0;position:relative}
+  .center{text-align:center}
+  .sec-eyebrow{margin-bottom:20px}
+  .sec-title{font-family:var(--display);font-weight:300;font-size:clamp(32px,5vw,56px);
+    line-height:1.08;letter-spacing:-.01em}
+  .sec-title em{font-style:italic;color:var(--accent)}
+  .divider{width:46px;height:1px;background:var(--ink);opacity:.5;margin:28px auto 0}
+
+  /* ---------- Letter ---------- */
+  .letter{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .letter .inner{max-width:660px;margin:0 auto;text-align:center}
+  .letter .label{margin-bottom:34px}
+  .letter p{font-family:var(--serif);font-size:20px;line-height:1.85;color:var(--ink-75);
+    text-align:left;margin-bottom:22px}
+  .letter p strong{color:var(--ink);font-weight:600}
+  .letter p em{color:var(--accent)}
+  .letter .sign{font-family:var(--display);font-style:italic;font-size:26px;color:var(--ink);
+    text-align:left;margin-top:38px}
+  .letter .sign small{display:block;font-family:var(--label);font-style:normal;font-size:11px;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--ink-55);margin-top:8px}
+
+  /* ---------- Stats ---------- */
+  .stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:64px}
+  .stat{text-align:center;padding:0 6px}
+  .stat .n{font-family:var(--display);font-weight:300;font-size:clamp(40px,5.4vw,64px);line-height:1;color:var(--ink)}
+  .stat .n em{color:var(--accent);font-style:italic}
+  .stat .c{font-family:var(--serif);font-size:15px;color:var(--ink-75);margin-top:16px;line-height:1.45}
+  @media(max-width:780px){.stats .grid{grid-template-columns:repeat(2,1fr);gap:42px 24px}}
+
+  /* ---------- Principles / values ---------- */
+  .values{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .vrow{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:72px}
+  .vcard{text-align:center;display:flex;flex-direction:column;align-items:center}
+  .vart{width:108px;height:108px;color:var(--accent);margin-bottom:30px}
+  .vart svg{width:100%;height:100%;display:block;overflow:visible}
+  .vcard h3{font-family:var(--display);font-weight:400;font-size:25px;letter-spacing:.01em;margin-bottom:6px}
+  .vcard .vsub{font-family:var(--label);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--ink-55);margin-bottom:16px}
+  .vcard p{font-family:var(--serif);font-size:16.5px;color:var(--ink-75);line-height:1.6;max-width:30ch}
+  @media(max-width:780px){.vrow{grid-template-columns:1fr;gap:60px}}
+
+  /* ---------- Work ---------- */
+  .work .list{margin-top:64px;border-top:1px solid var(--line)}
+  .role{display:grid;grid-template-columns:0.9fr 1.3fr;gap:40px;padding:40px 0;border-bottom:1px solid var(--line);
+    align-items:start}
+  .role .co{font-family:var(--display);font-size:30px;font-weight:400;line-height:1.1}
+  .role .pos{font-family:var(--label);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-55);margin-top:12px}
+  .role .yr{font-family:var(--label);font-size:11px;letter-spacing:.16em;color:var(--ink-55);margin-top:6px}
+  .role .ctx{font-family:var(--serif);font-style:italic;font-size:16px;color:var(--accent);margin-bottom:16px}
+  .role .desc p{font-family:var(--serif);font-size:17px;color:var(--ink-75);line-height:1.6;margin-bottom:10px;
+    padding-left:22px;position:relative}
+  .role .desc p:before{content:"—";position:absolute;left:0;color:var(--ink-55)}
+  @media(max-width:780px){.role{grid-template-columns:1fr;gap:18px;padding:34px 0}}
+
+  /* ---------- Community marquee ---------- */
+  .community{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    overflow:hidden;padding-bottom:120px}
+  .marquee{margin-top:60px;width:100%;overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+    mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+  .track{display:flex;gap:18px;width:max-content;animation:scroll 46s linear infinite}
+  .community:hover .track{animation-play-state:paused}
+  .chip{flex:0 0 auto;background:var(--paper);border:1px solid var(--line);border-radius:14px;
+    padding:26px 34px;min-width:210px;text-align:center}
+  .chip .cn{font-family:var(--display);font-size:23px;color:var(--ink)}
+  .chip .cr{font-family:var(--label);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-55);margin-top:8px}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center}}
+
+  /* ---------- Speaking / teaching split ---------- */
+  .teach .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:64px;
+    background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .tcell{background:var(--paper);padding:44px 34px;text-align:center}
+  .tcell .ti{width:54px;height:54px;color:var(--accent);margin:0 auto 22px}
+  .tcell h4{font-family:var(--display);font-size:23px;font-weight:400;margin-bottom:12px}
+  .tcell p{font-family:var(--serif);font-size:16px;color:var(--ink-75);line-height:1.55}
+  .tcell .tags{margin-top:18px;font-family:var(--label);font-size:10.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink-55);line-height:2}
+  @media(max-width:780px){.teach .grid{grid-template-columns:1fr}}
+
+  /* ---------- Invest ---------- */
+  .invest{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .irow{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:56px}
+  .ipill{font-family:var(--display);font-size:21px;border:1px solid var(--line);background:var(--paper);
+    border-radius:100px;padding:16px 30px;color:var(--ink)}
+  .ipill small{font-family:var(--label);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-55);margin-left:10px}
+
+  /* ---------- Contact ---------- */
+  .contact{text-align:center;padding:140px 0}
+  .contact .breath{width:120px;height:120px;margin:0 auto 40px;color:var(--accent)}
+  .contact h2{font-family:var(--display);font-weight:300;font-size:clamp(34px,6vw,68px);line-height:1.04;
+    letter-spacing:-.01em;max-width:16ch;margin:0 auto}
+  .contact h2 em{font-style:italic;color:var(--accent)}
+  .contact p{font-family:var(--serif);font-size:18px;color:var(--ink-75);max-width:34ch;margin:26px auto 38px}
+  .contact .actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+  .pill-lg{font-family:var(--label);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+    padding:16px 30px;border-radius:100px;transition:.25s}
+  .pill-dark{background:var(--ink);color:var(--paper)}
+  .pill-dark:hover{background:var(--accent);color:#fff}
+  .pill-ghost{border:1px solid var(--ink);color:var(--ink)}
+  .pill-ghost:hover{background:var(--ink);color:var(--paper)}
+
+  /* ---------- Footer ---------- */
+  footer{border-top:1px solid var(--line);padding:40px 0}
+  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
+    font-family:var(--label);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-55)}
+  .foot a:hover{color:var(--ink)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity 1s ease,transform 1s ease}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="#top" class="logo">Pratik Renuse<span class="dot">.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#letter">Story</a>
+      <a href="#work">Work</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#investing">Investing</a>
+      <a href="#contact" class="pill">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <!-- faint radiating sun illustration -->
+    <svg class="sun" viewBox="0 0 760 380" fill="none" aria-hidden="true">
+      <g stroke="currentColor" stroke-width="1" opacity="0.55">
+        <path d="M80 360 A300 300 0 0 1 680 360" />
+        <path d="M150 360 A230 230 0 0 1 610 360" />
+        <path d="M220 360 A160 160 0 0 1 540 360" />
+        <path d="M290 360 A90 90 0 0 1 470 360" />
+      </g>
+      <g stroke="currentColor" stroke-width="1" opacity="0.4">
+        <line x1="380" y1="40" x2="380" y2="120"/>
+        <line x1="220" y1="80" x2="260" y2="145"/>
+        <line x1="540" y1="80" x2="500" y2="145"/>
+        <line x1="110" y1="190" x2="180" y2="220"/>
+        <line x1="650" y1="190" x2="580" y2="220"/>
+      </g>
+      <circle cx="380" cy="360" r="6" fill="currentColor"/>
+    </svg>
+
+    <div class="hero-eyebrow label reveal">Growth &amp; Performance Marketing</div>
+    <h1 class="reveal">From <em>zero</em><br>to one.</h1>
+    <p class="sub reveal">A founding marketer who builds companies from nothing — and teaches others to do the same.</p>
+    <div class="hero-cta reveal"><a href="#work" class="pill">See the work</a></div>
+
+    <!-- 0 → 1 journey path -->
+    <div class="path reveal" aria-hidden="true">
+      <svg viewBox="0 0 900 130" fill="none">
+        <path d="M30 96 C 180 96, 200 54, 320 54 S 520 96, 600 70 S 780 40, 870 40"
+              stroke="var(--accent)" stroke-width="1.4" opacity="0.55"/>
+        <g>
+          <circle cx="30"  cy="96" r="5" fill="var(--ink)"/>
+          <circle cx="240" cy="63" r="4" fill="var(--ink)"/>
+          <circle cx="460" cy="78" r="4" fill="var(--ink)"/>
+          <circle cx="660" cy="61" r="4" fill="var(--ink)"/>
+          <circle cx="870" cy="40" r="6" fill="var(--accent)"/>
+        </g>
+        <g text-anchor="middle">
+          <text class="pl" x="30"  y="120">Zero</text>
+          <text class="pn" x="240" y="44">build</text>
+          <text class="pn" x="460" y="59">scale</text>
+          <text class="pn" x="660" y="42">teach</text>
+          <text class="pl" x="870" y="22">One</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="scroll-hint reveal"><span>Scroll</span><span class="ln"></span></div>
+  </section>
+
+  <!-- ================= LETTER ================= -->
+  <section class="letter" id="letter">
+    <div class="wrap inner">
+      <div class="label reveal">A note</div>
+      <div class="reveal">
+        <p>Over the last decade of working across Europe, I learned where I do my best work: the <strong>"0 to 1"</strong> — the quiet, uncertain space of building something real out of nothing at all.</p>
+        <p>I didn't set out with a grand plan. I joined small teams and made myself useful: I built Infento's web shop from <em>nothing</em> to €2M, helped take the Swiss brand VU from zero to the Olympic stage, and grew the fintech Bueno from a blank page to €300K+ ARR across 28 countries.</p>
+        <p>Along the way I noticed the part I love most isn't the launch — it's the teaching. Sharing what a decade of building taught me, and watching someone start to believe in themselves, is the most fulfilling work I know. So I began mentoring founders and coaching graduates, on stages and in classrooms.</p>
+        <p>If there's value we could create together, I'd love to meet. I'm always happy to know good people building from nothing.</p>
+      </div>
+      <div class="sign reveal">Pratik<small>Netherlands · working globally</small></div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="stats center">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">In numbers</div>
+      <h2 class="sec-title reveal">A decade of building, measured.</h2>
+      <div class="divider reveal"></div>
+      <div class="grid">
+        <div class="stat reveal"><div class="n">€<em>2</em>M</div><div class="c">DTC revenue built from zero at Infento</div></div>
+        <div class="stat reveal"><div class="n"><em>24</em>×</div><div class="c">LTV/CAC scaling Bueno across 28 countries</div></div>
+        <div class="stat reveal"><div class="n">$<em>848</em>K</div><div class="c">#1 most-funded STEM Kickstarter, globally</div></div>
+        <div class="stat reveal"><div class="n"><em>3</em>×</div><div class="c">TEDx talks &amp; 50+ speeches in 14+ countries</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VALUES / PRINCIPLES ================= -->
+  <section class="values center">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">How I work</div>
+      <h2 class="sec-title reveal">Three things, <em>done well</em>.</h2>
+      <div class="divider reveal"></div>
+      <div class="vrow">
+
+        <div class="vcard reveal">
+          <div class="vart">
+            <!-- seedling from a single point -->
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+              <circle cx="50" cy="84" r="3.5" fill="currentColor" stroke="none"/>
+              <path d="M50 84 C50 64 50 50 50 38"/>
+              <path d="M50 56 C38 54 30 46 28 34 C42 34 50 42 50 54"/>
+              <path d="M50 48 C62 46 70 38 72 26 C58 26 50 34 50 46"/>
+              <circle cx="50" cy="26" r="4"/>
+            </svg>
+          </div>
+          <h3>Build from zero</h3>
+          <div class="vsub">Ground up</div>
+          <p>Founding-team marketer who stands up brand, site, paid media and lifecycle from a blank page — three times over.</p>
+        </div>
+
+        <div class="vcard reveal">
+          <div class="vart">
+            <!-- rising growth curve with nodes -->
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 80 H84" opacity="0.5"/>
+              <path d="M18 80 V20" opacity="0.5"/>
+              <path d="M24 72 C40 70 46 50 56 44 S74 30 82 24"/>
+              <circle cx="24" cy="72" r="3" fill="currentColor" stroke="none"/>
+              <circle cx="52" cy="47" r="3" fill="currentColor" stroke="none"/>
+              <circle cx="82" cy="24" r="4" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Engineer growth</h3>
+          <div class="vsub">Compounding systems</div>
+          <p>Performance marketing grounded in CAC / LTV / MER modelling, CRO, SEO and multi-channel attribution.</p>
+        </div>
+
+        <div class="vcard reveal">
+          <div class="vart">
+            <!-- radiating ripples (sharing / teaching) -->
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4">
+              <circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/>
+              <circle cx="50" cy="50" r="18" opacity="0.8"/>
+              <circle cx="50" cy="50" r="30" opacity="0.55"/>
+              <circle cx="50" cy="50" r="42" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3>Teach &amp; mentor</h3>
+          <div class="vsub">Pass it on</div>
+          <p>100+ startups mentored via Techstars, EBRD &amp; Seedstars; 500+ graduates coached. 9.7/10 average rating.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORK ================= -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">Selected work</div>
+      <h2 class="sec-title reveal">Founding-team marketing across<br>consumer, sport &amp; fintech.</h2>
+      <div class="list">
+
+        <div class="role reveal">
+          <div>
+            <div class="co">Bueno</div>
+            <div class="pos">Growth Lead · Founding Team · Shareholder</div>
+            <div class="yr">2022 — Present</div>
+          </div>
+          <div class="desc">
+            <div class="ctx">Award-winning fintech for foreign property owners in Spain.</div>
+            <p>Built marketing single-handedly from €0 to 2,000+ paying subscribers and €300K+ ARR across 28 countries at 24× LTV/CAC.</p>
+            <p>Drove 1M+ organic visits, outranking Revolut and Wise on target SEO keywords.</p>
+            <p>Grew 15,000+ newsletter subscribers at 70% open rate; 13% convert within 3 months.</p>
+          </div>
+        </div>
+
+        <div class="role reveal">
+          <div>
+            <div class="co">VU</div>
+            <div class="pos">Head of Marketing · Founding Team</div>
+            <div class="yr">2021 — 2025</div>
+          </div>
+          <div class="desc">
+            <div class="ctx">The #1 Swiss brand for professional skiers and snowboarders.</div>
+            <p>Recommended and used by Olympians.</p>
+            <p>Drove €275K+ in revenue and 4.4× peak-season growth.</p>
+            <p>Built VU's full digital presence end-to-end: brand, site, paid media, lifecycle and community.</p>
+          </div>
+        </div>
+
+        <div class="role reveal">
+          <div>
+            <div class="co">Infento</div>
+            <div class="pos">Online Marketing Lead · Founding Team</div>
+            <div class="yr">2017 — 2019</div>
+          </div>
+          <div class="desc">
+            <div class="ctx">Consumer hardware &amp; STEM products, Amsterdam.</div>
+            <p>Built marketing from zero, scaling the DTC web shop from €0 to €2M ARR.</p>
+            <p>Led the $848K Kickstarter — #1 most-funded STEM project globally in 2018.</p>
+            <p>Won Red Dot, German Design Award &amp; Parent's Choice Gold (US).</p>
+          </div>
+        </div>
+
+        <div class="role reveal">
+          <div>
+            <div class="co">Bayer &amp; Airbus</div>
+            <div class="pos">Marketing · Project Management</div>
+            <div class="yr">2016 — 2017</div>
+          </div>
+          <div class="desc">
+            <div class="ctx">Fortune 500 — Berlin &amp; Munich, Germany.</div>
+            <p>Managed a €250K budget for GIM, Bayer's premier global executive event across 50+ countries.</p>
+            <p>Lifted Airbus' organic social reach 127% and led SEO to #1 for the NEOShield project.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMMUNITY MARQUEE ================= -->
+  <section class="community center" id="community">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">The rooms I've been in</div>
+      <h2 class="sec-title reveal">Built, mentored &amp; <em>taught</em> with —</h2>
+    </div>
+    <div class="marquee reveal">
+      <div class="track" id="track">
+        <!-- set A -->
+        <div class="chip"><div class="cn">Infento</div><div class="cr">Founding Team</div></div>
+        <div class="chip"><div class="cn">VU</div><div class="cr">Head of Marketing</div></div>
+        <div class="chip"><div class="cn">Bueno</div><div class="cr">Growth Lead</div></div>
+        <div class="chip"><div class="cn">Techstars</div><div class="cr">Mentor</div></div>
+        <div class="chip"><div class="cn">EBRD</div><div class="cr">Mentor</div></div>
+        <div class="chip"><div class="cn">TEDx</div><div class="cr">3× Speaker</div></div>
+        <div class="chip"><div class="cn">Harvard</div><div class="cr">Coached grads</div></div>
+        <div class="chip"><div class="cn">Bayer</div><div class="cr">Project Lead</div></div>
+        <div class="chip"><div class="cn">Airbus</div><div class="cr">Marketing</div></div>
+        <div class="chip"><div class="cn">Masters' Union</div><div class="cr">Professor</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEACHING ================= -->
+  <section class="teach center" id="teaching">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">Speaking &amp; teaching</div>
+      <h2 class="sec-title reveal">Sharing what building taught me.</h2>
+      <div class="grid">
+
+        <div class="tcell reveal">
+          <div class="ti">
+            <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+              <path d="M14 38 V20 a6 6 0 0 1 6-6 h16 a6 6 0 0 1 6 6 v10 a6 6 0 0 1 -6 6 H24 l-10 8 z"/>
+              <path d="M22 24 h12 M22 30 h8"/>
+            </svg>
+          </div>
+          <h4>Keynote Speaker</h4>
+          <p>3 TEDx talks and 50+ speeches across 14+ countries on the future of marketing and how startups scale.</p>
+          <div class="tags">TEDx · APAC Digital Conclave · Russian Stream</div>
+        </div>
+
+        <div class="tcell reveal">
+          <div class="ti">
+            <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M28 12 L44 20 L28 28 L12 20 Z"/>
+              <path d="M18 24 v9 c0 3 5 6 10 6 s10 -3 10 -6 v-9"/>
+              <path d="M44 20 v10"/>
+            </svg>
+          </div>
+          <h4>Startup Mentor</h4>
+          <p>100+ founders mentored on go-to-market, growth and fundraising. 9.7/10 average CXO satisfaction.</p>
+          <div class="tags">Techstars · EBRD · Seedstars · Founder Institute</div>
+        </div>
+
+        <div class="tcell reveal">
+          <div class="ti">
+            <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 22 L28 14 L46 22 L28 30 Z"/>
+              <path d="M28 30 v8"/>
+              <path d="M20 26 v9 a8 4 0 0 0 16 0 v-9"/>
+            </svg>
+          </div>
+          <h4>Visiting Professor</h4>
+          <p>500+ graduates coached on growth, brand and believing in their own potential.</p>
+          <div class="tags">Harvard · LSE · HEC Paris · Masters' Union</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INVEST ================= -->
+  <section class="invest center" id="investing">
+    <div class="wrap">
+      <div class="sec-eyebrow label reveal">Angel investing</div>
+      <h2 class="sec-title reveal">Backing the builders<br>I believe in.</h2>
+      <div class="divider reveal"></div>
+      <div class="irow reveal">
+        <div class="ipill">Perplexity <small>AI Search</small></div>
+        <div class="ipill">Nothing <small>Consumer Tech</small></div>
+        <div class="ipill">Atom Bank <small>Digital Banking</small></div>
+        <div class="ipill">Plum <small>Fintech</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="breath reveal" aria-hidden="true">
+        <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="60" cy="60" r="10" fill="currentColor" stroke="none" opacity="0.9"/>
+          <circle cx="60" cy="60" r="26" opacity="0.6"/>
+          <circle cx="60" cy="60" r="42" opacity="0.35"/>
+          <circle cx="60" cy="60" r="56" opacity="0.18"/>
+        </svg>
+      </div>
+      <h2 class="reveal">If we could create<br><em>value together</em>, let's talk.</h2>
+      <p class="reveal">Always happy to meet founders, operators, and anyone building something from nothing.</p>
+      <div class="actions reveal">
+        <a href="mailto:pratik@pratikrenuse.com" class="pill-lg pill-dark">pratik@pratikrenuse.com</a>
+        <a href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener" class="pill-lg pill-ghost">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="yr"></span> Pratik Renuse</div>
+    <div>Built from zero, like everything else.</div>
+    <div><a href="mailto:pratik@pratikrenuse.com">Email</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // mobile menu
+  var mb = document.getElementById('menuBtn'), nl = document.getElementById('navLinks');
+  mb.addEventListener('click', function(){ nl.classList.toggle('open'); });
+  nl.addEventListener('click', function(e){ if(e.target.tagName==='A') nl.classList.remove('open'); });
+
+  // duplicate marquee track for seamless loop
+  var track = document.getElementById('track');
+  if(track){ track.innerHTML += track.innerHTML; }
+
+  // scroll reveal
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>

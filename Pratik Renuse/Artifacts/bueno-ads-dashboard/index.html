@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Bueno Ads Dashboard",
+  "schemaVersion": 1,
+  "description": "Live Meta Ads dashboard for Bueno (NOK, acct 2716642581960365). Pulls campaigns + ad sets, account KPIs, spend-by-campaign chart, and anomaly alerts fresh from the Meta Ads MCP on each open. Toggle 7/30/90-day ranges.",
+  "mcpTools": [
+    "mcp__35569f71-3a8d-404d-900a-9d15b4309b13__ads_get_ad_entities",
+    "mcp__35569f71-3a8d-404d-900a-9d15b4309b13__ads_insights_anomaly_signal"
+  ],
+  "mcpServerNames": [
+    "Meta ads",
+    "Meta ads"
+  ]
+}
+</script>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bueno Ads Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f6f7f9; color: #1a1d21; font-size: 14px; line-height: 1.45;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 20px; }
+  .head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 6px; }
+  h1 { font-size: 20px; margin: 0; font-weight: 700; }
+  .sub { color: #6b7280; font-size: 12.5px; margin-bottom: 18px; }
+  .controls { display: flex; gap: 6px; }
+  .controls button {
+    border: 1px solid #d6dae0; background: #fff; color: #374151; padding: 6px 12px;
+    border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 500;
+  }
+  .controls button.active { background: #2563eb; border-color: #2563eb; color: #fff; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 20px; }
+  .card { background: #fff; border: 1px solid #eceef1; border-radius: 12px; padding: 14px 16px; }
+  .card .label { color: #6b7280; font-size: 11.5px; text-transform: uppercase; letter-spacing: .04em; }
+  .card .val { font-size: 22px; font-weight: 700; margin-top: 4px; }
+  .section { background: #fff; border: 1px solid #eceef1; border-radius: 12px; padding: 16px 18px; margin-bottom: 18px; }
+  .section h2 { font-size: 15px; margin: 0 0 12px; font-weight: 700; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: right; padding: 8px 10px; border-bottom: 1px solid #f0f1f3; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: #6b7280; font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: .03em; cursor: pointer; user-select: none; }
+  tr:last-child td { border-bottom: none; }
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+  .pill.active { background: #e7f6ec; color: #1a7f37; }
+  .pill.paused { background: #fdecec; color: #b42318; }
+  .sub-row td { background: #fafbfc; color: #4b5563; font-size: 12.5px; }
+  .sub-row td:first-child { padding-left: 26px; }
+  .alert { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border-radius: 10px; background: #fff8eb; border: 1px solid #f6e2b5; margin-bottom: 8px; }
+  .alert .ic { font-size: 16px; }
+  .alert .t { font-weight: 600; }
+  .alert .d { color: #6b7280; font-size: 12.5px; }
+  .ok { color: #1a7f37; }
+  .muted { color: #9ca3af; }
+  .chartbox { position: relative; height: 240px; }
+  .loading { color: #6b7280; padding: 30px; text-align: center; }
+  .err { color: #b42318; padding: 14px; background: #fdecec; border-radius: 10px; }
+  .foot { color: #9ca3af; font-size: 11.5px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div>
+      <h1>Bueno Ads Dashboard</h1>
+      <div class="sub" id="sub">Account 2716642581960365 (NOK) · live from Meta Ads</div>
+    </div>
+    <div class="controls" id="ranges">
+      <button data-range="last_7d">7 days</button>
+      <button data-range="last_30d" class="active">30 days</button>
+      <button data-range="last_90d">90 days</button>
+    </div>
+  </div>
+
+  <div id="status" class="loading">Loading live data…</div>
+
+  <div id="content" style="display:none">
+    <div class="cards" id="cards"></div>
+
+    <div class="section">
+      <h2>Spend by campaign</h2>
+      <div class="chartbox"><canvas id="spendChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>Alerts</h2>
+      <div id="alerts"></div>
+    </div>
+
+    <div class="section">
+      <h2>Campaigns &amp; ad sets</h2>
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th data-k="name">Name</th>
+            <th data-k="status">Status</th>
+            <th data-k="spendN">Spend</th>
+            <th data-k="imprN">Impr.</th>
+            <th data-k="clicksN">Clicks</th>
+            <th data-k="ctrN">CTR</th>
+            <th data-k="cpcN">CPC</th>
+            <th data-k="result">Key result</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="foot">Ad sets are nested under their campaign. Sorting applies to campaign rows.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const ACCT = "2716642581960365";
+const SERVER = "mcp__35569f71-3a8d-404d-900a-9d15b4309b13__";
+const CAMPAIGN_IDS = {
+  "120217209218110151": ["120247770099210151","120243536524560151","120217209218130151","120217682944740151"],
+  "23850089195760150": ["120229165859730151","23855019050280150"],
+  "120248684791300151": ["120248692787390151"]
+};
+
+let chart = null;
+let sortKey = "spendN", sortDir = -1;
+
+function getRange(){ return localStorage.getItem("bueno_range") || "last_30d"; }
+function setRange(r){ localStorage.setItem("bueno_range", r); }
+
+async function call(tool, args){
+  const r = await window.cowork.callMcpTool(SERVER+tool, args);
+  if(r.isError) throw new Error(r.content && r.content[0] ? r.content[0].text : "tool error");
+  const data = r.structuredContent ?? JSON.parse(r.content[0].text);
+  return data;
+}
+function parseEntities(data){
+  let e = data.ad_entities;
+  if(typeof e === "string") e = JSON.parse(e || "[]");
+  return e || [];
+}
+function num(s){
+  if(s == null || s === "Not available") return null;
+  const m = String(s).replace(/[^0-9.\-]/g,"");
+  return m === "" ? null : parseFloat(m);
+}
+function summarizeResult(results){
+  if(!results || results === "Not available") return "—";
+  try{
+    if(results.value && results.value[0] && results.value[0].values){
+      const v = results.value[0].values[0].value;
+      const ind = results.value[0].indicator || "";
+      let label = "results";
+      if(/leadgen/i.test(ind)) label = "leads";
+      else if(/registration page/i.test(ind)) label = "registrations";
+      else if(/dashboard/i.test(ind)) label = "dashboard";
+      return Number(v).toLocaleString() + " " + label;
+    }
+    if(results.all_conversion_types){
+      const pick = results.all_conversion_types.find(x => /\(Leads\)/.test(x)) ||
+                   results.all_conversion_types.find(x => /Register Page\)/.test(x));
+      if(pick) return pick.replace(/^(\d[\d,]*)\s*\((.+)\)$/, "$1 $2").replace("Register Page","registrations").toLowerCase().replace(/^(\d[\d,]*)/, m=>m);
+    }
+  }catch(e){}
+  return "—";
+}
+function statusPill(s){
+  const a = /ACTIVE/i.test(s);
+  return '<span class="pill '+(a?"active":"paused")+'">'+(a?"Active":"Paused")+'</span>';
+}
+
+async function load(){
+  const range = getRange();
+  document.getElementById("status").style.display = "";
+  document.getElementById("status").className = "loading";
+  document.getElementById("status").textContent = "Loading live data…";
+  document.getElementById("content").style.display = "none";
+  try{
+    const acctFields = ["spend","impressions","reach","frequency","clicks","ctr","cpc","cpm"];
+    const campFields = ["id","name","objective","effective_status","spend","impressions","clicks","ctr","cpc","cpm","results"];
+    const setFields  = ["id","name","effective_status","spend","impressions","clicks","ctr","cpc","cpm","results"];
+
+    const [acctD, campD, setD, anomalyD] = await Promise.all([
+      call("ads_get_ad_entities", {ad_account_id:ACCT, level:"account", date_preset:range, fields:acctFields}),
+      call("ads_get_ad_entities", {ad_account_id:ACCT, level:"campaign", date_preset:range, fields:campFields, sort:"spend_descending", limit:50}),
+      call("ads_get_ad_entities", {ad_account_id:ACCT, level:"adset", date_preset:range, fields:setFields, sort:"spend_descending", limit:100}),
+      call("ads_insights_anomaly_signal", {ad_account_id:ACCT}).catch(()=>({result:""}))
+    ]);
+
+    const acct = parseEntities(acctD)[0] || {};
+    const camps = parseEntities(campD).map(normalize);
+    const sets = parseEntities(setD).map(normalize);
+    renderCards(acct);
+    renderChart(camps);
+    renderAlerts(anomalyD);
+    window._camps = camps; window._sets = sets;
+    renderTable();
+
+    const start = acct.date_start || "", stop = acct.date_stop || "";
+    document.getElementById("sub").textContent =
+      "Account "+ACCT+" (NOK) · live from Meta Ads · " + (start && stop ? start+" – "+stop : range);
+
+    document.getElementById("status").style.display = "none";
+    document.getElementById("content").style.display = "";
+  }catch(e){
+    const s = document.getElementById("status");
+    s.className = "err"; s.style.display = "";
+    s.textContent = "Could not load data: " + e.message;
+  }
+}
+
+function normalize(e){
+  return {
+    id: e.id, name: e.name, status: e.effective_status || "",
+    spend: e.amount_spent || e.spend || "—",
+    impr: e.impressions || "—", clicks: e.clicks || "—",
+    ctr: e.ctr || "—", cpc: e.cpc || "—", cpm: e.cpm || "—",
+    result: summarizeResult(e.results),
+    spendN: num(e.amount_spent || e.spend) || 0,
+    imprN: num(e.impressions) || 0, clicksN: num(e.clicks) || 0,
+    ctrN: num(e.ctr) || 0, cpcN: num(e.cpc) || 0
+  };
+}
+
+function renderCards(a){
+  const items = [
+    ["Spend", a.amount_spent || a.spend || "—"],
+    ["Impressions", a.impressions || "—"],
+    ["Reach", a.reach || "—"],
+    ["Clicks", a.clicks || "—"],
+    ["CTR", a.ctr || "—"],
+    ["CPC", a.cpc || "—"],
+    ["CPM", a.cpm || "—"]
+  ];
+  document.getElementById("cards").innerHTML = items.map(([l,v])=>
+    '<div class="card"><div class="label">'+l+'</div><div class="val">'+v+'</div></div>').join("");
+}
+
+function renderChart(camps){
+  const ctx = document.getElementById("spendChart");
+  if(chart) chart.destroy();
+  chart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: camps.map(c=>c.name),
+      datasets: [{ label:"Spend (NOK)", data: camps.map(c=>c.spendN), backgroundColor:"#2563eb", borderRadius:6 }]
+    },
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false} },
+      scales:{ y:{ beginAtZero:true, ticks:{ callback:v=>"NOK "+v.toLocaleString() } } }
+    }
+  });
+}
+
+function renderAlerts(anomalyD){
+  const box = document.getElementById("alerts");
+  const txt = (anomalyD && anomalyD.result) || "";
+  if(!txt || /no anomaly/i.test(txt)){
+    box.innerHTML = '<div class="ok">No anomalies flagged — delivery looks healthy.</div>';
+    return;
+  }
+  const blocks = txt.split(/Warning type:/).filter(s=>s.trim());
+  box.innerHTML = blocks.map(b=>{
+    const expl = (b.match(/Warning explanation:\s*(.+)/)||[])[1] || b.split("\n")[0];
+    const rec = (b.match(/Warning recommendation:\s*(.+)/)||[])[1] || "";
+    const name = (b.match(/Name:\s*([^,]+)/)||[])[1] || "";
+    return '<div class="alert"><div class="ic">⚠️</div><div><div class="t">'+
+      (name?name.trim()+" — ":"")+expl.trim()+'</div>'+(rec?'<div class="d">'+rec.trim()+'</div>':'')+'</div></div>';
+  }).join("");
+}
+
+function renderTable(){
+  const camps = (window._camps||[]).slice().sort((a,b)=>(a[sortKey]>b[sortKey]?1:-1)*sortDir);
+  const sets = window._sets||[];
+  const rows = [];
+  camps.forEach(c=>{
+    rows.push(row(c, false));
+    const childIds = CAMPAIGN_IDS[c.id] || [];
+    sets.filter(s=>childIds.includes(s.id))
+        .sort((a,b)=>b.spendN-a.spendN)
+        .forEach(s=> rows.push(row(s, true)));
+  });
+  document.getElementById("tbody").innerHTML = rows.join("");
+}
+function row(e, sub){
+  return '<tr'+(sub?' class="sub-row"':'')+'>'+
+    '<td>'+(sub?'↳ ':'')+e.name+'</td>'+
+    '<td>'+statusPill(e.status)+'</td>'+
+    '<td>'+e.spend+'</td>'+
+    '<td>'+e.impr+'</td>'+
+    '<td>'+e.clicks+'</td>'+
+    '<td>'+e.ctr+'</td>'+
+    '<td>'+e.cpc+'</td>'+
+    '<td>'+e.result+'</td></tr>';
+}
+
+document.getElementById("ranges").addEventListener("click", e=>{
+  const b = e.target.closest("button"); if(!b) return;
+  setRange(b.dataset.range);
+  document.querySelectorAll("#ranges button").forEach(x=>x.classList.toggle("active", x===b));
+  load();
+});
+document.querySelectorAll("#tbl th").forEach(th=>{
+  th.addEventListener("click", ()=>{
+    const k = th.dataset.k; if(!k) return;
+    if(sortKey===k) sortDir*=-1; else { sortKey=k; sortDir=-1; }
+    renderTable();
+  });
+});
+
+// set initial active range button from storage
+(function(){
+  const r = getRange();
+  document.querySelectorAll("#ranges button").forEach(b=>b.classList.toggle("active", b.dataset.range===r));
+})();
+load();
+</script>
+</body>
+</html>

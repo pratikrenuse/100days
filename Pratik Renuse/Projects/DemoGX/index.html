@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pratik Renuse — Building 0 to 1</title>
+<meta name="description" content="Pratik Renuse — a 0-to-1 growth marketing leader, TEDx speaker, and mentor at Techstars and EBRD. A decade turning nothing into something across Europe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6f3ec;
+    --paper-warm:#efeadf;
+    --ink:#1c1b18;
+    --ink-70:rgba(28,27,24,.72);
+    --ink-50:rgba(28,27,24,.52);
+    --ink-35:rgba(28,27,24,.35);
+    --line:rgba(28,27,24,.13);
+    --clay:#9c5b43;
+    --max:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'EB Garamond',Georgia,serif;
+    font-size:19px;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .display{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;letter-spacing:-.01em;line-height:1.06}
+  /* tiny tracked label */
+  .label{
+    font-family:'Inter',sans-serif;font-size:11.5px;font-weight:500;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--ink-50);
+  }
+  a{color:inherit;text-decoration:none}
+  em{font-style:italic}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+  .narrow{max-width:680px;margin:0 auto;padding:0 32px}
+
+  /* nav */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;
+    background:linear-gradient(var(--paper) 62%,rgba(246,243,236,0) 100%);}
+  nav .row{max-width:var(--max);margin:0 auto;padding:22px 32px;display:flex;justify-content:space-between;align-items:center}
+  .wordmark{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:20px;letter-spacing:.02em}
+  .navlinks{display:flex;gap:30px}
+  .navlinks a{font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.04em;color:var(--ink-50);transition:color .25s}
+  .navlinks a:hover{color:var(--ink)}
+  @media(max-width:720px){.navlinks{display:none}}
+
+  /* buttons */
+  .pill{
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--paper);background:var(--ink);
+    padding:15px 26px;border-radius:40px;transition:background .3s,transform .3s;
+  }
+  .pill:hover{background:var(--clay);transform:translateY(-1px)}
+  .pill-ghost{color:var(--ink);background:transparent;border:1px solid var(--line)}
+  .pill-ghost:hover{background:transparent;border-color:var(--ink);color:var(--ink)}
+
+  /* hero */
+  header.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:130px 0 60px}
+  .hero .label{margin-bottom:34px}
+  .hero h1{font-size:clamp(3.4rem,11vw,8.5rem)}
+  .hero h1 em{color:var(--clay)}
+  .hero .sub{margin-top:32px;max-width:30ch;font-size:1.32rem;color:var(--ink-70);line-height:1.5}
+  .hero .sub em{color:var(--ink)}
+  .hero-cta{margin-top:46px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;justify-content:center}
+  .hero-foot{margin-top:60px}
+  .scrollcue{display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--ink-35)}
+  .scrollcue .ln{width:1px;height:46px;background:linear-gradient(var(--ink-35),transparent)}
+
+  /* section scaffold */
+  section{padding:120px 0}
+  .sec-label{display:flex;align-items:center;gap:16px;justify-content:center;margin-bottom:54px}
+  .sec-label::before,.sec-label::after{content:"";height:1px;width:42px;background:var(--line)}
+  .center{text-align:center}
+
+  /* signature 0->1 path */
+  .path-wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  .path-svg{width:100%;height:auto;display:block;overflow:visible}
+  .path-svg .trail{fill:none;stroke:var(--ink);stroke-width:1.4;stroke-dasharray:1600;stroke-dashoffset:1600;transition:stroke-dashoffset 2.6s ease}
+  .path-svg.in .trail{stroke-dashoffset:0}
+  .path-svg .node{fill:var(--paper);stroke:var(--ink);stroke-width:1.4}
+  .path-svg .node-fill{fill:var(--clay);stroke:none}
+  .path-svg .nlabel{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;fill:var(--ink-50)}
+  .path-svg .nyear{font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:.1em;fill:var(--ink-35)}
+  .path-svg .endcap{font-family:'Cormorant Garamond',serif;font-size:46px;fill:var(--ink)}
+  .path-caption{text-align:center;margin-top:30px;color:var(--ink-50);font-size:1.05rem;font-style:italic}
+
+  /* about / letter */
+  .letter p{margin-bottom:22px;color:var(--ink-70);font-size:1.14rem}
+  .letter p strong{font-weight:500;color:var(--ink)}
+  .letter .lead{font-size:1.45rem;line-height:1.5;color:var(--ink);font-family:'Cormorant Garamond',serif;font-weight:400}
+  .sig{margin-top:40px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;color:var(--ink)}
+
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;max-width:920px;margin:0 auto;text-align:center}
+  .stat .n{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.6rem,6vw,4rem);line-height:1;color:var(--ink)}
+  .stat .c{margin-top:14px;font-size:.96rem;color:var(--ink-50);line-height:1.45}
+  @media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr);gap:48px 24px}}
+
+  /* experience */
+  .xp{max-width:840px;margin:0 auto}
+  .job{display:grid;grid-template-columns:150px 1fr;gap:48px;padding:42px 0;border-top:1px solid var(--line)}
+  .job:first-child{border-top:none}
+  .job .meta{font-family:'Inter',sans-serif}
+  .job .meta .yr{font-size:11.5px;letter-spacing:.1em;color:var(--ink-35)}
+  .job .meta .role{display:block;margin-top:10px;font-size:12px;letter-spacing:.03em;color:var(--clay);line-height:1.5}
+  .job h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:2rem;line-height:1.1}
+  .job .tag{display:block;margin-top:6px;font-size:1.02rem;color:var(--ink-50);font-style:italic}
+  .job ul{margin-top:18px;list-style:none}
+  .job li{position:relative;padding-left:22px;margin-bottom:8px;color:var(--ink-70);font-size:1.06rem;line-height:1.55}
+  .job li::before{content:"";position:absolute;left:0;top:.85em;width:5px;height:5px;border-radius:50%;background:var(--ink-35)}
+  .job li strong{font-weight:500;color:var(--ink)}
+  @media(max-width:680px){.job{grid-template-columns:1fr;gap:14px;padding:34px 0}}
+
+  /* impact trio */
+  .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:56px;max-width:980px;margin:0 auto}
+  .pillar{text-align:center}
+  .pillar .ill{height:88px;display:flex;align-items:center;justify-content:center;margin-bottom:26px}
+  .pillar .ill svg{width:74px;height:74px;color:var(--ink)}
+  .pillar h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:1.7rem;margin-bottom:14px}
+  .pillar p{font-size:1.05rem;color:var(--ink-70);line-height:1.6}
+  .pillar .kpi{display:block;margin-top:18px;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+  @media(max-width:760px){.trio{grid-template-columns:1fr;gap:64px;max-width:420px}}
+
+  /* speaking */
+  .speak{max-width:760px;margin:0 auto}
+  .speak .row2{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+  .sp{display:flex;gap:18px;padding:26px 0;border-top:1px solid var(--line);align-items:baseline}
+  .sp .mk{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--clay);line-height:1}
+  .sp strong{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.35rem;line-height:1.2}
+  .sp span{font-size:.98rem;color:var(--ink-50);font-style:italic}
+  @media(max-width:620px){.speak .row2{grid-template-columns:1fr;gap:0}}
+
+  /* orgs */
+  .orgs{margin-top:80px;text-align:center}
+  .orgs .row3{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 38px;margin-top:28px}
+  .orgs .row3 span{font-family:'Cormorant Garamond',serif;font-size:1.45rem;color:var(--ink-50)}
+
+  /* education inline */
+  .edu{max-width:760px;margin:84px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;text-align:center}
+  .edu .d{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);line-height:1.3}
+  .edu .s{margin-top:8px;font-size:.95rem;color:var(--ink-50);font-style:italic}
+  @media(max-width:680px){.edu{grid-template-columns:1fr;gap:40px}}
+
+  /* closing */
+  .closing{background:var(--ink);color:var(--paper);text-align:center;padding:130px 0}
+  .closing .label{color:rgba(246,243,236,.5)}
+  .closing h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.6rem,6vw,4.4rem);margin:30px auto 0;max-width:18ch;line-height:1.08}
+  .closing h2 em{color:#d99878}
+  .closing p{margin:26px auto 40px;max-width:42ch;color:rgba(246,243,236,.66);font-size:1.16rem}
+  .closing .pill{background:var(--paper);color:var(--ink)}
+  .closing .pill:hover{background:var(--clay);color:var(--paper)}
+
+  footer{padding:46px 0;text-align:center}
+  footer .row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+  footer .label{color:var(--ink-35)}
+  footer a.label:hover{color:var(--ink)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity 1s ease,transform 1s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.path-svg .trail{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="row">
+    <a href="#top" class="wordmark">Pratik Renuse</a>
+    <div class="navlinks">
+      <a href="#path">The Path</a>
+      <a href="#note">A Note</a>
+      <a href="#work">Work</a>
+      <a href="#beyond">Beyond</a>
+      <a href="#stage">On Stage</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <p class="label reveal">Growth · Speaking · Mentorship</p>
+  <h1 class="display reveal">Zero <em>to</em> One.</h1>
+  <p class="sub reveal">A decade spent turning <em>nothing</em> into something that scales — across the startups of Europe.</p>
+  <div class="hero-cta reveal">
+    <a class="pill" href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    <a class="pill pill-ghost" href="#work">See the work</a>
+  </div>
+  <div class="hero-foot reveal">
+    <div class="scrollcue"><span class="label" style="letter-spacing:.18em">Based in the Netherlands</span><span class="ln"></span></div>
+  </div>
+</header>
+
+<!-- SIGNATURE 0->1 PATH -->
+<section id="path">
+  <div class="sec-label reveal"><span class="label">The thread</span></div>
+  <p class="center display reveal" style="font-size:clamp(1.9rem,4vw,2.8rem);max-width:18ch;margin:0 auto 56px">One pattern runs through everything: building from ground zero.</p>
+  <div class="path-wrap reveal">
+    <svg class="path-svg" viewBox="0 0 920 280" role="img" aria-label="A rising path from zero to one, marking the ventures built from scratch: Airbus and Bayer, Infento, VU, and Bueno.">
+      <!-- the rising trail -->
+      <path class="trail" d="M40,232 C150,232 180,196 250,188 C330,179 360,150 430,140 C520,128 545,96 620,86 C700,75 730,52 812,44"/>
+      <!-- start glyph: zero -->
+      <text class="endcap" x="14" y="248" text-anchor="middle" style="fill:var(--ink-35);font-size:40px">0</text>
+      <!-- nodes -->
+      <g>
+        <circle class="node" cx="250" cy="188" r="6"/>
+        <text class="nlabel" x="250" y="218" text-anchor="middle">Airbus · Bayer</text>
+        <text class="nyear" x="250" y="234" text-anchor="middle">2016 – 2017</text>
+      </g>
+      <g>
+        <circle class="node" cx="430" cy="140" r="6"/>
+        <text class="nlabel" x="430" y="170" text-anchor="middle">Infento</text>
+        <text class="nyear" x="430" y="186" text-anchor="middle">€0 → €2M</text>
+      </g>
+      <g>
+        <circle class="node" cx="620" cy="86" r="6"/>
+        <text class="nlabel" x="620" y="116" text-anchor="middle">VU</text>
+        <text class="nyear" x="620" y="132" text-anchor="middle">Olympics</text>
+      </g>
+      <g>
+        <circle class="node-fill" cx="812" cy="44" r="7"/>
+        <text class="nlabel" x="812" y="22" text-anchor="middle" style="fill:var(--clay)">Bueno</text>
+        <text class="nyear" x="812" y="74" text-anchor="middle">28 countries</text>
+      </g>
+      <!-- end glyph: one -->
+      <text class="endcap" x="888" y="52" text-anchor="middle">1</text>
+    </svg>
+  </div>
+  <p class="path-caption reveal">From Airbus and Bayer to founding teams — each time, something from nothing.</p>
+</section>
+
+<!-- STATS -->
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat"><div class="n">€2M+</div><div class="c">DTC revenue scaled from zero at Infento</div></div>
+      <div class="stat"><div class="n">$848K</div><div class="c">#1 most-funded STEM Kickstarter, globally</div></div>
+      <div class="stat"><div class="n">100+</div><div class="c">Startups mentored across five continents</div></div>
+      <div class="stat"><div class="n">3×</div><div class="c">TEDx talks · 50+ speeches worldwide</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- A NOTE -->
+<section id="note" style="background:var(--paper-warm)">
+  <div class="sec-label reveal"><span class="label">A note</span></div>
+  <div class="narrow letter">
+    <p class="lead reveal">Over the last decade working across Europe, I realised I thrive in the “0 to 1” environment — building a startup from nothing into something real.</p>
+    <p class="reveal">That pattern repeats. <strong>Infento</strong> in Amsterdam, from €0 to €2M+ in D2C sales. <strong>VU</strong> in Switzerland, from €0 to €275K+ and onto the Olympics. <strong>Bueno</strong> in Spain, from €0 to €300K+ ARR across 28 countries at 24× LTV/CAC. And before them, Bayer's €250K global executive event and Airbus's EU-wide branding.</p>
+    <p class="reveal">To share what I've learned, I advise and mentor founders across the USA, EU, Asia, and Africa — through Techstars, EBRD, Seedstars, Founder Institute, and StartupIndia–NITI Aayog. I also coach graduates from Harvard, LSE, IMD, HEC Paris, Oxford, and the IIMs. Transforming someone's perspective so they believe in themselves is immensely fulfilling to me.</p>
+    <p class="reveal">And occasionally, I get on a stage — TEDx, the Asia Pacific Digital Marketing Conclave, the Russian Stream Conference. If we could create value together, I'm always happy to meet likeminded folks.</p>
+    <p class="sig reveal">— Pratik</p>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="sec-label reveal"><span class="label">The work</span></div>
+  <div class="xp">
+
+    <div class="job reveal">
+      <div class="meta"><span class="yr">2022 — PRESENT</span><span class="role">Growth Lead · Founding Team · Shareholder</span></div>
+      <div>
+        <h3>Bueno<span class="tag">UK gov-award-winning fintech for foreign property owners in Spain</span></h3>
+        <ul>
+          <li>Built marketing single-handedly from zero to <strong>2,000+ paying subscribers and €300K+ ARR</strong> across 28 countries at 24× LTV/CAC.</li>
+          <li>Drove 1M+ organic visits, outranking Revolut and Wise on target keywords.</li>
+          <li>Grew 15,000+ newsletter subscribers at 70% open rate; 13% convert to paying within 3 months.</li>
+          <li>Architected the full growth engine across content, SEO, paid, lifecycle, and partnerships; launched 3 markets.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job reveal">
+      <div class="meta"><span class="yr">2021 — 2025</span><span class="role">Head of Marketing · Founding Team</span></div>
+      <div>
+        <h3>VU<span class="tag">The #1 Swiss brand for professional skiers & snowboarders</span></h3>
+        <ul>
+          <li>Recommended and used by Olympians.</li>
+          <li>Drove <strong>€275K+ in revenue and 4.4× peak-season growth</strong>.</li>
+          <li>Built VU's full digital presence end-to-end: brand identity, site, paid media, lifecycle, and community.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job reveal">
+      <div class="meta"><span class="yr">2017 — 2019</span><span class="role">Online Marketing Lead · Founding Team</span></div>
+      <div>
+        <h3>Infento<span class="tag">Consumer hardware & STEM products, Kickstarter-funded</span></h3>
+        <ul>
+          <li>Built marketing from zero, scaling the DTC web shop from <strong>€0 to €2M ARR</strong>.</li>
+          <li>Led the <strong>$848K Kickstarter</strong> — the #1 most-funded STEM project globally in 2018.</li>
+          <li>Won 3 international product design awards: Red Dot, German Design Award, Parent's Choice Gold (US).</li>
+          <li>Managed 6-figure paid budgets at a sustained 12–15% CAC; helped grow the team to 25+.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job reveal">
+      <div class="meta"><span class="yr">2020</span><span class="role">Head of Marketing</span></div>
+      <div>
+        <h3>Growack Media<span class="tag">B2B inbound & growth marketing, Western Europe</span></h3>
+        <ul>
+          <li>Led inbound and growth operations for B2B clients across Western Europe.</li>
+          <li>HubSpot Partner and Clutch 2021 Top B2B Company in Western Europe.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job reveal">
+      <div class="meta"><span class="yr">2017</span><span class="role">Project Management</span></div>
+      <div>
+        <h3>Bayer<span class="tag">Fortune 500 life sciences · Berlin</span></h3>
+        <ul>
+          <li>Managed a <strong>€250K budget</strong> for GIM, Bayer's premier global senior-executive event spanning 50+ countries.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job reveal">
+      <div class="meta"><span class="yr">2016</span><span class="role">Marketing</span></div>
+      <div>
+        <h3>Airbus<span class="tag">Fortune 500 aerospace · Munich</span></h3>
+        <ul>
+          <li>Led branding and online marketing for the EU-wide 'NEOShield' project as single-threaded owner.</li>
+          <li>Increased organic social reach by <strong>127% in 2 months</strong>; led the SEO strategy to rank #1 on Google.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BEYOND -->
+<section id="beyond" style="background:var(--paper-warm)">
+  <div class="sec-label reveal"><span class="label">Beyond the operator role</span></div>
+  <p class="center display reveal" style="font-size:clamp(1.9rem,4vw,2.7rem);max-width:20ch;margin:0 auto 64px">Mentoring, teaching, and backing what's next.</p>
+  <div class="wrap">
+    <div class="trio">
+
+      <div class="pillar reveal">
+        <div class="ill" aria-hidden="true">
+          <!-- mentoring: orbit -->
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.3">
+            <circle cx="40" cy="40" r="7"/>
+            <ellipse cx="40" cy="40" rx="32" ry="13"/>
+            <ellipse cx="40" cy="40" rx="32" ry="13" transform="rotate(60 40 40)"/>
+            <ellipse cx="40" cy="40" rx="32" ry="13" transform="rotate(120 40 40)"/>
+            <circle cx="72" cy="40" r="2.4" fill="currentColor" stroke="none"/>
+            <circle cx="24" cy="12.3" r="2.4" fill="currentColor" stroke="none"/>
+            <circle cx="24" cy="67.7" r="2.4" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h3>Mentorship</h3>
+        <p>Mentor at Techstars, EBRD, Seedstars, and Founder Institute — guiding founders across fintech, D2C, health tech, and AI on go-to-market, growth, and fundraising.</p>
+        <span class="kpi">100+ startups · 9.7/10 rating</span>
+      </div>
+
+      <div class="pillar reveal">
+        <div class="ill" aria-hidden="true">
+          <!-- teaching: open book -->
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.3">
+            <path d="M40 22 C32 16 18 16 12 19 L12 58 C18 55 32 55 40 61"/>
+            <path d="M40 22 C48 16 62 16 68 19 L68 58 C62 55 48 55 40 61 Z"/>
+            <path d="M40 22 L40 61"/>
+            <path d="M19 28 H32 M19 36 H32 M19 44 H30" stroke-width="1"/>
+            <path d="M48 28 H61 M48 36 H61 M50 44 H61" stroke-width="1"/>
+          </svg>
+        </div>
+        <h3>Teaching</h3>
+        <p>Visiting Professor at Tetr College of Business and Masters' Union. Coaches graduates from Harvard, LSE, HEC Paris, Yale, and the IIMs via Evisors and Firsthand.</p>
+        <span class="kpi">500+ graduates coached</span>
+      </div>
+
+      <div class="pillar reveal">
+        <div class="ill" aria-hidden="true">
+          <!-- investing: growing sprout -->
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.3">
+            <path d="M40 64 L40 34"/>
+            <path d="M40 40 C40 28 30 22 18 22 C18 34 28 40 40 40 Z"/>
+            <path d="M40 34 C40 24 49 19 60 19 C60 29 51 34 40 34 Z"/>
+            <path d="M28 64 H52" stroke-width="1.3"/>
+          </svg>
+        </div>
+        <h3>Investing</h3>
+        <p>Personal investor in high-growth consumer tech and fintech — including Perplexity, Nothing, Atom Bank, and Plum — via Crowdcube and Republic.</p>
+        <span class="kpi">Four active positions</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ON STAGE -->
+<section id="stage">
+  <div class="sec-label reveal"><span class="label">On stage</span></div>
+  <p class="center display reveal" style="font-size:clamp(1.9rem,4vw,2.7rem);max-width:22ch;margin:0 auto 14px">On growth, scaling, and brand.</p>
+  <p class="center reveal" style="color:var(--ink-50);font-style:italic;max-width:44ch;margin:0 auto 56px">3 TEDx talks and 50+ speeches across 14+ countries in Europe, Asia, the Middle East, and the US.</p>
+  <div class="speak reveal">
+    <div class="row2">
+      <div class="sp"><span class="mk">✦</span><div><strong>TEDx</strong><span>3 talks, incl. the future of marketing</span></div></div>
+      <div class="sp"><span class="mk">✦</span><div><strong>APAC Digital Marketing Conclave</strong><span>Keynote on growth marketing</span></div></div>
+      <div class="sp"><span class="mk">✦</span><div><strong>Russian Stream Conference</strong><span>Featured speaker</span></div></div>
+      <div class="sp"><span class="mk">✦</span><div><strong>20+ international events</strong><span>Keynotes across four continents</span></div></div>
+    </div>
+  </div>
+
+  <div class="orgs reveal">
+    <span class="label">Trusted by · worked with</span>
+    <div class="row3">
+      <span>Airbus</span><span>Bayer</span><span>Techstars</span><span>EBRD</span>
+      <span>Seedstars</span><span>Founder Institute</span><span>Masters' Union</span><span>Tetr</span>
+    </div>
+  </div>
+
+  <div class="edu reveal">
+    <div><div class="d">M.Sc. International Business</div><div class="s">S.P. Jain Institute of Management & Research</div></div>
+    <div><div class="d">M.Sc. International Business</div><div class="s">IÉSEG School of Management</div></div>
+    <div><div class="d">B.Tech. Computer Science</div><div class="s">Vishwakarma Institute of Technology</div></div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing" id="contact">
+  <p class="label reveal">Let's talk</p>
+  <h2 class="reveal">Let's make something <em>from nothing.</em></h2>
+  <p class="reveal">Whether you're building 0 to 1, looking for a mentor, or want a speaker on growth — I'm always happy to meet likeminded folks.</p>
+  <div class="reveal"><a class="pill" href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">Reach me on LinkedIn</a></div>
+</section>
+
+<footer>
+  <div class="wrap row">
+    <span class="label">© <span id="yr"></span> Pratik Renuse</span>
+    <a class="label" href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">linkedin.com/in/pratikrenuse →</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target);} });
+  },{threshold:.14});
+  document.querySelectorAll('.reveal,.path-svg').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

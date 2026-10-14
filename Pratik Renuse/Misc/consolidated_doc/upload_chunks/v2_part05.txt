@@ -1,0 +1,1361 @@
+Mochary Method Curriculum — Volume 2 — Part 5 of 6
+============================================================
+
+## Chapter 224: Fundraising- Emergence Capital advice (traditional method)
+
+*Source: https://docs.google.com/presentation/d/1CPxI_AUL1IKwqO71yciOWDJ8no_C2cPV4_hSMfvNKgw/edit#slide=id.g73cfc40866_0_355*  
+*(15 min)*  
+
+## The Secret Playbook Behind Emergence's Perfect Record
+
+Joe Floyd
+General Partner
+
+Over our last 3 Funds, 100% of our eligible companies have raised a financing round following our initial check.
+
+*Excludes companies that are profitable, acquired or that haven't attempted to raise yet.*
+
+Those companies have raised $2.1B across 58 rounds of financing.
+
+*As of October 31, 2019*
+
+Today, I'm going to share the secret playbook that we use to help our portfolio companies fundraise.
+
+## A Perfect Fundraising Process Takes Time
+
+Teams need ~1 month to prepare the core materials before their first investor meeting.
+Teams need 2 - 6 weeks to execute a fundraising process from first meeting to signed term sheet.
+Unless you are Semisonic, closing time is ~1 month from a signed term sheet to money in the bank.
+
+Preparation | Execution | Closing
+
+## When to Fundraise...Timing Matters!
+
+**Holidays and Vacation**
+The more money a VC firm manages, the more likely they are to be on vacation. As silly as this sounds, you do not want to be fundraising during summer vacations, Thanksgiving to Christmas or ski week in February (apparently this is a thing…).
+
+**Quarter Ends**
+You want to avoid being in the thick of your conversations with investors at the quarter end. If you are close to the quarter end, most investors will want to wait to see the results. If you miss your quarter badly, then your process will die.
+
+**Seasonality**
+If your business has a strong seasonality, then you will want to time your fundraise for the tail end of strong periods and avoid raising during the weak periods.
+
+**Milestones and Metrics**
+You strategically want to fundraise either right before or right after big milestones or hitting important metrics. For example, it would be worth timing a fundraise after signing a key channel partner, releasing a new product or signing a key hire.
+
+**Zero Cash Date**
+Given a 3 month fundraising cycle, you will want to start a fundraise at least 6 months prior to your zero cash date. Factor venture debt runway at 50% to be conservative.
+
+## Preparation Makes Perfect
+
+A. Target investor list
+B. Pitch deck
+C. Data deck
+D. Data room for legal and financial diligence
+E. Customer and management references
+
+## Target Investor List: Finding Investor / Company Fit
+
+**Target List Size**
+The average Series A process targets ~30 investors.
+The average Series B process targets ~20 investors.
+
+**Timing**
+Allow for 2 weeks advance notice to schedule VC meetings.
+
+**Right Partner**
+Find the right partner (stage, expertise, availability) at each firm and identify the strongest warm intro to them.
+
+**Optimize**
+Understand what outcome you want to optimize for: specialist vs. generalist, expertise, brand, check size / price, the individual.
+
+**Competition**
+Eliminate VCs with competitive investments.
+
+## The Enterprise Fundraising CRM
+
+## The Perfect Pitch Deck
+
+**Length**
+The perfect Series A pitch deck is ~20 slides.
+The perfect Series B pitch deck is ~25 slides to account for additional data slides.
+
+**Time**
+For an in-person meeting, be prepared to fit your pitch into as little as 30 minutes.
+For an emailed pitch, an investor will scan a deck in less than 3 minutes so make sure the key points are obvious.
+
+**Storytelling Matters**
+The best pitches follow a story arc where you grab someone's attention, introduce a conflict and build toward a gradual resolution and ultimately your ask.
+Whereas seed pitches are all about selling vision, Series A is centered around proving product/market fit and then extrapolating GTM.
+
+**Lead the Witness**
+Be self-aware of your weaknesses and the questions VCs will immediately ask about your business. Tackle the hard questions before they are asked with slides that let you frame the perspective.
+
+**Track Engagement**
+Never email your pitch deck directly. Always use a web service like Docsend so you can track engagement.
+Eliminate friction so avoid password requirements and make the deck downloadable.
+
+## The Emergence Pitch Deck Template
+
+## Data Deck: Lead the Witness by Framing Your Data
+
+**GPs are Lazy**
+Most GPs are too lazy, too busy or not capable of doing the work to uncover secrets in your data. Thus, you should do it for them.
+
+**Associates are Not**
+GPs may ask Associates to analyze your data. Associates want to look smart and the best way to do that is to find flaws and pick your data apart.
+
+**Tell Your Story**
+When you assemble a data deck, you control the narrative with charts and graphs. You control the story and you get to lead investors to the conclusions that you want them to draw.
+
+**Lies, Lies and Statistics**
+Your data deck gives you the opportunity to highlight your strengths and explain your weaknesses. Investors will find your weaknesses so you may as well explain them and your plans to ameliorate them.
+
+**Keep the Process Moving**
+Giving every investor the same data deck prevents your fundraising process from slowing down based on their available resources to analyze your data
+
+## The Emergence Data Deck Slides and Google Sheet Template
+
+## References and Legal Diligence: Checking the Box
+
+**Use Customers Strategically**
+Even your best customers will get annoyed if you ask them to do 20 references. Find 10-15 customers that will give investor references and spread them out to investors who are at the finish line. Save your most valuable references for your preferred investors.
+
+**Consider Recording**
+If you have a customer reference that every investor wants to call, then consider having one of your insiders record a Zoom customer reference and then sharing the video. This can speed up the process and prevent overtaxing a valued relationship.
+
+**Give References Talking Points**
+Often times, the customer reference is from a senior person, not necessarily the person who is closest to the details so help them out. Remind them of the size of their contract, their engagement metrics, ROI and any upsells they've done.
+
+**Use References to Align Process**
+Customer references and management references can be used to align the timing of the various investors in a process. If one investor is too far ahead of the others, then references are an easy way to slow their process while you let others catch up.
+
+**Shorten the Risk Window**
+Legal diligence is a necessary evil but you want to prepare as much of the required materials in advance of signing a term sheet so you can make the time to close as fast as possible. The longer the window, the more risk your deal falls apart.
+
+## Reference Template, Sample VC Diligence List and Legal and Financial Diligence List for Data Room
+
+## Execute Like Your Startup's Life Depends on It
+
+**Block Time**
+Block time on your calendar weeks in advance for fundraising. If you are not in Silicon Valley, then it is even more important to block time and schedule meetings two weeks in advance.
+
+**Learn and Iterate Quickly**
+Refine your pitch after every meeting and write down the questions you received and the areas people were skeptical. Remember that you are not simply selling, but also qualify the investor so ask questions about their process, their expertise and their fit.
+
+**Ask for Help**
+As the philosopher Mick Jagger once said, "You can't always get what you want." Treat every meeting with an investor as an opportunity to ask for something: a customer intro, a talent recommendation or simply ask for their opinion. You just might get what you need.
+
+**Keep the Ball in Their Court**
+In a fundraising process, you want to keep the pressure on the investor (which also keeps their attention from waning). So it is incumbent upon you to answer questions quickly, send materials quickly and generally drive follow up.
+
+**Manage Your Pipeline**
+It is important to manage your pipeline like a sales funnel. Qualify out investors that aren't interested quickly (so you can focus on higher probability conversions) and try to drive all the interested parties on roughly the same timeline.
+
+## ABC: Always Be Closing
+
+**Know When to Go All-In**
+VCs can conduct diligence forever and drag out a decision. The key is to understand each investors' decision making process and try to align them to finish at roughly the same time. Then, you push all-in when everyone is almost finished.
+
+**Reverse Diligence**
+Ask investors for a list of all their CEOs and then reach out to a few. You'll want to pick both successful companies and failures to understand how your future board member behaved in good and tough times.
+
+**Selection**
+If you only have one term sheet, then this is simple! If you have more than one term sheet, then we always recommend ranking your term sheets based on preferred investor regardless of terms.
+
+**Negotiation**
+We recommend starting with your top choice and giving them the option to close the deal at the terms the market dictated. Nearly every time, this results in the your top choice investor signing at close to the best terms you were offered.
+
+**Legal**
+If you have all of your legal diligence prepared, then sprinting from a term to a close should be easy (and possible within 2-3 weeks). Cap the legal expenses and guide counsel to a deadline so you have a margin of error.
+
+## Remember the Five P's for a Perfect Fundraise
+
+**Prepare Materials** - Preparation is the key to a smooth fundraising process. Allow yourself at least one month to prepare your materials.
+
+**Practice the Pitch** - Practice with your team, practice with your friends, practice with your investors. Then practice some more. You only get one shot to make a great first impression and polish, confidence and presence matters.
+
+**Precise Targets** - Focusing on the right investors and getting a strong, direct introduction will save you time and increase the probability of success.
+
+**Pipeline Management** - Make sure you have enough investors moving through your pipeline at the same stages so you have a competitive process.
+
+**Patience Make Perfect** - Once you receive term sheets, you are in the driver's seat. Take your time and choose the right investor that is aligned with your company's long term success.
+
+Three quick asks from our community...
+
+Please share the deck and templates with your network!
+
+Please send us feedback on the templates so we can continue to refine and improve them!
+
+Now that we've shared our playbook and templates, please don't use these techniques against us!
+
+## Thank You
+
+
+---
+
+## Chapter 225: Fundraising - late-stage:  Brand or Price?
+
+*Source: https://docs.google.com/document/d/1I7BXtJHbo-21PFD3Kasn0P6USFZL3cJTvm989tt0peI/edit*  
+*(3 min)*  
+
+[Fundraising - late-stage:  Brand or Price?](https://docs.google.com/document/d/1I7BXtJHbo-21PFD3Kasn0P6USFZL3cJTvm989tt0peI/edit) (3 min)
+
+"Matt, I already have two brand name investors in my Series A and B. Now it is my Series C. Should I continue to optimize for a brand (lower value) or simply go for highest price (non-value-add)?"
+
+Each time you take money at a lower value, you are "buying" that investor. First, calculate exactly how much it costs, measured in equity dilution. If you take in $100mm at $1b or $100mm at $2b, you are paying an extra 5% of equity given away to buy the brand investor. What are you getting for that 5%?
+
+In the beginning, you likely need one brand to simply validate the value of the Series A itself so that you can recruit. That firm may or may not add value. Still, you likely need them for validation reasons, akin to the positive signaling for an individual who has gone to Stanford or MIT or worked at Google or Amazon.
+
+After that, however, the brand's value is only tied to the actual work that they will do for you. You are not more validated if you went to both Stanford and MIT. Either one of them is enough to signal your academic prowess. In the same way, a second brand name investor doesn't increase your validation. So, they have to earn their entry with actual value-added.
+
+The best way to determine whether or not they will add value is to ask them to do so … before deciding who to take money from. The hardest that investors will ever work is to win a deal. Take advantage of that. Ask each of the investors that you are considering to do real work for you. This can go on for months. (I have known founders that have done this for six months before choosing.) The investors also don't mind doing this work. It actually turns the bake-off into something that feels more of a meritocracy, which almost all prefer (at least those who are willing to do work).
+
+When considering an insider-led round vs. taking in an outsider, know that you are not getting any new blood, and therefore any new value-add by doing an insider-led round, but are getting something likely even more valuable than that: no additional investor to deal with.
+
+Let's be clear, most investors over the long-term are net negative. In the beginning, they may add value, but as time goes on, they no longer do and yet continue to have lots of opinions and need to be catered to. Every new investor has some vote (whether through shares or board seat). And every person says "yes" when they like a person, and "no" when they don't. So, you have to maintain a positive relationship with every new investor. And that takes time. The safest method is to have regular 1-1s with that investor to make them feel heard. And those 1-1s should happen at least quarterly, if not monthly. As you start to add more investors, you can see how the overhead of these 1-1s starts to add up. And this is time that you are not spending on the business itself.
+
+So, any new investor at this stage must add real value. The question then becomes: How much will it cost? What value do they need to add to make that cost worthwhile?
+
+The cost is easily calculable. You simply look at the dilution from the higher price and compare it to the dilution from the lower price (from the brand firm). The difference is the equity cost.
+
+Now you can answer the second question. If you hired an advisor for the amount of equity, what would you need them to do? You would do reference checks to see if that advisor had delivered that kind of value in the past. You would also have an explicit written document of the value that you expect the advisor to deliver. (With an advisor, you have the added advantage that you can end the agreement if the advisor doesn't deliver on the agreement and end the vesting there. Unfortunately, there is no enforcement other than reputation with an investor, which isn't a powerful tool.)
+
+If you cannot justify the equity giveaway, you go with the most passive money out there. But don't think that high price and non-brand means passive. There are quite a few high-price firms that are known to be quite painful. Do your diligence there as well to see who is non-painful, non-intrusive, etc.
+
+Also, for some high-signal investors (like Sequoia Growth), many public markets and crossover investors simply "follow Sequoia." What discount you give to Sequoia, you may well get back in a higher-priced next round.
+
+Here is a snippet from one CEO who feels that this is the case …
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 226: IPO, or not to IPO
+
+*Source: https://docs.google.com/document/d/1Ond3aXqWutjbut4fBT5HBlRXBGlUZ37B0f5d2VU12RM/edit*  
+*(3 min)*  
+
+### [To IPO, or not to IPO?](https://docs.google.com/document/d/1Ond3aXqWutjbut4fBT5HBlRXBGlUZ37B0f5d2VU12RM/edit?usp=sharing) (3 min)
+
+That is the question.
+
+When your company is doing well, many people will want you to take the company public: investors, employees, advisors, friends, family, etc. Publicly-traded shares create the most liquidity at (usually) the highest price for investors and employees alike. The company's lawyers, bankers, and accountants make tremendous fees at the IPO and subsequent transactions. Friends and family members take pride in your company being publicly traded.
+
+With all of these incentives in place, an IPO may feel like a foregone conclusion. **It's not!**
+
+Publicly-traded shares do give a company financial flexibility. But they remove operational flexibility. A pernicious cascade of unintended consequences gets put in place upon an IPO that leads to a set of virtual shackles being placed on your (and your company's) ankles and wrists.
+
+Here's how it works:
+
+The strength of your company's equity value allows you to retain great team members and acquire accretive companies. If your stock value drops significantly and for a sustained period, many of your best people will leave (as the value of their options will have dried up, and they can get hired elsewhere). Likewise, acquisitions will become too expensive to make. These dynamics will negatively and materially impact your ability to run the company well. Therefore, you will do whatever you can to ensure that the stock price does not drop significantly. And this is where the cascade begins.
+
+Each quarter, you will have to forecast next quarter's performance and report on last quarter's actuals. There will be pressure to project growth each and every quarter. If not, shareholders will sell. Once projected, there will be even greater pressure to meet or exceed these projections. If not, shareholders will sell. The hamster wheel has begun to spin.
+
+Now enter the short-sellers who believe that you will at some point fall off of this hamster wheel. They take a short position in your stock, and suddenly their incentive is to show the world all the worst things about your company so that the stock price drops now. Some of these short-sellers have integrity; some don't. Those who don't are willing to spread rumors, lies, and innuendo. While they may be dealing in fiction, the consequences for you are very real.
+
+And finally, there are the very real costs of satisfying the SEC's reporting requirements (Sarbanes-Oxley). This likely costs several million dollars a year in accounting and legal fees. But even more costly is the significant management overhead involved.
+
+These days, the private markets offer tremendous capital (i.e., Softbank, sovereign wealth funds, Tiger Global, Coatue, GV, etc.) at strong valuations. Before creating public equity, reach out to public company CEOs and ask them what the cost/benefit really is.
+
+Mark Zuckerberg famously wanted to keep Facebook private forever. But because many of his employees were exercising their options and selling on the secondary market to create liquidity, the company was at risk of exceeding 500 "owners." At this threshold, the SEC requires that a company have publicly-traded shares. In order not to run afoul of the law, Facebook went public.
+
+Having seen this example, Palantir partnered with a secondary fund to offer liquidity to its employees so that they would never trip the 500+ owner barrier.
+
+Instead of giving in to all the voices around you (particularly from your institutional venture investors) that want you to go public, consider staying private. Capital is abundant in this world. Operational freedom, once lost, is tough to regain.
+
+I don't want to minimize the positives of going public. They are there. It certainly makes fundraising easier if your company is performing well. From one such company's CEO:
+
+"I will say, it is much easier to raise money as a public company. We recently raised $x billion in debt, and the entire process took one week, and I didn't have to do a single meeting. My CFO had to do a bunch of meetings, but totally different from private company raise that would derail my life for 1-2 months."
+
+If you do choose to go public, here are some bits of advice from the CEOs I coach who have already done so:
+
+  - Don't do the roadshow in person.
+      - Brian Armstrong (Coinbase) has an even more radical idea:
+          - Don't do individual meetings.
+          - Instead, schedule 3 meetings.
+              - One with Fidelity, BlackRock, and one other major.
+              - Let all potential investors know the days and times to pick one that works for them.
+              - During each meeting, engage in a Q&A with the major investor. Once that major investor has completed their questions, open it up to a few others.
+      - I think there does need to be individual relationship-building. But that can happen after the general session gets all the basics of company information out of the way. Then the relationship-building meetings can focus on ... relationship-building.
+      - Raise a smaller amount, then expand if needed, so you don't worry about it.
+      - Let the CFO do all the blocking and tackling, i.e., select the service providers, prepare all the documents, the story, do the follow-up meetings, etc.
+
+  - Prepare your team for volatile markets heavily **over and over**. See [IPO: message to your team](https://docs.google.com/document/d/1oWVdHPK5vuzfOK4Onojo9xjYBFvaM18cNxLk9wVcJxI/edit) (1 min).
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 227: IPO:  Founder letter
+
+*Source: https://docs.google.com/document/d/10QKj0H0kC_9AGNT5UKjXGw8jfUiz08Mgv6a84iDLBMI/edit*  
+*(2 min)*  
+
+[IPO:  Founder letter](https://docs.google.com/document/d/10QKj0H0kC_9AGNT5UKjXGw8jfUiz08Mgv6a84iDLBMI/edit) (1 min)
+
+So, you have ignored my advice and chosen to go public. So be it. Well then, at least choose your investors wisely.
+
+You are likely thinking: "I can't choose my public equity investors. They choose me."
+
+Not if you tell the right story.
+
+Jeff Bezos was a public equity investor (worked at hedge fund DE Shaw), so he knew well which kind of investors he wanted and didn't. He knew that he wanted a stable stock price over time, and thus investors who would hold for the long-term and not bail when things looked bad (i.e., profits didn't materialize). But how to attract long-term holders?
+
+**The answer:** Scare away short-term investors. And the vehicle to do this is the IPO Founder Letter.
+
+In his letter, Jeff famously encouraged investors to punish the company if it ever showed a large profit because that meant that it wasn't sufficiently investing in long-term growth. The vast majority of investors want to see significant profits, and they want to see them now. Only true believers (akin to religious zealots!) want the company to bury all its profits back into the company. And of course, when the company has no profits, there is no way for the public investor to really know if it's because the company is investing in the business, or the business just isn't that good and isn't producing much profit in the first place.
+
+The ploy worked. Jeff attracted mostly true believers who allowed him to show almost no profits for ten years and still watch his stock price soar.
+
+If you want to be treated that well, use your Founder Letter to scare away the faint of heart.
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 228: IPO:  message to your team
+
+*Source: https://docs.google.com/document/d/1oWVdHPK5vuzfOK4Onojo9xjYBFvaM18cNxLk9wVcJxI/edit*  
+*(1 min)*  
+
+[IPO:  message to your team](https://docs.google.com/document/d/1oWVdHPK5vuzfOK4Onojo9xjYBFvaM18cNxLk9wVcJxI/edit) (1 min)
+
+The day after you go public, I recommend that you send the following letter (or something like it) to the entire company:
+
+Yesterday, we went public. At the end of the trading day, the market valued our company at ____.
+
+And that is the last time I ever intend to talk about our valuation. Because talking about it, or even thinking about it, will never add any value to our business. But it may well take away from our business by inducing anxiety or distraction.
+
+Mr. Market is a wild beast. And he will have wildly fluctuating views of our value. None of them are real. And each of them shall pass.
+
+There will come a day when our stock price will suddenly tank. And on that day, I hope that each of us will ...
+
+  - Look at our Mission, Vision, Values, OKRs ... and do the next highest priority action on our list.
+
+There will also come a day when our stock price will suddenly soar. And on that day, I hope that each of us will ...
+
+  - Look at our Mission, Vision, Values, OKRs ... and do the next highest priority action on our list.
+
+In fact, my true hope is that none of us will even know if our stock price is soaring or tanking. I hereby commit to not looking at our stock price for the next three months to lead the way. I hope you will do the same. But even if you don't, please do not talk about it with me or anyone else in the company.
+
+We capture our North Star in our Mission, Vision, Values, and OKRs. And nowhere in there have we written … "think about our stock price."
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 229: Liquidity Programs for the Company
+
+*Source: https://docs.google.com/document/d/1z6S84UmEuggKiXVwjb00Qz633gda-6skwOS2T7iFvas/edit*  
+*(3 min)*  
+
+[Liquidity Programs for the Company](https://docs.google.com/document/d/1z6S84UmEuggKiXVwjb00Qz633gda-6skwOS2T7iFvas/edit) (3 min)
+
+Late-stage private companies are increasingly doing secondary liquidity programs to attract and retain employees and relieve pressure to go public prematurely.
+
+Here are your levers as the CEO:
+
+1) You decide when to do the program.
+
+  - Companies typically do these programs shortly following a primary round when a new preferred price has been set. That timing is advantageous because sellers can be more confident in the price they're being offered for their common shares.
+
+2) You set the eligibility rules for participation.
+
+  - Is the program only open to employees and founders? Or, can early investors and former employees also participate?
+  - What portion of vested equity are employees eligible to sell? (20% is the median)
+  - What is the minimum tenure (one year is the median)
+
+3) You determine the size of the secondary.
+
+  - Consider the eligibility rules and take an informal poll of the largest potential sellers to gauge potential interest. The median size of a secondary is ~20%-30% of the size of the recent primary round.
+
+4) You decide whether to structure the program as a company buyback or a third-party tender offer.
+
+  - Third-party tender offer:
+      - Can affect the 409a valuation. The median weighting is ~10% per a recent conversation with Andersen Tax, the largest valuation firm. E.g., if the secondary purchase price is $10/sh. and the baseline 409a is $6/sh. then the 409a will increase by $0.40/sh. to $6.40/sh.
+  - Company Buyback:
+      - Will not harm 409a valuation.
+      - But, it's less advantageous from a cash perspective because the difference between the secondary purchase price and the 409a is taxed as compensation:
+          - The employee pays ordinary income tax.
+          - The employee pays payroll tax.
+          - The company pays payroll tax.
+          - The company recognizes compensation expenses on its income statement.
+  - For this reason, there has been a general trend towards third-party tender offers in recent years (see NPM 2018 summary analysis).
+
+5) You decide whether to raise the secondary round from existing investors or to run a process involving new investors for optimal price discovery:
+
+  - Option 1: Let existing investors do the secondary:
+  - There are about a dozen firms in Silicon Valley whose business model is to get onto the cap table, get cozy with management, and then try to get a 10%-30% discount to market value on secondary shares. Notable names are Tiger, Coatue, Glynn, Industry, Akkadian, 137, Dragoneer, Greenspring, Founders Circle.
+  - Your current Board members can also be persuasive if their firm wants to buy the secondary shares to increase its stake in your company. You answer to them. So, it can be tough to turn down their pitch which is:
+  - Avoid the hassle of running a secondary process.
+  - Leave it within the family. Don't go to new investors.
+  - So, take our offer to do it at a [10%-30%] discount
+
+  - Option 2: Run a competitive process to raise the secondary:
+  - Several companies do this: Nasdaq Private Market, Carta, and Solium. Each charges a 2%-4% fee which pays for itself several times over with the more effective price discovery. The sellers only pay this fee if they decide to tender. The company pays nothing.
+      - My favorite agent is Nasdaq. They've been doing it the longest and have the most experienced operational team. They've managed >250 private company secondary liquidity programs to quote numbers, which have provided > $20 billion of liquidity to > 30,000 individual employees, founders, and investors.
+  - You can exclude any investors you don't want in the process upfront.
+  - There's minimal incremental effort by the company. The data room is already prepared. There may be a few ~60-minute meetings with investors who have expressed a formal indication of interest.
+  - The agent runs a competitive auction for optimal price discovery. You can also invite existing investors to participate. The same fair rules apply to all parties.
+  - The agent will do an employee town hall to explain how they achieved a competitive pricing process. On the contrary, employees can be skeptical if a company must explain that a pricing deal was struck privately with a company insider.
+
+You can get significant input on this from your outside counsel. They will have seen many of these programs.
+
+A company within my portfolio recently did a secondary tender offer using NPM. I asked the CEO for his reaction to the NPM service. His response:
+
+"We found it to be a cautious OK. It was a fair amount of work to use, and the interface is quite clunky. Apparently Carta is working on a competitive product, which our team is excited to use if / when we do it again."
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 230: Liquidity
+
+*Source: https://docs.google.com/document/d/1wDXPJtrqbMuFsPfW_ixEWqvPf20FHAa8D9xZPyPXnVY/edit?usp=drive_web&ouid=102503928790226855337*  
+*(4 min)*  
+
+[Liquidity](https://docs.google.com/document/d/1wDXPJtrqbMuFsPfW_ixEWqvPf20FHAa8D9xZPyPXnVY/edit#heading=h.4d10x6vbe5l5) (4 min)
+
+If your company truly succeeds, you will likely find yourself equity rich but still cash poor. It is essential to create liquidity and diversify out of your company's stock. The general rule of thumb is to have no more than 25% of your net worth in "alternative assets" (illiquid assets). Because your company's equity is likely the majority of your net worth, your net worth is likely >95% alternative assets. It will be close to impossible to sell 75% of your stake in your company. Instead, know that two absolute numbers are significant. $10 million and $100 million.
+
+Most people at $10 million of liquid net worth have the feeling of safety. They breathe a sigh of relief. They are no longer at risk. However, once they sit with that number for a while (and start to raise a family), their mind begins to play through disaster scenarios of how that net worth could disappear altogether. Once their liquid net worth grows past $100 million, the catastrophe scenarios dry up, and a sense of abundance follows. This level is what you are driving for.
+
+The reality is that $10 million is more than enough to live an extraordinary life. But give the mind what it wants. After $100 million, each additional dollar will likely not add in any way to your life and may well create a burden (if you buy assets that need to be maintained and supervised).
+
+Therefore, as soon as your company's equity begins to have significant value, start to sell to secondary share buyers until you have sold $10-100 million.
+
+**Note:** Some investors believe that fear is the best motivator. Therefore, they do not want you to get any (or at least not meaningful) liquidity until they maximize the company's value. I believe that joy is a much better motivator than fear, and therefore I take the opposite view on founder liquidity.
+
+##### **Bank versus Brokerage**
+
+The next question becomes: Where do I put the $10-100 million?
+
+You have three choices:
+
+1.  Commercial Bank (i.e., Citibank)
+2.  Investment Bank (i.e., Goldman Sachs)
+3.  Brokerage (i.e., Schwab)
+
+Holding your money in a commercial bank is a terrible idea. Commercial banks will hold your money and then lend it out to others. The bank gets all of the upsides of these loans, and you bear all of the risks. If the economy tanks and the loans go bad en masse, then the bank fails, and (barring a federal intervention) all of your assets go to pay off the creditors of the bank itself.
+
+Investment banks are similar to commercial banks in that they will use your money to generate profits for their own account. The only difference is that investment banks are not restricted to loans. They can make any kind of bet or investment with your assets. The bank receives all of the upsides while you bear all of the risks. Again, it is a terrible idea to hold your money at an investment bank.
+
+Finally, there are brokerage firms (i.e., Schwab, Fidelity). These firms do not make loans or investments on their own account. Whatever assets you place at a brokerage firm remain in your name, are only invested in the way you direct, and remain the sole beneficiary. That being said, a brokerage firm is still a business and can go bankrupt if its expenses exceed its revenues for an extended time (though this is much less likely than at a bank that is almost sure to go bankrupt in a sharp economic downturn). In that case, your assets do get tied up in bankruptcy court, with one exception: US Treasuries. US Treasuries are never held in custody. They are always held for the beneficial owner. If the brokerage firm were to go bankrupt, your US Treasury certificates would be sent directly to you and not held by the bankruptcy court.
+
+So, start by placing your liquid assets in a brokerage firm. Then invest all of the cash into US Treasuries while you decide on your investment strategy.
+
+##### **Investing**
+
+Now that the money is in a safe place, how do I invest it?
+
+David Swensen is the Chief Investment Officer for the Yale University Endowment. He is considered the grandfather of portfolio management. He wrote a book specifically for the individual investor entitled [Unconventional Success](https://smile.amazon.com/Unconventional-Success-Fundamental-Approach-Investment/dp/0743228383/ref=sr_1_1?ie=UTF8&qid=1528132154&sr=8-1&keywords=david+swensen+unconventional+success). I believe it is the bible for individual asset management. In it, he convincingly describes how professional money managers who can create alpha are exceedingly rare, and you likely will never meet them. The money managers you encounter will probably never create positive net returns (after they siphon off their fees and carried interest) compared to the public equity markets. Therefore, the best approach is for you to simply invest in low-cost index funds (i.e., Vanguard) according to a specific allocation (he recommends about 35% US Equities, 35% non-US Equities, 5% Real Estate and 25% US Treasuries) and then re-balance as often as possible.
+
+Unfortunately, re-balancing means putting in lots of trades, and that is painful. Luckily, someone built a tool to solve that problem. [Wealthfront](https://www.wealthfront.com/) is the leading auto-rebalancing investment engine. Many others have copied it, but as of 2018, it is still my preferred vehicle. I keep the majority of my liquid equity net worth there.
+
+The only glaring flaw of Wealthfront is that it doesn't yet allow an investor to set a % to hold in US Treasuries. So, those I have at Schwab.
+
+There is a new version of Wealthfront called [With Compound](https://withcompound.com/) that is both low-cost and solves the problem of custom % allocations.  Its target customer is the tech founder, with high paper worth and low liquidity.
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 231: Bank vs Brokerage
+
+*Source: https://docs.google.com/document/d/1pZd9N3Abfrphxt-f3uw2lx1ZZy7L5zHiObXRDisWGQk/edit?usp=drive_web&ouid=102503928790226855337*  
+*(2 min)*  
+
+##### [Bank versus Brokerage](https://docs.google.com/document/d/1pZd9N3Abfrphxt-f3uw2lx1ZZy7L5zHiObXRDisWGQk/edit#)
+
+**"You have heard of bank bailouts, because banks fail regularly.  But you have never heard of a brokerage bailout, because brokerages don't fail."**
+
+The next question becomes:  Where do I put my assets?
+
+You have 3 choices:
+
+1.  Commercial Bank (ie- Citibank)
+2.  Investment Bank (ie- Goldman Sachs)
+3.  Brokerage (ie- Schwab)
+
+All of these institutions are a combination of a brokerage firm and a bank.  The question is what percentage?  Because the banking operation is inherently risky (which is why it is regulated by the US government) and can lead to a bankruptcy of the overall entity.  The larger the banking operation, the more at risk the overall firm is.
+
+Why are banks risky?
+
+Commercial banks will hold your cash and then lend it out to others.  The bank gets all of the upside of these loans and you bear all of the risk.  If the economy tanks and the loans go bad en masse, then the bank fails and (barring a federal intervention) all of your assets go to pay off the creditors of the bank itself.  Holding your money in a commercial bank (above the FDIC insured $250,000 per account holder) is a terrible idea.
+
+Investment banks are similar to commercial banks in that they will use your money to generate profits on their own account.  The only difference is that investment banks are not restricted to loans.  They can make any kind of bet or investment with your assets.  The bank receives all of the upside, while you bear all of the risk.  Again, a terrible idea to hold your money at an investment bank.
+
+Almost all commercial and investment banks do have a brokerage arm.  If you hold securities there, the firm cannot lend out these assets unless you sign a margin agreement.  A margin agreement allows you to receive a margin loan.  In that agreement, you also give the brokerage permission to loan at your securities.  However, if you never sign a margin agreement, the brokerage is not allowed to loan out your securities.  Most investment and commercial banks with a brokerage account also provide a relationship manager who is highly incented to get you to sign a margin agreement.
+
+Some people feel that the largest few commercial and investment banks in the US, if they failed, would cause a catastrophic failure to the US economy, and therefore the US government will not allow them to fail.  These institutions are "too big to fail".  If the investments made by these institutions go bad, the thinking is that the US government will step in a pay back all depositors 100%, as happened to the largest banks in the 2008 crisis. Therefore some feel that with this implied US government guarantee, it is safe to hold assets at the biggest institutions (JPMorganChase, Goldman Sachs, Morgan Stanley, etc).
+
+There is some logic to this.  But it is faulty logic.
+
+Banks do provide services (wire transfer, bill pay, ATMs) that make it convenient to hold working capital (the amount of money needed to operate the business, or your personal life for 90 days) at a bank.  But beyond that amount, you want to keep your additional assets at an institution that is inherently stable and does not require the US government to bail them out.
+
+And that is a company that is primarily a brokerage firm.  (ie- Schwab, Fidelity, Brex).
+
+These firms do not try to get each of their depositors to sign a margin agreement.  (And please DO NOT ever sign a margin agreement.)  And therefore the vast majority of securities held there are not loanable.  If you don't sign a margin agreement,  whatever assets you place at a brokerage firm remain in your name, are only invested in the way that you direct, and you remain the sole beneficiary.
+
+That being said, a brokerage firm is still a business and can go bankrupt if its expenses exceed its revenues for a long period of time (though this is much less likely than at a bank that is almost sure to go bankrupt in a sharp economic downturn).  In that case, your assets do get tied up in bankruptcy court, with one exception:  US Treasuries.  US Treasuries are never held in custody.  They are always held for the beneficial owner.  If the brokerage firm were to go bankrupt, your US Treasury certificates would be sent directly to you, and not held by the bankruptcy court.
+
+So, start by placing your liquid assets (above your working capital needs which are fine to leave at bank) in a brokerage firm.  Then invest all of the cash into US Treasuries while you decide on your investment strategy.
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# Legal
+
+## Chapter 232: Legal
+
+*Source: https://docs.google.com/document/d/1DhgD5qLVYHDNSszHTL1tX_uhGMgfAWjFnikHwGsqaxI/edit#*  
+*(2 min)*  
+
+[Legal](https://docs.google.com/document/d/1DhgD5qLVYHDNSszHTL1tX_uhGMgfAWjFnikHwGsqaxI/edit#) (2 min)
+
+There are several actions within a company that require the help of a lawyer: negotiating and documenting investments (whether SAFE or preferred equity), establishing hiring and firing procedures (to comply with HR law), negotiating and signing customer contracts (Non-Disclosure Agreements and commercial contracts), obtaining visas for foreign team members, etc.
+
+Many large multi-discipline law firms are very familiar to investors (Wilson; Cooley; Orrick; Fenwick; Goodwin Procter; etc.) and with whom investors feel comfortable. Therefore, it is good to use such a law firm to document the preferred equity documents. The additional cost for this law firm is more than paid for by the benefit of making the investor feel comfortable.
+
+However, that is where the utility of using the big law firm ends. While the big law firm has the resources to do every kind of legal work the company has, the amount that they will charge for this work is (in my experience) about 10x what could be achieved by working with specialty boutiques and solo practitioners. And the specialists usually do better work.
+
+So, the key is to find a solo practitioner to be your outsourced General Counsel early on in the company's life cycle.
+
+If your company is in person, I prefer to find a lawyer who lives and works close to the company and then require that they come into the office to do their work (and only bill for their time physically at the company). If there is a need to do work outside of the company, I recommend that you only pay for it if the lawyer has gotten specific written permission (email) in advance for both the work and the hours to be billed.
+
+If your company is remote, simply substitute "co-work on a Zoom call" for "come into the office."
+
+If you don't follow this strict procedure, the lawyer can bill for whatever hours they claim the work took. You will have no way of successfully disputing their claim. And you will be on the hook for the bill, even if it is outrageous (which it almost certainly will be).
+
+Solo practitioners are happy to follow these guidelines. Large law firms never agree to them. And because lawyers from large law firms do not come onsite, the amount of time they spend on an issue (or at least claim that they spend on an issue) goes up by 5x over someone who is onsite. Add on top of that that large law firm billing rates are about 2x those for solo practitioners, and you get a bill that is 10x larger and a work product that is often inferior.
+
+Once you have an outsourced General Counsel who comes to your office to do all of your legal work, they can find and manage that specialist for you if a different specialty is needed (immigration, employment, etc.).
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 233: Legal - closing a round - cost and time
+
+*Source: https://docs.google.com/document/d/1fkxV3WpUMhdlx_K7kFoyqQ96C1VY5YYp6-Wd1y10oWU/edit#heading=h.m3y5s2r0wzfn*  
+*(4 min)*  
+
+[Legal - closing a round - cost and time](https://docs.google.com/document/d/1fkxV3WpUMhdlx_K7kFoyqQ96C1VY5YYp6-Wd1y10oWU/edit#) (4 min)
+
+You will need a named-brand law firm to manage your priced rounds. They will only be too eager to help; this is one of their favorite ways to bill large amounts. But there is a technique to manage costs and time. If you let them bill however they want, the result could easily be over $100,000 for a Series A investment. However, if you manage them aggressively, you can get that bill down to $20,000 or less. This is important because the company is often required to pay for both their own counsel and that of the investor if the investor's bill exceeds a certain amount (usually $25,000).
+
+A typical investment happens like this:
+
+1.  Lawyers call each other to discuss the terms. They disagree on a point.
+2.  Company lawyer calls Company Decision-maker for guidance. (For every email written or voicemail left, the lawyer charges for 15 minutes minimum, but usually 1 hour.)
+3.  Company Decision-maker responds to Company lawyer. (Another billable hour.)
+4.  Company lawyer reaches out to Investor lawyer. (Another billable 1-2 hours.
+5.  The investor lawyer then reaches out to the Investor Decision-Maker on this same issue. (Another billable 1-2 hours.)
+6.  Investor lawyer responds to Decision-maker lawyer. (Another billable 1-2 hours.)
+7.  This exchange continues back and forth, racking up billable hours until they agree to every detail. The process takes 45-60 days to get final documents, and the legal bill is often over $100,000 from each side.
+
+But there is another way. It results in **final documents in less than one- week** and legal bills of less than $20,000 from each side.
+
+Investors must pay for legal bills out of their management fee income. This income would otherwise go into their pockets, so investors do not like to pay for legal fees (even their own). They would prefer to give the company more money (which comes out of the fund's investment capital) than pay for the investor's lawyers. Make this accommodation for investors. Require only that the investor support you in enforcing rules of behavior on their lawyers. And those rules are:
+
+1.  Once the basic terms of investment are agreed upon (in a Term Sheet), schedule a 4- to 8- hour meeting (or call). (This meeting may only last 2-3 hours, but enough time must be blocked off to allow it to run longer if necessary.) Required attendees are:
+    1.  Decision-maker from the Company
+    2.  Decision-maker from the Lead Investor
+    3.  Lawyer for the Company
+    4.  Lawyer for the Lead Investor
+
+2.  If any of the four people cannot make the meeting (or call), then reschedule the meeting.
+
+3.  The lawyer, for one side, prepares the first draft of the investment documents. The lawyer for the other side responds with written comments before the meeting/call. There is no other contact between the lawyers.
+
+4.  At the meeting, everyone reviews the documents from beginning to end, paragraph by paragraph, and addresses all written comments. Lawyers are not allowed to speak except to advise their clients on the meaning of the paragraph being reviewed. The negotiation is between Decision-makers at the Company (CEO) and the Lead Investor (investor) directly. The Decision-Makers go through every point until they have reached an agreement on all of them. As each point is agreed upon, the lawyers then agree upon the wording that best reflects the business agreement that was just made in real-time.
+
+5.  The lawyer who wrote the base document then writes up the final language. The other lawyer confirms that this language is precisely what they had agreed upon during the call. The documents are then final.
+
+In this process, the Lawyer for the company can bill no more than:
+
+  - 4 hours Write up base documents
+  - 1 hour Read comments prior to the big meeting
+  - 8 hours Attend the big meeting
+  - 4 hours Write up final language
+  - 17 hours @ $1,000 per hour = $17,000
+
+In this process, the Lawyer for the investor can bill no more than:
+
+  - 4 hours Write comments on the base documents
+  - 8 hours Attend the big meeting
+  - 2 hours Read the final language
+  - 14 hours @ $1,000 per hour = $14,000
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# For Executives
+
+## Chapter 234: You Lost Your Job. Now What?
+
+*Source: https://docs.google.com/document/d/1yY-M3SB9cvB7tS3QVvCSJkQELgbvp0WNtj9OvKKv8Zg/edit?usp=sharing*  
+*(By Faith Meyer) (2 min)*  
+
+[You Lost Your Job. Now What?](https://docs.google.com/document/d/1yY-M3SB9cvB7tS3QVvCSJkQELgbvp0WNtj9OvKKv8Zg/edit?usp=sharing) by Faith Meyer (2 min)
+
+No matter how humanely or well it was handled, losing your job is one of the most traumatic events a person can go through next to losing a primary relationship or loved one. Here are three science-backed steps to take to find your way forward.
+
+1.  **Process Your Emotions & Re-Regulate**
+
+[Fear and anger give bad advice](https://docs.google.com/document/d/1sDWHUm6zwEGiPBQH2Ig6DDvVL-IEQSlfNeQnR2mhjmE/edit), and you likely are feeling a loss of control, some form of grief, scared, pissed off… most likely all of these all at once!
+
+Give yourself permission for the first few days to take no actions other than to handle yourself with care as you process what just happened. By giving yourself the space to process the emotions that come up around being fired or let go, you will recover faster than if you suppressed them. Why?
+
+When we avoid our emotions after something difficult happens, those emotions will tend to sneak their way into our metaphorical driver's seat and unconsciously steer our decisions. We don't want to make decisions about future employment with clouded judgment or out of desperation.
+
+Also, remember that grieving a job loss is normal, and there is no "right way" to grieve. The most commonly accepted stages of grief are: denial, anger, bargaining, depression, and acceptance.
+
+2.  **Look Back to Look Forward**
+    Now that you've taken some time to process the emotional aftershocks, you're likely in a more clear-headed space.
+
+    If so, reflect on your experiences at the company and take an honest inventory of what went well (consider your [zone(s) of genius](https://docs.google.com/document/d/11UVWJox31Ani8Cq6Ymhm6DiVUiv5vPkOQd8ZdGpYmbs/edit#)) and where you see opportunities for yourself to improve going forward. What did you like about the company, culture and/or your role?
+
+    It's helpful to objectively reflect on where we could have done better so we can learn and improve going forward. However, it's not constructive to tear yourself down, so watch out for negative thought spirals and be mindful of the stories you tell yourself in the absence of fact.
+
+    By learning from the past, and then orienting your mind to a positive that you want more of, you bring your conscious and subconscious online in a powerful way to start moving toward that outcome.
+
+3.  **Create a Game Plan**
+    This is a great time to reach out to your network for referrals, recommendations, guidance, support… you name it. In addition, here are some questions to consider as you create your plan of attack for the job search:
+
+      - Where would you like to go? What would you like to do?
+      - Do you need to update your resumé and/or LinkedIn?
+          - Many people don't take advantage of the Recommendations portion of their LinkedIn profiles, which is an excellent way for others to help highlight your key professional skills, experiences, attributes and/or successes.
+      - What have other people done to successfully navigate the job search process?
+      - What job search sites or recruiters do you prefer?
+      - Who do you know that might know of openings or who could make an introduction?
+      - Be mindful of your emotional state. If depression develops or worsens, partner with a therapist to process the traumatic event(s) around losing your job and work on yourself so you'll be ready to show up as your best self as opportunities arise.
+
+Remember: Job searches are marathons, not sprints. This too shall pass. Practice patience and positive self talk. Pace yourself and create a structure for your days so you can maintain your wellbeing throughout this process. You can create a [top goal](https://docs.google.com/document/d/1rWlx4P0Kpp4E8nFajcwDa4or_1EINv_ITTM-Ruo5XvQ/edit) for yourself to define and protect your time spent on the search and finding time for self care, [restoration and creativity](https://docs.google.com/document/d/1SUU3WVCsXKBLx0IUZoz9K939khuDV5VUD7grBgJ5Wis/edit).
+
+For many of us, losing our jobs is our worst nightmare. If that was true for you, remember this: You've made it through 100% of your worst days, and you'll make it through this one too.
+
+**RESOURCES**
+
+  - Find a therapist in the US <https://www.psychologytoday.com/us/therapists>
+  - A brief overview of Elizabeth Kübler-Ross' work on grief and the grieving process. <https://psychcentral.com/lib/the-5-stages-of-loss-and-grief>
+  - Talk to a coach or helping professional who specializes in job transitions. Or, my coach colleague Celine recommends the [*Designing Your Life*](https://bookshop.org/p/books/designing-your-life-how-to-build-a-well-lived-joyful-life-dave-evans/8574377?ean=9781101875322) book.
+
+
+---
+
+## Chapter 235: From Enterprise to Early Stage: How to Swim, not Sink, as a Leader
+
+*Source: https://docs.google.com/document/d/1edQZ6iGMxtj2a_laU43iV2nUraf95w9O4gffDHMJkTM/edit?usp=sharing*  
+*by Faith Meyer (4 min)*  
+
+[**From Enterprise to Early Stage: How to Swim, not Sink, as a Leader**](https://docs.google.com/document/d/1edQZ6iGMxtj2a_laU43iV2nUraf95w9O4gffDHMJkTM/edit?usp=sharing) by Faith Meyer (4 min)
+
+Welcome to the wild world of startup life! If you're here, it's likely because you've joined a startup and your background is largely in more mature, established and perhaps even enterprise-level companies or organizations — e.g. Google, Microsoft, Berkshire Hathaway, within defense or healthcare, etc.
+
+Like so many before you, you probably feel as if you're in a "sink or swim" environment, and you're not wrong. Only 4–7% of startups make it to $1M in annual revenue, and even fewer make it to $5M+.
+
+If you can be aware of key operating differences and embody the below principles, you'll be well on your way to less frustration and greater success.
+
+#### **TL;DR**
+
+Startup leaders are adaptable, creative and scrappy generalists who are comfortable with ambiguity and unknowns, and who optimize for speed, iteration, building lightweight systems, and avoid hiring "too senior too fast."
+
+#### **Operating Principles**
+
+Here are more detailed key comparisons (overly simplified in some places on purpose) that I would love for you to get into your bones as a foundational understanding and operating philosophy:
+
+| **Enterprise / Mature Company Life** | **Startup Life** |
+| :-: | :-: |
+| **Clear & Abiding Hierarchy** - Explicit swim lanes. Generally only "one job" to do. Many approval layers. Akin to the chain of command within medicine or the Army. | **Leaders Wear Multiple "Hats"** - Overlapping responsibilities/duties exist in the earliest days to ensure coverage. Minimal approval layers. Akin to scrappy and agile Navy Seal or Special Forces teams. |
+| **Specialists & Identity** - Leaders are rewarded for depth, track records, functional expertise, results and clear swim lane ownership. Think of a traditional Coach or Manager role, getting results through others. Mindset: "I am valuable because I've seen this before." | **Generalists & Identity** - Startup leaders are rewarded for range, being comfortable with ambiguity, speed, their contributions, problem-solving/being solutions-oriented, and being "in the trenches" with the team. Think "Player-Coach," both guiding and doing mission critical work themselves. Mindset: "I am valuable because I can help figure this out." |
+| **Sufficient Resources/Infrastructure** - There are enough people, technical tools and dedicated/shared resources for leaders to lean on and get results through. Mindset: "How do we allocate resources?" | **Resource Scarcity** - There are not enough people, hours in the day, or even funds to be able to do everything. Ruthless prioritization is key. Mindset: "How can we creatively get results without resources?" |
+| **Certainty & Evidence** - Through many years of existence, there's an abundance of data and "known paths to success" that support effective decision-making. Emphasis on improvement. Mature companies can have more of a consensus culture. Wrong decisions are expensive. | **Urgency & Constant Unknowns** - Decisions are made on a combination of incomplete data and intuition. Leaders are part of discovering, experimenting with and iterating on strategies to figure out what works. Many decisions are reversible, and speed is mission critical. Alignment > consensus. Slow decisions are expensive. |
+| **Longer Time Horizons + Heavyweight Systems** - 1-2 year roadmaps. Heavyweight systems like OKRs and formal PRs are the norm. Structured OKRs are common in more mature companies. | **Regular & Rapid Reorientation + Lightweight Systems** - Shorter time frames & lightweight systems support experimentation. Pivots are very common when greater clarity is gained from experimentation. SMART goals & KPIs are more common. |
+| **Performance "Trust"** - Often, managers normally only ask for detailed daily reports when someone is on a Performance Improvement Plan; otherwise, people are generally left to do their jobs and follow the normal communication channels. | **"In the Details"** - Daily standups or huddles (reporting out your daily tasks, blocks and status of project completion) are normal and often necessary to ensure deep alignment, rapid execution and to help unblock team members. |
+
+#### **What you can do about it:**
+
+##### **If you're new to your startup:**
+
+  - Be a sponge. Resist the urge to prove yourself right out the gates, and check alllllll of your assumptions at the door. Yes, what you've done in other companies before is helpful to keep in mind, but be deeply committed to figuring out what works in this company.
+    There's so much context and nuance you don't yet have on how this org operates, and frankly, things can change on a daily (even hourly) basis. Become a curious, note-taking and pattern recognition machine.
+
+      - Ask to shadow others as much as possible, especially your manager.
+          - *See: [Onboarding a new hire](https://docs.google.com/document/d/1FwrvtGTdhCbxparQ3a4y7Z5RidSHXzsZORoGTubcY3U/edit) (2 min) and [Teaching/Training](https://docs.google.com/document/d/1sGF4V0xFWjESabSZElwF3YienjtiLZtp81YTHe-zMpM/edit) (2 min)*
+      - Write notes by hand to activate the deep learning part of your brain.
+      - What jargon or language does this team use in this industry?
+      - How do we talk about who owns what here?
+      - What systems already exist? What gaps do I think I see? Where does the nuance lie?
+      - Especially in a remote culture, what are people's communication preferences?
+      - How do we ruthlessly prioritize amid a sea of things that need doing?
+
+##### **In general for leaders and individual contributors alike:**
+
+  - Unless you're explicitly told otherwise, you as a leader must be a "player-coach."
+      - In addition to guiding your team, you must do some degree of hands-on work alongside your team members. (You'll do this until the company has matured enough for you to have a more robust team under you to whom you can more fully delegate the hands-on work.)
+      - This is NOT an excuse to micromanage. Work on mastering top-notch delegation and accountability skills to get results *through* your team members, and stay focused on tackling work that truly only you can do.
+
+  - Be part of the solution, don't just point out problems.
+      - There's very likely historic or new context that you don't have yet. Ask for it.
+      - ["I intend to"](https://docs.google.com/document/d/1Uf5W4C0KG6Ywgsnh0TFlNbZTGymdgeTODAkpBYfj6Bo/edit) can be a powerful framework to use even if you're only 1% confident to help give people something to respond to.
+
+  - Don't assume someone's on it. Make sure they are.
+      - Leverage repeat-backs in meetings. "Hey everyone, let's play back our actions out loud to make sure we're on the same page and we didn't miss something? I'm doing X by Z…"
+          - *See: [DRIs:  Directly-Responsible Individuals](https://docs.google.com/document/d/1I4jBy1XryEdknFoDCMUY93PEn0rR-oOOx6yiLSiaa38/edit) (3 min) and [Agreement-Tracker:  why you need one](https://docs.google.com/document/d/1QzGvP6MrmlD6YVilTiNjEsPgRRvjzvWrqGXKSz_c68k/edit) (3 min)*
+
+  - If you make a mistake, flag it quickly to someone who can help so it can be addressed and then do your best to learn from what happened so you can prevent it from happening again in the future.
+
+  - When someone who reports to you is not performing well, check yourself first.
+      - Anchor to the behavior (not the person). What are they doing that needs improvement?
+      - Have you checked in with them with genuine curiosity about what's going on to ensure you understand and you're not just assuming you know what's happening?
+      - Have you set clear expectations?
+      - Have you provided them with the training and context they need to be successful?
+
+
+---
+
+
+# Coach
+
+## Chapter 236: Is CEO Coaching Worth It?
+
+*Source: https://docs.google.com/document/d/1oJdSElD5yXaos4cjt48MDDgJMPSewldR9spLUUPBrZw/edit#*  
+*(By Celine Teoh) (2 min)*  
+
+### **Is CEO Coaching Worth It?**
+
+*Written by* [*Celine Teoh*](https://www.linkedin.com/in/celineteoh/), [*Alexis d'Amecourt*](https://www.notion.so/mm-coaches/Alexis-d-Amecourt-c166dfb8021d44428bdbae503d558f50?pvs=4)*,* [*Sabrina Wang*](https://www.notion.so/mm-coaches/Sabrina-Wang-c53b91097ebd484d90d082d654cee7a3?pvs=4)
+
+Mochary Method is premium priced. One month with our coaches costs $10,000. Matt and Alexis charge $12,500. That's a commitment.
+
+No wonder prospective clients sometimes wonder if it's worth it. And they question if they can sell it to their boards. Especially in these economic times.
+
+[**Research**](https://www.ceopartnership.com/about-coaching/roi-of-coaching/) **shows that the ROI on typical executive coaching is anywhere from 6x to 9x.** And with Mochary Method coaching, our clients see even greater returns, thanks to the outsized impact that coaching the C-suite has on the entire organization.
+
+*Steve Huffman: "When Sam Altman introduced me to Matt he said, 'Matt will add a billion dollars of value to Reddit.' I've been coaching with Matt now for 3 months, and I think that he already has."*
+
+**But the benefits of coaching go beyond just the financial returns. What is it worth to become the leader you want to be? What price would you put on transformation?**
+
+Investing in Mochary Method coaching is a commitment, but it is a commitment to the success of yourself and your organization. We believe the value generation and ROI will be well worth it, and we invite you to experience the transformative power of our coaching for yourself.
+
+Mochary Method client case studies:
+
+**Client with revenues of $50 million has big B2B contracts that are not closing**
+
+After one session with a Mochary coach, the CEO realizes the need to attend sales meetings to close crucial deals. Deals start closing. Successful meetings yield customer and process insights that are propagated across the sales team.
+
+Result: Conversions go up by 5%. That's $2.5 million annualized incremental revenue on $120k annual coaching cost.
+
+**ROI: A whopping 21x!** And, consider that this happened after one coaching session.
+
+**Client is having a tough time integrating engineering teams after an acquisition**
+
+After 1 session with a Mochary coach, they realize the unlock is redefining and clarifying roles & responsibilities, while putting boundaries in to protect the innovative culture of the acquired company.
+
+Result: A key product from the joint teams is delivered on time, underpinning the growth of the acquirer.
+
+**ROI:** Realization of the revenue and innovation culture synergies of the $multi-million transaction, hitting a key product milestone; **estimate of double-digit ROI**
+
+**Client has conflict with a key executive who's underperforming**
+
+CEO is having a months-long conflict with an underperforming key executive/founding team member who is defensive when receiving feedback. The CEO feels like they can't let this person go, so the leader is kept on for months even though key KPIs are falling behind and team morale and retention is dropping.
+
+After a few sessions with a Mochary Method coach, the CEO finally decides to let this executive go with a generous package. The coach and the CEO rehearse and role-play the difficult conversation, which leads to the executive being calm and accepting when hearing the news. The CEO also works with the coach on a communication plan to the rest of the company that receives great feedback from employees.
+
+Result: Leadership team alignment, and the CEO no longer has to closely manage an underperforming executive.
+
+**ROI:** Revenue and cost-related KPIs are back on track. Retention from the leader's team goes up, and the team does not have to spend more time and energy on hiring externally. **Estimate of double-digit ROI!**
+
+**Leadership team effectiveness**
+
+Client heads up multi-billion $ company where the executive team is not gelling
+
+The team is experiencing conflict and challenges working together due to their remote-first arrangement, managing diversity, building strong relationships, and crafting a culture of safety.
+
+Their Mochary coach develops and runs a custom leadership offsite where the team comes together, clarifies stakeholder needs, works on decision-making frameworks, and builds trust across silos. The outcome is, in the words of the CEO, transformational.
+
+**ROI**: Leadership team is more connected, has less conflict, and is ready to guide the company through IPO and beyond. **Estimate of minimum of double digit ROI.**
+
+Client continues to retain their Mochary coach for subsequent offsites.
+
+
+---
+
+## Chapter 237: Do I need a Coach, Mentor, Consultant or Cheerleader?
+
+*Source: https://docs.google.com/document/d/1q6NiD4XEIQDlHREukTZBVquUoLXJKxxFQHy_ZryjHQU/edit?usp=sharing*  
+*(By Celine Teoh) (3 min)*  
+
+### [Do I need a Coach, Mentor, Consultant or Cheerleader?](https://docs.google.com/document/d/1q6NiD4XEIQDlHREukTZBVquUoLXJKxxFQHy_ZryjHQU/edit?usp=sharing) (3 minutes)
+
+*Written by* [*Celine Teoh*](https://www.linkedin.com/in/celineteoh/)
+
+**What is the difference between a coach, consultant, mentor, (or cheerleader)?**
+
+**Coaches** ask challenging questions to help you discover the answer
+
+  - They unleash your potential to maximize your performance
+  - They offer:
+      - A confidential and judgment-free zone where you can broaden your thinking and develop transformational insights
+      - Options in the form of frameworks and tools you can use to make smarter, better decisions
+  - You're in control: you choose what actions to take to move forward
+
+**Consultants**/**Advisors** ask questions up front to frame the problem. They focus on getting you the answer: they have it, or will find it for you
+
+  - They are experts in their fields and provide professional, technical advice on a well-defined problem
+
+**Mentors** share their experiences
+
+  - They have "been in your shoes", and can share knowledge, insights, and guidance that is applicable to your path
+
+**Cheerleaders** just support you
+
+  - They believe you have the answer
+  - They don't question you
+
+It's important for you as a leader to have - and embody - all four of these roles in your life!
+
+**But I just want someone to tell me what to do!**
+
+At Mochary Method, we largely play more of the coach role. Occasionally, when appropriate, we can "take off the Coaching hat" and put on the Mentor, Consultant, or Cheerleader hat.
+
+Our clients are the best in their fields, and the experts in their businesses — often in an area where they are forging new paths. As your coach and thinking partner, we'll help you combine prior knowledge and experience with new insights, tools and skills to find solutions and the path forward.
+
+### **How is coaching different from therapy?**
+
+Many of our clients have therapists AND coaches and see the value in both.
+
+Coaching is ARCHITECTURE
+
+  - Forward-looking
+  - Designing the future, imagining possibilities
+  - Building things
+  - Focused on insight and action
+  - Helps us move into high performance
+
+Therapy is ARCHEOLOGY
+
+  - Backward-looking
+  - Digging and analyzing
+  - Focused on understanding and fixing
+  - Helps us move out of dysfunction
+
+Credits: Images from Luis Ruiz and Michael Maggs
+
+**Action:**
+
+  - Think about who fills these roles for you: Coach, Mentor, Consultant, Cheerleader. Licensed therapist, if needed
+  - Do you have any blanks? Sometimes one person can fill multiple roles (Not therapists though, who fill a very specific need)
+  - If you don't have a coach, we recommend getting one. Feel free to reach out to any of the [Mochary Method Coaches](https://mocharymethod.com/#coaches), or look into Matt's [Coach Recommendations](https://docs.google.com/document/d/1NwZ3B7cqk15Ieecpofrto5_GBH0LaadabmrYAaRmtak/edit)
+  - Also: Notice what roles you play for your team. What do you gravitate towards? What role should you step more into?
+
+Credits: Berkeley Executive Coaching Institute, Pedro Pinto, Smart ELD, Mitzi Bockman for inspiring this write-up
+
+
+---
+
+## Chapter 238: Coach:  hire one for the executive team
+
+*Source: https://docs.google.com/document/d/1fA4Mlf95VePjFWX6wVOtCEKqoNLCFnWpr43yfJDizUg/edit*  
+*(1 min)*  
+
+[Coach:  hire one for the executive team](https://docs.google.com/document/d/1fA4Mlf95VePjFWX6wVOtCEKqoNLCFnWpr43yfJDizUg/edit) (1 min)
+
+The book Trillion Dollar Coach describes the role that Bill Campbell played at Google. He was a shadow manager to the exec team. Bi-weekly, he met 1-1 with each exec team member, where they each shared with him their true frustrations. He then attended the weekly exec team meeting and made sure that all of the deepest, darkest issues that people had shared with him surfaced just as transparently to the group, forcing them to deal with them and find a resolution.
+
+This is an incredibly valuable role. As CEO, you can play this role if you enjoy it. But if you don't, then hire someone to do it. This can be a coach or your Chief of Staff. It's not a complicated role to play. It just requires being willing to **ask probing questions and fearlessness to surface the juiciest topic (the "elephant in the room") in the group meeting.**
+
+Chris Mansi of Viz.ai hired a coach to do this and had a great experience. Because of that, I now recommend it to all CEOs that I coach.
+
+Chris Mansi of Viz.ai:
+
+*I definitely recommend having a coach for the entire exec team - the same person coaching them as a team and 1:1. We used the conscious leadership group, and it's been amazing.*
+
+*Benefits are*
+
+*- you develop a shared language that you can use to move faster without getting in your way*
+
+*- more trust and transparency, esp at times of stress when it could be easy to "be professional" and not discuss an issue*
+
+*- exec team feel cared for and invested in*
+
+It will likely work so well at the exec team level that you will want to hire such a person for each big team. Shopify, apparently, has ten full-time internal coaches.
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 239: Coach recommendations
+
+*Source: https://docs.google.com/document/d/1NwZ3B7cqk15Ieecpofrto5_GBH0LaadabmrYAaRmtak/edit*  
+*(1 min)*  
+
+[Coach recommendations](https://docs.google.com/document/d/1NwZ3B7cqk15Ieecpofrto5_GBH0LaadabmrYAaRmtak/edit) (1 min)
+
+#### Organizations
+
+[Mochary Method](https://www.mocharymethod.com/) now has an expanding team of coaches, and they are BETTER than Matt!  (Yes, we said it.) You can check out their profiles here:
+
+  - [Alyson DeNardo](https://www.mocharymethod.com/team/alyson-denardo)
+  - [Matt Given](https://www.mocharymethod.com/team/matt-given)
+  - [Georgia Dienst](https://www.mocharymethod.com/team/georgia-dienst)
+  - [Faith Meyer](https://www.mocharymethod.com/team/faith-meyer)
+  - [Adam Donkin](https://www.mocharymethod.com/team/adam-donkin)
+  - [Alexis d'Amecourt](https://www.mocharymethod.com/team/alexis-amecourt)
+
+[Prismaticco](https://www.prismaticco.org/) is Nina Barber's coach-founder-matching engine, which pairs you with a coach whose skills and style match your needs and wants. Her network includes many (and quite possibly all) of the top coaches. You can reach Nina at <nina@prismaticco.org>.
+
+[10x CEO](https://10xceo.com/) facilitates excellent CEO forum groups. These are very focused on hard skills (practical tactics), not soft skills (understanding your emotions and those of others). For soft skills, see the groups below ...
+
+[Conscious Leadership Group](https://conscious.is/) (CLG) is Diana Chapman and Jim Detmer's coaching group, with many trained coaches, focused on shifting out of fear/anger to curiosity, allowing individuals and teams to perform much better. They codify their work in the book [15 Commitments of Conscious Leadership](https://smile.amazon.com/15-Commitments-Conscious-Leadership-Sustainable/dp/0990976904/ref=sr_1_2?crid=398YZ0PDHA8QG&keywords=15+commitments+of+conscious+leadership&qid=1573188460&s=books&sprefix=15+commit%2Cstripbooks%2C201&sr=1-2).
+
+[Reboot](https://www.reboot.io/) is Jerry Colonna's coaching company. It has lots of coaches. They likely don't have operational experience, but their methodology is sound, as they have been trained by Jerry.
+
+[Torch](https://torch.io/) has many coaches. Similar to Reboot.
+
+[Betterup](https://www.betterup.co/) is coaching for rank-and-file employees.
+
+#### Individuals
+
+[Daniella Blum](https://www.linkedin.com/in/worldnativ/).  Focuses on increasing your emotional awareness and intelligence.  Best in the world at this IMHO.  <daniellablumcoaching@gmail.com>
+
+[Kat Agostino](https://www.linkedin.com/in/katharine-agostino/).  An independent coach, very familiar with the Mochary Method.
+
+[Jess Yuen](https://www.linkedin.com/in/jessicayuen/).  An independent coach, very familiar with the Mochary Method.
+
+[Jeff Weiner](https://www.linkedin.com/in/jeffweiner08/) - Former CEO of LinkedIn. He is very operational, as you can imagine, and very selective in who he coaches.
+
+[Ron Beller](https://www.linkedin.com/in/ron-beller-736709b/) - A former MD at Goldman Sachs, who has now studied CLG (see above), resulting in an excellent combination of hard skills (operating advice) and soft (emotional awareness).
+
+[Dave Kashen](https://www.linkedin.com/in/davekashen/) - A consciousness (see CLG above) coach that uses more "business" language. He wants to work with people that are primarily committed to learning consciousness.
+
+[Andy Scott](https://www.linkedin.com/in/andyscott/) - A former operator.  Speaks the language of business.
+
+#### Public Speaking
+
+[Katya Davydova](https://katyadavydova.com/coaching) (katya@katyadavydova.com) is a public speaking coach with a great [Ted-X talk](https://www.youtube.com/watch?v=TBWPB604NVw).  If you want to speak like that, she can get you there!  Matt Mochary is a big fan.
+
+[Nik Lange](https://www.linkedin.com/in/niklauslange/) worked with our Head of Coaching, Alexis, ahead of his presentation at the Khosla CEO conference last year. Would highly recommend.
+
+[Danny Slomoff](https://www.slomoffgroup.com/) (danny@slomoff.com) is a good public speaking coach in SF. Alex MacCaw, CEO of Clearbit, is a big fan.
+
+Maureen Taylor of [SNP](https://www.snpnet.com/about-snp/) is a good public speaking coach in NYC.  Artem Petakov of Noom is a big fan.
+
+#### GTD
+
+[Meg Edwards](https://gtdfocus.com/meg-edwards/), GTD coach.  meg.edwards@gtdfocus.com  207-650-6112.  Alexis d'Amecourt of Mochary Method is a fan.
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 240: Coach - how to find one
+
+*Source: https://docs.google.com/document/d/1P3xgXHzXqjoytTDRyZbXcWc8GKDGhCHfRIHiN9lVGkA/edit*  
+*(2 min)*  
+
+[Coach - how to find one](https://docs.google.com/document/d/1P3xgXHzXqjoytTDRyZbXcWc8GKDGhCHfRIHiN9lVGkA/edit) (1 min)
+
+When I was younger, I was a high-level windsurfer and would travel for weeks at a time to Maui to practice my hobby. The harness put a lot of pressure on my back, and I would at some point invariably pinch a nerve causing my back to seize up. I then would go to a chiropractor who would adjust me, and instantly I would be pain-free. The chiropractor would then tell me that I needed ten more weekly sessions. Since I was often only traveling to Maui for several weeks, I could rarely complete any of these follow-up sessions.
+
+Then I moved to San Francisco. I started windsurfing in the Bay and, sure enough, tweaked my back again. I once again found a chiropractor who successfully adjusted my back. But when we finished the session, she did not say that I needed any follow-up visits. I was confused. I asked her about it. She responded: "Other chiropractors need the money. I don't. I am independently wealthy. I do this because I love fixing people. And you are fixed."
+
+From that moment on, I only ever wanted to work with people who do what they do for love, not money. They're hard to find. But they exist.
+
+I have noticed that there is one thing common among them: They rarely seek work. Meaning, they focus their time on practicing their craft, not interviewing for jobs.
+
+If you are looking for a coach, you can take one of two approaches:
+
+  - Get several names of potential coaches, and invite them in to interview. Most will be willing to, and from that pool, you will be able to choose. Know, though, that the best of the best likely won't be willing to participate in such a process.  Or,
+
+  - Spend the same amount of time you would spend interviewing, and instead spend it:
+      - Finding who is considered to be the best coach.
+      - Trying to convince that person to coach you. These nuggets will help:
+          - Coaches are essentially teachers, so they love people eager to learn, experiment, and do. Show that you are an enthusiastic student by reading their materials in advance.
+          - See [Fundraising- The Relationship Method](https://docs.google.com/document/d/163t4I3CzQ-CUScBYp6fCxpboSgHxCB7syd4Jtzw7nco/edit?usp=drive_web&ouid=102503928790226855337) and [Selling](https://docs.google.com/document/d/1T6fnyDDqdzAFdzJzZkiAnaKvZzjzkX5HSwAjuedvlQQ/edit). The principles work on coaches as well.
+
+Both will take a similar amount of time. I believe that #2 yields a far better result.
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# Social Good
+
+## Chapter 241: Make Money, Have Fun, Do Good
+
+*Source: https://docs.google.com/document/d/1P_8WALoefgBCQ9cR0Jgwztt_8-ppjJ1r7zpeyoikTa0/edit?folder=0B9tanFUuwmYSMHIyU2pkYTZSVkU*  
+*(2 min)*  
+
+[Make Money, Have Fun, Do Good](https://docs.google.com/document/d/1P_8WALoefgBCQ9cR0Jgwztt_8-ppjJ1r7zpeyoikTa0/edit?folder=0B9tanFUuwmYSMHIyU2pkYTZSVkU) (2 min)
+
+When I joined Spectrum Equity Investors after business school, many friends and friends of friends began reaching out to me for career advice. The ploy was a thin one. They wanted a job at Spectrum. There was no such job available to them, but I earnestly gave them career advice. They each said they wanted a position where they could "make money, have fun and do good." I replied: "Great, but if you had to choose just one of those, which would it be?" The answer was inevitably: "Make money." I then told them to optimize only for that variable. If they tried to optimize for all three, they'd end up in a place that provided none.
+
+After giving this advice over and over, I realized that I needed to follow it myself. So I started my own company, and 18 months later, I was lucky enough to have amassed more wealth than I knew what to do with. 
+
+Having checked the box of Make Money, I could now turn my attention to Have Fun. I made it my full-time job. And I became very good at it. I did it for three years straight until I had had so much fun that I was over it. 
+
+Now what? Well, Do Good seemed the next logical step. And to me, this didn't mean giving money to charities. It meant doing the really dirty work: Helping people that others were afraid to. To me, that meant helping hard-core criminals in the US. And that's when I decided to set up the Mochary Foundation.
+
+The problem that I discovered was this: Millions of formerly incarcerated Americans struggle to get jobs because every employer can easily do a background check, and the vast majority of employers will not hire someone with a criminal record if there is another candidate available. That leaves formerly incarcerated people with almost no way of making legitimate money. But they still need to eat. So, they do whatever they have to in order to eat. And this often leads them right back to prison.
+
+The solution, in my opinion, is a short vocational training program for high-skill jobs for which there is a shortage of qualified candidates. At the [Mochary Foundation](https://www.mochary.org/), this is what we do: train x-convicts to get their Commercial Driver's License. Within days of getting their license, they are usually driving a truck for over $50,000/year, and suddenly their future seems stable and tenable. And then they want to help the next x-convict by paying back the cost of their training, plus the cost of two more. This makes the whole operation self-funding.
+
+I very much enjoyed the feeling of success in making money. That good feeling lasted about a week. Then I very much enjoyed having fun. I was good at it, and it lasted for years. But when I finally started to change lives by doing good, I felt something that I'd never felt before: deep satisfaction. And it is the best feeling that I have ever experienced.
+
+It is a feeling that I wish upon you. And if you know that you will eventually get there, there is no reason to wait as I did. 
+
+You can start the ball rolling sooner by having your company do [Pledge 1%](https://pledge1percent.org/) or personally doing [Founder's Pledge](https://docs.google.com/document/d/1_GDBxCHP6LTqy-OciTw5Ox1YoIGYnfnbkdnlUhzhWkg/edit?folder=0B9tanFUuwmYSMHIyU2pkYTZSVkU). Or both! You will not regret it. And your action will be leveraged, as it will be an inspiration to others.
+
+
+---
+
+## Chapter 242: Mochary Foundation
+
+*Source: https://docs.google.com/document/d/19RuJ3fGUHi2aTK_d6TUr7ymdTpadqq1SZ4QDt4aKYL0/edit*  
+*(1 min)*  
+
+[Mochary Foundation](https://docs.google.com/document/d/19RuJ3fGUHi2aTK_d6TUr7ymdTpadqq1SZ4QDt4aKYL0/edit) (1 min)
+
+The [Mochary Foundation](https://www.mochary.org/) seeks to create a legitimate first chance for all Americans.
+
+While we Americans like to believe that our country is the land of opportunity and that anyone with the will can make it economically, the reality isn't quite so clean. Many forces make it difficult (sometimes nearly impossible) for someone to battle their way out of poverty. 
+
+One of the harshest barriers is a criminal record. It costs $35 to do a background check online, and therefore nearly all employers do one. For most jobs, having a criminal background is an immediate disqualification. So, once a felon leaves prison or jail, she often cannot get a job. Yet, she must still eat. She, therefore, resorts to stealing or dealing. And the cycle of incarceration continues. 
+
+But there is an answer. Jobs that require a hard skill or license and for which there is a shortage of qualified applicants are willing to ignore criminal backgrounds. These jobs include construction (skill) and truck driving (license).
+
+We, therefore, created [FreeWorld](https://www.joinfreeworld.com/) to help x-convicts get their Commercial Driver's License (CDL) and then a trucking job. The results have been dramatic.
+
+In its first year, we trained 68 x-convicts (primarily in Stockton, CA) to get their license. All but one of those went on to earn a trucking job paying more than $40k/yr. Those who have entered their second year of driving are now making $60-80k/yr. And one that bought his truck is now making over $120k/yr.
+
+It costs us about $5,000 to train each person (we call them Free Agents) to get their CDL. Once they are financially stable, we have begun asking each new Free Agent to pay back a portion of their income until they have paid for the cost of their training plus two more. The first of those payments should start arriving in 2020 and, if they continue, FreeWorld will quickly become self-funding.
+
+In its second year, FreeWorld hopes to train 300 Free Agents and then, if all is continuing to function well, scale massively from there.
+
+
+---
+
+
+# Matt in action
+
+## Chapter 243: Videocast with Jason Calacanis
+
+*Source: https://www.youtube.com/watch?v=tBimI7QNjBA&feature=youtu.be*  
+*(1h 20m)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.youtube.com/watch?v=tBimI7QNjBA&feature=youtu.be)_
+
+
+---
+
+## Chapter 244: Podcast with Harry Stebbings
+
+*Source: https://thetwentyminutevc.libsyn.com/20vc-matt-mochary-coach-to-silicon-valleys-leading-vcs-founders-on-how-to-deal-with-imposter-syndrome-and-self-doubt-how-to-manage-fear-and-anger-why-board-seats-are-the-death-of-investors*  
+*(38 min)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://thetwentyminutevc.libsyn.com/20vc-matt-mochary-coach-to-silicon-valleys-leading-vcs-founders-on-how-to-deal-with-imposter-syndrome-and-self-doubt-how-to-manage-fear-and-anger-why-board-seats-are-the-death-of-investors)_
+
+
+---
+
+
+# FAQ
+
+## Chapter 245: Q\&A with Matt Mochary
+
+*Source: https://docs.google.com/document/d/1H3VAYMqnc3ks1-rWry-4TGT9V4t1mR39k98nKFCUK1A/edit*  
+*(20 min)*  
+
+[Q&A with Matt Mochary](https://docs.google.com/document/d/1H3VAYMqnc3ks1-rWry-4TGT9V4t1mR39k98nKFCUK1A/edit) 
+
+I recently did a Q&A via Zoom with a group of 20 CEOs for [The Great CEO Within](https://smile.amazon.com/Great-CEO-Within-Tactical-Building/dp/0578599287/) (several hours to read) and it was a lot of fun. I am excited to do more of these.
+
+Here are my asks to do so:
+
+- You gather a group of either
+  - >10 CEOs, or
+  - >40 members of the same company
+- All of those people buy and read [The Great CEO Within (on Amazon)](https://smile.amazon.com/Great-CEO-Within-Tactical-Building/dp/0578599287/) or [The Great CEO Within (online)](https://docs.google.com/document/d/1ZJZbv4J6FZ8Dnb0JuMhJxTnwl-dwqx5xl0s65DE3wO8/edit).
+  - If you are asking your employees to do so, please reimburse the cost to them
+- All of those people post a review on Amazon with written comments
+- Once I see those reviews on Amazon, we schedule a 50 minute Q&A Zoom session
+- You create a Google Doc that starts with the questions/answers below. Then ask all of the readers to put any additional questions they have for me in the doc.
+- You share the doc with me >1 week prior to the Q&A. I will then answer as much in writing prior to the Q&A as possible. That will leave the Q&A time to process live issues in real-time, which is the most fun.
+- 5 minutes prior to the end of the Q&A session, I will ask all participants to type their feedback to me at the bottom of the doc
+
+If you have such a group, DM me.
+
+#### Examples of questions for Matt Mochary
+
+- **You mention if you're not getting negative feedback, it's not because there isn't any, it's just not being told to you. How do you suggest pulling it out of your team?**
+  - Ask for it: Make sure your team understands that giving you negative feedback will not be punished, but cherished. It is important to explicitly say this to them, preferably in a one-on-one setting. When asking for feedback about himself as a manager, Lachy Groom, formerly of Stripe, asks "What feedback are you afraid to give because you think it will hurt my feelings? Please tell me that." Even then, many people hesitate. I like to add, "Don't tell me. Please just think it. Do you have it in your brain chamber? Yes? Now please tell me."
+
+- **Where did the clearing conversational framework come from? ie. Thank them for the feedback. Repeat it back. Accept or reject?**
+  - Pulled from various books like Radical Candor, Difficult Conversations, 15 Commitments of Conscious Leadership, etc. And then altered slightly as I used it over and over based on the feedback that I got.
+
+- **Do you agree that there's wartime and peacetime CEOs?**
+  - To me, it's always wartime. The key is to act in curiosity and learning, not fear or anger.
+
+- **Can you explain the idea of making a bet with people who are in fear? How often? Direct reports or anyone?**
+  - When I unpack an issue with one of my coachees (akin to a direct report), I always ask them to tell me what the problem is, tell me what they did to help create the issue, and then tell me steps they would advise me to take if I were in the exact same situation. This structure is usually enough for them to get out of their own blaming and victimhood, and see real steps that they can take to resolve the situation (often to just reverse what they did to help create it). But if they are still in fear, I simply make a bet with them. They predict that if they do X, then A will happen. I predict B will happen, which is the opposite of A. They then do X, and we see what happens. If they win the bet, they need never listen to me again. If I win the bet, then they have to listen to my guidance without pushback the next time I declare that they are in fear. I have made this bet hundreds of times. I have won every time. There's no magic in it. I am simply not gripped by fear, as I am not in the situation myself.
+
+- **Are the full days of events always held on Mondays... or can you do them mid-week? What're the pros/cons?**
+  - Any day of the week. Doesn't matter. Usually best if each group picks a different day from the day in which the group leader must do her 1-1 and team meeting with her Manager.
+
+- **How is a Chief of Staff different than a COO? Is there a natural progression after CSO for that hire? Or a place within the org that you should hire for that role from?**
+  - The COS does not initially have direct reports. But the COS will quickly learn to think like the CEO. And if the COS is highly organized, then there is no reason that they cannot soon take on many reports and become the COO. If that is the case, though, they cease their COS role, and should hire their replacement as COS.
+  - The natural place to hire this role from within the org is Biz Ops (2 min), if you have that function. If you don't yet have that function, cause your COS to create it.
+
+- **In an interview, you mentioned that it's best to start with small steps. ex: Firing someone at a lower level who isn't performing to learn. Then taking baby steps. Do you have other examples of how to apply this as a CEO?**
+  - This is just to prove that fear gives bad advice. If someone fully trusts me, then they start with a big one. It only takes 1-2 situations to prove to oneself that fear is giving me bad advice. Once proved, it applies to all situations.
+
+- **What do the 3 sections of the google doc look like that you use for coaching? How are these meetings run?**
+  - 1st 1-1 Meeting with Matt Mochary (5 min to read; 45 min to do)
+  - 2nd (and beyond) 1-1 Meeting with Matt Mochary (2 min to read; 15 min to do)
+
+- **What motivates you to coach? Is it the same reason that you're helping previously incarcerated inmates find a job?**
+  - I coach because I love getting to sit in the cockpit alongside the CEO. It gives me the illusion that I am helping to build the company.
+  - I help x-cons because it's so damn easy to do so. It gives me the illusion that I am saving lives.
+
+- **He has a section on how to hire new senior leaders to replace existing young leaders. You frame it so the young leader can learn from an experienced person. But do I kick out the young leader from the leadership team meeting? I'd like to know more about the nuances of that.**
+  - Unfortunately, yes, the Leadership Team meeting needs to be the fewest number of people who have reporting to them the whole company. There can be wider informational Team Leads meeting.
+  - And while the above is a way to frame bringing on a more senior person, know that the fact that you needed to do so is a failure of your training. If you want a truly effective company, you will need to effectively train your team internally to be great managers. If you don't, and you therefore have to constantly import managers, then you will end up with no consistency of management system, no deep trust among managers (because they will all be new), and little institutional knowledge among managers (again because they are all new).
+
+- **He suggests in your leadership team meeting an exercise where everyone gives each other transparent feedback on each other written down on paper. I'd like to be led through that exercise in person.**
+  - This takes a while ...
+
+- **I'd also like him to unpack his way of helping employees resolve conflict with his google doc typing system.**
+  - Conflict Resolution (Deep Feedback)
+
+- **Why and how does he use focusmate.com? How does it personally help him?**
+  - I use it whenever I have open space in my workday calendar. For me, it provides the nudge that I need to get me to do the admin tasks that I want to get done. If I don't schedule the Focusmate, I find that I end up playing online chess instead.
+
+- **I can't find a way to create KPIs and OKRs for the product and tech teams. It's easy and effective to do for sales, marketing and customer success, a little more challenging for customer support, highly challenging for product and close to impossible for engineering. I've raised this issue many times and never got an answer that helped. What's his take?**
+  - Engineering doesn't fit well with OKRs. Engineers want to produce, not be held to SLAs. I prefer to use the Product Roadmap to hold them accountable. Ask them to create a broad 12-month roadmap (with no dates), a more detailed 3-month roadmap with dates (a launch calendar), and a very detailed 2-week sprint plan. Hold them accountable to completing each sprint plan on the way to completing the 3-month roadmap. That 3-month roadmap is their OKR list.
+
+- **Matt mentions that when finding a partner, "avoid one cardinal mistake: do not create a 50/50 partnership". I have been avoiding bringing on my lifelong friend as my partner, because advice from peers has been that it will end in tears if we don't have a 50/50 partnership (him being such a close friend). Can you talk to this cardinal mistake in the context of doing with trusted friends? Or is the idea of partnering with close friends a mistake in the first place?**
+  - Being partners with a close friend is great. Having a 50/50 partnership with anyone is deadly, since there is no way to unblock a disagreement. And it doesn't matter how small the disagreement is. Each and every decision requires unanimous agreement, otherwise by law you cannot move forward at all. If one decides to move forward anyway and continue to operate the business, they are in default of the operating agreement, and if the other sues, the other will win. And this happens regularly. That is what is deadly.
+
+- **Do you have any advice on how to rank/choose which meetings to attend? Currently my staff and clients invite me to almost everything. And while there almost always is a valid reason for me to attend, it's unsustainable and I am not optimally efficient with my time.**
+  - First, stack rank them in terms of the value that they generate.
+  - Then, think of all the things that you are NOT getting to on your priority list. That is your opportunity cost. Which meetings create MORE value than the top items on your priority list that you are not getting to. I would posit that is very few meetings.
+  - Consider that if those meetings don't create enough value for you, they don't create enough value for anyone. What would make them more valuable generally?
+  - And consider that the only thing IMHO that requires synchronous meetings are the final discussions around decisions and feedback. Everything else can be done asynchronously (and better): updates, initial phase of decision-making (here is the issue, here is my proposed solution, solicit the written comments from all involved).
+
+- **Matt encourages positive reinforcement through compliments to the "losing team". But how do I compliment a failing sales person when sales numbers are all they're measured on, and those numbers are not being met?**
+  - If someone is still at the company, there is something that you can praise. Once there is nothing left to praise, please Fire Well (5 min).
+
+- **1 hour per week for appreciation (follow ups and outreach) - from "How to become Insanely Well-Connected" - Matt: do you practice this, and if so, do you specifically carve out an actual hour per week and scroll through your rolodex? If so, has it been worth it, and if you have specific tips/practices for this, can you share it?**
+  - Yes, yes, and yes. I send a text or WhatsApp message. Here's an example from this past Friday:
+  - Note that I mention something particular about the person (Angela and Tulum). This shows that I care enough to know and remember things about Brian as a human being.
+  - As for success, well ... the people I coach could work with anyone on the planet.
+
+- **"Trust dissipation is correlated with geographical distance…": How can we achieve the same level of trust we had pre-lockdown? According to the book, people trust immediate peers first, people they meet in person after that, and people they meet via video conference last (!!!) - how do we gain trust when video conference is all we have left for now?**
+  - This is why Agreement-Tracker: why you need one (3 min) is more important than ever.
+  - And formalized informal time: Do Remote Right (work in progress)
+  - Including gathering and remembering personal information about each other: Trust and Like (5 min)
+  - With an occasional vulnerable session at quarterly gatherings (even if they are remote): Trust, Deep (2 min)
+  - People also need to feel grounded on their own: Remote happiness, how to create it (9 min)
+
+- **Chapter 9, Page 36: Alex Maccaw describes the CEO needing to leave the coding, if they want to run the company. How does this translate to Sales? Since Sales is my coding, and I've also heard the argument that the CEO should never stop selling.**
+  - The key is to list all of the functions of the CEO. Then make sure that every function has a DRI (directly responsible individual). That DRI doesn't have to be you. But whoever it is, must do the function fully. If you want to keep the function of high-impact sales, do so, as long as all of the other functions are covered well. And consider the only two functions that the CEO herself can do:
+    - Create, update and write out the long-term vision for the company (getting buy-in of course). Then share it with all. (This is an ever-ongoing process.)
+    - Be available to adjudicate conflict between departments and peers on the exec team. I recommend leaving at least 25% of the CEO's calendar completely open so that she can resolve any conflict or blockage near-instantly.
+
+- **Chapter 19 has spurred lots of my thinking regarding writing things down (documentation). Matt do you have any suggestions on how to formulate a culture (instead of tools) of documentation?**
+  - I do the AORs (2 min) and use the Processes Template.
+  - Once a company does this once, the culture of documentation is created.
+  - Another method is what Gitlab does.
+    - All updates, issues, etc must be in writing, and be added to the company wiki to be reviewed. (ie- CEO will not review an issue that isn't posted on the company wiki.) Therefore when the decision is made, there is nothing to push to the wiki. It's already there.
+
+- **Any recommendations/thoughts on firing an employee with high mission alignment, but underperform? Shifting the employee to other roles to align skills may be interpreted by others as an excuse for underperformance.**
+  - First read Zone of Genius (3 min)
+  - Mission alignment is gold. You never want to lose someone who is committed. The next question then becomes "What do they love to do and are they great at?" Once you know that, put them in a role where they can do those things. Watch their performance skyrocket.
+  - Shifting an employee to another role to align skills is not an excuse for underperformance. It is the way to create top performance.
+  - If the person still doesn't perform, then Fire Well (5 min)
+
+- **How would you divide-and-conquer acquiring the knowledge in the book. Every one of the 30 chapters is incredible and valuable. Where would you start and finish on the different chapters if self-coaching from scratch?**
+  - I would recommend getting organized as an individual first.
+  - Then organizing the team, ie- communication flow between team members.
+  - Only last would I attack individual departments.
+
+- **What is it about your personality, mind and life path that allowed you to accumulate this specific knowledge and articulate it in this way? So many people say they want to build companies, make money and lead. So many people want to give advice about these things and in fact their jobs require them to do so. Almost none succeed or even really try sincerely. But you've actually gone and figured out the details of how to do so in a unique way. Why?**
+  - This was generally my path: Make Money, Have Fun, Do Good
+  - The rest of the story is that I missed hanging out with my intellectual peers. So, I started to coach. Here is a bit on My Motivation. The documentation of what seemed to work was simply getting sick of hearing my own voice repeating the same things over and over again, so I followed my own advice in Writing vs Talking (3 min).
+  - On the book, I wasn't even going to publish it. Credit for that goes to Alex MacCaw of Clearbit. He was the one that assembled all of my material and pushed it out the door.
+
+- **What area of management capability / skill (i.e. pick a chapter in GCW) are CEOs in your experience most deluded about? What do they think they're ok at but actually harming themselves with bad behavior? I ask this question because there is an enormous amount to do and I would like to tune my own sense of what I need to work on first.**
+  - Most never really create an environment that welcomes and elicits true Feedback (15 min). Brian Armstrong is likely best at this. He LOVES hard feedback. Never ever gets angry. And really acts on the feedback. Still, new people feel fear, and it takes a long time (and often my direct involvement) to get them to give real feedback.
+  - Writing down the ongoing Vision for the company and sharing it with all in a way that connects each person's role to that Vision.
+  - Implementing a company-wide Agreement-Tracker: why you need one (3 min)
+  - Those are the three biggest ongoing delusions (or omissions) that I see.
+
+- **The personal habits at the front of the book are gold. Is it the CEO's job to instil these habits in execs if they don't already exist?**
+  - Yes. Or at least ask each exec if these are habits that they want to adopt and be held accountable to. Ask habit by habit so that they can say yes to some, and no to others. Then help them implement the ones that they want to adopt.
+
+- **Is it appropriate for the CEO to coach his exec team using for example your 1-1 coaching templates? Or is coaching of the exec team in this way not the CEOs job?**
+  - It is TOTALLY APPROPRIATE. I want every CEO to copy and paste my methodology. When I coach a CEO, I first show them my methodology, which usually takes 4 meetings to fully grok. At Meeting #4, if the CEO is feeling more engaged, empowered, successful, etc, then I ask them to use the same methodology with their reports.
+
+- **How do you find a great CEO coach? I am interested both in specific networks and individuals and in what to look for (qualities, experience, approach) when picking a CEO coach**
+  - Here are my best coach recommendations. Prismaticco, in particular, has done a great job of finding matches for people. I have received consistently great feedback from people that I have sent in their direction.
+  - Also Coach - how to find one (2 min)
+
+- **Why is management skill so neglected and so understudied? Your book is incredible and I believe that it addresses many of the primary barriers to building a massive business. So why do so few people try to get good at management despite the obvious rewards? And why is the median management training so poor e.g. the average MBA would fail 90% of the items in the book.**
+  - There is actually a lot of great management training out there. Unfortunately, it's not found in schools. It's found in companies: Google, Facebook, Apple, Amazon, etc. But I think that is true for many areas of business learning. The best training is in the companies themselves.
+
+- **How important are peer networks in cementing the lessons and sustaining the journey of learning to be a capable CEO? Any particular networks you like and recommend?**
+  - Peer networks are phenomenal group therapy. They let you know that you're not alone, and force you to focus on the hard important things, rather than the easy unimportant things.
+  - 10x CEO, Vistage, YPO are all good. There are many others, and likely they are good as well. I have never heard of a bad peer network. There are too many good ones for a bad one to survive.
+
+- **What is your best advice on building candor into company culture? You mention a great process in the book for resolving issues, etc that help remove emotion but that requires triggers. How can one preempt this?**
+  - Great question. Let's answer this during the Q&A.
+
+- **How does one prevent the wiki from getting too large and outdated? In the same way that one has to consider code maintenance, does one not have to consider wiki maintenance?**
+  - Yes. The solution is the same as code maintenance. There needs to be regular clean-up of Wiki debt.
+
+- **Deploying RAPID. What's the best way to start? Just go Cold Turkey? Also, is there value in doing this from a startup phase? I.e team of 2?**
+  - This technique is really meant for bigger (or remote) orgs. With smaller teams that are in constant communication, the overhead of a RAPID is likely not justified.
+  - To implement, first share the readings with the team. Ask them if they want to experiment with it. Then you write up the first one, and toddle through it. Remember to ask for feedback at the end of each one as to how it could have gone better. Do that until you have a process that all are bought into.
+
+- **Some of the OKR material I've one though notes that one should go for goals that you're only 50/50 confident you can make to prevent sandbagging. This doesn't gel very well with Impeccable Agreements. Is it supposed to? Or is the latter only meant to refer to your tasks on Asana for instance?**
+  - Goals that are only likely to be achieved 70% is what Google has found to create optimal effort. But it's a bit more challenging to track.
+  - Impeccable Agreements do not apply to OKRs. They apply primarily to tasks in Asana, meeting start times, etc. The tactical actions.
+
+
+---
+
+## Chapter 246: Mochary Method curriculum - private docs
+
+*Source: https://docs.google.com/document/d/1nk8fmCvFz4FFT2t-g0liI6kqvZnOxIhIaG0h7a2ENZ8/edit*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://docs.google.com/document/d/1nk8fmCvFz4FFT2t-g0liI6kqvZnOxIhIaG0h7a2ENZ8/edit)_
+
+
+---
+
+
+# Blog Posts
+
+## Chapter 247: Book List
+
+*Source: https://docs.google.com/document/d/1fBfpmj6Wzk0BhudPp1zYNnQCmX7Y7Lw7eRSOiL9dCVI/edit#*  
+*(5 min)*  
+
+[Book List](https://docs.google.com/document/d/1fBfpmj6Wzk0BhudPp1zYNnQCmX7Y7Lw7eRSOiL9dCVI/edit#) (5 min)
+
+The problems encountered in starting, growing and running a company have been encountered by thousands of CEOs before. And luckily dozens of successful CEOs and business leaders have written down their lessons learned in book form. These books teach us almost every important aspect of running a business. While there are hundreds of such books, the following are my favorites, and I consider them required reading for any CEO or Manager.
+
+In the remainder of this book, I will share with you the main concepts from each of these books. But they go much deeper than I will here. Please do read them at some point soon.
+
+**Individual Productivity:**
+
+**Getting Things Done** — [Summary](https://hamberg.no/gtd/) — **David Allen** — **10h** (the # of hours required to read the book)
+
+Personal productivity; describes using pen/paper, simply translate that to Evernote or another electronic tool. Using this system will make you sleep better. It takes several days to fully implement the system, but is very much worth that investment.
+
+**Organizational Productivity:**
+
+**One Minute Manager** — [Summary](http://www.jfdperfsolutions.com/modules/news/leadership-book_summary~3A_~26quot~3Bthe_one_minute_manager~26quot~3B_by_kenneth_blanchard_and_spencer_johnson.html) — **Ken Blanchard** — **.5h**
+
+Simple reporting structure that works. Simple enough that you can have all your team members read it. I recommend that you do. (Some of it is obviously dated. Ignore those parts.)
+
+**High Output Management** — [Summary](http://charles.io/high-output-management/) — **Andy Grove** — **10h**
+
+The classic tech management book. A lot more detail than 1-Minute Manager, but essentially the same structure.
+
+**The Hard Thing About Hard Things** — [Summary](https://booksummaries.co/the-hard-thing-about-hard-things-82dd119d5b86) — **Ben Horowitz** — **6h**
+
+Says how great **High Output Management** is, and then talks about what to do in some very specific and ugly situations that no other books discuss.
+
+**Sales & Marketing:**
+
+**Disciplined Entrepreneurship** — [Summary](http://tech.co/disciplined-entrepreneurship-bill-aulet-2013-08) — **Bill Aulet** — **12h**
+
+Painful, but very necessary step-by-step guide to determining who your real customer is, what solution they want, and how to market and sell to them. If you only read and apply one of these books, make it this one.
+
+**Never Split the Difference** — [Summary](https://github.com/mgp/book-notes/blob/master/never-split-the-difference.markdown) — **Chris Voss** — **6h**
+
+Ostensibly about negotiation, but really about how to create deep connection and trust quickly, which is the key to an excellent relationship with your three key constituents: customers (sales), employees (management) and investors (fundraising). This is the best book on sales that I have found.
+
+**Recruiting:**
+
+**Who** — **Geoff Smart** — **6h**
+
+Excellent [recruiting process](https://docs.google.com/document/d/1bHJJg-k-Xv_HIu9oC9uN5z7xzvL8ednP8CIlHfaVrxs/edit) that maximizes the likelihood of hiring A players only, and then ensuring their success at the company.
+
+**Culture:** [Summary](http://www.skipprichard.com/15-commitments-of-conscious-leadership/)
+
+**The 15 Commitments of Conscious Leadership** — **Diana Chapman** — **10h**
+
+Companies can become good using the hard skills outlined in the books above. To become great, a company must become curious and open to learning. This book shows how to do that.
+
+The summaries linked above are poor representations of the books themselves, as the summaries give the basic steps recommended, but not the details of why. And it is those details that are critical. Please force yourself to read all of the books above in their entirety. You won't regret it.
+
+
+---
+
+## Chapter 248: The stock market is not the economy … explained
+
+*Source: https://docs.google.com/document/d/1PWqUwM7mR2LtGVdQxlktbJKix_kNAUfm99QY9cKQtmg/edit*  
+*(2 min)*  
+
+[The stock market is not the economy … explained](https://docs.google.com/document/d/1PWqUwM7mR2LtGVdQxlktbJKix_kNAUfm99QY9cKQtmg/edit) (2 min)
+
+We are all seeing the stock market rise as mass layoffs continue and US GDP craters. Many are asking: How is this possible? 
+
+Here's how …
+
+On March 23, 2020, the US government stated that it would do unlimited amounts of Quantitative Easing (buying illiquid debt from banks) and direct corporate debt purchases. Quantitative Easing was innovated in 2008 and was used to purchase banks' bad debt (caused by massive defaults on home mortgages). In 2020, the same technique was being used but now includes buying new debt directly from companies. 
+
+Do not be confused by the fancy words here. All this means is that the US government is handing trillions of dollars to banks and large corporations. And is asking for close to 0% interest in return. 
+
+What will the beneficiaries do with that money? What is the best investment right now? 
+
+Will they build new factories and hire more workers? No. Consumer demand has fallen off a cliff as people shelter-in-place and hope to have enough money to buy food and pay the rent. 
+
+Will they lend it to small business owners to re-open their businesses? Unlikely. No one is buying right now, so re-opening a small business looks like a bad credit risk. 
+
+Will they buy US Treasuries? No. Those are safe stores of capital, but the interest they pay now is close to zero.
+
+So, what remains? Equities. 
+
+Investors realize that the beneficiaries of the government's largesse are going to use that capital to buy equities because the loans don't need to get repaid for many years. US GDP will be restored in that time, and those same equities will once again be attached to significant cash flow. 
+
+When investing in a company, an investor looks at the future cash flows that the company will produce (usually five years out) and discounts that cash flow to today's value, discounting by the cost of capital. With 0% cost of capital, $10 of cash flow in 5 years is worth $10 today. Investors can therefore look past whatever massive losses occur in the next few months or even years and simply look at profits 3, 4, 5 years from now and be willing to pay dollar for dollar for those profits today. 
+
+That is why the stock market goes up, as the economy crumbles, millions lose their jobs and any ability to pay for housing, food, etc. 
+
+The sad part about all of this is that those same trillions of dollars used to lend to banks and corporations, who will most likely simply use it to buy stocks (often their own), could have instead been sent directly to every person in the US. Had the government done that, people would keep their homes, put food on the table, and start spending again to restart the economy. 
+
+Instead, investors (like me) get richer, while those who rely on a job for their money are put on the street. 
+
+This tool (the government buying bad debt) was used in 2008 in a big way. Politicians and economists feared that there would be mass uprisings as taxpayers realized that their dollars had been used to bail out the investors in the very banks that had created the crisis. But the uprising never came. 
+
+So, politicians (on both sides of the aisle) learned that they had just discovered a magic bullet. They now had a way of propping up the stock market (which they could point to as evidence of a "strong economy" and get re-elected) with no downside consequence to their political career.
+
+So, in 2020, they took that tool and brought it from large to absolutely massive. Will there be an uprising now? I am sad to say … I don't think so. 
+
+Will the market crash again as investors realize just how much economic devastation has been sustained (2Q GDP down >30%, unemployment >25%, etc.)? Maybe. But this too will be temporary because zero cost of capital decouples the stock market from today's economy, instead of tying it to the economy five years from now.
+
+
+---

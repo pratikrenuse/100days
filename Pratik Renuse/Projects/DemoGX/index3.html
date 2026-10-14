@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zero to One — A Founder's RPG · Pratik Renuse</title>
+<meta name="description" content="A retro top-down RPG quest through Pratik Renuse's career. Walk the world, talk to the keepers of each hall, and reach One.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;overflow:hidden;background:#1a1714;font-family:'Press Start 2P',monospace}
+  #stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+    background:radial-gradient(circle at 50% 35%,#2a2620,#141210)}
+  canvas{display:block;image-rendering:pixelated;image-rendering:crisp-edges;
+    box-shadow:0 0 0 4px #0c0a08,0 24px 70px -20px rgba(0,0,0,.7)}
+  .backlink{position:fixed;top:14px;left:16px;z-index:40;font-size:9px;letter-spacing:1px;
+    color:#b7ad99;text-decoration:none;text-transform:uppercase}
+  .backlink:hover{color:#fff}
+
+  /* touch d-pad */
+  #touch{position:fixed;inset:0;z-index:30;display:none;pointer-events:none}
+  body.touch #touch{display:block}
+  #touch .grp{position:absolute;bottom:24px;pointer-events:auto}
+  #touch .dpad{left:20px;width:150px;height:150px}
+  #touch .dpad button{position:absolute;width:48px;height:48px}
+  #touch .dpad .u{left:51px;top:0}#touch .dpad .d{left:51px;top:102px}
+  #touch .dpad .l{left:0;top:51px}#touch .dpad .r{left:102px;top:51px}
+  #touch .act{right:24px;bottom:34px}
+  #touch .act button{width:74px;height:74px;border-radius:50%}
+  #touch button{border:2px solid #0c0a08;background:rgba(58,52,44,.9);color:#f3ead4;
+    font-family:'Press Start 2P',monospace;font-size:12px;line-height:1;
+    display:flex;align-items:center;justify-content:center;user-select:none;-webkit-user-select:none;touch-action:none}
+  #touch button:active{background:#9c5b43}
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="game"></canvas></div>
+<a class="backlink" href="index.html">&lt; PORTFOLIO</a>
+
+<div id="touch">
+  <div class="grp dpad">
+    <button class="u" data-k="up">▲</button><button class="d" data-k="down">▼</button>
+    <button class="l" data-k="left">◀</button><button class="r" data-k="right">▶</button>
+  </div>
+  <div class="grp act"><button data-k="act">A</button></div>
+</div>
+
+<script>
+(() => {
+"use strict";
+const cv=document.getElementById('game'), ctx=cv.getContext('2d');
+const TILE=32, VC=26, VR=18, VW=VC*TILE, VH=VR*TILE;   // viewport 832x576
+cv.width=VW; cv.height=VH; ctx.imageSmoothingEnabled=false;
+
+// ---------- palette ----------
+const COL={
+  grassA:'#86a35e', grassB:'#7e9c57', grassDk:'#6f8c49',
+  path:'#d7c39a', pathDk:'#cab488', water:'#5f9fc4', waterLt:'#83bcdd',
+  trunk:'#6c4a2d', leafA:'#5c8a47', leafB:'#4c7a39', leafDk:'#3f6830',
+  wall:'#efe6d2', wallDk:'#d9cdb2', roof:'#9c5b43', roofDk:'#7f4630', roofLt:'#b3705a',
+  door:'#5a3a26', win:'#7fb6d6', signWood:'#9a7a4f',
+  ink:'#2a241c', gold:'#e7b24e', goldDk:'#b9893a'
+};
+const F=p=>p+"px 'Press Start 2P', monospace";
+
+// ---------- responsive ----------
+function resize(){ const s=Math.max(1,Math.min(window.innerWidth/VW, window.innerHeight/VH));
+  cv.style.width=(VW*s)+'px'; cv.style.height=(VH*s)+'px'; }
+addEventListener('resize',resize); resize();
+
+// ---------- map ----------
+const MW=28, MH=34;
+// tile codes: 0 grass,1 path,2 water,3 tree,4 building(solid),5 door
+const map=[]; for(let y=0;y<MH;y++){ map.push(new Array(MW).fill(0)); }
+const variant=[]; for(let y=0;y<MH;y++){ variant.push([]); for(let x=0;x<MW;x++) variant[y].push(Math.random()); }
+
+// forest border (2 thick)
+for(let x=0;x<MW;x++){ map[0][x]=map[1][x]=3; map[MH-1][x]=map[MH-2][x]=3; }
+for(let y=0;y<MH;y++){ map[y][0]=map[y][1]=3; map[y][MW-1]=map[y][MW-2]=3; }
+
+// decorative pond (bottom-right)
+for(let y=27;y<=30;y++) for(let x=22;x<=25;x++) map[y][x]=2;
+map[26][23]=3; map[26][24]=3; // reeds edge
+
+// ---------- structures (career halls) ----------
+// each: name(short), full, accent roof, door tile (dx,dy), npc tile, pages[], quest(bool)
+const halls=[
+  { key:'airbus', name:'AIRBUS', col:4,  row:26, roof:COL.roof, quest:true,
+    pages:[
+      {s:'AIRBUS · MUNICH · 2016',t:"Welcome, traveler. This is the Aerospace Hangar."},
+      {s:'THE KEEPER',t:"Pratik led EU-wide branding for Project NEOShield — single-handed."},
+      {s:'THE KEEPER',t:"Organic reach climbed +127% in two moons. The site rose to Rank #1."}
+    ]},
+  { key:'bayer', name:'BAYER', col:18, row:26, roof:'#6f7f53', quest:true,
+    pages:[
+      {s:'BAYER · BERLIN · 2017',t:"The Life-Sciences Hall. Mind the executives."},
+      {s:'THE KEEPER',t:"He ran GIM — Bayer's grand summit for senior leaders."},
+      {s:'THE KEEPER',t:"A war-chest of EUR 250K, deployed across 50+ realms."}
+    ]},
+  { key:'infento', name:'INFENTO', col:3, row:18, roof:COL.roof, quest:true,
+    pages:[
+      {s:'INFENTO · AMSTERDAM · 2017-19',t:"The Workshop, where things are built from nothing."},
+      {s:'THE KEEPER',t:"Founding team. Marketing from zero — the web-shop grew EUR 0 to EUR 2M."},
+      {s:'THE KEEPER',t:"His Kickstarter raised $848K — the #1 STEM quest in all the world, 2018."}
+    ]},
+  { key:'growack', name:'GROWACK', col:19, row:18, roof:'#5f7d7a', quest:true,
+    pages:[
+      {s:'GROWACK · 2020',t:"The Growth Studio. Inbound spells and growth craft."},
+      {s:'THE KEEPER',t:"He led B2B growth across Western Europe."},
+      {s:'THE KEEPER',t:"A HubSpot Partner, named Clutch 2021 Top B2B guild of the West."}
+    ]},
+  { key:'vu', name:'VU', col:5, row:10, roof:'#8a93a0', quest:true,
+    pages:[
+      {s:'VU · GENEVA · 2021-25',t:"The Alpine Lodge — favoured by champions of snow."},
+      {s:'THE KEEPER',t:"Founding team. The #1 Swiss brand for pro skiers — used by Olympians."},
+      {s:'THE KEEPER',t:"EUR 275K+ revenue and 4.4x growth in peak season."}
+    ]},
+  { key:'bueno', name:'BUENO', col:18, row:10, roof:COL.roof, quest:true,
+    pages:[
+      {s:'BUENO · SPAIN · 2022-NOW',t:"The Fintech Bank — for foreign owners of distant lands."},
+      {s:'THE KEEPER',t:"Founding team. Built growth solo: EUR 0 to EUR 300K+ ARR across 28 lands."},
+      {s:'THE KEEPER',t:"24x LTV/CAC. 1M+ travelers found their way through the gates."}
+    ]},
+];
+// place building footprints (5w x 4h) + door
+function placeBuilding(h){
+  for(let y=h.row;y<h.row+4;y++) for(let x=h.col;x<h.col+5;x++) map[y][x]=4;
+  h.dx=h.col+2; h.dy=h.row+4;            // door tile (walkable, interaction)
+  map[h.dy][h.dx]=5;
+  h.npc={x:h.dx, y:h.dy};                // keeper stands on door tile
+}
+halls.forEach(placeBuilding);
+
+// summit portal (top-center) — the "1"
+const portal={ col:12, row:4, dx:14, dy:8 };
+for(let y=portal.row;y<portal.row+4;y++) for(let x=portal.col;x<portal.col+5;x++) map[y][x]=4;
+map[portal.dy][portal.dx]=5;
+
+// wandering villagers (flavor, optional)
+const villagers=[
+  { x:13, y:23, name:'MENTOR', color:'#6b8f6b',
+    pages:[ {s:'A WANDERING MENTOR',t:"Beyond these halls, Pratik guides others."},
+            {s:'A WANDERING MENTOR',t:"100+ startups mentored via Techstars, EBRD & Seedstars. 9.7/10, they say."} ]},
+  { x:13, y:15, name:'BARD', color:'#9c6b8f',
+    pages:[ {s:'A TRAVELLING BARD',t:"I sing of the stages he has graced."},
+            {s:'A TRAVELLING BARD',t:"3 TEDx talks, 50+ speeches across 14+ lands. A teacher of 500+ scholars too."} ]},
+];
+
+// cosmetic paths (grass is walkable anyway; paths just guide)
+function carveV(x,y0,y1){ for(let y=y0;y<=y1;y++) if(map[y][x]===0) map[y][x]=1; }
+function carveH(y,x0,x1){ for(let x=x0;x<=x1;x++) if(map[y][x]===0) map[y][x]=1; }
+carveV(13,8,32); carveV(14,8,32);
+carveH(31,5,20); carveH(23,4,20); carveH(15,4,21); carveH(9,6,20);
+[ [6,31],[20,31],[5,23],[21,23],[7,15],[20,15],[14,9] ].forEach(([x,y])=>carveV(x,Math.min(y,9),Math.max(y,9)>9?y:y));
+
+// scatter a few trees + flowers in open grass (sparse, not a maze)
+// — every tree is validated so it can never seal off a door (no soft-locks)
+const doorTiles=halls.map(h=>[h.dx,h.dy]).concat([[portal.dx,portal.dy]]);
+function isWalk(t){ return t!==3 && t!==2 && t!==4; }
+function doorsReachable(){
+  const seen=Array.from({length:MH},()=>new Array(MW).fill(false));
+  const q=[[13,31]]; seen[31][13]=true;
+  while(q.length){ const [x,y]=q.pop();
+    for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const nx=x+dx,ny=y+dy;
+      if(nx<0||ny<0||nx>=MW||ny>=MH||seen[ny][nx]) continue;
+      if(isWalk(map[ny][nx])){ seen[ny][nx]=true; q.push([nx,ny]); } } }
+  return doorTiles.every(([dx,dy])=> seen[dy][dx] ||
+    [[dx,dy+1],[dx-1,dy],[dx+1,dy]].some(([ax,ay])=> seen[ay] && seen[ay][ax]));
+}
+const flowers=[];
+let placed=0;
+for(let i=0;i<90 && placed<16;i++){
+  const x=2+((Math.random()*(MW-4))|0), y=2+((Math.random()*(MH-4))|0);
+  if(map[y][x]===0 && map[y+1] && map[y+1][x]!==4){
+    map[y][x]=3;
+    if(doorsReachable()) placed++; else map[y][x]=0;   // revert if it would block a door
+  }
+}
+for(let i=0;i<24;i++){ const x=2+((Math.random()*(MW-4))|0), y=2+((Math.random()*(MH-4))|0);
+  if(map[y][x]===0) flowers.push({x,y,c:Math.random()<.5?'#e7b24e':'#d98a8a'}); }
+
+// coins
+const coins=[];
+for(let i=0;i<22;i++){ for(let t=0;t<10;t++){ const x=2+((Math.random()*(MW-4))|0), y=2+((Math.random()*(MH-4))|0);
+  if(map[y][x]===0||map[y][x]===1){ coins.push({x:x*TILE+16,y:y*TILE+16,got:false,ph:Math.random()*6.3}); break; } } }
+const coinTotal=coins.length;
+
+// ---------- pre-render static map ----------
+const mapCv=document.createElement('canvas'); mapCv.width=MW*TILE; mapCv.height=MH*TILE;
+const mc=mapCv.getContext('2d'); mc.imageSmoothingEnabled=false;
+function px(c,x,y,w,h){ mc.fillStyle=c; mc.fillRect(x,y,w,h); }
+function tGrass(tx,ty){ const X=tx*TILE,Y=ty*TILE; const v=variant[ty][tx];
+  px(((tx+ty)&1)?COL.grassA:COL.grassB,X,Y,TILE,TILE);
+  if(v<.3){px(COL.grassDk,X+6,Y+8,3,3);px(COL.grassDk,X+20,Y+18,3,3);}
+  else if(v<.55){px(COL.grassDk,X+14,Y+22,3,3);} }
+function tPath(tx,ty){ const X=tx*TILE,Y=ty*TILE; px(COL.path,X,Y,TILE,TILE);
+  const v=variant[ty][tx]; px(COL.pathDk,X+ (v*20|0)+4,Y+ (v*18|0)+5,3,3); px(COL.pathDk,X+22,Y+24,2,2); }
+function tWater(tx,ty){ const X=tx*TILE,Y=ty*TILE; px(COL.water,X,Y,TILE,TILE);
+  px(COL.waterLt,X+5,Y+10,10,2); px(COL.waterLt,X+16,Y+20,9,2); }
+function tTree(tx,ty){ const X=tx*TILE,Y=ty*TILE; tGrass(tx,ty);
+  px(COL.trunk,X+14,Y+18,5,12);
+  px(COL.leafDk,X+5,Y+4,22,18); px(COL.leafB,X+6,Y+3,20,15); px(COL.leafA,X+8,Y+5,13,9); }
+
+// draw a building footprint with roof, walls, door, windows, sign
+function drawBuilding(h, isPortal){
+  const X=h.col*TILE, Y=h.row*TILE, w=5*TILE, hgt=4*TILE;
+  // walls
+  mc.fillStyle=COL.wall; mc.fillRect(X+4,Y+TILE,w-8,hgt-TILE-4);
+  mc.fillStyle=COL.wallDk; mc.fillRect(X+4,Y+hgt-12,w-8,8);
+  // roof (clay)
+  const roof=h.roof||COL.roof;
+  mc.fillStyle=roof; mc.fillRect(X,Y+10,w,TILE);
+  mc.fillStyle=COL.roofDk; mc.fillRect(X,Y+10+TILE-6,w,6);
+  // roof peak
+  mc.fillStyle=roof; for(let i=0;i<w/2;i+=2){ mc.fillRect(X+i,Y+10-(i>>1),w-i*2,2); }
+  mc.fillStyle=COL.roofLt; mc.fillRect(X+6,Y+14,w-12,3);
+  if(isPortal){
+    // glowing archway instead of door/windows
+    const open=questDone();
+    mc.fillStyle=open?'#f0c878':'#3a342c';
+    mc.fillRect(X+w/2-14,Y+TILE+6,28,hgt-TILE-10);
+    mc.fillStyle=open?'#ffe8b0':'#2a241c';
+    mc.fillRect(X+w/2-9,Y+TILE+12,18,hgt-TILE-18);
+    return;
+  }
+  // door
+  mc.fillStyle=COL.door; mc.fillRect(X+w/2-9,Y+hgt-22,18,18);
+  mc.fillStyle='#caa34a'; mc.fillRect(X+w/2+3,Y+hgt-13,2,2);
+  // windows
+  mc.fillStyle=COL.win; mc.fillRect(X+14,Y+TILE+8,12,12); mc.fillRect(X+w-26,Y+TILE+8,12,12);
+  mc.fillStyle=COL.wallDk; mc.fillRect(X+19,Y+TILE+8,2,12); mc.fillRect(X+14,Y+TILE+13,12,2);
+  mc.fillRect(X+w-21,Y+TILE+8,2,12); mc.fillRect(X+w-26,Y+TILE+13,12,2);
+  // sign post
+  mc.fillStyle=COL.signWood; mc.fillRect(X+w/2-22,Y-2,44,14);
+  mc.fillStyle=COL.ink; mc.font=F(7); mc.textAlign='center'; mc.textBaseline='middle';
+  mc.fillText(h.name, X+w/2, Y+6);
+}
+function renderMap(){
+  for(let y=0;y<MH;y++) for(let x=0;x<MW;x++){
+    const t=map[y][x];
+    if(t===3) tTree(x,y);
+    else if(t===2) tWater(x,y);
+    else if(t===1) tPath(x,y);
+    else tGrass(x,y);                 // grass under buildings/doors too
+  }
+  // flowers
+  for(const f of flowers){ mc.fillStyle=f.c; const X=f.x*TILE,Y=f.y*TILE;
+    mc.fillRect(X+13,Y+15,3,3); mc.fillRect(X+10,Y+18,3,3); mc.fillRect(X+16,Y+18,3,3); mc.fillRect(X+13,Y+21,3,3); }
+  halls.forEach(h=>drawBuilding(h,false));
+  drawBuilding(portal,true);
+}
+renderMap();
+function rerenderPortal(){ // re-draw portal when it unlocks
+  // repaint its tiles ground then building
+  for(let y=portal.row;y<portal.row+5;y++) for(let x=portal.col;x<portal.col+5;x++){
+    const t=map[y][x]; if(t===1)tPath(x,y); else tGrass(x,y);
+  }
+  drawBuilding(portal,true);
+}
+
+// ---------- entities ----------
+const player={ x:13*TILE+4, y:31*TILE, w:20, h:24, sp:2.4, dir:'up', moving:false, frame:0, anim:0 };
+// feet collision box (relative to x,y): centered bottom
+function feet(px,py){ return {l:px+2,r:px+player.w-2,t:py+player.h-10,b:py+player.h}; }
+function solidTile(tx,ty){ if(tx<0||ty<0||tx>=MW||ty>=MH) return true; const t=map[ty][tx]; return t===3||t===2||t===4; }
+function blocked(px,py){
+  const f=feet(px,py);
+  const pts=[[f.l,f.t],[f.r,f.t],[f.l,f.b],[f.r,f.b]];
+  for(const [X,Y] of pts){ if(solidTile((X/TILE)|0,(Y/TILE)|0)) return true; }
+  return false;
+}
+
+// ---------- input ----------
+const keys={up:false,down:false,left:false,right:false};
+let actPressed=false;
+const km={ArrowUp:'up',KeyW:'up',ArrowDown:'down',KeyS:'down',ArrowLeft:'left',KeyA:'left',ArrowRight:'right',KeyD:'right'};
+addEventListener('keydown',e=>{
+  if(km[e.code]){keys[km[e.code]]=true;e.preventDefault();}
+  if((e.code==='Space'||e.code==='Enter')&&!e.repeat){actPressed=true;e.preventDefault();}
+});
+addEventListener('keyup',e=>{ if(km[e.code]) keys[km[e.code]]=false; });
+if(matchMedia('(pointer:coarse)').matches||'ontouchstart' in window) document.body.classList.add('touch');
+document.querySelectorAll('#touch button').forEach(b=>{ const k=b.dataset.k;
+  const on=e=>{e.preventDefault(); if(k==='act')actPressed=true; else keys[k]=true;};
+  const off=e=>{e.preventDefault(); if(k!=='act')keys[k]=false;};
+  b.addEventListener('touchstart',on,{passive:false}); b.addEventListener('mousedown',on);
+  b.addEventListener('touchend',off,{passive:false}); b.addEventListener('mouseup',off);
+  b.addEventListener('touchcancel',off,{passive:false}); b.addEventListener('mouseleave',off);
+});
+
+// ---------- state ----------
+let state='title';      // title | play | dialog | win
+let visited=0, coinsGot=0;
+let dlg=null;           // {pages,idx,shown,len,speaker,onDone}
+let toast=null, toastT=0;
+let confetti=[];
+let camX=0, camY=0;
+const allTalkTargets=()=>halls.concat(villagers);
+function questDone(){ return halls.every(h=>h.done); }
+
+function startDialog(pages, onDone){
+  dlg={pages, idx:0, shown:0, onDone}; state='dialog'; setPage();
+}
+function setPage(){ const p=dlg.pages[dlg.idx]; dlg.speaker=p.s; dlg.text=p.t; dlg.lines=wrap(p.t, VW-150); dlg.len=p.t.length; dlg.shown=0; }
+function advance(){
+  const full = dlg.shown>=dlg.len;
+  if(!full){ dlg.shown=dlg.len; return; }
+  if(dlg.idx<dlg.pages.length-1){ dlg.idx++; setPage(); }
+  else { const cb=dlg.onDone; dlg=null; state='play'; if(cb)cb(); }
+}
+function showToast(msg){ toast=msg; toastT=140; }
+
+// nearest interactable to player (by door/npc tile)
+function nearTarget(){
+  const ptx=(player.x+player.w/2)/TILE, pty=(player.y+player.h-6)/TILE;
+  let best=null,bd=1.6;
+  for(const h of halls){ const d=Math.hypot(ptx-(h.dx+0.5),pty-(h.dy+0.5)); if(d<bd){bd=d;best={type:'hall',ref:h};} }
+  for(const v of villagers){ const d=Math.hypot(ptx-(v.x+0.5),pty-(v.y+0.5)); if(d<bd){bd=d;best={type:'vil',ref:v};} }
+  // portal
+  const dp=Math.hypot(ptx-(portal.dx+0.5),pty-(portal.dy+0.5));
+  if(dp<bd){bd=dp;best={type:'portal'};}
+  return best;
+}
+function interact(){
+  const tg=nearTarget(); if(!tg) return;
+  if(tg.type==='hall'){ const h=tg.ref;
+    startDialog(h.pages, ()=>{ if(!h.done){h.done=true; visited++; if(questDone()){ rerenderPortal(); showToast('THE SUMMIT GATE OPENS!'); }}});
+  } else if(tg.type==='vil'){ startDialog(tg.ref.pages); }
+  else if(tg.type==='portal'){
+    if(questDone()) triggerWin();
+    else showToast('SEAL THE 6 HALLS FIRST  ('+visited+'/6)');
+  }
+}
+function triggerWin(){ state='win';
+  for(let i=0;i<150;i++) confetti.push({x:Math.random()*VW,y:-Math.random()*VH,
+    vy:1.4+Math.random()*2.6,vx:(Math.random()-.5)*1.4,sz:4+(Math.random()*5|0),
+    c:['#e7b24e','#9c5b43','#7e9c57','#f3ead4'][Math.random()*4|0]}); }
+
+// ---------- update ----------
+function update(dt){
+  if(toastT>0) toastT-=dt;
+  if(state==='title'){ if(actPressed){state='play';actPressed=false;} return; }
+  if(state==='win'){ if(actPressed)actPressed=false; return; }
+  if(state==='dialog'){ if(actPressed){advance();actPressed=false;}
+    // typewriter
+    if(dlg) dlg.shown=Math.min(dlg.len, dlg.shown+0.9);
+    return; }
+
+  // play
+  if(actPressed){ interact(); actPressed=false; }
+  let dx=0,dy=0;
+  if(keys.up){dy-=1;player.dir='up';} if(keys.down){dy+=1;player.dir='down';}
+  if(keys.left){dx-=1;player.dir='left';} if(keys.right){dx+=1;player.dir='right';}
+  player.moving = (dx||dy)!==0;
+  if(dx&&dy){ dx*=0.7071; dy*=0.7071; }
+  // move X then Y with collision
+  let nx=player.x+dx*player.sp;
+  if(!blocked(nx,player.y)) player.x=nx;
+  let ny=player.y+dy*player.sp;
+  if(!blocked(player.x,ny)) player.y=ny;
+  // animate
+  if(player.moving){ player.anim+=Math.abs(dx)+Math.abs(dy); player.frame=(player.anim*0.18|0)%4; }
+  else player.frame=0;
+  // coins
+  for(const c of coins){ if(c.got)continue;
+    if(Math.hypot((player.x+player.w/2)-c.x,(player.y+player.h-6)-c.y)<18){ c.got=true; coinsGot++; } }
+  // camera
+  const tx=player.x+player.w/2-VW/2, ty=player.y+player.h/2-VH/2;
+  camX=Math.max(0,Math.min(MW*TILE-VW,tx)); camY=Math.max(0,Math.min(MH*TILE-VH,ty));
+}
+
+// ---------- text wrap ----------
+function wrap(text,maxW){ ctx.font=F(11); const words=text.split(' '); const lines=[]; let ln='';
+  for(const w of words){ const test=ln?ln+' '+w:w; if(ctx.measureText(test).width>maxW && ln){lines.push(ln);ln=w;} else ln=test; }
+  if(ln)lines.push(ln); return lines; }
+
+// ---------- draw ----------
+function drawPlayer(sx,sy){
+  const f=player.frame, step=(f===1?-2:f===3?2:0);
+  // shadow
+  ctx.fillStyle='rgba(0,0,0,0.22)'; ctx.beginPath(); ctx.ellipse(sx+player.w/2,sy+player.h-1,11,4,0,0,6.3); ctx.fill();
+  const skin='#e8b98c', hair='#3a2a1c', tunic=COL.roof, scarf='#caa34a', pant='#4a5d6e', boot='#33271c';
+  const x=sx, y=sy;
+  // legs (animated)
+  ctx.fillStyle=pant; ctx.fillRect(x+5,y+16,4,6+ (f===1?0:0)); ctx.fillRect(x+11,y+16,4,6);
+  ctx.fillStyle=boot; ctx.fillRect(x+5+step,y+22,5,3); ctx.fillRect(x+11-step,y+22,5,3);
+  // body / tunic
+  ctx.fillStyle=tunic; ctx.fillRect(x+4,y+9,12,9);
+  ctx.fillStyle=scarf; ctx.fillRect(x+4,y+9,12,2);
+  // arms
+  ctx.fillStyle=tunic;
+  if(player.dir==='left'){ ctx.fillRect(x+2,y+10,3,6); ctx.fillRect(x+15,y+11,3,5); }
+  else if(player.dir==='right'){ ctx.fillRect(x+15,y+10,3,6); ctx.fillRect(x+2,y+11,3,5); }
+  else { ctx.fillRect(x+1,y+10+(step>0?1:0),3,6); ctx.fillRect(x+16,y+10-(step>0?1:0),3,6); }
+  // head
+  ctx.fillStyle=skin; ctx.fillRect(x+5,y+1,10,9);
+  ctx.fillStyle=hair; ctx.fillRect(x+4,y,12,4);
+  if(player.dir==='down'){ ctx.fillStyle=hair; ctx.fillRect(x+4,y,12,5);
+    ctx.fillStyle='#2a241c'; ctx.fillRect(x+7,y+5,2,2); ctx.fillRect(x+11,y+5,2,2); }
+  else if(player.dir==='up'){ ctx.fillStyle=hair; ctx.fillRect(x+4,y,12,7); }
+  else if(player.dir==='left'){ ctx.fillStyle=hair; ctx.fillRect(x+4,y,11,5);
+    ctx.fillStyle='#2a241c'; ctx.fillRect(x+6,y+5,2,2); }
+  else { ctx.fillStyle=hair; ctx.fillRect(x+5,y,11,5);
+    ctx.fillStyle='#2a241c'; ctx.fillRect(x+12,y+5,2,2); }
+}
+function drawNPC(sx,sy,color,name){
+  ctx.fillStyle='rgba(0,0,0,0.22)'; ctx.beginPath(); ctx.ellipse(sx+10,sy+23,10,4,0,0,6.3); ctx.fill();
+  ctx.fillStyle=color; ctx.fillRect(sx+4,sy+9,12,13);          // robe
+  ctx.fillStyle='#e8b98c'; ctx.fillRect(sx+5,sy+2,10,8);       // head
+  ctx.fillStyle='#3a2a1c'; ctx.fillRect(sx+4,sy,12,4);
+  ctx.fillStyle='#2a241c'; ctx.fillRect(sx+7,sy+6,2,2); ctx.fillRect(sx+11,sy+6,2,2);
+}
+
+function draw(){
+  // map
+  ctx.drawImage(mapCv, camX, camY, VW, VH, 0,0, VW, VH);
+  // coins
+  for(const c of coins){ if(c.got)continue; const sx=c.x-camX, sy=c.y-camY+Math.sin(performance.now()/300+c.ph)*3;
+    if(sx<-20||sx>VW+20||sy<-20||sy>VH+20)continue; const sq=Math.abs(Math.cos(performance.now()/260+c.ph));
+    ctx.fillStyle=COL.goldDk; ctx.fillRect(sx-5*sq,sy-6,10*sq,12);
+    ctx.fillStyle=COL.gold; ctx.fillRect(sx-3*sq,sy-4,6*sq,8);
+    if(sq>0.5){ctx.fillStyle='#fff3cf'; ctx.fillRect(sx-1,sy-3,2,3);} }
+  // villagers
+  for(const v of villagers){ const sx=v.x*TILE+6-camX, sy=v.y*TILE+4-camY+Math.sin(performance.now()/500+v.x)*1.5;
+    if(sx<-40||sx>VW+40)continue; drawNPC(sx,sy,v.color,v.name); }
+  // hall keepers + markers
+  for(const h of halls){ const sx=h.dx*TILE+6-camX, sy=h.dy*TILE+2-camY;
+    if(sx<-60||sx>VW+60)continue; drawNPC(sx,sy,'#7a6a55');
+    markIcon(sx+4, sy-14, h.done?'done':'quest'); }
+  // portal marker
+  { const sx=portal.dx*TILE-camX, sy=portal.dy*TILE-camY;
+    if(questDone()){ const g=0.4+0.3*Math.sin(performance.now()/300);
+      ctx.fillStyle=`rgba(231,178,78,${g})`; ctx.fillRect(sx-2,sy-44,28,44); }
+    markIcon(sx+8, sy-22, questDone()?'star':'lock'); }
+  // player
+  drawPlayer(player.x-camX, player.y-camY);
+  // interaction hint
+  const tg=nearTarget();
+  if(tg){ const bob=Math.sin(performance.now()/200)*2;
+    ctx.fillStyle='#2a241c'; ctx.fillRect(player.x-camX-2,player.y-camY-22+bob,player.w+4,14);
+    ctx.fillStyle='#f3ead4'; ctx.font=F(7); ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText(document.body.classList.contains('touch')?'A':'SPACE', player.x-camX+player.w/2, player.y-camY-15+bob); }
+
+  drawHUD();
+  drawEdgeArrow();
+  if(toastT>0) drawToast();
+  if(state==='title') drawTitle();
+  if(state==='dialog') drawDialog();
+  if(state==='win') drawWin();
+}
+
+function markIcon(x,y,kind){
+  if(kind==='quest'){ const bob=Math.sin(performance.now()/220)*2;
+    ctx.fillStyle='#e7b24e'; ctx.font=F(14); ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText('!', x, y+bob); ctx.fillStyle='#7f4630'; ctx.fillText('!', x+1, y+1+bob); ctx.fillStyle='#e7b24e'; ctx.fillText('!', x, y+bob); }
+  else if(kind==='done'){ ctx.fillStyle='#7e9c57'; ctx.font=F(12); ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText('✓', x, y); }
+  else if(kind==='lock'){ ctx.fillStyle='#b7ad99'; ctx.font=F(12); ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText('1', x, y); }
+  else if(kind==='star'){ const b=Math.sin(performance.now()/200)*2; ctx.fillStyle='#ffe8b0'; ctx.font=F(18); ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText('1', x, y+b); }
+}
+
+function panelBox(x,y,w,h){
+  ctx.fillStyle='#2a241c'; ctx.fillRect(x,y,w,h);
+  ctx.fillStyle='#0c0a08'; ctx.fillRect(x,y,w,3); ctx.fillRect(x,y+h-3,w,3); ctx.fillRect(x,y,3,h); ctx.fillRect(x+w-3,y,3,h);
+  ctx.strokeStyle='#9c5b43'; ctx.lineWidth=2; ctx.strokeRect(x+5,y+5,w-10,h-10);
+}
+function drawHUD(){
+  // top bar
+  ctx.fillStyle='rgba(20,18,14,0.82)'; ctx.fillRect(0,0,VW,30);
+  ctx.fillStyle='#0c0a08'; ctx.fillRect(0,30,VW,2);
+  ctx.textAlign='left'; ctx.textBaseline='middle'; ctx.font=F(9); ctx.fillStyle='#f3ead4';
+  ctx.fillText('QUEST  '+visited+'/6 HALLS', 14, 15);
+  ctx.fillStyle='#e7b24e'; ctx.fillText('◆ '+coinsGot+'/'+coinTotal, VW-150, 15);
+  ctx.fillStyle='#b7ad99'; ctx.fillText('LV.'+(visited+4), VW-58, 15);
+}
+function drawToast(){
+  const a=Math.min(1,toastT/40); ctx.globalAlpha=a;
+  ctx.font=F(9); const w=ctx.measureText(toast).width+28;
+  panelBox(VW/2-w/2, 40, w, 30);
+  ctx.fillStyle='#f3ead4'; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText(toast, VW/2, 56);
+  ctx.globalAlpha=1;
+}
+// arrow at screen edge pointing to nearest unvisited hall
+function drawEdgeArrow(){
+  if(state!=='play') return;
+  let target=null,bd=1e9;
+  for(const h of halls){ if(h.done)continue; const cx=h.dx*TILE+16, cy=h.dy*TILE+16;
+    const d=Math.hypot(cx-(player.x+10),cy-(player.y+10)); if(d<bd){bd=d;target={x:cx,y:cy,name:h.name};} }
+  if(!target && questDone()) target={x:portal.dx*TILE+16,y:portal.dy*TILE-10,name:'SUMMIT'};
+  if(!target) return;
+  const sx=target.x-camX, sy=target.y-camY;
+  if(sx>20&&sx<VW-20&&sy>40&&sy<VH-20) return; // on screen
+  const ang=Math.atan2(sy-VH/2, sx-VW/2);
+  const mx=VW/2+Math.cos(ang)*(VW/2-40), my=VH/2+Math.sin(ang)*(VH/2-50);
+  ctx.save(); ctx.translate(mx,my); ctx.rotate(ang);
+  ctx.fillStyle='#e7b24e'; ctx.beginPath(); ctx.moveTo(12,0); ctx.lineTo(-8,-8); ctx.lineTo(-8,8); ctx.closePath(); ctx.fill();
+  ctx.restore();
+  ctx.fillStyle='#2a241c'; ctx.font=F(7); ctx.textAlign='center'; ctx.textBaseline='middle';
+  const tw=ctx.measureText(target.name).width+10;
+  ctx.fillStyle='rgba(20,18,14,.8)'; ctx.fillRect(mx-tw/2,my+12,tw,12);
+  ctx.fillStyle='#f3ead4'; ctx.fillText(target.name,mx,my+18);
+}
+
+function drawDialog(){
+  const bx=20, bh=132, by=VH-bh-16, bw=VW-40;
+  panelBox(bx,by,bw,bh);
+  // speaker plate
+  ctx.font=F(9); const sw=ctx.measureText(dlg.speaker).width+24;
+  ctx.fillStyle='#9c5b43'; ctx.fillRect(bx+14,by-12,sw,22);
+  ctx.fillStyle='#0c0a08'; ctx.fillRect(bx+14,by-12,sw,2);
+  ctx.fillStyle='#f3ead4'; ctx.textAlign='left'; ctx.textBaseline='middle'; ctx.fillText(dlg.speaker, bx+26, by);
+  // body typewriter
+  ctx.font=F(11); ctx.fillStyle='#f3ead4';
+  let shown=Math.floor(dlg.shown), used=0;
+  for(let i=0;i<dlg.lines.length;i++){ const ln=dlg.lines[i]; const take=Math.max(0,Math.min(ln.length,shown-used));
+    ctx.fillText(ln.slice(0,take), bx+24, by+34+i*22); used+=ln.length+1; if(used>shown)break; }
+  // continue blink
+  if(dlg.shown>=dlg.len && (performance.now()/400|0)%2){
+    ctx.fillStyle='#e7b24e'; ctx.font=F(10); ctx.textAlign='right'; ctx.fillText('▼', bx+bw-22, by+bh-18); }
+  ctx.fillStyle='#b7ad99'; ctx.font=F(7); ctx.textAlign='right';
+  ctx.fillText((dlg.idx+1)+'/'+dlg.pages.length, bx+bw-22, by+16);
+}
+
+function drawTitle(){
+  ctx.fillStyle='rgba(12,10,8,0.82)'; ctx.fillRect(0,0,VW,VH);
+  ctx.textAlign='center'; ctx.textBaseline='middle';
+  ctx.fillStyle='#e7b24e'; ctx.font=F(40);
+  ctx.fillText('ZERO', VW/2-110, VH/2-90); ctx.fillText('TO', VW/2, VH/2-40);
+  ctx.fillText('ONE', VW/2+110, VH/2-90);
+  ctx.fillStyle='#f3ead4'; ctx.font=F(11); ctx.fillText("A  FOUNDER'S  RPG", VW/2, VH/2+4);
+  ctx.fillStyle='#b7ad99'; ctx.font=F(8);
+  ctx.fillText('PRATIK RENUSE  ·  THE JOURNEY OF BUILDING FROM NOTHING', VW/2, VH/2+34);
+  ctx.fillStyle='#86a35e'; ctx.font=F(8);
+  ctx.fillText('ARROWS / WASD  MOVE        SPACE / A   TALK', VW/2, VH/2+72);
+  const blink=(performance.now()/450|0)%2;
+  if(blink){ ctx.fillStyle='#e7b24e'; ctx.font=F(12);
+    ctx.fillText(document.body.classList.contains('touch')?'TAP  A  TO  BEGIN':'PRESS  SPACE  TO  BEGIN', VW/2, VH/2+118); }
+}
+
+function drawWin(){
+  for(const c of confetti){ c.y+=c.vy; c.x+=c.vx; if(c.y>VH+10){c.y=-10;c.x=Math.random()*VW;}
+    ctx.fillStyle=c.c; ctx.fillRect(c.x,c.y,c.sz,c.sz); }
+  ctx.fillStyle='rgba(12,10,8,0.86)'; ctx.fillRect(0,0,VW,VH);
+  ctx.textAlign='center'; ctx.textBaseline='middle';
+  ctx.fillStyle='#e7b24e'; ctx.font=F(22); ctx.fillText('QUEST  COMPLETE', VW/2, 88);
+  ctx.fillStyle='#f3ead4'; ctx.font=F(13); ctx.fillText('YOU  REACHED  ONE', VW/2, 130);
+  ctx.fillStyle='#b7ad99'; ctx.font=F(8);
+  ctx.fillText('A DECADE OF TURNING NOTHING INTO SOMETHING THAT SCALES', VW/2, 162);
+  const rows=[
+    ['6','VENTURES BUILT FROM ZERO'],
+    ['$848K','#1 STEM KICKSTARTER, GLOBALLY'],
+    ['100+','STARTUPS MENTORED'],
+    ['3x','TEDX TALKS · 50+ SPEECHES'],
+  ];
+  rows.forEach((r,i)=>{ const y=210+i*44;
+    ctx.fillStyle='#e7b24e'; ctx.font=F(16); ctx.textAlign='right'; ctx.fillText(r[0], VW/2-16, y);
+    ctx.fillStyle='#f3ead4'; ctx.font=F(8); ctx.textAlign='left'; ctx.fillText(r[1], VW/2+4, y); });
+  ctx.textAlign='center'; ctx.fillStyle='#86a35e'; ctx.font=F(8);
+  ctx.fillText('COINS GATHERED: '+coinsGot+'/'+coinTotal, VW/2, 404);
+  // buttons
+  winBtn(VW/2-176,440,168,40,'CONNECT · LINKEDIN',true);
+  winBtn(VW/2+8,440,168,40,'PLAY AGAIN',false);
+}
+function winBtn(x,y,w,h,label,primary){
+  ctx.fillStyle=primary?'#9c5b43':'#2a241c'; ctx.fillRect(x,y,w,h);
+  ctx.fillStyle='#0c0a08'; ctx.fillRect(x,y,w,2); ctx.fillRect(x,y+h-2,w,2); ctx.fillRect(x,y,2,h); ctx.fillRect(x+w-2,y,2,h);
+  ctx.fillStyle='#f3ead4'; ctx.font=F(8); ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText(label,x+w/2,y+h/2);
+}
+cv.addEventListener('click',e=>{
+  if(state!=='win')return; const r=cv.getBoundingClientRect();
+  const mx=(e.clientX-r.left)/r.width*VW, my=(e.clientY-r.top)/r.height*VH;
+  if(my>440&&my<480){
+    if(mx>VW/2-176&&mx<VW/2-8) window.open('https://www.linkedin.com/in/pratikrenuse','_blank');
+    else if(mx>VW/2+8&&mx<VW/2+176) resetGame();
+  }
+});
+function resetGame(){ halls.forEach(h=>h.done=false); coins.forEach(c=>c.got=false);
+  visited=0; coinsGot=0; player.x=13*TILE+4; player.y=31*TILE; player.dir='up'; confetti=[];
+  rerenderPortal(); state='play'; }
+
+// ---------- loop ----------
+let last=performance.now();
+function loop(now){ const dt=Math.min(40,now-last); last=now; update(dt); draw(); requestAnimationFrame(loop); }
+requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>

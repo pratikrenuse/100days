@@ -1,0 +1,2155 @@
+Mochary Method Curriculum — Volume 2 — Part 3 of 6
+============================================================
+
+## Chapter 142: Leadership vs Team Leads Meeting
+
+*Source: https://docs.google.com/document/d/1OAdsheOc1RAS1-FC1PMImJ_sRGfug-SPamvTpu5P5vs/edit?usp=drive_web&ouid=102503928790226855337*  
+*(3 min)*  
+
+[Leadership vs Team Leads Meeting](https://docs.google.com/document/d/1OAdsheOc1RAS1-FC1PMImJ_sRGfug-SPamvTpu5P5vs/edit) (3 min)
+
+As the company grows, each Team will become a large entity (i.e., Biz Ops, Design, Communications, Compliance, etc.). An individual product may grow large enough to warrant being its own business unit with its own GM. Thus there will be many VP-level execs. You will want to keep them informed and empowered. There will be a temptation to invite them to attend the Leadership Team meeting. Do not.
+
+If someone needs to attend a meeting to be informed about what occurs or to have their voice fully represented, in that meeting, you have not yet created a transparent system. 
+
+Each meeting should have clear notes of all updates and decisions made (other than those around compensation and individual performance improvement). You should freely publish those notes to the company. So, everyone can know what happened in a meeting without actually attending. In addition, each employee should be encouraged, weekly, to write up any Issues they see in the company, their department, etc., and write up their Proposed Solution as well. These written Issues/Proposed Solutions are then elevated to the right decision-making meeting with the employee represented in her own written words.
+
+The meeting then becomes a way of making good and fast decisions. 
+
+Your Brain Trust should attend the Leadership Meeting. Who are the essential minds that you need to hear from to make great decisions? And which people run the major business units that you need to make sure are continually unblocked? These should be the attendees of the Leadership Team meeting. Do not add any other attendees to assuage their ego. They will make the meeting less efficient.
+
+(It is quite common for General Counsel and Chief People Officer to make Leadership Meetings inefficient. They often want to bring up endless non-strategic Issues/Proposed Solutions on legal and people-related issues. They often have a knee-jerk "no" response to many strategic decisions. They are risk managers. This is their training. 
+
+If this is happening in your meeting, be very clear with them about what is and isn't additive behavior, and continue to give the feedback until they are as additive as all others. If you cannot do that, then do not invite them to the Brain Trust meeting.)
+
+For all the rest of your Department and Team Leads, there is a VPs (or Team Leads) Meeting. At this meeting, announce the decisions that were just made in the Leadership Meeting. There is then a "speak now or forever hold your peace" moment. If any of these decisions will have unintended negative consequences, now is the time for the VPs to raise their hand and say, "That is a terrible idea for these reasons …". The decision then gets kicked into a RAPID. But for the vast majority of decisions, the VPs will be fine with it, and then the decision gets published to the company, likely in All Hands.
+
+To understand the scale of these meetings, I posit that the Leadership Team should be, and remain at, 6-8 people. This level is where verbal discussion is most effective. Think of a dinner party. The rule is no more than eight… for a reason. (You can stretch to ten, but meetings will become drawn out.)
+
+The VPs Meeting, by contrast, should grow as the company scales. At a company of 1,000 employees, the VPs Meeting often has 15-20 attendees. At Microsoft, this same meeting has over 150 attendees.
+
+To give the VPs more visibility into how decisions are being made, Amazon now holds its Exec Team meetings in an auditorium. The VPs sit in stadium-seating, silently observing. 
+
+You can recreate this information flow by inviting observers to your exec meeting. There are two keys to this:
+
+  - Make explicit the status of each participant (Participant vs. Observer) and strictly enforce those roles.
+  - Only add Observers if you have a culture of radical candor where the Exec Team will continue to say EXACTLY what they would have without the Observers present.
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 143: Offsite
+
+*Source: https://docs.google.com/document/d/1j4B8gUUIeZehKhhuCFsm-vin3s-Wj7462PdcMW4cGaQ/edit*  
+*(1 min)*  
+
+[Offsite](https://docs.google.com/document/d/1j4B8gUUIeZehKhhuCFsm-vin3s-Wj7462PdcMW4cGaQ/edit#) (1 min)
+
+  
+Once a quarter, the leadership team (and eventually the entire company), which consists of all the department heads, should take two days to:
+
+Day 1
+
+  - Bond. Get to know and like each other as human beings. 
+      
+      - Structured activities 
+          
+          - Collect superficial [personal information](https://docs.google.com/spreadsheets/d/1Nd_ps8ibEYAFA3cqmW9UQKREC1YxEEHKz7PyouggCW4/edit#gid=0) (to generate more interesting personal conversations)
+          - [Icebreakers](https://www.icebreakers.ws/)
+          - Feedback to the CEO
+              
+              - Use the feedback exercise shared in [Exec Team feedback with Matt Mochary](https://docs.google.com/document/d/1ypDupvtn9IaFY1yk_Y1FShJYQD_bnN7uXKvBDLKGbQE/edit) (6 min)
+                  
+                  - Feedback: Receiving: the 5 A's (3 min)
+          - [Peer Feedback 1-1 (paired)](https://docs.google.com/document/d/16iXM6T45R5cxPR_OT3hA8iumqNV9fhjNLphsfSCWo1A/edit)
+          - [Trust, Deep](https://docs.google.com/document/d/1IB7YDr_trYKavL_RdWTb8ddJt77eqDH_6H5BsK416FM/edit) (2 min).  "If you really knew me."
+      - Unstructured activities 
+          
+          - Drinks at the bar
+          - Sports, crafts, activities, etc.
+          - Board games:  mafia, codenames
+          - Events where spouses are invited.
+
+Day 2
+
+  - The Past. Do a retrospective on the prior quarter 
+      
+      - How did we do against our OKRs and KPIs?
+      - How did we function as a team? 
+      - Unpack Issues that are too emotional or strategic to solve in the regular Exec Meeting.
+  - The Future. Plan for the future quarter 
+      
+      - Refresh Mission, Vision (including Moat), and Values 
+          
+          - [Mission, Vision, Values: How to create them](https://docs.google.com/document/d/1L6ks72TkBIlgPDh6_n-NBBE7e_7nQ2YZ6B4BF12IQEs/edit)
+      - Set the new company [OKRs](https://docs.google.com/document/d/1GoiH4pwsph5rwSM_wMMiMJkX6-qFVwO0SVYkodNZhwg/edit) (which then will cascade to Departments, Teams, and Individuals).
+      - Refresh the company KPIs (which then will cascade to Departments, Teams, and Individuals).
+  - Refresh the company's Product Roadmap, GTM Plan, and Hiring Plan.
+
+I recommend scheduling these offsites on a Thursday/Friday so that you can then offer an optional weekend unstructured event with spouses. Often, team members would like to get to know each other, but they are waiting for you to organize the events that will allow them to do so.
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 144: Meeting Tracker - example
+
+*Source: https://docs.google.com/spreadsheets/d/1lPQPptVXvLwM8q5XiD5Weq9HcrZDVUUe8szB8e_sb5Q/edit#gid=0*  
+*(2 min)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://docs.google.com/spreadsheets/d/1lPQPptVXvLwM8q5XiD5Weq9HcrZDVUUe8szB8e_sb5Q/edit#gid=0)_
+
+
+---
+
+## Chapter 145: Efficient Async Discussions
+
+*Source: https://www.notion.so/mm-coaches/Efficient-Async-Discussions-8c070c841f0444e49e61fc14685e7435*  
+*(5 min)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.notion.so/mm-coaches/Efficient-Async-Discussions-8c070c841f0444e49e61fc14685e7435)_
+
+
+---
+
+## Chapter 146: How to Use the companyOS Software
+
+*Source: https://www.loom.com/share/b9c43fdcfc144978aa9240e17f4986d1*  
+*(4 min)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.loom.com/share/b9c43fdcfc144978aa9240e17f4986d1)_
+
+
+---
+
+## Chapter 147: Issue Identification
+
+*Source: https://docs.google.com/document/d/1yfnZqztmnHatFavMqMJ40_tAN7YUcfnQgo4HrcU7SBQ/edit*  
+*(1 min)*  
+
+[Issue Identification](https://docs.google.com/document/d/1yfnZqztmnHatFavMqMJ40_tAN7YUcfnQgo4HrcU7SBQ/edit) (1 min)
+
+  
+
+There are two excellent prompts that I know of to encourage people to identify the company's key issues that need to be solved. 
+
+  - "If you were CEO, what are the most important issues (maximum 3) that you would solve in the next 90 days, and how?"  
+      
+  - "When you source the emotions of Anger or Fear and think about the company, what are your thoughts?"
+
+Using these as a starting point, ask each team member to list the major issues they see facing the company today.
+
+List them in the following format:
+
+  - Issue:   
+      
+      
+      - *A detailed description of what the problem or challenge is.*  
+          
+  - What I did to help create this situation:
+      
+      - *If you make an honest effort to declare how you contributed to creating the situation, then others will not feel blamed, and you will likely see a way that you can unwind the problem without relying on others to do so.*
+  - Proposed Solution: 
+      
+      - *If you have done a good job of declaring how you helped create the situation, you can likely reverse those steps. Either way, please write out a solution with actions, a* [*DRI: Directly-Responsible Individual*](https://docs.google.com/document/d/1I4jBy1XryEdknFoDCMUY93PEn0rR-oOOx6yiLSiaa38/edit) *for each, and a due date.*
+      - *You may think, "I don't know the answer. I'd rather list the options." Please don't. Please write out what you would do if you had to decide, and you couldn't ask anyone for guidance. This declarative statement will be much easier for the rest of us to react to.* 
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 148: RAPID, example
+
+*Source: https://docs.google.com/document/d/1vkxl-OI_XHbBWqgRCbpP86SJwSnEgCIzVOjbhWCHZng/edit*  
+
+[**Timing of Social Events**](https://docs.google.com/document/d/1vkxl-OI_XHbBWqgRCbpP86SJwSnEgCIzVOjbhWCHZng/edit)
+
+  
+
+[Video of Emilie Choi (Coinbase President and COO) explaining RAPIDs and Biz Ops (20 min)](https://youtu.be/t_Cee_AYLtk)
+
+  
+
+**Decision type (1 or 2):  2**
+
+  
+
+**Recommend:**  **Matt**
+
+**Agree:**   **---**
+
+**Perform:**   **All**
+
+**Input:**    **All**
+
+**Decide:**    **Irene (because it is Type 2)**
+
+  
+
+**  
+****Issue:** People who are at the Bench need unbroken time each day to suit up and do experiments from start to finish.  In addition, travelling to SF during commuting hours can turn a 1 hour trip into a 3 hour trip.  Social events that are scheduled at 5pm require those from the Bench to depart Sunnyvale at 2pm, and lose an enormous amount of productivity.
+
+  
+
+**Proposed solution:**
+
+Social events to be scheduled at 8pm, until we are together in January.
+
+  
+
+**Comments:**
+
+Katja: I would be fine with it as long as we have a yoga studio close by where I can go to in between work and social event :) Also, I like Erik's compromise with starting at 6:30pm. 
+
+  
+
+Raj: :) I am ok with later.  8pm seems ok if it helps the experimental team.  Also 6:30 is good.
+
+  
+
+Erik: I prefer the later time but open to something in between (e.g. 6:30pm?).
+
+  
+
+Marlo: 8pm seems a little late for employees with families, would we be able to move this time up to maybe 6. I also like the idea of moving team events to the same day as the team meetings.
+
+  
+
+Katherine: I live in the city so I'm ok with 8pm. 6:30 works too. If monthly cadence is adopted for moving Thursday meeting to the afternoon, prefer 1st Thursday so it's easy to remember. I also like Thursday meetings being in the morning so that I can get forkable lunch and socialize with the rest of the company I don't see on a daily basis.
+
+  
+
+Steve: I am ok with either 8 or 5.  6:30 works for me.
+
+  
+
+Fernando: People who have kids, etc. might not be able to go. The social event will be biased and could negatively impact activities such as recruiting. Suggest polling beforehand to find the best time for the most people. 6:30 is not much better than 5PM. It could be worse coming from the South Bay due to traffic.
+
+  
+
+Bob: sounds like a good idea, commuting is a big issue; however, moving it away from the work day may result in less attendance by people with family (especially kids). 6:30 would be good. 
+
+  
+
+Shannon: I also live in the city so I'm okay with any time. 6:30pm seems good. Or a weekend? Or combining with all-hands meetings.
+
+(Below to be filled out only after all those above already have.) 
+
+  
+Irene: 
+
+Schedule socials in a more central location (although that may be in SF) at a time that works best for everyone.  If an earlier time is preferred, then the team events should be planned with enough time in advance (more than 1 week's notice) such that studies can be planned accordingly.  Having kids, an evening out where I arrive home after 9 is same difference as an evening out starting at 5p or 8p.  
+
+  
+
+Victor:
+
+No. I usually go to bed early. I also feel this idea could be bad for team members with kids and other family responsibilities.
+
+  
+
+A proposed solution is to keep after-hours events earlier (such as 5pm), but schedule them only on days where the entire team is already at HQ (see Calendar Cadence).
+
+  
+
+(Below to be filled out only after all those above already have.)
+
+  
+
+Alice  
+  
+
+I agree and think 6-7:30pm is a good idea. Other ideas:
+
+1.  Make sure people who are in SF and have families are OK with this.
+2.  Schedule events far enough in advance to accommodate. 
+3.  (Stealing Matt's idea) - combine social events with days when they will be in office meeting. 
+4.  Schedule social events on a regular cadence (i.e. every third Thursday) would also help people plan around them. 
+
+  
+  
+
+Bob+1
+
+  
+
+Decision:
+
+  
+
+  - **\*\*More than 1 week's notice to be given on all social events.  (Marlo).\*\***
+  - **\*\*Schedule the social event on the day bench scientists will be in the office (ie. Thursdays)  (Marlo).\*\***
+  - **\*\*If needed 6:30p (that require travel), if already in HQ, then start at 5p. (Marlo).\*\***
+  - **\*\*Monthly cadence for socials, once monthly Experimental Thursday team meeting will be moved to the afternoon followed by social to start at 5p. (Marlo).\*\***
+  - **\*\*Marlo and Irene will meet to schedule the upcoming socials for the rest of the year (Irene)\*\***
+
+  
+
+Victor +1
+
+AZ: +1
+
+SS: +1
+
+Raj +1
+
+Marlo + 1
+
+SV: +1
+
+KH: +1
+
+Bob+1
+
+KK: +1
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 149: RAPID template, example
+
+*Source: https://docs.google.com/document/d/1OP6WkWcWETvXFfwQYG1nqXL2wPRytzbQRWYwcchq2t0/edit*  
+
+**Title:**
+
+  
+
+**Decision type (1 or 2):** 
+
+  
+
+**R****ecommend:**  
+
+**A****gree:**   
+
+**P****erform:**   
+
+**I****nput:**    
+
+**D****ecide:**  **  
+**  
+
+Date Recommended:  
+Date Comments Due:
+
+Date of Decision:
+
+  
+
+**  
+****Issue:**   
+  
+
+**Proposed solution:**
+
+  
+
+(Comments from each Agree, Input and Perform)
+
+  
+
+Person 1:
+
+  
+
+Person 2:
+
+  
+
+Person 3:
+
+  
+
+Person 4:
+
+  
+
+Person 5:
+
+  
+
+Person 6:
+
+  
+
+Person 7:
+
+  
+
+etc
+
+  
+
+(Below to be filled out only after all those above already have.) 
+
+  
+Decision-maker:
+
+  
+  
+  
+
+Decision:
+
+  
+  
+
+Mark commitment with "your name +1".  This shows your commitment to the decision, even if you disagree with it.
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 150: RAPID Tracker, example
+
+*Source: https://docs.google.com/spreadsheets/d/1P6Wlw8RHlw2z06T3fO_wL20EyIswaYW6nRyqL2E5lDY/edit#gid=0*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://docs.google.com/spreadsheets/d/1P6Wlw8RHlw2z06T3fO_wL20EyIswaYW6nRyqL2E5lDY/edit#gid=0)_
+
+
+---
+
+## Chapter 151: Disagree and Commit
+
+*Source: https://docs.google.com/document/d/1xBuPsNz7nHjnvETFsNq0rPSiXMTCg4xm85LfVYAidKc/edit?usp=sharing*  
+*by*  
+
+## Disagree and commit  
+
+## Disagree and commit 
+
+Disagree and commit solves a common execution problem: decisions get made, but the team doesn’t push them forward with full urgency and effort when they disagree with the outcome
+
+Instead they:.
+
+  - Keep arguing after the decision is made
+  - Don’t prioritize the work
+  - Don’t take ownership of execution
+
+This happens when people disagree with a decision and don’t commit to it.
+
+Disagree and commit fixes this by setting a clear standard: once a decision is made, there’s no partial buy-in.
+
+There are only three options:
+
+  - **Agree and commit**. You support the decision and fully own execution.
+  - **Disagree and commit**. You disagree with the decision, but still fully own execution.
+  - **Disagree and quit**. You disagree so strongly that you would leave if the decision is executed.
+
+What is not an option:
+
+  - Disagree and not commit. No half-support, no dragging your feet, no undermining the decision.
+
+If you’re not at the level of “I would leave over this,” then your job is to disagree in the room and fully commit once the decision is made.
+
+### How to implement it
+
+Start at the top, on the founder or executive team. Then spread it down the organization. 
+
+#### **1) Explain the standard**
+
+At every level, define it clearly:
+
+  - “If you disagree, state your argument in the decision meeting.”
+  - “After the decision-maker decides, you share which of these options you will do:
+      
+      - Agree and commit
+      - Disagree and commit
+      - Disagree and quit  You need to commit to the decision
+  - “You’ll respect the authority of the decision-maker. Commitment means you agree to full responsibility for your actions coming out of the decision.”
+
+Also define what is not acceptable:
+
+  - Raising the disagreement after the meeting
+  - Telling others you disagreed
+  - Showing hesitation or doubt in execution
+
+#### **2) Set the preconditions** 
+
+  - There is a single, named decision maker
+  - The decision maker asks for and listens to input (see [Decision-making: separate decision from implementation](https://docs.google.com/document/d/18VkFRbhDTeU0nBEiot8CXiK37UUEZp0D-sT4-IN02Hs))
+  - The decision maker clearly states the decision
+
+#### **3) Surface disagreement in the meeting**
+
+Each participant must:
+
+  - State their view clearly and directly
+  - Say their disagreement in the meeting, not after
+  - Stop once they have shared their input and allow the decision owner to decide
+
+#### **4) State the decision**
+
+The decision owner must:
+
+  - Clearly say what will be done and end the discussion
+      
+      - “We’re doing X.”
+  - Move directly into execution
+      
+      - Define next steps
+      - Assign owners
+      - Confirm timelines
+
+#### **5) Commit after the decision**
+
+From that moment, everyone must:
+
+  - Present the decision as their own
+  - Drive execution
+  - Ensure their team follows it
+  - Not express disagreement anywhere
+
+Commitment is behavior.
+
+#### **6) Enforce the standard**
+
+Leaders must actively enforce this when it is not followed:
+
+  - If someone raises a concern after the meeting: “Was this raised in the decision meeting?”
+  - If someone signals doubt or does not follow through: “The decision is made. I need you to support and execute it.”
+
+Do not allow side conversations, re-discussion, or partial execution to continue. Address it immediately.
+
+#### **7) Apply disagree and commit at every level**
+
+Once leaders are consistently doing this themselves, they should:
+
+  - Explain the standard to their direct reports
+  - Expect their direct reports to run decisions the same way in their own teams
+  - Make sure any reopened decision or lack of follow-through is addressed
+
+
+---
+
+## Chapter 152: 1-1 Template and Instructions
+
+*Source: https://docs.google.com/document/d/1j7ZNWTh9ClS0PZHrpZXGk879pv9LXDWt6sjaq1uA-zA/edit*  
+
+[1-1 Template and Instructions](https://docs.google.com/document/d/1j7ZNWTh9ClS0PZHrpZXGk879pv9LXDWt6sjaq1uA-zA/edit)
+
+Instructions pre-meeting:
+
+1.  **Accountability:** Declare future actions and progress on those actions >> hold each other accountable to agreements made. 
+      
+    1.  Actions to (our next meeting date) 
+          
+        1.  Copy your quarterly OKRs. Rename them "Actions to (our next meeting date)." For each Objective, write the highest value action that you can do to advance toward that Objective in the coming period (usually two weeks).
+    2.  Actions since our last meeting 
+          
+        1.  On actions from the prior period, please write out whether you completed each: **YES** or **NO.**
+        2.  If NO, please write out: 
+              
+            1.  **WHY? Why did you not complete the action? Either it was intentional [you realized that it was no longer a top priority], or unintentional [you forgot, or something blocked you].**
+            2.  If the miss was unintentional, please write out: 
+                  
+                1.  **HABIT? What will you do to ensure that you will not get blocked that way again?**
+    3.  Update your 
+          
+        1.  KPIs: Key Performance Indicators. Ideally, these are graphical (easier to read) and historical (show changes over time). 
+        2.  Pipelines and Roadmaps.
+        3.  Status updates on projects  
+              
+2.  **Coaching:** Surface and resolve issues >> how to perform better as a company. 
+      
+    1.  Write out the Good that has occurred since we last met in: 
+          
+        1.  Company 
+        2.  Department
+        3.  You
+    2.  Write out the Not Good that is present in: 
+          
+        1.  Company
+              
+            1.  The issue:
+            2.  What I did to help create the situation:
+            3.  Proposed Solution:
+        2.  Department 
+              
+            1.  The issue:
+            2.  What I did to help create the situation:
+            3.  Proposed Solution:
+        3.  You 
+              
+            1.  The issue:
+            2.  What I did to help create the situation:
+            3.  Proposed Solution:  
+                  
+    3.  Note: When unpacking Issues, it is easy to view problems as being created by someone or something else. When we do this, it is difficult to see a solution within our control. If, however, we ask ourselves how we contributed to the situation, a pathway to unwinding the issue that is within our control usually becomes quite clear. 
+    4.  List any other Topics that you would like to review.  
+          
+3.  **Transparency:** Collect feedback >> how to perform better as individuals. 
+      
+    1.  Write out feedback on how I am performing as a Manager.
+    2.  Please share the thought that you think will be most painful for me to hear. That is the feedback that will be most useful to me.
+
+Format:
+
+**Accountability:** 
+
+My Os (Objectives) for this quarter (preferably three or fewer)
+
+1. 
+
+2. 
+
+3. 
+
+My future actions (max three total) toward my Os until (*insert date of next check-in*)
+
+1. 
+
+2. 
+
+3. 
+
+Did I complete each past declared action, **YES** or **NO**?
+
+  - **WHY:** If no, why not?
+  - **HABIT:** What habit (or action) can I adopt (or do) to never reencounter this obstacle?
+
+SENSITIVE goals and actions. (Put here anything related to PIPs).
+
+  - These will NOT be included in the company-wide messaging from this meeting.
+
+KPIs: Key Performance Indicators (Link here.)
+
+Pipelines and Roadmaps. (Link here.)
+
+**Coaching:** 
+
+The Good
+
+  - Company 
+  - Department 
+  - Me 
+
+The Not Good (& Proposed Solutions)
+
+  - Company 
+      - Issue:
+      - What I did to help create the situation:
+      - Proposed Solution:
+  - Department 
+      - Issue:
+      - What I did to help create the situation:
+      - Proposed Solution:
+  - Me
+      - Issue:
+      - What I did to help create the situation:
+      - Proposed Solution:
+
+Topics
+
+SENSITIVE issues/solutions. (Put here anything related to PIPs).
+
+  - These will NOT be included in the company-wide messaging from this meeting.
+
+**Transparency:**
+
+Report >> Manager
+
+  - Like 
+  - Wish That 
+
+Manager >> Report
+
+  - Like 
+  - Wish That 
+
+**Note:** A more traditional reporting structure is "Progress made toward OKRs" rather than declaring "Future actions toward OKRs." If you have a team member with a strong preference for the former, it is acceptable to use that format. It is a weaker form of accountability and leads to less progress toward OKRs, but more people are used to it.
+
+**Format to copy-paste for each meeting:**
+
+Actions from last
+
+Actions to next
+
+  - Objective 1:
+  - Objective 2:
+  - Objective 3:
+
+The Good
+
+  - Company
+  - Department
+  - Me
+
+The Not Good (100% Responsibility and Proposed Solutions)
+
+  - Company 
+      - Issue:
+      - What I did to help create the situation:
+      - Proposed Solution:
+  - Department 
+      - Issue:
+      - What I did to help create the situation:
+      - Proposed Solution:
+  - Me 
+      - Issue:
+      - What I did to help create the situation:
+      - Proposed Solution:
+
+Topics
+
+Feedback
+
+  - Report >> Manager 
+      - Like 
+      - Wish That 
+  - Manager >> Report 
+      - Like 
+      - Wish That
+
+
+---
+
+## Chapter 153: 1-1 Template (Sabrina Wang)
+
+*Source: https://docs.google.com/document/d/1WDx85P_G_XJMEiSv3Kcu5CwowE860naFdCRfem_cV8o/edit?usp=sharing*  
+
+[1-1 Template (Sabrina Wang)](https://docs.google.com/document/d/1WDx85P_G_XJMEiSv3Kcu5CwowE860naFdCRfem_cV8o/edit?usp=sharing)
+
+by [Sabrina Wang](https://sabrina-wang.super.site/) ([@sabrinawangzq)](https://twitter.com/sabrinawangzq)
+
+We recommend that you start this 1:1 template with a meeting that is 50-90 minutes every other week.
+
+The following template is modeled after a 50-minute meeting.
+
+### Pre-work For the direct report - *at least 24 hours before the meeting*
+
+  - Pre-write your Good Things or Celebrations
+  - Populate topics and issue proposed solutions
+      - Please refer to the [Issue / Proposed Solution template (1-1)](https://docs.google.com/document/d/1Hn_E1UFYruM1sXATsSwIydIJ4EsxMvxlnyoypOVRb_M/edit#heading=h.6ww0l7nn95nc)
+  - Check off past actions
+  - Create 1-3 new actions for each goal or OKR
+  - Prepare written feedback for your manager in your 1:1 tool or performance management toll
+
+  - For the manager - *at least 24 hours before the meeting*
+      - Pre-write your Good Things or Celebrations
+      - Populate topics
+      - Prepare written feedback for your direct report in your 1:1 tool or performance management toll
+  - For both - *day of the meeting*
+      - Manager to read issue proposed solutions and add comments
+      - Manager to read through direct reports' past actions and new actions. Prepare questions and comments
+      - Both will read the entirety of the entries from the other person
+
+##### Template for written feedback
+
+  - Your current rating for your job function, 1-5, is …
+      - 4-5 is above expectation
+      - 3 is at expectation, and you can outperform by following *next-level* guidance.
+      - 2 is below expectation, and you can quickly improve with *next-level* guidance.
+      - 1 is far below expectation. I am now putting you on a written Performance Improvement Plan.
+  - What you did that I liked is ...
+  - What you need to do to get to the next level is …
+
+### Synchronous
+
+  - **Connection: Good things or Celebrations (5 minutes)**
+      - Good things
+          - You each verbally share 1 personal good thing and 1 work good thing
+      - Celebrations
+          - You each celebrate 1 thing about the other person
+  - **Coaching (20-25 minutes)**
+      - Cover topics and questions. Drive to decisions and action items.
+      - Cover issue proposed solutions. Drive to decisions and action items.
+  - **Accountability (8-13 minutes)**
+      - Goals/OKRs: What are the 3 goals or OKRs that you're working towards?
+          - Past actions
+              - Manager to coach through any blockers or missed action items
+          - New actions
+              - Manager to provide feedback on new actions by challenging your direct report to think bigger, or helping your direct report to deprioritize by simplifying their actions
+  - **Transparency (7 minutes)**
+      - You will both verbally give each other [feedback](https://docs.google.com/document/d/1wi714sobuQP72sKXw6J_gkwkhtVh1t6--op_Pk0YPxA/edit) and make the other feel heard.
+          - Please share [Feedback: Receiving: the 5 A's](https://docs.google.com/document/d/1zsVOnpNayriDpzgjJUDO2n47YxO9EAXbVH2uC_Zpnms/edit) with your direct report and ask them to follow the framework
+  - **Magic questions quarterly for career development and motivation.** You can add this as a topic.
+      - Please refer to [Motivating your team](https://docs.google.com/document/d/14kFZcqm3zaS5uY4QmG307BViQyoSbDDS1U04NpYhmes/edit) for the full write-up on magic questions
+          - "How are you feeling about your life at work, 1-5?"
+              - If the answer is <3, then "What would make it an 3?"
+              - If the answer is 3 or 4, then "What would make it a 5?"
+          - "How are you feeling about your personal life, 1-5?"
+              - If the answer is <3, then "What would make it an 3?"
+              - If the answer is 3 or 4, then "What would make it a 5?"
+          - "How are you feeling about your Work From Home (WFH) setup, 1-5?"
+              - If the answer is <3, then "What would make it an 3?"
+              - If the answer is 3 or 4, then "What would make it a 5?"
+          - "How are we performing as a company, 1-5?"
+              - If the answer is <3, then "What would make it an 3?"
+              - If the answer is 3 or 4, then "What would make it a 5?"
+          - "What is it like to work with the rest of the team, 1-5?"
+              - If the answer is <3, then "What would make it an 3?"
+              - If the answer is 3 or 4, then "What would make it a 5?"
+          - "What is it like to work with me, 1-5?"
+              - If the answer is <3, then "What would make it an 3?"
+              - If the answer is 3 or 4, then "What would make it a 5?"
+
+### Post 1:1
+
+  - The manager will cause the direct report to document all action items with due dates to their action tracker
+  - Manager will track their own action items.
+
+
+---
+
+## Chapter 154: 1st 1-1 Meeting with Matt Mochary
+
+*Source: https://docs.google.com/document/d/1vfZbW2GbL-q4gB97JcMH_P1nGRJKQ68LAOgNGbVV1qs/edit*  
+*(5 min to read; 45 min to do)*  
+
+**THIS HAS BEEN REPLACED WITH THE "[ONBOARDING FORM PART 2](https://docs.google.com/document/d/1pMQ4ZWXQDeufe14Z1N3PTBCsvkbUTN-Gl9pAppuBGBc/edit)" TEMPLATE.  Please go there instead.  Thanks!**
+
+[1st 1-1 Info-sharing with Matt Mochary](https://docs.google.com/document/d/1vfZbW2GbL-q4gB97JcMH_P1nGRJKQ68LAOgNGbVV1qs/edit#)
+
+###### **Company Basics**
+
+Please share with me some basics about your company:
+
+  - Current revenue and % growth from 12 months ago. Write here
+  - Current burn, cash in the bank, and therefore runway (months of burn remaining). Write here
+  - Valuation and date of last round. Amount raised. Lead investor. Write here
+  - Current key board members and/or primary investors. Write here
+  - # of employees. Projected # of employees in 12 months. write here
+  - A copy of your pitch deck, if you have one. Link here 
+  - A copy of your most recent board packet, if you have one. Link here 
+      - (I ask for the pitch deck and the board packet because that is a way for me to ingest a lot of information about your company without you having to spend hours describing it to me.)
+
+##### **Optional**
+
+The following items are optional but highly recommended. We will be doing them at some point. The sooner, the better. So, if you have time and energy, please do them now. If not, we will do them later ...
+
+It is critical to have a North Star for your company (Mission, Vision, Values). If you have already created these, please link them here. If you have not, or want to see my take on how to create these, please create them using [Mission, Vision, Values: How to create them](https://docs.google.com/document/d/1L6ks72TkBIlgPDh6_n-NBBE7e_7nQ2YZ6B4BF12IQEs/edit), and then:
+
+  - Paste (or link) the results here.
+
+It is also critical to define your org chart (who reports to whom) and each person's roles and responsibilities. To that end, please link your org chart here. And create an [AORs](https://docs.google.com/document/d/1v72Mozz6Zr-3Knzcd9yNcs1E8-QKk5NkTVmR6pIQj98/edit?usp=drive_web&ouid=102503928790226855337) list. Please only fill it out for yourself (what you do) for now. Link the resulting sheet here.
+
+Next, please define your company's OKRs for the upcoming quarter (these are not the same as your individual goals from above) and create a Green/Yellow/Red tracker to report on them month-by-month using [OKR Creation](https://docs.google.com/document/d/1GoiH4pwsph5rwSM_wMMiMJkX6-qFVwO0SVYkodNZhwg/edit). If you have already done so, no need to re-create. If this is your first Time creating company OKRs, no need to include the team on this first pass. Just create your version first. Please:
+
+  - Link the results here.
+
+Good board reporting and investor pitches transfer a lot of information about the business quickly. The more that I know about your business, the more helpful I can be. Please, therefore:
+
+  - Most recent board packet. Link here
+  - Prior board packet. Link here
+  - Most recent investor pitch deck. Link here
+
+It is essential to have a central repository of information where your team can access important company information (what you created above, plus decisions made, etc.)—a wiki. If you have one, please connect me to it, and link here. Please create a Notion account, connect me, and link it here if you do not yet have one.
+
+One of the most valuable exercises that I do myself is an [**Energy Audit**](https://docs.google.com/document/d/1HmaRdtk8R5GQtMj72Y6XhHTru5SQAiiqDfDP3qy73k4/edit?usp=drive_web&ouid=102503928790226855337). This audit has led to massive productivity gains for me and those that I have recommended it to. Please do one, and 
+
+  - Paste (or link) the results here.
+
+Later, once we have built trust, I will also ask for access to your internal tools to ensure they are operating correctly. This step includes a Product Roadmap (3- and 12-months), Sales Pipeline, Recruiting Pipeline, and monthly Financials. If you already feel this trust, please link each here:
+
+  - Product Roadmap (3- and 12-months). Link here
+  - Sales Pipeline. Link here
+  - Recruiting Pipeline. Link here
+  - monthly Financials. Link here
+
+##### **Next**
+
+**Agenda:**
+
+**A**ccountability (Goals, Actions, Habits)
+
+**C**oaching (Updates, Issues+Solutions, Topics)
+
+**T**ransparency (Feedback)
+
+**Personal:**
+
+X
+
+[Matt](https://docs.google.com/document/d/1p-0dzdOgupxhhYFHSKGoHCY9ugUwVbAUCdFmlcBCOQw/edit)
+
+**Library:**
+
+[Matt Mochary Bio: Coach](https://docs.google.com/document/d/1b0SWiIcSCU-AUCEoctK7BO8ybV3MyaH6nR184Um9CTc/edit) (2 min)
+
+[Mochary Coaching Methodology (CEO)](https://docs.google.com/document/d/17AfqFdrx0lb6aYb786lY3a-17jUEoxDCRAT-BpDmh2k/edit) (8 min) 
+
+[Matt's Book: The Great CEO Within (on Amazon)](https://smile.amazon.com/Great-CEO-Within-Tactical-Building/dp/0578599287/) (several hours)
+
+[Wiki for The Great CEO Within](https://docs.google.com/document/d/1yVkNrvWLk0suLdZbpfcMadEyza1cMETSGv25Spqjthc/edit) (several hours)
+
+[On-Time](https://docs.google.com/document/d/16QP9shWuJbHQYwqU4Fo7YAXzakzcBx2LTyQgc6oSgfw/edit) (3 min)
+
+[Top Goal (CEO)](https://docs.google.com/document/d/1rWlx4P0Kpp4E8nFajcwDa4or_1EINv_ITTM-Ruo5XvQ/edit) (2 min)
+
+[Feedback](https://docs.google.com/document/d/1wi714sobuQP72sKXw6J_gkwkhtVh1t6--op_Pk0YPxA/edit) (15 min)
+
+[Energy Audit](https://docs.google.com/document/d/1HmaRdtk8R5GQtMj72Y6XhHTru5SQAiiqDfDP3qy73k4/edit) (4 min to read; 45 min to do)
+
+This quarter Goals:
+
+
+---
+
+## Chapter 155: 2nd (and beyond) 1-1 Meeting with Matt Mochary
+
+*Source: https://docs.google.com/document/d/1TYNJjwzH_QxUbvoVSOjB__6gtvLKf8AAT3tqTKo3sO8/edit*  
+*(2 min to read; 15 min to do)*  
+
+[2nd (and beyond) 1-1 Meeting with Matt Mochary](https://docs.google.com/document/d/1TYNJjwzH_QxUbvoVSOjB__6gtvLKf8AAT3tqTKo3sO8/edit)
+
+INSTRUCTIONS: 
+
+1.  For each 1-1, create an entry for our next meeting by copying and pasting the template found [here](https://docs.google.com/document/d/1TYNJjwzH_QxUbvoVSOjB__6gtvLKf8AAT3tqTKo3sO8/edit).
+2.  Fill in all the text surrounded by brackets, which look like this: [Write here]
+3.  Follow the instructions in Purple Text to fill in the information
+4.  Delete all the purple text. Purple Text indicates instructions.
+
+TEMPLATE: 
+
+##### **[Date of meeting]**
+
+###### **Personal**
+
+  - This is a reminder for us to ask about what is going on in each other's personal life to show that we care about each other as human beings. Let's show that we remember specific personal details about each other.
+
+###### **Good**
+
+  - Company 
+      - [Write here]
+  - Me 
+      - [Write here]
+
+###### **Actions from Last (YES/NO, WHY/HABIT)**
+
+  - Cut and paste the Actions to Next from our last meeting here.
+  - Then mark each action **YES** or **NO** as to whether you completed it. 
+  - For any NO, please also write: 
+      - **WHY?** State why you didn't complete the action. If the reason was that you de-prioritized the action (i.e., not doing it was the right thing to do), then you are done. 
+  - If the reason was anything else, then please also write: 
+      - **HABIT?** What habit can you adopt so that you don't reencounter this obstacle? And, what action do you need to take to complete the original action?
+  - Here is a template for NO that you can copy-paste: 
+      - [Action from last] 
+          - **NO**
+          - **WHY?** 
+              - **[State why]**
+          - **HABIT?** 
+              - **[State the habit you can adopt]**
+
+###### **Actions to Next**
+
+  - Action toward OKR1: 
+      - [Write here]
+  - Action toward OKR2: 
+      - [Write here]
+  - Action toward OKR3: 
+      - [Write here]
+  - Other: 
+      - Paste here each Next Action that we came up with within the "Actions from Last Meeting" section
+      - Paste here each "Issue" and "Solution" (you can delete the "What I did to help create this" section) that we came up with within the Not Good section
+      - Paste here each Action that we come up with in the Feedback section
+
+###### **Not Good (Issue, What I did, Solution)**
+
+  - Please write enough detail on the Issue that you don't have to explain it to me verbally.
+  - Please write what you did to help create the situation. This is the critical step. Please don't skip it.
+  - Looking at your answers to what you did to help create the situation, what solution (that you can control) appears?
+  - Once we agree on the Solution, please copy-paste it into Actions to Next.
+  - Use this format:
+  - Company 
+      - Issue1: [Write here]
+      - What I did to help create this: [Write here]
+  - Solution: [Write here] 
+      - Issue2: [Write here]
+      - What I did to help create this: [Write here]
+      - Solution: [Write here]
+  - Me 
+      - Issue: [Write here]
+      - What I did to help create this: [Write here]
+      - Solution: [Write here]
+
+###### **Topics**
+
+  - [Write here anything that you want to cover that doesn't fit elsewhere in the format]
+
+###### **Feedback**
+
+  - Please write in 
+      - What you Like that I have done. Please list things I did ("You said hello to me."), not characterizations ("You are nice.")
+      - What you Wish That I would do differently. Again, please list specific actions that you would like me to do.
+  - Use this format:
+  - Me >> Matt 
+      - Like 
+          - [Write here]
+      - Wish That 
+          - [Write here]
+  - Matt >> Me 
+      - Like 
+          - [Write here]
+      - Wish That 
+          - [Write here]
+
+Add actions from Feedback to Actions to Next Meeting. 
+
+Copy-paste Actions to Next Meeting into Asana or your individual task manager.
+
+
+---
+
+## Chapter 156: Job Responsibilities Rubric
+
+*Source: https://docs.google.com/document/d/1dMxcNgm3pQe_dR9_UjwucbxtSG1k7Wj8RFdQag5FQ-U/edit?usp=sharing*  
+*by*  
+
+### [**Job Responsibilities Rubric**](https://docs.google.com/document/d/1dMxcNgm3pQe_dR9_UjwucbxtSG1k7Wj8RFdQag5FQ-U/edit?usp=sharing) **(Scorecard)** by [Faith Meyer](https://mm-coaches.notion.site/Faith-Meyer-7be84956b4de4ee2b7c30f441db90dc3) (5 min)
+
+[1-1 Template w/ Rubric Included](https://docs.google.com/document/d/1qSvrrTWQqCZeQJ0Z-VcCHy4Nw8Wwk0WOfmZiNoWWWp4/edit?tab=t.0)
+
+[Job Responsibilities Rubric Templates](https://docs.google.com/document/d/1IzDbENsJvZ2o3gloO-jjXKic9qf79BgmCQiDgK5LFZo/edit?tab=t.0#heading=h.dyn56cv59iwv)
+
+**TL;DR** Don't wait for formal review rounds to have crucial conversations with your direct reports. Create a lightweight shared working agreement that clearly identifies the core components that you will use to judge their performance within their role, and revisit it monthly at an absolute minimum.
+
+By explicitly aligning on your expectations, how you're measuring their performance, and by regularly revisiting it in your 1:1s you will:
+
+  - create a powerful culture of open and honest communication
+  - be a more effective and direct manager
+  - reduce the burden of cumbersome annual performance reviews
+  - help everyone sleep better at night by eliminating uncertainty
+  - **and most importantly, get better results out of your team faster.**
+
+**The Job Responsibilities Rubric** is the single most effective tool I have used over two decades of managing hundreds of direct reports. It takes a little time to create but once the rubric exists, it's easy to update and will evolve over time alongside the person in their role. 
+
+Here's why it works: **Waiting until formal Performance Reviews to have these detailed performance conversations is the single greatest failure of management that I see.**
+
+Most employees experience constant anxiety and/or uncertainty when they aren't sure where they stand. [Giving absolute feedback](https://docs.google.com/document/d/1wi714sobuQP72sKXw6J_gkwkhtVh1t6--op_Pk0YPxA/edit) regularly (no less than monthly in a 1:1) will help eliminate this anxiety. 
+
+Having difficult conversations and setting clear goals with your direct reports also builds [trust](https://docs.google.com/document/d/1BQOa7foLLxNXmGUhbvkzsvm0IVYOJZTFU4MKOmreCXc/edit), enhances [motivation](https://docs.google.com/document/d/14kFZcqm3zaS5uY4QmG307BViQyoSbDDS1U04NpYhmes/edit), and improves performance. Avoiding problems only creates headaches, sluggishness and bigger issues in the long run.
+
+#### **WHAT THE RUBRIC IS**
+
+#### A powerful management tool for high-performing cultures that:
+
+  - Clearly spells out what success looks like for your direct reports in their roles
+  - Supports effective 1:1s through transparency, accountability and clear communication 
+  - Gives your direct reports clear reporting topics for updates with substance
+  - Lays the groundwork for positive engagement and seamless performance reviews
+  - Documents performance results over time to support clearer decision making for promotions, comp, PIPs, coaching people out or into different roles, and letting people go
+  - The result of years of experimenting and building on learnings from The Management Center and [Radical Candor](https://bookshop.org/p/books/radical-candor-be-a-kick-ass-boss-without-losing-your-humanity-kim-scott/8486942?ean=9781250235374)
+
+#### **THE GOAL** 
+
+1.  Use this rubric monthly at a minimum in your 1:1 meetings with your direct reports.
+2.  Very clearly outline each component of your direct report's job responsibilities and performance assessment criteria — ideally from Day One of their employment.
+3.  For you and your direct report to use absolute feedback to measure how they're performing in a qualitative, trackable way. As with [magic questions](https://docs.google.com/document/d/1SLHeBWEXHk9SEvUKUU1hMsxl-U-IRaeZqA-wpx02lb4/edit), you can set a goal of having the employee be at a 4 or higher in all categories.
+
+#### **CREATING THE RUBRIC** 
+
+1.  **Create the Shared Performance Agreement with Your Direct Report**
+
+  - Let your direct report know you're experimenting with a new tool to help **you** better support them in their role, and ask if they would be willing to create a first draft.
+  - Ask them to spell out the core elements of their role prior to your next 1:1. (If they're not sure, ask them, "How are you measuring your own success in your role?")
+  - In your 1:1, review together, make any needed refinements, and commit to using it regularly in your 1:1s going forward (once per month at the absolute minimum).
+
+2.  **You Create the Rubric**
+
+  - Look at the job posting you used to hire your direct report. Consider including your org's core values. 
+  - Spell out the core responsibilities, performance criteria and any other key skills/abilities/additional responsibilities they've been given or have taken on.
+  - Let your direct report know you're experimenting with a new tool to help **you** better support them in their role, and ask for their input.
+  - Ask them what's missing and what (if anything) needs to be adjusted to feel all-encompassing for the core elements of their role.
+  - Agree/disagree + commit based on their input, and then begin regularly using the rubric going forward.
+
+#### **GENERATING BUY-IN**
+
+  - **New Hires:** Let your new hire know that you will both complete this rubric **prior to** your check-ins and formal reviews, and that it will evolve alongside them and their role.
+  - **Current Employees:** When you first introduce this rubric later in someone's employment, it's *critical* to communicate that it is NOT in any way a punishment.
+      - You can say something like, "I want to do more to support your success here. This will help us be sure we're on the same page and get ahead of any challenges/problems that may arise as you grow and take on more."  
+          - This rubric can provide effective support for PIPs as well. 
+
+#### **SAMPLE RUBRICS** 
+
+##### **IC** — Rubric with sample core responsibilities/skills text for **individual contributors**: 
+
+**CORE RESPONSIBILITIES**
+- 5 = Far exceeds expectations / Could not be any better.
+- 3 = Meets expectations.
+- 1 = Does not meet expectations / Could not be any worse.
+
+Responsibilities/Skills (rated 1-5):
+
+- **Top Notch Client Care**
+  - Your level of care and attention to detail for all your responsibilities is unmistakable
+  - You bring up a concern (and ideally a proposed solution) as soon as you notice it.
+  - You respond to client calls/emails as quickly as possible, within 1 business day at the most
+  - You ensure the client feels your genuine care, support, and desire for them to succeed from Day One
+- **Strong Communicator**
+  - Accessible and responsive (< 1 hour) for the internal team during work hours
+  - Confirm/clarify ownership and deadlines when unclear
+  - Communication is clean and as error free as possible (e.g. minimal to no typos, good grammar)
+- **Team Player**
+  - Do your part to foster a positive, collaborative work environment
+  - Prepared for and engaged during team meetings
+  - Available to and willing to help your team members when needed
+  - Don't engage in gossip — you go directly to the person with whom you're experiencing an issue
+- **Deadline Sensitive/Punctual**
+  - Complete tasks on time
+  - On time (or a little early) in general — for the workday, meetings, events
+- **Reliable**
+  - Words and actions align
+  - Follow through on deliverables
+- **Self Starter / Solutions Oriented**
+  - You take the initiative (don't wait to be told what to do)
+  - You bring up a concern (and ideally a proposed solution) as soon as you notice it
+
+##### **CEO** — Job Responsibilities Rubric with sample **CEO** core responsibilities/skills: 
+
+Responsibilities/Skills (rated 1-5):
+
+- Set, communicate & uphold mission, vision & values
+- Ensure product is solving current & future problems of our customers
+- Hire & manage the executive team:
+  - Drive clarity on all fronts
+  - Unblock ELT members
+  - Hold & run regular 1:1s
+  - Hold & run regular team meetings
+- Goal Setting & Accountability:
+  - Cause each department to create quarterly goals/KPIs/OKRs for each department, team & individual
+  - Hold team accountable for achieving their goals/KPIs/OKRs
+- Create & maintain positive relationships with key stakeholders: investors, customers, partners, employees
+- Report to the board & investors
+- Ensure compensation & budget are given according to priority and merit (not the squeaky wheel)
+- Ensure the high hiring bar is maintained & consistent with company values
+
+#### **USING THE RUBRIC**
+
+  - Use bi-weekly during 1:1s so the structure becomes second nature. Do not wait for formal reviews.
+      - **If that's too frequent (i.e. the ratings aren't changing), review monthly at a minimum.**  
+        *Remember: Consistency and clear communication build trust and get results!*
+      - If you're not a fan of the grid, use a plain text version in your 1:1 doc or whatever shared agreements tracker you use with your direct report.
+  - You and your DR should each fill out your ratings prior to each performance check-in. 
+  - Review the rubrics side by side with your DR during your 1:1s, **and pay special attention to where the ratings are not aligned**.
+
+  - These discrepancies are great opportunities for you [both!] to seek to understand why the ratings were given. 
+      - This often shines a light on where you two are not on the same page
+      - Hearing their reasoning can be a great jumping off point for you to be a great manager — i.e. to reinforce, more clearly define expectations/goals, provide accountability, support, etc.
+  - Use insights to consistently [praise](https://docs.google.com/document/d/1aXFhFbtIxmUdrUe9y341ghd-EJ89hJZ7g9tOKnw16FI/edit) your direct report's successes, address concerns, and give constructive [feedback](https://docs.google.com/document/d/1wi714sobuQP72sKXw6J_gkwkhtVh1t6--op_Pk0YPxA/edit).
+  - During the 1:1s, consider asking your direct report to include qualitative takeaways in addition to the number rating. 
+      - E.g. What's one thing that went well for you here? What's something that felt like a struggle? Where did you get stuck?
+  - **Always ask them to wrap up by repeating back what actions/next steps they intend to take** between now and your next meeting. In your next session, start by checking in on those actions.
+  - Incorporate Mochary Method [1:1 pre-work](https://docs.google.com/document/d/1WDx85P_G_XJMEiSv3Kcu5CwowE860naFdCRfem_cV8o/edit) for even greater results!
+
+#### **20-SECOND RECAP**
+
+Clearly define each core element and skill that you will focus on to measure your direct report's performance. Lay each item out in a rubric that you and your direct report complete prior to each 1:1 meeting. Compare the evaluation during your 1:1s, paying special attention to discrepancies in your ratings. Use these observations to explicitly spell out what success looks like to support your direct report's growth and wins. 
+
+### **Further Context:**
+
+#### **SUCCESS STORY**
+
+As a leader and manager, I personally struggled with finding the most effective way to A) reinforce explicitly stated expectations for performance and workplace behavior, B) get consistent reporting in place for my executive team, and C) to nurture a culture of high performance, radical candor and 360° support. 
+
+This job responsibilities rubric was the first practical tool that our Director of Customer Experience and I felt made it the easiest for us to give constructive feedback AND for our direct reports to receive that feedback. 
+
+Why? For me, being able to lay our completed rubrics down side by side and look for the areas where our ratings *didn't* line up not only created a tangible sense of collaboration and alignment, it also gave me clear opportunities where I could level set and/or reinforce a direct report's strong performance (where they were grading themselves too harshly), as well as clear opportunities to explicitly communicate expectations and what success looked like to me (when they were grading themselves too generously).
+
+Lo and behold, when our DCE rolled this rubric out to her team, that created a tangible forward momentum for our company as a whole, and our collective performance (and therefore our results) all leveled up as we further embraced radical candor, accountability and 360° support.
+
+
+---
+
+## Chapter 157: Brainstorming template for company outcomes and actions
+
+*Source: https://docs.google.com/document/d/1O2Kg97A6_oKM20e-B9CI0sN13R8seKbch15vWzaFnYs/edit*  
+*(template)*  
+
+[Brainstorming template for company outcomes and actions](https://docs.google.com/document/d/1O2Kg97A6_oKM20e-B9CI0sN13R8seKbch15vWzaFnYs/edit)
+
+*By Matt Mochary and Regina Gerbeaux*
+
+#### About this doc
+
+Below is a template for aligning a company on desired outcomes (goals) and actions (to-do's to get to those goals.)  The end goal is for every team member's individual actions to connect to the larger company vision and desired outcomes.
+
+It's broken down into these categories:
+
+  - Customer discovery and revenue
+  - Outcomes (company, department, and individual levels)
+  - Actions (company, department, and individual levels)
+
+*For the decision maker:*
+
+**Please send this template to whomever you would like input from when it comes to forming the company outcomes and actions.**  You should send it only to the people whose responses you're willing to read.  (If you're <20 people, you can likely send and process the entire company's input.  For any teams larger than that, try to select for a pool that is representative of the overall company.)
+
+Once you've received everyone's answers, process them with the appropriate department heads, and then publish the results and findings once they are ready to the entire company.
+
+#### Preface
+
+##### Part 1 - Customer, problem, solution, and moat
+
+  - Who is our **customer** (the name of a real person)?
+      - *Write here*
+  - What is their primary **pain**? 
+      - *Write here*
+  - What is our unique **solution** to that pain?
+      - *Write here*
+  - What is our **moat** that makes it that no other company does the same?
+      - *Write here*
+
+##### Part 2 - Revenue growth, potential blockers, and accelerators
+
+  - How fast could we grow revenue-wise, starting right now?
+      - *Write here*
+  - What constraints will slow us down?
+      - *Write here*
+  - Speed us up?
+      - *Write here*
+
+#### Outcomes
+
+##### Part 3 - Company outcomes
+
+  - What **outcomes** will we have in 10 years as a **company**?
+      - *Write here*
+      - Of this, if we could only achieve one thing, what would it be?
+          - *Write here*
+  - In 1 year?
+      - *Write here*
+      - Of this, if we could only achieve one thing, what would it be?
+          - *Write here*
+  - In 3 months?
+      - *Write here*
+      - Of this, if we could only achieve one thing, what would it be?
+          - *Write here*
+  - In 1 month?
+      - *Write here*
+      - Of this, if we could only achieve one thing, what would it be?
+          - *Write here*
+
+##### Part 4 - Department outcomes
+
+  - What **outcomes** will your **department** have in 10 years?
+      - *Write here*
+      - Of this, if we could only achieve one thing, what would it be?
+          - *Write here*
+  - In 1 year?
+      - *Write here*
+  - In 3 months?
+      - *Write here*
+  - In 1 month?
+      - *Write here*
+
+##### Part 5 - Individual outcomes
+
+  - What **outcomes** will you have as an **individual** in 10 years?
+      - *Write here*
+      - Of this, if you could only achieve one thing, what would it be?
+          - *Write here*
+  - In 1 year?
+  - In 3 months?
+  - In 1 month?
+
+#### Actions
+
+##### Part 6 - Company actions
+
+  - What **actions** will we take as a **company** this week?
+      - *Write here*
+      - Of this, if we could only do one thing, what would it be?
+          - *Write here*
+  - This month?
+      - *Write here*
+
+##### Part 7 - Department actions
+
+  - What **actions** will we take as a **department** this week?
+  - This month?
+
+##### Part 8 - Individual actions
+
+  - What **actions** will you take as an **individual** this week?
+  - This month?
+
+
+---
+
+## Chapter 158: Values: how to create them
+
+*Source: https://docs.google.com/document/d/1dyIXkhBrJVwNQZS_CAPxIESNY9hM9rXeb34nZvaiNfE/edit*  
+*(1 min)*  
+
+[Values](https://docs.google.com/document/d/1dyIXkhBrJVwNQZS_CAPxIESNY9hM9rXeb34nZvaiNfE/edit#) (1 min)
+
+There are many ways to create your company values. 
+
+A simple one is to complete the following sentence: "The rest of you in the company can make all of the decisions from now on, as long as you …." This is appropriate when the company is small, and values are entirely aspirational.
+
+Another version is to acknowledge the culture that you already have. To do this, each Leadership Team member should pick one person in the company who is NOT on the Leadership Team and exhibits a value that you wish would be a universal behavior. Name the person and the behavior. Then select 3-5 such examples. This method is best used when the company already has a sizeable team and existing culture.
+
+
+---
+
+## Chapter 159: Goals: how to create and review
+
+*Source: https://docs.google.com/document/d/1S5ak38pEg7fZE5H2INOzUHHZJTW9QAB8aobQJW5Uyek/edit?usp=sharing*  
+*(2 min)*  
+
+[Goals: how to create them](https://docs.google.com/document/d/1S5ak38pEg7fZE5H2INOzUHHZJTW9QAB8aobQJW5Uyek/edit?usp=sharing) (2 min)
+
+**Goals, how to create them**
+
+When creating a goal, the key thing to think about is the outcome. What is the outcome, that if it occurred, you would say to yourself, "I crushed it in my role!"?
+
+Then you need to pick the timeframe by which you'd like for this outcome to occur.  This can be by the end of the current week, month, quarter or year.  The shorter the timeframe, the more action-oriented the updates to the goal will be. That is a good thing.  So, I tend to make my goals those that I am actually trying to complete within the next 30 days.  
+
+And finally, you need to prioritize.  If you could only get one goal done, which would it be?  This becomes your #1 goal.    
+
+  - I recommend never tracking more than 3 work goals and 1 personal goal.  Best to track only 1 goal however, as you will then truly focus on it.
+
+**Next Actions, how to create them**
+
+Once you have created goals, the next step is to create the next action needed to accomplish each goal.
+
+Goals are outputs or outcomes.  They are occurrences that happen in the world.  
+
+But each action needs to be an input, meaning something you have control over entirely.
+
+Here are examples of outputs and inputs.  If the goal is:   
+
+  - "Achieve $5mm ARR by the end of the current quarter."
+
+The next action could be:
+
+  - "Close X customer".  This is an **output**.  You **DO NOT** entirely control this action.  The customer must decide to buy your product.  Or …
+  - "Send a proposal to X customer".  This is an **input.**  You **DO** entirely control this action.  
+
+You want to **write all next actions as inputs, things that you control entirely.**  This ensures that you are never waiting on someone else to take the next action. You can always create forward momentum.
+
+Next, you want to make the timeframe for the next action as short as possible.  What can you do in the next 2 minutes?  If you can figure that out, then you can do it immediately.  This again ensures that forward momentum is created immediately. 
+
+Here is an example of next actions with longer and shorter timeframes:  
+
+  - Send a proposal to X customer.
+      - This requires 2 hours.  First I have to write up the proposal, then I have to send it.
+      - The first 2 minutes of this action are to find and schedule the 2 hours needed to write the proposal.  So, I could instead write the next action as …  
+  - Schedule 2 hours to write and send the proposal.
+      - This takes less than 2 minutes.  I can complete it immediately.  
+      - This leads to traction and motion before even finishing your updating/planning process.
+
+Once you write an action in a way that it takes 2 minutes or less, please do it IMMEDIATELY.   Now the flywheel of momentum has already begun.  This is the definition of BIAS TO ACTION.
+
+Further reading:
+
+[Goals, how to review them](https://docs.google.com/document/d/18WNgOkFmV7rYEzmET1ddJrecoAg2ryfMY89wsK2vONs/edit?tab=t.0) (1 min)
+
+[First 2 Minutes of Actions (1 min)](https://docs.google.com/document/d/1Cru5o_o9ZgQPRD3XI41fcFLO0ToQyhP17fv7MUW_UG4/edit?usp=sharing)
+
+
+---
+
+## Chapter 160: Actions: how to review
+
+*Source: https://docs.google.com/document/d/1a5s0RKKOgAY_JjTP40gwFfazjWVrfzfWz2-LFZQjB60/edit*  
+*(1 min)*  
+
+[Actions: how to review](https://docs.google.com/document/d/1a5s0RKKOgAY_JjTP40gwFfazjWVrfzfWz2-LFZQjB60/edit) (1 min)
+
+The intention of reviewing Actions is to: 
+
+  - Make sure that each person has done what they said they would do and to 
+
+  - Help each person figure out how to unblock themselves on actions that they wish they had done but didn't.
+
+Said another way, the intention is help each person create a system that allows them to consistently complete their priority actions.  
+
+When actions don't get done, it is not a failure.  It is rather an opportunity to strengthen the system by fixing the blockage that arose.  
+
+Here's how to do it:
+
+For each Action that you have declared that would do by today's date, please write out the following:
+
+Is the action **DONE** or **NOT DONE**?
+
+If DONE, are there any key learnings to remember, or next actions to take?  If yes, please declare those.  
+
+If NOT DONE, please answer …
+
+  - **What blocked you from doing this action?**
+
+  - **Do you still want to do this action?  If yes, by what date?**
+
+  - **What will you do now to make sure that you don't get blocked in the same way again?** (Please write this as a separate action with a due date.)
+
+Template:
+
+  - **DONE**  
+      - Any key learnings or next actions?
+  - **NOT DONE**  
+      - What blocked you?
+      - Do you still want to do the action? If yes, by when?
+      - What will you do to not get blocked the same way again?
+
+
+---
+
+## Chapter 161: Update: how to write it
+
+*Source: https://docs.google.com/document/d/17cKOTgo3ZHjieLw2U67n30fQVAY0U5jmuh6tg_5FdM0/edit*  
+*(1 min)*  
+
+[Update: how to write it](https://docs.google.com/document/d/17cKOTgo3ZHjieLw2U67n30fQVAY0U5jmuh6tg_5FdM0/edit) (1 min)
+
+On a regular cadence (weekly, bi-weekly or monthly), it is important to hold oneself accountable, and share this accountability with one's team.
+
+I find the most effective and efficient way to do is to:
+
+  - State whether or not I have done the actions that I said I would by today.  
+      - [Actions, how to review](https://docs.google.com/document/d/1a5s0RKKOgAY_JjTP40gwFfazjWVrfzfWz2-LFZQjB60/edit) (1 min)  
+  - State the status of my priorities, and commit to the next actions toward each priority.  
+      - [Goals: how to create and review](https://docs.google.com/document/d/1S5ak38pEg7fZE5H2INOzUHHZJTW9QAB8aobQJW5Uyek/edit?usp=sharing) (1 min)
+
+
+---
+
+## Chapter 162: Operations videos playlist
+
+*Source: https://www.youtube.com/playlist?list=PLiksA_rhPy76JHjdz2YrbRIH4aDhyROSG*  
+*(2 hours)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.youtube.com/playlist?list=PLiksA_rhPy76JHjdz2YrbRIH4aDhyROSG)_
+
+
+---
+
+## Chapter 163: Goals Review: How to keep a pulse on your entire company\!
+
+*Source: https://docs.google.com/document/d/1ckE18p0wVl1zKgoY9k7rZXxWX8StMCb4GcmhZuIig1k/edit?tab=t.0*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://docs.google.com/document/d/1ckE18p0wVl1zKgoY9k7rZXxWX8StMCb4GcmhZuIig1k/edit?tab=t.0)_
+
+
+---
+
+## Chapter 164: Grade Level Planning example
+
+*Source: https://docs.google.com/spreadsheets/d/1AeS9TDfedHUGnsY2JRNCJtNsZJRCDGUssmYgz3-JLD8/edit#gid=612132548*  
+*(2 min)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://docs.google.com/spreadsheets/d/1AeS9TDfedHUGnsY2JRNCJtNsZJRCDGUssmYgz3-JLD8/edit#gid=612132548)_
+
+
+---
+
+## Chapter 165: Performance Review
+
+*Source: https://docs.google.com/document/d/1XRkUp1-tz-O4wn-GLZUzmvfHtRN_HT5ADWGmdKBScrg/edit?usp=drive_web&ouid=102503928790226855337*  
+*(5 min)*  
+
+[Performance Review (Bill Campbell-style)](https://docs.google.com/document/d/1XRkUp1-tz-O4wn-GLZUzmvfHtRN_HT5ADWGmdKBScrg/edit)
+
+Results
+
+  - What are your current Goals?
+  - How have you performed against those Goals in the last week/month/year?  Metrics.
+  - What successes and challenges did you experience?
+  - What can you do to ensure that those challenges won't occur again in the future?
+  - What are your new upcoming Goals?
+
+Management
+
+  - How many reports do you have?
+  - How often do you hold team meetings?  What is the agenda/length?
+  - How often do you hold 1-1 meetings?  What is the agenda/length?
+  - Are you getting negative feedback from each and every individual and addressing it in a timely manner?
+
+*Ask these same questions of reports to see if there is consistency, and to assess if reports feel informed, authorized and motivated.*
+
+  - *Who is your manager?*
+  - *How often does he/she hold a team meeting?  What is the agenda/length?*
+  - *How often does he/she hold a 1-1 meeting with you?  What is the agenda/length?*
+  - *Is your negative feedback being requested, encouraged and acted upon?*
+
+Innovation
+
+  - What have you done to make your role, or the company operations, easier in the future? 
+
+Working with peers
+
+  - What challenges are you experiencing in communicating, supporting and getting what you need from others?
+      - Ask this same question of all team members to calibrate and see where problems exist.
+
+
+---
+
+## Chapter 166: Step by step guide to building high performing teams (by Sabrina Wang)
+
+*Source: https://mm-coaches.notion.site/Step-by-step-guide-to-building-high-performing-teams-a1d3c70c031144738943e043933d3267*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://mm-coaches.notion.site/Step-by-step-guide-to-building-high-performing-teams-a1d3c70c031144738943e043933d3267)_
+
+
+---
+
+## Chapter 167: How to Hold People Accountable
+
+*Source: https://docs.google.com/presentation/d/1foUj9i_K3X-0c5WTQrggSyH93-FflNxzdlrgAUvARSQ/edit?usp=sharing*  
+*(by*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://docs.google.com/presentation/d/1foUj9i_K3X-0c5WTQrggSyH93-FflNxzdlrgAUvARSQ/edit?usp=sharing)_
+
+
+---
+
+## Chapter 168: Celine Teoh
+
+*Source: https://www.notion.so/mm-coaches/Celine-Teoh-8b99082650d14a0aac06160ad8ef4848*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.notion.so/mm-coaches/Celine-Teoh-8b99082650d14a0aac06160ad8ef4848)_
+
+
+---
+
+## Chapter 169: Star performers:  How to keep them engaged and motivated
+
+*Source: https://docs.google.com/document/d/1URb0E9CR2ZeUZ2aTRYcrKb7zbIL0ica8HEYy5CKL3lU/edit*  
+*(2 min)*  
+
+[Star performers:  How to keep them engaged and motivated](https://docs.google.com/document/d/1URb0E9CR2ZeUZ2aTRYcrKb7zbIL0ica8HEYy5CKL3lU/edit) (2 min)
+
+As your company grows, you will experience regrettable attrition. Some people that you value deeply will leave. You will experience sadness and fear. You will ask yourself: What could I have done to keep them? What can I do to keep those that are still here? 
+
+You will come up with many ideas. And in my experience, all of them will be good ideas, but none will hit the mark. Why? Because there is no one solution. Each star performer is experiencing a different thing.
+
+So, what to do? Ask. 
+
+I ask this question of all my star performers (meaning everyone in my organization, because if they're not a star performer, I help them find a great role elsewhere):
+
+*How are you feeling about your work life, 1-5 (with 3 being "meeting expectation")?*
+
+  - *If the answer is a 3 or 4, what would make it a 5?* 
+  - *If the answer is <3, what would make it a 3?* 
+
+I then see if I can make these conditions occur. 80% of the value is in me asking the question and listening to the answer so that my star performer feels heard. 20% of the value is creating the requested condition so that my star performer feels cared for.
+
+I then go further and ask: 
+
+*How do you feel about your life overall, 1-5?*
+
+  - *If the answer is a 3 or 4, what would make it a 5?* 
+  - *If the answer is <3, what would make it a 3?* 
+
+I ask this because dissatisfaction at home leads to dissatisfaction at work. If I can help my star performer create more peace at home, she/he will bring that peace/joy to work. 
+
+This step has been game-changing for my team. We have been able to raise the productivity of some team members 10x by helping them sort out their personal life.
+
+I then go further still and ask:
+
+*If you work remotely, how are you feeling about your Work From Home (WFH) setup, 1-5?* 
+
+  - *If the answer is a 3 or 4, what would make it a 5?* 
+  - *If the answer is <3, what would make it a 3?* 
+
+*How are we performing as a company, 1-5?*
+
+  - *If the answer is a 3 or 4, what would make it a 5?* 
+  - *If the answer is <3, what would make it a 3?* 
+
+*What is it like to work with the rest of the team, 1-5?*
+
+  - *If the answer is a 3 or 4, what would make it a 5?* 
+  - *If the answer is <3, what would make it a 3?* 
+
+And finally:
+
+*What is it like to work with me, 1-5?*
+
+  - *If the answer is a 3 or 4, what would make it a 5?* 
+  - *If the answer is <3, what would make it a 3?* 
+
+Ask these five questions. Listen to the answers. Pick the category with the lowest rating.  Focus on that one for now.  See what actions your report and you can take.  Do them. Report back to each other on them.  See your star performers' feelings of joy and satisfaction rise!
+
+I find that a good cadence for asking these same questions is monthly.  Its enough time for real change to occur.  I also find that I do not need to be the one to ask these questions.  I am able to pair my reports with each other, who can then support each other in asking these questions.  And they of course let me know whenever there is an issue or block that I am causing (or can help solve).  
+
+While I talk about using this method for star performers, the reality is that all team members benefit from these questions. And if you're not interested in investing the time needed to ask these questions of some of your reports, the question I have for you is, "Why are you still working with those people?"
+
+
+---
+
+## Chapter 170: Motivation beyond Mission and Money
+
+*Source: https://docs.google.com/document/d/1SYtm81Ux3aI7bka0M49gx39obnW08pYgh7_EgRJ5q3w/edit*  
+
+[Motivation beyond Mission and Money](https://docs.google.com/document/d/1SYtm81Ux3aI7bka0M49gx39obnW08pYgh7_EgRJ5q3w/edit)
+
+At a certain point in the company's financial success, your senior leadership team will have made serious money, and your company mission will have been largely accomplished. What then will keep your senior team motivated to continue in the trenches with you?
+
+Well, ask yourself: What motivates you to keep going? 
+
+There are only two basic sources of motivation in life: fear and joy. Fear is much more prevalent. It is what causes us to perceive scarcity of money, time, love, etc. At a certain amount of wealth, however, it becomes difficult to maintain this view of scarcity. Or, if someone starts to do personal consciousness work, then fear begins to melt away quickly. If joy is not present, the motivation to keep going in the job will also quickly disappear.
+
+What is the answer?
+
+Develop joy! It sounds trite. Discover that which brings each person joy, that which they would do for free. Eliminate all the activities that they suffer through. The easiest way to do this is to do an [Energy Audit](https://docs.google.com/document/d/1HmaRdtk8R5GQtMj72Y6XhHTru5SQAiiqDfDP3qy73k4/edit) monthly until you fill the calendar with nothing but energy-creating activities. 
+
+As proof of this, I can only offer myself as an example. I have made more money than I want to spend in my lifetime. I have also done enough consciousness work to lose my sense of scarcity. So fear no longer motivates me. I have done the Energy Audit repeatedly to the point that my calendar is almost entirely "green." This means that I do only two things:
+
+  - On the weekends, I am with my family.   
+  - During the week, I coach (which is essentially being a manager).   
+      - I charged nothing for what I did for many years because I didn't want to lose the filter of only doing things that bring me joy. (Money might have confused that filter. At this point, though, there is no confusion.)   
+          - And I do it from early morning to late at night, day after day after day. In fact, I can't get enough. I love it so much that I even bring it into my weekends and home by hosting meals at my house on weekends for my coachees. 
+
+Are you bold enough to try this approach? First with yourself. And then, if it works for you, with your leadership team?
+
+
+---
+
+## Chapter 171: Amazon 6-pager: shareholder letter
+
+*Source: https://docs.google.com/document/d/1AqAWzitK0d8hKFh-c_hW6MXoLG3JhZkPspGg3l27ND0/edit*  
+*(10 min)*  
+
+[Amazon 6-pager: shareholder letter](https://docs.google.com/document/d/1AqAWzitK0d8hKFh-c_hW6MXoLG3JhZkPspGg3l27ND0/edit)
+
+**Exhibit 99.1**
+
+To our shareowners:
+
+The American Customer Satisfaction Index recently announced the results of its annual survey, and for the 8th year in a row customers ranked Amazon #1. The United Kingdom has a similar index, The U.K. Customer Satisfaction Index, put out by the Institute of Customer Service. For the 5th time in a row Amazon U.K. ranked #1 in that survey. Amazon was also just named the #1 business on LinkedIn's 2018 Top Companies list, which ranks the most sought after places to work for professionals in the United States. And just a few weeks ago, Harris Poll released its annual Reputation Quotient, which surveys over 25,000 consumers on a broad range of topics from workplace environment to social responsibility to products and services, and for the 3rd year in a row Amazon ranked #1.
+
+Congratulations and thank you to the now over 560,000 Amazonians who come to work every day with unrelenting customer obsession, ingenuity, and commitment to operational excellence. And on behalf of Amazonians everywhere, I want to extend a huge thank you to customers. It's incredibly energizing for us to see your responses to these surveys.
+
+One thing I love about customers is that they are divinely discontent. Their expectations are never static – they go up. It's human nature. We didn't ascend from our hunter-gatherer days by being satisfied. People have a voracious appetite for a better way, and yesterday's 'wow' quickly becomes today's 'ordinary'. I see that cycle of improvement happening at a faster rate than ever before. It may be because customers have such easy access to more information than ever before – in only a few seconds and with a couple taps on their phones, customers can read reviews, compare prices from multiple retailers, see whether something's in stock, find out how fast it will ship or be available for pick-up, and more. These examples are from retail, but I sense that the same customer empowerment phenomenon is happening broadly across everything we do at Amazon and most other industries as well. You cannot rest on your laurels in this world. Customers won't have it.
+
+How do you stay ahead of ever-rising customer expectations? There's no single way to do it – it's a combination of many things. But *high standards* (widely deployed and at all levels of detail) are certainly a big part of it. We've had some successes over the years in our quest to meet the high expectations of customers. We've also had billions of dollars' worth of failures along the way. With those experiences as backdrop, I'd like to share with you the essentials of what we've learned (so far) about high standards inside an organization.
+
+**Intrinsic or Teachable?**
+
+First, there's a foundational question: are high standards intrinsic or teachable? If you take me on your basketball team, you can teach me many things, but you can't teach me to be taller. Do we first and foremost need to *select* for "high standards" people? If so, this letter would need to be mostly about hiring practices, but I don't think so. I believe high standards are teachable. In fact, people are pretty good at learning high standards simply through exposure. High standards are contagious. Bring a new person onto a high standards team, and they'll quickly adapt. The opposite is also true. If low standards prevail, those too will quickly spread. And though exposure works well to teach high standards, I believe you can accelerate that rate of learning by articulating a few core principles of high standards, which I hope to share in this letter.
+
+**Universal or Domain Specific?**
+
+Another important question is whether high standards are universal or domain specific. In other words, if you have high standards in one area, do you automatically have high standards elsewhere? I believe high standards are domain specific, and that you have to learn high standards separately in every arena of interest. When I started Amazon, I had high standards on inventing, on customer care, and (thankfully) on hiring. But I didn't have high standards on operational process: how to keep fixed problems fixed, how to eliminate defects at the root, how to inspect processes, and much more. I had to learn and develop high standards on all of that (my colleagues were my tutors).
+
+Understanding this point is important because it keeps you humble. You can consider yourself a person of high standards *in general* and still have debilitating blind spots. There can be whole arenas of endeavor where you may not even *know* that your standards are low or non-existent, and certainly not world class. It's critical to be open to that likelihood.
+
+**Recognition and Scope**
+
+What do you need to achieve high standards in a particular domain area? First, you have to be able to *recognize* what good looks like in that domain. Second, you must have realistic expectations for how hard it should be (how much work it will take) to achieve that result – the *scope*.
+
+Let me give you two examples. One is a sort of toy illustration but it makes the point clearly, and another is a real one that comes up at Amazon all the time.
+
+**Perfect Handstands**
+
+A close friend recently decided to learn to do a perfect free-standing handstand. No leaning against a wall. Not for just a few seconds. Instagram good. She decided to start her journey by taking a handstand workshop at her yoga studio. She then practiced for a while but wasn't getting the results she wanted. So, she hired a handstand coach. Yes, I know what you're thinking, but evidently this is an actual thing that exists. In the very first lesson, the coach gave her some wonderful advice. "Most people," he said, "think that if they work hard, they should be able to master a handstand in about two weeks. The reality is that it takes about six months of daily practice. If you think you should be able to do it in two weeks, you're just going to end up quitting." Unrealistic beliefs on scope – often hidden and undiscussed – kill high standards. To achieve high standards yourself or as part of a team, you need to form and proactively communicate realistic beliefs about how hard something is going to be – something this coach understood well.
+
+**Six-Page Narratives**
+
+We don't do PowerPoint (or any other slide-oriented) presentations at Amazon. Instead, we write narratively structured six-page memos. We silently read one at the beginning of each meeting in a kind of "study hall." Not surprisingly, the quality of these memos varies widely. Some have the clarity of angels singing. They are brilliant and thoughtful and set up the meeting for high-quality discussion. Sometimes they come in at the other end of the spectrum.
+
+In the handstand example, it's pretty straightforward to *recognize* high standards. It wouldn't be difficult to lay out in detail the requirements of a well-executed handstand, and then you're either doing it or you're not. The writing example is very different. The difference between a great memo and an average one is much squishier. It would be extremely hard to write down the detailed requirements that make up a great memo. Nevertheless, I find that much of the time, readers react to great memos very similarly. They know it when they see it. The standard is there, and it is real, even if it's not easily describable.
+
+Here's what we've figured out. Often, when a memo isn't great, it's not the writer's inability to *recognize* the high standard, but instead a wrong expectation on *scope*: they mistakenly believe a high-standards, six-page memo can be written in one or two days or even a few hours, when really it might take a week or more! They're trying to perfect a handstand in just two weeks, and we're not coaching them right. The great memos are written and re-written, shared with colleagues who are asked to improve the work, set aside for a couple of days, and then edited again with a fresh mind. They simply can't be done in a day or two. The key point here is that you can improve results through the simple act of teaching scope – that a great memo probably should take a week or more.
+
+**Skill**
+
+Beyond recognizing the standard and having realistic expectations on scope, how about *skill*? Surely to write a world class memo, you have to be an extremely skilled writer? Is it another required element? In my view, not so much, at least not for the individual in the context of teams. The football coach doesn't need to be able to throw, and a film director doesn't need to be able to act. But they both do need to recognize high standards for those things and teach realistic expectations on scope. Even in the example of writing a six-page memo, that's teamwork. *Someone* on the team needs to have the skill, but it doesn't have to be you. (As a side note, by tradition at Amazon, authors' names never appear on the memos – the memo is from the whole team.)
+
+**Benefits of High Standards**
+
+Building a culture of high standards is well worth the effort, and there are many benefits. Naturally and most obviously, you're going to build better products and services for customers – this would be reason enough! Perhaps a little less obvious: people are drawn to high standards – they help with recruiting and retention. More subtle: a culture of high standards is protective of all the "invisible" but crucial work that goes on in every company. I'm talking about the work that no one sees. The work that gets done when no one is watching. In a high standards culture, doing that work well is its own reward – it's part of what it means to be a professional.
+
+And finally, high standards are fun! Once you've tasted high standards, there's no going back.
+
+So, the four elements of high standards as we see it: they are *teachable*, they are *domain specific*, you must *recognize* them, and you must explicitly coach realistic *scope*. For us, these work at all levels of detail. Everything from writing memos to whole new, clean-sheet business initiatives. We hope they help you too.
+
+
+---
+
+## Chapter 172: Amazon Playbook
+
+*Source: https://docs.google.com/document/d/1Cut-EPhfXQqZwW2RUiyvwPASl-lR7OABuu_a7g0F64w/edit*  
+*(2 min)*  
+
+[Amazon Playbook](https://docs.google.com/document/d/1Cut-EPhfXQqZwW2RUiyvwPASl-lR7OABuu_a7g0F64w/edit)
+
+by Brian Meewes (VP Ops and Finance at Alto, former Head of Finance at Amazon Fresh)
+
+Three key inputs: 
+
+  - clearly defined recurring meetings 
+  - clearly pre-defined written template for each of those meetings 
+  - only four appropriate responses to questions (see image below)
+
+These might have changed since my time there, but the meeting cadence looked like this:
+
+  - OP1/OP2 (annual planning)
+      - Exec offsite: only steam...5 years out. When I was there it was: what do we have to believe to achieve $100B by 2015. 
+      - This was framework/guidance for bottoms up planning process...
+  - S-team goals
+      - At the end of the planning cycle, the s-team would finalize a list of 5-10+ key objectives across the company and a list of 100 or so "s-team" SMART goals. 
+      - Status was reported out on in WBR/MBR, and the steam would get together every quarter to review red/yellow/green and why red/yellow or status
+  - WBR (weekly business review)
+      - Company wide on Wednesday
+      - Individual teams would have their "pre-wbr" reviews on Tuesdays to prepare for the company WBR
+      - The template was a printed (not projected, although I heard they finally shifted to projected a couple years ago) deck of the top 15-20 output and input metrics for the business (weekly/monthly values, WoW/YoY/var to plan)
+  - MBR or QBR (monthly or quarterly business review - we went back and forth between monthly and quarterly)
+      - Written six page doc, outline was provided including standard financial templates. Provided update on status vs. goals - including key initiatives identified in annual plan and steam goals
+  - New ideas/proposed solutions (ad hoc)
+      - Decision maker was always clear
+      - Everyone reads
+      - Go around the room for feedback
+      - Verbal discussion (see note below on what was appropriate verbal responses to questions)
+      - Decision maker makes decision (yes/no, more data needed, etc.)
+
+What is most unique about how meetings are run at Amazon is how little talking (or even back and forth feedback) there is - even after reading the document. The below provides some insight into why...very concise, focused writing, and very clear agreement on what is useful verbal communication. There is also an underlying, extreme level of rigor and data...if it is knowable, it is expected to be known - which is surprisingly rare in other companies. Knowable data points are typically lost in "weasel" words and talk.
+
+Tips for Amazon writers:
+
+  - Use less than 30 words per sentence
+      - Due to the fact that → because
+      - Totally lacked the ability to → could not
+  - Replace adjectives with data
+      - We made the performance faster → We reduced server-side tp90 latency from 10 ms to .1 ms
+  - Eliminate weasel words
+      - Nearly all customers → 87% of Prime Members
+      - Significantly better → +25 basis points (bps)
+  - Does your writing pass the "so what" test?
+  - If you get a question, reply with one of the four Amazon answers:
+      - Yes
+      - No
+      - A number
+      - I don't know (and I will follow up when I do).
+
+
+---
+
+## Chapter 173: Manager:  How to be a great one\!
+
+*Source: https://docs.google.com/document/d/1-_LkABTtV1bmZ287NtinvFhr74Yl3DXzDYdG_zff2qc/edit*  
+*(1 min)*  
+
+[Manager:  How to be a great one!](https://docs.google.com/document/d/1-_LkABTtV1bmZ287NtinvFhr74Yl3DXzDYdG_zff2qc/edit) (1 min)
+
+What is the goal of a manager? To make your team maximally productive.
+
+How then do you make your team maximally productive? 
+
+The primary thing is to create an environment that allows for maximum productivity. To me, this means that each person is:
+
+  - Feeling joy in their work life. 
+  - Feeling joy in their personal life. I know this seems beyond the scope of a manager from work. It is not. 
+  - Feeling joy about how the company operates.
+  - Feeling joy about their interaction with their manager (you!).
+  - Feely joy about their interaction with other team members.
+
+The easiest way to help people achieve this joy is to ask them where they are (I like to use a number scale from 1-5) and then ask them what a 5 would look like. For more detail, see the "magic questions" in [Motivating your team](https://docs.google.com/document/d/14kFZcqm3zaS5uY4QmG307BViQyoSbDDS1U04NpYhmes/edit) (2 min).
+
+To get real answers, you'll first have to create trust. The easiest way that I know to do that is to
+
+  - Show that you care about who they are as a person. Do this by asking about the things that matter to them in their personal lives, and then remember what they said and ask them about it in future conversations. Keep doing this for several minutes at the beginning of each meeting (whether 1-1 or group).   
+  - Show that you recognize the good work that they are doing. Do this by pointing out the things they have done that you like. 
+      - If you don't know what they are doing, don't worry. Simply ask them: "What are the things that you have done since our last meeting that you are proud of?" And then praise the person for those things.
+
+Once you have created the trust and are getting honest answers to the Magic Questions, you will be able to help them create a near 10. Then you can look at their work and see if they are actually applying the needed time to be maximally productive (the quantity of time they are applying is near a 5).
+
+To create and maintain the information flow needed, you should do both regular 1-1s and team meetings. The 1-1s should be prepared for the team meeting so that the team meeting is maximally effective.
+
+These meetings should start with a weekly cadence to build rapport and create norms around communicating. But once you start showing up to meetings, and there is not enough new content to talk about, then it's time to drop the cadence to bi-weekly. This feels like the best cadence for ongoing 1-1s and team meetings. For those people who work exceptionally well without guidance, you can drop the 1-1s to monthly. 
+
+And that's it.
+
+
+---
+
+## Chapter 174: Manager Training Basics - Mochary Method
+
+*Source: https://docs.google.com/document/d/1AhbvqdpfyUqqkSUalRwRhsJnIZx2BXIHH3v2bt0QAw4/edit*  
+
+[Manager Training Basics - Mochary Method](https://docs.google.com/document/d/1AhbvqdpfyUqqkSUalRwRhsJnIZx2BXIHH3v2bt0QAw4/edit)
+
+1.  How to give and receive feedback
+    1.  Example: 
+        1.  [Feedback](https://docs.google.com/document/d/1wi714sobuQP72sKXw6J_gkwkhtVh1t6--op_Pk0YPxA/edit)
+            1.  [Feedback Form](https://docs.google.com/document/d/16iXM6T45R5cxPR_OT3hA8iumqNV9fhjNLphsfSCWo1A/edit)
+            2.  [Feedback: Receiving: the 5 A's](https://docs.google.com/document/d/1zsVOnpNayriDpzgjJUDO2n47YxO9EAXbVH2uC_Zpnms/edit)
+        2.  [Conflict Resolution](https://docs.google.com/document/d/1NzF-otDuBWKC2GShJKcFsxCyabK1V3skQwCMU89tDmY/edit) (Deep Feedback)
+    2.  Live practice: in pairs  
+
+2.  1-1 Meetings
+    1.  Example: 
+        1.  [1-1 Template and Instructions](https://docs.google.com/document/d/1j7ZNWTh9ClS0PZHrpZXGk879pv9LXDWt6sjaq1uA-zA/edit)
+        2.  [Heard:  how to make people feel it](https://docs.google.com/document/d/1NiCEEUO2-38pIVGM7nrnpGRykbbtv2xuqLoKW50ZzLw/edit)
+    2.  Live practice: in pairs  
+
+3.  Team Meetings 
+    1.  Example:  
+        1.  [Meetings](https://docs.google.com/document/d/1sz99Z8qgWNFULiNJhR0w5mtSxipD5XaPXt8aRTvYwDY/edit)
+        2.  [Decision-Making](https://docs.google.com/document/d/1hPdWQjYfdK0SB2i3ViZ9XsMPjTYEi7Do1WI22ofmEdo/edit)
+            1.  [RAPID, example](https://docs.google.com/document/d/1vkxl-OI_XHbBWqgRCbpP86SJwSnEgCIzVOjbhWCHZng/edit)
+            2.  [RAPID template, example](https://docs.google.com/document/d/1OP6WkWcWETvXFfwQYG1nqXL2wPRytzbQRWYwcchq2t0/edit)
+    2.  Live practice:  rotate the facilitator  
+
+4.  Content
+    1.  Feedback
+    2.  **[Energy Audit](https://docs.google.com/document/d/1HmaRdtk8R5GQtMj72Y6XhHTru5SQAiiqDfDP3qy73k4/edit)**
+
+Agenda:
+
+  - Prepare
+      - Write
+          - Update
+          - Issues/Proposed Solutions
+      - Read (and comment)
+          - Updates
+          - Issues/Proposed Solutions
+  - Meeting
+      - Issues/Decisions
+      - Topics
+      - Feedback
+          - Group
+          - Paired
+
+Expectations: 
+
+  - Read [Matt's Book: The Great CEO Within](https://docs.google.com/document/d/1ZJZbv4J6FZ8Dnb0JuMhJxTnwl-dwqx5xl0s65DE3wO8/edit) in advance
+  - Bring feedback examples to practice
+
+
+---
+
+## Chapter 175: Politics
+
+*Source: https://docs.google.com/document/d/1cINzNPcmFPrK8wLQ6L693UDRaioVsZxdaK5XPNkIMew/edit?usp=drive_web&ouid=102503928790226855337*  
+*(2 min)*  
+
+#### [Politics](https://docs.google.com/document/d/1cINzNPcmFPrK8wLQ6L693UDRaioVsZxdaK5XPNkIMew/edit) (2 min)
+
+In this context, "politics" means lobbying to gain personal benefit. Politics are poison for a company. They direct energy away from customer problem-solving, and once they take hold, the result is a quick race to the bottom.
+
+Politics are created when someone successfully lobbies the CEO or their manager for some benefit. Others see this, so they, in turn, lobby. They then gain a benefit, and the virus spreads quickly throughout the organization.
+
+It often begins very innocently: "Excuse me, can I please talk to you about a raise? I have been at this company for a year now and have shown utter dedication by doing such-and-such, and I believe that I now deserve a raise…"
+
+This sounds compelling, and you, of course, want to reward dedication. But if you give a raise based on this conversation, the whole company will learn that the way to get a raise is simply to ask you for it. 
+
+Suddenly everyone will be trying to curry your favor. Be very careful here. You may enjoy this behavior, but it is toxic for the company.
+
+The only way to prevent politics is never to allow lobbying to be successful. The only way to do this is to have a written policy about as many situations as possible, particularly around compensation and titles (raises and promotions). Apply this policy to all team members, all the time.
+
+It isn't easy to create objective criteria for raises and promotions, but there are models. The most successful method I know of is called [Grade Level Planning](https://docs.google.com/spreadsheets/d/1AeS9TDfedHUGnsY2JRNCJtNsZJRCDGUssmYgz3-JLD8/edit#gid=380521419)—at least, that's what Tesla calls it. It calls for a very detailed definition of every position in the company, and every seniority level, along with specific compensation metrics for each position and level. This is then shared throughout the company. Team members can then clearly see what they need to do to receive the next compensation and title level. Managers must not deviate from this written schema.
+
+When a company is smaller (fewer than fifty employees or so) and growing fast, there is often so much fluidity that it can be challenging to implement Grade Level Planning (GLP). Most companies end up doing GLP at 150+ employees, but that is often too late. The compromise is somewhere in the middle. I recommend starting to think about GLP at twenty-five to fifty employees and then implementing as soon as is practical after that.
+
+
+---
+
+## Chapter 176: Scaling:  Hire a “Manager Trainer” as COO
+
+*Source: https://docs.google.com/document/d/1NtLurYDKUXqy2VHFWcw027sJhHPCwsatV2GaVF4jebk/edit*  
+*(3 min)*  
+
+[Scaling:  Hire a "Manager Trainer" as COO](https://docs.google.com/document/d/1NtLurYDKUXqy2VHFWcw027sJhHPCwsatV2GaVF4jebk/edit) (3 min)
+
+One of the most dangerous transitions a company makes is from less than twenty team members to more than forty. During this time, communication and productivity usually break down. The system of group organization that existed when the company was all sitting in the same room together (no system at all) suddenly no longer works when team members are not all sitting next to each other. Once your company has over 40 team members, you will hire great people, but they won't know what to do, and you will be frustrated by their lack of output. 
+
+Luckily, there is an answer. It has a time cost. But once you implement it, it will allow your company to become productive again and will continue to be effective as your company scales from 10s of team members to 100s to 1,000s to 10,000s.
+
+Every successful large technology company uses this system. It has no single name—Google, for example, calls theirs "Objectives and Key Results (OKRs)"—but the systems are essentially the same from company to company. They share the following key functions:
+
+1.  Setting vision and goals for the company, each department, and each individual regularly (usually quarterly).
+2.  Communicating that vision and those goals to every team member.
+3.  Tracking and reporting progress toward those goals on a regular timetable (usually weekly or bi-weekly).
+4.  Eliciting feedback from all team members on what is going right and (much more importantly) what is not going right and needs to be changed.
+
+The system streamlines and organizes: 
+
+  - information flow out, so the CEO can inform team members of the company priorities,
+  - Information flow in, so team members can provide feedback to the CEO about what is and isn't working.
+
+This information exchange takes place through a deliberate series of goal-oriented meetings, which comprise the system's core.
+
+In my experience, it is effortless to copy this system if you see it in operation. But it isn't easy to implement such a system by reading instructions (including these). When you get to this point in your company's life cycle, I recommend doing one of two things:
+
+1.  Hire a COO who was a manager at a large, well-managed company (over 200 employees) to implement and run this system for you. (Ideally, Google, Facebook, or Amazon, as these companies have excellent management training programs.)  
+2.  Hire an x-CEO to come in as a "1 day a week CEO" to implement this system. She should be able to do so in 8-12 weeks. Have her then watch you run the system for two weeks to ensure that you are doing it correctly. Then run it yourself going forward.
+
+One of the measures you have successfully implemented this system is that your original team members continue to perform as excellent managers even as their departments grow massively. If there is no system, then you will be forced to hire ever-more-experienced managers who will layer over your original team members. When that happens, a tremendous amount of institutional knowledge is lost, and ultimately the company can never perform as well. 
+
+This dichotomy is apparent when looking at NBA teams. The Golden State Warriors were an underperforming team under Mark Jackson in 2013-14. Once Steve Kerr joined in 2014-15 and brought an effective system, the same roster of players became dominant and won the championship. (Yes, they brought in Kevin Durant, but that was only later.) By contrast, the Cleveland Cavaliers (with Lebron James) and Houston Rockets (with James Harden) had no system and simply relied on individual talent. Even against remarkable talent, the system inevitably wins.
+
+The dichotomy can be seen in companies as well. Many members of Facebook's original leadership team continue to be on the leadership team today. This is because Sheryl brought a management system to the company that elevated all who used it. By contrast, Twitter has not developed a similarly effective system. Instead, they have hired individual superstars. And while the people at Twitter are remarkably talented, the company as a whole does not function nearly as well as Facebook.
+
+
+---
+
+## Chapter 177: Scale or not to Scale?
+
+*Source: https://docs.google.com/document/d/1YEH0EWZOXu0nptlOCXM9etBiLVO2qDWuS_JIwK7go9w/edit*  
+*(2 min)*  
+
+[Scale or not to Scale?](https://docs.google.com/document/d/1YEH0EWZOXu0nptlOCXM9etBiLVO2qDWuS_JIwK7go9w/edit) (2 min)
+
+If you are a startup in Silicon Valley and have discovered a large potential market, you will raise significant capital early. This will allow you to hire many people. Investors may well pressure you to do so to "win the race to market share." Resist this pressure. It is misplaced. 
+
+Startups don't usually fail because they grow too late. They typically fail because they grow too early (i.e., before achieving Product Market Fit). 
+
+#### Product-Market Fit
+
+What is Product-Market Fit? I define it as having created a product that customers are finding so much value in that they are willing to buy it (after their test phase) and recommend it. Metrics that show whether PMF has been achieved include: revenue, renewal rates, NPS (net promoter score). 
+
+The company's first goal should be to achieve real PMF, not metrics that fool people inside and outside the company that PMF has been achieved. 
+
+For a B2B company, know that enterprise customers have budgets just for testing new technology and will buy your product to do just that. This does not mean that you have achieved PMF. For these types of customers, only long-term contracts are an indication that they value your product and want to use it.
+
+There is no magic metric, but for a B2B company, it's hard to imagine PMF at anything less than $1mm ARR.
+
+#### Scaling
+
+Once you have achieved Product-Market Fit, that is the right time to blitz scale and win the race to market share. To do this, you will need to create massive awareness (Marketing), walk many customers through the sales process (Sales), hold those customers hands as they set up and use your product or service (Customer Success), harden your infrastructure to withstand many users at once (DevOps), get rid of technical debt as well as add all the features promised in your roadmap (Engineering), update the product roadmap to meet the most urgent needs of your customers (Product), and all of the non-technical operations (People [Recruiting, Training, and HR], Finance, Legal, Office). All of this requires hiring talented and experienced people to fulfill those functions. First, raise the money needed to hire this team, and then begin hiring. 
+
+Once you bring on remote workers and your team scales beyond 15-20 people, most likely, things will begin to fall apart. You will hire very talented people, and they simply won't perform in the way you hope or expect. You will end up doing more and more work yourself, working longer and longer hours, just to keep the company afloat. You will extrapolate this trend and realize that soon you will break. 
+
+It is at that moment that you need to implement a formal management system. It will be painful. You will no longer be able to just "work on the product." You and your team will likely have to spend one full day per week preparing for and participating in team and one-on-one meetings. These meetings and this system will feel like pure overhead. They are. And without them, your company will never scale successfully. 
+
+The good news is that the same system that allows your company to operate well with 25 people will also work well with 25,000. Neither the system nor the amount of overhead will change. It is a one-time hit.
+
+The rest of this book walks through the implementation of such a system.
+
+
+---
+
+## Chapter 178: Zone of Genius map - venture firm
+
+*Source: https://docs.google.com/document/d/1pKnjyPB55w0SwVS7h57xZj0h951f4dWNK2wzuBHqGQw/edit*  
+*(1 min)*  
+
+[Zone of Genius map - venture firm](https://docs.google.com/document/d/1pKnjyPB55w0SwVS7h57xZj0h951f4dWNK2wzuBHqGQw/edit) (1 min)
+
+As a venture firm, you can choose to make investing a solo sport (like golf) and have each investor be responsible for all aspects of the investment process on the deals they source, judge, win, and support. Or you turn to invest into a team sport (like soccer) by identifying each investors' unique strengths, mapping those strengths to the investment process, and then asking each investor to perform their skill during that phase of each deal.
+
+If you choose the latter, this exercise will help you do it.
+
+1.  Ask all team members to write out the following: 
+    1.  "The different actions that need to occur to make a successful investment are …." 
+        1.  Please include, at least, the following: 
+            1.  Find out about investment opportunities (source)
+            2.  Decide on those opportunities (judge)
+            3.  Get chosen to invest in those opportunities (win)
+            4.  Create value in the company and a trusted relationship with the operator (support)
+    2.  For each other team member, write: 
+        1.  "Name 
+            1.  You are particularly good at ... 
+            2.  I noticed this in the following example …."
+2.  Share answers to 1a, merge them and create one process that all can commit to (even if they don't entirely agree with).
+3.  Share answers to 1b, combine all the perceived strengths of each person in one list. Map them against each step of the investment process in 2. Mark each name in green. 
+4.  Mentoring: It is also valuable to gain experience in each step of the investment process, even those you aren't already great at. This creates better hand-offs. It also gives you the chance to discover that you might actually love a part of the process that you don't do today. To gain this experience: 
+    1.  Each person declares what part of the process they want to experiment with and from whom they want to learn. 
+    2.  If their target is willing, create a mentor relationship between them (marking the mentee's name in orange on the investment process).
+
+You can also go outside the firm to source feedback by doing the [Zone of Genius](https://docs.google.com/document/d/11UVWJox31Ani8Cq6Ymhm6DiVUiv5vPkOQd8ZdGpYmbs/edit) exercise.
+
+
+---
+
+
+# CEO (role and team)
+
+## Chapter 179: CEO as fireman
+
+*Source: https://docs.google.com/document/d/1ndhJME8Nx5yWa9tqhEMRwi5pgibYy6AzB46zhvSeFEg/edit*  
+*(1 min)*  
+
+[CEO as fireman](https://docs.google.com/document/d/1ndhJME8Nx5yWa9tqhEMRwi5pgibYy6AzB46zhvSeFEg/edit) (1 min)
+
+A fireman lives in the firehouse, ready to respond to a fire whenever it comes. Most of the time, there is no fire to respond to, so the fireman waits. The most enterprising ones use that downtime to do something productive. 
+
+The best CEOs that I coach do the same. They manage the executive team, but they do not do any single department function. They have large swaths of open time in their calendar. They keep that space available to put out fires that might occur. When no fires arise, they use the large open swaths of time to: 
+
+  - Write the next iteration of the company and product vision.
+  - Build relationships with key stakeholders (employees, partners, customers, investors) by reaching out to them to know that the CEO is thinking about them.
+
+These are the functions that only the CEO can do. If she doesn't make time for them, they don't happen, and the company suffers.
+
+[Francis Davidson](mailto:davidson@sonder.com), CEO of Sonder:
+
+*Next, Executive as fireman …*
+
+*When all the systems are green, you sit and watch.*
+
+*When one of the systems turns yellow or red, you can step in and operate it yourself (and model for those who will continue to do it after you).*
+
+
+---
+
+## Chapter 180: CEO Team
+
+*Source: https://docs.google.com/document/d/1q1ZSAQJJR6fX02lVcGTDr4tQXZLjm2i_EKemTQlfSbI/edit#heading=h.wdil0sm2u4gb*  
+*(3 min)*  
+
+[CEO Team](https://docs.google.com/document/d/1q1ZSAQJJR6fX02lVcGTDr4tQXZLjm2i_EKemTQlfSbI/edit#) (1 Min)
+
+By Justin Kan
+
+#### **CEO**
+
+Responsibilities
+
+  - Selling executive and exec direct report candidates to join the company
+  - Fundraising
+  - Internal cheerleading
+  - Representing the company externally (PR, panels, speaking, events)
+  - Company 1-year plans and OKRs feedback and approval
+  - Core company documents (vision, mission, strategy)
+  - High-value client sales and advising
+  - Company and leadership team consciousness
+  - Exec staff 1:1s and career development
+
+#### **Chief of Staff**
+
+Responsibilities
+
+  - Regular CEO energy audit (every two weeks) 
+      - Include forward-looking audit (15 minutes a week; look three weeks ahead) - the start of the week - Monday morning
+  - Executive team meeting scheduling and agenda (agenda sent the day before the meeting)
+  - Executive events, offsite planning
+  - Strategic research for new internal projects
+
+#### **Executive Assistant / Personal Assistant**
+
+Responsibilities
+
+  - CEO scheduling   
+  - Mailing/gifts
+  - All personal tasks
+
+#### **Coach / facilitator**
+
+Responsibilities
+
+  - Regular check-ins with executive team 1:1
+  - Regular facilitated dispute resolution meetings between executives and exec direct reports
+  - Company values
+  - Facilitating whole company training
+
+#### **VP Strategy / Technical Assistant**
+
+Responsibilities
+
+  - Commenting and feedback on executive team / internal strategy documents
+  - Evaluation of internal process documents/plans
+  - First drafts/research of market expansion strategies
+  - Research into legal (and other professional services) market; developing connections in these markets
+  - Corp dev / non-growth partnerships
+  - Temporary business / functional group owner
+
+
+---
+
+## Chapter 181: Personal Chief of Staff:  How to hire one
+
+*Source: https://docs.google.com/document/d/1MLR2MOGYXDyJYvUpPu5qiknkE6RiL73-GbZimS8kIpY/edit#*  
+*(2 min)*  
+
+[Personal Chief of Staff:  How to hire one](https://docs.google.com/document/d/1MLR2MOGYXDyJYvUpPu5qiknkE6RiL73-GbZimS8kIpY/edit#)
+
+#### **Recruiters**
+
+  - Maven 
+      
+      - *Maven Recruiting Group specializes in placing personal support, executive assistants, chiefs of staff, and administrative staff to the most prominent executives, principals, and companies. You can learn more about their value add and credibility by reading their* [*case studies*](https://www.mavenrec.com/case-studies) *with companies like Okta, Craft, Mapbox, and Exabeam.* 
+      - Maven was great. I didn't work with them directly, but Tina did. TBD on how good Mitchel is, who we hired in June from Zuck's office (and previous to that, he was with Bill Gates), but the candidates they showed us were terrific, and I think Tina liked Jessica, a bunch. 
+          
+          - Tina: I worked with Mary Crownhart at Maven. I think Maven has a great group, and I would trust them to send over quality candidates. 
+      - Jessica at Maven helped us find Alicia, our personal assistant. 
+      - Yeah, we used them - it was good.
+  - Groupe InSearch 
+      
+      - Maven is who we used the first time, and I think it was less good. For the second PA search, we used Groupe InSearch, and they were better, I think. Monica@insearchsf.com if you want an intro.
+
+#### **Job Description: example**
+
+**Capabilities (with examples)**
+
+  - household operation (e.g., choose and implement a project management tool to organize all household work)
+  - event planning & logistics (e.g., dinners with friends, parties for the kids, annual summer party)
+  - travel planning & logistics (e.g., a romantic weekend for two in wine country, a family reunion in an exotic international location)
+  - project management (e.g., managing the installation of solar panels on our roof, managing the construction of a treehouse in Tahoe, helping with the construction of a new estate)
+  - estate management & administration (e.g., organizing the governing documents, paying bills, creating a maintenance calendar for various properties, setting up a P.O. Box, and redirecting all mail to that address)
+  - home management (e.g., getting the mail, being here for the plumber to check the boiler, keeping the cars clean and gassed up and in service, organizing the basement, taking things to goodwill, finding and coordinating with a handyman)
+  - vendor selection, vendor management, contract negotiation (e.g., find a new home management company, coordinate with rental companies for events)
+  - team management (e.g., managing payroll, coordinating schedules, finding substitutes, helping to administer reviews)
+  - liaise with executive assistants
+  - scheduling (e.g., find the time for Sarah to get a flu shot, find the time for Pat to meet up with an architect, get dinner reservations for date night)
+  - personal shopping (e.g., buy a year's worth of cute clothes for our ten month old and two year old, buy furniture for the back deck in Tahoe, buy a golf cart for Tahoe)
+  - household shopping (e.g., stocking of supplies and groceries)
+  - research (e.g., where should we go for vacation, what are schools doing about COVID, what should we expect when our daughter turns three, how does surrogacy work)
+  - friend & family relations (e.g., manage the holiday card process from end-to-end, create a birthday calendar, make sure we schedule a time to see Grandma)
+  - holiday maximization (e.g., find fun holiday activities for us to do, buy and put up cute holiday decorations, take down and store holiday decorations)
+  - help with the kids (e.g., pinch-hit when nannies get sick at the last minute; come up with ideas for fun weekend activities)
+
+**Characteristics**
+
+  - someone we like and trust
+  - able to drive projects or tasks to conclusion
+  - detail-oriented; does high-quality work
+  - smart; good judgment
+  - enjoys the work
+
+**Anti-Characteristics (i.e., we do not need these things)**
+
+  - 24/7 availability (urgent requests will be infrequent)
+  - Full-time presence (you only need to be present to get the job done; 1-3 days a week at our place is probably plenty)
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 182: Parenting as a CEO
+
+*Source: https://docs.google.com/document/d/19BfBM6VrKzYz1snAzVFhA6ebxPGR4XYc03kfKf1qSBI/edit*  
+*(2 min)*  
+
+[Parenting as a CEO](https://docs.google.com/document/d/19BfBM6VrKzYz1snAzVFhA6ebxPGR4XYc03kfKf1qSBI/edit) (2 min)
+
+The [CEO role](https://docs.google.com/document/d/1yJhwYFf6Af0h8_xMDuKeW8d6ZomthidraqpXHI9RKRw/edit) (2 min) is full-time if you do every piece of it.  Luckily, you don't have to.  You can delegate all the functions that don't energize you.
+
+Similarly, being a parent is full-time if you do every piece of it.   Luckily, you don't have to.  You can delegate all parts of it that don't energize you.
+
+Unfortunately, you don't yet know what the parenting role is exactly, so you don't know which pieces do and don't energize you.  Therefore, hire a team of people to do all parts of the parenting role.  That way, when you discover which parts energize you, you can keep doing them.  And when you discover which ones don't, there is someone there to take those over immediately.   
+
+If you have not hired such a team, then you will be stuck doing the de-energizing parenting tasks, while also recruiting your team, which will take 3-6 months. That will be a very painful 6 months.  And your company will suffer during this time, because you will underperform as a CEO.  
+
+Don't do that.  Instead, over-hire. 
+
+I recommend that you hire:
+
+  - 1 full-time night nurse
+  - 1 full-time nanny (daytime)
+  - 1 weekend nanny to give time off to the FT night nurse and nanny
+  - 1 full-time personal Chief of Staff
+
+Family members can play any one of those roles, as long as they actually are willing to live with you and put in the hours.  Please pay them whatever you would pay a non-family member.
+
+As in hiring for any role, hire for excellence. And be willing to pay for it.  Market in the US for a top-tier night nurse is over $200,000/yr in 2021.   Be willing to pay it.
+
+In fact, **the company should pay these salaries**.  This team will allow you to fully perform as a CEO.  There are, therefore, likely no higher-leverage employees at the company.  
+
+As you read this, you are likely thinking "This is so exaggerated. Billions of people are parents, and perform just fine in their jobs. I can too.  I don't need this insane human infrastructure that Matt is describing.  I want to actually enjoy my children and look forward to spending time with them."
+
+So be it.  But billions of people are not trying to be CEOs of fast-growing multi-billion dollar companies.  If you are, please don't copy the behaviors of those who aren't.  
+
+From Virgilio Bento at Sword Health: 
+
+*I absolutely agree with it and learned that the hard way. It absolutely takes a village, so get a village :)*
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Reference — pratikrenuse.com</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Analytics — paste in every page head -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+  <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --bg:       #F6F2F1;
+      --surface:  #EEE8E4;
+      --raised:   #E5DDD7;
+      --border:   #D0C8C0;
+      --border2:  #BCB3AA;
+      --ink:      #1A1512;
+      --ink2:     #38302A;
+      --ink3:     #504840;
+      --ink4:     #786E66;
+      --gold:     #8C6A18;
+      --gold-bg:  #F0E4C4;
+      --gold-mid: #B8903A;
+      --serif:    'IBM Plex Serif', Georgia, serif;
+      --sans:     'IBM Plex Sans', system-ui, sans-serif;
+      font-size:  17px;
+    }
+    body { background: var(--bg); color: var(--ink2); font-family: var(--sans); font-weight: 300; line-height: 1.7; }
+
+    /* ── NAV ── */
+    nav { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 4rem; border-bottom:1px solid var(--border); background:rgba(246,242,241,0.95); backdrop-filter:blur(20px); position:sticky; top:0; z-index:100; }
+    .nav-logo { font-family:var(--serif); font-size:1rem; font-weight:400; color:var(--ink); text-decoration:none; }
+    .nav-logo span { color:var(--gold); }
+
+    /* ── SECTION LABEL PATTERN ── */
+    .lbl { display:flex; align-items:center; gap:0.75rem; margin-bottom:0.6rem; }
+    .lbl-line { width:1.75rem; height:1px; background:var(--gold); }
+    .lbl-text { font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); }
+
+    /* ── HEADINGS ── */
+    h2 { font-family:var(--serif); font-size:clamp(1.9rem,3vw,2.9rem); font-weight:300; line-height:1.15; letter-spacing:-0.01em; color:var(--ink); margin-bottom:3rem; }
+    h2 span { color:var(--gold); }
+
+    /* ── SECTION SPACING ── */
+    .sec { padding:6rem 4rem; }
+    .sec-alt { background:var(--surface); }
+    .sec-dark { background:var(--ink); color:var(--bg); }
+
+    /* ── BUTTONS ── */
+    .btn-dark { background:var(--ink); color:var(--bg); text-decoration:none; padding:0.9rem 2.1rem; font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:400; display:inline-block; transition:background 0.2s; }
+    .btn-dark:hover { background:var(--gold); }
+
+    /* ── CARDS / GRID PATTERN ── */
+    .grid-1px { display:grid; gap:1px; background:var(--border); border:1px solid var(--border); }
+    .card { background:var(--bg); padding:2rem; transition:background 0.2s; }
+    .card:hover { background:var(--surface); }
+
+    /* ── QUOTE / TESTIMONIAL ── */
+    .quote { padding:1.25rem 1.5rem; border-left:2px solid var(--gold); background:var(--bg); }
+    .quote-text { font-family:var(--serif); font-size:0.95rem; color:var(--ink2); line-height:1.72; }
+    .quote-by { margin-top:0.75rem; font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink3); display:flex; align-items:center; gap:0.6rem; }
+    .quote-by::before { content:''; display:block; width:1.25rem; height:1px; background:var(--border2); }
+
+    /* ── FORM INPUTS ── */
+    .field { width:100%; background:var(--bg); border:1px solid var(--border); padding:0.8rem 1rem; font-size:0.9rem; color:var(--ink); font-family:var(--sans); font-weight:300; outline:none; transition:border-color 0.2s; }
+    .field:focus { border-color:var(--gold); }
+    .field::placeholder { color:var(--ink4); }
+
+    /* ── FOOTER ── */
+    footer { padding:1.25rem 4rem; border-top:1px solid var(--border); display:flex; justify-content:space-between; font-size:0.66rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink4); background:var(--surface); }
+    footer a { color:var(--ink4); text-decoration:none; }
+    footer a:hover { color:var(--gold); }
+
+    /* ── MOBILE ── */
+    @media (max-width:960px) {
+      :root { font-size:15px; }
+      nav { padding:1rem 1.5rem; }
+      .sec { padding:3.5rem 1.5rem; }
+      footer { flex-direction:column; gap:0.5rem; text-align:center; padding:1.25rem; }
+    }
+    @media (max-width:480px) {
+      :root { font-size:14px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV PATTERN -->
+<nav>
+  <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
+  <!-- project pages add: / Project Name · Day XX badge · back arrow -->
+</nav>
+
+<!-- SECTION LABEL PATTERN -->
+<section class="sec">
+  <div class="lbl"><div class="lbl-line"></div><div class="lbl-text">Section label</div></div>
+  <h2>Section heading <span>gold word</span></h2>
+  <!-- content -->
+</section>
+
+<!-- CARD GRID PATTERN (1px gap, border trick) -->
+<section class="sec sec-alt">
+  <div class="grid-1px" style="grid-template-columns:repeat(3,1fr);">
+    <div class="card">Card content</div>
+    <div class="card">Card content</div>
+    <div class="card">Card content</div>
+  </div>
+</section>
+
+<!-- QUOTE PATTERN -->
+<div class="quote">
+  <div class="quote-text">Testimonial text here.</div>
+  <div class="quote-by">Name · Role</div>
+</div>
+
+<!-- DARK SECTION PATTERN -->
+<section class="sec sec-dark">
+  <div class="lbl" style="--gold:var(--gold-mid);">
+    <div class="lbl-line" style="background:var(--gold-mid);"></div>
+    <div class="lbl-text" style="color:var(--gold-mid);">Label on dark</div>
+  </div>
+  <h2 style="color:#EDE8DF;">Heading <span style="color:var(--gold-mid);">on dark</span></h2>
+</section>
+
+<!-- FOOTER PATTERN -->
+<footer>
+  <span>© 2026 Pratik Renuse</span>
+  <span>Tagline</span>
+  <a href="https://www.linkedin.com/in/pratikrenuse/">LinkedIn</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,1538 @@
+Mochary Method Curriculum — Volume 2 — Part 1 of 6
+============================================================
+
+# Mochary Method Curriculum — Consolidated Edition (Volume 2)
+
+_Compiled 2026-05-27. Continuation of Volume 1, starting with the **Remote work** section._
+
+_Source curriculum: https://docs.google.com/document/d/18FiJbYn53fTtPmphfdCKT2TMWH-8Y2L-MLqDk-MFV4s_
+
+---
+
+# Remote work
+
+## Chapter 80: How to maintain personal connection in a remote world
+
+*Source: https://docs.google.com/document/d/15bF88nIzZGJT9NTDXK6IR1ZzRCBqYMr8NK_No8nM0aI/edit*  
+*(3 min)*  
+
+[How to maintain personal connection in a remote world](https://docs.google.com/document/d/15bF88nIzZGJT9NTDXK6IR1ZzRCBqYMr8NK_No8nM0aI/edit) (3 min)
+
+As CEO, it is critical to have a personal connection with your team. They need to know that you care about them before they care about the work they do for you. 
+
+When in the office, this personal connection is relatively easy to maintain. You say hello to them each morning and goodbye to them each evening when you leave. You see them at lunchtime and ask them about their lives. 
+
+But how do you maintain that connection when there are no informal in-person interactions that serve as prompts to say these "hellos," "goodbyes," and "what is going on in your life"? 
+
+Create your own prompts.
+
+First, get to know some personal information about each person on your team (the name of their spouse, their children, their pets, where they grew up, what they like to do for fun).  You can create a [Personal Info, Team - example](https://docs.google.com/spreadsheets/d/1Ti_xaV9IVvj-bklxOjNY-IeGsC-YqcgvB03qvfFQrnI/edit#gid=0) (1 min) and ask people to enter their information there.
+
+Then, schedule some time each week (I recommend one hour per week) to reach out to various members of your community (work team, investors, family, friends) and let them know that you are thinking of them. The message need not be long. The only intent is to let them know that you are thinking about them.
+
+Here are some examples:
+
+"Thinking of you. Hope you, Dan, Cindy, and Luke are doing well."
+
+"I saw this article on tennis and thought of you."
+
+That's it. The message need not be long nor elaborate. The only purpose is to let your colleague know that you are thinking about them and remember the important things about their life. 
+
+It takes very little time, and it is massively effective. 
+
+You are likely thinking: "Matt, this is such an obvious ploy. My people will see right through it."
+
+If so, to you, I reply: "Many of my coachees still send me messages like this. I know exactly what they are doing. Hell, I'm the one who showed them how to do it. And yet, I appreciate it every time. Because I know that they intend to create a connection with me and that always feels good."
+
+Another anecdote: The best operating CEO I've ever known, who self-admittedly doesn't have much emotional intelligence at all, once asked me: "Matt, please help me to be more empathetic and create an emotional connection with my team." So, I gave him the advice above. Being the best operator, he immediately and faithfully followed the advice. 
+
+A month later, I facilitated a 2-day offsite for him and his executive team. When, at one point, he left the room, the entire executive team turned to me, and said "How did you do it? He used to be a robot. And then about 30 days ago, he suddenly turned into this super-caring, super-compassionate guy." And they started sharing with me examples of ways that he reached out to them in a very personal way. "I was on the airplane with my family getting ready to go to my parents' house for Thanksgiving when I got a text from him saying: 'I hope you, Dan, Cindy, and Luke have a great time with your parents in Michigan. Safe travels.' I was blown away."
+
+Listening to all this was the newest executive hire, who had only just come on board. She was shocked. "You mean he wasn't like this two months ago? I just went through the recruiting process with him and concluded that he is the most empathetic CEO I have ever known or even heard of."
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 81: WFH guide (Clearbit)
+
+*Source: https://drive.google.com/file/d/1vg5bZbujBJ6C1fAOP-l386p4iZp9OIAZ/view*  
+*(a while)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://drive.google.com/file/d/1vg5bZbujBJ6C1fAOP-l386p4iZp9OIAZ/view)_
+
+
+---
+
+## Chapter 82: Do Remote Right
+
+*Source: https://docs.google.com/document/d/1BY8fjKuF-NSQdMcw9SDwnYM1ZJLSW1bW7SNSzOHd-wU/edit*  
+*(*work in progress*)*  
+
+[Do Remote Right](https://docs.google.com/document/d/1BY8fjKuF-NSQdMcw9SDwnYM1ZJLSW1bW7SNSzOHd-wU/edit) *(work in progress)*
+
+About the authors
+
+Sid Sijbrandij is the founder and CEO of Gitlab, the largest "intentionally remote" company in the world by team members: over 1500 as of October 2021. Sid has spent many years perfecting the art of running an all-remote company and would like to share his learnings with the world.
+
+Matt Mochary is the coach to many of the tech world's top CEOs (eBay, Reddit, Coinbase, Brex) and investors (Sequoia, Benchmark), including several intentionally remote companies (Gitlab, Mattermost). He has directly seen the benefits of all remote and believes that "remote done right" beats a hybrid, and likely an all-in-person, structure every time. 
+
+This book, therefore, is about how to do remote right, at least in the minds of Sid and Matt.
+
+Here is how Sid defines the [stages of remote](https://twitter.com/sytses/status/1278370958999339008).
+
+Introduction
+
+In March 2020, the emerging pandemic forced the entire world to go all remote with no warning or time to prepare. Despite the utter lack of planning, most companies discovered that productivity didn't suffer. In many cases, it increased. 
+
+But there were cracks. Parents of young children felt the stress of not having a quiet space to take work video calls. Those who lived alone felt the mental pain of being isolated for weeks and months on end. Teams started to lose emotional connection, and group meetings sometimes became cantankerous and dysfunctional because of it. Zoom fatigue became a real thing. Some people were having less fun.
+
+Many people began to long for a return to the office, believing it would eliminate these new stresses. You may be one of these people. 
+
+While you, or any of your team members, may long to get back to the office, an all-in-person structure is likely no longer a viable option for you— many of your team members like being remote and want to stay that way. If you want to keep them, you'll have to accommodate this desire. If you don't, they will leave for a remote company. And if you allow for both remote and office, then you'll have a hybrid structure. 
+
+And this is where the danger begins. Here is [why hybrid doesn't work](https://twitter.com/sytses/status/1264341436138270720). Sid and Matt believe that there will be a trough of sorrow that companies will go through when they try to implement hybrid remote. Here is why:
+
+  - **Twitter, Square, Facebook, and Shopify** allow employees to work remotely, but that doesn't mean that those companies are closing their HQ or offices. 
+      
+      - "Many companies are learning that their workers are just as, or even more productive, working from home," all-remote is more effective even though it is happening suddenly, without proper organization, and during a pandemic that itself is stressful and lowering productivity, especially for people that have children that can't go to school."
+      - Somehow the lesson that companies deduce from this isn't that they should go all remote, but that they should go hybrid, combining remote and co-located work. I think that hybrid is much more challenging and less likely to be successful. This thread will include examples of why it is hard.
+      - These companies are going hybrid for the wrong reasons. According to Mark Zuckerberg, "Social bond building, culture, creativity, white-boarding, and brainstorming" needs to happen at the office.  
+          
+  - **Communication and Connection.** When remote, it is vital to be intentional about informal communication (see the link). But that doesn't mean that having part of the people in the office will help make the remote people feel included; instead, it will make it harder to include them. 
+      
+      - [Tactics for creating and maintaining human connection remotely](https://twitter.com/sytses/status/1250946875143815168) 
+          
+          - Speedy meetings of 25 minutes instead of 30 give you time to recover between calls and allow people to join before meetings start for some banter.
+          - Lead with empathy: each work-related call should begin with an earnest, genuine "How are you?" or a similar and appropriate introduction. It's important to remember that everyone is facing a battle that you know nothing about, and in a remote setting, you should actively listen.
+          - Welcome interruptions in calls: when pets, children, or partners interrupt a call, this is an opportunity to bond. Take a few minutes to talk to the person if they are open to it or ask the team member about their pet.
+          - Using emojis to convey emotion: The results show that proper use of emoticons, emoji, and stickers, especially positive emotions, is conducive to relationship formation and cognitive understanding. They help participants express emotions and manage interrelations.
+          - Talent shows: they are relatively easy to organize. Simply add a calendar invite two weeks in advance, affix a Google Doc agenda to the invite for team members to sign up to showcase a talent, arrange a panel of 3-5 judges, and have a list of prizes ready to go.
+          - Coffee chats: have a name for 25-minute calls between two people without an agenda. This time empowers people to have these important conversations. There is no agenda, and you can talk about work or not. Make doing them part of onboarding and use @donut to have them happen regularly.
+          - Mixer calls aim to help team members meet more folks from other groups or functions they might not otherwise get to spend a lot of time working or interacting with. Two team members set up a single Zoom line, and each of those team members invites someone else to join.
+          - Juice Box Chats are a chance for GitLab team members and their children, grandchildren, or other members of their family to get to know one another as well. These chats can be informal or focus on a specific topic; Legos, SuperHeroes, camping, and video games are all great.
+          - Team Social Calls are informal social calls regularly scheduled to build camaraderie. The data team has them every Tuesday. Team members and managers are encouraged to create these calls as a medium for informal, agenda-free interaction between team members.
+          - AMA (Ask Me Anything) sessions serve as an opportunity to ask funny and far-fetched questions that enable a more personal connection. It's particularly important to consider ongoing AMAs with executives. AMAs humanize leaders and remind teams that we are all more alike than unlike.
+          - Celebrations are essential—for example, the kickoff of a new (fiscal) year or a significant revenue milestone. We've had calls with over 400 team members. Get a great MC to pump up the enthusiasm as @emilieschario does for us.
+          - Holiday parties will be virtual during the pandemic. Think about ways to dress up for the occasion—for example, an ugly sweater competition.
+          - Global pizza parties are where teams arrange shared meals around the world. Global pizza parties, for example, are possible to document and enjoy in a shared setting (Zoom or Slack), though one may wish to consider a breakfast pizza depending on the time zone.
+          - Coworking calls are scheduled working sessions on Zoom where team members can work through challenging tasks with a coworker or simply hang out while each person works on their tasks. Want to try advanced mode? Screen share as you work together.
+  - **Collaboration.** And stop saying that all creative thinking needs a whiteboard. There are two advantages to a whiteboard (you can draw arrows and circles) but linked are [17 reasons why a shared Google Doc is better](https://about.gitlab.com/company/culture/all-remote/collaboration-and-whiteboarding/#google-docs-as-a-remote-whiteboard), including that everyone can write on it simultaneously.
+  - **Who is allowed to be remote?** 
+      
+      - At Facebook, employees will have to be at a certain seniority level to work remotely. In our experience, junior people tend to have more experience working digitally, not less.
+  - **The same experience in a meeting? Or…Horrible Hybrid Calls!** 
+      
+      - With hybrid, it is hard to give everyone the same work experience. Shopify did a great job thinking through this and will require everyone in a meeting to be physically separate and have their camera and audio setup.
+      - If you don't require this, you get hybrid calls, which are horrible ([see link](https://about.gitlab.com/handbook/communication/#hybrid-calls-are-horrible)). The only thing worse isn't getting invited to the meeting in the first place because the co-located people had an impromptu chat and even forgot to tell you the outcome.
+      - I think that whenever there is a headquarter, there will always be two ways of communicating. To get everyone on the same level, you need the leadership to leave the shared office so that the only headquarter is the one online.
+  - **Remote does not have to mean Work From Home.** 
+      
+      - During COVID, we tend to equate working remotely with Working From Home (WFH). At GitLab, we'll pay for office space if you want it. WFH will never be the best for everyone. We see some people who prefer an office in the beginning transition to WFH during their first months.
+  - **Productive remote people will leave Hybrid for All Remote**. 
+      
+      - My prediction is that the leadership will keep working from the headquarters at most hybrid companies, and the default way of working will degrade from 'remote first' to 'remote allowed' (remote employees a second class citizens).
+      - Employees will discover that the company didn't shift from rewarding attendance to rewarding output and that remote workers are not getting promoted at an equal rate because they are less visible. 
+      - The productive remote employees will leave for 'all remote' companies that invested in getting everyone a manager who understands what they do by having only one function reporting to a manager, not a multifunctional team of which the manager doesn't understand most disciplines.
+      - After their most productive remote people leave, the hybrid companies will blame the lack of productivity on remote instead of the actual cause of hybrid being very hard. You'll see the Yahoo/IBM-like moves to force everyone to come to the office again.
+      - Andreas Klinger, who is head of remote at AngelList, summarized this as: "Returns optionally" -\> leadership goes back -\> trips from remote-first to poorly run hybrid -\> stop outside of special areas.
+  - **Some will go all remote**. 
+      
+      - Some companies will go all remote, part of them are already canceling their leases during the pandemic, and another part will do so after finding out that hybrid is complex. Most of these will be successful, which is terrific for the world.
+      - There is so much talent outside of the major metro areas, and all of these people can suddenly compete for the high-paying and rewarding jobs at the world's leading companies. 
+  - **Compensation** 
+      
+      - Companies will pay market rates based on your location (see link). Rates outside of major metro areas will increase. 
+  - **Reporting. No matrix.** 
+      
+      - At GitLab, much of the work is multi-disciplinary, but we don't have the different disciplines report to the same manager. Instead, we have stable counterparts, and we require each hire to be a 'manager of one' who can self-organize without a project manager. [Here is how we do it.](https://about.gitlab.com/handbook/leadership/#no-matrix-organization)
+
+Whether you believe this or not, you are remote right now and will be for several more months, if not years. You might as well try to get good at it. We challenge you to become an expert at it. If you do, and you conclude that all remote is better, you can declare that you are all remote forever. And if you do that, you instantly get the prizes of all remote. What are they?
+
+You get to start recruiting for open positions from anywhere in the world. It is hard to describe just how beneficial this is until you experience it. On May 20, 2020, Brian Armstrong declared that [Coinbase would be remote-first post-COVID](https://blog.coinbase.com/post-covid-19-coinbase-will-be-a-remote-first-company-cdac6e621df7). This move instantly allowed the company to start recruiting from anywhere in the world. And within 30 days, Brian declared to me (Matt) that they resolved all of Coinbase's recruiting challenges. Going remote was the single answer!
+
+But let's get back to the problems of remote. If you can solve these, then you get to receive the All Remote prizes.
+
+The primary problems seem to be:
+
+  - Social bonding
+  - Mental Health
+  - Collaboration
+
+Social bonding
+
+If my team members trust and like each other, then when issues and friction arise, each person's first assumption is that the other is well-meaning, "we are on the same team," and we can find a mutually beneficial solution. We all know that trust and like amongst team members creates a more functional work environment. If, by contrast, trust and like do not exist, then minor friction quickly escalates into anger and dysfunction. 
+
+In the in-person world, we foster trust and like through social bonding. We say hello and goodbye, have occasional informal conversations to connect as human beings. We talk about interests outside of work (in the hallway, over drinks or food, or at an offsite event) and generally see each other doing work (and feel the comfort that work was getting done).
+
+But in a remote world, we don't say hello and goodbye to each other each day, informal communications don't occur unless we intentionally create them, and we don't see each other doing work. 
+
+What is the solution?
+
+In a remote world, we must intentionally create the interactions that naturally happen in an in-person world. And if we do so, we can make them more effective than the organic ones that naturally arose before. 
+
+Here are the things that Gitlab does to [formalize informal communications](https://twitter.com/sytses/status/1250946875143815168). 
+
+Taking a step back from the tactics, let's ask, "What creates human connection?"
+
+Matt believes that it's when ...
+
+  - You know what is important to me. 
+      
+      - You take the time to get to know me as a human. 
+          
+          - At first superficially: My name and some of the important things to me outside of work (my spouse, kids, pets, hobbies, where I grew up, went to school, etc.)
+          - And then more deeply: A dream that I have, a trauma that I have experienced, what makes me feel anger or fear, what I feel shame about, etc.
+      - You recognize and call out the emotions or thoughts that I am experiencing. 
+          
+          - If I feel pain, anger, fear, or sadness, you reach out to me to confirm my feelings and thoughts. Once you have confirmed it, you help me clarify my thoughts when communicating with others.   
+              
+  - That you know what is essential to the organization 
+      
+      - You take the time to understand the priorities of the organization. 
+          
+          - You read the Wiki.
+          - You know what the company Vision and quarterly company OKRs are. You can recite them.
+          - You know the Product Roadmap and the Customer Profile/Problem, no matter what part of your organization.  
+              
+  - That you intend to take care of issues that are important to our organization and me. 
+      
+      - Now that you know what is essential to the company and me, I believe that you intend to act in service of those things. You show this to me by specifically describing how what you are doing supports mine and the company's priorities. 
+      - I gain further comfort in your intention by seeing you in multiple situations, and your behavior remains consistent. The magic number is usually five. Once I see you in five different settings or physical locations, I usually tell myself that I know your character. The amount of time I see you in these settings or locations almost doesn't matter. Five minutes is nearly as valuable as five hours.   
+          
+  - That you are competent. 
+      
+      - To achieve this care, you understand what the most important thing to do is (insightful), can take the time and space to do it (organized), and you do it well (skilled). 
+          
+          - We have already covered insight above. 
+          - For organization, I either see you getting things done or using a system that I know to be effective (i.e., Getting Things Done by David Allen, Monday.com, Asana, etc.). 
+          - For skill, I simply judge your work. But if you know my interest, show that you addressed it and organized it… that is 90% of the performance I am looking for. 
+      - For most people, it's important to laugh and have fun. If you create this for me, you are taking care of me. But you don't need to be a comedian. If you organize an event where I have fun, I give you as much credit as the comic who made me laugh. 
+      - Most people love to talk about themselves, as well as the people and topics they hold dear. You need not have any prior knowledge of these topics. You need only ask, be willing to listen to the answers, and appear to be interested. 
+
+So, to create a human connection, create moments where people can;
+
+  - Get to know each other as humans, both the superficial details of their life and the more serious ones. 
+
+Mental Health
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 83: Zoom - look like a rock star
+
+*Source: https://docs.google.com/document/d/1eq3NxJxFX7gjPJHB9OLjVXQyZInJLlwMq4tyTLuKcbM/edit*  
+*(5 min)*  
+
+[Zoom - look and sound like a rock star](https://docs.google.com/document/d/1eq3NxJxFX7gjPJHB9OLjVXQyZInJLlwMq4tyTLuKcbM/edit) (5 min)
+
+By Victor Lazarte, Wildlife
+
+Augmented by Patrick Medley, Garry Tan, and Justin Kan.  
+
+1\. **Buy the equipment you need**:
+
+**Video Essentials**:
+
+· [Camera + lens](https://www.amazon.com/Sony-Full-Frame-Mirrorless-Interchangeable-Lens-ILCE7M3/dp/B07B45D8WV) (includes the lens in this package)
+
+· [Capture Board](https://www.amazon.com/Elgato-Cam-Link-Broadcast-Camcorder/dp/B07K3FN5MR) (it reduces latency by processing the HDMI output of the Camera through dedicated hardware)
+
+· [Power supply](https://www.amazon.com/gp/product/B07H3FXLC6) (allows you to plug the Camera in a power outlet and avoid relying on its battery)
+
+· [HDMI cable](https://www.amazon.com/gp/product/B014I8TZXW) (connects the Camera to the capture board)
+
+· [Memory Card](https://www.bestbuy.com/site/sandisk-extreme-pro-128gb-sdxc-uhs-i-memory-card/6293605.p?skuId=6293605) (you may buy two of these since the Camera has two slots)
+
+**Audio Essentials**:
+
+· [Microphone](https://www.amazon.com/Shure-SM7B-Cardioid-Dynamic-Microphone/dp/B0002E4Z8M) (one of the best vocal microphones you can buy)
+
+· [Mic Arm](http://amazon.com/Gator-Frameworks-Desk-Mounted-Microphone-GFWBCBM3000/dp/B082YHPC3Z) (desk mounted with built-in XLR cable that connects to your mic)
+
+· [preamp](https://www.amazon.com/dp/B07QR6Z1JB/) (used to power your mic and connects it to your computer)
+
+**Extra items you may also want to buy:**
+
+· [Mic Activator](https://www.amazon.com/Cloud-Microphones-CL-1-Cloudlifter-1-channel/dp/B004MQSV04) (significantly improves mic quality, connects preamp to the microphone and [requires this cable](https://www.amazon.com/AmazonBasics-Male-Female-Microphone-Cable/dp/B01JNLTTKS))
+
+· [Camera cage](https://www.amazon.com/gp/product/B07SX2SCQJ) (helps you install addons such as light and clamp/tripod)
+
+· [Camera Light](https://www.bestbuy.com/site/digipower-the-streamer-video-light-silver/6403889.p?skuId=6403889)
+
+· [Clamp](https://www.amazon.com/gp/product/B077QDKRC7) (can hold the camera to a monitor or edge of a table)
+
+· [Small tripod](https://www.bestbuy.com/site/sunpak-grippod-11-tripod-black-blue/6359089.p?skuId=6359089) (alternative to the clamp)
+
+2\. **Set up the Camera to (a) output a clean HDMI signal and (b) bypass the memory card** (that way, you can keep streaming without being capped to the memory card capacity).
+
+3\. **Open the Zoom app** on your computer and **click on the Settings button** (the little gear button).
+
+4\. **Click on "Video" and select your camera feed** in the drop-down menu.
+
+A similar option is to go with [what Gary Tan recommends](https://kit.co/garrytan/badass-telework-setup).
+
+Justin Kan took it to the next level by adding a [teleprompter](https://www.amazon.com/dp/B019AJOLEM/) paired with an iPad and the Duet app. That way, you appear to be looking forward the whole time. 
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 84: Remote:  Gitlab’s Guide to All-Remote
+
+*Source: https://about.gitlab.com/company/culture/all-remote/guide/*  
+*(a while)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://about.gitlab.com/company/culture/all-remote/guide/)_
+
+
+---
+
+## Chapter 85: Remote: Dropbox virtual first toolkit
+
+*Source: https://blog.dropbox.com/collections/virtual-first-toolkit*  
+*(a while)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://blog.dropbox.com/collections/virtual-first-toolkit)_
+
+
+---
+
+## Chapter 86: Remote Team by Zapier
+
+*Source: https://zapier.com/learn/remote-work/*  
+*(a while)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://zapier.com/learn/remote-work/)_
+
+
+---
+
+
+# Relationship-building
+
+## Chapter 87: Relationships:  How to get good at them
+
+*Source: https://docs.google.com/document/d/11vIiU3-wRphxBLqEBJadAA20tuJhMxa87tFUC2YJs5o/edit*  
+*(2 min)*  
+
+[Relationships:  How to get good at them](https://docs.google.com/document/d/11vIiU3-wRphxBLqEBJadAA20tuJhMxa87tFUC2YJs5o/edit) (2 min)
+
+[Video of Andy Bromberg (CEO of Eco) explaining how to build impactful relationships (10 min)](https://youtu.be/Olze6vMqfso)
+
+We all want to be good at relationships. Whether we are a CEO, a Manager, or an Individual Contributor, how well we interact with our teammates, customers and investors determine how much positive impact we have. So how do we learn to get good at relationships?
+
+For the answer, I turn to surfing. Learning to surf is hard. Catching a wave is very infrequent, so beginners get a minimal chance to practice on a real wave. Good instructors, therefore, have figured out how to get their students lots of practice on the pieces of surfing that don't require an actual wave. 
+
+There are four parts to surfing: paddling, turning, popping up, and riding. It turns out that you can practice the first three without a wave. So, that's what good instructors do. They have their students practice paddling and turning in flat water and practice popping up on land. Once the student masters those skills, they move to a wave. And, not surprisingly, the student then quickly masters catching and riding the wave. 
+
+The same pattern holds for relationships. We don't get that many touchpoints with our teammates, customers, and investors. In turn, it means that each of those touchpoints is high stakes, so we find it difficult to experiment with a new way. We need a method of getting lots of practice doing relationships (touchpoints) in a low-stakes way. Where can we get that?
+
+Do you have children, a significant other, a friend, or a parent? The answer, of course, is yes. Well, then, there is your practice ground. Relationships with humans (teammates, customers, or investors) are no different than relationships with humans (children, spouse, friends, or family members). Get good at your relationship with your spouse or children, and you will discover that you learn all the skills needed to develop a great relationship with your teammates or customers.
+
+If you choose to practice with your spouse, you can:
+
+  - Ask your spouse if he is interested in learning this with you. (He will say "Yes!")
+  - Go on Amazon and choose a book to read and study together (get two copies). Here are some excellent options: 
+      
+      - [Hold Me Tight](https://smile.amazon.com/Hold-Me-Tight-Successful-Relationships/dp/0749955481/)
+      - [Communication Miracles for Couples](https://smile.amazon.com/Communication-Miracles-Couples-Effective-Conflict/dp/1573245836/)
+  - Take a course. Either in a group over a weekend or 1-1 with the teacher.
+
+Who knew that the best way to learn an essential work skill is first to learn that skill at home?!
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 88: Relationships - How to create a good one between a Manager and her Reports
+
+*Source: https://docs.google.com/document/d/166UMlHgOUnKb4rgLOjFl_etT8kaey2vEFVtwaCAfdDA/edit*  
+*(3 min; 60 min for the links)*  
+
+[Relationships - How to create a good one between a Manager and her Reports](https://docs.google.com/document/d/166UMlHgOUnKb4rgLOjFl_etT8kaey2vEFVtwaCAfdDA/edit)  (3 min; 60 min for the links)
+
+There are several ways to create a trusted relationship between a Manager and her reports.
+
+They include:
+
+  - I notice and recognize the contributions you make.
+  - I ask and remember the details about you as a human being.
+  - I pull out of you the deepest, darkest thoughts that you have about me, the company, and your peers.
+  - I provide you (and all others in the company) with a universal agreement tracker.
+  - I ensure that you know the Mission and Vision of the company and how your OKRs help create that Vision (i.e., it won't happen without your contribution).
+
+Let's dive deeper into each one.
+
+Recognition
+
+  - I notice and recognize the contributions you make. This action is quite simply [Praise](https://docs.google.com/document/d/1aXFhFbtIxmUdrUe9y341ghd-EJ89hJZ7g9tOKnw16FI/edit) (13 min). Do it in every single 1-1, Team Meeting and All Hands Meeting. Carve out an amount of time (3-5 minutes) to declare this praise. 
+  - In addition, I send direct messages to people each week to follow up and give [appreciations](https://docs.google.com/document/d/1id4TBGwDPuCvXiEW8RvJh-ajUuhrBnayoz9D1t1Gj3Y/edit) (1 min). I block off one hour each week to do so. 
+
+Personal relationship
+
+  - I know and care about you as a human being. 
+      
+      - To show this on a superficial (but still meaningful) level, I ask and remember the details about you as a human being. 
+          
+          - This action creates [Trust and Like](https://docs.google.com/document/d/1BQOa7foLLxNXmGUhbvkzsvm0IVYOJZTFU4MKOmreCXc/edit) (5 min). 
+      - Collect this information in the next 1-1 that you have with each Report. 
+          
+          - [1st 1-1 Meeting with Matt Mochary](https://docs.google.com/document/d/1vfZbW2GbL-q4gB97JcMH_P1nGRJKQ68LAOgNGbVV1qs/edit) (5 min to read; 45 min to do)
+      - In addition, start each 1-1, by saying "Before we get started, can you please give me the update on (pick one: your significant other, your kids, your hobby, etc.)." Then listen with genuine curiosity. 
+  - I want to help you solve the challenges you face in your personal life, not just those in your work life. 
+      
+      - When asking about issues that you are facing in our 1-1s, I explicitly ask you about personal challenges that you are facing. I then help you unpack those and give them as much air-time as work issues. 
+          
+          - [2nd (and beyond) 1-1 Meeting with Matt Mochary](https://docs.google.com/document/d/1TYNJjwzH_QxUbvoVSOjB__6gtvLKf8AAT3tqTKo3sO8/edit) (2 min to read; 15 min to do)
+
+Darkest Thoughts
+
+  - I pull out of you the deepest, darkest thoughts that you have about me, the company, and your peers. 
+      
+      - I appreciate, acknowledge, accept or not, and create actions to address the thoughts about me. 
+          
+          - [Feedback](https://docs.google.com/document/d/1wi714sobuQP72sKXw6J_gkwkhtVh1t6--op_Pk0YPxA/edit) (15 min)
+      - On the thoughts about the company, I help you get a resolution by helping you. 
+          
+          - Create a roadmap for the solution
+          - Get a decision from me (if that is what is required)
+          - Get a decision from higher up (if that is what is required) 
+              
+              - [Issue Identification](https://docs.google.com/document/d/1yfnZqztmnHatFavMqMJ40_tAN7YUcfnQgo4HrcU7SBQ/edit) (2 min)
+              - [Decision-Making](https://docs.google.com/document/d/1hPdWQjYfdK0SB2i3ViZ9XsMPjTYEi7Do1WI22ofmEdo/edit) (8 min)
+      - On the thoughts about your peers, I encourage you to address them directly. If that doesn't lead to resolution, you both clean escalate to me (I hear from both of you simultaneously), and then I adjudicate.
+
+Universal Agreement Tracker
+
+  - I provide you (and all others in the company) with a universal agreement tracker. Here is why: [Agreement-Tracker: why you need one](https://docs.google.com/document/d/1QzGvP6MrmlD6YVilTiNjEsPgRRvjzvWrqGXKSz_c68k/edit) (3 min) 
+
+How you fit into the Mission and Vision
+
+  - I ensure that you know the Mission and Vision of the company and how your OKRs help create that Vision (i.e., it won't happen without your contribution). 
+      
+      - I create clear [Mission, Vision, Values: How to create them](https://docs.google.com/document/d/1L6ks72TkBIlgPDh6_n-NBBE7e_7nQ2YZ6B4BF12IQEs/edit).
+      - I create with you clear OKRs: [OKR Creation](https://docs.google.com/document/d/1GoiH4pwsph5rwSM_wMMiMJkX6-qFVwO0SVYkodNZhwg/edit) (6 min)
+      - I make sure that your OKRs map directly to the company's Mission, Vision, and Values so that you see how necessary your contribution is.
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 89: Appreciation
+
+*Source: https://docs.google.com/document/d/1id4TBGwDPuCvXiEW8RvJh-ajUuhrBnayoz9D1t1Gj3Y/edit?usp=drive_web&ouid=102503928790226855337*  
+*(1 min)*  
+
+### [Appreciation](https://docs.google.com/document/d/1id4TBGwDPuCvXiEW8RvJh-ajUuhrBnayoz9D1t1Gj3Y/edit) (1 min)
+
+Appreciation is simply an outward extension of [Gratitude](https://docs.google.com/document/d/18kCULxudhpoSZNN-5m4G611YGNI92aZA-xrMjbF0juA/edit) (3 min). In Gratitude, you speak to yourself. In appreciation, you speak to others. The content is the same. 
+
+When you catch yourself feeling grateful about someone or something that they have done, let them know. When you hear something nice said about someone, let that person know.
+
+The benefits of this practice are threefold:
+
+1.  The recipient will feel better about themselves. And we now know what happens when people feel better about themselves.
+2.  The recipient will feel connected and appreciative to you for having brought them this good feeling.
+3.  You will start to view the recipient more positively since you are now focusing on a positive aspect about them.
+
+Chris Fralic of First Round Capital, in his [iconic blog post on networking](http://firstround.com/review/how-to-become-insanely-well-connected/), says that he reserves one hour each week for follow-ups and outreach, most of which include appreciations. I recommend that you do the same.
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 90: Celebration
+
+*Source: https://docs.google.com/document/d/19jIUk_cwu2xcAonFJLbd5JKp3q3_9oaC-twgLwFZKhE/edit#heading=h.pdvgdnsqrv2*  
+*(1 min)*  
+
+#### [Celebration](https://docs.google.com/document/d/19jIUk_cwu2xcAonFJLbd5JKp3q3_9oaC-twgLwFZKhE/edit#) (1 min)
+
+Most companies are so focused on improving that they forget to celebrate. But celebration, like fun, is a key to building positive morale. Celebration doesn't mean lavish drunken parties. Quite the opposite, celebration means taking a moment to appreciate the good that the company has achieved, as well as the good that departments, teams, and individuals have achieved. 
+
+To celebrate:
+
+  - Publicly acknowledge these achievements at All Hands and team meetings. 
+      
+      - Remember to celebrate the essential but often overlooked teams on the core product. 
+  - You don't need to celebrate every team at every meeting. Create a rotation.
+  - Create a standing demo meeting where teams can show off their most recent creations. 
+      
+      - This demo should not be a mandatory meeting but should occur over a meal (lunch) or drinks (Friday afternoon).
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 91: Listening Tours, by Ian Tien
+
+*Source: https://medium.com/@it33/leadership-listening-tours-llts-for-remote-work-22b236ca2d16*  
+*(5 min)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://medium.com/@it33/leadership-listening-tours-llts-for-remote-work-22b236ca2d16)_
+
+
+---
+
+## Chapter 92: Love Meeting
+
+*Source: https://docs.google.com/document/d/1YcZz5WQlIzIhRWL37Knha6eutCkBMXv8KAIFZl5IdPs/edit*  
+*(5 min including video)*  
+
+[Love Meeting](https://docs.google.com/document/d/1YcZz5WQlIzIhRWL37Knha6eutCkBMXv8KAIFZl5IdPs/edit) (5 min including video) 
+
+People who feel emotions strongly (anger, fear, sadness) need an effective way to release those emotions. One of the most effective ways is to speak aloud for a few minutes about what is causing them anger, fear, or sadness. Once they do this, much of the emotion is released, and they feel better. 
+
+Most people benefit from such a release after a long day of living (work, kids, etc.). If you have a spouse or a partner, one of the greatest gifts you can give them is an offer to be the listener for such a release. 
+
+If you make such an offer and it is accepted, the key is to be "present" while your partner talks and not interject with suggestions or advice. If you give advice, you kill the person's stream of consciousness and end the release. This action is very frustrating for the talker. They don't want solutions; they just want to release. 
+
+So, your only job during such a session is to listen actively.  
+
+In its most basic form, active listening is: 
+
+  - Being present 
+      
+      - Turn off all devices (phone, laptop, etc.)
+      - Look at the person talking
+      - Breath  
+          
+  - Not interjecting 
+      
+      - Do not talk\! 
+      - Do not give advice or suggestions. 
+      - Just listen\!
+
+In a more advanced form, you can show that you hear both the words and their emotions. When your partner expresses something frustrating, allow yourself to feel the frustration and allow your face to reflect that emotion. Similarly, for sadness, anger, and fear, or whatever emotion they are expressing.
+
+As the listener, it may feel daunting to be present and listen for an indeterminate amount of time. What if your partner keeps talking for hours? The answer, of course, is that they won't. Usually, after 10-15 minutes, your partner will likely be talked out, emotionally released, and feeling much better (and feeling connected to you\!). 
+
+The first time you do this, I recommend that you just let it go as long as it needs to. If you decide to make this a regular part of your life, know that it will require less and less time over time.
+
+For a visual demonstration of what to and not to do (and why), watch this 2-minute video called [Nail in the Head](https://www.youtube.com/watch?v=-4EDhdAHrOg).
+
+I call such a listening meeting a Love Meeting. My wife and I do it regularly. And it magically creates a deep connection between us.
+
+
+---
+
+## Chapter 93: Trust:  How to create it among peers
+
+*Source: https://docs.google.com/document/d/1EKLDirgPz4VYnPe1Z3S7mHc9enkPOPVtKwfBwq05z48/edit*  
+*(2 min)*  
+
+[Trust:  How to create it among peers](https://docs.google.com/document/d/1EKLDirgPz4VYnPe1Z3S7mHc9enkPOPVtKwfBwq05z48/edit) (2 min)
+
+"Matt, I'm able to create trust and like with my reports (or partners) by following your methods, but how do I get my exec team members (or partners) to create trust and like amongst themselves?"
+
+What worked for you will work for them. You just have to guide the exec team to it.
+
+First, please read these docs on how to create trust and like with your reports/partners to make sure that you're following all of the steps:
+
+  - [Trust and Like](https://docs.google.com/document/d/1BQOa7foLLxNXmGUhbvkzsvm0IVYOJZTFU4MKOmreCXc/edit?usp=drive_web&ouid=102503928790226855337) (5 min)
+  - [Relationships: How to get good at them](https://docs.google.com/document/d/11vIiU3-wRphxBLqEBJadAA20tuJhMxa87tFUC2YJs5o/edit) (2 min)
+  - [How to maintain personal connection in a remote world](https://docs.google.com/document/d/15bF88nIzZGJT9NTDXK6IR1ZzRCBqYMr8NK_No8nM0aI/edit) (3 min)
+  - [Appreciation](https://docs.google.com/document/d/1id4TBGwDPuCvXiEW8RvJh-ajUuhrBnayoz9D1t1Gj3Y/edit?usp=drive_web&ouid=102503928790226855337) (1 min)
+  - [Praise](https://docs.google.com/document/d/1aXFhFbtIxmUdrUe9y341ghd-EJ89hJZ7g9tOKnw16FI/edit) (2 min)
+  - [Relationships - How to create a good one between a Manager and her Reports](https://docs.google.com/document/d/166UMlHgOUnKb4rgLOjFl_etT8kaey2vEFVtwaCAfdDA/edit) (3 min; 60 min for the links)
+
+Next, help your partners or exec team walk through these same motions with each other. Here's how:
+
+  - Create a sheet with [Personal Info, Team - example](https://docs.google.com/spreadsheets/d/1Ti_xaV9IVvj-bklxOjNY-IeGsC-YqcgvB03qvfFQrnI/edit#gid=0) (1 min). Put in your information. Then share it with your team and ask them to do the same.
+
+  - Encourage your team members to ask each other about their personal lives using this info. This action allows everyone to get to know each other as humans and feel seen and cared for as a real person, rather than just a work contributor. You can model this in the first few minutes of each team meeting by: 
+
+  - Asking one or two members about their personal life (yes, in front of everyone else … and rotating who you ask), or
+
+  - Asking each person to spend 30 seconds verbally sharing a highlight from their personal life since the group met last. 
+
+  - Once the team is doing the baby steps above and finding value, share with the team the readings above. Ask each team member to reach out to one another between meetings. You can even require it, as Gitlab does, through its Donuts tool: [Remote: Gitlab's Guide to All-Remote](https://about.gitlab.com/company/culture/all-remote/guide/) (a while to read)
+
+  - At an offsite, you can go deeper.  
+      
+      - Start with light [Icebreakers](https://www.icebreakers.ws/)
+      - Then move to deeper exercises, like [Trust, Deep](https://docs.google.com/document/d/1IB7YDr_trYKavL_RdWTb8ddJt77eqDH_6H5BsK416FM/edit) (2 min). 
+          
+          - Please give this work a few hours. It will be scary. Hire someone to facilitate the process if you don't want to do it yourself. But get it done. Once you do, it will forever bond your team.
+          - If you do hire a facilitator, they should be in person with you.  (I have experimented with facilitating a session where I was remote and the team was in person.  It did not work, because the team couldn't sense the depth of my emotion when I shared my shameful thought.)
+
+  - Keep the connection going by implementing a regular practice of peer feedback using this [Feedback Form 1-1](https://docs.google.com/document/d/16iXM6T45R5cxPR_OT3hA8iumqNV9fhjNLphsfSCWo1A/edit) (4 min). The cadence should be at least quarterly, hopefully monthly, and best bi-weekly (rotating the pairs which give each other feedback). 
+
+If you follow all of these steps, it will deeply bond your team for the long term.
+
+
+---
+
+
+# Hiring
+
+## Chapter 94: Hiring: The anti-sell
+
+*Source: https://docs.google.com/document/d/1iK7OMMBbmvpzwfsumKde2tbO3MFLSSDU715-Yv3oOOA/edit?tab=t.0*  
+*(1 min)*  
+
+[Hiring:  The anti-sell](about:blank)
+
+Objective:
+
+  - Attract candidates who are genuinely aligned with your company's real work culture and demands, not an idealized version.
+
+Common Pitfall:
+
+  -  When hiring, it's natural to highlight all the positive aspects of your company to attract candidates.
+  -  This is a mistake. This approach attracts candidates who expect a perfect, idealized environment and will likely become dissatisfied if the reality is more demanding, or you will be dissatisfied with their unwillingness (or inability) to operate as you actually want them to.
+
+The Anti-Sell Strategy:
+
+  - Present the Reality: During the interview, openly describe the most challenging and potentially off-putting aspects of the job and company culture (e.g., high-pressure environment, long hours).
+  - Result: This approach will deter the majority (98%) of candidates who aren't a fit for the actual work environment.
+  - Outcome: The few candidates who remain (about 2%) are those genuinely excited about and prepared for the reality of the job.
+
+When:
+
+  - Employ the anti-sell in the very first interview.  First ask the candidate about themselves.  If in the  first 5-10 minutes you get the intuitive hit that you like this candidate, move to the anti-sell.  
+  - Why?  So that you find out as soon as possible if they are a real candidate, so as not to waste any of your time if they are not.
+  - If the candidate is still a "hell yes" after the anti-sell, then you can spend your and your team's time in the remainder of the interview process, knowing that you will get a very high return on that time spent\!
+
+Benefits:
+
+  - Filters candidates, selecting only those who resonate with the true demands of the role and culture.
+  - Reduces turnover risk by ensuring candidates understand and accept the work expectations.
+  - Attracts candidates who are motivated by the company's actual environment, not by an idealized pitch.
+
+Long-Term Effect:
+
+  - Though fewer candidates will make it through the Anti-Sell filter, those who do are likely to thrive and contribute effectively within the company.
+
+
+---
+
+## Chapter 95: Hiring:  References:  Backchannels … don’t do them\!
+
+*Source: https://docs.google.com/document/d/1YP3LLhStLO_dMCsyiAsRsw7VJvYV_xvTY2DR72MB97k/edit?tab=t.0*  
+*(1 min)*  
+
+[Hiring:  References:  Backchannels … don't do them\!](about:blank)
+
+Premise: 
+
+  - A candidate's performance during an interview process is not indicative of their future work performance.
+  - Reference interviews are far more effective in predicting future performance.  
+      
+      - ie- How people behaved at work in the past is the best predictor of how they will perform at work in the future.
+  - But these references are only useful from people who worked directly with the candidate
+      
+      - ie- Managers and peers
+
+Why Backchanneling Fails:
+
+  - It's easy to get connected to someone who worked at the same company and had indirect contact with the candidate.
+  - But few in backchannels have ever worked directly with the candidate as a manager or peer.
+
+Superior Method: Top-Grading Style Reference Check
+
+  - Use a [structured approach inspired by the book *Who*](https://docs.google.com/document/d/1Mw1bOV14woAMGV7x_RI_yjWSuUa1aDDfDgL2M8Vg7sA/edit?tab=t.0#heading=h.f0urh1glpy37).  
+  - After the candidate has passed the initial screen (where you determined that you like them, and they weren't scared off by [Hiring: The anti-sell](https://docs.google.com/document/d/1iK7OMMBbmvpzwfsumKde2tbO3MFLSSDU715-Yv3oOOA/edit?tab=t.0)), schedule a second interview called a Top-Grading interview. 
+  - In this interview, review the candidate's job history from school onwards.  For each job, ask for the name and spelling of their direct manager. This takes roughly 20–30 minutes.  
+  - Make sure that you collect at least 7 names.  If the person has not had 7 managers, ask for the names of all the peers at one or all of their jobs, so that you have a list of more than 7 people with direct work experience with the candidate.
+  - You can ask other things about each job experience, but the name and spelling of their direct manager (and peers) is by far the most important information to collect.
+
+References:
+
+  - If at the end of the full interview process, you want to move forward with the candidate, make them a verbal offer contingent on successful reference interviews.
+      
+      - "I really like you.  I'd like to hire you.  I am going to make you a verbal offer now that is contingent on successful reference interviews.  If I made you the following offer, would you accept?"
+      - Once you agree verbally on an offer, then …
+      - "Now I am going to conduct the reference interviews.  Can you please connect me to the following managers that have worked for … (list the managers that you choose, not those that they candidate choses).
+  - Talk to 3-7 former managers and/or peers.
+  - The candidate should do the work to get those former managers and peers to talk to you.
+  - If the candidate is unable to get those people to be willing to talk to you for 10 minutes, that is a red flag.
+  - Each of these people is someone who:
+      
+      - Has direct work experience with the candidate
+      - The candidate did NOT cherry-pick
+
+  - If the reference interviews are as good as you hoped they would be, then make a final offer to the candidate (which they have already verbally accepted).
+
+Advantages:
+
+  -   Ensures direct contact with relevant references (managers).
+  -   Reduces risk of cherry-picked references.
+  -   Identifies red flags if candidates can't connect you with specific managers.
+
+Outcome: 
+
+  - This method secures insights from the most relevant sources, yielding accurate, unbiased reference checks. It's proven far more effective than indirect backchannel methods.
+
+Exception:
+
+  - The one place where it can make sense to backchannels is when you have met a candidate that you like, but you want to do a sanity check before committing your entire team to a full round of interviews.  If you are able to do a quick backchannel to make sure the candidate isn't toxic, then it can make sense to do so.  
+  - I still question this use case, but it has marginal utility.  
+      
+      - In my recruiting process, I move so fast that there isn't time for such a backchannel.  When I first meet a candidate, if I like them, I then show my love to them instantly and invite them for a full round of interviews that same Friday (my team keeps Fridays meeting-free, so they are always available for such interviews).  At the end of that day of interviews, if I am still a go, I make a verbal offer to the candidate pending reference interviews.  If they accept, I do reference interviews (with the former managers and direct peers of the candidate) the following week. This is usually completed in 2-3 days.  From first meeting to final offer takes less than 2 weeks.  I find that this speed is a huge selling point to the top candidates. And in that process, there is no time for backchannels which have little value anyway.
+
+
+---
+
+## Chapter 96: Recruiting and Onboarding
+
+*Source: https://docs.google.com/document/d/1zHHQok1GAPpUdx_apA_M6RWB7753zbBhac8-9H2dG_M/edit?usp=drive_web&ouid=102503928790226855337*  
+*(15 min)*  
+
+### [Recruiting and Onboarding ](https://docs.google.com/document/d/1zHHQok1GAPpUdx_apA_M6RWB7753zbBhac8-9H2dG_M/edit#heading=h.fcj0zk48myqz)(15 min)
+
+When recruiting, the goal is to find great people and attract them to your company. Since this is so important, you could rationalize throwing lots and lots of time at this problem, which most growing companies do. Unfortunately, this time-suck will grind most of your other functions to a halt. 
+
+The key is efficiency. And to be efficient, you must **spend as little time as possible with the candidates you don't hire (quick evaluation) and as much time as possible with the candidates you want to and do hire (building a relationship, onboarding/training).** Remember that each minute you spend with a candidate you don't hire is a minute that you aren't spending with the team member you want to hire.
+
+Of all the recruiting systems I have seen, the best description is in the book *Who* by Geoff Smart and Randy Street. I have summarized the [Recruiting System](https://docs.google.com/document/d/1Mw1bOV14woAMGV7x_RI_yjWSuUa1aDDfDgL2M8Vg7sA/edit) in Appendix B. If this system resonates with you, I highly recommend reading the book *Who* in its entirety to understand the details. 
+
+The key in this system is that predictive information does not come from the interviews themselves. There are plenty of people who are good at interviewing but do not perform in the job. Instead, the predictive information comes from how a person actually performs or how they have performed in the past. 
+
+If the person is not currently in a full-time job, hire them on a contract basis to work with you for 1-3 months. You will then see how they actually perform. This step is the most predictive information you can collect.
+
+But most good people are already in a full-time job and are loathe to leave it unless they are offered another full-time job. For these people, the key is to collect information about how they have performed in previous jobs. And the best way to do that is through extensive reference interviews. 
+
+Therefore, the goal of the in-person interview becomes primarily to collect the names and contact of the people that the candidate has worked for and with throughout their career (top-grading interview). The hiring manager then uses this list to reach out to 5-7 people to conduct reference interviews. And this is where you discover the predictive information. 
+
+#### **Before Recruiting**
+
+As the hiring manager, write out a ninety-day roadmap for the position you need to fill. This roadmap includes all the goals you expect the new team member to hit within the first ninety days of joining. This action is critical for successful onboarding. During the interview process, share this roadmap with the candidate to make sure that she is excited about these goals.
+
+#### **Selling**
+
+The best candidates will get offers from other companies. So, you need to not only evaluate but also sell from the very beginning.
+
+##### **Building a relationship**
+
+Just as in fundraising, [building a relationship](https://docs.google.com/document/d/1BQOa7foLLxNXmGUhbvkzsvm0IVYOJZTFU4MKOmreCXc/edit) with a recruit will vastly increase her likelihood of joining your company. The best candidates can work anywhere. Make sure that they want to work with you.
+
+Do this by using the same techniques mentioned earlier. Ask the candidate about herself, reflect on what she says, and remember what she said the next time you meet with her. If you have already used this method during your initial fundraising, you will know its effectiveness. 
+
+##### **Speed**
+
+There is another critical variable to making the recruit want to accept your offer: speed\! A recruit wants to feel loved. The easiest way to accomplish that is to have a fast process from start to finish. Each day of delay sends the message, "We don't have conviction about you." 
+
+If you doubt whether this dynamic exists, recall when you raised money. Which investors were the most compelling for you? The ones that responded and decided quickly, or those that lingered in their decision process for weeks or months? Benchmark and Sequoia are famous for making investment offers within days (and sometimes hours) of meeting a company that excites them. 
+
+The offer from investors is always pending due diligence, so there is plenty of time after-the-fact for the investment firm to discover critical information about your company. In recruiting, you also can make an offer to the candidate "pending reference interviews." 
+
+Here's what a streamlined process looks like:
+
+1.  You contact a candidate and schedule a short phone interview.
+2.  At the phone interview, the candidate appears to be an A player.
+3.  Immediately schedule a second phone screen with the Hiring Manager as soon as possible. If, at this second phone interview, the candidate appears to be an A player, then ...
+4.  Immediately schedule a full day of onsite interviews to meet with all of the needed interviewers. This will be easy because you already follow this [Calendar Cadence](https://docs.google.com/document/d/1vyxqhBB6GCCycPNvlaUyq1UcOLeCi7_nUdDIhHj1HQc/edit), so all required interviewers have scheduled to be at the office (or available remotely) on recruiting day, ready to interview. (Using this method, you can easily have several candidates for onsite interviews on the same day.) At the end of that day, the interview team convenes and makes a decision. 
+
+(Some people question whether one round of interviews is enough to make a good decision. The answer is yes because the real information comes from the Reference Interviews that follow. Google has found that more interviews do not lead to better decisions. In fact, they limit interviews to **5 total of 30 minutes each\!** They have found that the marginal benefit of more or more extended interviews is close to zero.)
+
+1.  If "yes," reach out to the candidate that evening and say: "We love you. We want you to work at our company. We want to make you an offer pending reference interviews."
+2.  Have a verbal discussion about what a successful offer would look like. Ask the candidate to complete this phrase: "I would join your company as long as \_\_\_\_\_\_\_\_\_."
+3.  Address each request. If all are doable, move to the next stage.
+4.  Conduct the reference interviews. Do not skip or skimp on this stage. These interviews are the most crucial part of the interview process and give the most accurate information about how a candidate will perform.
+5.  If the reference interviews are wildly positive, reach back out to the candidate: "The reference interviews were great. We'd like for you to join our company. If we make you the following offer (explain every detail of the offer including benefits, etc.), would you accept?" Go back and forth until you have a verbal agreement.
+6.  Invite the candidate for an "offer ceremony," wherein you make them the offer, and they accept. (There is more detail on the offer process below.)
+
+This process can take as little as two weeks from the first contact to the accepted offer. If your process becomes that fast, your acceptance rate from top candidates will start to resemble that of Benchmark and Sequoia.
+
+Then, when your acceptance rate from top candidates begins to soar, become incredibly picky and tighten up your initial selection criteria (from the first 15-minute video call) to choose only the best of the best.
+
+##### **Spouse**
+
+While the candidate herself is excited about the idea of working with you, there is another person in the equation who does not get the benefit of being charmed by you and the prospects of the company: the candidate's spouse. They feel fear and have thoughts like
+
+  - "We have two kids in private school; how can we afford to reduce our current household income by 50%?" 
+  - "Will this startup ever really pan out, or is it just another flash in the pan like all of those others?"
+
+I find that the biggest blocker to a candidate saying "Yes" is their spouse's fear of saying "No." The antidote for someone's fear is to make them feel heard. Therefore, I always ask to talk directly to the spouse. I say to the candidate, "I know that you are excited about this company, but I imagine that your spouse is feeling fear and has many concerns. I'd like for him/her to have those concerns addressed directly and feel that he/she has a direct line of communication with me. Would you be willing to introduce me to him/her so that we can connect directly?"
+
+The answer is usually: "Let me ask my spouse." And then, a day later, the connection is made. During the call with the spouse, I simply listen and repeat back the thoughts that I hear. If I can address them, I do. But that is not necessary. Acknowledging the thoughts is really all that is needed. The spouse usually says something like, "Thank you for doing this. In all of our years together, no boss of my spouse has ever reached out to me like this."
+
+The candidate usually accepts shortly after that. 
+
+#### **Compensation**
+
+How much compensation do you offer new team members? How much cash and equity?
+
+My preferred method is to:
+
+1.  Discover the market compensation for the position (role and seniority). There are plenty of online compensation studies that show this. Market compensation is whatever a big company (Microsoft, Facebook, Google) pays for this position.
+2.  Discover the amount of cash that the new team member would need to live comfortably (housing, food, transportation, child expenses, etc.)
+
+It is up to the startup to match the market compensation level, not in cash as the larger companies do, but rather in a much lesser amount of cash (no less than the amount needed to live comfortably), plus equity to bridge the difference. 
+
+Here is an example to show how you calculate the equity portion. Let's say the position is a Level 3 Engineer who is paid $300,000 in total compensation at Google. The team member requires $120,000 in cash to live comfortably and invests the remainder in startup equity. Calculate the amount of equity by taking the difference between market and cash ($300,000-$120,000=$180,000) and multiplying it by four years ($180,000 x 4 = $720,000). This amount is then divided by a factor between 1 and 2, representing a very conservative estimate of the increase in equity value over four years. A 1 represents no expected increase in Value. A 2 represents a 2x expected increase in Value. If 1.5 were used (which is the most common), the final amount would be $720,000 / 1.5 = $480,000. So grant this amount in options; however much equity it purchases at the company's current valuation—the options vest over four years.
+
+Then I prefer to make an offer that allows the new team member to choose how much they want to invest in the startup equity at three different levels. The lowest cash level would be the level needed to live comfortably. 
+
+Here's an example in which the company is currently worth $50mm. The company will likely need another major financing round and optional pool refresh before it reaches maturity, which is an expected 50% dilution to the current cap table. A $1 billion eventual value of the company would result in a 10x increase in the equity value. (20x increase in company value x 50% dilution = 10x increase in equity value.)
+
+The three options would be:
+
+|  | **Annual Cash** | **Equity Worth** | **Expected Value at $1 billion company valuation** |
+| :-: | :-: | :-: | :-: |
+| 1 | $120,000 | $480,000 | $4,800,000 |
+| 2 | $140,000 | $426,666 | $4,266,666 |
+| 3 | $160,000 | $361,333 | $3,613,333 |
+
+The hope is that the new team member believes so fully in the company (and the power of the asymmetric bet) that they choose one of the two higher equity offers. This equity is thus an investment that the team member is making in the company. And with a huge advantage: They make the investment with pre-tax dollars, which doubles its purchasing power.
+
+#### **Making the Offer**
+
+Before making an offer, it is critical to know that the candidate will accept. Once you have the offer prepared, contact the candidate and ask them to complete the following phrase:
+
+**"I will join the company as long as …."**
+
+They then should state all of their requirements. If you are willing to provide each of these, you will have a successful hire. If there is one that you cannot provide, discuss it with the candidate to see if there is some alternative that you both can accept.
+
+Once this process is complete, then ask the candidate:
+
+**"If we were to make you the following offer (state the offer in full detail, including cash, equity, benefits, etc.), would you accept?"**
+
+If they say yes, then make them an offer. If you skip this step and simply make them the offer, it is very common for them to ask for a few more things after-the-fact (signing bonus, moving expenses, etc.). You will then be in the awkward position of either giving these (and thereby allowing a political culture to begin) or starting the relationship on a negative note by saying no. It is far better to get the candidate to pre-agree in complete detail before making the offer. Then the relationship begins with a resoundingly positive "Yes\! Thank you\! I'm so excited\!"
+
+The granting and accepting of a job offer is a very emotional moment for a person. Making a big deal out of it is a good thing. We recommend that you make a ceremony out of it. Invite the candidate to receive the offer in person. Create a ritual out of this process. Here are some possibilities:
+
+  - Hand the written offer to the candidate with two hands and a ceremonial bow.
+  - Give company schwag. 
+  - Give hugs and high-fives. 
+
+Whatever you do, make it fun and memorable.
+
+#### **Onboarding**
+
+Most companies spend extraordinary resources of time, money, and equity to bring on a new team member, and then almost entirely drop the ball on quickly getting that team member onboarded and up to speed on how the company works so that they can begin making a full contribution. Don't make this mistake\! Give onboarding even more attention, time, and energy than you give to recruiting. After all, many of the people you are spending time with during recruiting will not become team members. Whereas 100% of the people that you spend time with during onboarding are already team members. Focus your energy there\!
+
+Write a checklist of all of the information that a team member would need to be fully effective. Write all of this information down and make a video of it. Share this checklist, the written/video info, and the 90-day roadmap with each new team member as early as you can, even before they start.
+
+On their first day at the office, have them come in two hours after the normal start of the day so that there are plenty of people there to greet the new team member. Assign each new team member a buddy with whom they'll check in each day for fifteen minutes for the first two weeks. These fifteen minutes are for the new team member to ask questions that arise and for the buddy to ensure that the new team member is going through the checklist.
+
+Todd McKinnon of Okta takes it a step further, which I recommend that you do as well: "My best tip when onboarding a new direct report. Meet with them for 1 hour daily for the first month. Simple but effective."
+
+
+---
+
+## Chapter 97: Recruiting at \_\_\_
+
+*Source: https://docs.google.com/document/d/1Mw1bOV14woAMGV7x_RI_yjWSuUa1aDDfDgL2M8Vg7sA/edit?usp=drive_web&ouid=102503928790226855337*  
+*(30 min)*  
+
+### [Recruiting at \_\_\_\_\_](https://docs.google.com/document/d/1Mw1bOV14woAMGV7x_RI_yjWSuUa1aDDfDgL2M8Vg7sA/edit#heading=h.f0urh1glpy37)
+
+#### Mission
+
+To hire only A players. 
+
+These are the right superstars who can do the job we need done while fitting in with the culture of \_\_\_\_\_.
+
+#### Methodology
+
+**Scorecard.** The Hiring Manager creates a document in Drive that describes precisely what he/she wants the person to accomplish in the role. This is a set of outcomes and competencies that define a job. They must be both measurable and have an accomplish-by date.
+
+**Source.** All Hiring Managers systematically source before we have slots to fill. 
+
+**Select.** We conduct structured interviews that rate candidates against the scorecard that we've created.
+
+**Sell.** Finally, we persuade the best candidates to join our team.
+
+##### Scorecard
+
+###### Mission
+
+What is the mission for the position?
+
+The Mission describes the business problem and its solution. 
+
+Example: "The Operations Lead will create and manage a world-class department that will support every \_\_\_\_\_er by providing the environment, information, tools, training, and habits they need to succeed in their role and make \_\_\_\_\_ a massive success." 
+
+###### Outcomes
+
+What are the outcomes that must be accomplished, by when? 
+
+This is *what* the person must get done. These outcomes should be measurable, have a due date, and there should be 3 to 8 of them (target is 5) ranked by order of importance. 
+
+Example: "Turn every \_\_\_\_\_er into a ninja user of our internal tools (Asana, RelateIQ, GoogleApps) and methodologies (GTD, Inbox Zero, Management by Objectives, Active Listening) by Oct 31, 2014."
+
+What traits/habits do we require to:
+
+1\) succeed in the role?
+
+2\) fit in at \_\_\_\_\_? 
+
+This is *how* the person must do it. These are the behaviors that someone must exhibit to achieve the outcomes above.
+
+###### Examples
+
+Interesting and Interested. Is interested in getting to know the stories of others. They have interesting stories. We genuinely want to hang out with them. 
+
+*Organized.* Personally organized. Follows the GTD method or something like it, and therefore stays well aware of all to-dos and events. Focuses on key priorities.
+
+*Sense of Urgency.* Fights against an organization's natural state: inertia. Knows that to build something great, we all need to move mountains, now\!
+
+*Innovative.* Seeks to make process improvements to make their role and \_\_\_\_\_ more efficient going forward.
+
+*Collaborative.* Reaches out to peers and cooperates with managers to establish an overall collaborative environment.
+
+*Persuasive.* Able to convince others to pursue a course of action.
+
+*Coachable.* Wants to improve; open to feedback; act on that feedback
+
+###### Alignment
+
+We pressure-test the scorecard by comparing it with the Company and Department Roadmaps and the scorecards of others that the person will interface with. We ensure that there is alignment and then share the scorecard with relevant \_\_\_\_\_ers, including peers and recruiters.
+
+A good scorecard process translates the strategy's objectives into clear outcomes for the Exec Team, translating their results into clear outcomes for those who report to them, etc. Every \_\_\_\_\_er ends up with a set of results that support the strategy and competencies that support the outcomes and culture. First, we look for the ability to do the job that is needed today. Second, we look for flexibility and adaptability for what the role may become tomorrow.
+
+##### Source
+
+We are constantly sourcing, identifying the *who* before a new hire is really needed.
+
+There are three sources of candidates:
+
+1\. Referrals from our network.
+
+2\. Recruiters
+
+3\. Researchers 
+
+###### **Referrals. Of these three, referrals from our personal and professional networks are by far the most effective.**
+
+         We need to ask ourselves:  "Who are the most talented people I know that \_\_\_\_\_ should hire?"  And then ask all the talented people in our network, and every talented person that we meet "Who are the most talented people that you know that \_\_\_\_\_ should hire?"  Ask our advisors, customers, partners, suppliers.  Join a professional organization.  Ask there.  
+
+         Please fill out your [Top 20 candidates](https://docs.google.com/spreadsheets/d/1MEp-YNfUyREcR6nHtx9zgYE0hnK4YhOlktmIslTT_Ho/edit?usp=sharing).
+
+An objective that will go on each of our scorecards is: "Source one candidate who passes the \_\_\_\_\_ phone screen per quarter."
+
+###### **Recruiters.**  We occasionally use recruiters. They are not as effective as our own network.  And we understand that to be effective at all, they need to know and understand \_\_\_\_\_.  It is pointless to engage recruiters unless we bring them inside the kimono and fully expose them to \_\_\_\_\_.  We do so by sharing the scorecard with them, as well as every detail of our reaction to candidates they propose.  
+
+###### **Researchers.**  These are people who research networks and generate names, but do not reach out directly to candidates.  We rarely use researchers.
+
+Here is our Process for Sourcing:
+
+1.  Gamify the process. Give a prize to whoever reaches out to the most people (or whatever other metric you want to use).
+2.  Deputizing friends of \_\_\_\_\_. We offer a referral bonus of $\_\_\_\_\_\_ and regularly ask friends of \_\_\_\_\_ for referrals.
+3.  Hiring recruiters. When we hire recruiters, we give them full access to our scorecards and our reaction to candidates.
+4.  ATS (Applicant Tracking System). We are relentless about entering all relevant information into our ATS. This system is everyone's responsibility. While one owner of this list will check it weekly for "not filled out the information," we will pester each other to enter this information whenever we see holes. 
+
+##### Select
+
+We have a set of four interviews that allow us to rate a person against our scorecard. To be great interviewers, we must get out of the habit of passively witnessing how somebody acts *during* an interview. And instead, use the four interviews to collect *facts and data about how they have performed over decades.*
+
+  - Screening Interview
+  - Topgrading Interview
+  - Focused Interview
+  - Reference Interview
+
+###### Phone Screen Interview
+
+The goal is to eliminate people who are inappropriate for the position as soon as possible. One can conduct this by phone, and it should not last more than 30 minutes. Preview that it will last 15 minutes, then extend to 30 during the call only if the candidate appears to be excellent.
+
+The Hiring Manager will assign the first screener. If the candidate passes the first screen, the Hiring Manager will do the second screen.
+
+Read the scorecard just before the call.
+
+Set expectations:
+
+"Thanks for taking the time to talk to me. I'd like to spend the first 10 minutes of our call getting to know you. After that, I'm happy to answer any questions you have about us. Sound good?"
+
+(It is essential to get their information first so that what you get isn't simply a parroting back of what \_\_\_\_\_ is looking for.)
+
+The script:
+
+1\. "What are your career goals?"
+
+(If his/her goals sound like an echo of the \_\_\_\_\_ website or they don't have any, screen them out.)
+
+2\. "What are you good at professionally?"
+
+(Push them to give you 8-12 positives, with examples, so that you can build a complete picture of their capabilities. You are listening for strengths that match the scorecard.)
+
+3\. "What are you not good at or not interested in doing professionally?"
+
+(Push them for real weaknesses, 5-8 of them. If they don't respond thoroughly enough, call them on it. If they still don't, then say the following: "If you advance to the next step in our process, we will ask for your help in setting up reference calls with your bosses, peers, and subordinates. What do you think they will say are some things that you are not good at, or not interested in?")
+
+4\. "Who were your last three bosses, and how will they each rate your performance on a 0-10 scale when we talk to them?"
+
+(Press for details of why each person would give them such a rating. We are looking for consistent 8-10s. A 6 is actually a 2. But ask why it's a 6.)
+
+1\. What are your career goals?
+
+2\. What are you good at professionally?
+
+3\. What are you not good at or not interested in doing professionally?
+
+4\. Who were your last three bosses, and how will they rate your performance on a 0-10 scale when talking to them?
+
+And then, it is essential to go deeper. Throughout the interview, get curious. Ask follow-up questions that start with "What," "How," or "Tell me more."
+
+Examples:
+
+• "What do you mean?"
+
+• "What is an example of that?"
+
+• "How did you do that?"
+
+• "How did that feel?"
+
+(Developer hires will have an extra screening step of performing a programming test.) 
+
+The goal of this phone screen is to weed out candidates quickly. If you can't definitively say: "This is an A candidate," then hit the gong. It is better for us to miss out on an A player than to waste many precious hours on a borderline case that turns out to be a B or C player. If we weed harshly, we will spend more time with candidates who are known A players.
+
+If you think this is an A player, let the candidate know that you believe they are great and that you are open to extending this phone interview to get to know them more and answer their questions about \_\_\_\_\_. Jump into "selling" mode.
+
+If you think that the candidate is not an A player, end the call at the scheduled time (15 minutes, hopefully). Within 24 hours, inform them that you appreciated their time, but you will not be moving forward with them at this time. "Thank you for taking the time to interview with us. We do not feel that our needs for this role match your strengths. That being said, we will be hiring for many more roles in the future, and we hope to be able to reach back out to you again."
+
+While it may feel difficult to say "no" to people, it is disrespectful to let them linger. The vast majority of people prefer a quick "no" to a slow one, or worse yet, no response at all.
+
+Now, let's get back to that candidate who is an A.
+
+###### *Selling*
+
+In addition to getting curious about a candidate's passions, dreams, and personal life (as described in [Building Trust and Like](https://docs.google.com/document/d/1BQOa7foLLxNXmGUhbvkzsvm0IVYOJZTFU4MKOmreCXc/edit#heading=h.r015wdd8rem9)), the key to successfully selling a candidate on \_\_\_\_ is giving them enough information so that they will see that at \_\_\_\_\_ they will have: 
+
+###### *Fit, Family, Freedom, Fun.*
+
+**Fit.** Share the Company Roadmap, Department Roadmap, and their Roadmap. Show how where they want to go is a match for where \_\_\_\_\_ is going.
+
+**Family.** "What can we do to make this change as easy as possible for your family?" Ask about their family. Get to know their names, ages, etc. Ask what concerns and needs their family members have. Meet those needs. Ideally, meet their family in person (or at a minimum, speak to their spouse on the phone), discover their needs directly, and meet those needs.
+
+**Freedom.** "At \_\_\_\_, we collaboratively set Company, Department and Individual OKRs at the beginning of each quarter. Your Individual OKRs means that I will not micromanage you. In our regular 1-1s, I will ask you to update me on your progress toward your OKRs, and offer you support whenever you run into obstacles. I encourage you to talk to my team to see what I am like to work with."
+
+**Fun.** Here is what we do for fun at \_\_\_\_\_.
+
+At the end of the phone interview, let the candidate know that you would like to immediately schedule the next interview (either the second phone interview or the on-site interviews).
+
+###### On-Site Interviews
+
+For the on-site interviews, schedule interviews back-to-back (with some break time in between) with all of the needed decision-makers, followed by a decision meeting at the end of the day attended by all interviewers. The goal is to get all required buy-in for a yes/no decision in one day of interviews. 
+
+This day of interviews will include:
+
+1.  A Topgrading interview
+2.  Several Focused interviews
+
+The schedule for the interviewers will look something like this:
+
+830-900am Interviewers meeting. Here's what's going to happen today. Review scorecard, candidate's resume, notes from screening interviews, and roles/responsibilities for the day.
+
+845-900am A team member greets the candidate and orients them to the day ahead.
+
+900-1100am Topgrading Interview. (1-2 hours)
+
+1100-noon Focused Interview.
+
+Noon-100pm Lunch with \_\_\_\_\_.
+
+100-400pm Focused Interviews
+
+400-415pm Host thanks the candidate and explains the next steps.
+
+415-500pm Decision Meeting. The interview team meets to rate the scorecard. Hiring Manager makes a YES/NO decision to conduct reference calls or terminate the process.
+
+###### *Topgrading Interview*
+
+The goal of this interview is to understand the candidate's story and patterns. These stories and practices are predictive of the candidate's future performance. Start from the beginning and move forward chronologically. Create chapters of a job (or groups of jobs) that last 3-5 years. This interview should take about 2 hours (3 hours for a CEO, 1 hour for entry-level). It is worth the time. For every hour we spend Topgrading a candidate, we'll save 100s of hours not dealing with B or C players.
+
+The Hiring Manager should conduct the Topgrading Interview and a colleague who wants to learn the method by observing.
+
+In the interview, first set expectations:
+
+**"Thank you for visiting us today. We are going to do a chronological interview and walk through each job you've had. For each job, I am going to ask you five core questions.**
+
+1.  **What were you hired to do?** 
+2.  **What accomplishments are you most proud of?** 
+3.  **What were some low points during that job?** 
+4.  **Who were the people you worked with?** 
+5.  **Why did you leave that job?**
+
+**At the end of the interview, we will discuss your career goals and aspirations, and you can ask me questions about us.** 
+
+**80 percent of the process will take place in this room, but if we mutually decide to move forward, we will conduct reference calls to complete the process.**
+
+**Finally, while this sounds lengthy, it will go remarkably fast. It is my job to guide the pace of the discussion. Sometimes I will ask you to go into more depth; other times, I will ask that we move on to the next topic. I'll try to make sure that we leave plenty of time to cover your most recent and, therefore, most relevant jobs.**
+
+**Any questions before we begin?"**
+
+The script:
+
+For each job or group of jobs (lasting 3-5 years).
+
+**1. What were you hired to do?**
+
+You are trying to create a picture of their scorecard as if they had one. What were their mission and key outcomes (or Objectives and Key Results)?
+
+**2. What accomplishments are you most proud of?**
+
+Hopefully, these accomplishments will match the outcomes described in the first question.
+
+**3. What were some low points during that job?**
+
+Do not let the candidate off the hook. Reframe the question over and over again until you get honest answers.
+
+**4. Who were the people you worked with? Specifically:**
+
+**i. What was your boss' name, and how do you spell that? What was it like working with him/her? What will he/she tell me were your biggest strengths and areas for improvement?**
+
+Follow the script exactly. By letting the candidate know that we will be contacting these references, the candidate will become much more truthful. This is the most crucial question we ask during the Topgrading Interview, as it gives us the information needed to do the Reference Interviews. For the most recent or significant job, also ask:
+
+**ii. Who were your peers on the team, and how do you spell their names?** 
+
+**iii. Who were the members of your team, and how do you spell their names?**
+
+Again, these are critical questions that will enable the Reference Interviews. 
+
+**iv. How would you rate the team you inherited on an A, B, and C scale? What changes did you make? Did you hire anybody? Fire anybody? How would you rate the team when you left it on an A, B, and C scale?**
+
+Does the candidate accept the hand they have been dealt, or do they make changes to get a better hand? You can also use the reference check method to get more information: "When we speak with members of your team, what will they say are your biggest strengths and weaknesses as a manager?"
+
+**5. Why did you leave that job?**
+
+Was the candidate promoted, recruited, or fired? Get very curious about why?
+
+To conduct this interview well, you will have to:
+
+1\. **Interrupt.** Do so tactfully. But do not let a candidate ramble. Doing so will only hurt their chances of success because it will chew up valuable time without conveying important information. Expect to interrupt the candidate once every 3-4 minutes. 
+
+The proper way to interrupt someone is to be positive and use reflective listening: "Wow\! It sounds like that pig farm next to the corporate office smelled horrible\!" The candidate says: "Yes." Then you immediately say:" You were telling me earlier about launching that email campaign. I'd love to hear what that was like? How well did it go?"
+
+2\. **Three Ps.** Use the 3 Ps to clarify how valuable an accomplishment was in context.
+
+i. How did your performance compare to the previous year's performance?
+
+ii. How did your performance compare to the plan?
+
+iii. How did your performance compare to that of your peers?
+
+3\. **Push versus Pull.** People who perform well are generally pulled to more significant opportunities.
+
+For each job change, determine if it was a push or a pull.
+
+*Push.* "It was mutual." "It was time for me to leave."
+
+*Pull.* "My biggest client hired me." "My old boss recruited me to a bigger job."
+
+4\. **Painting a Picture.** You'll know that you understand what a candidate is saying when you can see a picture of it in your mind. Put yourself in their shoes.
+
+5\. **Stopping at the Stop Signs.** If you see or hear inconsistencies, the candidate may be telling an untruth. If this happens, get curious, and dig deeper. Think of yourself as a biographer (positive), not an investigative journalist (negative).
+
+###### *Focused Interview*
+
+Three \_\_\_\_\_ers (not the Hiring Manager) will be asked to conduct 3 Focused Interviews, each 50 minutes. The focused interview is a chance to involve other team members and get more specific information about the candidate. Focus the interview on the outcomes (skills) and competencies (culture fit) of the scorecard. Get curious after every answer by using the "What? How? Tell me more" framework. We split the Outcomes and Competencies in the scorecard into three sections, allowing each interviewer to focus on one area (⅓ of the Outcomes and ⅓ of the Competencies).
+
+Set the stage:
+
+**1. "The purpose of this interview is to talk about \_\_\_\_\_\_\_\_\_\_(fill in the blank with the Outcomes and Competencies in the Scorecard that you are going to review)."**
+
+The script:
+
+**1. "Now we are going to talk about \_\_\_\_\_\_\_\_\_ (fill in the blank with the next Outcome or Competency to be reviewed).** 
+
+**2. What are your most significant accomplishments in this area during your career?**
+
+**3. What are your insights into your biggest mistakes and lessons learned in this area?"**
+
+###### **The rating:**
+
+At the end of the day of on-site interviews, we hold a Decision Meeting. The entire interview team gathers. All submit their comments on the candidate in writing in the ATS system. We then declare our positions on each candidate.
+
+**Skill-Will Bull's Eye.** We only choose candidates whose skill (what they can do) and will (what they want to do) matches our scorecard. This scorecard is their skill-will profile. For each item on the scorecard, rate the candidate's skill-will. Only rate people an A in whom you have a greater than 90% confidence that they can and will meet all outcomes and competencies.
+
+Red Flags:
+
+Here are the things to watch out for during the interview process that signal problems:
+
+- Candidate does not mention past failures.
+- Candidate exaggerates his or her answers.
+- Candidate takes credit for the work of others.
+- Candidate speaks poorly of past bosses.
+- Candidate cannot explain job moves.
+- Their family doesn't want them to take this job.
+- For managerial hires, the candidate has never had to hire or fire anybody.
+- Candidate is more interested in compensation and title than in the job itself and \_\_\_\_\_.
+- Candidate tries too hard to look like an expert.
+- Candidate is not curious about us or others. (Candidate is self-absorbed.)
+
+The selection:
+
+1\. Update all the Scorecards.
+
+2\. Rate each candidate.
+
+3\. If we have no A's, restart the process to step 2: Source.
+
+4\. If we have one A, we make them an offer pending reference interviews.
+
+5\. If we have several A's, we rank them and offer pending reference interviews to the best A from among them. We try to find another role at \_\_\_\_\_ for the other A's.
+
+###### Reference Interview
+
+We do not skip the reference checks\! The Reference Interviews are where we learn the truth about the candidate. These interviews give us by far the most accurate picture of the candidate's future performance.
+
+1\. We pick the proper references. Bosses, peers, and subordinates (sometimes 2-3 levels down). We do not use the reference list that the candidate gives us.
+
+2\. We ask the candidate to contact the references and set up the calls.
+
+3\. The Hiring Manager conducts at least 2 (but preferably 4) reference interviews, and other team members do at least 1 (but preferably 3) more for a total of at least 3 (but preferably 7).
+
+The script:
+
+**1. "In what context did you work with the person?"**
+
+**2. "What were the person's biggest strengths?"**
+
+Get curious by using the "What? How? Tell me more" framework.
+
+**3. "What were the person's biggest areas for improvement back then?"**
+
+It is essential to say "back then." This expression liberates people to talk about fundamental weaknesses, assuming that the candidate has improved them by now. (In reality, past performance is an indicator of future performance.)
+
+**4. "How would you rate his/her overall performance in that job on a scale of 0-10? What about his/her performance causes you to give that rating?"**
+
+**5. "The person mentioned that he/she struggled with \_\_\_\_\_\_\_\_ in that job. Can you please tell me more about that?"**
+
+People do not like to give negative references, so listen for cues. Faint or qualified praise is damning, as is hesitation.
+
+From Danny An, Founder of TrustToken:   
+"When asking for weaknesses or areas of improvement during interviews and reference calls, people answer more freely if you say, "People shouldn't do the majority of things and should focus on areas where they can use their strengths. Understanding weaknesses demonstrates self-awareness." 
+
+##### Sell
+
+Our decision to hire the candidate is only one part of the equation. The second and even more critical part is selling the candidate to join us. 
+
+As described in [Building Trust and Like](https://docs.google.com/document/d/1BQOa7foLLxNXmGUhbvkzsvm0IVYOJZTFU4MKOmreCXc/edit#heading=h.r015wdd8rem9), the key is to put yourself in the candidate's shoes. Find out what they care about. And then care about it yourself. Most people tend to care about …
+
+**Fit.** Share the Company Roadmap, Department Roadmap, and their Individual Roadmap. Show how where they want to go is a match for where \_\_\_\_\_ is going.
+
+**Family.** "What can we do to make this change as easy as possible for your family?" Ask about their family. Get to know their names, ages, etc. Ask what concerns and needs they have. Meet those needs. (Ideally, meet their family in person, discover their needs directly, and meet those needs.)
+
+**Freedom.** "The Individual Roadmap allows you the freedom to make decisions. I will not micromanage you." Encourage the candidate to do reference checks on you to see what you are like to work with.
+
+**Fun.** Here is what we do for fun at \_\_\_\_\_.
+
+**Fortune.** "If you accomplish your objectives, and we as a company accomplish ours, you will likely make x over the next 5-10 years."
+
+Selling happens throughout the recruiting process. Here are key moments to put yourself in a candidates shoes and address the issues above:
+
+1\. When you source
+
+2\. When you interview
+
+3\. The time between your verbal offer and the candidate's acceptance (reach out to them repeatedly during this time\!)
+
+4\. The time between the candidate's acceptance and his/her first day (yes, they still aren't really here yet; keep reaching out to them\!)
+
+5\. The new hire's first 100 days on the job (yes, they are still evaluating; keep addressing what they care about\!) Be persistent. **Think lots of touches\!** Too many candidates are lost because they feel abandoned once they are offered or arrive at the company.
+
+#### Implementation
+
+To implement this recruiting system:
+
+1\. Announce it to the company.
+
+2\. Train all Hiring Managers and interviewers.
+
+3\. Implement the schedule and process. Enter the process and questions in the ATS system.
+
+4\. Put "Source 1 great candidate" on everyone's quarterly scorecard (i.e., OKRs)
+
+#### Legal
+
+Don't discriminate. We hire people on one criteria only: whether they are likely to perform the job or not. Keep in mind the following:
+
+1\. Relevance. Defining the outcomes and competencies will ensure that we are judging on relevant criteria.
+
+2\. Standardization. Having a standard process ensures fairness across all groups.
+
+3\. Non-discriminatory language. We always use "he/she" or "they." No derogatory language toward anyone, ever.
+
+4\. **No illegal questions: Anything related to marital status, intention to have children, pregnancy, date or place of birth, medical condition, race or ethnicity, sexual orientation, or physical or mental handicaps.**
+
+
+---
+
+## Chapter 98: Making the Offer
+
+*Source: https://docs.google.com/document/d/1IDbshCFwd19_6Ke__-0klE-BYJdJympMMprybTIp1bg/edit?usp=drive_web&ouid=102503928790226855337*  
+*(1 min)*  
+
+#### [Making the Offer](https://docs.google.com/document/d/1IDbshCFwd19_6Ke__-0klE-BYJdJympMMprybTIp1bg/edit) (1 min)  
+
+If you make a written offer to a candidate that you love, hoping that they will accept, they may well do so. But they will also be tempted to ask for a few more things before accepting (signing bonus, moving expenses, etc.). You will then be in the awkward position of either giving these (and thereby allowing a political culture to begin) or starting the relationship on a negative note by saying no. 
+
+To keep the offer and acceptance process entirely positive, do the following:
+
+Once you have the offer prepared, contact the candidate and ask them to complete the following phrase:
+
+**"I will join the company as long as …."**
+
+They will (hopefully) state all of their requirements. If you are willing to provide each of these, you will have a successful hire. If there is one that you cannot provide, discuss it with the candidate to see if there is some alternative that you both can accept.
+
+Once this process is complete, then ask the candidate:
+
+**"If we were to make you the following offer (state the offer in full detail, including cash, equity, benefits, etc.), would you accept?"**
+
+If they say yes, then invite them in to make the offer in person. The granting and accepting of a job offer is a very emotional moment for a person. Making a big deal out of it is a good thing. I recommend that you make a ceremony out of it. Here are some possibilities:
+
+  - Hand the written offer to the candidate with two hands and a ceremonial bow.
+  - Give company swag. 
+  - Give hugs and high-fives. 
+
+Whatever you do, make it fun and memorable. If you do this, the relationship will begin with a resoundingly positive "Yes\! Thank you\! I'm so excited\!"
+
+**Note:** Senior execs will always require that their attorney review the offer before they accept. That is fine. In advance of making the offer, you can share the language of the contract and all the details except for the compensation (income and equity).
+
+
+---
+
+## Chapter 99: Compensation
+
+*Source: https://docs.google.com/document/d/1EnMXBO0uum5E5x6QlMcbcdOIRightwdy73DzRerKTdI/edit#*  
+*(3 min)*  
+
+[Compensation](https://docs.google.com/document/d/1EnMXBO0uum5E5x6QlMcbcdOIRightwdy73DzRerKTdI/edit#) (3 min)
+
+How much compensation do you offer new team members? How much cash and equity?
+
+My preferred method is to:
+
+1.  Discover the market compensation for the position (role and seniority). There are plenty of online compensation studies that show this. Market compensation is whatever a big company (Microsoft, Facebook, Google) pays for this position.  
+      
+2.  Discover the amount of cash that the new team member would need to live comfortably (housing, food, transportation, child expenses, etc.).
+
+It is up to the startup to match the market compensation level, not in cash as the larger companies do, but rather in a much lesser amount of cash (no less than the amount needed to live comfortably), plus equity to bridge the difference. 
+
+Here is an example to show how to calculate the equity portion. Let's say the position is a Level 3 Engineer who is paid $300,000 in total compensation at Google. The team member requires $120,000 in cash to live comfortably and invests the remainder in startup equity. To calculate the amount of equity take the difference between market and cash ($300,000-$120,000=$180,000) and multiplying it by four years ($180,000 x 4 = $720,000). Then divide this amount by a factor somewhere between 1 and 2, which represents a very conservative estimate of the increase in value of the equity over four years. A 1 represents no expected increase in value. A 2 represents a 2x expected increase in value. If 1.5 were used (which is the most common factor used), the final amount would be $720,000 / 1.5 = $480,000. So grant this amount in options; however much equity it purchases at the company's current valuation—the options vest over four years.
+
+I prefer to make an offer that allows the new team member to choose how much they want to invest in the startup equity at three different levels. The lowest cash level would be the level needed to live comfortably. 
+
+Here's an example in which the company is currently worth $50mm. The company will likely need to do another major financing round, and optional pool refreshes before it reaches maturity, an expected 50% dilution to the current cap table. A $1 billion eventual value of the company would result in a 10x increase in the equity value. (20x increase in company value x 50% dilution = 10x increase in equity value.)
+
+The three options would be:
+
+|  | **Annual Cash** | **Equity Worth** | **Expected Value at $1 billion company valuation** |
+| :-: | :-: | :-: | :-: |
+| 1 | $120,000 | $480,000 | $4,800,000 |
+| 2 | $140,000 | $426,666 | $4,266,666 |
+| 3 | $160,000 | $361,333 | $3,613,333 |
+
+The hope is that the new team member believes so fully in the company (and the power of the asymmetric bet) that they choose one of the two higher equity offers. This equity is thus an investment that the team member is making in the company. And with a huge advantage: The employee makes the investment with pre-tax dollars, which doubles its purchasing power.
+
+
+---
+
+## Chapter 100: Hiring Execs: External vs Internal
+
+*Source: https://docs.google.com/document/d/1gaknANyT2UJC0YMF6zYnErMp4imlslDbPmg-d9yeGlI/edit*  
+*(2 min)*  
+
+[Hiring Execs: External vs Internal](https://docs.google.com/document/d/1gaknANyT2UJC0YMF6zYnErMp4imlslDbPmg-d9yeGlI/edit) (2 min)
+
+As a company hits PMF (Product Market Fit) and begins to scale quickly, there is tremendous pressure to hire "real execs" to run each major department. By now, the dangers of hiring overqualified people into these roles are well-documented. The conventional wisdom is that you want to hire people who match the role's requirements for the next 12-18 months, not the period beyond that, as suggested by [Elad Gil](http://growth.eladgil.com/book/chapter-4-building-the-executive-team/hiring-executives/). But I want to introduce a far-more-radical and far-less-popular view:
+
+Hiring externally is a failure of training\! Executives are nothing more than managers of managers. And there is only one set of training that every manager needs to become an exec: How to manage well. In addition, there is a massive benefit from providing this training internally: all of your execs and managers will use a similar management system, and therefore the company as a whole will operate as one unified team, rather than disparate teams tied together by a company name only. See [Scaling: Hire a "Manager Trainer" as COO](https://docs.google.com/document/d/1NtLurYDKUXqy2VHFWcw027sJhHPCwsatV2GaVF4jebk/edit)
+
+Certain areas require functional expertise: Legal, Engineering, Finance/Accounting. But do not be fooled that when you hire an experienced lawyer as your General Counsel, a skilled engineer as your VP Engineering, and an experienced accountant or investment banker as your CFO, that you are also hiring an excellent manager. It is a rare case when you are doing so. 
+
+In addition, existing team members are entirely known quantities. You see if they exhibit the behaviors you want (culture), whether they understand the details of your business, and whether you plain like them. External hires are rarely a perfect culture match, often take months if not years to truly understand your business, and if you end up not liking them personally you will not spend the necessary time with them to fully train them on how you want them to operate. 
+
+I coach many highly successful late-stage companies. When I ask the CEOs who their top exec team members are, the names that I hear are often promoted internally. 
+
+So, before you hire external executives, build a manager training program. If you have to hire externally for a person to run this program, so be it. Give them the title COO. Make it clear that their primary job function is to train all of the company's managers.
+
+This function was Sheryl Sandberg's gift to Facebook. You deserve the same.
+
+
+---
+
+## Chapter 101: Teaching / Training
+
+*Source: https://docs.google.com/document/d/1sGF4V0xFWjESabSZElwF3YienjtiLZtp81YTHe-zMpM/edit*  
+*(1 min)*  
+
+[Teaching / Training](https://docs.google.com/document/d/1sGF4V0xFWjESabSZElwF3YienjtiLZtp81YTHe-zMpM/edit) (1 min)
+
+To perform a job well, a person needs to have: 
+
+  - the skills to do so
+  - the organization to follow through
+  - the behaviors that match the company's values
+
+You can teach all of these. 
+
+Therefore, failure to perform is most often a failure of training or hiring.
+
+The best way that I know of to teach (or train) is:
+
+  - You watch me perform the role several times. You document the process that you see me going through.  Feel free to ask questions. Once I think that you understand what I am doing …  
+      
+  - I watch you perform the role. I will give you regular feedback. Once I see that you are performing the role well …  
+      
+  - You train your backup to do it. This training is what actually solidifies the learning for you, as it forces you to understand what you are doing to explain it to another.
+
+If you are training a manager or new hire, this looks like:
+
+  - You watch me run all of the 1-1s and team meetings for 2-4 weeks.
+  - You write down my process for running the 1-1s and team meetings.
+  - I watch you run the 1-1s and team meetings for 2-4 weeks and give you feedback.
+  - You invite your \#2 to watch you run the 1-1s and team meetings for 2-4 weeks.
+  - You watch your \#2 run the 1-1s and team meeting for 2-4 weeks.
+
+
+---
+
+## Chapter 102: Before You Hire: A decision-making framework for increasing output without increasing headcount
+
+*Source: https://docs.google.com/document/d/1kc0SVHRiIkFvUy7xkG-MUUsyUUikNWAT/edit*  
+*by*  
+
+Before You Hire
+
+A decision-making framework for increasing output without increasing headcount
+
+[AI has expanded what a company can produce without adding people](https://leanaileaderboard.com/). The CEO's job is no longer simply allocating headcount; It is designing leverage across systems, AI, and people. [Hiring should be the last step](https://docs.google.com/document/d/1YEH0EWZOXu0nptlOCXM9etBiLVO2qDWuS_JIwK7go9w/edit?tab=t.0), not the first.
+
+When a team needs to move faster, work through these levels in order. Stop when you have the speed you need.
+
+Most companies jump directly to step six. The fastest companies work through the earlier steps first. Every premature hire at a scaling company costs months of ramp time, management overhead, and cultural risk.
+
+## Step 1: Identify the Real Bottleneck
+
+When teams feel slow, leaders often assume the problem is execution capacity. Often it is not.
+
+Common constraints include:
+
+Unclear [priorities](https://docs.google.com/document/d/1GoiH4pwsph5rwSM_wMMiMJkX6-qFVwO0SVYkodNZhwg/edit?tab=t.0)
+
+Slow [decision-making](https://docs.google.com/document/d/1hPdWQjYfdK0SB2i3ViZ9XsMPjTYEi7Do1WI22ofmEdo/edit?tab=t.0)
+
+Unclear [ownership](https://docs.google.com/document/d/1v72Mozz6Zr-3Knzcd9yNcs1E8-QKk5NkTVmR6pIQj98/edit?tab=t.0)
+
+Lack of [accountability](https://docs.google.com/presentation/d/1foUj9i_K3X-0c5WTQrggSyH93-FflNxzdlrgAUvARSQ/edit?slide=id.g200d4b09bbd_2_94#slide=id.g200d4b09bbd_2_94)
+
+If the constraint is not execution, adding people or AI will only increase complexity. First identify the real bottleneck.
+
+## Step 2: Remove Unnecessary Work
+
+Before asking how to do work faster, ask: should this work exist at all?
+
+Many recurring tasks exist only because they historically required human effort. Examples: manual reports, recurring research, internal status updates, data entry, information retrieval. AI can often generate these automatically.
+
+The highest form of leverage is not doing work faster. It is removing the work entirely.
+
+Find Work to Automate
+
+Repeated Work
+
+Ask: What's being done the same way each week?
+
+Example: A manager rebuilds the same weekly report from scratch every Friday.
+
+"Only Takes a Few Minutes"
+
+Ask: What are people doing that "only takes a few minutes" but happens often?
+
+Example: A manager checks multiple tools every day to see what needs attention.
+
+Shouldn't Exist
+
+Ask: If we were starting from scratch, would we keep doing this?
+
+Example: The team produces a weekly report that no one uses.   
+
+## Step 3: Redesign Workflows Around AI
+
+This step redesigns your process. AI can now do real work: write code, draft documents, analyze data, and generate reports. The question is no longer whether it can. It is how you structure your workflows around it.
+
+### Example: engineering pipeline
+
+Traditional: engineer writes code → tests → submits pull request → engineer reviews.
+
+AI-native: engineer writes spec → AI generates code and tests → second AI agent reviews for style, coverage, and bugs → low-risk changes merge automatically → high-risk changes escalate to a human → critical changes escalate to senior engineers.
+
+Previously, most of the value came from doing the work itself, so teams focused on execution. That made sense. Now, execution is largely handled by AI. The leverage shifts to defining the work upfront and reviewing it at the end, not doing it in the middle.
+
+### The review hierarchy
+
+AI dramatically increases the volume of work that can be generated. The new constraint is evaluation.
+
+Level 1: AI generation. AI produces the output.
+
+Level 2: AI validation. A second agent checks for known failure modes. If the output passes predefined thresholds, it ships automatically.
+
+Level 3: Human review. Higher-risk work escalates to a human.
+
+Level 4: Senior oversight. Critical decisions escalate to senior leaders.
+
+This pattern applies beyond engineering. Any function where AI generates output at scale needs a designed validation layer.
+
+Companies that design [strong review hierarchies](https://www.lennysnewsletter.com/p/the-non-technical-pms-guide-to-building-with-cursor) can safely scale AI output. Companies that rely only on human review will bottleneck.
+
+## Step 4: Deploy AI Agents
+
+The next layer of leverage is autonomous AI workers. These agents operate continuously and perform defined responsibilities:
+
+Pull request review agents
+
+Competitor monitoring agents
+
+Analytics summary agents
+
+Lead qualification agents
+
+Support triage agents
+
+A small team [supported by AI agents](https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-pms-who-use) can perform the work of a much larger organization. Every agent needs a directly responsible individual (DRI) human who owns the agent's output, monitors its failure modes, and is accountable when something goes wrong.
+
+## Step 5: Redesign Roles Around AI
+
+Once processes and agents are in place, look at each role and ask: what is this person actually doing every day, and how much of it can AI now handle?
+
+Engineers should be designing systems and reviewing AI-generated output, not writing every line. Support leads should be managing AI agents that handle tickets, not answering tickets themselves. If someone's day-to-day hasn't changed, you haven't finished the earlier steps.
+
+How to lead AI adoption
+
+Don't tell your teams to "use more AI." That creates vague pressure and scattered efforts. Do make it an explicit objective in your OKRs.
+
+Define a company-level goal to redesign how work gets done with AI
+
+Define key results for each department. Each leader should own specific outcomes, like reducing cycle time, increasing output per person, or shifting a percentage of workload to automation.
+
+Use an [OKR tracker](https://docs.google.com/spreadsheets/d/1_TgYK7fHvUXWrcIhGgUeeq8OoFi0LQ6usQm3r7owZA0/edit) to hold leaders accountable
+
+Obstacles
+
+The biggest obstacle here is usually [fear](https://docs.google.com/document/d/1sDWHUm6zwEGiPBQH2Ig6DDvVL-IEQSlfNeQnR2mhjmE/edit?tab=t.0). When you redesign roles, people hear "we are looking for ways to replace you with AI." Name this directly. Make it clear that the goal is to make every person on the team dramatically more capable.
+
+Another adoption obstacle we hear directly from our clients: "I'm a creator. I want to code." Acknowledge it and be clear about the expectation: the role is changing. Support people in finding new forms of creativity in this model. Not everyone will make that shift- some will leave, and others you'll need to let go. This is a normal and healthy part of change.
+
+## Step 6: Hire AI-Proficient Talent
+
+Only after working through the earlier levels should a company hire. When hiring, prioritize candidates who design workflows using AI, automate repetitive tasks, experiment rapidly with new systems, and manage and validate AI output.
+
+The goal is to hire operators who naturally multiply themselves with AI.
+
+### When hiring is the right answer
+
+If your team is fully AI-leveraged and the constraint is domain expertise AI cannot replicate (deep technical knowledge, regulatory experience, relationship capacity), then hire. If the work requires judgment in a high-stakes domain where AI validation is insufficient, hire. If the work requires trust, presence, or persuasion, hire.
+
+
+---
+
+## Chapter 103: Emma Giles
+
+*Source: https://www.mocharymethod.com/team/emma-giles*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.mocharymethod.com/team/emma-giles)_
+
+
+---

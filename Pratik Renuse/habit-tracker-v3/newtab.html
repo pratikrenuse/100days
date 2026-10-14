@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Tab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="newtab.css" />
+</head>
+<body>
+<div id="app">
+
+  <!-- ═══════════════════ MAIN VIEW ═══════════════════ -->
+  <div id="mainView" class="view">
+
+    <!-- Quote (shown only in low/medium minimalism) -->
+    <div class="quote-zone" id="quoteZone">
+      <p class="quote-text" id="quoteText"></p>
+      <p class="quote-author" id="quoteAuthor"></p>
+    </div>
+
+    <!-- Top bar -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <span class="day-label" id="dayLabel"></span>
+        <span class="date-label" id="dateLabel"></span>
+      </div>
+      <div class="topbar-right">
+        <button class="icon-btn" id="analyticsBtn" aria-label="Analytics">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="12" width="4" height="9"/><rect x="10" y="7" width="4" height="14"/><rect x="17" y="3" width="4" height="18"/>
+          </svg>
+        </button>
+        <button class="icon-btn" id="settingsBtn" aria-label="Settings">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Progress summary (medium + low only) -->
+    <div class="progress-zone" id="progressZone">
+      <div class="prog-ring-wrap">
+        <svg class="prog-ring" viewBox="0 0 64 64">
+          <circle class="prog-ring-bg" cx="32" cy="32" r="27"/>
+          <circle class="prog-ring-fg" id="progRingFg" cx="32" cy="32" r="27"/>
+        </svg>
+        <div class="prog-ring-text">
+          <span class="prog-num" id="progNum">0</span>
+          <span class="prog-den" id="progDen">/0</span>
+        </div>
+      </div>
+      <div class="prog-summary">
+        <p class="prog-headline" id="progHeadline">No habits yet.</p>
+        <p class="prog-sub" id="progSub">Open settings to add habits.</p>
+      </div>
+    </div>
+
+    <!-- Habit list -->
+    <ul class="habit-list" id="habitList" role="list"></ul>
+
+    <!-- Empty state -->
+    <div class="empty-state" id="emptyState">
+      <p class="empty-msg">No habits configured.</p>
+      <button class="ghost-btn" id="emptySettingsBtn">Open settings</button>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════ ANALYTICS VIEW ═══════════════════ -->
+  <div id="analyticsView" class="view hidden panel-view">
+    <div class="panel-topbar">
+      <button class="back-btn" id="backFromAnalytics">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Back
+      </button>
+      <span class="panel-title">Analytics</span>
+    </div>
+
+    <!-- Habit filter -->
+    <div class="filter-row" id="analyticsFilter"></div>
+
+    <!-- Stat cards -->
+    <div class="stat-cards" id="statCards"></div>
+
+    <!-- Sparkline / heatmap -->
+    <div class="heatmap-section">
+      <p class="section-label">Last 90 days</p>
+      <div class="heatmap-grid" id="heatmapGrid"></div>
+    </div>
+
+    <!-- Streak history -->
+    <div class="streak-section">
+      <p class="section-label">All habits</p>
+      <div class="streak-rows" id="streakRows"></div>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════ SETTINGS VIEW ═══════════════════ -->
+  <div id="settingsView" class="view hidden panel-view">
+    <div class="panel-topbar">
+      <button class="back-btn" id="backFromSettings">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Back
+      </button>
+      <span class="panel-title">Settings</span>
+    </div>
+
+    <div class="settings-body">
+
+      <!-- Minimalism level -->
+      <div class="settings-section">
+        <p class="settings-section-label">Display mode</p>
+        <p class="settings-section-hint">Controls how much is shown on the new tab.</p>
+        <div class="mode-cards" id="modeCards">
+          <button class="mode-card" data-mode="high">
+            <span class="mode-icon">◾</span>
+            <span class="mode-name">High</span>
+            <span class="mode-desc">Habits only. Nothing else.</span>
+          </button>
+          <button class="mode-card" data-mode="medium">
+            <span class="mode-icon">◽</span>
+            <span class="mode-name">Medium</span>
+            <span class="mode-desc">Habits + progress ring + day count.</span>
+          </button>
+          <button class="mode-card" data-mode="low">
+            <span class="mode-icon">□</span>
+            <span class="mode-name">Low</span>
+            <span class="mode-desc">Full view: quote, ring, date, streaks.</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Theme -->
+      <div class="settings-section">
+        <p class="settings-section-label">Theme</p>
+        <p class="settings-section-hint">Choose the colour palette for your new tab.</p>
+        <div class="theme-grid" id="themeGrid">
+          <button class="theme-card" data-theme="dark">
+            <div class="theme-swatch swatch-dark"></div>
+            <span class="theme-name">Dark</span>
+            <span class="theme-hint">Deep black</span>
+          </button>
+          <button class="theme-card" data-theme="cream">
+            <div class="theme-swatch swatch-cream"></div>
+            <span class="theme-name">Cream</span>
+            <span class="theme-hint">Warm parchment</span>
+          </button>
+          <button class="theme-card" data-theme="light">
+            <div class="theme-swatch swatch-light"></div>
+            <span class="theme-name">Light</span>
+            <span class="theme-hint">Clean white</span>
+          </button>
+          <button class="theme-card" data-theme="soft">
+            <div class="theme-swatch swatch-soft"></div>
+            <span class="theme-name">Soft</span>
+            <span class="theme-hint">Muted sage</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tracker duration -->
+      <div class="settings-section">
+        <p class="settings-section-label">Tracker length</p>
+        <p class="settings-section-hint">How many days is this journey?</p>
+        <div class="duration-options" id="durationOptions">
+          <button class="dur-btn" data-days="30">30 days</button>
+          <button class="dur-btn" data-days="60">60 days</button>
+          <button class="dur-btn" data-days="100">100 days</button>
+          <button class="dur-btn" data-days="180">180 days</button>
+          <button class="dur-btn" data-days="365">1 year</button>
+          <button class="dur-btn" data-days="500">500 days</button>
+          <button class="dur-btn" data-days="1000">1000 days</button>
+        </div>
+        <div class="custom-duration-row">
+          <input type="number" id="customDaysInput" placeholder="Custom days..." min="1" max="9999" />
+          <button class="set-btn" id="setCustomDays">Set</button>
+        </div>
+        <p class="current-val" id="currentDuration"></p>
+      </div>
+
+      <!-- Start date -->
+      <div class="settings-section">
+        <p class="settings-section-label">Start date</p>
+        <p class="settings-section-hint">When did day 1 begin?</p>
+        <div class="date-row">
+          <input type="date" id="startDateInput" />
+          <button class="set-btn" id="setStartDate">Set</button>
+        </div>
+        <p class="current-val" id="currentStartDate"></p>
+      </div>
+
+      <!-- Habits -->
+      <div class="settings-section">
+        <p class="settings-section-label">Habits</p>
+        <p class="settings-section-hint">Add, reorder, or remove habits. Changes apply immediately.</p>
+        <div class="habit-manager" id="habitManager"></div>
+
+        <!-- Add form -->
+        <div class="add-habit-form">
+          <input type="text" id="newHabitInput" placeholder="Name your habit..." maxlength="40" autocomplete="off" />
+          <div class="form-row-pickers">
+            <div class="emoji-grid" id="emojiGrid"></div>
+            <div class="color-row" id="colorRow"></div>
+          </div>
+          <button class="primary-btn" id="addHabitBtn">Add habit</button>
+        </div>
+      </div>
+
+      <!-- Danger -->
+      <div class="settings-section danger-section">
+        <p class="settings-section-label">Reset</p>
+        <button class="danger-btn" id="resetBtn">Delete all data and start over</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<script src="quotes.js"></script>
+<script src="newtab.js"></script>
+</body>
+</html>

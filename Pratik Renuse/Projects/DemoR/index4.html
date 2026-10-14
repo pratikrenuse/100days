@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pratik Renuse — Zero to One</title>
+<meta name="description" content="Pratik Renuse — a growth and DTC marketing leader who builds startups from nothing into something. TEDx speaker, mentor, early backer — and a playable RPG." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#f1ece2;          /* warm bone */
+    --paper:#f7f3ea;
+    --ink:#1b1813;         /* warm near-black */
+    --ink-soft:#5a544a;
+    --ink-faint:#9a9384;
+    --line:#ddd5c5;
+    --max:1180px;
+    --col:720px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'EB Garamond',Georgia,serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  /* film grain overlay */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px;position:relative;z-index:2}
+  .serif{font-family:'Cormorant Garamond',Georgia,serif}
+  .label{
+    font-family:'Montserrat',sans-serif;font-size:11px;font-weight:500;
+    letter-spacing:.28em;text-transform:uppercase;color:var(--ink-faint);
+  }
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:40;background:linear-gradient(var(--bg) 72%,rgba(241,236,226,0));backdrop-filter:blur(2px)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+  nav .brand{font-family:'Cormorant Garamond',serif;font-size:21px;letter-spacing:.04em;font-weight:500}
+  nav .links{display:flex;gap:30px;align-items:center}
+  nav .links a{font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;transition:color .25s}
+  nav .links a:hover{color:var(--ink)}
+  nav .pill{
+    font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--bg);background:var(--ink);padding:11px 20px;border-radius:100px;text-decoration:none;transition:opacity .25s
+  }
+  nav .pill:hover{opacity:.82}
+  @media(max-width:780px){nav .links a:not(.pill){display:none}}
+
+  /* hero */
+  header{padding:70px 0 54px;text-align:center}
+  .eyebrow{margin-bottom:30px}
+  h1.hero{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(52px,9vw,104px);line-height:.98;letter-spacing:-.01em}
+  h1.hero em{font-style:italic;font-weight:400}
+  .hero-sub{font-size:clamp(18px,2.4vw,22px);color:var(--ink-soft);max-width:560px;margin:30px auto 0;line-height:1.55}
+  .hero-sub em{font-style:italic}
+  .hero-art{margin:14px auto -6px;max-width:880px;width:100%}
+  .cta{margin-top:30px}
+  .cta a{
+    font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--bg);background:var(--ink);padding:15px 30px;border-radius:100px;text-decoration:none;display:inline-block;transition:transform .25s,opacity .25s
+  }
+  .cta a:hover{transform:translateY(-2px);opacity:.92}
+
+  section{padding:96px 0;border-top:1px solid var(--line)}
+  .sec-head{text-align:center;margin-bottom:64px}
+  .sec-head .label{display:block;margin-bottom:18px}
+  .sec-head h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(30px,5vw,46px);letter-spacing:-.01em;line-height:1.1}
+  .sec-head h2 em{font-style:italic}
+
+  /* the path / arc */
+  .path{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;position:relative;max-width:1000px;margin:0 auto}
+  .path::before{content:"";position:absolute;top:8px;left:5%;right:5%;height:1px;background:linear-gradient(90deg,transparent,var(--line) 12%,var(--line) 88%,transparent)}
+  .stage{flex:1;text-align:center;position:relative;min-width:0}
+  .stage .dot{width:9px;height:9px;border-radius:50%;background:var(--ink);margin:4px auto 22px;position:relative;z-index:2}
+  .stage:first-child .dot,.stage:last-child .dot{width:13px;height:13px;margin-top:2px}
+  .stage .co{font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);font-weight:500}
+  .stage .yr{font-size:14px;color:var(--ink-faint);margin-top:6px}
+  .stage .note{font-style:italic;font-size:15px;color:var(--ink-soft);margin-top:8px;line-height:1.35}
+  .path-ends{display:flex;justify-content:space-between;max-width:1000px;margin:30px auto 0}
+  .path-ends span{font-family:'Cormorant Garamond',serif;font-size:30px;font-style:italic;color:var(--ink-faint)}
+  @media(max-width:780px){
+    .path{flex-direction:column;gap:0;max-width:340px}
+    .path::before{top:0;bottom:0;left:6px;right:auto;width:1px;height:auto}
+    .stage{display:grid;grid-template-columns:32px 1fr;text-align:left;gap:0 16px;padding:14px 0;align-items:start}
+    .stage .dot{margin:6px 0 0}
+    .stage .co{grid-column:2}
+    .stage .yr,.stage .note{grid-column:2}
+    .path-ends{display:none}
+  }
+
+  /* letter */
+  .letter{max-width:var(--col);margin:0 auto}
+  .letter p{font-size:20px;line-height:1.85;color:var(--ink-soft);margin-bottom:1.3em}
+  .letter p em{font-style:italic;color:var(--ink)}
+  .letter .sign{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;color:var(--ink);margin-top:.4em}
+
+  /* pillars */
+  .pillar{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;max-width:980px;margin:0 auto;padding:46px 0}
+  .pillar+.pillar{border-top:1px solid var(--line)}
+  .pillar:nth-child(even) .pillar-art{order:2}
+  .pillar-art{display:flex;justify-content:center}
+  .pillar-art svg{width:100%;max-width:300px;height:auto}
+  .pillar-body .label{display:block;margin-bottom:14px}
+  .pillar-body h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:34px;line-height:1.05;margin-bottom:16px}
+  .pillar-body h3 em{font-style:italic}
+  .pillar-body p{font-size:18px;color:var(--ink-soft);line-height:1.65;margin-bottom:14px}
+  .pillar-body p strong{color:var(--ink);font-weight:500}
+  .pillar-body .meta{font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);line-height:1.9}
+  @media(max-width:780px){
+    .pillar{grid-template-columns:1fr;gap:28px;padding:40px 0}
+    .pillar:nth-child(even) .pillar-art{order:0}
+    .pillar-art svg{max-width:200px}
+  }
+
+  /* work list */
+  .work{max-width:840px;margin:0 auto}
+  .job{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line)}
+  .job:first-child{border-top:none}
+  .job .co{font-family:'Cormorant Garamond',serif;font-size:24px}
+  .job .role{font-family:'Montserrat',sans-serif;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:8px}
+  .job p{font-size:17px;color:var(--ink-soft);line-height:1.55}
+  .job .yr{font-size:14px;color:var(--ink-faint);font-style:italic;margin-top:6px}
+  @media(max-width:780px){.job{grid-template-columns:1fr;gap:8px}}
+
+  /* play / game section */
+  #play{background:var(--paper)}
+  #game-frame{
+    position:relative;max-width:900px;margin:0 auto;
+    border:1px solid var(--ink);background:var(--bg);line-height:0;
+    box-shadow:0 12px 40px rgba(40,30,20,.10);
+  }
+  #game-frame::after{ /* matching film grain on the game */
+    content:"";position:absolute;inset:0;z-index:3;pointer-events:none;opacity:.045;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n2)'/%3E%3C/svg%3E");
+  }
+  #game-frame canvas{display:block;width:100%;height:auto;cursor:pointer;touch-action:manipulation}
+  .game-hint{
+    font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:.06em;
+    color:var(--ink-faint);line-height:2;text-align:center;text-transform:uppercase;margin-top:24px;
+  }
+  .game-hint b{color:var(--ink);font-weight:500}
+  .game-hint .sub{font-family:'EB Garamond',serif;font-style:italic;font-size:14px;color:var(--ink-soft);text-transform:none;letter-spacing:0}
+
+  /* closing */
+  .closing{text-align:center;border-top:1px solid var(--line)}
+  .closing .label{display:block;margin-bottom:24px}
+  .closing h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.01em;margin-bottom:14px}
+  .closing h2 em{font-style:italic}
+  .closing p{font-size:19px;color:var(--ink-soft);max-width:520px;margin:0 auto 34px}
+  .dots{display:flex;gap:10px;justify-content:center;margin-bottom:46px}
+  .dots span{width:7px;height:7px;border-radius:50%;background:var(--ink)}
+  .dots span:nth-child(1){opacity:.2}.dots span:nth-child(2){opacity:.4}
+  .dots span:nth-child(3){opacity:.6}.dots span:nth-child(4){opacity:.8}
+
+  footer{padding:40px 0;text-align:center;border-top:1px solid var(--line)}
+  footer .label{display:block}
+  footer .edu{font-size:15px;color:var(--ink-faint);margin-top:14px;font-style:italic}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+  svg .stroke{fill:none;stroke:var(--ink);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+  svg .fill{fill:var(--ink)}
+  svg .faint{stroke:var(--ink-faint)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="brand">Pratik Renuse</span>
+    <div class="links">
+      <a href="#arc">The Arc</a>
+      <a href="#note">A Note</a>
+      <a href="#work">Work</a>
+      <a href="#play">Play</a>
+      <a class="pill" href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">Connect</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <span class="label eyebrow reveal">Growth &middot; DTC &middot; Zero to One</span>
+    <h1 class="hero reveal">Building something<br />from <em>nothing.</em></h1>
+    <p class="hero-sub reveal">A growth and DTC marketing leader who has spent a decade across Europe turning <em>€0 into millions</em> &mdash; and now helps others do the same.</p>
+
+    <svg class="hero-art reveal" viewBox="0 0 880 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="stroke faint" cx="752" cy="74" r="30"/>
+      <path class="stroke" d="M20 168 C 180 166, 300 158, 430 132 S 660 70, 808 60"/>
+      <path class="stroke faint" d="M20 182 C 240 180, 520 176, 808 172" opacity=".5"/>
+      <circle class="fill" cx="20" cy="168" r="4"/>
+      <g class="stroke faint" opacity=".55">
+        <line x1="752" y1="30" x2="752" y2="40"/>
+        <line x1="752" y1="108" x2="752" y2="118"/>
+        <line x1="708" y1="74" x2="718" y2="74"/>
+        <line x1="786" y1="74" x2="796" y2="74"/>
+      </g>
+    </svg>
+
+    <div class="cta reveal">
+      <a href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<!-- THE ARC -->
+<section id="arc">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">The Arc</span>
+      <h2>A decade of starting <em>from zero.</em></h2>
+    </div>
+    <div class="path reveal">
+      <div class="stage"><div class="dot"></div><div class="co">Airbus</div><div class="yr">2016</div><div class="note">A first taste, in aerospace</div></div>
+      <div class="stage"><div class="dot"></div><div class="co">Bayer</div><div class="yr">2017</div><div class="note">A €250K global event</div></div>
+      <div class="stage"><div class="dot"></div><div class="co">Infento</div><div class="yr">2017&ndash;19</div><div class="note">€0 &rarr; €2M ARR</div></div>
+      <div class="stage"><div class="dot"></div><div class="co">VU</div><div class="yr">2021&ndash;25</div><div class="note">A brand for Olympians</div></div>
+      <div class="stage"><div class="dot"></div><div class="co">Bueno</div><div class="yr">2022&ndash;</div><div class="note">€300K ARR, 28 countries</div></div>
+    </div>
+    <div class="path-ends reveal"><span>zero</span><span>one</span></div>
+  </div>
+</section>
+
+<!-- A NOTE -->
+<section id="note">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="label">A Note</span></div>
+    <div class="letter reveal">
+      <p>Over the last decade of working across Europe, I realised something simple about myself: I come alive in the <em>"0 to 1"</em> &mdash; the messy, uncertain work of building a company from the ground up, turning something out of nothing.</p>
+      <p>I built a children's STEM brand from <em>€0 to €2M</em> in Amsterdam, helped take a Swiss sportswear label to the Olympics, and grew a fintech from zero to <em>€300K ARR across 28 countries</em>. Different products, same thrill: the early, formless beginning.</p>
+      <p>Somewhere along the way, I found a second love &mdash; sharing what I'd learned. Mentoring founders across five continents, and watching a graduate begin to <em>believe in themselves</em>, turned out to be just as fulfilling as any launch.</p>
+      <p>So if you build, teach, or simply make things from nothing &mdash; I'd love to meet you.</p>
+      <p class="sign">&mdash; Pratik</p>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section id="pillars">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">In Practice</span>
+      <h2>Four ways I show up.</h2>
+    </div>
+
+    <div class="pillar reveal">
+      <div class="pillar-art">
+        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <line class="stroke faint" x1="30" y1="190" x2="280" y2="190"/>
+          <path class="stroke" d="M40 188 C 110 184, 150 150, 180 110 S 232 40, 262 30"/>
+          <circle class="stroke" cx="262" cy="30" r="16"/>
+          <line class="stroke" x1="262" y1="14" x2="262" y2="6"/>
+          <line class="stroke" x1="262" y1="54" x2="262" y2="46"/>
+          <line class="stroke" x1="246" y1="30" x2="238" y2="30"/>
+          <line class="stroke" x1="286" y1="30" x2="278" y2="30"/>
+          <circle class="fill" cx="40" cy="188" r="3.5"/>
+          <g class="stroke faint" opacity=".5">
+            <line x1="70" y1="190" x2="70" y2="176"/>
+            <line x1="120" y1="190" x2="120" y2="166"/>
+            <line x1="170" y1="190" x2="170" y2="150"/>
+            <line x1="220" y1="190" x2="220" y2="128"/>
+          </g>
+        </svg>
+      </div>
+      <div class="pillar-body">
+        <span class="label">01 &mdash; Build</span>
+        <h3>From <em>zero</em> to multi-million ARR.</h3>
+        <p>I build growth engines from scratch &mdash; <strong>Infento from €0 to €2M ARR</strong>, <strong>Bueno to €300K+ ARR</strong> across 28 countries at 24&times; LTV/CAC, and <strong>VU to €275K+</strong> with 4.4&times; peak-season growth.</p>
+        <div class="meta">$848K #1 STEM Kickstarter, 2018 &middot; Red Dot &middot; German Design Award &middot; Parent's Choice Gold</div>
+      </div>
+    </div>
+
+    <div class="pillar reveal">
+      <div class="pillar-art">
+        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle class="fill" cx="150" cy="110" r="6"/>
+          <circle class="stroke" cx="150" cy="110" r="22"/>
+          <g class="stroke">
+            <line x1="168" y1="98" x2="232" y2="58"/>
+            <line x1="172" y1="110" x2="244" y2="110"/>
+            <line x1="168" y1="122" x2="232" y2="162"/>
+            <line x1="132" y1="98" x2="68" y2="58"/>
+            <line x1="128" y1="110" x2="56" y2="110"/>
+            <line x1="132" y1="122" x2="68" y2="162"/>
+          </g>
+          <g class="stroke faint">
+            <circle cx="238" cy="54" r="7"/>
+            <circle cx="252" cy="110" r="7"/>
+            <circle cx="238" cy="166" r="7"/>
+            <circle cx="62" cy="54" r="7"/>
+            <circle cx="48" cy="110" r="7"/>
+            <circle cx="62" cy="166" r="7"/>
+          </g>
+        </svg>
+      </div>
+      <div class="pillar-body">
+        <span class="label">02 &mdash; Mentor</span>
+        <h3>Sharing it <em>forward.</em></h3>
+        <p>Mentor at <strong>Techstars, EBRD, Seedstars &amp; Founder Institute</strong> &mdash; over <strong>100 startups</strong> guided on go-to-market and growth, at a 9.7/10 average satisfaction rating.</p>
+        <div class="meta">Visiting professor, Tetr &amp; Masters' Union &middot; 500+ graduates coached &middot; Harvard, LSE, HEC, IMD, Oxford, Yale</div>
+      </div>
+    </div>
+
+    <div class="pillar reveal">
+      <div class="pillar-art">
+        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle class="fill" cx="96" cy="110" r="6"/>
+          <path class="stroke" d="M120 80 A 40 40 0 0 1 120 140"/>
+          <path class="stroke faint" d="M150 60 A 70 70 0 0 1 150 160"/>
+          <path class="stroke faint" d="M180 42 A 100 100 0 0 1 180 178" opacity=".6"/>
+          <path class="stroke faint" d="M210 26 A 130 130 0 0 1 210 194" opacity=".35"/>
+          <line class="stroke" x1="60" y1="110" x2="84" y2="110"/>
+        </svg>
+      </div>
+      <div class="pillar-body">
+        <span class="label">03 &mdash; Speak</span>
+        <h3>On the <em>stage.</em></h3>
+        <p>I speak on growth, scaling and brand &mdash; <strong>3 TEDx talks</strong> and <strong>50+ speeches across 14+ countries</strong>, from TEDx to the Asia Pacific Digital Marketing Conclave.</p>
+        <div class="meta">20+ international keynotes &middot; Europe, Asia, Middle East &amp; the US</div>
+      </div>
+    </div>
+
+    <div class="pillar reveal">
+      <div class="pillar-art">
+        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <line class="stroke faint" x1="60" y1="180" x2="240" y2="180"/>
+          <path class="stroke" d="M150 180 C 150 140, 150 120, 150 96"/>
+          <path class="stroke" d="M150 120 C 126 118, 110 102, 108 78 C 134 80, 150 96, 150 120 Z"/>
+          <path class="stroke" d="M150 110 C 174 106, 192 88, 196 64 C 168 66, 152 86, 150 110 Z"/>
+          <circle class="fill" cx="150" cy="186" r="3.5"/>
+          <g class="stroke faint" opacity=".5">
+            <circle cx="92" cy="150" r="5"/>
+            <circle cx="208" cy="150" r="5"/>
+            <circle cx="120" cy="120" r="4"/>
+            <circle cx="182" cy="120" r="4"/>
+          </g>
+        </svg>
+      </div>
+      <div class="pillar-body">
+        <span class="label">04 &mdash; Back</span>
+        <h3>Early <em>conviction.</em></h3>
+        <p>I put my own money behind builders I believe in &mdash; an early backer of <strong>Perplexity, Nothing, Atom Bank</strong> and <strong>Plum</strong> across consumer tech and fintech.</p>
+        <div class="meta">Via Crowdcube &amp; Republic &middot; AI, hardware &amp; digital banking</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Selected Work</span>
+      <h2>Where I've built.</h2>
+    </div>
+    <div class="work">
+      <div class="job reveal">
+        <div><div class="co">Bueno</div><div class="role">Growth Lead &middot; Founding Team</div><div class="yr">2022 &ndash; Present</div></div>
+        <p>Built marketing single-handedly from zero to 2,000+ paying subscribers and €300K+ ARR across 28 countries. Drove 1M+ organic visits, outranking Revolut and Wise on target keywords.</p>
+      </div>
+      <div class="job reveal">
+        <div><div class="co">VU</div><div class="role">Head of Marketing &middot; Founding Team</div><div class="yr">2021 &ndash; 2025</div></div>
+        <p>The #1 Swiss brand for professional skiers and snowboarders, used by Olympians. Drove €275K+ in revenue and 4.4&times; peak-season growth; built the full digital presence end-to-end.</p>
+      </div>
+      <div class="job reveal">
+        <div><div class="co">Infento</div><div class="role">Online Marketing &middot; Founding Team</div><div class="yr">2017 &ndash; 2019</div></div>
+        <p>Scaled the DTC web shop from €0 to €2M ARR and led the $848K Kickstarter — the #1 most-funded STEM project globally in 2018. Three international design awards along the way.</p>
+      </div>
+      <div class="job reveal">
+        <div><div class="co">Growack &middot; Bayer &middot; Airbus</div><div class="role">Marketing &amp; Project Lead</div><div class="yr">2016 &ndash; 2020</div></div>
+        <p>B2B growth marketing across Western Europe; a €250K global executive event for Bayer across 50+ countries; and EU-wide branding for Airbus, lifting organic reach 127% in two months.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAY (the RPG) -->
+<section id="play">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Bonus &middot; Level Four</span>
+      <h2>Or play my career as an <em>RPG.</em></h2>
+    </div>
+    <div class="reveal">
+      <div id="game-frame"><canvas id="game" width="960" height="600"></canvas></div>
+      <p class="game-hint">
+        <b>Move</b> Arrows / WASD &nbsp;&middot;&nbsp; <b>Action</b> E or Enter &nbsp;&middot;&nbsp; <b>Skills</b> 1&ndash;6 or click &nbsp;&middot;&nbsp; <b>Character</b> C<br />
+        <span class="sub">Click the game to start. Defeat each milestone with my real skills, and reach Level: Founder.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="wrap">
+    <div class="dots reveal"><span></span><span></span><span></span><span></span><span></span></div>
+    <span class="label reveal">From the Netherlands, for builders everywhere</span>
+    <h2 class="reveal">Let's make something<br />from <em>nothing.</em></h2>
+    <p class="reveal">I'm always happy to meet new like-minded folks — founders, operators, and the quietly curious.</p>
+    <div class="cta reveal"><a href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="label">Pratik Renuse &middot; <span id="yr"></span></span>
+    <div class="edu">M.Sc. International Business, S.P. Jain &amp; IÉSEG &middot; B.Tech Computer Science, Vishwakarma Institute of Technology</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:.14 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+
+<!-- ===================== THE GAME ===================== -->
+<script>
+"use strict";
+(function(){
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+const LW = 960, LH = 600;
+const DPR = Math.min(2, window.devicePixelRatio || 1);
+canvas.width = LW*DPR; canvas.height = LH*DPR;
+ctx.scale(DPR,DPR);
+ctx.imageSmoothingEnabled = true;
+ctx.textBaseline = 'top';
+
+const COL = {
+  bg:'#f1ece2', field:'#ece5d7', field2:'#e7dfce', paper:'#f7f3ea', paperHi:'#ece3d2',
+  ink:'#1b1813', soft:'#5a544a', faint:'#9a9384', line:'#ddd5c5',
+  terra:'#b06a45', sage:'#71815a', slate:'#6f7c8a', shadow:'rgba(40,30,20,.12)'
+};
+
+// ----- input (click-to-focus so the page scrolls normally otherwise) -----
+const keys = {};
+const pressed = {};
+let mouse = {x:0,y:0,clicked:false};
+let uiButtons = [];
+let gameActive = false;
+function setActive(v){ if(gameActive!==v){ gameActive=v; for(const k in keys) keys[k]=false; } }
+
+document.addEventListener('mousedown', e=>{ setActive(e.target===canvas); });
+window.addEventListener('keydown', e=>{
+  if(!gameActive) return;
+  const k = e.key.toLowerCase();
+  if(!keys[k]) pressed[k]=true;
+  keys[k]=true;
+  if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' '].includes(e.key)) e.preventDefault();
+});
+window.addEventListener('keyup', e=>{ if(!gameActive) return; keys[e.key.toLowerCase()]=false; });
+
+function rectOf(){ return canvas.getBoundingClientRect(); }
+function toCanvas(cx,cy){ const r=rectOf(); return { x:(cx-r.left)*(LW/r.width), y:(cy-r.top)*(LH/r.height) }; }
+canvas.addEventListener('mousemove', e=>{ const p=toCanvas(e.clientX,e.clientY); mouse.x=p.x; mouse.y=p.y; });
+canvas.addEventListener('click', e=>{ setActive(true); const p=toCanvas(e.clientX,e.clientY); mouse.x=p.x; mouse.y=p.y; mouse.clicked=true; });
+canvas.addEventListener('touchstart', e=>{ setActive(true); if(e.touches[0]){ const p=toCanvas(e.touches[0].clientX,e.touches[0].clientY); mouse.x=p.x; mouse.y=p.y; mouse.clicked=true; } }, {passive:true});
+
+function key(k){ return !!pressed[k]; }
+function anyConfirm(){ return key('enter')||key('e')||key(' ')||mouse.clicked; }
+function consume(){ for(const k in pressed) pressed[k]=false; mouse.clicked=false; }
+function hitButton(){ if(!mouse.clicked) return null; for(const b of uiButtons){ if(mouse.x>=b.x&&mouse.x<=b.x+b.w&&mouse.y>=b.y&&mouse.y<=b.y+b.h) return b.id; } return null; }
+function btn(x,y,w,h,id){ uiButtons.push({x,y,w,h,id}); }
+
+// ----- draw helpers -----
+function setFont(kind,size){
+  if(kind==='disp') ctx.font = size+'px "Cormorant Garamond", Georgia, serif';
+  else if(kind==='label') ctx.font = size+'px "Montserrat", sans-serif';
+  else ctx.font = size+'px "EB Garamond", Georgia, serif';
+}
+function text(str,x,y,size,c,align,kind){
+  setFont(kind||'body',size);
+  ctx.fillStyle = c||COL.ink; ctx.textAlign = align||'left';
+  if(kind==='label'){ try{ctx.letterSpacing='2px';}catch(e){} str=String(str).toUpperCase(); }
+  ctx.fillText(str,x,y);
+  if(kind==='label'){ try{ctx.letterSpacing='0px';}catch(e){} }
+  ctx.textAlign='left';
+}
+function wrap(str,size,maxW,kind){
+  setFont(kind||'body',size);
+  const words=String(str).split(' '); const lines=[]; let cur='';
+  for(const w of words){ const tt=cur?cur+' '+w:w; if(ctx.measureText(tt).width>maxW&&cur){lines.push(cur);cur=w;} else cur=tt; }
+  if(cur) lines.push(cur);
+  return lines;
+}
+function px(x,y,w,h,c){ ctx.fillStyle=c; ctx.fillRect(x|0,y|0,w|0,h|0); }
+function roundPath(x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+function panel(x,y,w,h,fill){ px(x,y,w,h, fill||COL.paper); ctx.strokeStyle=COL.line; ctx.lineWidth=1; ctx.strokeRect((x|0)+.5,(y|0)+.5,(w|0)-1,(h|0)-1); }
+function rule(x,y,w,c){ px(x,y,w,1, c||COL.line); }
+function bar(x,y,w,h,frac,c){ px(x,y,w,h,'#e2dccd'); px(x,y,Math.max(0,w*Math.max(0,Math.min(1,frac))),h,c); ctx.strokeStyle=COL.line; ctx.lineWidth=1; ctx.strokeRect(x+.5,y+.5,w-1,h-1); }
+function button(x,y,w,h,label,id,opts){
+  opts=opts||{};
+  const hov = mouse.x>=x&&mouse.x<=x+w&&mouse.y>=y&&mouse.y<=y+h;
+  px(x,y,w,h, opts.disabled? '#ebe4d6' : (hov? COL.paperHi : COL.paper));
+  ctx.strokeStyle = opts.disabled? '#cfc7b6' : COL.ink; ctx.lineWidth=1;
+  ctx.strokeRect(x+.5,y+.5,w-1,h-1);
+  text(label, x+w/2, y+h/2-(opts.size||10)/2-1, opts.size||10, opts.disabled?'#b6ad9b':COL.ink, 'center','label');
+  if(!opts.disabled && id) btn(x,y,w,h,id);
+}
+function cta(x,y,w,h,label,id){
+  const hov = mouse.x>=x&&mouse.x<=x+w&&mouse.y>=y&&mouse.y<=y+h;
+  ctx.fillStyle = hov? '#2c2820' : COL.ink; roundPath(x,y,w,h,h/2); ctx.fill();
+  text(label, x+w/2, y+h/2-6, 10, COL.bg, 'center','label');
+  btn(x,y,w,h,id);
+}
+
+// ----- data (all real) -----
+const SKILLS = [
+  {name:'Performance Mktg', dmg:[9,14],  cost:0, kind:'atk', unlock:0, fx:'Meta + Google barrage'},
+  {name:'SEO & Content',    dmg:[7,11],  cost:2, kind:'atk', unlock:0, fx:'35% chance to outrank (x2)'},
+  {name:'Brand Building',   dmg:[0,0],   cost:2, kind:'buff',unlock:1, fx:'Next attack +60%'},
+  {name:'Lifecycle & CRM',  dmg:[10,16], cost:4, kind:'heal',unlock:2, fx:'Restore HP'},
+  {name:'Paid Media Blitz', dmg:[16,24], cost:6, kind:'atk', unlock:3, fx:'Heavy 6-figure budget'},
+  {name:'Growth Engine',    dmg:[22,32], cost:9, kind:'atk', unlock:4, fx:'Full-funnel ultimate'}
+];
+const ZONES = [
+  { id:'airbus', kind:'battle', name:'Airbus', x:150, y:430, year:'2016', boss:'Brand Obscurity', hp:30, atk:[3,6],
+    intro:['Munich, 2016.','A Fortune-500 aerospace giant. The EU project "NEOShield" is invisible online.','Make the world notice.'],
+    win:['You set up SEO, seized rank #1 on Google, and lifted organic reach +127% in two months.'],
+    ach:['+127% organic reach','#1 Google ranking, NEOShield'] },
+  { id:'bayer', kind:'battle', name:'Bayer', x:330, y:340, year:'2017', boss:'The 250K Gauntlet', hp:38, atk:[4,7],
+    intro:['Berlin, 2017.','Bayer\'s premier global executive event, "GIM". 50+ countries. A EUR250K budget.','Reporting to the Director. No room for error.'],
+    win:['You commanded the EUR250K budget and delivered Bayer\'s flagship event flawlessly.'],
+    ach:['EUR250K event commander','50+ countries orchestrated'] },
+  { id:'infento', kind:'battle', name:'Infento', x:210, y:215, year:'2017-19', boss:'EUR 0 in Revenue', hp:54, atk:[5,8],
+    intro:['Amsterdam.','A children\'s STEM hardware startup. A web shop at exactly zero.','The classic boss: the blank slate.'],
+    win:['From EUR0 to EUR2M ARR. You led the $848K Kickstarter — the #1 most-funded STEM project on Earth, 2018.','Three design awards followed.'],
+    ach:['EUR0 -> EUR2M ARR','#1 STEM Kickstarter ($848K, 2018)','Red Dot · German Design · Parent\'s Choice Gold'] },
+  { id:'growack', kind:'battle', name:'Growack', x:455, y:170, year:'2020', boss:'The B2B Funnel', hp:34, atk:[4,6],
+    intro:['Amsterdam, 2020.','A B2B inbound & growth agency serving clients across Western Europe.','Engineer demand at scale.'],
+    win:['You ran inbound & growth for B2B clients EU-wide. HubSpot Partner; Clutch 2021 Top B2B in Western Europe.'],
+    ach:['HubSpot Partner','Clutch 2021 Top B2B, W. Europe'] },
+  { id:'vu', kind:'battle', name:'VU', x:640, y:235, year:'2021-25', boss:'Peak-Season Surge', hp:60, atk:[5,9],
+    intro:['Geneva.','The #1 Swiss brand for pro skiers & snowboarders. Used by Olympians.','Tame the seasonal spike.'],
+    win:['You drove EUR275K+ revenue and 4.4x peak-season growth, building VU\'s entire digital presence end-to-end.'],
+    ach:['EUR275K+ revenue','4.4x peak-season growth','Brand used by Olympians'] },
+  { id:'bueno', kind:'battle', name:'Bueno', x:790, y:400, year:'2022-', boss:'28 Borders', hp:72, atk:[6,10],
+    intro:['Spain -> Europe.','A UK-gov-award-winning fintech for foreign property owners. EUR2.5M raised. Founding team.','Cross every border.'],
+    win:['Single-handed: EUR0 -> EUR300K+ ARR across 28 countries at 24x LTV/CAC.','1M+ organic visits — outranking Revolut and Wise.'],
+    ach:['EUR300K+ ARR · 28 countries','24x LTV/CAC (700/30)','Outranked Revolut & Wise'] },
+  { id:'guild', kind:'guild', name:'Mentor Guild', x:540, y:470, year:'2022-',
+    intro:['The Mentor Guild.','"You\'ve built. Now lift others." — Techstars, EBRD, Seedstars & Founder Institute.'],
+    win:['100+ startups mentored across 5 continents at a 9.7/10 rating. Visiting professor: Tetr & Masters\' Union; 500+ grads from Harvard, LSE, HEC, IMD, Oxford & Yale.'],
+    ach:['Mentor of 100+ startups (9.7/10)','Visiting professor · 500+ grads coached'], boon:'maxhp' },
+  { id:'stage', kind:'stage', name:"Speaker's Stage", x:710, y:140, year:'2016-',
+    intro:['The Speaker\'s Stage.','Lights up. The mic is warm.'],
+    win:['3 TEDx talks. 50+ speeches across 14+ countries. 20+ international keynotes — TEDx, APAC Digital Marketing Conclave, Russian Stream.'],
+    ach:['3 TEDx talks','50+ speeches · 14+ countries'], boon:'energy' },
+  { id:'vault', kind:'vault', name:"Investor's Vault", x:860, y:280, year:'2022-',
+    intro:['The Investor\'s Vault.','Four artifacts hum behind the glass.'],
+    win:['An early backer of builders you believe in — Perplexity, Nothing, Atom Bank and Plum.'],
+    ach:['Angel: Perplexity · Nothing','Angel: Atom Bank · Plum'], loot:['Perplexity','Nothing','Atom Bank','Plum'] }
+];
+const BATTLE_IDS = ZONES.filter(z=>z.kind==='battle').map(z=>z.id);
+
+// ----- state -----
+const G = { state:'title', hero:{x:480,y:520,dir:'up',fw:0}, cleared:{}, achievements:[], loot:[], hp:45, maxhp:45, energy:12, maxen:12, boonHp:0, boonEn:0, steps:0 };
+function clears(){ return BATTLE_IDS.filter(id=>G.cleared[id]).length; }
+function recomputeStats(){ const c=clears(); G.maxhp=45+c*12+G.boonHp; G.maxen=12+c*2+G.boonEn; G.hp=G.maxhp; G.energy=G.maxen; }
+function unlockedSkills(){ const c=clears(); return SKILLS.filter(s=>s.unlock<=c); }
+function level(){ return 1+clears(); }
+function allBattlesDone(){ return BATTLE_IDS.every(id=>G.cleared[id]); }
+function allDone(){ return ZONES.every(z=>G.cleared[z.id]); }
+
+let dialog=null;
+function openDialog(title,lines,onClose){ dialog={title,lines,i:0,onClose:onClose||null}; G.state='dialog'; }
+let B=null;
+function startBattle(zone){ B={zone,hp:zone.hp,maxhp:zone.hp,log:[],phase:'intro',introLine:0,buff:0,anim:0,vline:0,flash:0,shake:0}; G.state='battle'; }
+
+// ----- title -----
+let t=0;
+function updateTitle(){ if(anyConfirm()||hitButton()==='start'){ G.state='overworld'; } }
+function drawTitle(){
+  px(0,0,LW,LH,COL.bg);
+  for(let i=0;i<40;i++){ const x=(i*153)%LW,y=(i*97)%LH; px(x,y,2,2,'#e7dfce'); }
+  text('Pratik’s Quest', LW/2, 138, 64, COL.ink, 'center','disp');
+  text('Zero to One', LW/2, 214, 30, COL.soft, 'center','disp');
+  rule(LW/2-60, 252, 120, COL.line);
+  drawHeroSprite(LW/2-16, 280, 'down', 3);
+  ['A growth marketer who builds from nothing.','Explore his career. Overcome the milestones.','Win with the skills that are really his.']
+    .forEach((l,i)=> text(l, LW/2, 372+i*22, 14, COL.soft, 'center','body'));
+  if((Math.floor(t/30)%2)===0) text('Press Enter to begin', LW/2, 452, 11, COL.faint, 'center','label');
+  cta(LW/2-90, 500, 180, 42, 'Start', 'start');
+  text('A real portfolio · Pratik Renuse', LW/2, 566, 9, COL.faint, 'center','label');
+}
+
+// ----- overworld -----
+function updateOverworld(){
+  const h=G.hero, sp=3;
+  let mx=0,my=0;
+  if(keys['arrowleft']||keys['a']) mx-=1;
+  if(keys['arrowright']||keys['d']) mx+=1;
+  if(keys['arrowup']||keys['w']) my-=1;
+  if(keys['arrowdown']||keys['s']) my+=1;
+  if(mx||my){ if(Math.abs(mx)>Math.abs(my)) h.dir=mx<0?'left':'right'; else h.dir=my<0?'up':'down';
+    const len=Math.hypot(mx,my)||1; h.x+=mx/len*sp; h.y+=my/len*sp; h.fw=(h.fw+0.18)%4; G.steps++; } else h.fw=0;
+  h.x=Math.max(24,Math.min(LW-24,h.x)); h.y=Math.max(74,Math.min(548,h.y));
+  if(key('c')){ G.state='charsheet'; return; }
+  const near=nearestZone();
+  if(near && (key('e')||key('enter'))) enterZone(near);
+  if(hitButton()==='char') G.state='charsheet';
+}
+function nearestZone(){ const h=G.hero; let best=null,bd=46; for(const z of ZONES){ const d=Math.hypot(z.x-h.x,z.y-(h.y-6)); if(d<bd){bd=d;best=z;} } return best; }
+function enterZone(z){
+  if(z.kind==='battle'){ if(G.cleared[z.id]) openDialog(z.name,['Cleared. '+(z.win[0]||'')]); else startBattle(z); }
+  else { if(G.cleared[z.id]) openDialog(z.name,['Already claimed. '+(z.win[0]||'')]); else openDialog(z.name, z.intro.concat(z.win), ()=>claimZone(z)); }
+}
+function claimZone(z){
+  G.cleared[z.id]=true;
+  (z.ach||[]).forEach(a=>{ if(!G.achievements.includes(a)) G.achievements.push(a); });
+  (z.loot||[]).forEach(l=>{ if(!G.loot.includes(l)) G.loot.push(l); });
+  if(z.boon==='maxhp') G.boonHp+=14; if(z.boon==='energy') G.boonEn+=4;
+  recomputeStats(); checkWin();
+}
+function checkWin(){ if(allBattlesDone() && !G._wonShown){ G._wonShown=true; openDialog('Victory', ['Every milestone bested. From zero, to one.','You reach the final class: Founder.'], ()=>{ G.state='win'; }); } }
+function drawOverworld(){
+  px(0,0,LW,LH,COL.field);
+  for(let y=52;y<548;y+=24) for(let x=0;x<LW;x+=24) if(((x/24)+(y/24))%2===0) px(x,y,24,24,COL.field2);
+  ctx.strokeStyle=COL.faint; ctx.lineWidth=2; ctx.setLineDash([2,7]); ctx.lineCap='round'; ctx.beginPath();
+  ['airbus','bayer','infento','growack','vu','bueno'].forEach((id,i)=>{ const z=ZONES.find(z=>z.id===id); if(i===0)ctx.moveTo(z.x,z.y); else ctx.lineTo(z.x,z.y); });
+  ctx.stroke(); ctx.setLineDash([]);
+  for(const z of ZONES) drawZone(z);
+  drawHeroSprite(G.hero.x-16, G.hero.y-26, G.hero.dir, 2, G.hero.fw);
+  const near=nearestZone();
+  if(near){ const label = G.cleared[near.id] ? '✓  '+near.name : 'Press E · '+near.name;
+    setFont('label',9); const w=Math.max(120, ctx.measureText(label.toUpperCase()).width+28);
+    panel(G.hero.x-w/2, G.hero.y-54, w, 22, COL.paper);
+    text(label, G.hero.x, G.hero.y-47, 9, G.cleared[near.id]?COL.sage:COL.ink, 'center','label'); }
+  drawHUD();
+  panel(0,552,LW,48,COL.paper);
+  const nextId=['airbus','bayer','infento','growack','vu','bueno'].find(id=>!G.cleared[id]);
+  let q;
+  if(nextId){ const z=ZONES.find(z=>z.id===nextId); q='Quest — reach '+z.name+' ('+z.year+') and overcome “'+z.boss+'.”'; }
+  else q='Quest — visit the Guild, Stage & Vault, then claim your title.';
+  text(q, 16, 564, 15, COL.ink, 'left','body');
+  text('Cleared '+clears()+'/6 · '+G.achievements.length+' achievements · press C for character', 16, 584, 8, COL.faint,'left','label');
+}
+function drawZone(z){
+  const cleared=!!G.cleared[z.id];
+  px(z.x-20, z.y+15, 40, 5, COL.shadow);
+  ctx.fillStyle=COL.paper; ctx.fillRect(z.x-17,z.y-6,34,22);
+  ctx.strokeStyle=COL.ink; ctx.lineWidth=1.4; ctx.strokeRect(z.x-17+.5,z.y-6+.5,34,22);
+  ctx.beginPath(); ctx.moveTo(z.x-21,z.y-6); ctx.lineTo(z.x,z.y-21); ctx.lineTo(z.x+21,z.y-6); ctx.stroke();
+  ctx.fillStyle = cleared?COL.sage:COL.ink;
+  if(z.kind==='guild'){ ctx.beginPath(); ctx.arc(z.x,z.y+5,4,0,7); ctx.fill(); }
+  else if(z.kind==='stage'){ ctx.beginPath(); ctx.moveTo(z.x,z.y+1);ctx.lineTo(z.x+5,z.y+10);ctx.lineTo(z.x-5,z.y+10);ctx.closePath(); ctx.fill(); }
+  else if(z.kind==='vault'){ ctx.beginPath(); ctx.moveTo(z.x,z.y);ctx.lineTo(z.x+6,z.y+6);ctx.lineTo(z.x,z.y+12);ctx.lineTo(z.x-6,z.y+6);ctx.closePath(); ctx.fill(); }
+  else { ctx.fillRect(z.x-4,z.y+2,8,12); }
+  if(cleared && z.kind==='battle') text('✓', z.x, z.y+1, 11, COL.sage, 'center','body');
+  text(z.name, z.x, z.y+23, 9, cleared?COL.sage:COL.soft, 'center','label');
+}
+function drawHUD(){
+  panel(0,0,LW,52,COL.paper);
+  text('Level '+level(), 16, 9, 24, COL.ink, 'left','disp');
+  text('Founder Path', 16, 36, 8, COL.faint,'left','label');
+  text('HP', 180, 11, 8, COL.faint,'left','label'); bar(206,11,150,11, G.hp/G.maxhp, COL.terra); text(G.hp+'/'+G.maxhp, 206, 28, 8, COL.soft,'left','label');
+  text('EN', 380, 11, 8, COL.faint,'left','label'); bar(406,11,120,11, G.energy/G.maxen, COL.slate); text(G.energy+'/'+G.maxen, 406, 28, 8, COL.soft,'left','label');
+  text('ZONES', 560, 11, 8, COL.faint,'left','label'); bar(620,11,150,11, clears()/6, COL.sage); text(clears()+' / 6', 620, 28, 8, COL.soft,'left','label');
+  button(LW-104,9,92,34,'Char','char',{size:9});
+}
+
+// ----- dialog -----
+function updateDialog(){ if(anyConfirm()){ mouse.clicked=false; dialog.i++; if(dialog.i>=dialog.lines.length){ const cb=dialog.onClose; dialog=null; if(G.state==='dialog') G.state='overworld'; if(cb) cb(); } } }
+function drawDialog(){
+  drawOverworld();
+  px(0,0,LW,LH,'rgba(27,24,19,.28)');
+  const bx=90,by=378,bw=LW-180,bh=158;
+  panel(bx,by,bw,bh,COL.paper);
+  text(dialog.title, bx+22, by+18, 26, COL.ink, 'left','disp');
+  rule(bx+22, by+52, bw-44, COL.line);
+  wrap(dialog.lines[dialog.i]||'', 17, bw-48,'body').forEach((l,i)=> text(l, bx+22, by+66+i*24, 17, COL.soft,'left','body'));
+  if((Math.floor(t/24)%2)===0) text('▶', bx+bw-30, by+bh-28, 12, COL.ink,'left','body');
+  text((dialog.i+1)+' / '+dialog.lines.length, bx+22, by+bh-24, 8, COL.faint,'left','label');
+}
+
+// ----- battle -----
+function rnd(a,b){ return Math.floor(a+Math.random()*(b-a+1)); }
+function bLog(s){ B.log.push(s); if(B.log.length>4) B.log.shift(); }
+function updateBattle(){
+  if(B.phase==='intro'){ if(anyConfirm()){ mouse.clicked=false; B.introLine++; if(B.introLine>=B.zone.intro.length){ B.phase='menu'; bLog(B.zone.boss+' blocks your path.'); } } return; }
+  if(B.phase==='menu'){ const sk=unlockedSkills(); let choose=-1;
+    for(let i=0;i<sk.length;i++) if(key(String(i+1))) choose=i;
+    const clk=hitButton(); if(typeof clk==='string'&&clk.startsWith('sk')) choose=parseInt(clk.slice(2),10);
+    if(choose>=0&&choose<sk.length) doSkill(sk[choose]); return; }
+  if(B.phase==='enemy'){ B.anim--; if(B.anim<=0) enemyTurn(); return; }
+  if(B.phase==='resolve'){ B.anim--; if(B.anim<=0){ if(B.hp<=0){ B.phase='victory'; B.vline=0; B.log=[]; } else if(G.hp<=0){ B.phase='defeat'; } else { B.phase='enemy'; B.anim=26; } } return; }
+  if(B.phase==='victory'){ if(anyConfirm()){ mouse.clicked=false; B.vline++; if(B.vline>=B.zone.win.length) finishBattle(); } return; }
+  if(B.phase==='defeat'){ if(anyConfirm()){ mouse.clicked=false; G.hp=G.maxhp; G.energy=G.maxen; B=null; G.state='overworld'; } return; }
+}
+function doSkill(s){
+  if(G.energy<s.cost){ bLog('Not enough energy.'); return; }
+  G.energy-=s.cost;
+  if(s.kind==='buff'){ B.buff=0.6; bLog('Brand Building — next hit +60%.'); B.phase='resolve'; B.anim=16; return; }
+  if(s.kind==='heal'){ const h=rnd(s.dmg[0],s.dmg[1]); G.hp=Math.min(G.maxhp,G.hp+h); bLog('Lifecycle & CRM restores '+h+' HP.'); B.phase='resolve'; B.anim=16; return; }
+  let dmg=rnd(s.dmg[0],s.dmg[1]); dmg=Math.round(dmg*(1+clears()*0.12)); let note='';
+  if(s.name==='SEO & Content'&&Math.random()<0.35){ dmg*=2; note=' — outranked! x2'; }
+  if(B.buff>0){ dmg=Math.round(dmg*(1+B.buff)); note+=' (branded)'; B.buff=0; }
+  B.hp=Math.max(0,B.hp-dmg); bLog(s.name+' hits for '+dmg+'.'+note);
+  B.flash=8; B.shake=6; B.phase='resolve'; B.anim=18;
+}
+function enemyTurn(){
+  let dmg=rnd(B.zone.atk[0],B.zone.atk[1]); let note='';
+  if(Math.random()<0.18){ dmg=Math.round(dmg*1.8); note=' (a hard setback)'; }
+  G.hp=Math.max(0,G.hp-dmg); bLog(B.zone.boss+' strikes for '+dmg+'.'+note);
+  G.energy=Math.min(G.maxen,G.energy+4); B.phase='resolve'; B.anim=16;
+}
+function finishBattle(){ const z=B.zone; G.cleared[z.id]=true; (z.ach||[]).forEach(a=>{ if(!G.achievements.includes(a)) G.achievements.push(a); }); recomputeStats(); B=null; G.state='overworld'; checkWin(); }
+function drawBattle(){
+  px(0,0,LW,LH,COL.field);
+  for(let i=0;i<30;i++){ const x=(i*127)%LW,y=(i*71)%LH; px(x,y,2,2,COL.field2); }
+  let sx=0; if(B.shake>0){ sx=(Math.random()*2-1)*B.shake; B.shake-=1; }
+  ctx.save(); ctx.translate(sx,0);
+  const ex=LW-300, ey=110;
+  panel(ex-30, ey-26, 300, 88, COL.paper);
+  text(B.zone.boss, ex-12, ey-16, 22, COL.terra, 'left','disp');
+  text('Milestone · '+B.zone.name+' '+B.zone.year, ex-12, ey+12, 8, COL.faint,'left','label');
+  bar(ex-12, ey+28, 250, 11, B.hp/B.maxhp, COL.terra); text('HP '+B.hp+'/'+B.maxhp, ex-12, ey+44, 8, COL.soft,'left','label');
+  const flashing=B.flash>0; if(B.flash>0)B.flash-=1;
+  drawBossSprite(ex+130, ey+135, B.zone.id, flashing);
+  drawHeroSprite(140, 300, 'right', 3, (Math.floor(t/8)%4));
+  panel(70, 250, 230, 70, COL.paper);
+  text('Pratik · Lv '+level(), 84, 258, 20, COL.ink,'left','disp');
+  text('HP', 84, 286, 8, COL.faint,'left','label'); bar(110,285,120,9,G.hp/G.maxhp,COL.terra);
+  text('EN', 84, 300, 8, COL.faint,'left','label'); bar(110,299,120,9,G.energy/G.maxen,COL.slate);
+  ctx.restore();
+  panel(24, 372, LW-48, 96, COL.paper);
+  if(B.phase==='intro'){ wrap(B.zone.intro[B.introLine]||'',17,LW-96,'body').forEach((l,i)=> text(l,44,388+i*24,17,COL.ink,'left','body')); if((Math.floor(t/24)%2)===0) text('▶',LW-50,438,12,COL.ink,'left','body'); return; }
+  if(B.phase==='victory'){ text('Victory', 44, 384, 22, COL.ink,'left','disp'); wrap(B.zone.win[B.vline]||'',15,LW-96,'body').forEach((l,i)=> text(l,44,416+i*20,15,COL.sage,'left','body')); if((Math.floor(t/24)%2)===0) text('▶',LW-50,438,12,COL.ink,'left','body'); return; }
+  if(B.phase==='defeat'){ text('Setback', 44, 384, 22, COL.terra,'left','disp'); wrap('Building is non-linear. Recover, and face the challenge again.',15,LW-96,'body').forEach((l,i)=> text(l,44,418+i*20,15,COL.soft,'left','body')); return; }
+  B.log.forEach((l,i)=> text(l, 44, 386+i*18, 14, i===B.log.length-1?COL.ink:COL.faint,'left','body'));
+  if(B.phase==='menu'){
+    const sk=unlockedSkills(); const cols=3, bw=(LW-48-2*16)/cols, bh=36;
+    for(let i=0;i<sk.length;i++){ const cx=24+(i%cols)*(bw+16), cy=480+Math.floor(i/cols)*(bh+8);
+      button(cx,cy,bw,bh,(i+1)+'. '+sk[i].name+(sk[i].cost?'  ['+sk[i].cost+']':''),'sk'+i,{disabled:G.energy<sk[i].cost,size:9}); }
+    const hov=sk.findIndex((s,i)=>{ const cx=24+(i%cols)*(bw+16),cy=480+Math.floor(i/cols)*(bh+8); return mouse.x>=cx&&mouse.x<=cx+bw&&mouse.y>=cy&&mouse.y<=cy+bh; });
+    text(hov>=0? sk[hov].fx : 'Choose a skill — press 1-'+sk.length+' or click', LW/2, 580, 9, COL.faint, 'center', hov>=0?'body':'label');
+  }
+}
+
+// ----- character sheet -----
+function updateCharsheet(){ if(key('c')||key('escape')||key('enter')||hitButton()==='back') G.state='overworld'; }
+function drawCharsheet(){
+  px(0,0,LW,LH,COL.bg);
+  panel(36,28,LW-72,LH-56,COL.paper);
+  text('Pratik Renuse', 66, 50, 36, COL.ink,'left','disp');
+  text('Class · Growth Marketer   ·   Level '+level()+'   ·   “builds from nothing”', 66, 96, 9, COL.faint,'left','label');
+  rule(66,118,LW-132,COL.line);
+  let y=136;
+  text('Stats', 66, y, 10, COL.soft,'left','label'); y+=22;
+  text('HP '+G.maxhp+'    ·    EN '+G.maxen+'    ·    Zones cleared '+clears()+'/6', 66, y, 15, COL.ink,'left','body'); y+=30;
+  text('Skills', 66, y, 10, COL.soft,'left','label'); y+=22;
+  SKILLS.forEach(s=>{ const open=s.unlock<=clears();
+    text((open?'◆ ':'◇ ')+s.name, 66, y, 15, open?COL.ink:'#b6ad9b','left','body');
+    text(open? s.fx : 'unlocks after '+s.unlock+' wins', 330, y+3, 8, COL.faint,'left','label'); y+=22; });
+  y+=8; text('Education', 66, y, 10, COL.soft,'left','label'); y+=20;
+  text('M.Sc. International Business — S.P. Jain & IESEG', 66, y, 14, COL.soft,'left','body'); y+=20;
+  text('B.Tech Computer Science — Vishwakarma Institute', 66, y, 14, COL.soft,'left','body');
+  const rx=LW/2+30; let ry=136;
+  text('Achievements ('+G.achievements.length+')', rx, ry, 10, COL.soft,'left','label'); ry+=22;
+  if(!G.achievements.length){ text('none yet — go win some', rx, ry, 14, COL.faint,'left','body'); ry+=18; }
+  G.achievements.slice(0,12).forEach(a=>{ wrap('★ '+a,13,LW/2-90,'body').forEach((l,i)=>{ text(l,rx,ry,13,i?COL.faint:COL.ink,'left','body'); ry+=17; }); });
+  ry+=8; text('Investments', rx, ry, 10, COL.soft,'left','label'); ry+=20;
+  text(G.loot.length? G.loot.join('  ·  ') : 'locked in the Vault', rx, ry, 14, G.loot.length?COL.sage:COL.faint,'left','body');
+  button(LW/2-70, LH-66, 140, 30, 'Back', 'back', {size:9});
+}
+
+// ----- win -----
+function updateWin(){
+  const clk=hitButton();
+  if(clk==='linkedin') window.open('https://www.linkedin.com/in/pratikrenuse','_blank');
+  if(clk==='replay'){ G.cleared={}; G.achievements=[]; G.loot=[]; G.boonHp=0; G.boonEn=0; G._wonShown=false; recomputeStats(); G.hero.x=480; G.hero.y=520; G.state='title'; }
+}
+function drawWin(){
+  px(0,0,LW,LH,COL.bg);
+  for(let i=0;i<50;i++){ const x=(i*149)%LW,y=(i*97)%LH; px(x,y,2,2,'#e7dfce'); }
+  text('Quest Complete', LW/2, 56, 48, COL.ink, 'center','disp');
+  text('Level · Founder', LW/2, 110, 13, COL.faint, 'center','label');
+  drawHeroSprite(LW/2-16, 140, 'down', 3, (Math.floor(t/10)%4));
+  panel(LW/2-330, 214, 660, 244, COL.paper);
+  text('Pratik Renuse — Zero to One', LW/2, 228, 24, COL.ink, 'center','disp');
+  rule(LW/2-120, 264, 240, COL.line);
+  ['EUR2M ARR built at Infento · $848K #1 STEM Kickstarter (2018)',
+   'EUR300K+ ARR at Bueno · 28 countries · 24x LTV/CAC',
+   'EUR275K+ & 4.4x peak growth at VU, used by Olympians',
+   '100+ startups mentored (9.7/10) · 500+ graduates coached',
+   '3 TEDx talks · 50+ speeches across 14+ countries',
+   'Angel: Perplexity · Nothing · Atom Bank · Plum']
+   .forEach((f,i)=> text(f, LW/2, 280+i*24, 14, i%2?COL.soft:COL.sage, 'center','body'));
+  text('Final · Level '+level()+'   ·   '+G.achievements.length+' achievements', LW/2, 430, 9, COL.faint, 'center','label');
+  cta(LW/2-214, 486, 204, 44, 'Connect on LinkedIn', 'linkedin');
+  button(LW/2+14, 486, 200, 44, 'Play Again', 'replay', {size:10});
+  text('Thanks for playing — everything here was real.', LW/2, 556, 9, COL.faint, 'center','label');
+}
+
+// ----- sprites -----
+function drawHeroSprite(x,y,dir,s,fw){
+  s=s||2; fw=fw||0;
+  const P=(ox,oy,w,h,c)=> px(x+ox*s,y+oy*s,w*s,h*s,c);
+  px(x+1*s, y+19*s, 14*s, 2*s, COL.shadow);
+  const step=(Math.floor(fw)%2)===0;
+  P(4,15,3,4,COL.ink); P(9,15,3,4,COL.ink);
+  if(step) P(4,18,3,1,COL.soft); else P(9,18,3,1,COL.soft);
+  P(3,8,10,8,COL.ink);
+  P(6,9,4,5,COL.terra);
+  P(4,2,8,7,'#d9b48f');
+  P(4,1,8,3,COL.ink); P(4,2,8,1,COL.ink);
+  if(dir!=='up'){ if(dir==='left') P(5,5,1,1,COL.ink); else if(dir==='right') P(10,5,1,1,COL.ink); else { P(6,5,1,1,COL.ink); P(9,5,1,1,COL.ink); } }
+}
+function drawBossSprite(cx,cy,id,flash){
+  const body=flash?'#d8a98c':COL.paper, edge=COL.ink, eye=flash?'#7a3b22':COL.terra; const s=4;
+  const P=(ox,oy,w,h,col)=> px(cx+ox*s,cy+oy*s,w*s,h*s,col);
+  px(cx-12*s, cy+16*s, 24*s, 3*s, COL.shadow);
+  P(-10,-16,20,30,body);
+  ctx.strokeStyle=edge; ctx.lineWidth=1.6; ctx.strokeRect(cx-10*s,cy-16*s,20*s,30*s);
+  P(-15,-10,4,16,body); P(11,-10,4,16,body);
+  ctx.strokeRect(cx-15*s,cy-10*s,4*s,16*s); ctx.strokeRect(cx+11*s,cy-10*s,4*s,16*s);
+  P(-6,-8,4,3,eye); P(3,-8,4,3,eye);
+  P(-6,0,12,2,eye);
+  text(id[0].toUpperCase(), cx, cy-9, 22, COL.ink, 'center','disp');
+}
+
+// ----- loop -----
+function update(){
+  switch(G.state){
+    case 'title': updateTitle(); break;
+    case 'overworld': updateOverworld(); break;
+    case 'dialog': updateDialog(); break;
+    case 'battle': updateBattle(); break;
+    case 'charsheet': updateCharsheet(); break;
+    case 'win': updateWin(); break;
+  }
+  consume();
+}
+function render(){
+  uiButtons=[];
+  switch(G.state){
+    case 'title': drawTitle(); break;
+    case 'overworld': drawOverworld(); break;
+    case 'dialog': drawDialog(); break;
+    case 'battle': drawBattle(); break;
+    case 'charsheet': drawCharsheet(); break;
+    case 'win': drawWin(); break;
+  }
+  if(!gameActive){
+    px(0,0,LW,LH,'rgba(247,243,234,.66)');
+    text('Click to play', LW/2, LH/2-20, 30, COL.ink, 'center','disp');
+    text('then move with arrows or WASD', LW/2, LH/2+22, 9, COL.faint, 'center','label');
+  }
+}
+function loop(){ t++; update(); render(); requestAnimationFrame(loop); }
+recomputeStats();
+requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>

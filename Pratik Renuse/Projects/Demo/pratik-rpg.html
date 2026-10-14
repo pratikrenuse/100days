@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PratikRPG — The Growth Architect | Career as an RPG</title>
+<meta name="description" content="The career of Pratik Renuse, DTC & Performance Marketing Leader and TEDx speaker, reimagined as a retro RPG. Battle-tested across fintech, D2C, and consumer hardware." />
+<meta property="og:title" content="PratikRPG — The Growth Architect" />
+<meta property="og:description" content="A growth marketing leader's decade-long campaign, played out as a retro RPG." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0b22;
+  --bg2:#141232;
+  --panel:#1b1840;
+  --panel2:#252063;
+  --ink:#eceaff;
+  --dim:#9c97d6;
+  --gold:#ffd23f;
+  --gold-d:#c9971b;
+  --red:#ff4d6d;
+  --green:#46e6a0;
+  --cyan:#48d6ff;
+  --purple:#b18cff;
+  --line:#3a3380;
+  --shadow:#05040f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Press Start 2P',monospace;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.7;
+  image-rendering:pixelated;
+  overflow-x:hidden;
+  position:relative;
+}
+/* starfield + grid backdrop */
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(2px 2px at 20% 30%, #fff6 1px, transparent 1px),
+    radial-gradient(2px 2px at 70% 60%, #fff4 1px, transparent 1px),
+    radial-gradient(1px 1px at 40% 80%, #ffd23f55 1px, transparent 1px),
+    radial-gradient(1px 1px at 85% 20%, #48d6ff55 1px, transparent 1px),
+    radial-gradient(1px 1px at 10% 70%, #b18cff55 1px, transparent 1px),
+    linear-gradient(var(--bg),#0a0818);
+  background-size:300px 300px,400px 400px,250px 250px,350px 350px,200px 200px,100% 100%;
+}
+/* CRT scanlines */
+body::after{
+  content:"";position:fixed;inset:0;z-index:999;pointer-events:none;
+  background:repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0px, rgba(0,0,0,.18) 1px, transparent 2px, transparent 4px);
+  mix-blend-mode:multiply;opacity:.5;
+}
+.wrap{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:20px 16px 80px}
+.font-body{font-family:'VT323',monospace;font-size:1.35rem;line-height:1.35;letter-spacing:.5px}
+
+/* pixel panel */
+.panel{
+  background:var(--panel);
+  border:4px solid var(--line);
+  box-shadow:0 0 0 4px var(--shadow), 8px 8px 0 0 #00000055;
+  padding:20px;
+  position:relative;
+}
+.panel.gold{border-color:var(--gold-d)}
+.tag{display:inline-block;background:var(--panel2);border:3px solid var(--line);padding:6px 10px;font-size:.55rem;color:var(--cyan);margin:3px 3px 3px 0}
+
+/* HERO */
+.hero{
+  text-align:center;padding:34px 18px;margin-bottom:22px;
+  background:linear-gradient(160deg,#241c5e,#130f33);
+  border:4px solid var(--gold-d);
+  box-shadow:0 0 0 4px var(--shadow), 0 0 36px #ffd23f22;
+}
+.badge{font-size:.55rem;color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.avatar{
+  width:120px;height:120px;margin:0 auto 18px;
+  background:
+    linear-gradient(135deg,#2b2470,#150f3a);
+  border:4px solid var(--gold);
+  box-shadow:0 0 0 4px var(--shadow),0 0 24px #ffd23f55;
+  display:flex;align-items:center;justify-content:center;
+  font-size:3rem;position:relative;
+  animation:bob 2.4s ease-in-out infinite;
+}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.hero h1{font-size:1.7rem;color:var(--gold);text-shadow:4px 4px 0 var(--shadow);margin-bottom:12px;line-height:1.4}
+.hero .class{font-size:.7rem;color:var(--cyan);margin-bottom:18px}
+.hero .lvl{font-size:.6rem;color:var(--dim)}
+.hero .lvl b{color:var(--green)}
+.xpbar{max-width:420px;margin:16px auto 0;background:#0a0820;border:3px solid var(--line);height:24px;position:relative}
+.xpbar i{display:block;height:100%;background:repeating-linear-gradient(45deg,var(--green),var(--green) 6px,#2fbf85 6px,#2fbf85 12px);width:0;transition:width 1.6s ease}
+.xpbar span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:.5rem;color:#fff;text-shadow:1px 1px 0 #000}
+.press{margin-top:22px;font-size:.6rem;color:var(--gold);animation:blink 1.1s steps(2) infinite}
+@keyframes blink{50%{opacity:.25}}
+
+/* NAV / MENU */
+nav{
+  position:sticky;top:0;z-index:50;
+  display:flex;flex-wrap:wrap;gap:6px;justify-content:center;
+  background:#0d0b22ee;border:4px solid var(--line);
+  padding:10px;margin-bottom:22px;backdrop-filter:blur(2px);
+}
+nav button{
+  font-family:'Press Start 2P',monospace;font-size:.5rem;
+  background:var(--panel);color:var(--ink);
+  border:3px solid var(--line);padding:9px 10px;cursor:pointer;
+  transition:.08s;
+}
+nav button:hover{background:var(--panel2);color:var(--gold);transform:translate(-1px,-1px)}
+nav button.active{background:var(--gold);color:#1a1430;border-color:var(--gold-d)}
+
+/* SCREENS */
+.screen{display:none;animation:fadein .25s ease}
+.screen.active{display:block}
+@keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+h2.scr-title{font-size:1rem;color:var(--gold);margin-bottom:18px;text-shadow:3px 3px 0 var(--shadow);border-bottom:4px solid var(--line);padding-bottom:14px}
+h2.scr-title small{display:block;font-family:'VT323',monospace;font-size:1.1rem;color:var(--dim);margin-top:8px;letter-spacing:0}
+
+/* STATS */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.statrow{margin-bottom:14px}
+.statrow .lab{display:flex;justify-content:space-between;font-size:.55rem;margin-bottom:6px}
+.statrow .lab b{color:var(--gold)}
+.bar{background:#0a0820;border:3px solid var(--line);height:18px;position:relative;overflow:hidden}
+.bar i{display:block;height:100%;width:0;transition:width 1.2s ease}
+.bar.str i{background:var(--red)}.bar.int i{background:var(--cyan)}
+.bar.cha i{background:var(--gold)}.bar.wis i{background:var(--green)}
+.bar.dex i{background:var(--purple)}.bar.lck i{background:#ff9f4d}
+.hpmp{display:flex;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+.hpmp .cell{flex:1;min-width:140px;background:var(--bg2);border:3px solid var(--line);padding:12px}
+.hpmp .cell .k{font-size:.5rem;color:var(--dim)}
+.hpmp .cell .v{font-size:.85rem;margin-top:8px}
+.hpmp .cell.hp .v{color:var(--red)}.hpmp .cell.mp .v{color:var(--cyan)}.hpmp .cell.g .v{color:var(--gold)}
+
+/* QUEST LOG */
+.quest{
+  background:var(--panel);border:4px solid var(--line);
+  box-shadow:6px 6px 0 0 #00000055;
+  margin-bottom:18px;padding:0;overflow:hidden;
+}
+.quest .head{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:14px 16px;cursor:pointer;background:linear-gradient(90deg,var(--panel2),var(--panel));
+  border-bottom:4px solid var(--line);
+}
+.quest .head:hover{background:var(--panel2)}
+.quest .head .t{font-size:.7rem;color:var(--gold)}
+.quest .head .r{font-size:.5rem;color:var(--dim);text-align:right;white-space:nowrap}
+.quest .role{font-size:.5rem;color:var(--cyan);margin-top:7px}
+.status{display:inline-block;font-size:.45rem;padding:4px 7px;border:2px solid;margin-left:6px;vertical-align:middle}
+.status.active{color:var(--green);border-color:var(--green);animation:blink 1.4s steps(2) infinite}
+.status.done{color:var(--dim);border-color:var(--dim)}
+.quest .body{padding:16px;display:none}
+.quest.open .body{display:block}
+.quest .desc{font-family:'VT323',monospace;font-size:1.25rem;color:var(--dim);line-height:1.3;margin-bottom:14px}
+.loot{font-size:.5rem;color:var(--gold);margin:14px 0 8px}
+.quest ul{list-style:none}
+.quest li{font-family:'VT323',monospace;font-size:1.3rem;padding:6px 0 6px 26px;position:relative;line-height:1.3}
+.quest li::before{content:"◆";position:absolute;left:4px;color:var(--green);font-size:1rem;top:7px}
+.toggle{font-size:.6rem;color:var(--gold)}
+
+/* SKILL TREE */
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.skill{background:var(--bg2);border:3px solid var(--line);padding:12px;transition:.1s}
+.skill:hover{border-color:var(--gold);transform:translateY(-3px)}
+.skill .n{font-size:.55rem;color:var(--ink);margin-bottom:10px;line-height:1.5}
+.skill .pips{display:flex;gap:3px}
+.skill .pips i{width:14px;height:14px;background:#0a0820;border:2px solid var(--line)}
+.skill .pips i.on{background:var(--gold);border-color:var(--gold-d)}
+
+/* ACHIEVEMENTS */
+.trophies{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.trophy{background:linear-gradient(160deg,var(--panel2),var(--panel));border:3px solid var(--gold-d);padding:16px;text-align:center}
+.trophy .ic{font-size:2rem;margin-bottom:10px}
+.trophy .tt{font-size:.55rem;color:var(--gold);line-height:1.5;margin-bottom:8px}
+.trophy .ds{font-family:'VT323',monospace;font-size:1.15rem;color:var(--dim);line-height:1.25}
+
+/* ALLIES / cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.card{background:var(--bg2);border:3px solid var(--line);padding:14px}
+.card .nm{font-size:.6rem;color:var(--cyan);margin-bottom:8px}
+.card .rl{font-size:.48rem;color:var(--gold);margin-bottom:8px}
+.card .tx{font-family:'VT323',monospace;font-size:1.2rem;color:var(--dim);line-height:1.25}
+
+/* CONTACT */
+.contact{text-align:center}
+.contact .line{font-family:'VT323',monospace;font-size:1.5rem;margin:14px 0;color:var(--ink)}
+.contact a{color:var(--cyan);text-decoration:none;border-bottom:2px solid var(--cyan)}
+.contact a:hover{color:var(--gold);border-color:var(--gold)}
+.btn{
+  display:inline-block;font-family:'Press Start 2P',monospace;font-size:.6rem;
+  background:var(--gold);color:#1a1430;border:none;
+  box-shadow:0 0 0 4px var(--shadow),5px 5px 0 0 var(--gold-d);
+  padding:16px 22px;margin:10px;cursor:pointer;text-decoration:none;transition:.08s;
+}
+.btn:hover{transform:translate(2px,2px);box-shadow:0 0 0 4px var(--shadow),3px 3px 0 0 var(--gold-d)}
+.btn.alt{background:var(--panel2);color:var(--gold);box-shadow:0 0 0 4px var(--shadow),5px 5px 0 0 var(--line)}
+
+.foot{text-align:center;font-size:.45rem;color:var(--dim);margin-top:34px;line-height:2}
+.intro{font-family:'VT323',monospace;font-size:1.45rem;color:var(--ink);line-height:1.4;margin-bottom:20px}
+.intro b{color:var(--gold)}
+
+@media(max-width:680px){
+  .grid2{grid-template-columns:1fr}
+  .hero h1{font-size:1.15rem}
+  nav button{font-size:.42rem;padding:7px}
+  .quest .head .t{font-size:.58rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="badge">★ PRESS START — A CAREER, PLAYED AS AN RPG ★</div>
+    <div class="avatar">🧙‍♂️</div>
+    <h1>PRATIK RENUSE</h1>
+    <div class="class">CLASS: GROWTH ARCHITECT · FOUNDING MARKETER</div>
+    <div class="lvl">LVL <b>10</b> &nbsp;·&nbsp; 10+ YEARS XP &nbsp;·&nbsp; ZERO-TO-ONE SPECIALIST</div>
+    <div class="xpbar"><i id="xpfill"></i><span>XP — A DECADE OF 0→1 CAMPAIGNS</span></div>
+    <div class="press">▶ SELECT A MENU BELOW TO BEGIN ◀</div>
+  </header>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <button data-s="profile" class="active">◆ PROFILE</button>
+    <button data-s="stats">◆ STATS</button>
+    <button data-s="quests">◆ QUEST LOG</button>
+    <button data-s="skills">◆ SKILL TREE</button>
+    <button data-s="trophies">◆ TROPHIES</button>
+    <button data-s="allies">◆ GUILD</button>
+    <button data-s="loot">◆ INVENTORY</button>
+    <button data-s="contact">◆ JOIN PARTY</button>
+  </nav>
+
+  <!-- PROFILE -->
+  <section class="screen active" id="profile">
+    <div class="panel gold">
+      <h2 class="scr-title">CHARACTER PROFILE<small>"I thrive in the 0→1 — building something from nothing."</small></h2>
+      <p class="intro">
+        Over a decade across Europe, <b>Pratik</b> has built marketing engines from <b>ground zero</b> — turning empty
+        landing pages into multi-million revenue lines. A founding marketer at heart: equal parts strategist, operator,
+        and storyteller.
+      </p>
+      <p class="intro">
+        Three startups taken from <b>€0</b>: Infento to <b>€2M+</b> in D2C sales, VU to <b>€275K+</b> (and onto the Olympics),
+        and Bueno to <b>€300K+ ARR</b> across <b>28 countries</b> at a <b>24x LTV/CAC</b>. Along the way: a record-breaking
+        Kickstarter, three TEDx talks, and a Fortune-500 detour through Airbus and Bayer.
+      </p>
+      <div style="margin-top:8px">
+        <span class="tag">🎙️ 3x TEDx Speaker</span>
+        <span class="tag">🚀 Techstars Mentor</span>
+        <span class="tag">🏦 EBRD Mentor</span>
+        <span class="tag">🎓 Visiting Professor</span>
+        <span class="tag">📍 Netherlands</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="screen" id="stats">
+    <div class="panel">
+      <h2 class="scr-title">CHARACTER STATS<small>Attributes earned over 10+ years of live campaigns.</small></h2>
+      <div class="hpmp">
+        <div class="cell hp"><div class="k">HP — RESILIENCE</div><div class="v">∞ / ∞</div></div>
+        <div class="cell mp"><div class="k">MP — CREATIVE MANA</div><div class="v">999 / 999</div></div>
+        <div class="cell g"><div class="k">GOLD — REVENUE BUILT</div><div class="v">€2.5M+</div></div>
+      </div>
+      <div class="grid2">
+        <div>
+          <div class="statrow"><div class="lab"><b>STR · Performance Marketing</b><span>96</span></div><div class="bar str" data-v="96"><i></i></div></div>
+          <div class="statrow"><div class="lab"><b>INT · CAC/LTV/MER Modelling</b><span>94</span></div><div class="bar int" data-v="94"><i></i></div></div>
+          <div class="statrow"><div class="lab"><b>CHA · Speaking & Brand</b><span>98</span></div><div class="bar cha" data-v="98"><i></i></div></div>
+        </div>
+        <div>
+          <div class="statrow"><div class="lab"><b>WIS · Mentorship & Strategy</b><span>97</span></div><div class="bar wis" data-v="97"><i></i></div></div>
+          <div class="statrow"><div class="lab"><b>DEX · Multi-Channel Execution</b><span>93</span></div><div class="bar dex" data-v="93"><i></i></div></div>
+          <div class="statrow"><div class="lab"><b>LCK · Investing Instinct</b><span>88</span></div><div class="bar lck" data-v="88"><i></i></div></div>
+        </div>
+      </div>
+      <p class="font-body" style="color:var(--dim);margin-top:18px">PASSIVE: <span style="color:var(--green)">"Zero-to-One"</span> — gains a damage bonus when starting from nothing. EDUCATION: S.P. Jain (MSc Intl Business) · IÉSEG School of Management (MSc) · Vishwakarma Inst. of Tech (B.Tech, Computer Science).</p>
+    </div>
+  </section>
+
+  <!-- QUEST LOG -->
+  <section class="screen" id="quests">
+    <div class="panel">
+      <h2 class="scr-title">QUEST LOG<small>Click any quest to expand the loot and outcomes. ◆ = active campaign.</small></h2>
+
+      <div class="quest open">
+        <div class="head"><div><div class="t">BUENO <span class="status active">ACTIVE</span></div><div class="role">Growth Lead · Founding Team · Shareholder</div></div><div class="r">2022 → NOW<br>Fintech · Spain</div></div>
+        <div class="body">
+          <p class="desc">UK Gov-award-winning fintech banking for Europe's foreign property owners. Built the entire growth engine single-handedly. <span class="toggle"></span></p>
+          <div class="loot">⚔ LOOT &amp; OUTCOMES</div>
+          <ul>
+            <li>0 → <b>2,000+</b> paying subscribers &amp; <b>€300K+ ARR</b> across 28 countries</li>
+            <li><b>24x</b> LTV/CAC (€700 / €30) — a near-mythic efficiency drop</li>
+            <li><b>1M+</b> organic visits; out-ranked Revolut &amp; Wise on target SEO keywords</li>
+            <li><b>15,000+</b> newsletter subs at 70% open rate; 13% convert to paying in 3 months</li>
+            <li>Architected full multi-channel engine; launched 3 international markets</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quest">
+        <div class="head"><div><div class="t">VU <span class="status done">CLEARED</span></div><div class="role">Head of Marketing · Founding Team</div></div><div class="r">2021 → 2025<br>D2C · Switzerland</div></div>
+        <div class="body">
+          <p class="desc">The #1 Swiss brand for professional skiers &amp; snowboarders — recommended and used by Olympians.</p>
+          <div class="loot">⚔ LOOT &amp; OUTCOMES</div>
+          <ul>
+            <li>Drove <b>€275K+</b> revenue and <b>4.4x</b> peak-season growth</li>
+            <li>Built the full digital presence end-to-end: brand, site, paid, lifecycle, community</li>
+            <li>Equipment carried to the <b>Olympics</b> 🏅</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quest">
+        <div class="head"><div><div class="t">INFENTO <span class="status done">CLEARED</span></div><div class="role">Leading Online Marketing · Founding Team</div></div><div class="r">2017 → 2019<br>Hardware · Amsterdam</div></div>
+        <div class="body">
+          <p class="desc">Consumer hardware &amp; STEM building kits, Kickstarter-funded. The campaign that became legend.</p>
+          <div class="loot">⚔ LOOT &amp; OUTCOMES</div>
+          <ul>
+            <li>Scaled DTC web shop from <b>€0 → €2M ARR</b></li>
+            <li>Led the <b>$848K</b> Kickstarter — <b>#1 most-funded STEM project globally, 2018</b></li>
+            <li>Won 3 design awards: Red Dot, German Design Award, Parent's Choice Gold (US)</li>
+            <li>Managed 6-figure Google/Meta budgets at a sustained <b>12–15% CAC</b></li>
+            <li>Founding member; helped grow the guild to <b>25+</b> teammates</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quest">
+        <div class="head"><div><div class="t">GROWACK MEDIA <span class="status done">CLEARED</span></div><div class="role">Head of Marketing</div></div><div class="r">2020<br>B2B · Amsterdam</div></div>
+        <div class="body">
+          <p class="desc">B2B inbound &amp; growth marketing for clients across Western Europe.</p>
+          <div class="loot">⚔ LOOT &amp; OUTCOMES</div>
+          <ul>
+            <li>Led inbound &amp; growth ops for B2B clients across Western Europe</li>
+            <li>Recognised HubSpot Partner; named Clutch 2021 Top B2B Company in W. Europe</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quest">
+        <div class="head"><div><div class="t">BAYER <span class="status done">CLEARED</span></div><div class="role">Project Management</div></div><div class="r">2017<br>Fortune 500 · Berlin</div></div>
+        <div class="body">
+          <p class="desc">A Fortune-500 side-quest in life sciences.</p>
+          <div class="loot">⚔ LOOT &amp; OUTCOMES</div>
+          <ul>
+            <li>Managed a <b>€250K</b> budget for GIM, Bayer's premier global senior-executive event</li>
+            <li>Event spanned executives from <b>50+ countries</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quest">
+        <div class="head"><div><div class="t">AIRBUS <span class="status done">CLEARED</span></div><div class="role">Marketing</div></div><div class="r">2016<br>Fortune 500 · Munich</div></div>
+        <div class="body">
+          <p class="desc">Branding &amp; online marketing for the EU-wide 'NEOShield' project.</p>
+          <div class="loot">⚔ LOOT &amp; OUTCOMES</div>
+          <ul>
+            <li>Increased organic social reach by <b>+127%</b> in two months</li>
+            <li>Led the SEO strategy to <b>rank #1</b> on Google Search</li>
+            <li>Single-threaded associate for the entire EU-wide project</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILL TREE -->
+  <section class="screen" id="skills">
+    <div class="panel">
+      <h2 class="scr-title">SKILL TREE<small>Abilities unlocked and maxed across the campaign.</small></h2>
+      <div class="skills" id="skilltree"></div>
+    </div>
+  </section>
+
+  <!-- TROPHIES -->
+  <section class="screen" id="trophies">
+    <div class="panel">
+      <h2 class="scr-title">TROPHY ROOM<small>Rare achievements earned in the wild.</small></h2>
+      <div class="trophies">
+        <div class="trophy"><div class="ic">🏆</div><div class="tt">#1 STEM KICKSTARTER</div><div class="ds">$848K raised — the most-funded STEM project on Earth in 2018.</div></div>
+        <div class="trophy"><div class="ic">🎙️</div><div class="tt">3x TEDx SPEAKER</div><div class="ds">Including a dedicated talk on the future of marketing.</div></div>
+        <div class="trophy"><div class="ic">🌍</div><div class="tt">GLOBAL STAGE</div><div class="ds">50+ speeches across 14+ countries; keynote at 20+ events.</div></div>
+        <div class="trophy"><div class="ic">🥇</div><div class="tt">3 DESIGN AWARDS</div><div class="ds">Red Dot · German Design Award · Parent's Choice Gold (US).</div></div>
+        <div class="trophy"><div class="ic">⭐</div><div class="tt">9.7 / 10 MENTOR RATING</div><div class="ds">Average satisfaction from CXOs &amp; founders mentored.</div></div>
+        <div class="trophy"><div class="ic">🧑‍🏫</div><div class="tt">100+ STARTUPS · 500+ GRADS</div><div class="ds">Mentored founders &amp; coached students across 5 continents.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALLIES / GUILD -->
+  <section class="screen" id="allies">
+    <div class="panel">
+      <h2 class="scr-title">THE GUILD<small>Mentorship, teaching & thought leadership.</small></h2>
+      <div class="cards">
+        <div class="card"><div class="nm">TECHSTARS</div><div class="rl">Global Startup Mentor · 2022→</div><div class="tx">The #1 global tech accelerator. Mentoring founders on GTM, growth &amp; fundraising.</div></div>
+        <div class="card"><div class="nm">EBRD</div><div class="rl">Mentor · 2024→</div><div class="tx">European Bank for Reconstruction &amp; Development — Star Venture program across 25 countries.</div></div>
+        <div class="card"><div class="nm">SEEDSTARS · FOUNDER INSTITUTE</div><div class="rl">Startup Mentor</div><div class="tx">Advising fintech, D2C, health-tech &amp; AI startups on scaling.</div></div>
+        <div class="card"><div class="nm">TETR COLLEGE OF BUSINESS</div><div class="rl">Visiting Professor · 2025→</div><div class="tx">Teaching the next generation of operators.</div></div>
+        <div class="card"><div class="nm">MASTERS' UNION</div><div class="rl">Visiting Professor · 2023→</div><div class="tx">Bringing live growth playbooks into the classroom.</div></div>
+        <div class="card"><div class="nm">EVISORS / FIRSTHAND</div><div class="rl">Visiting Faculty</div><div class="tx">Coached 500+ graduates from Harvard, LSE, HEC Paris, Yale, Oxford &amp; IMD.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVENTORY / INVESTMENTS -->
+  <section class="screen" id="loot">
+    <div class="panel">
+      <h2 class="scr-title">INVENTORY<small>Angel/secondary positions in high-growth consumer tech &amp; fintech.</small></h2>
+      <div class="cards">
+        <div class="card"><div class="nm">⚡ ATOM BANK</div><div class="rl">Investor</div><div class="tx">One of the UK's fastest-growing digital banks — profitable, £5.3B+ in loan balances.</div></div>
+        <div class="card"><div class="nm">🔔 NOTHING</div><div class="rl">Investor · via Crowdcube</div><div class="tx">Consumer-tech brand disrupting smartphones &amp; audio across Europe &amp; Asia.</div></div>
+        <div class="card"><div class="nm">🔮 PERPLEXITY</div><div class="rl">Investor · via Republic</div><div class="tx">One of the fastest-growing consumer AI products globally.</div></div>
+        <div class="card"><div class="nm">🪙 PLUM</div><div class="rl">Investor</div><div class="tx">Smart money &amp; savings app for the next generation of investors.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="screen" id="contact">
+    <div class="panel gold contact">
+      <h2 class="scr-title" style="text-align:left">JOIN THE PARTY<small>Building something 0→1? Let's create value together.</small></h2>
+      <p class="line">"I'm always happy to meet new like-minded folks." 🙂</p>
+      <p class="line">✉ <a href="mailto:pratik@pratikrenuse.com">pratik@pratikrenuse.com</a></p>
+      <p class="line">🌐 <a href="https://pratikrenuse.com" target="_blank" rel="noopener">pratikrenuse.com</a></p>
+      <p class="line">💼 <a href="https://linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">linkedin.com/in/pratikrenuse</a></p>
+      <div style="margin-top:18px">
+        <a class="btn" href="mailto:pratik@pratikrenuse.com">▶ START QUEST</a>
+        <a class="btn alt" href="https://linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">+ ADD TO PARTY</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">★ PRATIKRPG — A GROWTH ARCHITECT'S CAREER, REIMAGINED AS AN RPG ★<br>NO GUESTS WERE BATTLED IN THE MAKING OF THIS PAGE · INSPIRED BY RETRO PIXEL RPGS</div>
+</div>
+
+<script>
+// ---- Skill tree data ----
+const skills=[
+  ["Performance Marketing (Meta/Google/Programmatic)",5],
+  ["DTC Growth Systems",5],
+  ["CAC / LTV / MER Modelling",5],
+  ["Funnel Design & CRO",5],
+  ["SEO & Content Marketing",5],
+  ["Email & CRM / Lifecycle",5],
+  ["A/B Testing & Experimentation",4],
+  ["Multi-Channel Attribution",4],
+  ["Revenue Forecasting",4],
+  ["Influencer & Affiliate Marketing",4],
+  ["AOV & Pricing Optimisation",4],
+  ["Team Development & Training",5],
+];
+const tree=document.getElementById('skilltree');
+skills.forEach(([n,lv])=>{
+  let pips='';for(let i=0;i<5;i++)pips+=`<i class="${i<lv?'on':''}"></i>`;
+  tree.insertAdjacentHTML('beforeend',`<div class="skill"><div class="n">${n}</div><div class="pips">${pips}</div></div>`);
+});
+
+// ---- Nav ----
+const nav=document.getElementById('nav');
+nav.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  const id=b.dataset.s;
+  document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x===b));
+  document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('active',s.id===id));
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(id==='stats')fillBars();
+});
+
+// ---- Quest accordion ----
+document.querySelectorAll('.quest .head').forEach(h=>{
+  h.addEventListener('click',()=>h.parentElement.classList.toggle('open'));
+});
+
+// ---- Animate bars ----
+let barsDone=false;
+function fillBars(){
+  document.querySelectorAll('#stats .bar').forEach(b=>{
+    b.querySelector('i').style.width=b.dataset.v+'%';
+  });
+}
+// ---- XP bar on load ----
+window.addEventListener('load',()=>{
+  setTimeout(()=>document.getElementById('xpfill').style.width='95%',300);
+});
+</script>
+</body>
+</html>

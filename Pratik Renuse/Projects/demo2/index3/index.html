@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The 0 → 1 Path — A Pratik Renuse Career RPG</title>
+  <meta name="description" content="Play the 0→1 Path: grow Pratik Renuse's startups from zero, level up your skills, and reach the present day. A calm career RPG built from a real portfolio." />
+  <meta name="author" content="Pratik Renuse" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The 0 → 1 Path — A Career RPG" />
+  <meta property="og:description" content="Grow startups from zero, level up, reach 2026. A playable portfolio." />
+  <meta property="og:url" content="https://pratikrenuse.com" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game" class="game">
+
+    <!-- HUD (hidden on title) -->
+    <header id="hud" class="hud" hidden>
+      <div class="hud-left">
+        <span class="hud-name">प · The 0 → 1 Path</span>
+        <div class="timeline">
+          <span class="timeline-year" id="hudYear">2016</span>
+          <div class="timeline-track"><div class="timeline-fill" id="hudTimeline"></div></div>
+          <span class="timeline-end">2026</span>
+        </div>
+      </div>
+      <div class="hud-right">
+        <div class="lvl">Lv <strong id="hudLevel">1</strong></div>
+        <div class="xp">
+          <span class="xp-label">XP <strong id="hudXp">0</strong></span>
+          <div class="xp-track"><div class="xp-fill" id="hudXpFill"></div></div>
+        </div>
+        <div class="skills" id="hudSkills"></div>
+      </div>
+    </header>
+
+    <!-- Screens render here -->
+    <main id="screen" class="screen"></main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

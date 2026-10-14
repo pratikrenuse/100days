@@ -1,0 +1,1647 @@
+Mochary Method Curriculum — Volume 2 — Part 4 of 6
+============================================================
+
+## Chapter 183: Compensation: CEO refresh
+
+*Source: https://docs.google.com/document/d/1DkMfwxNO8EGpTrSxwbye-XRqRIjdxMSjeeco6IXHQgc/edit*  
+
+[Compensation: CEO refresh](https://docs.google.com/document/d/1DkMfwxNO8EGpTrSxwbye-XRqRIjdxMSjeeco6IXHQgc/edit)
+
+Yes, there is such a thing. Investors hate it.  But in the end, they grant it.  Because it's market.  And their alternative is a terrible one.
+
+On the one hand, investors want you to feel like a major owner already and not need any more ownership to incent you.
+
+On the other hand, if the company had to hire a CEO, they would likely need to make a 4-year grant of 3-10% of the company, depending on its size.  And with that hire would come significant risk, because a significant % of hired gun CEOs fail.  Would the board rather retain you at 60% of this amount?  If you are performing, then "Yes, without a doubt."
+
+But don't ask for this amount yourself.  For many board members, especially less experienced ones, they will feel offended by this ask. Some very offended.  (More senior board members have already been through this a few times, and are already over it.)
+
+Better to hire a good compensation firm like [Semler Brossy](https://semlerbrossy.com/)  (Todd Sirras <tsirras@semlerbrossy.com>), Compensia or Alpine Rewards (formerly Radford Partners) to present the market data.  And then have someone represent you in the negotiation.  Let the representative be the bad cop.  The company should pay for both the market comp data and your representation, as those are legitimate corporate expenses.
+
+The charge from the comp consultant will be about $100,000.  Each of your venture investors already has the data of what their portfolio CEO refreshes are.  If you want to save the $100,000, and trust your investors to share with you what the market data really is, you can simply ask them what their portfolio CEOs are getting.  If you have any doubt at all that they will share with you the real information, use an external consultant.
+
+As of late 2020, the market for CEO refresh seemed to be 3% with 4 year-vesting.
+
+As of early 2023, a new and interesting option has appeared:  
+
+  - 5% total over 4 years.  But 25% granted each year for 4 years.  
+      
+      - So, in year 1 a grant of 1.25% is given with a 4 year vest.  
+      - In year 2, another grant of 1.25% is given with a 4 year vest.  
+      - Etc.
+
+#### IPO
+
+Before going public, make sure that you put in 20x super-majority voting shares for yourself.  Brian Armstrong of Coinbase has said that he "would not consider going public without it. There are enough comps now where it is considered standard and no major investors had issue with it."
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# For the COO/Exec Ops
+
+## Chapter 184: Optimizing Post Mortems
+
+*Source: https://docs.google.com/document/d/1Fypz_DPsBiQADTJof0XSJwLNIdU5-Lr-JxPwPQV4WZA/edit?usp=sharing*  
+*(2 min) by*  
+
+[**Optimizing Post Mortems & Retros**](https://docs.google.com/document/d/1Fypz_DPsBiQADTJof0XSJwLNIdU5-Lr-JxPwPQV4WZA/edit?usp=sharing) (2 min) by [Faith Meyer](https://mm-coaches.notion.site/Faith-Meyer-ACC-7be84956b4de4ee2b7c30f441db90dc3)
+
+Post mortems/retros can be one of the most powerful tools in your arsenal to boost morale, and accelerate your teams' performance and growth through clear communication and transparency. 
+
+If you've never run one before, a post mortem or retro are designed to assess what went well and what went wrong/could be improved as a group to capture key learnings/insights to "know better, do better" and set the whole team up for enhanced success going forward. 
+
+Post mortems are generally done upon project completion, but for projects with long timelines, I'd strongly recommend that you do not wait for the project to finish — communicate early and often with the team and learn and improve as you go.
+
+Here are some time-tested tips for how to run the most effective post mortems:
+
+1.  **All key parties should do the pre-work.**  
+      - Meetings are expensive. Get right to the point by mandating that your team do the pre-thinking ahead of time.
+      - I'm a fan of giving my team pre-set questions to answer prior to the group meeting. I personally would use a Google Doc to collate answers. Others have used questionnaires, Notion… choose whatever method has the lowest friction — i.e. use whatever platform your team is most comfortable with.  
+          
+2.  **Hold the space for both the negatives and positives.**  
+      - The words "post mortem" often have a slightly negative connotation, and the biggest mistake I see teams make is focusing only on what went wrong and not checking in on what's working well. 
+      - In the pre-work and/or the meeting, ask your team to consider what went/is going really well? What's working from what you all set out to do?  
+          
+3.  **Let the pre-work inform the agenda and assign a DRI for keeping the meeting on track.**  
+      - Once you've received everyone's pre-written answers/input, take time to read through them and suss out key themes to cover in the meeting. Use whatever emerges to influence the agenda for the session. 
+      - **General best agenda practices include the four Rs:**  
+        1.  **Revisit** the initial goals of the project, the metrics, and the "why" behind the project.
+        2.  **Review** the results.
+        3.  **Reassess**. This is the bulk of the meeting. What worked? What didn't? How are people feeling? What have we learned?
+        4.  **Regroup.** Make a clear plan going forward based on the key learnings.
+      - The DRI should time box the conversation and bring the group back to the key points if and when the conversation digresses.  
+          
+4.  **Assign a [DRI](https://docs.google.com/document/d/1I4jBy1XryEdknFoDCMUY93PEn0rR-oOOx6yiLSiaa38/edit) for maintaining documentation and tracking outcomes.**  
+      - Make certain that one person is responsible for capturing key takeaways, next steps and insights from the meeting.  
+          
+5.  **Set clear actions and accountability for key learnings and share them out to the team.**  
+      - At the end of the session, do a repeat back out loud of what each person's next steps are, what precisely they intend to do, and when exactly they'll take those next steps by.
+      - The DRI should capture these key actions and dates, as well as other high level key learnings that need to be preserved and revisited going forward.
+      - Share out these learnings and takeaways with the collective team and hold each other accountable to any shared agreements made during the post mortem review!
+
+
+---
+
+## Chapter 185: Regina Gerbeaux’s Resources for Operators
+
+*Source: https://www.coachingfounder.com*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.coachingfounder.com)_
+
+
+---
+
+## Chapter 186: Help Execs Achieve Inbox Zero
+
+*Source: https://www.coachingfounder.com/post/inbox-zero*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.coachingfounder.com/post/inbox-zero)_
+
+
+---
+
+## Chapter 187: Help Execs Prioritize Work
+
+*Source: https://www.coachingfounder.com/post/execs-prioritize*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.coachingfounder.com/post/execs-prioritize)_
+
+
+---
+
+## Chapter 188: Onboard yourself in 30 days
+
+*Source: https://www.coachingfounder.com/post/onboard-yourself-in-30-days*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.coachingfounder.com/post/onboard-yourself-in-30-days)_
+
+
+---
+
+## Chapter 189: Hire, onboard, and work with an EA
+
+*Source: https://www.coachingfounder.com/post/how-to-work-with-an-executive-assistant*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.coachingfounder.com/post/how-to-work-with-an-executive-assistant)_
+
+
+---
+
+## Chapter 190: Using Asana as an agreements tracker
+
+*Source: https://www.youtube.com/playlist?list=PLiksA_rhPy74zJQ9VcSnI7XDMZIinyifG*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.youtube.com/playlist?list=PLiksA_rhPy74zJQ9VcSnI7XDMZIinyifG)_
+
+
+---
+
+## Chapter 191: How to build a killer internal wiki on Notion
+
+*Source: https://www.youtube.com/watch?v=-qi0Felki8U*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.youtube.com/watch?v=-qi0Felki8U)_
+
+
+---
+
+## Chapter 192: BTA (Bias Towards Action)
+
+*Source: https://www.coachingfounder.com/post/bias-toward-action*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.coachingfounder.com/post/bias-toward-action)_
+
+
+---
+
+## Chapter 193: Run efficient meetings that don’t suck
+
+*Source: https://www.coachingfounder.com/post/run-efficient-meetings*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.coachingfounder.com/post/run-efficient-meetings)_
+
+
+---
+
+## Chapter 194: CoS Roadmap template
+
+*Source: https://www.coachingfounder.com/templates/chief-of-staff-roadmap*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.coachingfounder.com/templates/chief-of-staff-roadmap)_
+
+
+---
+
+## Chapter 195: Process database template for internal wiki (How-Tos)
+
+*Source: https://www.notion.so/chiefs-of-staff/How-Tos-Template-de663e1cfbad4f2fb3ce5b77dd249618*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.notion.so/chiefs-of-staff/How-Tos-Template-de663e1cfbad4f2fb3ce5b77dd249618)_
+
+
+---
+
+## Chapter 196: Notion company hub template
+
+*Source: https://www.coachingfounder.com/templates/notion-company-hub*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.coachingfounder.com/templates/notion-company-hub)_
+
+
+---
+
+## Chapter 197: Notion - Mochary Method setup
+
+*Source: https://docs.google.com/document/d/1OpeyoovDscvumVP7VRzxObJx7QZjuGgHbXfbmUriTak/edit*  
+
+[Notion - Mochary Method setup](https://docs.google.com/document/d/1OpeyoovDscvumVP7VRzxObJx7QZjuGgHbXfbmUriTak/edit)
+
+[Notion company hub template (by Regina Gerbeaux)](https://chiefs-of-staff.notion.site/Notion-company-hub-template-3af2ecaf60a547caadf3e65f9edb7f5b)
+
+*Please watch the following resources below to learn how to use Regina's template.  It is a very thorough rundown of the entire setup, including templates within each section that you can use for ease, how to properly use the databases, and Regina's own takes on why each section is important.*
+
+[Part 1:  Intro + how to use meetings tracker and meeting template](https://www.loom.com/share/553cfc06e735469c8189175911803638) (14 min, watch at 2x speed)
+
+[Part 2:  How to use actions tracker](https://www.loom.com/share/eab138708fe2491a83927c20651c24dd) (7 min, watch at 2x speed)
+
+[Part 3:  How to use issues tracker](https://www.loom.com/share/4fe0020d9e0d4d9ea6c88108f14d9f62) (6 min, watch at 2x speed)
+
+[Part 4:  How to use topics tracker](https://www.loom.com/share/4d5c7dbf23534081acf0a752391dd8b4) (3 min)
+
+[Part 5:  How to use feedback tracker + closing](https://www.loom.com/share/310bf7615b3e4ed6a10e86159ddbe853) (7 min)
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://form.typeform.com/to/XR1PuJL3)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 198: Sample meeting doc: Engineering sync
+
+*Source: https://chiefs-of-staff.notion.site/Sample-meeting-doc-Engineering-sync-d070770b4c2e4a00a713cbf98c6f2dda*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://chiefs-of-staff.notion.site/Sample-meeting-doc-Engineering-sync-d070770b4c2e4a00a713cbf98c6f2dda)_
+
+
+---
+
+## Chapter 199: Example of asynchronous discussion using Threads
+
+*Source: https://threads.com/34421800352?share=94f0f50e-0351-4dec-84d4-98054b560b6e*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://threads.com/34421800352?share=94f0f50e-0351-4dec-84d4-98054b560b6e)_
+
+
+---
+
+
+# Board
+
+## Chapter 200: Board of Directors
+
+*Source: https://docs.google.com/document/d/1yL0SGQX0Hzan7Jm8tS7wrHiaGxPhFVmdxidCSCoWKhM/edit*  
+*(4 min)*  
+
+[Board of Directors](https://docs.google.com/document/d/1yL0SGQX0Hzan7Jm8tS7wrHiaGxPhFVmdxidCSCoWKhM/edit#heading=h.7gjhmdva542e) (4 min)
+
+When a board of directors and a CEO function well, board members act as lieutenants to the CEO. The board also holds the CEO accountable, and if the CEO becomes dysfunctional, the board fires her and hires another. This is the proper role of an effective board. Unfortunately, most boards are not functional.
+
+By law, C Corporations must have a board of directors, which must meet regularly to be informed about the company's operations and provide fiduciary oversight. Organizations are incorporated to shield their owners from personal liability for the debts of the company. If a corporation does not have a board of directors nor holds proper board meetings, then someone who the company has injured can sue the organization and "pierce the corporate veil," making the owners individually liable for the misdeeds of the entity. No owner wants this. Therefore board meetings have great utility in keeping you in good standing with the law and your shareholders safe from liability.
+
+Unfortunately, that is usually where the utility of a board of directors and board meetings ends. While there may be boards that provide helpful and timely guidance to a CEO, most do not. In some cases, boards are passive and offer little help but also little pain. Unfortunately, board members are actually contentious in most cases, advising with little to no knowledge of the company or the industry and then getting frustrated (and even combative) if the CEO does not follow their advice.
+
+As CEO, you are immersed in your company's operations at least 20 working days a month. Your board members only learn what you can share with them during the board meeting (which occurs once a month, or once a quarter, etc.). The board members, therefore, cannot possibly have the full context. Yet many feel the need to give advice. And once you give that advice, because most have large egos, they want you to follow it. If it isn't, they can often feel resentful toward the CEO, which is very dangerous. 
+
+Because boards can hire and fire the CEO, if enough board members get their feelings bruised from unfollowed advice, the CEO may find herself looking for a new job.
+
+There are other pitfalls to a board:
+
+1.  A board with an even number of board seats (i.e., 4, 6, etc.) can have a deadlocked vote. Even if the issue is a simple one, this can cause an existential crisis if there is no way to break the deadlock.  
+      
+2.  A board with many board members requires lots of maintenance as board members often want to have 1-1 conversations with the CEO on major issues and be heard in the board meetings.
+
+There are ways to avoid these pitfalls. Here are my "board best practices":
+
+1.  Keep the board to an odd number of seats and as few seats as possible. The ideal number is three. Try very hard not to go beyond five.  
+      
+2.  Board observers are supposed to observe only during a board meeting and not talk unless asked a direct question by a board member. Enforce this behavior.  
+      
+3.  Give the board members all the information they need at a board meeting (or even better, before the board meeting) in writing to have few or no questions during the meeting. The best way to do this is to:   
+      
+      
+    1.  Create a complete presentation with 
+          
+        1.  complete financials and metrics/KPIs
+        2.  write-up of the good and the bad from these metrics
+        3.  what we accomplished since the last board meeting (OKRs)
+        4.  what we plan to accomplish at the next board meeting (OKRs)  
+              
+    2.  Significant challenges that we face, and how we plan to address them  
+          
+    3.  Do a test run with a trusted non-board member who asks questions where things are unclear. Answer all of their questions, and add the answers to the board presentation.  
+          
+    4.  Present this final version to the board, and they will likely have no further questions.
+
+After the board presentation, where there are hopefully few to no questions:
+
+1.  Give **the board members homework**.  
+      
+2.  Give each one a very specific assignment.  
+      
+3.  Don't worry, none of them will actually do the homework.  
+      
+4.  But they also are then not likely to give you unsolicited advice. This is the true goal of the homework.   
+      
+5.  If a board member does give you advice, take notes. Summarize what the board member said, and ask if you got it right. Once they say "Yes, that's right," thank them for their advice and let them know that you will seriously consider it in formulating your go-forward plan. This will make the board member feel that you heard them, which is primarily what they are after. 
+
+The goal of the process above is to:
+
+  - Make board members feel informed and heard so that they don't make trouble for you
+  - Use the least amount of your time to achieve the above 
+
+If you already have an even lighter-weight process satisfying to your board members, please stick with that … and let me know what it is!
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 201: Board Meeting - Best Practice
+
+*Source: https://docs.google.com/document/d/1WDGVUYHPyQGHjcIVpqQP9dRjABWjU_VoVdtMDdtNDOk/edit*  
+*(5 min)*  
+
+[Board Meeting - Best Practice](https://docs.google.com/document/d/1WDGVUYHPyQGHjcIVpqQP9dRjABWjU_VoVdtMDdtNDOk/edit)
+
+The best board meeting is one that gives board members enough information to allow them to be helpful to you. Be transparent. Be vulnerable. If you do, the board will reward you with rich and valuable feedback.
+
+Here are my board meeting best practices:
+
+1.  Share the board meeting information with all board members in writing at least 3 days (but preferably 7 days) in advance of the meeting.   
+      
+      
+    1.  Format: Memo or deck. With a short video.   
+          
+          
+        1.  My preference is a memo, as it lends itself more to reading.  
+              
+        2.  Some CEOs are now starting to include short Loom videos (less than 5 minutes) that run through all of the most important ideas in the memo. Board members LOVE this as they can watch at 1.5x speed.    
+              
+              
+            1.  This replaces the CEO's opening walk-through in the board meeting itself.  
+                  
+                 
+    2.  Information included:   
+          
+          
+        1.  Update 
+              
+            1.  KPIs, including 
+                  
+                1.  Summary Financials
+                2.  Product Roadmap
+                3.  Hiring Roadmap
+                4.  Sales Pipeline
+            2.  What we accomplished last quarter (OKRs)
+            3.  For each KPIs and OKRs 
+                  
+                1.  Green, yellow, red label (on track, off track, far off track)
+                2.  The good
+                3.  The not good
+                      
+                    1.  And what we are going to do to fix it
+            4.  What we hope to accomplish next quarter (OKRs)  
+                  
+        2.  Issues 
+              
+            1.  One or two strategic questions or problems with which we are grappling. (Could be from the Update above.) 
+                  
+                1.  The issue of choice written out thoroughly 
+                2.  Our proposed solution  
+                      
+            2.  Most board members have far more visibility than you as to what other companies have experienced when tackling forward-looking strategic questions or operations at other companies. I.e
+                  
+                1.  Should we expand to Europe? 
+                2.  Should we launch an adjacent product?
+                3.  Have other companies done layoffs and what have their experiences been with it?  
+                      
+            3.  By contrast, you have much more context than your board members on internal operating issues. I.e.
+                  
+                1.  Our CMO is struggling, what should we do?  
+                      
+            4.  Stick to the questions where your board has more visibility than you do.  
+                  
+        3.  Requests 
+              
+            1.  Specific action requests of board members 
+                  
+                1.  Most board members have strong networks. Take advantage of this by asking for warm introductions to potential customers, partners, etc.
+        4.  Feedback 
+              
+            1.  Ask the board: 
+                  
+                1.  How could this board meeting be more effective?
+                2.  How could I (as CEO) be more effective?  
+                      
+    3.  Collect responses 
+          
+        1.  Ask board members to pose questions and write responses to the board packet at least two days before the meeting.  
+              
+2.  During the next 48 hours, you, or your internal team, write up answers to all board member questions.  
+      
+3.  Meet (phone call) with board members 1-1 just before the board meeting to 
+      
+    1.  Ensure that they have ingested the information  
+          
+4.  Elicit their questions, concerns, etc., so that they come to the board meeting already feeling heard (this is critical for creating trust). 
+
+1.  At the board meeting   
+      
+      
+    1.  Cause everyone to get present for the meeting.
+          
+        1.  I like to start with a short exercise to get everyone in a positive mood and have us know each other a bit more as humans.
+              
+            1.  Each board member shares one fun thing (in 30 seconds or less) that they have experienced since the last board meeting.  
+            2.  If there are more than 6 people present, the verbal sharing becomes too long. In that case, I limit the sharing to only board members, not observers, lawyers nor execs.  And if there are more than 6 board members, then I skip this.  
+                  
+    2.  Answer the questions received about the board packet.  
+          
+    3.  Invite the executive team to attend. This allows board members and executives to get to know each other and gain comfort with each other.   
+          
+          
+        1.  Each exec will have contributed to the board memo. You can offer each 2-3 minutes to give a verbal summary of their department update.  
+              
+        2.  Allow the execs to participate in the strategic issue discussion (below).  
+              
+    4.  Unpack one strategic question or issue.   
+          
+          
+        1.  Ask for each board member's view. Give equal air time. 
+              
+            1.  If your board members are willing to write, use [Issue / Proposed Solution template](https://docs.google.com/document/d/10JEFVl3pEk7HUT82oM3LbHtP8hRQvlzK9SQyuJFMyCo/edit)
+        2.  Allow Board observers and lawyers to write, but not to speak unless you specifically ask for their input.  
+              
+    5.  Unpack the second issue.  
+          
+    6.  Confirm that each board member is willing to do the actions requested.  
+          
+    7.  Closed-door session.   
+          
+          
+        1.  Ask that all non-board members leave the room, leaving only board members and the lawyer.  
+              
+        2.  *Collect written feedback if it wasn't already collected in response to the board packet.*
+2.  Closing ceremony: to remind each other that we're on the same team  
+      
+      
+    1.  For this, I like to have each board member thank one other person in the room for something that they did.  Once a person is thanked, they can't be thanked again (so that everyone gets thanked for something).   The CEO thanks last, since she has something to thank each person about. 
+
+1.  Social time   
+      
+      
+    1.  It is often healthy to create an informal social venue for board members and the executive team. This is usually a meal before or after the meeting.   
+          
+          
+        1.  Board observers and lawyers are usually not invited to this gathering.
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 202: Board Meetings
+
+*Source: https://docs.google.com/document/d/1j4EFRYfAs3RidCk_CE-QQMquBkpy3P69yh19lANpkmM/edit#*  
+*(4 min)*  
+
+[Board Meetings](https://docs.google.com/document/d/1j4EFRYfAs3RidCk_CE-QQMquBkpy3P69yh19lANpkmM/edit#) (4 Min) 
+
+It is essential to have a set of thought partners to keep you accountable for picking the best goals and then marching toward those goals. This can be a coach, an advisory board, or your actual board. As a corporation, you must have regular board meetings. Therefore, if you trust and like your actual board members, making them your thought partners is the best practice. If that is the case, then I follow the "Best Practice" model below. If you do not have complete trust in your board, I highly recommend that you get to a place of absolute confidence (through facilitation and/or replacing board members). But if you are still unable to create the board of complete trust right now, then follow the "Minimal" model below.
+
+##### **Best Practice**
+
+Be transparent. Be vulnerable. The best board meeting is one that gives board members enough information to allow them to be helpful to you. If you do, they will reward you with rich and valuable feedback.
+
+Here are my board meeting best practices:
+
+1.  Share the board meeting information with all board members in writing in advance of the meeting. 
+      
+    1.  Format: Memo or deck. (My preference is a memo, as it lends itself more to reading.) 
+    2.  Days in advance: Delivered to the board at least three days before the board meeting, ideally one week. 
+    3.  Information included: 
+          
+        1.  Update 
+              
+            1.  KPIs, including 
+                  
+                1.  Summary Financials
+                2.  Product Roadmap
+                3.  Hiring Roadmap
+                4.  Sales Pipeline
+            2.  What we accomplished last quarter (OKRs)
+            3.  From both KPIs and OKRs 
+                  
+                1.  What went (is going) well
+                2.  What didn't go (isn't going) well 
+                      
+                    1.  Why.
+                    2.  What we are doing to fix it.
+            4.  What we hope to accomplish this quarter (OKRs)
+        2.  Issues 
+              
+            1.  One or two strategic questions or problems that we are grappling with. (Could be from the Update above.) 
+                  
+                1.  The issue of choice written out thoroughly 
+                2.  Our proposed solution
+            2.  Most board members have useful pattern-matching advice on forward-looking strategic questions (i.e., Should we expand to Europe? Should we launch an adjacent product?) but aren't in a position to give helpful advice on internal operating issues (i.e., Our CMO is struggling, what should we do?). Stick to the forward-looking questions in the board meeting.
+        3.  Requests 
+              
+            1.  Specific action requests of board members 
+                  
+                1.  Most board members have strong networks. Take advantage of this by asking for warm introductions to potential customers, partners, etc.
+        4.  Feedback 
+              
+            1.  Ask the board: How could the company's and CEO's interaction with the board be better?
+    4.  Collect responses 
+          
+        1.  Ask board members to pose questions and write responses to the board packet at least two days before the meeting.
+2.  During the next 48 hours, you, or your internal team, write up answers to all board member questions.
+3.  Meet (phone call) with board members 1-1 just before the board meeting to 
+      
+    1.  Ensure that they have ingested the information
+4.  Elicit their questions, concerns, etc., so that they come to the board meeting already feeling heard (this is critical for creating trust). 
+5.  At the board meeting 
+      
+    1.  Invite the executive team to attend. This allows board members and executives to get to know each other and gain comfort with each other.
+    2.  Spend the first 15 minutes allowing board members to read the responses to all board packet questions.
+    3.  Unpack one strategic question or issue. 
+          
+        1.  Ask for each board member's view. Give equal air time.
+        2.  Board observers and lawyers do not speak unless you specifically ask for their input.
+    4.  Unpack the second issue.
+    5.  Confirm that each board member is willing to do the actions requested.
+6.  Collect written feedback if it wasn't already collected in response to the board packet. 
+7.  Social time 
+      
+    1.  It is often healthy to create an informal social venue for board members and the executive team. This interaction is usually a meal before or after the meeting. 
+          
+        1.  Board observers and lawyers are usually not invited to this gathering.
+
+##### **Minimal**
+
+1.  Keep the board to an odd number of seats (to avoid a dead-locked vote) and as few seats as possible. The ideal number is three. Try very hard not to go beyond five.
+2.  Board observers are supposed to observe only during a board meeting and not talk unless asked a direct question by a board member. Enforce this behavior.
+3.  Give the board members all the information they need at a board meeting (or even better, before the board meeting) in writing so that they have few or no questions during the meeting. The best way to do this is to: 
+      
+    1.  Create a complete presentation with 
+          
+        1.  complete financials and metrics/KPIs
+        2.  write-up of the good and the bad from these metrics
+        3.  what we accomplished since the last board meeting (OKRs)
+        4.  what we plan to accomplish at the next board meeting (OKRs)
+    2.  significant challenges that we face, and how we plan to address them
+    3.  Do a test run with a trusted non-board member who asks questions where things are unclear. Answer all of their questions, and add the answers to the board presentation. 
+    4.  Present this final version to the board, and they will likely have no further questions.
+
+After the board presentation, where there are hopefully few to no questions:
+
+1.  Give **the board members homework**.
+2.  Give each one a very specific assignment.
+3.  Don't worry, none of them will actually do the homework.
+4.  But they also are then not likely to give you unsolicited advice. This is the true goal of the homework. 
+5.  If a board member does give you advice, take notes. Summarize what the board member said, and ask if you got it right. Once they say "Yes, that's right," thank them for their advice and let them know that you will seriously consider it in formulating your go-forward plan. This will make the board member feel that you heard them, primarily what they are after.  
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# Product
+
+## Chapter 203: Product:  Innovating
+
+*Source: https://docs.google.com/document/d/1PBQxgfcN1ySKcuw5MW6BFIRT4JMIP64ykRgETyJepa4/edit*  
+*(3 min)*  
+
+[Product:  Innovating](https://docs.google.com/document/d/1PBQxgfcN1ySKcuw5MW6BFIRT4JMIP64ykRgETyJepa4/edit) (3 min) 
+
+by Matt Mochary
+
+Beyond Bill Aulet, author of [*Disciplined Entrepreneurship*](https://www.amazon.com/Disciplined-Entrepreneurship-Steps-Successful-Startup/dp/1118692284), there are 3 voices that have massively impacted how I think about Product Development.  
+
+  - Marty Cagan, author of [*Inspired*](https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507)
+  - Rahul Vohra, CEO of Superhuman
+  - Wei Deng, CEO of Clipboard Health
+
+**Traditional product development**
+
+Marty Cagan is the current guru of product development.  He writes that the old way of doing product development is:
+
+  - Talk to a bunch of new or potential customers. 
+  - Understand the top problems they have and identify the commonalities among them. 
+  - For the top common problem that has the least good solution currently in the marketplace, figure out how you can solve it far better than the current next-best solution.
+  - List the features required, prioritize those features by building the easiest ones with the most impact first, and the hardest ones with the least impact last.  This is your Product Roadmap.  Go build.
+
+The new way, he writes, is:
+
+  - Still talk to new or potential customers, and figure out the top common problem that has the least good solution currently in the marketplace.  Then …
+  - Build a prototype of your solution and get it into real users hands in a matter of days. 
+      
+      - Don't waste time designing the solution.  Instead, slap together a quick and dirty prototype and get it in the hands of users for their reactions.  
+      - User feedback is far more valuable than design. So, skip design and get to user feedback as fast as you can.
+  - And then create another prototype and get into real users hands in another few days.
+  - Keep iterating like this until users are loving the prototype.  Then build that!
+
+**Superhuman innovation**
+
+Superhuman went through this process and got real users. Some loved his early prototype, others thought it was OK.  
+
+Rahul Vohra, CEO, interviewed all of their users and found that Superhuman was solving different problems for different users. Better solutions were available for the people who didn't love the product. However, the people who *loved* Superhuman had a problem for which Superhuman was the only solution. 
+
+So which feedback should he listen to when creating the next version? Rahul's first instinct was to win over those who didn't yet love the prototype, since their feedback was harsher.  But then it dawned on him … 
+
+"Rather than try to dumb this product down into something that's generic like everything else, why don't I just focus on the people who have a problem that only I can solve and then go find many more people with that same problem?" 
+
+And that's exactly what he did.  He documented his thinking in [this article](https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit).
+
+That's the first innovation: Talk to your users to figure out all the problems your users have, but really focus on solving the problem for which there is no other good solution.  Focus on your users who couldn't make it without your product.  
+
+**Prototyping**
+
+Prototyping tools have become extraordinarily good.  Figma, many different no code tools, prototyping in custom code (as long as there is a sandbox where the code doesn't need to be stable) are all excellent options.  The key is to create a prototyping space that isn't connected to your production site, so that the team building your main product doesn't require the code to be stable before releasing it to the world.  Only then will you be able to build prototypes as fast as they want to be built.
+
+"Well, how separate is separate enough for the prototyping space?"
+
+**Driving innovation via separate incorporated entities**
+
+Wei Deng, CEO of Clipboard Health, has pushed the separation more than anyone else I know when [developing a new product in a scaled company](https://docs.google.com/document/d/1oIafvO9RHwstSFimEnKOPEgNVEst7QVrln46EklQc4Y/edit). She feels that having a beta site that is not gated, that is not beholden to production, is not separate enough. For features for an existing product, that may work. 
+
+But when she's building an entirely new product, she wants a separate reporting line for the new product team.  She doesn't want them to report to the VP Eng or VP Product for the primary product.  Why?  Because there is overhead in being part of a large team:  
+
+  - The time and headspace it takes to participate in meetings with the manager and the rest of the larger team.
+  - The design influence of the existing product designer.
+  - The need for code to be stable and secure before being released to existing customers.
+
+All of these things slow down speed to prototype.  And Wei doesn't want to burden her new product teams with any of it.  So, for any new product team, she …
+
+  - Creates a new product team that reports directly to her.
+  - Creates a new corporate entity (which is easy to do), that is 100% owned by Clipboard Health, that owns and operates that new product team.
+      
+      - The separate company doesn't really add anything functional but it adds great symbolism in that it proves to the team that they really are not beholden to anyone in the existing infrastructure, in the existing tool, in the existing company.
+      - The team feels like they're a true YC start-up with three to five members per team, someone who's designated as the CEO, and they have their own entity (bank account, etc).
+  - Creates a second new product team that is trying to solve the same problem, to maximize the amount of innovative problem-solving.
+      
+      - Microsoft did the same thing, and quickly realized that if one team "won" and created the product that was eventually used, and the other team was not rewarded, then people became reluctant to join any future product team for fear of being on the losing team.  (It turns out fear of losing is stronger than joy from winning.)
+      - So MSFT, and Wei, now reward both teams for their effort, not the result.
+
+So, for every new product that Wei wants to build, she is creating a separate entity and at least two separate teams trying to identify and solve the problem.  
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 204: Product: How to develop a new one in a scaled company
+
+*Source: https://docs.google.com/document/d/1oIafvO9RHwstSFimEnKOPEgNVEst7QVrln46EklQc4Y/edit?ts=5f654b36*  
+*(3 min)*  
+
+[Product: How to develop a new one in a scaled company](https://docs.google.com/document/d/1oIafvO9RHwstSFimEnKOPEgNVEst7QVrln46EklQc4Y/edit?ts=5f654b36) (3 min)
+
+By Tom Shields and Matt Mochary
+
+(Add video of Matt explaining this.)
+
+Achieving product-market fit for a new product when you only have 2-3 people in your company (i.e., a YC startup) is hard. Doing it when your company has hundreds of people is damn near impossible. Why? And is there a better way?!
+
+To understand this dynamic, let's look at product development through three broad stages of company development:
+
+Stage 1: Building
+
+In this stage, 2-3 founders (YC startup size) prototype a product and find product-market fit. There is no brand equity to worry about and no real concerns about security or scalability (because there are no real users yet). The development team is small enough to move fast and break things without the burden of commenting, testing, and hardening their code. All they care about is getting feedback from their customers, experimenting, and iterating as fast as possible. This allows them to learn and optimize their solution very quickly.
+
+Stage 2: Scaling
+
+Once the company finds product-market fit, they begin to sign customers and grow the team. The product now needs to be secure and scalable. The team needs to onboard new engineers, so the code needs to be commented on and tested. The company begins to develop a brand and a reputation that they need to protect, so they want high confidence that new features work well before being deployed. All of this necessarily slows down the pace of development and deployment. 
+
+Stage 3: Broadening
+
+Now the company wants to broaden the product portfolio, so they need to build new products. The problem is that the team's DNA is now oriented towards protecting the brand, so a new product will take a long time before it's good enough for sharing. The developers are used to building scalable and clean code, which takes longer than rough prototypes. Under these constraints, it's impossible to get customer feedback and learn quickly enough. Other newer and smaller startups will learn 10x faster and beat them every time.
+
+Solution:
+
+The only way to successfully build a new product within a scaled company is to recreate the early-stage building mode. This means taking a team of 3-5 dedicated people and making them autonomous. This regains all the build fast elements of the YC startup. No brand, no customers, no need for security, scalability, or industrial code.
+
+(At the extreme end, this means putting the team in an entirely new C corp [wholly owned by the parent], with a new name and therefore no brand to protect.) 
+
+This new group will still require a "founder mentality." And it is hard to hire true founders because they're usually founding companies. (Although, it is worth trying to find x-founders whose companies didn't succeed, and they now want to join a successful company.)  The key is to create a founder mentality with the existing team. To create this frame of mind, every week, ask the team how they "failed." Then congratulate them on each instance because it meant that they tried, took a risk, and, most importantly, learned. This way, the team is re-trained from seeing failure as something that removes approval to something that grants approval. This is the only way they can get into the experimentation mode that rapid new product development requires.
+
+Wei Deng, CEO of Clipboard Health, shares that she has created a new C Corp called Billterms.  The results:  
+
+  - It works!  
+  - Customers aren't trying to push requests about the base Clipboard product, because they aren't talking to Clipboard, they're talking to Billterms. So problem-discovery is focused entirely on Billterms.  
+  - Also, we can experiment wildly because the brand isn't associated with Clipboard at all.  If someone has a negative experience with one tool, they are still willing to try the other tool.   
+  - We've actually created a separate C Corp for each of the 4 new products that we are building.
+  - My next experiment is to bring each of these new product teams to work together in person. The rest of the company is remote, but I think new product development happens better and faster in person.
+
+This method works well for rebuilding the existing core product as well.  Technology moves quickly.  There comes a point when rebuilding the core product will produce better results than continuing to add on to the existing version.  But it can often take 6-18 months to rebuild the now-large tool.  Therefore, continue to staff the core product, and treat v2 as a new product and therefore a new company. 
+
+This is common practice.  I can think of 4 companies that I coach that have completely rebuilt their core product.  And one that rebuilds its core product every 12-24 months.  
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 205: Product:  What product to build?  How to position it?
+
+*Source: https://docs.google.com/document/d/1DlphokiVnRnsRDKA_d48QIpmy5VBBfn4760wS8WfQ1Q/edit*  
+*(2 min)*  
+
+[Product:  What product to build?  How to position it?](https://docs.google.com/document/d/1DlphokiVnRnsRDKA_d48QIpmy5VBBfn4760wS8WfQ1Q/edit) (3 min)
+
+I often hear the following line: "We have built a new product and are ready to launch it, but we haven't yet figured out how to position it to customers in a way that resonates with them."
+
+When I hear this, I know that the Product Development process has gone far off the rails.
+
+Here is what the Product Development process should be:
+
+1.  Talk to lots and lots and lots of people who are potential customers. Ask them, "What are your core problems and frustrations related to … (the area that you are focused on)?"  
+      
+2.  Repeat back to each potential customer what you heard them say, by stating "I think I heard you say …." 
+      
+    1.  Then ask, "Is that right?"   
+          
+3.  Keep repeating back until they say "Yes."  
+      
+4.  Write down every customer type and problem. Start to see the trends. Put them in buckets. Example 
+      
+    1.  Customers with over 1,000 employees have this pain.
+    2.  Customers in FL have this pain.
+    3.  The Marketing departments have this pain.  
+          
+5.  For each bucket (also called segment), ask. 
+      
+    1.  How many such customers are there?
+    2.  How much money do they have to spend on a solution?
+    3.  How good are the current alternative solutions?  
+          
+6.  Pick your beachhead. It should be the segment that has 
+      
+    1.  The most customers, with 
+    2.  The most money to spend on a solution, and
+    3.  The worst alternative current solutions
+    4.  The easiest for you implement  
+          
+7.  Now build a product that solves that segment's problem.
+
+If you do this, the Positioning process is easy. It is simply …
+
+1.  State the problem that the customer has. Then … "If you have this problem, we have your solution."
+
+That is it. 
+
+If you have built a product, and don't yet know exactly which individual decision-makers have the problem that this product solves, then you have done things in reverse order. 
+
+Start over. Go talk to lots and lots and lots of people who are potential customers. Ask them, "What are your core problems and frustrations related to … (the area that you are focused on)?"
+
+They will then give you your positioning.
+
+If you are a customer, be careful. You are just one customer. It would be best if you talked to a range of customers to discover common pain points. If you build for just one customer (even if it's you), you are likely building a customized solution, not a product. 
+
+When you have a product with users, and you are continually talking to them about their ongoing problems, one question that quickly arises is: "Which users' problems should I solve?"
+
+[Rahul Vohra of Superhuman has come up with a very useful framework to answer this question](https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit). The ones that truly love your product and would feel great sadness if they no longer had access to it. They are your power users and evangelists. Double down on them, and those like them!
+
+By the way, this customer problem discovery process is so powerful that it works even when a company already has a scaled product. One of my portfolio companies sells a product to hospitals. And they are winning. They are already a unicorn and growing quickly. But the CEO could see that hospitals are not great customers because they don't have much cash, and they make decisions by committee (i.e., very slowly and painfully). 
+
+I asked him what customers he'd like to have. He said: "Pharma and medical device companies. They have tons of cash and are streamlined." I said: "Great, then go talk to them and find out what their problems are. See if you can solve them." 
+
+He did. He spent three months doing so. He discovered their primary problem and realized that he could easily build a solution to this problem by tapping into his current solution.  He described the solution to pharma and device CEOs and they love it.  
+
+He has already collected several million dollars in advance payments to develop the solution (which will be easy to develop). Once created, the current contracts will turn into hundreds of millions of dollars in contracts, with much more TAM behind that. 
+
+Six months ago, he thought he'd never get past $2-3b in value. Now he's confident he'll get to $100b. 
+
+**Lesson:** Never stop doing this customer problem discovery process. Both with your current customers and the customers you wish you had. 
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 206: How to figure out product positioning, from April Dunford on Lenny’s podcast
+
+*Source: https://docs.google.com/document/d/1ZezcGt-o5dF1JJLbZfM1R9208Jr9nmxWPbXUiTwvAFg/edit*  
+*(1 min)*  
+
+[How to figure out product positioning, from April Dunford on Lenny's podcast (1 min)](https://docs.google.com/document/d/1ZezcGt-o5dF1JJLbZfM1R9208Jr9nmxWPbXUiTwvAFg/edit)
+
+*Summarized by Regina Gerbeaux*
+
+[Link to Lenny's podcast episode here](https://open.spotify.com/episode/7sJotsZOeokjYTRYlrgKx8)
+
+[Link to April's summary + exercise here](https://www.aprildunford.com/post/a-product-positioning-exercise)
+
+This is an *internal* exercise used by ELT to figure out the narrative on how to position their product in the market.
+
+**Step 1:  what am I positioning against?**
+
+*What is the current status quo?  (Think pen and paper, spreadsheet, etc.)*
+
+*Who else would be on the short list of companies I have to be better than to win this contract?*
+
+**Step 2:  what makes us different?**
+
+*From the status quo and short list, how are we different?*
+
+*(This can be product features, pricing, customer service, etc.)*
+
+**Step 3:  "differentiated value":  So what?  Why do these differentiators matter?  What is the value this feature enables?**
+
+*Go through the list.  You'll find 2-3 buckets of "value themes" that are created for your customers.*
+
+**Step 4:  best-fit customers:  what does this customer in particular care about most from these "value themes"?**
+
+*What are the characteristics of the people who care about this product?*
+
+*Sell them on these points.  Customers will care about different things, so having different value themes helps make the sale better.*
+
+**Step 5:  market category:  what's the context I position this in that makes the product value obvious to the people I'm going after?**
+
+*Position the value* *to that market category* *so it becomes obvious why the key decision maker should buy from you.*
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# Engineering
+
+## Chapter 207: Engineering:  How to increase speed and quality
+
+*Source: https://docs.google.com/document/d/1yL_m10CT6bIVsvSfjsCcm_Q4phMP63DDmItepDONQg0/edit*  
+*(1 min)*  
+
+[Engineering:  How to increase speed and quality](https://docs.google.com/document/d/1yL_m10CT6bIVsvSfjsCcm_Q4phMP63DDmItepDONQg0/edit) (2 min)
+
+Your engineering team is not producing fast enough. And what they are producing is laden with bugs that need to be fixed. 
+
+How to correct this? The answer seems obvious: hire more engineers and get a VP of Engineering that knows how to actually manage them. Right?!
+
+Oftentimes … wrong!
+
+Building an application is in many ways like building a house. If a master builder assembles the foundation, floors, walls, roof, electrical, and plumbing … she will know how everything interconnects and builds things that work well together. 
+
+However, if a junior builder gets added to the team, he will be given a task (like building a wall) that needs to be reviewed, which takes the master builder's time. That review might reveal something wrong that needs to be fixed, which takes more of the master builder's time (imagine having to pull out nails and then redo the wall). This time to fix is often more than when it would have taken the master builder to build the wall itself. But, much more insidiously, the master-builder may well find the process of reviewing and fixing other people's work draining, leaving her with far less energy to create herself, and in the end, having junior team members may be net negative to overall productivity. 
+
+So, before you hire more people and add even more burden of reviewing and fixing (and now coordinating with a large team) to your master builder, talk to your master builder first. Consider the possibility that she is more effective if she doesn't have to mentor and review. 
+
+At some point, of course, you will need more than one builder. Consider, however, that senior developers whose code is clean and requires little review (and rarely any fixing) are the only ones who are net positive. While they cost 3x, they actually produce the proverbial 10x … mainly because the junior engineers produce close to net zero.
+
+You are now likely thinking: "Matt, there just aren't enough senior engineers in the world. We'd love to hire only senior folks, but we can't find them. We need to bring on junior engineers so that we can eventually train them to be senior."
+
+That is absolutely true. But then recognize that you are training. Create an actual training program. Do not sap the energy and time of your senior developers with this process. Have it happen off to the side, where the teachers are only those who actually derive energy from the process of teaching and mentoring.
+
+Major League Baseball has the same issue. For that reason, they have farm teams. But you don't see the star major league player being required to mentor the minor league players. Don't ask yours to, either.
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 208: Engineering excellence:  Rubber Duck channels
+
+*Source: https://docs.google.com/document/d/1ru-vWXperFNPZDqjzAmLH242HMrPbjyDrSBDrhVzaOk/edit*  
+*(2 min)*  
+
+[Engineering excellence:  Rubber Duck channels](https://docs.google.com/document/d/1ru-vWXperFNPZDqjzAmLH242HMrPbjyDrSBDrhVzaOk/edit) (2 min)
+
+Video of Matt interviewing Aaron White, CEO of Blissfully (about 1 hour):
+
+<https://drive.google.com/file/d/1RkL24RcDJisG9ydL1-rfanw3UR3zgjcI/view>
+
+(These ideas came from Matt Mochary interviewing Aaron White.  Aaron is the founder and CEO of Blissfully, which was purchased by Vendr, because Ryan Neu (CEO of Vendr) deemed Blissfully to be the one of the most, if not the most, productive engineering orgs Ryan had ever seen.)
+
+One of the primary tenets of creating excellence in an engineering org is speed.  Speed from idea to prototype.  Speed from getting stuck on a problem to getting help.  Speed from having feedback to give to actually giving that feedback.  Speed from realizing that someone doesn't meet the talent bar to letting them go (with kindness).
+
+By this point, it is a well-accepted tenet that an engineering organization that has true talent density (see [No Rules Rules](https://docs.google.com/document/d/1KU0WiVVu2ZiINORMaO0Nyf7eR0isc5NO-Xi7RG6YaNY/edit)) is far more effective than one that doesn't have it.  But how to get there?
+
+One of Aaron's key tools is the Rubber Duck channel.
+
+Rubber Ducking is a familiar concept to most engineers.  If you are struggling to solve a problem, it often helps to say it out loud to someone else.  By explaining it, the answer often appears.  So much so that you don't even need to explain it to another person.  You can simply put a Rubber Duck on your desk and explain the problem to the duck.  
+
+Aaron takes this familiar concept and puts in online … actually on Slack.  Each person in the engineering org gets their own "Rubber Duck channel" in Slack.  There, they can write out the engineering problems that they face.  This often leads to the solution.  But if it doesn't, it also allows the more senior engineers to quickly see when another engineer is stuck and offer helpful suggestions.  These channels also allow the whole team to learn from the most senior engineers, to see how they solve problems.  
+
+Those who don't use the channels don't get immediate help, and therefore often struggle to keep up.  Anyone who struggles to keep up receives feedback quickly.  
+
+As soon as Aaron has the thought "Hmmm, that person isn't doing what I would hope they would do.", Aaron does not wait more than 24 hours before letting the person know, as well as what exactly he hopes they would do (ie- speed to feedback).
+
+Once Aaron gives someone direct feedback, if they don't fully repair within 2 weeks, Aaron [fires them well](https://docs.google.com/document/d/1J3c8lGMzPJXMMSWNIh7UCsv-_4qKYZkrkwloIbu3BW8/edit). 
+
+The channels are so effective that Aaron now tests an engineer's ability to use the channel during the interview process.  Aaron gives the engineer a problem to solve on the spot that he knows the engineer will not have time to solve.  Aaron tells them that, and simply asks them to share their thinking out loud as they tussle with the problem.  Aaron is not looking for a solution, he is simply looking for their willingness to let their struggling thoughts be known by others.
+
+Once they join the company, he encourages them to start using their Rubber Duck channel instantly, even as they are onboarding.  This also gives Aaron valuable feedback on the onboarding process itself so that he can improve it quickly.
+
+If a new engineer does not use the Rubber Duck channel, Aaron gives them feedback within 24 hours that they need to.  If they continue to not use the channel, or they continue to struggle in the same way even after getting help, Aaron lets them go quickly.  Aaron feels that he knows within 2 weeks whether someone will be a great addition to the team.  All that are not, he lets go within days.  
+
+This is a radical approach.  And it works.  
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# Marketing
+
+## Chapter 209: Marketing: Target Beachhead (Segment, Target, Promote)
+
+*Source: https://docs.google.com/document/d/1TFZoP5WKecHwhnmB86REIzRmqGuZGUTP2QAmXmzrGEA/edit#*  
+*(2 min)*  
+
+[Strategic Marketing: Target Beachhead (Segment, Target, Promote)](https://docs.google.com/document/d/1TFZoP5WKecHwhnmB86REIzRmqGuZGUTP2QAmXmzrGEA/edit#) (2 min)
+
+You have discovered a way to disrupt a massive legacy market. You are the first to go after this opportunity, and you want to get as many customers as you can as fast as you can. Your first instinct is to reach out to any and all potential customers in the space. You may even have the thought that you want a few customers in each geography around the world to "mark your territory." Your primary fear is that other competitors will see the same opportunity and move faster than you. 
+
+But history tells a different story. The most significant risk of a startup is not that they moved too slowly in dominating the entire marketplace, but rather that they spread their scarce resources too thin and ended up securing few or no customers at all. 
+
+Every customer already has a legacy solution in place, and those legacy providers are far larger with more resources than you. They have deep and long-standing relationships with their customers. Even if your product or service is better, it needs to be 10x better than the legacy solution for a customer to switch.
+
+Therefore, rather than go after the entire market at once, the key is to find a small segment of the market (i.e., a set of customers with similar pain points) that has a particularly difficult problem for whom your solution is indeed 10x better than the broad non-specific legacy solution. This is your low-hanging fruit. Concentrate all of your efforts on this type of customer to maximize your chance of getting your first few customers. Once you do, you will have a track record to share, raise more money, and hire more engineers to create more features and more salespeople to develop more relationships. Continue focusing on this first type of customer until you have secured many (if not most) of them as your customers. Then use your now-larger amount of resources to move to the next lowest hanging fruit. 
+
+A good analogy is the Allied invasion of Europe during WWII. The Germans held the whole coastline. The Allies could have chosen to spread their invading force along the entire shore. If they had, they would have had one boat per beach. The Germans' pillboxes would have slaughtered each and every Allied soldier that landed on a French beach. 
+
+That, of course, is not what the Allies did. Instead, they studied the coastline and found the beach that was the least well-defended (Omaha Beach in Normandy). They concentrated most of their forces on that one target beachhead and could overwhelm the German defenses there and secure the toe-hold they needed. From there, the Allies were able to bring in more resources, expand out, and eventually spread throughout Europe.
+
+Do the same. Study the marketplace. Segment it into different customer types. Determine which segment is the least satisfied with their current solution and for whom your solution is the best fit. Concentrate all of your sales and engineering efforts toward this segment. Land a few of these customers. Continue to focus on this segment until you dominate it. Only then expand to other customer segments (or add other products). 
+
+The best way to choose a target beachhead is to follow the steps outlined in the book *Disciplined Entrepreneurship* by Bill Aulet. There is no need to reinvent the wheel here; that book outlines the steps clearly. 
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# Sales
+
+## Chapter 210: Selling
+
+*Source: https://docs.google.com/document/d/1T6fnyDDqdzAFdzJzZkiAnaKvZzjzkX5HSwAjuedvlQQ/edit#*  
+*(6 min)*  
+
+[Selling](https://docs.google.com/document/d/1T6fnyDDqdzAFdzJzZkiAnaKvZzjzkX5HSwAjuedvlQQ/edit#) (6 min)
+
+When I decide what product to buy, what service provider to hire, what company to join, what company to invest in, and what investor money to take, I most often decide based on how much I like the person presenting the option to me. And how much I like a person depends entirely on how much personal connection has been created between us. 
+
+Does this person care about me? Do they respect me? Are they curious about me as a human? Do they ask about my life, my likes/dislikes, etc.? Do they then truly listen when I share that information with them? And do they act based on what I share with them?
+
+I am not unique in this behavior.
+
+So, when you are selling something, how can you make people like you?
+
+Here are some things that have worked for me.
+
+##### Get introduced by someone I already trust and like
+
+Find someone that you know (preferably several) that I already know and like. Have them introduce and recommend you. 
+
+##### Reach out to me directly
+
+When we do get connected, always reach out to me directly. This sends the message: "You matter to me." 
+
+Never have your EA or COS reach out to me on your behalf. That sends the message: "My time is too valuable for me to interact directly with you." It's an immediate turn-off.
+
+Remember the famous story about Bill Gates and Frank Gehry, the foremost American architect of his day. Gates very much wanted Gehry to design his (Bill's) house, so Gates had his assistant reach out to Gehry. Gehry declined. Years later, Gates and Gehry happened to meet at an event. Gates asked Gehry, "Why did you say no to designing my house?" Gehry replied, "You never asked me." Gates said, "Of course I did." Gehry replied again, "No, **you** never asked me."
+
+##### Be highly responsive 24/7
+
+Sam Altman (who ran YC for many years), Sequoia Capital partners, and Goldman Sachs bankers all have this in common: No matter what day of the week, or time of day (other than the sleeping hours), if I reach out to them, they will likely respond to me within 30-60 minutes. The response will be super-brief, but it will let me know that they have received my message and what they will do about it. The messages are rarely more than 1-2 sentences and almost always voice-dictated into a mobile phone (errors and all). 
+
+I value the attentiveness and quick response far more than I would a lengthy response that comes days (or even hours) later. I don't need, nor want, a lengthy response. I just want to know what the next steps are so that I can move on to those next steps. A quick response allows me to keep moving. A slow response slows me down.
+
+Therefore, a quick and short response makes me feel super-attended to. And I am not alone. Most people react this way.
+
+##### Be highly respectful of my time.
+
+If we make an appointment with each other, please let me know if you will be even one minute late. I don't mind if you are late. I just care if you knew you were going to be late and didn't let me know. 
+
+Once again, Sam Altman, Sequoia Capital partners, and Goldman Sachs bankers all have this in common: When they make an appointment with me, they always give me a heads-up if they will be even one minute late. And I feel cared for each time they do.
+
+##### Show that you care about me as a human
+
+Yes, we are doing business. But if it's just business, then I feel as though I am a transaction to you. This makes me feel that you are only looking out for your interests, not mine. And this puts me on alert. I have too many things going on in my life to want to add a relationship where I constantly need to audit whether you treat me fairly. If I add another relationship, it will only be one where I trust you and believe that you are looking after my interests so that I never have to audit you. 
+
+If you get curious about me (ask me what I like and dislike, what makes me feel joy/excitement and anger/fear) and then prove to me that you actually listened by referring back to what I said later in the same conversation or a future conversation, then I tell myself that you care about me and will look out for my interest as well as yours. This may be a complete falsehood, but I tell it to myself anyway. And, once again, I am not alone in feeling this way. Most people do.
+
+So, give me what I want. Get curious about me, my family, my dreams and passions (both inside and outside of work), my frustrations and fears (again in and out of work). Once you know what matters to me, I have faith that you can help me. 
+
+##### Show me (over and over again) that you are thinking about me as a human
+
+Now that you know about me as a human (my spouse's and kids' names, my favorite sports teams, my hobbies, my hopes, and dreams, etc.), the next time we see each other or talk, start that conversation by asking about one of these personal things. I.e., "Before we get into business, I'd love to hear how your kids George and Anne are doing?"
+
+Then, between our meetings, take the time to reach out to me and let me know that you're thinking of me. 
+
+1.  If I like tennis, send me a text saying, "I saw this great article on Serena Williams. I know that you love tennis, so it made me think of you."
+2.  On my birthday, send me a message of well wishes. 
+3.  Send me a gift that is highly customized and based on the interests you know about me. Not something expensive. Just something that relates to something that you know that I am interested in. 
+      
+    1.  Ideally, make the gift something that I will see and use each day. Then I will be positively reminded of you each time that I see or use it. The two best such gifts that I have received: 
+          
+        1.  The briefcase that I use every day.
+        2.  An Oura ring that I wear every day.
+
+Not coincidentally, both of those gifts were given to me by Brazilians. If you want to take the Master Class, watch a Brazilian operate. They can't explain why they are doing each thing, but it has been infused into them since childhood. They just really like and care about other people. And it shows!
+
+If you want to go to the advanced level (recommended when trying to recruit a high-level exec), reach out to their spouse. Do all of the above with him or her.
+
+  - This level may seem forced. It's not. Whenever I am recruiting someone, I tell them, "I imagine that your spouse has concerns about you taking this role. I want him to know that he's got a direct line to me to have those concerns addressed. Would you be open to connecting me to him?" 
+  - I have never had anyone say "No." And each time I have connected directly with the spouse, I have always landed the candidate.
+
+I recommend blocking off one hour per week to reach out and create touchpoints with each important person in your life. You don't have to ping every person every week. But reserve the time to ping as many as you can.
+
+##### Create A/B Tests
+
+All of the above will feel unnatural to you. You will think that if you start doing it, then the recipient will view the behavior as "forced and unnatural" and creepy even. I assure you, they won't. But you need to prove this to yourself. 
+
+So, create an A/B Test. Pick someone you can afford not to succeed with (a customer, partner, investor, or recruit), and try this entire technique. See if the results are positive or not. If not, the cost to you will be low. 
+
+But I posit that the results will be massively positive. And if they are, then you have just learned the art of sales.
+
+APPENDIX:
+
+##### Be Prepared
+
+Once you are timely and have shown that you care about me as a human, I like you. Now it's time to do all the traditional Sales 101 stuff.
+
+The first is to be prepared. Before each meeting that we have, study up on me so that you know the basics of my situation, company, industry, etc., without me having to tell you.
+
+##### Discover my problem
+
+Ask what challenge or frustration I am facing and what my goal is. 
+
+##### Acknowledge my situation
+
+Repeat back my challenge or frustration to me to prove that you actually understood it. Keep summarizing what I said until I say, "That's right."   For more detail, see:  [Heard:  how to make people feel it](https://docs.google.com/document/d/1NiCEEUO2-38pIVGM7nrnpGRykbbtv2xuqLoKW50ZzLw/edit) (5 min)
+
+(This is the most critical step in the whole process!!! Whenever I encounter someone who does this to me, I always compliment them. Even though I know the technique, I still want to experience it.)
+
+##### Share your solution
+
+Once I say, "That's right, " then explain your solution or pitch to me and how it solves my problem.
+
+**⭐Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 211: Sales to the Enterprise: how to scale it
+
+*Source: https://docs.google.com/document/d/1A2k-9EsxC4sn24y5lAwlO8dPqpXnCKTA1BrhSt4FINU/edit*  
+*(1 min)*  
+
+[Sales to the Enterprise: how to scale it](https://docs.google.com/document/d/1A2k-9EsxC4sn24y5lAwlO8dPqpXnCKTA1BrhSt4FINU/edit) (1 min)
+
+You've built a product for enterprises (B2B).  As founder, you have been able to sell the product.  Now you've hired several salespeople, but one or all of them have not yet closed a deal on their own.  And they don't seem capable of doing so.  What to do?
+
+No need to worry.  Like most business problems, this one has been solved many times before.  Here is one way …
+
+Selling to the enterprise is a complex process.  It requires understanding the customer and their problem as well as your solution and its applications.  Some of this can be documented in writing (and therefore learned by new salespeople in a traditional onboarding process), but not all of it.  To understand the entire process, new salespeople must …
+
+  - Shadow another successful salesperson (ie- at first, that is you, the CEO) going through the entire sales process from start to finish
+  - Document what they saw
+  - Have the successful salesperson reverse shadow the new salesperson and give them feedback … until the new salesperson both succeeds (ie- by making a sale) and is approved by the successful salesperson (this is a higher bar than making one sale)
+      - This is usually painful for the successful salesperson to do.  They often don't want to "waste" their time this way.  Unfortunately, this is a crucial step and must be done.
+  - Teach another new salesperson the entire process using the previous 3 steps
+
+As CEO, you will have to train the first hired salesperson this way. Then they have to train the next few salespeople this way.  Etc.
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 212: How to Train Salespeople
+
+*Source: https://docs.google.com/document/d/1RjY9GDgPa9ACAMuiQ3IRfOQYyYNjsUVXVe4CqfiC6OY/edit?usp=sharing*  
+*by*  
+
+[**How to Train Salespeople** ](https://docs.google.com/document/d/1RjY9GDgPa9ACAMuiQ3IRfOQYyYNjsUVXVe4CqfiC6OY/edit?usp=sharing)**(4 mins)**
+
+By [Sabrina Wang](https://twitter.com/sabrinawangzq), CEO coach
+
+I am honored to serve some world-class coaches as their Head of Coaching at Mochary Method. During my tenure, I've learned that managing a coaching team is essentially like managing a sales team. This team has amazed me with their ability to deliver value during one of the hardest economies in tech. While coaching is about helping people grow and develop in their roles, I believe sales is about adding value and helping solve a problem. The principles of finding customers who would benefit apply in both cases.
+
+Training a sales team is an ongoing process. Here are the top strategies we learned together as a team:
+
+1.  **Create documentation of the entire sales process**
+    1.  It's important to have a first draft of the entire sales process to describe each touchpoint with the salesperson from the very first call to sending out the invoices. Create examples of everything from a call script to an email template. This way, everyone is on the same page and there is consistency in the sales process.
+
+2.  **Shadowing and reverse-shadowing**
+    1.  The [Sales to the Enterprise: how to scale it](https://docs.google.com/document/d/1A2k-9EsxC4sn24y5lAwlO8dPqpXnCKTA1BrhSt4FINU/edit) document describes the importance of shadowing and reverse-shadowing. I would recommend the shadowing period to be 2-4 weeks depending on the complexity of the product. Then another 2-4 weeks of reverse-shadowing. Ideally longer.
+    2.  In reverse shadowing, give ample written and verbal feedback. More, ask the team permission to keep all feedback open. This way, other salespeople can access your feedback to one person. You can also encourage peer feedback to maximize the learnings of 1 recorded call.
+    3.  I give all feedback in this format:
+        1.  1-5: I rate the call from 1-5. 3 being meeting expectations, 1 being it can't be any worse, and 5 being it can't be any better.
+        2.  Like: what I liked about the call
+        3.  Wish that: what I wish to see in the call to get this person to a higher rating
+
+3.  **Create space during meetings for the team to raise their challenges and get support from the group**
+    1.  It's important to us that the team feels like a cohesive unit, rather than individuals trying to compete with each other. There is so much wisdom and learning that happens when you learn to sell a new product or service. Much of that can be shared with the team outside of the individual silo. Here are the few ways that we've created space for the team to learn together:
+        1.  Asked the team to write down their challenges with selling and crowdsource ideas and solutions
+        2.  Asked the team to share how they're feeling about their pipeline. Sometimes, the team doesn't need more tactical tips. They just want to know everyone else is also feeling fear, disappointment, nervousness, and so on. This has been one of our most impactful tools.
+        3.  Facilitated Q&A sessions with more seasoned salespeople to gain further insight
+        4.  Ask new salespeople to teach each other a component of the sales process so they can master the subject, and evaluate if they truly understand the concept
+
+4.  **Once the team has learned the documentation perfectly, they may still run into issues with selling.**
+    1.  One of my teams made a great metaphor. The first stage of learning to sell a new product or service is like learning a new language. That stage is difficult. The second stage can be arguably harder - it's when you use the new words to start making conversations. Here are the two main things that we leaned on to move through this stage:
+        1.  Update documentation of the sales playbook to include new insights and learnings
+        2.  Go through the entire process with team members 1-1. Find out where the salesperson feels the most discomfort and fear. Ask them to share their thoughts with you. Make them feel heard ([Heard:  how to make people feel it](https://docs.google.com/document/d/1NiCEEUO2-38pIVGM7nrnpGRykbbtv2xuqLoKW50ZzLw/edit)) in those thoughts. Then, help them reframe and adapt those points in the process so that the entire process feels authentic to them.
+            1.  An example is that a salesperson may not be comfortable with holding the customer accountable for a decision during a call. Upon investigation, what they really feel bad about is appearing as pushy. What would be a way to get an answer from the customer without appearing to be pushy? Well, maybe they could ask the customer for direct feedback on the product or service. When you ask the customer for feedback, you're also asking them to evaluate the experience to see if they want to work with you.
+
+If you're a manager of a sales team, I would like to encourage you to think about this from the sales team's perspective. Most people would be learning something new about the process, product, and service. Learning new things can be scary. So as a manager, it's critical to provide as much clarity and feedback as possible that is customized to the individual's natural communication style.
+
+
+---
+
+
+# Feedback
+
+## Chapter 213: Feedback: Absolute: Template
+
+*Source: https://docs.google.com/document/d/1Lr0sZSVS2eGq9UC7-twTXsmqczZCXf4PV21kCqoh2n4/edit?pli=1&tab=t.0*  
+*(1min)*  
+
+[Feedback: Absolute: Template](about:blank) (1min)
+
+[Matt talking about the importance of Absolute Feedback and how to give it](https://www.loom.com/share/057942f6a7df479294adc1f9ab1d16e8?sid=2f82ddab-3322-4225-a224-ff95ede6a470) (3 min)
+
+People need to know where they stand on an absolute basis. Do not wait until year-end Performance Reviews. Most people have constant anxiety when they aren't sure where they stand.
+
+Giving absolute feedback regularly (usually monthly in a 1-1) will eliminate this anxiety. Bad news is less anxiety-inducing than no news.  It will also give a team member clear guidance on how best to help the company succeed!
+
+To give it, state:
+
+  - **Your current rating for your job function, 1-5, is …**
+      - 1 – couldn't be any worse
+      - 3 – meeting expectations
+      - 5 – couldn't be any better
+  - **What you did that I liked…**
+  - **What you need to do to get to the next level…**
+
+[Absolute feedback:  example](https://docs.google.com/document/d/1cEM4GECXZ2E1675y0a4Hi9D1gSTILCD5ljR6las_vf0/edit)
+
+[Feedback: Receiving: the 5 A's](https://docs.google.com/document/d/1zsVOnpNayriDpzgjJUDO2n47YxO9EAXbVH2uC_Zpnms/edit) (4 min)
+
+
+---
+
+## Chapter 214: Feedback Form 1-1
+
+*Source: https://docs.google.com/document/d/16iXM6T45R5cxPR_OT3hA8iumqNV9fhjNLphsfSCWo1A/edit*  
+
+[Peer Feedback 1-1 (paired)](https://docs.google.com/document/d/16iXM6T45R5cxPR_OT3hA8iumqNV9fhjNLphsfSCWo1A/edit)
+
+Instructions:
+
+  - Pick the version of [Feedback](https://docs.google.com/document/d/1wi714sobuQP72sKXw6J_gkwkhtVh1t6--op_Pk0YPxA/edit) that you will give (Relative, Absolute, Emotion-based)
+  - Declare who will be paired with whom.
+  - Each person creates a scratchpad.
+  - Copy the form of the Feedback below to the scratchpad.
+  - Each fills in their scratchpad simultaneously.
+  - Create a joint document. Give access to each participant, including the facilitator.
+  - Each person copies their Feedback into the joint document.
+  - Pairs go into Zoom Breakout rooms if online or separate areas if in person.
+  - Persona A reads the Feedback.
+      - Thanks Person B for the *Likes*, *What you did that I liked*, or *Joy/Excitements*.
+      - To respond to the *Wish Thats*, *What a ten would like*, or *requests from Fear/Anger*, Person A follows [Feedback: Receiving: the 5 A's](https://docs.google.com/document/d/1zsVOnpNayriDpzgjJUDO2n47YxO9EAXbVH2uC_Zpnms/edit) (4 min):
+          - Appreciates
+          - Acknowledges
+              - "I think I heard you say …. Is that right?" until Person B says "Yes."
+              - "Is there more?"
+          - Accepts (or not)
+          - Acts: Person A and B co-create an action that satisfies the Feedback
+  - Then Person B reads and responds to the Feedback from Person A.
+
+RELATIVE
+
+Person A >> Person B
+
+  - Like
+  - Wish That
+
+Person A >> Person B
+
+  - Like
+  - Wish That
+
+ABSOLUTE
+
+Person A >> Person B
+
+  - Your performance, 1-5 (where 3 is "meeting expectation"):
+  - What you did that I liked:
+  - What would get you to the next level:
+
+Person A >> Person B
+
+  - Your performance, 1-5 (where 3 is "meeting expectation"):
+  - What you did that I liked:
+  - What would get you to the next level:
+
+DEEP (EMOTION-BASED)
+
+Person A >> Person B
+
+  - JOY:
+      - My story:
+  - EXCITEMENT:
+      - My story:
+  - SADNESS:
+      - My story:
+  - FEAR:
+      - My story:
+      - I helped create this situation by:
+      - (optional) My request:
+  - ANGER:
+      - My story:
+      - I helped create this situation by:
+      - (optional) My request:
+
+Person A >> Person B
+
+  - JOY:
+      - My story:
+  - EXCITEMENT:
+      - My story:
+  - SADNESS:
+      - My story:
+  - FEAR:
+      - My story:
+      - I helped create this situation by:
+      - (optional) My request:
+  - ANGER:
+      - My story:
+      - I helped create this situation by:
+      - (optional) My request:
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 215: Feedback Form - Hot Seat
+
+*Source: https://docs.google.com/document/d/106B7q9mgfFpFKxUIz5M7gBjKicwQ-7xotcPSyIS7N_w/edit*  
+
+[Feedback Form - Hot Seat](https://docs.google.com/document/d/106B7q9mgfFpFKxUIz5M7gBjKicwQ-7xotcPSyIS7N_w/edit) (1 min)
+
+Instructions:
+
+  - All write in their feedback in a private scratchpad.
+      - Name of person giving feedback >> Person A (receiving feedback)
+          - Your performance, 1-5 (where 3 is "meeting expectation"):
+          - What you did that I liked:
+          - What it would take to get to the next level:
+  - All paste their Likes into the group doc.
+  - Person A reads the Likes. Thanks each person.
+  - All paste their numerical rating and "What it would take to get to the next level:" into the group doc.
+  - Person A reads all.  Picks the one that is most difficult to hear.  Unpacks that one using:   [Feedback: Receiving: the 5 A's](https://docs.google.com/document/d/1zsVOnpNayriDpzgjJUDO2n47YxO9EAXbVH2uC_Zpnms/edit) (4 min).  Starts by asking the selected feedback-giver to share their feedback verbally.
+
+ABSOLUTE
+
+Each person >> PersonA
+
+  - Your performance, 1-5 (where 3 is "meeting expectation"):
+  - What you did that I liked:
+  - What it would take to get to the next level:
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 216: Responding to Negative Reviews
+
+*Source: https://docs.google.com/document/d/1MRgQZuHJYKx_G1ggJObwidnHn6jQWAJ81IEUT2W9HTk/edit?usp=sharing*  
+*by*  
+
+[Responding to Negative Reviews](https://docs.google.com/document/d/1MRgQZuHJYKx_G1ggJObwidnHn6jQWAJ81IEUT2W9HTk/edit?usp=sharing) by [Faith Meyer](https://mm-coaches.notion.site/Faith-Meyer-ACC-7be84956b4de4ee2b7c30f441db90dc3) (4 min)
+
+Negative reviews are a gift — if you choose to see them that way.
+
+##### **DO NOT REPLY right away** — especially if you are in any heightened emotional state.
+
+Instead, pause and let yourself acknowledge all the stress, rage, shame, and other not-so-pleasant emotions and feelings that may arise after being confronted with an irate (and often anonymous) review.
+
+Just allow yourself to experience, label and process whatever feelings are coming up for you. Then, walk away until you're clear-headed and in a grounded state.
+
+##### **Once you've taken the time you need to process, ask yourself the following questions:**
+
+  - What gift(s) are they giving me with their feedback, however harsh it may be?
+  - What can I learn from this? What gaps in our processes/approach/product are they helping me see?
+  - Is there 5% or even 1% (or more) of what they've written that you can agree with/validate as being true?
+
+##### **Then, to lay the foundation for responding, consider this:**
+
+1.  People don't trust organizations that only have 5 star reviews. If organizations have at least one negative review, people are far more likely to trust the business' online reputation.
+2.  All emotions aside, this is an opportunity to show publicly who you and your business are at your core. What do you want people to see? What you believe and embody will come through.
+3.  You have an opportunity to [make them feel heard](https://beta.mocharymethod.com/blog-post/make-people-feel-heard) — even if you don't agree with what they've shared. Organizations' and leaders' abilities to do this well is PRICELESS.
+
+##### **That in mind, follow these steps as you draft your response.**
+
+1.  Ensure your intention is crystal clear and in alignment with your values.
+2.  Thank the person — for the gift of their feedback, for taking the time to share this, whatever feels like genuine gratitude to you.
+3.  Validate their experience by repeating back what you "heard"/what they shared with you. If there are opportunities for you to take ownership or offer an apology that's warranted, do so.
+4.  Ask for their permission to speak with you (or whoever posts the response) to make amends and provide your contact info — especially if they wrote their review anonymously. This gesture is important as it's a way to show that you genuinely care about them and their experience with your organization.
+5.  Close sincerely — either by reiterating your appreciation or in a way that's in alignment with who you are as an org.
+6.  Walk away. Give yourself a break. Re-read it from a clear-headed standpoint, and ask someone else to proof it/check it against your goals before posting it if possible.
+
+##### **Real Life Examples:**
+
+I know firsthand how confronting bad reviews can be, especially when you've poured everything into building your business from the ground up. The bootstrapped startup I ran in NYC (first as COO and then CEO) experienced its fair share as we dared greatly (and erred plenty).
+
+Here are two real life examples from our startup, Med School Tutors, which was acquired in 2021. The first (and I think the best) is from our former CEO, Robert, who was exceptional at this and who started our team down this path of genuine and wholehearted responses to negative reviews.
+
+The second was one of my early attempts at applying this methodology; I had not fully shifted out of anger, and you can feel the defensiveness in my response.
+
+###### **Example 1:**
+
+<https://www.yelp.com/not_recommended_reviews/med-school-tutors-new-york>
+
+###### **Example 2:**
+
+<https://www.yelp.com/biz/med-school-tutors-new-york?rr=1>
+
+##### **Additional Reference:**
+
+  - [How Small Businesses Can Survive a Social Media Backlash](https://sba.thehartford.com/business-management/business-questions/survive-social-media-backlash/) (by The Hartford)
+  - [Feedback](https://beta.mocharymethod.com/blog-post/feedback) — Giving, Receiving, Feedback Types (15 minutes)
+  - [How to shift out of fear and anger](https://docs.google.com/document/d/15oh13eYxxIyQoOx3_6RQCWzA6ETkxYOV_gtYMeTeBKE/edit) (1 min)
+
+
+---
+
+## Chapter 217: Celine Teoh
+
+*Source: https://mm-coaches.notion.site/Celine-Teoh-8b99082650d14a0aac06160ad8ef4848*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://mm-coaches.notion.site/Celine-Teoh-8b99082650d14a0aac06160ad8ef4848)_
+
+
+---
+
+## Chapter 218: What To Do When Feedback Isn’t Landing Part 1
+
+*Source: https://docs.google.com/document/d/1tsqGVufCXilMKmL6uaZLyvzirhj0Tmb_PfNc_OWWPb8/edit?usp=sharing*  
+*(3 min)*  
+
+[**What to do when feedback isn't landing due to Clarity and Capability**](https://docs.google.com/document/d/1tsqGVufCXilMKmL6uaZLyvzirhj0Tmb_PfNc_OWWPb8/edit?usp=sharing) **(3 mins)**
+
+By [Celine Teoh](https://www.linkedin.com/in/celineteoh/), unicorn CEO coach
+
+You've read [Feedback](https://docs.google.com/document/d/1wi714sobuQP72sKXw6J_gkwkhtVh1t6--op_Pk0YPxA/edit) (15 min). You've tried implementing it. But you've now run into a common issue: unresponsive feedback recipients, aka feedback not landing. Here's how it might show up in a coaching session: the CEO client says: "My SVP isn't responding to feedback, despite several discussions. I'm starting to question whether their promotion was premature."
+
+When it comes to a lack of response to feedback, the answer might be contained in the Three C's of Feedback Dynamics:
+
+1.  **Clarity** - Is your feedback request clear, behavioral and unambiguous?
+2.  **Capability** - Does the feedback recipient have the tools and skills required to act?
+3.  **Caring** - Do they have the motivation or drive to follow through?
+
+In this article let's deal with Clarity and Capability: situations where folks are willing but not able to incorporate feedback.
+
+1.  **Clarity, or The Mind-Reader problem**:
+
+Imagine telling your SVP, "Increase visibility in the Sales CRM." But what does "visibility" truly entail? You are asking them to read your mind. Instead, **outline the specific actions you expect**, such as, "Update deal blockers daily in the CRM for our sales meetings, so I can help you unblock them."
+
+How can you be truly specific in your feedback requests?
+
+  - A video camera should be able to capture the behavior you request
+      - For example, a video camera could capture this request: "Please text me if you're going to be more than a minute late to our meetings"
+      - However, this request cannot be captured by a video camera: "Please be more punctual"
+  - Would you be satisfied if they exhibited the requested behavior?
+
+2.  **Capability, or The "Why Can't My Five-Year-Old Drive" Problem:**
+
+If you ask a five year old to drive, he can't: he lacks the training, the hand-eye coordination, and he's not tall enough to see over the wheel. Similarly, if you ask a fresh graduate to do the work of a seasoned VP, they can't: they lack the required expertise. **Ask yourself - or even better, ask them - how you might help them build the capability to do the job.**
+
+  - Do they need training?
+  - Can the task be broken into manageable steps?
+  - Are additional resources - money, time, political capital - necessary?
+
+To facilitate improvement, consider the **"I Intend To…" Exercise:** Ask the feedback recipient to send you an "[I intend to…](https://docs.google.com/document/d/1bhqRW65zsHHIuv-jWOKx9Aidqfys4zDe0UV9fYH8BkI/edit?usp=sharing)" statement before acting. This prompts them to identify the issue and outline their approach. As you review their intentions, you can offer guidance and adjustments, aiding their skill development.
+
+  - David Marquet used this strategy to turn his nuclear submarine crew from "worst to first" in the Navy
+
+**TLDR**: If your direct report is not responding to feedback and you suspect it's because of capability (not willingness), make your feedback specific and behavioral, help them build the ability to do the work, and provide positive reinforcement. By doing this you can help your employee grow into their role through feedback.
+
+Refer to:
+
+  - "Connect" by Carole Robin
+  - "Nonviolent Communication" by Marshall Rosenberg
+  - "Turn the Ship Around" by David Marquet
+  - "IPS" by Mochary Method
+  - "Why can't my five year old drive" by Dan Winter
+
+
+---
+
+## Chapter 219: What To Do When Feedback Isn’t Landing Part 2
+
+*Source: https://docs.google.com/document/d/13cLE5EH8IpkgdB8fsDDQBZLC0SuDq7J-epeNTeL60zg/edit?usp=sharing*  
+*(3 min)*  
+
+[**When feedback isn't landing due to Motivation**](https://docs.google.com/document/d/13cLE5EH8IpkgdB8fsDDQBZLC0SuDq7J-epeNTeL60zg/edit?usp=sharing) **(3 mins)**
+
+By [Celine Teoh](https://www.linkedin.com/in/celineteoh/), unicorn CEO coach
+
+You're at the helm of a skyrocketing startup. You've given crystal-clear feedback to a pivotal team member and provided all the resources they might need — from time to finances. Yet, nothing changes.
+
+The answer might be in the Three Cs of Feedback Dynamics.
+
+1.  Clarity - Is your feedback request clear, behavioral and unambiguous?
+2.  Capability - Does the feedback recipient have the tools and skills required to act?
+3.  Caring - Do they have the motivation or drive to follow through?
+
+While we've previously delved into Clarity and Capability, today's spotlight is on the often overlooked but equally critical 'Caring', also known as motivation.
+
+Here are some reasons why your team member might not be responding to feedback:
+
+1.  **You're not using the right Currency**
+
+People are driven by different motivators, both internal and external. A common error is assuming everyone is motivated by the same factors. However, while you might care deeply about efficiency, your feedback recipient might be more excited about opportunities to learn.
+
+Allan Cohen and David Bradford in their book "Influence without Authority" call these different motivators "Currencies". There are five buckets of Currencies:
+
+1.  **Inspiration**: Vision, Excellence, Moral/ethical correctness
+2.  **Task**: New resources, Challenge/learning, Assistance, Organizational support, Rapid response, Information
+3.  **Position**: Recognition, Visibility, Reputation, Insiderness/importance, Contacts
+4.  **Relationship**: Understanding, Acceptance/inclusion, Personal support
+5.  **Personal**: Gratitude, Ownership/involvement, Self-concept, Comfort
+
+Some examples of how these currencies might show up:
+
+  - A key employee might avoid working late hours because they need and value *family connection time. (Currency: Relationship)*
+  - An emerging leader might not change strategies because they have a need *to be seen as a leader who projects stability and decisiveness. (Currency: Self-concept)*
+  - The CEO might retain a close associate because she has a need *to stay in her Zone of Genius*, and the associate handles tasks the CEO finds draining. *(Currency: Excellence)*
+
+***Action Steps:***
+
+Engage in detective work to uncover currencies: Observe what your feedback recipient seems to care about. What do they say when they resist changing their behavior? What language do they use? Conversely, when have they gotten excited and motivated in the past?
+
+Ask, listen and empathize: Engage your feedback recipient in a genuine conversation. Instead of seeing the lack of action as resistance, try to understand their underlying needs through gentle interviews. Ask open-ended questions like, "Can you help me understand your reservations?".
+
+Brainstorm: Once you've uncovered their motivational currency, brainstorm together. What creative tactics can you come up with that serve their needs as well as the startup's objectives?
+
+***For Instance:***
+
+If their currency is gratitude, you might try writing them a heartfelt handwritten note, expressing your thanks in person, sending flowers, or acknowledging their contributions in public.
+
+Caution: The currency you use has to be authentic; an insincere thank you note might actually harm motivation!
+
+2.  **The Feedback Feels Threatening**
+
+Let's face it, receiving criticism, even if it's constructive, can feel like a punch to the gut. According to David Rock, humans instinctively respond defensively to perceived social threats that can be triggered by feedback. In his SCARF model, these threats can take the form of the following:
+
+  - Status: "After this feedback, do my colleagues still respect me?"
+  - Certainty: "Does this mean I'm not suited for this startup anymore?"
+  - Autonomy: "They're trying to control how I work."
+  - Relatedness: "I thought we were a team. Is that changing?"
+  - Fairness: "This criticism feels undeserved."
+
+***Action Step:***
+
+Identify which aspect of the SCARF model your feedback might trigger - Ask the recipient what they are concerned about, then empathize and make them feel heard. If they are reluctant to share their concern, take a guess at what matters to them!
+
+Either way, address the perceived threat by stating your authentic positive intent. Once they feel less threatened and fearful, they'll be more receptive to your feedback.
+
+***For instance:***
+
+For threats to **Autonomy** you might say, "I value your unique approach. *My feedback isn't to control but to discuss alternatives*. How do you see yourself implementing these changes?"
+
+For threats to **Status**, consider saying, "Your role in our startup is pivotal. *This feedback is to ensure we're maximizing our collective potential."*
+
+If you can lean into your team member's motivational currency and reduce social threat from SCARF factors, you might just find that they are more inclined to act on your feedback!
+
+Finally, one exercise I'd recommend is **The "Cheering for Learning to Walk" Exercise:** Notice every small positive step your feedback receiver takes, and celebrate it. Do not give any constructive feedback for a few days. This breaks the habit of constantly focusing on the negative.
+
+  - When my daughter first learned to walk, I cooed and clapped every time she stood up or took a step. At no point did I chastise her for falling down. Apply the same principle to adults, including SVPs! Celebrate each step they take towards improvement, no matter how small, and you'd be surprised at how quickly behaviors shift. Yes, this means more frequently than at annual reviews.
+  - This is a surprisingly hard exercise. Most of us are hard-wired to give constructive feedback. Remind yourself that frequent positive reinforcement boosts morale and encourages change.
+
+TLDR: In the fast-paced world of startups, effective feedback is critical. If your feedback isn't landing, work through the three Cs - Clarity, Capability and Caring - to see what's causing resistance.
+
+***What do you do when feedback isn't landing?***
+
+Reference Notes:
+
+Allan Cohen and David Bradford, [Currencies](https://books.google.com/books?id=fGnJmU6hxgMC&pg=PT61&source=gbs_toc_r&cad=3#v=onepage&q&f=false) concept
+
+David Rock, SCARF model
+
+
+---
+
+## Chapter 220: How to GIVE Feedback like an Obnoxious Jerk
+
+*Source: https://docs.google.com/document/d/1lA4Bigmee4b_P7GjiXJzN0oZ4pzz536LHNqaqNZaYcU/edit*  
+*(by Alexis d'Amecourt)*  
+
+[**How to GIVE Feedback like an Obnoxious Jerk** ](https://docs.google.com/document/d/1lA4Bigmee4b_P7GjiXJzN0oZ4pzz536LHNqaqNZaYcU/edit)
+
+*By* [*Alexis d'Amecourt*](https://mm-coaches.notion.site/Alexis-d-Amecourt-c166dfb8021d44428bdbae503d558f50)
+
+As Marty McFly walked into the crowded conference room, Biff Tannen bellowed, "Hey, look everyone, Marty's fly is down!" Now, some may argue that Biff, while being obnoxious and aggressive, provides direct and actionable feedback.
+
+However, to avoid being a Biff, feedback should come from a place of compassion and a genuine desire to help your colleague improve.
+
+In 'No Rules, Rules', Reed Hastings & Erin Meyer reveal two superpowers that Netflix employees effectively use to give constructive feedback.
+
+**Assist**
+
+Give feedback to assist, not to bring someone down. An example of the latter would be providing feedback to voice frustration or furthering a political agenda. Hence why giving feedback when feeling anger and fear is a bad idea.
+
+The goal of feedback is to help a person improve; otherwise, don't give it.
+
+Like my Austrian grandmother used to say, "If you ain't got nothing nice to say, keep your Von Trapp shut."
+
+Feedback should be a GIFT to the person and, therefore, the company.
+
+**Actionable**
+
+Focus your feedback on what your colleague can improve.
+
+When Biff gave feedback to Marty, he stopped before the most crucial part. By just yelling, "Marty's fly is down!" Biff's feedback stops before it becomes actionable.
+
+Biff would have been more effective and more compassionate if he had said in a low voice, "Marty, I am sure you will want to know… your zipper is down. I want you to know because when we are with clients, we will have a much better chance of closing the deal if we are presentable."
+
+It's not always possible to give actionable advice, but the effort to include information that can ensure the receiver is on a path to improving is critical.
+
+Taking the time and effort to make actionable feedback shows that you genuinely care about your colleague.
+
+Don't be Biff.
+
+
+---
+
+## Chapter 221: Conscious Listening (by Dave Kashen)
+
+*Source: https://docs.google.com/document/d/14t0cwa7cFWY6w0U2MCBdZVwGMSXPSpvsTYW5T1wfOB8/edit*  
+
+[Conscious Listening](https://docs.google.com/document/d/14t0cwa7cFWY6w0U2MCBdZVwGMSXPSpvsTYW5T1wfOB8/edit) (1 min)
+
+[link to original PDF](https://www.dropbox.com/s/4gs3l78v89duwav/CLG-Conscious%20Listening.pdf?dl=1)
+
+**Unconscious Listening**
+
+We listen unconsciously most of the time - with an agenda or motive that keeps us from really listening. We listen to...
+
+  - **Fix -** Listen while attempting to fix their problem for them, responding only with solutions.
+  - **Diagnose -** Analyze the circumstances, offer hypotheses, and ask questions to clarify your theories.
+  - **Defend -** Listen for how the person has misperceived the situation and respond with reframing.
+  - **Calm -** Listen for how the person needs to feel relaxed and try to console them.
+  - **Debate -** Listen with skepticism and respond with devil's advocacy.
+  - **Correct -** Listen for where the person is incorrect, and respond with corrections, improvements, and/or criticism
+
+**Conscious Listening**
+
+Conscious Listening happens when the listener is aware of what's occurring at the moment for themselves and with the person they're listening to, without any alternate motives. This kind of Listening supports genuine transformation and honors the intelligence of the head, heart, and gut.
+
+HEAD
+
+What is the mental content within the message - the words, thoughts, ideas, and beliefs? (**Facts** and **Stories**)
+
+HEART
+
+What is the emotional content that is fueling the expression - the five core emotions are anger, sadness, fear, joy, and excitement? (**Feelings**)
+
+GUT (For Advanced Listeners)
+
+What is the base desire behind the content - what is wanted, longed for, or needed? (**Desires**)
+
+**Conscious + Active Listening**
+
+  - I hear you saying that… (facts), and you have a story/thought that… (story). It sounds like you feel... (feelings) and you really want... (desires).
+  - Did I get that right?
+  - Is there more?
+
+*Note: In practice, I often simply share back the story/thought + feelings. I hear you saying that… (story/thought), and it sounds like you're feeling... (feeling).*
+
+Signs that someone is being consciously listened to:
+
+  - More color in the face
+  - More flow of feeling and/or a burst of energy
+  - An exhale or relaxation of breath
+  - A more natural or relaxed pace in the conversation
+
+Source: conscious leadership group (<https://conscious.is>)
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# Communication
+
+## Chapter 222: Introductions:  the double opt-in
+
+*Source: https://docs.google.com/document/d/19FWxzeYzjqW-6l-5GsTAB5QgD2ITuW0XWeQxh_7sptg/edit*  
+*(3 min)*  
+
+[Introductions:  the double opt-in](https://docs.google.com/document/d/19FWxzeYzjqW-6l-5GsTAB5QgD2ITuW0XWeQxh_7sptg/edit) (2 min)
+
+As your success as a CEO continues, your network will grow. Your friends will ask you for introductions. And there is no reason not to give those intros, as long as you follow introduction etiquette. Luckily this etiquette is simple. There is basically only one rule to remember: double opt-in.
+
+When someone asks you for an introduction, they are opting in. But the receiver has not yet said they are interested. You are now at single opt-in. If, at this point, if you connect the two via email, text, etc., you will have given a single opt-in introduction.
+
+The receiver will then be in an awkward spot. If they are not interested in connecting, they now must do one of the following:
+
+  - ignore the message, risking the appearance of being aloof (and putting at risk a positive reputation that they have likely worked hard to maintain)
+  - figure out a way to decline directly to the requester (whom they do not know), which requires thought and often induces fear that they will be viewed as arrogant (again risking their positive reputation)
+  - spend real time connecting with someone that they did not want to, taking time away from the things that they do want to spend time on (which is what most end up doing, and feeling resentment toward you)
+
+And you are the one that put the receiver in this awkward position.
+
+Don't worry. There is an easy solution.
+
+Sam Altman, former President of YCombinator, makes more introductions than anyone I know. It takes him seconds. And everyone involved feels comfortable the whole way. He uses the double-opt-in. Here's what it looks like.
+
+When someone asks Sam to make an introduction, he simply forwards the request to the receiver and writes a one-sentence explanation of why he thinks this intro might be interesting for the receiver and then writes, "Interested?" Now the receiver can choose to opt-in or not. If the receiver opts-in, double opt-in has been achieved, and Sam creates a new email (or uses the original email) to connect the two.
+
+Conversely, If the receiver responds "not interested" to the original request, Sam simply lets the requester know that. And the requester is appreciative that Sam tried.
+
+This process may seem slightly different from a single-opt-in, but it is a massive difference for the one on the receiving end of a request to meet. If you use double opt-in, you will have two happy participants, both of whom will be grateful to you. If you use single-opt-in, you will not.
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 223: Introduction for a job
+
+*Source: https://docs.google.com/document/d/1Ypp26ZFP1Pow7xJur7lUI615HAHetGnlWp-ySHCh-Xg/edit*  
+*(1 min)*  
+
+[Introduction for a job](https://docs.google.com/document/d/1Ypp26ZFP1Pow7xJur7lUI615HAHetGnlWp-ySHCh-Xg/edit) (1 Min)
+
+I have one bullet to shoot. We can use that bullet to get you an interview or to get you the job.
+
+Here are the two scenarios:
+
+1. I ping the CEO (or someone else I know at the company) and get you the interview. Then you are on your own to get the job.
+
+2. You get the interview on your own. If you make it to the second round, you ping me, I ping the CEO (or someone else I know), and you get the job.
+
+Which sounds better to you?
+
+**Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# Fundraising

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pratik Renuse — Growth & DTC Marketing Leader</title>
+<meta name="description" content="Pratik Renuse — DTC & performance marketing leader, TEDx speaker, and startup mentor. 10+ years scaling consumer startups from zero to multi-million ARR." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --surface: #ffffff;
+    --ink: #1a1a1a;
+    --ink-soft: #555049;
+    --ink-faint: #8a847b;
+    --line: #e8e4dd;
+    --accent: #1a1a1a;
+    --max: 920px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+  .serif { font-family: 'Fraunces', Georgia, serif; }
+
+  /* Nav */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(251,250,248,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; }
+  nav .name { font-weight: 600; font-size: 15px; letter-spacing: .2px; }
+  nav .links { display: flex; gap: 26px; }
+  nav .links a { color: var(--ink-soft); text-decoration: none; font-size: 14px; transition: color .2s; }
+  nav .links a:hover { color: var(--ink); }
+  @media (max-width: 620px){ nav .links { display: none; } }
+
+  /* Hero */
+  header { padding: 88px 0 64px; border-bottom: 1px solid var(--line); }
+  .eyebrow { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 22px; }
+  h1 { font-weight: 500; font-size: clamp(40px, 7vw, 68px); line-height: 1.05; letter-spacing: -1px; margin-bottom: 24px; }
+  .lede { font-size: clamp(18px, 2.4vw, 21px); color: var(--ink-soft); max-width: 640px; }
+  .lede strong { color: var(--ink); font-weight: 600; }
+  .cta { display: flex; gap: 14px; margin-top: 36px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 500; text-decoration: none;
+    padding: 12px 22px; border-radius: 999px; transition: all .2s;
+  }
+  .btn-primary { background: var(--ink); color: #fff; }
+  .btn-primary:hover { transform: translateY(-2px); }
+  .btn-ghost { border: 1px solid var(--line); color: var(--ink); background: var(--surface); }
+  .btn-ghost:hover { border-color: var(--ink); }
+
+  /* Sections */
+  section { padding: 72px 0; border-bottom: 1px solid var(--line); }
+  .sec-label { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 36px; }
+
+  /* Stats */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .stat .num { font-size: clamp(30px, 4vw, 44px); font-weight: 500; letter-spacing: -1px; line-height: 1; }
+  .stat .lab { font-size: 13.5px; color: var(--ink-soft); margin-top: 12px; }
+  @media (max-width: 720px){ .stats { grid-template-columns: repeat(2, 1fr); gap: 32px 20px; } }
+
+  /* Experience */
+  .role { display: grid; grid-template-columns: 200px 1fr; gap: 32px; padding: 30px 0; border-top: 1px solid var(--line); }
+  .role:first-of-type { border-top: none; }
+  .role .meta .co { font-size: 19px; font-weight: 600; }
+  .role .meta .when { font-size: 13.5px; color: var(--ink-faint); margin-top: 4px; }
+  .role .meta .where { font-size: 13.5px; color: var(--ink-faint); }
+  .role .title { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+  .role .sub { font-size: 14px; color: var(--ink-faint); margin-bottom: 14px; }
+  .role ul { list-style: none; display: grid; gap: 9px; }
+  .role li { font-size: 15px; color: var(--ink-soft); padding-left: 18px; position: relative; }
+  .role li::before { content: ""; position: absolute; left: 0; top: 10px; width: 5px; height: 5px; border-radius: 50%; background: var(--ink-faint); }
+  @media (max-width: 720px){ .role { grid-template-columns: 1fr; gap: 14px; } }
+
+  /* Two-column blocks */
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  @media (max-width: 720px){ .cols { grid-template-columns: 1fr; gap: 44px; } }
+  .block h3 { font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+  .block ul { list-style: none; display: grid; gap: 11px; }
+  .block li { font-size: 15px; color: var(--ink-soft); padding-left: 18px; position: relative; }
+  .block li::before { content: ""; position: absolute; left: 0; top: 10px; width: 5px; height: 5px; border-radius: 50%; background: var(--ink-faint); }
+  .block li strong { color: var(--ink); font-weight: 600; }
+
+  /* Skills */
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip { font-size: 13.5px; color: var(--ink-soft); background: var(--surface); border: 1px solid var(--line); padding: 8px 15px; border-radius: 999px; }
+
+  /* Investments */
+  .invest { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 4px; }
+  .inv { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .inv .co { font-weight: 600; font-size: 16px; }
+  .inv p { font-size: 13.5px; color: var(--ink-soft); margin-top: 8px; }
+  @media (max-width: 720px){ .invest { grid-template-columns: 1fr; } }
+
+  /* Contact */
+  .contact { padding: 84px 0; text-align: center; border-bottom: none; }
+  .contact h2 { font-weight: 500; font-size: clamp(30px, 5vw, 46px); letter-spacing: -1px; margin-bottom: 18px; }
+  .contact p { font-size: 18px; color: var(--ink-soft); max-width: 520px; margin: 0 auto 32px; }
+
+  footer { padding: 30px 0 44px; text-align: center; color: var(--ink-faint); font-size: 13px; }
+
+  /* reveal */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce){ .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="name serif">Pratik Renuse</span>
+    <div class="links">
+      <a href="#work">Work</a>
+      <a href="#mentoring">Mentoring</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#investing">Investing</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow reveal">Growth &middot; DTC &middot; Performance Marketing</p>
+    <h1 class="serif reveal">Building from<br />zero to one.</h1>
+    <p class="lede reveal">I'm a growth and DTC marketing leader with <strong>10+ years</strong> scaling consumer startups across Europe from <strong>nothing into multi-million ARR</strong>. TEDx speaker, mentor at Techstars and EBRD, and an early backer of companies I believe in.</p>
+    <div class="cta reveal">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">Connect on LinkedIn &rarr;</a>
+      <a class="btn btn-ghost" href="#work">View experience</a>
+    </div>
+  </div>
+</header>
+
+<section id="stats">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><div class="num serif">€2M+</div><div class="lab">DTC ARR built at Infento, from zero</div></div>
+      <div class="stat reveal"><div class="num serif">$848K</div><div class="lab">#1 most-funded STEM Kickstarter, 2018</div></div>
+      <div class="stat reveal"><div class="num serif">100+</div><div class="lab">Startups mentored across 5 continents</div></div>
+      <div class="stat reveal"><div class="num serif">3</div><div class="lab">TEDx talks &middot; 50+ speeches in 14+ countries</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <p class="sec-label reveal">About</p>
+    <p class="lede serif reveal" style="font-size:clamp(20px,2.8vw,26px); line-height:1.5; color:var(--ink); max-width:760px;">Over a decade across Europe, I've learned I thrive in the "0&nbsp;to&nbsp;1" environment &mdash; building a startup from ground zero into something real. Sharing those learnings, by mentoring founders and coaching graduates, is what I find most fulfilling.</p>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <p class="sec-label reveal">Selected Experience</p>
+
+    <div class="role reveal">
+      <div class="meta">
+        <div class="co">Bueno</div>
+        <div class="when">Jan 2022 — Present</div>
+        <div class="where">Fintech &middot; getbueno.com</div>
+      </div>
+      <div class="body">
+        <div class="title">Growth Lead · Founding Team Member · Shareholder</div>
+        <div class="sub">UK Gov-award-winning fintech for foreign property owners in Spain (€2.5M raised).</div>
+        <ul>
+          <li>Built marketing single-handedly from zero to 2,000+ paying subscribers and €300K+ ARR across 28 countries at 24x LTV/CAC (€700/€30).</li>
+          <li>Drove 1M+ organic website visits, outranking Revolut and Wise on target SEO keywords.</li>
+          <li>Grew 15,000+ newsletter subscribers at a 70% open rate; 13% convert to paying within 3 months.</li>
+          <li>Architected the full multi-channel growth engine and launched 3 international markets.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="meta">
+        <div class="co">VU</div>
+        <div class="when">Jan 2021 — Dec 2025</div>
+        <div class="where">Geneva, Switzerland</div>
+      </div>
+      <div class="body">
+        <div class="title">Head of Marketing · Founding Team Member</div>
+        <div class="sub">The #1 Swiss brand for professional skiers and snowboarders, used by Olympians.</div>
+        <ul>
+          <li>Drove €275K+ in revenue and 4.4x peak-season growth.</li>
+          <li>Built VU's full digital presence end-to-end: brand identity, site, paid media, lifecycle, and community.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="meta">
+        <div class="co">Infento</div>
+        <div class="when">Jan 2017 — Dec 2019</div>
+        <div class="where">Amsterdam</div>
+      </div>
+      <div class="body">
+        <div class="title">Leading Online Marketing · Founding Team Member</div>
+        <div class="sub">Consumer hardware &amp; STEM products (Kickstarter-funded).</div>
+        <ul>
+          <li>Built marketing from zero, scaling the DTC web shop from €0 to €2M ARR.</li>
+          <li>Led the $848K Kickstarter — the #1 most-funded STEM project globally in 2018.</li>
+          <li>Won 3 international product design awards: Red Dot, German Design Award, Parent's Choice Gold (US).</li>
+          <li>Managed 6-figure paid media across Google &amp; Facebook at a sustained 12–15% CAC; helped grow the team to 25+.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="meta">
+        <div class="co">Growack Media</div>
+        <div class="when">Jan 2020 — Dec 2020</div>
+        <div class="where">Amsterdam</div>
+      </div>
+      <div class="body">
+        <div class="title">Head of Marketing</div>
+        <div class="sub">B2B inbound &amp; growth marketing solutions provider.</div>
+        <ul>
+          <li>Led inbound and growth marketing operations for B2B clients across Western Europe.</li>
+          <li>HubSpot Partner; named a Clutch 2021 Top B2B Company in Western Europe.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="meta">
+        <div class="co">Bayer</div>
+        <div class="when">2017</div>
+        <div class="where">Berlin, Germany</div>
+      </div>
+      <div class="body">
+        <div class="title">Project Management</div>
+        <div class="sub">Fortune 500 life sciences company.</div>
+        <ul>
+          <li>Managed a €250K budget for GIM, Bayer's premier global senior-executive event spanning 50+ countries.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="meta">
+        <div class="co">Airbus</div>
+        <div class="when">Jul — Dec 2016</div>
+        <div class="where">Munich, Germany</div>
+      </div>
+      <div class="body">
+        <div class="title">Marketing</div>
+        <div class="sub">Fortune 500 aerospace company.</div>
+        <ul>
+          <li>Led branding and online marketing for the EU-wide 'NEOShield' project as single-threaded owner.</li>
+          <li>Increased organic social reach by 127% in 2 months and led the SEO strategy to a #1 Google ranking.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mentoring">
+  <div class="wrap">
+    <div class="cols">
+      <div class="block reveal" id="mentoring-block">
+        <p class="sec-label" style="margin-bottom:24px;">Mentorship &amp; Teaching</p>
+        <h3>Global startup mentor &amp; visiting faculty</h3>
+        <ul>
+          <li>Mentor at <strong>Techstars, EBRD, Seedstars &amp; Founder Institute</strong> — 100+ startups across fintech, D2C, health tech, and AI.</li>
+          <li><strong>9.7/10</strong> average satisfaction rating from CXOs and founders across mentorship engagements.</li>
+          <li>Visiting Professor at <strong>Tetr College of Business</strong> and <strong>Masters' Union</strong>.</li>
+          <li>Coached 500+ graduates from Harvard, LSE, HEC Paris, IMD, Oxford &amp; Yale via Evisors and Firsthand.</li>
+        </ul>
+      </div>
+      <div class="block reveal" id="speaking">
+        <p class="sec-label" style="margin-bottom:24px;">Speaking</p>
+        <h3>Keynote speaker on growth marketing</h3>
+        <ul>
+          <li>Delivered <strong>3 TEDx talks</strong>, including a dedicated talk on the future of marketing.</li>
+          <li>Keynote speaker at 20+ international events across Europe, Asia, the Middle East, and the US.</li>
+          <li><strong>50+ speeches in 14+ countries</strong> — growth marketing, startup scaling, and brand building.</li>
+          <li>Stages include TEDx, the Asia Pacific Digital Marketing Conclave, and the Russian Stream Conference.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="investing">
+  <div class="wrap">
+    <p class="sec-label reveal">Investing</p>
+    <p class="lede reveal" style="font-size:17px; margin-bottom:30px;">An early, personal backer of high-growth consumer tech and fintech companies.</p>
+    <div class="invest">
+      <div class="inv reveal"><div class="co">Perplexity</div><p>One of the fastest-growing consumer AI products globally.</p></div>
+      <div class="inv reveal"><div class="co">Nothing</div><p>Consumer tech brand disrupting smartphones and audio.</p></div>
+      <div class="inv reveal"><div class="co">Atom Bank</div><p>One of the UK's fastest-growing digital banks, profitable with £5.3B+ in loans.</p></div>
+      <div class="inv reveal"><div class="co">Plum</div><p>European money-management and investing app.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <p class="sec-label reveal">Core Skills</p>
+    <div class="chips reveal">
+      <span class="chip">Performance Marketing (Meta, Google, Programmatic)</span>
+      <span class="chip">DTC Growth Systems</span>
+      <span class="chip">Email &amp; CRM Strategy</span>
+      <span class="chip">Funnel Design &amp; CRO</span>
+      <span class="chip">CAC / LTV / MER Modelling</span>
+      <span class="chip">A/B Testing &amp; Experimentation</span>
+      <span class="chip">Multi-Channel Attribution</span>
+      <span class="chip">Revenue Forecasting</span>
+      <span class="chip">SEO &amp; Content Marketing</span>
+      <span class="chip">Team Development</span>
+      <span class="chip">Influencer &amp; Affiliate</span>
+      <span class="chip">AOV &amp; Pricing Optimisation</span>
+    </div>
+    <p style="margin-top:38px; color:var(--ink-faint); font-size:14px;">M.Sc. International Business &mdash; S.P. Jain Institute of Management &amp; Research &amp; IÉSEG School of Management &middot; B.Tech Computer Science, Vishwakarma Institute of Technology</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2 class="serif reveal">Let's create value together.</h2>
+    <p class="reveal">I'm always happy to meet new like-minded folks — founders, operators, and curious minds. Reach out anytime.</p>
+    <div class="cta reveal" style="justify-content:center;">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/pratikrenuse" target="_blank" rel="noopener">Connect on LinkedIn &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="yr"></span> Pratik Renuse · Netherlands</div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach((el, i) => {
+    el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + 'ms';
+    io.observe(el);
+  });
+</script>
+</body>
+</html>

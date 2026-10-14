@@ -1,0 +1,1927 @@
+Mochary Method Curriculum — Volume 2 — Part 2 of 6
+============================================================
+
+## Chapter 104: Comms, Internal:  Announcing traumatic events
+
+*Source: https://docs.google.com/document/d/14HaKYEnw4ec--oL_vPKCRK8ognGbzkc8BzfA6_aIpfo/edit*  
+*(5 min)*  
+
+[Comms, Internal:  Announcing traumatic events](https://docs.google.com/document/d/14HaKYEnw4ec--oL_vPKCRK8ognGbzkc8BzfA6_aIpfo/edit)
+
+Whether you let go of a single senior executive or lay off 30% of the company, it is a trauma to the organization. Anytime a "negative" occurrence like this happens, those that remain naturally ask themselves the question, "Am I next?" and they feel fear. This anxiety is not motivating but instead causes people to spend time and energy trying to figure out what is going on (talking to each other about this), creating other options (interviewing with other companies), etc. If the fear is allowed to fester, many will actually leave to get to a place of stability. All of this creates a tremendous downward pull on productivity. Therefore, your primary goal should be to minimize the feeling of fear in the organization.
+
+And the best way to minimize fear is to ... acknowledge it\! 
+
+First, know that any trauma, whether small or large, takes time for the organization to heal from. 
+
+Usually 2-3 months. And if a new trauma occurs before the organization has had time to heal from the last one fully, then organizational PTSD may well set in. 
+
+Many CEOs ask: "If I know that I will need to let go many people, is it better for me to drip out the terminations through rolling performance reviews, or should I terminate all at once?" The answer from me is an unequivocal "all at once." Make it one trauma and begin the healing process, rather than a never-ending series of concussions from which the org cannot heal.
+
+Second, know that when a traumatic event happens, a moment of trust or distrust happens. If you try to hide the fact that it occurred (make no announcement) or blame the people leaving, then the remainder of the org will lose trust in you. If, however, you announce the trauma to all, take responsibility for the fact that these people are leaving (i.e., "I hired too many people too fast"), and put real time and effort into helping every terminated employee land a fantastic next job, then the org will gain significant trust in you.
+
+Third, when the org does feel fear (as it will when you announce the RIF), the best way that I know to alleviate it is:
+
+  - The first time a person learns that they are being let go, it is in a 1-1.  (Therefore schedule many 1-1s back to back with those being let go.  It is OK for each of these meetings to last only 10 minutes, and therefore to schedule them every 15 minutes.)  This is step 1.
+      
+      - In these 1-1s, share that you will schedule a longer follow-up where
+          
+          - They will sign their offboarding documents and receive their severance pay.
+          - You will be their agent in finding their next job, if they are open to your help.  See [Firing Well (updated)](https://docs.google.com/document/d/1J3c8lGMzPJXMMSWNIh7UCsv-_4qKYZkrkwloIbu3BW8/edit) for the details.
+  - Make sure that all of the remaining team members (the Stay Team) have the same information … a thorough announcement in an All Hands Meeting after the termination 1-1s have occurred.  
+      
+  - Ensure that each person can vent their emotions … a 1-1 with their manager within 24 hours of learning about the trauma.  Cause each remaining team member to have a 1-1 with their manager within 24 hours of the All Hands Meeting.  
+      
+      - During this 1-1, the manager should ask the team member to share their feelings and thoughts. The manager should not seek to defend or justify the company's actions but rather hear and acknowledge the team member's thoughts.   
+          
+      - If the team member is unwilling to share anything juicy, the manager can say, "I imagine you are thinking …" and then supply a juicy thought that the team member might plausibly be thinking (i.e., "our CEO is a cold bastard"). Exaggerate the thought to the negative. If you do, it implicity permits the team member to express their less radical views. The team member will usually respond: "Yeah, something like that, but not that strong." or "Not that, but what I am thinking is …."   
+          
+      - Once the team member expresses their thought, the manager can show that they have heard by simply saying, "I think I heard you say …" and then summarizing what the team member said. Do this until the team member states, "That's right." Then the team member will feel heard, and this will dissipate much of their anger and fear. 
+          
+          - For further detail, read [Heard:  how to make people feel it](https://docs.google.com/document/d/1NiCEEUO2-38pIVGM7nrnpGRykbbtv2xuqLoKW50ZzLw/edit) (2 min)
+
+Fourth, do not have the terminated employees remain at the company any longer than is absolutely necessary. If you are terminating them for cause, they will often be bitter and toxic during these post-termination days. If they were terminated because of a layoff, they will remind everyone of their sadness at their departure. Either way, it is healthier to start fresh with the new team as soon as possible. 
+
+Fifth, word about the termination will likely spread. If it is newsworthy, a reporter will write about it and use it as proof that your company is failing. If you want to get ahead of this story, write it yourself and publish it before anyone else can write about it. Make it juicy enough that any other hit piece will be a darker shade of grey than what you wrote, and therefore not new enough to be worth writing. 
+
+Lastly, the exact timing of making the announcement has several possible paths, each with its plus and minuses. I will discuss two here:
+
+1\. Managers announce the terminations in 1-1s before the AHM for the "stay team."
+
+Plus: 
+
+  - The first time a terminated employee learns of the termination, they get 1-1 attention from their manager.
+  - The first-time non-terminated employees attend an AHM; you assure them that they are part of the go-forward team.
+
+Minus: 
+
+  - The entire team does not have the same information at the same time.
+
+2\. An AHM happens first. You inform everyone of the "why" of the terminations. You invite those who are terminated to a 1-1 in the morning. A second AHM happens in the afternoon for the "stay team."
+
+Plus: 
+
+  - The entire team has the same information at the same time.
+
+Minus: 
+
+  - If you announce the terminations at the AHM (i.e., who has a 1-1 already scheduled in the morning), they will likely express their sadness and anger to their teammates while they await the 1-1.
+  - If you do not announce the terminations at the AHM (i.e., Managers come and get the next terminated person for a 1-1), then all will fear during the morning hours, not knowing if they will be next.
+
+There is no correct answer between these paths. Just be aware of the Plus and Minus of each. 
+
+Here, therefore, is my preferred timeline:
+
+1.  Preparation.  These steps to happen very close together: 
+      
+    1.  The executive team decides broad strokes of who they will terminate. 
+    2.  Ask managers to give specific recommendations.
+    3.  The executive team makes the final list. 
+    4.  Managers set up 1-1s with all of their stay team members for Day 2. 
+    5.  Schedule the terminations for the morning of Day 1. 
+    6.  Schedule All Hands meetings for those who are staying for the afternoon of Day One.  
+          
+2.  These next steps are all to happen back-to-back in a total of 1-3 days: 
+      
+    1.  Day 0: Inform all managers who will be let go.
+    2.  Day 1: 
+          
+        1.  All Hands Meeting 
+              
+            1.  State what you are doing
+            2.  State why you are doing it
+            3.  State that those with 1-1s in the morning are being let go, those in the afternoon are remaining.
+            4.  Thank every person for their service, and assure them that you will spend real time making sure that they land softly … and then do it\! 
+            5.  Acknowledge the fear and anger that people are likely feeling 
+                  
+                1.  "You may well be thinking … 
+                      
+                    1.  Our CEO is a cold bastard.
+                    2.  This is totally unnecessary. The economy will rebound in a few months, and these layoffs will have been totally unnecessary."
+                2.  If you want to address each of these fears and what you will do about them, great. But know that you don't have to. The key is simply acknowledging them.  
+                      
+        2.  Every manager meets 1-1 with every team member who is leaving. 
+              
+            1.  The manager commits to spending real-time helping them find their next role (and must follow through on this).
+            2.  The manager listens to and acknowledges the team member's feelings and thoughts.
+            3.  Create an alumni Slack channel. 
+                  
+                1.  If you don't do it, they will. And you won't like the results if they create it on their own. 
+                2.  Be in the channel and actively help alumni solve their problems.  
+                      
+        3.  All Hands Meeting with all of the remaining team to announce what is happening. 
+              
+            1.  State what you are doing
+            2.  State why you are doing it
+            3.  Express deep gratitude for all that has been done by both those that are leaving and those that remain.
+            4.  Acknowledge the fear and anger that people are likely feeling 
+                  
+                1.  "You may well be thinking … 
+                      
+                    1.  Am I next?
+                    2.  Our CEO is a cold bastard.
+                    3.  This is totally unnecessary. The economy will rebound in a few months, and these layoffs will have been totally unnecessary."
+                2.  If you want to address each of these fears and what you will do about them, great. But know that you don't have to. The key is simply acknowledging them.
+            5.  State the go-forward Vision for the company. Who is the new customer, what is their problem, and how will you solve it.  
+                 
+3.  Publish your article about the layoffs on Medium, LinkedIn, Twitter, etc. 
+
+1.  Day 2, every manager meets 1-1 with all the remaining team members to vent their feelings and thoughts in the afternoon. 
+      
+    1.  The manager listens to and acknowledges the team member's feelings and thoughts using [Heard:  how to make people feel it](https://docs.google.com/document/d/1NiCEEUO2-38pIVGM7nrnpGRykbbtv2xuqLoKW50ZzLw/edit) (2 min).
+
+Reading this, if you are the CEO, you are likely feeling fear, especially if you have never done a layoff before. You may be thinking the following: 
+
+  - "The press is going to write that we are failing." 
+  - "I can't bear to let all these people go who are really good and were so hard to recruit. It will take me so much effort to rehire their equal again later." 
+  - "Some of these people are single mothers with small children. I will be putting them out on the street."
+  - "They will hate me."
+
+All of these are legitimate thoughts. Their intent is positive … to keep you safe. But know that they are likely exaggerations. The reality is possible that:
+
+  - If you write your press, the story will be over.
+  - When you get leaner, the company will operate even more efficiently. And then when you do rehire, you will rehire even better people.
+  - Those who are in dire economic circumstances, you will help to land a great position. And they may well be even better off then.
+  - If you are transparent, take responsibility for the situation, and genuinely help each laid-off person find a new position, then you will likely be respected and appreciated.
+
+Remember that Jack Welch is remembered as the greatest CEO of all time. And he was a one-trick pony. All he did was let go of the bottom 10% of GE each year and overcompensate the top 20%. That's it. Brutal, but highly effective.
+
+You can remove the brutality by putting real effort into helping those let go find a soft landing.
+
+
+---
+
+## Chapter 105: Exit Interview
+
+*Source: https://docs.google.com/document/d/13sbYMbMyDFEen8Sk0vkYqaKhbUHDKD6-OOqiDJaQFgk/edit?usp=drive_web&ouid=102503928790226855337*  
+*(2 min)*  
+
+[Exit Interview](https://docs.google.com/document/d/13sbYMbMyDFEen8Sk0vkYqaKhbUHDKD6-OOqiDJaQFgk/edit?usp=sharing)
+
+You have made our company a better place. While you have found a better situation elsewhere, we humbly request that you help us improve one final time. For that, we need your honest, thorough, and brutal feedback. Please know that if you are willing to share it with us, we will treat it like the precious gift that it is.
+
+  - What about working at \_\_\_\_\_\_\_\_\_ did you like?
+  - What about working at \_\_\_\_\_\_\_\_\_ did you NOT like?
+
+**Informed** 
+
+  - Do you feel that you know what the mission of our company is? 
+  - Do you believe in it?
+  - What could we do to improve our communication of that mission?
+  - Did you clearly understand our expectations of you (goals)?
+  - And how were you performing against those expectations (feedback on performance)?
+  - Who was your manager?
+  - How often did he/she hold a team meeting? What was the agenda/length?
+  - How often did he/she hold 1-1 sessions with you? What was the agenda/length?
+  - What challenges did you experience in communicating, supporting, and getting what you needed from others at your same reporting level?
+
+**Authorized** 
+
+  - When you needed authorization or approval to move forward, how long did it usually take to get that authorization/approval?
+  - Did that delay hinder your ability to perform?
+
+**Motivated** 
+
+  - Did you enjoy coming to work every day? What was demotivating?
+  - Was there a safe venue to give negative feedback? 
+  - Was that feedback asked for and encouraged? 
+  - When you gave that negative feedback, was it acted upon and the situation corrected (i.e., did you feel heard)?
+
+**Overall**
+
+  - Do you like our product? How could we improve it?
+  - What could we do better as a company?
+  - What could I do better as a CEO?
+
+
+---
+
+## Chapter 106: Saying Goodbye to a Teammate
+
+*Source: https://www.notion.so/mocharymethod/Saying-Goodbye-to-a-Teammate-c256b6c72f7c463f8ec586dd58c3b535*  
+*(2 min) (Trishia Pasaquian)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.notion.so/mocharymethod/Saying-Goodbye-to-a-Teammate-c256b6c72f7c463f8ec586dd58c3b535)_
+
+
+---
+
+## Chapter 107: Navigating The Aftermath of Layoffs
+
+*Source: https://docs.google.com/document/d/10TmIC8LWDVXjGtEYdhFxMavyYktR78P8Gaa8hcYeQzs/edit*  
+*(By Sabrina Wang) (3 min)*  
+
+[Navigating The Aftermath of Layoffs](https://docs.google.com/document/d/10TmIC8LWDVXjGtEYdhFxMavyYktR78P8Gaa8hcYeQzs/edit) (3 minutes)
+
+*By* [*Sabrina Wang*](https://twitter.com/sabrinawangzq)*, CEO coach and Head of Coaching at Mochary Method*
+
+Watch at 2x: [Sabrina going over the write-up in a Loom video](https://www.loom.com/share/544f2d25d97f49fa8bfcdec942bf512c)
+
+First, I want to acknowledge that layoffs are a difficult and challenging situation for any organization. This document will not be a complete set of answers. Rather, it's a starting point to share some tried and tested tools from my CEO clients.
+
+Layoffs can have a significant impact on the morale and motivation of employees who remain. As a CEO, your top concern may be maintaining the stability of your team and retaining your high performers. Here are a few steps you can take to help manage the situation and support your employees during this time of change.
+
+Before you move on to the steps to navigate the aftermath, let's review our [Firing Well](https://docs.google.com/document/d/1J3c8lGMzPJXMMSWNIh7UCsv-_4qKYZkrkwloIbu3BW8/edit) playbook and see if there are any tactics that you would like to implement before or during letting someone go. I interviewed Ophelia's cofounder Mattan Griffel who shares his entire process and implementation around a layoff [here](https://www.youtube.com/watch?v=ZzNxnW5f2gM&t=2590s).
+
+Below, you can find the key recommendations for what happens after making a layoff decision.
+
+1.  **Use an internal communication framework to announce the news**
+
+When it comes to announcing layoffs, it's crucial to have a clear and organized approach. Consider using Mochary Method's guide to [announce traumatic events](https://docs.google.com/document/d/14HaKYEnw4ec--oL_vPKCRK8ognGbzkc8BzfA6_aIpfo/edit). This will help you stay grounded and communicate the news effectively to your company. It is critical to have face-to-face 1-1 conversations with those who are let go and offer that face time to those who are staying to process their emotions.
+
+One of our Mochary Method CEO coaches [Faith Meyer](https://mm-coaches.notion.site/Faith-Meyer-ACC-7be84956b4de4ee2b7c30f441db90dc3) wrote a write-up ([You Lost Your Job. Now What?](https://docs.google.com/document/d/1yY-M3SB9cvB7tS3QVvCSJkQELgbvp0WNtj9OvKKv8Zg/edit?usp=sharing)) that you can share directly or copy to send to your employees who are part of that layoff.
+
+2.  **Conduct Magic Questions with your leadership team and managers**
+
+[Magic Questions](https://docs.google.com/document/d/1SLHeBWEXHk9SEvUKUU1hMsxl-U-IRaeZqA-wpx02lb4/edit) are a tool that can help you gauge the level of impact that layoffs are having on your employees. It's key to ask questions and hold employees accountable for actions as you're going through Magic Questions. Check out instructions from [Star performers:  How to keep them engaged and motivated](https://docs.google.com/document/d/1URb0E9CR2ZeUZ2aTRYcrKb7zbIL0ica8HEYy5CKL3lU/edit).
+
+Encourage your leadership team and managers to conduct Magic Questions with each of their direct reports, and consider conducting these surveys every 2-4 weeks for the next few months. This will create a space for employees to share their thoughts and feelings openly, helping to build trust and strengthen relationships.
+
+3.  **Run an anonymous survey on motivation at work**
+
+If you want to get a deeper understanding of how layoffs are affecting employee motivation, consider conducting an anonymous survey. This can be especially effective if your company doesn't already have a culture of psychological safety, allowing employees to speak openly and honestly. If you do choose to run a survey, make sure to publicly share the top results and create a space for employees to ask questions and voice their concerns.
+
+4.  **Ensure you're personally supported** 
+
+Last but definitely not least, you and your executive team who are deeply involved in the layoff decision are going through an emotionally draining journey. These are hard decisions to make and trying conversations to have. It's important that you are supported to process this news, so that you can be more available to your employees. I know of CEOs who commit to a more rigid personal routine during this time that includes but is not limited to cold plunges in the morning, daily fitness, meditation, therapy, coaching, time with family, and so on. If you need support during this time, please feel free to reach out to us at <https://coach.mocharymethod.com/>. We are here to help guide you to the right resources regardless of whether you become a coaching client or not.
+
+As we gather more information and resources, we will continue to update this document with tips. If there are things you have tried that helped with navigating the aftermath of a layoff, encourage you to share them with me at <sabrina@mocharymethod.com> so that I can share it with more CEOs.
+
+
+---
+
+
+# Mindfulness
+
+## Chapter 108: Emotions - name them
+
+*Source: https://docs.google.com/document/d/1qViPEjTQ7XlkvZAqU1YZQYJtpPqgjvyxPaKXpwbb_L4/edit*  
+*(1 min)*  
+
+[Emotions - name them](https://docs.google.com/document/d/1qViPEjTQ7XlkvZAqU1YZQYJtpPqgjvyxPaKXpwbb_L4/edit) (1 min)
+
+We all experience emotions. There is nothing wrong with them. In fact, they are healthy and contain their intelligence. 
+
+I posit that there are five basic emotions -- excitement, joy, fear, anger, and sadness -- and that all other emotions are simply a shade of these basic ones, just as all colors are some combination of red, yellow, and blue.
+
+**Excitement** is future-looking. We don't know what will occur, but we predict that it will be good.
+
+**Fear** is future-looking. We don't know what will happen, and we predict that it will not be good.
+
+**Joy** is present. What is happening right now is good.
+
+**Anger** is present. What is happening right now is not good.
+
+**Sadness** is the past. What has already happened in the past is not good and is likely unrecoverable. This emotion can be a death of a person or a vision of what could have been. 
+
+So, emotions are an alert for us to notice. That is healthy. But when we experience fear or anger, our brain function moves from our pre-frontal cortex (creative thought) to our amygdala (fight or flight response), which is only capable of minimal thought. 
+
+(to be continued …)
+
+
+---
+
+## Chapter 109: Fear vs Joy
+
+*Source: https://docs.google.com/document/d/1mZqiTrDF6bcQYa3UFEKTqkuyyTHJCI_rpd173VubJ64/edit*  
+*(3 min)*  
+
+[Fear vs Joy](https://docs.google.com/document/d/1mZqiTrDF6bcQYa3UFEKTqkuyyTHJCI_rpd173VubJ64/edit) (3 min)
+
+Fear is an excellent motivator. It fueled humanity in times of scarcity. And continues to do so now in times of abundance. 
+
+Many of us fear failure, but even more of us fear being viewed as a failure. This fear of failure drives us to work maniacally to achieve. 
+
+But as good a motivator as fear is, there is a better one: Joy. For proof of this, find someone who has achieved joy in their work-life (admittedly, they are rare) and ask them whether they are more motivated and more successful when fueled by fear. I'm sure you can guess their answer: Far more motivated, far more successful, and most importantly … feeling peaceful and satisfied all day every day. 
+
+This path, of course, sounds like something reserved for only those who already have made it financially. And there certainly is a high correlation to those who achieve this state with prior financial success, but that is not causation. It is merely a forcing function. 
+
+Most people dream of financial success. They tell themselves: "When I achieve wealth, all will be well. I will be happy; life will be good." Then they achieve financial success, but no happiness, peace, or satisfaction arrives. It exposes this dream as a false one. Now, these people have no choice but to go in search of peace elsewhere. Some of them eventually find their "purpose" and experience true and lasting joy, satisfaction, and peace for the first time in their lives.
+
+When hearing this, people say: "But if I lose fear, won't I simply decide that making money is pointless and then go sit on a beach for the rest of my life?" The answer is: "If you're not careful about how you transition from fear to joy, then yes."
+
+I view Fear and Joy as motivation mountains. If you lose Fear before you discover Joy in your work, then you will indeed fall into a motivation valley and may not have any motivation to continue at work. It is then quite possible to get stuck there and not be able to climb out.
+
+The key, therefore, is to discover Joy in your work first. The best way that I know to do this is the [**Energy Audit**](https://docs.google.com/document/d/1HmaRdtk8R5GQtMj72Y6XhHTru5SQAiiqDfDP3qy73k4/edit?usp=drive_web&ouid=102503928790226855337). Once you are experiencing Joy at work daily, it is safe to move on to losing Fear. And the best ways to lose Fear that I know of are [Consciousness Training options](https://docs.google.com/document/d/1lcUnr_vQIW3TI7rUl5RwthyUPU032dFXAw3ccbOE48I/edit).  (The link is currently only available to those whom I coach due to sensitive information.)
+
+What welcomes you on the other side of this effort is daily Joy (even bliss) at work and in all of your life, as well as a massive success, because you will continue in your work for decades and decades, which in the end will bring far more success and a short fear-fueled sprint.
+
+Enjoy\!
+
+Btw, if you currently find yourself in a motivation valley, all is not lost. There is a way out. It is the [**Energy Audit**](https://docs.google.com/document/d/1HmaRdtk8R5GQtMj72Y6XhHTru5SQAiiqDfDP3qy73k4/edit?usp=drive_web&ouid=102503928790226855337). But you may not have much that gives you energy. That's OK. Do the exercise regularly, and you will begin to discover things that provide you with energy. At first, a little bit of energy, and then later massive amounts of it.
+
+
+---
+
+## Chapter 110: Drama Triangle (and 100% Responsibility)
+
+*Source: https://docs.google.com/document/d/1_0_uQLGnf8gt3bQEOQhGH-bJhY_Zb62eyEl1YdfVS1s/edit*  
+
+[Drama Triangle (and 100% Responsibility)](https://docs.google.com/document/d/1_0_uQLGnf8gt3bQEOQhGH-bJhY_Zb62eyEl1YdfVS1s/edit)
+
+Whenever we see a problem, we often feel some degree of anger and fear. This causes our brain to go into some level of "fight or flight" mode, which causes us to be more interested in convincing others that our solution is right, rather than getting curious about what we can learn (from others and the situation). If you believe, as I do, that better solutions come from shifting to a place of curiosity rather than wanting to be correct, the critical question then becomes: "How do I shift?"
+
+There are many ways to do so. Below is one. 
+
+This method asks each of us to:
+
+  - First, state in starkest terms our thoughts come from wanting to be right ("below the line"). If we can express them verbally, then we can often let go of our attachment to them. This step is sometimes the only action needed to move to a productive conversation and easeful solution.
+  - Second, rather than look at the problem as externally-created (and therefore only externally-solvable), we state what we did to create the situation ("above the line"). This statement often highlights what we can do to solve it. Again, this second step may be enough to move to an easeful solution.
+  - Third, if we want to understand why we feel Fear or Anger in these situations (and then cut those feelings off at the source), we can think back deeply into our childhood to see when this pattern first appeared, as it likely appeared as a very normal response of a young child to an external stimulus. If we can see that, then we can see how that "persona" was helpful to us as a child but is no longer beneficial to us as adults now.
+  - Fourth, if we have shifted to a place of curiosity, we then state if we are willing to discover a resolution quickly. If the answer is yes, then we proceed.
+  - Fifth, discuss amongst the group, discover a solution and make agreements.
+
+Identify issue:
+
+###### Below the Line:
+
+Steps:
+
+1.  "I blame (a person's name) for (an action)." Villain
+2.  "This negatively affects me in the following way …." Victim
+3.  "I temporarily solve this situation by …." Hero
+
+Once you complete one round, go back to Step 1 and pick a different person. If Steps 2 and 3 are identical, there is no need to repeat them.
+
+Continue going through the Steps until there is no one else to blame. Remember, you can always blame yourself.
+
+###### Above the Line:
+
+I created this situation by…
+
+Questions to answer to help you take 100% responsibility:
+
+  - What do you have to be right about?
+  - What do you withhold, and from whom?
+  - What do you not face?
+  - What feelings do you repress/conceal?
+  - What do you have to believe about yourself, others, and the world?
+  - How do you numb yourself from the discomfort?
+  - What "shoulds" do you have to believe?
+  - What behaviors do you do or not do to keep the issue in place?
+  - To what do you feel entitled?
+  - What are you trying to control that is NOT in your control?
+  - What do you believe you do not have enough of?
+  - What either/or story do you have to hold about this issue?
+  - Who do you have to be better/less than?
+  - What agreements do you have to make and/or break with yourself or others?
+  - What do you have to be afraid of?
+
+The long-standing pattern this reminds me of is…
+
+Am I willing to now easefully and playfully discover a solution?
+
+###### Agreements:
+
+
+---
+
+## Chapter 111: Drama Triangle
+
+*Source: https://docs.google.com/document/d/19Zg0OfkR5-EXyiL8Zd8sfiCWl1D3h89eO_OPgF7Fdqc/edit?usp=drive_web&ouid=102503928790226855337*  
+
+### [The Drama Triangle](https://docs.google.com/document/d/19Zg0OfkR5-EXyiL8Zd8sfiCWl1D3h89eO_OPgF7Fdqc/edit#)
+
+When we discuss challenges or issues as a group, we often suffer from two bad habits:
+
+1\. We believe that we know the correct answer and try to convince others to see our point of view.
+
+2\. We never truly share our deepest, darkest thoughts and feelings for fear of offending others.
+
+This pattern often leads us down a negative pathway and causes the following problems:
+
+1\. We cannot fully see other perspectives, so we don't get complete information.
+
+2\. Others never fully appreciate our perspective because we haven't fully shared it.
+
+To elicit your team's full potential, though, you must create an environment where ideas can flow freely. The following exercise, called The Drama Triangle, will encourage your team members to share fully by allowing them the safety of distancing themselves from their perspectives. To apply it to a situation or conflict, have each person stand up one at a time and declare a Hero, Victim, and Villain by answering the following questions:
+
+- Hero: 
+
+**"I temporarily solve the situation by \_\_\_\_\_\_."**
+
+- Victim: 
+
+**"I am negatively affected by this in the following ways:\_\_\_\_\_\_."**
+
+**"I am powerless to permanently solve this situation because:\_\_\_\_\_\_."**
+
+- Villain: 
+
+**"I blame (name of a real person) for creating this situation by doing (real action)."**
+
+Each person continues this cycle, blaming a new person each time until no one is left to blame for that issue. (Remember, you can also blame yourself\!) 
+
+Then everybody answers this question: **"Are you willing to easefully and playfully resolve this issue in this meeting?"**
+
+The group then moves to brainstorm solutions. 
+
+In my experience, it is easy to come up with elegant and complete solutions once all of the "worst" information is on the table and nothing remains hidden. 
+
+I highly recommend using a knowledgeable outsider to facilitate this meeting, at least for the first time. They will keep your team on a script. If anyone goes off-script and gets angry, the results can be very messy.
+
+
+---
+
+## Chapter 112: Sadness: how to process it
+
+*Source: https://docs.google.com/document/d/1jyTa5H_fo9xL-EhUQGsqQkUAqG4zVxAok0JwNCjiBFU/edit*  
+*(2 min)*  
+
+[Sadness: how to process it](https://docs.google.com/document/d/1jyTa5H_fo9xL-EhUQGsqQkUAqG4zVxAok0JwNCjiBFU/edit) (2 min)
+
+Each of us feels sadness (or fear feeling sadness in the future) at some time in our life. When we do, we have two choices:
+
+1.  To let the sadness out by giving it full expression (full-on wailing crying, which rarely lasts longer than 1 minute).  
+      
+2.  To not let the sadness have full expression and, therefore, have it sit somewhere deep inside us.
+
+We often feel a cathartic release if we do the former, and the sadness no longer grips us. For this reason, most funeral services are designed to create maximum crying. The Catholic Church seems to be particularly good at this with its use of open caskets.
+
+If we do the latter, the sadness often becomes a depressive (and very long-lasting) mood.
+
+I highly recommend the former. 
+
+Almost all sadness comes from the death of something (or the fear of the end of something): a person, a relationship, or a vision of how my world would be. 
+
+So, to fully mourn that death, when I experience sadness, I create a memorial service. 
+
+  - I go to a quiet place where I can be alone and not heard (a car is often good for this).  
+      
+  - I get myself into a state where I can access my sadness. I do this by watching a sentimental video clip that gets my tears flowing (here is a [good example](https://www.youtube.com/watch?v=bL9KEaike8U&fbclid=IwAR1whYdngSKlAPkkrrzQMmFA4Py8aJ2Fm9vvlHv_y7yvUxrSViVfi5fZpfI)).   
+      
+  - I close my eyes and envision a full funeral service for the death of the thing that I am mourning.  
+      
+  - I allow the tears to flow fully and don't try to stop them until they stop on their own accord.
+
+When I do this faithfully, I find that sadness no longer grips me, and the feeling of joy and curiosity returns. My brain and my life begin to function again.
+
+I also find it helpful to realize that sadness is merely proof of love. If I didn't love something, I wouldn't feel sad when it was gone. So, to me, sadness is massively affirming. It is incontrovertible proof that I love.
+
+I, therefore, believe that we should celebrate sadness. It is both cathartic and affirming.
+
+
+---
+
+## Chapter 113: Consciousness Training options
+
+*Source: https://docs.google.com/document/d/1lcUnr_vQIW3TI7rUl5RwthyUPU032dFXAw3ccbOE48I/edit*  
+*(3 min)*  
+
+[Consciousness Training options](https://docs.google.com/document/d/1lcUnr_vQIW3TI7rUl5RwthyUPU032dFXAw3ccbOE48I/edit)
+
+Books:
+
+  - 15 Commitments of Conscious Leadership (start with the first 3 commitments)
+  - The Untethered Soul
+
+Training:
+
+Conscious Leadership Group.  Santa Cruz, CA.
+
+  - Join a group
+  - Then do a [3-day intensive](https://conscious.is/events)
+
+Byron Katie, [The Work  9 days](http://thework.com/en/ultimate-inner-adventure).  Ojai, CA.
+
+  - Individual consciousness training.  I have not done it, but have heard very good things.
+
+[The Hoffman Process](https://www.hoffmaninstitute.org/).  7 days.  CA.  Lots of dates.
+
+  - Individual consciousness training.  I have not done it, but have heard relatively good things.  Because it is so widespread, there are many alumni group meetings that reinforce the habits learned, which is a huge plus.
+
+Hendricks Institute
+
+  - The folks that trained the founders of CLG.
+
+[Bez Stone](http://www.bezstone.com/)
+
+  - Training to reignite sexual desire in a woman (primarily for couples in long-term relationships who are no longer having sex).  Loosely related to red Tantra.
+
+[David Deida](https://deida.info/events/?tribe_paged=1&tribe_event_display=list)
+
+  - Teaching the man to fully be in the masculine persona and thus give his partner a spiritual sexual experience.  Loosely related to red Tantra.
+
+Therapy:
+
+Kiki Samuels. <kikisamuels@gmail.com>  (AM)
+
+Gina Engracia.  <gina@ginaengracia.com> (PF)
+
+Internal Family Systems. 
+
+  - [Provider directory](https://selfleadership.org/practitioners.html).  Look for "Certified IFS Therapist."  It works surprisingly well over video calls, so try out remote ones too.
+  - This is the system that MAPS uses in its clinical trials paired with the use of MDMA to treat PTSD patients.  But the method is also very effective on its own (without the use of MDMA).
+
+Tamara Andreas (tamaraandreas@q.com)
+
+  - Uses a system called [Core Transformation (1h06m, only watch 1-2 minutes to get a sense of the process)](https://www.youtube.com/watch?v=Xg-On46YcHc)  Akin to consciousness, but is able to infuse it into the body making it far easier to "not get triggered".  **Highly recommended by Matt.**
+
+GS Youngblood (<gs@gsyoungblood.com>)
+
+  - Wrote an excellent book called [The Masculine in Relationship](https://www.amazon.com/Masculine-Relationship-Blueprint-Inspiring-Devotion/dp/1699443386), which translates David Deida's work into very easy-to-understand and easy-to-apply behaviors.  He also does very effective 1-1 coaching at a reasonable rate.  **Highly recommended by Matt.**
+
+Psilocybin-assisted therapy:
+
+  - Tracy Townsend at [https://www.eleusiahealth.com](https://www.eleusiahealth.com/)
+  - tracy@eleusiahealth.com
+
+Parenting:
+
+Patty Wipfler.   She has made a huge difference in my life (and our kids'). Her book "Listen" is good, her approach very consistent with Dan Siegel's science (he is probably the best known  child development psychologist) and she also does personal coaching of both parents and children to deal with specific challenges.  I have recommended her to quite a number of people and have always heard good things.   patty@handinhandparenting.org.   Feel free to mention my name (Bo Shao).
+
+
+---
+
+## Chapter 114: Conscious Leadership
+
+*Source: https://docs.google.com/document/d/1c0k55kyb1AqewHIsQPmvAMchpprTtfxA0NzaIHmLeEQ/edit#*  
+*(2 min to read, 15 min for the videos)*  
+
+[Conscious Leadership](https://docs.google.com/document/d/1c0k55kyb1AqewHIsQPmvAMchpprTtfxA0NzaIHmLeEQ/edit#) (2 min to read, 15 min for the videos)
+
+Conscious Leadership is about being more interested in learning than being right. When our egos make us afraid to be wrong, that fear leads us to defend our ideas at all costs and work hard to convince others that we are right—often with anger. Conscious Leadership is about:
+
+1.  Recognizing when these emotions (fear, anger, sadness) have gripped our thought processes.
+2.  Releasing these emotions and shifting back to a state of curiosity where we are receptive to all ideas and creativity, even if they seem to contradict our own. It is in a state of playful curiosity that we achieve exquisite solutions.
+
+Jim Dethmer, Diana Chapman, and Kaley Warner Klemp explain this concept thoroughly in their book [*The 15 Commitments of Conscious Leadership*](https://www.amazon.com/15-Commitments-Conscious-Leadership-Sustainable/dp/0990976904/ref=sr_1_1?s=books&ie=UTF8&qid=1535308434&sr=1-1&keywords=15+commitments+of+conscious+leadership)*.*
+
+The challenge, of course, is to shift from wanting to be right to wanting to learn. Here are some videos that help with that shift.
+
+[Where am I?](http://conscious.is/video/locating-yourself-a-key-to-conscious-leadership)
+
+[The Drama Triangle](http://conscious.is/video/understanding-the-drama-triangle-vs-presence)
+
+[100% Responsibility](http://conscious.is/video/are-you-taking-100-responsibility)
+
+[Revealing or Concealing](http://conscious.is/video/candor-are-you-revealing-or-concealing)
+
+#### Empathy
+
+Spiritual teacher and author David Deida goes one step further and teaches that empathy is the key to success. To truly feel the feelings of those around you—customers, investors, and team members alike—you must get very curious about their situations and then really imagine yourself in their shoes. If you do this, people will sense it and immediately trust and like you because they will feel that you care about them and understand their circumstances. They'll trust you to lead them because they know you'll truly consider their interests in your guidance.
+
+#### Joy vs. Fear
+
+When people start diving into the Conscious Leadership work, they quickly lose their fear. And just as quickly, they realize that fear was their primary motivator—fear of failure, fear of letting people down. Once fear is gone, their life becomes much better, but their business suffers. 
+
+If you find yourself in this situation, keep pushing forward with the Conscious Leadership work quickly to get to a place where you are motivated by joy. Joy is an even better motivator than fear, so your business will thrive. And your life will be amazing\! Then you will have the best of all worlds.
+
+#### Summary
+
+Many CEOs that I coach have deeply embraced the principles of Conscious Leadership. Alex MacCaw, founder and CEO of Clearbit, is one of them. He has written this [excellent summary of the Conscious Leadership principles](https://docs.google.com/document/d/1eB7oR51qoHKiO058aWWxeuuCDIpltLTap3RYUWRXDwE/edit), found in Appendix A.
+
+
+---
+
+## Chapter 115: The Work (Byron Katie)
+
+*Source: https://docs.google.com/document/d/1tFsngmRUBn8pNSprDq_h_9baq-t0IiPPhWaPBrFUA7A/edit#*  
+
+[The Work (Byron Katie)](https://docs.google.com/document/d/1tFsngmRUBn8pNSprDq_h_9baq-t0IiPPhWaPBrFUA7A/edit#)
+
+(This section was lifted straight from Clearbit's Manager's Handbook.)
+
+In 1986, Byron Katie was coming out of the depths of a debilitating ten-year-long depression with a life-changing realization:
+
+"I discovered that when I believed my thoughts, I suffered, but that when I didn't believe them, I didn't suffer, and that this is true for every human being. Freedom is as simple as that. I found that suffering is optional. I found a joy within me that has never disappeared, not for a single moment. That joy is in everyone, always."
+
+*- Byron Katie*
+
+In other words, what was causing her depression was not the world around her, but what she *believed* about the world around her. Katie went on to create [The Work](https://thework.com/), a simple framework for turning around beliefs in order to alleviate suffering.
+
+Instead of hopelessly trying to change the world to match our thoughts about how it "should" be, we can question these thoughts and, by meeting reality as it is, experience unimaginable freedom and joy.
+
+#### **The four questions**
+
+There are four questions you can ask yourself to help turn thoughts around:
+
+1.  Is it true? (Yes or no. If no, move to question 3.)
+2.  Can you absolutely know that it's true? (Yes or no.)
+3.  How do you react, what happens, when you believe that thought?
+4.  Who would you be without the thought?
+
+#### **The four questions in practice**
+
+For example, let's take the belief that "*John doesn't appreciate my input"* and go through the four questions.
+
+1.  Is it true?  
+      
+     *"Sure, I remember he interrupted me mid-sentence last Tuesday."*  
+      
+2.  Can you absolutely know that it's true?  
+      
+     *"I guess there's no way for me to know his true feelings."*  
+      
+3.  How do you react, what happens, when you believe that thought?  
+      
+     *"I feel angry. My chest tightens. It ruins any meeting that I'm in with John. I've been fuming about this all afternoon."*  
+      
+4.  Who would you be without the thought?  
+      
+     *"My mood would be lifted. I'd be a lot happier. I'd be able to collaborate with John again and appreciate some of the qualities I love about him."*  
+
+So you see, instead of hopelessly trying to change the world to match our thoughts about how it "should be," we can question these thoughts and, by meeting reality as it is, experience freedom and joy.
+
+#### **The turnaround**
+
+The next step is the turnaround. The idea here is to see that the opposite of your story is at least as true as, if not truer, than your original thought.
+
+For example:
+
+1.  *John doesn't appreciate my input.*
+2.  Turn it around to the opposite: *John appreciates my input.*
+3.  Turn it around to the other person: *I don't appreciate John's input.*
+4.  Turn it around to yourself: *I don't appreciate my own input.*
+
+Often we find that deep-seated anger with others is rooted in things we hate about ourselves; it's a projection. Regardless of the cause, these beliefs are causing us suffering. Realizing that you can turn that around will set you free and create lasting shifts in your thinking and your perception of yourself and the world around you.
+
+#### **But doesn't this lead to apathy?**
+
+Beliefs are very powerful, and negative ones can lead to a lot of suffering. By turning them around, you can alleviate your own suffering and then problem-solve from a place of playful curiosity.
+
+Treat The Work as a meditation. It's about awareness; it's not about trying to change your mind. Would you rather be right or be free?
+
+#### **A full example of the practice**
+
+A great way of seeing the power in these simple questions is to take some real-world examples. Byron Katie has recorded a set of YouTube videos with her taking her guests through each question.
+
+One such example is [“my wife wastes her days](https://www.youtube.com/watch?v=YYFU3eCUIhE)." A husband takes issue with the way his wife spends her time with the kids; he feels like he slaves away at work all day, and when he gets back home, he finds that his wife has wasted her day.
+
+Byron: Is it true? Husband: Yes, from my perspective it is.
+
+Byron: Can you absolutely know that it's true? Husband: No.
+
+Byron: How do you react, what happens, when you believe that thought? Husband: I resent her. I feel like I'm working my tail off and I feel like she's a child; I'm picking up after her.
+
+Byron: Who would you be without the thought? Husband: She's beautiful. I'm excited to see her. She's probably been doing cool, creative stuff with our boys. I'd be honoring all the things she does for our world during the day. She does things for us all day.
+
+Byron: So with the thought, you're angry and resentful. Without the thought, you're connected, grateful, appreciative. So how does your wife's day have anything to do with your problem? What you're believing in the moment is the obstacle you're holding between you and your connection with your wife. Beliefs are very powerful. You think the thought, it keeps you blind to your love with her, your connection with her, and everything she does for your two children in your life.
+
+Byron: So that thought, turn that around. Husband: She maximizes her days. I waste my day.
+
+Byron: As far as I'm concerned, a day spent in resentment is a day wasted.
+
+#### **The purpose of The Work**
+
+The purpose of The Work is to become curious about all the possibilities of life. We find that this is done most effectively if you remain unattached to any outcome. This is not about valuing one thought above another, but it is about staying truly open to the exploration.
+
+
+---
+
+## Chapter 116: The Course by Dave Kashen
+
+*Source: https://medium.com/@davekashen/the-course-826a94333bd5*  
+*(6 min)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://medium.com/@davekashen/the-course-826a94333bd5)_
+
+
+---
+
+## Chapter 117: Possibility Mindset
+
+*Source: https://docs.google.com/document/d/1g0PS8RwdbLGvSbmUCTX1y66Dy5xsInjqv1vad1EWCR0/edit?usp=sharing*  
+*(3 min)*  
+
+[Possibility Mindset](https://docs.google.com/document/d/1g0PS8RwdbLGvSbmUCTX1y66Dy5xsInjqv1vad1EWCR0/edit?usp=sharing) (3 minutes)
+
+*by* [*Sabrina Wang*](https://sabrina-wang.super.site/) *(*[*@sabrinawangzq)*](https://twitter.com/sabrinawangzq)
+
+We know that [fear and anger give bad advice](https://docs.google.com/document/d/1sDWHUm6zwEGiPBQH2Ig6DDvVL-IEQSlfNeQnR2mhjmE/edit), and can directly influence the quality of your thinking. You can lash out to an employee or undersell during a fundraising pitch. Once you shift out of fear and anger, you can make better business decisions from a neutral mindset.
+
+I believe there to be an even better way to make decisions. You do this by intentionally imagining all the possibilities for yourself and your company. You will feel the excitement, inspiration, and hope. Therefore, you will decide on the CEO you want to become, not just the CEO you are today. I call this the possibility mindset.
+
+Let's see the different mindsets in CEOs I coached:
+
+  - Fear-based mindset
+      
+      - Fear-based mindset is when we allow our amygdala to cause us to make decisions while we are still in fear.
+      - For example, if a CEO feels threatened by competition, she may allow her fear to cause her to create a product strategy that matches her competition's feature sets, rather than concentrating on what is actually solving her customer's problems.
+  - Neutral mindset
+      
+      - You have a neutral mindset when you're no longer in fear. You can analyze the current state objectively and logically.
+      - For example, once the CEO [shifts away from fears](https://docs.google.com/document/d/15oh13eYxxIyQoOx3_6RQCWzA6ETkxYOV_gtYMeTeBKE/edit), she can see that it's more advantageous to play offense in her product strategy by investing in their existing features.
+  - Possibility mindset
+      
+      - Possibility mindset is when you are guided by rich details of your biggest dreams. You can see where you want to go and how to get there clearly.
+      - I once coached a CEO by building her 3-year vision in detail. When she felt that excitement, I asked her about her product strategy. It dawned on her that she's always been a category innovator. She decided to spin up engineers to develop new technology and break waves.
+
+When used in balance, a possibility mindset can create bolder and more efficient decisions.
+
+Here are a few ways to get into possibility mindset (or coach your direct reports to get there):
+
+1.  Document 3-year vision by dreaming as big as possible (30 minutes)
+      
+    1.  3-year is long enough to be ambitious, and short enough that you can get very specific. A dream that is well-balanced in ambition and realisticness creates a high level of motivation. When you do this exercise, you will likely feel inspired. You'll get into a possibility mindset for all areas of your life. 
+    2.  Take out your note-taking tool and start describing what your 3-year biggest dream looks like in personal life, work-life, friends, physical home, health, money, fun/recreational, and religious/spiritual life. Please write in the present tense. You can repeat this every quarter.
+2.  Imagine your future self (3 minutes)
+      
+    1.  Imagination is a powerful tool. Athletes practice visualizing the finish line over and over again. In this context, you can imagine who you are when you've achieved your goals. That will often unlock wisdom and knowledge you already have, but you are not listening to yet. It puts you in possibility by thinking about the more mature, confident, and experienced version of you. 
+    2.  Imagine yourself when you achieved your goals. Where are you? What are you wearing? What's your facial expression? What do you feel like? With your eyes still closed, ask yourself what you'd do in this situation. You can take these questions with your eyes closed, or journal back and forth to your future self.
+3.  [Energy Audit](https://docs.google.com/document/d/1HmaRdtk8R5GQtMj72Y6XhHTru5SQAiiqDfDP3qy73k4/edit) (3 minutes to read, 45 minutes to do)
+      
+    1.  Make Energy Audit a regular part of your life; I recommend once every quarter. This will help you feel more joy towards your work, therefore more likely to imagine possibilities. 
+4.  Weekly reflection (10 minutes)
+      
+    1.  Cause your CoS or EA to sit with you and do a weekly reflection of what's going on with your company. You can look at actions, OKRs, challenges, and wins. Please make sure you take time to document, verbalize, and celebrate each win. Then, you'll feel hopeful and confident in yourself. You'll begin to see the possibilities.
+5.  [Practicing gratitude](https://docs.google.com/document/d/18kCULxudhpoSZNN-5m4G611YGNI92aZA-xrMjbF0juA/edit)
+      
+    1.  We perform our best when we are in joy and gratitude for our present moment. You can turn gratitude into a daily practice through meditating, journaling, or a general attitude.
+
+Now that you have some instructions on moving into a possibility mindset, choose 1-2 to commit to. Take out your calendar or task management tool to schedule them in. 
+
+Possibility mindset can be practiced, refined, and mastered. It's like going to the gym. The more you go, the better effects you'll see. There's tremendous power in believing in new possibilities. Dreaming is the first step to making it real.
+
+
+---
+
+## Chapter 118: Emotions: feel them
+
+*Source: https://docs.google.com/document/d/1GAoTba5Hig6Dm2DO3FjKy_KUibLupeXjKqijxYba5LM/edit?usp=sharing*  
+*(1 min)*  
+
+[Emotions: feel them](https://docs.google.com/document/d/1GAoTba5Hig6Dm2DO3FjKy_KUibLupeXjKqijxYba5LM/edit?usp=sharing) (1 minute)
+
+*by* [*Sabrina Wang*](https://sabrina-wang.super.site/) *(*[*@sabrinawangzq)*](https://twitter.com/sabrinawangzq)
+
+[Video of Sabrina describing feeling your emotions](https://www.loom.com/share/44db4980704140bb941950644fb6ac79) (3 minutes)
+
+One of the fastest ways to release negative emotions is by feeling them without judgment and attachment. This is the core principle of mindfulness.
+
+Why would we want to feel our emotions? Why not just go straight to logical problem-solving? Negative emotions take up space in our minds. We cannot think to our fullest capacity before we process emotions. When we ignore or push emotions away, they'll always come back until we can properly dissolve them. Feeling is a shortcut to our best thinking.
+
+According to Harvard brain scientist Dr. Jill Bolte Taylor, [ninety seconds](https://timedtime.medium.com/gratitude-and-the-90-second-rule-f4dd0a51569a) is all it takes to identify an emotion and allow it to dissipate while you simply notice it.
+
+When we allow negative emotions to fester, the consequences can be harmful. We lose sleep, lash out at people, and make bad decisions. All it takes is 90 seconds to avoid these consequences.
+
+There are many ways to release emotions, like journaling, exercising, meditating, venting, etc. I find the observation technique to be universally effective for regular meditators and those who have no prior experience in mindfulness.
+
+Here are the steps to the observation technique. You can also watch [a video](https://www.loom.com/share/44db4980704140bb941950644fb6ac79) (3 minutes, skip to 0:58 to the exercise directly) of me guiding you through the steps.
+
+1.  Get to a private space where you don't have your electronics to interrupt you.
+2.  Close your eyes
+3.  Take 3 deep breaths
+4.  Do a quick body scan from the top of your head to the bottom of your feet. When you think of an emotion in mind, where do you feel the strongest physical sensation in your body? There may be multiple sensations. Just choose the strongest one and gently observe.
+5.  Describe the emotion silently (in your head) or out loud
+      
+    1.  Is it hot or cold?
+    2.  Does it have a shape?
+    3.  Does it have a color?
+    4.  Is there a density to it?
+    5.  What else can I notice about it?
+6.  Breathe normally while you observe the emotion with no judgment. You can breathe for 90 seconds or 5 minutes. 
+7.  You can expect to emerge from this exercise with one or more of the following results:
+      
+    1.  Feeling calmer and more relaxed
+    2.  Less tension in your body
+    3.  Lower and slower tone of voice
+    4.  Less stressed
+    5.  Clearer mind for logical problem-solving
+    6.  Changed perspective for the event that instigated the emotion in the first place
+
+Now that you know this technique, instead of jumping straight to solutions, try to take a few minutes to observe whenever you feel emotional.
+
+
+---
+
+## Chapter 119: How to spot fear and anger in others
+
+*Source: https://mm-coaches.notion.site/How-to-spot-fear-and-anger-in-others-1a4cfdbee30a465f8545f4285826165b*  
+*(by Sabrina Wang)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://mm-coaches.notion.site/How-to-spot-fear-and-anger-in-others-1a4cfdbee30a465f8545f4285826165b)_
+
+
+---
+
+## Chapter 120: How to process discomfort
+
+*Source: https://docs.google.com/document/d/1gbvJAD06HDtpYzOyTgOGmtUOH02INTqMM3noq4UhxJo/edit*  
+*by*  
+
+[How to process discomfort](https://docs.google.com/document/d/1gbvJAD06HDtpYzOyTgOGmtUOH02INTqMM3noq4UhxJo/edit) (1 minute)
+
+By [Sabrina Wang](https://twitter.com/sabrinawangzq), CEO Coach
+
+The most important skill for entrepreneurship is processing discomfort. 
+
+Your tolerance to discomfort is directly correlated to how much you'll think outside of the box. Or how quickly you can make hard decisions. The more you try, the more you fail, and the faster you grow.
+
+My simple model of processing discomfort is **Awareness -\> Acknowledge -\> Release -\> Redirection.**
+
+  - Awareness
+      
+      - Many of us avoid discomfort unconsciously. So we first must understand what is uncomfortable for us individually, and how we respond.
+  - Acknowledge
+      
+      - When we finally see how we are around discomfort, we can tend to judge or criticize ourselves immediately. We need to work to acknowledge the current state.
+  - Release
+      
+      - Once we can acknowledge the discomfort and our initial response, we can work to release it. Releasing could be kinesthetic, [emotional](https://docs.google.com/document/d/1GAoTba5Hig6Dm2DO3FjKy_KUibLupeXjKqijxYba5LM/edit), and/or cognitive depending on the discomfort and the individual. 
+  - Redirection
+      
+      - After release, we could redirect our focus based on our values and our priorities. What would I like to accomplish here? What is in the best interest of the company? 
+
+There are different types of discomfort. Here are the most common ones I see in CEOs and how to get past them.
+
+1\. Anticipating others' emotional response
+
+  - Most commonly, the CEO has hard feedback or hard decisions to make about a team member. This decision will most cause others to be fearful or angry. 
+  - To get past it, role-play and ask your partner to act out the worst-case scenario.
+
+2\. Fear of making the wrong strategic decision
+
+  - Sometimes, the best strategic move isn't obvious. 
+  - To get past it, leverage your team. Use the [Issue / Proposed Solution template](https://docs.google.com/document/d/1jOoTu44L22LG-_DfnTNdscBg2EJ_dSZgTujc5utK4yc/edit#) and solicit comments from everyone who has context. Run a premortem to plan for worst-case scenarios.
+
+3\. Letting go, [delegating](https://docs.google.com/document/d/1NUfzlzl1TaNmEC0M8Ewh4qOh3o5DoJI68kNmU7u-V2k/edit), and trusting
+
+  - Early-stage CEOs do lots of IC work. They will eventually need to level up and trust their teams.
+  - To get past it, write down what needs to be true for you to trust your team. Make the ask.
+  - Find the next high-leverage challenge that energizes you.
+
+
+---
+
+## Chapter 121: Sabrina Wang
+
+*Source: https://www.linkedin.com/in/sabrina-ziqin-wang/*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.linkedin.com/in/sabrina-ziqin-wang/)_
+
+
+---
+
+## Chapter 122: Fear: Tactics to neutralize fear-based decision-making
+
+*Source: https://docs.google.com/document/d/1E4BNxsIAfSDDs3RZHkBC3vrSr4PkyI_nead-MGuyTfw/edit?usp=sharing*  
+*by*  
+
+## Draft 2  
+
+**Fear: Tactics to neutralize fear-based decision-making**
+
+**CEOs**: When a decision, conversation, or standard keeps slipping, it’s usually because a leader on your team is afraid of a specific outcome if they act.
+
+Your job is to remove fear as an execution bottleneck so the business can move. Here’s a practical way to do that.
+
+#### **1. Name The fear**
+
+Fear stays powerful when it’s vague. Leaders stuck in fear will often explain the delay in reasonable-sounding language:
+
+  - “The timing isn’t quite right.”  
+      
+  - “I want to be careful about how I handle this.”  
+      
+  - “I’m not sure this is the moment.”  
+      
+
+Don’t debate the logic. Push for specificity. Ask:
+
+  - “What are you worried will actually happen if you do this?”
+
+You’ll usually get something more concrete:
+
+  - “They’ll get really upset.”  
+      
+  - “If we lose them, Q1 is at risk.”  
+      
+  - “I don’t know what we’ll see if we look at the numbers.
+
+Now you know what they’re worried about.
+
+  
+
+#### **2. Be specific, drive to action**
+
+With the concern surfaced, narrow in on the exact moment that’s stopping them from acting. Keep asking:
+
+  - “And if that happens, what are you worried about?”
+
+Example:
+
+Leader: “They’ll get really upset.”
+
+You: “And if they get upset?”
+
+Leader: “They might cry.”
+
+You: “And if they cry?”
+
+Leader: “I’ll freeze and won’t know what to say.”
+
+That’s the moment. This was never about whether to have the conversation. It was about not knowing what to do if they cry. Once that’s clear, the problem becomes much smaller and solvable.
+
+#### **3. Mirror it back to them**
+
+Name it directly:
+
+  
+
+“So this isn’t about giving feedback.
+
+It’s about not knowing what to do if they cry.”
+
+  
+
+This removes the fog. What feels overwhelming becomes concrete and workable.
+
+Most leaders feel immediate relief here - not because the situation is easy, but because it’s now clear.
+
+#### **4. Define the action**
+
+Decide what kind of fear it is, and help them prepare for that moment. For example:
+
+  - **Fear of navigating a hard moment** (e.g. ‘I don’t know what to say if they cry’)
+
+**Action:** 
+
+Write down:
+
+  - The specific scenario you’re worried about
+  - **The sentence or two you will say if it happens**
+  - Rehearse once.
+  - Have the words visible during the conversation if needed.
+
+See also: [Difficult Conversations: how to have them](https://docs.google.com/document/d/11pGR1sc5IlFXxXE9ve_RrvE1MVWpoYR7CxSyPL6wHQk/edit?tab=t.0)
+
+  
+
+  - **Fear of losing control of the conversation** (e.g. being pulled into a debate)
+
+**Action:**
+
+Before the conversation, define the decision boundary. Write down:
+
+  - What is decided and will not change
+  - What, if anything, is open for discussion
+  - Prepare one sentence you will use to restate the boundary if the conversation is drifting.
+
+  
+  
+
+  - **Fear of downstream consequences.****  
+    ****Action**: 
+
+Before the conversation, make the tradeoff explicit. Write down:
+
+  - The most likely downside of acting now
+  - The cost of delaying or avoiding the action
+
+See also:[Decision-making: separate decision from implementation](https://docs.google.com/document/d/18VkFRbhDTeU0nBEiot8CXiK37UUEZp0D-sT4-IN02Hs/edit)  
+  
+
+So, pick the category, prepare for that moment, and have the leader confirm what they intend to do and when specifically they plan to take the action.
+
+
+---
+
+
+# Individual productivity
+
+## Chapter 123: GTD
+
+*Source: https://docs.google.com/document/d/1rSfwOrlTa8kcRoHIikOBVgrZRZPxq3Sm5F7Hb21TmvQ/edit?usp=drive_web&ouid=102503928790226855337*  
+*(5 min to read, 1 day to implement)*  
+
+### [Getting Things Done (GTD)](https://docs.google.com/document/d/1rSfwOrlTa8kcRoHIikOBVgrZRZPxq3Sm5F7Hb21TmvQ/edit) (5 min to read, 1 day to implement)
+
+Everyone needs an organizational system to track goals, priorities, and tasks. Most successful CEOs that I know use the approach outlined in the book [*Getting Things Done: The art of stress-free productivity* by David Allen](https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563/ref=sr_1_2?dchild=1&gclid=EAIaIQobChMIxdPP4fT56gIVXB6tBh1sugzcEAAYASAAEgJ1vfD_BwE&hvadid=323368203351&hvdev=c&hvlocphy=9031905&hvnetw=g&hvqmt=b&hvrand=7585231154038880700&hvtargid=kwd-305149641073&hydadcr=21908_10171249&keywords=getting+things+done+workbook&qid=1596281711&sr=8-2&tag=googhydr-20). While the book is dense, it is worth reading in its entirety. The essence of Allen's system is:
+
+Each day, process every item in your Inbox (defined broadly as all Inboxes \[email, text, Slack, Jira, etc.\] and all to-do's). **If the action takes \<2 minutes to complete, do it immediately.** If not, then write down what the necessary action is, and place it one of the following lists: 
+
+1\. **Next Actions:** These are the next tasks on your priority list separated into areas of context. 
+
+  - Computer (tasks where you need access to your computer)
+  - Calls (you can complete these when you don't have access to a computer, e.g., riding in a car)
+  - Outside (tasks that can only be achieved outside, such as errands)
+  - Home (functions that you can only complete at home). 
+
+You should write tasks as single actions (as opposed to broad goals). The key is not to think about what needs to be done once you write down the Next Action. You should write The Next Action so clearly that all you need to do is follow its direction when you read it next.
+
+Computer
+
+  - Write the first draft of 10-year Company Vision and 3-month Roadmap
+  - Write the first draft of Sales Playbook
+
+Calls
+
+  - John 650-555-3452 schedule company offsite
+  - Mary 415-555-1234 review draft financing docs, paragraph by paragraph
+
+Outside
+
+  - Walgreens - pick up the prescription
+
+Home
+
+  - Clean out garage
+
+2\. **Waiting For**: This is the list of things you have asked others to do and are waiting for. List the person to whom you have delegated, the requested action, and the date you made the request. You can then quickly scan your Waiting For List and see which aging requests are still outstanding. Move these aging requests to your Next Action list and ask the person again for the item.
+
+Waiting For
+
+Sarah- feedback on Sales Playbook, 3-18
+
+Jim - Write-up issue for next Leadership Team Meeting, 3-19
+
+Bill- time to meet, 3-19
+
+3\. **Someday/Maybe:** This is the list of things that you one day want to do but don't need to get done now (e.g., read a book).
+
+Someday/Maybe
+
+Schedule a guitar lesson
+
+Order the book Getting Things Done by David Allen
+
+4\. **Agenda:** This is your list of regular meetings. When you think of something that you want to discuss with someone with whom you meet regularly, don't simply reach out to them via text or email with the issue. Instead, write it down on your Agenda list. Then, when you meet with that person, check your Agenda list and review everything accumulated there. 
+
+Spouse
+
+What should we do for our winter holiday?
+
+Connect- listen to each other's day for 10 minutes each
+
+Leadership Team
+
+Are we having enough fun?
+
+10-year Company Vision
+
+3-month Company Roadmap
+
+Inefficient leaders waste a lot of time reaching out about or responding to one-off issues in real-time. A much more efficient method is to batch your issues and discuss them all at once. This method does not apply to urgent matters. You need to address those immediately. But by addressing many issues regularly, soon critical issues will disappear.
+
+5\. **Projects:** This list is for projects with more than one Next Action that you can only do one after the other. Write out all of the Next Actions required to get to completion. Add the first one to your Next Action list. When you complete it, cut-and-paste the second action to the Next Action list. 
+
+6\. **Review:** This is your pace for reviewing the lists above. 
+
+Daily: Next Action and Waiting For
+
+Weekly: Someday/Maybe, Agenda and Projects
+
+And finally, use your calendar to schedule the Next Actions that need to happen on a specific day or at a particular time. I recommend that you put your reviews (\#6 above) in your calendar.
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 124: BTA (Bias Towards Action)
+
+*Source: https://chiefs-of-staff.notion.site/Bias-towards-action-730451d4d9324001b0104911911e3581#615ba03234e14051bfd4935e00d87f81*  
+*(10 min)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://chiefs-of-staff.notion.site/Bias-towards-action-730451d4d9324001b0104911911e3581#615ba03234e14051bfd4935e00d87f81)_
+
+
+---
+
+## Chapter 125: Inbox Zero
+
+*Source: https://docs.google.com/document/d/1rinKQeoh1IFdUWsLyF1SSuddsAkJmR3_G-gpghR0wF0/edit?usp=drive_web&ouid=102503928790226855337*  
+*(2 min to read, 1 hour to implement)*  
+
+### [Inbox Zero](https://docs.google.com/document/d/1rinKQeoh1IFdUWsLyF1SSuddsAkJmR3_G-gpghR0wF0/edit#) (2 min to read, 1 hour to implement)
+
+We all get deluged daily with Inbox messages from email, text, Slack, CRMs, and other online tools. It's critical to have a thoughtful methodology for dealing with them all—otherwise, it will bury you in communications, and you'll risk missing time-sensitive messages.
+
+Think of your combined inboxes as a single triage room at a hospital. Some cases that come in are urgent, others not so much. It is critical to notice the urgent matters immediately and get them to see a doctor now. To do so, you must keep the triage room clear. If you use the triage room as a waiting room as well, then a new patient can enter the room, sit down in a chair, and bleed out from his stab wound before you even realize he is there.
+
+For this reason, every well-functioning hospital separates its triage room from its waiting room and keeps the triage room absolutely clear. To be efficient, you must do the same with your Inbox. This action means addressing all the urgent cases right away and maintaining Inbox Zero every day.
+
+I recommend checking your Inbox only twice a day (once in the morning, once in the afternoon). If you check your email incessantly, multiple times an hour, you are wasting hours of productivity. Instead, batch your time and clean out your entire Inbox at those times. Each time, follow this process:
+
+1\. If the email/message takes less than two minutes to address, do it immediately.
+
+2\. If it takes more than two minutes, write down a Next Action (according to the Getting Things Done methodology) and then place the email in its correct location (Next Action, Waiting For, Someday/Maybe, or Reference).
+
+The best way that I have found to do this when using Gmail is to read and implement Andreas Klinger's [iconic blog post](http://klinger.io/post/71640845938/dont-drown-in-email-how-to-use-gmail-more) on GTD in Gmail. In it, Andreas explains how to use Gmail's Multiple Inbox features to create an inbox for Next Action, Waiting For, Someday/Maybe, and Reference. You can set the system up in 15 minutes. 
+
+3\. Repeat until you get to Inbox Zero. If you are truly fearless, you can get to Inbox Zero within the hour (yes, even if you have 1,000s of emails in your Inbox right now).
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 126: Inbox Zero:  How EA or CoS can help you achieve it
+
+*Source: https://www.notion.so/chiefs-of-staff/Help-Execs-Achieve-Inbox-Zero-2d1419bc0fda4a58b0d18ae9fed1e02f*  
+*(20 min)*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://www.notion.so/chiefs-of-staff/Help-Execs-Achieve-Inbox-Zero-2d1419bc0fda4a58b0d18ae9fed1e02f)_
+
+
+---
+
+## Chapter 127: Accountability Partner
+
+*Source: https://docs.google.com/document/d/1ljixCUhnIzKgNLzn5xzn-S1XEojM5Rblq3-83wiku28/edit*  
+*(1 min)*  
+
+[Accountability Partner](https://docs.google.com/document/d/1ljixCUhnIzKgNLzn5xzn-S1XEojM5Rblq3-83wiku28/edit) (1 min)
+
+  
+
+In my coaching, I have found that many people (including me) simply hate doing specific tasks (usually admin) and therefore don't actually do them, causing debt. How to solve this?
+
+The first answer is to delegate these tasks away as much as possible. But there always remain a few that are not delegatable. For those, which only we can do, we need a different strategy.
+
+The question then is: How do we motivate ourselves to do them?
+
+I have found that primarily extroverts (of which I am one) have this issue. And that is likely because we get energized by one of two things: 
+
+  - Being around other humans
+  - Doing fun things
+
+If we have to do something that isn't fun and we're alone, it is painful. But If we're in the presence of another human, then we're usually OK to do that thing which isn't fun. Who that other human is doesn't matter too much. It can be our child, our EA, or any other random person.
+
+If your EA is available, reach out to him each time you need to do such a task and ask him to simply be there (phone, video call, or in-person are all equally effective) to keep you company. If he is unavailable (or you don't have one), try [Focusmate](https://www.focusmate.com/) for admin tasks. I have used it, and it's surprisingly effective.
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 128: Gratitude
+
+*Source: https://docs.google.com/document/d/18kCULxudhpoSZNN-5m4G611YGNI92aZA-xrMjbF0juA/edit?usp=drive_web&ouid=102503928790226855337*  
+*(3 min)*  
+
+### [Gratitude](https://docs.google.com/document/d/18kCULxudhpoSZNN-5m4G611YGNI92aZA-xrMjbF0juA/edit#) (3 min)
+
+Confirmation bias is the phenomenon that we will discover evidence to support whatever belief we start with. A corollary to this is that whatever question we ask, we will focus on the answer. 
+
+In any situation, we can ask ourselves, "What is wrong here?" or "What is right here?" Throughout our lives, parents, teachers, and employers have taught us to ask the former question. We cannot fault them. They had the best intentions. In the earliest years of our life, they were trying to keep us alive. Unfortunately, an unintended consequence is that we learned to focus on the negative, so we continually see the negative. This leads to objectively very successful people being not fully satisfied with their lives, themselves, etc. If that is where it ended, I wouldn't touch it, as this book is about becoming a great CEO, not about maximizing a feeling of fulfillment. However, that is not where it ends.
+
+It turns out that we perform our best when we are having fun and feeling good about ourselves. 
+
+If you want proof of this, go to any kid sports event where you know the kids' names. Start cheering positively for the losing team, with specific compliments to specific kids: "Great pass Jimmy." "Way to be in position, George." When a kid takes a shot but misses … "Good idea Joey, it was the right thing to do." Within 5-10 minutes, the game's tide will start to change toward the team that you are giving specific compliments to. (I have done this many times. And it has worked every time\!)
+
+So, how do we take advantage of this knowledge to generate a good feeling in ourselves? We ask the right question: "What is good about this situation?" "What is good about this team member?" "What is good about my company?" "What is good about my life?" Or, we fill in the overarching statement: "**I am grateful for \_\_\_\_\_\_\_\_."** 
+
+I recommend making this a daily practice. I do it first thing every morning. To remember to do it, create a trigger for yourself. 
+
+A trigger is something that you will see at the time that you want to do the action. The most effortless trigger, in this case, is a piece of paper with the word "Gratitude" printed on it, taped to your night-table, or wall by your bed, or mirror in your bathroom. When you see it each morning, you say the phrase "I am grateful for \_\_" five times with a different ending each time. (You don't have to say it out loud; you can say it in your mind.) Using a trigger allows you to create a habit easily. 
+
+Another way to make this a regular habit is to use a journal like [The Five-Minute Journal](https://www.amazon.com/Five-Minute-Journal-Happier-Minutes/dp/0991846206/ref=sr_1_2?ie=UTF8&qid=1531248905&sr=8-2&keywords=five+minute+journal). Keeping the book by your bedside is the trigger, as you will see it when you wake up and just before you go to sleep. 
+
+  
+
+If you do this gratitude practice regularly (don't worry if you miss days here and there), your view of your life and yourself will begin to change for the better. And soon afterward, you will start to perform better in life, just like the kids on the sports field.
+
+For the cynics out there, being grateful doesn't mean that you will suddenly ignore all of the areas of your life or your company that could use improvement. Just the opposite. It only means that you will bring an attitude of joy instead of desperation when addressing those areas. 
+
+Life and company-building don't have to be complicated or painful. Daily gratitude helps us realize that.
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 129: Time Audit
+
+*Source: https://docs.google.com/document/d/1hCxvdAi8aMtJ95are02AZO2fjvkNe0rDGzNhhmbUSqQ/edit?usp=drive_web&ouid=102503928790226855337*  
+*(2 min to read, 1 hour to do)*  
+
+[Time Audit](https://docs.google.com/document/d/1hCxvdAi8aMtJ95are02AZO2fjvkNe0rDGzNhhmbUSqQ/edit?usp=drive_web&ouid=102503928790226855337) (1 min)
+
+It is critical to know how you are spending your time. 
+
+##### Perceived Time
+
+To do so, first write down how you think you do spend your time: 
+
+  - what the activities are
+  - what % of your time you spend on each. 
+
+Here is an example:
+
+  - Source new deals 20%
+  - Support portfolio companies 30%
+  - Internal firm meetings (with partners, staff, etc) 25%
+  - Events and Conferences 10%
+  - Board Meetings (for-profit) 10%
+  - Board Meetings (not-for-profit) 5%
+
+##### Target Time
+
+Then write down how you would ideally like to spend your time. Be brutally honest. Here is an example:
+
+  - Source new deals 80%
+  - Support portfolio companies 10%
+  - Internal firm meetings (with partners, staff, etc) 2%
+  - Events and Conferences 4%
+  - Board Meetings (for-profit) 2%
+  - Board Meetings (not-for-profit) 0%
+
+##### Actual Time
+
+Then print out several weeks of your past calendar and add up how you spend your time hour-by-hour. You will likely be amazed at the difference between how you think you spend your time and how you actually spend your time. Be afraid of this perception gap.
+
+##### Re-Allocate
+
+For each activity that is over-allocated, start brainstorming ways to outsource or eliminate the activity. Use a thought partner. You are likely too close to these activities to see the actual possibilities for outsourcing or eliminating them.
+
+Do not try to re-allocate by simply increasing the amount of time you spend on the most important activity. Time is finite, and you will end up killing yourself. Instead, focus on eliminating time spent on the less important things. You will then naturally fill the open space with the highest priority.
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 130: Mental Health - how to maintain it
+
+*Source: https://docs.google.com/document/d/1CvyoQ0bo2P8kGagbGsKCF4akFVSIcp1mrct_Ueu4sLA/edit*  
+*(2 min)*  
+
+[Mental Health - how to maintain it](https://docs.google.com/document/d/1CvyoQ0bo2P8kGagbGsKCF4akFVSIcp1mrct_Ueu4sLA/edit) (1 min)
+
+If you contracted a serious illness (i.e., pneumonia) or sustained a serious injury (i.e., broken bones), would you feel embarrassed to seek medical attention? Or rather, would you feel ashamed not to seek medical attention? 
+
+As a society, we accept that the body gets run down at times, and when it does, the responsible action is to seek resources to heal it. 
+
+The mind is no different. It gets run down sometimes. There is no shame in it. It happens to everyone that I know (who is honest about it). And just as with physical ailments, if we ignore mental ailments, they sometimes get better on their own. But much more often, they don't. So, we can either ignore those mental ailments because we believe that it shows weakness to admit that we have them, or seek resources to heal them. Which sounds more reasonable to you?
+
+I am Matt Mochary. I am 55. I coach some of the most successful tech CEOs and investors in the world. For many of them, I am their most trusted advisor. I share openly with every one of them that I have, in my lifetime, seriously considered suicide, been profoundly depressed, and regularly experience anxiety. Do you think they are turned off by this and have lost faith in my ability to be their best advisor? No. Just the opposite. They feel even more deeply connected to me because each one of them has also experienced some form of this themselves.
+
+So, here are the resources that have worked for me and others that I know: [Consciousness Training options](https://docs.google.com/document/d/1lcUnr_vQIW3TI7rUl5RwthyUPU032dFXAw3ccbOE48I/edit).
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 131: Meetings:  don’t schedule them
+
+*Source: https://docs.google.com/document/d/1GJ7rk_XKsOQEQqN4pGTIvc4quBCuh6p4LtmCqNFs0e4/edit*  
+*(1 min)*  
+
+[Meetings:  don't schedule them](https://docs.google.com/document/d/1GJ7rk_XKsOQEQqN4pGTIvc4quBCuh6p4LtmCqNFs0e4/edit) (1 min)
+
+  
+
+The two most available people that I know are Sam Altman and Naval Ravikant.  At any time of day, if I reach out to them, they respond near-instantly and are usually available for a 5-minute phone chat if needed.
+
+  
+
+How is this possible?  These are two of the most successful people on the planet.  Shouldn't their time be massively scheduled?  
+
+  
+
+No.  Sam and Naval both use the same method.  They don't schedule meetings.  
+
+  
+
+This leaves their calendar almost entirely open.  And that allows them to be able to respond and talk to anyone at any time.  And it allows them to talk to many more people, because each conversation usually only requires 3-5 minutes.  
+
+  
+
+But if they were to schedule calls, those same calls would be 25 minutes.  The scheduling would also rob Sam and Naval of the flexibility to do what they want to, when they want to.
+
+  
+
+If someone wants to reach Sam or Naval, that person need only message them and say "Sam, I'd like to talk to you about \_\_\_\_\_\_.  Do you have a few minutes to talk now?"   If the subject is interesting to Sam, and he is free, he will call the person right then and there.  
+
+  
+
+So, if you want the freedom to do what you want when you want to, and be much more available to the world, then … don't schedule meetings\!
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 132: Micromanaging
+
+*Source: https://docs.google.com/document/d/1XIN4X7mGFLggst11sc1717RITCVoONl9QirAHy6wlQE/edit?usp=sharing*  
+*by*  
+
+[Micromanaging](https://docs.google.com/document/d/1XIN4X7mGFLggst11sc1717RITCVoONl9QirAHy6wlQE/edit?usp=sharing) by [Faith Meyer](https://mm-coaches.notion.site/Faith-Meyer-ACC-7be84956b4de4ee2b7c30f441db90dc3) (3 min)
+
+  
+
+If you're worried about whether you're micromanaging, the best thing you can do is ask your direct reports about their experience with you as a manager and whether they feel you micromanage them.
+
+  
+
+Not ready to do that? As a prior micromanager myself, I usually recognize it in leaders when they:  
+  
+
+  - Are *excessively* involved in processes, functions and decisions below their pay grade — beyond the healthy norms of management
+  - Struggle with trust
+  - Reluctant to delegate
+  - Are hyper-focused on the details
+  - Insist that something be done their way versus delegating well & [holding the team accountable](https://docs.google.com/presentation/d/1foUj9i_K3X-0c5WTQrggSyH93-FflNxzdlrgAUvARSQ/edit?usp=sharing)
+
+  
+
+##### **The Root of Micromanagement**
+
+As with any behavioral change, it's critical to first understand the underlying motivating factors that drive that behavior — consciously or unconsciously. For micromanaging, it's:
+
+  
+
+  - **\*\*A lack of trust\*\***  
+      - You don't trust others to get it done \[right\] and often check to make sure they actually did it. Plus, how productive are they really?
+  - **\*\*Need to control\*\***  
+      - You fear/hate it when decisions are made without you, and want constant updates on progress.
+  - **\*\*Perfectionism\*\***  
+      - You obsess over details and don't want to delegate because they won't do it as well as you.
+  - **\*\*Fear of losing power/influence\*\***  
+      - You want to stay involved, so you limit others' power/authority.
+  - **\*\*Lack of confidence in team members\*\***  
+      - You often ignore team members' feedback and are quick to take back work as soon as a problem arises.
+
+  
+
+Lo and behold, fear is often at the root of all of this. And you know by now that [fear and anger give bad advice.](https://docs.google.com/document/d/1sDWHUm6zwEGiPBQH2Ig6DDvVL-IEQSlfNeQnR2mhjmE/edit)
+
+  
+
+##### **Diminishing Returns**
+
+The story we micromanagers tell ourselves is that "It'll be faster if I do it" or that it's for the greater good. But here's the ugly truth: Leaders who micromanage…
+
+  
+
+  - Burn out at a higher rate (and burn their teams out)
+  - Experience lower velocity, trust, candor and transparency with direct reports
+  - See higher turnover rates with employees and increased costs due to ongoing hiring
+  - Create work cultures with higher levels of stress, toxic behavior, depression, complacency, lower productivity and lower engagement
+
+  
+
+##### **Know Better, Do Better**
+
+When I micromanaged, I thought I was helping by bringing my experience to bear to help solve whatever problem was at hand. But as a leader, I was bottlenecking my team and hampering their growth and therefore the company's growth and success. 
+
+  
+
+I leaned into figuring out what the underlying gaps were in my own communication as well as my direct reports' skills, processes and understanding— not in the issue/problem/work itself.
+
+  
+
+By channeling my energy into supporting my people in addressing the underlying gaps in their processes, they not only solved the problem at hand; they were empowered to solve 100,000+ problems going forward\!
+
+  
+
+If you hired well, you have a strong leadership team around you, all with different strengths, skills and zones of genius from you. What's stopping you from delegating more to them? From leading in a way that helps your direct reports shine?
+
+  
+
+Not sure where to begin? First grow your awareness. Just gather information first: Where/when/why do you find yourself micromanaging? 
+
+  
+
+Then, get curious about what your underlying need(s) are. 
+
+  
+
+Then, ask the team to meet that need or to help come up with a better process to meet those needs.
+
+  
+
+Practice. Practice. Practice. You'll gain confidence each time you complete a rep. I also strongly encourage you to practice mastering [delegation (slide 6) and accountability](https://docs.google.com/presentation/d/1foUj9i_K3X-0c5WTQrggSyH93-FflNxzdlrgAUvARSQ/edit?usp=sharing).
+
+  
+
+Stick with it, remember why you want to be a powerful delegator and leader, and you'll improve — often faster than you may have expected. 
+
+  
+
+##### **Commit & Be Consistent**
+
+NOT micromanaging will be hard at first. Commit to doing better, share with your team what you intend to do, ask for accountability, and embrace the suck of not being great at something for a change. 
+
+  
+
+With time, you will feel the exhilaration that comes from great leadership — as well as the newfound mental and literal freedom and upward momentum you've created for yourself and your team.
+
+  
+
+Leadership requires a constant unfolding and letting go of prior phases and facets of our roles, especially for those of us who launched an idea into something big, moving through the ranks from founder or first employee to CEO.
+
+  
+
+Where are you getting in your own way? How are you blocking your team from growing and taking on more? If you're not sure, get quiet. Look within. Or better yet—[ask your team](https://docs.google.com/document/d/1SLHeBWEXHk9SEvUKUU1hMsxl-U-IRaeZqA-wpx02lb4/edit). See what emerges. Then [let's talk](https://coach.mocharymethod.com/).
+
+  
+
+  
+
+##### **Further Reading:**
+
+Harvard Business Review: [How to help (without micromanaging)](https://hbr.org/2021/01/how-to-help-without-micromanaging) 
+
+Gartner: [Micromanaging your remote workers? Own it, then fix it.](https://www.gartner.com/en/articles/micromanaging-your-remote-workers-own-it-then-fix-it) 
+
+PubMed: <https://pubmed.ncbi.nlm.nih.gov/12510608/>
+
+
+---
+
+## Chapter 133: Faith Meyer
+
+*Source: https://mm-coaches.notion.site/Faith-Meyer-ACC-7be84956b4de4ee2b7c30f441db90dc3*  
+
+_(This source could not be accessed — likely permission-restricted or unavailable. Original link: https://mm-coaches.notion.site/Faith-Meyer-ACC-7be84956b4de4ee2b7c30f441db90dc3)_
+
+
+---
+
+
+# Health
+
+## Chapter 134: Sleep
+
+*Source: https://docs.google.com/document/d/1QYbZ_g59ZveqVvkrq-796Vj3xUGq0_5kPguUEqIaY1M/edit*  
+*(3 min)*  
+
+#### [Sleep](https://docs.google.com/document/d/1QYbZ_g59ZveqVvkrq-796Vj3xUGq0_5kPguUEqIaY1M/edit#) (3 min)
+
+Many CEOs that I coach find that they sleep far less now than they did before running a company. For some, that means waking up in the middle of the night thinking about an issue or a to-do. For others, that means going to sleep late (to finish emails, etc.) and then being woken up by the alarm clock to make it to their first meeting. Either way, the elusive "full night of sleep" becomes a distant memory. These CEOs feel that their bodies are wearing down, and soon they will break in some way.
+
+If this is happening to you, here are the essential things to know:
+
+1.  This feeling is totally normal\!\!\! There is nothing wrong with you. 
+2.  Your body is remarkably resilient. It will not break so easily. (I regularly get between 3 to 6 hours of sleep each night and am fine.)
+3.  Your body goes through a sleep cycle of light sleep, deep REM sleep, and lighter sleep again. These cycles usually last 1.5 hours each. What makes us feel tired and groggy is being suddenly woken from a deep sleep, and this almost only happens from an alarm clock. Curiously, we feel better rested with 6 hours of sleep (waking while we are ending a sleep cycle) than we do sleeping for 7 hours, and having an alarm wake us out of REM sleep. (For this reason, I have gone for months with 3 or 4.5 hours of sleep per night and felt just fine.) To test this phenomenon, download a SleepCycle app and use it to both track your sleep patterns and wake during light sleep. If nothing else, you will realize that what you are experiencing is common and not abnormal.
+4.  If you are waking with a thought about an issue or a to-do, it is because your mind is desperately trying not to forget this urgent task. To quickly quiet your mind: 
+      
+    1.  Keep a notepad by your bed. Write down whatever it is that you woke up thinking. In the morning, transfer it to your [GTD](https://docs.google.com/document/d/1rSfwOrlTa8kcRoHIikOBVgrZRZPxq3Sm5F7Hb21TmvQ/edit?usp=drive_web&ouid=102503928790226855337) system.
+    2.  Faithfully follow your GTD method during the day. Write down all of your next actions, waiting-fors, etc. Your mind will not need to remember this task or issue at night, knowing that you have already recorded it in your GTD system.
+5.  When you do wake during the night, don't fight it. Allow yourself to do productive work. If you aren't motivated to do productive work, do something soothing, like reading from a paper book. Avoid doing something unproductive and stimulating (i.e., social media on a screen). Screens emit blue light akin to sunlight and turn the body's circadian rhythm receptors to "wake" mode. Therefore, do not turn to a screen in the middle of the night if you can at all avoid it. Enable the habit of no screens by not allowing your phone or computer to even enter your bedroom.
+
+Remember that Benjamin Franklin famously woke up each night after several hours (probably 4.5), took a bath, wrote (which is why he was such a prolific author), and then went back to sleep for several more hours until the sun rose.
+
+1.  Experiment with your sleeping arrangement. Throw money at the problem. Here are some things that have worked for others to create a soothing sleeping environment: 
+      
+    1.  Sleep position 
+          
+        1.  Face-down with one leg raised at a 90-degree angle (Tim Feriss).
+        2.  On the side, with a thick pillow between the legs, a thick pillow that elevates the head until the spine is straight, and a thick pillow to hug, all on a memory-foam bed.
+    2.  Sleep surface 
+          
+        1.  Memory-foam bed
+        2.  Bio-mat
+    3.  The room 
+          
+        1.  No phone or screens in the bedroom
+        2.  Black-out shades
+        3.  White noise machine, or soothing music
+    4.  Rituals 
+          
+        1.  Meditate for several minutes just before going to bed (or in bed)
+        2.  Orgasm (yes, it helps\!)
+    5.  [Sam Altman on sleep, exercise, and nutrition](https://docs.google.com/document/d/1n7ADNs45wjm5I5fHKPKgzHAZ3bzXN_P6C2QPOp3jhwE/edit)
+    6.  Timing 
+          
+        1.  Set the alarm for when to "go to sleep," not one for when to wake up.
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 135: Alex MacCaw on Health
+
+*Source: https://docs.google.com/document/d/1Mi7492N-c6doudrnD1_gueOrfcChBObaardB-WsAtHM/edit*  
+*(1 min)*  
+
+[Alex MacCaw on Health](https://docs.google.com/document/d/1Mi7492N-c6doudrnD1_gueOrfcChBObaardB-WsAtHM/edit) (1 min)
+
+  
+  
+  
+
+Building a company will take a physical and mental toll. All the work you put towards your company will be for naught if it costs you your health. It is incredibly important that you focus on both your physical and mental health, and take active measures to improve them.
+
+  
+
+Ideally take some form of exercise everyday, but at least ensure that you're working out multiple days a week. Figure out what exercise works for you, be that lifting, running, or boxing. If you find your self-motivation is slipping, get a buddy to train with, sign up for group activities (e.g. Barry's Bootcamp), or get a trainer. If you can't afford a trainer, get the company to pay for it. Your investors won't mind; your physical health is paramount.
+
+  
+
+Company building takes an emotional toll too. It is important that you have someone to speak to, listen to you, and help feelings flow through you. The alternative is bottling up anger, sadness, fear until you and your company self-destruct. Build a CEO support group comprised of your peers. Learn to be vulnerable in front of the company and practice Conscious Leadership (Chapter 15). Get a therapist; even if you think you don't need one, you will invariably find it useful.
+
+  
+
+Meditation is also a tool to help focus and quiet the mind. A good company perk is to buy a team account for a meditation app like Calm (calm.com) or Headspace (headspace.com), and then set aside a room in your office for meditating. Stick an event in your calendar every day to remind you to meditate, and make it public to the company to lead by example.
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 136: Sam Altman on Sleep, Exercise and Nutrition
+
+*Source: https://docs.google.com/document/d/1n7ADNs45wjm5I5fHKPKgzHAZ3bzXN_P6C2QPOp3jhwE/edit?usp=drive_web&ouid=102503928790226855337*  
+
+Sleep seems to be the most important physical factor in productivity for me.  Some sort of sleep tracker to figure out how to sleep best is helpful.  I've found the only thing I'm consistent with are in the set-it-and-forget-it category, and I really like the [Emfit QS+Active](https://www.amazon.com/gp/product/B0158W3E2A/).
+
+  
+
+I like a cold, dark, quiet room, and a great mattress (I resisted spending a bunch of money on a great mattress for years, which was stupid—it makes a huge difference to my sleep quality.  I love [this one](https://www.tempurpedic.com/shop-mattresses/tempur-contour-elite/v/715/)).  Not eating a lot in the few hours before sleep helps.  Not drinking alcohol helps a lot, though I'm not willing to do that all the time.
+
+  
+
+I use a [Chili Pad](https://www.chilitechnology.com/) to be cold while I sleep if I can't get the room cold enough, which is great but loud (I set it up to have the cooler unit outside my room).
+
+When traveling, I use an [eye mask](https://www.amazon.com/gp/product/B00GSO1D9O/) and [ear plugs](https://www.amazon.com/gp/product/B001J4HB1C).
+
+  
+
+This is likely to be controversial, but I take a low dose of sleeping pills (like a third of a normal dose) or a very low dose of cannabis whenever I can't sleep.  I am a bad sleeper in general, and a particularly bad sleeper when I travel.  It likely has trade- offs, but so does not sleeping well.  If you can already sleep well, I wouldn't recommend this.
+
+  
+
+I use a full spectrum LED light most mornings for about 10-15 minutes while I catch up on email.  It's great—if you try nothing else in here, this is the thing I'd try.  It's a ridiculous gain for me.  I like [this one](https://www.amazon.com/gp/product/B075H39NDL/), and it's easy to travel with.
+
+  
+
+Exercise is probably the second most important physical factor.  I tried a number of different exercise programs for a few months each and the one that seemed best was lifting heavy weights 3x a week for an hour, and high intensity interval training occasionally.  In addition to productivity gains, this is also the exercise program that makes me feel the best overall.  
+
+The third area is nutrition.  I very rarely eat breakfast, so I get about 15 hours of fasting most days (except an espresso when I wake up).  I know this is contrary to most advice, and I suspect it's not optimal for most people, but it definitely works well for me.
+
+  
+
+Eating lots of sugar is the thing that makes me feel the worst and that I try hardest to avoid.  I also try to avoid foods that aggravate my digestion or spike up inflammation (for example, very spicy foods).  I don't have much willpower when it comes to sweet things, so I mostly just try to keep junk food out of the house.
+
+  
+
+I have one big shot of espresso immediately when I wake up and one after lunch.  I assume this is about 200mg total of caffeine per day.  I tried a few other configurations; this was the one that worked by far the best.  I otherwise aggressively avoid stimulants, but I will have more coffee if I'm super tired and really need to get something done.
+
+  
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+
+# Team Productivity
+
+## Chapter 137: Meetings: The War Room
+
+*Source: https://docs.google.com/document/d/1HO00SGAShILVyTfvcjKHRbLy0ol4rpNo6pVlh-r1sgE/edit*  
+
+[Meetings: The War Room](https://docs.google.com/document/d/1HO00SGAShILVyTfvcjKHRbLy0ol4rpNo6pVlh-r1sgE/edit)
+
+  
+
+Meetings are expensive.  But they can be very effective in
+
+  - Discovering and resolving blockers
+  - Holding people accountable to getting actions done
+
+  
+
+The cost of each meeting is time.  The time to prepare for and have the meeting, which needs to be multiplied across all participants.
+
+  
+
+The question is how often to have them, and how long to make them?
+
+  
+
+The answer depends on the frequency of blockers arising and urgency of resolving those blockers.
+
+  
+
+If a person or team is operating smoothly and is rarely encountering blockers, then meeting once every 2 weeks is usually enough to identify and resolve the few blockers that do arise.
+
+  
+
+If a person or team is newly formed, or is experiencing challenges, then a weekly cadence is usually needed to clear out the blockers with greater frequency.
+
+  
+
+And there this is the crisis moment.  This is when the company, team or individual experiences an existential crisis moment.  The priority becomes to understand and solve the problem as urgently as possible.  For this situation, a daily meeting amongst all relevant team members is the answer.
+
+  
+
+This is called a War Room.    
+  
+The cost is massive. But it is the only way that I have seen to successfully rally a team to solve a problem in the shortest amount of time.  
+
+  
+
+Each meeting has only two components;
+
+  - Accountability
+      
+      - Each person reports 
+          
+          - whether they got their actions from last meeting done or not
+              
+              - If not, why not.  And what they will do to ensure they won't get blocked that way again.
+          - the status of their area of responsibility (green, yellow, red; the good, the not good)
+          - what their next actions are to resolve the not good and push toward their goal
+  - Problem discovery and resolution
+      
+      - Each person declares the biggest unresolved problem they see
+      - The meeting owner Identifies the most salient of these problems, picks a decision-maker who makes a decision and creates actions.  
+          
+          - Each action is given a due date, assigned to one DRI, and put in an action tracker where all can see its status.
+
+
+---
+
+## Chapter 138: Calendar Cadence
+
+*Source: https://docs.google.com/document/d/1vyxqhBB6GCCycPNvlaUyq1UcOLeCi7_nUdDIhHj1HQc/edit?usp=drive_web&ouid=102503928790226855337*  
+*(3 min)*  
+
+[Calendar Cadence](https://docs.google.com/document/d/1vyxqhBB6GCCycPNvlaUyq1UcOLeCi7_nUdDIhHj1HQc/edit) (3 min)
+
+Paul Graham of YCombinator, famously points out that makers (engineers) need long stretches of uninterrupted time to be productive, whereas managers are most effective when meeting. The compromise is to schedule days when no meetings are allowed. 
+
+The thoughts below are to protect those who can only produce their best work when in a flow state, knowing that any distraction destroys a flow state. This guidance applies to engineers and designers. It likely does NOT apply to people in more operational roles.
+
+By scheduling all internal meetings (1-1s, Team Meeting, and All Hands) on a single day, you also get two massive benefits:
+
+  - You can use each 1-1 during the day as preparation for the Team Meeting at the end of the day. This action creates a super-high-quality and informed Team Meeting that causes each team member to be inspired by their peers (who are so well prepared).  
+      
+  - You learn about issues from each person's perspective at the same moment in time (same day), and therefore can get an accurate 360-degree view and resolve it most effectively. 
+
+The schedule that works best for a five-day workweek is:
+
+  - One day of internal meetings for the Exec Team (1-1s, Team Meeting, and All Hands) 
+      
+      - A separate day of internal meetings for each Department
+      - A separate day of internal meetings for each Team
+  - One day of external meetings (i.e., interviewing candidates)
+  - Three days of no meetings (with Slack off\!)
+
+It isn't critical when these days are, although it helps to space the two meeting days apart from each other.
+
+The above schedule often comes under fire from recruiters, who worry that:
+
+1.  It won't be easy to conduct all onsite interviews on a single day.
+2.  Many qualified candidates won't be able to make it in on the appointed day.
+
+First, your hire and close rate for candidates should be very high (approx. 75%)— otherwise, you are losing incredible amounts of time by doing all-day in-person interviews with many candidates you don't want to hire or don't want to work for you. Therefore, unless you are already hitting the 75% metric, you should start screening candidates more effectively (i.e., brutally) in your phone interviews and lower the number of in-person interviews.
+
+Second, it is true that some candidates can only come on specific days or times. However, the benefits of having meetings on only one set day, as measured by the company's increased productivity, far outweigh the cost of losing out on a few candidates. Additionally, if the candidate cannot find the time to make it on a set day within two or three weeks, it is quite likely that they won't take the job anyway.
+
+There are many other high-level candidates out there. You can find another one. But there are only a finite number of productive work hours within the company. Once lost, there is no way to recapture them.
+
+There are two exceptions to the advice above:
+
+1.  In the very early days of a company, when a department has just one person. At that stage, the department lead can set a recruiting schedule that works for her as she builds her team.   
+      
+2.  Departments that are entirely non-technical and don't require focused work time (i.e., Operations) or whose job it is to have external meetings (i.e., Sales).
+
+The guidelines above are for when a team is already in place, which requires uninterrupted days for its work. This setup is particularly important for the Engineering team.
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 139: Meetings:  Exec Meeting: at Newfront
+
+*Source: https://docs.google.com/document/d/13CgB7Z4HOG8V2NO6Paf3xTnqmdMlLodc2BgITCzhxeo/edit?folder=0B9tanFUuwmYSMHIyU2pkYTZSVkU*  
+*(1 min)*  
+
+[Meetings:  Exec Team meeting at Newfront](https://docs.google.com/document/d/13CgB7Z4HOG8V2NO6Paf3xTnqmdMlLodc2BgITCzhxeo/edit?folder=0B9tanFUuwmYSMHIyU2pkYTZSVkU) (1 min)
+
+  
+
+  - Each management team leader updates a weekly sync doc by 8 PM Sunday.
+  - Their updates consist of relevant progress towards their organizational OKRs and key initiatives.
+  - Individuals also have the opportunity to submit a "Topic" or "Decision" ahead of time that comes with a \~1-page write-up providing the group relevant context.
+  - Finally, there are recurring topics we have scheduled for the exec team to discuss (team performance, culture, metrics, budgeting, etc.), which slot in on a more consistent basis.
+  - The meeting starts promptly at 8 AM on Monday, where the team is expected to be in the room, and laptops open for a 15 minute reading period where they review all the weekly updates, topics/decisions and share their input. 
+      
+      - Suppose you've contributed materially ahead of time. In that case, you can show up at 8:15 for the discussion section, but the moderator (meeting owner) strictly enforces that if you show up late like that, you better have been an active participant in the document.
+  - We keep the first \~15-20 minutes of the meeting for each individual to have the opportunity to respond to any questions/comments in their section and stress specific points that are uniquely relevant to the group at large. It is OK for an individual to say "it's all in writing" and move on to the next person's section. 
+  - Throughout the conversation, we record 1) actions to the next and 2) communications to the team. The second point is essential since some subset of the information discussed during the weekly management meeting should be disseminated through the organization's ranks. We've also organized our weekly team meetings to fast-follow the management meeting to ensure we distribute those sorts of messages. 
+  - Finally, we spend the rest of our time \~30 minutes working through the proposed Topics and Decisions. We follow the Mochary framework relatively closely, where each leader comments on the topic at hand and shares their perspective. We do not utilize the second "Decision" + "Decision Comments" section of your template as we find it somewhat redundant to the first comments section. 
+  - Generally speaking, the proposer will have sufficient context to offer up a decision and chart out the following steps (which the moderator enforces). Still, we can also open the discussion up to the group depending on the meatiness of the topic. 
+
+One of the skills required of the moderator is the ability to identify when going off-script from the structure meeting process is the optimal thing (we're talking about an important topic and having a productive conversation) versus when she should jump in to cut a conversation short.
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 140: Meeting: Exec Meeting: Department Update
+
+*Source: https://docs.google.com/document/d/1uWhwTvP5yLeL_I1kQ-vNgj1ImAm947Y0mRTo9ZOuJ3Y/edit*  
+*(1 min)*  
+
+[Exec Meeting - Department Update](https://docs.google.com/document/d/1uWhwTvP5yLeL_I1kQ-vNgj1ImAm947Y0mRTo9ZOuJ3Y/edit) (1 min)
+
+  
+
+Company:
+
+Mission
+
+Vision
+
+Values  
+AORs
+
+Org Chart
+
+Personal info
+
+Wiki
+
+  
+
+Department:
+
+OKRs
+
+Pipelines
+
+  - Recruiting
+  - Sales
+
+Roadmaps
+
+  - Product
+  - Hiring
+
+Financials
+
+  
+FORMAT
+
+OKRs
+
+  - Progress made
+  - Next actions
+
+The Good
+
+  -   
+
+The Not Good (with 100% Responsibility and Proposed Solution)
+
+  - *\*Issue:\**  
+      - *\*What I did to help create this situation:\**
+      - *\*Proposed Solution:\**
+      - *\*Coach response:\**
+
+Topics
+
+  -   
+
+Feedback
+
+  - To CEO
+  - To Peers
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---
+
+## Chapter 141: Leadership and Inspiration: How to create it
+
+*Source: https://docs.google.com/document/d/1PTcxTzNFIh1gbBdyC8F0hRLLPh7CFt1XRCwzS0SZku8/edit*  
+*(6 min)*  
+
+[Leadership and Inspiration: How to create it](https://docs.google.com/document/d/1PTcxTzNFIh1gbBdyC8F0hRLLPh7CFt1XRCwzS0SZku8/edit) (6 min)
+
+  
+
+Many of the CEOs I work with have asked me, "How do I become a more inspiring leader?"
+
+The answer has many parts.
+
+Fundamentally, people want to feel that the company where they work is:
+
+  - Solving a meaningful problem 
+  - For real living beings 
+  - On the path to winning
+
+In addition, each person wants to feel that:
+
+  - Her positive contributions are needed for the company to win (*this is where you create a sense of urgency*)
+  - She knows what she is doing well and what she needs to do to improve
+  - Others are pulling as just as hard as she is
+
+And finally, that the decision-makers:
+
+  - Know and care about her concerns, and make decisions accordingly
+  - Are telling her the truth about the company's progress, challenges, etc. (the good and the bad, their raw thoughts and feelings)
+
+Each of these requires a different action. If all are done, then people will feel inspired to work at your company. Let's look at how to achieve each.
+
+1.  Solving a meaningful problem 
+      
+    1.  For this, you must write out a Mission that addresses a real problem people can identify. Be bold. Don't worry about turning off 97% of the population. You only need fierce buy-in from less than 1% of the population. So, be very bold in clearly stating the specific problem that you are trying to solve.
+    2.  [Mission, Vision, Values:  How to create them  
+          
+        ](https://docs.google.com/document/d/1L6ks72TkBIlgPDh6_n-NBBE7e_7nQ2YZ6B4BF12IQEs/edit#)
+2.  For real living beings 
+      
+    1.  In the Vision, identify exactly who has this problem. 
+          
+        1.  Let's look to the most successful form of inspiring humans ever invented: the Hollywood narrative film. In its most basic form, a Hollywood movie identifies a protagonist. It makes the protagonist relatable, and therefore likable. It then puts that protagonist in real danger. We then begin to cheer and root for the protagonist. You need to do the same in your Vision statement. 
+              
+            1.  Pick one real living example of your customer. (Almost always, this is a human who is deciding to pay you money.)
+            2.  Describe the personal traits of this person. Make her relatable. This description is what will make us like her. 
+                  
+                1.  How old is she? Where does she live, and what does she do? Is she married with kids? Does she have a pet? If yes, what are all their names? What are her hopes and fears? What gives her joy, sadness, and anger? 
+            3.  Show us the problem that she has (i.e., the danger that she is facing).
+            4.  Because we already like her, we are now trying hard to solve her problem and save her from this danger.  
+                  
+3.  On the path to winning 
+      
+    1.  Once you have created a meaningful Mission and a Vision with a worthy protagonist, you now need to clearly show the path to winning and declare whether you are still on this path or not. 
+          
+        1.  The most meaningful and sustainable path to winning is to 
+              
+            1.  First, create a unique solution that is 10x better than the existing solutions.
+            2.  Then, create a moat that makes it nigh-impossible for anyone else to supplant you.
+        2.  You should describe Both of these in your Vision. 
+    2.  And then, in each update to the company, you must show the progress you are making both toward the Product Vision and toward the Moat.  
+          
+4.  Her positive contributions are needed for the company to win. 
+      
+    1.  Each employee wants to feel that they are a crucial part of the company's success. The easiest way to do this is to create quarterly company OKRs (I prefer three or less) that cover every function in the company (Product, People, Profits). Then department OKRs feed into one or more of the company OKRs. Then team OKRs that clearly feed into one or more of the department OKRs. Then individual OKRs that clearly feed into one or more of the team OKRs. Thus a clear causal pathway is created from the individual's OKRs to the company's OKRs which are mission-critical for success.
+    2.  In every 1-1, have each Manager point out this direct causal connection. It takes less than 1 minute to do.  
+          
+5.  She knows what she is doing well and what she needs to do to improve. 
+      
+    1.  Everyone wants to perform well. They want to know whether they are and what they can do to improve. And they want to know this near-constantly so that they can adjust, instead of once every six months during performance reviews (when it's too late for them to do anything about it).
+    2.  Therefore give feedback regularly: 
+          
+        1.  Praise individuals in every team meeting. (Remember to praise those doing the critical but non-sexy jobs.)
+    3.  Give critical feedback in the 1-1. (Always synchronously, i.e., in person or via phone)  
+          
+6.  Others are pulling as just as hard as she is 
+      
+    1.  No one wants to feel that they are the only ones working. And without specific knowledge that others are pulling their weight, our brain creates conspiracy theories that they are not. And then we ask ourselves, "Why should I work so hard if others aren't?" Then we begin to slack off, and the conspiracy theories become true.
+    2.  To counter this, create absolute transparency across the company of what all other people are doing. 
+          
+        1.  The easiest way that I know of to do this is to use a tool (that everyone knows how to use) that tracks actions and/or progress toward OKRs. 
+              
+            1.  Examples include Asana, Perdoo, Jira, etc.
+            2.  A current best practice that I have seen is: 
+                  
+                1.  Jira for Engineering
+                2.  Asana for everyone else 
+                3.  I look forward to the day when this can become a single tool.  
+                      
+7.  Decision-makers know and care about her concerns and make decisions accordingly. 
+      
+    1.  People want to feel heard. The easiest way that I know of to do this is for every manager to regularly (in 1-1s and team meetings) ask each of their reports: 
+          
+        1.  What issue do you see in the company, and what solution do you propose?
+        2.  What issue do you see in my behavior, and what request would you like to make?
+    2.  Treat the answers to these questions like the gold that they are: 
+          
+        1.  Thank your report for sharing them.
+        2.  Repeat them back to prove that you actually heard the intent.
+        3.  Act on them if you agree that they are valid.
+    3.  If each manager is doing this, then Issues and Proposed Solutions will quickly get sucked up the chain until you make a decision.  
+          
+8.  Decision-makers are telling her the truth about the company's progress, challenges, etc. (the good and the bad, their raw thoughts and feelings) 
+      
+    1.  At All Hands and in weekly emails to the company, simply tell the raw truth. Do not hide challenges and setbacks. Instead, bare them openly. This step will create deep trust.
+    2.  Not only share the facts, but also share your thoughts and, most importantly, your feelings. 
+          
+        1.  "Since I communicated with you last, here is what made me feel Joy and Excitement. And here is what made me feel Sadness, Fear, and Anger." 
+        2.  This transparency of thought and emotion will make you relatable, just like the Protagonist in the Hollywood film. It will create trust and connection with your team. 
+        3.  If you want help in sharing transparently and vulnerably, get a good public speaking coach. They are inexpensive relative to the massive value that they can deliver.
+    3.  Once you correctly identify the problems and concerns, then state exactly what you are going to do to address them.
+
+  
+
+So, for people to feel fully inspired, all of the above must be occurring. But if you want to jumpstart things, start with being transparent and vulnerable in All Hands. You will be shocked at the positive reception.
+
+  
+
+**⭐****Interested in coaching or software to help implement the Mochary Method at your company? Please fill out our interest form** [**here**](https://mocharymethod.typeform.com/interest)**, or book a discovery call with Nancy Xu** [**here**](https://calendly.com/nancy-mm/30)**.**
+
+
+---

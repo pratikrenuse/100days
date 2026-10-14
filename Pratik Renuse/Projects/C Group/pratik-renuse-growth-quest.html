@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pratik Renuse: The Growth Quest | DTC & Performance Marketing Leader</title>
+<meta name="title" content="Pratik Renuse: The Growth Quest" />
+<meta name="description" content="An interactive retro-RPG portfolio. Battle Pratik Renuse's career bosses, collect his real achievements — €2M ARR, $848K #1 STEM Kickstarter, 3 TEDx talks — and decide whether to hire, invest, or connect." />
+<meta name="author" content="Pratik Renuse" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Pratik Renuse: The Growth Quest" />
+<meta property="og:description" content="A gamified portfolio for a DTC & Performance Marketing Leader. Defeat the career bosses, collect the achievements." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d0b1a; --panel:#171328; --panel2:#221b3d;
+    --gold:#ffd23f; --gold-dim:#b8932b; --ink:#f4ecd8;
+    --grass:#3a8c52; --grass2:#327a47; --path:#c9a86a; --water:#3a6ea5;
+    --hp:#e84545; --morale:#46c98b; --shadow:rgba(0,0,0,.45);
+    --accent:#8c5bff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;background:var(--bg);}
+  body{
+    font-family:'Press Start 2P',monospace;
+    color:var(--ink);
+    display:flex; align-items:center; justify-content:center;
+    min-height:100vh; overflow:hidden;
+    background:
+      radial-gradient(circle at 20% 10%, #1b1635 0%, transparent 45%),
+      radial-gradient(circle at 80% 90%, #241a44 0%, transparent 45%),
+      var(--bg);
+  }
+  #stage{
+    position:relative; width:960px; height:640px; max-width:100vw; max-height:100vh;
+    background:#000; border:4px solid var(--gold);
+    box-shadow:0 0 0 4px #000, 0 0 40px rgba(140,91,255,.35), 0 18px 60px rgba(0,0,0,.6);
+    image-rendering:pixelated; overflow:hidden;
+  }
+  canvas{display:block; width:100%; height:100%; image-rendering:pixelated;}
+
+  /* ---------- HUD ---------- */
+  #hud{
+    position:absolute; top:0; left:0; right:0; height:46px; z-index:8;
+    display:flex; align-items:center; gap:12px; padding:0 12px;
+    background:linear-gradient(#000c, #0009); border-bottom:2px solid var(--gold-dim);
+    font-size:9px; pointer-events:none;
+  }
+  #hud .brand{color:var(--gold); font-size:10px; letter-spacing:1px;}
+  #hud .spacer{flex:1;}
+  #hud .stat{color:var(--ink); opacity:.9;}
+  #hud .stat b{color:var(--gold);}
+  #hud .lvl{color:#9ad0ff;}
+
+  /* ---------- generic overlay ---------- */
+  .overlay{
+    position:absolute; inset:0; z-index:20; display:none;
+    align-items:center; justify-content:center; text-align:center;
+    padding:24px;
+  }
+  .overlay.show{display:flex;}
+  .scroll{max-height:100%; overflow:auto;}
+
+  /* ---------- title ---------- */
+  #title{
+    background:
+      radial-gradient(circle at 50% 30%, #2a1f55 0%, transparent 60%),
+      linear-gradient(#0d0b1a, #060510);
+    flex-direction:column;
+  }
+  #title .logo{
+    font-size:30px; line-height:1.4; color:var(--gold);
+    text-shadow:4px 4px 0 #000, 0 0 24px rgba(255,210,63,.4);
+    margin-bottom:6px;
+  }
+  #title .logo small{display:block;font-size:13px;color:var(--ink);margin-top:14px;text-shadow:2px 2px 0 #000;}
+  #title .sub{font-size:9px; color:#b9aee0; line-height:1.8; max-width:620px; margin:18px auto;}
+  #title .press{margin-top:18px; font-size:11px; color:var(--gold); animation:blink 1.1s steps(1) infinite;}
+  #title .hint{margin-top:14px; font-size:7.5px; color:#7e74a8; line-height:2;}
+  @keyframes blink{50%{opacity:.15;}}
+
+  .btn{
+    font-family:'Press Start 2P',monospace; cursor:pointer;
+    background:var(--panel2); color:var(--ink); border:3px solid var(--gold);
+    padding:12px 16px; font-size:10px; box-shadow:3px 3px 0 #000;
+    transition:transform .05s, background .15s; pointer-events:auto;
+  }
+  .btn:hover{background:var(--gold); color:#1a1330;}
+  .btn:active{transform:translate(2px,2px); box-shadow:1px 1px 0 #000;}
+
+  /* ---------- dialogue box ---------- */
+  #dialogue{
+    position:absolute; left:14px; right:14px; bottom:14px; z-index:14; display:none;
+    background:var(--panel); border:3px solid var(--gold);
+    box-shadow:0 -4px 0 #000, 4px 4px 0 #000; padding:14px 16px; font-size:10px; line-height:1.9;
+  }
+  #dialogue.show{display:block;}
+  #dialogue .name{color:var(--gold); margin-bottom:8px; font-size:10px;}
+  #dialogue .more{position:absolute; right:14px; bottom:8px; color:var(--gold); font-size:8px; animation:blink 1s steps(1) infinite;}
+
+  /* ---------- battle ---------- */
+  #battle{
+    background:linear-gradient(#1a0f2e,#0a0716); flex-direction:column; justify-content:flex-start;
+    padding:0;
+  }
+  #battle .arena{position:relative; width:100%; height:330px;}
+  #battleCanvas{position:absolute; inset:0; width:100%; height:100%;}
+  .bar-wrap{position:absolute; background:#000a; border:2px solid var(--gold-dim); padding:6px 8px; min-width:200px;}
+  .bar-wrap .lab{font-size:8px; margin-bottom:5px; display:flex; justify-content:space-between;}
+  .bar{height:12px; background:#2a2440; border:1px solid #000; position:relative;}
+  .bar > i{display:block; height:100%; transition:width .35s ease;}
+  #bossBarWrap{top:14px; left:14px;}
+  #playerBarWrap{bottom:14px; right:14px;}
+  #bossBar > i{background:linear-gradient(var(--hp),#a82020);}
+  #playerBar > i{background:linear-gradient(var(--morale),#2a9968);}
+
+  #battleUI{flex:1; width:100%; display:flex; flex-direction:column; border-top:3px solid var(--gold);}
+  #battleLog{
+    flex:1; background:#0c0a18; padding:12px 14px; font-size:9px; line-height:1.9;
+    overflow:auto; min-height:70px; color:var(--ink);
+  }
+  #battleLog .sys{color:var(--gold);}
+  #battleLog .boss{color:#ff9a8a;}
+  #moves{display:grid; grid-template-columns:1fr 1fr; gap:8px; padding:12px; background:var(--panel);}
+  .move{
+    font-family:'Press Start 2P',monospace; cursor:pointer; text-align:left;
+    background:var(--panel2); color:var(--ink); border:2px solid var(--gold-dim);
+    padding:11px 12px; font-size:9px; line-height:1.5; box-shadow:2px 2px 0 #000;
+  }
+  .move:hover{border-color:var(--gold); background:#2c2350;}
+  .move small{display:block; color:#9c93c4; font-size:7px; margin-top:5px;}
+  .move:disabled{opacity:.4; cursor:default;}
+
+  /* ---------- reveal / achievement ---------- */
+  #reveal{background:rgba(6,5,16,.94); flex-direction:column;}
+  #reveal .head{font-size:16px; color:var(--gold); margin-bottom:6px; text-shadow:3px 3px 0 #000;}
+  #reveal .who{font-size:9px; color:#b9aee0; margin-bottom:18px;}
+  .cards{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; max-width:760px;}
+  .ach{
+    width:222px; background:var(--panel); border:3px solid var(--gold);
+    box-shadow:4px 4px 0 #000; padding:14px; text-align:left;
+    animation:pop .4s ease backwards;
+  }
+  .ach .ico{font-size:22px; margin-bottom:8px;}
+  .ach .nm{color:var(--gold); font-size:10px; line-height:1.5; margin-bottom:8px;}
+  .ach .ds{color:var(--ink); font-size:8px; line-height:1.8;}
+  @keyframes pop{from{transform:scale(.6) translateY(20px);opacity:0;}to{transform:scale(1);opacity:1;}}
+
+  /* ---------- victory ---------- */
+  #victory{background:radial-gradient(circle at 50% 35%,#2a1f55,#060510); flex-direction:column;}
+  #victory .crown{font-size:42px; margin-bottom:8px;}
+  #victory h1{font-size:20px; color:var(--gold); text-shadow:3px 3px 0 #000; line-height:1.5;}
+  #victory .blurb{font-size:9px; color:#cfc6ef; line-height:2; max-width:640px; margin:18px auto;}
+  .statgrid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; max-width:640px; margin:6px auto 14px;}
+  .statgrid .s{background:var(--panel); border:2px solid var(--gold-dim); padding:10px;}
+  .statgrid .s b{display:block; color:var(--gold); font-size:15px; margin-bottom:6px;}
+  .statgrid .s span{font-size:7px; color:#b9aee0; line-height:1.6;}
+  .cta{display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:6px;}
+  .cta a{text-decoration:none;}
+
+  /* ---------- collection book ---------- */
+  #book{background:rgba(6,5,16,.96); flex-direction:column;}
+  #book h2{font-size:15px;color:var(--gold);margin-bottom:14px;text-shadow:2px 2px 0 #000;}
+  .booklist{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:780px;}
+  .bk{width:178px;background:var(--panel);border:2px solid var(--gold-dim);padding:11px;text-align:left;}
+  .bk.locked{opacity:.35;}
+  .bk .i{font-size:18px;}
+  .bk .n{color:var(--gold);font-size:8px;line-height:1.5;margin:6px 0;}
+  .bk .d{color:var(--ink);font-size:7px;line-height:1.7;}
+
+  /* toast */
+  #toast{
+    position:absolute; top:54px; left:50%; transform:translateX(-50%) translateY(-20px);
+    z-index:30; background:var(--panel2); border:2px solid var(--gold); color:var(--gold);
+    padding:9px 14px; font-size:9px; opacity:0; transition:all .35s; pointer-events:none; text-align:center;
+    box-shadow:3px 3px 0 #000; max-width:90%;
+  }
+  #toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+
+  /* mobile controls */
+  #touch{position:absolute; z-index:9; bottom:14px; left:14px; display:none; opacity:.85;}
+  #touch.show{display:block;}
+  .dpad{display:grid; grid-template-columns:repeat(3,46px); grid-template-rows:repeat(3,46px); gap:4px;}
+  .dpad button{font-family:'Press Start 2P';font-size:14px;background:#000a;color:var(--gold);border:2px solid var(--gold-dim);}
+  #touchA{position:absolute; z-index:9; bottom:24px; right:14px; display:none;}
+  #touchA.show{display:block;}
+  #touchA button{font-family:'Press Start 2P';font-size:10px;width:70px;height:70px;border-radius:50%;background:var(--gold);color:#1a1330;border:3px solid #000;}
+
+  @media (max-width:980px){
+    #stage{border-width:3px;}
+    #title .logo{font-size:20px;}
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="960" height="640"></canvas>
+
+  <div id="hud">
+    <span class="brand">★ PRATIK RENUSE</span>
+    <span class="stat lvl" id="hudLvl">LV.1</span>
+    <span class="spacer"></span>
+    <span class="stat">🏆 <b id="hudTrophies">0</b>/<span id="hudTotal">0</span></span>
+    <span class="stat">⚔ <b id="hudBosses">0</b>/6</span>
+    <span class="stat" style="cursor:pointer;pointer-events:auto" id="hudBook">[ B ] BOOK</span>
+  </div>
+
+  <div id="toast"></div>
+
+  <!-- DIALOGUE -->
+  <div id="dialogue">
+    <div class="name" id="dlgName"></div>
+    <div id="dlgText"></div>
+    <div class="more">▼ SPACE</div>
+  </div>
+
+  <!-- TITLE -->
+  <div id="title" class="overlay show">
+    <div class="logo">THE GROWTH QUEST<small>★ PRATIK RENUSE ★</small></div>
+    <div class="sub">A 0→1 growth leader who built consumer startups from nothing — €2M ARR, a record-breaking Kickstarter, an Olympic-grade brand, and a 28-country fintech. Walk his world. Defeat the career bosses. Collect every achievement.</div>
+    <button class="btn" id="startBtn">▶ PRESS START</button>
+    <div class="hint">MOVE: WASD / ARROWS&nbsp;&nbsp;•&nbsp;&nbsp;INTERACT: SPACE / ENTER&nbsp;&nbsp;•&nbsp;&nbsp;BOOK: B</div>
+  </div>
+
+  <!-- BATTLE -->
+  <div id="battle" class="overlay">
+    <div class="arena">
+      <canvas id="battleCanvas" width="960" height="330"></canvas>
+      <div class="bar-wrap" id="bossBarWrap">
+        <div class="lab"><span id="bossName">BOSS</span><span id="bossHpTxt">100/100</span></div>
+        <div class="bar" id="bossBar"><i style="width:100%"></i></div>
+      </div>
+      <div class="bar-wrap" id="playerBarWrap">
+        <div class="lab"><span>PRATIK · MOMENTUM</span><span id="pHpTxt">100/100</span></div>
+        <div class="bar" id="playerBar"><i style="width:100%"></i></div>
+      </div>
+    </div>
+    <div id="battleUI">
+      <div id="battleLog"></div>
+      <div id="moves"></div>
+    </div>
+  </div>
+
+  <!-- REVEAL -->
+  <div id="reveal" class="overlay">
+    <div class="scroll">
+      <div class="head" id="revealHead">VICTORY!</div>
+      <div class="who" id="revealWho"></div>
+      <div class="cards" id="revealCards"></div>
+      <div style="margin-top:22px"><button class="btn" id="revealBtn">▶ CONTINUE</button></div>
+    </div>
+  </div>
+
+  <!-- COLLECTION BOOK -->
+  <div id="book" class="overlay">
+    <div class="scroll">
+      <h2>📖 ACHIEVEMENT CODEX</h2>
+      <div class="booklist" id="bookList"></div>
+      <div style="margin-top:18px"><button class="btn" id="bookClose">✕ CLOSE [B]</button></div>
+    </div>
+  </div>
+
+  <!-- VICTORY / END -->
+  <div id="victory" class="overlay">
+    <div class="scroll">
+      <div class="crown">👑</div>
+      <h1>QUEST COMPLETE</h1>
+      <div class="blurb" id="victoryBlurb"></div>
+      <div class="statgrid">
+        <div class="s"><b>€2M+</b><span>DTC ARR BUILT AT INFENTO</span></div>
+        <div class="s"><b>$848K</b><span>#1 STEM KICKSTARTER, GLOBALLY</span></div>
+        <div class="s"><b>24x</b><span>LTV/CAC AT BUENO</span></div>
+        <div class="s"><b>10+ YRS</b><span>SCALING 0→1 STARTUPS</span></div>
+      </div>
+      <div class="blurb" style="margin-top:4px">You've collected <b id="finalCount" style="color:var(--gold)">all</b> achievements. The recruiter's verdict:</div>
+      <div class="cta">
+        <a href="mailto:pratik@pratikrenuse.com"><button class="btn">⚔ HIRE</button></a>
+        <a href="https://pratikrenuse.com" target="_blank" rel="noopener"><button class="btn">💎 INVEST</button></a>
+        <a href="https://linkedin.com/in/pratikrenuse" target="_blank" rel="noopener"><button class="btn">🤝 CONNECT</button></a>
+      </div>
+      <div style="margin-top:18px"><button class="btn" id="replayBtn" style="border-color:var(--gold-dim)">↺ REPLAY QUEST</button></div>
+    </div>
+  </div>
+
+  <!-- touch -->
+  <div id="touch">
+    <div class="dpad">
+      <span></span><button data-d="up">▲</button><span></span>
+      <button data-d="left">◀</button><span></span><button data-d="right">▶</button>
+      <span></span><button data-d="down">▼</button><span></span>
+    </div>
+  </div>
+  <div id="touchA"><button id="actBtn">A</button></div>
+</div>
+
+<script>
+"use strict";
+/* ============================================================
+   PRATIK RENUSE — THE GROWTH QUEST
+   A top-down retro RPG portfolio. All content sourced from
+   Pratik's résumé + LinkedIn profile.
+   ============================================================ */
+
+const cv = document.getElementById('game');
+const ctx = cv.getContext('2d');
+ctx.imageSmoothingEnabled = false;
+const W = cv.width, H = cv.height;
+
+/* ---------------- CONTENT: BOSSES (companies) ---------------- */
+const BOSSES = [
+  {
+    id:'infento', name:'INFENTO', boss:'THE KICKSTARTER COLOSSUS',
+    sub:'Amsterdam · 2017–2019 · Founding Team, Online Marketing',
+    color:'#e8623c', x:340, y:300, hp:130,
+    taunt:"Consumer hardware is where dreams go to die. €0 in the bank. Can you really build a movement from nothing?",
+    defeat:"Impossible... a record-breaking crowd, a €2M shop, a wall of design awards...",
+    achievements:[
+      {ico:'🚀', nm:'$848K KICKSTARTER', ds:'Led the #1 most-funded STEM project in the WORLD, 2018.'},
+      {ico:'📈', nm:'€0 → €2M ARR', ds:'Built marketing from zero; scaled the DTC web shop to €2M.'},
+      {ico:'🏆', nm:'TRIPLE DESIGN AWARD', ds:'Red Dot · German Design Award · Parent\'s Choice Gold (US).'},
+      {ico:'🏗️', nm:'BUILT THE TEAM', ds:'Founding member; grew the company to 25+ employees at 12–15% CAC.'},
+    ]
+  },
+  {
+    id:'vu', name:'VU', boss:'THE ALPINE ASCENT',
+    sub:'Geneva · 2021–2025 · Head of Marketing, Founding Team',
+    color:'#5ec8e8', x:680, y:200, hp:120,
+    taunt:"This summit is for Olympians only. You think a marketer can reach the top of the mountain?",
+    defeat:"4.4x growth... used by Olympians... you built the whole brand from base camp.",
+    achievements:[
+      {ico:'🎿', nm:'#1 SWISS SKI BRAND', ds:'Built VU into the top brand for pro skiers & snowboarders.'},
+      {ico:'🥇', nm:'USED BY OLYMPIANS', ds:'Recommended and worn by Olympic athletes.'},
+      {ico:'💶', nm:'€275K+ REVENUE', ds:'Drove revenue and 4.4x peak-season growth.'},
+      {ico:'🎨', nm:'FULL BRAND BUILD', ds:'Brand identity, site, paid media, lifecycle & community — end to end.'},
+    ]
+  },
+  {
+    id:'bueno', name:'BUENO', boss:'THE FINTECH FRONTIER',
+    sub:'Spain · 2022–Present · Growth Lead, Founding Team, Shareholder',
+    color:'#46c98b', x:230, y:120, hp:140,
+    taunt:"28 countries. Revolut and Wise already own these keywords. A solo marketer can't outrank giants.",
+    defeat:"24x LTV/CAC... outranking Revolut... a million visits... you've redrawn the map.",
+    achievements:[
+      {ico:'💳', nm:'€300K+ ARR · 28 COUNTRIES', ds:'2,000+ paying subscribers as founding marketing lead (€2.5M raised).'},
+      {ico:'⚡', nm:'24x LTV/CAC', ds:'€700 LTV against €30 CAC — elite unit economics.'},
+      {ico:'🔍', nm:'OUTRANKED REVOLUT & WISE', ds:'1M+ organic visits; beat fintech giants on target SEO keywords.'},
+      {ico:'📬', nm:'15K LIST @ 70% OPEN', ds:'13% of subscribers convert to paying customers within 3 months.'},
+    ]
+  },
+  {
+    id:'growack', name:'GROWACK', boss:'THE B2B GAUNTLET',
+    sub:'Amsterdam · 2020 · Head of Marketing',
+    color:'#c08bff', x:760, y:430, hp:90,
+    taunt:"B2B inbound across all of Western Europe. Clients with no patience. Think you can deliver?",
+    defeat:"HubSpot Partner... Clutch Top B2B in Western Europe... the gauntlet is cleared.",
+    achievements:[
+      {ico:'🧲', nm:'B2B INBOUND ENGINE', ds:'Led inbound & growth ops for clients across Western Europe.'},
+      {ico:'🏅', nm:'CLUTCH TOP B2B 2021', ds:'Recognised among the top B2B companies in Western Europe.'},
+      {ico:'🤝', nm:'HUBSPOT PARTNER', ds:'Operated as a certified HubSpot growth partner.'},
+    ]
+  },
+  {
+    id:'bayer', name:'BAYER', boss:'THE €250K SUMMIT',
+    sub:'Berlin · 2017 · Project Management (Fortune 500)',
+    color:'#7fd65a', x:480, y:480, hp:85,
+    taunt:"Senior executives from 50+ countries. A quarter-million-euro budget. One mistake and it's chaos.",
+    defeat:"Flawless. The global leadership summit ran like clockwork.",
+    achievements:[
+      {ico:'🌍', nm:'GLOBAL EXEC EVENT', ds:'Led "GIM", Bayer\'s premier event for senior execs from 50+ countries.'},
+      {ico:'💼', nm:'€250K BUDGET', ds:'Spearheaded and managed the full budget, reporting to a Bayer Director.'},
+    ]
+  },
+  {
+    id:'airbus', name:'AIRBUS', boss:'THE NEOSHIELD MISSION',
+    sub:'Munich · 2016 · Marketing (Fortune 500)',
+    color:'#9aa7b5', x:130, y:430, hp:80,
+    taunt:"An EU-wide aerospace project. The numbers won't move themselves, rookie.",
+    defeat:"+127% reach and rank #1 on Google. Mission accomplished.",
+    achievements:[
+      {ico:'🛰️', nm:'NEOSHIELD (EU-WIDE)', ds:'Led branding & online marketing for the entire EU project as single threaded owner.'},
+      {ico:'📊', nm:'+127% SOCIAL REACH', ds:'Grew organic social reach 127% in 2 months.'},
+      {ico:'🥇', nm:'GOOGLE RANK #1', ds:'Built the SEO & content strategy to hit position 1.'},
+    ]
+  },
+];
+
+/* ---------------- CONTENT: TROPHIES (walk-over collectibles) ---------------- */
+const TROPHIES = [
+  {id:'tedx', ico:'🎤', x:480, y:200, nm:'3× TEDx SPEAKER',
+   ds:'50+ speeches in 14+ countries — TEDx, APAC Digital Marketing Conclave, Russian Stream & more.',
+   line:"A TEDx mic glows on the stage. You take it. The crowd of 50+ stages roars."},
+  {id:'mentor', ico:'🧭', x:600, y:330, nm:'MENTOR · TECHSTARS & EBRD',
+   ds:'Mentored 100+ startups across fintech, D2C, health & AI. 9.7/10 avg satisfaction from CXOs & founders.',
+   line:"A mentor's compass. 100+ founders rated you 9.7/10. It joins your pack."},
+  {id:'academy', ico:'🎓', x:300, y:430, nm:'VISITING PROFESSOR',
+   ds:'Coached 500+ graduates from Harvard, LSE, HEC Paris, Yale, Oxford & IIM via Evisors.',
+   line:"A scholar's tome from Harvard to HEC Paris. 500+ graduates. Collected."},
+  {id:'invest', ico:'💎', x:620, y:120, nm:"INVESTOR'S VAULT",
+   ds:'Personal investor in Perplexity, Nothing, Atom Bank & Plum — high-growth consumer tech & fintech.',
+   line:"A vault of gems: Perplexity, Nothing, Atom Bank, Plum. The investor's eye."},
+];
+
+/* ---------------- WORLD: solid obstacles ---------------- */
+const MAP_W = 960, MAP_H = 600;
+// buildings are drawn from boss positions; collision rects derived below
+const decor = [];
+(function seedDecor(){
+  // deterministic-ish scatter of trees / rocks as solids + flowers as decor
+  const trees = [[60,90],[900,80],[60,300],[900,330],[420,90],[800,300],[180,250],[540,140],[720,360],[860,520],[40,540],[260,560],[520,250],[150,150]];
+  trees.forEach(([x,y])=>decor.push({t:'tree',x,y,solid:true,r:16}));
+  const flowers=[[120,200],[300,180],[420,360],[640,470],[700,90],[200,360],[560,400],[820,180],[380,520],[680,540],[480,140]];
+  flowers.forEach(([x,y])=>decor.push({t:'flower',x,y,solid:false}));
+})();
+
+/* ---------------- STATE ---------------- */
+let state = 'title';            // title | overworld | dialogue | battle | reveal | book | victory
+const keys = {};
+const player = {x:480, y:560, w:22, h:26, dir:'up', speed:2.4, frame:0, anim:0};
+let cam = {x:0,y:0};
+let collectedTrophies = new Set();
+let defeatedBosses = new Set();
+let level = 1;
+let totalAchievements = BOSSES.reduce((a,b)=>a+b.achievements.length,0) + TROPHIES.length;
+let collectedCount = 0;
+
+document.getElementById('hudTotal').textContent = totalAchievements;
+
+/* ---------------- INPUT ---------------- */
+const interactKeys = [' ','enter'];
+window.addEventListener('keydown', e=>{
+  const k = e.key.toLowerCase();
+  keys[k]=true;
+  if(k===' '||k==='arrowup'||k==='arrowdown'||k==='arrowleft'||k==='arrowright') e.preventDefault();
+
+  if(state==='title' && (k==='enter'||k===' ')) startGame();
+  else if(state==='overworld'){
+    if(interactKeys.includes(k)) tryInteract();
+    if(k==='b') openBook();
+  }
+  else if(state==='dialogue' && interactKeys.includes(k)) advanceDialogue();
+  else if(state==='book' && (k==='b'||k==='escape')) closeBook();
+  else if(state==='battle'){
+    if(['1','2','3','4'].includes(k)){ const i=+k-1; const mv=document.querySelectorAll('.move')[i]; if(mv&&!mv.disabled) mv.click(); }
+  }
+});
+window.addEventListener('keyup', e=>{ keys[e.key.toLowerCase()]=false; });
+
+/* touch */
+(function touch(){
+  if(!('ontouchstart' in window)) return;
+  document.getElementById('touch').classList.add('show');
+  document.getElementById('touchA').classList.add('show');
+  const map={up:'arrowup',down:'arrowdown',left:'arrowleft',right:'arrowright'};
+  document.querySelectorAll('.dpad button').forEach(b=>{
+    const dk=map[b.dataset.d];
+    const on=e=>{e.preventDefault();keys[dk]=true;}; const off=e=>{e.preventDefault();keys[dk]=false;};
+    b.addEventListener('touchstart',on);b.addEventListener('touchend',off);
+  });
+  document.getElementById('actBtn').addEventListener('touchstart',e=>{
+    e.preventDefault();
+    if(state==='overworld') tryInteract();
+    else if(state==='dialogue') advanceDialogue();
+    else if(state==='title') startGame();
+  });
+})();
+
+/* ---------------- UI HELPERS ---------------- */
+function show(id){ document.getElementById(id).classList.add('show'); }
+function hide(id){ document.getElementById(id).classList.remove('show'); }
+let toastT;
+function toast(msg){
+  const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show');
+  clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'),2200);
+}
+function updateHud(){
+  document.getElementById('hudTrophies').textContent=collectedCount;
+  document.getElementById('hudBosses').textContent=defeatedBosses.size;
+  document.getElementById('hudLvl').textContent='LV.'+level;
+}
+
+/* ---------------- START ---------------- */
+document.getElementById('startBtn').onclick = startGame;
+function startGame(){
+  hide('title'); state='overworld';
+  showDialogue('QUEST GIVER','Welcome, recruiter. This realm holds 10 years of 0→1 growth. Approach each company to BATTLE its boss, and walk over glowing relics to claim them. Collect all '+totalAchievements+' achievements to complete the quest.', null);
+}
+
+/* ---------------- DIALOGUE ---------------- */
+let dlgQueue=[], dlgDone=null;
+function showDialogue(name, text, onDone){
+  dlgQueue = Array.isArray(text)? text.slice() : [text];
+  dlgDone = onDone;
+  document.getElementById('dlgName').textContent=name;
+  state='dialogue';
+  show('dialogue');
+  nextDlgLine();
+}
+function nextDlgLine(){
+  document.getElementById('dlgText').textContent = dlgQueue.shift();
+}
+function advanceDialogue(){
+  if(dlgQueue.length){ nextDlgLine(); return; }
+  hide('dialogue');
+  state='overworld';
+  const cb=dlgDone; dlgDone=null;
+  if(cb) cb();
+}
+
+/* ---------------- INTERACTION ---------------- */
+function dist(ax,ay,bx,by){ return Math.hypot(ax-bx,ay-by); }
+function tryInteract(){
+  const px=player.x+player.w/2, py=player.y+player.h/2;
+  for(const b of BOSSES){
+    if(defeatedBosses.has(b.id)) continue;
+    if(dist(px,py,b.x,b.y+10) < 64){ startBattle(b); return; }
+  }
+}
+function checkTrophyPickup(){
+  const px=player.x+player.w/2, py=player.y+player.h/2;
+  for(const t of TROPHIES){
+    if(collectedTrophies.has(t.id)) continue;
+    if(dist(px,py,t.x,t.y) < 30){
+      collectedTrophies.add(t.id); collectedCount++; level++; updateHud();
+      showDialogue('RELIC FOUND  '+t.ico, [t.line, '★ '+t.nm+' — '+t.ds], checkVictory);
+      return;
+    }
+  }
+}
+
+/* ---------------- BATTLE ---------------- */
+const MOVES = [
+  {nm:'SEO BLITZ', tag:'Outrank the incumbents', dmg:[16,26]},
+  {nm:'PAID MEDIA STRIKE', tag:'Meta + Google, tight CAC', dmg:[18,30]},
+  {nm:'LIFECYCLE COMBO', tag:'Email/CRM retention chain', dmg:[14,24]},
+  {nm:'FOUNDER GRIT', tag:'0→1 relentless execution', dmg:[20,34]},
+];
+let curBoss=null, bossHp=0, bossMax=0, pHp=0;
+const bcv=document.getElementById('battleCanvas'), bctx=bcv.getContext('2d');
+bctx.imageSmoothingEnabled=false;
+
+function startBattle(b){
+  curBoss=b; bossMax=b.hp; bossHp=b.hp; pHp=100;
+  state='battle';
+  document.getElementById('bossName').textContent=b.boss;
+  document.getElementById('battleLog').innerHTML='';
+  logB('sys','⚔ A wild '+b.name+' boss appears — "'+b.boss+'"!');
+  logB('boss', b.name+': "'+b.taunt+'"');
+  renderBars(); renderMoves(); show('battle');
+  drawBattle(0); battleAnim();
+}
+function logB(cls,msg){
+  const el=document.getElementById('battleLog');
+  const d=document.createElement('div'); d.className=cls; d.textContent=msg;
+  el.appendChild(d); el.scrollTop=el.scrollHeight;
+}
+function renderBars(){
+  document.querySelector('#bossBar > i').style.width=Math.max(0,bossHp/bossMax*100)+'%';
+  document.querySelector('#playerBar > i').style.width=Math.max(0,pHp)+'%';
+  document.getElementById('bossHpTxt').textContent=Math.max(0,bossHp)+'/'+bossMax;
+  document.getElementById('pHpTxt').textContent=Math.max(0,Math.round(pHp))+'/100';
+}
+function renderMoves(){
+  const m=document.getElementById('moves'); m.innerHTML='';
+  MOVES.forEach((mv,i)=>{
+    const btn=document.createElement('button');
+    btn.className='move'; btn.innerHTML=(i+1)+'. '+mv.nm+'<small>'+mv.tag+'</small>';
+    btn.onclick=()=>playerMove(mv);
+    m.appendChild(btn);
+  });
+}
+let busy=false;
+function setMovesDisabled(v){ document.querySelectorAll('.move').forEach(b=>b.disabled=v); busy=v; }
+function rand(a,b){ return Math.floor(Math.random()*(b-a+1))+a; }
+
+function playerMove(mv){
+  if(busy) return; setMovesDisabled(true);
+  const dmg=rand(mv.dmg[0],mv.dmg[1]); bossHp-=dmg;
+  shake=8;
+  logB('sys','Pratik used '+mv.nm+'! '+dmg+' damage.');
+  renderBars();
+  if(bossHp<=0){ setTimeout(winBattle,650); return; }
+  setTimeout(()=>{
+    const bd=rand(6,15); pHp-=bd; renderBars();
+    logB('boss', curBoss.name+' pushes back — you lose '+bd+' momentum.');
+    if(pHp<=0){
+      pHp=40; logB('sys','You regroup, refocus, and rally. (Momentum restored — keep going!)');
+      renderBars();
+    }
+    setMovesDisabled(false);
+  },700);
+}
+function winBattle(){
+  defeatedBosses.add(curBoss.id);
+  curBoss.achievements.forEach(()=>{}); // count below
+  collectedCount += curBoss.achievements.length; level += curBoss.achievements.length;
+  updateHud();
+  logB('sys','🏆 '+curBoss.name+' DEFEATED!');
+  setTimeout(()=>{ hide('battle'); showReveal(curBoss); }, 600);
+}
+
+/* battle drawing */
+let shake=0;
+function battleAnim(){
+  if(state!=='battle') return;
+  drawBattle(performance.now());
+  requestAnimationFrame(battleAnim);
+}
+function drawBattle(t){
+  bctx.clearRect(0,0,bcv.width,bcv.height);
+  // floor
+  const g=bctx.createLinearGradient(0,0,0,330); g.addColorStop(0,'#2a1f55'); g.addColorStop(1,'#140d28');
+  bctx.fillStyle=g; bctx.fillRect(0,0,960,330);
+  // ground platform
+  bctx.fillStyle='#1b1338'; bctx.beginPath(); bctx.ellipse(680,250,200,40,0,0,7); bctx.fill();
+  bctx.fillStyle='#0f0a22'; bctx.beginPath(); bctx.ellipse(230,300,170,34,0,0,7); bctx.fill();
+  const sx=shake?rand(-shake,shake):0; if(shake>0) shake-=1;
+  // boss
+  drawBossSprite(bctx, 680+sx, 150, curBoss?curBoss.color:'#fff', t);
+  // player (back view)
+  drawHeroBattle(bctx, 230, 230, t);
+}
+function px(c,x,y,w,h,col){ c.fillStyle=col; c.fillRect(x,y,w,h); }
+function drawBossSprite(c,cx,cy,col,t){
+  const bob=Math.sin(t/300)*5;
+  c.save(); c.translate(cx,cy+bob);
+  // shadow handled on floor
+  // body
+  px(c,-46,-40,92,110,col);
+  px(c,-46,-40,92,12,'#0006');           // helm shade
+  // eyes (menacing)
+  px(c,-30,4,22,14,'#1a1330'); px(c,8,4,22,14,'#1a1330');
+  px(c,-24,8,9,7,'#ff5a3c'); px(c,14,8,9,7,'#ff5a3c');
+  // mouth
+  px(c,-26,40,52,9,'#1a1330');
+  for(let i=0;i<6;i++) px(c,-26+i*9,40,4,9,col);
+  // horns
+  px(c,-46,-58,16,20,col); px(c,30,-58,16,20,col);
+  // arms
+  px(c,-66,-10,18,46,col); px(c,48,-10,18,46,col);
+  c.restore();
+}
+function drawHeroBattle(c,cx,cy,t){
+  const bob=Math.sin(t/260)*3;
+  c.save(); c.translate(cx,cy+bob);
+  // cape
+  px(c,-20,-8,40,52,'#8c5bff');
+  // body
+  px(c,-16,-6,32,42,'#2e63d6');
+  // head
+  px(c,-14,-34,28,30,'#f0c69a');
+  px(c,-14,-40,28,12,'#3a2a18'); // hair
+  // gold trim
+  px(c,-16,30,32,8,'#ffd23f');
+  // sword arm raised
+  px(c,16,-6,10,30,'#f0c69a');
+  px(c,22,-44,6,44,'#cfd6e0'); px(c,18,-46,14,8,'#ffd23f');
+  c.restore();
+}
+
+/* ---------------- REVEAL ---------------- */
+let pendingVictoryCheck=false;
+function showReveal(b){
+  state='reveal';
+  document.getElementById('revealHead').textContent='⚔ '+b.name+' DEFEATED!';
+  document.getElementById('revealWho').textContent=b.sub+'  —  "'+b.defeat+'"';
+  const wrap=document.getElementById('revealCards'); wrap.innerHTML='';
+  b.achievements.forEach((a,i)=>{
+    const d=document.createElement('div'); d.className='ach'; d.style.animationDelay=(i*0.12)+'s';
+    d.innerHTML='<div class="ico">'+a.ico+'</div><div class="nm">'+a.nm+'</div><div class="ds">'+a.ds+'</div>';
+    wrap.appendChild(d);
+  });
+  show('reveal');
+}
+document.getElementById('revealBtn').onclick=()=>{
+  hide('reveal'); state='overworld';
+  toast('🏆 +'+curBoss.achievements.length+' achievements collected!');
+  checkVictory();
+};
+
+/* ---------------- COLLECTION BOOK ---------------- */
+function openBook(){
+  state='book';
+  const list=document.getElementById('bookList'); list.innerHTML='';
+  BOSSES.forEach(b=>{
+    const got=defeatedBosses.has(b.id);
+    b.achievements.forEach(a=>{
+      const d=document.createElement('div'); d.className='bk'+(got?'':' locked');
+      d.innerHTML='<div class="i">'+(got?a.ico:'❓')+'</div><div class="n">'+(got?a.nm:'??? ('+b.name+')')+'</div><div class="d">'+(got?a.ds:'Defeat '+b.boss+' to reveal.')+'</div>';
+      list.appendChild(d);
+    });
+  });
+  TROPHIES.forEach(t=>{
+    const got=collectedTrophies.has(t.id);
+    const d=document.createElement('div'); d.className='bk'+(got?'':' locked');
+    d.innerHTML='<div class="i">'+(got?t.ico:'❓')+'</div><div class="n">'+(got?t.nm:'??? RELIC')+'</div><div class="d">'+(got?t.ds:'Find & collect this relic in the world.')+'</div>';
+    list.appendChild(d);
+  });
+  show('book');
+}
+function closeBook(){ hide('book'); state='overworld'; }
+document.getElementById('hudBook').onclick=()=>{ if(state==='overworld') openBook(); else if(state==='book') closeBook(); };
+document.getElementById('bookClose').onclick=closeBook;
+
+/* ---------------- VICTORY ---------------- */
+function checkVictory(){
+  if(collectedCount>=totalAchievements){
+    state='victory';
+    document.getElementById('finalCount').textContent='all '+totalAchievements;
+    document.getElementById('victoryBlurb').textContent='You walked Pratik Renuse\'s entire 0→1 journey — from Airbus & Bayer pedigree, to a record Kickstarter, an Olympic-grade Swiss brand, and a 28-country fintech with 24x LTV/CAC. Plus 3 TEDx talks, 100+ startups mentored, and a sharp investor\'s eye.';
+    show('victory');
+  }
+}
+document.getElementById('replayBtn').onclick=()=>{
+  collectedTrophies.clear(); defeatedBosses.clear(); collectedCount=0; level=1;
+  player.x=480; player.y=560; updateHud();
+  hide('victory'); state='overworld';
+  toast('Quest reset — go again!');
+};
+
+/* ---------------- OVERWORLD RENDER ---------------- */
+function drawGrass(){
+  ctx.fillStyle='#3a8c52'; ctx.fillRect(0,0,MAP_W,MAP_H);
+  // checker tiles
+  for(let y=0;y<MAP_H;y+=32){
+    for(let x=0;x<MAP_W;x+=32){
+      if(((x/32)+(y/32))%2===0){ ctx.fillStyle='rgba(255,255,255,0.03)'; ctx.fillRect(x,y,32,32); }
+    }
+  }
+  // border darkening
+  ctx.fillStyle='#2c6b3f';
+  ctx.fillRect(0,0,MAP_W,18); ctx.fillRect(0,MAP_H-18,MAP_W,18);
+  ctx.fillRect(0,0,18,MAP_H); ctx.fillRect(MAP_W-18,0,18,MAP_H);
+}
+function drawPaths(){
+  ctx.fillStyle='#c9a86a';
+  // central crossroads connecting buildings loosely
+  ctx.fillRect(440,120,40,400);
+  ctx.fillRect(140,300,640,30);
+  ctx.fillRect(220,120,30,210);
+  ctx.fillRect(660,200,30,140);
+}
+function drawTree(x,y){
+  px(ctx,x-4,y,8,14,'#6b4a2a');       // trunk
+  ctx.fillStyle='#2f7d44'; ctx.beginPath(); ctx.arc(x,y-6,16,0,7); ctx.fill();
+  ctx.fillStyle='#3a9655'; ctx.beginPath(); ctx.arc(x-6,y-2,10,0,7); ctx.fill();
+  ctx.beginPath(); ctx.arc(x+7,y-3,10,0,7); ctx.fill();
+}
+function drawFlower(x,y){
+  px(ctx,x-1,y,2,6,'#2f7d44');
+  ctx.fillStyle='#ffd23f'; ctx.beginPath(); ctx.arc(x,y-2,3,0,7); ctx.fill();
+  ctx.fillStyle='#ff7aa8'; ctx.fillRect(x-1,y-3,2,2);
+}
+function drawBuilding(b){
+  const x=b.x, y=b.y;
+  const defeated=defeatedBosses.has(b.id);
+  // building body
+  ctx.save();
+  // shadow
+  ctx.fillStyle='rgba(0,0,0,0.25)'; ctx.beginPath(); ctx.ellipse(x,y+58,58,14,0,0,7); ctx.fill();
+  // walls
+  px(ctx,x-52,y-46,104,90,'#3b3357');
+  px(ctx,x-52,y-46,104,90,'#0000');
+  ctx.strokeStyle='#1a1530'; ctx.lineWidth=3; ctx.strokeRect(x-52,y-46,104,90);
+  // roof in boss color
+  ctx.fillStyle=b.color; ctx.beginPath();
+  ctx.moveTo(x-60,y-46); ctx.lineTo(x,y-86); ctx.lineTo(x+60,y-46); ctx.closePath(); ctx.fill();
+  ctx.strokeStyle='#0008'; ctx.stroke();
+  // door
+  px(ctx,x-15,y+4,30,40, defeated?'#2a8f55':'#1a1530');
+  // windows
+  px(ctx,x-38,y-30,22,20,'#ffd23f'); px(ctx,x+16,y-30,22,20,'#ffd23f');
+  px(ctx,x-38,y-30,22,20,'rgba(0,0,0,0.0)');
+  // sign
+  ctx.fillStyle='#0009'; ctx.fillRect(x-50,y-60,100,16);
+  ctx.fillStyle=defeated?'#7CFC9E':'#ffd23f'; ctx.font='9px "Press Start 2P"'; ctx.textAlign='center';
+  ctx.fillText(b.name, x, y-48);
+  ctx.restore();
+
+  // boss NPC in front (if not defeated) else a flag
+  if(!defeated){
+    drawBossNPC(x, y+58, b.color);
+    // prompt if near
+    const px2=player.x+player.w/2, py2=player.y+player.h/2;
+    if(dist(px2,py2,b.x,b.y+10)<64){
+      bubble(x, y+30, 'SPACE: BATTLE');
+    }
+  } else {
+    // victory flag
+    px(ctx,x-2,y-100,4,40,'#7b5a2a');
+    ctx.fillStyle='#7CFC9E'; ctx.fillRect(x+2,y-100,26,16);
+    ctx.fillStyle='#1a1530'; ctx.font='8px "Press Start 2P"'; ctx.textAlign='center';
+    ctx.fillText('✓ WON', x+38, y-118);
+  }
+}
+function bubble(x,y,txt){
+  ctx.save();
+  ctx.font='8px "Press Start 2P"'; ctx.textAlign='center';
+  const w=ctx.measureText(txt).width+16;
+  ctx.fillStyle='#000c'; ctx.fillRect(x-w/2,y-14,w,18);
+  ctx.strokeStyle='#ffd23f'; ctx.lineWidth=2; ctx.strokeRect(x-w/2,y-14,w,18);
+  ctx.fillStyle='#ffd23f'; ctx.fillText(txt,x,y-1);
+  ctx.restore();
+}
+function drawBossNPC(x,y,col){
+  const bob=Math.sin(performance.now()/350)*2;
+  ctx.save(); ctx.translate(x,y+bob);
+  ctx.fillStyle='rgba(0,0,0,.25)'; ctx.beginPath(); ctx.ellipse(0,16,16,5,0,0,7); ctx.fill();
+  px(ctx,-14,-18,28,34,col);
+  px(ctx,-10,-10,8,7,'#1a1330'); px(ctx,2,-10,8,7,'#1a1330');
+  px(ctx,-8,-7,3,3,'#ff5a3c'); px(ctx,4,-7,3,3,'#ff5a3c');
+  px(ctx,-14,-26,7,9,col); px(ctx,7,-26,7,9,col); // horns
+  ctx.restore();
+}
+function drawTrophy(t){
+  if(collectedTrophies.has(t.id)) return;
+  const pulse=(Math.sin(performance.now()/250)+1)/2;
+  ctx.save();
+  ctx.globalAlpha=0.25+pulse*0.35;
+  ctx.fillStyle='#ffd23f'; ctx.beginPath(); ctx.arc(t.x,t.y,18+pulse*4,0,7); ctx.fill();
+  ctx.globalAlpha=1;
+  // chest
+  px(ctx,t.x-13,t.y-4,26,16,'#7b5a2a');
+  px(ctx,t.x-13,t.y-12,26,10,'#a8772f');
+  px(ctx,t.x-2,t.y-2,4,6,'#ffd23f');
+  ctx.font='12px "Press Start 2P"'; ctx.textAlign='center';
+  ctx.fillText(t.ico, t.x, t.y-16);
+  ctx.restore();
+  const px2=player.x+player.w/2, py2=player.y+player.h/2;
+  if(dist(px2,py2,t.x,t.y)<46) bubble(t.x,t.y-26,'WALK OVER');
+}
+function drawPlayer(){
+  const x=player.x, y=player.y;
+  ctx.save();
+  ctx.fillStyle='rgba(0,0,0,.25)'; ctx.beginPath(); ctx.ellipse(x+11,y+27,12,4,0,0,7); ctx.fill();
+  const step=(player.frame%2===0)?0:2;
+  // legs
+  px(ctx,x+4,y+20+ (step?0:0),6,6,'#1f1640'); px(ctx,x+12,y+20,6,6,'#1f1640');
+  // body w/ cape
+  px(ctx,x+2,y+8,18,14,'#8c5bff');
+  px(ctx,x+4,y+8,14,14,'#2e63d6');
+  px(ctx,x+3,y+19,16,4,'#ffd23f');
+  // head
+  px(ctx,x+4,y-6,14,16,'#f0c69a');
+  // hair / facing
+  if(player.dir==='down'){ px(ctx,x+4,y-8,14,6,'#3a2a18'); px(ctx,x+6,y+0,3,3,'#1a1330'); px(ctx,x+13,y+0,3,3,'#1a1330'); }
+  else if(player.dir==='up'){ px(ctx,x+4,y-8,14,9,'#3a2a18'); }
+  else if(player.dir==='left'){ px(ctx,x+4,y-8,14,6,'#3a2a18'); px(ctx,x+5,y+0,3,3,'#1a1330'); }
+  else { px(ctx,x+4,y-8,14,6,'#3a2a18'); px(ctx,x+14,y+0,3,3,'#1a1330'); }
+  ctx.restore();
+}
+
+/* depth-sorted entity draw */
+function drawWorld(){
+  drawGrass(); drawPaths();
+  // decor flowers (under)
+  decor.filter(d=>d.t==='flower').forEach(d=>drawFlower(d.x,d.y));
+  // collect drawables with y for sorting
+  const ents=[];
+  decor.filter(d=>d.t==='tree').forEach(d=>ents.push({y:d.y,fn:()=>drawTree(d.x,d.y)}));
+  TROPHIES.forEach(t=>ents.push({y:t.y,fn:()=>drawTrophy(t)}));
+  BOSSES.forEach(b=>ents.push({y:b.y+58,fn:()=>drawBuilding(b)}));
+  ents.push({y:player.y+27,fn:drawPlayer});
+  ents.sort((a,b)=>a.y-b.y).forEach(e=>e.fn());
+}
+
+/* ---------------- MOVEMENT & COLLISION ---------------- */
+function solids(){
+  const arr=[];
+  // map borders
+  // building bases (collision box at bottom of each building)
+  BOSSES.forEach(b=>arr.push({x:b.x-50,y:b.y-46,w:100,h:86}));
+  // trees
+  decor.filter(d=>d.t==='tree'&&d.solid).forEach(d=>arr.push({x:d.x-10,y:d.y-6,w:20,h:18}));
+  return arr;
+}
+const SOLIDS = solids();
+function collides(nx,ny){
+  if(nx<18||ny<26||nx+player.w>MAP_W-18||ny+player.h>MAP_H-12) return true;
+  for(const s of SOLIDS){
+    if(nx< s.x+s.w && nx+player.w> s.x && ny< s.y+s.h && ny+player.h> s.y) return true;
+  }
+  return false;
+}
+function updatePlayer(){
+  if(state!=='overworld') return;
+  let dx=0,dy=0;
+  if(keys['arrowup']||keys['w']){dy=-1;player.dir='up';}
+  else if(keys['arrowdown']||keys['s']){dy=1;player.dir='down';}
+  if(keys['arrowleft']||keys['a']){dx=-1;player.dir='left';}
+  else if(keys['arrowright']||keys['d']){dx=1;player.dir='right';}
+  if(dx&&dy){const k=0.707;dx*=k;dy*=k;}
+  const moving=dx||dy;
+  if(moving){
+    const nx=player.x+dx*player.speed;
+    if(!collides(nx,player.y)) player.x=nx;
+    const ny=player.y+dy*player.speed;
+    if(!collides(player.x,ny)) player.y=ny;
+    player.anim++; if(player.anim%10===0) player.frame++;
+    checkTrophyPickup();
+  }
+}
+
+/* ---------------- MAIN LOOP ---------------- */
+function loop(){
+  updatePlayer();
+  // camera (world is 960x600 ~ canvas, slight follow with clamp; mostly static fit)
+  ctx.setTransform(1,0,0,1,0,0);
+  ctx.clearRect(0,0,W,H);
+  ctx.save();
+  // letterbox top for HUD: shift world down a touch
+  ctx.translate(0,20);
+  drawWorld();
+  ctx.restore();
+  requestAnimationFrame(loop);
+}
+updateHud();
+loop();
+</script>
+</body>
+</html>

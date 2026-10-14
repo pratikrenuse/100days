@@ -4,3 +4,6 @@ secrets.local.md
 .DS_Store
 node_modules/
 .vercel
+
+# Contains a local API key: keep on this Mac only
+Pratik Renuse/taskboard-ext/newtab.js
