@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quote Wallpapers for Mac · Pratik Renuse</title>
-<meta name="description" content="75 free desktop wallpapers. Each quote on discipline, ambition and the company you keep, drawn as one simple diagram. Download one or all 75.">
-<meta property="og:title" content="75 Quote Wallpapers for Mac">
-<meta property="og:description" content="Each quote drawn as one simple diagram. Free to download, one at a time or all 75.">
+<meta name="description" content="100 free desktop wallpapers. Each quote on discipline, ambition and the company you keep, drawn as one simple diagram. Download one or all 100.">
+<meta property="og:title" content="100 Quote Wallpapers for Mac">
+<meta property="og:description" content="Each quote drawn as one simple diagram. Free to download, one at a time or all 100.">
 <meta property="og:image" content="https://pratikrenuse.com/wallpapers/thumbs/wallpaper-04-james-clear.webp">
 <meta property="og:url" content="https://pratikrenuse.com/wallpapers/">
 <meta name="twitter:card" content="summary_large_image">
@@ -103,6 +103,19 @@ footer a:hover{color:var(--gold)}
   .facts{gap:1.5rem}
   .actions .btn{width:100%}
 }
+.live{max-width:1400px;margin:0 auto;padding:4rem 4rem 1rem;display:grid;grid-template-columns:1fr 1.15fr;gap:4rem;align-items:center}
+.live h2{font-family:var(--serif);font-weight:300;font-size:2.2rem;line-height:1.2;color:var(--ink);margin:1rem 0 1rem}
+.live-frame{position:relative;aspect-ratio:3024/1964;background:#F2EEE6;box-shadow:0 1px 0 var(--border),0 24px 60px -30px rgba(26,21,18,.35);overflow:hidden}
+.live-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.live-steps{margin:1.5rem 0 0;padding:0;list-style:none;counter-reset:s}
+.live-steps li{counter-increment:s;padding:.6rem 0 .6rem 2.4rem;position:relative;color:var(--ink3);font-size:.95rem;border-top:1px solid var(--border)}
+.live-steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:.6rem;font-family:var(--serif);color:var(--gold)}
+.live-steps strong{color:var(--ink);font-weight:500}
+.url{display:flex;margin-top:1.5rem;max-width:34rem}
+.url code{flex:1;background:var(--surface);border:1px solid var(--border);border-right:none;padding:0 1rem;display:flex;align-items:center;font-size:.85rem;color:var(--ink);min-height:52px;overflow:hidden;white-space:nowrap}
+.live-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+@media (max-width:960px){.live{grid-template-columns:1fr;padding:2.5rem 1.25rem 0;gap:2rem}.live h2{font-size:1.8rem}}
+@media (max-width:600px){.url{flex-direction:column}.url code{border-right:1px solid var(--border);border-bottom:none}}
 </style>
 </head>
 <body>
@@ -118,15 +131,15 @@ footer a:hover{color:var(--gold)}
 <header class="hero">
   <div>
     <div class="label">Free desktop wallpapers</div>
-    <h1>75 ideas you'll see every time you open your laptop.</h1>
+    <h1>100 ideas you'll see every time you open your laptop.</h1>
     <p class="lead">Quotes on discipline, ambition and the company you keep, each drawn as one simple diagram so the idea lands before you finish reading.</p>
     <div class="actions">
-      <a class="btn" id="zip" href="pratik-renuse-quote-wallpapers.zip" download>Download all 75 (ZIP, 6.8 MB)</a>
-      <a class="btn btn-ghost" href="#g1">Browse the collection</a>
+      <a class="btn" id="zip" href="pratik-renuse-quote-wallpapers.zip" download>Download all 100 (ZIP, 11.2 MB)</a>
+      <a class="btn btn-ghost" href="#live">See it animated</a>
     </div>
     <div class="status" id="zip-status" role="status" aria-live="polite"></div>
     <div class="facts">
-      <div class="fact"><strong>75</strong><span>wallpapers</span></div>
+      <div class="fact"><strong>100</strong><span>wallpapers</span></div>
       <div class="fact"><strong>3024 × 1964</strong><span>MacBook Retina size</span></div>
       <div class="fact"><strong>Free</strong><span>no signup needed</span></div>
     </div>
@@ -135,6 +148,26 @@ footer a:hover{color:var(--gold)}
     <img class="hero-img" src="thumbs/wallpaper-04-james-clear.webp" alt="Wallpaper: You do not rise to the level of your goals. You fall to the level of your systems. James Clear" width="960" height="623">
   </a>
 </header>
+
+<section class="live" id="live">
+  <div>
+    <div class="label">New: animated version</div>
+    <h2>Watch each diagram draw itself every time you open your Mac.</h2>
+    <p>The live wallpaper picks one of the 100 at random, draws the diagram in, then settles the quote. Close the lid, open it again, and a new one draws in.</p>
+    <ol class="live-steps">
+      <li>Install <strong>Plash</strong>, a free app from the Mac App Store that turns any web page into your wallpaper.</li>
+      <li>In Plash, choose <strong>Add Website</strong> and paste the link below.</li>
+      <li>Leave it running. A new wallpaper draws in on every wake, and every 30 minutes.</li>
+    </ol>
+    <div class="url"><code id="live-url">https://pratikrenuse.com/wallpapers/live/</code><button class="btn" id="copy-live" type="button">Copy link</button></div>
+    <div class="status" id="live-status" role="status" aria-live="polite"></div>
+    <div class="live-actions">
+      <a class="btn btn-ghost" href="live/" target="_blank" rel="noopener" id="open-live">Open full screen</a>
+      <button class="btn btn-ghost" type="button" id="next-live">Draw the next one</button>
+    </div>
+  </div>
+  <div class="live-frame"><iframe id="live-frame" src="live/?every=0&amp;embed=1" title="Animated quote wallpaper preview" loading="lazy"></iframe></div>
+</section>
 
 <section class="howto">
   <div class="howto-inner">
@@ -839,9 +872,238 @@ footer a:hover{color:var(--gold)}
 </article></div>
 </section>
 
+<section class="group" id="g76">
+  <div class="group-head"><div class="label">Rejection, repetition and feedback</div><span class="count">25 wallpapers</span></div>
+  <div class="grid"><article class="card">
+  <a class="thumb" href="full/wallpaper-76-alex-hormozi.png" target="_blank" rel="noopener" aria-label="Open wallpaper 76 full size">
+    <img src="thumbs/wallpaper-76-alex-hormozi.webp" alt="&ldquo;You can beat 99% of people if you can master the shame of rejection, the boredom of repetition, and pain of feedback.&rdquo; Alex Hormozi" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 76</span><span class="card-author">Alex Hormozi</span></div>
+    <a class="btn-sm" href="full/wallpaper-76-alex-hormozi.png" download data-n="76">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-77-alex-hormozi.png" target="_blank" rel="noopener" aria-label="Open wallpaper 77 full size">
+    <img src="thumbs/wallpaper-77-alex-hormozi.webp" alt="&ldquo;Volume negates luck.&rdquo; Alex Hormozi" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 77</span><span class="card-author">Alex Hormozi</span></div>
+    <a class="btn-sm" href="full/wallpaper-77-alex-hormozi.png" download data-n="77">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-78-wayne-gretzky.png" target="_blank" rel="noopener" aria-label="Open wallpaper 78 full size">
+    <img src="thumbs/wallpaper-78-wayne-gretzky.webp" alt="&ldquo;You miss 100% of the shots you don’t take.&rdquo; Wayne Gretzky" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 78</span><span class="card-author">Wayne Gretzky</span></div>
+    <a class="btn-sm" href="full/wallpaper-78-wayne-gretzky.png" download data-n="78">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-79-tim-ferriss.png" target="_blank" rel="noopener" aria-label="Open wallpaper 79 full size">
+    <img src="thumbs/wallpaper-79-tim-ferriss.webp" alt="&ldquo;A person’s success in life can usually be measured by the number of uncomfortable conversations he or she is willing to have.&rdquo; Tim Ferriss" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 79</span><span class="card-author">Tim Ferriss</span></div>
+    <a class="btn-sm" href="full/wallpaper-79-tim-ferriss.png" download data-n="79">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-80-tim-ferriss.png" target="_blank" rel="noopener" aria-label="Open wallpaper 80 full size">
+    <img src="thumbs/wallpaper-80-tim-ferriss.webp" alt="&ldquo;What we fear doing most is usually what we most need to do.&rdquo; Tim Ferriss" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 80</span><span class="card-author">Tim Ferriss</span></div>
+    <a class="btn-sm" href="full/wallpaper-80-tim-ferriss.png" download data-n="80">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-81-jeff-bezos.png" target="_blank" rel="noopener" aria-label="Open wallpaper 81 full size">
+    <img src="thumbs/wallpaper-81-jeff-bezos.webp" alt="&ldquo;Invention requires a long-term willingness to be misunderstood.&rdquo; Jeff Bezos" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 81</span><span class="card-author">Jeff Bezos</span></div>
+    <a class="btn-sm" href="full/wallpaper-81-jeff-bezos.png" download data-n="81">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-82-phil-knight.png" target="_blank" rel="noopener" aria-label="Open wallpaper 82 full size">
+    <img src="thumbs/wallpaper-82-phil-knight.webp" alt="&ldquo;Let everyone else call your idea crazy... just keep going. Don’t stop.&rdquo; Phil Knight" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 82</span><span class="card-author">Phil Knight</span></div>
+    <a class="btn-sm" href="full/wallpaper-82-phil-knight.png" download data-n="82">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-83-jk-rowling.png" target="_blank" rel="noopener" aria-label="Open wallpaper 83 full size">
+    <img src="thumbs/wallpaper-83-jk-rowling.webp" alt="&ldquo;It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all.&rdquo; J.K. Rowling" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 83</span><span class="card-author">J.K. Rowling</span></div>
+    <a class="btn-sm" href="full/wallpaper-83-jk-rowling.png" download data-n="83">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-84-theodore-roosevelt.png" target="_blank" rel="noopener" aria-label="Open wallpaper 84 full size">
+    <img src="thumbs/wallpaper-84-theodore-roosevelt.webp" alt="&ldquo;The credit belongs to the man who is actually in the arena.&rdquo; Theodore Roosevelt" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 84</span><span class="card-author">Theodore Roosevelt</span></div>
+    <a class="btn-sm" href="full/wallpaper-84-theodore-roosevelt.png" download data-n="84">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-85-chuck-close.png" target="_blank" rel="noopener" aria-label="Open wallpaper 85 full size">
+    <img src="thumbs/wallpaper-85-chuck-close.webp" alt="&ldquo;Inspiration is for amateurs. The rest of us just show up and get to work.&rdquo; Chuck Close" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 85</span><span class="card-author">Chuck Close</span></div>
+    <a class="btn-sm" href="full/wallpaper-85-chuck-close.png" download data-n="85">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-86-ira-glass.png" target="_blank" rel="noopener" aria-label="Open wallpaper 86 full size">
+    <img src="thumbs/wallpaper-86-ira-glass.webp" alt="&ldquo;It’s only by going through a volume of work that you will close that gap, and your work will be as good as your ambitions.&rdquo; Ira Glass" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 86</span><span class="card-author">Ira Glass</span></div>
+    <a class="btn-sm" href="full/wallpaper-86-ira-glass.png" download data-n="86">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-87-charlie-munger.png" target="_blank" rel="noopener" aria-label="Open wallpaper 87 full size">
+    <img src="thumbs/wallpaper-87-charlie-munger.webp" alt="&ldquo;Spend each day trying to be a little wiser than you were when you woke up.&rdquo; Charlie Munger" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 87</span><span class="card-author">Charlie Munger</span></div>
+    <a class="btn-sm" href="full/wallpaper-87-charlie-munger.png" download data-n="87">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-88-warren-buffett.png" target="_blank" rel="noopener" aria-label="Open wallpaper 88 full size">
+    <img src="thumbs/wallpaper-88-warren-buffett.webp" alt="&ldquo;Someone’s sitting in the shade today because someone planted a tree a long time ago.&rdquo; Warren Buffett" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 88</span><span class="card-author">Warren Buffett</span></div>
+    <a class="btn-sm" href="full/wallpaper-88-warren-buffett.png" download data-n="88">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-89-naval-ravikant.png" target="_blank" rel="noopener" aria-label="Open wallpaper 89 full size">
+    <img src="thumbs/wallpaper-89-naval-ravikant.webp" alt="&ldquo;Play long-term games with long-term people.&rdquo; Naval Ravikant" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 89</span><span class="card-author">Naval Ravikant</span></div>
+    <a class="btn-sm" href="full/wallpaper-89-naval-ravikant.png" download data-n="89">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-90-naval-ravikant.png" target="_blank" rel="noopener" aria-label="Open wallpaper 90 full size">
+    <img src="thumbs/wallpaper-90-naval-ravikant.webp" alt="&ldquo;Escape competition through authenticity.&rdquo; Naval Ravikant" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 90</span><span class="card-author">Naval Ravikant</span></div>
+    <a class="btn-sm" href="full/wallpaper-90-naval-ravikant.png" download data-n="90">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-91-anne-lamott.png" target="_blank" rel="noopener" aria-label="Open wallpaper 91 full size">
+    <img src="thumbs/wallpaper-91-anne-lamott.webp" alt="&ldquo;Almost all good writing begins with terrible first efforts. You need to start somewhere.&rdquo; Anne Lamott" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 91</span><span class="card-author">Anne Lamott</span></div>
+    <a class="btn-sm" href="full/wallpaper-91-anne-lamott.png" download data-n="91">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-92-paul-graham.png" target="_blank" rel="noopener" aria-label="Open wallpaper 92 full size">
+    <img src="thumbs/wallpaper-92-paul-graham.webp" alt="&ldquo;Live in the future, then build what’s missing.&rdquo; Paul Graham" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 92</span><span class="card-author">Paul Graham</span></div>
+    <a class="btn-sm" href="full/wallpaper-92-paul-graham.png" download data-n="92">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-93-elon-musk.png" target="_blank" rel="noopener" aria-label="Open wallpaper 93 full size">
+    <img src="thumbs/wallpaper-93-elon-musk.webp" alt="&ldquo;I think it’s very important to have a feedback loop, where you’re constantly thinking about what you’ve done and how you could be doing it better.&rdquo; Elon Musk" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 93</span><span class="card-author">Elon Musk</span></div>
+    <a class="btn-sm" href="full/wallpaper-93-elon-musk.png" download data-n="93">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-94-ed-catmull.png" target="_blank" rel="noopener" aria-label="Open wallpaper 94 full size">
+    <img src="thumbs/wallpaper-94-ed-catmull.webp" alt="&ldquo;Early on, all of our movies suck.&rdquo; Ed Catmull" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 94</span><span class="card-author">Ed Catmull</span></div>
+    <a class="btn-sm" href="full/wallpaper-94-ed-catmull.png" download data-n="94">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-95-bill-gates.png" target="_blank" rel="noopener" aria-label="Open wallpaper 95 full size">
+    <img src="thumbs/wallpaper-95-bill-gates.webp" alt="&ldquo;Your most unhappy customers are your greatest source of learning.&rdquo; Bill Gates" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 95</span><span class="card-author">Bill Gates</span></div>
+    <a class="btn-sm" href="full/wallpaper-95-bill-gates.png" download data-n="95">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-96-jensen-huang.png" target="_blank" rel="noopener" aria-label="Open wallpaper 96 full size">
+    <img src="thumbs/wallpaper-96-jensen-huang.webp" alt="&ldquo;I wish upon you ample doses of pain and suffering.&rdquo; Jensen Huang" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 96</span><span class="card-author">Jensen Huang</span></div>
+    <a class="btn-sm" href="full/wallpaper-96-jensen-huang.png" download data-n="96">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-97-nassim-nicholas-taleb.png" target="_blank" rel="noopener" aria-label="Open wallpaper 97 full size">
+    <img src="thumbs/wallpaper-97-nassim-nicholas-taleb.webp" alt="&ldquo;Wind extinguishes a candle and energizes fire.&rdquo; Nassim Nicholas Taleb" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 97</span><span class="card-author">Nassim Nicholas Taleb</span></div>
+    <a class="btn-sm" href="full/wallpaper-97-nassim-nicholas-taleb.png" download data-n="97">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-98-samuel-beckett.png" target="_blank" rel="noopener" aria-label="Open wallpaper 98 full size">
+    <img src="thumbs/wallpaper-98-samuel-beckett.webp" alt="&ldquo;Ever tried. Ever failed. No matter. Try again. Fail again. Fail better.&rdquo; Samuel Beckett" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 98</span><span class="card-author">Samuel Beckett</span></div>
+    <a class="btn-sm" href="full/wallpaper-98-samuel-beckett.png" download data-n="98">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-99-marcus-aurelius.png" target="_blank" rel="noopener" aria-label="Open wallpaper 99 full size">
+    <img src="thumbs/wallpaper-99-marcus-aurelius.webp" alt="&ldquo;The impediment to action advances action. What stands in the way becomes the way.&rdquo; Marcus Aurelius" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 99</span><span class="card-author">Marcus Aurelius</span></div>
+    <a class="btn-sm" href="full/wallpaper-99-marcus-aurelius.png" download data-n="99">Download PNG</a>
+  </div>
+</article>
+<article class="card">
+  <a class="thumb" href="full/wallpaper-100-friedrich-nietzsche.png" target="_blank" rel="noopener" aria-label="Open wallpaper 100 full size">
+    <img src="thumbs/wallpaper-100-friedrich-nietzsche.webp" alt="&ldquo;He who has a why to live can bear almost any how.&rdquo; Friedrich Nietzsche" width="960" height="623" loading="lazy" decoding="async">
+  </a>
+  <div class="card-meta">
+    <div><span class="card-num">No. 100</span><span class="card-author">Friedrich Nietzsche</span></div>
+    <a class="btn-sm" href="full/wallpaper-100-friedrich-nietzsche.png" download data-n="100">Download PNG</a>
+  </div>
+</article></div>
+</section>
+
   <div class="closing">
     <h2>Want the whole set on rotation?</h2>
-    <a class="btn" id="zip2" href="pratik-renuse-quote-wallpapers.zip" download>Download all 75 (ZIP, 6.8 MB)</a>
+    <a class="btn" id="zip2" href="pratik-renuse-quote-wallpapers.zip" download>Download all 100 (ZIP, 11.2 MB)</a>
     <div class="status" id="zip2-status" role="status" aria-live="polite"></div>
   </div>
 </main>
@@ -872,7 +1134,7 @@ function track(name, params){ try{ gtag('event', name, params); }catch(e){} }
 [['zip','zip-status'],['zip2','zip2-status']].forEach(function(p){
   var b=document.getElementById(p[0]);
   b.addEventListener('click',function(){
-    document.getElementById(p[1]).textContent='Download started. 75 wallpapers, 6.8 MB. Unzip it and follow the three steps above.';
+    document.getElementById(p[1]).textContent='Download started. 100 wallpapers, 11.2 MB. Unzip it and follow the three steps above.';
     track('download_all',{file:'zip'});
   });
 });
@@ -882,6 +1144,16 @@ document.querySelectorAll('.btn-sm').forEach(function(b){
     track('download_one',{wallpaper:b.dataset.n});
   });
 });
+document.getElementById('copy-live').addEventListener('click',function(){
+  var u=document.getElementById('live-url').textContent, s=document.getElementById('live-status');
+  function ok(){s.textContent='Link copied. Paste it into Plash under Add Website.';track('copy_live_link',{});}
+  try{navigator.clipboard.writeText(u).then(ok,function(){s.textContent='Select the link above and copy it.';});}catch(e){s.textContent='Select the link above and copy it.';}
+});
+document.getElementById('next-live').addEventListener('click',function(){
+  var f=document.getElementById('live-frame');try{f.contentWindow.postMessage('next','*');}catch(e){}
+  track('live_next',{});
+});
+document.getElementById('open-live').addEventListener('click',function(){track('open_live',{});});
 const SUPA_URL='https://naqkunidxjpgwanfbbiu.supabase.co';
 const SUPA_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hcWt1bmlkeGpwZ3dhbmZiYml1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5Mjg1ODEsImV4cCI6MjA5NDUwNDU4MX0.zEypDQmNQGyCcFCjeLMP_Wgbdr3HJJxHXUhqHlMEl9I';
 async function projSignup(){
