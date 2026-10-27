@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Quote Wallpaper · Pratik Renuse</title>
+<meta name="description" content="An animated desktop wallpaper. One of 100 quote diagrams draws itself in every time you open your Mac.">
+<meta name="robots" content="noindex">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+<style>
+:root{--paper:#F2EEE6}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;background:var(--paper);overflow:hidden}
+body{display:flex;align-items:center;justify-content:center;cursor:none}
+body.embed{cursor:default}
+.stage{position:relative;width:min(100vw,calc(100vh * 3024 / 1964));aspect-ratio:3024/1964;transition:opacity .7s ease}
+.stage.out{opacity:0}
+.layer{position:absolute;inset:0}
+.layer img{display:block;width:100%;height:100%}
+.diagram{clip-path:inset(0 0 calc(100% - var(--split)) 0);
+  -webkit-mask-image:linear-gradient(90deg,#000 40%,transparent 60%);mask-image:linear-gradient(90deg,#000 40%,transparent 60%);
+  -webkit-mask-size:300% 100%;mask-size:300% 100%;-webkit-mask-position:100% 0;mask-position:100% 0}
+.quote{clip-path:inset(var(--split) 0 0 0);opacity:0;transform:translateY(1.2%)}
+.play .diagram{animation:draw 2.8s cubic-bezier(.45,.05,.3,1) forwards}
+.play .quote{animation:rise 1.4s ease-out 2.1s forwards}
+@keyframes draw{to{-webkit-mask-position:0 0;mask-position:0 0}}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.play .diagram{animation-duration:.01s}.play .quote{animation-duration:.6s;animation-delay:0s}}
+</style>
+</head>
+<body>
+<div class="stage out" id="stage" role="img" aria-label="Quote wallpaper">
+  <div class="layer diagram"><img id="a" alt=""></div>
+  <div class="layer quote"><img id="b" alt=""></div>
+</div>
+<script>
+var LIST=[["full/wallpaper-01-james-clear.png", 0.67], ["full/wallpaper-02-mark-manson.png", 0.685], ["full/wallpaper-03-naval-ravikant.png", 0.64], ["full/wallpaper-04-james-clear.png", 0.635], ["full/wallpaper-05-jim-rohn.png", 0.667], ["full/wallpaper-06-morgan-housel.png", 0.617], ["full/wallpaper-07-angela-duckworth.png", 0.661], ["full/wallpaper-08-epictetus.png", 0.681], ["full/wallpaper-09-epictetus.png", 0.687], ["full/wallpaper-10-epictetus.png", 0.618], ["full/wallpaper-11-anthony-trollope.png", 0.673], ["full/wallpaper-12-will-durant.png", 0.653], ["full/wallpaper-13-dhammapada.png", 0.649], ["full/wallpaper-14-dhammapada.png", 0.691], ["full/wallpaper-15-s-n-goenka.png", 0.672], ["full/wallpaper-16-jim-rohn.png", 0.654], ["full/wallpaper-17-proverbs-13-20.png", 0.697], ["full/wallpaper-18-seneca.png", 0.645], ["full/wallpaper-19-the-buddha.png", 0.675], ["full/wallpaper-20-dhammapada.png", 0.661], ["full/wallpaper-21-george-washington.png", 0.632], ["full/wallpaper-22-miguel-de-cervantes.png", 0.672], ["full/wallpaper-23-benjamin-franklin.png", 0.64], ["full/wallpaper-24-warren-buffett.png", 0.681], ["full/wallpaper-25-mark-twain.png", 0.632], ["full/wallpaper-26-james-clear.png", 0.689], ["full/wallpaper-27-reid-hoffman.png", 0.656], ["full/wallpaper-28-naval-ravikant.png", 0.666], ["full/wallpaper-29-adam-grant.png", 0.685], ["full/wallpaper-30-jim-collins.png", 0.659], ["full/wallpaper-31-alan-kay.png", 0.711], ["full/wallpaper-32-reid-hoffman.png", 0.698], ["full/wallpaper-33-paul-graham.png", 0.712], ["full/wallpaper-34-steve-jobs.png", 0.651], ["full/wallpaper-35-mark-zuckerberg.png", 0.648], ["full/wallpaper-36-elon-musk.png", 0.64], ["full/wallpaper-37-jerzy-gregorek.png", 0.702], ["full/wallpaper-38-naval-ravikant.png", 0.672], ["full/wallpaper-39-jocko-willink.png", 0.653], ["full/wallpaper-40-jeff-bezos.png", 0.678], ["full/wallpaper-41-steve-martin.png", 0.633], ["full/wallpaper-42-phil-knight.png", 0.698], ["full/wallpaper-43-david-goggins.png", 0.681], ["full/wallpaper-44-ben-horowitz.png", 0.691], ["full/wallpaper-45-mark-cuban.png", 0.666], ["full/wallpaper-46-cal-newport.png", 0.691], ["full/wallpaper-47-carol-dweck.png", 0.672], ["full/wallpaper-48-malcolm-gladwell.png", 0.622], ["full/wallpaper-49-richard-feynman.png", 0.691], ["full/wallpaper-50-a-p-j-abdul-kalam.png", 0.62], ["full/wallpaper-51-michael-jordan.png", 0.695], ["full/wallpaper-52-theodore-roosevelt.png", 0.679], ["full/wallpaper-53-theodore-roosevelt.png", 0.653], ["full/wallpaper-54-angela-duckworth.png", 0.669], ["full/wallpaper-55-ray-dalio.png", 0.623], ["full/wallpaper-56-james-clear.png", 0.691], ["full/wallpaper-57-steven-pressfield.png", 0.646], ["full/wallpaper-58-sylvester-stallone.png", 0.665], ["full/wallpaper-59-darren-hardy.png", 0.691], ["full/wallpaper-60-eric-thomas.png", 0.659], ["full/wallpaper-61-sam-altman.png", 0.691], ["full/wallpaper-62-muhammad-ali.png", 0.69], ["full/wallpaper-63-muhammad-ali.png", 0.691], ["full/wallpaper-64-steve-jobs.png", 0.632], ["full/wallpaper-65-shonda-rhimes.png", 0.692], ["full/wallpaper-66-jim-valvano.png", 0.695], ["full/wallpaper-67-sachin-tendulkar.png", 0.678], ["full/wallpaper-68-abby-wambach.png", 0.699], ["full/wallpaper-69-denzel-washington.png", 0.653], ["full/wallpaper-70-denzel-washington.png", 0.691], ["full/wallpaper-71-denzel-washington.png", 0.626], ["full/wallpaper-72-kobe-bryant.png", 0.693], ["full/wallpaper-73-thomas-edison.png", 0.644], ["full/wallpaper-74-arnold-schwarzenegger.png", 0.705], ["full/wallpaper-75-will-smith.png", 0.691], ["full/wallpaper-76-alex-hormozi.png", 0.624], ["full/wallpaper-77-alex-hormozi.png", 0.625], ["full/wallpaper-78-wayne-gretzky.png", 0.617], ["full/wallpaper-79-tim-ferriss.png", 0.64], ["full/wallpaper-80-tim-ferriss.png", 0.642], ["full/wallpaper-81-jeff-bezos.png", 0.633], ["full/wallpaper-82-phil-knight.png", 0.638], ["full/wallpaper-83-jk-rowling.png", 0.619], ["full/wallpaper-84-theodore-roosevelt.png", 0.656], ["full/wallpaper-85-chuck-close.png", 0.649], ["full/wallpaper-86-ira-glass.png", 0.661], ["full/wallpaper-87-charlie-munger.png", 0.638], ["full/wallpaper-88-warren-buffett.png", 0.634], ["full/wallpaper-89-naval-ravikant.png", 0.647], ["full/wallpaper-90-naval-ravikant.png", 0.629], ["full/wallpaper-91-anne-lamott.png", 0.617], ["full/wallpaper-92-paul-graham.png", 0.637], ["full/wallpaper-93-elon-musk.png", 0.655], ["full/wallpaper-94-ed-catmull.png", 0.646], ["full/wallpaper-95-bill-gates.png", 0.633], ["full/wallpaper-96-jensen-huang.png", 0.624], ["full/wallpaper-97-nassim-nicholas-taleb.png", 0.636], ["full/wallpaper-98-samuel-beckett.png", 0.629], ["full/wallpaper-99-marcus-aurelius.png", 0.615], ["full/wallpaper-100-friedrich-nietzsche.png", 0.611]]; // [path, split]
+var q=new URLSearchParams(location.search);
+var every=q.has('every')?parseFloat(q.get('every')):30;
+if(q.get('embed')==='1')document.body.classList.add('embed');
+var stage=document.getElementById('stage'),A=document.getElementById('a'),B=document.getElementById('b');
+function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
+var bag=[];try{bag=JSON.parse(store('wp-bag')||'[]')||[];}catch(e){bag=[];}
+function pick(){
+  if(!bag.length){bag=LIST.map(function(_,i){return i;});for(var i=bag.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=bag[i];bag[i]=bag[j];bag[j]=t;}}
+  var i=bag.pop();store('wp-bag',JSON.stringify(bag));return i;
+}
+var busy=false;
+function show(i){
+  if(busy)return;busy=true;
+  var item=LIST[i],src='../'+item[0],img=new Image();
+  img.onload=img.onerror=function(){
+    stage.classList.add('out');
+    setTimeout(function(){
+      stage.classList.remove('play');
+      stage.style.setProperty('--split',(item[1]*100).toFixed(1)+'%');
+      A.src=src;B.src=src;
+      void stage.offsetWidth;
+      stage.classList.remove('out');stage.classList.add('play');
+      busy=false;
+      try{gtag('event','live_wallpaper_shown',{wallpaper:item[0]});}catch(e){}
+    },stage.classList.contains('out')&&!A.src?0:700);
+  };
+  img.src=src;
+}
+function next(){show(pick());}
+var n=parseInt(q.get('n'),10);
+if(n>=1&&n<=LIST.length){show(n-1);}else{next();}
+// new wallpaper after the Mac wakes (timer gap) or the page becomes visible again
+var last=Date.now(),shownAt=Date.now();
+setInterval(function(){
+  var now=Date.now();
+  if(now-last>60000){next();shownAt=now;}
+  else if(every>0&&now-shownAt>every*60000){next();shownAt=now;}
+  last=now;
+},5000);
+document.addEventListener('visibilitychange',function(){if(!document.hidden&&Date.now()-shownAt>60000){next();shownAt=Date.now();}});
+window.addEventListener('message',function(e){if(e.data==='next'){next();shownAt=Date.now();}});
+document.addEventListener('keydown',function(e){if(e.key===' '||e.key==='ArrowRight'){next();shownAt=Date.now();}});
+</script>
+</body>
+</html>
