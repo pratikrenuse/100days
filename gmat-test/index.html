@@ -360,7 +360,7 @@ async function openBanks(){
   catch(e){ QB.err = 'The questions could not be loaded. Check the connection and press Load the questions.'; }
   QB.busy = false;
   // An exam saved in this browser before the question banks changed cannot be resumed.
-  if (QB.ready && S.phase!=='home' && S.phase!=='results' && Object.values(S.path||{}).some(a => a.some(id => !ITEM[id]))){ S = fresh(); save(); flash('An exam saved in this browser used the old practice questions, so it was cleared. Start a new one.'); }
+  if (QB.ready && S.phase!=='home' && Object.values(S.path||{}).some(a => a.some(id => !ITEM[id]))){ const done = S.phase==='results'; S = fresh(); save(); flash(done ? 'Your last exam used the old practice questions, so its review cannot be shown. Its score is kept in your history.' : 'An exam saved in this browser used the old practice questions, so it was cleared. Start a new one.'); }
   render();
 }
 async function syncSeen(){
