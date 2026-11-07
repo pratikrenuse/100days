@@ -364,7 +364,7 @@ async function openBanks(){
   render();
 }
 async function syncSeen(){
-  try { const r = await fetch(SB_URL + '/rest/v1/rpc/gmat_seen_questions', {method:'POST', headers:{apikey:SB_KEY, Authorization:'Bearer '+SB_KEY, 'Content-Type':'application/json'}, body:JSON.stringify({p_candidate:String(lsGet(NAMEKEY)||'').trim().toLowerCase()})});
+  try { const r = await fetch(SB_URL + '/rest/v1/rpc/gmat_seen_questions', {method:'POST', headers:{apikey:SB_KEY, Authorization:'Bearer '+SB_KEY, 'Content-Type':'application/json'}, body:JSON.stringify({p_candidate:CANDIDATE})});
     if (r.ok){ const ids = await r.json(), seen = lsGet(SEENKEY) || {}; ids.forEach(x => { seen[typeof x==='string' ? x : Object.values(x)[0]] = 1; }); lsSet(SEENKEY, seen); if (S && S.phase==='home') render(); } } catch(e){}
 }
 const unseenIn = (pred) => { const seen = lsGet(SEENKEY) || {}; return BANK.items.filter(q => pred(q) && !seen[q.id]).length; };
@@ -422,7 +422,7 @@ function tick(){
 }
 
 /* ---------- flow ---------- */
-function startExam(){ if (!QB.ready) return; const nm = ($('#cand') ? $('#cand').value : (lsGet(NAMEKEY)||'')).trim().toLowerCase(); lsSet(NAMEKEY, nm); syncSeen(); S = fresh(); S.candidate = nm; S.order = ui.mode==='full' ? 'QVD' : ui.mode; S.phase = 'secintro'; WB.strokes = []; lsSet(WBKEY, []); save(); render(); }
+function startExam(){ if (!QB.ready) return; syncSeen(); S = fresh(); S.candidate = CANDIDATE; S.order = ui.mode==='full' ? 'QVD' : ui.mode; S.phase = 'secintro'; WB.strokes = []; lsSet(WBKEY, []); save(); render(); }
 function administer(){
   const k = secKey(); S.path[k] = S.path[k] || []; S.thetaLog[k] = S.thetaLog[k] || [];
   if (!S.queue.length){ const th = eap(responses(k), 1.5); S.queue = pickNext(k, S.path[k], th, lsGet(SEENKEY) || {}, Math.random); }
@@ -461,15 +461,15 @@ function ansJSON(q, a){ if (a == null) return null;
 function queueSync(sc, total){
   const id = uuid(), c = (k) => S.order.includes(k) ? items(k).filter(correct).length : null, v = (k) => sc[k] != null ? sc[k] : null, p = (k) => sc[k] != null ? pct(k, sc[k]) : null;
   const attempt = {id, taken_at:new Date(S.finishedAt).toISOString(), mode: S.order.length===3 ? 'full' : S.order, total_score: total, total_percentile: total != null ? pct('T', total) : null,
-    quant_score:v('Q'), quant_percentile:p('Q'), quant_correct:c('Q'), verbal_score:v('V') ?? v('C') ?? v('R'), verbal_percentile:p('V') ?? p('C') ?? p('R'), verbal_correct:c('V') ?? c('C') ?? c('R'), di_score:v('D'), di_percentile:p('D'), di_correct:c('D'), source:'site', candidate:S.candidate||''};
+    quant_score:v('Q'), quant_percentile:p('Q'), quant_correct:c('Q'), verbal_score:v('V') ?? v('C') ?? v('R'), verbal_percentile:p('V') ?? p('C') ?? p('R'), verbal_correct:c('V') ?? c('C') ?? c('R'), di_score:v('D'), di_percentile:p('D'), di_correct:c('D'), source:'site', candidate:CANDIDATE};
   const responses = []; for (const k of S.order) items(k).forEach((q,i) => responses.push({attempt_id:id, section:SECNAME[k], position:i+1, question_id:q.id, topic:areaOf(k, q), skill:q.sub, level:diff(q.b), difficulty:q.b,
     result: correct(q) ? 'Correct' : complete(q) ? 'Wrong' : 'Unanswered', time_seconds:S.times[q.id]||0, chosen:ansJSON(q, S.answers[q.id]), correct_answer:ansJSON(q, q.ans)}));
   const qd = lsGet(SYNCKEY) || []; qd.push({attempt, responses, a:false}); lsSet(SYNCKEY, qd); S.syncId = id;
   const ar = lsGet(ARCHKEY) || []; ar.push({attempt, responses}); lsSet(ARCHKEY, ar.slice(-25));
-  const lh = lsGet(LHKEY) || []; areaRows().forEach(r => lh.push(Object.assign({attempt_id:id, taken_at:attempt.taken_at, candidate:S.candidate||''}, r))); lsSet(LHKEY, lh.slice(-400)); flushSync();
+  const lh = lsGet(LHKEY) || []; areaRows().forEach(r => lh.push(Object.assign({attempt_id:id, taken_at:attempt.taken_at, candidate:CANDIDATE}, r))); lsSet(LHKEY, lh.slice(-400)); flushSync();
 }
 /* ---------- insights: this exam plus the pattern across earlier exams ---------- */
-const NAMEKEY = 'gmat-adaptive-name', LHKEY = 'gmat-adaptive-topichist', ARCHKEY = 'gmat-adaptive-archive';
+const CANDIDATE = 'pratik', NAMEKEY = 'gmat-adaptive-name', LHKEY = 'gmat-adaptive-topichist', ARCHKEY = 'gmat-adaptive-archive';
 function downloadBackup(){ const blob = new Blob([JSON.stringify({exported_at:new Date().toISOString(), attempts:lsGet(ARCHKEY) || []}, null, 1)], {type:'application/json'}); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'gmat-mock-answers.json'; document.body.appendChild(a); a.click(); a.remove(); }
 const PACE = {Quant:129, Verbal:117, 'Data Insights':135};
 const areaOf = (k, q) => k==='Q' ? q.topic : q.kind==='Critical Reasoning' ? 'CR: '+(q.sub||'Other') : q.kind==='Reading Comprehension' ? 'RC: '+(q.sub||'Other') : q.kind;
@@ -481,16 +481,44 @@ function areaRows(){
 }
 function pastAttempts(){
   const rows = {}, add = (r) => { if (r.attempt_id === S.syncId) return; rows[r.attempt_id+'|'+r.section+'|'+r.topic] = r; };
-  (lsGet(LHKEY) || []).filter(r => (r.candidate||'') === (S.candidate||'')).forEach(add); (ui.remoteHist || []).forEach(add);
+  (lsGet(LHKEY) || []).forEach(add); (ui.remoteHist || []).forEach(add);
   const by = {}; Object.values(rows).forEach(r => { (by[r.attempt_id] = by[r.attempt_id] || {at:r.taken_at, rows:[]}).rows.push(r); });
   return Object.values(by).sort((a,b) => new Date(b.at) - new Date(a.at));   // newest first
 }
+async function fetchScores(){
+  try { const r = await fetch(SB_URL + '/rest/v1/rpc/gmat_score_history', {method:'POST', headers:{apikey:SB_KEY, Authorization:'Bearer '+SB_KEY, 'Content-Type':'application/json'}, body:'{}'});
+    if (r.ok){ ui.scoreHist = await r.json(); const el = $('#insights'); if (el && S.phase==='results') el.innerHTML = insightsBody(); } } catch(e){}
+}
 async function fetchHistory(){
-  if (ui.histTried || typeof fetch !== 'function') return; ui.histTried = true;
-  try { const r = await fetch(SB_URL + '/rest/v1/rpc/gmat_topic_history', {method:'POST', headers:{apikey:SB_KEY, Authorization:'Bearer '+SB_KEY, 'Content-Type':'application/json'}, body:JSON.stringify({p_candidate:S.candidate||''})});
+  if (ui.histTried || typeof fetch !== 'function') return; ui.histTried = true; fetchScores();
+  try { const r = await fetch(SB_URL + '/rest/v1/rpc/gmat_topic_history', {method:'POST', headers:{apikey:SB_KEY, Authorization:'Bearer '+SB_KEY, 'Content-Type':'application/json'}, body:JSON.stringify({p_candidate:CANDIDATE})});
     if (r.ok){ ui.remoteHist = await r.json();
-      const lh = lsGet(LHKEY) || [], have = new Set(lh.map(x => x.attempt_id+'|'+x.section+'|'+x.topic)); ui.remoteHist.forEach(x => { if (!have.has(x.attempt_id+'|'+x.section+'|'+x.topic)) lh.push(Object.assign({candidate:S.candidate||''}, x)); }); lsSet(LHKEY, lh.slice(-400));
+      const lh = lsGet(LHKEY) || [], have = new Set(lh.map(x => x.attempt_id+'|'+x.section+'|'+x.topic)); ui.remoteHist.forEach(x => { if (!have.has(x.attempt_id+'|'+x.section+'|'+x.topic)) lh.push(Object.assign({candidate:CANDIDATE}, x)); }); lsSet(LHKEY, lh.slice(-400));
       const el = $('#insights'); if (el && S.phase==='results') el.innerHTML = insightsBody(); } else ui.histTried = false; } catch(e){ ui.histTried = false; }
+}
+function pastScores(){
+  const now = S.finishedAt || Date.now(), out = [];
+  const add = (at, mode, sc, total) => { const t = +new Date(at); if (t === +now) return; if (out.some(x => +new Date(x.at) === t)) return; out.push({at, mode, sc, total}); };
+  (ui.scoreHist || []).forEach(a => { if (a.id === S.syncId) return; const m = a.mode === 'full' ? 'QVD' : a.mode; const sc = {};
+    if (a.quant_score != null) sc.Q = a.quant_score; if (a.di_score != null) sc.D = a.di_score;
+    if (a.verbal_score != null) sc[/^[CR]$/.test(m) ? m : 'V'] = a.verbal_score; add(a.taken_at, m, sc, a.total_score); });
+  (lsGet(HISTKEY) || []).forEach(h => add(new Date(h.at).toISOString(), h.order, h.sc || {}, h.total));
+  return out.sort((a,b) => new Date(a.at) - new Date(b.at));
+}
+function scoreTrend(){
+  const past = pastScores(), sc = {}; let sum = 0; for (const k of S.order){ sc[k] = estimate(k).scaled; sum += sc[k]; }
+  const full = S.order.length === 3, total = full ? totalScore(sum) : null, sign = (d) => d > 0 ? '+'+d : String(d);
+  const lines = [];
+  if (full){ const prev = past.filter(p => p.total != null);
+    if (prev.length){ const last = prev[prev.length-1], best = Math.max(...prev.map(p => p.total)), first = prev[0];
+      lines.push(`<b>Total ${total}</b>: ${sign(total-last.total)} since your last full exam (${last.total} on ${dShort(last.at)})${prev.length > 1 ? `, ${sign(total-first.total)} since your first (${first.total} on ${dShort(first.at)})` : ''}. ${total > best ? 'Your best total so far.' : total === best ? 'Equal to your best.' : `Your best is ${best}.`}`); }
+    else lines.push(`<b>Total ${total}</b>: your first full exam on record. Later exams will be compared with it.`); }
+  for (const k of S.order){ const prev = past.filter(p => p.sc[k] != null), nm = SECTIONS[k].short;
+    if (!prev.length){ lines.push(`<b>${nm} ${sc[k]}</b>: first ${nm} score on record.`); continue; }
+    const last = prev[prev.length-1], best = Math.max(...prev.map(p => p.sc[k])), avg = Math.round(prev.reduce((x,p) => x+p.sc[k], 0)/prev.length);
+    const run = prev.slice(-4).map(p => p.sc[k]).concat(sc[k]).join(' → ');
+    lines.push(`<b>${nm} ${sc[k]}</b>: ${sign(sc[k]-last.sc[k])} since last time, ${sign(sc[k]-avg)} against your average of ${avg}${sc[k] > best ? ', your best yet' : ''}. Recent scores: ${run}.`); }
+  return lines;
 }
 const pctOf = (r) => Math.round(100*r.correct/r.n);
 const dShort = (iso) => new Date(iso).toLocaleDateString('en-GB', {day:'numeric', month:'short'});
@@ -505,15 +533,22 @@ function insightsBody(){
   const weak = cur.filter(r => weakNow(r) && !repeat.includes(r)).sort(sortW);
   const strong = cur.filter(r => r.n >= 2 && r.correct/r.n >= 0.75).sort((a,b) => secOrder[a.section]-secOrder[b.section] || (b.correct/b.n)-(a.correct/a.n));
   const improved = cur.filter(r => { const p = lastSeen(r); return p && r.n >= 2 && p.m.correct/p.m.n < 0.6 && r.correct/r.n >= 0.75; });
+  const stillStrong = cur.filter(r => { const p = lastSeen(r); return p && r.correct/r.n >= 0.75 && p.m.correct/p.m.n >= 0.75; }).sort(sortW).reverse();
+  const goneWeak = cur.filter(r => { const p = lastSeen(r); return p && p.m.correct/p.m.n >= 0.6 && r.correct/r.n < 0.6 && (p.m.correct/p.m.n - r.correct/r.n) >= 0.25; }).sort(sortW);
+  // Across every test on record: totals per area, to spot what is weak overall and not just today.
+  const overall = {}; [{rows:cur}].concat(past).forEach(a => a.rows.forEach(x => { const k = x.section+'|'+x.topic; const o = (overall[k] = overall[k] || {section:x.section, topic:x.topic, n:0, correct:0, tests:0}); o.n += x.n; o.correct += x.correct; o.tests++; }));
+  const chronic = Object.values(overall).filter(o => o.tests >= 2 && o.n >= 4 && o.correct/o.n < 0.6).sort((a,b) => (a.correct/a.n)-(b.correct/b.n)).slice(0,8);
   const revise = cur.filter(r => r.basic_misses > 0).sort((a,b) => secOrder[a.section]-secOrder[b.section] || b.basic_misses-a.basic_misses);
   const stretch = cur.filter(r => r.basic_misses === 0 && r.hard_misses > 0).sort(sortW);
   const slow = cur.filter(r => r.correct/r.n >= 0.5 && r.avg_time > PACE[r.section]*1.3).sort((a,b) => b.avg_time/PACE[b.section]-a.avg_time/PACE[a.section]);
   const li = (a) => a.length ? `<ul>${a.map(x => `<li>${x}</li>`).join('')}</ul>` : '';
   const sc = (r) => `${r.correct} of ${r.n}`;
   const focus = [];
-  repeat.forEach(r => { const p = lastSeen(r), k = streak(r); focus.push(`<b>${name(r)}</b>: wrong again. ${sc(r)} now, ${sc(p.m)} on ${dShort(p.at)}${k >= 2 ? `, weak in ${k} earlier exams in a row` : ''}. Go back to the course module before doing more questions.`); });
+  goneWeak.forEach(r => { const p = lastSeen(r); focus.push(`<b>${name(r)}</b>: slipped from ${sc(p.m)} on ${dShort(p.at)} to ${sc(r)}. Redo a short untimed set before the next test.`); });
+  repeat.filter(r => !goneWeak.includes(r)).forEach(r => { const p = lastSeen(r), k = streak(r); focus.push(`<b>${name(r)}</b>: wrong again. ${sc(r)} now, ${sc(p.m)} on ${dShort(p.at)}${k >= 2 ? `, weak in ${k} earlier exams in a row` : ''}. Go back to the course module before doing more questions.`); });
   weak.filter(r => r.basic_misses > 0).forEach(r => focus.push(`<b>${name(r)}</b>: ${sc(r)}, with ${r.basic_misses} missed at Easy or Medium level. Revise the method, then drill it untimed.`));
   weak.filter(r => r.basic_misses === 0).forEach(r => focus.push(`<b>${name(r)}</b>: ${sc(r)}, missed only at Hard level. Practise harder questions on this.`));
+  chronic.filter(o => !cur.some(r => r.section===o.section && r.topic===o.topic && (repeat.includes(r) || weak.includes(r) || goneWeak.includes(r)))).slice(0,3).forEach(o => focus.push(`<b>${(S.order.length > 1 ? o.section + ': ' : '') + o.topic}</b>: ${Math.round(100*o.correct/o.n)}% right across ${o.tests} tests. A standing weakness, worth a dedicated study block.`));
   slow.filter(r => !repeat.includes(r) && !weak.includes(r)).forEach(r => focus.push(`<b>${name(r)}</b>: mostly right but slow, ${fmt(r.avg_time)} a question against a target of ${fmt(PACE[r.section])}. Drill for speed.`));
   // pacing
   const pace = []; for (const k of S.order){ const its = items(k); if (!its.length) continue; const t = (q) => S.times[q.id]||0;
@@ -526,12 +561,16 @@ function insightsBody(){
     if (its.length < SECTIONS[k].n) bits.push(`${SECTIONS[k].n - its.length} question${SECTIONS[k].n - its.length>1?'s':''} never reached`);
     pace.push(`<b>${SECNAME[k]}</b>: ${bits.length ? bits.join('; ') + '.' : 'pace was even, with nothing over 3:00 and no rushed misses.'}`); }
   const card = (t, body, cls) => body ? `<div class="ins ${cls||''}"><h3>${t}</h3>${body}</div>` : '';
-  return `<p class="hint">${past.length ? `Compared with your ${past.length} earlier exam${past.length>1?'s':''}${S.candidate ? ' saved under "'+esc(S.candidate)+'"' : ''}.` : 'This is the first exam on record for this name, so there is no earlier pattern to compare yet.'} One or two questions on a topic is thin evidence; a topic that repeats across exams is the signal to trust.</p>
+  return `<p class="hint">${past.length ? `Compared with your ${past.length} earlier test${past.length>1?'s':''}.` : 'This is your first test on record, so there is no earlier pattern to compare yet.'} One or two questions on a topic is thin evidence; a topic that repeats across exams is the signal to trust.</p>
   <div class="insgrid">
-  ${card('Focus next, in this order', focus.length ? `<ol>${focus.slice(0,6).map(x => `<li>${x}</li>`).join('')}</ol>` : '<p>Nothing stands out. Keep the same mix and raise the difficulty.</p>', 'wide')}
+  ${card('Score trend', li(scoreTrend()), 'wide')}
+  ${card('Focus next, in this order', focus.length ? `<ol>${focus.slice(0,8).map(x => `<li>${x}</li>`).join('')}</ol>` : '<p>Nothing stands out. Keep the same mix and raise the difficulty.</p>', 'wide')}
   ${card('Going wrong repeatedly', li(repeat.map(r => { const p = lastSeen(r); return `${name(r)}: ${sc(r)} now, ${sc(p.m)} on ${dShort(p.at)}`; })), 'bad')}
   ${card('Weak in this exam', li(weak.map(r => `${name(r)}: ${sc(r)}`)), 'bad')}
   ${card('Strong in this exam', li(strong.map(r => `${name(r)}: ${sc(r)}`)), 'good')}
+  ${card('Gone weak since last time', li(goneWeak.map(r => { const p = lastSeen(r); return `${name(r)}: ${sc(p.m)} on ${dShort(p.at)}, ${sc(r)} now`; })), 'bad')}
+  ${card('Still strong', li(stillStrong.map(r => { const p = lastSeen(r); return `${name(r)}: ${sc(r)} now, ${sc(p.m)} on ${dShort(p.at)}`; })), 'good')}
+  ${card('Weak across all your tests', li(chronic.map(o => `${(S.order.length > 1 ? o.section + ': ' : '') + o.topic}: ${o.correct} of ${o.n} right over ${o.tests} tests (${Math.round(100*o.correct/o.n)}%)`)), 'bad')}
   ${card('Improved since last time', li(improved.map(r => { const p = lastSeen(r); return `${name(r)}: ${sc(p.m)} on ${dShort(p.at)}, ${sc(r)} now`; })), 'good')}
   ${card('Revise the basics', li(revise.map(r => `${name(r)}: ${r.basic_misses} miss${r.basic_misses>1?'es':''} at Easy or Medium level`)))}
   ${card('Ready for harder questions', li(stretch.map(r => `${name(r)}: basics all right, missed ${r.hard_misses} at Hard level`)))}
@@ -666,7 +705,6 @@ function home(){
    <li>A whiteboard is available in every section. A calculator is available only in Data Insights.</li>
   </ul></section>
   ${storageOK() ? '' : '<div class="flash" role="alert">This browser is blocking saved data (private window or strict settings). The exam will run, but progress will not survive a refresh. Use a normal window.</div>'}
-  <section><h2>Who is sitting it?</h2><label class="namefield">Name <input type="text" id="cand" value="${esc(lsGet(NAMEKEY)||'')}" autocomplete="off" placeholder="for example pratik"></label><p class="hint">Use the same name every time. It keeps your tests together, so no question repeats on any device and the report can show which topics keep going wrong.</p></section>
   ${QB.ready ? '' : `<section>${unlockHTML()}</section>`}
   <section><h2>What do you want to sit today?</h2><div class="orders">${modes.map(m=>`<label class="order"><input type="radio" name="mode" value="${m[0]}" ${ui.mode===m[0]?'checked':''}><span><b>${m[1]}</b><br><small>${m[2]}</small></span></label>`).join('')}</div></section>
   <section><button class="primary big" id="start" ${QB.ready ? '' : 'disabled'}>${ui.mode==='full'?'Start the full exam':'Start '+SECTIONS[ui.mode].short}</button>
@@ -752,7 +790,7 @@ function results(){
   return `<div class="page"><header class="hero"><p class="eyebrow">Unofficial score report</p><h1>${full ? 'Estimated total score' : 'Estimated '+SECTIONS[SECS].short+' score'+(SECS==='C'||SECS==='R'?' (Verbal scale)':'')}</h1>
   ${full ? `<div class="total"><span class="tv">${total}<i> / 805</i></span><span class="tp">${ord(pct('T',total))} percentile<small>Score ${total} out of a maximum 805 (scale 205 to 805). Likely range ${Math.max(205,total-30)} to ${Math.min(805,total+30)}.</small></span></div>`
    : `<div class="total"><span class="tv">${R[SECS].scaled}<i> / 90</i></span><span class="tp">${ord(pct(SECS,R[SECS].scaled))} percentile<small>Score ${R[SECS].scaled} out of a maximum 90 (section scale 60 to 90). Likely range ${Math.max(60,R[SECS].scaled-2)} to ${Math.min(90,R[SECS].scaled+2)}. ${R[SECS].right} of ${R[SECS].n} correct${R[SECS].un?', '+R[SECS].un+' unanswered':''}. No total score is given for a single section.</small></span></div>`}</header>
-  ${full ? `<div class="scs">${SECS.split('').map(secCard).join('')}</div>` : ''}<section><h2>Insights</h2><div id="insights">${insightsBody()}</div></section>${skillTable()}
+  ${full ? `<div class="scs">${SECS.split('').map(secCard).join('')}</div>` : ''}<section><h2>Analysis of this test against your earlier ones</h2><div id="insights">${insightsBody()}</div></section>${skillTable()}
   <section><h2>Accuracy and pace by area</h2><div class="scrollx"><table class="dt rt"><thead><tr><th>Area</th><th>Correct</th><th>Average time</th></tr></thead><tbody>${Object.entries(groups).map(([k,g])=>`<tr><td>${k}</td><td>${g.r} of ${g.n}</td><td>${fmt(g.t/g.n)}</td></tr>`).join('')}</tbody></table></div></section>
   ${SECS.split('').map(k=>`<section><h2>${SECTIONS[k].name}</h2>${pathChart(k)}<p class="hint">Target pace is about ${k==='Q'?'2:09':k==='D'?'2:15':k==='V'?'1:57':'2:00'} per question. Times over 3:00 are highlighted.</p><div class="scrollx"><table class="dt rt"><thead><tr><th>#</th><th>Type</th><th>Level</th><th>Result</th><th>Time</th><th></th></tr></thead><tbody>${rows(k)}</tbody></table></div></section>`).join('')}
   <p class="hint"><span id="syncnote">${syncText()}</span> <button class="ghost" id="backup">Download my answers</button></p>
@@ -826,7 +864,6 @@ function bind(){
   const on = (sel, ev, fn) => document.querySelectorAll(sel).forEach(el => el.addEventListener(ev, fn));
   on('input[name=order]','change', e => ui.order = e.target.value);
   on('input[name=mode]','change', e => { ui.mode = e.target.value; const y = window.scrollY; render(); window.scrollTo(0,y); });
-  on('#cand','input', e => lsSet(NAMEKEY, e.target.value));
   on('#backup','click', downloadBackup);
   on('#start','click', startExam);
   on('#qbgo','click', openBanks);
@@ -852,7 +889,7 @@ function bind(){
   on('.ckeys button','click', e => calcKey(e.currentTarget.dataset.k));
   on('[data-open]','click', e => { const id = e.currentTarget.dataset.open; ui.open[id] = !ui.open[id]; const y = window.scrollY; render(); window.scrollTo(0,y); });
   on('#reset','click', () => { ui.confirm='reset'; const y = window.scrollY; render(); window.scrollTo(0,y); });
-  on('#creset','click', () => { ui = {histTried:false, remoteHist:null, confirm:null, calc:false, wb:false, tab:0, sort:-1, open:{}, hideTimer:false}; S = fresh(); save(); render(); });
+  on('#creset','click', () => { ui = {histTried:false, remoteHist:null, scoreHist:null, confirm:null, calc:false, wb:false, tab:0, sort:-1, open:{}, hideTimer:false}; S = fresh(); save(); render(); });
 }
 function rerenderStim(){ const el = $('.stim'); if (!el) return; el.innerHTML = stimHTML(curQ(), true);
   el.querySelectorAll('.tab').forEach(t => t.addEventListener('click', e => { ui.tab = +e.currentTarget.dataset.tab; rerenderStim(); }));
