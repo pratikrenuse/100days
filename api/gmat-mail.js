@@ -5,6 +5,7 @@
 
 const FROM = 'Pratik Renuse <pratik@spanishpropertyinsights.com>';
 const TO = ['sidhant@sidhantrenuse.com'];
+const CC = ['pratik.y.renuse@gmail.com'];
 const REPLY_TO = 'pratik.y.renuse@gmail.com';
 const SITE = 'https://pratikrenuse.com/gmat-test';
 const EXAM = new Date('2026-12-20T09:00:00+05:30');
@@ -22,7 +23,7 @@ async function send({ subject, html, scheduled_at }) {
   const r = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + key() },
-    body: JSON.stringify(Object.assign({ from: FROM, to: TO, reply_to: REPLY_TO, subject, html }, scheduled_at ? { scheduled_at } : {}))
+    body: JSON.stringify(Object.assign({ from: FROM, to: TO, cc: CC, reply_to: REPLY_TO, subject, html }, scheduled_at ? { scheduled_at } : {}))
   });
   const out = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error('resend ' + r.status + ' ' + JSON.stringify(out));
