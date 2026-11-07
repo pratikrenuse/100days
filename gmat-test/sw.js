@@ -1,5 +1,5 @@
 // Keeps the exam page available if the connection drops mid-exam.
-const CACHE = 'gmat-test-v1';
+const CACHE = 'gmat-test-v2';
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(['./'])).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(self.clients.claim()); });
 self.addEventListener('fetch', e => {
