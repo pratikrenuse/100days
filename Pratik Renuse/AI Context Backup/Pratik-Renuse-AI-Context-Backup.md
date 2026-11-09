@@ -2,7 +2,7 @@
 
 **Owner:** Pratik Renuse, growth marketing leader, TEDx speaker and startup mentor, based in Pune, India (pratikrenuse.com).
 **Purpose:** everything Claude knows about the "Pratik Renuse" project in one place, so ChatGPT, Gemini, Claude or any other AI can pick up the full context. This covers the 100 Days of Building products, his personal brand and career, his agents and automation stack, GMAT prep, Pune Vipassana Samiti (PVS) work, and every rule and preference for working with him. Bueno and 24/7 Spain have their own separate backup (see Part D3).
-**Last refreshed:** 7 November 2026. Refreshed weekly by a scheduled task (Sundays).
+**Last refreshed:** 8 November 2026. Refreshed weekly by a scheduled task (Sundays).
 **Where this lives:** the master file is Pratik Renuse/AI Context Backup/Pratik-Renuse-AI-Context-Backup.md in the 100days repo, and the same content is mirrored in Notion at https://app.notion.com/p/411ec28c2b74811eb4b0ffb5e46b584d ("Pratik Renuse AI Context Backup (for ChatGPT and other LLMs)").
 
 ## How to read this backup
@@ -130,7 +130,7 @@ description: How Pratik wants Claude to deliver drafts (emails, WhatsApp message
 - [stated] On market questions wants concrete probabilities and a clear forecast, not diplomatic summaries
 - [stated] Prefers direct product links over search instructions; verified facts over speed
 
-### Memory file: project/ways-of-working.md (updated 2026-10-24)
+### Memory file: project/ways-of-working.md (updated 2026-11-07)
 #### Communication and session cadence
 - [stated] Compressed and direct, no confirmatory loops
 - [stated] Prefers one clear question at a time, not multiple options
@@ -141,6 +141,7 @@ description: How Pratik wants Claude to deliver drafts (emails, WhatsApp message
 - [stated] When asking for an email or other output: give the complete, copy-paste-ready version every time, never partial snippets or revised fragments, and no comments, notes, or explanations around it
 #### Build delivery
 - [stated] Never ask Pratik to edit code himself, deliver final, ready-to-deploy files with all edits baked in
+- [stated] Has said many times that nothing should break: test everything else, not just the change, before handing over a fix
 - [stated] Iteration style: propose options, structured recommendation, edit, rather than starting from scratch. Keep what works, adjust only what doesn't. Approves structure quickly, then makes targeted corrections
 #### Writing voice and copy
 - [stated] Short sentences, but complete and conversational, never fragments (Oct 2026 update), no filler words, no performative phrases, no polished transitions, no LinkedIn clichés. Direct and matter-of-fact. Does not announce observations, just makes them
@@ -377,6 +378,15 @@ Deliverables built (GMAT-relevant scope): per-DVD notes, a Vedic-for-GMAT study 
 ### Memory file: project/areas/dant-chikitsak.md (updated 2026-10-24)
 - [stated] Dr. Srishti Rathore's dental clinic inside Ericare Hospital, DLF Hyde Park, Mullanpur Garibdass, New Chandigarh
 - [stated] Pratik is working on patient growth: website, SEO and AI search visibility over 1 to 3 months
+
+### Memory file: project/areas/packt-workshop.md (updated 2026-11-07)
+description: Pratik's live Packt workshop on Nov 22, 2026 (growth engine: content agents + ads Chrome extension) and the content system behind it. aliases: packt event, packt session, growth engine workshop
+- [stated] Speaker at a live 4-hour Packt workshop on Sun 22 Nov 2026, discount code for his network PRATIK35
+- [stated] Built the AI content system his team uses to post daily on social media; he doesn't post himself, the team does
+
+### Memory file: project/areas/ai-context-backup.md (updated 2026-11-07)
+description: Pratik's per-project AI context backups (one doc in a folder + a Notion "backup" page, refreshed weekly) for Bueno and the Pratik Renuse project. aliases: context backup, llm backup, notion backup
+- [stated] Wants all the information Claude holds about a project put into one doc in a folder plus a Notion page named so ChatGPT and other LLMs can reference it, with a weekly scheduled task updating both; already done for Bueno, and asked for the same for the Pratik Renuse project (Nov 2026)
 
 ## A3. Vipassana, personal and account-level files
 
