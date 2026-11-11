@@ -441,6 +441,7 @@
       padding-bottom: 0.4rem; border-bottom: 1px solid rgba(140,106,24,0.3);
       transition: color 0.2s, border-color 0.2s;
     }
+    .video-links { display: flex; flex-wrap: wrap; gap: 0.75rem 2rem; align-items: center; }
     .video-link::after { content: '→'; transition: transform 0.2s; }
     .video-link:hover { color: var(--ink); border-color: var(--ink); }
     .video-link:hover::after { transform: translateX(4px); }
@@ -929,7 +930,10 @@
         <div class="video-meta-item"><span><strong>50+ keynotes</strong> in 14 countries</span></div>
         <div class="video-meta-item"><span><strong>4 continents:</strong> US, Europe, Middle East, Asia</span></div>
       </div>
-      <a href="#contact" class="video-link">Book me to speak</a>
+      <div class="video-links">
+        <a href="/speaking/" class="video-link">Visit my speaking page</a>
+        <a href="#contact" class="video-link">Book me to speak</a>
+      </div>
     </div>
     <div>
       <div class="video-frame">

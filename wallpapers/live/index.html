@@ -50,7 +50,7 @@ function pick(){
 var busy=false;
 function show(i){
   if(busy)return;busy=true;
-  var item=LIST[i],src='../'+item[0],img=new Image();
+  var item=LIST[i],src='/wallpapers/'+item[0],img=new Image();
   img.onload=img.onerror=function(){
     stage.classList.add('out');
     setTimeout(function(){
