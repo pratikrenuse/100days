@@ -19,5 +19,17 @@
       "source": "/meet/",
       "destination": "/schedule/index.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/talks",
+      "destination": "/speaking/",
+      "permanent": true
+    },
+    {
+      "source": "/talks/:path*",
+      "destination": "/speaking/:path*",
+      "permanent": true
+    }
   ]
 }

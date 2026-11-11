@@ -14,6 +14,7 @@ Pratik Renuse
 
 # Work-in-progress and draft pages: kept in git, not published on pratikrenuse.com.
 # To publish one later, delete its line here.
+# /talks was renamed to /speaking (see vercel.json redirects); old copy kept out of the site.
 /talks
 /demo1
 /demo5
@@ -30,4 +31,16 @@ Pratik Renuse
 /roast-my-landing-page/convex
 /roast-my-landing-page/functions
 /roast-my-landing-page/package.json
-/speaking/frames/README.txt
+
+# Old /speaking design (replaced by the speaking hub on 12 Nov 2026): kept in git, not published.
+/speaking/css
+/speaking/js
+/speaking/frames
+
+# Hidden on 12 Nov 2026 at Pratik's request: kept in git, not published.
+# To bring one back, delete its line here.
+/100days
+/roast-my-landing-page
+/bueno-dashboard
+/bueno-ux-dashboard
+/speaking/claude-101/built
