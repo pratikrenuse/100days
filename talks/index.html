@@ -27,7 +27,11 @@ p{max-width:65ch;margin:0 0 1.15rem}
 a{color:inherit}
 img,video{display:block;max-width:100%}
 
+<<<<<<< HEAD
 nav{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4rem;border-bottom:1px solid var(--border);background:rgba(246,242,241,0.95);backdrop-filter:blur(20px);position:sticky;top:0;z-index:100}
+=======
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4rem;border-bottom:1px solid var(--border);background:var(--bg)}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 .nav-left{display:flex;align-items:center;gap:1.25rem}
 .nav-logo{font-family:var(--serif);font-size:0.9rem;font-weight:400;color:var(--ink);text-decoration:none}
 .nav-logo span{color:var(--gold)}
@@ -44,7 +48,11 @@ section{padding:6.5rem 0}
 .lbl{display:flex;align-items:center;gap:0.75rem;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1.25rem}
 .lbl::before{content:'';width:2rem;height:1px;background:var(--gold)}
 h1,h2,h3{font-family:var(--serif);color:var(--ink);line-height:1.2}
+<<<<<<< HEAD
 h2{font-size:2.5rem;font-weight:300;margin-bottom:1.25rem;letter-spacing:-0.01em}
+=======
+h2{font-size:2.6rem;font-weight:300;margin-bottom:1.25rem;letter-spacing:-0.01em}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 h2 em,h1 em{font-style:italic;color:var(--gold)}
 .lead{font-size:1.1rem;color:var(--ink3)}
 .btn{display:inline-flex;align-items:center;gap:0.6rem;min-height:48px;padding:0.9rem 1.5rem;font-family:var(--sans);font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;text-decoration:none;border:none;cursor:pointer;transition:background .2s,color .2s}
@@ -56,6 +64,7 @@ h2 em,h1 em{font-style:italic;color:var(--gold)}
 .btn-ghost:hover{color:var(--gold);border-color:var(--gold)}
 
 /* hero */
+<<<<<<< HEAD
 .hero{padding:5rem 0 5.5rem}
 .hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:4.5rem;align-items:center}
 .hero h1{font-size:3.7rem;font-weight:300;letter-spacing:-0.015em;margin-bottom:1.5rem;line-height:1.1}
@@ -101,11 +110,56 @@ h2 em,h1 em{font-style:italic;color:var(--gold)}
 .flag-media{background:#000;display:flex;align-items:center}.flag-media video{width:100%;height:auto;object-fit:contain}
 .flag-body{padding:3rem}
 .flag .stamp{display:inline-block;font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--dark);background:var(--gold-mid);padding:0.3rem 0.7rem;font-weight:500;margin-bottom:1.25rem}
+=======
+.hero{padding:4.5rem 0 0}
+.hero-top{display:grid;grid-template-columns:1.35fr 0.65fr;gap:4rem;align-items:end;margin-bottom:3rem}
+.hero h1{font-size:4.4rem;font-weight:300;letter-spacing:-0.02em;line-height:1.05}
+.hero-side .lead{margin-bottom:1.75rem}
+.hero-actions{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+
+/* then/now slider */
+.compare{position:relative;aspect-ratio:21/9;overflow:hidden;background:var(--dark);user-select:none;touch-action:pan-y;cursor:ew-resize}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.compare .now{object-position:50% 40%}
+.compare .then-wrap{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--pos,55%)) 0 0)}
+.compare .then-wrap img{object-position:50% 18%}
+.handle{position:absolute;top:0;bottom:0;left:var(--pos,55%);width:2px;background:var(--gold-mid);transform:translateX(-1px)}
+.knob{position:absolute;top:50%;left:50%;width:56px;height:56px;border-radius:50%;background:var(--bg);transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;font-size:0.9rem;color:var(--ink);box-shadow:0 8px 30px rgba(0,0,0,.35);border:2px solid var(--gold-mid)}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.cap{position:absolute;bottom:1.5rem;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;padding:0.5rem 0.85rem;pointer-events:none}
+.cap b{display:block;font-family:var(--serif);font-size:1.15rem;letter-spacing:0;text-transform:none;font-weight:400;margin-top:0.2rem}
+.cap-then{left:1.5rem;background:rgba(15,14,12,.78);color:#E8E0D6}
+.cap-now{right:1.5rem;background:var(--bg);color:var(--gold)}
+.cap-now b{color:var(--ink)}
+.compare-hint{text-align:center;font-size:0.8rem;color:var(--ink4);margin-top:0.85rem}
+
+/* marquee */
+.marquee{background:var(--dark);color:#C8C0B8;overflow:hidden;padding:1.25rem 0;margin-top:4rem}
+.marquee-track{display:flex;gap:3rem;width:max-content;animation:scroll 50s linear infinite}
+.marquee span{font-family:var(--serif);font-size:1.15rem;white-space:nowrap;display:flex;align-items:center;gap:3rem}
+.marquee span::after{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold-mid)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* stats */
+.stats{background:var(--surface);border-bottom:1px solid var(--border);padding:3.25rem 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.stat-num{font-family:var(--serif);font-size:3.4rem;font-weight:300;color:var(--ink);line-height:1}
+.stat-num small{font-size:1.4rem;color:var(--ink4)}
+.stat-lbl{font-size:0.85rem;color:var(--ink3);margin-top:0.6rem;line-height:1.45}
+
+/* flagship */
+.flag{display:grid;grid-template-columns:1.2fr 1fr;background:var(--dark);color:#C8C0B8;margin-top:2.5rem}
+.flag-media{background:#000;display:flex;align-items:center}
+.flag-media video{width:100%;height:auto}
+.flag-body{padding:3rem}
+.stamp{display:inline-block;font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--dark);background:var(--gold-mid);padding:0.3rem 0.7rem;font-weight:500;margin-bottom:1.25rem}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 .flag h3{color:#F3EDE6;font-size:2rem;font-weight:300;margin-bottom:1rem}
 .flag p{color:#C8C0B8}
 .flag ul{list-style:none;margin:1.25rem 0 2rem;border-top:1px solid #2E2925}
 .flag li{padding:0.7rem 0;border-bottom:1px solid #2E2925;display:flex;justify-content:space-between;gap:1rem;font-size:0.92rem}
 .flag li span:last-child{color:#F3EDE6;text-align:right}
+<<<<<<< HEAD
 .flag .btn-light{background:var(--bg);color:var(--ink)}
 .flag .btn-light:hover{background:var(--gold-mid)}
 .flag .btn-light::after{content:'→'}
@@ -114,6 +168,17 @@ h2 em,h1 em{font-style:italic;color:var(--gold)}
 .ev-card{text-decoration:none;background:var(--surface);display:flex;flex-direction:column;transition:transform .25s,background .25s}
 a.ev-card:hover{transform:translateY(-4px);background:var(--raised)}
 .ev-card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+=======
+.btn-light{background:var(--bg);color:var(--ink)}
+.btn-light:hover{background:var(--gold-mid)}
+.btn-light::after{content:'→'}
+.recent-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:1.25rem}
+.ev-card{text-decoration:none;background:var(--surface);display:flex;flex-direction:column;transition:transform .25s,background .25s;overflow:hidden}
+a.ev-card:hover{transform:translateY(-4px);background:var(--raised)}
+.ev-card .ph{overflow:hidden}
+.ev-card img{aspect-ratio:4/3;object-fit:cover;width:100%;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+a.ev-card:hover img{transform:scale(1.04)}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 .ev-body{padding:1.6rem 1.75rem 1.9rem;display:flex;flex-direction:column;gap:0.45rem;flex:1}
 .ev-type{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);font-weight:500}
 .ev-name{font-family:var(--serif);font-size:1.25rem;color:var(--ink);line-height:1.3}
@@ -134,6 +199,7 @@ a.ev-card:hover .ev-link{color:var(--gold)}
 .also strong{color:var(--ink);font-weight:500}
 
 /* reviews */
+<<<<<<< HEAD
 .reviews{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:auto auto;gap:1.25rem;margin-top:2.5rem}
 .rev{background:var(--surface);padding:2rem;display:flex;flex-direction:column;gap:1.25rem;margin:0}
 .rev blockquote{font-family:var(--serif);font-size:1.1rem;line-height:1.5;color:var(--ink);font-weight:400}
@@ -169,11 +235,51 @@ a.ev-card:hover .ev-link{color:var(--gold)}
 .video-cap{font-size:0.82rem;color:#A89E94;margin-top:0.75rem}
 .tedx-quote{margin-top:5rem;text-align:center}
 .tedx-quote blockquote{font-family:var(--serif);font-weight:300;font-size:2rem;line-height:1.35;color:#EDE6DD;max-width:48rem;margin:0 auto 1.5rem}
+=======
+.reviews{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:1.25rem;margin-top:2.5rem}
+.rev{background:var(--surface);padding:2rem;display:flex;flex-direction:column;gap:1.25rem;margin:0}
+.rev blockquote{font-family:var(--serif);font-size:1.1rem;line-height:1.5;color:var(--ink)}
+.rev figcaption{margin-top:auto;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink4);font-weight:500}
+.rev-big{grid-row:span 2;background:var(--gold-bg);border:1px solid #D4B870;padding:2.5rem}
+.rev-big blockquote{font-size:1.5rem;font-weight:300;line-height:1.4}
+.stars{color:var(--gold);letter-spacing:0.15em}
+.reviews .rev:last-child{grid-column:span 2}
+
+/* tedx */
+.tedx{background:var(--dark);color:#C8C0B8;padding:0 0 7rem}
+.tedx-hero{position:relative;height:88vh;min-height:34rem;max-height:52rem;overflow:hidden}
+.tedx-hero img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;transform:scale(1.08);transition:transform 2.4s cubic-bezier(.16,1,.3,1)}
+.tedx-hero.on img{transform:scale(1)}
+.tedx-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,14,12,.1) 30%,rgba(15,14,12,.95))}
+.tedx-hero .wrap{position:absolute;left:0;right:0;bottom:3.5rem;z-index:2}
+.tedx .lbl{color:var(--gold-mid)}
+.tedx .lbl::before{background:var(--gold-mid)}
+.tedx-big{font-family:var(--serif);font-weight:300;color:#F3EDE6;font-size:6.5rem;line-height:0.95;letter-spacing:-0.03em}
+.tedx-big em{font-style:italic;color:var(--gold-mid)}
+.tedx-names{display:grid;grid-template-columns:repeat(3,1fr);margin-top:2.5rem;border-top:1px solid rgba(232,224,214,.2)}
+.tedx-names div{padding:1.25rem 1.5rem 0 0}
+.tedx-names div+div{padding-left:1.5rem;border-left:1px solid rgba(232,224,214,.2)}
+.tedx-names span{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-mid);font-weight:500}
+.tedx-names b{display:block;font-family:var(--serif);font-weight:400;font-size:1.5rem;color:#F3EDE6;margin-top:0.25rem}
+.tedx-body{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding-top:5rem}
+.tedx-body h2{color:#F3EDE6}
+.tedx-body h2 em{color:var(--gold-mid)}
+.tedx-body p{color:#C8C0B8}
+.video{aspect-ratio:16/9;background:#1E1A17}
+.video iframe{width:100%;height:100%;border:0}
+.tedx-pair{display:grid;grid-template-columns:1.6fr 1fr;gap:0.75rem;margin-top:4rem}
+.tedx-pair figure{overflow:hidden;cursor:zoom-in;height:26rem}
+.tedx-pair img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+.tedx-pair figure:hover img{transform:scale(1.04)}
+.tedx-quote{margin-top:5rem;text-align:center}
+.tedx-quote blockquote{font-family:var(--serif);font-weight:300;font-size:2.1rem;line-height:1.35;color:#EDE6DD;max-width:48rem;margin:0 auto 1.5rem}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 .tedx-quote cite{font-style:normal;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-mid)}
 
 /* world */
 .world-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:4rem;align-items:start}
 .stage-list{list-style:none;margin-top:2rem;border-top:1px solid var(--border)}
+<<<<<<< HEAD
 .stage-list li{display:grid;grid-template-columns:1fr auto;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--border)}
 .stage-list .n{font-family:var(--serif);font-size:1.1rem;color:var(--ink)}
 .stage-list .w{font-size:0.85rem;color:var(--ink4);text-align:right}
@@ -181,11 +287,25 @@ a.ev-card:hover .ev-link{color:var(--gold)}
 .world-photos{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:11rem;gap:0.75rem}
 .world-photos figure{position:relative;overflow:hidden;cursor:zoom-in}
 .world-photos img{width:100%;height:100%;object-fit:cover}
+=======
+.stage-list li{display:grid;grid-template-columns:1fr auto;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--border);align-items:end}
+.stage-list .n{font-family:var(--serif);font-size:1.15rem;color:var(--ink)}
+.stage-list .w{font-size:0.85rem;color:var(--ink4);text-align:right}
+.stage-list .k{display:block;font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:0.15rem;font-family:var(--sans)}
+.world-photos{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:12rem;gap:0.75rem}
+.world-photos figure{position:relative;overflow:hidden;cursor:zoom-in}
+.world-photos img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+.world-photos figure:hover img{transform:scale(1.04)}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 .world-photos figcaption{position:absolute;left:0;bottom:0;right:0;padding:1.5rem 1rem 0.7rem;background:linear-gradient(transparent,rgba(15,14,12,.78));color:#EDE6DD;font-size:0.78rem}
 .w-big{grid-column:span 2;grid-row:span 2}
 
 /* formats */
+<<<<<<< HEAD
 .formats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--border);margin-top:2.5rem}
+=======
+.formats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);margin-top:2.5rem}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 .format{padding:2rem 1.5rem 2rem 0;border-right:1px solid var(--border)}
 .format+.format{padding-left:1.5rem}
 .format:last-child{border-right:none}
@@ -194,6 +314,7 @@ a.ev-card:hover .ev-link{color:var(--gold)}
 .format p{font-size:0.92rem;color:var(--ink3);margin:0}
 
 /* invite */
+<<<<<<< HEAD
 .invite-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:4rem;align-items:start}
 .kit{margin-top:2rem;background:var(--surface);padding:2rem;display:grid;grid-template-columns:7rem 1fr;gap:1.5rem}
 .kit img{width:7rem;aspect-ratio:3/4;object-fit:cover;object-position:top}
@@ -208,20 +329,49 @@ form{background:var(--surface);padding:2.5rem;display:flex;flex-direction:column
 label{display:block;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:0.4rem;font-weight:500}
 input,select,textarea{width:100%;background:var(--bg);border:1px solid var(--border);padding:0.85rem 1rem;font-family:var(--sans);font-size:1rem;color:var(--ink);outline:none;min-height:48px;border-radius:0}
 textarea{min-height:8rem;resize:vertical}
+=======
+.invite{position:relative;padding:7rem 0;overflow:hidden;background:var(--dark)}
+.invite-bg{position:absolute;inset:0}
+.invite-bg img{width:100%;height:100%;object-fit:cover;object-position:30% 50%;opacity:.38}
+.invite-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,14,12,.92) 30%,rgba(15,14,12,.55))}
+.invite .wrap{position:relative;z-index:2;display:grid;grid-template-columns:0.9fr 1.1fr;gap:4rem;align-items:center}
+.invite h2{color:#F3EDE6;font-size:3.2rem}
+.invite h2 em{color:var(--gold-mid)}
+.invite .lbl{color:var(--gold-mid)}
+.invite .lbl::before{background:var(--gold-mid)}
+.invite .lead{color:#C8C0B8}
+.steps{list-style:none;margin-top:2rem;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.5rem 1fr;gap:0.5rem;padding:0.9rem 0;border-top:1px solid rgba(232,224,214,.18);color:#C8C0B8;font-size:0.95rem}
+.steps li::before{content:'0' counter(s);font-family:var(--serif);color:var(--gold-mid)}
+form{background:var(--bg);padding:2.5rem;display:flex;flex-direction:column;gap:1.25rem;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+label{display:block;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:0.4rem;font-weight:500}
+input,select,textarea{width:100%;background:#fff;border:1px solid var(--border);padding:0.85rem 1rem;font-family:var(--sans);font-size:1rem;color:var(--ink);outline:none;min-height:48px;border-radius:0}
+textarea{min-height:7rem;resize:vertical}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 input:focus,select:focus,textarea:focus{border-color:var(--gold)}
 .err{font-size:0.8rem;color:#9B3B2A;margin-top:0.35rem;display:none}
 .err.on{display:block}
 .form-foot{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+<<<<<<< HEAD
 .form-note{font-size:0.82rem;color:var(--ink4);max-width:22rem;margin:0}
 .success{display:none;background:var(--surface);padding:3rem}
 .success h3{font-size:2rem;font-weight:300;margin-bottom:1rem}
 .success p{color:var(--ink3)}
 
 /* lightbox */
+=======
+.form-note{font-size:0.82rem;color:var(--ink4);max-width:20rem;margin:0}
+.success{display:none;background:var(--bg);padding:3rem}
+.success h3{font-size:2rem;font-weight:300;margin-bottom:1rem}
+.success p{color:var(--ink3)}
+
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 .lb{position:fixed;inset:0;background:rgba(15,14,12,.94);display:none;align-items:center;justify-content:center;z-index:200;padding:2rem;cursor:zoom-out}
 .lb.on{display:flex}
 .lb img{max-height:90vh;max-width:100%;object-fit:contain}
 
+<<<<<<< HEAD
 footer{padding:1.1rem 4rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink4);background:var(--surface)}
 footer a{color:var(--ink4);text-decoration:none}
 footer a:hover{color:var(--gold)}
@@ -229,6 +379,15 @@ footer a:hover{color:var(--gold)}
 .r{opacity:0;transform:translateY(18px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
 .r.on{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}.marquee-track{animation:none}}
+=======
+footer{padding:1.1rem 4rem;border-top:1px solid #2A2522;display:flex;justify-content:space-between;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:#A89E94;background:var(--dark)}
+footer a{color:#A89E94;text-decoration:none}
+footer a:hover{color:var(--gold-mid)}
+
+.r{opacity:0;transform:translateY(18px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.r.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}.marquee-track{animation:none}.tedx-hero img{transform:none}}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 
 @media (max-width:960px){
   :root{font-size:17px}
@@ -236,6 +395,7 @@ footer a:hover{color:var(--gold)}
   .nav-title,.nav-div,.nav-links a.nl{display:none}
   .wrap{padding:0 1.25rem}
   section{padding:4rem 0}
+<<<<<<< HEAD
   .hero{padding:2.5rem 0 3.5rem}
   .hero-grid,.flag,.invite-grid,.videos,.tedx-head,.world-grid{grid-template-columns:1fr}
   .hero-grid{gap:2.5rem}
@@ -256,16 +416,50 @@ footer a:hover{color:var(--gold)}
   .tedx-quote blockquote{font-size:1.45rem}
   .formats{grid-template-columns:1fr 1fr}
   .format,.format+.format{border-right:none;border-bottom:1px solid var(--border);padding:1.5rem 1rem 1.5rem 0}
+=======
+  .hero{padding:2.5rem 0 0}
+  .hero-top,.flag,.tedx-body,.world-grid,.invite .wrap{grid-template-columns:1fr}
+  .hero-top{gap:1.5rem;margin-bottom:2rem}
+  .hero h1{font-size:2.8rem}
+  .compare{aspect-ratio:4/5}
+  .cap{bottom:1rem}.cap-then{left:1rem}.cap-now{right:1rem;top:1rem;bottom:auto}
+  h2{font-size:2.1rem}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .flag-body{padding:2rem}
+  .recent-grid,.talks,.reviews{grid-template-columns:1fr}
+  .rev-big{grid-row:auto}.reviews .rev:last-child{grid-column:auto}
+  .tedx-hero{height:70vh;min-height:28rem}
+  .tedx-big{font-size:3.6rem}
+  .tedx-names{grid-template-columns:1fr}
+  .tedx-names div,.tedx-names div+div{padding:0.9rem 0;border-left:none;border-bottom:1px solid rgba(232,224,214,.2)}
+  .tedx-body{padding-top:3.5rem;gap:2rem}
+  .tedx-pair{grid-template-columns:1fr}
+  .tedx-pair figure{height:16rem}
+  .tedx-quote blockquote{font-size:1.45rem}
+  .formats{grid-template-columns:1fr 1fr}
+  .format,.format+.format{border-right:none;border-bottom:1px solid var(--border);padding:1.5rem 1rem 1.5rem 0}
+  .invite{padding:4.5rem 0}
+  .invite h2{font-size:2.3rem}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
   footer{flex-direction:column;gap:0.5rem;text-align:center;padding:1rem}
 }
 @media (max-width:480px){
   :root{font-size:16px}
   h2{font-size:1.85rem}
+<<<<<<< HEAD
   .hero h1{font-size:2.15rem}
   .row,.formats{grid-template-columns:1fr}
   .kit{grid-template-columns:1fr}
   form{padding:1.5rem}
   .world-photos{grid-auto-rows:8rem}
+=======
+  .hero h1{font-size:2.2rem}
+  .tedx-big{font-size:2.8rem}
+  .row,.formats{grid-template-columns:1fr}
+  form{padding:1.5rem}
+  .world-photos{grid-auto-rows:8rem}
+  .cap b{font-size:0.95rem}
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 }
 </style>
 </head>
@@ -286,6 +480,7 @@ footer a:hover{color:var(--gold)}
 </nav>
 
 <header class="hero">
+<<<<<<< HEAD
   <div class="wrap hero-grid">
     <div class="r">
       <div class="lbl">AI speaker for marketers · TEDx speaker</div>
@@ -304,10 +499,44 @@ footer a:hover{color:var(--gold)}
         <img src="claude-101/media/room-2.jpg" alt="Pratik Renuse leading the Claude 101 live build with 100 attendees">
         <span class="tag tag-now">Now · Live AI build</span>
       </figure>
+=======
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="r">
+        <div class="lbl">AI speaker for marketers · TEDx speaker</div>
+        <h1>Same stage energy.<br>Now your audience <em>builds with AI</em> in the room.</h1>
+      </div>
+      <div class="hero-side r">
+        <p class="lead">Three TEDx talks taught me how to hold a room. Today I use it to get marketers from a blank Claude chat to a live website, agent or campaign before the session ends.</p>
+        <div class="hero-actions">
+          <a href="#invite" class="btn btn-dark">Invite me to your event</a>
+          <a href="#ai" class="btn btn-ghost">See the AI sessions</a>
+        </div>
+      </div>
+    </div>
+    <div class="r">
+      <div class="compare" id="compare">
+        <img class="now" src="claude-101/media/room-2.jpg" alt="100 marketers building live with Pratik Renuse in the Claude 101 masterclass">
+        <div class="then-wrap"><img src="media/tedx-stage.jpg" alt="Pratik Renuse on the red circle of a TEDx stage"></div>
+        <div class="handle"><span class="knob" aria-hidden="true">⟷</span></div>
+        <span class="cap cap-then">Then<b>The TEDx stage</b></span>
+        <span class="cap cap-now">Now<b>100 marketers building live</b></span>
+        <input type="range" min="0" max="100" value="55" aria-label="Drag to compare the TEDx stage with a live AI session">
+      </div>
+      <p class="compare-hint">Drag across to go from the TEDx stage to a sold-out Claude session</p>
+    </div>
+  </div>
+
+  <div class="marquee" aria-label="Stages Pratik has spoken on">
+    <div class="marquee-track">
+      <span>TEDx Sheffield Hallam University</span><span>TEDx Tirgu Mures</span><span>TEDx Indonesia</span><span>GrowthX</span><span>Packt</span><span>Deployed by Coditas</span><span>Stream Conference</span><span>Digital Roots</span><span>Asia Pacific Digital Marketing Conclave</span><span>Hermes Buildathon</span>
+      <span aria-hidden="true">TEDx Sheffield Hallam University</span><span aria-hidden="true">TEDx Tirgu Mures</span><span aria-hidden="true">TEDx Indonesia</span><span aria-hidden="true">GrowthX</span><span aria-hidden="true">Packt</span><span aria-hidden="true">Deployed by Coditas</span><span aria-hidden="true">Stream Conference</span><span aria-hidden="true">Digital Roots</span><span aria-hidden="true">Asia Pacific Digital Marketing Conclave</span><span aria-hidden="true">Hermes Buildathon</span>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
     </div>
   </div>
 </header>
 
+<<<<<<< HEAD
 <div class="marquee" aria-label="Stages Pratik has spoken on">
   <div class="marquee-track">
     <span>TEDx Sheffield Hallam University</span><span>TEDx Tirgu Mures</span><span>TEDx Indonesia</span><span>GrowthX</span><span>Packt</span><span>Deployed by Coditas</span><span>Stream Conference</span><span>Digital Roots</span><span>Asia Pacific Digital Marketing Conclave</span><span>Hermes Buildathon</span>
@@ -321,6 +550,14 @@ footer a:hover{color:var(--gold)}
     <div class="r"><div class="stat-num">50<small>+</small></div><div class="stat-lbl">Keynotes, talks and workshops delivered</div></div>
     <div class="r"><div class="stat-num">14</div><div class="stat-lbl">Countries across Europe, Asia and the Middle East</div></div>
     <div class="r"><div class="stat-num">100<small>/100</small></div><div class="stat-lbl">Seats filled for my first Claude masterclass</div></div>
+=======
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="r"><div class="stat-num"><span data-count="3">3</span></div><div class="stat-lbl">TEDx talks in the UK, Romania and Indonesia</div></div>
+    <div class="r"><div class="stat-num"><span data-count="50">50</span><small>+</small></div><div class="stat-lbl">Keynotes, talks and workshops delivered</div></div>
+    <div class="r"><div class="stat-num"><span data-count="14">14</span></div><div class="stat-lbl">Countries across Europe, Asia and the Middle East</div></div>
+    <div class="r"><div class="stat-num"><span data-count="100">100</span><small>/100</small></div><div class="stat-lbl">Seats filled for my Claude masterclass</div></div>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
   </div>
 </div>
 
@@ -334,7 +571,11 @@ footer a:hover{color:var(--gold)}
 
     <div class="flag r">
       <div class="flag-media">
+<<<<<<< HEAD
         <video src="claude-101/reel.mp4" poster="claude-101/reel-poster.jpg" autoplay muted loop playsinline aria-label="39-second reel from the Claude 101 live session"></video>
+=======
+        <video src="claude-101/reel.mp4" poster="claude-101/reel-poster.jpg" autoplay muted loop playsinline aria-label="Short reel from the Claude 101 live session"></video>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
       </div>
       <div class="flag-body">
         <span class="stamp">Sold out · 100 of 100</span>
@@ -342,7 +583,11 @@ footer a:hover{color:var(--gold)}
         <p>A GrowthX masterclass where 100 marketers built and published their own site with Claude, live, in 90 minutes.</p>
         <ul>
           <li><span>Host</span><span>GrowthX</span></li>
+<<<<<<< HEAD
           <li><span>Date</span><span>19 June 2026 · Online</span></li>
+=======
+          <li><span>Format</span><span>Live online build</span></li>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
           <li><span>Outcome</span><span>Sites live before Q&amp;A</span></li>
         </ul>
         <a href="claude-101/" class="btn btn-light">See the full session</a>
@@ -350,9 +595,15 @@ footer a:hover{color:var(--gold)}
     </div>
 
     <div class="recent-grid">
+<<<<<<< HEAD
       <a class="ev-card r" href="coditas-deployed/"><img src="media/coditas-room.jpg" alt="Pratik Renuse speaking at Deployed by Coditas in Pune" loading="lazy"><span class="ev-body"><span class="ev-type">Guest talk · Pune</span><span class="ev-name">Deploying AI tools for growth</span><span class="ev-meta">Deployed: AI Showcase by Coditas · 27 June 2026</span><span class="ev-link">View the session →</span></span></a>
       <a class="ev-card r" href="builders-night-out/"><img src="media/bno-group.jpg" alt="Builders at the GrowthX Builders Night Out in Pune" loading="lazy"><span class="ev-body"><span class="ev-type">Build night · Co-host</span><span class="ev-name">GrowthX Builders Night Out</span><span class="ev-meta">Pune · 4 July 2026 · 20 builders, 4 hours</span><span class="ev-link">View the session →</span></span></a>
       <div class="ev-card r"><img src="media/portrait-laptop.jpg" alt="Pratik Renuse building with AI on his laptop" loading="lazy"><span class="ev-body"><span class="ev-type">Mentor · Agency track</span><span class="ev-name">Hermes Buildathon</span><span class="ev-meta">July 2026 · Mentor for teams building AI agents</span></span></div>
+=======
+      <a class="ev-card r" href="coditas-deployed/"><span class="ph"><img src="media/coditas-speaking.jpg" alt="Pratik Renuse speaking with a microphone at Deployed by Coditas" loading="lazy" style="object-position:50% 25%"></span><span class="ev-body"><span class="ev-type">Guest speaker · Pune</span><span class="ev-name">Deploying AI tools for growth</span><span class="ev-meta">Deployed: AI Showcase by Coditas</span><span class="ev-link">View the session →</span></span></a>
+      <a class="ev-card r" href="builders-night-out/"><span class="ph"><img src="media/bno-night.jpg" alt="Builders working late into the night at GrowthX Builders Night Out" loading="lazy"></span><span class="ev-body"><span class="ev-type">Build night · Co-host</span><span class="ev-name">GrowthX Builders Night Out</span><span class="ev-meta">Pune · 20 builders, one night, real projects shipped</span><span class="ev-link">View the session →</span></span></a>
+      <div class="ev-card r"><span class="ph"><img src="media/portrait-laptop.jpg" alt="Pratik Renuse building with AI on his laptop" loading="lazy"></span><span class="ev-body"><span class="ev-type">Mentor · Agency track</span><span class="ev-name">Hermes Buildathon</span><span class="ev-meta">Mentor for teams building AI agents</span></span></div>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
     </div>
   </div>
 </section>
@@ -367,7 +618,11 @@ footer a:hover{color:var(--gold)}
       <article class="talk r">
         <div class="talk-num">01 · Hands-on</div>
         <h3>Claude for marketers: ship it live</h3>
+<<<<<<< HEAD
         <p>We go from a blank chat to a published website in one session. Prompts, GitHub and Vercel, explained for people who have never written code.</p>
+=======
+        <p>From a blank chat to a published website in one session. Prompts, GitHub and Vercel, explained for people who have never written code.</p>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
         <p class="walk"><b>Your audience leaves with:</b> their own live site and the workflow to build the next one alone.</p>
         <div class="proof">Ran as Claude 101 with GrowthX, sold out at 100 seats</div>
       </article>
@@ -381,12 +636,20 @@ footer a:hover{color:var(--gold)}
       <article class="talk r">
         <div class="talk-num">03 · Keynote</div>
         <h3>The AI-native marketer</h3>
+<<<<<<< HEAD
         <p>How the marketing job is changing and how one marketer with AI now does the work of a small team. Real tools I built and use every week, shown live on stage.</p>
+=======
+        <p>How the marketing job is changing, and how one marketer with AI now does the work of a small team. Real tools I built and use every week, shown live on stage.</p>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
         <p class="walk"><b>Your audience leaves with:</b> a clear list of what to learn, build and stop doing.</p>
         <div class="proof">Built on a career managing $7M in ad spend and $32M in revenue</div>
       </article>
     </div>
+<<<<<<< HEAD
     <p class="also r"><strong>Also on request:</strong> Growth from zero and Grit and purpose, the keynotes behind my TEDx talks.</p>
+=======
+    <p class="also r"><strong>Also on request:</strong> Growth from zero, and Grit and purpose, the keynotes behind my TEDx talks.</p>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
   </div>
 </section>
 
@@ -410,6 +673,7 @@ footer a:hover{color:var(--gold)}
 </section>
 
 <section id="tedx" class="tedx">
+<<<<<<< HEAD
   <div class="wrap">
     <div class="tedx-head r">
       <div>
@@ -444,6 +708,37 @@ footer a:hover{color:var(--gold)}
 
     <div class="tedx-quote r">
       <blockquote>"Pratik is a great speaker. He is very knowledgeable and the audience loved him. He delivered an engaging talk. It was easy to work with him throughout the organising process."</blockquote>
+=======
+  <div class="tedx-hero" id="tedx-hero">
+    <img src="media/tedx-stage-wide.jpg" alt="Pratik Renuse alone on a dark TEDx stage, standing on the red circle" loading="lazy">
+    <div class="wrap">
+      <div class="lbl">Before the AI sessions</div>
+      <div class="tedx-big">Three <em>TEDx</em> stages.</div>
+      <div class="tedx-names">
+        <div><span>United Kingdom</span><b>Sheffield Hallam University</b></div>
+        <div><span>Romania</span><b>Tirgu Mures</b></div>
+        <div><span>Indonesia</span><b>TEDx Indonesia</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="tedx-body r">
+      <div>
+        <h2>Where I learned to <em>hold a room</em></h2>
+        <p>My TEDx talks were on failure, grit and purpose. The same stagecraft now powers every AI session: one clear idea, a story people remember, and a moment where the whole room leans in.</p>
+      </div>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/kQVNTK8MWZg" title="Pratik Renuse TEDx talk" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+
+    <div class="tedx-pair r">
+      <figure><img src="media/tedx-room.jpg" alt="A full TEDx Sheffield Hallam audience watching Pratik Renuse" loading="lazy" style="object-position:50% 45%"></figure>
+      <figure><img src="media/tedx-close.jpg" alt="Close-up of Pratik Renuse mid-talk with a headset microphone" loading="lazy" style="object-position:45% 30%"></figure>
+    </div>
+
+    <div class="tedx-quote r">
+      <blockquote>"Pratik is a great speaker. He is very knowledgeable and the audience loved him. It was easy to work with him throughout the organising process."</blockquote>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
       <cite>Peter Szabo · TEDx curator</cite>
     </div>
   </div>
@@ -456,17 +751,30 @@ footer a:hover{color:var(--gold)}
       <h2>Keynotes in <em>14 countries</em></h2>
       <p class="lead">Conference keynotes, founder workshops and community nights across Europe, Asia and the Middle East.</p>
       <ul class="stage-list">
+<<<<<<< HEAD
         <li><span class="n"><span class="k">Conference</span>Stream Conference</span><span class="w">Russia · 2020</span></li>
         <li><span class="n"><span class="k">Conference</span>Digital Roots</span><span class="w">Russia</span></li>
         <li><span class="n"><span class="k">Keynote</span>Asia Pacific Digital Marketing Conclave</span><span class="w">Asia</span></li>
         <li><span class="n"><span class="k">AI talk</span>Deployed by Coditas</span><span class="w">Pune · 2026</span></li>
         <li><span class="n"><span class="k">AI masterclass</span>GrowthX Claude 101</span><span class="w">Online · 2026</span></li>
+=======
+        <li><span class="n"><span class="k">Conference keynote</span>Stream Conference</span><span class="w">Russia</span></li>
+        <li><span class="n"><span class="k">Conference keynote</span>Digital Roots</span><span class="w">Russia</span></li>
+        <li><span class="n"><span class="k">Keynote</span>Asia Pacific Digital Marketing Conclave</span><span class="w">Asia Pacific</span></li>
+        <li><span class="n"><span class="k">AI talk</span>Deployed by Coditas</span><span class="w">Pune</span></li>
+        <li><span class="n"><span class="k">AI masterclass</span>GrowthX Claude 101</span><span class="w">Online</span></li>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
       </ul>
     </div>
     <div class="world-photos r">
       <figure class="w-big"><img src="media/stage-audience.jpg" alt="Pratik Renuse speaking to a seated conference audience" loading="lazy"><figcaption>Conference keynote</figcaption></figure>
+<<<<<<< HEAD
       <figure><img src="media/workshop-ikigai.jpg" alt="Pratik Renuse running a purpose workshop with an Ikigai slide" loading="lazy"><figcaption>Purpose workshop</figcaption></figure>
       <figure><img src="media/workshop-founders.jpg" alt="Founders around a table during Pratik Renuse's workshop" loading="lazy"><figcaption>Founder workshop</figcaption></figure>
+=======
+      <figure><img src="media/workshop-ikigai.jpg" alt="Pratik Renuse running a purpose workshop with an Ikigai slide" loading="lazy" style="object-position:40% 50%"><figcaption>Purpose workshop</figcaption></figure>
+      <figure><img src="media/coditas-thanks.jpg" alt="Pratik Renuse receiving flowers and thanks from the Coditas team" loading="lazy" style="object-position:50% 30%"><figcaption>Thanked by the host team</figcaption></figure>
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
     </div>
   </div>
 </section>
@@ -486,6 +794,7 @@ footer a:hover{color:var(--gold)}
   </div>
 </section>
 
+<<<<<<< HEAD
 <section id="invite" style="background:var(--surface)">
   <div class="wrap invite-grid">
     <div class="r">
@@ -496,6 +805,24 @@ footer a:hover{color:var(--gold)}
 
     <div class="r">
       <form id="invite-form" novalidate onsubmit="sendInvite(event)" style="background:var(--bg)">
+=======
+<section id="invite" class="invite">
+  <div class="invite-bg"><img src="media/stage-moment.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="r">
+      <div class="lbl">Invite me</div>
+      <h2>Your stage <em>is next.</em></h2>
+      <p class="lead">Tell me the date, the audience and what they should walk away with.</p>
+      <ol class="steps">
+        <li>I read every invite myself and reply within 48 hours.</li>
+        <li>We shape the session around your audience and the outcome you want.</li>
+        <li>Your attendees leave with something they built, not just notes.</li>
+      </ol>
+    </div>
+
+    <div class="r">
+      <form id="invite-form" novalidate onsubmit="sendInvite(event)">
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
         <div class="row">
           <div>
             <label for="f-name">Your name</label>
@@ -530,7 +857,11 @@ footer a:hover{color:var(--gold)}
           </div>
           <div>
             <label for="f-date">Date or month</label>
+<<<<<<< HEAD
             <input id="f-date" type="text" placeholder="e.g. mid January 2027">
+=======
+            <input id="f-date" type="text" placeholder="e.g. mid January">
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
           </div>
         </div>
         <div class="row">
@@ -555,11 +886,19 @@ footer a:hover{color:var(--gold)}
           <div class="err" data-for="f-msg">Add a short note so I can reply with context</div>
         </div>
         <div class="form-foot">
+<<<<<<< HEAD
           <p class="form-note">Prefer email? Write to <a href="mailto:pratik.y.renuse@gmail.com?subject=Speaking%20invite">pratik.y.renuse@gmail.com</a></p>
           <button type="submit" class="btn btn-dark" id="f-btn">Send speaking invite</button>
         </div>
       </form>
       <div class="success" id="invite-ok" role="status" style="background:var(--bg)">
+=======
+          <p class="form-note">Prefer email? <a href="mailto:pratik.y.renuse@gmail.com?subject=Speaking%20invite">pratik.y.renuse@gmail.com</a></p>
+          <button type="submit" class="btn btn-dark" id="f-btn">Send speaking invite</button>
+        </div>
+      </form>
+      <div class="success" id="invite-ok" role="status">
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
         <div class="lbl">Invite received</div>
         <h3>Thank you, it is in my inbox.</h3>
         <p id="ok-text">I will reply within 48 hours with availability and a few questions about your audience.</p>
@@ -578,6 +917,7 @@ footer a:hover{color:var(--gold)}
 
 <script>
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), { threshold: 0.08 });
+<<<<<<< HEAD
 document.querySelectorAll('.r').forEach(el => io.observe(el));
 
 document.querySelectorAll('.tedx-mosaic figure, .world-photos figure').forEach(f => f.addEventListener('click', () => { const lb = document.getElementById('lb'); const i = f.querySelector('img'); lb.querySelector('img').src = i.src; lb.querySelector('img').alt = i.alt; lb.classList.add('on'); }));
@@ -596,6 +936,42 @@ function copyBio(btn) {
   if (navigator.clipboard) navigator.clipboard.writeText(t).then(done).catch(() => { ok.textContent = 'Select the text above to copy it.'; });
   else ok.textContent = 'Select the text above to copy it.';
 }
+=======
+document.querySelectorAll('.r, .tedx-hero').forEach(el => io.observe(el));
+
+// then / now slider
+(function () {
+  const c = document.getElementById('compare'), r = c.querySelector('input');
+  const set = v => c.style.setProperty('--pos', v + '%');
+  r.addEventListener('input', () => set(r.value));
+  let moved = false;
+  r.addEventListener('pointerdown', () => moved = true);
+  // gentle intro sweep so visitors notice it can move
+  const seen = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting || moved || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    seen.disconnect();
+    const frames = [55, 75, 30, 55]; let i = 0;
+    const step = () => { if (moved || i >= frames.length) return; const from = parseFloat(r.value), to = frames[i++], t0 = performance.now();
+      const anim = now => { const k = Math.min(1, (now - t0) / 700), e2 = k < .5 ? 2*k*k : 1 - Math.pow(-2*k + 2, 2) / 2; const v = from + (to - from) * e2; r.value = v; set(v); if (k < 1 && !moved) requestAnimationFrame(anim); else setTimeout(step, 150); };
+      requestAnimationFrame(anim); };
+    setTimeout(step, 600);
+  }), { threshold: 0.5 });
+  seen.observe(c);
+})();
+
+// count up
+const cio = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return; cio.unobserve(e.target);
+  const el = e.target, end = +el.dataset.count, t0 = performance.now();
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const tick = now => { const k = Math.min(1, (now - t0) / 1400); el.textContent = Math.round(end * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(tick); };
+  requestAnimationFrame(tick);
+}), { threshold: 0.6 });
+document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+
+document.querySelectorAll('.tedx-pair figure, .world-photos figure').forEach(f => f.addEventListener('click', () => { const lb = document.getElementById('lb'); const i = f.querySelector('img'); lb.querySelector('img').src = i.src; lb.querySelector('img').alt = i.alt; lb.classList.add('on'); }));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') document.getElementById('lb').classList.remove('on'); });
+>>>>>>> 365e1d7c9c57449e70ca0aa059683f61ed09c1e3
 
 function showErr(id, on) {
   const el = document.querySelector('.err[data-for="' + id + '"]');

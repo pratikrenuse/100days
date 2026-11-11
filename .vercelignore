@@ -11,3 +11,23 @@ api/score-roast.js
 
 # Personal project folder: kept in git, never deployed to pratikrenuse.com
 Pratik Renuse
+
+# Work-in-progress and draft pages: kept in git, not published on pratikrenuse.com.
+# To publish one later, delete its line here.
+/talks
+/demo1
+/demo5
+/demo6
+/journey
+/inspirations
+
+# Internal notes, setup files and dev tooling: never served publicly.
+*.md
+*.sql
+.DS_Store
+/_shared
+/daily-futures-brief-evals
+/roast-my-landing-page/convex
+/roast-my-landing-page/functions
+/roast-my-landing-page/package.json
+/speaking/frames/README.txt
