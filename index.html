@@ -55,7 +55,7 @@
       display: flex; align-items: center; justify-content: space-between;
       padding: 1.1rem 4rem;
       background: rgba(246,242,241,0.94);
-      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
       border-bottom: 1px solid var(--border);
     }
     .nav-logo { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--ink); text-decoration: none; letter-spacing: 0.02em; }
@@ -499,6 +499,112 @@
       .venue-item { padding: 0 !important; border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 1.25rem !important; }
       .venue-item:last-child { border-bottom: none; padding-bottom: 0 !important; }
     }
+  
+    /* ── JOURNEY (playable career walk) ─────────────────── */
+    .jr-sec { background: var(--bg); border-top: 1px solid var(--border); }
+    .jr-wrap { max-width: 1000px; margin: 0 auto; }
+    .jr-head { text-align: center; margin-bottom: 2.5rem; }
+    .jr-head .lbl { justify-content: center; }
+    .jr-head h2.sec-h { margin-bottom: 1.25rem; }
+    .jr-lead { font-size: 1.08rem; color: var(--ink2); line-height: 1.7; margin: 0 auto; max-width: 38rem; }
+
+    .jr-hud { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.25rem; }
+    .jr-chip { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500;
+      color: var(--ink4); background: var(--surface); border: 1px solid var(--border);
+      border-radius: 999px; padding: 0.4rem 0.95rem; transition: all 0.25s ease; white-space: nowrap; }
+    .jr-chip.current { color: var(--gold); border-color: var(--gold); background: var(--bg); }
+    .jr-chip.done { color: var(--ink2); background: var(--gold-bg); border-color: var(--gold-mid); }
+    .jr-chip.done::before { content: '✓ '; color: var(--gold); }
+
+    .jr-frame { position: relative; }
+    .jr-touch { display: none; font-size: 0.9rem; color: var(--ink3); margin-bottom: 1.5rem; }
+    .jr-canvas { width: 100%; height: auto; display: block;       border: 1px solid var(--border2); background: #F3EDE1; touch-action: pan-y; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; cursor: pointer;
+      box-shadow: 0 24px 60px -30px rgba(25,20,15,0.35); }
+
+    .jr-ov { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      padding: 1.5rem; background: rgba(245,241,233,0.72); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
+    .jr-panel { background: var(--bg); border: 1px solid var(--border2); max-width: 480px; width: 100%;
+      padding: 2.25rem 2rem; text-align: center; box-shadow: 0 20px 50px -28px rgba(25,20,15,0.4); }
+    .jr-eyebrow { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 0.75rem; }
+    .jr-title { font-family: var(--serif); font-size: 1.9rem; font-weight: 300; line-height: 1.2; color: var(--ink); margin-bottom: 1rem; }
+    .jr-panel p { font-size: 1rem; color: var(--ink2); line-height: 1.65; margin: 0 auto 1.4rem; }
+    .jr-keys { font-size: 0.85rem; color: var(--ink3); margin-bottom: 1.5rem; }
+    .jr-keys kbd { font-family: var(--sans); font-size: 0.78rem; font-weight: 500; color: var(--ink);
+      background: var(--surface); border: 1px solid var(--border2); border-bottom-width: 2px; padding: 0.1rem 0.45rem; margin: 0 0.1rem; }
+    .jr-btns { display: flex; gap: 1.25rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+    .jr-panel .btn-dark { border: none; cursor: pointer; font-family: var(--sans); }
+    .jr-again { background: none; border: none; cursor: pointer; font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--ink4); padding: 0.85rem 0; transition: color 0.2s; }
+    .jr-again:hover { color: var(--gold); }
+
+    .jr-dlg { position: absolute; left: 2.5%; right: 2.5%; top: 4%; background: rgba(245,241,233,0.97);
+      border: 1px solid var(--border2); border-left: 3px solid var(--gold); padding: 1.1rem 1.5rem; display: none;
+      box-shadow: 0 16px 40px -24px rgba(25,20,15,0.45); }
+    .jr-dlg.show { display: block; }
+    .jr-dlg-name { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 0.5rem; }
+    .jr-dlg-text { font-family: var(--serif); font-size: 1.15rem; line-height: 1.5; color: var(--ink); min-height: 3em; max-width: 60ch; }
+    .jr-dlg-metric { display: none; align-items: baseline; gap: 1rem; margin-top: 0.6rem; padding-top: 0.75rem; border-top: 1px solid var(--border); }
+    .jr-dlg-num { font-family: var(--serif); font-size: 2.3rem; font-weight: 300; color: var(--gold); line-height: 1; letter-spacing: -0.02em; }
+    .jr-dlg-mlabel { font-size: 0.9rem; color: var(--ink3); }
+    .jr-dlg-foot { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 0.85rem; }
+    .jr-dlg-hint { font-size: 0.78rem; color: var(--ink4); letter-spacing: 0.04em; }
+    .jr-dlg .btn-dark { border: none; cursor: pointer; font-family: var(--sans); padding: 0.8rem 1.5rem; font-size: 0.75rem; }
+
+    .jr-controls { display: none; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1rem; }
+    .jr-pad { display: flex; gap: 0.6rem; }
+    .jr-pad button, .jr-a { font-family: var(--sans); cursor: pointer; border: 1px solid var(--border2); background: var(--surface);
+      color: var(--ink); font-size: 1rem; width: 56px; height: 56px; -webkit-user-select: none; user-select: none; }
+    .jr-pad button:active { background: var(--gold-bg); border-color: var(--gold); }
+    .jr-a { width: auto; padding: 0 1.4rem; background: var(--ink); color: var(--bg); border-color: var(--ink);
+      font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; }
+    .jr-a:active { background: var(--gold); }
+    .jr-hint { text-align: center; font-size: 0.85rem; color: var(--ink4); margin: 1.25rem auto 0; }
+    .jr-hint kbd { font-family: var(--sans); font-size: 0.78rem; color: var(--ink3); border: 1px solid var(--border2); padding: 0.05rem 0.4rem; }
+
+    /* touch devices of any size (phones, iPads, touch laptops without hover) */
+    @media (hover: none) and (pointer: coarse) {
+      .jr-controls { display: flex; }
+      .jr-hint, .jr-keys, .jr-dlg-hint { display: none; }
+      .jr-touch { display: block; }
+    }
+    .jr-sec.is-touch .jr-controls { display: flex; }
+    .jr-sec.is-touch .jr-hint, .jr-sec.is-touch .jr-keys, .jr-sec.is-touch .jr-dlg-hint { display: none; }
+    .jr-sec.is-touch .jr-touch { display: block; }
+    /* narrow screens and short landscape phones: panels sit below the scene */
+    @media (max-width: 720px), (max-height: 560px) {
+      .jr-ov { position: static; background: none; -webkit-backdrop-filter: none; backdrop-filter: none; padding: 1rem 0 0; }
+      .jr-dlg { position: static; margin-top: 1rem; }
+    }
+    @media (max-width: 720px) {
+      .jr-hud { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding-bottom: 0.25rem; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+      .jr-hud::-webkit-scrollbar { display: none; }
+      .jr-panel { padding: 1.75rem 1.25rem; }
+      .jr-title { font-size: 1.5rem; }
+      .jr-keys { display: none; }
+      .jr-touch { display: block; }
+      .jr-dlg { padding: 1.1rem 1.15rem; }
+      .jr-dlg-text { font-size: 1.05rem; }
+      .jr-dlg-num { font-size: 1.9rem; }
+      .jr-dlg-metric { flex-wrap: wrap; gap: 0.25rem 0.75rem; }
+      .jr-dlg-hint { display: none; }
+      .jr-dlg-foot { justify-content: flex-end; }
+      .jr-dlg .btn-dark { width: 100%; justify-content: center; }
+      .jr-btns { flex-direction: column; gap: 0.5rem; }
+      .jr-btns .btn-dark { width: 100%; justify-content: center; }
+      .jr-controls { display: flex; }
+      .jr-hint { display: none; }
+    }
+    @media (max-width: 380px) {
+      .jr-pad button { width: 48px; height: 48px; }
+      .jr-a { flex: 1; min-width: 0; height: 48px; padding: 0 0.75rem; letter-spacing: 0.1em; }
+    }
+
+    .jr-sec:not(.is-playing) .jr-controls { display: none !important; }
+    /* very narrow phones (Galaxy Fold): keep the nav on one line */
+    @media (max-width: 360px) {
+      .nav-logo { white-space: nowrap; font-size: 0.95rem; }
+      .nav-btn { font-size: 0.66rem; padding: 0.6rem 0.65rem; letter-spacing: 0.04em; }
+    }
   </style>
 </head>
 <body>
@@ -833,6 +939,73 @@
   </div>
 </section>
 
+<!-- JOURNEY: playable career walk -->
+<section class="sec jr-sec" id="journey">
+  <div class="jr-wrap">
+    <div class="jr-head r">
+      <div class="lbl"><span class="lbl-line"></span><span class="lbl-text">Career, played</span></div>
+      <h2 class="sec-h">Walk my career, <span>one stop at a time</span></h2>
+      <p class="jr-lead">Seven stops, from Airbus in 2016 to Bueno today. Walk up to each building to hear what I built there and the number it moved.</p>
+    </div>
+
+    <div class="jr-hud" id="jrHud" aria-label="Career stops">
+      <span class="jr-chip">Airbus</span>
+      <span class="jr-chip">Bayer</span>
+      <span class="jr-chip">Infento</span>
+      <span class="jr-chip">Growack</span>
+      <span class="jr-chip">VU</span>
+      <span class="jr-chip">Bueno</span>
+      <span class="jr-chip">Mentor</span>
+    </div>
+
+    <div class="jr-frame" id="jrFrame">
+      <canvas class="jr-canvas" id="jrCanvas" width="800" height="416" aria-label="A small walkable map of Pratik's career, one building per company"></canvas>
+
+      <div class="jr-dlg" id="jrDlg" aria-live="polite">
+        <div class="jr-dlg-name" id="jrDlgName"></div>
+        <div class="jr-dlg-text" id="jrDlgText"></div>
+        <div class="jr-dlg-metric" id="jrDlgMetric"><span class="jr-dlg-num" id="jrDlgNum"></span><span class="jr-dlg-mlabel" id="jrDlgMlabel"></span></div>
+        <div class="jr-dlg-foot">
+          <span class="jr-dlg-hint" id="jrDlgHint">Press Space to continue</span>
+          <span id="jrDlgOpts"></span>
+        </div>
+      </div>
+
+      <div class="jr-ov" id="jrTitle">
+        <div class="jr-panel">
+          <div class="jr-eyebrow">A two-minute walk</div>
+          <div class="jr-title">Ten years, seven stops</div>
+          <p>Each stop opens the gate to the next. Reach the last one and you have the whole story.</p>
+          <div class="jr-touch">Tap and hold on either side of the walker, or use the arrows below.</div>
+          <div class="jr-keys"><kbd>←</kbd><kbd>→</kbd> or <kbd>A</kbd><kbd>D</kbd> to walk, <kbd>Space</kbd> to continue</div>
+          <button class="btn-dark" id="jrStart">Start the walk</button>
+        </div>
+      </div>
+
+      <div class="jr-ov" id="jrWin" style="display:none;">
+        <div class="jr-panel">
+          <div class="jr-eyebrow">Journey complete</div>
+          <div class="jr-title">That is the whole story, so far</div>
+          <p>From Airbus to Bueno: three startups built from zero, €2M+ in DTC revenue, 24x acquisition efficiency, a brand worn by Olympians, and 100+ founders mentored.</p>
+          <div class="jr-btns">
+            <a href="#contact" class="btn-dark" id="jrCta">Start a conversation</a>
+            <button class="jr-again" id="jrAgain">Walk it again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jr-controls" id="jrControls">
+      <div class="jr-pad">
+        <button data-dir="left" aria-label="Walk left">◀</button>
+        <button data-dir="right" aria-label="Walk right">▶</button>
+      </div>
+      <button class="jr-a" id="jrA">Continue</button>
+    </div>
+    <p class="jr-hint">Walk with <kbd>←</kbd> <kbd>→</kbd> and follow the gold marker. Press <kbd>Space</kbd> to continue.</p>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="sec" id="contact">
   <div class="cf-intro r">
@@ -1007,6 +1180,336 @@
       btn.disabled = false;
     }
   }
+</script>
+
+<script>
+/* Journey: playable career walk (illustrated, HiDPI) */
+(function(){
+  "use strict";
+  var cv=document.getElementById('jrCanvas'); if(!cv) return;
+  var ctx=cv.getContext('2d');
+  var frame=document.getElementById('jrFrame');
+  var VIEW_H=416, VIEW_W=800, MAP_W=1664, SCALE=1;
+  var GROUND=312, PATH_Y=330;
+  var SANS='"IBM Plex Sans", system-ui, sans-serif', SERIF='"IBM Plex Serif", Georgia, serif';
+  var track=function(n,p){ if(typeof gtag==='function') gtag('event',n,p||{}); };
+  var PI=Math.PI;
+  if(('ontouchstart' in window)||(navigator.maxTouchPoints>0)) document.getElementById('journey').classList.add('is-touch');
+
+  function sizeView(){
+    var w=frame.clientWidth||800;
+    VIEW_W = w<600 ? 440 : 800;
+    var maxH=Math.max(220,(window.innerHeight||800)*0.66);
+    if(w*VIEW_H/VIEW_W>maxH) VIEW_W=Math.min(1400,w*VIEW_H/maxH);
+    var dpr=Math.min(window.devicePixelRatio||1,2.5);
+    var cw=Math.round(w*dpr), ch=Math.round(w*dpr*VIEW_H/VIEW_W); if(cv.width!==cw) cv.width=cw; if(cv.height!==ch) cv.height=ch;
+    SCALE=cv.width/VIEW_W;
+  }
+  sizeView(); window.addEventListener('resize',sizeView); window.addEventListener('orientationchange',function(){ setTimeout(sizeView,250); });
+
+  var CH=[
+    { x:144,  kind:'airbus', accent:'#6F8597', name:'Airbus', year:'2016', title:'Airbus · 2016 · Munich',
+      story:["Where the operator story begins: Airbus, the aerospace giant.","I led branding and online marketing for the EU project NEOShield."],
+      metric:{to:127,prefix:'+',suffix:'%',dec:0}, label:'organic social reach' },
+    { x:368,  kind:'bayer', accent:'#8A9470', name:'Bayer', year:'2017', title:'Bayer · 2017 · Berlin',
+      story:["Next, Bayer in Berlin, running their premier global executive event.","Senior leaders from 50+ countries, one flawless production."],
+      metric:{to:250,prefix:'€',suffix:'K',dec:0}, label:'budget managed, 50+ countries' },
+    { x:592,  kind:'infento', accent:'#5E7896', name:'Infento', year:'2017 to 2019', title:'Infento · 2017 to 2019 · Amsterdam',
+      story:["Then I went zero to one, on the founding team at Infento, kids' ride-on kits.","I built DTC from scratch and led an $848K Kickstarter, the #1 STEM project worldwide."],
+      metric:{to:2,prefix:'€',suffix:'M',dec:0}, label:'ARR from zero, team grown to 25+' },
+    { x:816,  kind:'growack', accent:'#A9715A', name:'Growack', year:'2020', title:'Growack · 2020 · Amsterdam',
+      story:["A year sharpening the craft at Growack, a B2B growth agency.","Recognised in the global top 1% of marketers."],
+      metric:{to:1,prefix:'Top ',suffix:'%',dec:0}, label:'of marketers worldwide' },
+    { x:1040, kind:'vu', accent:'#5F8A7A', name:'VU', year:'2021 to 2025', title:'VU · 2021 to 2025 · Geneva',
+      story:["A Swiss ski brand, built end to end against global giants.","Premium positioning, adopted by Olympians: the #1 Swiss brand for pros."],
+      metric:{to:4.4,prefix:'',suffix:'x',dec:1}, label:'peak-season growth, €275K+ revenue' },
+    { x:1264, kind:'bueno', accent:'#9A7B22', name:'Bueno', year:'2022 to now', title:'Bueno · 2022 to now · Spain',
+      story:["Bueno: banking for Europe's foreign property owners.","I built acquisition single-handedly, from €0 to €300K+ ARR across 28 countries."],
+      metric:{to:24,prefix:'',suffix:'x',dec:0}, label:'LTV to CAC, €700 earned per €30 spent' },
+    { x:1488, kind:'mentor', accent:'#7C7598', name:'Mentor', year:'Ongoing', title:'Giving back · Mentor and professor', finale:true,
+      story:["Building isn't the whole story. I give back, too.","Mentor at Techstars and EBRD, Visiting Professor at Masters' Union and Tetr."],
+      metric:{to:100,prefix:'',suffix:'+',dec:0}, label:'founders mentored, 500+ students taught' }
+  ];
+  var GATES=[256,480,704,928,1152,1376].map(function(x){ return {x:x,open:0}; });
+
+  function firstNotDone(){ for(var i=0;i<CH.length;i++) if(!CH[i].done) return i; return -1; }
+
+  var player={x:80,face:1,phase:0,moving:false};
+  var SPEED=230, state='title', held={}, inView=false;
+
+  new IntersectionObserver(function(es){ inView=es[0].isIntersecting; if(!inView) held={}; },{threshold:0.2}).observe(frame);
+  function live(){ return inView && (state==='walk'||state==='chapter'); }
+
+  var keys={ArrowLeft:'left',ArrowRight:'right',a:'left',d:'right',A:'left',D:'right'};
+  window.addEventListener('keydown',function(e){
+    if(!live()) return;
+    var t=e.target; if(t && (t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable)) return;
+    if(keys[e.key]){ held[keys[e.key]]=true; e.preventDefault(); }
+    else if(e.key===' '||e.key==='Enter'){ if(t&&t.tagName==='BUTTON'&&e.key==='Enter') return; e.preventDefault(); action(); }
+  });
+  window.addEventListener('keyup',function(e){ if(keys[e.key]) held[keys[e.key]]=false; });
+  document.querySelectorAll('.jr-pad button').forEach(function(b){
+    var dir=b.dataset.dir, on=function(e){e.preventDefault();held[dir]=true;}, off=function(e){e.preventDefault();held[dir]=false;};
+    b.addEventListener('touchstart',on,{passive:false}); b.addEventListener('touchend',off); b.addEventListener('touchcancel',off);
+    b.addEventListener('mousedown',on); b.addEventListener('mouseup',off); b.addEventListener('mouseleave',off);
+  });
+  document.getElementById('jrA').addEventListener('click',action);
+  /* hold anywhere on the scene to walk toward that side; tap to continue a story */
+  var ptr=null;
+  function ptrDir(e){ var r=cv.getBoundingClientRect(); var sx=(e.clientX-r.left)/r.width*VIEW_W; var off=Math.max(0,Math.min(MAP_W-VIEW_W,player.x-VIEW_W/2)); return sx<player.x-off?'left':'right'; }
+  cv.addEventListener('pointerdown',function(e){
+    if(state==='chapter'){ action(); return; }
+    if(state!=='walk') return;
+    ptr=e.pointerId; held={}; held[ptrDir(e)]=true;
+  });
+  cv.addEventListener('pointermove',function(e){ if(ptr===e.pointerId && state==='walk'){ held={}; held[ptrDir(e)]=true; } });
+  ['pointerup','pointercancel','pointerleave'].forEach(function(n){ cv.addEventListener(n,function(e){ if(ptr===e.pointerId){ ptr=null; held={}; } }); });
+  cv.addEventListener('contextmenu',function(e){ e.preventDefault(); });
+  function action(){ if(state==='chapter') advance(); }
+
+  /* dialogue */
+  var D={i:-1,queue:[],typing:false,full:'',timer:null,phase:'story'};
+  var $=function(id){return document.getElementById(id);};
+  var dlg=$('jrDlg'),dN=$('jrDlgName'),dT=$('jrDlgText'),dM=$('jrDlgMetric'),dNum=$('jrDlgNum'),dL=$('jrDlgMlabel'),dO=$('jrDlgOpts'),dH=$('jrDlgHint');
+  function openChapter(i){
+    state='chapter'; D.i=i; D.phase='story'; held={}; player.moving=false;
+    dN.textContent=CH[i].title; dM.style.display='none'; dO.innerHTML=''; dlg.classList.add('show');
+    D.queue=CH[i].story.slice(); nextLine(); track('journey_chapter',{step:i});
+    if(getComputedStyle(dlg).position==='static'){ var r=dlg.getBoundingClientRect(); if(r.bottom>window.innerHeight) dlg.scrollIntoView({block:'nearest',behavior:'smooth'}); }
+  }
+  function nextLine(){ if(D.queue.length) typeLine(D.queue.shift()); else showMetric(D.i); }
+  function typeLine(text){
+    D.typing=true; D.full=text; dT.textContent=''; dH.textContent='Press Space to continue';
+    clearInterval(D.timer); var i=0;
+    D.timer=setInterval(function(){ i++; dT.textContent=D.full.slice(0,i); if(i>=D.full.length){ clearInterval(D.timer); D.typing=false; } },16);
+  }
+  function advance(){
+    if(D.typing){ clearInterval(D.timer); dT.textContent=D.full; D.typing=false; return; }
+    if(D.phase==='story') nextLine(); else continueChapter();
+  }
+  function fmt(m,v){ return m.prefix+(m.dec?v.toFixed(m.dec):Math.round(v))+m.suffix; }
+  function showMetric(i){
+    D.phase='metric'; var m=CH[i].metric;
+    dM.style.display='flex'; dL.textContent=CH[i].label; dH.textContent='Press Space to walk on';
+    var t0=performance.now();
+    (function step(t){ var p=Math.min(1,(t-t0)/900), e=1-Math.pow(1-p,3); dNum.textContent=fmt(m,m.to*e); if(p<1) requestAnimationFrame(step); else dNum.textContent=fmt(m,m.to); })(t0);
+    dO.innerHTML='';
+    var b=document.createElement('button'); b.className='btn-dark';
+    b.textContent=CH[i].finale?'Finish the walk':'Walk to the next stop'; b.onclick=continueChapter; dO.appendChild(b);
+  }
+  function continueChapter(){
+    var i=D.i; CH[i].done=true; mark(); dlg.classList.remove('show'); dM.style.display='none';
+    if(CH[i].finale) win(); else state='walk';
+  }
+  var chips=[].slice.call(document.querySelectorAll('#jrHud .jr-chip'));
+  function mark(){ var cur=firstNotDone(); chips.forEach(function(c,i){ c.classList.toggle('done',!!CH[i].done); c.classList.toggle('current',i===cur&&state!=='title'); }); }
+
+  /* seeded scenery */
+  var seed=7; function rnd(){ seed=(seed*16807)%2147483647; return (seed-1)/2147483646; }
+  var CLOUDS=[]; for(var i=0;i<9;i++) CLOUDS.push({x:rnd()*1400,y:40+rnd()*80,w:70+rnd()*90});
+  var BACK_TREES=[]; for(var x=-40;x<1500;x+=26+rnd()*30) BACK_TREES.push({x:x,h:28+rnd()*26,type:rnd()<0.35?'cy':'rd',tone:rnd()});
+  var MID_TREES=[];
+  [40,232,282,452,508,668,742,880,960,1110,1196,1330,1420,1560,1616].forEach(function(x){ MID_TREES.push({x:x+rnd()*14,h:46+rnd()*30,type:rnd()<0.5?'cy':'rd',tone:rnd()}); });
+  var FRONT=[]; for(var x2=-60;x2<2100;x2+=70+rnd()*90) FRONT.push({x:x2,w:40+rnd()*60,h:14+rnd()*18,tone:rnd()});
+  var STONES=[]; for(var x3=10;x3<MAP_W;x3+=18+rnd()*40) STONES.push({x:x3,y:PATH_Y-7+rnd()*12,r:1+rnd()*1.6});
+
+  /* drawing helpers */
+  function lin(x0,y0,x1,y1,stops){ var g=ctx.createLinearGradient(x0,y0,x1,y1); stops.forEach(function(s){g.addColorStop(s[0],s[1]);}); return g; }
+  function rad(x,y,r,stops){ var g=ctx.createRadialGradient(x,y,0,x,y,r); stops.forEach(function(s){g.addColorStop(s[0],s[1]);}); return g; }
+  function rect(x,y,w,h,f){ ctx.fillStyle=f; ctx.fillRect(x,y,w,h); }
+  function ell(x,y,rx,ry,f){ ctx.fillStyle=f; ctx.beginPath(); ctx.ellipse(x,y,Math.max(0,rx),Math.max(0,ry),0,0,PI*2); ctx.fill(); }
+  function poly(pts,f){ ctx.fillStyle=f; ctx.beginPath(); ctx.moveTo(pts[0],pts[1]); for(var i=2;i<pts.length;i+=2) ctx.lineTo(pts[i],pts[i+1]); ctx.closePath(); ctx.fill(); }
+  function line(x0,y0,x1,y1,c,w){ ctx.strokeStyle=c; ctx.lineWidth=w||1; ctx.beginPath(); ctx.moveTo(x0,y0); ctx.lineTo(x1,y1); ctx.stroke(); }
+  function mix(a,b,t){ var pa=parseInt(a.slice(1),16), pb=parseInt(b.slice(1),16);
+    var r=Math.round(((pa>>16)&255)*(1-t)+((pb>>16)&255)*t), g=Math.round(((pa>>8)&255)*(1-t)+((pb>>8)&255)*t), bl=Math.round((pa&255)*(1-t)+(pb&255)*t);
+    return 'rgb('+r+','+g+','+bl+')'; }
+
+  function tree(x,base,h,type,tone,col1,col2){
+    var c=mix(col1,col2,tone);
+    if(type==='cy'){
+      rect(x-1,base-6,2,6,'#9C8D76');
+      ctx.fillStyle=c; ctx.beginPath(); ctx.moveTo(x,base-h); ctx.bezierCurveTo(x+h*0.2,base-h*0.7,x+h*0.17,base-h*0.15,x,base-4); ctx.bezierCurveTo(x-h*0.17,base-h*0.15,x-h*0.2,base-h*0.7,x,base-h); ctx.fill();
+    } else {
+      rect(x-1.5,base-h*0.38,3,h*0.38,'#9C8D76');
+      ell(x,base-h*0.62,h*0.32,h*0.36,c);
+      ell(x-h*0.1,base-h*0.72,h*0.16,h*0.15,'rgba(255,253,246,0.18)');
+    }
+  }
+  function hills(off,f,base,a1,k1,a2,k2,fill){
+    ctx.fillStyle=fill; ctx.beginPath(); ctx.moveTo(0,VIEW_H);
+    for(var sx=0;sx<=VIEW_W+8;sx+=8){ var wx=sx+off*f; ctx.lineTo(sx, base+a1*Math.sin(wx*k1+1.3)+a2*Math.sin(wx*k2+0.4)); }
+    ctx.lineTo(VIEW_W,VIEW_H); ctx.closePath(); ctx.fill();
+  }
+  function wall(x,y,w,h){ rect(x,y,w,h,lin(0,y,0,y+h,[[0,'#FCFAF4'],[1,'#EFE7D7']])); ctx.strokeStyle='rgba(120,105,85,0.28)'; ctx.lineWidth=0.75; ctx.strokeRect(x+0.5,y+0.5,w-1,h-1); }
+  function win2(x,y,w,h){ rect(x,y,w,h,lin(0,y,0,y+h,[[0,'#D9E0E1'],[1,'#C2CCCE']])); line(x+w/2,y,x+w/2,y+h,'rgba(252,250,244,0.9)',1); }
+  function shadow(cx,w){ ell(cx,GROUND+1,w*0.62,6,'rgba(70,58,40,0.12)'); }
+
+  /* buildings: cx = centre on GROUND; each returns its top y */
+  var B={
+    airbus:function(cx,a){ var b=GROUND; shadow(cx,150);
+      ctx.fillStyle=lin(0,b-80,0,b,[[0,'#E9EDEE'],[1,'#D2D9DC']]); ctx.beginPath(); ctx.ellipse(cx,b,76,80,0,PI,PI*2); ctx.fill();
+      ctx.strokeStyle='rgba(111,133,151,0.35)'; ctx.lineWidth=1; for(var k=1;k<5;k++){ ctx.beginPath(); ctx.ellipse(cx,b,76-k*15,80,0,PI,PI*2); ctx.stroke(); }
+      rect(cx-30,b-44,60,44,lin(0,b-44,0,b,[[0,'#B9C4CB'],[1,'#A3B0B8']])); for(var j=1;j<4;j++) line(cx-30+j*15,b-44,cx-30+j*15,b,'rgba(240,244,245,0.6)',1);
+      rect(cx-76,b-3,152,3,a);
+      var px=cx+30,py=b-122;
+      ell(px,py,30,4.2,'#8E9BA6'); poly([px-4,py,px+8,py,px-8,py+16,px-15,py+16],'#8E9BA6'); poly([px-4,py,px+8,py,px-6,py-12,px-12,py-12],'#9DA9B3'); poly([px-26,py-1,px-20,py-1,px-28,py-11,px-32,py-11],'#8E9BA6');
+      ctx.setLineDash([3,5]); line(px-36,py+2,px-110,py+20,'rgba(142,155,166,0.35)',1); ctx.setLineDash([]);
+      return b-84; },
+    bayer:function(cx,a){ var b=GROUND; shadow(cx,140);
+      wall(cx-66,b-62,132,62); for(var k=0;k<8;k++) win2(cx-58+k*15,b-52,12,40);
+      rect(cx-74,b-70,148,8,a); rect(cx-74,b-62,148,2,'rgba(0,0,0,0.08)');
+      [-44,0,44].forEach(function(o,i){ line(cx+o,b-70,cx+o,b-104,'#8C7F6C',1.2); poly([cx+o,b-104,cx+o+16,b-100,cx+o,b-95],[a,'#C9B27A','#A9715A'][i]); });
+      return b-108; },
+    infento:function(cx,a){ var b=GROUND; shadow(cx,130);
+      wall(cx-62,b-58,124,58);
+      for(var k=0;k<3;k++){ var x=cx-62+k*41.3; poly([x,b-58,x+41.3,b-58,x+41.3,b-86],a); rect(x+33,b-84,6,24,'#CFD8DB'); }
+      rect(cx-20,b-40,40,40,'#C9B8A0'); for(var j=1;j<5;j++) line(cx-20,b-40+j*8,cx+20,b-40+j*8,'rgba(255,250,240,0.5)',1);
+      win2(cx-52,b-44,20,20); win2(cx+32,b-44,20,20);
+      ctx.strokeStyle='#8C7F6C'; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(cx+80,b-9,8,0,PI*2); ctx.stroke(); ctx.beginPath(); ctx.arc(cx+104,b-9,8,0,PI*2); ctx.stroke();
+      line(cx+80,b-9,cx+92,b-22,'#8C7F6C',2); line(cx+92,b-22,cx+104,b-9,'#8C7F6C',2); line(cx+88,b-23,cx+97,b-23,a,3);
+      return b-90; },
+    growack:function(cx,a){ var b=GROUND; shadow(cx,120);
+      wall(cx-58,b-56,50,56); for(var r=0;r<3;r++) for(var c=0;c<3;c++) win2(cx-52+c*15,b-48+r*16,10,10);
+      wall(cx-12,b-148,64,148); rect(cx-14,b-154,68,7,a);
+      for(var r2=0;r2<9;r2++) for(var c2=0;c2<4;c2++) win2(cx-5+c2*14,b-140+r2*15,9,10);
+      rect(cx+12,b-20,16,20,'#8C7F6C');
+      return b-158; },
+    vu:function(cx,a){ var b=GROUND;
+      poly([cx-150,b,cx-10,b-176,cx+140,b],lin(0,b-176,0,b,[[0,'#DCD6C9'],[1,'#E6DFD0']]));
+      poly([cx-10,b-176,cx+22,b-136,cx+6,b-142,cx-8,b-130,cx-22,b-144,cx-38,b-138],'#FBF9F4');
+      shadow(cx,110);
+      wall(cx-50,b-54,100,54);
+      poly([cx-56,b-46,cx,b-94,cx+56,b-46],'#EFE3CF');
+      poly([cx-64,b-50,cx,b-104,cx+64,b-50,cx+56,b-46,cx,b-94,cx-56,b-46],a);
+      rect(cx-50,b-30,100,3,'#9C8D76'); for(var k=0;k<11;k++) line(cx-48+k*9.6,b-30,cx-48+k*9.6,b-22,'#9C8D76',1);
+      win2(cx-36,b-48,14,14); win2(cx+22,b-48,14,14); rect(cx-9,b-22,18,22,'#8C7461');
+      win2(cx-7,b-76,14,14);
+      return b-108; },
+    bueno:function(cx,a){ var b=GROUND; shadow(cx,150);
+      tree(cx+92,b,84,'cy',0.2,'#8E957A','#A3A487');
+      wall(cx-72,b-60,144,60);
+      poly([cx-80,b-60,cx,b-84,cx+80,b-60],'#C27E5C');
+      for(var k=1;k<10;k++) line(cx-80+k*16,b-60,cx-80+k*16+(k<5?4:-4),b-60-Math.min(k,10-k)*4.6,'rgba(255,240,225,0.28)',1);
+      [-48,-16,16,48].forEach(function(o){ ctx.fillStyle='#E2D6C1'; ctx.beginPath(); ctx.moveTo(cx+o-11,b); ctx.lineTo(cx+o-11,b-30); ctx.arc(cx+o,b-30,11,PI,0); ctx.lineTo(cx+o+11,b); ctx.closePath(); ctx.fill(); });
+      ctx.fillStyle=a; ctx.beginPath(); ctx.moveTo(cx-24,b); ctx.lineTo(cx-24,b-24); ctx.arc(cx-16,b-24,8,PI,0); ctx.lineTo(cx-8,b); ctx.closePath(); ctx.fill();
+      rect(cx-72,b-4,144,4,'#E6DCC9');
+      return b-88; },
+    mentor:function(cx,a){ var b=GROUND; shadow(cx,150);
+      rect(cx-78,b-6,156,6,'#E3DACA'); rect(cx-72,b-11,144,5,'#ECE4D5');
+      wall(cx-64,b-66,128,55);
+      for(var k=0;k<6;k++){ var x=cx-58+k*23; rect(x,b-66,9,55,lin(x,0,x+9,0,[[0,'#FBF8F1'],[1,'#E4DCCB']])); }
+      rect(cx-70,b-74,140,8,'#EDE6D8');
+      poly([cx-74,b-74,cx,b-104,cx+74,b-74],lin(0,b-104,0,b-74,[[0,'#F4EFE5'],[1,'#E2D9C8']]));
+      ctx.strokeStyle=a; ctx.lineWidth=1.5; ctx.beginPath(); ctx.moveTo(cx-74,b-74); ctx.lineTo(cx,b-104); ctx.lineTo(cx+74,b-74); ctx.stroke();
+      ell(cx,b-84,5,5,a);
+      return b-108; }
+  };
+
+  function figure(x,feet,col,phase,moving,scarf,face){
+    ell(x,feet+1,11,2.6,'rgba(25,20,15,0.16)');
+    var sw=moving?Math.sin(phase)*5:0, bob=moving?Math.abs(Math.cos(phase))*1.2:0, y=feet-bob;
+    ctx.strokeStyle=col; ctx.lineCap='round'; ctx.lineWidth=3;
+    ctx.beginPath(); ctx.moveTo(x-1.5,y-15); ctx.lineTo(x-1.5+sw,y); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(x+1.5,y-15); ctx.lineTo(x+1.5-sw,y); ctx.stroke();
+    ctx.fillStyle=col; ctx.beginPath(); ctx.moveTo(x-6,y-37); ctx.quadraticCurveTo(x,y-41,x+6,y-37); ctx.lineTo(x+9,y-14); ctx.quadraticCurveTo(x,y-11,x-9,y-14); ctx.closePath(); ctx.fill();
+    ell(x,y-45,6,6.4,col);
+    if(scarf){
+      ctx.fillStyle='#BC9438'; ctx.beginPath(); ctx.moveTo(x-6,y-38); ctx.quadraticCurveTo(x,y-35,x+6,y-38); ctx.lineTo(x+6.4,y-34.5); ctx.quadraticCurveTo(x,y-31.5,x-6.4,y-34.5); ctx.closePath(); ctx.fill();
+      var tail=moving? -face*(6+Math.sin(phase*0.5)*2) : -face*3; line(x-face*2,y-35,x-face*2+tail,y-28,'#BC9438',2.2);
+    }
+    ctx.lineCap='butt';
+  }
+  function gate(g,x){
+    var al=1-g.open;
+    ctx.globalAlpha=0.45+0.55*al;
+    rect(x-15,PATH_Y-34,3,34,'#8C7F6C'); rect(x+12,PATH_Y-34,3,34,'#8C7F6C');
+    ell(x-13.5,PATH_Y-35,3,3,'#9A7B22'); ell(x+13.5,PATH_Y-35,3,3,'#9A7B22');
+    ctx.globalAlpha=1;
+    if(al>0.02){ ctx.globalAlpha=al; ctx.strokeStyle='#BC9438'; ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(x-13,PATH_Y-29); ctx.quadraticCurveTo(x,PATH_Y-14+g.open*12,x+13,PATH_Y-29); ctx.stroke(); ctx.globalAlpha=1; }
+  }
+  function marker(x,y,t){
+    var r=16+Math.sin(t*3)*2;
+    ell(x,y,r,r,rad(x,y,r,[[0,'rgba(201,155,52,0.35)'],[1,'rgba(201,155,52,0)']]));
+    poly([x,y-7,x+6,y,x,y+7,x-6,y],'#9A7B22');
+  }
+  function badge(x,y){
+    ell(x,y,9,9,'#F1E6C6'); ctx.strokeStyle='#9A7B22'; ctx.lineWidth=1.2; ctx.beginPath(); ctx.arc(x,y,9,0,PI*2); ctx.stroke();
+    ctx.lineWidth=1.8; ctx.lineCap='round'; ctx.beginPath(); ctx.moveTo(x-4,y); ctx.lineTo(x-1,y+3); ctx.lineTo(x+4.5,y-3.5); ctx.stroke(); ctx.lineCap='butt';
+  }
+
+  /* main loop */
+  var last=performance.now(), T=0, drawn=false;
+  function loop(now){
+    var dt=Math.min(50,now-last)/1000; last=now;
+    if(!inView && drawn){ requestAnimationFrame(loop); return; }
+    drawn=true; T+=dt;
+
+    player.moving=false;
+    if(state==='walk'){
+      var dir=held.left?-1:held.right?1:0;
+      if(dir){
+        var nx=player.x+dir*SPEED*dt, lim=MAP_W-60;
+        for(var g=0;g<GATES.length;g++){ if(!CH[g].done){ lim=Math.min(lim,GATES[g].x-26); break; } }
+        nx=Math.max(50,Math.min(lim,nx));
+        if(Math.abs(nx-player.x)>0.01){ player.moving=true; player.phase+=Math.abs(nx-player.x)*0.11; }
+        player.face=dir;
+        var c=firstNotDone(), px=player.x; player.x=nx;
+        if(c>=0 && (px-CH[c].x)*(nx-CH[c].x)<=0 && px!==nx){ player.x=CH[c].x; openChapter(c); }
+      }
+    }
+    GATES.forEach(function(g,i){ var target=CH[i].done?1:0; g.open+=(target-g.open)*Math.min(1,dt*4); });
+
+    var off=Math.max(0,Math.min(MAP_W-VIEW_W, player.x-VIEW_W/2));
+    ctx.setTransform(SCALE,0,0,SCALE,0,0);
+
+    rect(0,0,VIEW_W,VIEW_H,lin(0,0,0,GROUND,[[0,'#ECE4D2'],[0.6,'#F4EEE2'],[1,'#F8F4EA']]));
+    var sunX=VIEW_W*0.72-off*0.05;
+    ell(sunX,118,180,180,rad(sunX,118,180,[[0,'rgba(247,236,205,0.95)'],[0.45,'rgba(242,230,194,0.4)'],[1,'rgba(242,230,194,0)']]));
+    ell(sunX,118,46,46,rad(sunX,118,46,[[0,'rgba(201,155,52,0.38)'],[1,'rgba(201,155,52,0)']]));
+    CLOUDS.forEach(function(cl){ var x=((cl.x+T*5-off*0.12)%1500+1500)%1500-200; if(x>VIEW_W+120) return;
+      ell(x,cl.y,cl.w*0.5,9,'rgba(253,251,246,0.75)'); ell(x+cl.w*0.18,cl.y-6,cl.w*0.28,9,'rgba(253,251,246,0.6)'); });
+    hills(off,0.15,212,14,0.004,8,0.011,'#E8DFCD');
+    hills(off,0.3,244,12,0.006,6,0.017,'#E0D6C2');
+    BACK_TREES.forEach(function(t){ var x=t.x-off*0.45; if(x<-30||x>VIEW_W+30) return; tree(x,268+Math.sin(t.x*0.01)*4,t.h,t.type,t.tone,'#C9C7AE','#BDBEA2'); });
+    hills(off,0.55,276,6,0.009,3,0.023,'#E6DDCB');
+    rect(0,GROUND-6,VIEW_W,VIEW_H-GROUND+6,lin(0,GROUND-6,0,VIEW_H,[[0,'#EEE7D8'],[1,'#E5DBC7']]));
+    MID_TREES.forEach(function(t){ var x=t.x-off*0.8; if(x<-40||x>VIEW_W+40) return; tree(x,GROUND+2,t.h,t.type,t.tone,'#AFB094','#9EA084'); });
+
+    var cur=firstNotDone();
+    CH.forEach(function(s,i){
+      var cx=s.x-off; if(cx<-200||cx>VIEW_W+200) return;
+      var top=B[s.kind](cx,s.accent);
+      if(s.done) badge(cx,top-14); else if(i===cur && state!=='title') marker(cx,top-16+Math.sin(T*2.4)*3,T);
+    });
+
+    rect(0,PATH_Y-10,VIEW_W,20,lin(0,PATH_Y-10,0,PATH_Y+10,[[0,'#E9DFCB'],[0.25,'#F5EFE3'],[0.8,'#F2EBDD'],[1,'#E7DCC7']]));
+    STONES.forEach(function(st){ var x=st.x-off; if(x<-4||x>VIEW_W+4) return; ell(x,st.y,st.r*1.6,st.r*0.8,'rgba(170,152,124,0.35)'); });
+
+    CH.forEach(function(s){ var cx=s.x-off; if(cx<-200||cx>VIEW_W+200) return;
+      figure(cx+30,PATH_Y-4,'#8C8274',0,false,false,-1);
+      ctx.textAlign='center'; ctx.fillStyle='#38312A'; ctx.font='600 10.5px '+SANS; ctx.fillText(s.name.toUpperCase(),cx,PATH_Y+30);
+      ctx.fillStyle='#776D5F'; ctx.font='italic 400 11px '+SERIF; ctx.fillText(s.year,cx,PATH_Y+45); ctx.textAlign='left';
+    });
+    GATES.forEach(function(g){ var x=g.x-off; if(x>-30&&x<VIEW_W+30) gate(g,x); });
+
+    figure(player.x-off,PATH_Y+2,'#19140F',player.phase,player.moving,true,player.face);
+
+    FRONT.forEach(function(f){ var x=f.x-off*1.2; if(x<-120||x>VIEW_W+120) return;
+      ell(x,VIEW_H+4,f.w,f.h+10,f.tone<0.5?'rgba(199,192,166,0.55)':'rgba(216,206,184,0.6)'); });
+
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+  $('jrStart').onclick=function(){ $('jrTitle').style.display='none'; document.getElementById('journey').classList.add('is-playing'); state='walk'; mark(); track('journey_start'); recenter(); };
+  function recenter(){ requestAnimationFrame(function(){ var r=frame.getBoundingClientRect(); if(r.top<0||r.bottom>window.innerHeight){ var c=document.getElementById('jrControls'), cr=c.getBoundingClientRect(), tgt=(cr.height?cr.bottom:r.bottom)-r.top; window.scrollBy({top:r.top-Math.max(12,(window.innerHeight-tgt)/2),behavior:'smooth'}); } }); }
+  function win(){ state='win'; held={}; document.getElementById('journey').classList.remove('is-playing'); $('jrWin').style.display='flex'; track('journey_complete'); }
+  $('jrCta').onclick=function(){ track('journey_cta_contact'); };
+  $('jrAgain').onclick=function(){
+    CH.forEach(function(s){ s.done=false; }); player.x=80; player.face=1;
+    $('jrWin').style.display='none'; document.getElementById('journey').classList.add('is-playing'); state='walk'; mark(); recenter();
+  };
+})();
 </script>
 </body>
 </html>

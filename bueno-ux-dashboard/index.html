@@ -188,6 +188,9 @@
   .exec .icard .ic-body{ color:#F2F3F9; font-size:15px; line-height:1.72; }
   .exec .act .ac-b{ color:#EFF1F8; font-size:14px; line-height:1.7; }
   .exec .act .ac-t{ font-size:16.5px; }
+
+/* iPhone/iPad Safari only: 16px inputs stop the page zooming in when a field is tapped */
+@supports (-webkit-touch-callout: none) { input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-size: max(16px, 1em) !important; } }
 </style>
 </head>
 <body>

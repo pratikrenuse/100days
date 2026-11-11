@@ -40,7 +40,7 @@ img{max-width:100%;display:block;}
 .reveal.d1{transition-delay:.08s;}.reveal.d2{transition-delay:.16s;}.reveal.d3{transition-delay:.24s;}.reveal.d4{transition-delay:.32s;}
 
 /* NAV */
-nav{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4rem;border-bottom:1px solid var(--border);background:rgba(246,242,241,0.85);backdrop-filter:blur(20px);position:sticky;top:0;z-index:100;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4rem;border-bottom:1px solid var(--border);background:rgba(246,242,241,0.85);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);position:sticky;top:0;z-index:100;}
 .nav-logo{font-family:var(--serif);font-size:0.9rem;font-weight:400;color:var(--ink);text-decoration:none;}
 .nav-logo span{color:var(--gold);}
 .nav-left{display:flex;align-items:center;gap:1.1rem;}
@@ -255,6 +255,11 @@ footer a:hover{color:var(--gold);}
   .trust-track,.hero-h1 .rotor b,.pill .dot{animation:none;}
   .hero-h1 .rotor b:first-child{opacity:1;position:static;}
 }
+
+/* iPhone/iPad Safari only: 16px inputs stop the page zooming in when a field is tapped */
+@supports (-webkit-touch-callout: none) { input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-size: max(16px, 1em) !important; } }
+/* very narrow phones: never scroll sideways */
+@media (max-width: 360px) { html { overflow-x: hidden; } }
 </style>
 </head>
 <body>

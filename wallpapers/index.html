@@ -22,7 +22,7 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink2);font-family:var(--sans);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 p{max-width:65ch;margin:0 0 1.15rem}
 a{color:inherit}
-nav{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4rem;border-bottom:1px solid var(--border);background:rgba(246,242,241,0.95);backdrop-filter:blur(20px);position:sticky;top:0;z-index:100}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4rem;border-bottom:1px solid var(--border);background:rgba(246,242,241,0.95);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);position:sticky;top:0;z-index:100}
 .nav-logo{font-family:var(--serif);font-size:0.9rem;font-weight:400;color:var(--ink);text-decoration:none}
 .nav-logo span{color:var(--gold)}
 .nav-left{display:flex;align-items:center;gap:1.25rem}
@@ -116,6 +116,14 @@ footer a:hover{color:var(--gold)}
 .live-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
 @media (max-width:960px){.live{grid-template-columns:1fr;padding:2.5rem 1.25rem 0;gap:2rem}.live h2{font-size:1.8rem}}
 @media (max-width:600px){.url{flex-direction:column}.url code{border-right:1px solid var(--border);border-bottom:none}}
+/* stop long URLs and buttons from widening the page on phones and tablets */
+.hero>*,.live>*,.grid>*,main>*{min-width:0}
+.card-meta{flex-wrap:wrap}
+
+/* iPhone/iPad Safari only: 16px inputs stop the page zooming in when a field is tapped */
+@supports (-webkit-touch-callout: none) { input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-size: max(16px, 1em) !important; } }
+/* long link: end with an ellipsis instead of a hard cut */
+.url code{display:block;line-height:50px;text-overflow:ellipsis}
 </style>
 </head>
 <body>

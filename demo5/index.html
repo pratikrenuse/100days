@@ -40,7 +40,7 @@ body { background: var(--bg); color: var(--ink2); font-family: var(--sans); font
 p { max-width: 65ch; margin: 0 0 1.15rem; }
 
 /* ── NAV ── */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 4rem; background: rgba(245,241,233,0.86); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 4rem; background: rgba(245,241,233,0.86); -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px); border-bottom: 1px solid var(--border); }
 .nav-left { display: flex; align-items: center; gap: 1.1rem; }
 .nav-logo { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--ink); text-decoration: none; letter-spacing: 0.02em; }
 .nav-logo span { color: var(--gold); }
@@ -260,6 +260,11 @@ footer a:hover { color: var(--gold); }
   .results-item, .results-item:nth-child(2n) { padding: 0 0 1.5rem 0 !important; border: none; border-bottom: 1px solid var(--border); }
   .stage-intro p { display: none; }
 }
+
+/* iPhone/iPad Safari only: 16px inputs stop the page zooming in when a field is tapped */
+@supports (-webkit-touch-callout: none) { input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-size: max(16px, 1em) !important; } }
+/* very narrow phones: never scroll sideways */
+@media (max-width: 360px) { html { overflow-x: hidden; } }
 </style>
 </head>
 <body>

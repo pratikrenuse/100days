@@ -32,7 +32,7 @@
     nav {
       display: flex; align-items: center; justify-content: space-between;
       padding: 1.1rem 4rem; border-bottom: 1px solid var(--border);
-      background: rgba(246,242,241,0.95); backdrop-filter: blur(20px);
+      background: rgba(246,242,241,0.95); -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
       position: sticky; top: 0; z-index: 100;
     }
     .nav-logo { font-family: var(--serif); font-size: 0.95rem; font-weight: 400; color: var(--ink); text-decoration: none; }
@@ -341,7 +341,10 @@
       .projects-grid { grid-template-columns: 1fr; }
       .header-meta { flex-direction: column; gap: 1.5rem; }
     }
-  </style>
+      /* narrow phones: let the signup form shrink to the screen */
+    .signup-band-inner > * { min-width: 0; }
+    .signup-row input { min-width: 0; width: 100%; }
+</style>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
   <script>

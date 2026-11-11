@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude 101: Ship your portfolio site in 1 hour · Pratik Renuse</title>
+<meta name="description" content="A sold-out GrowthX masterclass where 100 attendees built and shipped their own portfolio site with Claude in 90 minutes. See the session, the room and what got built.">
+<meta property="og:title" content="Claude 101: Ship your portfolio site in 1 hour · Pratik Renuse">
+<meta property="og:description" content="A sold-out GrowthX masterclass where 100 attendees built and shipped their own portfolio site with Claude in 90 minutes. See the session, the room and what got built.">
+<meta property="og:image" content="https://pratikrenuse.com/talks/claude-101/media/room-2.jpg">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#F6F2F1;--surface:#EEE8E4;--raised:#E5DDD7;--border:#D0C8C0;--border2:#BCB3AA;--ink:#1A1512;--ink2:#38302A;--ink3:#504840;--ink4:#786E66;--gold:#8C6A18;--gold-mid:#B8903A;--gold-bg:#F0E4C4;--dark:#0F0E0C;--serif:'IBM Plex Serif',Georgia,serif;--sans:'IBM Plex Sans',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;font-size:18px}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink2);font-family:var(--sans);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+p{max-width:65ch;margin:0 0 1.15rem}
+a{color:inherit}
+img,video{display:block;max-width:100%}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4rem;border-bottom:1px solid var(--border);background:rgba(246,242,241,0.95);backdrop-filter:blur(20px);position:sticky;top:0;z-index:100}
+.nav-left{display:flex;align-items:center;gap:1.25rem}
+.nav-logo{font-family:var(--serif);font-size:0.9rem;font-weight:400;color:var(--ink);text-decoration:none}
+.nav-logo span{color:var(--gold)}
+.nav-div{color:var(--border)}
+.nav-title{font-size:0.78rem;color:var(--ink3);text-decoration:none}
+a.nav-title:hover{color:var(--gold)}
+.nav-badge{font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);background:var(--gold-bg);padding:0.2rem 0.6rem;border:1px solid #D4B870}
+.nav-cta{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--bg);background:var(--ink);text-decoration:none;padding:0.75rem 1.1rem;font-weight:500;min-height:44px;display:inline-flex;align-items:center;transition:background .2s}
+.nav-cta:hover{background:var(--gold)}
+.wrap{max-width:72rem;margin:0 auto;padding:0 4rem}
+section{padding:6rem 0}
+.lbl{display:flex;align-items:center;gap:0.75rem;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1.25rem}
+.lbl::before{content:'';width:2rem;height:1px;background:var(--gold)}
+h1,h2,h3{font-family:var(--serif);color:var(--ink);line-height:1.2}
+h2{font-size:2.3rem;font-weight:300;margin-bottom:1.25rem}
+h2 em,h1 em{font-style:italic;color:var(--gold)}
+.lead{font-size:1.1rem;color:var(--ink3)}
+.btn{display:inline-flex;align-items:center;gap:0.6rem;min-height:48px;padding:0.9rem 1.5rem;font-family:var(--sans);font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;text-decoration:none;border:none;cursor:pointer;transition:background .2s,color .2s}
+.btn-dark{background:var(--ink);color:var(--bg)}
+.btn-dark:hover{background:var(--gold)}
+.btn-dark::after{content:'→';transition:transform .2s}
+.btn-dark:hover::after{transform:translateX(4px)}
+.btn-ghost{color:var(--ink);border-bottom:1px solid var(--ink);padding:0.9rem 0.2rem}
+.btn-ghost:hover{color:var(--gold);border-color:var(--gold)}
+.actions{display:flex;gap:1.75rem;align-items:center;flex-wrap:wrap}
+
+/* event hero */
+.ev-hero{padding:5rem 0 3rem}
+.ev-hero h1{font-size:3.4rem;font-weight:300;letter-spacing:-0.01em;margin-bottom:1.5rem;max-width:20ch}
+.ev-hero .lead{max-width:40rem;margin-bottom:2rem}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border)}
+.fact-k{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink4);margin-bottom:0.3rem}
+.fact-v{font-family:var(--serif);color:var(--ink);font-size:1.02rem;line-height:1.35}
+.stamp{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--bg);background:var(--gold);padding:0.35rem 0.7rem;margin-bottom:1.5rem;font-weight:500}
+.feature-media{max-width:72rem;margin:0 auto;padding:0 4rem}
+.feature-media video,.feature-media img{width:100%;background:var(--dark)}
+.feature-media figcaption{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:0.85rem;color:var(--ink3);margin-top:0.85rem}
+.feature-media figcaption a{color:var(--gold);font-weight:500}
+
+/* agenda */
+.agenda{border-top:1px solid var(--border);margin-top:2rem}
+.ag-row{display:grid;grid-template-columns:11rem 14rem 1fr;gap:2rem;padding:1.4rem 0;border-bottom:1px solid var(--border);align-items:baseline}
+.ag-time{font-family:var(--mono);font-size:0.85rem;color:var(--gold)}
+.ag-name{font-family:var(--serif);font-size:1.15rem;color:var(--ink)}
+.ag-desc{color:var(--ink3);font-size:0.95rem}
+
+/* gallery */
+.gallery{columns:3;column-gap:0.75rem;margin-top:2.5rem}
+.gallery button{display:block;width:100%;border:0;padding:0;margin:0 0 0.75rem;background:var(--raised);cursor:zoom-in;overflow:hidden;break-inside:avoid}
+.gallery img{width:100%;height:auto;transition:transform .5s ease}
+.gallery button:hover img{transform:scale(1.02)}
+.gallery button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.lightbox{position:fixed;inset:0;background:rgba(15,14,12,0.94);display:none;align-items:center;justify-content:center;z-index:200;padding:2rem}
+.lightbox.on{display:flex}
+.lightbox img{max-height:86vh;max-width:92vw;object-fit:contain}
+.lightbox p{position:absolute;bottom:1.5rem;left:0;right:0;text-align:center;max-width:none;color:#C8C0B8;font-size:0.9rem;margin:0}
+.lb-close{position:absolute;top:1rem;right:1rem;background:none;border:1px solid #504840;color:#EDE6DD;font-family:var(--sans);font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.75rem 1rem;min-height:44px;cursor:pointer}
+.lb-close:hover{border-color:var(--gold-mid);color:var(--gold-mid)}
+
+/* quotes */
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:2.5rem}
+.quote-card{background:var(--surface);padding:2.25rem;display:flex;flex-direction:column;gap:1.25rem}
+.quote-card.big{grid-column:span 2;background:var(--dark)}
+.quote-card blockquote{font-family:var(--serif);font-size:1.12rem;line-height:1.6;color:var(--ink);font-weight:400}
+.quote-card.big blockquote{font-size:1.5rem;font-weight:300;color:#EDE6DD;line-height:1.5}
+.quote-card cite{font-style:normal;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink4);margin-top:auto}
+.quote-card.big cite{color:var(--gold-mid)}
+.stars{color:var(--gold-mid);letter-spacing:0.2em;font-size:0.9rem}
+
+/* built */
+.built{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:2.5rem}
+.built a{text-decoration:none;background:var(--surface);display:flex;flex-direction:column;transition:transform .2s,background .2s}
+.built a:hover{transform:translateY(-3px);background:var(--raised)}
+.built img{aspect-ratio:16/10;object-fit:cover;object-position:top;width:100%;border-bottom:1px solid var(--border)}
+.built span{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:0.2rem}
+.built b{font-family:var(--serif);font-weight:400;color:var(--ink);font-size:1rem}
+.built small{font-size:0.82rem;color:var(--ink3);line-height:1.45}
+.resources{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}
+.res{display:inline-flex;align-items:center;gap:0.75rem;border:1px solid var(--border2);padding:0.9rem 1.2rem;min-height:48px;text-decoration:none;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;color:var(--ink)}
+.res:hover{border-color:var(--gold);color:var(--gold)}
+
+/* cta band */
+.band{background:var(--dark);padding:5.5rem 0;text-align:center}
+.band h2{color:#EDE6DD}
+.band p{color:#C8C0B8;margin:0 auto 2rem}
+.band .lbl{justify-content:center}
+.band .btn-dark{background:var(--gold-mid);color:var(--dark)}
+.band .btn-dark:hover{background:#EDE6DD}
+
+/* next */
+.next{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:2rem}
+
+/* event cards (hub + next) */
+.ev-card{text-decoration:none;background:var(--surface);display:flex;flex-direction:column;transition:transform .25s,background .25s}
+.ev-card:hover{transform:translateY(-4px);background:var(--raised)}
+.ev-card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.ev-card .ev-body{padding:1.6rem 1.75rem 1.9rem;display:flex;flex-direction:column;gap:0.45rem;flex:1}
+.ev-type{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.ev-name{font-family:var(--serif);font-size:1.3rem;color:var(--ink);line-height:1.3}
+.ev-meta{font-size:0.88rem;color:var(--ink3)}
+.ev-proof{font-size:0.85rem;color:var(--ink2);margin-top:0.4rem}
+.ev-link{margin-top:auto;padding-top:0.9rem;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink);font-weight:500}
+.ev-card:hover .ev-link{color:var(--gold)}
+
+footer{padding:1.1rem 4rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink4);background:var(--surface)}
+footer a{color:var(--ink4);text-decoration:none}
+footer a:hover{color:var(--gold)}
+.r{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.r.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}}
+
+@media (max-width:960px){
+  :root{font-size:17px}
+  nav{padding:1rem 1.25rem}
+  .nav-title,.nav-div,.nav-badge{display:none}
+  .wrap,.feature-media{padding:0 1.25rem}
+  section{padding:4rem 0}
+  .ev-hero{padding:3rem 0 2rem}
+  .ev-hero h1{font-size:2.5rem}
+  .facts{grid-template-columns:1fr 1fr}
+  .ag-row{grid-template-columns:1fr;gap:0.3rem}
+  .gallery{columns:2}
+  .quotes,.next{grid-template-columns:1fr}
+  .quote-card.big{grid-column:span 1}
+  .quote-card.big blockquote{font-size:1.25rem}
+  .built{grid-template-columns:1fr 1fr}
+  footer{flex-direction:column;gap:0.5rem;text-align:center;padding:1rem}
+}
+@media (max-width:480px){
+  :root{font-size:16px}
+  .gallery{columns:1}
+  h2{font-size:1.9rem}
+  .ev-hero h1{font-size:2.1rem}
+  .facts,.built{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-left">
+    <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
+    <span class="nav-div">/</span>
+    <a href="/talks/" class="nav-title">Speaking</a>
+    <span class="nav-badge">Masterclass</span>
+  </div>
+  <a href="/talks/#invite" class="nav-cta">Invite me to speak</a>
+</nav>
+<header class="ev-hero">
+  <div class="wrap r">
+    <div class="stamp">Sold out · 100 of 100 seats</div>
+    <div class="lbl">GrowthX masterclass · Online · 19 June 2026</div>
+    <h1>Claude 101: ship your portfolio site in <em>one hour</em></h1>
+    <p class="lead">A live, hands-on masterclass for the GrowthX community. Attendees arrived with a resume and a LinkedIn export, and left with a live website, a GitHub repo and a working lead form.</p>
+    <div class="actions">
+      <a href="/talks/#invite" class="btn btn-dark">Run this for my team</a>
+      <a href="#reel" class="btn btn-ghost">Watch the highlights</a>
+    </div>
+    <div class="facts"><div><div class="fact-k">Host</div><div class="fact-v">GrowthX</div></div><div><div class="fact-k">Seats</div><div class="fact-v">100 of 100, sold out</div></div><div><div class="fact-k">Format</div><div class="fact-v">90-minute live build</div></div><div><div class="fact-k">Stack</div><div class="fact-v">Claude, GitHub, Vercel, Supabase</div></div></div>
+  </div>
+</header>
+<figure class="feature-media r" id="reel">
+  <video src="/talks/claude-101/reel.mp4" poster="/talks/claude-101/reel-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Highlights from the Claude 101 masterclass"></video>
+  <figcaption><span>Highlights from the session, 40 seconds</span><a href="https://pratikrenuse.notion.site/Claude-101-Internal-387ec28c2b7480ad8e33dbc6ca90904f" target="_blank" rel="noopener">Watch the full recording ↗</a></figcaption>
+</figure>
+
+<section>
+  <div class="wrap">
+    <div class="r">
+      <div class="lbl">How the 90 minutes ran</div>
+      <h2>Theory for ten minutes. <em>Building</em> for the rest.</h2>
+    </div>
+    <div class="agenda r">
+      <div class="ag-row"><span class="ag-time">7:00 to 7:10 PM</span><span class="ag-name">Intro and theory</span><span class="ag-desc">What we build tonight, why it matters, and why a GitHub profile is now a signal.</span></div>
+      <div class="ag-row"><span class="ag-time">7:10 to 7:45 PM</span><span class="ag-name">Live build</span><span class="ag-desc">Everyone uploads their resume, LinkedIn export and a reference site, then prompts Claude for their portfolio.</span></div>
+      <div class="ag-row"><span class="ag-time">7:45 to 8:00 PM</span><span class="ag-name">Demos</span><span class="ag-desc">Volunteers share their screens and get live feedback on what they built.</span></div>
+      <div class="ag-row"><span class="ag-time">8:00 to 8:30 PM</span><span class="ag-name">Ship live and Q&amp;A</span><span class="ag-desc">Push to a GitHub repo, deploy on Vercel, connect a Supabase form, then open questions.</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="r">
+      <div class="lbl">From the session</div>
+      <h2>A full room, <em>cameras on</em></h2>
+    </div>
+    <div class="gallery r"><button type="button" class="wide" data-full="/talks/claude-101/media/room-1.jpg" data-cap="Attendees building along on camera" aria-label="Open photo: Attendees building along on camera"><img src="/talks/claude-101/media/room-1.jpg" alt="Attendees building along on camera" loading="lazy"></button><button type="button" class="tall" data-full="/talks/claude-101/media/event-card.jpg" data-cap="The sold-out event listing on GrowthX" aria-label="Open photo: The sold-out event listing on GrowthX"><img src="/talks/claude-101/media/event-card.jpg" alt="The sold-out event listing on GrowthX" loading="lazy"></button><button type="button" class="" data-full="/talks/claude-101/media/slide-codebase.jpg" data-cap="Why Claude: no-code builds a website, Claude builds your codebase" aria-label="Open photo: Why Claude: no-code builds a website, Claude builds your codebase"><img src="/talks/claude-101/media/slide-codebase.jpg" alt="Why Claude: no-code builds a website, Claude builds your codebase" loading="lazy"></button><button type="button" class="" data-full="/talks/claude-101/media/live-build.jpg" data-cap="Live build in progress" aria-label="Open photo: Live build in progress"><img src="/talks/claude-101/media/live-build.jpg" alt="Live build in progress" loading="lazy"></button><button type="button" class="wide" data-full="/talks/claude-101/media/slide-three-things.jpg" data-cap="What everyone walked away with: a live URL, a GitHub repo and a builder mindset" aria-label="Open photo: What everyone walked away with: a live URL, a GitHub repo and a builder mindset"><img src="/talks/claude-101/media/slide-three-things.jpg" alt="What everyone walked away with: a live URL, a GitHub repo and a builder mindset" loading="lazy"></button><button type="button" class="" data-full="/talks/claude-101/media/result-site.jpg" data-cap="A finished portfolio site, built live" aria-label="Open photo: A finished portfolio site, built live"><img src="/talks/claude-101/media/result-site.jpg" alt="A finished portfolio site, built live" loading="lazy"></button><button type="button" class="wide" data-full="/talks/claude-101/media/slide-github.jpg" data-cap="A GitHub profile is a signal" aria-label="Open photo: A GitHub profile is a signal"><img src="/talks/claude-101/media/slide-github.jpg" alt="A GitHub profile is a signal" loading="lazy"></button><button type="button" class="" data-full="/talks/claude-101/media/room-2.jpg" data-cap="The room near the end of the session" aria-label="Open photo: The room near the end of the session"><img src="/talks/claude-101/media/room-2.jpg" alt="The room near the end of the session" loading="lazy"></button></div>
+  </div>
+</section>
+
+<section style="background:var(--surface)">
+  <div class="wrap">
+    <div class="r">
+      <div class="lbl">What attendees said</div>
+      <h2>In their <em>own words</em></h2>
+    </div>
+    <div class="quotes">
+      <div class="quote-card big r">
+        <span class="stars" aria-label="Rated 5 out of 5">★★★★★</span>
+        <blockquote>"A big shoutout to Pratik for an incredibly precise and insightful session on building portfolio websites with Claude and Vercel. Pratik had complete clarity on the process, even the exact roadblocks we might face, and addressed them on the fly. The pacing was perfect, and the takeaways were actionable. And voila! I built my professional portfolio website."</blockquote>
+        <cite>Phani Vangala · attendee review</cite>
+      </div>
+      <div class="quote-card r" style="background:var(--bg)"><blockquote>"Very insightful, thank you so much. I used Claude for the first time today and I am surprised how easy you made it look!"</blockquote><cite>Teena Sharma · attendee</cite></div>
+      <div class="quote-card r" style="background:var(--bg)"><blockquote>"Thank you so much Pratik, loved it, specially the Supabase one!! Will share my deployed project on Sunday."</blockquote><cite>Khushboo Makhija · attendee</cite></div>
+      <div class="quote-card r" style="background:var(--bg)"><blockquote>"This was a good kick in the bum to get started on getting into the habit of building."</blockquote><cite>Praveen Bandaru · attendee</cite></div>
+      <div class="quote-card r" style="background:var(--bg)"><blockquote>"Will share the website soon. Experimenting with multiple options. First version will be hosted in the next 30 to 60 mins."</blockquote><cite>Aniket K · Co-founder, KamayaKya</cite></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="r">
+      <div class="lbl">Built live in the session</div>
+      <h2>Five versions of one site, <em>in one hour</em></h2>
+      <p class="lead">These are the actual pages Claude produced on screen during the masterclass, from a plain resume to a playable portfolio. Open any of them.</p>
+    </div>
+    <div class="built r">
+      <a href="built/v1-editorial.html" target="_blank" rel="noopener"><img src="/talks/claude-101/media/built-v1-editorial.jpg" alt="Version 1, editorial portfolio" loading="lazy"><span><b>v1 Editorial</b><small>First draft from the resume and LinkedIn export</small></span></a>
+      <a href="built/v2-minimal.html" target="_blank" rel="noopener"><img src="/talks/claude-101/media/built-v2-minimal.jpg" alt="Version 2, minimal portfolio" loading="lazy"><span><b>v2 Minimal</b><small>Redesigned from a reference site</small></span></a>
+      <a href="built/v3-quest.html" target="_blank" rel="noopener"><img src="/talks/claude-101/media/built-v3-quest.jpg" alt="Version 3, gamified quest" loading="lazy"><span><b>v3 Quest</b><small>The same story, gamified</small></span></a>
+      <a href="built/v3-rpg.html" target="_blank" rel="noopener"><img src="/talks/claude-101/media/built-v3-rpg.jpg" alt="Version 3, RPG portfolio" loading="lazy"><span><b>v3 RPG</b><small>A playable game with real logic</small></span></a>
+      <a href="built/v4-combined.html" target="_blank" rel="noopener"><img src="/talks/claude-101/media/built-v4-combined.jpg" alt="Version 4, combined site with lead form" loading="lazy"><span><b>v4 Combined</b><small>Profile, game and a lead form on one page</small></span></a>
+    </div>
+    <div class="resources r">
+      <a class="res" href="claude-101-slides.pdf" download>Download the slides (PDF)</a>
+      <a class="res" href="https://pratikrenuse.notion.site/Claude-101-Internal-387ec28c2b7480ad8e33dbc6ca90904f" target="_blank" rel="noopener">Watch the full 100-minute recording ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="lbl">For organisers</div>
+    <h2>Want this at <em>your event</em>?</h2>
+    <p>I run talks and hands-on sessions for communities, companies and business schools, in person and online. Tell me about your audience and I will reply within 48 hours.</p>
+    <a href="/talks/#invite" class="btn btn-dark">Invite me to speak</a>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="lbl r">More sessions</div>
+    <div class="next"><a class="ev-card r" href="/talks/coditas-deployed/"><img src="/talks/media/coditas-room.jpg" alt="Pratik Renuse speaking at Deployed by Coditas in Pune" loading="lazy"><span class="ev-body"><span class="ev-type">Guest talk · Pune</span><span class="ev-name">Deploying AI tools for growth</span><span class="ev-meta">Deployed: AI Showcase by Coditas · 27 June 2026</span><span class="ev-proof">Guest speaker at Coditas HQ</span><span class="ev-link">View the session →</span></span></a><a class="ev-card r" href="/talks/builders-night-out/"><img src="/talks/media/bno-group.jpg" alt="Builders at the GrowthX Builders Night Out in Pune" loading="lazy"><span class="ev-body"><span class="ev-type">Build night · Pune</span><span class="ev-name">Builders Night Out</span><span class="ev-meta">GrowthX · 4 July 2026</span><span class="ev-proof">Co-hosted, 20 builders in one room</span><span class="ev-link">View the session →</span></span></a></div>
+  </div>
+</section>
+<footer>
+  <span>Claude 101 · Pratik Renuse</span>
+  <a href="/talks/">← All talks and workshops</a>
+</footer>
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Photo"><button class="lb-close" type="button">Close photo</button><img alt=""><p></p></div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}}),{threshold:0.06});
+document.querySelectorAll('.r').forEach(el=>io.observe(el));
+const lb=document.getElementById('lb');
+if(lb){
+  const img=lb.querySelector('img'),cap=lb.querySelector('p');
+  let last=null;
+  document.querySelectorAll('[data-full]').forEach(b=>b.addEventListener('click',()=>{last=b;img.src=b.dataset.full;img.alt=b.dataset.cap;cap.textContent=b.dataset.cap;lb.classList.add('on');lb.querySelector('button').focus();}));
+  const close=()=>{lb.classList.remove('on');img.src='';if(last)last.focus();};
+  lb.addEventListener('click',e=>{if(e.target===lb||e.target.closest('.lb-close'))close();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&lb.classList.contains('on'))close();});
+}
+</script>
+
+</body>
+</html>

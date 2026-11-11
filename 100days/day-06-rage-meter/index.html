@@ -89,6 +89,11 @@
   footer{margin-top:70px;border-top:1px solid var(--line);padding:26px 32px;display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink3)}
   footer a{color:var(--ink3)}
   @media(max-width:720px){.stats{grid-template-columns:1fr}nav{padding:16px 20px}footer{flex-direction:column;gap:6px}}
+/* small phones: keep the signup box inside the screen */
+@media(max-width:400px){.signup{padding:22px 18px}.signup>*{min-width:0;max-width:100%;flex:1 1 100%}.signup .row{width:100%}.signup input{flex:1 1 100%;min-width:0}.signup button{flex:1 1 100%}}
+
+/* iPhone/iPad Safari only: 16px inputs stop the page zooming in when a field is tapped */
+@supports (-webkit-touch-callout: none) { input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-size: max(16px, 1em) !important; } }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>

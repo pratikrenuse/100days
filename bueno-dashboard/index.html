@@ -148,6 +148,9 @@
   .exec .ex-foot .src{ font-family:var(--serif); }
   .exec .ex-wordmark{ font-family:var(--serif); font-size:18px; color:#fff; letter-spacing:.01em; font-weight:600; }
   .exec .ex-wordmark .b{ color:var(--gold); }
+
+/* iPhone/iPad Safari only: 16px inputs stop the page zooming in when a field is tapped */
+@supports (-webkit-touch-callout: none) { input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-size: max(16px, 1em) !important; } }
 </style>
 </head>
 <body>

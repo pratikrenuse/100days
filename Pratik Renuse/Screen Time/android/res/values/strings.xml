@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Screen Time</string>
+    <string name="dashboard_name">Screen Time dashboard</string>
+    <string name="service_name">Screen Time tracker</string>
+    <string name="service_description">Reads which app is open and the website address in your browser, so Screen Time can count your time per site and show your limit pop-ups. Nothing is typed, clicked or shared with anyone else. The data goes only to your own Screen Time database.</string>
+</resources>

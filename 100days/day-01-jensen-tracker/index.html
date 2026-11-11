@@ -34,7 +34,7 @@
     nav {
       display: flex; align-items: center; justify-content: space-between;
       padding: 1.1rem 4rem; border-bottom: 1px solid var(--border);
-      background: rgba(246,242,241,0.95); backdrop-filter: blur(20px);
+      background: rgba(246,242,241,0.95); -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
       position: sticky; top: 0; z-index: 100;
     }
     .nav-left { display: flex; align-items: center; gap: 1.25rem; }
@@ -152,7 +152,12 @@
     @media (max-width: 480px) {
       .bets-grid { grid-template-columns: 1fr; }
     }
-  </style>
+      /* small phones: keep the nav on one line */
+    @media (max-width: 360px) { .nav-div, .nav-title { display: none; } }
+  
+/* iPhone/iPad Safari only: 16px inputs stop the page zooming in when a field is tapped */
+@supports (-webkit-touch-callout: none) { input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-size: max(16px, 1em) !important; } }
+</style>
 </head>
 <body>
 

@@ -9,5 +9,15 @@
       "path": "/api/gmat-mail",
       "schedule": "30 23 * * 0,2,5"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/meet",
+      "destination": "/schedule/index.html"
+    },
+    {
+      "source": "/meet/",
+      "destination": "/schedule/index.html"
+    }
   ]
 }
