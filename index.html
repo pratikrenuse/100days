@@ -75,6 +75,15 @@
       transition: background 0.2s; font-weight: 500;
     }
     .nav-btn:hover { background: var(--gold); }
+    .nav-right { display: flex; align-items: center; gap: 0.75rem; }
+    .nav-toggle { display: none; background: none; border: 1px solid var(--border2); font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); padding: 0 0.9rem; min-height: 44px; cursor: pointer; }
+    .nav-mobile-only { display: none; }
+    @media (max-width: 1240px) and (min-width: 961px) {
+      nav { padding-left: 2rem; padding-right: 2rem; }
+      .nav-links { gap: 0; }
+      .nav-links a { font-size: 0.72rem; letter-spacing: 0.1em; padding: 0.85rem 0.55rem; }
+      .nav-btn { font-size: 0.7rem; padding: 0.7rem 1rem; }
+    }
 
     /* ── HERO ───────────────────────────────────────────── */
     .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 44%; align-items: end; padding-top: 5rem; padding-left: 4rem; padding-right: 0; overflow: hidden; }
@@ -154,6 +163,9 @@
     .svc-quote { padding: 1.4rem 1.6rem; border-left: 2px solid var(--gold); background: var(--bg); }
     .svc-qt { font-family: var(--serif); font-size: 1.02rem; color: var(--ink2); line-height: 1.7; font-weight: 400; }
     .svc-by { margin-top: 0.85rem; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink3); display: flex; align-items: center; gap: 0.6rem; font-weight: 500; }
+    .svc-name-link { color: inherit; text-decoration: none; transition: color 0.2s; }
+    .svc-name-link:hover { color: var(--gold); }
+    .svc-more { margin-top: 1.25rem; }
     .svc-by::before { content: ''; display: block; width: 1.25rem; height: 1px; background: var(--border2); flex-shrink: 0; }
 
     /* ── TESTIMONIALS SCROLL ────────────────────────────── */
@@ -320,8 +332,15 @@
       :root { font-size: 17px; }   /* still above readable-web min */
 
       nav { padding: 1rem 1.25rem; gap: 0.5rem; }
-      .nav-links { display: none; }
-      .nav-btn { font-size: 0.7rem; padding: 0.65rem 1rem; letter-spacing: 0.1em; white-space: nowrap; }
+      nav { flex-wrap: wrap; }
+      .nav-links { display: none; width: 100%; flex-direction: column; gap: 0; padding: 0.5rem 0 0.75rem; }
+      .nav-links.open { display: flex; }
+      .nav-links { order: 3; }
+      .nav-right { order: 2; }
+      .nav-links a { display: block; padding: 0.9rem 0.25rem; border-bottom: 1px solid var(--border); font-size: 0.78rem; }
+      .nav-mobile-only { display: block; }
+      .nav-toggle { display: inline-flex; align-items: center; }
+      .nav-btn { display: none; }
 
       .hero {
         grid-template-columns: 1fr;
@@ -613,15 +632,19 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">Pratik <span>Renuse</span></a>
-  <ul class="nav-links">
-    <li><a href="#services">Expertise</a></li>
-    <li><a href="#case-studies">Case studies</a></li>
-    <li><a href="#speaking">Speaking</a></li>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/consulting/">Consulting</a></li>
+    <li><a href="/advising/">Advising</a></li>
+    <li><a href="/coaching/">Coaching</a></li>
+    <li><a href="/teaching/">Teaching</a></li>
+    <li><a href="/speaking/">Speaking</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="/wallpapers/">Wallpapers</a></li>
+    <li class="nav-mobile-only"><a href="#contact">Contact</a></li>
   </ul>
-  <a href="https://www.linkedin.com/in/pratikrenuse/" target="_blank" class="nav-btn">Connect on LinkedIn</a>
+  <div class="nav-right">
+    <a href="#contact" class="nav-btn">Start a conversation</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -748,7 +771,7 @@
     <div class="svc">
       <div class="svc-num">01</div>
       <div class="svc-head">
-        <div class="svc-name">Consulting</div>
+        <div class="svc-name"><a href="/consulting/" class="svc-name-link">Consulting</a></div>
         <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint1" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft1" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="58" rx="84" ry="44" fill="#C9A24A" opacity="0.12" filter="url(#soft1)"/><g filter="url(#paint1)"><rect x="34" y="96" width="20" height="28" fill="url(#wash1)"/><rect x="66" y="84" width="20" height="40" fill="url(#wash1)"/><rect x="98" y="70" width="20" height="54" fill="url(#wash1)"/><rect x="130" y="52" width="20" height="72" fill="url(#wash1)"/></g><path d="M28 110 C70 96 102 80 134 62 C146 55 156 50 166 44" fill="none" stroke="#2a2825" stroke-width="3" stroke-linecap="round" filter="url(#paint1)"/><path d="M166 44 L155 45 M166 44 L162 55" fill="none" stroke="#2a2825" stroke-width="3" stroke-linecap="round" filter="url(#paint1)"/><g filter="url(#soft1)"><ellipse cx="92" cy="122" rx="74" ry="9" fill="#FBF7EF" opacity="0.8"/></g></svg></div>
       </div>
       <div>
@@ -760,13 +783,14 @@
           <div class="svc-qt">"Pratik saved our season. He helped us get our holiday houses fully booked after all the cancellations. A pleasure working with him."</div>
           <div class="svc-by">Wilbert Elferink, Founder, Font Neuve</div>
         </div>
+        <a href="/consulting/" class="video-link svc-more">See how I consult</a>
       </div>
     </div>
 
     <div class="svc">
       <div class="svc-num">02</div>
       <div class="svc-head">
-        <div class="svc-name">Advising</div>
+        <div class="svc-name"><a href="/advising/" class="svc-name-link">Advising</a></div>
         <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint2" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="19" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="54" rx="86" ry="46" fill="#C9A24A" opacity="0.12" filter="url(#soft2)"/><g filter="url(#soft2)"><path d="M100 36 L22 16 L24 34 Z" fill="#E9C766" opacity="0.22"/><path d="M100 36 L178 16 L176 34 Z" fill="#E9C766" opacity="0.22"/><path d="M100 36 L28 60 L30 74 Z" fill="#E9C766" opacity="0.15"/></g><g filter="url(#paint2)"><path d="M54 122 Q100 104 146 122 Z" fill="url(#wash2)"/></g><g filter="url(#paint2)"><path d="M88 118 L94 40 L106 40 L112 118 Z" fill="#3a3733"/><path d="M89.5 102 L110.5 102 L111.4 114 L88.6 114 Z" fill="#C2622B" opacity="0.85"/><path d="M91 78 L109 78 L109.8 88 L90.2 88 Z" fill="#C2622B" opacity="0.7"/><rect x="85" y="37" width="30" height="4" fill="#2a2825"/><rect x="92" y="26" width="16" height="12" fill="#F3ECDD" stroke="#2a2825" stroke-width="1.3"/><path d="M90 26 L100 16 L110 26 Z" fill="#2a2825"/></g><circle cx="100" cy="33" r="9" fill="#E9C766" opacity="0.6" filter="url(#soft2)"/><circle cx="100" cy="33" r="3.4" fill="#F2DE9A"/><g filter="url(#paint2)"><path d="M150 116 L168 116 L164 122 L154 122 Z" fill="#2a2825"/><path d="M159 116 L159 104 L168 114 Z" fill="#F3ECDD" stroke="#2a2825" stroke-width="0.8"/></g><g filter="url(#soft2)"><ellipse cx="68" cy="124" rx="56" ry="10" fill="#FBF7EF" opacity="0.9"/><ellipse cx="140" cy="126" rx="52" ry="9" fill="#FBF7EF" opacity="0.85"/></g></svg></div>
       </div>
       <div>
@@ -778,13 +802,14 @@
           <div class="svc-qt">"Pratik has a knack for building effective outreach pipelines, refining value proposition communication, and providing invaluable fundraising insights. His support goes beyond scheduled sessions."</div>
           <div class="svc-by">Artur Kolishenko, Techstars Berlin</div>
         </div>
+        <a href="/advising/" class="video-link svc-more">See how I advise founders</a>
       </div>
     </div>
 
     <div class="svc">
       <div class="svc-num">03</div>
       <div class="svc-head">
-        <div class="svc-name">Speaking</div>
+        <div class="svc-name"><a href="/speaking/" class="svc-name-link">Speaking</a></div>
         <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint3" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="31" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="46" rx="74" ry="34" fill="#C9A24A" opacity="0.12" filter="url(#soft3)"/><path d="M100 12 L64 80 L136 80 Z" fill="#E9C766" opacity="0.20" filter="url(#soft3)"/><ellipse cx="100" cy="80" rx="44" ry="8" fill="#E9C766" opacity="0.35"/><line x1="44" y1="80" x2="156" y2="80" stroke="#2a2825" stroke-width="1.4"/><g filter="url(#paint3)"><circle cx="100" cy="56" r="5" fill="#2a2825"/><path d="M95.5 61 Q100 57 104.5 61 L106 80 Q100 82 94 80 Z" fill="#2a2825"/><path d="M104 65 L114 60" stroke="#2a2825" stroke-width="2.4" stroke-linecap="round"/></g><g filter="url(#paint3)"><g fill="#6d6a63" opacity="0.85"><circle cx="50" cy="94" r="4"/><circle cx="70" cy="94" r="4"/><circle cx="90" cy="94" r="4"/><circle cx="110" cy="94" r="4"/><circle cx="130" cy="94" r="4"/><circle cx="150" cy="94" r="4"/></g><g fill="#4a4640"><circle cx="44" cy="108" r="5"/><circle cx="66" cy="108" r="5"/><circle cx="88" cy="108" r="5"/><circle cx="110" cy="108" r="5"/><circle cx="132" cy="108" r="5"/><circle cx="154" cy="108" r="5"/></g><g fill="#2a2825"><circle cx="40" cy="124" r="6"/><circle cx="64" cy="124" r="6"/><circle cx="88" cy="124" r="6"/><circle cx="112" cy="124" r="6"/><circle cx="136" cy="124" r="6"/><circle cx="160" cy="124" r="6"/></g></g></svg></div>
       </div>
       <div>
@@ -796,13 +821,14 @@
           <div class="svc-qt">"Pratik is a great speaker, very knowledgeable and the audience loved him. He delivered an engaging talk. I would recommend him as a speaker for any event."</div>
           <div class="svc-by">Peter Szabo, Curator, TEDx</div>
         </div>
+        <a href="/speaking/" class="video-link svc-more">See my talks</a>
       </div>
     </div>
 
     <div class="svc">
       <div class="svc-num">04</div>
       <div class="svc-head">
-        <div class="svc-name">Coaching</div>
+        <div class="svc-name"><a href="/coaching/" class="svc-name-link">Coaching</a></div>
         <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint4" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="44" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="58" rx="84" ry="44" fill="#C9A24A" opacity="0.12" filter="url(#soft4)"/><g filter="url(#paint4)"><path d="M12 128 L12 122 Q70 96 128 64 Q150 52 186 46 L186 128 Z" fill="url(#wash4)"/></g><line x1="162" y1="46" x2="162" y2="24" stroke="#2a2825" stroke-width="2" stroke-linecap="round"/><path d="M162 26 L180 31 L162 37 Z" fill="#C2622B"/><g filter="url(#paint4)"><circle cx="142" cy="50" r="5.5" fill="#2a2825"/><path d="M137 56 Q142 51 147 56 L149 74 Q142 77 135 74 Z" fill="#2a2825"/><path d="M136 60 L122 74" stroke="#2a2825" stroke-width="2.6" stroke-linecap="round"/></g><g filter="url(#paint4)"><circle cx="104" cy="82" r="5.5" fill="#4a4640"/><path d="M99 88 Q104 83 109 88 L111 106 Q104 109 97 106 Z" fill="#4a4640"/><path d="M109 86 L122 74" stroke="#4a4640" stroke-width="2.6" stroke-linecap="round"/></g><g filter="url(#soft4)"><ellipse cx="64" cy="122" rx="54" ry="10" fill="#FBF7EF" opacity="0.85"/></g></svg></div>
       </div>
       <div>
@@ -814,13 +840,14 @@
           <div class="svc-qt">"Pratik was my mentor. He was a great listener and a master of problem-solving. He helped me clarify the goals, laid out a roadmap, and gave concrete examples on how to execute."</div>
           <div class="svc-by">Linda Chen, Student at Harvard</div>
         </div>
+        <a href="/coaching/" class="video-link svc-more">See how I coach</a>
       </div>
     </div>
 
     <div class="svc">
       <div class="svc-num">05</div>
       <div class="svc-head">
-        <div class="svc-name">Teaching</div>
+        <div class="svc-name"><a href="/teaching/" class="svc-name-link">Teaching</a></div>
         <div class="svc-illus" aria-hidden="true"><svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312f2b"/><stop offset="0.5" stop-color="#6d6a63" stop-opacity="0.6"/><stop offset="1" stop-color="#6d6a63" stop-opacity="0"/></linearGradient><filter id="paint6" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="63" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.5"/></filter><filter id="soft6" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter></defs><ellipse cx="100" cy="56" rx="84" ry="42" fill="#C9A24A" opacity="0.12" filter="url(#soft6)"/><line x1="20" y1="118" x2="180" y2="118" stroke="#2a2825" stroke-width="1" opacity="0.4"/><g filter="url(#paint6)"><rect x="118" y="46" width="56" height="42" rx="2" fill="#FBF8F0" stroke="#2a2825" stroke-width="1.6"/></g><path d="M126 88 L122 118 M166 88 L170 118" stroke="#2a2825" stroke-width="2" stroke-linecap="round"/><path d="M126 80 C140 72 150 60 166 52" fill="none" stroke="#C2622B" stroke-width="2.2" stroke-linecap="round" filter="url(#paint6)"/><path d="M166 52 L156 52 M166 52 L163 61" fill="none" stroke="#C2622B" stroke-width="2.2" stroke-linecap="round"/><g filter="url(#paint6)"><circle cx="56" cy="56" r="6" fill="#2a2825"/><path d="M48 63 Q56 57 64 63 L66 116 Q56 119 46 116 Z" fill="#2a2825"/><path d="M64 72 L84 64" stroke="#2a2825" stroke-width="3" stroke-linecap="round"/></g><g filter="url(#paint6)" fill="#4a4640"><circle cx="92" cy="86" r="5"/><path d="M86 92 Q92 87 98 92 L100 116 L84 116 Z"/><circle cx="110" cy="88" r="5"/><path d="M104 94 Q110 89 116 94 L118 116 L102 116 Z"/></g><g filter="url(#soft6)"><ellipse cx="100" cy="122" rx="74" ry="8" fill="#FBF7EF" opacity="0.6"/></g></svg></div>
       </div>
       <div>
@@ -832,6 +859,7 @@
           <div class="svc-qt">"Pratik added great value. Due to his thoroughness and hard work we executed the right measures. His communication is clear and consistent, and he always had the patience to explain and help me understand what he was doing."</div>
           <div class="svc-by">Jet Oesterreicher, Marcel Wanders Studio, Amsterdam</div>
         </div>
+        <a href="/teaching/" class="video-link svc-more">See what I teach</a>
       </div>
     </div>
 
@@ -931,8 +959,7 @@
         <div class="video-meta-item"><span><strong>4 continents:</strong> US, Europe, Middle East, Asia</span></div>
       </div>
       <div class="video-links">
-        <a href="/speaking/" class="video-link">Visit my speaking page</a>
-        <a href="#contact" class="video-link">Book me to speak</a>
+        <a href="/speaking/" class="video-link">See my talks and invite me to speak</a>
       </div>
     </div>
     <div>
@@ -1112,11 +1139,20 @@
 <!-- FOOTER -->
 <footer>
   <span>© 2026 Pratik Renuse</span>
+  <a href="https://www.linkedin.com/in/pratikrenuse/" target="_blank" rel="noopener">Connect on LinkedIn</a>
   <a href="/wallpapers/">Free quote wallpapers</a>
   <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
 </footer>
 
 <script>
+  // Mobile menu
+  (function () {
+    const tg = document.getElementById('nav-toggle'), menu = document.getElementById('nav-links');
+    if (!tg || !menu) return;
+    tg.addEventListener('click', function () { const o = menu.classList.toggle('open'); tg.setAttribute('aria-expanded', o); tg.textContent = o ? 'Close' : 'Menu'; });
+    menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { menu.classList.remove('open'); tg.setAttribute('aria-expanded', false); tg.textContent = 'Menu'; }); });
+  })();
+
   // Reveal on scroll
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
