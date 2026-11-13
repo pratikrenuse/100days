@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.pratikrenuse.com/sitemap.xml
+
+# Updated 13 Nov 2026
