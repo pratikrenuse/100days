@@ -702,6 +702,23 @@ section{padding:5rem 0}
   .intro2{gap:1rem}
 }
 @media (max-width:480px){.hsplit h1{font-size:2.1rem}}
+
+/* ===== v5: logo walls ===== */
+.logowall{background:var(--surface);padding:2.75rem 0 3rem;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.logowall .lw-cap{font-size:.95rem;color:var(--ink3);margin:0 auto 1.75rem;text-align:center;max-width:none}
+.logowall ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2rem 3.25rem}
+.lg{display:flex;align-items:center;justify-content:center;height:52px}
+.lg img{display:block;width:auto;max-width:150px;filter:grayscale(1) contrast(1.15) brightness(.55);mix-blend-mode:multiply;opacity:.8;transition:opacity .2s,filter .2s}
+.lg img:hover{opacity:1;filter:grayscale(0)}
+.lg-w img{height:26px}
+.lg-m img{height:38px}
+.lg-s img{height:50px}
+.lg-t{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--ink3);white-space:nowrap;letter-spacing:-0.01em}
+.logowall.on-bg{background:var(--bg)}
+.px-logos{display:flex;flex-wrap:wrap;gap:1.25rem 2rem;align-items:center;margin-top:1rem;list-style:none;padding:0}
+.px-logos .lg{height:44px}
+.px-panel .px-body p{margin:0}
+@media (max-width:960px){.logowall ul{gap:1.5rem 2.25rem}.lg-w img{height:22px}.lg-m img{height:32px}.lg-s img{height:42px}.lg-t{font-size:1rem}.lg img{max-width:120px}}
 </style>
 </head>
 <body>
@@ -735,7 +752,7 @@ section{padding:5rem 0}
     <div class="cnum"><b data-count="3">0</b><span>startups used as live cases</span></div>
     <div class="cnum"><b data-count="10">0</b><span>years of growth work</span></div>
   </div>
-</section><section class="row2 "><div class="img"><img src="/images/t-whiteboard.jpg" alt="Pratik teaching at a whiteboard" loading="lazy" style="object-position:50% 30%"></div><div class="txt">
+</section><section class="logowall "><div class="wrap"><p class="lw-cap">Visiting faculty and teaching at</p><ul><li class="lg lg-t">Masters’ Union</li><li class="lg lg-m"><img src="https://cdn.tetr.com/assets/ih-images/V2/newTetrLogoBrand.svg" alt="Tetr College of Business" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('lg-t');this.parentNode.innerHTML=this.alt"></li><li class="lg lg-m"><img src="https://www.spjain.org/hubfs/2026/SPJ-Global-Black-Font-1.png" alt="SP Jain" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('lg-t');this.parentNode.innerHTML=this.alt"></li><li class="lg lg-t">Future MBA</li></ul></div></section><section class="row2 "><div class="img"><img src="/images/t-whiteboard.jpg" alt="Pratik teaching at a whiteboard" loading="lazy" style="object-position:50% 30%"></div><div class="txt">
   <h2>Real cases, not textbook ones</h2>
   <p>Bueno, VU and Infento are in my slides with their real numbers. Students see what worked, what failed and why.</p>
   <p>Every class ends with something built, not just notes taken.</p><ul class="ticks"><li>Growth marketing and funnels</li><li>Marketing and sales</li><li>Go-to-market and launches</li><li>AI for marketers</li><li>Careers in marketing</li></ul></div></section><section id="where" style="background:var(--surface)"><div class="wrap"><h2>Where I teach</h2><ul class="topics-list" style="columns:2;column-gap:3rem">

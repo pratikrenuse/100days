@@ -702,6 +702,23 @@ section{padding:5rem 0}
   .intro2{gap:1rem}
 }
 @media (max-width:480px){.hsplit h1{font-size:2.1rem}}
+
+/* ===== v5: logo walls ===== */
+.logowall{background:var(--surface);padding:2.75rem 0 3rem;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.logowall .lw-cap{font-size:.95rem;color:var(--ink3);margin:0 auto 1.75rem;text-align:center;max-width:none}
+.logowall ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2rem 3.25rem}
+.lg{display:flex;align-items:center;justify-content:center;height:52px}
+.lg img{display:block;width:auto;max-width:150px;filter:grayscale(1) contrast(1.15) brightness(.55);mix-blend-mode:multiply;opacity:.8;transition:opacity .2s,filter .2s}
+.lg img:hover{opacity:1;filter:grayscale(0)}
+.lg-w img{height:26px}
+.lg-m img{height:38px}
+.lg-s img{height:50px}
+.lg-t{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--ink3);white-space:nowrap;letter-spacing:-0.01em}
+.logowall.on-bg{background:var(--bg)}
+.px-logos{display:flex;flex-wrap:wrap;gap:1.25rem 2rem;align-items:center;margin-top:1rem;list-style:none;padding:0}
+.px-logos .lg{height:44px}
+.px-panel .px-body p{margin:0}
+@media (max-width:960px){.logowall ul{gap:1.5rem 2.25rem}.lg-w img{height:22px}.lg-m img{height:32px}.lg-s img{height:42px}.lg-t{font-size:1rem}.lg img{max-width:120px}}
 </style>
 </head>
 <body>
@@ -733,7 +750,7 @@ section{padding:5rem 0}
     </div>
   </div>
 </section>
-<div class="unis-run"><div class="marquee-track"><span>Harvard</span><span>Oxford</span><span>LSE</span><span>Yale</span><span>HEC Paris</span><span>IIM</span><span>Imperial College</span><span>IE Business School</span><span>IÉSEG</span><span>Harvard</span><span>Oxford</span><span>LSE</span><span>Yale</span><span>HEC Paris</span><span>IIM</span><span>Imperial College</span><span>IE Business School</span><span>IÉSEG</span></div></div>
+<section class="logowall "><div class="wrap"><p class="lw-cap">I have coached graduates and students from</p><ul><li class="lg lg-w"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Harvard_University_logo.svg" alt="Harvard" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('lg-t');this.parentNode.innerHTML=this.alt"></li><li class="lg lg-m"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/University_of_Oxford.svg" alt="Oxford" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('lg-t');this.parentNode.innerHTML=this.alt"></li><li class="lg lg-m"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/London_school_of_economics_logo_with_name.svg" alt="LSE" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('lg-t');this.parentNode.innerHTML=this.alt"></li><li class="lg lg-s"><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Yale_University_Shield_1.svg" alt="Yale" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('lg-t');this.parentNode.innerHTML=this.alt"></li><li class="lg lg-m"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/HEC_Paris.svg" alt="HEC Paris" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('lg-t');this.parentNode.innerHTML=this.alt"></li><li class="lg lg-t">IIM</li><li class="lg lg-w"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Imperial_College_London_new_logo.png/500px-Imperial_College_London_new_logo.png" alt="Imperial College" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('lg-t');this.parentNode.innerHTML=this.alt"></li><li class="lg lg-w"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/IE_Business_School_logo.svg" alt="IE Business School" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('lg-t');this.parentNode.innerHTML=this.alt"></li><li class="lg lg-t">IÉSEG</li></ul></div></section>
 <section class="clarity">
   <div class="wrap">
     <h2>Most people do not lack options. They lack a clear line through them.</h2>
