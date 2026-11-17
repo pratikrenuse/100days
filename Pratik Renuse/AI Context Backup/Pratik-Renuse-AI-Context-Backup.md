@@ -1,8 +1,8 @@
 # Pratik Renuse: AI Context Backup (for ChatGPT and other LLMs)
 
 **Owner:** Pratik Renuse, growth marketing leader, TEDx speaker and startup mentor, based in Pune, India (pratikrenuse.com).
-**Purpose:** everything Claude knows about the "Pratik Renuse" project in one place, so ChatGPT, Gemini, Claude or any other AI can pick up the full context. This covers the 100 Days of Building products, his personal brand and career, his agents and automation stack, GMAT prep, Pune Vipassana Samiti (PVS) work, and every rule and preference for working with him. Bueno and 24/7 Spain have their own separate backup (see Part D3).
-**Last refreshed:** 8 November 2026. Refreshed weekly by a scheduled task (Sundays).
+**Purpose:** everything Claude knows about the "Pratik Renuse" project in one place, so ChatGPT, Gemini, Claude or any other AI can pick up the full context. This covers the (now stopped) 100 Days of Building products, his personal brand and career, his agents and automation stack, GMAT prep, Pune Vipassana Samiti (PVS) work, and every rule and preference for working with him. Bueno and 24/7 Spain have their own separate backup (see Part D3).
+**Last refreshed:** 15 November 2026. Refreshed weekly by a scheduled task (Sundays).
 **Where this lives:** the master file is Pratik Renuse/AI Context Backup/Pratik-Renuse-AI-Context-Backup.md in the 100days repo, and the same content is mirrored in Notion at https://app.notion.com/p/411ec28c2b74811eb4b0ffb5e46b584d ("Pratik Renuse AI Context Backup (for ChatGPT and other LLMs)").
 
 ## How to read this backup
@@ -16,7 +16,7 @@
 
 ## One-paragraph summary
 
-Pratik Renuse is a growth marketing leader who has built three consumer startups from zero as a founding team member (Bueno, a fintech for foreign property owners in Spain, since 2022; VU, a Swiss ski and snowboard goggle brand used by Olympians; Infento, a STEM ride-on maker with the #1 STEM Kickstarter of 2018), mentors at Techstars, EBRD, Seedstars and Founder Institute, teaches at Masters' Union, Tetr and SP Jain, and has given 3 TEDx talks and 50+ keynotes. In this project he runs "100 Days of Building": one marketer-focused tool per day at pratikrenuse.com/100days/, built as static HTML plus Vercel serverless functions in root /api/ and Supabase, with a fixed cream, gold and IBM Plex design system, readable-web typography rules and the C.L.E.A.R. UX framework. Alongside it: an agents stack on a Hetzner server (n8n, Hermes agent, Slack gateway), the on-demand Future Brief (Claude, Telegram), the Futures Brain and Content Engine for LinkedIn and HeyGen content, a GMAT Focus mock at pratikrenuse.com/gmat-test (exam about 20 Dec 2026), a Europe Head of Growth job search with weekly ADPList mentors, MarketerHire freelance work, and his role as Secretary of Pune Vipassana Samiti. Hard working rules: propose before building and build only when he says so; once he says go, edit the real files directly and never ask him to touch code; never overwrite or delete existing files, create new ones; no em dashes, no emojis, no hype; short, complete, human sentences; give drafts as clean copy-paste text only; never mention 100 Days of Building in his bios; meetings must end by 7 PM IST.
+Pratik Renuse is a growth marketing leader who has built three consumer startups from zero as a founding team member (Bueno, a fintech for foreign property owners in Spain, since 2022; VU, a Swiss ski and snowboard goggle brand used by Olympians; Infento, a STEM ride-on maker with the #1 STEM Kickstarter of 2018), mentors at Techstars, EBRD, Seedstars and Founder Institute, teaches at Masters' Union, Tetr and SP Jain, and has given 3 TEDx talks and 50+ keynotes. Since 13 Nov 2026 this project is about him and pratikrenuse.com (personal brand, SEO, organic growth, speaking hub at /speaking, planned programmatic SEO); he has stopped "100 Days of Building", which shipped one marketer-focused tool per day at pratikrenuse.com/100days/, built as static HTML plus Vercel serverless functions in root /api/ and Supabase, with a fixed cream, gold and IBM Plex design system, readable-web typography rules and the C.L.E.A.R. UX framework. Alongside it: an agents stack on a Hetzner server (n8n, Hermes agent, Slack gateway), the on-demand Future Brief (Claude, Telegram), the Futures Brain and Content Engine for LinkedIn and HeyGen content, a GMAT Focus mock at pratikrenuse.com/gmat-test (exam about 20 Dec 2026), a Europe Head of Growth job search with weekly ADPList mentors, MarketerHire freelance work, and his role as Secretary of Pune Vipassana Samiti. Hard working rules: propose before building and build only when he says so; once he says go, edit the real files directly and never ask him to touch code; never overwrite or delete existing files, create new ones; no em dashes, no emojis, no hype; short, complete, human sentences; give drafts as clean copy-paste text only; never mention 100 Days of Building in his bios; meetings must end by 7 PM IST.
 
 ## Contents
 
@@ -32,13 +32,12 @@ Every memory file Claude holds for this project, copied as written. Project-scop
 
 ## A1. Identity, rules and preferences
 
-### Memory file: project/index.md (updated 2026-09-11)
+### Memory file: project/index.md (updated 2026-11-13)
 name: Pratik Renuse
-description: Pratik Renuse's 100 Days of Building, daily marketer tools, agents stack, and personal brand work.
+description: Pratik Renuse, his personal brand and site pratikrenuse.com (SEO, organic growth, speaking), agents stack. 100 Days of Building is stopped.
 
-### Memory file: project/profile.md (updated 2026-10-24)
+### Memory file: project/profile.md (updated 2026-11-13)
 description: Who Pratik Renuse is: verified career facts, numbers, mentoring, teaching and speaking, from his LinkedIn PDF, bio doc and pratikrenuse.com. Read before any bio, application or pitch.
-
 #### Positioning
 - [stated] Growth marketing leader, TEDx speaker, startup mentor; thrives in 0 to 1; built 3 startups from zero
 - [stated] Current focus is AI and how it changes marketing and growth
@@ -55,7 +54,8 @@ description: Who Pratik Renuse is: verified career facts, numbers, mentoring, te
 - [stated] Mentor at Techstars (since 2022, incl. Berlin and Audi deep tech), EBRD Star Venture (25 countries), Seedstars (UN and EU backed), Founder Institute, Antler, StartupIndia; mentored 3 editions of the Create Apps Championship (Dubai)
 - [stated] Visiting Professor at Masters' Union and Tetr College of Business; also teaches at SP Jain; travels often from Pune to Mumbai and Delhi to teach
 - [stated] 100+ founders mentored, 500+ students taught, 1000+ graduates coached (Harvard, Oxford, LSE, Yale, HEC Paris, IIM, IMD) via Evisors and Firsthand
-- [stated] 50+ keynotes in 14 countries, 3 TEDx talks; Asia Pacific Digital Marketing Conclave, Russian Stream Conference
+- [stated] 50+ keynotes in 14 countries, 3 TEDx talks (one of them in Bali); Asia Pacific Digital Marketing Conclave, Russian Stream Conference
+- [stated] Counts his countries as the Netherlands, Germany, France, Switzerland, UK, Spain, plus UAE (Dubai), India (Pune, Delhi) and Indonesia (Bali TEDx)
 #### Education and other
 - [stated] Master's in International Business from S.P. Jain and IÉSEG; B.Tech Computer Science, VIT Pune
 - [stated] Living My Promise pledger (giving 50%+ of wealth to philanthropy); founded Vinnyana Visuals illustration community (10,000+)
@@ -64,10 +64,10 @@ description: Who Pratik Renuse is: verified career facts, numbers, mentoring, te
 - [stated] Also: Sweek (Rotterdam, 2017) marketing advisor to CEO, cut acquisition cost 50%+; founded IBEX Technology (2014 to 2015, door-to-door repair, bootstrapped and profitable); mentor with United Nations and Newchip too
 - [stated] Older resume figures (Bueno EUR 1.2M ARR, VU EUR 100K ARR) are not to be used; the verified figures above win, and Bueno copy never quotes ARR
 
-### Memory file: project/overview.md (updated 2026-09-11)
-description: Pratik Renuse's background, the 100 Days of Building project, agents stack, and what is currently in motion. aliases: 100 Days of Building, 100days, Growth Agent Index, Hermes
-
+### Memory file: project/overview.md (updated 2026-11-13)
+description: Pratik Renuse's background, project focus (him and pratikrenuse.com; 100 Days stopped), agents stack, what is in motion. aliases: 100 Days of Building, 100days, Growth Agent Index, Hermes
 #### Who this project belongs to
+
 - [stated] Pratik Renuse, senior growth marketing leader, 3x TEDx speaker, and founding-team operator with roughly a decade of experience; site at pratikrenuse.com, based in Pune, India
 - [stated] Has built three companies from zero: Bueno (fintech for foreign property owners in Spain, founding-team and shareholder role since 2022), Infento (consumer hardware, #1 STEM Kickstarter globally), and VU (Swiss D2C ski/snowboard brand, adopted across multiple Olympic cycles)
 - [stated] Mentors founders through Techstars and EBRD
@@ -75,23 +75,35 @@ description: Pratik Renuse's background, the 100 Days of Building project, agent
 - [stated] Maintains a Vipassana practice and runs the Vinnyana Visuals community; connected to Vipassana/meditation communities where he occasionally coordinates volunteer logistics
 - [stated] Parallel professional threads: operator and builder at Bueno, public builder running 100 Days of Building, and personal-brand development targeting speaking engagements with universities, cohorts, and corporate teams
 - [stated] Has evaluated senior growth roles at AI startups
-#### Current state, 100 Days of Building
-- [stated] 100 Days of Building (pratikrenuse.com/100days/) is the primary active project, shipping one marketer-focused tool per day
-- [stated] All products must target marketers and solve real marketer pain points
+
+#### What this project is about (13 Nov 2026)
+
+- [stated] This project is about Pratik Renuse himself and his site pratikrenuse.com (personal brand, SEO, organic growth), NOT the 100 Days of Building
+- [stated] He has stopped doing 100 Days of Building; do not frame work, copy, features or suggestions around it or around "marketer tools per day"; the CLAUDE.md 100-days rules (daily build prompt, Day XX nav/footer, gallery updates, marketer-only audience) no longer apply
+
+#### Past, 100 Days of Building (stopped)
+
+- [stated] (Nov 2026) chose to take the 100 Days gallery and tools, Roast My Landing Page, the Bueno dashboards and privacy.html off pratikrenuse.com via .vercelignore (kept in git); /gmat-test stays live because it is in use
 - [stated] Completed tools: Jensen Tracker (Day 01, live and working as the reference implementation), Pricing Coach (Day 02), "Still Early" motivation tool (Day 03), Marketing Operator's Coach based on Mochary Method (Day 04), Strategy Stress-Test (Day 05), and No Cap Dictionary (a fun/shareable generational slang translator, no day reference on the page)
 - [stated] The Growth Agent Index lives at pratikrenuse.com/agents/ as a curated directory of growth-marketing agents
+
 #### Current state, AI agents stack
+
 - [stated] Runs on a Hetzner Cloud VPS (CX23, Nuremberg, Ubuntu, 167.233.155.215): self-hosted n8n, the Hermes agent (DeepSeek-powered), and a Slack gateway running as a persistent systemd user service
 - [stated] The finalized daily futures intelligence brief runs once daily, scoped to AI, Robotics, and Future domains, with a hard-truth-only rule, a second/third-order consequences requirement, and a 10 to 30 year horizon drawing on leading minds across those fields
 - [stated] Hetzner fixed at roughly €6/month; the real variable cost is model API spend, controlled via a prepaid DeepSeek balance
+
 #### On the horizon
+
 - [stated] Channel expansion for the agents stack: Telegram (currently network-restricted in India), email + Supabase archive via n8n, then WhatsApp Business (last, heaviest lift)
 - [stated] Product Hunt launch strategy for 100 Days builds: target Tuesday/Wednesday launches, group smaller projects into bundles, reserve the strongest ~10 for polished standalone launches, with the 100 Days gallery itself as a major launch around day 30 or 100
 - [stated] ADPList mentor sessions focused on organic personal audience/following growth from zero (distinct from paid acquisition); Anton Krokhmalyuk (ex-CMO, Ultimate Guitar/MuseScore) booked; Antonius Putu identified for follow-up
 - [stated] Personal daily intelligence tool (Vercel cron, DeepSeek scoring, Hermes synthesis per category): data pipeline designed, build status unconfirmed
+
 #### Key learnings
+
 - [stated] Curation and editorial taste, not volume, is the defensible moat for the Growth Agent Index
-- [stated] ADPList's index skews B2B/product/performance; creator-economy and personal-brand-from-zero specialists are not well represented; supplement with off-platform creator networks for that craft specifically
+- [stated] ADPList's index skews B2B/product/performance; creator-economy and personal-brand-from-zero specialists are not well represented, supplement with off-platform creator networks for that craft specifically
 - [stated] Peer-framing (not mentee posture) in ADPList sessions; always close with "who's one person I should talk to" to turn sessions into network nodes
 - [stated] Has structurally pre-solved his own AI automation exposure: Claude handles the task layer while he operates in the judgment layer (deciding what to build, positioning, writing briefs)
 
@@ -111,11 +123,11 @@ Non-negotiables:
 - Serverless functions live in root /api/ with unique filenames. Day 01 is the reference.
 - Deliver final, ready-to-deploy files. Do not ask Pratik to edit code himself.
 
-### Memory file: project/preferences.md (updated 2026-11-02)
-description: How Pratik wants Claude to deliver drafts (emails, WhatsApp messages) and to treat files in his connected folders.
+### Memory file: project/preferences.md (updated 2026-11-13)
+description: How Pratik wants Claude to deliver drafts (emails, WhatsApp messages) and to treat files in his connected folders, read before any drafting or file task
 - [stated] When asked for an email or WhatsApp message, give ONLY the message itself, in a single copyable block. No intro, no commentary before or after ("this is written in X voice", tips, notes). He has said this many times. This includes no language labels ("English", "मराठी"), no separators, and no closing notes explaining what was changed or assumed (e.g. "I took X to mean Y", "I removed Z"). Just the copy-paste text, nothing else.
 - [stated] Never change or delete anything that already exists in the folders he has given Claude access to. Create new files instead, in a new subfolder, and leave the originals untouched even if they look wrong.
-- [stated] Wants all replies and drafts written the way he speaks, in plain human language, not robotic or salesy; a taste.md voice file in his Pratik Renuse project folder (now Documents/GitHub/100days/Pratik Renuse/taste.md) captures this; a fuller profile built from his Wispr Flow meeting transcripts lives at Pratik Renuse/Voice Profile/voice-profile.md, apply it to all emails and WhatsApp drafts
+- [stated] Wants all replies and drafts written the way he speaks, in plain human language, not robotic or salesy; a taste.md voice file in his Pratik Renuse project folder (now Documents/GitHub/100days/Pratik Renuse/taste.md, see [[project-folder-location]]) captures this; a fuller profile built from his Wispr Flow meeting transcripts lives at Pratik Renuse/Voice Profile/voice-profile.md, apply it to all emails and WhatsApp drafts
 - [stated] When replying to questions (e.g. from a client), answer only what was asked; don't add unrequested plans or extra material
 - [stated] No AI-sounding or LinkedIn-jargon phrases in messages (e.g. "Exciting time to be at X", "That's a great mix", "Thanks for reaching out"). Messages must sound like one Indian professional casually talking to another: simple, natural, human.
 - [stated] Never schedule any meeting after 7 PM IST (his time); meetings must end by 7 PM. Applies to all scheduling, including ADPList mentor bookings.
@@ -129,6 +141,10 @@ description: How Pratik wants Claude to deliver drafts (emails, WhatsApp message
 - [stated] Public-facing email is pratik.y.renuse@gmail.com; pratik@pratikrenuse.com only when he asks
 - [stated] On market questions wants concrete probabilities and a clear forecast, not diplomatic summaries
 - [stated] Prefers direct product links over search instructions; verified facts over speed
+- [stated] Never edit, create, move or delete anything in his Google Calendar; read only.
+- [stated] Dislikes Claude setting up unnecessary cloud scheduled tasks; wants screen time nudges delivered inside his Mac app (native Mac notifications), not via cloud scheduled tasks
+- [stated] HARD RULE: never commit, push or publish anything to GitHub (or deploy) directly, in any session. Only save files to his Mac; Pratik always does the commit and push himself in GitHub Desktop.
+- [stated] The pratikrenuse.com home page is critical: never change it in the repo directly; first show him a preview version in chat, and only implement on the home page after he says "okay"
 
 ### Memory file: project/ways-of-working.md (updated 2026-11-07)
 #### Communication and session cadence
@@ -379,18 +395,89 @@ Deliverables built (GMAT-relevant scope): per-DVD notes, a Vedic-for-GMAT study 
 - [stated] Dr. Srishti Rathore's dental clinic inside Ericare Hospital, DLF Hyde Park, Mullanpur Garibdass, New Chandigarh
 - [stated] Pratik is working on patient growth: website, SEO and AI search visibility over 1 to 3 months
 
-### Memory file: project/areas/packt-workshop.md (updated 2026-11-07)
-description: Pratik's live Packt workshop on Nov 22, 2026 (growth engine: content agents + ads Chrome extension) and the content system behind it. aliases: packt event, packt session, growth engine workshop
+### Memory file: project/areas/packt-workshop.md (updated 2026-11-13)
+description: Pratik's Packt workshop with Vikram (planned Nov 22, 2026, low signups; he wants to move it to a 2-day late-January format) and the content system behind it. aliases: packt event, packt session, growth engine workshop
 - [stated] Speaker at a live 4-hour Packt workshop on Sun 22 Nov 2026, discount code for his network PRATIK35
 - [stated] Built the AI content system his team uses to post daily on social media; he doesn't post himself, the team does
+- [stated] Nov 2026 update: only one registration for Nov 22; Vikram at Packt proposed a 1-hour free event instead, which Pratik doesn't want. He wants to propose moving it to end of January as a 2-part weekend workshop at the same price: Saturday the content engine, Sunday attendees build a software/automation tool for themselves or their team
 
 ### Memory file: project/areas/ai-context-backup.md (updated 2026-11-07)
 description: Pratik's per-project AI context backups (one doc in a folder + a Notion "backup" page, refreshed weekly) for Bueno and the Pratik Renuse project. aliases: context backup, llm backup, notion backup
 - [stated] Wants all the information Claude holds about a project put into one doc in a folder plus a Notion page named so ChatGPT and other LLMs can reference it, with a weekly scheduled task updating both; already done for Bueno, and asked for the same for the Pratik Renuse project (Nov 2026)
 
+### Memory file: project/areas/screen-time-tracker.md (added 15 Nov 2026, updated 2026-11-11)
+description: Pratik's planned internal screen-time tracker for his Mac and Android phone. aliases: screen time app, screen time tracker, time tracker
+- [stated] Wants an internal-only (not released publicly) screen-time tool on his Mac and Android phone, linked together: tracks every app and website (including which browser and from where), with no idle cutoff, minute-level detail plus an overview, a daily report, trend analysis, and pop-up reminders when he spends too long on sites like YouTube or Netflix, to help reduce his screen time
+- [stated] Treats the tracker's data as sensitive: no one else should be able to access it
+- [stated] Weighing whether to later make it public or sell it on AppSumo
+- [stated] Wants the Mac app impossible to quit once started, so he cannot dodge tracking
+- [stated] For now the tool is for insights only, no limits (previously also no pop-ups); later wanted nudges as native Mac notifications from the app
+- [stated] Wants to set it and forget it: nudges and time judgement fully automatic, nothing he has to trigger or do himself
+- [stated] Wants a short daily insight email on the previous day, sorting time into €1M, €100k, €1k and chiller-money tasks, drawing on his Google Calendar and Wispr Flow too; also wants open counts (laptop unlocks, Claude, Chrome, email)
+- [stated] Has not set up the Android app yet; not using Android right now
+- [stated] Logs what he does each day in Google Calendar, but says the entries are not always accurate because he sometimes fakes them
+- [stated] His goal is to build million-dollar businesses and he wants his time judged against that
+- [stated] Calendar colour code: grape = million-euro work, blue = thousand-euro work, red = wasted; he also logs meditation and writing there
+- [stated] Says he rarely does anything worth €1M; Claude time is not €1M work by default
+- [stated] Counts time on LinkedIn, Gmail, Google Calendar, all social media, WhatsApp and admin/settings as wasted, not €1k work
+- [stated] Does not want the tracker to cost money to run (rejected a ~₹50/day paid AI analysis as too much); asked for a free alternative using Claude
+- [stated] Wants the tool kept simple: one Mac app with no cloud scheduled tasks, and no repeated reinstalls; only what is on the screen tells the reality of his time
+- [stated] Wants the app to observe what is actually shown on screen and analyse that
+
+### Memory file: project/areas/screen-time-tracking.md (added 15 Nov 2026, updated 2026-11-11)
+description: How Pratik tracks his time (screen time, calendar log) and the daily insight email; read before judging his time use. aliases: screen time email, Screen Time
+- [stated] His Google Calendar is a rough log of what he has already done, not a plan; he does little planning in it and it is often inaccurate.
+- [stated] Screen time is the most accurate record of his time.
+- [stated] Has not installed the phone screen time tracker yet and does not use the phone much.
+
+### Memory file: project/areas/voice-note-taker.md (added 15 Nov 2026, updated 2026-11-11)
+description: Pratik's planned personal keyword-triggered voice note-taker (Chrome extension, Mac app, Android app) linked to his task list. aliases: note-taker, note taker, voice notes tool, keyword note taker
+- [stated] Wants to build a personal note-taker integrated with the existing task list (meeting-task-list), as a Chrome extension, a Mac app and an Android app, all linked
+- [stated] Biggest requirement: he says a keyword and it starts taking notes on what is in his mind
+- [stated] Nov 2026: not building yet; first asked whether Wispr Flow, Siri or existing tools can already do this
+
+### Memory file: project/areas/homepage-hifi-lofi.md (added 15 Nov 2026, updated 2026-11-11)
+description: Pratik's plan for a hi-fi (wow-level animation or 3D) and lo-fi version of his pratikrenuse.com About Me home page, inspired by felixrieseberg.com. aliases: hi-fi lo-fi homepage, 3D homepage, felix rieseberg style site
+- [stated] wants the pratikrenuse.com home page to offer a hi-fi and a lo-fi version with a button to switch, similar to felixrieseberg.com but not a copy
+- [stated] lo-fi is the default; hi-fi must be top-notch, extremely professional and elegant
+- [stated] hi-fi must be "really, really amazing animation or 3D or something, really awesome"; the existing site is the lo-fi (earlier he rejected a code-built 3D room look test as not premium and static artistic stills as "not something wow")
+- [stated] of the static directions shown, preferred the "from zero" one (lines growing from a zero point to his companies) over the route map, but said it was not wow
+- [stated] wanted brainstorming, suggestions and a clear picture of the look first, before any building
+- [stated] rejected a rough wireframe-style sketch of the concept as "really raw and really bad"; said the structure was fine but the look must be shown at a professional level
+- [stated] the hi-fi/lo-fi work is about his About Me home page at www.pratikrenuse.com, "not at all" about the 100 days tools
+- [stated] hi-fi must be something the visitor can control, like Felix's site, not something that plays like a video
+- [stated] hi-fi should keep branding similar to the existing pratikrenuse.com site; said the formatting template of the animated "from zero" version was good
+- [stated] found the interactive brand-coloured "from zero" lines version "fine, but not that impressive" and too focused on Infento, VU and Bueno; the hi-fi is "not only about companies"
+- [stated] likes the Felix site "really well" and does not like the lines direction
+- [stated] gave the go-ahead to build a first still of a Felix-style room for the hi-fi; wants the view to be a European beach villa or a "really premium looking, billionaire kind of view"
+
+### Memory file: project/areas/speaking-page.md (added 15 Nov 2026, updated 2026-11-11)
+description: Pratik's speaking page for event organisers on pratikrenuse.com, kept separate from his teaching page, with AI as the current focus. aliases: talks page, speaking hub, /talks
+- [stated] the speaking page (events, keynotes, workshops) and the teaching page are separate and must not intertwine
+- [stated] the current focus of the speaking page is AI: teaching and speaking about AI, with earlier events like TEDx used for the wow factor
+- [stated] (Nov 2026) the speaking hub is ready and lives at /speaking, renamed from /talks and replacing the old speaking page; wants coherent pages, no unnecessary extra pages
+
+### Memory file: project/areas/programmatic-seo.md (added 15 Nov 2026, updated 2026-11-13)
+description: Plan to replicate the 247spanish.es programmatic SEO setup (Bueno project) on pratikrenuse.com, and the folder rule for that work. aliases: pSEO, 247spanish, 247spanish.es, organic traffic pages
+- [stated] In the Bueno Claude project, a programmatic SEO setup was built for the site 247spanish.es: some 10,000 to 20,000 pages created, already ranking, getting strong organic traffic every week
+- [stated] (Nov 2026) wants the same Google/organic traffic setup done for pratikrenuse.com
+- [stated] (12 Nov 2026) connected his whole Documents/GitHub folder (100days and Bueno) so the Bueno setup can be read; work must stay in the dedicated Pratik Renuse folder only, nothing done or mixed up in the Bueno folder or any other folder, because Claude does not know their history
+- [stated] (13 Nov 2026) order of work: 1) build all core site pages properly from existing content (Consulting, Advising, Coaching, Teaching, Speaking); 2) only then do the 247spain-style programmatic SEO (1,000 to 10,000+ pages); sitemap work was deferred until then
+
+### Memory file: project/areas/srishtirathor-site.md (added 15 Nov 2026, updated 2026-11-13)
+description: Site Pratik is making for a friend at srishtirathor.com, a separate project on his own Vercel and GitHub accounts, to be built in its own Claude project. aliases: srishtirathor.com, friend's site, srishti rathor site
+- [stated] wants to make a site for a friend, srishtirathor.com, similar to how his personal website is
+- [stated] wants it as another Vercel project on his same Vercel account (does not want to make another Vercel account); GitHub account stays the same
+- [stated] decided to go ahead; will develop the site in a new, separate Claude project (not this one), starting once he has purchased the domain
+
+### Memory file: project/areas/motivation-video-email.md (added 15 Nov 2026, updated 2026-11-14)
+description: Pratik's planned daily motivational YouTube video email tool (inspired by a Raj Shamani short on Travis Kalanick). aliases: daily motivation video, motivating video email, motivation tool
+- [stated] Wants a new tool that emails him one super motivating YouTube video every day (sparked by a Raj Shamani short where Travis Kalanick talks about bearing more pain than others)
+- [stated] Asked for the video list first, no build yet
+
 ## A3. Vipassana, personal and account-level files
 
-### Memory file: project/areas/pvs.md (updated 2026-11-02)
+### Memory file: project/areas/pvs.md (updated 2026-11-09)
 description: Pune Vipassana Samiti, where Pratik is Secretary: centres, capacity ceilings, server terms, office team, and the wording and format rules for PVS emails, broadcasts and notices. Read before any PVS draft.
 #### Role and naming
 - [stated] Pratik is Secretary of PVS, coordinating across centres. Always "PVS"; if he types or dictates "PBS" he means PVS
@@ -408,6 +495,7 @@ description: Pune Vipassana Samiti, where Pratik is Secretary: centres, capacity
 #### Office
 - [stated] Admissions portal is Dipi. Office team: Pratik, Sangram, Siddhi, Suhasini, Vaishali. Girija is CAT with Dipi access to all 4 centres
 - [stated] External servers come for seva only when the office invites them
+- [stated] Nov 2026: PVS is testing a multilingual WhatsApp bot for common student queries, modelled on Dhamma Pala (Bhopal), whose team is helping; test only, calls, emails and WhatsApp continue unchanged, decision after results
 - [stated] "VJG" / "Vijay G" is Vijay ji, a senior at PVS; Pratik avoids calling seniors out directly in committee emails
 - [stated] Kadbane sir (Marathi spelling काडबाने, with the aa) is who residential servers contact for urgent needs to leave the centre during a course
 #### Standard wording
@@ -421,7 +509,7 @@ description: Pune Vipassana Samiti, where Pratik is Secretary: centres, capacity
 - [stated] Gender courses: Marathi heading "जुन्या साधिकांसाठी (महिला)", eligibility "महिला साधिकांसाठी", English "(females)"; never "adult"; centre in full "Dhamma Akkhara, Jambhe, Pune" / "धम्म अक्खर, जांभे, पुणे"; Marathi "केंद्राविषयी:" inline, English "*About the Centre*" as header
 - [stated] Conduct reports on long-term servers go to Teacher, Chairman and CAT; inform, don't seek guidance; "observations" not "concerns"; exact quoted phrase in bold
 - [stated] Registration sheets: dedupe by phone or name, keep latest submission, flag conflicts, print by gender with name, phone, course count, Seva column; old Excel files are formatting references only
-- Full detail: Pratik Renuse/Context/past-account-context.md section 4. See [[vipassana]]
+- Full detail: Pratik Renuse/Context/past-account-context.md section 4. See [[vipassana]] (folder file in Part C)
 
 ### Memory file: project/topics/vipassana.md (updated 2026-10-24)
 - [stated] Vipassana sadhak; correct terms sadhak, seva, metta, Vipassana. Secretary of PVS, see [[pvs]]
@@ -553,6 +641,23 @@ description: Pune Vipassana Samiti, where Pratik is Secretary: centres, capacity
 ### Memory files: /people/anand-ji.md, /people/hamir-ganla.md (alias Dr Hamir Ganla), /people/nirmala-ganla.md, /people/sachin-natu.md, /people/santosh-satam.md (account level, updated 2026-08-24)
 - [stated] Each is a key contact in Pratik's Dhamma Punna / PVS data analysis work
 
+
+### Memory file: project/topics/schedule.md (added 15 Nov 2026, updated 2026-11-10)
+description: How Pratik logs and colour-codes his day in Google Calendar; read before planning his day or reading his calendar
+- [stated] Logs his day himself in Google Calendar (primary "TO DO Cal"); says the log is not always accurate and he sometimes fakes entries
+- [stated] Colour code: grape = million-euro work, blue = thousand-euro work, red = wasted time
+- [stated] Also marks meditation and writing in the calendar
+
+### Memory file: project/topics/time-tracking.md (added 15 Nov 2026, updated 2026-11-11)
+description: How Pratik tracks his time (calendar use, screen time); read before reviewing his day or interpreting his calendar
+- [stated] Uses his Google Calendar ("TO DO Cal") to record what he has already done and where time went, not to plan; does very little planning in the calendar
+- [stated] Calendar records are not fully accurate, so do not rely on them entirely; screen time data is the most accurate source
+
+### Memory file: project/topics/productivity.md (added 15 Nov 2026, updated 2026-11-11)
+description: How Pratik tracks and records his time (calendar use, screen time); read before any time-tracking, planning or productivity analysis
+- [stated] Uses his Google Calendar to record what he has done and where time went, not to plan; does very little planning there, and the log is not accurate, so don't rely on it entirely
+- [stated] Considers his Mac screen time the most accurate record of his time
+- [stated] Has not installed the phone screen time tracker yet and doesn't use his phone much
 
 # PART B. CLAUDE PROJECT "Pratik Renuse": INSTRUCTIONS AND DOCS
 
@@ -2864,7 +2969,7 @@ In the Vercel project → **Settings → Domains** → add `pratikrenuse.com`, t
 
 # PART D. SYSTEMS, SCHEDULED TASKS, CONNECTED TOOLS AND FOLDER MAP
 
-## D1. Scheduled tasks on Pratik's Claude account (as of 7 Nov 2026)
+## D1. Scheduled tasks on Pratik's Claude account (as of 15 Nov 2026)
 
 - Weekly ADPList mentor booking: enabled; Monday and Thursday 10:45 IST. Keeps two live mentor requests per week, window 12:00 to 19:00 IST (must end by 7 PM), weekdays only; Europe-role, growth-craft and leadership themes rotate; fixed generic booking note; never mentions 100 Days, Pune or a Bueno ARR figure. Paused for the weeks of 2 Nov and 9 Nov 2026; resumes Monday 16 Nov 2026.
 - Weekly Bueno AI backup refresh: enabled; Sunday 11:14 IST. Refreshes the Notion page "Bueno AI Context Backup (for ChatGPT and other LLMs)" under Work / Consulting / Bueno.
@@ -2872,6 +2977,12 @@ In the Vercel project → **Settings → Domains** → add `pratikrenuse.com`, t
 - Futures Brain weekly: disabled. Weekly maintenance of the Futures Brain folder (sources, theses, players, changelog) and then up to 5 LinkedIn posts plus HeyGen scripts into Content Engine/Ready to Ship. Folder rules and the full playbook live in Futures Brain/Weekly Playbook.md (Part C).
 - Monday meeting task sweep: disabled. Reads Wispr Flow meetings, updates the "What I Said I'd Do" task artifact, produces drafts into Claude outputs/Task sweep YYYY-MM-DD/, never acts on the outside world.
 - One-off reminder "Check idealista summary arrived" (Bueno, Nov 2026): already fired, disabled.
+- Screen Time morning judgement (added 10 Nov 2026): enabled; daily 05:43 IST. Reads yesterday's Mac screen-time blocks from Supabase Personal (st_blocks) and saves a tier verdict per block (m1 EUR 1M, k100, k1, chill, life) into st_judgements, which his Mac app shows in the morning summary. SELECT and INSERT only; sends nothing.
+- Screen Time nudges (added 11 Nov 2026): disabled. Hourly 09:52 to 23:52 IST check of the last 60 minutes of Mac screen time; at most one push nudge (waste, inbox, loop, scattered, break, late), logged to st_nudges. Pratik prefers nudges inside the Mac app instead.
+- Screen Time weekly pattern analysis (added 11 Nov 2026): disabled. Monday 08:41 IST email "Your week: ..." via Resend with patterns, best and danger hours, focus breakers and three experiments.
+- Bueno Newsletter: fortnightly Monday send (added 10 Nov 2026): enabled; Mondays 08:00 IST, acts only on send days (every 14 days from 23 Nov 2026). Picks three idealista stories, writes EN/NO/SV, renders via newsletter_render in Supabase, sends via Resend from "Bueno Newsletter", marks the edition sent and pushes a notification.
+- Bueno Newsletter fortnightly edition (added 10 Nov 2026): disabled. Earlier Monday-build, Tuesday-send version of the same newsletter (builds a new guide PDF, region spotlight and reader question).
+- Weekly ADPList mentor booking: resumes Monday 16 Nov 2026 after the two-week pause.
 
 ## D2. Connected tools on Claude
 
@@ -2887,7 +2998,7 @@ Key IDs (not secrets): Vercel project "100days" prj_jQn0nH9NWXCPfDu4wJn87E31dmGp
 
 ## D4. Folder map: /Users/pratikrenuse/Documents/GitHub/100days/Pratik Renuse
 
-The project folder lives inside the public 100days GitHub repo and is excluded from deploys by .vercelignore. About 1,160 files. Top level:
+The project folder lives inside the public 100days GitHub repo and is excluded from deploys by .vercelignore. About 1,250 files. Top level:
 
 - CLAUDE.md: standing build context (Part C, C1). taste.md: voice file (C2). design-reference.html, CLEAR_UI_Reference.md: same as the project docs in Part B.
 - Voice Profile/voice-profile.md: full writing voice profile from Wispr Flow transcripts (C3).
@@ -2908,3 +3019,5 @@ The project folder lives inside the public 100days GitHub repo and is excluded f
 - habit-tracker-v3/ and taskboard-ext/: Chrome new-tab extensions. status-subdomain/api/status.js: status page function.
 - kalyan-course-message*.md, kalyan-one-day-course-message.md: Vipassana course messages. man-matters-gummies-research.md: product research note.
 - AI Context Backup/: this backup.
+- Screen Time/ (new, Nov 2026): the internal screen-time tracker. README.md, install.sh, mac/ (Swift sources: Tracker, Windows, Nudges, Limits, LocalStore, Api, main; app icons), android/ (manifest and resources), backend/ (index.ts, schema.sql), dashboard/index.html, build/ (Screen Time.app, ScreenTime.apk). A .secrets/ subfolder holds signing and device secrets (not copied into this backup).
+- Claude outputs/ (new): files Claude produced for him, for example the Kalyan one-day course male and female lists (PDF, 12 Nov 2026).
