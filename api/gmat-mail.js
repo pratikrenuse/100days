@@ -4,8 +4,8 @@
 // Env: RESEND_API_KEY (or GMAT_RESEND_KEY). Optional: CRON_SECRET.
 
 const FROM = 'Pratik Renuse <pratik@spanishpropertyinsights.com>';
-const TO = ['sidhant@sidhantrenuse.com'];
-const CC = ['pratik.y.renuse@gmail.com'];
+// Sidhant removed on 19 Nov 2026 at Pratik's request: the emails now go to Pratik only.
+const TO = ['pratik.y.renuse@gmail.com'];
 const REPLY_TO = 'pratik.y.renuse@gmail.com';
 const SITE = 'https://pratikrenuse.com/gmat-test';
 const EXAM = new Date('2026-12-20T09:00:00+05:30');
@@ -23,7 +23,7 @@ async function send({ subject, html, scheduled_at }) {
   const r = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + key() },
-    body: JSON.stringify(Object.assign({ from: FROM, to: TO, cc: CC, reply_to: REPLY_TO, subject, html }, scheduled_at ? { scheduled_at } : {}))
+    body: JSON.stringify(Object.assign({ from: FROM, to: TO, reply_to: REPLY_TO, subject, html }, scheduled_at ? { scheduled_at } : {}))
   });
   const out = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error('resend ' + r.status + ' ' + JSON.stringify(out));
@@ -88,6 +88,9 @@ async function reminder(req, res) {
 }
 
 module.exports = async (req, res) => {
+  // Switched off on 19 Nov 2026 at Pratik's request: no reminders and no analysis emails.
+  // Delete the next line to turn the emails back on (and re-add the cron in vercel.json).
+  return res.status(200).json({ status: 'emails switched off' });
   if (!key()) return res.status(500).json({ error: 'RESEND_API_KEY is not set' });
   try {
     if (req.method === 'POST') return await report(req, res);
