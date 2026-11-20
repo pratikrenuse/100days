@@ -25,5 +25,11 @@
       "destination": "/speaking/:path*",
       "permanent": true
     }
+  ],
+  "crons": [
+    {
+      "path": "/api/tool?fuel=1",
+      "schedule": "0 0 * * *"
+    }
   ]
 }

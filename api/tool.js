@@ -8,6 +8,11 @@
 
 module.exports = async function handler(req, res) {
   res.setHeader('Content-Type', 'application/json');
+  // Daily Fuel email (Vercel cron, GET /api/tool?fuel=1). Handled before the POST tools.
+  if (req.method === 'GET' && req.query && req.query.fuel) {
+    try { return await dailyFuel(req, res); }
+    catch (e) { console.error('daily fuel error:', e.message); return res.status(500).json({ error: String(e.message || e) }); }
+  }
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
   if (!process.env.ANTHROPIC_API_KEY) return res.status(500).json({ error: 'Engine not configured (missing API key).' });
 
@@ -331,6 +336,64 @@ Respond with ONLY a valid JSON object, no markdown, EXACTLY this shape:
 Include 3 to 5 graves. Fewer is fine if truth demands it.`;
 
   return callClaude(res, prompt, 1800, evidence ? { evidence_used: true } : {});
+}
+
+// ── Daily Fuel: one motivation video a day, emailed at 6:30 am IST ──
+// Private list: recipients come only from the Vercel env var DAILY_FUEL_TO (comma-separated),
+// each gets a separate email. Videos and posters live in /daily-fuel/ on this site.
+// Env: RESEND_API_KEY (or GMAT_RESEND_KEY), DAILY_FUEL_TO. Optional: CRON_SECRET.
+const FUEL_SITE = 'https://www.pratikrenuse.com/daily-fuel/';
+const FUEL_FROM = 'Daily Fuel <fuel@spanishpropertyinsights.com>';
+const FUEL_START = Date.UTC(2026, 10, 21); // Day 1 = Saturday 21 November 2026 (IST date)
+
+async function dailyFuel(req, res) {
+  const secret = process.env.CRON_SECRET;
+  const fromCron = /^vercel-cron\//.test(req.headers['user-agent'] || '');
+  if (secret ? req.headers.authorization !== `Bearer ${secret}` : !fromCron) return res.status(401).json({ error: 'unauthorized' });
+  const key = process.env.RESEND_API_KEY || process.env.GMAT_RESEND_KEY;
+  if (!key) return res.status(500).json({ error: 'RESEND_API_KEY is not set' });
+  const recipients = (process.env.DAILY_FUEL_TO || '').split(',').map(s => s.trim()).filter(s => s.includes('@'));
+  if (!recipients.length) return res.status(500).json({ error: 'DAILY_FUEL_TO is not set' });
+
+  // The cron runs at 5:30 am IST (00:00 UTC); the email is scheduled for 6:30 am IST (01:00 UTC) the same day.
+  const now = new Date(), ist = new Date(now.getTime() + 330 * 60000);
+  const istMidnight = Date.UTC(ist.getUTCFullYear(), ist.getUTCMonth(), ist.getUTCDate());
+  const day = Math.round((istMidnight - FUEL_START) / 864e5) + 1;
+
+  const listRes = await fetch(FUEL_SITE + 'fuel.json', { cache: 'no-store' });
+  if (!listRes.ok) throw new Error('fuel.json ' + listRes.status);
+  const list = await listRes.json();
+  const item = list.find(v => v.n === day);
+  if (!item) return res.status(200).json({ status: 'no video for today', day, total: list.length });
+
+  const target = new Date(Date.UTC(ist.getUTCFullYear(), ist.getUTCMonth(), ist.getUTCDate(), 1, 0));
+  const scheduled_at = target > now ? target.toISOString() : undefined;
+  const nn = String(day).padStart(2, '0');
+  const link = `${FUEL_SITE}?d=${day}`;
+  const e = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  const subject = `Day ${day}: ${item.headline}`;
+  const html = `<div style="background:#F6F2F1;padding:32px 16px;font-family:Georgia,'Times New Roman',serif;color:#1A1512">
+  <div style="max-width:480px;margin:0 auto">
+    <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8C6A18;margin:0 0 12px">Daily Fuel &middot; Day ${day} of ${list.length}</p>
+    <h1 style="font-weight:normal;font-size:26px;line-height:1.3;margin:0 0 8px;color:#1A1512">${e(item.headline)}</h1>
+    <p style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#504840;margin:0 0 20px">${e(item.who)}</p>
+    <a href="${link}" style="display:block;text-decoration:none"><img src="${FUEL_SITE}posters/${nn}.jpg" width="480" alt="Play today's video: ${e(item.who)}" style="display:block;width:100%;max-width:480px;height:auto;border:0;border-radius:12px"></a>
+    <p style="margin:24px 0 0"><a href="${link}" style="display:inline-block;background:#1A1512;color:#F6F2F1;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:14px 24px;text-decoration:none">Play today's video</a></p>
+    <p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#786E66;margin:24px 0 0">Under a minute. Watch it before you open anything else.</p>
+  </div>
+</div>`;
+
+  const sent = [];
+  for (const to of recipients) {
+    const r = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + key, 'Idempotency-Key': `daily-fuel-${day}-${to}` },
+      body: JSON.stringify(Object.assign({ from: FUEL_FROM, to: [to], reply_to: recipients[0], subject, html }, scheduled_at ? { scheduled_at } : {}))
+    });
+    const out = await r.json().catch(() => ({}));
+    sent.push({ ok: r.ok, id: out.id, error: r.ok ? undefined : out });
+  }
+  return res.status(200).json({ status: scheduled_at ? 'scheduled' : 'sent', day, at: scheduled_at || now.toISOString(), sent });
 }
 
 // ════════════════ SHARED HELPERS ════════════════

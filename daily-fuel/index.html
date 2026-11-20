@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Daily Fuel</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#F6F2F1; --surface:#EEE8E4; --raised:#E5DDD7; --border:#D0C8C0; --border2:#BCB3AA;
+  --ink:#1A1512; --ink2:#38302A; --ink3:#504840; --ink4:#786E66;
+  --gold:#8C6A18; --gold-mid:#B8903A; --gold-bg:#F0E4C4; --dark:#0F0E0C;
+  --serif:'IBM Plex Serif', Georgia, serif; --sans:'IBM Plex Sans', system-ui, sans-serif;
+  font-size:18px;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink2); font-family:var(--sans); font-weight:400; line-height:1.65; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+p { max-width:65ch; margin:0 0 1.15rem; }
+
+nav { display:flex; align-items:center; justify-content:space-between; padding:1.1rem 4rem; border-bottom:1px solid var(--border); background:rgba(246,242,241,0.95); backdrop-filter:blur(20px); position:sticky; top:0; z-index:100; }
+.nav-logo { font-family:var(--serif); font-size:0.9rem; font-weight:400; color:var(--ink); text-decoration:none; }
+.nav-logo span { color:var(--gold); }
+.nav-left { display:flex; align-items:center; gap:1.25rem; }
+.nav-div { color:var(--border); }
+.nav-title { font-size:0.78rem; color:var(--ink3); }
+.nav-badge { font-size:0.58rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); background:var(--gold-bg); padding:0.2rem 0.6rem; border:1px solid #D4B870; }
+
+main { max-width:1080px; margin:0 auto; padding:3rem 2rem 4rem; }
+.stage { display:grid; grid-template-columns:minmax(0,400px) minmax(0,1fr); gap:4rem; align-items:center; }
+.player { position:relative; aspect-ratio:9/16; background:var(--raised); border-radius:16px; overflow:hidden; box-shadow:0 24px 60px -30px rgba(26,21,18,0.45); }
+.player video { width:100%; height:100%; display:block; object-fit:cover; background:var(--raised); }
+.label { display:flex; align-items:center; gap:0.75rem; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:1.25rem; }
+.label::before { content:''; width:28px; height:1px; background:var(--gold); }
+h1 { font-family:var(--serif); font-weight:300; font-size:2.4rem; line-height:1.2; color:var(--ink); margin:0 0 1rem; max-width:20ch; }
+.who { font-size:1rem; color:var(--ink3); margin-bottom:2rem; }
+.actions { display:flex; gap:0.75rem; flex-wrap:wrap; }
+.btn { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:0 1.5rem; font-family:var(--sans); font-size:0.7rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; text-decoration:none; border:1px solid var(--ink); cursor:pointer; transition:background 0.2s, color 0.2s, border-color 0.2s; }
+.btn-primary { background:var(--ink); color:var(--bg); }
+.btn-primary:hover { background:var(--gold); border-color:var(--gold); }
+.btn-ghost { background:transparent; color:var(--ink); border-color:var(--border2); }
+.btn-ghost:hover { border-color:var(--gold); color:var(--gold); }
+.btn[aria-disabled="true"] { opacity:0.35; pointer-events:none; }
+.done { display:none; margin-top:2rem; padding:1.25rem 1.5rem; background:var(--gold-bg); border-left:3px solid var(--gold); font-family:var(--serif); font-size:1rem; color:var(--ink); max-width:65ch; }
+.done.show { display:block; }
+.locked { display:none; text-align:center; padding:4rem 1rem; }
+.locked.show { display:block; }
+.locked h1 { margin:0 auto 1rem; }
+.locked p { margin:0 auto 2rem; color:var(--ink3); }
+
+.archive { margin-top:5rem; }
+.archive-head { display:flex; align-items:baseline; justify-content:space-between; gap:1rem; margin-bottom:1.5rem; flex-wrap:wrap; }
+.archive-head h2 { font-family:var(--serif); font-weight:400; font-size:1.4rem; color:var(--ink); margin:0; }
+.progress { font-size:0.9rem; color:var(--ink3); }
+.grid { display:grid; grid-template-columns:repeat(10, 1fr); gap:0.5rem; }
+.cell { display:flex; align-items:center; justify-content:center; aspect-ratio:1; min-height:44px; font-size:0.8rem; text-decoration:none; color:var(--ink3); background:var(--surface); border:1px solid transparent; transition:border-color 0.2s, color 0.2s; }
+a.cell:hover { border-color:var(--gold); color:var(--gold); }
+.cell.watched { background:var(--gold-bg); color:var(--gold); }
+.cell.current { border-color:var(--ink); color:var(--ink); font-weight:500; }
+.cell.future { color:var(--border2); background:transparent; border:1px dashed var(--border); }
+
+footer { padding:1.1rem 4rem; border-top:1px solid var(--border); display:flex; justify-content:space-between; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink4); background:var(--surface); }
+footer a { color:var(--ink4); text-decoration:none; }
+footer a:hover { color:var(--gold); }
+
+@media (max-width:960px) {
+  :root { font-size:17px; }
+  nav { padding:1rem 1.25rem; }
+  main { padding:1.5rem 1.25rem 3rem; }
+  .stage { grid-template-columns:1fr; gap:2rem; }
+  .player { max-width:420px; width:100%; margin:0 auto; }
+  h1 { font-size:1.9rem; }
+  .grid { grid-template-columns:repeat(5, 1fr); }
+  footer { flex-direction:column; gap:0.5rem; text-align:center; padding:1rem; }
+}
+@media (max-width:480px) {
+  :root { font-size:16px; }
+  h1 { font-size:1.6rem; }
+  .actions .btn { flex:1; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-left">
+    <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
+    <span class="nav-div">/</span>
+    <span class="nav-title">Daily Fuel</span>
+    <span class="nav-badge" id="badge">Day 1</span>
+  </div>
+</nav>
+
+<main>
+  <section class="stage" id="stage">
+    <div class="player">
+      <video id="vid" controls playsinline preload="metadata"></video>
+    </div>
+    <div>
+      <div class="label" id="label">Day 1 of 50</div>
+      <h1 id="headline"></h1>
+      <div class="who" id="who"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="playBtn" type="button">Play today's video</button>
+        <a class="btn btn-ghost" id="prevBtn" href="#">Previous day</a>
+      </div>
+      <div class="done" id="done"></div>
+    </div>
+  </section>
+
+  <section class="locked" id="locked">
+    <div class="label" style="justify-content:center">Not unlocked yet</div>
+    <h1 id="lockedTitle">This one is still on its way.</h1>
+    <p id="lockedText"></p>
+    <a class="btn btn-primary" id="todayBtn" href="./">Watch today's video</a>
+  </section>
+
+  <section class="archive">
+    <div class="archive-head">
+      <h2>Every day so far</h2>
+      <div class="progress" id="progress"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+</main>
+
+<footer>
+  <span>Daily Fuel · Private list</span>
+  <a href="/">pratikrenuse.com</a>
+</footer>
+
+<script>
+(function () {
+  var START = Date.UTC(2026, 10, 21); // Day 1 = 21 November 2026, IST
+  var now = new Date(), ist = new Date(now.getTime() + 330 * 60000);
+  var istMidnight = Date.UTC(ist.getUTCFullYear(), ist.getUTCMonth(), ist.getUTCDate());
+  var today = Math.max(1, Math.round((istMidnight - START) / 864e5) + 1);
+  var params = new URLSearchParams(location.search);
+  var asked = parseInt(params.get('d'), 10);
+
+  var watched = {};
+  try { watched = JSON.parse(localStorage.getItem('dailyFuelWatched') || '{}') || {}; } catch (e) { watched = {}; }
+  function saveWatched() { try { localStorage.setItem('dailyFuelWatched', JSON.stringify(watched)); } catch (e) {} }
+
+  function dateFor(n) {
+    var d = new Date(START + (n - 1) * 864e5);
+    return d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' });
+  }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+  fetch('fuel.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (list) {
+    var total = list.length;
+    var unlocked = Math.min(today, total);
+    var day = isNaN(asked) ? unlocked : asked;
+    var item = list.find(function (v) { return v.n === day; });
+
+    if (!item || day > unlocked) {
+      document.getElementById('stage').style.display = 'none';
+      document.getElementById('locked').classList.add('show');
+      if (item) document.getElementById('lockedText').textContent = 'Day ' + day + ' lands in your inbox at 6:30 am on ' + dateFor(day) + '.';
+      else document.getElementById('lockedText').textContent = 'There are ' + total + ' days in this run.';
+      day = unlocked;
+    } else {
+      var isToday = day === unlocked;
+      document.title = 'Day ' + day + ': ' + item.headline + ' | Daily Fuel';
+      document.getElementById('badge').textContent = 'Day ' + day;
+      document.getElementById('label').textContent = 'Day ' + day + ' of ' + total + (isToday ? ' · Today' : '');
+      document.getElementById('headline').textContent = item.headline;
+      document.getElementById('who').textContent = item.who;
+      var vid = document.getElementById('vid');
+      vid.poster = 'posters/' + pad(day) + '.jpg';
+      vid.src = 'videos/' + item.file;
+      var playBtn = document.getElementById('playBtn');
+      playBtn.textContent = isToday ? "Play today's video" : 'Play day ' + day;
+      playBtn.addEventListener('click', function () { vid.play(); });
+      vid.addEventListener('play', function () { playBtn.textContent = 'Playing'; gtag('event', 'fuel_play', { day: day }); });
+      vid.addEventListener('pause', function () { if (!vid.ended) playBtn.textContent = 'Resume'; });
+      vid.addEventListener('ended', function () {
+        watched[day] = 1; saveWatched(); renderGrid();
+        playBtn.textContent = 'Watch again';
+        var count = Object.keys(watched).length;
+        var msg = 'Day ' + day + ' done. ' + count + ' of ' + total + ' watched. ';
+        msg += day < total ? 'Day ' + (day + 1) + ' lands at 6:30 am on ' + dateFor(day + 1) + '.' : 'That was the last one in this run.';
+        var box = document.getElementById('done'); box.textContent = msg; box.classList.add('show');
+        gtag('event', 'fuel_complete', { day: day });
+      });
+      var prev = document.getElementById('prevBtn');
+      if (day > 1) prev.href = '?d=' + (day - 1); else prev.setAttribute('aria-disabled', 'true');
+    }
+
+    function renderGrid() {
+      var g = document.getElementById('grid'); g.innerHTML = '';
+      for (var n = 1; n <= total; n++) {
+        var el;
+        if (n <= unlocked) {
+          el = document.createElement('a'); el.href = '?d=' + n;
+          el.setAttribute('aria-label', 'Day ' + n + ': ' + list[n - 1].who);
+        } else {
+          el = document.createElement('span'); el.className = 'future';
+          el.setAttribute('aria-label', 'Day ' + n + ', unlocks ' + dateFor(n));
+        }
+        el.classList.add('cell');
+        if (watched[n]) el.classList.add('watched');
+        if (n === day) el.classList.add('current');
+        el.textContent = n;
+        g.appendChild(el);
+      }
+      var count = Object.keys(watched).length;
+      document.getElementById('progress').textContent = count + ' of ' + unlocked + ' unlocked days watched';
+    }
+    renderGrid();
+  });
+})();
+</script>
+</body>
+</html>
