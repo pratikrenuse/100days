@@ -340,7 +340,7 @@ Include 3 to 5 graves. Fewer is fine if truth demands it.`;
 
 // ── Daily Fuel: one motivation video a day, emailed at 6:30 am IST ──
 // Private list: recipients come only from the Vercel env var DAILY_FUEL_TO (comma-separated),
-// each gets a separate email. Videos and posters live in /daily-fuel/ on this site.
+// all sent in one email as BCC. Videos and posters live in /daily-fuel/ on this site.
 // Env: RESEND_API_KEY (or GMAT_RESEND_KEY), DAILY_FUEL_TO. Optional: CRON_SECRET.
 const FUEL_SITE = 'https://www.pratikrenuse.com/daily-fuel/';
 const FUEL_FROM = 'Daily Fuel <fuel@spanishpropertyinsights.com>';
@@ -375,25 +375,22 @@ async function dailyFuel(req, res) {
   const html = `<div style="background:#F6F2F1;padding:32px 16px;font-family:Georgia,'Times New Roman',serif;color:#1A1512">
   <div style="max-width:480px;margin:0 auto">
     <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8C6A18;margin:0 0 12px">Daily Fuel &middot; Day ${day} of ${list.length}</p>
-    <h1 style="font-weight:normal;font-size:26px;line-height:1.3;margin:0 0 8px;color:#1A1512">${e(item.headline)}</h1>
-    <p style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#504840;margin:0 0 20px">${e(item.who)}</p>
+    <p style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6;color:#38302A;margin:0 0 20px">${e(item.intro || "Just for us. One short video a day from people who didn't quit when it got hard. Let's not quit either.")}</p>
     <a href="${link}" style="display:block;text-decoration:none"><img src="${FUEL_SITE}posters/${nn}.jpg" width="480" alt="Play today's video: ${e(item.who)}" style="display:block;width:100%;max-width:480px;height:auto;border:0;border-radius:12px"></a>
     <p style="margin:24px 0 0"><a href="${link}" style="display:inline-block;background:#1A1512;color:#F6F2F1;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:14px 24px;text-decoration:none">Play today's video</a></p>
     <p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#786E66;margin:24px 0 0">Under a minute. Watch it before you open anything else.</p>
   </div>
 </div>`;
 
-  const sent = [];
-  for (const to of recipients) {
-    const r = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + key, 'Idempotency-Key': `daily-fuel-${day}-${to}` },
-      body: JSON.stringify(Object.assign({ from: FUEL_FROM, to: [to], reply_to: recipients[0], subject, html }, scheduled_at ? { scheduled_at } : {}))
-    });
-    const out = await r.json().catch(() => ({}));
-    sent.push({ ok: r.ok, id: out.id, error: r.ok ? undefined : out });
-  }
-  return res.status(200).json({ status: scheduled_at ? 'scheduled' : 'sent', day, at: scheduled_at || now.toISOString(), sent });
+  // One email, everyone in BCC. The visible "to" is Resend's sink address, so no real inbox shows up there.
+  const r = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + key, 'Idempotency-Key': `daily-fuel-${day}` },
+    body: JSON.stringify(Object.assign({ from: FUEL_FROM, to: ['Daily Fuel <delivered@resend.dev>'], bcc: recipients, subject, html }, scheduled_at ? { scheduled_at } : {}))
+  });
+  const out = await r.json().catch(() => ({}));
+  if (!r.ok) return res.status(502).json({ error: 'resend', detail: out });
+  return res.status(200).json({ status: scheduled_at ? 'scheduled' : 'sent', day, at: scheduled_at || now.toISOString(), id: out.id, recipients: recipients.length });
 }
 
 // ════════════════ SHARED HELPERS ════════════════
