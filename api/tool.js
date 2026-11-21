@@ -340,10 +340,10 @@ Include 3 to 5 graves. Fewer is fine if truth demands it.`;
 
 // ── Daily Fuel: one motivation video a day, emailed at 6:30 am IST ──
 // Private list: recipients come only from the Vercel env var DAILY_FUEL_TO (comma-separated),
-// all sent in one email as BCC. Videos and posters live in /daily-fuel/ on this site.
+// sent as one email from Pratik (first address in To, the rest in BCC). Videos and posters live in /daily-fuel/ on this site.
 // Env: RESEND_API_KEY (or GMAT_RESEND_KEY), DAILY_FUEL_TO. Optional: CRON_SECRET.
 const FUEL_SITE = 'https://www.pratikrenuse.com/daily-fuel/';
-const FUEL_FROM = 'Daily Fuel <fuel@spanishpropertyinsights.com>';
+const FUEL_FROM = 'Pratik Renuse <pratik@spanishpropertyinsights.com>';
 const FUEL_START = Date.UTC(2026, 10, 21); // Day 1 = Saturday 21 November 2026 (IST date)
 
 async function dailyFuel(req, res) {
@@ -382,11 +382,12 @@ async function dailyFuel(req, res) {
   </div>
 </div>`;
 
-  // One email, everyone in BCC. The visible "to" is Resend's sink address, so no real inbox shows up there.
+  // One email from Pratik: addressed to the first address in DAILY_FUEL_TO (Pratik), the rest in BCC.
+  // Replies go back to Pratik.
   const r = await fetch('https://api.resend.com/emails', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + key, 'Idempotency-Key': `daily-fuel-${day}` },
-    body: JSON.stringify(Object.assign({ from: FUEL_FROM, to: ['Daily Fuel <delivered@resend.dev>'], bcc: recipients, subject, html }, scheduled_at ? { scheduled_at } : {}))
+    headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + key, 'Idempotency-Key': `daily-fuel-v2-${day}` },
+    body: JSON.stringify(Object.assign({ from: FUEL_FROM, to: [recipients[0]], bcc: recipients.slice(1), reply_to: recipients[0], subject, html }, scheduled_at ? { scheduled_at } : {}))
   });
   const out = await r.json().catch(() => ({}));
   if (!r.ok) return res.status(502).json({ error: 'resend', detail: out });
