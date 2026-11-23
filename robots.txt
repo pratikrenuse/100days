@@ -1,8 +1,32 @@
+# pratikrenuse.com robots.txt (updated 23 Nov 2026)
+
 User-agent: *
 Allow: /
 Disallow: /daily-fuel/
 Disallow: /solo-founders/
+Disallow: /gmat-test/
+Disallow: /api/
+
+# AI search and assistant crawlers are welcome on all public pages.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: meta-webindexer
+User-agent: meta-externalagent
+User-agent: Bingbot
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+Allow: /
+Disallow: /daily-fuel/
+Disallow: /solo-founders/
+Disallow: /gmat-test/
+Disallow: /api/
 
 Sitemap: https://www.pratikrenuse.com/sitemap.xml
-
-# Updated 13 Nov 2026

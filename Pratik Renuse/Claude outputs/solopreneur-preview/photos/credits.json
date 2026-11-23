@@ -1,0 +1,299 @@
+{
+ "pieter-levels": {
+  "day_order": 1,
+  "name": "Pieter Levels",
+  "file": "pieter-levels.jpg",
+  "credit": "Photo: The Bootstrapped Founder",
+  "source_page": "https://tbf.fm/episodes/262-pieter-levels-the-indie-hacker-s-guide-to-ai-startups",
+  "from": "01_Pieter_Levels/candidate_3.webp",
+  "note": ""
+ },
+ "danny-postma": {
+  "day_order": 3,
+  "name": "Danny Postma",
+  "file": "danny-postma.jpg",
+  "credit": "Photo: HeadshotPro",
+  "source_page": "https://www.headshotpro.com/author/danny-postma",
+  "from": "03_Danny_Postma/candidate_1.jpg",
+  "note": ""
+ },
+ "tony-dinh": {
+  "day_order": 4,
+  "name": "Tony Dinh",
+  "file": "tony-dinh.jpg",
+  "credit": "Photo: Tony Dinh's Newsletter",
+  "source_page": "https://news.tonydinh.com/p/my-solopreneur-story-zero-to-45kmo",
+  "from": "04_Tony_Dinh/candidate_3.jpg",
+  "note": ""
+ },
+ "dan-koe": {
+  "day_order": 6,
+  "name": "Dan Koe",
+  "file": "dan-koe.jpg",
+  "credit": "Photo: Amazon.com",
+  "source_page": "https://www.amazon.com/stores/author/B0CQVT2V57/about",
+  "from": "06_Dan_Koe/candidate_2.jpg",
+  "note": ""
+ },
+ "jon-yongfook": {
+  "day_order": 7,
+  "name": "Jon Yongfook",
+  "file": "jon-yongfook.jpg",
+  "credit": "Photo: Bannerbear",
+  "source_page": "https://www.bannerbear.com/blog/why-you-should-do-50-coding-and-50-marketing-as-a-solo-tech-founder/",
+  "from": "07_Jon_Yongfook/candidate_1.jpg",
+  "note": "source is his company blog, not named in title"
+ },
+ "damon-chen": {
+  "day_order": 8,
+  "name": "Damon Chen",
+  "file": "damon-chen.jpg",
+  "credit": "Photo: Behind the Craft | Peter Yang",
+  "source_page": "https://creatoreconomy.so/p/damon-chen-engineer-to-one-million",
+  "from": "08_Damon_Chen/candidate_2.jpg",
+  "note": ""
+ },
+ "daniel-vassallo": {
+  "day_order": 10,
+  "name": "Daniel Vassallo",
+  "file": "daniel-vassallo.jpg",
+  "credit": "Photo: Community Inc.",
+  "source_page": "https://community.inc/article/small-bets",
+  "from": "10_Daniel_Vassallo/candidate_1.webp",
+  "note": ""
+ },
+ "akshay-saini": {
+  "day_order": 12,
+  "name": "Akshay Saini",
+  "file": "akshay-saini.jpg",
+  "credit": "Photo: IndiTubeDb",
+  "source_page": "https://www.inditubedb.com/creator/akshay-saini",
+  "from": "12_Akshay_Saini/candidate_3.jpg",
+  "note": ""
+ },
+ "josh-pigford": {
+  "day_order": 18,
+  "name": "Josh Pigford",
+  "file": "josh-pigford.jpg",
+  "credit": "Photo: Baremetrics",
+  "source_page": "https://baremetrics.com/founder-chats/author/josh-pigford",
+  "from": "18_Josh_Pigford/candidate_3.jpg",
+  "note": ""
+ },
+ "ali-abdaal": {
+  "day_order": 19,
+  "name": "Ali Abdaal",
+  "file": "ali-abdaal.jpg",
+  "credit": "Photo: Chartwell Speakers",
+  "source_page": "https://www.chartwellspeakers.com/speaker/ali-abdaal/",
+  "from": "19_Ali_Abdaal/candidate_1.webp",
+  "note": ""
+ },
+ "paul-jarvis": {
+  "day_order": 20,
+  "name": "Paul Jarvis",
+  "file": "paul-jarvis.jpg",
+  "credit": "Photo: Coywolf",
+  "source_page": "https://coywolf.com/podcast/episode-4-paul-jarvis/",
+  "from": "20_Paul_Jarvis/candidate_3.webp",
+  "note": ""
+ },
+ "ankur-warikoo": {
+  "day_order": 21,
+  "name": "Ankur Warikoo",
+  "file": "ankur-warikoo.jpg",
+  "credit": "Photo: Kearney",
+  "source_page": "https://www.kearney.com/about/alumni/alumni-profiles/article/-/insights/ankur-warikoo",
+  "from": "21_Ankur_Warikoo/candidate_2.jpg",
+  "note": ""
+ },
+ "ishan-sharma": {
+  "day_order": 22,
+  "name": "Ishan Sharma",
+  "file": "ishan-sharma.jpg",
+  "credit": "Photo: Famous Birthdays",
+  "source_page": "https://www.famousbirthdays.com/people/ishan-sharma.html",
+  "from": "22_Ishan_Sharma/candidate_1.jpg",
+  "note": "only a small (300px) photo with a named source"
+ },
+ "varun-mayya": {
+  "day_order": 23,
+  "name": "Varun Mayya",
+  "file": "varun-mayya.jpg",
+  "credit": "Photo: Simply Life India Speakers Bureau",
+  "source_page": "https://www.simplylifeindia.com/varun-mayya.html",
+  "from": "23_Varun_Mayya/candidate_1.jpg",
+  "note": ""
+ },
+ "samuel-rondot": {
+  "day_order": 25,
+  "name": "Samuel Rondot",
+  "file": "samuel-rondot.jpg",
+  "credit": "Photo: X",
+  "source_page": "https://x.com/samuelrdt",
+  "from": "25_Samuel_Rondot/candidate_1.jpg",
+  "note": ""
+ },
+ "ruben-hassid": {
+  "day_order": 26,
+  "name": "Ruben Hassid",
+  "file": "ruben-hassid.jpg",
+  "credit": "Photo: LinkedIn",
+  "source_page": "https://www.linkedin.com/posts/ruben-hassid_professional-headshot-prompts-with-ai-activity-7401591037481226240-cQ8C",
+  "from": "26_Ruben_Hassid/candidate_1.png",
+  "note": ""
+ },
+ "nathan-barry": {
+  "day_order": 27,
+  "name": "Nathan Barry",
+  "file": "nathan-barry.jpg",
+  "credit": "Photo: Simon & Schuster",
+  "source_page": "https://www.simonandschuster.com/books/The-Ladders-of-Wealth/Nathan-Barry/9798893312393",
+  "from": "27_Nathan_Barry/candidate_1.jpg",
+  "note": ""
+ },
+ "sahil-bloom": {
+  "day_order": 28,
+  "name": "Sahil Bloom",
+  "file": "sahil-bloom.jpg",
+  "credit": "Photo: Leadership and Society Initiative",
+  "source_page": "https://leadforsociety.uchicago.edu/bio/sahil-bloom/",
+  "from": "28_Sahil_Bloom/candidate_1.jpg",
+  "note": ""
+ },
+ "nat-eliason": {
+  "day_order": 29,
+  "name": "Nat Eliason",
+  "file": "nat-eliason.jpg",
+  "credit": "Photo: Instagram",
+  "source_page": "https://www.instagram.com/nat_eliason/",
+  "from": "29_Nat_Eliason/candidate_1.jpg",
+  "note": ""
+ },
+ "steph-smith": {
+  "day_order": 30,
+  "name": "Steph Smith",
+  "file": "steph-smith.jpg",
+  "credit": "Photo: stephsmith.io",
+  "source_page": "https://stephsmith.io/",
+  "from": "30_Steph_Smith/candidate_1.jpg",
+  "note": ""
+ },
+ "justin-duke": {
+  "day_order": 36,
+  "name": "Justin Duke Buttondown",
+  "file": "justin-duke.jpg",
+  "credit": "Photo: Medium",
+  "source_page": "https://medium.com/@markstenberg/justin-duke-built-buttondown-for-himself-but-you-can-use-it-too-2495c51a7954",
+  "from": "36_Justin_Duke_Buttondown/candidate_1.jpg",
+  "note": ""
+ },
+ "dagobert-renouf": {
+  "day_order": 37,
+  "name": "Dagobert Renouf",
+  "file": "dagobert-renouf.jpg",
+  "credit": "Photo: Threads",
+  "source_page": "https://www.threads.com/@dagorenouf",
+  "from": "37_Dagobert_Renouf/candidate_2.jpg",
+  "note": ""
+ },
+ "caleb-porzio": {
+  "day_order": 38,
+  "name": "Caleb Porzio",
+  "file": "caleb-porzio.jpg",
+  "credit": "Photo: Indie Hackers",
+  "source_page": "https://www.indiehackers.com/post/tech/hitting-a-5-figure-mrr-with-an-open-source-portfolio-ehAiGujGzBkd4BhnPoIS",
+  "from": "38_Caleb_Porzio/candidate_1.jpg",
+  "note": "source page does not name him in its title"
+ },
+ "josh-comeau": {
+  "day_order": 39,
+  "name": "Josh W. Comeau",
+  "file": "josh-comeau.jpg",
+  "credit": "Photo: Bluesky",
+  "source_page": "https://bsky.app/profile/joshwcomeau.com",
+  "from": "39_Josh_W._Comeau/candidate_1.webp",
+  "note": ""
+ },
+ "wes-bos": {
+  "day_order": 40,
+  "name": "Wes Bos",
+  "file": "wes-bos.jpg",
+  "credit": "Photo: GitHub",
+  "source_page": "https://github.com/wesbos/awesome-uses",
+  "from": "40_Wes_Bos/candidate_1.jpg",
+  "note": "source is his own GitHub repo"
+ },
+ "steven-tey": {
+  "day_order": 42,
+  "name": "Steven Tey",
+  "file": "steven-tey.jpg",
+  "credit": "Photo: steventey.com",
+  "source_page": "https://steventey.com/",
+  "from": "42_Steven_Tey/candidate_2.jpg",
+  "note": ""
+ },
+ "corey-haines": {
+  "day_order": 43,
+  "name": "Corey Haines",
+  "file": "corey-haines.jpg",
+  "credit": "Photo: Brian Ondrako",
+  "source_page": "https://brianondrako.com/podcast/corey-haines",
+  "from": "43_Corey_Haines/candidate_1.jpg",
+  "note": ""
+ },
+ "pat-walls": {
+  "day_order": 44,
+  "name": "Pat Walls",
+  "file": "pat-walls.jpg",
+  "credit": "Photo: The CEO Library",
+  "source_page": "https://theceolibrary.com/pat-walls-10134.html",
+  "from": "44_Pat_Walls/candidate_1.jpg",
+  "note": "only a small (286px) photo with a named source"
+ },
+ "anne-laure-le-cunff": {
+  "day_order": 46,
+  "name": "Anne-Laure Le Cunff",
+  "file": "anne-laure-le-cunff.jpg",
+  "credit": "Photo: The Entrepreneurs Network",
+  "source_page": "https://www.tenentrepreneurs.org/annelaure-le-cunff",
+  "from": "46_Anne-Laure_Le_Cunff/candidate_1.webp",
+  "note": ""
+ },
+ "rob-fitzpatrick": {
+  "day_order": 47,
+  "name": "Rob Fitzpatrick entrepreneur",
+  "file": "rob-fitzpatrick.jpg",
+  "credit": "Photo: Babelio",
+  "source_page": "https://www.babelio.com/auteur/Rob-Fitzpatrick-II/611735",
+  "from": "47_Rob_Fitzpatrick_entrepreneur/candidate_2.jpg",
+  "note": ""
+ },
+ "kyle-gawley": {
+  "day_order": 48,
+  "name": "Kyle Gawley",
+  "file": "kyle-gawley.jpg",
+  "credit": "Photo: kylegawley.com",
+  "source_page": "https://kylegawley.com/",
+  "from": "48_Kyle_Gawley/candidate_1.jpg",
+  "note": ""
+ },
+ "monica-lent": {
+  "day_order": 49,
+  "name": "Monica Lent",
+  "file": "monica-lent.jpg",
+  "credit": "Photo: Monica Lent",
+  "source_page": "https://monicalent.com/paid-community-launch/",
+  "from": "49_Monica_Lent/candidate_1.jpg",
+  "note": ""
+ },
+ "tyler-tringas": {
+  "day_order": 50,
+  "name": "Tyler Tringas",
+  "file": "tyler-tringas.jpg",
+  "credit": "Photo: Tyler Tringas",
+  "source_page": "https://tylertringas.com/headshot/",
+  "from": "50_Tyler_Tringas/candidate_1.jpg",
+  "note": ""
+ }
+}

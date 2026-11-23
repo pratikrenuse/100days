@@ -1,0 +1,295 @@
+# Pratik Renuse
+
+> Growth marketing leader, 3x TEDx speaker and startup mentor based in Pune, India. Built marketing from zero at Bueno, Infento ($848K Kickstarter, the most funded STEM project of 2018) and VU. Mentor at Techstars, EBRD Star Venture and Seedstars. Visiting professor at Masters' Union and Tetr College of Business. Runs hands-on AI sessions for marketers, including the sold-out Claude 101 masterclass with GrowthX.
+
+## Work with Pratik
+- [Consulting](https://www.pratikrenuse.com/consulting/): AI-first growth marketing for seed-funded D2C and B2C startups
+- [Advising](https://www.pratikrenuse.com/advising/): growth advisor and mentor to founders
+- [Coaching](https://www.pratikrenuse.com/coaching/): career coaching for graduates and young professionals
+- [Teaching](https://www.pratikrenuse.com/teaching/): growth marketing, go-to-market and AI for marketers
+- [Speaking](https://www.pratikrenuse.com/speaking/): AI keynotes and hands-on AI workshops for marketers, founders and event organisers
+
+## Answers
+- [How should a small marketing team start using AI?](https://www.pratikrenuse.com/answers/how-should-a-small-marketing-team-start-using-ai/)
+- [What marketing work should you automate first with AI?](https://www.pratikrenuse.com/answers/what-marketing-work-should-you-automate-first-with-ai/)
+- [Claude or ChatGPT: which is better for marketing work?](https://www.pratikrenuse.com/answers/claude-vs-chatgpt-for-marketing/)
+- [Can a marketer build a website with Claude without knowing how to code?](https://www.pratikrenuse.com/answers/can-a-marketer-build-a-website-with-claude-without-coding/)
+- [What is an AI agent in marketing?](https://www.pratikrenuse.com/answers/what-is-an-ai-agent-in-marketing/)
+- [How do you train a marketing team on AI?](https://www.pratikrenuse.com/answers/how-to-train-your-marketing-team-on-ai/)
+- [How do you measure the ROI of AI in marketing?](https://www.pratikrenuse.com/answers/how-to-measure-the-roi-of-ai-in-marketing/)
+- [Is it safe to put a Supabase anon key in a public web page?](https://www.pratikrenuse.com/answers/is-it-safe-to-put-a-supabase-anon-key-in-a-public-web-page/)
+- [How do you use a reference website when designing a site with Claude?](https://www.pratikrenuse.com/answers/how-to-use-a-reference-website-when-designing-with-claude/)
+- [Can Claude build a gamified website without code?](https://www.pratikrenuse.com/answers/can-claude-build-a-gamified-website/)
+- [How can AI tools generate leads for a fintech or financial services company?](https://www.pratikrenuse.com/answers/how-can-ai-tools-generate-leads-for-a-fintech/)
+- [What is a technical marketer, and why does it matter now?](https://www.pratikrenuse.com/answers/what-is-a-technical-marketer/)
+- [How do you keep up with the exponential growth of AI without feeling overwhelmed?](https://www.pratikrenuse.com/answers/how-to-keep-up-with-the-exponential-growth-of-ai/)
+- [How do you write marketing copy that does not sound like AI?](https://www.pratikrenuse.com/answers/how-to-write-marketing-copy-that-does-not-sound-like-ai/)
+- [What words and patterns make marketing copy sound AI-generated?](https://www.pratikrenuse.com/answers/what-words-make-marketing-copy-sound-ai-generated/)
+- [How can a marketer use AI to make illustrated quotes and short animations?](https://www.pratikrenuse.com/answers/how-to-make-quote-visuals-and-short-animations-with-ai/)
+- [What is functional AI in marketing?](https://www.pratikrenuse.com/answers/what-is-functional-ai-in-marketing/)
+- [How do you script short founder videos that keep a niche audience coming back?](https://www.pratikrenuse.com/answers/how-to-script-30-second-founder-news-videos/)
+- [What is answer engine optimization (AEO)?](https://www.pratikrenuse.com/answers/what-is-answer-engine-optimization/)
+- [How do you get your brand mentioned by ChatGPT and other AI assistants?](https://www.pratikrenuse.com/answers/how-to-get-your-brand-mentioned-by-chatgpt/)
+- [What should a CMO do about AI search taking traffic from Google?](https://www.pratikrenuse.com/answers/what-should-a-cmo-do-about-ai-search/)
+- [How do you get your first 1,000 customers for a D2C brand?](https://www.pratikrenuse.com/answers/how-to-get-your-first-1000-customers-d2c/)
+- [How do you plan a successful Kickstarter campaign?](https://www.pratikrenuse.com/answers/how-to-plan-a-kickstarter-campaign/)
+- [What is a good LTV to CAC ratio?](https://www.pratikrenuse.com/answers/what-is-a-good-ltv-to-cac-ratio/)
+- [How should a startup test a new country market?](https://www.pratikrenuse.com/answers/how-to-enter-a-new-country-market/)
+- [How can I validate a startup idea with a small ad budget?](https://www.pratikrenuse.com/answers/how-to-validate-a-startup-idea-with-a-small-ad-budget/)
+- [How do I get bookings fast when my main market suddenly disappears?](https://www.pratikrenuse.com/answers/how-to-get-bookings-fast-when-your-main-market-disappears/)
+- [Do influencer campaigns work for app installs?](https://www.pratikrenuse.com/answers/do-influencer-campaigns-work-for-app-installs/)
+- [What should a B2B services homepage say?](https://www.pratikrenuse.com/answers/what-should-a-b2b-services-homepage-say/)
+- [How do I market a niche B2B service on a small budget?](https://www.pratikrenuse.com/answers/how-to-market-a-niche-b2b-service-on-a-small-budget/)
+- [Why are my customers not using our referral programme?](https://www.pratikrenuse.com/answers/why-do-cash-referral-rewards-fail/)
+- [How do I launch a two-sided marketplace?](https://www.pratikrenuse.com/answers/how-to-launch-a-two-sided-marketplace/)
+- [Why are a startup's first 1,000 customers worth more than later ones?](https://www.pratikrenuse.com/answers/why-your-first-1000-customers-are-worth-more-than-later-ones/)
+- [What is an activation threshold, and how do you find yours?](https://www.pratikrenuse.com/answers/what-is-an-activation-threshold-churn-reversal-point/)
+- [What cold outreach mistakes make people stop replying?](https://www.pratikrenuse.com/answers/cold-outreach-mistakes-that-lose-a-warm-lead/)
+- [What is practical blogging, and why should a post end with a task?](https://www.pratikrenuse.com/answers/what-is-practical-blogging/)
+- [What is a growth model, and why do CEOs and investors value it?](https://www.pratikrenuse.com/answers/what-is-a-growth-model-and-why-do-investors-value-it/)
+- [What does a website growth audit cover?](https://www.pratikrenuse.com/answers/what-does-a-website-growth-audit-cover/)
+- [Which legal pages and consent options should a startup website have before marketing it?](https://www.pratikrenuse.com/answers/what-legal-pages-and-consent-does-a-startup-website-need/)
+- [What online visibility basics do small business websites usually miss?](https://www.pratikrenuse.com/answers/what-online-visibility-basics-do-small-business-websites-miss/)
+- [Which SEO tasks should a small team prioritise first?](https://www.pratikrenuse.com/answers/which-seo-tasks-should-you-prioritise-first/)
+- [In what order should a D2C brand fix its website, SEO, email and ads?](https://www.pratikrenuse.com/answers/in-what-order-should-a-d2c-brand-fix-site-seo-email-and-ads/)
+- [What do you need to check when launching an ecommerce site in a second language?](https://www.pratikrenuse.com/answers/how-to-launch-an-ecommerce-site-in-a-second-language/)
+- [How do you write a founder story and values section for a D2C brand website?](https://www.pratikrenuse.com/answers/how-to-write-a-founder-story-and-values-section-for-a-d2c-site/)
+- [How do you structure a weekly newsletter for a niche audience?](https://www.pratikrenuse.com/answers/how-to-structure-a-weekly-newsletter-for-a-niche-audience/)
+- [How do you test a new content format before committing to it?](https://www.pratikrenuse.com/answers/how-to-run-a-one-month-content-format-test/)
+- [Where do you find real customer problems before writing ads?](https://www.pratikrenuse.com/answers/where-to-find-customer-problems-before-writing-ads/)
+- [When should a startup hire its first marketer?](https://www.pratikrenuse.com/answers/when-should-a-startup-hire-its-first-marketer/)
+- [Fractional CMO, agency or full-time marketer: which should a startup choose?](https://www.pratikrenuse.com/answers/fractional-cmo-vs-agency-vs-full-time-marketer/)
+- [How should I split a marketing budget across several countries?](https://www.pratikrenuse.com/answers/how-to-split-a-marketing-budget-across-countries/)
+- [What should I check before handing marketing to an agency?](https://www.pratikrenuse.com/answers/what-to-check-before-hiring-a-marketing-agency/)
+- [How do I run growth when I am the only marketer?](https://www.pratikrenuse.com/answers/how-to-run-growth-as-a-one-person-marketing-team/)
+- [How should a marketing head present updates to the board?](https://www.pratikrenuse.com/answers/how-to-present-marketing-updates-to-the-board/)
+- [What should a startup marketing plan include?](https://www.pratikrenuse.com/answers/what-should-a-startup-marketing-plan-include/)
+- [How do you structure a marketing plan presentation for founders or a client?](https://www.pratikrenuse.com/answers/how-to-present-a-marketing-plan-past-present-future/)
+- [How do you prioritise marketing tasks by impact and effort?](https://www.pratikrenuse.com/answers/how-to-prioritise-marketing-tasks-by-impact-and-effort/)
+- [How should a marketer brief a developer on mobile homepage fixes?](https://www.pratikrenuse.com/answers/how-to-brief-a-developer-on-mobile-homepage-fixes/)
+- [How do you brief a designer for a fintech homepage redesign?](https://www.pratikrenuse.com/answers/how-to-brief-a-designer-for-a-fintech-homepage/)
+- [How do you hire and manage marketing interns at a startup?](https://www.pratikrenuse.com/answers/how-to-hire-and-manage-marketing-interns-at-a-startup/)
+- [How do you run a hands-on AI workshop for a marketing team or community?](https://www.pratikrenuse.com/answers/how-to-run-a-hands-on-ai-workshop-for-a-marketing-team/)
+- [Should your event book an AI keynote or a hands-on AI workshop?](https://www.pratikrenuse.com/answers/keynote-or-workshop-which-should-your-event-book/)
+- [How do you brief a speaker for your event?](https://www.pratikrenuse.com/answers/how-to-brief-a-speaker-for-your-event/)
+- [How long should a hands-on Claude workshop be?](https://www.pratikrenuse.com/answers/how-long-should-a-hands-on-claude-workshop-be/)
+- [What do attendees need before a Claude build session?](https://www.pratikrenuse.com/answers/what-do-attendees-need-before-a-claude-build-session/)
+- [Should a hands-on AI session be online or in person?](https://www.pratikrenuse.com/answers/online-or-in-person-for-a-hands-on-ai-session/)
+- [What is a build night and how do you run one?](https://www.pratikrenuse.com/answers/what-is-a-build-night/)
+- [How many slides should a 15 minute talk have?](https://www.pratikrenuse.com/answers/how-many-slides-for-a-15-minute-talk/)
+- [What topics does Pratik Renuse speak on?](https://www.pratikrenuse.com/answers/what-topics-does-pratik-renuse-speak-on/)
+- [What does a growth mindset talk for students or young professionals cover?](https://www.pratikrenuse.com/answers/what-does-a-growth-mindset-talk-cover/)
+- [Has Pratik Renuse given a TEDx talk?](https://www.pratikrenuse.com/answers/has-pratik-renuse-given-a-tedx-talk/)
+- [Where does Pratik Renuse teach?](https://www.pratikrenuse.com/answers/where-does-pratik-renuse-teach/)
+- [How should you structure a workshop for startup founders?](https://www.pratikrenuse.com/answers/how-to-structure-a-founder-workshop/)
+- [How do you teach marketing with a real case study?](https://www.pratikrenuse.com/answers/how-to-teach-marketing-with-a-real-case-study/)
+- [How do I get traffic to my startup with almost no marketing budget?](https://www.pratikrenuse.com/answers/how-to-get-startup-traffic-with-no-budget/)
+- [How do I use LinkedIn outreach and micro-influencers to get my first B2B users?](https://www.pratikrenuse.com/answers/how-to-use-linkedin-outreach-and-micro-influencers-for-first-b2b-users/)
+- [Should an early-stage startup run LinkedIn ads before product-market fit?](https://www.pratikrenuse.com/answers/should-an-early-stage-startup-run-linkedin-ads/)
+- [What is a good click-through rate for startup ads on Google or LinkedIn?](https://www.pratikrenuse.com/answers/what-is-a-good-click-through-rate-for-startup-ads/)
+- [Which funnel KPIs should an early-stage startup track?](https://www.pratikrenuse.com/answers/which-funnel-kpis-should-an-early-stage-startup-track/)
+- [When should a startup start tracking marketing KPIs?](https://www.pratikrenuse.com/answers/when-should-a-startup-start-tracking-marketing-kpis/)
+- [What is a good landing page conversion rate for a startup?](https://www.pratikrenuse.com/answers/what-is-a-good-landing-page-conversion-rate-for-a-startup/)
+- [How do I get more people to complete my sign-up form?](https://www.pratikrenuse.com/answers/how-to-improve-sign-up-form-completion/)
+- [How should a technical founder split time between building the product and marketing?](https://www.pratikrenuse.com/answers/how-should-a-founder-split-time-between-product-and-marketing/)
+- [When should an early-stage startup start investing in SEO and social media?](https://www.pratikrenuse.com/answers/when-should-a-startup-start-seo-and-social-media/)
+- [How do I use Facebook groups and Slack communities to get my first users?](https://www.pratikrenuse.com/answers/how-to-use-facebook-and-slack-groups-to-get-first-users/)
+- [What tracking should an early-stage startup set up first?](https://www.pratikrenuse.com/answers/what-tracking-should-an-early-stage-startup-set-up-first/)
+- [How do I grow organic traffic when my startup blog gets very few visitors?](https://www.pratikrenuse.com/answers/how-to-grow-blog-traffic-from-pages-you-already-have/)
+- [Should an early-stage startup focus on qualitative or quantitative data?](https://www.pratikrenuse.com/answers/qualitative-or-quantitative-data-for-early-stage-startups/)
+- [Should I show my product or demo in customer discovery interviews?](https://www.pratikrenuse.com/answers/should-you-show-your-product-in-customer-discovery-interviews/)
+- [How should I structure a customer discovery interview?](https://www.pratikrenuse.com/answers/how-to-structure-a-customer-discovery-interview/)
+- [My startup solves productivity. How do I narrow down the core problem?](https://www.pratikrenuse.com/answers/how-to-narrow-down-the-core-problem-your-startup-solves/)
+- [What are the stages of customer awareness and why do they matter for a startup?](https://www.pratikrenuse.com/answers/what-are-the-stages-of-customer-awareness/)
+- [How should I onboard the first users of an AI product?](https://www.pratikrenuse.com/answers/how-to-onboard-first-users-to-an-ai-product/)
+- [What is language-market fit and how do I find it?](https://www.pratikrenuse.com/answers/how-to-find-language-market-fit/)
+- [What should go in a monthly investor update, and when should I start sending them?](https://www.pratikrenuse.com/answers/what-should-go-in-a-monthly-investor-update/)
+- [How do I stop HR or company-wide approval from blocking my B2B pilot?](https://www.pratikrenuse.com/answers/how-to-stop-hr-blocking-a-b2b-pilot/)
+- [How long does it take a startup to find product-market fit?](https://www.pratikrenuse.com/answers/how-long-does-it-take-to-find-product-market-fit/)
+- [How do I structure a demo day pitch that investors remember?](https://www.pratikrenuse.com/answers/how-to-structure-a-demo-day-pitch/)
+- [Why do accelerator mentors keep saying my pitch deck is not clear?](https://www.pratikrenuse.com/answers/why-mentors-say-your-pitch-deck-is-not-clear/)
+- [Should B2B startups use emotional storytelling in their pitch and marketing?](https://www.pratikrenuse.com/answers/should-b2b-startups-use-emotional-storytelling/)
+- [How do I choose a niche for my B2B startup when the product could serve everyone?](https://www.pratikrenuse.com/answers/how-to-choose-a-niche-for-a-b2b-startup/)
+- [Can a small startup target several markets or verticals at once?](https://www.pratikrenuse.com/answers/can-a-small-startup-target-several-markets-at-once/)
+- [How many customer interviews do I need before I know the problem is real?](https://www.pratikrenuse.com/answers/how-many-customer-interviews-do-you-need/)
+- [Is it a mistake to start a company with friends as co-founders?](https://www.pratikrenuse.com/answers/is-it-a-mistake-to-start-a-company-with-friends/)
+- [How do I write a clear value proposition for my startup?](https://www.pratikrenuse.com/answers/how-to-write-a-clear-value-proposition/)
+- [How do I define an ideal customer profile when my startup is just starting?](https://www.pratikrenuse.com/answers/how-to-define-an-ideal-customer-profile-for-a-startup/)
+- [How should an AI marketing-tech startup position itself against HubSpot, Salesforce and Tableau?](https://www.pratikrenuse.com/answers/how-should-an-ai-martech-startup-position-against-big-platforms/)
+- [What is the One Metric That Matters (OMTM) and how do I pick one for each funnel stage?](https://www.pratikrenuse.com/answers/what-is-the-one-metric-that-matters/)
+- [How do I choose a North Star Metric for a subscription or membership business?](https://www.pratikrenuse.com/answers/how-to-choose-a-north-star-metric-for-a-subscription-business/)
+- [How do I measure product-market fit with a customer survey?](https://www.pratikrenuse.com/answers/how-to-measure-product-market-fit-with-a-survey/)
+- [How do I use the Kano model to decide which features to build and promote?](https://www.pratikrenuse.com/answers/how-to-use-the-kano-model-to-pick-features-for-marketing/)
+- [How do I find out why customers really buy my product? (Jobs to be Done)](https://www.pratikrenuse.com/answers/how-to-find-out-why-customers-really-buy/)
+- [ICE or BRASS: how should I score and prioritise growth experiment ideas?](https://www.pratikrenuse.com/answers/ice-vs-brass-scoring-for-growth-experiments/)
+- [What success rate should I expect from growth experiments, and how long should each run?](https://www.pratikrenuse.com/answers/what-success-rate-should-growth-experiments-have/)
+- [How do I find the growth levers that will actually grow my startup?](https://www.pratikrenuse.com/answers/how-to-find-your-startups-growth-levers/)
+- [How many Facebook ad campaigns should a small brand run, and why are my ads not learning?](https://www.pratikrenuse.com/answers/how-many-facebook-ad-campaigns-should-a-small-brand-run/)
+- [Why do my ads get clicks but no sales?](https://www.pratikrenuse.com/answers/why-do-my-ads-get-clicks-but-no-sales/)
+- [How should I market my startup when the whole market is shrinking?](https://www.pratikrenuse.com/answers/how-to-market-a-startup-in-a-shrinking-market/)
+- [How do I solve the chicken-and-egg problem in a two-sided marketplace?](https://www.pratikrenuse.com/answers/how-to-solve-the-chicken-and-egg-problem-in-a-marketplace/)
+- [What growth story do seed investors want to see from a consumer app?](https://www.pratikrenuse.com/answers/what-growth-story-do-seed-investors-want-to-see/)
+- [How should a startup founder plan the year ahead?](https://www.pratikrenuse.com/answers/how-to-plan-the-year-ahead-for-a-startup/)
+- [How do I prepare for a startup mentor session so I get real value from it?](https://www.pratikrenuse.com/answers/how-to-prepare-for-a-startup-mentor-session/)
+- [How does Techstars Mentor Madness work, and how should founders prepare?](https://www.pratikrenuse.com/answers/how-does-techstars-mentor-madness-work/)
+- [What does a startup growth mentor actually help with?](https://www.pratikrenuse.com/answers/what-does-a-startup-growth-mentor-help-with/)
+- [How should a new D2C brand launch on Instagram?](https://www.pratikrenuse.com/answers/how-should-a-new-d2c-brand-launch-on-instagram/)
+- [Should a D2C brand run a separate education channel next to its brand account?](https://www.pratikrenuse.com/answers/should-a-d2c-brand-run-a-separate-education-channel/)
+- [What should I ask in a customer survey before launching a D2C product?](https://www.pratikrenuse.com/answers/what-to-ask-in-a-customer-survey-before-launching-a-d2c-product/)
+- [How do I prepare for an equity crowdfunding raise on Crowdcube or Seedrs?](https://www.pratikrenuse.com/answers/how-to-prepare-an-equity-crowdfunding-raise/)
+- [How should a climate or impact startup go from idea to investor pitch?](https://www.pratikrenuse.com/answers/how-should-a-climate-startup-go-from-idea-to-pitch/)
+- [How do I find where my ecommerce funnel is leaking?](https://www.pratikrenuse.com/answers/how-to-find-where-your-ecommerce-funnel-leaks/)
+- [Should my checkout page have a discount code field?](https://www.pratikrenuse.com/answers/should-your-checkout-have-a-discount-code-field/)
+- [How do I cut customer acquisition cost on paid ads?](https://www.pratikrenuse.com/answers/how-to-cut-customer-acquisition-cost-on-paid-ads/)
+- [Should a D2C brand use Facebook ads or Google ads?](https://www.pratikrenuse.com/answers/facebook-ads-or-google-ads-for-a-d2c-brand/)
+- [How do I make a premium ecommerce site more trustworthy?](https://www.pratikrenuse.com/answers/how-to-make-a-premium-ecommerce-site-more-trustworthy/)
+- [How do I write ad copy in my customers' own words?](https://www.pratikrenuse.com/answers/how-to-write-ad-copy-in-your-customers-words/)
+- [Why is my Facebook ad click-through rate suspiciously high?](https://www.pratikrenuse.com/answers/why-is-my-facebook-ad-ctr-suspiciously-high/)
+- [When should an ecommerce brand start planning its Christmas campaign?](https://www.pratikrenuse.com/answers/how-to-plan-a-christmas-campaign-for-ecommerce/)
+- [How do you lower cost per click on Facebook and Instagram ads?](https://www.pratikrenuse.com/answers/how-to-lower-cpc-with-bullseye-targeting/)
+- [How do you write a hook that makes people stop and read or watch?](https://www.pratikrenuse.com/answers/how-to-write-a-hook-people-read/)
+- [How do you audit a Facebook ads account?](https://www.pratikrenuse.com/answers/how-to-audit-a-facebook-ads-account/)
+- [Why does my payment gateway show up as a referral source in Google Analytics?](https://www.pratikrenuse.com/answers/why-is-my-payment-gateway-showing-as-a-referral-in-google-analytics/)
+- [Should you exclude mobile app placements from retargeting campaigns?](https://www.pratikrenuse.com/answers/should-you-exclude-mobile-app-placements-from-retargeting/)
+- [How do you find out why buyers drop off at checkout?](https://www.pratikrenuse.com/answers/how-to-find-why-buyers-drop-off-at-checkout/)
+- [Which KPIs should you check first when you launch a new paid campaign?](https://www.pratikrenuse.com/answers/what-kpis-to-check-first-in-a-new-paid-campaign/)
+- [What should a good login page include?](https://www.pratikrenuse.com/answers/what-should-a-login-page-include/)
+- [How do you design a sign-up and password step that does not lose users?](https://www.pratikrenuse.com/answers/how-to-design-a-sign-up-and-password-step/)
+- [What should you check in a mobile UX audit?](https://www.pratikrenuse.com/answers/what-to-check-in-a-mobile-ux-audit/)
+- [How do you write error messages that help users recover instead of leaving?](https://www.pratikrenuse.com/answers/how-to-write-error-messages-that-help-users-recover/)
+- [How many fonts and colours should a website or landing page use?](https://www.pratikrenuse.com/answers/how-many-fonts-and-colours-should-a-website-use/)
+- [What does visibility of system status mean for a website, and how do you check it?](https://www.pratikrenuse.com/answers/what-is-visibility-of-system-status-in-ux/)
+- [How do you make website navigation easy to use?](https://www.pratikrenuse.com/answers/how-to-make-website-navigation-easy-to-use/)
+- [Which UX problems should you fix first on a website?](https://www.pratikrenuse.com/answers/which-ux-problems-should-you-fix-first/)
+- [What does user control and freedom mean on a website, and what should you check?](https://www.pratikrenuse.com/answers/how-to-give-website-users-control-and-freedom/)
+- [What makes a good help centre or FAQ page?](https://www.pratikrenuse.com/answers/what-makes-a-good-help-centre-and-faq/)
+- [How do you prevent errors in web forms before they happen?](https://www.pratikrenuse.com/answers/how-to-prevent-errors-in-web-forms/)
+- [What should you check on a WordPress site before spending money on ads?](https://www.pratikrenuse.com/answers/what-to-check-on-a-wordpress-site-before-running-ads/)
+- [What should a thank you page include after a sign-up or purchase?](https://www.pratikrenuse.com/answers/what-should-a-thank-you-page-include/)
+- [What should you check on a landing page before sending paid traffic to it?](https://www.pratikrenuse.com/answers/what-to-check-on-a-landing-page-before-sending-paid-traffic/)
+- [How do you structure a 30 second video ad for a premium product?](https://www.pratikrenuse.com/answers/how-to-structure-a-30-second-video-ad/)
+- [How do you borrow a winning ad format from another industry without copying it?](https://www.pratikrenuse.com/answers/how-to-borrow-a-winning-ad-format-from-another-industry/)
+- [How do you write a UGC style ad script for a physical product?](https://www.pratikrenuse.com/answers/how-to-write-a-ugc-script-for-a-physical-product/)
+- [How do you write an us versus them comparison ad without naming competitors?](https://www.pratikrenuse.com/answers/how-to-write-a-comparison-ad-without-naming-competitors/)
+- [How do you write a Black Friday email for a premium brand without cheapening it?](https://www.pratikrenuse.com/answers/how-to-write-a-black-friday-email-sequence-for-a-premium-brand/)
+- [What hooks and rules work in UGC ads for an audience over 35?](https://www.pratikrenuse.com/answers/what-hooks-work-in-ugc-ads-for-an-audience-over-35/)
+- [Should a fintech show a comparison table against traditional banks on its homepage?](https://www.pratikrenuse.com/answers/should-a-fintech-show-a-comparison-table-against-banks/)
+- [How do you find ad angles for a fintech product?](https://www.pratikrenuse.com/answers/how-to-find-ad-angles-for-a-fintech-product/)
+- [How do you review a UGC video before running it as an ad?](https://www.pratikrenuse.com/answers/how-to-review-a-ugc-video-before-it-goes-live/)
+- [How do you write UGC ad scripts for a fintech app?](https://www.pratikrenuse.com/answers/how-to-write-ugc-scripts-for-a-fintech-app/)
+- [How should a fintech website show that customers' money is safe?](https://www.pratikrenuse.com/answers/how-to-show-security-and-licensing-on-a-fintech-website/)
+- [I feel confused about my career. How do I get clarity on what to do next?](https://www.pratikrenuse.com/answers/how-to-get-clarity-on-your-career/)
+- [How can I test a career path before I commit to it?](https://www.pratikrenuse.com/answers/how-to-test-a-career-path-before-committing/)
+- [How do I build STAR stories for job interviews when I have little work experience?](https://www.pratikrenuse.com/answers/how-to-build-star-stories-for-job-interviews/)
+- [What unusual interview questions should I prepare for, and how do I answer them?](https://www.pratikrenuse.com/answers/unusual-interview-questions-that-reveal-how-you-think/)
+- [How do I break into growth marketing as a graduate?](https://www.pratikrenuse.com/answers/how-to-break-into-growth-marketing/)
+- [I finished my MBA and I am confused about which career to choose. What should I do?](https://www.pratikrenuse.com/answers/how-to-choose-a-career-after-an-mba/)
+- [How do I network as a graduate without feeling awkward or pushy?](https://www.pratikrenuse.com/answers/how-to-network-as-a-graduate-without-feeling-awkward/)
+- [How do I break into consulting or freelance project work without a track record?](https://www.pratikrenuse.com/answers/how-to-break-into-consulting-without-a-track-record/)
+- [How do I start a career in non-profit or impact work?](https://www.pratikrenuse.com/answers/how-to-start-a-career-in-impact-or-non-profit-work/)
+- [How do I become a paid writer or ghostwriter?](https://www.pratikrenuse.com/answers/how-to-become-a-paid-writer-or-ghostwriter/)
+- [How do I move into project management or a lead role without management experience?](https://www.pratikrenuse.com/answers/how-to-get-into-project-management-without-experience/)
+- [What self-reflection exercises help you figure out which career you want?](https://www.pratikrenuse.com/answers/self-reflection-exercises-to-choose-a-career/)
+- [What actually happens in a career coaching session, and is it worth it?](https://www.pratikrenuse.com/answers/what-happens-in-a-career-coaching-session/)
+- [How should I prepare for a marketing job interview?](https://www.pratikrenuse.com/answers/how-to-prepare-for-a-marketing-job-interview/)
+- [Can you learn a new marketing skill in a weekend?](https://www.pratikrenuse.com/answers/how-to-learn-a-marketing-skill-in-a-weekend/)
+- [What should you do first when you start a new job?](https://www.pratikrenuse.com/answers/what-to-do-first-as-a-new-hire/)
+- [Do you need to hustle all the time to do great work?](https://www.pratikrenuse.com/answers/does-good-work-need-hustle/)
+- [What books should a startup marketer or founder read?](https://www.pratikrenuse.com/answers/best-books-for-startup-marketers-and-founders/)
+- [How should a marketer set goals and review their week?](https://www.pratikrenuse.com/answers/how-to-set-goals-and-review-your-week-as-a-marketer/)
+- [How do you ask a busy expert or mentor for help without being ignored?](https://www.pratikrenuse.com/answers/how-to-ask-a-busy-expert-for-help/)
+- [How do you answer marketing interview questions with the STAR method?](https://www.pratikrenuse.com/answers/how-to-answer-marketing-interview-questions-with-star/)
+- [How do you grow an X (Twitter) account from zero as a marketer?](https://www.pratikrenuse.com/answers/how-to-grow-an-x-twitter-account-from-zero-as-a-marketer/)
+
+## Playbooks
+- [Ship a website with Claude in one hour, without coding](https://www.pratikrenuse.com/playbooks/ship-a-website-with-claude-in-one-hour/): The exact steps from my sold-out Claude 101 masterclass: from a resume or product brief to a live website with a working lead form, using Claude, GitHub, Vercel and Supabase.
+- [Set up an AI content agent for your brand](https://www.pratikrenuse.com/playbooks/set-up-an-ai-content-agent-for-your-brand/): A practical setup for a small marketing team: one source piece in, a week of on-brand posts, emails and scripts out, with a person approving everything before it goes live.
+- [Launch a Kickstarter campaign that funds in the first days](https://www.pratikrenuse.com/playbooks/launch-a-kickstarter-campaign/): The playbook behind Infento's $848K Kickstarter, the most funded STEM project on the platform in 2018: build the list first, launch with momentum, keep backers close.
+- [A 30 day AI plan for a marketing team](https://www.pratikrenuse.com/playbooks/30-day-ai-plan-for-a-marketing-team/): Week by week: pick the work, train the team on real tasks, build three reliable workflows and report the results in numbers leadership cares about.
+- [Run a weighted UX audit of a landing page](https://www.pratikrenuse.com/playbooks/run-a-weighted-ux-audit-of-a-landing-page/): My UX audit template: score a page task by task across forms, layout, interaction, privacy and trust, weight each check, and fix the heavy ones first.
+- [Build an ad specifications checklist for creative briefs](https://www.pratikrenuse.com/playbooks/build-an-ad-specifications-checklist-for-creative-briefs/): Keep one page per platform and format with design, text and technical rules, so designers deliver ads that run first time on every channel.
+- [Test your ecommerce checkout before a campaign](https://www.pratikrenuse.com/playbooks/test-your-ecommerce-checkout-before-a-campaign/): The weekly checkout checklist I ran at Infento during campaigns: add to cart, contact, shipping and every payment method by country.
+- [Plan a Christmas campaign for an ecommerce brand](https://www.pratikrenuse.com/playbooks/plan-a-christmas-campaign-for-an-ecommerce-brand/): A phased plan from September to December: review past years, prepare assets, test in October, launch gift ads in November and boost in December.
+- [Audit a Google search ads campaign](https://www.pratikrenuse.com/playbooks/audit-a-google-search-ads-campaign/): The search ads audit I wrote for Sweek: settings, keywords, ads and reporting, with a checklist that removes what does not perform.
+- [Do keyword research for search ads and SEO](https://www.pratikrenuse.com/playbooks/do-keyword-research-for-search-ads-and-seo/): Start from the buyer persona, find root keywords, then split into a search ads track and an SEO track. The method I used for Sweek.
+- [Fix the message order on a B2B landing page](https://www.pratikrenuse.com/playbooks/fix-the-message-order-on-a-b2b-landing-page/): Answer six visitor questions in order: what can you do for me, why care, show me more, how can I be sure, what about objections, what next.
+- [Build customer personas from your paying customers](https://www.pratikrenuse.com/playbooks/build-customer-personas-from-your-paying-customers/): Use real customer data and feedback, not guesses: find your most active customers, describe them, and target more people like them.
+- [Run Jobs to be Done customer interviews](https://www.pratikrenuse.com/playbooks/interview-b2b-buyers-with-jobs-to-be-done-questions/): Five interview stages, from first thought to hiring criteria and anxieties, to learn why customers really choose you. The questions I used with SMPC.
+- [Set up a customer referral programme](https://www.pratikrenuse.com/playbooks/set-up-a-customer-referral-programme/): Reward both sides, match the reward to the product, and fix timing and friction first. What I learned setting up Bueno's referral programme.
+- [Test message angles in a new country](https://www.pratikrenuse.com/playbooks/test-message-angles-in-a-new-country/): Run several problem angles side by side before judging a market. In the UK, Bueno's hidden charges angle beat savings and service clearly.
+- [Run weekly mini-projects as a growth team](https://www.pratikrenuse.com/playbooks/run-weekly-mini-projects-as-a-growth-team/): Three to six small projects a week, each finished by Friday, next week planned by Saturday. The cadence I use to run growth at Bueno.
+- [Plan the launch of a two-sided marketplace](https://www.pratikrenuse.com/playbooks/plan-the-launch-of-a-two-sided-marketplace/): Problems, positioning, personas, supply and demand tactics and a milestone ladder: the launch plan I wrote for Nest.
+- [Audit tracking before handing marketing to an agency](https://www.pratikrenuse.com/playbooks/audit-tracking-before-handing-marketing-to-an-agency/): Check uptime, page speed, cookie consent, pixel firing and tag manager events before an agency starts spending. The audit I ran for Frecious.
+- [Prioritise a growth backlog by effort and impact](https://www.pratikrenuse.com/playbooks/prioritise-a-growth-backlog-by-effort-and-impact/): Score every task for effort and impact, sort, then turn the top of the list into a day by day plan. The method I use in growth plans for clients.
+- [Layer your audiences on paid social](https://www.pratikrenuse.com/playbooks/layer-your-audiences-on-paid-social/): Start with the narrowest, most likely buyers and widen in layers. One ad for one audience. How I targeted at Font Neuve, Le Patron and PCP.
+- [Set up remarketing audiences based on intent](https://www.pratikrenuse.com/playbooks/set-up-remarketing-audiences-based-on-intent/): Retarget the visitors who showed real intent: clicked for more info, scrolled most of the offer page, or spent the most time. Then remarket by product.
+- [A 12-week growth plan for early-stage startups](https://www.pratikrenuse.com/playbooks/12-week-growth-plan-for-early-stage-startups/): The 12-call growth programme I ran with seed-stage founders in the Newchip accelerator, turned into a weekly plan you can run yourself.
+- [Run growth experiments with the GROWS loop](https://www.pratikrenuse.com/playbooks/run-growth-experiments-with-the-grows-loop/): Gather, rank, outline, work, study: the experiment loop I teach seed-stage founders, with ICE and BRASS scoring and a five-week cycle.
+- [Choose a One Metric That Matters for each funnel stage](https://www.pratikrenuse.com/playbooks/choose-a-one-metric-that-matters-for-each-funnel-stage/): Pick one metric per funnel stage, from awareness to referral, so your team always knows which number to move this month.
+- [Set a North Star Metric that reflects real customer value](https://www.pratikrenuse.com/playbooks/set-a-north-star-metric/): Find your aha moment, turn it into one metric, refine it for value and test it against departments, revenue and your core promise.
+- [Prioritise features and messaging with the Kano model](https://www.pratikrenuse.com/playbooks/prioritise-features-with-the-kano-model/): Survey customers with paired Kano questions to sort basics, performance features and delighters, then build and promote the right ones.
+- [Audit a Facebook and Instagram ads account in one session](https://www.pratikrenuse.com/playbooks/audit-a-facebook-ads-account/): A three-level checklist for Meta ads: campaigns, ad sets and ads. Find wasted spend, missing tracking and untested assumptions.
+- [Score and choose your first market with a six-factor scorecard](https://www.pratikrenuse.com/playbooks/score-and-choose-your-first-market/): Rate each market 1 to 5 on time, money, excitement, commitment, the 90-day plan and five-year ROI to get a clear, unemotional winner.
+- [Run problem-first customer discovery before you build](https://www.pratikrenuse.com/playbooks/problem-first-customer-discovery/): A discovery process that keeps your demo out of the first 15 minutes, narrows a broad problem and finds problem-solution fit.
+- [Test a career path before you commit to it](https://www.pratikrenuse.com/playbooks/test-a-career-path-before-you-commit/): Turn each career option into a roadmap of cheap experiments, note what you like and dislike at every step, then choose with evidence.
+- [Launch a D2C brand on Instagram in five weeks](https://www.pratikrenuse.com/playbooks/launch-a-d2c-brand-on-instagram-in-5-weeks/): Problem first, brand second: a five-week Instagram launch for a new D2C brand, with an education channel and a brand channel.
+- [The 5 prompts to build a portfolio site with Claude](https://www.pratikrenuse.com/playbooks/the-5-prompts-to-build-a-portfolio-site-with-claude/): The five prompts from my Claude 101 masterclass: a first draft from your resume, a redesign from a reference site, two game versions and one page with a form.
+- [Connect a website form to Supabase safely](https://www.pratikrenuse.com/playbooks/connect-a-website-form-to-supabase-safely/): Capture leads from a static site in Supabase, with Row Level Security so visitors can submit but never read anyone's data. From my Claude 101 session.
+- [Run a value proposition workshop for founders](https://www.pratikrenuse.com/playbooks/run-a-value-proposition-workshop-for-founders/): A 90 minute workshop format: the lean feedback loop, Jobs to be Done, the value proposition canvas and a 30 minute team exercise on each startup's own product.
+- [Run an idea validation workshop for early founders](https://www.pratikrenuse.com/playbooks/run-an-idea-validation-workshop/): Help founders choose between ideas: six stages of a startup, a prioritisation sheet, validation questions, a stakeholder map and a 20 minute ranking exercise.
+- [Host a build night for your community](https://www.pratikrenuse.com/playbooks/host-a-build-night-for-your-community/): Run an evening where 20 builders ship a half finished project: the cap, the venue, the hosts and the four hour flow, based on Builders Night Out in Pune.
+- [Build an automated content publishing system for your team](https://www.pratikrenuse.com/playbooks/build-an-automated-content-publishing-system-for-your-team/): The content system I teach: an agent drafts, a person reviews by email, a tool sends, and the team posts daily without the founder writing every post.
+- [Teach a marketing module with your own launch as the case](https://www.pratikrenuse.com/playbooks/teach-a-marketing-module-with-your-own-launch-case/): How I built the FutureMBA marketing and sales module around the Infento Kickstarter: one real case, reusable templates and practice on your own product.
+- [Run a technical SEO audit with a priority checklist](https://www.pratikrenuse.com/playbooks/run-a-technical-seo-audit-with-a-priority-checklist/): My SEO step by step template: check findability, architecture, URLs, on page basics, link equity and Search Console, then fix high priority items first.
+- [Run a website growth audit across nine categories](https://www.pratikrenuse.com/playbooks/run-a-website-growth-audit-across-nine-categories/): Score a site on UX, conversion, SEO, performance, platform health, accessibility, copy, legal and analytics, then fix high impact gaps first.
+- [Brief UGC creators for an ad campaign](https://www.pratikrenuse.com/playbooks/brief-ugc-creators-for-an-ad-campaign/): The UGC brief I wrote for Bueno: brand, audience, dos and donts, hooks, ad structures, tech specs, a pre-send checklist and a staged approval flow.
+- [Build an ad angle library for a D2C brand](https://www.pratikrenuse.com/playbooks/build-an-ad-angle-library-for-a-d2c-brand/): Keep one page per ad angle with the script, examples and assets, so each new campaign starts from tested ideas. Based on VU's angle library.
+- [Turn 25 customer problems into ads that resonate](https://www.pratikrenuse.com/playbooks/turn-25-customer-problems-into-ads/): Find 25 problems, rank them by pain, match your solution, write 10 hooks and use 10 ad templates. The method I use for ads that fit a market.
+- [Script a premium product video ad in seven beats](https://www.pratikrenuse.com/playbooks/script-a-premium-product-video-ad-in-seven-beats/): Problem, twist, half solution, social proof, full solution, objections, reassurance, then the call to action. The structure I used for VU's goggle ads.
+- [Run a Black Friday early access email campaign](https://www.pratikrenuse.com/playbooks/run-a-black-friday-early-access-email-campaign/): Send a heads-up email the day before, give list members access before the public offer with a real limit, and spend most words on why the product is worth it.
+- [Launch a weekly newsletter for a niche audience](https://www.pratikrenuse.com/playbooks/launch-a-weekly-niche-newsletter/): A fixed four section template, an FAQ bank from real customer questions, a one click rating and a referral ask. Based on Bueno's newsletter.
+- [Grow an X account to 1,000 followers with a daily system](https://www.pratikrenuse.com/playbooks/grow-an-x-account-to-1000-followers-with-a-daily-system/): Set goals and a time budget, then run a fixed daily and weekly routine of posts, replies and messages with milestones to 1,000 followers.
+- [Audit a login and registration flow](https://www.pratikrenuse.com/playbooks/audit-a-login-and-registration-flow/): Check login, registration, password and error handling with weighted checks, so returning and new users get in without friction.
+
+## Case studies
+- [Infento: building a direct to consumer engine from zero](https://www.pratikrenuse.com/work/infento/): How I built Infento's online marketing from scratch, from funnel and tracking to paid channels and awards, taking DTC sales from zero to 2M euro ARR.
+- [Infento on Kickstarter: the most funded STEM project of 2018](https://www.pratikrenuse.com/work/infento-kickstarter/): How I led Infento's second generation launch on Kickstarter: a lead list built before launch, a phased campaign and press outreach. $848K raised.
+- [VU: making a Swiss goggle brand the choice of pro skiers](https://www.pratikrenuse.com/work/vu/): How I rebuilt VU's webshop and marketing as Head of Marketing: Olympian proof, customer words in ads, Hotjar-led fixes. 275K+ euro revenue, 4.4x peak season.
+- [Bueno: building fintech marketing alone across 28 countries](https://www.pratikrenuse.com/work/bueno/): How I built Bueno's online marketing single-handedly across 28 countries for foreign property owners in Spain, reaching a 24x LTV to CAC ratio.
+- [Sweek: cutting acquisition cost by more than half for a story app](https://www.pratikrenuse.com/work/sweek/): How I advised Sweek's CEO in 2017: an influencer launch, a trained team with written channel rules, and paid campaigns rebuilt to cut acquisition cost 50%+.
+- [Font Neuve: from no bookings to fully booked during COVID](https://www.pratikrenuse.com/work/font-neuve/): How I built a French holiday resort's first online presence in weeks in 2020, found a new home market with layered targeting and filled the season.
+- [Le Patron: a full funnel for a cycling menswear brand](https://www.pratikrenuse.com/work/le-patron/): How I gave a Dutch cycling-inspired menswear brand a full funnel: hyper-specific targeting, shopping and remarketing, and yearly Christmas campaigns.
+- [PCP: validating a startup idea in 12 weeks, and knowing when to stop](https://www.pratikrenuse.com/work/pcp-personal-city-plan/): How I built an MVP funnel for Personal City Plan in a week, ran tightly targeted ads and gave founders and investors a clear answer on viability.
+- [SMPC: a conversion audit and lean plan for a niche B2B service](https://www.pratikrenuse.com/work/smpc/): How I audited a Swiss medical device compliance firm's website, rewrote the order of its message, and planned lean marketing for a niche audience.
+- [Frecious: a tracking and site audit before the agency handover](https://www.pratikrenuse.com/work/frecious/): How I checked a Dutch organic drinks brand's site speed, cookie consent, pixel and tag setup before it handed marketing to an agency.
+- [Nest: a launch plan for a wellbeing platform for professionals](https://www.pratikrenuse.com/work/nest/): How I wrote the launch plan for Nest, a two-sided wellbeing platform for doctors and other high-pressure professionals: personas, push and pull, milestones.
+- [Growack: marketing for a B2B growth agency and HubSpot partner](https://www.pratikrenuse.com/work/growack/): My work as Head of Marketing at Growack, a B2B growth agency and HubSpot partner in Amsterdam: HubSpot setup, goals, budget and an execution plan.
+- [Bayer: running a 250K euro global senior executive event](https://www.pratikrenuse.com/work/bayer-executive-event/): In 2017 I ran a 250K euro global senior executive event for Bayer in Germany, working directly with senior leaders across the company.
+
+## Talks archive
+- [TEDx Tirgu Mures talk, TEDx Tirgu Mures](https://www.pratikrenuse.com/speaking/talks/tedx-tirgu-mures/)
+- [TEDx talk in Bali, Indonesia, TEDx Indonesia](https://www.pratikrenuse.com/speaking/talks/tedx-indonesia-bali/)
+- [TEDx talk in the United Kingdom, Sheffield Hallam University, TEDx Sheffield Hallam University](https://www.pratikrenuse.com/speaking/talks/tedx-sheffield-hallam-university/)
+- [Talk at Digital Roots, Russia, Digital Roots](https://www.pratikrenuse.com/speaking/talks/digital-roots-russia/)
+- [Stream conference 2020, Stream conference](https://www.pratikrenuse.com/speaking/talks/stream-conference-2020/)
+- [Asia Pacific Digital Marketing Conclave, Asia Pacific Digital Marketing Conclave](https://www.pratikrenuse.com/speaking/talks/asia-pacific-digital-marketing-conclave/)
+- [Webinar for Amity Business School, Amity Business School webinar](https://www.pratikrenuse.com/speaking/talks/amity-business-school-webinar/)
+- [Visiting faculty at IE Business School, IE Business School MBA sessions](https://www.pratikrenuse.com/speaking/talks/ie-business-school-visiting-faculty/)
+- [FutureMBA by Ultima School: marketing and sales module, FutureMBA](https://www.pratikrenuse.com/speaking/talks/futuremba-ultima-school-marketing-and-sales-module/)
+- [Mentor at the Seedstars CTCN Climate Innovation Lab, CTCN Climate Innovation Lab](https://www.pratikrenuse.com/speaking/talks/seedstars-ctcn-climate-innovation-lab-2021/)
+- [Techstars Berlin Mentor Madness 2023, Mentor Madness, Techstars and Audi Denkwerkstatt Founder Innovation Lab 2023](https://www.pratikrenuse.com/speaking/talks/techstars-berlin-mentor-madness-2023/)
+- [Mentoring deep tech founders at the Techstars and Audi Founder Innovation Lab, Techstars and Audi Denkwerkstatt Founder Innovation Lab 2023](https://www.pratikrenuse.com/speaking/talks/techstars-audi-founder-innovation-lab-mentoring-2023/)
+- [Mentor at the Create Apps Championship, Dubai, Create Apps Championship](https://www.pratikrenuse.com/speaking/talks/create-apps-championship-dubai/)
+- [Founder workshops at Masters' Union, Masters' Union founder workshops](https://www.pratikrenuse.com/speaking/talks/masters-union-founder-workshops/)
+- [Value proposition workshop: build a product customers want, Masters' Union founder workshops](https://www.pratikrenuse.com/speaking/talks/masters-union-value-proposition-workshop/)
+- [Idea validation workshop: prioritise ideas and experiments, Masters' Union founder workshops](https://www.pratikrenuse.com/speaking/talks/masters-union-idea-validation-workshop/)
+- [Teaching at Tetr College of Business, 2025, Tetr College of Business, cohort 1 term 2](https://www.pratikrenuse.com/speaking/talks/tetr-college-of-business-teaching-2025/)
+- [Claude 101: ship your portfolio site in one hour, Claude 101 masterclass](https://www.pratikrenuse.com/speaking/claude-101/)
+- [Deploying AI tools for growth: Deployed by Coditas, Pune, Deployed: AI Showcase by Coditas](https://www.pratikrenuse.com/speaking/coditas-deployed/)
+- [Builders Night Out, Pune, Builders Night Out](https://www.pratikrenuse.com/speaking/builders-night-out/)
+- [Mentor at the Hermes Buildathon, Pune, Hermes Buildathon, Pune edition](https://www.pratikrenuse.com/speaking/talks/growthx-hermes-buildathon-pune/)
+
+## Talks
+- [Claude 101 masterclass with GrowthX](https://www.pratikrenuse.com/speaking/claude-101/)
+- [Deployed: AI showcase by Coditas](https://www.pratikrenuse.com/speaking/coditas-deployed/)
+- [Builders Night Out, Pune](https://www.pratikrenuse.com/speaking/builders-night-out/)

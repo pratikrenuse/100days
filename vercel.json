@@ -24,6 +24,51 @@
       "source": "/talks/:path*",
       "destination": "/speaking/:path*",
       "permanent": true
+    },
+    {
+      "source": "/100days",
+      "destination": "/playbooks/",
+      "permanent": true
+    },
+    {
+      "source": "/100days/:path*",
+      "destination": "/playbooks/",
+      "permanent": true
+    },
+    {
+      "source": "/roast-my-landing-page",
+      "destination": "/playbooks/",
+      "permanent": true
+    },
+    {
+      "source": "/roast-my-landing-page/:path*",
+      "destination": "/playbooks/",
+      "permanent": true
+    },
+    {
+      "source": "/journey",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/inspirations",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/demo1",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/demo5",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/demo6",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "crons": [
@@ -34,6 +79,17 @@
     {
       "path": "/api/tool?solo=1",
       "schedule": "0 0 * * *"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
     }
   ]
 }

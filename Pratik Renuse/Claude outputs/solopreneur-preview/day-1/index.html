@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 01: Marc Lou | Solo founders | Pratik Renuse</title>
+<meta name="description" content="Marc Lou built 36 startups and about 9 in 10 failed. Then a code kit he hoped would make $100 made $6,000 in two days. Day 1 of 50 solo founders.">
+<meta property="og:title" content="Day 01: Marc Lou, 36 startups and the one that worked">
+<meta property="og:description" content="He hoped ShipFast would make $100. It made $6,000 in 48 hours.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+<script>document.documentElement.classList.add('has-js');</script>
+<style>
+:root{
+  --bg:#F6F2F1;--surface:#EEE8E4;--raised:#E5DDD7;--border:#D0C8C0;--border2:#BCB3AA;
+  --ink:#1A1512;--ink2:#38302A;--ink3:#504840;--ink4:#786E66;
+  --gold:#8C6A18;--gold-mid:#B8903A;--gold-bg:#F0E4C4;--dark:#0F0E0C;
+  --serif:'IBM Plex Serif',Georgia,serif;--sans:'IBM Plex Sans',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  font-size:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:auto}
+body{background:var(--bg);color:var(--ink2);font-family:var(--sans);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+p{max-width:65ch;margin:0 0 1.15rem}
+a{color:inherit}
+em{font-style:italic}
+mark{background:linear-gradient(transparent 58%,var(--gold-bg) 58%);color:inherit;padding:0 .1em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* progress */
+.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:200;transform-origin:0 50%;transform:scaleX(0);background:var(--gold)}
+
+/* nav */
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4rem;border-bottom:1px solid var(--border);background:rgba(246,242,241,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);position:sticky;top:0;z-index:100}
+.nav-left{display:flex;align-items:center;gap:1.25rem}
+.nav-logo{font-family:var(--serif);font-size:.9rem;color:var(--ink);text-decoration:none}
+.nav-logo span{color:var(--gold)}
+.nav-div{color:var(--border)}
+.nav-title{font-size:.78rem;color:var(--ink3)}
+.nav-badge{font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);background:var(--gold-bg);padding:.2rem .6rem;border:1px solid #D4B870}
+.nav-now{font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink4);min-width:10rem;text-align:right;transition:color .3s}
+
+/* labels */
+.lbl{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}
+.lbl::before{content:'';width:1.75rem;height:1px;background:var(--gold)}
+.lbl span{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.dark .lbl span{color:var(--gold-mid)}
+.dark .lbl::before{background:var(--gold-mid)}
+
+.wrap{max-width:74rem;margin:0 auto;padding:0 4rem}
+.sec{padding:8rem 0}
+h2.big{font-family:var(--serif);font-weight:300;font-size:clamp(2rem,3.4vw,3.1rem);line-height:1.15;letter-spacing:-.01em;color:var(--ink);max-width:22ch;margin-bottom:2rem}
+h2.big em{color:var(--gold);font-style:italic}
+.lead{font-size:1.15rem;color:var(--ink2);max-width:38rem}
+.note{font-size:.78rem;color:var(--ink4);max-width:60ch;margin-top:1.5rem}
+
+/* hero */
+.hero{min-height:calc(100vh - 58px);display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:4rem;align-items:center;padding:4rem 4rem 6rem;max-width:80rem;margin:0 auto;position:relative}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(4rem,10vw,8.5rem);line-height:.95;letter-spacing:-.03em;color:var(--ink);margin:.5rem 0 2rem}
+.hero h1 .ch{display:inline-block}
+.hero-sub{font-family:var(--serif);font-weight:300;font-size:clamp(1.25rem,1.9vw,1.6rem);line-height:1.45;color:var(--ink2);max-width:30rem;margin-bottom:2.5rem}
+.hero-sub b{font-weight:400;color:var(--gold)}
+.meta{display:flex;flex-wrap:wrap;gap:.6rem 2rem;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink4)}
+.meta b{color:var(--ink2);font-weight:500}
+.hero-art{position:relative;aspect-ratio:1/1;width:100%;max-width:30rem;justify-self:end}
+.hero-art svg{width:100%;height:100%;overflow:visible}
+.hero-art .t{fill:var(--surface);stroke:var(--border);stroke-width:1}
+.hero-art .t.dead{fill:transparent;stroke:var(--border);opacity:.35}
+.hero-art .t.win{fill:var(--gold);stroke:var(--gold)}
+.hero-art figcaption{position:absolute;left:0;right:0;bottom:-2.5rem;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink4);text-align:center}
+.cap-m{display:none;width:100%;background:var(--bg);border:1px solid var(--border2);padding:1.3rem 1.4rem;font-size:.95rem;transition:opacity .35s}
+.cap-m p{margin:0 0 .6rem}.cap-m p:last-child{margin:0}.cap-m h3{font-family:var(--serif);font-weight:400;font-size:1.2rem;color:var(--ink);margin-bottom:.5rem}.cap-m .k{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;display:flex;gap:.8rem}.cap-m .k span{color:var(--ink4)}.cap-m .hint{margin-top:.8rem}
+.dark .cap-m{background:#17150F;border-color:#4A4232;color:#C8C0B8}.dark .cap-m h3{color:#F1EAE3}.dark .cap-m .k span{color:#A89E94}
+.scroll-cue{position:absolute;left:4rem;bottom:2rem;display:flex;align-items:center;gap:.8rem;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink4)}
+.scroll-cue i{display:block;width:1px;height:2.6rem;background:linear-gradient(var(--gold),transparent);animation:breathe 3.4s cubic-bezier(.45,0,.55,1) infinite;transform-origin:top}
+@keyframes breathe{0%,100%{transform:scaleY(1);opacity:.9}50%{transform:scaleY(.6);opacity:.45}}
+
+/* hook */
+.hook{padding:9rem 0 7rem;text-align:left}
+.hook p.hl{font-family:var(--serif);font-weight:300;font-size:clamp(1.7rem,3.2vw,2.8rem);line-height:1.3;color:var(--ink);max-width:28ch}
+.hook p.hl q{quotes:"\201C" "\201D";color:var(--gold)}
+.w{display:inline-block;white-space:pre}
+
+/* scrolly */
+.scrolly{position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:4rem;max-width:80rem;margin:0 auto;padding:0 4rem}
+.stage{grid-column:2;grid-row:1;position:sticky;top:58px;height:calc(100vh - 58px);display:flex;align-items:center;justify-content:center;z-index:1}
+.steps{grid-column:1;grid-row:1;padding:25vh 0 45vh;position:relative;z-index:2}
+.step{min-height:80vh;display:flex;align-items:center}
+.card{background:var(--bg);border:1px solid var(--border);padding:2rem 2.2rem;max-width:30rem;transition:opacity .5s var(--ease),transform .5s var(--ease),border-color .5s}
+.has-js .card{opacity:.28;transform:translateY(8px)}
+.step.on .card{opacity:1;transform:none;border-color:var(--border2)}
+.card .k{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem;display:flex;gap:.8rem}
+.card .k span{color:var(--ink4)}
+.card p{margin:0 0 .8rem}
+.card p:last-child{margin-bottom:0}
+.card h3{font-family:var(--serif);font-weight:400;font-size:1.35rem;line-height:1.3;color:var(--ink);margin-bottom:.7rem}
+.hint{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.2rem;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink4)}
+.hint svg{width:12px;height:18px}
+
+/* scene: before */
+.before-stage{width:100%;max-width:40rem;display:flex;flex-direction:column;align-items:center;gap:2.5rem}
+.yr{font-family:var(--serif);font-weight:300;font-size:clamp(5rem,11vw,9rem);line-height:1;color:var(--ink);letter-spacing:-.04em;height:1em;position:relative;width:100%;text-align:center}
+.yr span{position:absolute;inset:0;transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.yr span.out{opacity:0;transform:translateY(-.25em)}
+.yr span.in{opacity:0;transform:translateY(.25em)}
+.icon-box{width:9rem;height:9rem;position:relative}
+.icon-box svg{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:var(--ink2);stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;opacity:0;transition:opacity .4s}
+.icon-box svg .g{stroke:var(--gold)}
+.icon-box svg path,.icon-box svg circle,.icon-box svg rect,.icon-box svg line,.icon-box svg polyline{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.3s var(--ease)}
+.icon-box svg.show{opacity:1}
+.icon-box svg.show *{stroke-dashoffset:0}
+.rail{position:relative;width:100%;height:3rem}
+.rail .line{position:absolute;left:0;right:0;top:1rem;height:1px;background:var(--border)}
+.rail .fill{position:absolute;left:0;top:1rem;height:1px;background:var(--gold);width:0;transition:width .8s var(--ease)}
+.rail .stop{position:absolute;top:calc(1rem - 4px);width:9px;height:9px;border-radius:50%;background:var(--bg);border:1px solid var(--border2);transform:translateX(-50%);transition:all .5s}
+.rail .stop.past{background:var(--gold);border-color:var(--gold)}
+.rail .stop b{position:absolute;top:1.1rem;left:50%;transform:translateX(-50%);font-size:.6rem;font-weight:400;letter-spacing:.12em;color:var(--ink4);white-space:nowrap}
+.rail .dot{position:absolute;top:calc(1rem - 8px);width:17px;height:17px;border-radius:50%;border:1px solid var(--gold);transform:translateX(-50%);transition:left .8s var(--ease)}
+
+/* interlude */
+.interlude{padding:10rem 0;text-align:center}
+.interlude p{font-family:var(--serif);font-weight:300;font-size:clamp(1.6rem,3vw,2.6rem);line-height:1.3;color:var(--ink);max-width:26ch;margin:0 auto}
+.interlude p em{color:var(--gold)}
+
+/* dark scene: graveyard */
+.dark{background:var(--dark);color:#C8C0B8}
+.dark .card{background:#17150F;border-color:#2C2820;color:#C8C0B8}
+.dark .step.on .card{border-color:#4A4232}
+.dark .card h3{color:#F1EAE3}
+.dark .card .k span{color:#A89E94}
+.dark .hint{color:#A89E94}
+.dark mark{background:linear-gradient(transparent 58%,rgba(184,144,58,.35) 58%)}
+.grave-head{padding:8rem 0 0}
+.grave-head h2.big{color:#F1EAE3}
+.grave-head h2.big em{color:var(--gold-mid)}
+.grave-stage{width:100%;max-width:min(34rem,60vh);display:flex;flex-direction:column;gap:1.4rem}
+.grave-top{display:flex;justify-content:space-between;align-items:flex-end;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:#A89E94}
+.grave-top .n{font-family:var(--serif);font-size:3.2rem;letter-spacing:-.02em;line-height:1;color:#F1EAE3;text-transform:none;font-weight:300}
+.grave-top .n small{font-size:1rem;color:#A89E94;margin-left:.3rem}
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.tile{aspect-ratio:1/1;border:1px solid #3A352C;position:relative;transition:background .5s,border-color .5s,opacity .5s,transform .5s var(--ease)}
+.tile i{position:absolute;left:6px;top:4px;font-style:normal;font-size:.55rem;color:#6E665C;letter-spacing:.05em}
+.has-js .tile{opacity:0;transform:scale(.85)}
+.tiles.in .tile{opacity:1;transform:none}
+.tile.dead{border-color:#2A2620;background:#14120E}
+.tile.dead::after{content:'';position:absolute;left:18%;right:18%;top:50%;height:1px;background:#5A5248;transform:rotate(-45deg)}
+.tile.cur{border-color:var(--gold-mid);background:rgba(184,144,58,.12)}
+.tile.cur i{color:var(--gold-mid)}
+.tile.win{background:var(--gold-mid);border-color:var(--gold-mid)}
+.tile.win i{color:var(--dark)}
+.tile.win::after{display:none}
+.grave-cap{min-height:3.4rem;font-size:.82rem;color:#A89E94;border-top:1px solid #2C2820;padding-top:1rem}
+.grave-cap b{color:#F1EAE3;font-weight:500;font-family:var(--serif);font-size:1.05rem;margin-right:.6rem}
+
+/* bars scene */
+.bars-stage{width:100%;max-width:42rem}
+.bars-title{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink4);margin-bottom:2rem}
+.bar{display:grid;grid-template-columns:9.5rem 1fr;align-items:center;gap:1.2rem;margin-bottom:1.6rem}
+.bar .lab{font-size:.78rem;line-height:1.35;color:var(--ink3)}
+.bar .lab b{display:block;color:var(--ink);font-weight:500}
+.bar .track{position:relative;height:2.6rem}
+.bar .fill{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--ink);transition:width 1.1s var(--ease)}
+.bar.gold .fill{background:var(--gold)}
+.bar .val{position:absolute;top:50%;transform:translateY(-50%);left:calc(var(--w,0%) + .8rem);font-family:var(--serif);font-size:1.3rem;color:var(--ink);white-space:nowrap;transition:left 1.1s var(--ease),opacity .4s;opacity:0}
+.bar.on .val{opacity:1}
+.bar.hope .fill{background:var(--gold);min-width:2px}
+.bar.hope .val{font-size:1rem;color:var(--gold)}
+.bar.hope .val small{font-family:var(--sans);font-size:.72rem;color:var(--ink4);margin-left:.5rem}
+
+/* channels */
+.chan-svg{width:100%;height:auto;display:block;margin:3rem 0 1rem}
+.chan-svg .ln{fill:none;stroke:var(--gold);stroke-width:1.2}
+.chan-svg .ln.no{stroke:var(--border2);stroke-dasharray:4 5}
+.chan-svg .node{fill:var(--bg);stroke:var(--border2)}
+.chan-svg .hub{fill:var(--ink)}
+.chan-svg text{font-family:var(--sans);font-size:1em;fill:var(--ink2)}
+.chan-svg{font-size:13px}
+.chan-svg text.no{fill:var(--ink4);text-decoration:line-through}
+.chan-svg text.hubt{fill:var(--bg);font-family:var(--serif);font-size:16px}
+.chan-svg .draw{stroke-dasharray:1;stroke-dashoffset:1}
+.grid1{display:grid;gap:1px;background:var(--border);border:1px solid var(--border);grid-template-columns:repeat(3,1fr);margin-top:3rem}
+.grid1 .c{background:var(--bg);padding:2rem;transition:background .2s}
+.grid1 .c:hover{background:var(--surface)}
+.grid1 .c .k{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.grid1 .c h3{font-family:var(--serif);font-weight:400;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;line-height:1.3}
+.grid1 .c p{font-size:.95rem;margin:0}
+.grid1 .c.no .k{color:var(--ink4)}
+
+/* money */
+.money-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4rem;align-items:end}
+.huge{font-family:var(--serif);font-weight:300;font-size:clamp(3.4rem,8vw,7rem);line-height:1;letter-spacing:-.03em;color:var(--ink)}
+.huge-cap{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink4);margin-top:1rem}
+.stack-wrap{margin-top:6rem}
+.stack-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;gap:1rem;flex-wrap:wrap}
+.stack-head h3{font-family:var(--serif);font-weight:400;font-size:1.35rem;color:var(--ink)}
+.stack-head span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink4)}
+.stack{display:flex;height:4.5rem;gap:2px;background:var(--bg)}
+.seg{height:100%;width:0;transition:width 1.2s var(--ease);position:relative;overflow:hidden}
+.seg:nth-child(1){background:var(--ink)}
+.seg:nth-child(2){background:var(--ink3)}
+.seg:nth-child(3){background:var(--gold)}
+.seg:nth-child(4){background:var(--gold-mid)}
+.seg:nth-child(5){background:var(--border2)}
+.legend{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:1.2rem}
+.legend div{font-size:.78rem;color:var(--ink3);border-top:2px solid var(--c);padding-top:.6rem}
+.legend b{display:block;font-family:var(--serif);font-weight:400;font-size:1.15rem;color:var(--ink)}
+.cross{margin-top:7rem;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:4rem;align-items:center}
+.cross svg{width:100%;height:auto;overflow:visible}
+.cross .axis{stroke:var(--border);stroke-width:1}
+.cross .gridl{stroke:var(--border);stroke-width:1;stroke-dasharray:2 4}
+.cross .l1{fill:none;stroke:var(--ink);stroke-width:2.2}
+.cross .l2{fill:none;stroke:var(--gold);stroke-width:2.2}
+.cross text{font-family:var(--sans);font-size:12px;fill:var(--ink4)}
+.cross text.v{font-family:var(--serif);font-size:15px;fill:var(--ink)}
+.cross text.v2{fill:var(--gold)}
+.cross circle{transition:opacity .4s}
+.trust{margin-top:7rem;background:var(--surface);padding:4rem}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:2.5rem}
+.trust-grid div{background:var(--bg);padding:2rem}
+.trust-grid b{display:block;font-family:var(--serif);font-weight:300;font-size:2.1rem;line-height:1.1;color:var(--ink);margin-bottom:.6rem}
+.trust-grid span{font-size:.85rem;color:var(--ink3);display:block;line-height:1.5}
+
+/* quotes */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:3rem;margin-top:3rem}
+.qt{border-left:2px solid var(--gold);padding:.4rem 0 .4rem 1.5rem}
+.qt p{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.35rem;line-height:1.45;color:var(--ink);margin-bottom:1rem}
+.qt span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink4)}
+
+/* idea */
+.idea{background:var(--dark);color:#C8C0B8;padding:10rem 0}
+.idea .lbl span{color:var(--gold-mid)}
+.idea .lbl::before{background:var(--gold-mid)}
+.idea p.hl{font-family:var(--serif);font-weight:300;font-size:clamp(2rem,4.4vw,3.8rem);line-height:1.18;color:#F1EAE3;max-width:20ch;margin-bottom:3rem}
+.idea p.hl em{color:var(--gold-mid)}
+.idea p.body{font-size:1.05rem;max-width:36rem}
+
+/* days */
+.days{padding:7rem 0 6rem}
+.dots{display:grid;grid-template-columns:repeat(25,1fr);gap:6px;max-width:44rem;margin:2rem 0 2.5rem}
+.dots i{aspect-ratio:1/1;border:1px solid var(--border2);display:block}
+.dots i.now{background:var(--gold);border-color:var(--gold)}
+.next{display:flex;gap:2rem;align-items:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;min-height:44px;background:var(--ink);color:var(--bg);text-decoration:none;padding:.9rem 1.8rem;font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;border:0;transition:background .2s}
+.btn:hover{background:var(--gold)}
+.btn[aria-disabled="true"]{background:var(--raised);color:var(--ink4);pointer-events:none}
+.next p{margin:0;font-size:.9rem;color:var(--ink3)}
+
+/* sources */
+.sources{border-top:1px solid var(--border);padding:3rem 0 5rem}
+.sources summary{cursor:pointer;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);list-style:none;display:flex;align-items:center;gap:.8rem;min-height:44px}
+.sources summary::before{content:'+';font-size:1rem;color:var(--gold);width:1rem}
+.sources details[open] summary::before{content:'\2212'}
+.sources ul{list-style:none;margin-top:1rem}
+.sources li{font-size:.85rem;color:var(--ink3);padding:.6rem 0;border-bottom:1px solid var(--surface)}
+.sources li a{color:var(--ink2);text-decoration-color:var(--border2);text-underline-offset:3px}
+.sources li a:hover{color:var(--gold)}
+.sources .disc{font-size:.8rem;color:var(--ink4);margin-top:1.5rem}
+
+footer{padding:1.1rem 4rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink4);background:var(--surface)}
+footer a{color:var(--ink4);text-decoration:none}
+footer a:hover{color:var(--gold)}
+
+/* fade */
+.has-js [data-up]{opacity:0;transform:translateY(24px)}
+
+@media (max-width:960px){
+  :root{font-size:17px}
+  nav{padding:1rem 1.25rem}
+  .nav-now{display:none}
+  .wrap{padding:0 1.25rem}
+  .sec{padding:5rem 0}
+  .hero{grid-template-columns:1fr;padding:2.5rem 1.25rem 6rem;gap:3rem;min-height:auto}
+  .hero-art{justify-self:start;max-width:20rem}
+  .scroll-cue{left:1.25rem}
+  .hook{padding:6rem 0 4rem}
+  .scrolly{grid-template-columns:1fr;padding:0 1.25rem;gap:0}
+  .enh .stage{height:calc(100svh - 52px)}
+  .stage{grid-column:1;grid-row:1;top:52px;height:auto;min-height:50vh;background:var(--bg);flex-direction:column;justify-content:space-between;padding:1rem 0 1.2rem;z-index:3}
+  .stage>:first-child{flex:1;display:flex;flex-direction:column;align-items:stretch;justify-content:center;width:100%;min-height:0}
+  .dark .stage{background:var(--dark)}
+  .steps{grid-column:1;grid-row:2;padding:0 0 20vh;z-index:1}
+  .step{min-height:65vh}
+  .enh .steps .card{opacity:0!important;pointer-events:none}
+  .cap-m{display:block!important}
+  .grave-stage{width:min(100%,40vh);max-width:none;margin:0 auto;gap:.8rem}
+  .bar.hope .val small{display:block;margin:0;font-size:.6rem}
+  .grave-top .n{font-size:2.2rem}
+  .grave-cap{min-height:2.4rem;padding-top:.6rem}
+  .yr{font-size:4.4rem}
+  .before-stage{gap:1.2rem}
+  .icon-box{width:5.5rem;height:5.5rem}
+  .rail .stop b{font-size:.5rem}
+  .bar{grid-template-columns:6.5rem 1fr;gap:.8rem;margin-bottom:1rem}
+  .bar .track{height:2rem}
+  .bar .val{font-size:1rem}
+  .grid1{grid-template-columns:1fr}
+  .money-top,.cross{grid-template-columns:1fr;gap:2rem}
+  .legend{grid-template-columns:repeat(2,1fr)}
+  .trust{padding:2.5rem 1.5rem}
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .quotes{grid-template-columns:1fr;gap:2rem}
+  .interlude{padding:6rem 0}
+  .idea{padding:6rem 0}
+  .dots{grid-template-columns:repeat(10,1fr)}
+  footer{flex-direction:column;gap:.5rem;text-align:center;padding:1rem}
+}
+@media (max-width:480px){
+  :root{font-size:16px}
+  .trust-grid{grid-template-columns:1fr}
+  .tiles{gap:5px}
+}
+@media (prefers-reduced-motion:reduce){
+  .scroll-cue i{animation:none}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<nav>
+  <div class="nav-left">
+    <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
+    <span class="nav-div">/</span>
+    <span class="nav-title">Solo founders</span>
+    <span class="nav-badge">Day 01</span>
+  </div>
+  <span class="nav-now" id="navNow" aria-hidden="true">Marc Lou</span>
+</nav>
+
+<main>
+<!-- HERO -->
+<header class="hero" data-name="Marc Lou">
+  <div>
+    <div class="lbl"><span>Solo founders · Day 01 of 50</span></div>
+    <h1 id="heroName" aria-label="Marc Lou">Marc Lou</h1>
+    <p class="hero-sub">He built 36 startups and about 9 in 10 of them failed. Then he put together a $199 code kit, hoping it would make $100. <b>It made $6,000 in two days.</b></p>
+    <div class="meta">
+      <span><b>From</b> France</span>
+      <span><b>Team</b> Zero employees</span>
+      <span><b>Read</b> 7 min</span>
+    </div>
+  </div>
+  <figure class="hero-art" aria-label="36 squares, one for each of his startups. Most fade out, four stay gold.">
+    <svg id="heroGrid" viewBox="0 0 300 300" aria-hidden="true"></svg>
+    <figcaption>36 startups. Four still pay him.</figcaption>
+  </figure>
+  <div class="scroll-cue" aria-hidden="true"><i></i>Scroll to read</div>
+</header>
+
+<!-- HOOK -->
+<section class="hook wrap" data-name="The low point">
+  <p class="hl" data-words>In June 2021, Marc Lou was so low that he <q>dug 4 holes in the wall.</q> Two years later he made a million dollars in a year, alone.</p>
+</section>
+
+<!-- SCENE 1: BEFORE IT WORKED -->
+<div class="wrap"><div class="lbl" data-up><span>Before it worked</span></div><h2 class="big" data-up>Five years where <em>almost nothing</em> went right.</h2></div>
+<section class="scrolly" id="sBefore" data-name="Before it worked">
+  <div class="stage" aria-hidden="true">
+    <div class="before-stage">
+      <div class="yr" id="yr"><span>2016</span></div>
+      <div class="icon-box" id="icons">
+        <!-- 0 plate / waiter -->
+        <svg viewBox="0 0 100 100"><path pathLength="1" d="M18 62h64"/><path pathLength="1" d="M24 62a26 26 0 0 1 52 0"/><path pathLength="1" class="g" d="M50 36v-6"/><circle pathLength="1" class="g" cx="50" cy="28" r="2.5"/><path pathLength="1" d="M30 72h40"/></svg>
+        <!-- 1 plane -->
+        <svg viewBox="0 0 100 100"><path pathLength="1" d="M14 58l70-24c5-2 8 3 3 6L28 66z"/><path pathLength="1" d="M44 48l-10-18 8-2 18 14"/><path pathLength="1" d="M40 62l4 14 7-3-1-15"/><path pathLength="1" class="g" d="M12 80c20-6 40-6 76 0"/></svg>
+        <!-- 2 key (escape rooms) -->
+        <svg viewBox="0 0 100 100"><circle pathLength="1" cx="32" cy="50" r="14"/><circle pathLength="1" class="g" cx="32" cy="50" r="4"/><path pathLength="1" d="M46 50h40"/><path pathLength="1" d="M74 50v10M82 50v7"/></svg>
+        <!-- 3 falling chart -->
+        <svg viewBox="0 0 100 100"><path pathLength="1" d="M16 18v66h70"/><polyline pathLength="1" class="g" points="22,30 38,36 50,32 62,58 80,74"/><path pathLength="1" class="g" d="M72 74h8v-8"/></svg>
+        <!-- 4 wall with four holes -->
+        <svg viewBox="0 0 100 100"><rect pathLength="1" x="14" y="16" width="72" height="68"/><path pathLength="1" d="M14 39h72M14 62h72M38 16v23M62 39v23M38 62v22"/><circle pathLength="1" class="g" cx="27" cy="28" r="3"/><circle pathLength="1" class="g" cx="52" cy="50" r="3"/><circle pathLength="1" class="g" cx="72" cy="27" r="3"/><circle pathLength="1" class="g" cx="50" cy="73" r="3"/></svg>
+        <!-- 5 box -->
+        <svg viewBox="0 0 100 100"><path pathLength="1" d="M20 40l30-12 30 12v36l-30 12-30-12z"/><path pathLength="1" d="M20 40l30 12 30-12M50 52v36"/><path pathLength="1" class="g" d="M20 40l-8 12 30 12 8-12"/></svg>
+      </div>
+      <div class="rail" id="rail"><div class="line"></div><div class="fill"></div><div class="dot"></div></div>
+    </div>
+  </div>
+  <div class="steps">
+    <div class="step" data-i="0"><div class="card"><div class="k">2016 <span>01 / 06</span></div><p>He finished a computer science degree and spent a year building a dating app for people who love sports. It went nowhere. He paid the bills waiting tables for about $10 an hour.</p><div class="hint"><svg viewBox="0 0 14 20"><rect x="1" y="1" width="12" height="18" rx="6" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="7" cy="6" r="1.7" fill="currentColor"/></svg>Scroll through the years</div></div></div>
+    <div class="step" data-i="1"><div class="card"><div class="k">2017 <span>02 / 06</span></div><p>He moved to Seoul for an AI startup that predicted flight prices. Angel investors put in <mark>$100,000</mark>. About nine months later it had made nothing and it was over.</p><p>He lived in a 12 square metre flat with cockroaches in the bathroom. By 27 he was broke, back at his parents' place, and taking acting gigs for $200 each.</p></div></div>
+    <div class="step" data-i="2"><div class="card"><div class="k">2018 <span>03 / 06</span></div><p>Then something finally worked. VirallyBot was a marketing tool for escape rooms, at $199 a month. He got his first customer on a 42-minute sales call after cold emails, and it made about $100,000 in total.</p><p>When COVID shut the escape rooms, it went to <mark>zero in a week</mark>.</p></div></div>
+    <div class="step" data-i="3"><div class="card"><div class="k">March 2021 <span>04 / 06</span></div><p>He put $100,000 he had inherited into Tesla stock. He lost <mark>$36,000 in two weeks</mark>.</p></div></div>
+    <div class="step" data-i="4"><div class="card"><div class="k">9 June 2021 <span>05 / 06</span></div><p>He broke down. In his own words, he "dug 4 holes in the wall."</p><p>Around the same time, a PDF guide he made called The Golden Plumber earned $4 in two months.</p></div></div>
+    <div class="step" data-i="5"><div class="card"><div class="k">November 2021 <span>06 / 06</span></div><p>He took a job paying $9,000 a month, and got fired in November.</p><p>That's when he found the people on Twitter who build their products in public, and started doing the same.</p></div></div>
+  </div>
+</section>
+
+<!-- INTERLUDE -->
+<section class="interlude wrap" data-name="Building in public">
+  <p data-words>From there he shipped small products, one after another, and posted <em>every win and every flop</em> on Twitter.</p>
+</section>
+
+<!-- SCENE 2: THE GRAVEYARD -->
+<div class="dark" data-name="The graveyard">
+  <div class="wrap grave-head"><div class="lbl" data-up><span>The failures</span></div><h2 class="big" data-up>36 startups. By his own count, <em>90% failed.</em></h2></div>
+  <section class="scrolly" id="sGrave">
+    <div class="stage" aria-hidden="true">
+      <div class="grave-stage">
+        <div class="grave-top"><div>Failed so far<br><span class="n" id="gN">0<small>of 36</small></span></div><div style="text-align:right">Still earning<br><span class="n" id="gW">0</span></div></div>
+        <div class="tiles" id="tiles"></div>
+        <div class="grave-cap" id="gCap">Each square is one startup.</div>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step" data-i="0"><div class="card"><p>Each square is one thing he built and launched. Some lasted a year. Some lasted a weekend.</p><div class="hint"><svg viewBox="0 0 14 20"><rect x="1" y="1" width="12" height="18" rx="6" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="7" cy="6" r="1.7" fill="currentColor"/></svg>Scroll through the graveyard</div></div></div>
+      <div class="step" data-i="1"><div class="card"><div class="k">2016 to 2017</div><h3>The sports dating app</h3><p>A full year of work. He dropped it.</p></div></div>
+      <div class="step" data-i="2"><div class="card"><div class="k">2017</div><h3>The flight-price startup in Seoul</h3><p>$100,000 of other people's money and no income after nine months.</p></div></div>
+      <div class="step" data-i="3"><div class="card"><div class="k">December 2017</div><h3>Glovers for lovers</h3><p>Hand-knitted gloves for couples. Facebook ads sold <mark>zero</mark>, so he sold them on the street for $20 each, about two a day.</p></div></div>
+      <div class="step" data-i="4"><div class="card"><div class="k">2018 to 2020</div><h3>VirallyBot</h3><p>His first real business, about $100,000 in total. COVID took it to zero.</p></div></div>
+      <div class="step" data-i="5"><div class="card"><div class="k">2021</div><h3>The Golden Plumber and Mood2Movie</h3><p>A PDF that made $4. Then a free movie app that went viral on Hacker News with <mark>20,000+ visitors</mark> and made nothing.</p></div></div>
+      <div class="step" data-i="6"><div class="card"><div class="k">2025</div><h3>BioAge and ClipMarc</h3><p>These flopped even after he had a huge audience. His own takeaway: "Having an audience doesn't guarantee a successful startup!"</p></div></div>
+      <div class="step" data-i="7"><div class="card"><div class="k">2025</div><h3>TrustMRR, versions 1 to 9</h3><p>Nine versions failed before the tenth one worked. Today it's his biggest earner.</p></div></div>
+      <div class="step" data-i="8"><div class="card"><h3>What survived</h3><p>A few small ones paid a little, and he sold one of them, MakeLanding, for $35,000. The ones that still pay him today are <mark>ShipFast, CodeFast, DataFast and TrustMRR</mark>.</p><p>The first one that really worked was ShipFast.</p></div></div>
+    </div>
+  </section>
+  <div class="wrap"><p class="note" style="color:#A89E94;padding-bottom:6rem">The 36 and the 90% are his own numbers. Which square stands for which product is for illustration.</p></div>
+</div>
+
+<!-- SCENE 3: 48 HOURS -->
+<div class="wrap" style="padding-top:8rem"><div class="lbl" data-up><span>The turning point</span></div><h2 class="big" data-up>He told his wife they'd be <em>lucky to make $100.</em></h2>
+<p class="lead" data-up>Every time he started a new product, he wrote the same code again: login, payments, emails. In 2023 he spent about a week packing all of it into one starter kit for Next.js apps, priced at $199. He called it ShipFast and launched it on 1 September 2023.</p></div>
+<section class="scrolly" id="sBars" data-name="The turning point">
+  <div class="stage" aria-hidden="true">
+    <div class="bars-stage">
+      <div class="bars-title">ShipFast revenue, self-reported</div>
+      <div class="bar hope" data-v="100"><div class="lab"><b>His hope</b>for the launch</div><div class="track"><div class="fill"></div><div class="val">$100<small>you can barely see it</small></div></div></div>
+      <div class="bar" data-v="6000"><div class="lab"><b>First 48 hours</b>Sept 2023</div><div class="track"><div class="fill"></div><div class="val" data-n="6000">$6,000</div></div></div>
+      <div class="bar" data-v="40000"><div class="lab"><b>First month</b>Sept 2023</div><div class="track"><div class="fill"></div><div class="val" data-n="40000">$40,000</div></div></div>
+      <div class="bar" data-v="65400"><div class="lab"><b>One month</b>Nov 2023</div><div class="track"><div class="fill"></div><div class="val" data-n="65400">$65,400</div></div></div>
+      <div class="bar gold" data-v="133000"><div class="lab"><b>Best month</b>April 2024</div><div class="track"><div class="fill"></div><div class="val" data-n="133000">$133,000</div></div></div>
+    </div>
+  </div>
+  <div class="steps">
+    <div class="step" data-i="0"><div class="card"><p>That thin gold line at the top is $100, what he hoped for. Keep it in mind.</p><div class="hint"><svg viewBox="0 0 14 20"><rect x="1" y="1" width="12" height="18" rx="6" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="7" cy="6" r="1.7" fill="currentColor"/></svg>Scroll to launch</div></div></div>
+    <div class="step" data-i="1"><div class="card"><p>It made <mark>$6,000 in the first 48 hours</mark>.</p></div></div>
+    <div class="step" data-i="2"><div class="card"><p>About $40,000 by the end of the first month. He says it grew because he kept tweeting about it and buyers posted their own results.</p></div></div>
+    <div class="step" data-i="3"><div class="card"><p>By November 2023 it was making $65,400 in a single month, at around 91% margin.</p></div></div>
+    <div class="step" data-i="4"><div class="card"><p>In April 2024 it hit <mark>$133,000 in one month</mark>. He gives the credit for that jump to his YouTube videos.</p></div></div>
+  </div>
+</section>
+
+<!-- CHANNELS -->
+<section class="sec wrap" id="sChan" data-name="How he got users">
+  <div class="lbl" data-up><span>How he got users</span></div>
+  <h2 class="big" data-up>No ads. He <em>built in public</em> and let people watch.</h2>
+  <p class="lead" data-up>His Twitter account had only 1,000 followers in July 2022. In early 2023 it grew by about 50 a day, and by the ShipFast launch more than 40,000 people were watching what he built. Every product launched to the same crowd.</p>
+  <svg class="chan-svg" id="chanSvg" viewBox="0 0 960 360" role="img" aria-label="Channels that worked: Twitter, Product Hunt and Hacker News, Reddit, free tools, launch videos and YouTube. Channels that failed: Facebook ads and cold calls.">
+    <g id="chanG"></g>
+  </svg>
+  <div class="grid1" data-up>
+    <div class="c"><div class="k">Twitter, every day</div><h3>Revenue posted in public</h3><p>He shared his numbers, his launches and his failures. When he launched something, people already trusted him.</p></div>
+    <div class="c"><div class="k">Launch day</div><h3>Product Hunt, Twitter and Hacker News together</h3><p>ShipFast went out on all three on the same day, plus a short demo video on Reddit's r/SideProject.</p></div>
+    <div class="c"><div class="k">Free tools</div><h3>Free stuff that points to paid stuff</h3><p>A free habit tool brought about 30,000 visitors in two months to his paid habit app. He also built a free logo maker with a ShipFast banner.</p></div>
+    <div class="c"><div class="k">Videos</div><h3>Funny launch skits</h3><p>He made short comedy videos for launches. People shared them, so each launch spread on its own.</p></div>
+    <div class="c"><div class="k">YouTube, from 2024</div><h3>About 100,000 subscribers</h3><p>He credits the videos for ShipFast's best month.</p></div>
+    <div class="c no"><div class="k">What didn't work</div><h3>Ads and cold calls</h3><p>Facebook ads for the gloves sold nothing. Cold calls failed for VirallyBot. Cold emails worked.</p></div>
+  </div>
+</section>
+
+<!-- MONEY NOW -->
+<section class="sec" style="background:var(--surface)" id="sMoney" data-name="The money now">
+  <div class="wrap">
+    <div class="lbl" data-up><span>How he earns now</span></div>
+    <div class="money-top">
+      <div>
+        <div class="huge" data-count="1032000" data-prefix="$">$1,032,000</div>
+        <div class="huge-cap">Made in 2025, self-reported</div>
+      </div>
+      <p class="lead" data-up style="margin:0">That came from 15 different income streams, at about 91% margin, with no employees. He keeps two rules. He never offers a free plan, and he builds free tools that send people to the paid ones.</p>
+    </div>
+
+    <div class="stack-wrap" data-up>
+      <div class="stack-head"><h3>One month, broken down: October 2025</h3><span>$66,040 total, posted by him on X</span></div>
+      <div class="stack" id="stack" role="img" aria-label="October 2025 revenue: CodeFast $20,700, ShipFast $16,800, DataFast $16,300, TrustMRR $8,600, other $3,640.">
+        <div class="seg" data-v="20700"></div><div class="seg" data-v="16800"></div><div class="seg" data-v="16300"></div><div class="seg" data-v="8600"></div><div class="seg" data-v="3640"></div>
+      </div>
+      <div class="legend">
+        <div style="--c:var(--ink)"><b>$20.7K</b>CodeFast, a coding course</div>
+        <div style="--c:var(--ink3)"><b>$16.8K</b>ShipFast</div>
+        <div style="--c:var(--gold)"><b>$16.3K</b>DataFast, analytics</div>
+        <div style="--c:var(--gold-mid)"><b>$8.6K</b>TrustMRR, in its first days</div>
+        <div style="--c:var(--border2)"><b>$3.6K</b>Everything else</div>
+      </div>
+    </div>
+
+    <div class="cross" id="cross">
+      <div>
+        <div class="lbl"><span>The warning</span></div>
+        <h2 class="big" style="font-size:clamp(1.7rem,2.6vw,2.3rem)">AI made his best product <em>almost free</em> to copy.</h2>
+        <p>ShipFast dropped from about $126,000 a month in 2024 to about $2,000 a month in 2026. He blames AI. People can now get the same setup code written for them.</p>
+        <p>He saw it coming and moved to products that charge every month. DataFast went from $300 a month to <mark>$30,831 a month</mark> in under two years.</p>
+        <p class="note">Two points per line. What happened in between isn't drawn. The ShipFast 2026 figure comes from a weaker secondary source.</p>
+      </div>
+      <svg viewBox="0 0 560 380" role="img" aria-label="ShipFast monthly revenue fell from about $126,000 in 2024 to about $2,000 in 2026. DataFast rose from $300 in October 2024 to $30,831 in September 2026.">
+        <line class="gridl" x1="60" y1="40" x2="520" y2="40"/><line class="gridl" x1="60" y1="140" x2="520" y2="140"/><line class="gridl" x1="60" y1="240" x2="520" y2="240"/>
+        <line class="axis" x1="60" y1="340" x2="520" y2="340"/>
+        <text x="50" y="44" text-anchor="end">$140K</text><text x="50" y="144" text-anchor="end">$90K</text><text x="50" y="244" text-anchor="end">$40K</text><text x="50" y="344" text-anchor="end">$0</text>
+        <text x="90" y="364" text-anchor="middle">2024</text><text x="490" y="364" text-anchor="middle">2026</text>
+        <path id="l1" class="l1" pathLength="1" d="M90 88 L490 336"/>
+        <path id="l2" class="l2" pathLength="1" d="M90 339.4 L490 278.3"/>
+        <circle id="c1a" cx="90" cy="88" r="5" fill="var(--ink)"/><circle id="c1b" cx="490" cy="336" r="5" fill="var(--ink)"/>
+        <circle id="c2a" cx="90" cy="339.4" r="5" fill="var(--gold)"/><circle id="c2b" cx="490" cy="278.3" r="5" fill="var(--gold)"/>
+        <text class="v" x="104" y="80">ShipFast ~$126K</text>
+        <text class="v" x="502" y="340">~$2K</text>
+        <text class="v v2" x="104" y="326">DataFast $300</text>
+        <text class="v v2" x="482" y="266" text-anchor="end">$30,831</text>
+      </svg>
+    </div>
+
+    <div class="trust" data-up>
+      <div class="lbl"><span>His biggest earner today</span></div>
+      <h2 class="big" style="font-size:clamp(1.7rem,2.6vw,2.4rem);max-width:28ch">TrustMRR: a page where founders <em>prove</em> their revenue.</h2>
+      <p>Founders connect Stripe and their real revenue shows on a public page nobody can fake. Others browse it to find startups to buy. He built the first version in about six hours, coding with AI in Cursor.</p>
+      <div class="trust-grid">
+        <div><b data-count="20000" data-prefix="$">$20,000</b><span>from sponsor spots in the first 24 hours</span></div>
+        <div><b>$299 to $1,499</b><span>per month for a sponsor spot</span></div>
+        <div><b data-count="3" data-suffix="%">3%</b><span>fee when a startup on it gets sold</span></div>
+        <div><b>$1M</b><span>offer he turned down to sell it</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOW + FUTURE -->
+<section class="sec wrap" data-name="What he's building now">
+  <div class="lbl" data-up><span>What he's building now</span></div>
+  <h2 class="big" data-up>Small products, all built <em>with AI</em>, all on his own.</h2>
+  <div class="grid1" data-up>
+    <div class="c"><div class="k">Main earner</div><h3>TrustMRR</h3><p>Verified startup revenue, sponsors and a marketplace to buy small startups.</p></div>
+    <div class="c"><div class="k">$30,831 a month · Sept 2026</div><h3>DataFast</h3><p>Website analytics that show which traffic actually brings in money.</p></div>
+    <div class="c"><div class="k">$223 a month · Aug 2026</div><h3>Stalkr</h3><p>His newest one. Still tiny, and he's fine with that.</p></div>
+  </div>
+
+  <div class="lbl" data-up style="margin-top:7rem"><span>In his words</span></div>
+  <div class="quotes">
+    <div class="qt" data-up><p>"I don't think in years. I don't dream big."</p><span>Marc Lou</span></div>
+    <div class="qt" data-up><p>"Ship fast, ship often, and don't quit!"</p><span>Marc Lou</span></div>
+    <div class="qt" data-up><p>"Having an audience doesn't guarantee a successful startup!"</p><span>Marc Lou, 2025</span></div>
+  </div>
+</section>
+
+<!-- ONE IDEA -->
+<section class="idea" data-name="One idea to steal">
+  <div class="wrap">
+    <div class="lbl" data-up><span>One idea to steal</span></div>
+    <p class="hl" data-words>Turn the work you keep repeating <em>into a product.</em></p>
+    <p class="body" data-up>ShipFast was code Marc had already written dozens of times for himself. Look at what you keep redoing for every client or project. Someone else is probably redoing it too, and would pay to skip it.</p>
+  </div>
+</section>
+
+<!-- DAYS -->
+<section class="days wrap" data-name="Day 01 of 50">
+  <div class="lbl"><span>Solo founders · 50 days</span></div>
+  <div class="dots" id="dots" aria-label="Day 1 of 50"></div>
+  <div class="next">
+    <a class="btn" aria-disabled="true" href="#">Day 02 opens tomorrow</a>
+    <p>The next founder lands in your inbox tomorrow at 7:00 am.</p>
+  </div>
+</section>
+
+<section class="sources wrap">
+  <details>
+    <summary>Sources for this page</summary>
+    <ul>
+      <li><a href="https://marclou.com/p/i-ve-made-3m-with-my-36-startups">Marc Lou, "I've made $3M with my 36 startups"</a></li>
+      <li><a href="https://marclou.com/p/i-made-1-032-000-in-2025">Marc Lou, "I made $1,032,000 in 2025"</a></li>
+      <li><a href="https://marclou.com/p/i-vibe-coded-330k-in-9-months">Marc Lou, "I vibe-coded $330K in 9 months"</a></li>
+      <li><a href="https://www.ibtimes.co.uk/marc-louvion-million-dollar-success-journey-1799070">IBTimes UK profile of Marc Louvion</a></li>
+      <li><a href="https://www.starterstory.com/marc-lou-shipfast">Starter Story on ShipFast's launch</a></li>
+      <li><a href="https://www.starterstory.com/businesses/launch-your-startup-in-days-not-weeks-shipfast/growth-channels">Starter Story on ShipFast's growth channels</a></li>
+      <li><a href="https://tinyempires.substack.com/p/case-study-the-journey-of-marc-lou">Tiny Empires case study (first sale, free tools)</a></li>
+      <li><a href="https://atticusli.com/startup/marc-lou/">Atticus Li on the October 2025 revenue split</a></li>
+    </ul>
+    <p class="disc">Revenue figures are mostly self-reported by Marc Lou. Where sources disagree, this page uses his own posts.</p>
+  </details>
+</section>
+</main>
+
+<footer><span>Solo founders · Day 01 of 50 · Pratik Renuse</span><a href="/">pratikrenuse.com</a></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+  var doc=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasGsap=!!(window.gsap&&window.ScrollTrigger);
+  var mobile=function(){return window.innerWidth<=960;};
+  var fmt=function(n){return Math.round(n).toLocaleString('en-US');};
+
+  /* ---------- build static pieces ---------- */
+  // hero grid
+  var WIN=[14,18,22,30];
+  (function(){
+    var svg=document.getElementById('heroGrid'),s='',sz=40,g=12;
+    for(var i=0;i<36;i++){var x=(i%6)*(sz+g)+4,y=Math.floor(i/6)*(sz+g)+4;s+='<rect class="t" data-i="'+i+'" x="'+x+'" y="'+y+'" width="'+sz+'" height="'+sz+'"/>';}
+    svg.innerHTML=s;
+  })();
+  // tiles
+  var tilesEl=document.getElementById('tiles');
+  for(var i=0;i<36;i++){var d=document.createElement('div');d.className='tile';d.innerHTML='<i>'+(i<9?'0':'')+(i+1)+'</i>';tilesEl.appendChild(d);}
+  var tiles=tilesEl.children;
+  // dots
+  var dots=document.getElementById('dots');
+  for(var j=0;j<50;j++){var e=document.createElement('i');if(j===0)e.className='now';dots.appendChild(e);}
+  // rail stops
+  var rail=document.getElementById('rail'),yrs=['2016','2017','2018','Mar 21','Jun 21','Nov 21'];
+  yrs.forEach(function(y,k){var st=document.createElement('div');st.className='stop';st.style.left=(k/(yrs.length-1)*100)+'%';st.innerHTML='<b>'+y+'</b>';rail.appendChild(st);});
+  // channels diagram
+  (function(){
+    var ok=['Twitter, building in public','Product Hunt + Hacker News','Reddit demo video','Free tools','Launch skit videos','YouTube (2024)'];
+    var no=['Facebook ads','Cold calls'];
+    var m=window.innerWidth<=960,g='',hx=m?50:140,hy=180,all=ok.concat(no),X=m?190:620;if(m){var sv=document.getElementById('chanSvg');sv.setAttribute('viewBox','0 0 560 360');sv.style.fontSize='22px';}
+    all.forEach(function(t,k){
+      var y=30+k*(300/(all.length-1)),x=X,bad=k>=ok.length;
+      g+='<path class="ln draw'+(bad?' no':'')+'" pathLength="1" d="M'+(hx+(m?38:50))+' '+hy+' C '+(hx+(m?110:250))+' '+hy+', '+(x-(m?90:200))+' '+y+', '+(x-8)+' '+y+'"/>';
+      g+='<circle class="node" cx="'+x+'" cy="'+y+'" r="7"/>';
+      g+='<text x="'+(x+18)+'" y="'+(y+4)+'"'+(bad?' class="no"':'')+'>'+t+'</text>';
+    });
+    g+='<circle class="hub" cx="'+hx+'" cy="'+hy+'" r="'+(m?38:50)+'"/><text class="hubt" x="'+hx+'" y="'+(hy+5)+'" text-anchor="middle">Marc</text>';
+    document.getElementById('chanG').innerHTML=g;
+  })();
+
+  /* ---------- scenes ---------- */
+  var icons=document.getElementById('icons').children,yrEl=document.getElementById('yr');
+  var yrLabels=['2016','2017','2018','2021','2021','2021'],curYr='2016';
+  var scenes={
+    sBefore:function(i){
+      for(var k=0;k<icons.length;k++)icons[k].classList.toggle('show',k===i);
+      var stops=rail.querySelectorAll('.stop');stops.forEach(function(s,k){s.classList.toggle('past',k<=i);});
+      var p=(i/(yrs.length-1)*100)+'%';rail.querySelector('.fill').style.width=p;rail.querySelector('.dot').style.left=p;
+      var ny=yrLabels[i];
+      if(ny!==curYr){
+        var old=yrEl.querySelector('span'),nw=document.createElement('span');nw.textContent=ny;nw.className='in';yrEl.appendChild(nw);
+        requestAnimationFrame(function(){requestAnimationFrame(function(){nw.className='';old.className='out';setTimeout(function(){if(old.parentNode)old.remove();},650);});});
+        curYr=ny;
+      }
+    },
+    sGrave:(function(){
+      var named={1:[0],2:[1],3:[2],4:[3],5:[5,6],6:[28,29],7:[30]};
+      var caps={0:'Each square is one startup.',1:'<b>01</b>Sports dating app',2:'<b>02</b>AI flight prices, Seoul',3:'<b>03</b>Glovers for lovers',4:'<b>04</b>VirallyBot',5:'<b>06, 07</b>The Golden Plumber, Mood2Movie',6:'<b>29, 30</b>BioAge, ClipMarc',7:'<b>31</b>TrustMRR, after nine tries',8:'<b>4 of 36</b>ShipFast, CodeFast, DataFast, TrustMRR'};
+      var cap=document.getElementById('gCap'),nEl=document.getElementById('gN'),wEl=document.getElementById('gW');
+      return function(i){
+        tilesEl.classList.add('in');
+        var st=new Array(36).fill('');
+        if(i>=8){for(var t=0;t<36;t++)st[t]=WIN.indexOf(t)>=0?'win':'dead';}
+        else{
+          for(var s=1;s<i;s++)(named[s]||[]).forEach(function(t){st[t]=(s===7)?'win':'dead';});
+          (named[i]||[]).forEach(function(t){st[t]=(i===7)?'win':'cur';});
+        }
+        var nd=0,nw=0;
+        for(var t2=0;t2<36;t2++){
+          var c=tiles[t2],v=st[t2];
+          c.classList.toggle('win',v==='win');c.classList.toggle('cur',v==='cur');c.classList.toggle('dead',v==='dead');
+          if(v==='dead'||(v==='cur'))nd++; if(v==='win')nw++;
+        }
+        if(i>=8)nd=32;
+        nEl.innerHTML=nd+'<small>of 36</small>';wEl.textContent=nw;
+        cap.innerHTML=caps[i]||'';
+      };
+    })(),
+    sBars:(function(){
+      var bars=document.querySelectorAll('#sBars .bar'),max=133000;
+      return function(i){
+        bars.forEach(function(b,k){
+          var v=+b.dataset.v,w=k<=i?Math.max(v/max*76,k===0?0.3:0):(k===0?0.3:0);
+          var show=k<=i||k===0;
+          b.querySelector('.fill').style.width=(show?w:0)+'%';
+          b.style.setProperty('--w',(show?w:0)+'%');
+          b.classList.toggle('on',show);
+          var val=b.querySelector('.val[data-n]');
+          if(val&&k===i&&!val.dataset.done&&hasGsap&&!reduce){
+            val.dataset.done=1;var o={n:0};gsap.to(o,{n:+val.dataset.n,duration:1.1,ease:'power2.out',onUpdate:function(){val.textContent='$'+fmt(o.n);}});
+          }
+        });
+      };
+    })()
+  };
+  function finalStates(){scenes.sBefore(5);scenes.sGrave(8);scenes.sBars(4);
+    document.querySelectorAll('#chanG .draw').forEach(function(p){p.style.strokeDashoffset=0;});
+    document.querySelectorAll('.seg').forEach(function(s){s.style.width=(+s.dataset.v/66040*100)+'%';});
+    ['l1','l2'].forEach(function(id){var p=document.getElementById(id);p.style.strokeDasharray='none';});
+    document.querySelectorAll('#heroGrid .t').forEach(function(r){var k=+r.dataset.i;r.classList.add(WIN.indexOf(k)>=0?'win':'dead');});
+    document.querySelectorAll('.step').forEach(function(s){s.classList.add('on');});
+  }
+
+  if(!hasGsap||reduce){doc.classList.remove('has-js');finalStates();return;}
+
+  gsap.registerPlugin(ScrollTrigger);
+  doc.classList.add('enh');
+
+  /* smooth scroll */
+  var lenis=null;
+  try{ if(window.Lenis){ lenis=new Lenis({lerp:0.09,smoothWheel:true}); lenis.on('scroll',ScrollTrigger.update); gsap.ticker.add(function(t){lenis.raf(t*1000);}); gsap.ticker.lagSmoothing(0);} }catch(e){}
+
+  /* hero intro */
+  var h1=document.getElementById('heroName'),txt=h1.textContent;h1.textContent='';
+  txt.split('').forEach(function(c){var s=document.createElement('span');s.className='ch';s.setAttribute('aria-hidden','true');s.textContent=c===' '?' ':c;h1.appendChild(s);});
+  var heroRects=document.querySelectorAll('#heroGrid .t');
+  var tl=gsap.timeline({defaults:{ease:'expo.out'}});
+  tl.from('.hero .lbl',{opacity:0,y:14,duration:.9})
+    .from('#heroName .ch',{yPercent:110,opacity:0,duration:1.2,stagger:.05},'-=.6')
+    .from('.hero-sub',{opacity:0,y:20,duration:1},'-=.8')
+    .from('.hero .meta',{opacity:0,y:12,duration:.8},'-=.7')
+    .from(heroRects,{opacity:0,scale:.4,transformOrigin:'50% 50%',duration:.7,stagger:{each:.025,from:'random'}},'-=1.2')
+    .add(function(){heroRects.forEach(function(r){var k=+r.dataset.i;setTimeout(function(){r.classList.add(WIN.indexOf(k)>=0?'win':'dead');},120+Math.random()*900);});},'+=.2')
+    .from('.hero figcaption,.scroll-cue',{opacity:0,duration:.8},'+=.9');
+  document.querySelectorAll('#heroGrid .t').forEach(function(r){r.style.transition='fill .6s, stroke .6s';});
+
+  /* fade ups */
+  gsap.utils.toArray('[data-up]').forEach(function(el){
+    gsap.to(el,{opacity:1,y:0,duration:1.1,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 86%',once:true}});
+  });
+
+  /* words in */
+  document.querySelectorAll('[data-words]').forEach(function(el){
+    var walk=function(node){
+      Array.prototype.slice.call(node.childNodes).forEach(function(n){
+        if(n.nodeType===3){
+          var frag=document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function(part){
+            if(!part)return;
+            if(/^\s+$/.test(part)){frag.appendChild(document.createTextNode(part));return;}
+            var s=document.createElement('span');s.className='w';s.textContent=part;frag.appendChild(s);
+          });
+          n.parentNode.replaceChild(frag,n);
+        } else if(n.nodeType===1){walk(n);}
+      });
+    };
+    walk(el);
+    gsap.from(el.querySelectorAll('.w'),{opacity:.08,y:10,duration:.9,ease:'power3.out',stagger:.045,scrollTrigger:{trigger:el,start:'top 78%',once:true}});
+  });
+
+  /* counters */
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var to=+el.dataset.count,pre=el.dataset.prefix||'',suf=el.dataset.suffix||'',o={n:0};
+    el.textContent=pre+'0'+suf;
+    ScrollTrigger.create({trigger:el,start:'top 82%',once:true,onEnter:function(){gsap.to(o,{n:to,duration:2,ease:'power3.out',onUpdate:function(){el.textContent=pre+fmt(o.n)+suf;}});}});
+  });
+
+  /* scrollytelling steps */
+  Object.keys(scenes).forEach(function(id){
+    var sec=document.getElementById(id),steps=sec.querySelectorAll('.step'),fn=scenes[id],cur=-1;
+    var setI=function(i){if(i===cur)return;cur=i;steps.forEach(function(s,k){s.classList.toggle('on',k===i);});fn(i);};
+    var cards=Array.prototype.map.call(steps,function(st){return st.querySelector('.card');});
+    var capM=document.createElement('div');capM.className='cap-m';capM.setAttribute('aria-hidden','true');sec.querySelector('.stage').appendChild(capM);
+    var baseSet=setI;setI=function(i){var ch=i!==cur;baseSet(i);if(ch){capM.style.opacity=0;setTimeout(function(){capM.innerHTML=cards[i].innerHTML;capM.style.opacity=1;},ch&&capM.innerHTML?180:0);}};
+    var compute=function(){var line=window.innerHeight*(mobile()?0.92:0.6),idx=0;cards.forEach(function(c,k){if(c.getBoundingClientRect().top<line)idx=k;});setI(idx);};
+    setI(0);
+    ScrollTrigger.create({trigger:sec,start:'top bottom',end:'bottom top',onUpdate:compute,onRefresh:compute,onLeave:compute,onLeaveBack:compute});
+  });
+
+  /* channels draw */
+  ScrollTrigger.create({trigger:'#chanSvg',start:'top 75%',once:true,onEnter:function(){
+    gsap.to('#chanG .draw',{strokeDashoffset:0,duration:1.6,ease:'power3.inOut',stagger:.12});
+    gsap.from('#chanG text, #chanG .node',{opacity:0,x:-8,duration:.8,stagger:.06,delay:.5});
+  }});
+
+  /* stacked bar */
+  ScrollTrigger.create({trigger:'#stack',start:'top 80%',once:true,onEnter:function(){
+    document.querySelectorAll('.seg').forEach(function(s,k){setTimeout(function(){s.style.width=(+s.dataset.v/66040*100)+'%';},k*180);});
+  }});
+
+  /* crossing lines, scrubbed */
+  gsap.set(['#l1','#l2'],{strokeDasharray:1,strokeDashoffset:1});
+  gsap.set(['#c1b','#c2b'],{opacity:0});
+  gsap.timeline({scrollTrigger:{trigger:'#cross',start:'top 70%',end:'center 40%',scrub:.6}})
+    .to('#l1',{strokeDashoffset:0,ease:'none'},0)
+    .to('#l2',{strokeDashoffset:0,ease:'none'},0)
+    .to(['#c1b','#c2b'],{opacity:1,duration:.1},.9);
+
+  /* progress + nav label */
+  var bar=document.getElementById('progress'),navNow=document.getElementById('navNow');
+  ScrollTrigger.create({start:0,end:'max',onUpdate:function(s){bar.style.transform='scaleX('+s.progress+')';}});
+  document.querySelectorAll('[data-name]').forEach(function(el){
+    ScrollTrigger.create({trigger:el,start:'top 45%',end:'bottom 45%',onToggle:function(s){if(s.isActive)navNow.textContent=el.dataset.name;}});
+  });
+
+  window.addEventListener('load',function(){ScrollTrigger.refresh();});
+})();
+</script>
+</body>
+</html>

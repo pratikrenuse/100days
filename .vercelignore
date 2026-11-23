@@ -44,3 +44,11 @@ Pratik Renuse
 /bueno-dashboard
 /bueno-ux-dashboard
 /speaking/claude-101/built
+
+# Removed on 23 Nov 2026: old 100 Days tool backends, no longer used by any live page.
+# Old tool URLs now redirect to /playbooks/ (see vercel.json).
+api/jensen.js
+api/roast.js
+api/reframe.js
+api/voice.js
+api/log-eval.js
