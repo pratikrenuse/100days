@@ -1,0 +1,476 @@
+{
+ "n": 11,
+ "name": "Harkirat Singh",
+ "short": "Harkirat",
+ "wisdom": "Sell the outcome people want, then show the proof in public.",
+ "email": {
+  "subject": "He left Goldman and sold ₹5,999 weekend classes",
+  "hook": "Harkirat Singh walked out of Goldman Sachs after about a year and a half, and his cheap weekend coding classes now claim to have reached more than 200,000 developers, while his most expensive idea sits under a cloud.",
+  "lead": [
+   "Harkirat is one of ours. Indian engineer, Indian audience, Indian prices. He didn't build a SaaS tool, he built a teaching business on top of one very specific promise: learn the skills, get a remote job, get paid in dollars. That promise is why his story is worth our morning.",
+   "One thing to say plainly up front: he is not a solo founder in the strict sense. 100xDevs has people behind it, and his offline school, 100xSchool, had a co-founder, Sameer Sadana. No funding has been found for 100xDevs, but 100xSchool calls itself a venture by IITians and YC-backed founders. So read this as a creator who built a company, not a lone indie hacker."
+  ],
+  "stats": [
+   {
+    "value": "₹5,999",
+    "label": "early-bird price of his first cohort"
+   },
+   {
+    "value": "200,000+",
+    "label": "developers his courses say they've reached"
+   },
+   {
+    "value": "620K",
+    "label": "YouTube subscribers, Nov 2026"
+   }
+  ],
+  "chart": {
+   "title": "New YouTube subscribers per month, third-party tracker estimate",
+   "points": [
+    {
+     "label": "Dec 2025",
+     "value": 6000,
+     "display": "6K"
+    },
+    {
+     "label": "Sep 2026",
+     "value": 1000,
+     "display": "1K",
+     "down": true
+    },
+    {
+     "label": "Oct 2026",
+     "value": 1000,
+     "display": "1K",
+     "down": true
+    }
+   ],
+   "note": "From the NexLev tracker, so treat these as estimates, not his own numbers."
+  },
+  "sections": [
+   {
+    "title": "What he's doing right now",
+    "paras": [
+     "He still runs the 100xDevs live cohorts and the 100xDevs app, and his offline school, 100xSchool, has admissions open for a 2026 batch. That school is the big swing: a four-year alternative to a B.Tech with a one-year paid internship, plus a six-month \"Super 30\" track that includes hostel and food.",
+     "It is also where things got messy. In mid 2026 students complained on Reddit, and then his co-founder publicly alleged fake placement reports, unpaid staff and unpaid rent, before deleting the posts. **None of this has been proven**, no police case or court case was found, and the claims come from a gossip blog. Harkirat responded with a video saying 100xDevs and 100xSchool are now independent of each other."
+    ]
+   },
+   {
+    "title": "How the money comes in",
+    "stats": true,
+    "paras": [
+     "The engine is cheap live cohorts sold at volume. His first one had an early-bird price of ₹5,999, or $75 for people paying in dollars. By August 2024, Cohort 3.0 was ₹4,999 per track or ₹6,499 for the bundle, with three years of access. The school's site says his courses have reached 200,000+ developers, which is his own claim, and there is no business revenue figure anywhere in the press.",
+     "His personal number is fuzzier. In an April 2024 video he said he made close to ₹5 crore in 2023, but only about ₹1.6 crore of that was cash. The rest was equity and NFTs. We only know this through AI summaries of the video, so hold it loosely."
+    ]
+   },
+   {
+    "title": "How he got the students",
+    "paras": [
+     "He didn't start from zero. He already had a YouTube channel and a Substack called India Remote Jobs, and both were about the exact thing his students wanted. The Cohort 1 launch post simply said he was launching his first full stack cohort, linked to a video and gave payment links in both rupees and dollars.",
+     "After that, the proof did the selling. In January 2024 he posted a Cohort 1 student's result: a fully remote job at a US seed-stage startup, made full time after three months. In July 2025 he posted a list of companies \"hiring through us\". **Every outcome post was also an ad for the next batch.**"
+    ]
+   },
+   {
+    "title": "The part nobody talks about",
+    "chart": true,
+    "paras": [
+     "Two things. First, the free top of the funnel is slowing. A third-party tracker shows his channel adding about 6,000 subscribers in December 2025 and about 1,000 a month by September and October 2026. When the audience stops growing, every cohort has to work harder.",
+     "Second, the higher the price, the higher the bar for proof. A ₹5,999 class can live on a few great placement posts. A school reported at around ₹20 lakh, promising jobs, needs proof that someone outside can check. That gap is what the 100xSchool allegations are really about, whatever the truth turns out to be."
+    ]
+   }
+  ],
+  "tryToday": "Write down the one outcome your audience would pay for (for Harkirat it was a remote job paid in dollars), then post one piece of real, checkable proof that you can get people there.",
+  "button": "Read how he built 100xDevs"
+ },
+ "page": {
+  "intro": "An IIT Roorkee engineer who left Goldman Sachs to freelance, became the face of India's remote-job dream, and turned that into low-priced live coding cohorts. Then he tried something far bigger and far more expensive, and that is where the story gets complicated.",
+  "stats": [
+   {
+    "value": "₹5,999",
+    "num": 5999,
+    "prefix": "₹",
+    "suffix": "",
+    "label": "early-bird price of Cohort 1",
+    "note": "or $75"
+   },
+   {
+    "value": "200,000+",
+    "num": 200000,
+    "prefix": "",
+    "suffix": "+",
+    "label": "developers reached",
+    "note": "his school's own claim, 2026"
+   },
+   {
+    "value": "620K",
+    "num": 620,
+    "prefix": "",
+    "suffix": "K",
+    "label": "YouTube subscribers",
+    "note": "tracker estimate, Nov 2026"
+   },
+   {
+    "value": "417",
+    "num": 417,
+    "prefix": "",
+    "suffix": "",
+    "label": "videos on his channel",
+    "note": "tracker estimate, Nov 2026"
+   }
+  ],
+  "chapters": [
+   {
+    "label": "Before it worked",
+    "title": "He took the bigger salary, then regretted it",
+    "paras": [
+     "Let's get one thing out of the way: this is not a rags-to-riches story. Harkirat describes himself as an IIT Roorkee alumnus, a former Goldman Sachs engineer and a two-time Google Summer of Code contributor. That's a strong starting hand by any Indian standard.",
+     "In a 2024 video about his salary, he talks about his campus placement. The offer was about ₹31.5 lakh, counting base pay, equity and a joining bonus. He says that in college he picked salary over the company's reputation, and later regretted that choice. He stayed at Goldman for about a year and a half and then left to freelance full time.",
+     "Freelancing, by his account, went very well. He says he earned ₹50 lakh in his first year and ₹1 crore in his second. A Toptal freelancer profile listing him as a developer in Bengaluru backs up that he was doing this kind of work. One honest note before we go further: almost every number on this page comes from Harkirat himself or from his own sites, and some only reach us through AI summaries of his videos, so read them as his claims, not audited facts.",
+     "Who else he worked for in those years isn't public. What matters is the shape of it: an Indian engineer, sitting in India, earning dollar-level money by working remotely. **That shape became his whole brand.**"
+    ]
+   },
+   {
+    "label": "The brand",
+    "title": "The remote-jobs guy",
+    "paras": [
+     "By April 2023 he was a known name. He went on Ishan Sharma's podcast in an episode titled \"Remote Software Developer Makes 4 Crores/Yr\". That's the podcast's headline, not a verified number, and posts calling the figure fake still go around online. But the headline did its job. Every engineering student in India who saw it wanted to know how.",
+     "He answered that question in public, over and over. In November 2023 he wrote on X that for a $500k job you need to get better at a niche like web3, AI or WebRTC. For $50k to $80k, he said, you need to be really good at full stack, communicate well and have high accountability as a remote worker. And then the detail that made it feel real: \"I applied on their careers page\". No referral magic, no secret network.",
+     "His other repeated message, as others report it, is that college doesn't matter and skills do. He tells people to build projects and contribute to open source instead of grinding to make their GitHub profile look green. He also says that DSA still matters most for Indian jobs, while international roles care more about practical skills.",
+     "In April 2024 he went on Fraz's channel and talked about money in detail. He said 2023 brought him close to ₹5 crore in total. About ₹1.6 crore of that was cash, about $200,000 was equity, and NFTs were a big part of the rest. He described his portfolio as roughly 50% crypto, 30% NFTs, 10% real estate, 5% cash and fixed deposits and 5% gold. Again, we only have this through AI summaries of the video, so take the exact split with a pinch of salt."
+    ],
+    "pull": {
+     "text": "For 500k you need to get better at a niche (web3, AI, webrtc)",
+     "cite": "Harkirat on X, November 2023"
+    }
+   },
+   {
+    "label": "The first version",
+    "title": "Weekend classes at 7pm, with recordings",
+    "paras": [
+     "His first paid product was called the Full Stack Open Source Cohort 1. He announced it on his India Remote Jobs Substack, the same newsletter where his audience already came for remote job leads. The post said he was launching his first full stack cohort for diving deep into the MERN stack, and it came with an early-bird discount.",
+     "The format was built for people with jobs or college. It ran for 8 to 10 weeks, live on Saturday and Sunday at 7pm IST, with recordings shared after each class. The start date was the 9th of June. The page doesn't print the year, but since he posted a Cohort 1 placement in January 2024 and Cohort 3.0 began in August 2024, June 2023 is the best reading.",
+     "The syllabus had four parts. First the MERN fundamentals, then moving from JavaScript to TypeScript, then monorepos, and finally contributing to a real open-source project that, in his words, had raised more than $10 million. **That last part was the clever bit.** It wasn't just a course, it was a path to something you could show an employer.",
+     "We don't know how long he took to put it together, what he used to record, or what it cost him to run. He hasn't shared that. What we do know is that it was delivered on his own 100xdevs.com app with a Discord community alongside. Today that same Cohort 1 page shows 175 videos and a bundled DSA bootcamp, and lists the price at ₹2,999, which it shows as 40% off ₹4,999."
+    ],
+    "pull": {
+     "text": "I'm launching my first Full Stack cohort",
+     "cite": "Harkirat, on his India Remote Jobs Substack"
+    }
+   },
+   {
+    "label": "The first students",
+    "title": "Six thousand rupees felt like a lot",
+    "paras": [
+     "The early-bird price was ₹5,999, or $75. That's cheap next to any bootcamp, but it wasn't cheap for everyone. One reader left a comment under the launch post: \"6k seems lot for me without any income.\" That comment tells you exactly who the buyer was. Students and young engineers, many without a salary yet, betting a month's pocket money on a better job.",
+     "The launch itself was simple. A Substack post, a video, and payment links in both rupees and dollars. He didn't need ads, because the people reading India Remote Jobs were already the people who wanted this. He hasn't shared how many signed up for that first batch, or what it earned.",
+     "Then came the move that made the next batches easier. In January 2024 he posted a result from Cohort 1 on X: \"100% Remote. US based Seed stage startup.\" The student was made full time after three months of probation. One student, one job, one post. For his audience, that single line was worth more than any sales page.",
+     "There's one conflicting story worth knowing about. A February 2025 advertorial says 100xDevs started as an offline training programme, with a first batch of 44 students paying Rs 50,000 each and 80% getting multiple offers. That doesn't match the online Cohort 1 story, and it may describe a separate offline programme. It's paid marketing copy, so we're not treating it as fact."
+    ]
+   },
+   {
+    "label": "Scaling it",
+    "title": "Four tracks, one recommended bundle",
+    "paras": [
+     "By Cohort 3.0 the operation had grown up. The Discord opened on 20 July 2024 and classes started on 2 August 2024. Instead of one course, there were four tracks at Easy, Medium and Hard levels, including web development and Web3, with classes on weekends from 7 to 9pm IST and extra Friday sessions for Web3.",
+     "The pricing got smarter too. Each track cost ₹4,999, and the bundle cost ₹6,499 and was marked \"RECOMMENDED\". There was an EARLYBIRD coupon, the programme ran for 6 to 7 months, and buyers got three years of access to recordings. **The bundle at barely more than one track is the oldest trick in retail, and it works.**",
+     "He also shared who was buying. In August 2024 he wrote that the batch was around 55 percent college students and 45 percent working professionals, most with one to two years of experience. That's a useful detail for us. His buyers weren't only students hoping for a first job, almost half were already working and wanted a better one."
+    ],
+    "pull": {
+     "text": "Around 55 percent college students 45 percent working professionals.",
+     "cite": "Harkirat on X, August 2024"
+    }
+   },
+   {
+    "label": "The money",
+    "title": "Cheap classes, sold at volume, sold by outcomes",
+    "paras": [
+     "Here's the honest answer on money: nobody outside knows what 100xDevs earns. No press outlet has a revenue figure, and he hasn't published one. What exists is his own claim, via the 100xSchool site, that his courses have reached 200,000+ developers.",
+     "What we can see is the shape of the machine. Low prices bring in lots of students. Live classes on weekends make it fit around college and work. Recordings and long access make it feel safe to buy. And then the outcome posts sell the next batch.",
+     "In July 2025 he took the outcome idea one step further and started posting the companies hiring through 100xDevs. One post listed a Bangalore startup hiring onsite and an AI company building something like Cursor that wanted an AI engineer. **When you post who is hiring your students, your marketing and your product become the same thing.**",
+     "Underneath all of it sits the free channel. As of 22 November 2026, a third-party tracker puts his YouTube channel at about 620,000 subscribers, 56.6 million views and 417 videos. That is where most people first meet him."
+    ],
+    "pull": {
+     "text": "Currently companies that are hiring through us",
+     "cite": "Harkirat on X, July 2025"
+    }
+   },
+   {
+    "label": "The big swing",
+    "title": "From ₹5,999 to a four-year school",
+    "paras": [
+     "Then he went much bigger. 100xSchool is an offline, four-year undergraduate programme pitched as an alternative to a B.Tech, with a one-year paid internship built in. There's also a six-month \"Super 30\" track that includes hostel and food. The footer calls it a venture by IITians and YC-backed founders, though no investors are named.",
+     "The school's site makes big claims: 100+ students placed, 300+ hiring partners, a highest international package of $100,000 and a highest domestic package of 42 LPA. A brochure dated 13 February 2026 opened admissions for the 2026 cohort. The reported fee is around ₹20 to 22 lakh. That's more than 300 times the price of his first cohort.",
+     "In July, most likely of 2026, students started complaining on r/Btechtards. In late August his co-founder Sameer Sadana alleged fake placement reports, unpaid staff and vendors, more than ₹50 lakh in unpaid rent and tax problems, and the campus was reported to have shut. Sadana later deleted the posts. A widely shared \"₹17 crore scam\" figure is just a Reddit estimate, roughly 100 students multiplied by ₹17 to 20 lakh. No police complaint or court case has been reported.",
+     "We have to be careful here. All of this comes from a gossip blog, and every part of it is an allegation. Harkirat's response was a video saying 100xDevs and 100xSchool are now independent. The school's own site still says admissions are open. What we can take from it without knowing the truth is simple: **once the fee is in lakhs and the promise is a job, the proof has to be checkable.**"
+    ],
+    "chart": 0
+   },
+   {
+    "label": "Where it stands",
+    "title": "A slowing channel and a louder crowd",
+    "paras": [
+     "The free audience isn't growing like it used to. The same tracker shows his channel adding about 6,000 subscribers in December 2025, and about 1,000 a month in September and October 2026. For a business that sells off its YouTube channel, that's worth watching.",
+     "Critics have also started asking if he's spread too thin. In December 2025 one person on X argued that he could have made millions just by doing what he used to do on YouTube and building products, and asked whether 100xSchool students were really \"100x\" at all. That's one critic, not a verdict, but it's the kind of thing that sticks when you move from teaching to running a school.",
+     "On the future, we don't have a direct Harkirat quote about AI replacing developers. What he has said, in his 2024 video, is that the job market is very disrupted, that full stack skills, real projects and open source are the way through, and that niche skills like AI are where the top remote pay is. For now, his bet is still the same one he started with: teach people skills that someone abroad will pay for."
+    ],
+    "chart": 1
+   }
+  ],
+  "failuresTitle": "What went wrong, and what is only alleged",
+  "failuresIntro": "Harkirat has no public list of failed products, and he hasn't shared a failure count. His setbacks are about trust and reputation, and the biggest one is still unproven.",
+  "failures": [
+   {
+    "year": "2026",
+    "name": "The 100xSchool dispute",
+    "what": "Students complained in July, and in late August his co-founder alleged fake placement reports, unpaid staff and vendors, and over ₹50 lakh in rent dues, then deleted the posts. The campus was reported to have shut. No police or court case has been reported, and the claims come from a gossip blog. Harkirat says 100xDevs and 100xSchool are now independent.",
+    "lesson": "The bigger the fee and the promise, the more your proof needs to be something an outsider can verify."
+   },
+   {
+    "year": "2023 onward",
+    "name": "The contested ₹4 crore headline",
+    "what": "A podcast titled \"Remote Software Developer Makes 4 Crores/Yr\" built his name, and posts calling the figure fake have followed him since. His own later breakdown said most of his 2023 total wasn't cash.",
+    "lesson": "A big headline number brings attention, but it also hands critics something to attack for years."
+   },
+   {
+    "year": "Dec 2025",
+    "name": "The \"spread too thin\" critique",
+    "what": "A critic on X argued he could have made millions by sticking to YouTube and building products, and questioned the quality of 100xSchool students. It's one voice, but it shows how a teaching brand gets judged once it becomes an institution.",
+    "lesson": "Every new, bigger product puts the reputation of the first one on the line."
+   }
+  ],
+  "playbookTitle": "How he filled his cohorts",
+  "playbook": [
+   {
+    "title": "Launch to the newsletter you already run",
+    "text": "Cohort 1 was announced on India Remote Jobs, his Substack about remote jobs. The readers were already the exact buyers. The launch post linked a video and gave rupee and dollar payment links, nothing fancier."
+   },
+   {
+    "title": "Price it for students, not companies",
+    "text": "₹5,999 early bird for the first cohort, then ₹4,999 a track or ₹6,499 for a bundle in 2024. One reader still said 6k was a lot without income, which tells you how close to the edge of affordability he priced it."
+   },
+   {
+    "title": "Teach live on weekends, give recordings",
+    "text": "Classes ran Saturday and Sunday at 7pm IST, with recordings after each class and three years of access by Cohort 3.0. That made it easy for college students and working engineers to say yes."
+   },
+   {
+    "title": "Post one outcome at a time",
+    "text": "His January 2024 post about a Cohort 1 student landing a remote job at a US startup was short and specific. One real result, posted publicly, sold the next batch better than a sales page could."
+   },
+   {
+    "title": "Post who's hiring your students",
+    "text": "In July 2025 he listed companies hiring through 100xDevs, including a Bangalore startup and an AI company. It turns the course from a cost into a door to a job."
+   },
+   {
+    "title": "Bundle with a clear recommendation",
+    "text": "Cohort 3.0 split into four tracks at Easy, Medium and Hard levels, with the bundle marked RECOMMENDED and an EARLYBIRD coupon. When the bundle costs barely more than one track, most people take the bundle."
+   },
+   {
+    "title": "Keep a free channel at the top",
+    "text": "His YouTube channel, about 620,000 subscribers and 417 videos by November 2026 per a tracker, is where people meet him first. The paid cohort is the next step for people who already trust him."
+   }
+  ],
+  "charts": [
+   {
+    "title": "From his first cohort to his school, price per student",
+    "points": [
+     {
+      "label": "Cohort 1 early bird, 2023",
+      "value": 5999,
+      "display": "₹5,999"
+     },
+     {
+      "label": "Cohort 3.0 bundle, Aug 2024",
+      "value": 6499,
+      "display": "₹6,499"
+     },
+     {
+      "label": "100xSchool, reported fee",
+      "value": 2000000,
+      "display": "about ₹20 lakh"
+     }
+    ],
+    "note": "The 100xSchool fee is reported at about ₹20 to 22 lakh by a gossip blog, not by the school. The cohort bars are tiny on purpose: that's the jump in price."
+   },
+   {
+    "title": "New YouTube subscribers per month, third-party tracker estimate",
+    "points": [
+     {
+      "label": "Dec 2025",
+      "value": 6000,
+      "display": "6K"
+     },
+     {
+      "label": "Sep 2026",
+      "value": 1000,
+      "display": "1K",
+      "down": true
+     },
+     {
+      "label": "Oct 2026",
+      "value": 1000,
+      "display": "1K",
+      "down": true
+     }
+    ],
+    "note": "From the NexLev tracker. Estimates, not his own numbers."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "After IIT Roorkee",
+    "text": "Takes a campus offer of about ₹31.5 lakh at Goldman Sachs, choosing salary over reputation, and later says he regretted it."
+   },
+   {
+    "when": "About 1.5 years later",
+    "text": "Leaves Goldman to freelance full time, and says he made ₹50 lakh in year one and ₹1 crore in year two.",
+    "big": true
+   },
+   {
+    "when": "Apr 2023",
+    "text": "Appears on Ishan Sharma's podcast in an episode titled \"Remote Software Developer Makes 4 Crores/Yr\"."
+   },
+   {
+    "when": "Jun 2023",
+    "text": "Cohort 1 most likely starts on 9 June, announced on his India Remote Jobs Substack at ₹5,999 early bird.",
+    "big": true
+   },
+   {
+    "when": "Nov 2023",
+    "text": "Posts his remote-pay advice on X: niche skills for $500k, strong full stack and accountability for $50k to $80k."
+   },
+   {
+    "when": "Jan 2024",
+    "text": "Shares a Cohort 1 student's fully remote job at a US seed-stage startup."
+   },
+   {
+    "when": "Apr 2024",
+    "text": "Says on Fraz's channel he made close to ₹5 crore in 2023, about ₹1.6 crore of it cash."
+   },
+   {
+    "when": "Aug 2024",
+    "text": "Cohort 3.0 starts on 2 August with four tracks, ₹4,999 a track or ₹6,499 for the bundle.",
+    "big": true
+   },
+   {
+    "when": "Jul 2025",
+    "text": "Starts posting the companies hiring through 100xDevs."
+   },
+   {
+    "when": "Feb 2026",
+    "text": "100xSchool brochure opens admissions for its 2026 cohort."
+   },
+   {
+    "when": "Jul to Aug 2026",
+    "text": "Student complaints and his co-founder's allegations about 100xSchool, later deleted. Harkirat says the two brands are now independent.",
+    "big": true
+   },
+   {
+    "when": "Nov 2026",
+    "text": "A tracker puts his YouTube channel at about 620,000 subscribers, with growth slowing to about 1,000 a month."
+   }
+  ],
+  "quotes": [
+   {
+    "text": "I'm launching my first Full Stack cohort",
+    "cite": "India Remote Jobs Substack, launch post"
+   },
+   {
+    "text": "For 500k you need to get better at a niche (web3, AI, webrtc)",
+    "cite": "X, November 2023"
+   },
+   {
+    "text": "I applied on their careers page",
+    "cite": "X, November 2023"
+   },
+   {
+    "text": "100% Remote. US based Seed stage startup.",
+    "cite": "X, January 2024, on a Cohort 1 student"
+   },
+   {
+    "text": "Around 55 percent college students 45 percent working professionals.",
+    "cite": "X, August 2024, on Cohort 3.0"
+   },
+   {
+    "text": "Currently companies that are hiring through us",
+    "cite": "X, July 2025"
+   }
+  ],
+  "steal": [
+   "Pick one outcome your buyers can picture, like a remote job paid in dollars, and build everything around it. Harkirat never sold \"learn coding\", he sold the job at the end.",
+   "Launch to an audience you already own. His first cohort went out on a Substack whose readers already wanted remote work, so he needed no ads.",
+   "Turn each result into a post. One student's job offer, written in two lines, did more selling than any landing page.",
+   "Make the bundle the obvious choice. ₹6,499 for everything against ₹4,999 for one track is an easy decision for a buyer.",
+   "As your price goes up, raise your proof. For a cheap class, a few public results are fine. For anything in lakhs, give people outcomes they can verify themselves."
+  ],
+  "sources": [
+   {
+    "title": "100xSchool official site",
+    "url": "https://www.100xdevs.co.in/"
+   },
+   {
+    "title": "100xDevs cohort page",
+    "url": "https://100xdevs.com/cohort"
+   },
+   {
+    "title": "Cohort 1 course page",
+    "url": "https://100xdevs.com/new-courses/2"
+   },
+   {
+    "title": "India Remote Jobs: launching the live full stack cohort",
+    "url": "https://indiaremotejobs.substack.com/p/launching-live-full-stack-cohort"
+   },
+   {
+    "title": "India Remote Jobs: announcing the Web3 and web dev cohort",
+    "url": "https://indiaremotejobs.substack.com/p/announcing-the-web3-and-web-dev-cohort"
+   },
+   {
+    "title": "AI summary of his \"Truth behind CRORE package\" video (VideoHighlight)",
+    "url": "https://videohighlight.com/v/MweP6--7OP8"
+   },
+   {
+    "title": "AI summary of the same video (Glasp)",
+    "url": "https://glasp.co/youtube/p/truth-behind-crore-package-harkirat-singh-salary-revealed"
+   },
+   {
+    "title": "Ishan Sharma podcast episode listing",
+    "url": "https://music.amazon.de/podcasts/4ecb42c8-08a4-4241-a017-fe94eae3157d/episodes/8c691e9f-6183-4567-87bc-f911821b8fbb/limitless-with-ishan-remote-software-developer-makes-4-crores-yr-%F0%9F%94%A5-ft-%E2%80%AAaharkirat1%E2%80%AC"
+   },
+   {
+    "title": "Toptal freelancer profile",
+    "url": "https://www.toptal.com/resume/harkirat-singh"
+   },
+   {
+    "title": "Harkirat on X: remote pay advice",
+    "url": "https://twitter.com/kirat_tw/status/1729018512939929704"
+   },
+   {
+    "title": "Harkirat on X: Cohort 1 outcome",
+    "url": "https://x.com/kirat_tw/status/1749419660146082246"
+   },
+   {
+    "title": "Harkirat on X: Cohort 3.0 mix",
+    "url": "https://x.com/kirat_tw/status/1822932741991666165"
+   },
+   {
+    "title": "Harkirat on X: companies hiring through 100xDevs",
+    "url": "https://x.com/kirat_tw/status/1943192256497762309"
+   },
+   {
+    "title": "The Harkirat Singh files (gossip blog, allegations only)",
+    "url": "https://lafda.fun/posts/the-harkirat-singh-files"
+   },
+   {
+    "title": "Critic on X, December 2025",
+    "url": "https://x.com/archiexzzz/status/2005264335275516359"
+   },
+   {
+    "title": "PNN advertorial on 100xDevs (unverified)",
+    "url": "https://www.tribuneindia.com/news/business/100xdevs-a-new-developer-training-school-is-changing-the-game"
+   },
+   {
+    "title": "NexLev YouTube stats for @harkirat1",
+    "url": "https://www.nexlev.io/youtube-stats/@harkirat1"
+   }
+  ]
+ }
+}

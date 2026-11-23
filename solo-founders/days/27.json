@@ -1,0 +1,579 @@
+{
+  "n": 27,
+  "name": "Nathan Barry",
+  "short": "Nathan",
+  "wisdom": "Do the moving work for your customers yourself. That's what made ConvertKit grow.",
+  "email": {
+    "subject": "$1,207 a month, then 71x in 14 months",
+    "hook": "In October 2014 Nathan Barry's email software was making $1,207 a month and he was asking himself whether to shut it down. Fourteen months later it had grown 71 times.",
+    "lead": [
+      "Nathan is the person behind Kit, which used to be called ConvertKit. Today it's a big company with a team, so he's not a solo founder any more. But the way he got there is the most useful thing in this whole series for a marketer, because it started with ebooks, an email list and a guy writing 1,000 words a day.",
+      "And the moment that saved the business wasn't a clever growth hack. It was him personally emailing bloggers and offering to move their lists for free."
+    ],
+    "stats": [
+      {
+        "value": "$12K",
+        "label": "his first ebook's first day, Sep 2012"
+      },
+      {
+        "value": "$1,207",
+        "label": "ConvertKit's monthly low, Oct 2014"
+      },
+      {
+        "value": "71x",
+        "label": "growth in the next 14 months"
+      }
+    ],
+    "chart": {
+      "title": "ConvertKit monthly recurring revenue, by Nathan's own numbers",
+      "points": [
+        {
+          "label": "Jul 2013",
+          "value": 2480,
+          "display": "$2,480"
+        },
+        {
+          "label": "Oct 2014",
+          "value": 1207,
+          "display": "$1,207",
+          "down": true
+        },
+        {
+          "label": "Dec 2014",
+          "value": 3237,
+          "display": "$3,237"
+        },
+        {
+          "label": "Feb 2015",
+          "value": 4561,
+          "display": "$4,561"
+        },
+        {
+          "label": "Mar 2015",
+          "value": 5020,
+          "display": "$5,020"
+        }
+      ],
+      "note": "He later revised the July 2013 figure down to about $2,000."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Kit now says it serves more than 650,000 creators (another 2026 report says 550,000, so the numbers differ). In June 2026 Nathan opened a Kit Studio in New York, after Boise and Chicago. They're physical spaces for creators, free for paying users.",
+          "He's also shipped a Kit MCP server so creators can run Kit from ChatGPT, Claude or Cursor, and he still runs the Craft + Commerce conference in Boise. He says he expects to be running Kit ten years from now."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "Kit sells email software to creators on monthly plans, and has added a store, an ad network and an app store on top. Kit doesn't publish revenue now, but the analyst firm Sacra estimated it at about $43M a year in 2024.",
+          "Before all that, his money came from **three design ebooks sold in tiers**. A $39 book, a much pricier package with videos and code, and a team licence. He says the tiers doubled his revenue on the first book and tripled it on the second. That book cash paid for the software."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "In late 2012 he set himself a public challenge: build software to $5,000 a month in six months, spend no more than $5,000, and work 20 hours a week. He was annoyed with MailChimp, and figured other people with lists were too.",
+          "He missed. By July 2013 it was at $2,480 a month. By March 2015 he had put $55,000 into it, and it was burning about $8,000 a month before paying himself anything."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "chart": true,
+        "paras": [
+          "Content wasn't working for the software, so he switched to selling. He changed the pitch from “email marketing for authors”, which he later called “a bad idea”, to email marketing for professional bloggers. Then he went after bloggers with 50,000+ subscribers, mostly by email and then a Skype call.",
+          "The killer offer was a **free concierge migration** for anyone with 10,000+ subscribers. His team moved the whole list for you. Those migrated customers churned at 0.25% a month, against 6% overall. In his words: “Direct sales killed it.”"
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "Nathan had money coming in the whole time. By 2014 his books and training made about a quarter of a million dollars a year, and he says he couldn't have built software without that cash flow. This is not a broke-to-rich story.",
+          "And the low point was real: spammers, hacking problems, about 8% churn, and the stress of running out of money. He framed his choice in October 2014 as “Shut it down or double down on growth.” He doubled down, with $50,000."
+        ]
+      }
+    ],
+    "tryToday": "Think of one tool your ideal customer would have to leave to start using you. Write down every annoying step of that switch, then ask yourself which of those steps you could just do for them.",
+    "button": "Read the whole ConvertKit story"
+  },
+  "page": {
+    "intro": "An iPhone app designer who had started dozens of products nobody bought, Nathan Barry wrote 1,000 words a day until he had a book, sold it to an email list of about 800 people, and used the money to build ConvertKit. It nearly died at $1,207 a month. Today it's Kit, a company of many people serving hundreds of thousands of creators.",
+    "stats": [
+      {
+        "value": "$12,000",
+        "num": 12000,
+        "prefix": "$",
+        "suffix": "",
+        "label": "first day of his first ebook",
+        "note": "September 2012, his own number"
+      },
+      {
+        "value": "71x",
+        "num": 71,
+        "prefix": "",
+        "suffix": "x",
+        "label": "ConvertKit growth in 14 months",
+        "note": "late 2014 to end of 2015"
+      },
+      {
+        "value": "0.25%",
+        "num": 0.25,
+        "prefix": "",
+        "suffix": "%",
+        "label": "monthly churn of migrated customers",
+        "note": "against 6% overall"
+      },
+      {
+        "value": "$43M",
+        "num": 43,
+        "prefix": "$",
+        "suffix": "M",
+        "label": "yearly revenue, 2024",
+        "note": "a Sacra estimate"
+      }
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A designer with a habit of not finishing things",
+        "paras": [
+          "In 2012 Nathan Barry designed iPhone apps for a living. Before that he'd been on a startup design team and had led a software design team at another company. He was young: in a September 2014 interview with Mixergy he was described as 23.",
+          "He was also the kind of builder a lot of us will recognise. He'd started “dozens” of ideas and built many products nobody bought. One of them was an iPhone app called Commit, which tracked a daily writing streak. He built it for himself.",
+          "He knew his weakness. When he explained why he finally finished his first book, he said he knew “I had a habit of not finishing things.” So he gave himself a rule borrowed from the writer Chris Guillebeau: write 1,000 words a day, every day. In Guillebeau's words, as Nathan quoted them, “it's not that hard if you just write a thousand words a day.”",
+          "He tracked the streak in his own Commit app. It stood at about 75 days when his first book launched, and it kept going until it peaked at about 675 days. Then life broke it: a new baby, a house remodel and shingles, all at once. By September 2014 he'd restarted and was eight days back in.",
+          "His working days had a simple shape too. He blocked Facebook and Twitter on his computer and picked “one thing each day”. If that one thing got done, the day counted as a success. Most of the numbers on this page are Nathan's own, from his blog posts and interviews, and nobody has audited them, so read them as his figures."
+        ],
+        "pull": {
+          "text": "I had a habit of not finishing things.",
+          "cite": "Nathan, to Mixergy, September 2014"
+        }
+      },
+      {
+        "label": "The first version",
+        "title": "A book sold to 800 people made $12,000 in a day",
+        "paras": [
+          "He started writing The App Design Handbook in March 2012. About four months in, in July, he put up a landing page to collect emails. That page converted about 20 to 25% of visitors, which is a strong number for a simple signup page.",
+          "Before launch he warmed up the list in stages, first emailing about 40 people and then about 300. By launch day in September 2012 he had about 800 emails. He sold the book through Gumroad.",
+          "He'd done his homework on price. In March 2012 he studied two other designers who had launched books, one at a flat $39 and one with tiers. Their launches had made about $6,500 and $8,000 in their first 48 hours. He launched with tiers of his own: $39 for the book, and $129 for the book plus videos and code.",
+          "Then an advisor told him to push the top tier higher, and he did, eventually to $249. By September 2014 the tiers were $39.99, $249 and a $1,000 team licence. **He says moving to tiers doubled his revenue on the first book**, and tripled it on the second. That's his own estimate, but it's the most copyable pricing lesson in this whole series.",
+          "Day one brought in $12,000. A 2026 Tubefilter piece gives the first week as $19,000. By 2014 he said the book had made “a couple hundred thousand dollars” over its life."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Doing it again",
+        "title": "Two more books, and a bigger list each time",
+        "paras": [
+          "About 90 days after the first book he shipped a second one, Designing Web Applications. Its launch audience was about three times bigger than the first, because the first book had grown his list.",
+          "He did something smart with the top tier. He featured other experts in it, and didn't pay them, because he felt money “just screws up the whole relationship”. The experts got exposure, and he got a much more valuable package.",
+          "His third book, Authority, made $26,500 in its first 24 hours and over $50,000 in three weeks. One secondary write-up says the first two books together passed $80,000 in about three months, and a 2026 interview puts his total design book sales before Kit at more than $150,000. These numbers cover different time periods, which is why they don't line up neatly.",
+          "His launch style was simple. No affiliates at launch, and AppSumo only a few times. Each book got a one-week launch push, and then he let it “coast down to $2,500/month”. In 2015 the books and courses made $117,394 for about 230 hours of his time.",
+          "By 2014 his training products were bringing in “a quarter million a year”. And he was clear about what that money was for: he said he couldn't build software without a steady cash flow from training products."
+        ]
+      },
+      {
+        "label": "The first 1,000",
+        "title": "One guest post that pointed to something free",
+        "paras": [
+          "Here's a lesson that every marketer should tattoo somewhere. Nathan wrote guest posts on other sites that linked straight to his sales pages. They drove, in his words, “no sales”.",
+          "Then he wrote a 4,000-word guest post for Smashing Magazine called “How to Launch Anything”. This time, instead of linking to a sales page, **it linked to a free three-day email course**. That one post brought in over 1,000 subscribers, and he ties about $50,000 in revenue to them.",
+          "Same writer, same kind of reader, same topic. The only difference was what the reader was asked to do next. Buying from a stranger is a big ask. Getting a free email course is a small one, and the emails do the selling later.",
+          "He had a phrase for how he thought about winning someone over: “gradually over time you're going to see me everywhere.” Guest posts, his blog, the email course, the books. You'd meet him in five places before he ever asked for money."
+        ],
+        "pull": {
+          "text": "gradually over time you're going to see me everywhere",
+          "cite": "Nathan, quoted by Mailshake"
+        }
+      },
+      {
+        "label": "The software",
+        "title": "A challenge he set himself, and missed",
+        "paras": [
+          "ConvertKit started because MailChimp frustrated him. His thinking was that “if other people are just as frustrated as I am”, then he should solve it. He'd built a business on email, so he knew exactly what he wanted.",
+          "In December 2012 he announced a public “Web App Challenge”: get a piece of software to $5,000 a month in six months, spend no more than $5,000, and work on it 20 hours a week. He started early in 2013 with $5,000 of his own money. The first version was software for drip courses, the kind of automated email course that had built his own list. Landing pages only came much later, around August or September 2014.",
+          "Who actually built it is a little blurry. In March 2015 he wrote “I built ConvertKit with my exact use-case in mind.” In 2014 he told Mixergy it had been built by “a handful of different developers”, the latest one someone from his own audience. A lead developer, David Wheeler, joined on 2 January 2014. Our best reading is that he designed and started it, then handed the code to contractors and later to David, but that's our guess, not his statement.",
+          "On 1 July 2013, the challenge deadline, it was at $2,480 a month. He later revised that down to about $2,000. Either way, he'd missed his own goal.",
+          "And he kept paying for it. By March 2015 he'd put $55,000 into ConvertKit, and it was burning about $8,000 a month, not counting any salary for himself."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "Shut it down or double down",
+        "paras": [
+          "For a long time, ConvertKit was pitched as “email marketing for authors”. Looking back, he called that “a bad idea”, and the numbers agreed: it wasn't growing.",
+          "By October 2014 revenue had fallen to its low point. His March 2015 post gives the number as $1,207 a month. His 2015 review rounds it to $1,300, and another write-up says about $1,000. Whatever the exact figure, it was going the wrong way.",
+          "The problems weren't only money. He was dealing with spammers using the product, hacking problems, about 8% churn a month and, in his words, the stress of “running out of money”.",
+          "He wrote that his choice was this: “Shut it down or double down on growth.” He chose to double down. He put $50,000 behind growth, and at the end of 2014 he stepped back from the training business to focus on the software full time. The books were left to coast."
+        ],
+        "pull": {
+          "text": "Shut it down or double down on growth.",
+          "cite": "Nathan, 2015 review"
+        },
+        "chart": 0
+      },
+      {
+        "label": "Finding the money",
+        "title": "He stopped writing and started selling",
+        "paras": [
+          "The first change was the pitch. ConvertKit became “Email marketing for Professional Bloggers”. He called it the “Best decision ever.”",
+          "The second change was how he sold. He found that content marketing “doesn't work nearly as well for a new product”. So the team went direct. They emailed about 100 top sellers on LeanPub and Udemy and won 5 to 7 customers. They kept track of every sales conversation on a Trello board that started at the MicroConf conference. When someone asked how he did outreach, his answer was: “Mostly email, then I try to get on a Skype call.”",
+          "The third change was the offer, and this is the one to remember. **Anyone with a list of 10,000+ got a free concierge migration.** ConvertKit's team moved your whole list for you. The biggest reason people don't switch tools is the pain of moving, and he simply took that pain away. He targeted bloggers with 50,000+ subscribers.",
+          "It worked better than anyone could have hoped. Migrated customers churned at 0.25% a month, against 6% overall. That's 24 times stickier. He also built a Gumroad integration, which made sense, since Gumroad was where people like him sold their books.",
+          "His summary, in his 2015 review, was three words long: “Direct sales killed it.”"
+        ],
+        "pull": {
+          "text": "Direct sales killed it.",
+          "cite": "Nathan, 2015 review"
+        }
+      },
+      {
+        "label": "Scaling it",
+        "title": "From $1,207 to a company of 13",
+        "paras": [
+          "The monthly numbers from his March 2015 post show the turn clearly. $1,207 in October 2014. $1,646 by the end of that month. $2,100 in November. $3,237 in December. $4,067 by 15 January 2015. $4,561 in February. And just over $5,000 by March, finally hitting the goal he'd set back in 2012, about two years late.",
+          "Then it really took off. By the end of 2015 ConvertKit had grown 71 times in 14 months and had 13 people. His goals kept moving up through the year: $25,000 a month, then $35,000, $50,000, $83,000 (which is a $1M yearly run rate), and finally $100,000, which he said it “didn't quite” hit.",
+          "Hiring taught him something too. He quoted Danny Iny on why part-timers didn't work for him: “you get a quarter of their attention” when you pay for half of someone's time. It's his reason for not leaning on half-time help. By the end of 2015 there was a partner programme for referrals too.",
+          "A later write-up, with no date given, says ConvertKit reached $836,000 a month, a $10M run rate, with 30 people across 22 cities. The analyst firm Sacra estimates it at $33.5M a year in 2022, $38M in 2023 and $43M in 2024, with customers on average spending about the same each year as the year before.",
+          "On funding, Nathan says he raised $3M in an angel round from his own customers, at a time when Kit had 3,200 paying customers. Kit's line is that “Kit's investors are our customers”. He also remembers investors telling him Kit could never reach $100M a year."
+        ],
+        "chart": 2
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Kit today, and a middle class for creators",
+        "paras": [
+          "ConvertKit is now called Kit, based in Boise, with a distributed remote team whose size isn't public. It reports more than 650,000 creators in May 2026, though another report that July says 550,000. It sells subscriptions and has added commerce, an ad network and an app store. He says, “We don't have growth targets to hit.” And he expects to still be running Kit in ten years.",
+          "The feature that interests us most is recommendations, where creators recommend each other's newsletters. Kit says it drives about 40% of subscriber growth on the platform, and Ryan Holiday's Daily Stoic gained about 350,000 subscribers through it. It's the same instinct as the free email course from 2013: let people meet you through something generous.",
+          "In 2026 Nathan opened Kit Studios in Boise, Chicago and New York's Flatiron district, the New York one in June. They're free for paying Creator and Pro users. He explained the thinking by comparing them with ads: when he spends money on Meta ads, “the creators who saw that ad are not better off”. A studio actually helps them.",
+          "There's also Subscriber Signals, and a Kit MCP server that connects Kit to ChatGPT, Claude, Gemini and Cursor. He says what it can do compared with competitors is “just night and day”. The Craft + Commerce conference ran in Boise from 10 to 13 June 2026 with about 400 people, and the 2027 one is set for 9 to 12 June. He still hosts The Nathan Barry Show, and episode 101 was about AI voice agents for creators.",
+          "Nathan's 2026 interviews sound like someone who is worried about AI and excited by it at the same time. On trust online, he said: “I don't even know if I believe that you exist.” If anything can be faked, real connection becomes the thing people pay for. He also thinks the platforms have changed: “The algorithms don't reward followers in the same way they used to.” It's the same reason he's always told creators to own their email list. In July 2026 he put it bluntly: “email sold more than every other channel combined.”",
+          "His bigger hope is about who gets to make a living. “I want to see a thriving middle class in the Creator Economy,” he said, meaning people earning somewhere between $60,000 and $500,000+ a year. Not a few superstars, but many ordinary creators doing well. And, he says, “You no longer have to be in LA or New York” to do it.",
+          "What he says about motivation is useful for anyone starting out: “that motivation is going to last a week if you're lucky”, so you need something else driving you. For him, that something was a system: 1,000 words a day, one thing each day, and a list that grew with every book. And looking back at his career, he credits people, not tactics: the breakthroughs “came from these connections with other people.” Think of the advisor who told him to raise the price, the experts in his top tier, and the bloggers he emailed one by one."
+        ],
+        "pull": {
+          "text": "I want to see a thriving middle class in the Creator Economy.",
+          "cite": "Nathan, to Net Influencer, May 2026"
+        }
+      }
+    ],
+    "failuresTitle": "Dozens of products, one wrong market, one near death",
+    "failuresIntro": "Nathan's failures are well documented because he wrote about them himself, often in public, while they were happening.",
+    "failures": [
+      {
+        "year": "Before 2012",
+        "name": "Dozens of products nobody bought",
+        "what": "He started dozens of ideas and built many products that never sold, including Commit, an iPhone app for tracking a writing streak. He used Commit himself, but it never became a business.",
+        "lesson": "A tool you use every day can still be a habit, not a product, until someone else pays for it."
+      },
+      {
+        "year": "2013",
+        "name": "The Web App Challenge",
+        "what": "He set a public goal of $5,000 a month in six months on $5,000 and 20 hours a week. By the 1 July 2013 deadline ConvertKit was at $2,480, later revised to about $2,000.",
+        "lesson": "Missing a public goal isn't the end, as long as you learn why you missed it."
+      },
+      {
+        "year": "2013 to 2014",
+        "name": "Email marketing for authors",
+        "what": "ConvertKit was first pitched at authors. He later called that positioning “a bad idea”, and switching to professional bloggers was his “Best decision ever.”",
+        "lesson": "If growth is stuck, check who you're selling to before you change what you're selling."
+      },
+      {
+        "year": "Oct 2014",
+        "name": "The $1,207 month",
+        "what": "Revenue fell to $1,207 a month by his March 2015 post, with spammers, hacking problems, about 8% churn and the stress of running out of money. He wrote that it was “Shut it down or double down on growth.”",
+        "lesson": "When you do double down, change the pitch, the channel and the offer, not just the effort."
+      },
+      {
+        "year": "2013 to 2014",
+        "name": "Content that didn't sell software",
+        "what": "Guest posts that pointed to his sales pages drove “no sales”, and he found content marketing “doesn't work nearly as well for a new product”. Direct email and Skype calls did.",
+        "lesson": "Content builds an audience over time, but a new product's first customers usually come one conversation at a time."
+      },
+      {
+        "year": "Not dated",
+        "name": "Investors who said no",
+        "what": "He recalls being told Kit couldn't reach $100M a year. He raised from customers instead.",
+        "lesson": "If investors don't believe you, your customers might, and they ask for less control."
+      }
+    ],
+    "playbookTitle": "How the books and the software found their people",
+    "playbook": [
+      {
+        "title": "A landing page months before launch",
+        "text": "The App Design Handbook's signup page went up in July 2012, about four months into writing. It converted 20 to 25% of visitors, and he launched in September to about 800 emails."
+      },
+      {
+        "title": "Warm up the list in steps",
+        "text": "Before launch he emailed about 40 people first, then about 300, then the full list. Each book's launch got one week of focus before he let it coast."
+      },
+      {
+        "title": "Price in tiers",
+        "text": "A $39 book, a $249 package with videos and code, and later a $1,000 team licence. He says tiers doubled revenue on book one and tripled it on book two."
+      },
+      {
+        "title": "Guest posts that give something away",
+        "text": "A 4,000-word Smashing Magazine post, “How to Launch Anything”, linked to a free three-day email course. It brought in over 1,000 subscribers, worth about $50,000 to him. Guest posts linking to sales pages drove “no sales”."
+      },
+      {
+        "title": "Reposition to a better market",
+        "text": "He moved ConvertKit from authors to professional bloggers and went after the ones with 50,000+ subscribers. He called it his “Best decision ever.”"
+      },
+      {
+        "title": "Direct outreach by email and Skype",
+        "text": "The team emailed about 100 top sellers on LeanPub and Udemy and won 5 to 7 customers, tracking every conversation on a Trello board. His method: “Mostly email, then I try to get on a Skype call.”"
+      },
+      {
+        "title": "Free concierge migration",
+        "text": "Anyone with 10,000+ subscribers got their list moved for free. He targeted bloggers with 50,000+ subscribers, and migrated customers churned at 0.25% a month against 6% overall."
+      },
+      {
+        "title": "Integrate where your buyers already sell",
+        "text": "He built a Gumroad integration, because that's where creators like him sold their books. By the end of 2015 there was also a partner programme for referrals."
+      },
+      {
+        "title": "Let creators recommend each other",
+        "text": "Today Kit's recommendations feature drives about 40% of subscriber growth on the platform. Daily Stoic alone gained about 350,000 subscribers through it."
+      }
+    ],
+    "charts": [
+      {
+        "title": "ConvertKit monthly recurring revenue, 2013 to 2015",
+        "points": [
+          {
+            "label": "Jul 2013",
+            "value": 2480,
+            "display": "$2,480"
+          },
+          {
+            "label": "Oct 2014",
+            "value": 1207,
+            "display": "$1,207",
+            "down": true
+          },
+          {
+            "label": "Nov 2014",
+            "value": 2100,
+            "display": "$2,100"
+          },
+          {
+            "label": "Dec 2014",
+            "value": 3237,
+            "display": "$3,237"
+          },
+          {
+            "label": "Jan 2015",
+            "value": 4067,
+            "display": "$4,067"
+          },
+          {
+            "label": "Feb 2015",
+            "value": 4561,
+            "display": "$4,561"
+          },
+          {
+            "label": "Mar 2015",
+            "value": 5020,
+            "display": "$5,020"
+          }
+        ],
+        "note": "Nathan's own numbers from his March 2015 post. He later revised July 2013 to about $2,000. The January figure is from 15 January."
+      },
+      {
+        "title": "What his book launches made at the start",
+        "points": [
+          {
+            "label": "Book 1, day one",
+            "value": 12000,
+            "display": "$12,000"
+          },
+          {
+            "label": "Book 1, week one",
+            "value": 19000,
+            "display": "$19,000"
+          },
+          {
+            "label": "Authority, 24 hours",
+            "value": 26500,
+            "display": "$26,500"
+          },
+          {
+            "label": "Authority, 3 weeks",
+            "value": 50000,
+            "display": "$50,000+"
+          }
+        ],
+        "note": "His own figures. The first-week number is from a 2026 Tubefilter piece citing him."
+      },
+      {
+        "title": "Kit's yearly revenue, outside estimates",
+        "points": [
+          {
+            "label": "2022",
+            "value": 33.5,
+            "display": "$33.5M"
+          },
+          {
+            "label": "2023",
+            "value": 38,
+            "display": "$38M"
+          },
+          {
+            "label": "2024",
+            "value": 43,
+            "display": "$43M"
+          }
+        ],
+        "note": "Sacra estimates, not company figures. They exclude ad network revenue."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "Before 2012",
+        "text": "Designs software and iPhone apps. Starts dozens of products nobody buys, including the Commit app.",
+        "big": false
+      },
+      {
+        "when": "Mar 2012",
+        "text": "Starts writing The App Design Handbook at 1,000 words a day.",
+        "big": false
+      },
+      {
+        "when": "Sep 2012",
+        "text": "Launches the book on Gumroad to about 800 emails. Makes $12,000 on day one.",
+        "big": true
+      },
+      {
+        "when": "Dec 2012",
+        "text": "Ships Designing Web Applications about 90 days later, and announces the Web App Challenge.",
+        "big": false
+      },
+      {
+        "when": "Early 2013",
+        "text": "Starts ConvertKit with $5,000 of his own money, as drip course software.",
+        "big": true
+      },
+      {
+        "when": "Jul 2013",
+        "text": "Misses the challenge goal at $2,480 a month.",
+        "big": false
+      },
+      {
+        "when": "2 Jan 2014",
+        "text": "David Wheeler joins as lead developer.",
+        "big": false
+      },
+      {
+        "when": "Oct 2014",
+        "text": "Revenue hits its low at $1,207 a month. He chooses to double down, putting $50,000 behind growth.",
+        "big": true
+      },
+      {
+        "when": "Late 2014",
+        "text": "Repositions to professional bloggers, offers free concierge migration, and goes full time on the software.",
+        "big": true
+      },
+      {
+        "when": "Mar 2015",
+        "text": "Passes $5,000 a month, two years late.",
+        "big": false
+      },
+      {
+        "when": "End of 2015",
+        "text": "ConvertKit has grown 71 times in 14 months, with 13 people.",
+        "big": true
+      },
+      {
+        "when": "2024",
+        "text": "Sacra estimates Kit at about $43M a year.",
+        "big": false
+      },
+      {
+        "when": "Jun 2026",
+        "text": "Opens Kit Studios in New York and runs Craft + Commerce in Boise with about 400 people.",
+        "big": false
+      }
+    ],
+    "quotes": [
+      {
+        "text": "I had a habit of not finishing things.",
+        "cite": "Mixergy interview, September 2014"
+      },
+      {
+        "text": "it's not that hard if you just write a thousand words a day.",
+        "cite": "quoting Chris Guillebeau's advice, Mixergy, 2014"
+      },
+      {
+        "text": "you never again start from scratch",
+        "cite": "Mixergy interview, September 2014"
+      },
+      {
+        "text": "Shut it down or double down on growth.",
+        "cite": "his 2015 review"
+      },
+      {
+        "text": "Direct sales killed it.",
+        "cite": "his 2015 review"
+      },
+      {
+        "text": "The algorithms don't reward followers in the same way they used to.",
+        "cite": "Net Influencer, May 2026"
+      },
+      {
+        "text": "email sold more than every other channel combined.",
+        "cite": "Tubefilter, July 2026"
+      },
+      {
+        "text": "I don't even know if I believe that you exist.",
+        "cite": "on AI and trust, Net Influencer, May 2026"
+      }
+    ],
+    "steal": [
+      "Put up a signup page while you're still making the thing. Nathan's went up four months before launch and turned 20 to 25% of visitors into emails.",
+      "Sell in three tiers, not one price. A basic version, a full package and a team licence. He says it doubled and then tripled his revenue for the same work.",
+      "When you write for someone else's audience, send readers to something free, not a sales page. One guest post linked to a free email course built his first 1,000 subscribers.",
+      "If a new product is stuck, stop waiting for content to work. Make a list of 100 people who should use it, email them, and get on a call.",
+      "Find the pain of switching to you and do that work yourself. His free migrations made customers 24 times stickier.",
+      "Keep a money engine running while you build the risky thing. His books paid for two years of software that wasn't working yet."
+    ],
+    "sources": [
+      {
+        "title": "Mixergy, Nathan Barry interview (Sep 2014)",
+        "url": "https://mixergy.com/interviews/nathan-barry-convertkit-interview/"
+      },
+      {
+        "title": "Nathan Barry, Growing ConvertKit to $5,020 in monthly recurring revenue (Mar 2015)",
+        "url": "https://medium.com/@nathanbarry/growing-convertkit-to-5-020-in-monthly-recurring-revenue-91f10094d8a1"
+      },
+      {
+        "title": "Nathan Barry, 2015 review",
+        "url": "https://nathanbarry.com/2015-review/"
+      },
+      {
+        "title": "Mailshake, the story of Nathan Barry",
+        "url": "https://mailshake.com/blog/story-nathan-barry/"
+      },
+      {
+        "title": "Net Influencer, Kit founder Nathan Barry on AI and connection (May 2026)",
+        "url": "https://www.netinfluencer.com/kit-founder-nathan-barry-as-ai-pushes-creators-to-work-alone-connection-becomes-the-edge/"
+      },
+      {
+        "title": "Tubefilter, Kit and Craft + Commerce (Jul 2026)",
+        "url": "https://www.tubefilter.com/2026/07/14/kit-nathan-barry-content-creator-email-marketing-craft-commerce/"
+      },
+      {
+        "title": "Axios, Kit Studios New York (Jun 2026)",
+        "url": "https://axios.com/2026/06/11/kit-studios-nyc-creator-community"
+      },
+      {
+        "title": "Sacra, ConvertKit at $43M ARR (estimates)",
+        "url": "https://sacra.com/research/convertkit-at-43m-arr/"
+      },
+      {
+        "title": "The Nathan Barry Show, episode 101 on AI voice agents (2026)",
+        "url": "https://nathanbarry.com/how-creators-can-use-ai-voice-agents-to-grow-their-business-in-2026-101/"
+      }
+    ]
+  }
+}

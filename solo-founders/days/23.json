@@ -1,0 +1,252 @@
+{
+  "n": 23,
+  "name": "Varun Mayya",
+  "short": "Varun",
+  "wisdom": "Make your own channel the live demo of the service you sell.",
+  "email": {
+    "subject": "Not solo. Still worth stealing from.",
+    "hook": "Varun Mayya's YouTube channel sat at about 100K followers for six years, and in October 2026 he said his content ecosystem drew about 1.5 billion views in a single month.",
+    "lead": [
+      "Let's be plain about this one: Varun is not a solo founder. He raised venture money for two earlier startups, co-founded his current company Aeos with his wife Achina, and Aeos reportedly has about 500 employees. If you want a one-person story, this isn't it.",
+      "So why is he here? Because he has built the clearest Indian example of a creator whose own channel sells a B2B business. And the way he uses AI to make videos is something any of us can try at a tiny scale this week."
+    ],
+    "stats": [
+      {"value": "1.5B", "label": "views in one month, Oct 2026, he says"},
+      {"value": "500", "label": "employees at Aeos, reportedly"},
+      {"value": "2,000", "label": "videos made in one month by a 17-person team"}
+    ],
+    "chart": {
+      "title": "Margin on his video services business, by his own account",
+      "points": [
+        {"label": "Before AI", "value": 10, "display": "about 10%"},
+        {"label": "After AI", "value": 50, "display": "nearly 50%"}
+      ],
+      "note": "Reported by YourStory in October 2026. In January 2026 he described the margins as almost 3 to 4 times a traditional video company's."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Aeos is a bootstrapped media company in Bengaluru. It makes and distributes content for brands like Red Bull, Amazon Prime and IPL teams, scouts talent and builds AI tools. His own channels are the proof that the system works, pulling 100M+ views a month on their own, he says.",
+          "The twist: after years of being known for AI avatars, his team has **shifted toward vlogs and human-led content**, because feeds are now full of AI. He also has a games studio, Aeos Games, building an Indian action game set in a recreated Chanderi. It was expected in fall 2026, and whether it has shipped hasn't been confirmed."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "Aeos earns from brands, not from his audience directly. It sells content production, distribution, talent scouting and AI tools. He has never published revenue, so any income figure you see for him online is a guess.",
+          "What he has shared is margin. He says AI lifted the margins of his video services business from about 10% to nearly 50%. That's his own claim, relayed by YourStory, and so are the view counts."
+        ]
+      },
+      {
+        "title": "How he built the video machine",
+        "paras": [
+          "Every morning he records a voice note with the day's news and his take on it. Writers turn it into scripts. ElevenLabs makes his voice, trained on his YouTube archive, and HeyGen or a custom model makes the avatar. **The whole pipeline takes under ten minutes.**",
+          "A team of 17, in pods of four editors, made 2,000 videos in one month this way. The team also handles about 100,000 comments a day. His advice for anyone starting an avatar channel: first hire editors who can run channels, and start with HeyGen, ElevenLabs and Google Docs."
+        ]
+      },
+      {
+        "title": "How the business found its customers",
+        "paras": [
+          "This part is a lovely accident. Aevy TV started as an infotainment channel mixing information with skits. When money ran short, one of the video editors suggested they teach video editing. That became a training business, described as one of the largest editing schools in the world.",
+          "From teaching editing, it moved into doing the editing for companies like Zoho, Zerodha, Cleartrip and Vodafone. **Audience first, then a course sold to that audience, then services for brands, then AI to cut the cost.** Each step paid for the next."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Six flat years. His channel sat at about 100K followers for six years before anything took off. When he started using AI avatars, people criticised him for it. And a tweet saying software might not exist in its current form four years later drew a pile-on.",
+          "He came out of it saying: “Once you've been cancelled, then you can say whatever you want.” Before all that, there were earlier companies that ended in modest sales rather than big wins, and one December where his studio nearly ran out of cash."
+        ]
+      }
+    ],
+    "tryToday": "Record a two-minute voice note on one piece of news in your industry and your take on it. Turn it into a script and a short video today, and time how long the whole thing takes.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Varun Mayya has been starting companies since college: a t-shirt brand, a VC-backed recruitment startup, an idea studio, a community app, and now a media company with hundreds of people. He is not a solo founder in any sense. He's here because his own content became the shop window for a services business, and because his AI video pipeline is one of the most detailed anyone has shared.",
+    "stats": [
+      {"value": "1.5B", "num": 1.5, "prefix": "", "suffix": "B", "label": "views across his content in one month", "note": "October 2026, his own number"},
+      {"value": "500", "num": 500, "prefix": "", "suffix": "", "label": "employees at Aeos", "note": "reported, January 2026"},
+      {"value": "50%", "num": 50, "prefix": "nearly ", "suffix": "%", "label": "margin on services after AI, up from about 10%", "note": "his own claim"},
+      {"value": "6 years", "num": 6, "prefix": "", "suffix": " years", "label": "stuck at about 100K followers", "note": "before it took off"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Modding fighting games at 11",
+        "paras": [
+          "Varun was a tinkerer from the start. At 11 he was modifying characters in a fighting game called Mugen. One profile says he started writing code at 11; another says he started coding at 13, in Delphi. Either way, he was writing software before most of us had an email address.",
+          "He went on to study computer science engineering at Manipal. He's widely said to have dropped out, and there's even a podcast episode titled that way, but he hasn't confirmed it in writing anywhere, so we're not stating it as fact.",
+          "His first business was in college: SIZR, a t-shirt brand he started with friends. It sold about 500 shirts in its first year. What happened to it after that isn't reported.",
+          "Then he freelanced for US clients. He found the work dull, but it taught him about price parity, the gap between what work costs in India and what it's worth abroad. **He saved the freelance money and used it to build his next company.**"
+        ]
+      },
+      {
+        "label": "The startup years",
+        "title": "₹1.7 crore while still a student",
+        "paras": [
+          "The company was Jobspire, a recruitment platform. It raised ₹1.7 crore in venture capital while its founders were still students, which YourStory described as one of the youngest teams to do so. It served 4 million requests in 2016 and was sold to a New York-based company in 2017. The price was never disclosed.",
+          "Next, with Shashank Udupa, a former investment banker, he co-founded Avalon Labs in 2017. The idea was a “sandbox” for ideas: build up cash, then use it to incubate and invest in startups. Within two years it had 50 employees and six investments.",
+          "It wasn't smooth. One December, with 20 people on staff and no outside funding, the studio nearly ran out of runway. Varun phoned dozens of people he knew and closed two deals in the last ten days of the month. That's the kind of story nobody puts on a pitch deck, and it's the most useful thing in this chapter. **When the money is about to run out, your contact list is your runway.**",
+          "He has named the people who backed him then: his mother, his co-founder Shashank Udupa, and Ravi Srivastava of Purvi Capital, an early investor in Jobspire. Around this time he also co-wrote Pyjama Profit, a freelancing guide for millennials, published by Bloomsbury."
+        ],
+        "pull": {"text": "The market decides", "cite": "Varun, on testing ideas, YourStory, 2019"}
+      },
+      {
+        "label": "The detour",
+        "title": "A game for higher education, then a Discord rival",
+        "paras": [
+          "In February 2020 a new company, Avalon Meta, raised $420,000 led by Peerplays, a blockchain gaming firm, with Purvi Capital and Abhinav Chhikara joining. The pitch was bold. Not to “gamify” courses, he said, but to “make a full-fledged, proper game” out of higher education. His reasoning was that most courses keep only about 5% of their learners.",
+          "That idea was dropped. The company became Scenes, a voice and chat community app that launched in March 2021. In May 2021 it raised an undisclosed pre-Series A from a list that reads like Indian startup royalty: Kunal Shah, Gaurav Munjal, Tanmay Bhat, Better Capital, Blume Founders Fund and others. At that point it had about 30,000 users, more than 1,000 live communities and over 5 million voice minutes.",
+          "Then they hit a wall. A general Discord-style platform, he found, struggles to grow past 50,000 to 100,000 users without getting noisy. So Scenes became a business tool for creators to run their own communities. He'd used Discord himself before building Scenes, partly out of a fear that a platform could remove you at any time.",
+          "On 21 June 2023, Unacademy's Graphy acquired Scenes. Terms were not disclosed. It was a modest exit, not a breakout."
+        ],
+        "pull": {"text": "Not gamify an existing solution, but make a full-fledged, proper game.", "cite": "Varun, on Avalon Meta, YourStory, 2020"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "Six years at 100K",
+        "paras": [
+          "All through these companies, he was also making content. And for six years, by his own account, his channel sat at about 100K followers. Not growing, not dying. Just stuck.",
+          "When he started on YouTube or Instagram, which videos finally broke out, and the exact month the plateau ended have never been made public.",
+          "What we do know is what changed. He saw early what ChatGPT and DALL-E 2 could do, and he started experimenting with AI avatars of himself. People criticised him for it. **He kept going anyway**, and that experiment became the machine behind everything that came next."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "An editing school born from a cash crunch",
+        "paras": [
+          "The content business began as Aevy TV, a bootstrapped infotainment channel that mixed information with skits. Then, again, money ran short.",
+          "This time the fix came from inside the team. One of the video editors suggested they teach video editing. It worked, and it grew into a training business that has been described as one of the largest editing schools in the world.",
+          "From there it moved into content services, doing the video work for brands like Zoho, Zerodha, Cleartrip and Vodafone. It has never been made fully clear how Aevy TV and Aeos are linked, whether one was renamed or they're separate companies. What's clear is the order. **Content built the audience, the audience bought a course, and the course led to brand work.**",
+          "In 2022 he co-founded Aeos with his wife, Achina Mayya. It's a bootstrapped media and tech company in Bengaluru, and AEOS Labs was set up to bring AI into the services work. He says that lifted margins from about 10% to nearly 50%. The two of them have also written The Content Creator Handbook together."
+        ]
+      },
+      {
+        "label": "How the machine works",
+        "title": "A voice note at breakfast, a video in ten minutes",
+        "paras": [
+          "This is the most detailed part of his story, and the most copyable. Each morning he records a voice note with the news and his opinion on it. Writers turn that note into scripts.",
+          "His voice comes from ElevenLabs, trained on his YouTube archive. The avatar comes from HeyGen or a custom model. From voice note to finished video takes under ten minutes, he says.",
+          "A team of 17 runs this, working in pods of four editors, and in one month they made 2,000 videos. They also handle about 100,000 comments a day. His own channels get more than 100 million views a month. In January 2026 Aeos was reported to have passed a billion views in a month, and in October 2026 he put his ecosystem at about 1.5 billion views in the month before he spoke at TechSparks.",
+          "One thing to flag: **nearly every number on this page comes from Varun himself**, passed on by journalists, because Aeos has never published revenue or audited figures.",
+          "His advice for anyone starting an AI-avatar channel is very practical. Your first hires are editors who can run channels. Your first tools are HeyGen, ElevenLabs and Google Docs. And the biggest talent gap for AI media in India, he says, is skilled writers."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Finding his voice",
+        "title": "Cancelled, and freer for it",
+        "paras": [
+          "His team built AutoCode Pro, an agent on GPT-4 that wrote code and Chrome extensions; YourStory places this in 2022. Around then he tweeted that software might not exist in its current form four years later. The backlash was harsh.",
+          "Instead of going quiet, he loosened up. He felt freer to share opinions and moved beyond serious tech commentary into humour. At TechSparks in October 2026 he put it simply: “Once you've been cancelled, then you can say whatever you want.” He also said: “I think the sign of intelligence is adaptation.”",
+          "His format trick now is something he calls “frame shifting”: tying a topic to whatever people are already talking about. His example was a video on the economics of jaggery that referenced the film Dhurandhar. **Same subject, new door in.**",
+          "He is also clear about who he's making things for. “Alienating 90% of India helps no one,” he said. He simplifies content to reach the broadest audience, and he credits Tanmay Bhat for that thinking."
+        ],
+        "pull": {"text": "Once you've been cancelled, then you can say whatever you want.", "cite": "Varun, TechSparks, October 2026"}
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Back to human, and a video game",
+        "paras": [
+          "The man best known for AI avatars has moved his team toward vlogs and human-led content. His reasoning: “Ironically, the more AI floods feeds, the more people crave human touch.” He also thinks “Anyone can mimic the top 10 Indian creators' content with AI,” but believes audiences stay loyal to the originals.",
+          "He has clear ethics lines on AI. Deepfaking yourself is fine. Using strangers' identities is risky. Negative deepfakes of anyone are off-limits.",
+          "Aeos Games is working on Unleash the Avatar, an Indian action game that has been compared to Sekiro and Ghost of Tsushima. It recreates the town of Chanderi, has more than 1,000 scanned assets and a team of 30+ full and part-time staff. The team's line: “The future of content is gaming.” Release was expected in fall 2026, and whether it has shipped hasn't been confirmed yet.",
+          "He is also exploring offline businesses to diversify. And he says bootstrapping Aeos means he no longer needs outside validation or has to pitch investors. At this scale, he warns, “What will break is your internal firmware, internal software.” He means the people and processes, not the code."
+        ]
+      },
+      {
+        "label": "How he thinks",
+        "title": "The market decides",
+        "paras": [
+          "Back in 2019 he summed up his approach to ideas in three words: “The market decides.” In the same interview he said he is very motivated by what he likes doing, but won't move a muscle for something that doesn't interest him.",
+          "He now says he has moved from technology-first thinking to starting from a problem. He also recommends doing a personal SWOT analysis before picking what to build or post about.",
+          "For a solo builder, the steal isn't the 500 people. **It's the shape: your own content is the demo, and the business sells what the demo proves.** Varun sells brands the same pipeline that gets him 100 million views a month. You can do the same thing with one channel, one service and one case study, which is you."
+        ]
+      }
+    ],
+    "failuresTitle": "Pivots, modest exits and six flat years",
+    "failuresIntro": "Most of Varun's companies ended in pivots or sales, not shutdowns. Here are the documented low points.",
+    "failures": [
+      {"year": "2017 to 2019", "name": "Nearly out of runway at Avalon Labs", "what": "One December, with 20 staff and no outside funding, the studio nearly ran out of cash. He phoned dozens of contacts and closed two deals in the last ten days of the month.", "lesson": "Keep your network warm, because one day it may be your only source of cash."},
+      {"year": "2020", "name": "The higher-education game", "what": "Avalon Meta raised $420K to turn higher education into a real game, arguing most courses keep only about 5% of learners. The idea was dropped and the company became Scenes.", "lesson": "Raising money for an idea doesn't prove the idea; users do."},
+      {"year": "2021 to 2023", "name": "Scenes hits a ceiling", "what": "A general community app struggled to grow past 50,000 to 100,000 users without becoming noisy. It pivoted to a creator tool and was sold to Graphy in June 2023 on undisclosed terms.", "lesson": "Know the natural ceiling of your category before you plan for scale."},
+      {"year": "Six years", "name": "Stuck at 100K followers", "what": "His channel sat at about 100K followers for six years. When he started using AI avatars, he was criticised for it.", "lesson": "A long plateau can mean the format is wrong, not the person."},
+      {"year": "About 2022", "name": "The software tweet backlash", "what": "After his team built AutoCode Pro, he tweeted that software might not exist in its current form four years later, and drew heavy backlash. He came out of it feeling freer to speak.", "lesson": "Surviving one public pile-on can make you braver, not quieter."}
+    ],
+    "playbookTitle": "How he built distribution, then sold it",
+    "playbook": [
+      {"title": "Sell your audience a skill you already have", "text": "When Aevy TV ran short of money, an editor suggested teaching video editing. That training business became one of the largest editing schools in the world."},
+      {"title": "Turn the skill into a service for brands", "text": "From teaching editing, the business moved into doing it for Zoho, Zerodha, Cleartrip and Vodafone, and later Red Bull, Amazon Prime and IPL teams."},
+      {"title": "Use your own channels as the demo", "text": "His channels pull 100M+ views a month, he says. Brands buying from Aeos can see the pipeline working before they pay."},
+      {"title": "Build a ten-minute AI pipeline", "text": "A morning voice note, writers turning it into scripts, ElevenLabs for his voice and HeyGen or a custom model for the avatar. A 17-person team made 2,000 videos in one month this way."},
+      {"title": "Use AI to fix margins, not just output", "text": "AEOS Labs applied AI to the services business, and he says margins went from about 10% to nearly 50%."},
+      {"title": "Frame shift every topic", "text": "Tie a subject to something already trending, like his jaggery-economics video that referenced the film Dhurandhar. New topic, familiar door."},
+      {"title": "Simplify for the whole country", "text": "“Alienating 90% of India helps no one.” He keeps content broad and simple, crediting Tanmay Bhat for the idea."},
+      {"title": "Go human when the feed goes AI", "text": "In 2026 his team shifted toward vlogs and human-led content because feeds are saturated with AI."}
+    ],
+    "charts": [
+      {
+        "title": "Headcounts reported over the years",
+        "points": [
+          {"label": "Avalon Labs, about 2019", "value": 50, "display": "50"},
+          {"label": "Aeos AI-avatar team, 2026", "value": 17, "display": "17"},
+          {"label": "Aeos Games, 2025", "value": 30, "display": "30+"},
+          {"label": "Aeos overall, 2026", "value": 500, "display": "about 500"}
+        ],
+        "note": "From YourStory and AIM. The Aeos total is reported, not confirmed by the company."
+      },
+      {
+        "title": "Monthly views across his content, his own numbers",
+        "points": [
+          {"label": "His own channels, Jan 2026", "value": 100, "display": "100M+"},
+          {"label": "Aeos, Jan 2026", "value": 1000, "display": "1B+"},
+          {"label": "Ecosystem, Oct 2026", "value": 1500, "display": "about 1.5B"}
+        ],
+        "note": "Bars are in millions. The January Aeos figure was described as reported."
+      }
+    ],
+    "timeline": [
+      {"when": "Age 11", "text": "Modifies characters in the game Mugen and starts writing code.", "big": false},
+      {"when": "College", "text": "Starts SIZR, a t-shirt brand that sells about 500 shirts in year one. Freelances for US clients.", "big": false},
+      {"when": "2016", "text": "Jobspire, his VC-backed recruitment startup, serves 4 million requests.", "big": false},
+      {"when": "2017", "text": "Jobspire is sold to a New York company. He co-founds Avalon Labs with Shashank Udupa.", "big": true},
+      {"when": "Feb 2020", "text": "Avalon Meta raises $420K to make higher education into a game.", "big": false},
+      {"when": "Mar 2021", "text": "Scenes launches as a voice and chat community app.", "big": false},
+      {"when": "2022", "text": "Co-founds Aeos with his wife Achina Mayya.", "big": true},
+      {"when": "Jun 2023", "text": "Graphy acquires Scenes, terms undisclosed.", "big": false},
+      {"when": "Jan 2026", "text": "A 17-person team makes 2,000 videos in a month. Aeos is reported to have about 500 staff.", "big": true},
+      {"when": "Oct 2026", "text": "At TechSparks he says his content drew about 1.5 billion views in the past month.", "big": false},
+      {"when": "Fall 2026", "text": "Expected release of Unleash the Avatar from Aeos Games. Not confirmed.", "big": false}
+    ],
+    "quotes": [
+      {"text": "The market decides", "cite": "YourStory, 2019"},
+      {"text": "Ironically, the more AI floods feeds, the more people crave human touch.", "cite": "YourStory, January 2026"},
+      {"text": "Anyone can mimic the top 10 Indian creators' content with AI.", "cite": "YourStory, January 2026"},
+      {"text": "Alienating 90% of India helps no one.", "cite": "YourStory, January 2026"},
+      {"text": "Once you've been cancelled, then you can say whatever you want.", "cite": "TechSparks, October 2026"},
+      {"text": "I think the sign of intelligence is adaptation.", "cite": "TechSparks, October 2026"},
+      {"text": "content is the only way to beat it", "cite": "On India's trust deficit, YourStory, 2022"}
+    ],
+    "steal": [
+      "Treat your own channel as the case study for whatever service you sell. Prospects trust what they can watch.",
+      "When money runs short, ask your team and your audience what they would pay you to teach. His editing school came from one editor's suggestion.",
+      "Try his pipeline on a small scale: a morning voice note, a script, a voice clone and an avatar. Measure how long one video takes.",
+      "Look at AI for margin, not only for volume. The same work at lower cost is a better business even if output stays flat.",
+      "Use frame shifting: take a subject you care about and open it through something people are already discussing this week."
+    ],
+    "sources": [
+      {"title": "YourStory: AI, authenticity and the creator's edge, lessons from Varun Mayya (Jan 2026)", "url": "https://yourstory.com/2026/01/ai-authenticity-the-creators-edge-lessons-from-varun-mayya"},
+      {"title": "YourStory: Cancellation may be a creator's biggest turning point (Oct 2026)", "url": "https://yourstory.com/2026/10/cancellation-creators-biggest-turning-point-varun-mayya"},
+      {"title": "YourStory: Avalon Labs founder Varun Mayya (Oct 2019)", "url": "https://yourstory.com/2019/10/avalon-labs-founder-varun-mayya"},
+      {"title": "YourStory: Avalon Meta raises $420K (Feb 2020)", "url": "https://yourstory.com/2020/02/funding-b2b-startup-avalon-meta-blockchain-peerplays"},
+      {"title": "YourStory: Scenes pre-Series A funding (May 2021)", "url": "https://yourstory.com/2021/05/startup-funding-alert-scenes-avalon-kunal-shah-gaurav-munjal-kalyan-krishnamurthy"},
+      {"title": "YourStory: Scenes founder Varun Mayya on creators and communities (Jul 2022)", "url": "https://yourstory.com/2022/07/scenes-founder-varun-mayya-creator-youtube-discord-community-build-business"},
+      {"title": "Inc42: Unacademy's Graphy acquires Scenes (Jun 2023)", "url": "https://inc42.com/buzz/unacademys-graphy-acquires-scenes-to-strengthen-creator-offerings"},
+      {"title": "AIM: Varun Mayya teases Unleash the Avatar (Apr 2025)", "url": "https://analyticsindiamag.com/ai-news-updates/varun-mayya-teases-unleash-the-avatar-game-project-from-india-exclusive/"}
+    ]
+  }
+}

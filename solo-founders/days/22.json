@@ -1,0 +1,234 @@
+{
+  "n": 22,
+  "name": "Ishan Sharma",
+  "short": "Ishan",
+  "wisdom": "When brands keep asking you for content, sell them the production too.",
+  "email": {
+    "subject": "His first YouTube cheque was $1",
+    "hook": "In 2020 Ishan Sharma's YouTube channel paid him $1, and in one month of 2024, at 22, he says he made over ₹35 lakh.",
+    "lead": [
+      "Ishan is not a solo founder. He co-founded an agency, MarkitUp, with his college roommate, and by July 2022 it had a remote team of 25. But his story is the cleanest example we have of a student in his parents' house, during lockdown, turning a channel into a company.",
+      "The bit we care about is the turn. Brands started paying him to promote their products, and instead of just taking the sponsorship money, he started making their content for them. That move is very close to what a growth marketer already does for a living."
+    ],
+    "stats": [
+      {"value": "₹35 lakh+", "label": "in one month, July 2024, he says"},
+      {"value": "500K+", "label": "YouTube subscribers by July 2022"},
+      {"value": "25", "label": "people at MarkitUp, July 2022"}
+    ],
+    "chart": {
+      "title": "What he earned in a single month, by his own numbers",
+      "points": [
+        {"label": "Mar 2022", "value": 17.5, "display": "₹15 to 20 lakh"},
+        {"label": "Jul 2024", "value": 35, "display": "₹35 lakh+"}
+      ],
+      "note": "Bars are in lakh. His first YouTube payout in 2020 was $1. The March 2022 month roughly matched the yearly package of the top placement at his college."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "He has built an AI version of himself. It took a five-minute video and about three hours of English audio, and he says it lets him put out **three to five videos a day**. Alongside that he runs three or four offline events a month in Bengaluru.",
+          "He is also hiring editors, designers and managers to build what he calls “systems that run without him.” He is open about why. He doesn't think content creation is a sustainable full-time career, and he says creators have to reinvent themselves every four or five years."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "Three streams, as far as anything public shows: ads on YouTube and his podcast, brand deals, and MarkitUp, the agency that makes videos, graphics and memes for tech brands. In March 2022 he made about ₹15 to 20 lakh in one month, roughly what the best-placed student from his college earned in a year.",
+          "In July 2024 he said on his podcast that he had made over ₹35 lakh in the past month. That's a run rate of about ₹4.2 crore a year if every month looked like that, which is our arithmetic, not his claim. There are no filings for him or MarkitUp, so every figure here is his own, and nothing from 2025 or 2026 has been shared."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "It started with a failure. In December 2019, at a 24-hour Microsoft hackathon, he built an app but couldn't explain or sell it. So he started an audio podcast on Spotify, every Sunday, just to practise talking. “Most people in my college did not know what a podcast was,” he said.",
+          "Then he moved to video podcasts, then to YouTube proper, from his parents' home in Pune during lockdown. When he crossed YouTube's monetisation line and got his first $1, he did the thing most people don't. He uploaded **every one or two days for six months.**"
+        ]
+      },
+      {
+        "title": "How he got the users, then the clients",
+        "paras": [
+          "His early videos were about his own college life and growing up. Later he widened to productivity, work-life balance, health and careers, which is a much bigger audience. By July 2022 he had passed 500,000 subscribers.",
+          "By late 2020 tech companies were approaching him for promotions, and he began freelancing for them. “I was working as a freelancer and I thought why not work with all of them to launch my own agency,” he said. His roommate, Saransh Anand, was a social media manager, and together they started MarkitUp. By July 2022 it had 14 clients."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Talking about money in public can bite. In July 2024 he said on his podcast that ₹35 lakh a month was a problem because “this small amount of money is not allowing me to go outside.” Ashneer Grover's reply, “Tu 35 lakh kamata hai kya mahine me?”, went everywhere.",
+          "Then came a harder one, probably in 2025. A group called the Pathwise Project accused him of misleading his followers. He said only 7 of its 33 claims were true and that he had to raise his voice, but he also called it **a chance to course-correct**. His own line on all this: “fame is a very fragile thing.”"
+        ]
+      }
+    ],
+    "tryToday": "Look at the last three brands or people who asked you for help with content or marketing. Write one line for each on what you could make for them every month, and the price.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Ishan Sharma was an electrical engineering student at BITS Pilani Goa who started a YouTube channel from his parents' home during lockdown. By 20 he had dropped out, by 22 he says he was making over ₹35 lakh in a month, and along the way he co-founded an agency. The public record on his early days is thinner than for most people in this series, so this page sticks to what is documented.",
+    "stats": [
+      {"value": "₹35 lakh+", "num": 35, "prefix": "₹", "suffix": " lakh+", "label": "made in one month", "note": "July 2024, his own number"},
+      {"value": "500K+", "num": 500, "prefix": "", "suffix": "K+", "label": "YouTube subscribers", "note": "July 2022"},
+      {"value": "25", "num": 25, "prefix": "", "suffix": "", "label": "people at his agency, MarkitUp", "note": "July 2022"},
+      {"value": "3 to 5", "num": 5, "prefix": "", "suffix": "", "label": "videos a day with his AI avatar", "note": "what he says it allows"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A BITS student who wanted a big tech job",
+        "paras": [
+          "Ishan Sharma's plan was a very normal one. He was studying electrical engineering at BITS Pilani Goa, and he wanted to become a software engineer at a big tech company. You may have seen it claimed that he interned at Google. Nothing reliable backs that up, so we're leaving it out.",
+          "What we do know is that the thing which set him off was a failure. In December 2019 he took part in a 24-hour Microsoft hackathon. He built an app in that time, but when it came to explaining it and selling it to the judges, he couldn't. The press tends to treat this as the moment that shaped him, and you can see why when you look at what he did next.",
+          "He didn't go and build another app. He went and worked on the skill that had failed him, which was talking."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "A Sunday podcast nobody in college understood",
+        "paras": [
+          "To practise explaining things out loud, he started an audio podcast on Spotify. It came out every Sunday. “Most people in my college did not know what a podcast was,” he said later. He wasn't trying to build a business. Asked why he started, he said simply: “I was doing it for fun.”",
+          "From audio, he moved to video podcasts, and from there to YouTube. Then Covid hit, the campus emptied, and he was back living with his parents in Pune. That turned out to matter. **Living at home meant almost no costs and a lot of hours**, which is exactly what a new channel needs.",
+          "His first topics were close to home: his own college life and his own growth. Later, by 2022, he had widened to productivity, work-life balance, health and careers. That shift took him from talking to people like him to talking to almost any young professional in India.",
+          "The podcast still runs, by the way, as The Ishan Show."
+        ],
+        "pull": {"text": "Most people in my college did not know what a podcast was.", "cite": "Ishan, to YourStory, 2022"}
+      },
+      {
+        "label": "The first 1,000",
+        "title": "One dollar, then six months of daily uploads",
+        "paras": [
+          "Somewhere in 2020 he crossed YouTube's monetisation line, which at the time meant 1,000 subscribers and 4,000 hours of watch time. His first earnings were exactly $1. In a 2022 interview he also says he had about 3,000 subscribers by July 2020. The article doesn't line the two moments up cleanly, so we can't tell you the exact date of that first dollar.",
+          "What is clear is what he did after it. **He uploaded a video every one or two days for six months.** No big strategy that we know of, no paid growth, just volume and consistency while he had the time.",
+          "We'd love to tell you which video broke out, or how the first thousand subscribers found him. Honestly, he doesn't seem to have told that part of the story in public yet."
+        ]
+      },
+      {
+        "label": "Finding the money",
+        "title": "When the sponsors became clients",
+        "paras": [
+          "By late 2020 the channel had enough reach that tech companies started approaching him to promote their products. He started freelancing for them, making content for their brands on the side.",
+          "Then he had the thought that changed his income. “I was working as a freelancer and I thought why not work with all of them to launch my own agency,” he said. His roommate, Saransh Anand, was working as a social media manager. **The two of them co-founded MarkitUp**, an agency that makes videos, graphic designs and memes for tech brands.",
+          "Think about how clean that is. The brands came to him. He didn't have to cold pitch anyone. The channel was the sales team, the sponsorship was the first deal, and the agency was the bigger second deal with the same customer.",
+          "By July 2022, MarkitUp had a remote team of 25 and about 14 clients. Its revenue has never been made public, and there are no company filings for it."
+        ],
+        "pull": {"text": "I was doing it for fun.", "cite": "Ishan, on starting out, YourStory, 2022"}
+      },
+      {
+        "label": "The big decision",
+        "title": "27 March 2022: he doesn't go back",
+        "paras": [
+          "As the pandemic eased, BITS called students back to campus. On 27 March 2022, Ishan formally dropped out instead. He said he couldn't go back to things that “no longer excited” him. He was 20.",
+          "The money made the decision easier. In March 2022 alone, by his own account, he made about ₹15 to 20 lakh. That's roughly the annual package of the highest-placed student from his college, earned in a single month.",
+          "His parents took a while. They came round after about two years of watching his commitment and, as he put it, his “proof of earnings.” That's a line a lot of us in India will recognise. **The argument that convinces Indian parents is rarely the dream; it's the bank statement.**",
+          "He went to Pune first, and by 1 April 2022 he had moved to Bengaluru. He has called the city's founder and builder event scene “a different kind of college.” By July 2022 he had passed 500,000 subscribers."
+        ]
+      },
+      {
+        "label": "Where the money got loud",
+        "title": "The ₹35 lakh month",
+        "paras": [
+          "In July 2024 he was hosting a podcast with Ashneer Grover, Sanjeev Bikhchandani, Asish Mohapatra and Sarthak Ahuja. He mentioned he had made over ₹35 lakh in the past month. Then he added that he saw it as a problem, because “this small amount of money is not allowing me to go outside.”",
+          "He meant it as ambition. The internet heard something else. Ashneer Grover's reaction, “Tu 35 lakh kamata hai kya mahine me?”, spread widely, and Ishan became a meme for a while.",
+          "If you take the number at face value, a ₹35 lakh month is a run rate of about ₹4.2 crore a year. That's our arithmetic on one month he mentioned, and nothing in it is audited. **Pretty much every income figure on this page is his own**, said in interviews and on his podcast, and he hasn't shared any for 2025 or 2026."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "The hard year",
+        "title": "Thirty-three accusations",
+        "paras": [
+          "The bigger test came later, most likely in 2025. A group called the Pathwise Project published a set of accusations that he had misled his followers.",
+          "He pushed back hard. He said only 7 of the 33 claims were true, and that out of a 10 to 15 minute video against him, only about a minute and a half was accurate. He said he had to “raise my voice.”",
+          "But he also said something more interesting. He called the whole thing a chance to course-correct. He says responsibility grows with the size of your audience, and that **fame is “a very fragile thing.”** When your business is your face, a bad month in public costs more than a bad month of revenue."
+        ]
+      },
+      {
+        "label": "Where it stands now",
+        "title": "An AI avatar and systems that run without him",
+        "paras": [
+          "In a May 2025 interview he described the new setup. He trained an AI avatar of himself on a five-minute video and about three hours of English audio. He says it lets him scale to three to five videos a day. His videos had recently reached 9 million views in a month.",
+          "He also runs three or four offline events a month, and he is hiring editors, designers and managers to build “systems that run without him.” His own working style is the opposite of a system: he describes himself as “unbound by a clock”, often editing at 2 am and working until a task is done.",
+          "On AI influencers, he is not worried about being replaced. He says “they don't have that soul or human connection.”"
+        ]
+      },
+      {
+        "label": "How he thinks about the future",
+        "title": "Reinvent every four or five years",
+        "paras": [
+          "Here's the bit that surprised us. A creator who made his name on YouTube says plainly: “I don't think content creation is a sustainable full-time career in the long term.”",
+          "His reasoning is that platforms keep favouring newer creators, so anyone who stays has to reinvent themselves every four or five years. After content, he says, there are “generally two routes”: acting, or building a business. The model he points to is Tanmay Bhat.",
+          "For us, the useful idea is that he treats the audience as a starting asset, not the end product. **The channel got him the clients, the clients became an agency, and now he's building systems** so the whole thing doesn't depend on him editing at 2 am."
+        ]
+      }
+    ],
+    "failuresTitle": "A hackathon, a meme and an accusation",
+    "failuresIntro": "No failure count exists for Ishan. These are the documented setbacks.",
+    "failures": [
+      {"year": "Dec 2019", "name": "The Microsoft hackathon", "what": "At a 24-hour Microsoft hackathon he built an app but couldn't explain or sell it. The press treats it as the failure that shaped him.", "lesson": "If the thing you built can't be explained, the problem might be you, and that's fixable with practice."},
+      {"year": "Jul 2024", "name": "The ₹35 lakh comment", "what": "On his own podcast he said ₹35 lakh a month was a problem because the “small amount” didn't let him go further. Ashneer Grover's reply went viral and turned it into a meme.", "lesson": "When you share income in public, think about how it sounds to someone earning a fraction of it."},
+      {"year": "Probably 2025", "name": "The Pathwise Project allegations", "what": "A group accused him of misleading his followers with 33 claims. He said only 7 were true and pushed back publicly, but also called it a chance to course-correct.", "lesson": "The bigger your audience, the more your claims will be checked, so make them checkable."}
+    ],
+    "playbookTitle": "How he grew from a Sunday podcast to an agency",
+    "playbook": [
+      {"title": "Practise the weak skill in public", "text": "After failing to pitch at the December 2019 hackathon, he started a Sunday audio podcast on Spotify purely to practise explaining things. That practice became the base of everything else."},
+      {"title": "Move formats step by step", "text": "Audio podcast first, then video podcasts, then regular YouTube videos. Each step reused the same skill, talking clearly, in a format with more reach."},
+      {"title": "Go hard on frequency once it pays", "text": "After his first $1 from YouTube, he uploaded every one or two days for six months while living at home during lockdown. By July 2022 he had 500,000+ subscribers."},
+      {"title": "Widen the topic as you grow", "text": "He started with his own college life and growth, then moved to productivity, work-life balance, health and careers. Broader topics, much bigger audience."},
+      {"title": "Turn inbound sponsors into agency clients", "text": "When tech companies approached him for promotions in late 2020, he freelanced for them, then co-founded MarkitUp with his roommate. By July 2022 it had 25 people and 14 clients."},
+      {"title": "Put big names on your podcast", "text": "His July 2024 podcast featured Ashneer Grover, Sanjeev Bikhchandani, Asish Mohapatra and Sarthak Ahuja. Guests with their own audiences bring theirs to you."},
+      {"title": "Use an AI avatar for volume", "text": "In 2025 he trained an avatar on a five-minute video and about three hours of audio, and says it allows three to five videos a day."},
+      {"title": "Meet the audience offline", "text": "He runs three or four offline events a month. As AI content grows, real rooms with real people are part of his bet."}
+    ],
+    "charts": [
+      {
+        "title": "One month's income, by his own numbers",
+        "points": [
+          {"label": "Mar 2022", "value": 17.5, "display": "₹15 to 20 lakh"},
+          {"label": "Jul 2024", "value": 35, "display": "₹35 lakh+"}
+        ],
+        "note": "Single months he chose to mention, not averages. Bars are in lakh."
+      },
+      {
+        "title": "YouTube subscribers",
+        "points": [
+          {"label": "Jul 2020", "value": 3000, "display": "about 3,000"},
+          {"label": "Jul 2022", "value": 500000, "display": "500K+"}
+        ],
+        "note": "Both from a July 2022 YourStory interview. No reliable 2026 count was found."
+      }
+    ],
+    "timeline": [
+      {"when": "Dec 2019", "text": "Fails to explain his app at a 24-hour Microsoft hackathon. Starts a Sunday podcast on Spotify to practise.", "big": true},
+      {"when": "2020", "text": "Starts YouTube from his parents' home during lockdown. Earns his first $1 and uploads every one or two days for six months.", "big": true},
+      {"when": "Jul 2020", "text": "About 3,000 subscribers.", "big": false},
+      {"when": "Late 2020", "text": "Tech companies approach him for promotions. He freelances, then co-founds MarkitUp with roommate Saransh Anand.", "big": true},
+      {"when": "Mar 2022", "text": "Makes about ₹15 to 20 lakh in one month, by his own account.", "big": false},
+      {"when": "27 Mar 2022", "text": "Drops out of BITS Pilani Goa at 20. Moves to Bengaluru by 1 April.", "big": true},
+      {"when": "Jul 2022", "text": "500,000+ subscribers. MarkitUp has 25 people and 14 clients.", "big": false},
+      {"when": "Jul 2024", "text": "Says he made over ₹35 lakh in a month. Ashneer Grover's reply goes viral.", "big": false},
+      {"when": "2025", "text": "Faces the Pathwise Project allegations. Builds an AI avatar and starts monthly offline events.", "big": false}
+    ],
+    "quotes": [
+      {"text": "Most people in my college did not know what a podcast was.", "cite": "YourStory, July 2022"},
+      {"text": "I was doing it for fun.", "cite": "YourStory, July 2022"},
+      {"text": "fame is a very fragile thing", "cite": "Outlook Business, 2025"},
+      {"text": "they don't have that soul or human connection", "cite": "On AI influencers, Outlook Business, 2025"},
+      {"text": "I don't think content creation is a sustainable full-time career in the long term.", "cite": "Outlook Business, May 2025"},
+      {"text": "this small amount of money is not allowing me to go outside", "cite": "His podcast, July 2024"}
+    ],
+    "steal": [
+      "Name the one skill that keeps letting you down and start a small weekly show just to practise it. His Sunday podcast started that way.",
+      "When something first pays, even $1, that's the moment to increase frequency, not to relax.",
+      "Keep a list of every company that asks you for a promotion or a favour. Each one is a possible monthly retainer for production work.",
+      "Find a co-founder who already does the delivery work. His roommate was a social media manager, which made the agency possible fast.",
+      "Plan your next move while the current thing is working. He says creators need to reinvent every four or five years."
+    ],
+    "sources": [
+      {"title": "YourStory: Ishan Sharma, BITS Pilani dropout and MarkitUp (Jul 2022)", "url": "https://yourstory.com/2022/07/100x-markitup-ishan-sharma-dropout-bits-pilani-youtuber"},
+      {"title": "Outlook Business: Long-term reinvention is essential for content creators, says Ishan Sharma", "url": "https://www.outlookbusiness.com/magazine/long-term-reinvention-is-essential-for-content-creators-says-ishan-sharma"},
+      {"title": "Free Press Journal: Ashneer Grover reacts to Ishan Sharma's earnings (Jul 2024)", "url": "https://www.freepressjournal.in/business/tu-35-lakh-kamata-hai-kya-mahine-me-ashneer-grover-reacts-to-youtuber-ishan-sharmas-earnings"},
+      {"title": "The Ishan Show on Apple Podcasts", "url": "https://podcasts.apple.com/us/podcast/the-ishan-show/id1493720625"}
+    ]
+  }
+}

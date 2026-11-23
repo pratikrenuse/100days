@@ -1,0 +1,256 @@
+{
+  "n": 39,
+  "name": "Josh W. Comeau",
+  "short": "Josh",
+  "wisdom": "Give your best work away for years, and your email list will launch it.",
+  "email": {
+    "subject": "He hoped for $50K. His first week made $577K.",
+    "hook": "Josh Comeau's Product Hunt launch went nowhere and his Hacker News post got 3 upvotes, yet his first course made $577K in a single week.",
+    "lead": [
+      "Josh is a developer from Montréal who works alone and sells online courses that teach CSS and React. He ended up on his own because of an injury: a repetitive strain problem in his arm pushed him out of a $165K job at Gatsby.",
+      "He matters to us because his launch numbers have nothing to do with launch tricks. They came from years of free, beautiful tutorials on his own blog and the email list that grew around them. That's a marketing lesson, and it's one we can start on this week."
+    ],
+    "stats": [
+      {"value": "$577K", "label": "first week of his first course, March 2021"},
+      {"value": "28K", "label": "email subscribers at launch"},
+      {"value": "15,000+", "label": "buyers of that course by September 2023"}
+    ],
+    "chart": {
+      "title": "His email list before and at launch, by his own numbers",
+      "points": [
+        {"label": "Jan 2020", "value": 1000, "display": "About 1K"},
+        {"label": "Mar 2021", "value": 28000, "display": "28K"}
+      ],
+      "note": "He estimates at least half of the launch sales came from email."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "In May 2026 he launched his third course, Whimsical Animations, using the same newsletter-led launch he always uses. He hasn't shared how it sold.",
+          "He also keeps the older courses fresh. The Joy of React has been updated for React 19, and CSS for JavaScript Developers had a major update in December 2025."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "It's all one-time course sales. In 2026 The Joy of React costs $599, CSS for JavaScript Developers costs $399, and the two together cost $498. About half his buyers use regional pricing, with discounts of up to 75% for countries where $399 is a lot of money.",
+          "He doesn't share current sales. What he has shared: his first course had **a little over 15,000 buyers** by September 2023, and running costs were about $5K a month, not counting his own pay."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "He left Gatsby in summer 2020 and planned three to four months of work. Six months in, he was about halfway. He built his own course platform with Next.js, because Teachable and Podia couldn't do the interactive widgets, mini-games and fireworks he wanted.",
+          "Instead of waiting to finish, he opened a one-week early access sale in March 2021 at $129 for the first five modules."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "chart": true,
+        "paras": [
+          "His blog was doing the work for years. By launch it had 80K to 100K visits a month. Between January 2020 and March 2021 his email list went from about 1,000 to 28,000, and his Twitter following from 10K to 31K. He shared GIFs and previews of the course while building it.",
+          "His goal was $50K. He hit it in about 10 minutes. By the end of the week his payment dashboard showed **$577K from 4,773 orders**. His own summary: “email is king.”"
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "The launch was messy. He missed his January target. A $20-off coupon for 50 people ran out in about 90 seconds and about 50 more people were charged full price, so he refunded the difference. Some buyers waited more than 24 hours for access because of bugs.",
+          "And it all started with pain. For about six months he couldn't use a keyboard or mouse and learned to code by voice. His line on that time: “life is short, and being able-bodied is temporary.”"
+        ]
+      }
+    ],
+    "tryToday": "Write one free, genuinely useful tutorial about the thing you know best, and put an email signup at the bottom. That's how Josh's 28K list started.",
+    "button": "Read the full launch story"
+  },
+  "page": {
+    "intro": "Josh W. Comeau was a Staff engineer at Gatsby when an arm injury took away his ability to type. He turned to teaching instead, and his first course made $577K in its first week of early access, more than ten times his goal. He works alone, and almost all of it came from an email list he built by giving his best work away.",
+    "stats": [
+      {"value": "$577,000", "num": 577000, "prefix": "$", "suffix": "", "label": "first week of early access", "note": "March 2021, his goal was $50K"},
+      {"value": "4,773", "num": 4773, "prefix": "", "suffix": "", "label": "orders that week", "note": "March 2021"},
+      {"value": "28,000", "num": 28000, "prefix": "", "suffix": "", "label": "email subscribers at launch", "note": "up from about 1,000 in January 2020"},
+      {"value": "15,000+", "num": 15000, "prefix": "", "suffix": "+", "label": "buyers of his first course", "note": "September 2023"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A teacher who happened to be an engineer",
+        "paras": [
+          "Josh is from Montréal and has been building on the web since 2007. He worked as an engineer at Khan Academy, DigitalOcean and Gatsby, and he also taught web development at Concordia University and, for two to three years, at a coding bootcamp.",
+          "Before we go further, one honest note: nearly all the numbers on this page are Josh's own, from his Indie Hackers AMA, interviews and his launch emails.",
+          "Khan Academy matters to this story. He spent two years there and says it was where he learned how people learn. So when he finally made a course, he wasn't just a good developer. He was someone who had studied teaching for years.",
+          "He was also writing. He'd started with posts on Medium, which got little readership. Then he moved to his own blog. In mid-2019 he set himself a goal of one post every two weeks. The posts weren't ordinary articles: they were interactive, with demos you could play with right on the page. Those posts became his reputation."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "Six months without a keyboard",
+        "paras": [
+          "By 2020 Josh was a Staff Software Engineer at Gatsby, earning **$165,000 a year**. Then, in March 2020, he injured the ulnar nerve in his arm. It was later described as cubital tunnel syndrome, a repetitive strain injury.",
+          "For about six months he couldn't use a keyboard or a mouse. He learned to write code by voice. It took him about eight months to get back full typing ability.",
+          "In summer 2020 he left his job at Gatsby. The injury forced the question that many of us keep postponing: if not this job, then what? His answer was the thing he'd been quietly preparing for years, teaching.",
+          "He later summed up what that time taught him in one line."
+        ],
+        "pull": {"text": "life is short, and being able-bodied is temporary.", "cite": "Josh, Failory interview, August 2021"}
+      },
+      {
+        "label": "Building the audience",
+        "title": "From 1,000 subscribers to 28,000",
+        "paras": [
+          "In January 2020 Josh had about 10,000 Twitter followers and about 1,000 email subscribers. Respectable, but not a launch audience.",
+          "Over the next 14 months, the blog did the heavy lifting. By August 2021 he had about 60 posts and 60,000 to 90,000 unique visitors a month; in his March 2021 AMA he put it at 80,000 to 100,000 visits a month. Running the blog cost him about $450 a month. Every interactive post brought new readers, and an email signup sat waiting for them.",
+          "He also gave away a free self-published book in 2020, about building a developer portfolio. It got about 12,000 downloads. When he announced the course, about 11,000 people joined the waiting list.",
+          "By the March 2021 launch he had **28,000 email subscribers**, up from about 1,000, and 31,000 Twitter followers, up from 10,000. In a later interview he put his newsletter at about 20,000 opt-ins, so his own figures differ a little depending on how he counted. Either way, the list grew more than twentyfold in about a year.",
+          "From late 2020 he also built in public on Twitter. He posted GIFs and previews of what the course would look like, plus short developer tips. By referrer data, Twitter drove about 14% of sales. Email drove at least half."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "The first version",
+        "title": "A custom platform, and a plan that doubled",
+        "paras": [
+          "The course was CSS for JavaScript Developers. The idea was simple: lots of JavaScript developers find CSS confusing and frustrating, and Josh could explain it properly.",
+          "He didn't use Teachable or Podia. They couldn't do what he wanted: interactive widgets, mini-games, even fireworks when you enrol. So he built his own platform from scratch with Next.js, the same kind of stack as his blog. He recommends Next.js even for complex full-stack apps. For the student community he used Discord.",
+          "His plan was three to four months of work. Six months in, in March 2021, he was only about halfway, and he now expected the full build to take more than a year of full-time work. He had already missed his January 2021 target for the full launch.",
+          "That's the point where many of us would either rush something out or keep polishing in private for another year. Josh did something smarter."
+        ]
+      },
+      {
+        "label": "The launch",
+        "title": "His $50K goal, hit in ten minutes",
+        "paras": [
+          "He opened early access for one week, from 10 to 16 March 2021. For $129 you got the first five modules right away and the rest as he finished them. The planned full price was $349. He kept the sale to one week on purpose, so he wouldn't be split between selling and building for months.",
+          "His goal was about 380 copies, roughly $50,000. He hit it in **about 10 minutes**.",
+          "Not everything went smoothly. He had a $20-off coupon limited to 50 uses. It ran out in about 90 seconds. About 50 more people still had the code when it expired at checkout and were charged full price, so he issued partial refunds. Launch-day bugs meant some buyers waited more than 24 hours for access.",
+          "And the classic launch channels did almost nothing. His Product Hunt launch “went nowhere.” His Hacker News post got 3 upvotes.",
+          "By the end of the week, his Paddle payment dashboard showed **$577,000 in revenue from 4,773 orders**, an average of about $120 each. In a later interview he gave it as about $550,000 from almost 5,000 copies, so the figures shift slightly between tellings. Either way, it was more than ten times what he'd hoped for, and that early money funded the business for several years."
+        ],
+        "pull": {"text": "email is king.", "cite": "Josh, Failory interview, August 2021"},
+        "chart": 1
+      },
+      {
+        "label": "Running it",
+        "title": "Still one person, with a little help",
+        "paras": [
+          "After the launch he went back to building. By August 2021 his expenses were about $1,000 a month, and he had a part-time contractor for a couple of hours a week on support and captions. He also had an accountant, and said he planned to hire help with support. By September 2023 he put costs at about $5,000 a month, not counting his own salary. The numbers grew as the business did.",
+          "In August 2021 Failory listed his revenue range as $25,000 to $100,000 a month. That's a band, not an exact figure, and it's the last time anything close to a monthly number appeared.",
+          "He calls himself a solo indie hacker. He recommends Paul Jarvis's book Company of One and isn't interested in growing for the sake of it.",
+          "He also set up regional pricing. By September 2023, about half his buyers were using regional licences at up to 75% off. For a reader in India, that's the difference between “someday” and “today.”"
+        ]
+      },
+      {
+        "label": "Doing it again",
+        "title": "The Joy of React, the same way",
+        "paras": [
+          "On Monday 23 January 2023 he launched his second course, The Joy of React. He used the same playbook: early access, before the course was finished. It was about two-thirds complete, with the rest expected around June 2023.",
+          "Early access was 50% off, doors closed on 31 January 2023, there was a team checkout, and a 30-day no-questions refund. He described early access as “like a pre-order, except you can start right away.” The course covered React 18 hooks with interactive articles, videos, exercises and mini-games, and projects like a Wordle clone and an accessible Toast component.",
+          "He wrote that “thousands of developers” bought it within days. He hasn't shared the exact number or the revenue.",
+          "Then in May 2026 he launched a third course, Whimsical Animations, again through launch emails to his newsletter. Its sales aren't public either."
+        ],
+        "pull": {"text": "like a pre-order, except you can start right away.", "cite": "Josh, Joy of React launch email, January 2023"}
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Three courses and a lot of happy students",
+        "paras": [
+          "In 2026 his site lists three courses: The Joy of React at $599, CSS for JavaScript Developers at $399, and Whimsical Animations. The first two come as a bundle for $498, shown as down from $998. Joy of React has been updated for React 19, and CSS for JS had a major update in December 2025.",
+          "By September 2023 CSS for JS had “a little over 15,000” buyers. He doesn't share current sales. Lifetime revenue is very likely in the millions, but that's our own guess from the buyer count, not a figure he has given.",
+          "He also has popular open-source packages, use-sound and react-flip-move, with about 600,000 npm downloads a month between them, and side projects like Tinkersynth and an explainer for The Pudding. Each one is another door into his world."
+        ]
+      },
+      {
+        "label": "How he thinks",
+        "title": "AI makes developers better, not unnecessary",
+        "paras": [
+          "In April 2025 Josh wrote an essay called “The Post-Developer Era,” updated in November 2025. It's a calm, careful piece from someone whose business depends on people still wanting to learn to code.",
+          "His view: “AI works much better as a developer enhancer than as a developer replacement.” He points out that “every AI success story still has skilled human developers as a necessary ingredient.” And he says knowing how to code is still an incredibly valuable skill, and he doesn't see that changing anytime soon.",
+          "His advice for anyone wanting to follow him is consistent: publish free tutorials, build a reputation before you sell anything, and give value without expecting something back. It sounds soft. The $577K week says otherwise."
+        ],
+        "pull": {"text": "AI works much better as a developer enhancer than as a developer replacement.", "cite": "Josh, The Post-Developer Era, 2025"}
+      }
+    ],
+    "failuresTitle": "No failed products, but a bumpy road",
+    "failuresIntro": "Josh hasn't had a product flop. His setbacks were the injury, slow early writing and a launch that was messier than the numbers suggest.",
+    "failures": [
+      {"year": "Early on", "name": "Medium posts nobody read", "what": "His early writing on Medium got little readership. Things changed when he moved to his own blog and made the posts interactive.", "lesson": "Publish where you own the reader, and make it something only you would make."},
+      {"year": "2020", "name": "The injury", "what": "An ulnar nerve injury in March 2020 left him unable to use a keyboard or mouse for about six months, and he left his $165K job in the summer.", "lesson": "Build something of your own before life forces the question."},
+      {"year": "Jan 2021", "name": "A missed deadline", "what": "He planned three to four months of work and missed his January target. Six months in he was only about halfway.", "lesson": "If the build doubles, sell early access instead of waiting."},
+      {"year": "Mar 2021", "name": "Product Hunt and Hacker News flopped", "what": "His Product Hunt launch went nowhere and his Hacker News post got 3 upvotes, in the same week he made $577K.", "lesson": "Launch sites don't replace your own audience."},
+      {"year": "Mar 2021", "name": "Coupon chaos and launch bugs", "what": "A 50-use coupon ran out in about 90 seconds, about 50 people were overcharged and needed partial refunds, and some buyers waited 24+ hours for access.", "lesson": "Expect demand to beat your setup, and fix it quickly and generously."}
+    ],
+    "playbookTitle": "How he sold $577K in a week",
+    "playbook": [
+      {"title": "Make free posts nobody else could make", "text": "His blog posts were interactive, with demos inside the article. By 2021 the blog had about 60 posts and up to 100K visits a month, and it was the source of his email list."},
+      {"title": "Put an email signup everywhere", "text": "His list grew from about 1,000 in January 2020 to 28,000 by March 2021. He estimates at least half of launch sales came from email, and says plainly that email is king."},
+      {"title": "Give away a free book", "text": "A free self-published portfolio book in 2020 got about 12,000 downloads, bringing more people onto his list before the course existed."},
+      {"title": "Build in public with GIFs", "text": "From late 2020 he posted GIFs and previews of the course on Twitter, plus short dev tips. Twitter grew from 10K to 31K followers and drove about 14% of sales."},
+      {"title": "Collect a waitlist", "text": "About 11,000 people joined the course waitlist before launch, so on day one he was emailing people who had already said yes."},
+      {"title": "Sell early access for one week", "text": "He sold the first five modules for $129 against a planned $349, for one week only. Scarcity plus a real discount drove $577K, and closing the doors let him get back to building."},
+      {"title": "Price for the world", "text": "Regional licences give up to 75% off, and about half his buyers use them. It widens the market without cutting the main price."},
+      {"title": "Repeat the same launch", "text": "He ran the same early access playbook for The Joy of React in January 2023, at 50% off for about a week, and again with newsletter launch emails for Whimsical Animations in May 2026."}
+    ],
+    "charts": [
+      {
+        "title": "His audience before and at launch, by his own numbers",
+        "points": [
+          {"label": "Email, Jan 2020", "value": 1000, "display": "About 1K"},
+          {"label": "Email, Mar 2021", "value": 28000, "display": "28K"},
+          {"label": "Twitter, Jan 2020", "value": 10000, "display": "10K"},
+          {"label": "Twitter, Mar 2021", "value": 31000, "display": "31K"}
+        ],
+        "note": "Email drove at least half of sales, Twitter about 14%."
+      },
+      {
+        "title": "The first week of CSS for JS, March 2021",
+        "points": [
+          {"label": "His goal", "value": 50000, "display": "$50K"},
+          {"label": "What he made", "value": 577000, "display": "$577K"}
+        ],
+        "note": "From his Paddle dashboard: 4,773 orders at an average of about $120. He hit the goal in about 10 minutes."
+      }
+    ],
+    "timeline": [
+      {"when": "2007", "text": "Starts building on the web.", "big": false},
+      {"when": "Mid 2019", "text": "Sets a goal of one blog post every two weeks.", "big": false},
+      {"when": "Jan 2020", "text": "About 1,000 email subscribers and 10,000 Twitter followers.", "big": false},
+      {"when": "Mar 2020", "text": "Injures the ulnar nerve in his arm and can't use a keyboard or mouse for about six months.", "big": true},
+      {"when": "Summer 2020", "text": "Leaves his $165K Staff engineer job at Gatsby and starts building the course.", "big": true},
+      {"when": "Late 2020", "text": "Starts building in public on Twitter with GIFs and previews.", "big": false},
+      {"when": "Jan 2021", "text": "Misses his target for the full launch.", "big": false},
+      {"when": "10 to 16 Mar 2021", "text": "Early access for CSS for JS at $129 makes $577K from 4,773 orders.", "big": true},
+      {"when": "23 Jan 2023", "text": "Launches The Joy of React in early access at 50% off.", "big": true},
+      {"when": "Sep 2023", "text": "A little over 15,000 buyers of CSS for JS.", "big": false},
+      {"when": "Dec 2025", "text": "Major update to CSS for JavaScript Developers.", "big": false},
+      {"when": "May 2026", "text": "Launches his third course, Whimsical Animations.", "big": false}
+    ],
+    "quotes": [
+      {"text": "email is king.", "cite": "Failory interview, August 2021"},
+      {"text": "life is short, and being able-bodied is temporary.", "cite": "Failory interview, August 2021"},
+      {"text": "like a pre-order, except you can start right away.", "cite": "Joy of React launch email, January 2023"},
+      {"text": "AI works much better as a developer enhancer than as a developer replacement.", "cite": "The Post-Developer Era, 2025"},
+      {"text": "every AI success story still has skilled human developers as a necessary ingredient.", "cite": "The Post-Developer Era, 2025"},
+      {"text": "Knowing how to code is still an incredibly valuable skill", "cite": "The Post-Developer Era, 2025"}
+    ],
+    "steal": [
+      "Start the email list now, years before you have something to sell. Josh's 28K subscribers drove at least half of a $577K week.",
+      "Make your free content something only you could make. His interactive posts did what plain Medium articles never did.",
+      "If the build is taking twice as long as planned, sell early access to what's ready. It funded his next several years.",
+      "Keep a sale short and real. One week, a clear discount, then close the doors and get back to work.",
+      "Don't count on Product Hunt or Hacker News. Treat them as a bonus, and put the effort into your own audience.",
+      "Offer regional pricing. About half his buyers use it, which matters a lot for readers in countries like India."
+    ],
+    "sources": [
+      {"title": "Indie Hackers AMA: Launched my first course, earned over US$500,000 (March 2021)", "url": "https://www.indiehackers.com/post/launched-my-first-course-earned-over-us-500-000-ama-4382405cd5"},
+      {"title": "Failory interview: CSS for JS Developers (August 2021)", "url": "https://failory.com/interview/css-for-js-developers"},
+      {"title": "Indie Hustle: This programming course makes $550K in revenue (September 2023)", "url": "https://indiehustle.beehiiv.com/p/this-programming-course-makes-550k-in-revenue"},
+      {"title": "About Josh", "url": "https://joshwcomeau.com/about-josh"},
+      {"title": "Joy for JavaScript Developers bundle", "url": "https://courses.joshwcomeau.com/joy-for-js"},
+      {"title": "Joy of React launch email: FAQ (January 2023)", "url": "https://www.joshwcomeau.com/email/jor-launch-004-faq-primary"},
+      {"title": "Joy of React launch date email", "url": "https://www.joshwcomeau.com/email/jor-updates-006-launch-date"},
+      {"title": "Whimsical Animations launch email", "url": "https://www.joshwcomeau.com/email/wham-launch-002-tmrw-p/"},
+      {"title": "The Post-Developer Era (April 2025, updated November 2025)", "url": "https://joshwcomeau.com/blog/the-post-developer-era"}
+    ]
+  }
+}

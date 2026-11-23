@@ -1,0 +1,260 @@
+{
+  "n": 10,
+  "name": "Daniel Vassallo",
+  "short": "Daniel",
+  "wisdom": "Run several small bets at once, and feed the one that pays.",
+  "email": {
+    "subject": "His SaaS made 2% of his income. A 16-hour course made $150K.",
+    "hook": "Daniel Vassallo walked away from a job paying over $500,000 a year to build a SaaS product, and he calls that SaaS a failed bet. The ebook he wrote in under a month made about $40,000 in its first two weeks.",
+    "lead": [
+      "Daniel is the one who should change how we plan. Most of us pick one big idea and pour everything into it. He did that too, found that his serious software product earned about 2% of his income, and switched to running several cheap experiments side by side. The one that won was a community called Small Bets, which Gumroad bought in April 2025.",
+      "One honest note before we go on. Small Bets was not his alone. It was co-owned by Daniel and Louis Bacaj, with Gumroad holding 10% before the final sale. Daniel was the main operator and the public face, but the sale money was split between owners."
+    ],
+    "stats": [
+      {"value": "$500K+", "label": "a year at Amazon, which he left"},
+      {"value": "$650,750", "label": "Small Bets revenue in 2024"},
+      {"value": "$3.6M", "label": "Gumroad paid for 90% in 2025"}
+    ],
+    "chart": {
+      "title": "Small Bets revenue each year, from its published P&L",
+      "points": [
+        {"label": "2021", "value": 80040, "display": "$80K"},
+        {"label": "2022", "value": 445690, "display": "$446K"},
+        {"label": "2023", "value": 455447, "display": "$455K"},
+        {"label": "2024", "value": 650750, "display": "$651K"}
+      ],
+      "note": "About $212,500 of the 2024 total came from a $2,500 consulting add-on."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Daniel now runs Small Bets inside Gumroad. Gumroad's own post lists 6,775 members and 13 resident experts. He agreed to run it for five years, and he helps Gumroad part-time for minimum wage. His target is $1M in profit within two years.",
+          "He's said the bigger goal is to turn Gumroad into a community rather than just a payment processor. A Gumroad post also suggests he holds a Head of Product title there, though its date isn't clear."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "Small Bets sold a lifetime membership for $199, usually discounted to $99, with prices adjusted for buyers in poorer countries. In 2024 it added a 1:1 consulting option at $2,500, which 85 people bought. That year brought in $650,750, with almost $500,000 in profit, according to the P&L he published.",
+          "Gumroad bought 10% in 2024 for $500,000, then the other 90% in April 2025 for $3.6M. **Half was cash and half was stock options.** The cash came as $900,000 at signing and $900,000 a year later, and he loses unvested options if he walks away."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "Nothing he built was big. His AWS ebook, The Good Parts of AWS, took less than the month he gave it. His course on building a Twitter audience took about 16 hours to make and earned about $150,000, $50,000 of it in the first week.",
+          "Small Bets itself started in 2021 as a live course sold on Gumroad. It grew over 12 cohorts, with guest speakers paid $1,000 per event, and members kept saying the chat community was the best part. It began on Discord and later moved to Campfire."
+        ]
+      },
+      {
+        "title": "How he got the people",
+        "paras": [
+          "It started with one essay. In 2019 he wrote about why he left a $500K job. It was seen 200,000+ times, took him from about 100 Twitter followers to 1,500, and brought over 100 DMs and emails in a day. By October 2019 he had 10,000+.",
+          "He launched the AWS ebook in December 2019 to about 11,000 followers. The first $1,000 came within hours, almost all from tweets. After that, every launch went by email to past buyers, a list of about 19,000 customers by 2021. **He shares his real numbers**, because he says that's what people value most, and one tweet once brought in $12,000+ in a day."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Even with more than five years of savings, about six months after quitting the uncertainty was keeping him up at night. His first plan, doing a SaaS, then a book, then freelancing, one after another, was a mistake he later owned. Userbase, the SaaS, got about 100 paying customers but only $400 to $500 a month.",
+          "Small Bets had a predecessor too, a 2020 community called Profit & Loss that reached 1,500 members and failed. And critics point out that lifetime pricing means support keeps growing while new money doesn't."
+        ]
+      }
+    ],
+    "tryToday": "Write down three small bets you could start this month that each take under 20 hours: a paid guide, a template, a small paid session. Pick the cheapest one and put a price on it today.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Daniel Vassallo left a job at Amazon that paid over $500,000 a year, built a SaaS product that he calls a failed bet, and made his money instead from an ebook, a short course and a community. Small Bets, the community he co-owned with Louis Bacaj, was bought by Gumroad in April 2025 at a $4M valuation.",
+    "stats": [
+      {"value": "$500,000+", "num": 500000, "prefix": "$", "suffix": "+", "label": "a year at Amazon before he left", "note": "he started at $75,000"},
+      {"value": "$40,000", "num": 40000, "prefix": "$", "suffix": "", "label": "from his AWS ebook in two weeks", "note": "December 2019"},
+      {"value": "$404,473", "num": 404473, "prefix": "$", "suffix": "", "label": "from info products in about 2.5 years", "note": "his own figure"},
+      {"value": "$4M", "num": 4, "prefix": "$", "suffix": "M", "label": "valuation when Gumroad bought Small Bets", "note": "April 2025"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Eight years at Amazon, and a raise he didn't want",
+        "paras": [
+          "Daniel is Maltese and was based in Seattle. He spent about eight years at Amazon (he's said eight or nine) as an engineer. When he started, he was paid $75,000 a year. By the end it was over $500,000.",
+          "That's the kind of career most people would hold onto with both hands. He had two kids. But he felt that more promotions wouldn't actually make his life any better. He wanted, in his words, “to work on my own terms, doing the things that intrinsically motivate me.”",
+          "He wasn't reckless about it. He had saved more than five years of living expenses. In February 2019 he quit, with no concrete plan for what he'd build. Just a lot of runway and a strong feeling about how he wanted to spend his days."
+        ],
+        "pull": {"text": "work on my own terms, doing the things that intrinsically motivate me", "cite": "Daniel Vassallo, Indie Hackers Podcast #177"}
+      },
+      {
+        "label": "The first audience",
+        "title": "One essay, 100 DMs in a day",
+        "paras": [
+          "When he left, he had about 100 followers on Twitter. Then he wrote a blog post called “Only Intrinsic Motivation Lasts: Why I Left a $500k Job to Work for Myself”. It was seen more than 200,000 times.",
+          "That one essay brought him his first 1,500 or so followers, and more than 100 DMs and emails in a single day. By October 2019 he had more than 10,000 followers. Remember, at this point he hadn't sold anything yet. The audience came first, and it came from being honest about a big, risky decision with real numbers in it.",
+          "He also built small free things that travelled. His Bootstrapping Calculator, a simple tool, made it to the front page of Hacker News. And he kept sharing his financial numbers openly, because, he said, people value those most. He didn't bother with clever posting times. He just posted when he had something.",
+          "His mornings in this period are a nice detail. He did almost nothing before about 10am except email. He kept his calendar empty on purpose. Most mornings he spent a couple of hours on an iPad reading about all kinds of different niches. And for about 20 hours a month he freelanced for a friend's startup, earning $1,000 to $2,000 a month, which kept a little money coming in."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "Five years of savings and still not sleeping",
+        "paras": [
+          "His first plan was neat and sensible. Do a SaaS product first. If that didn't work, write a book. Then try freelancing. Then maybe buy a small business. Each step had a red line: a savings level where he'd stop and move to the next thing.",
+          "Later he called that sequential plan a mistake. Doing one bet at a time means you only learn one lesson at a time, and each lesson takes months.",
+          "And even with all that money in the bank, it got to him. About six months after he quit, the uncertainty was keeping him up at night. That's worth hearing. **Five years of runway didn't make it feel safe.** If he felt that way, we'll feel it too, and it doesn't mean we're doing it wrong.",
+          "He's also unusually unromantic about failure. “I think failure's very expensive,” he said, and he thinks people overrate it as a way to learn. Plenty of his posts, he admits, just went nowhere."
+        ],
+        "pull": {"text": "I think failure's very expensive.", "cite": "Daniel Vassallo, Indie Hackers Podcast #177"}
+      },
+      {
+        "label": "The first version",
+        "title": "Userbase, the serious bet that wasn't",
+        "paras": [
+          "The SaaS was called Userbase. It was a backend for web apps with logins and a database, all end-to-end encrypted. Think Firebase, but encrypted. He picked it because he knew databases and developer tools well from Amazon.",
+          "On paper it went fine. It did well on Product Hunt, ranked high in search for “end-to-end encrypted web app”, and got 10 to 15 signups a day. It reached about 100 paying customers. But it charged only about $50 a year for hosting, and developers took a long time to go from trying it to using it in production, much longer than he expected. He also had to bring in help: “I ended up having to hire somebody to help me as well.”",
+          "It made about $400 to $500 a month, roughly break-even, and about 2% of his income. His verdict, in a Product Hunt AMA: “It's certainly a failed bet from a financial perspective,” though he added that's easier said in hindsight.",
+          "This is the bit to sit with. His most serious, most technical, most founder-looking project was his worst earner. It wasn't badly built. It was just slow, cheap and hard to grow."
+        ],
+        "pull": {"text": "It's certainly a failed bet from a financial perspective", "cite": "Daniel Vassallo, Product Hunt AMA"}
+      },
+      {
+        "label": "Finding the money",
+        "title": "An ebook in under a month",
+        "paras": [
+          "While Userbase crawled along, he tried something small. He gave himself a month to write an ebook about the parts of AWS he'd actually used and trusted during his years at Amazon. It took less than a month. The podcast host who interviewed him cited about 160 hours of work.",
+          "The Good Parts of AWS came out in December 2019, when he had about 11,000 followers. The first $1,000 arrived within a few hours. In two weeks it made about $40,000, almost all of it from his own announcements on Twitter. His words: “That product made about $40,000 in sales in 2 weeks.” Over its life it went past $125,000. Later sales came by word of mouth, through Slack groups, Discords and podcasts.",
+          "Then he did a course on building a Twitter audience, the thing he'd just done himself. It took about 16 hours to make. It earned about $150,000, $50,000 of it in the first week.",
+          "Most numbers here are Daniel's own, from his AMA and the P&L he published, and they aren't audited. By about 2021, roughly two and a half years after leaving Amazon, he'd made more than $550,000 in total, $404,473 of it from info products. One single tweet once brought in more than $12,000 in 24 hours. Compare that to Userbase's $400 to $500 a month and the lesson writes itself."
+        ],
+        "pull": {"text": "That product made about $40,000 in sales in 2 weeks.", "cite": "Daniel Vassallo, Product Hunt AMA"},
+        "chart": 0
+      },
+      {
+        "label": "The big idea",
+        "title": "Small bets, all at once",
+        "paras": [
+          "Out of all this came the idea he's known for. “Don't focus on one project. Do many at the same time.” Instead of one big bet with savings red lines, run a portfolio of small, cheap, safe-to-fail bets in parallel, and put more time into whichever one starts paying.",
+          "He describes the online world as extremely competitive, random and unpredictable. You can't plan your way to the hit. You can only make enough small attempts that one of them lands. He also prefers “intensity over consistency”: there's no typical day, he works in bursts when something is hot, and he keeps idle time to notice new openings.",
+          "Two more of his rules matter for us as marketers. First, “Most people will be buying your product because it's you behind it.” Your audience buys you, not just the product. Second, answer people's questions for free in communities, then package that knowledge into something they can buy.",
+          "And he built a quiet asset that most people skip. With every launch, he emailed everyone who'd bought from him before. By around 2021 that list had about 19,000 customers on it. Every new bet started with a crowd that had already paid him once."
+        ]
+      },
+      {
+        "label": "The first 100 members",
+        "title": "From a failed community to Small Bets",
+        "paras": [
+          "Small Bets wasn't his first community. In 2020 he ran one called Profit & Loss. It got to 1,500 members and then failed. He's said, “It's hard to engineer engagement.”",
+          "In 2021 he started Small Bets as a live course, sold through Gumroad. Here's where it gets honest about who owned it: Small Bets was co-owned by Daniel and Louis Bacaj, each with 45%, and Gumroad later held the other 10%. So when you read Daniel Vassallo's community, read Daniel's and Louis's.",
+          "What made it work was the first group. The first 25 members were highly engaged and needed little support, and once they set the tone, the community took off. It formed over 12 cohorts of the course, and members said the Discord was the most valuable part. Later it moved from Discord to Campfire.",
+          "The offer was a one-time payment for lifetime access, somewhere between $79 and $199 with prices adjusted for each country's purchasing power. List price was $199, often discounted to $99. Guest speakers were paid $1,000 per event. New members came in spikes around Black Friday and year-end sales."
+        ],
+        "pull": {"text": "It's hard to engineer engagement.", "cite": "Daniel Vassallo, quoted in Community Gaps"}
+      },
+      {
+        "label": "Scaling it",
+        "title": "$80K to $650K, and a consulting add-on",
+        "paras": [
+          "Small Bets' revenue, from the P&L he published: $80,040 in 2021, $445,690 in 2022, $455,447 in 2023 and $650,750 in 2024. That's about $1.63M over four years.",
+          "The 2024 jump has a clear cause. That year he added a 1:1 consultation for $2,500, or $625 a month for four months, and 85 people bought it. That brought in about $212,500, on top of $438,250 from memberships. Profit in 2024 was almost $500,000 before Gumroad's fees, according to Jay Clouse, who wrote up the deal and disclosed that he's a small Gumroad investor and a Small Bets member.",
+          "Another write-up says Small Bets made more than $200,000 in profit in each of the previous two years, which doesn't quite match. It might be per owner, or an earlier year, it's not clear. Either way, it was a very profitable little business.",
+          "There's a catch worth naming. Lifetime pricing means every member keeps costing you support and attention forever, while paying you once. Critics, including Clouse, call that unsustainable over time. That's one reason the consulting add-on and the Gumroad deal make sense."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Where he stands now",
+        "title": "Sold to Gumroad, and still running it",
+        "paras": [
+          "In 2024 Gumroad bought 10% of Small Bets for $500,000. In April 2025 it bought the other 90% for $3.6M, which values the whole thing at $4M. Some headlines said $3.5M or $3.2M. The deal terms Daniel shared support $3.6M for 90%.",
+          "It wasn't a simple cheque. Half was cash, paid as $900,000 at signing and $900,000 a year later. The other half was stock options that vest 10% every six months. Daniel committed to running Small Bets for five years, and if he leaves early he loses the options that haven't vested. He also helps Gumroad part-time, unpaid except for a required minimum wage. At the sale he posted the full P&L on X.",
+          "Gumroad's post about the deal lists 6,775 members, 13 resident experts and 29 course runs. Daniel's target is $1M in profit within two years. A Gumroad post also describes him as Head of Product, though when that was written isn't clear.",
+          "He hasn't said much publicly about AI. What he has said is about Gumroad's future: “The goal is to eventually turn Gumroad into a community rather than just a payment processor.” It's a neat ending for a man who preached small bets. He made lots of small ones, one got big, and he put it inside something bigger."
+        ],
+        "pull": {"text": "You have to build a portfolio of small safe-to-fail bets.", "cite": "Daniel Vassallo, Product Hunt AMA"}
+      }
+    ],
+    "failuresTitle": "The bets that didn't pay",
+    "failuresIntro": "Daniel is open about his misses, and he doesn't romanticise them. He thinks failure is expensive, so he tries to make each one small.",
+    "failures": [
+      {"year": "2019", "name": "The one-at-a-time plan", "what": "His first plan ran in order: SaaS, then a book, then freelancing, then maybe buying a business, each with a savings red line. He later called running bets in sequence a mistake.", "lesson": "Run experiments side by side so you learn faster."},
+      {"year": "2019 to about 2021", "name": "Userbase", "what": "An end-to-end encrypted backend for web apps. It got about 100 paying customers and 10 to 15 signups a day, but only $400 to $500 a month, about 2% of his income. He had to hire help, and customers took a long time to go live.", "lesson": "A product can look serious and still be the wrong bet for one person."},
+      {"year": "About 2020", "name": "Over-promising on the course", "what": "He offered Twitter account reviews to buyers of his course and couldn't keep up with them.", "lesson": "Don't bundle in personal time that doesn't scale."},
+      {"year": "2020", "name": "Profit & Loss community", "what": "A community before Small Bets that reached 1,500 members and then failed.", "lesson": "Engagement can't be forced. Start with the people who already care."},
+      {"year": "Ongoing", "name": "Posts that went nowhere", "what": "He says plenty of his posts went nowhere, and that failure is very expensive, not a free lesson.", "lesson": "Keep each attempt cheap so a miss doesn't hurt."}
+    ],
+    "playbookTitle": "How he sold six figures without ads",
+    "playbook": [
+      {"title": "Write the honest essay first", "text": "His post about leaving a $500K job was seen 200,000+ times and took him from about 100 followers to 1,500 in a burst, with 100+ DMs in a day. By October 2019 he had 10,000+."},
+      {"title": "Share the real numbers", "text": "He posts his revenue openly because people value those numbers most, and he doesn't fuss over posting times. At the Gumroad sale he published the full P&L on X."},
+      {"title": "Build a free tool that travels", "text": "His Bootstrapping Calculator reached the front page of Hacker News. Small, useful and easy to share."},
+      {"title": "Sell what you already know, fast", "text": "The AWS ebook came from eight years of work and took under a month. The Twitter course took 16 hours. Both made six figures."},
+      {"title": "Launch to your own followers", "text": "The ebook launched to about 11,000 followers in December 2019. The first $1,000 came in hours and about $40,000 in two weeks, almost all from his own tweets."},
+      {"title": "Email every past buyer for every launch", "text": "By about 2021 his list had about 19,000 customers. Every new product started with people who had already paid him."},
+      {"title": "Price for the world", "text": "Small Bets used one-time pricing from $79 to $199 adjusted for purchasing power, with big pushes around Black Friday and year-end sales."},
+      {"title": "Add a premium tier to a cheap product", "text": "A $2,500 1:1 consultation sold to 85 members in 2024 and brought in about $212,500, a third of that year's revenue."},
+      {"title": "Pay guests to bring the value", "text": "Small Bets paid guest speakers $1,000 per event and later had 13 resident experts, so the community didn't depend on him alone."}
+    ],
+    "charts": [
+      {
+        "title": "Daniel's Twitter followers in 2019",
+        "points": [
+          {"label": "Feb 2019", "value": 100, "display": "100"},
+          {"label": "After the essay", "value": 1500, "display": "1,500"},
+          {"label": "Oct 2019", "value": 10000, "display": "10,000+"},
+          {"label": "Dec 2019", "value": 11000, "display": "11,000"}
+        ],
+        "note": "He launched his AWS ebook at the 11,000 mark."
+      },
+      {
+        "title": "Small Bets revenue each year, from its published P&L",
+        "points": [
+          {"label": "2021", "value": 80040, "display": "$80K"},
+          {"label": "2022", "value": 445690, "display": "$446K"},
+          {"label": "2023", "value": 455447, "display": "$455K"},
+          {"label": "2024", "value": 650750, "display": "$651K"}
+        ],
+        "note": "2024 includes about $212,500 from a $2,500 consulting add-on."
+      }
+    ],
+    "timeline": [
+      {"when": "Before 2019", "text": "Works at Amazon for about eight years, with pay rising from $75,000 to over $500,000 a year."},
+      {"when": "Feb 2019", "text": "Quits Amazon with two kids, five years of savings and no concrete plan.", "big": true},
+      {"when": "2019", "text": "His essay on leaving a $500K job is seen 200,000+ times. He starts building Userbase."},
+      {"when": "Oct 2019", "text": "Passes 10,000 Twitter followers."},
+      {"when": "Dec 2019", "text": "Launches The Good Parts of AWS. It makes about $40,000 in two weeks.", "big": true},
+      {"when": "2020", "text": "Runs the Profit & Loss community, which reaches 1,500 members and fails."},
+      {"when": "2021", "text": "Has made $404,473 from info products, including a 16-hour Twitter course that earned about $150,000. Starts Small Bets as a live course on Gumroad.", "big": true},
+      {"when": "2022", "text": "Small Bets brings in $445,690."},
+      {"when": "2024", "text": "Small Bets makes $650,750 with a new $2,500 consulting add-on. Gumroad buys 10% for $500,000."},
+      {"when": "Apr 2025", "text": "Gumroad buys the remaining 90% for $3.6M, a $4M valuation. Daniel commits to running it for five years.", "big": true}
+    ],
+    "quotes": [
+      {"text": "work on my own terms, doing the things that intrinsically motivate me", "cite": "Daniel, Indie Hackers Podcast #177"},
+      {"text": "It's certainly a failed bet from a financial perspective", "cite": "Daniel on Userbase, Product Hunt AMA"},
+      {"text": "That product made about $40,000 in sales in 2 weeks.", "cite": "Daniel on The Good Parts of AWS, Product Hunt AMA"},
+      {"text": "Don't focus on one project. Do many at the same time.", "cite": "Daniel, Product Hunt AMA"},
+      {"text": "You have to build a portfolio of small safe-to-fail bets.", "cite": "Daniel, Product Hunt AMA"},
+      {"text": "Most people will be buying your product because it's you behind it.", "cite": "Daniel, Product Hunt AMA"},
+      {"text": "I think failure's very expensive.", "cite": "Daniel, Indie Hackers Podcast #177"},
+      {"text": "It's hard to engineer engagement.", "cite": "Daniel, quoted in Community Gaps"}
+    ],
+    "steal": [
+      "Write one honest post about a real decision with real numbers in it. His essay about leaving Amazon built his first audience before he sold anything.",
+      "Turn what you already know from your day job into a short guide. His AWS ebook took under a month and made $40,000 in two weeks.",
+      "Run two or three small bets at the same time instead of one big one in sequence, and give more hours to whichever earns first.",
+      "Keep a list of everyone who has ever paid you, and email them for every new thing you launch.",
+      "Add one premium option to a cheap product. His $2,500 consulting tier made a third of Small Bets' best year.",
+      "If you start a community, focus on the first 25 people who really care. They decide whether it takes off."
+    ],
+    "sources": [
+      {"title": "Indie Hackers Podcast #177: Daniel Vassallo", "url": "https://www.indiehackers.com/podcast/177-daniel-vassallo"},
+      {"title": "Product Hunt AMA: I made $404,473 selling an ebook and a video course", "url": "https://www.producthunt.com/discussions/i-m-daniel-i-made-404-473-selling-an-ebook-and-a-video-course-on-the-internet-ama"},
+      {"title": "Community Gaps: How Small Bets created a $200K a year community", "url": "https://communitygaps.beehiiv.com/p/how-small-bets-created-a-200k-year-community"},
+      {"title": "Creator Science: The Small Bets acquisition (Apr 2025)", "url": "https://creatorscience.com/small-bets-acquisition/"},
+      {"title": "Who's Who Malta: Daniel Vassallo closes $3.6 million company sale (Apr 2025)", "url": "https://whoswho.mt/en/maltese-founder-daniel-vassallo-closes-3-6-million-company-sale"},
+      {"title": "Gumroad: Small Bets is joining Gumroad", "url": "https://gumroad.com/blog/p/small-bets-is-joining-gumroad"},
+      {"title": "Gumroad: Q&A with Daniel Vassallo, Head of Product", "url": "https://gumroad.com/blog/p/q-a-with-daniel-vassallo-head-of-product-and-randall-kanna-head-of-community"}
+    ]
+  }
+}

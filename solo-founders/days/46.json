@@ -1,0 +1,497 @@
+{
+ "n": 46,
+ "name": "Anne-Laure Le Cunff",
+ "short": "Anne-Laure",
+ "wisdom": "Show up in public every morning for 100 days, and people notice.",
+ "email": {
+  "subject": "Her startup failed. Then she wrote 100 articles in 100 days.",
+  "hook": "Anne-Laure Le Cunff left a job she loved at Google, watched her startup fail within a year, and then built a six-figure learning community by writing for two hours every morning.",
+  "lead": [
+   "She matters to us because she didn't build software first. She built a writing habit, in public, and the business grew out of it: an audience, consulting work, a paid community, and in 2025 a bestselling book. That's very close to the path a marketer can walk.",
+   "One honest note up front: Ness Labs isn't a one-woman show any more. She made her first hires in March 2021 and the site now talks about an interdisciplinary team. But the engine, the writing, started with her alone at a desk before her lectures."
+  ],
+  "stats": [
+   {
+    "value": "100",
+    "label": "articles in 100 days, 2019"
+   },
+   {
+    "value": "$100K",
+    "label": "a year from the community, Apr 2021"
+   },
+   {
+    "value": "100K+",
+    "label": "newsletter subscribers, Mar 2025"
+   }
+  ],
+  "chart": {
+   "title": "Ness Labs newsletter subscribers, by her own numbers",
+   "points": [
+    {
+     "label": "Late 2019",
+     "value": 3000,
+     "display": "3K"
+    },
+    {
+     "label": "2020",
+     "value": 8000,
+     "display": "8K"
+    },
+    {
+     "label": "About 2021",
+     "value": 35000,
+     "display": "35K"
+    },
+    {
+     "label": "Mar 2025",
+     "value": 100000,
+     "display": "100K+"
+    }
+   ],
+   "note": "She started from zero in summer 2019 by sending a landing page to friends and old colleagues."
+  },
+  "sections": [
+   {
+    "title": "What she's doing right now",
+    "paras": [
+     "Her book, Tiny Experiments, came out from Avery (Penguin Random House) on 4 March 2025 and carries a bestseller flag. The idea is to stop chasing straight-line goals and run small personal experiments instead. She took it to Talks at Google in April 2025 and to a TEDx stage in Nashville.",
+     "The book itself started with a publisher emailing her in 2022, out of the blue, to ask if she'd write one. That's what three years of public writing buys you: the offers start coming to you."
+    ]
+   },
+   {
+    "title": "How the money comes in",
+    "stats": true,
+    "paras": [
+     "The free newsletter and the articles bring people in. The money comes from a private paid community, Academy courses, remote science-based workshops for groups of 10 to 100, events, sponsorships and now the book.",
+     "The community launched in March 2020 at **$9 a month or $49 a year**, and it hit $1K a month in recurring revenue on launch day. By her own numbers it passed $10K a month by October 2020 and $100K a year by April 2021. In September 2024 the yearly price was still $49, so the growth came from more members, not higher prices.",
+     "Sponsorships helped too. She sold sponsored founder interviews at $1,500 each and says that line had passed $14,000 about a month after she started it."
+    ]
+   },
+   {
+    "title": "How she got the first readers",
+    "paras": [
+     "In summer 2019 she was doing a neuroscience master's at King's College London. She set up a blog with a subscribe form under every post, sent the landing page to friends and former colleagues, and announced a challenge on social media: 100 articles in 100 days, weekdays only.",
+     "Every morning she blocked two hours and published when the time ran out, perfect or not. People followed along because it looked a bit crazy. She says it herself: “If I'd committed to an article a week, no one would have cared.”",
+     "That got her to about 3,000 subscribers in two months. A Product Hunt launch late in 2019 added roughly 2,000 more. After that, growth came mostly from Twitter, with the odd spike from Hacker News."
+    ]
+   },
+   {
+    "title": "The part nobody talks about",
+    "chart": true,
+    "paras": [
+     "Before Ness Labs she co-founded Lysa Health, an AI nutrition chatbot. It had more than 1,000 testers in 2017 but never left closed beta. She talks about burnout and a breakup with a co-founder. She had walked away from Google, a job she says she genuinely loved, for that.",
+     "And the writing didn't pay at first. In all of 2019 the newsletter made about $300. The first sponsor was a reader who paid $100 for a link. What paid the bills was freelance consulting, and the articles brought in about a dozen of those contracts. The newsletter was the shop window long before it was the shop."
+    ]
+   }
+  ],
+  "tryToday": "Pick one thing you can publish every weekday, put a two-hour block in your calendar for tomorrow morning, and tell people publicly that you're doing it for 100 days.",
+  "button": "Read how she got here"
+ },
+ "page": {
+  "intro": "A former Google marketer whose startup failed, Anne-Laure started writing to learn while doing a neuroscience master's. One hundred articles in a hundred days later she had an audience, and that audience became Ness Labs, a paid learning community, and a bestselling book.",
+  "stats": [
+   {
+    "value": "100",
+    "num": 100,
+    "prefix": "",
+    "suffix": "",
+    "label": "articles in 100 days",
+    "note": "summer and autumn 2019"
+   },
+   {
+    "value": "$100K",
+    "num": 100,
+    "prefix": "$",
+    "suffix": "K",
+    "label": "a year from the community",
+    "note": "her own number, Apr 2021"
+   },
+   {
+    "value": "100,000+",
+    "num": 100000,
+    "prefix": "",
+    "suffix": "+",
+    "label": "newsletter subscribers",
+    "note": "her own number, Mar 2025"
+   },
+   {
+    "value": "$49",
+    "num": 49,
+    "prefix": "$",
+    "suffix": "",
+    "label": "a year for membership",
+    "note": "unchanged from 2020 to 2024"
+   }
+  ],
+  "chapters": [
+   {
+    "label": "Before it worked",
+    "title": "She loved her job at Google, and left anyway",
+    "paras": [
+     "Anne-Laure Le Cunff is from Paris and lives in London. She got into Google as an intern and then joined full time. There's a lovely detail in an April 2018 interview: she had hoped to work on Google's glucose-monitoring contact lens, because her mother and grandmother both managed diabetes. Then the 2015 Alphabet restructuring happened and that path closed.",
+     "So she ended up as global marketing lead for Google Fit, working with partners like Michael Kors and Nike. By any normal measure, that's a career going well. She says leaving “was hard because I genuinely loved my job.”",
+     "There's also a bit of background that explains her drive. She has said her mother is an immigrant who “started very, very poor”. When someone with that story walks out of Google, they're not doing it for fun. They really believe in the thing they're leaving for.",
+     "Her exact years at Google aren't public, though she was there around 2015. What we do know is what she left for, and it didn't go well."
+    ],
+    "pull": {
+     "text": "It was hard because I genuinely loved my job",
+     "cite": "Anne-Laure, to BusinessCloud, 2018"
+    }
+   },
+   {
+    "label": "The lowest point",
+    "title": "An AI chatbot that never left beta",
+    "paras": [
+     "The startup was Lysa Health, an AI nutrition chatbot. Remember, this was 2017, years before ChatGPT. She co-founded it with a CTO, Jay Li, and a dietitian, Katarina Burton, and it went live less than a year after she left Google.",
+     "On paper it had promise. More than 1,000 people tested it in 2017. But it stayed in closed beta and never became a real product with real customers. In her own later telling, the startup simply “failed” within a year of her leaving Google.",
+     "She has been open about why: burnout, and a breakup with a co-founder. That's the part of startup stories we rarely hear. It wasn't a market problem or a technical problem in the way she describes it. It was people and energy running out.",
+     "Here's the thing to notice. She had done what the Silicon Valley script says: quit the big job, find co-founders, build the tech. It broke her. What came next looked nothing like that script, and later she put it plainly: “I didn't need to follow the Silicon Valley startup model.”"
+    ],
+    "pull": {
+     "text": "I didn't need to follow the Silicon Valley startup model.",
+     "cite": "Anne-Laure, Kit creator story"
+    }
+   },
+   {
+    "label": "The first version",
+    "title": "A blog, a form, and two hours every morning",
+    "paras": [
+     "Next she went back to school, to do a master's in neuroscience at King's College London. About a year in, in summer 2019, she started writing online. Her reason was learning, not business. She leaned on something called the generation effect: you remember things better when you produce them yourself, so writing about what she studied was a way to actually learn it.",
+     "The first version of Ness Labs was almost nothing. A blog. A subscribe form at the bottom of each post, inviting readers to “join a community of curious humans” who wanted to get more done without wrecking their mental health. Each new post went out on Twitter and Hacker News. That was the whole machine.",
+     "The first readers came from the most ordinary place possible. She sent the landing page to her friends and former colleagues. No launch strategy, no ads. Just, here's what I'm doing, please follow along.",
+     "Then she made it hard to ignore. She announced on social media that she'd write **100 articles in 100 days**, weekdays only. Every morning she blocked two hours. When the two hours were up, she published, even if the piece wasn't perfect. The articles averaged about 880 words, with the shortest at 310 and the longest at 2,010.",
+     "She was also doing freelance consulting at the time, and the client deadlines helped. Having real work waiting after the writing block meant the block couldn't spill over. The constraint kept her honest.",
+     "Why 100 in 100 days and not one a week? She answered that herself, and it's the most useful sentence in this whole story for us: “If I'd committed to an article a week, no one would have cared.” The challenge itself was the marketing. People followed because it looked ambitious and they wanted to see if she'd make it."
+    ],
+    "pull": {
+     "text": "If I'd committed to an article a week, no one would have cared.",
+     "cite": "Anne-Laure, Indie Hackers, 2021"
+    }
+   },
+   {
+    "label": "The first readers",
+    "title": "3,000 subscribers in two months",
+    "paras": [
+     "The streak worked faster than she probably expected. By her own count she had about 3,000 subscribers within two months of starting. One later interview puts the number at about 6,000 within roughly three months, all driven by the challenge.",
+     "Late in 2019 she launched on Product Hunt, and that brought in about 2,000 new subscribers. She calls it “a few thousand” in her own words. Either way, it was a big jump for a newsletter that was a few months old.",
+     "After that, she says, early growth came mostly from Twitter, with Hacker News sending traffic now and then. Later, Google search and YouTube joined in. A couple of articles went properly viral, including one about time anxiety. If you've ever felt behind on everything, that topic is the reason it spread.",
+     "Look at what the 100 articles produced in total: hundreds of thousands of views, about a dozen consulting contracts, coaching clients, podcast invitations and press. **The writing was paying her before the newsletter was.** That matters, because it meant she could keep going without needing the newsletter itself to earn.",
+     "She also built in a small habit that turned out to shape the whole business. At the end of her emails she added a PS asking people to reply and tell her how they were feeling. People did. Those replies told her what readers actually needed, and that became the paid community."
+    ],
+    "chart": 0
+   },
+   {
+    "label": "Finding the money",
+    "title": "$300 in year one, then $1K a month on launch day",
+    "paras": [
+     "The money story starts small enough to be funny. Her first sponsor in 2019 was a reader who paid $100 for a link. In the whole of 2019, by her own numbers, the newsletter made about $300. Most of her income that year came from consulting.",
+     "In March 2020 she opened the paid community. She priced it at $9 a month or $49 a year, picked so it would be affordable for members around the world while still leaving her some margin. She ran it on Circle, which she chose because it was easy to set up, handled slow async discussion well, and could host courses and a knowledge base too. Payments went through Memberful and Stripe.",
+     "It hit **$1K in monthly recurring revenue on the day it launched**. That's the reward for months of daily writing: the people were already there, waiting. Indie Hackers milestone pages from her product show the next steps as $5K in one month, then 500 paid members, then 1,000, though we don't have the dates for those.",
+     "By October 2020 she was past $10K a month. By April 2021 the community alone was at $100K a year, and she wrote an Indie Hackers AMA about growing an online community to that number in about a year.",
+     "She also added sponsored founder interviews at $1,500 per feature, promoted on Twitter and in the newsletter. By April 2021 she said that line had already passed $14,000, about a month after starting. Later the business grew to include Academy courses and remote workshops for teams of 10 to 100 people.",
+     "Her advice on timing is practical. She suggests having about 1,000 newsletter subscribers before you start a paid community, because members always come from a slice of your free readers."
+    ],
+    "chart": 1
+   },
+   {
+    "label": "How she works",
+    "title": "No meetings before the writing is done",
+    "paras": [
+     "Her routine is the business. Two hours every morning go to research and writing, with no meetings allowed. After that comes community time and a bit of Twitter. Afternoons are for calls, meetups and podcasts.",
+     "She has small tricks for bad days. Her Ten Minute Rule: when she's stuck, she makes a cup of tea and commits to just ten minutes on one task. There are no electronic devices in her bedroom, and she reads fiction as a ritual.",
+     "She sent the newsletter every Thursday and says she never missed a week. And she split her effort roughly 80/20: about 80% making the thing, about 20% promoting it. Her reasoning was that if most of the work is creating the product, promotion still deserves a real share of the rest, not whatever is left over.",
+     "She finished her graduate program in December 2020 and went full time on Ness Labs. In March 2021 she made her first two hires, a sales and partnerships manager and a social media and community manager, which made it a team of three. Before that, she'd run things alone with a rotating Researcher in Residence."
+    ]
+   },
+   {
+    "label": "Scaling it",
+    "title": "From a newsletter to a learning community",
+    "paras": [
+     "By about 2021 she was at around 35,000 subscribers and 100,000 visitors a month, two years in. She ran a Product Hunt AMA on exactly that. By March 2025 she said the newsletter had passed 100,000 subscribers and the community was bringing in six figures a year.",
+     "Ness Labs now calls itself the learning community for ambitious knowledge workers, run by an interdisciplinary team. In September 2024 the community had named session hosts, Gosia Fricze and Ben Covington, and a weekly rhythm: a Monday creative self-reflection hour, a Sunday weekly review, and coworking sessions on Mondays, Thursdays and Sundays.",
+     "The yearly price was still $49 in September 2024, the same as when it opened. So the growth wasn't from charging more. It came from more people, plus sponsorships, workshops and courses stacked around the same audience.",
+     "Somewhere along the way she also went back to finish what she'd started academically. By March 2025 she had completed a PhD in neuroscience. Her publisher's bio mentions her return to the PhD."
+    ]
+   },
+   {
+    "label": "Where she stands now",
+    "title": "A publisher emailed her, and she wrote a bestseller",
+    "paras": [
+     "In 2022 a publisher emailed to ask if she'd write a book. Note the direction: she didn't pitch, they came to her. That's what years of public writing do.",
+     "It wasn't quick. The book went through three editors, four title changes and 21 cover designs. Pre-orders opened on 12 September 2024 in her newsletter. She gave pre-order bonuses to anyone who sent in a receipt, and held a live Behind the Book session on 18 October 2024 for readers who had pre-ordered by the day before. That's a nice, simple launch mechanic we can copy.",
+     "Tiny Experiments: How to Live Freely in a Goal-Obsessed World came out from Avery, part of Penguin Random House, on 4 March 2025. It's 304 pages, carries a bestseller flag, and has a UK edition from Profile Books. The argument is that straight-line goals trap us, and that a “circular model of growth” built on small experiments works better.",
+     "She gave a Talks at Google session on it in April 2025, which must have felt like a full circle moment, and a TEDxNashville talk called How tiny experiments can set you free.",
+     "What we don't know: book sales, what she earns now, and what she's working on in 2026. None of that is public. As with everyone in this series, most of the numbers here are her own, shared in interviews and posts, and we haven't seen them checked by anyone else."
+    ]
+   },
+   {
+    "label": "How she thinks",
+    "title": "You don't owe anything to your past self",
+    "paras": [
+     "Her best-known line is three words: “Consistency trumps strategy.” Her story proves it. She didn't have a clever growth plan in 2019. She had a time slot and a promise.",
+     "She also said, looking back at the challenge: “I just committed to showing up every day for 100 days.” There was no subscriber target. The output was the goal.",
+     "And there's a gentler idea that sits under the book, and under her move from Google to a failed startup to a master's degree at an age when many people are settling in. She put it like this: “you don't owe anything to your past self.” You can change direction. The career you had doesn't get a vote on the one you want.",
+     "She treats failures as data, learns in public and keeps a fixed writing schedule. That's not a philosophy you need a degree to copy. It's a calendar block."
+    ],
+    "pull": {
+     "text": "Consistency trumps strategy.",
+     "cite": "Anne-Laure, Indie Hackers, 2021"
+    }
+   }
+  ],
+  "failuresTitle": "One startup that broke her",
+  "failuresIntro": "There's only one documented failure, but it was a big one: she left Google for it.",
+  "failures": [
+   {
+    "year": "2017 to 2018",
+    "name": "Lysa Health",
+    "what": "An AI nutrition chatbot she co-founded with a CTO and a dietitian. It had more than 1,000 testers in 2017 but stayed in closed beta. She says it failed within a year of her leaving Google, and points to burnout and a breakup with a co-founder.",
+    "lesson": "The heavy startup model isn't the only way in; a small daily habit can build something steadier."
+   },
+   {
+    "year": "2019",
+    "name": "A newsletter that made $300",
+    "what": "Her first year of writing earned about $300 in total from the newsletter, starting with a reader paying $100 for a link. Consulting paid the bills. It only looks like a failure if you judge it too early.",
+    "lesson": "Let the audience grow on side income before you ask it to pay you."
+   }
+  ],
+  "playbookTitle": "How she grew it without ads",
+  "playbook": [
+   {
+    "title": "A public 100-day challenge",
+    "text": "She announced 100 articles in 100 days on social media and wrote every weekday in a two-hour morning block, publishing when time ran out. It got her to about 3,000 subscribers in two months. The challenge was the hook, because people wanted to watch her finish it."
+   },
+   {
+    "title": "Friends and ex-colleagues first",
+    "text": "Her very first readers came from sending the landing page to friends and former colleagues. Nothing fancy. It gave the newsletter a base of people who would open and share it."
+   },
+   {
+    "title": "A form under every post",
+    "text": "Each post ended with a subscribe form inviting readers to join a community of curious humans. Every post was shared on Twitter and Hacker News. Twitter did most of the early work, with Hacker News sending traffic now and then."
+   },
+   {
+    "title": "A Product Hunt launch",
+    "text": "Late in 2019 she launched the newsletter on Product Hunt and got about 2,000 new subscribers. Later she ran a Product Hunt AMA about reaching 35,000 subscribers and 100,000 monthly visitors."
+   },
+   {
+    "title": "A reply-to PS",
+    "text": "She ended emails asking readers to reply and say how they were feeling. Those replies told her what people needed, and that shaped the paid community she launched in March 2020."
+   },
+   {
+    "title": "Paid community on top of a free list",
+    "text": "She waited until she had an audience, then opened a Circle community at $9 a month or $49 a year. It hit $1K a month on launch day and $100K a year by April 2021. Her rule of thumb is about 1,000 subscribers before you try."
+   },
+   {
+    "title": "Sponsored interviews",
+    "text": "She sold founder interviews at $1,500 each, promoted on Twitter and in the newsletter. By her account that line passed $14,000 about a month after she started it."
+   },
+   {
+    "title": "A pre-order launch with bonuses",
+    "text": "For the book, pre-orders opened in September 2024. Readers who sent in their receipt got bonuses and an invite to a live Behind the Book session. The whole list became a launch team."
+   }
+  ],
+  "charts": [
+   {
+    "title": "Newsletter subscribers, by her own numbers",
+    "points": [
+     {
+      "label": "Late 2019",
+      "value": 3000,
+      "display": "3K"
+     },
+     {
+      "label": "2020",
+      "value": 8000,
+      "display": "8K"
+     },
+     {
+      "label": "About 2021",
+      "value": 35000,
+      "display": "35K"
+     },
+     {
+      "label": "Mar 2025",
+      "value": 100000,
+      "display": "100K+"
+     }
+    ],
+    "note": "She started from zero in summer 2019."
+   },
+   {
+    "title": "Monthly revenue in the first year of the community, by her own numbers",
+    "points": [
+     {
+      "label": "2019 (whole year)",
+      "value": 300,
+      "display": "$300 total"
+     },
+     {
+      "label": "Mar 2020 launch day",
+      "value": 1000,
+      "display": "$1K MRR"
+     },
+     {
+      "label": "Oct 2020",
+      "value": 10000,
+      "display": "$10K+ a month"
+     },
+     {
+      "label": "Apr 2021",
+      "value": 8333,
+      "display": "$100K a year, community only"
+     }
+    ],
+    "note": "The April 2021 figure is yearly and covers the community alone, so it isn't a drop."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "About 2015",
+    "text": "Working at Google. The Alphabet restructuring ends her hope of working on the glucose lens, and she becomes global marketing lead for Google Fit."
+   },
+   {
+    "when": "2017",
+    "text": "Co-founds Lysa Health, an AI nutrition chatbot. It gets more than 1,000 testers but stays in closed beta."
+   },
+   {
+    "when": "2018",
+    "text": "Lysa Health fails. She starts a neuroscience master's at King's College London."
+   },
+   {
+    "when": "Summer 2019",
+    "text": "Launches her blog and newsletter and starts 100 articles in 100 days.",
+    "big": true
+   },
+   {
+    "when": "Late 2019",
+    "text": "About 3,000 subscribers. A Product Hunt launch adds about 2,000 more."
+   },
+   {
+    "when": "Mar 2020",
+    "text": "Opens the paid community at $9 a month or $49 a year and hits $1K MRR on launch day.",
+    "big": true
+   },
+   {
+    "when": "Oct 2020",
+    "text": "Passes $10K a month."
+   },
+   {
+    "when": "Dec 2020",
+    "text": "Finishes her graduate program and goes full time."
+   },
+   {
+    "when": "Mar 2021",
+    "text": "First two hires. The community reaches $100K a year by April."
+   },
+   {
+    "when": "2022",
+    "text": "A publisher emails to ask if she'll write a book."
+   },
+   {
+    "when": "Sep 2024",
+    "text": "Pre-orders open for Tiny Experiments."
+   },
+   {
+    "when": "Mar 2025",
+    "text": "Tiny Experiments is published by Avery and flagged a bestseller. Newsletter past 100,000 subscribers.",
+    "big": true
+   }
+  ],
+  "quotes": [
+   {
+    "text": "Consistency trumps strategy.",
+    "cite": "Indie Hackers, 2021"
+   },
+   {
+    "text": "If I'd committed to an article a week, no one would have cared.",
+    "cite": "Indie Hackers, 2021"
+   },
+   {
+    "text": "I didn't need to follow the Silicon Valley startup model.",
+    "cite": "Kit creator story"
+   },
+   {
+    "text": "I just committed to showing up every day for 100 days.",
+    "cite": "Growth In Reverse, 2025"
+   },
+   {
+    "text": "you don't owe anything to your past self.",
+    "cite": "Indie Hackers, 2021"
+   },
+   {
+    "text": "Time is a social construct.",
+    "cite": "Indie Hackers, 2021"
+   },
+   {
+    "text": "It was hard because I genuinely loved my job",
+    "cite": "BusinessCloud, 2018"
+   }
+  ],
+  "steal": [
+   "Make your output the goal, not your follower count. Pick a daily thing you can publish, put the same two hours in your calendar every morning, and keep the promise for 100 days.",
+   "Make the challenge public and slightly too ambitious. A weekly post is easy to ignore; a daily streak gives people a reason to follow along and check in.",
+   "Let side income carry you while the audience grows. She had consulting money for a year before the newsletter paid, and the writing itself brought in those clients.",
+   "Ask your readers how they feel, not just what they think of your product. Her reply-to PS is how she found out what to sell.",
+   "Don't open a paid offer to an empty room. Wait for roughly 1,000 subscribers, then launch to people who already know you, the way she hit $1K a month on day one.",
+   "Spend a real slice of your time on promotion, around 20%, instead of treating it as whatever's left after the work."
+  ],
+  "sources": [
+   {
+    "title": "BusinessCloud, health chatbot founder left Google (Apr 2018)",
+    "url": "https://businesscloud.co.uk/news/health-chatbot-founder-left-google-to-change-the-world/"
+   },
+   {
+    "title": "Indie Hackers, 100 articles in 100 days and crossing $100K ARR (Sep 2021)",
+    "url": "https://indiehackers.com/post/on-publishing-100-articles-in-100-days-and-crossing-100k-arr-anne-laure-le-cunffs-story-f99d8130c9"
+   },
+   {
+    "title": "Indie Hackers AMA, growing an online community to $100K ARR (Apr 2021)",
+    "url": "https://www.indiehackers.com/post/i-grew-an-online-community-to-100k-arr-over-one-year-ama-fab49f519b"
+   },
+   {
+    "title": "Kit creator story, Anne-Laure Le Cunff",
+    "url": "https://kit.com/resources/creator-stories/anne-laure-le-cunff"
+   },
+   {
+    "title": "Growth In Reverse, from 0 to 100K (Mar 2025)",
+    "url": "https://growthinreverse.substack.com/p/from-0-to-100k-the-science-of-writing-540"
+   },
+   {
+    "title": "Embarque, the Ness Labs story",
+    "url": "https://embarque.io/post/ness-labs"
+   },
+   {
+    "title": "Product Hunt AMA, 35K subscribers and 100K visitors in 2 years",
+    "url": "https://www.producthunt.com/discussions/growing-a-newsletter-and-a-website-to-35k-subscribers-and-100k-visitors-per-month-in-2-years-ama"
+   },
+   {
+    "title": "IndieBites, mindful productivity",
+    "url": "https://indiebites.transistor.fm/episodes/why-mindful-productivity-is-important-as-an-indie-hacker-anne-laure-le-cunff-ness-labs"
+   },
+   {
+    "title": "Indie Hackers, Maker Mind product page",
+    "url": "https://www.indiehackers.com/product/maker-mind"
+   },
+   {
+    "title": "Ness Labs newsletter, the big reveal (Sep 2024)",
+    "url": "https://newsletter.nesslabs.com/posts/ness-labs-the-big-reveal"
+   },
+   {
+    "title": "Ness Labs, About",
+    "url": "https://nesslabs.com/about"
+   },
+   {
+    "title": "Penguin Random House, Tiny Experiments",
+    "url": "https://www.penguinrandomhouse.com/books/737291/tiny-experiments-by-anne-laure-le-cunff/9780593715130/"
+   },
+   {
+    "title": "Talks at Google listing (Apr 2025)",
+    "url": "https://noise.getoto.net/2025/04/11/anne-laure-le-cunff-tiny-experiments-talks-at-google/"
+   },
+   {
+    "title": "Ness Labs, TEDx talk transcript",
+    "url": "https://nesslabs.com/?p=17837"
+   }
+  ]
+ }
+}

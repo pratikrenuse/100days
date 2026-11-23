@@ -1,0 +1,281 @@
+{
+  "n": 35,
+  "name": "Michael Lynch",
+  "short": "Michael",
+  "wisdom": "Write honestly about what you build, and the right buyers find you.",
+  "email": {
+    "subject": "Every business lost money. Then a side gadget sold for $598K.",
+    "hook": "Michael Lynch left Google to work for himself, lost money on every product for two years, and then a little gadget he built as a distraction grew to about $1M a year and sold for $598K.",
+    "lead": [
+      "Michael is a software engineer who worked at Microsoft and Google. Since going independent he has published a public report on his business almost every single month, with revenue down to the cent. That habit is a big part of why his story is so useful: we can actually see the numbers.",
+      "One honest note: by the time TinyPilot sold, it was not a solo business. It had 7 people. Today he works alone again, writing and selling a book."
+    ],
+    "stats": [
+      {"value": "$598K", "label": "TinyPilot sale price, April 2024"},
+      {"value": "$920K", "label": "lifetime profit over four years"},
+      {"value": "$3,566", "label": "book sales in October 2026"}
+    ],
+    "chart": {
+      "title": "TinyPilot monthly sales in its first months, by his own numbers",
+      "points": [
+        {"label": "Sep 2020", "value": 3818, "display": "$3.8K"},
+        {"label": "Oct 2020", "value": 10264, "display": "$10.3K"},
+        {"label": "Dec 2020", "value": 15367, "display": "$15.4K"},
+        {"label": "Jan 2021", "value": 41993, "display": "$42K"}
+      ],
+      "note": "January 2021 jumped after one YouTube review."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Michael is selling his own book, Refactoring English, which teaches developers to write better. He officially launched it in October 2026, and his site had 43,968 unique visitors that month. He says he's now deciding whether to keep focusing on the book or move on.",
+          "On the side, he's using AI to build a multiplayer browser game prototype called Mikeville, inspired by Stardew Valley and Ultima Online. In his words, \"I'm exploring what vibecoded game development is like\"."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "The book sells as an ebook and in print, from his own site and on Leanpub. In October 2026 it made $3,566.06: $3,078.22 from ebooks and $487.84 from print. The price went from $30 to $49 when early access ended on 20 July 2026, which gave him his best day ever, over $1,000.",
+          "His plan is a simple loop. **The blog brings readers to a product, and the product pays for the writing.** The book is that loop in action."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "In mid-2020, while another business was flopping, he built a gadget to control his home server from a web browser instead of swapping cables. It was a Raspberry Pi pretending to be a USB keyboard and capturing the screen, plus a small web app. He calls it \"a little contraption\". He expected to sell one or two a week.",
+          "He wrote it up in a blog post on 23 July 2020: \"Build a KVM Over IP for Under $100.\" The software was open source, and the kits started at $169.99."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "That one blog post hit the top of Hacker News and spread on Reddit. All nine kits he had in stock sold in under four hours, and he made $8.8K in the first week. Later the post ranked on page one of Google for \"kvm over ip\", which made search his biggest source of sales.",
+          "Then a YouTube channel, Craft Computing, reviewed it in January 2021 and brought 33 orders in one day. Paid ads, by contrast, barely worked: $360 on Reddit ads gave 208 clicks and no tracked sales."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Before TinyPilot, his first two years \"went poorly\". KetoHub, Is It Keto, What Got Done and WanderJest all lost money. And even TinyPilot lost money in its first year, because hardware means buying parts before you sell anything.",
+          "By the end he was managing 6 people across 3 teams and missed writing code. He said TinyPilot took **\"about 40% of my waking hours, but it occupied 90% of my stress\"**. So he sold it, all cash, and walked away with $490,803 after fees."
+        ]
+      }
+    ],
+    "tryToday": "Write a short, honest post about one thing you built or tried this month, with a real number in it. Publish it today where your kind of reader hangs out.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Michael Lynch is a former Google and Microsoft engineer who left to bootstrap and lost money on everything for two years. Then a home-server gadget he built as a distraction became TinyPilot, grew to about $1M a year in revenue and sold for $598K in 2024. Now he's back to working alone, writing and selling a book.",
+    "stats": [
+      {"value": "$598K", "num": 598, "prefix": "$", "suffix": "K", "label": "TinyPilot sale price", "note": "April 2024, his own figure"},
+      {"value": "$1M", "num": 1, "prefix": "$", "suffix": "M", "label": "TinyPilot yearly revenue at sale", "note": "$1,022,090 on the listing"},
+      {"value": "$920K", "num": 920, "prefix": "$", "suffix": "K", "label": "lifetime profit including the sale", "note": "over four years, his own figure"},
+      {"value": "7", "num": 7, "prefix": "", "suffix": "", "label": "people on the team when it sold", "note": "not solo at the end"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Columbia, Microsoft, Google, then out",
+        "paras": [
+          "Michael has a computer science degree from Columbia, finished in 2007. He worked as a software engineer at Microsoft, then at Google, and later as a security engineer at a firm called NCC Group. His website says he lives in Western Massachusetts.",
+          "That's the kind of career a lot of people would never leave. He left anyway, to bootstrap his own products.",
+          "What makes Michael special for us is a habit. Almost every month since then, he has published a public retrospective on his blog: what he worked on, what went well, what didn't, and exactly how much money came in, often to the cent. Nearly every number on this page comes from those reports, so it's his own account, but it's an unusually detailed and consistent one.",
+          "Because of that habit, we can see something most founders hide. The early years were bad."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "Two years of losing money",
+        "paras": [
+          "He's direct about it. His first two years as an independent founder \"went poorly.\" He struggled to find paying customers, and every one of his businesses lost money.",
+          "His retrospectives list the attempts. There was KetoHub, with a retrospective from December 2017. There was Is It Keto, which he ran from January 2019 to July 2020. That's where his milestone \"My first dollar of revenue\" comes from, in January 2019, more than a year after he'd started. There was What Got Done, from June to August 2019, and WanderJest, from February to March 2020.",
+          "All of them lost money. He hasn't laid out the reason for each one in detail, so we won't guess. In May 2019 he even published a retrospective called \"Recovery Month\", which tells you something about how that period felt.",
+          "By mid-2020, he says, another of his businesses had flopped. COVID was everywhere. This is the moment where a lot of ex-Google engineers would quietly update their CV. Instead, he got distracted by a gadget."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "A Raspberry Pi pretending to be a keyboard",
+        "paras": [
+          "Michael had a home server, a computer that runs in the corner. When something went wrong with it, he had to plug in a monitor and keyboard to fix it. Swapping cables around was annoying. Professional tools that let you control a computer remotely through a browser, called KVM over IP, were expensive.",
+          "So he built his own. It was a Raspberry Pi, a cheap little computer, set up to act as a USB keyboard for the server and to capture its video output, plus a web app so he could see and control the server from any browser. It took a few months of tinkering before he had a working prototype. He later called it \"a little contraption\" and a \"distraction\" from the business that was failing.",
+          "The parts list was humble: a Raspberry Pi 4, an HDMI-to-USB capture dongle he bought on eBay for $11.20, a USB-C cable and a microSD card. The software ran on Raspberry Pi OS Lite with nginx, a video streamer called uStreamer, a script that made the Pi act like a USB device, and Ansible to install it all. He released the code as open source.",
+          "He kept the tech simple too. The web app was **plain JavaScript with no build step**. The sales site was built with Gridsome. He wrote most of the code himself, but hired a developer for the sales page and paid an electrical engineering consultant for the hardware side.",
+          "His expectations were modest. He thought he might sell one or two kits a week, at about $80 profit each. Pocket money, basically."
+        ],
+        "pull": {"text": "The thing that saved me was a lucky post on Hacker News.", "cite": "Michael, on his blog, March 2025"}
+      },
+      {
+        "label": "The first 100 customers",
+        "title": "Nine kits, gone in four hours",
+        "paras": [
+          "On 23 July 2020 he published a blog post: \"Build a KVM Over IP for Under $100.\" It explained what he'd made, how it worked and how to build one yourself.",
+          "The post hit the front page of Hacker News, the big tech news site, and became one of the most popular Show HN posts ever. It also spread on Reddit. He had nine kits in stock. **All nine sold in under four hours.** In the first week he made $8.8K in sales.",
+          "Think about what happened there. He didn't write a sales page and push it. He wrote an honest, useful technical post that showed people how to build the thing for free, and people still bought it from him, because they'd rather not do it themselves.",
+          "The post kept working long after that day. By October 2020, it ranked on page one of Google for \"kvm over ip\", and organic search was his biggest source of sales. That month he sold 47 kits and 35 power-connector boards.",
+          "Then came a second spike. In January 2021, a YouTube channel called Craft Computing reviewed TinyPilot. That one video brought 33 orders, about $5K, in a single day. January's sales came to $41,993."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "Hardware is hard",
+        "title": "Selling well and still losing money",
+        "paras": [
+          "Here's the twist hardware founders know well. Even with customers lining up, TinyPilot lost money in 2020.",
+          "In his yearly review he listed the 2020 costs: $46,143 on materials, $7,130 on electrical engineering consulting, $2,570 on fulfilment, $1,321 on software development, $675 on advertising and just $64 on hosting. Sales for the year were $53,362. The result was a net loss of $5,681.",
+          "The reason is simple. With software you sell first and pay later. With hardware you buy the parts first. In October 2020 a 4GB Raspberry Pi cost him $55 and an HDMI dongle about $9. The power-connector board he designed cost $33 each in the first batch, dropping to $12 in the second run, including a 3D-printed case.",
+          "Running it was very hands-on. In 2020 his girlfriend packed orders part-time. When the January 2021 rush hit, things broke, and he ran blameless postmortems, reviews where you fix the process instead of blaming a person. His line from that time is a good one for any team: \"the systems failed, not the people.\" He also wrote, more cheerfully, \"TinyPilot is facing good problems to have.\"",
+          "He started setting monthly inventory targets so he wouldn't run out of stock again. Kits started at $169.99, according to his October 2020 ad copy."
+        ]
+      },
+      {
+        "label": "What worked and what didn't",
+        "title": "$360 of Reddit ads, zero tracked sales",
+        "paras": [
+          "Michael's monthly reports are a goldmine because he shows the failures too. In October 2020 he tried Reddit ads. He spent $360, got 208 clicks and could not track a single purchase from them.",
+          "What did work was free or cheap and based on trust. He built a mailing list and offered a 10% coupon. A homelab blog reviewed TinyPilot. He was featured on a podcast. He pitched hardware blogs directly. In February 2021 he planned an affiliate program for five bloggers and YouTubers, after seeing what one YouTube review could do.",
+          "So the pattern is clear. **One honest technical post, good search ranking and reviews by trusted creators** did more than paid ads. That's not a theory from him. It's in his numbers.",
+          "His first $10K month came in late 2020. October sales were $10,264, which he reported in November. By December it was $15,367. TinyPilot was becoming a real company."
+        ]
+      },
+      {
+        "label": "Scaling it",
+        "title": "From one man to seven people",
+        "paras": [
+          "TinyPilot kept growing for three more years. By the time he listed it for sale, it was doing about $1M a year in revenue, $1,022,090 on the listing, with about $208K in yearly earnings.",
+          "Growth changed his job. He ended up managing 6 people across 3 teams. With him, that's 7 people. So by the end, TinyPilot wasn't a solo business at all, and we want to be clear about that.",
+          "He didn't love it. He missed writing code, and the stress built up. His description of it is one of the most honest lines in this whole series: TinyPilot \"occupied about 40% of my waking hours, but it occupied 90% of my stress.\"",
+          "He also wanted to start a family. Running a hardware company with stock, suppliers, staff and customers waiting for packages didn't fit with that."
+        ],
+        "pull": {"text": "occupied about 40% of my waking hours, but it occupied 90% of my stress", "cite": "Michael, on selling TinyPilot, May 2024"}
+      },
+      {
+        "label": "Selling it",
+        "title": "$598K, all cash, no earn-out",
+        "paras": [
+          "He listed TinyPilot through a broker called Quiet Light, with an asking price of $599K. A buyer named Scott paid $598K, about 2.4 times the yearly earnings. Scott used a loan backed by the US Small Business Administration. The deal was signed and paid on 12 April 2024, about three months after the letter of intent.",
+          "Michael wrote up the costs in detail. The broker took $88,900, about 15%. Legal fees were $18,297. That left him $490,803 of profit from the sale. Counting four years of running it plus the sale, his total profit from TinyPilot was about $920K.",
+          "Compare this with Day 31. Tibo sold with a big earn-out and spent 18 stressful months chasing milestones. Michael insisted on **all cash at close, no earn-out**. He took less money, but he was done when he was done.",
+          "He shared the advice he got. One founder told him, \"If you finance the purchase yourself, you now work for the buyer.\" His own lessons: prefer buyers who pay cash, and document everything. The deal included 80 hours of consulting for the buyer and the buyer only used about 25 of them.",
+          "All 7 people on the team accepted offers to stay on with the new owner."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Where he stands now",
+        "title": "A book, a barely successful pre-sale, and a game",
+        "paras": [
+          "After the sale he took time off. His retrospectives show a stretch on \"Educational Products\" in July and August 2024, then paternity leave from September to December 2024.",
+          "In January 2025 he started his next thing: a book called Refactoring English, teaching software developers how to write better. In March 2025 he ran a pre-sale on Kickstarter. It was all-or-nothing, with a $5,000 goal and pre-orders at $25. It raised $6,551 from 191 backers. He called his write-up \"My Book's Pre-Sale Just Barely Succeeded\", which tells you how close it was.",
+          "That pre-sale taught him a lot, and he shared all of it. His email list of about 1,100 people gave him 49 orders in the first week. A free tool he made hit the Hacker News front page and brought about 20K visitors, but only about four sales. A sample chapter on blogging reached number 11 on Hacker News with 581 upvotes and brought about $1,000 within hours. He pitched 10 sponsors and one paid $1,000. And he summed it up: \"The thing that saved me was a lucky post on Hacker News.\"",
+          "Sales since then, by his monthly reports: $1,441.86 in June 2026 and $3,908.80 in July 2026. When early access ended on 20 July, the price went from $30 to $49, and he had his best day ever, over $1,000. He officially launched the book in October 2026. That month it made $3,566.06, with 43,968 unique visitors to the site. He's now deciding whether to keep focusing on the book or move to something new.",
+          "He's also playing with AI. He's building Mikeville, a prototype multiplayer browser game inspired by Stardew Valley and Ultima Online. \"I'm using AI to make a multiplayer browser game,\" he wrote. He uses coding agents in virtual machines and says, \"I find cross-vendor code reviews really valuable.\" He has mixed feelings too: one earlier report was titled \"AI-assisted coding is becoming a problem for me.\" And he's moving his code off the Codeberg hosting site, because \"The final straw was Codeberg's decision to ban projects that use AI.\"",
+          "His plan after TinyPilot was a loop: his blog brings in customers for a product, and the product pays for his writing. The book is exactly that. It's a much smaller business than TinyPilot, but it's one he can run alone, and that seems to be the point."
+        ],
+        "chart": 2
+      }
+    ],
+    "failuresTitle": "Everything lost money, at first",
+    "failuresIntro": "His public retrospectives list these attempts before TinyPilot. He says they all lost money. He hasn't detailed why each one failed.",
+    "failures": [
+      {"year": "2017", "name": "KetoHub", "what": "His first product in the retrospectives, with a report from December 2017. It lost money.", "lesson": "Your first product mostly teaches you how to make the second."},
+      {"year": "2019 to 2020", "name": "Is It Keto", "what": "Ran from January 2019 to July 2020. It brought his first dollar of revenue in January 2019, more than a year after he started, but lost money overall in that period.", "lesson": "The first dollar can take a year; that alone isn't a reason to quit."},
+      {"year": "2019", "name": "What Got Done", "what": "Ran from June to August 2019. It lost money.", "lesson": "A short, cheap test that fails is still a good test."},
+      {"year": "2020", "name": "WanderJest", "what": "Ran from February to March 2020, right as COVID arrived. It lost money, and by mid-2020 he says another business had flopped.", "lesson": "Outside events can kill a business you did nothing wrong with."},
+      {"year": "2020", "name": "TinyPilot's first year", "what": "Even with strong demand, TinyPilot lost $5,681 in 2020, because he had to buy $46,143 of materials before selling the kits.", "lesson": "With hardware, plan for the cash gap before the sales arrive."},
+      {"year": "2020", "name": "Reddit ads", "what": "He spent $360 on Reddit ads in October 2020 and got 208 clicks, with no purchases he could track.", "lesson": "Test paid ads small and stop fast if nothing converts."}
+    ],
+    "playbookTitle": "How he gets buyers without much advertising",
+    "playbook": [
+      {"title": "Write the honest how-to post", "text": "His 23 July 2020 post, \"Build a KVM Over IP for Under $100\", showed people how to make TinyPilot themselves. It hit the top of Hacker News, sold out nine kits in under four hours and made $8.8K in a week."},
+      {"title": "Let the post rank on Google", "text": "By October 2020 the same post ranked on page one for \"kvm over ip\", and organic search became his biggest sales source. One good post kept selling for months."},
+      {"title": "Get reviewed by trusted creators", "text": "A Craft Computing YouTube review in January 2021 brought 33 orders in a day. A homelab blog review and a podcast feature helped too, so he planned an affiliate program for five bloggers and YouTubers."},
+      {"title": "Build a mailing list with a coupon", "text": "He collected emails with a 10% coupon. For the book, a list of about 1,100 people gave 49 orders in the first week of the pre-sale."},
+      {"title": "Publish your numbers every month", "text": "His monthly retrospectives share revenue, costs and mistakes in detail. They keep readers coming back, build trust and act as marketing for whatever he sells next."},
+      {"title": "Pre-sell before you finish", "text": "His book pre-sale on Kickstarter had a $5,000 all-or-nothing goal and raised $6,551 from 191 backers, proving demand before the book was done."},
+      {"title": "Give away a strong sample", "text": "A free chapter on blogging reached number 11 on Hacker News with 581 upvotes and brought about $1,000 in hours. A free tool got 20K visitors but only about four sales, so the content closest to the product sold best."},
+      {"title": "Raise the price when early access ends", "text": "The book went from $30 to $49 on 20 July 2026. The deadline gave him his best day ever, over $1,000."}
+    ],
+    "charts": [
+      {
+        "title": "TinyPilot monthly sales, early months",
+        "points": [
+          {"label": "Sep 2020", "value": 3818, "display": "$3.8K"},
+          {"label": "Oct 2020", "value": 10264, "display": "$10.3K"},
+          {"label": "Dec 2020", "value": 15367, "display": "$15.4K"},
+          {"label": "Jan 2021", "value": 41993, "display": "$42K"}
+        ],
+        "note": "His own figures. January 2021 includes a one-day spike from a YouTube review."
+      },
+      {
+        "title": "Where the $598K sale went",
+        "points": [
+          {"label": "Sale price", "value": 598000, "display": "$598K"},
+          {"label": "Broker fee", "value": 88900, "display": "$88.9K", "down": true},
+          {"label": "Legal fees", "value": 18297, "display": "$18.3K", "down": true},
+          {"label": "His profit from the sale", "value": 490803, "display": "$490.8K"}
+        ],
+        "note": "His own figures, April 2024. All cash at close, no earn-out."
+      },
+      {
+        "title": "Refactoring English sales",
+        "points": [
+          {"label": "Mar 2025 pre-sale", "value": 6551, "display": "$6.6K"},
+          {"label": "Jun 2026", "value": 1442, "display": "$1.4K"},
+          {"label": "Jul 2026", "value": 3909, "display": "$3.9K"},
+          {"label": "Oct 2026", "value": 3566, "display": "$3.6K"}
+        ],
+        "note": "His own figures. The price rose from $30 to $49 on 20 July 2026."
+      }
+    ],
+    "timeline": [
+      {"when": "2007", "text": "Graduates from Columbia in computer science. Later works at Microsoft, Google and NCC Group."},
+      {"when": "Dec 2017", "text": "Retrospective on KetoHub, his first product. It loses money."},
+      {"when": "Jan 2019", "text": "Earns his first dollar of revenue, from Is It Keto.", "big": true},
+      {"when": "2019 to 2020", "text": "What Got Done and WanderJest also lose money. His first two years \"went poorly\"."},
+      {"when": "23 Jul 2020", "text": "Publishes \"Build a KVM Over IP for Under $100\". It tops Hacker News and nine kits sell out in under four hours.", "big": true},
+      {"when": "Oct 2020", "text": "First $10K month: $10,264 in sales, with Google search as the top source."},
+      {"when": "Jan 2021", "text": "A Craft Computing YouTube review brings 33 orders in a day. Sales hit $41,993 for the month."},
+      {"when": "Before the sale", "text": "TinyPilot reaches about $1M a year in revenue with 7 people."},
+      {"when": "12 Apr 2024", "text": "Sells TinyPilot for $598K, all cash, no earn-out.", "big": true},
+      {"when": "Sep to Dec 2024", "text": "Paternity leave."},
+      {"when": "Mar 2025", "text": "The Refactoring English pre-sale raises $6,551 from 191 backers."},
+      {"when": "Oct 2026", "text": "Officially launches the book. It makes $3,566.06 that month.", "big": true}
+    ],
+    "quotes": [
+      {"text": "The thing that saved me was a lucky post on Hacker News.", "cite": "Book pre-sale post, March 2025"},
+      {"text": "occupied about 40% of my waking hours, but it occupied 90% of my stress", "cite": "On TinyPilot, I Sold TinyPilot, May 2024"},
+      {"text": "the systems failed, not the people.", "cite": "Monthly retrospective, February 2021"},
+      {"text": "TinyPilot is facing good problems to have.", "cite": "Monthly retrospective, February 2021"},
+      {"text": "If you finance the purchase yourself, you now work for the buyer.", "cite": "Advice he received, Lessons from my first exit, 2024"},
+      {"text": "I'm using AI to make a multiplayer browser game.", "cite": "Monthly retrospective, August 2026"},
+      {"text": "I find cross-vendor code reviews really valuable.", "cite": "Monthly retrospective, November 2026"},
+      {"text": "The final straw was Codeberg's decision to ban projects that use AI.", "cite": "Monthly retrospective, August 2026"}
+    ],
+    "steal": [
+      "Start a monthly public report on your project, with real numbers. It costs nothing, and over time it becomes your best marketing.",
+      "When you build something, write the honest how-to post about it, even if it shows people how to do it without you. Many will still buy from you.",
+      "Before spending on ads, try one trusted reviewer or creator in your niche. One YouTube video sold more for Michael than $360 of Reddit ads ever did.",
+      "Pre-sell your next product with an all-or-nothing goal. If it doesn't reach the goal, you've lost very little.",
+      "Notice the difference between hours and stress. If one project takes 40% of your time but 90% of your worry, it's allowed to go.",
+      "If you ever sell, ask for cash at close and keep everything documented. It makes the handover short and the exit clean."
+    ],
+    "sources": [
+      {"title": "I sold TinyPilot (May 2024)", "url": "https://mtlynch.io/i-sold-tinypilot/"},
+      {"title": "Lessons from my first exit", "url": "https://mtlynch.io/lessons-from-my-first-exit/"},
+      {"title": "Build a KVM Over IP for Under $100 (July 2020)", "url": "https://mtlynch.io/tinypilot/"},
+      {"title": "My third year as a bootstrapped founder", "url": "https://mtlynch.io/bootstrapped-founder-year-3/"},
+      {"title": "Monthly retrospective, November 2020", "url": "https://mtlynch.io/retrospectives/2020/11/"},
+      {"title": "Monthly retrospective, February 2021", "url": "https://mtlynch.io/retrospectives/2021/02/"},
+      {"title": "My book's pre-sale just barely succeeded (March 2025)", "url": "https://mtlynch.io/book-pre-sale-just-barely-succeeded/"},
+      {"title": "Refactoring English, month 20 (August 2026)", "url": "https://mtlynch.io/retrospectives/2026/08/"},
+      {"title": "Refactoring English, month 23 (November 2026)", "url": "https://mtlynch.io/retrospectives/2026/11/"},
+      {"title": "All retrospectives", "url": "https://mtlynch.io/retrospectives/"},
+      {"title": "About Michael Lynch", "url": "https://mtlynch.io/about/"},
+      {"title": "Refactoring English on Leanpub", "url": "https://leanpub.com/refactoring-english"}
+    ]
+  }
+}

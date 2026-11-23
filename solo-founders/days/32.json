@@ -1,0 +1,457 @@
+{
+  "n": 32,
+  "name": "Jack Friks",
+  "short": "Jack",
+  "wisdom": "The tool you built to market your own product might be the product.",
+  "email": {
+    "subject": "He couldn't make $1 for four years. Then this.",
+    "hook": "Jack Friks spent about four years struggling to make even a dollar online, and then a tool he built just to save himself time posting videos grew to $35K a month.",
+    "lead": [
+      "Jack is a young builder who, by his own account, barely knew how to code about 18 months before a mid-2025 interview. He'd worked at McDonald's as a teen, dropped out of college, and tried a book, t-shirts and a crypto YouTube channel before any of it worked.",
+      "He matters to us because his whole edge is marketing, not code. He grew his apps with cheap, copied short videos, one hour a day. Then he turned the tool behind that habit into his main business."
+    ],
+    "stats": [
+      {
+        "value": "$35K",
+        "label": "monthly revenue, his latest public figure"
+      },
+      {
+        "value": "1 hr",
+        "label": "of marketing a day"
+      },
+      {
+        "value": "$1M",
+        "label": "offer he turned down for one app"
+      }
+    ],
+    "chart": {
+      "title": "Post Bridge monthly revenue, by his own numbers",
+      "points": [
+        {
+          "label": "Early 2025",
+          "value": 7000,
+          "display": "$7K"
+        },
+        {
+          "label": "Apr 2025",
+          "value": 11000,
+          "display": "$11K"
+        },
+        {
+          "label": "Jun 2025",
+          "value": 18000,
+          "display": "$18K"
+        },
+        {
+          "label": "Later (undated)",
+          "value": 35000,
+          "display": "$35K"
+        }
+      ],
+      "note": "Launched October 2024. The $35K figure comes from a post headline with no date."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "His main business is Post Bridge, a tool that lets you upload a video once and post it to Instagram, TikTok, YouTube and more, with a different caption for each. He built it in October 2024 for himself, because he was spending about half of every marketing hour reposting the same videos.",
+          "In a January 2026 podcast he talked about building an app called DOF in 30 days, launching another called Lovely, and reinvesting revenue into hiring. So he may not be strictly solo anymore. He also says he turned down a $1M offer for one of his apps, though which one and when isn't public."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "Post Bridge is a monthly subscription. It started at $9 a month with no free plan, a 7-day trial that needed a card, and a yearly discount. He says the trial and the yearly plan did more for revenue than any other trick. By September 2026 one write-up listed flat plans of $29 to $99 a month.",
+          "He told one interviewer that his costs in March 2025 were about $200 a month for the Twitter API and about $400 for hosting and the database, with margins over 95%. Revenue went from about $7K a month a few months after launch, to $18K a month by June 2025, to a headline of $35K a month later on, all by his own numbers."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "His first hit, Curiosity Quench, was a screen-time app full of over 1,000 little \"curiosities\" to read instead of doomscrolling. He spent about four months building it while learning to code, with ChatGPT as his debugger. **\"Everything broke almost every single time I built it,\"** he said.",
+          "Post Bridge was faster because he knew more by then. He used Next.js, a web starter kit from his friend Marc Lou, Supabase for the database and Cursor for AI-assisted coding. He left out the fancy stuff on purpose: no deep analytics, no AI captions, no team approval flows. Just upload once, post everywhere."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "Before building Curiosity Quench, he posted a 60-second TikTok about the idea and got about 15 comments from people saying they needed it. That was his validation.",
+          "Then he found formats that already worked and copied them, again and again. His core video was a roughly 6-second clip with four images in a grid and the call to action in the caption. He says he made the same video 400 times for 5M views, that one Twitter thread brought 40K downloads overnight, and that an 8-second format converted 20 times better than slideshows. About one hour a day, no ads."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Four years of nothing is the part people skip. He's said he struggled to make even $1 from his app. The details of those failed years are mostly not public.",
+          "He also hasn't shared much detail. The $35K figure is the headline of a post with no date, and his download counts differ between interviews, from 60,000 to over 100,000. That doesn't make his story less useful, but treat the exact numbers loosely."
+        ]
+      }
+    ],
+    "tryToday": "Write down every repetitive task you do to market something at work or on the side. Pick the one that eats the most time and ask: would 100 other marketers pay $9 a month to never do this again?",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Jack Friks is a young, self-taught builder who, by his own account, spent about four years struggling to make money online. Then a screen-time app grew on copied short videos, and the posting tool he built for himself became Post Bridge, a business he says reached $35K a month.",
+    "stats": [
+      {
+        "value": "$35K",
+        "num": 35,
+        "prefix": "$",
+        "suffix": "K",
+        "label": "monthly revenue, latest public figure",
+        "note": "his own figure, undated"
+      },
+      {
+        "value": "$18K",
+        "num": 18,
+        "prefix": "$",
+        "suffix": "K",
+        "label": "a month from Post Bridge in June 2025",
+        "note": "his own figure"
+      },
+      {
+        "value": "300M+",
+        "num": 300,
+        "prefix": "",
+        "suffix": "M+",
+        "label": "total views on his short videos",
+        "note": "his own figure, March 2025"
+      },
+      {
+        "value": "95%+",
+        "num": 95,
+        "prefix": "",
+        "suffix": "%+",
+        "label": "margins on Post Bridge",
+        "note": "his own figure, March 2025"
+      }
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "McDonald's, a book, t-shirts and crypto videos",
+        "paras": [
+          "There isn't a long public biography of Jack Friks, so let's stick to what he has actually said. He lists himself as based in Canada, working full-time, alone and bootstrapped. As a teenager he worked at McDonald's to save money. He dropped out of college about three years before a March 2025 interview.",
+          "Like most of us, he tried a few things before anything stuck. A book. T-shirts. A YouTube channel about crypto. None of them became a business.",
+          "The title of his best-known Indie Hackers post sums up that period: he hit $35K a month **\"after struggling to make money online for four years.\"** In a January 2026 podcast he described it as going from struggling to make even $1 from his app to turning down a $1M offer. The individual failures from those four years, and why each one died, aren't public.",
+          "A quick honesty note before we go on: almost every number on this page comes from Jack himself, in interviews and posts, and none of it has been independently checked. A few figures come from other people's write-ups about him, and we'll say so where that's the case."
+        ]
+      },
+      {
+        "label": "Learning to build",
+        "title": "He barely knew how to code",
+        "paras": [
+          "This is the part that should give us courage. In a June 2025 interview, Jack said that about 18 months earlier, \"I didn't really know how to code.\" He knew basic HTML and CSS. That was it.",
+          "His first real app was Curiosity Quench, launched in 2024. The idea was simple: when you feel the urge to scroll, open this instead and read one of more than 1,000 short \"curiosities\". A screen-time app that replaces mindless scrolling with something interesting.",
+          "He spent about four months building it while learning to code at the same time, using ChatGPT to debug almost everything. He was honest about how messy that was: \"Everything broke almost every single time I built it.\"",
+          "Before he built it, though, he tested the idea in the most marketer-friendly way possible. He posted a 60-second TikTok describing it. About 15 people commented that they needed it. For him, that was enough of a signal to keep going.",
+          "Curiosity Quench charged about $30 a year, with the paywall shown right after onboarding, once you'd seen what it does. One weaker write-up says it reached about 100,000 users and about $3K a month in premium revenue. Jack's own download counts vary between interviews: about 60,000 by mid-2025 in one, over 100,000 in another."
+        ],
+        "pull": {
+          "text": "Everything broke almost every single time I built it.",
+          "cite": "Jack, Starter Story video, March 2025"
+        }
+      },
+      {
+        "label": "The first users",
+        "title": "Six-second videos, copied on purpose",
+        "paras": [
+          "Jack's growth came almost entirely from short-form video, and his method is refreshingly unglamorous. He doesn't try to be original. He finds formats that are already working on TikTok and copies them, a strategy he himself calls lazy.",
+          "His core template was a roughly 6-second video, often a 2x2 grid of four images, edited in CapCut, with the call to action in the caption or the first comment. Nothing fancy. Just a format people already stop for.",
+          "He also had a few rules about accounts. When starting a new TikTok or Instagram account, he would spend about two days scrolling and engaging like a normal user before posting anything, to warm it up. He posted daily rather than in batches, and ran three Instagram accounts with their posts spaced apart.",
+          "The numbers he shares are wild, so here they are, all his own claims. He says he made the same video 400 times and got 5M views. One app reached 100K downloads in 10 weeks. One Twitter thread brought 40K downloads overnight. An 8-second format converted 20 times better than slideshows. One app went from $0 to $15K in a single month. By March 2025 his videos had **over 300 million views in total**.",
+          "Curiosity Quench downloads came mostly from these organic videos of about six seconds, spread across Instagram, TikTok, YouTube Shorts, X threads and Bluesky. He spent about an hour a day on marketing and nothing on ads.",
+          "Notice what he didn't do. No paid ads, no influencer deals, no launch on a big platform. Just a cheap, repeatable video format, posted every day across every short-video app at once. As marketers, we usually overthink the creative. Jack treated it like a template and put his energy into consistency instead."
+        ]
+      },
+      {
+        "label": "The tool behind the habit",
+        "title": "Half of every hour, wasted on reposting",
+        "paras": [
+          "Here's where it gets interesting for us. To run that playbook, Jack had to post the same video to Instagram, TikTok, YouTube and more, every single day. He found he was spending about 30 minutes of every marketing hour just reposting.",
+          "He looked at the existing scheduling tools. His verdict was short: \"everything else was too expensive\". By his estimate, the alternatives cost about ten times what he thought was fair.",
+          "So in October 2024 he built his own, just for himself, to cross-post Curiosity Quench videos. That internal tool became Post Bridge. It came, as one interviewer put it, from his frustration with \"spending hours posting across platforms.\"",
+          "His philosophy on ideas is exactly what this story shows: \"the best way to find any good idea is to solve your own problems.\" He didn't do market research. He had the problem every single day."
+        ],
+        "pull": {
+          "text": "the best way to find any good idea is to solve your own problems.",
+          "cite": "Jack, Starter Story video, March 2025"
+        }
+      },
+      {
+        "label": "The first version",
+        "title": "Upload once, post everywhere",
+        "paras": [
+          "By the time he built Post Bridge, Jack knew more and moved faster. Most of it is Next.js. For mobile he uses React Native with Expo. He started from a web boilerplate made by his friend Marc Lou, who we covered on Day 2. The database is Supabase. He writes code in Cursor, an AI-assisted editor, and tracks tasks in Apple Notes or Trello. Nothing exotic.",
+          "Interestingly, there is no AI inside the product at all. He's said plainly, \"I just don't use AI\" in it.",
+          "He cut a lot on purpose. No deep analytics. No AI captions. No team approval workflows, the stuff big agencies want. What he kept was the one job: upload a video once, post it everywhere, and adjust the caption, title and thumbnail for each platform if you want.",
+          "Running it is cheap. In March 2025 he said the Twitter API cost about $200 a month and hosting plus the database about $400 a month, with **margins over 95%**. He did get one nasty surprise: a much bigger hosting bill than expected after two attacks on the service. He says no user data was harmed.",
+          "His daily routine is calm, not hustle-porn. He wakes early, aims for 8 hours of sleep, works in focus blocks of 60, 90 or 120 minutes, and stops at dinner. He still describes it honestly: \"My process is actually pure chaos.\""
+        ]
+      },
+      {
+        "label": "Finding the money",
+        "title": "$9 a month, no free plan",
+        "paras": [
+          "Post Bridge launched at $9 a month. There was no free plan. You got a 7-day trial, but you had to enter a card to start it, and there was a discount if you paid yearly. Jack says the card-required trial and the yearly plan drove revenue more than anything else he tried.",
+          "The users came from two places: word of mouth, and his own public posts about how he grows his apps. His pinned tweet offers a free guide to organic growth for app founders. Think about how neat that is. **The people who want to learn his video playbook are exactly the people who need a tool to post those videos everywhere.**",
+          "The growth by his numbers: about $7K a month roughly four and a half months after launch, and about $40K in total over the first five months. By April 2025, a listing he updated showed about $11K a month, more than $50K over the previous 12 months, about 6,200 total users and over 1,000 paying. By June 2025 it was at about $18K a month.",
+          "Pricing changed along the way. In April 2025 it was described as priced per channel. By September 2026, one write-up listed flat plans from $29 to $99 a month with unlimited posts and accounts. Why and when he moved from $9 to those prices isn't public.",
+          "For marketers, the shape of this is worth copying. Jack didn't go hunting for a new market. He sold to his own audience: people already trying to grow apps with short videos, the same way he did. His content attracted them, his free guide taught them the method, and Post Bridge was the tool that made the method easy to run every day."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "Where he stands now",
+        "title": "$35K a month, and a $1M offer he said no to",
+        "paras": [
+          "The latest public number is the headline of that Indie Hackers post: $35K a month. He hasn't shared the date or how that splits between his apps. It's probably from late 2025 or 2026.",
+          "In the January 2026 Superwall podcast he talked about having built four apps, and about turning down a $1M acquisition offer for one of them. Which app and when are not public.",
+          "The same podcast mentions building an app called DOF in 30 days, launching another app called Lovely, and reinvesting revenue and hiring. One aggregator still calls him solo, and his own listing says solo, but if he's hiring, that may have changed. We'll say it honestly: his current solo status is unconfirmed.",
+          "He also has an interesting relationship with the platforms he grows on. In a 2025 interview he said he keeps all notifications off, uses X as a kind of public journal, and checks the other platforms weekly or monthly. In 2026 he talked about scrolling TikTok daily to study formats. It sounds like he treats social media as a research tool, not a hangout."
+        ]
+      },
+      {
+        "label": "How he thinks",
+        "title": "Don't build a brand, build the thing",
+        "paras": [
+          "Jack has one line that's a little counterintuitive for marketers like us. He says the easiest way to grow a personal brand is \"to not grow a personal brand at all.\" His accounts are about the apps and what he's learning, not about him.",
+          "No direct quote from Jack on the future of AI was found. A June 2025 interview covered staying human in a world driven by AI, but we don't have his exact words, so we won't put any in his mouth.",
+          "What we do have is his way of working. Solve your own problem. Test the idea with a short video before building. Copy formats that already work instead of trying to be clever. Post daily. Keep the product small and the price honest. And spend about an hour a day on marketing, not eight.",
+          "If you're a marketer who's nervous about code, Jack is proof that the gap is closing. He went from basic HTML to a business he says makes $35K a month, with ChatGPT and Cursor doing a lot of the heavy lifting."
+        ]
+      }
+    ],
+    "failuresTitle": "Four years of not much",
+    "failuresIntro": "Jack hasn't published a neat list of failed apps. What we know is a long stretch of small attempts that didn't pay, plus one costly surprise.",
+    "failures": [
+      {
+        "year": "Before 2024",
+        "name": "A book, t-shirts and a crypto YouTube channel",
+        "what": "Before his apps, he tried selling a book and t-shirts, and ran a YouTube channel about crypto. None became a real income. Details and numbers aren't public.",
+        "lesson": "Early side projects are practice reps, even when they earn nothing."
+      },
+      {
+        "year": "Before 2024",
+        "name": "Four years without real income",
+        "what": "He describes about four years of struggling to make money online, at one point unable to make even $1 from his app. Which apps those were, and why each failed, is not public.",
+        "lesson": "Four slow years can sit right before one fast one."
+      },
+      {
+        "year": "2024",
+        "name": "Learning by breaking things",
+        "what": "Curiosity Quench took about four months because he was learning to code as he went, and almost every build broke. He kept debugging with ChatGPT until it worked.",
+        "lesson": "Not knowing how to code is now a delay, not a wall."
+      },
+      {
+        "year": "2025",
+        "name": "The surprise hosting bill",
+        "what": "Post Bridge was hit by two attacks that pushed his hosting bill well above what he expected. He says no user data was harmed.",
+        "lesson": "Put spending alerts on every service before you launch."
+      }
+    ],
+    "playbookTitle": "How he gets users with one hour a day",
+    "playbook": [
+      {
+        "title": "Validate with one short video",
+        "text": "Before building Curiosity Quench, he posted a 60-second TikTok about the idea. About 15 comments said people needed it. That was enough to start."
+      },
+      {
+        "title": "Copy formats that already work",
+        "text": "He looks for TikTok formats that are already going viral and recreates them for his app in CapCut. His main template is a roughly 6-second video with a 2x2 image grid and the call to action in the caption or first comment."
+      },
+      {
+        "title": "Repeat the winner, a lot",
+        "text": "When something works, he doesn't move on. He says he made the same video 400 times for 5M views, and that an 8-second format converted 20 times better than slideshows."
+      },
+      {
+        "title": "Warm up new accounts",
+        "text": "New TikTok or Instagram accounts get about two days of normal scrolling and engaging before the first post. He runs three Instagram accounts and spaces their posts apart."
+      },
+      {
+        "title": "Post daily, not in batches",
+        "text": "One hour of marketing a day, every day, with no ad spend. Daily posting beat batching for him."
+      },
+      {
+        "title": "Write threads on X",
+        "text": "He uses X as a public journal of what he's building and learning. One thread brought 40K downloads overnight, by his account."
+      },
+      {
+        "title": "Give away the playbook",
+        "text": "His pinned tweet offers a free organic-growth guide for app founders. The people who read it are the exact people who need Post Bridge to run it."
+      },
+      {
+        "title": "No free plan, card-up-front trial",
+        "text": "Post Bridge started at $9 a month with a 7-day trial that required a card, plus a yearly discount. He says those two choices drove revenue more than anything else."
+      }
+    ],
+    "charts": [
+      {
+        "title": "Post Bridge monthly revenue",
+        "points": [
+          {
+            "label": "Early 2025",
+            "value": 7000,
+            "display": "$7K"
+          },
+          {
+            "label": "Apr 2025",
+            "value": 11000,
+            "display": "$11K"
+          },
+          {
+            "label": "Jun 2025",
+            "value": 18000,
+            "display": "$18K"
+          },
+          {
+            "label": "Later (undated)",
+            "value": 35000,
+            "display": "$35K"
+          }
+        ],
+        "note": "His own figures. Launched October 2024. The $35K is a post headline with no date and may include his other apps."
+      },
+      {
+        "title": "Post Bridge running costs per month, March 2025",
+        "points": [
+          {
+            "label": "Hosting and database",
+            "value": 400,
+            "display": "$400"
+          },
+          {
+            "label": "Twitter API",
+            "value": 200,
+            "display": "$200"
+          }
+        ],
+        "note": "His own figures. He says margins were over 95%."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "Teens",
+        "text": "Works at McDonald's to save money."
+      },
+      {
+        "when": "About 2022",
+        "text": "Drops out of college, about three years before a March 2025 interview. Tries a book, t-shirts and a crypto YouTube channel."
+      },
+      {
+        "when": "Before 2024",
+        "text": "Roughly four years of struggling to make money online."
+      },
+      {
+        "when": "2024",
+        "text": "Builds Curiosity Quench in about four months while learning to code. A 60-second TikTok validates the idea.",
+        "big": true
+      },
+      {
+        "when": "2024",
+        "text": "Curiosity Quench grows on copied short videos, eventually tens of thousands of downloads."
+      },
+      {
+        "when": "Oct 2024",
+        "text": "Builds Post Bridge for himself to stop wasting half of every marketing hour reposting.",
+        "big": true
+      },
+      {
+        "when": "Early 2025",
+        "text": "Post Bridge reaches about $7K a month after four and a half months."
+      },
+      {
+        "when": "Apr 2025",
+        "text": "About $11K a month, 6,200 users and over 1,000 paying customers."
+      },
+      {
+        "when": "Jun 2025",
+        "text": "About $18K a month from Post Bridge.",
+        "big": true
+      },
+      {
+        "when": "Jan 2026",
+        "text": "On a podcast, talks about four apps, a $1M offer he turned down, new apps DOF and Lovely, and hiring."
+      },
+      {
+        "when": "Undated",
+        "text": "His Indie Hackers headline reports $35K a month.",
+        "big": true
+      }
+    ],
+    "quotes": [
+      {
+        "text": "I didn't really know how to code",
+        "cite": "The Bootstrapped Founder podcast, June 2025"
+      },
+      {
+        "text": "Everything broke almost every single time I built it.",
+        "cite": "Starter Story video, March 2025"
+      },
+      {
+        "text": "the best way to find any good idea is to solve your own problems.",
+        "cite": "Starter Story video, March 2025"
+      },
+      {
+        "text": "everything else was too expensive",
+        "cite": "On why he built Post Bridge, The Bootstrapped Founder, June 2025"
+      },
+      {
+        "text": "I just don't use AI",
+        "cite": "On his product, The Bootstrapped Founder, June 2025"
+      },
+      {
+        "text": "My process is actually pure chaos.",
+        "cite": "Starter Story video, March 2025"
+      },
+      {
+        "text": "to not grow a personal brand at all.",
+        "cite": "On the easiest way to grow a personal brand, Starter Story video, March 2025"
+      }
+    ],
+    "steal": [
+      "Before you build anything, describe the idea in a 60-second video and post it. Count the comments that say \"I need this\".",
+      "Stop trying to be original on short video. Find three formats already working in your niche this week and recreate them for your product.",
+      "Keep a list of every marketing chore that eats your time. The worst one might be a product other marketers will pay for.",
+      "Launch with no free plan and a short trial that needs a card. Add a yearly discount from day one.",
+      "Give one hour a day to distribution, every day, and protect it like a meeting.",
+      "Offer a free guide that teaches your method. The people who download it are your future customers."
+    ],
+    "sources": [
+      {
+        "title": "Superwall Podcast: from struggling to make $1 to turning down $1M (January 2026)",
+        "url": "https://www.buzzsprout.com/2522779/episodes/18406414-jack-friks-he-went-from-struggling-to-make-1-from-his-app-to-turning-down-1m"
+      },
+      {
+        "title": "The Bootstrapped Founder: Jack Friks (June 2025)",
+        "url": "https://thebootstrappedfounder.com/jack-friks-building-tools-that-empower-without-overwhelming/"
+      },
+      {
+        "title": "The Bootstrapped Founder podcast episode (June 2025)",
+        "url": "https://share.transistor.fm/s/d4e863ed"
+      },
+      {
+        "title": "Starter Story video: I built a $10K a month app (March 2025)",
+        "url": "https://rosetta.to/u/starterstory/i-built-a-10k-month-app-from-my-mom-s-basement"
+      },
+      {
+        "title": "Indie Hackers: hitting $35K MRR after four years",
+        "url": "https://www.indiehackers.com/post/tech/hitting-35k-mrr-after-struggling-to-make-money-online-for-four-years-CNVpxrwIVqxcsfZ4fERw"
+      },
+      {
+        "title": "TinyStartups: Post Bridge revenue listing (April 2025)",
+        "url": "https://www.tinystartups.com/revenue/post-bridge"
+      },
+      {
+        "title": "Stork.ai: his selfish app replaced Hootsuite (September 2026, secondary)",
+        "url": "https://www.stork.ai/blog/his-selfish-app-replaced-hootsuite"
+      },
+      {
+        "title": "first-mrr.com: Post Bridge study (secondary)",
+        "url": "https://first-mrr.com/study/postbridge"
+      }
+    ]
+  }
+}

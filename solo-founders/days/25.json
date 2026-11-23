@@ -1,0 +1,254 @@
+{
+  "n": 25,
+  "name": "Samuel Rondot",
+  "short": "Samuel",
+  "wisdom": "Copy something already making money, then make it market itself.",
+  "email": {
+    "subject": "An optician who clones apps for a living",
+    "hook": "Samuel Rondot spent three years fitting glasses as an optician in France, and he now runs a portfolio of apps that he says makes around $28K to $35K a month, most of them copies of tools that were already working.",
+    "lead": [
+      "Samuel is mostly solo. StoryShort and useArtemis appear to be his alone, and he codes every day by himself. His newest product, Capacity, he co-founded with a high-school friend, Baptiste Studer.",
+      "His whole approach is the opposite of what most of us were taught. He never starts with an original idea. He waits until someone proves a tool makes money, checks where their traffic comes from, and builds his own version fast. For a growth marketer, that's a very comfortable way to think."
+    ],
+    "stats": [
+      {"value": "$28K", "label": "a month across three apps, his latest breakdown"},
+      {"value": "4,000+", "label": "StoryShort customers, Aug 2025"},
+      {"value": "400", "label": "clicks a day to Capacity"}
+    ],
+    "chart": {
+      "title": "Monthly revenue by app, by his own numbers",
+      "points": [
+        {"label": "StoryShort", "value": 20000, "display": "$20K"},
+        {"label": "useArtemis", "value": 5000, "display": "$5K", "down": true},
+        {"label": "Capacity", "value": 3000, "display": "$3K"}
+      ],
+      "note": "From an undated Indie Hackers interview, likely 2025. useArtemis had fallen after LinkedIn tightened its limits."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Capacity is his big bet. It's an AI app builder with the tagline “Build anything. Web apps. Mobile apps. Desktop apps.” Spec Coding launched in January 2026, and Capacity Desktop, a free Mac app, launched in August 2026.",
+          "The desktop version has a bold pricing idea: no credits. You bring your own Claude, ChatGPT or OpenRouter key and pay the AI company at cost. His goal is **$100K a month from Capacity alone**, and no 2026 revenue numbers have been shared yet."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "Every app is a subscription. In his most recent breakdown, StoryShort.ai, which makes short faceless videos, brought in about $20K a month. useArtemis, a tool for finding contact details, about $5K. Capacity about $3K and growing.",
+          "Figures differ depending on where he said them. A Starter Story episode put the portfolio at about $35K a month, and a Slovak interview in August 2025 said about €32K. All of these are his own numbers, none is verified, and none is dated precisely."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "He has no technical education. He learned to code from **one 15-hour YouTube course**, applying each lesson to a tool he was building at the same time. Before that, he'd been fighting with WordPress plugins. “Learning to code changed everything,” he says.",
+          "For StoryShort he saw another creator's post about a tool that auto-posts faceless videos to YouTube and TikTok. He checked the competitor in Ahrefs, found its traffic came from Facebook ads, and built his own. He skips the boring parts like password reset and settings pages, launches the bare version, and runs ads straight away to test demand. His stack is Next.js on Vercel, Node.js on AWS and MongoDB."
+        ]
+      },
+      {
+        "title": "How he gets the users",
+        "paras": [
+          "Paid ads on Google or Meta come first, because they're fast and predictable. Once something has traction, he builds SEO for the long run. For Capacity, YouTube, SEO and optimisation for AI search engines bring in about 400 clicks a day.",
+          "Then there's the clever part. **He uses StoryShort to fill faceless channels that advertise StoryShort**, posting product videos automatically across YouTube, TikTok and Instagram, with several channels per product. Every tool also has an affiliate programme that pays per customer."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Platform risk. useArtemis worked with LinkedIn data, and when LinkedIn tightened its automation limits, its revenue dropped to about $5K a month. In August 2025 a Slovak interview had put it at about €15K with 10,000+ users.",
+          "And ads stop working when the field gets crowded. He pulled Capacity off Meta ads because competitors “will spend $200 to win a $30 sale.” Even his first coded app, an email finder, failed against Apollo and Lemlist. His rule now: “We only fight wars we can win.”"
+        ]
+      }
+    ],
+    "tryToday": "Open X and search for founders posting revenue screenshots in a niche you understand. Pick one tool, look up where its traffic comes from, and write down what a simpler version would need on day one.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Samuel Rondot grew up near the Swiss border in France, worked three years as an optician, and taught himself to code from a single YouTube course. Today he runs a small portfolio of subscription apps, most of them deliberate copies of tools he saw making money. Capacity, his newest, he runs with a co-founder; the rest appear to be his alone.",
+    "stats": [
+      {"value": "$28K", "num": 28, "prefix": "$", "suffix": "K", "label": "a month across three apps", "note": "his latest breakdown, likely 2025"},
+      {"value": "$30K", "num": 30, "prefix": "$", "suffix": "K", "label": "a month from his first business, run with no code", "note": "his own number, around 2017"},
+      {"value": "4,000+", "num": 4000, "prefix": "", "suffix": "+", "label": "StoryShort customers", "note": "August 2025"},
+      {"value": "15 hours", "num": 15, "prefix": "", "suffix": " hours", "label": "of YouTube course that taught him to code", "note": "his only training"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A streaming site in high school, then an optician's counter",
+        "paras": [
+          "Samuel lived in France, near the Swiss border. He was the kind of teenager who made things on the internet: in high school he built a small streaming website, and he kept making websites through college.",
+          "And then he picked a completely different career. He worked as an optician for about three years. Fitting glasses, nothing to do with tech.",
+          "He didn't stop tinkering, though. He built side projects before and after his shifts at work. **The day job paid the bills, and the hours around it were for experiments.** That's a setup a lot of us know.",
+          "One thing to note about how he's described. Some write-ups call him a former optician with no coding background, while he says he'd been building websites since college. Both fit if you read it as: he could put a WordPress site together, but he had no real technical education until later."
+        ]
+      },
+      {
+        "label": "The first money",
+        "title": "An Instagram service with no code and a team overseas",
+        "paras": [
+          "In 2017 he launched his first real business: an Instagram growth and automation service. And he didn't write a single line of code for it.",
+          "The front was a WordPress landing page. Behind it, people in India and Bangladesh did the actual tasks by hand. Customers paid for growth, and **human workers delivered it while the website made it look like software.**",
+          "It reached about $30K a month, by his account. That was enough for him to quit his job as an optician. We'd love to give you its name and launch numbers, but those details haven't been reliably published.",
+          "It's worth pausing on this. His first win wasn't a clever product. It was a service people already wanted, packaged simply, with the work done cheaply somewhere else. That idea, find the demand first and worry about the elegance later, runs through everything he's done since.",
+          "Fair warning before we go on: **nearly every number on this page is Samuel's own**, from interviews and posts, and the different interviews don't always agree."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "WordPress plugins, and an email finder that lost",
+        "paras": [
+          "As he tried to build more, WordPress started holding him back. Customising plugins was painful, and he couldn't make tools do exactly what he wanted.",
+          "So he learned to code properly. He did it with one 15-hour course on YouTube, and he applied each lesson straight away to a real tool he was building. Later he'd say simply: “Learning to code changed everything.” His recommendation for beginners today is Next.js and Node.js, with ChatGPT to help when you're stuck.",
+          "His first coded app was Usimus, an email-contact finder. It went up against Apollo and Lemlist, big, well-funded tools in the same space. It was hard to maintain, and he calls it a failure.",
+          "That loss shaped his whole strategy. **He stopped picking fights he couldn't win.** His line on it: “We only fight wars we can win.”"
+        ],
+        "pull": {"text": "Learning to code changed everything.", "cite": "Samuel, to Indie Hackers"}
+      },
+      {
+        "label": "Trying things in public",
+        "title": "A run of Product Hunt launches",
+        "paras": [
+          "He joined Product Hunt in June 2018, with the headline “Building cool products in public.” Over the next few years he shipped a string of small products there.",
+          "In November 2021 he launched CtrProof, a widget that shows social-proof notifications on websites. In April 2022 came SuperEmpire, a marketplace for buying and selling online businesses. Neither shows up in any of his later revenue breakdowns, which suggests they stalled, though he hasn't said so himself.",
+          "In June 2022 he launched useArtemis, with the line “The hunt for contact information ends here.” That one stuck. It became a tool for pulling contact data, working off LinkedIn, and by August 2025 a Slovak interview credited it with about €15K a month and more than 10,000 users.",
+          "So the pattern was already there. Launch lots of small things, watch which one gets traction, and keep that one."
+        ]
+      },
+      {
+        "label": "The first big product",
+        "title": "StoryShort: cloning a tool in about a week",
+        "paras": [
+          "The product that changed his income was StoryShort.ai, a tool that generates short faceless videos for YouTube, TikTok and Instagram.",
+          "It started with someone else's post. Another creator shared a tool that auto-posted faceless videos, and it was clearly making money. Samuel looked the competitor up in Ahrefs and found that its traffic came from Facebook ads.",
+          "That was the signal he wanted. If a competitor's traffic is all paid ads, he reasons, you can switch on the same ads the day you launch. He has said he could copy an ad-only competitor “within a week.” **He wasn't guessing whether people wanted it; someone else had already paid to find out.**",
+          "He built it fast and skipped what he calls the boring parts: no password reset, no settings pages. Then he ran ads right away to test demand. His summary of the approach: “run ads to test demand right away.”",
+          "StoryShort grew to about $20K a month, and by August 2025 it had more than 4,000 customers. Its exact launch date, first-month numbers and pricing haven't been shared."
+        ],
+        "pull": {"text": "run ads to test demand right away", "cite": "Samuel, on Starter Story"}
+      },
+      {
+        "label": "How he picks ideas",
+        "title": "Stripe screenshots are his market research",
+        "paras": [
+          "Most founders hunt for an original idea. Samuel hunts for proof. His rule is to “never build something that doesn't already exist and isn't already successful,” or at least getting some traction.",
+          "Where does he find that proof? On X, in the solopreneur and building-in-public crowd, where founders post their monthly revenue and Stripe dashboards. He calls those screenshots “the ultimate proof that the tool is working.”",
+          "Then he checks the competitor's traffic in Ahrefs. A tool growing through both ads and SEO is the strongest signal of all. He also looks at search volume, how strong the competition is, how they get customers, and whether people will pay. He prefers simple, even boring, tools, and he aims to make his version about 1% better, not wildly different.",
+          "And he balances gut and numbers: “I trust intuition, but I also verify it with data.” He'll use AI coding tools to get a first version out quickly, but he still thinks you should understand the code."
+        ]
+      },
+      {
+        "label": "Scaling it",
+        "title": "Ads first, then SEO, then the product markets itself",
+        "paras": [
+          "His growth playbook is the same for every app. Start with paid ads on Google or Meta, because they're quick and predictable and they tell you fast whether anyone cares. Once there's traction, build SEO for the long run.",
+          "The trick that makes him different is what he does with StoryShort. **He runs faceless channels on YouTube, TikTok and Instagram that post product videos automatically**, and the videos are made with StoryShort itself. Multiple channels per product. The tool makes its own ads, for free, every day.",
+          "Every app also has an affiliate programme that pays a commission per customer, which turns users into a word-of-mouth sales team. The rates haven't been shared.",
+          "He works alone, apart from his Capacity co-founder, and codes every day. One rule from that Slovak interview, translated: “Automate everything you can.”",
+          "Around this time, a Starter Story episode titled “I cloned 3 apps and now make $35K/month” put the portfolio at about $35K a month."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "The part that hurt",
+        "title": "When LinkedIn changed the rules",
+        "paras": [
+          "Copying working businesses has one weakness: you inherit their risks too. useArtemis depended on LinkedIn. When LinkedIn tightened its automation limits, useArtemis's revenue fell to about $5K a month.",
+          "The numbers tell the story, even if they come from different interviews. In August 2025 a Slovak interview gave useArtemis about €15K a month. His later Indie Hackers breakdown gave it about $5K. That's a big drop on the back of a decision made by a company he has no control over.",
+          "Ads had their own limit. For Capacity, he stopped using Meta ads, because in the AI app-builder space competitors “will spend $200 to win a $30 sale.” **When the big players start paying more for a customer than the customer is worth, you need a different door.** For Capacity, that door is YouTube, SEO and optimising for AI search engines, which now bring in about 400 clicks a day."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Capacity, with a high-school friend",
+        "paras": [
+          "His focus in 2026 is Capacity, an AI app builder he co-founded with a high-school friend, Baptiste Studer. The tagline: “Build anything. Web apps. Mobile apps. Desktop apps.”",
+          "Capacity 2.0 launched in June 2025, Spec Coding by Capacity in January 2026, and Capacity Desktop in August 2026. The desktop app is free for Mac and turns plain English into apps that are stored on your own computer. Instead of selling credits, it asks you to bring your own key from Claude, GPT or OpenRouter and pay the AI company at cost. Baptiste admitted the trade-off openly: “Bring-your-own-key is real friction, and we know it.”",
+          "In August 2025 Capacity was at about €900 a month with about 50 users. His later breakdown had it at about $3K a month and growing. His goal is $100K a month from Capacity. No 2026 revenue or user numbers have been made public.",
+          "He's also written about building a full SaaS with AI and no coding in 10 hours, which tells you where he thinks this is all going. **His bet is that more and more people will build software the way he learned to: without a degree, fast, and with help.**"
+        ],
+        "pull": {"text": "We only fight wars we can win.", "cite": "Samuel, to Indie Hackers"}
+      }
+    ],
+    "failuresTitle": "Lost wars and a platform that changed the rules",
+    "failuresIntro": "There's no public failure count for Samuel. These are the setbacks that are documented.",
+    "failures": [
+      {"year": "Before StoryShort", "name": "Usimus, the email finder", "what": "His first coded app found email contacts. It faced Apollo and Lemlist, was hard to maintain, and he calls it a failure.", "lesson": "Don't pick a fight with well-funded leaders unless you have a clear edge."},
+      {"year": "Nov 2021", "name": "CtrProof", "what": "A social-proof notification widget launched on Product Hunt. It never appears in his later revenue breakdowns, which suggests it stalled, though he hasn't confirmed that.", "lesson": "Launching many small things is fine, as long as you're honest about which ones aren't working."},
+      {"year": "Apr 2022", "name": "SuperEmpire", "what": "A marketplace for buying and selling online businesses, launched on Product Hunt. Like CtrProof, it's missing from every later breakdown.", "lesson": "Marketplaces need two sides at once, which is hard for a solo founder."},
+      {"year": "About 2025", "name": "useArtemis and LinkedIn's limits", "what": "When LinkedIn tightened automation limits, useArtemis fell to about $5K a month from a figure reported at about €15K in August 2025.", "lesson": "If one platform's rules can halve your revenue, plan for the day they change."},
+      {"year": "2025 to 2026", "name": "Meta ads for Capacity", "what": "He dropped Meta ads for Capacity because competitors were willing to spend $200 to win a $30 sale.", "lesson": "When rivals with more money overpay for customers, move to channels they can't buy."}
+    ],
+    "playbookTitle": "How he gets customers for copies of proven tools",
+    "playbook": [
+      {"title": "Find ideas in revenue screenshots", "text": "He watches founders posting MRR and Stripe screenshots on X, which he calls the ultimate proof that a tool works. No proof, no build."},
+      {"title": "Check where the competitor's traffic comes from", "text": "He uses Ahrefs to see a rival's traffic sources. Ad-only competitors can be copied fast because you can turn on the same ads at launch; competitors growing on ads and SEO are the strongest signal."},
+      {"title": "Ship the bare version and test with ads", "text": "Skip password reset and settings pages, launch the minimum, and run Google or Meta ads straight away. He says he could copy an ad-only competitor within a week."},
+      {"title": "Switch to SEO once it works", "text": "Ads prove demand quickly; SEO keeps traffic coming cheaply later. For Capacity, YouTube, SEO and AI search optimisation bring about 400 clicks a day."},
+      {"title": "Let the product make its own marketing", "text": "He runs multiple faceless YouTube, TikTok and Instagram channels per product that auto-post videos made with StoryShort itself."},
+      {"title": "Give every tool an affiliate programme", "text": "Each app pays a per-customer commission to affiliates, so happy users become a word-of-mouth sales team."},
+      {"title": "Leave channels where rivals overpay", "text": "When Capacity's competitors started spending $200 to win a $30 sale on Meta, he moved spending to organic channels instead."}
+    ],
+    "charts": [
+      {
+        "title": "Portfolio revenue a month, as reported in different interviews",
+        "points": [
+          {"label": "First business, about 2017", "value": 30000, "display": "about $30K"},
+          {"label": "Starter Story, likely 2024", "value": 35000, "display": "about $35K"},
+          {"label": "Startitup.sk, Aug 2025", "value": 32000, "display": "about €32K"},
+          {"label": "Indie Hackers, likely 2025", "value": 28000, "display": "about $28K"}
+        ],
+        "note": "All his own figures, from interviews that aren't precisely dated. Mixed currencies, so treat this as rough scale."
+      },
+      {
+        "title": "useArtemis a month, before and after LinkedIn's limits",
+        "points": [
+          {"label": "Aug 2025", "value": 15000, "display": "about €15K"},
+          {"label": "Later breakdown", "value": 5000, "display": "about $5K", "down": true}
+        ],
+        "note": "Two different interviews, two currencies. The drop is what matters."
+      }
+    ],
+    "timeline": [
+      {"when": "High school", "text": "Builds a small streaming website. Keeps making websites through college.", "big": false},
+      {"when": "Before 2017", "text": "Works about three years as an optician, building side projects around his shifts.", "big": false},
+      {"when": "2017", "text": "Launches an Instagram growth service with no code, run by workers in India and Bangladesh. It reaches about $30K a month and he quits optics.", "big": true},
+      {"when": "Jun 2018", "text": "Joins Product Hunt: “Building cool products in public.”", "big": false},
+      {"when": "Later", "text": "Learns to code from a 15-hour YouTube course. His first coded app, Usimus, fails.", "big": true},
+      {"when": "Nov 2021", "text": "Launches CtrProof on Product Hunt.", "big": false},
+      {"when": "Apr 2022", "text": "Launches SuperEmpire.", "big": false},
+      {"when": "Jun 2022", "text": "Launches useArtemis.", "big": false},
+      {"when": "About 2024", "text": "StoryShort, cloned from a competitor running on Facebook ads, grows to about $20K a month.", "big": true},
+      {"when": "Jun 2025", "text": "Capacity 2.0 launches, co-founded with Baptiste Studer.", "big": false},
+      {"when": "Aug 2025", "text": "Portfolio about €32K a month, StoryShort with 4,000+ customers.", "big": false},
+      {"when": "Jan and Aug 2026", "text": "Spec Coding and Capacity Desktop launch. Goal: $100K a month from Capacity.", "big": true}
+    ],
+    "quotes": [
+      {"text": "We only fight wars we can win.", "cite": "Indie Hackers interview"},
+      {"text": "Learning to code changed everything.", "cite": "Indie Hackers interview"},
+      {"text": "I trust intuition, but I also verify it with data.", "cite": "Indie Hackers interview"},
+      {"text": "run ads to test demand right away", "cite": "Starter Story, via BetterLaunch"},
+      {"text": "the ultimate proof that the tool is working", "cite": "On founders' revenue screenshots, Starter Story, via BetterLaunch"},
+      {"text": "Automate everything you can.", "cite": "Startitup.sk, August 2025, translated"},
+      {"text": "Bring-your-own-key is real friction, and we know it.", "cite": "Baptiste Studer, his Capacity co-founder, on Product Hunt"}
+    ],
+    "steal": [
+      "Before building anything, find someone already posting revenue for that kind of tool. Treat their screenshot as your market research.",
+      "Look up a competitor's traffic sources. If it's mostly paid ads, you can match it on day one.",
+      "Launch without the boring pages. Settings and password reset can wait until people are paying.",
+      "If your product makes content, use it to run your own marketing channels.",
+      "Write down which single platform could break your business with one rule change, and start building a second channel now."
+    ],
+    "sources": [
+      {"title": "Indie Hackers: Learning to code and building a $28K/mo portfolio of SaaS products", "url": "https://www.indiehackers.com/post/learning-to-code-and-building-a-28k-mo-portfolio-of-saas-products-OA5p18fXtvHGxP9xTAwG"},
+      {"title": "BetterLaunch: Samuel's app portfolio, a Starter Story summary", "url": "https://www.betterlaunch.co/playbooks/episodes/samuel-app-portfolio"},
+      {"title": "Startitup.sk: Samuel swapped optics for his own business (Aug 2025)", "url": "https://www.startitup.sk/zarabam-32-000-eur-mesacne-tym-ze-vylepsujem-cudzie-napady-samuel-vymenil-pracu-v-optike-za-vlastny-biznis-z-pohodlia-gauca/"},
+      {"title": "Samuel Rondot on Product Hunt", "url": "https://www.producthunt.com/@samuel_rondot"},
+      {"title": "Product Hunt: Capacity Desktop, an AI app builder with no credits to sell", "url": "https://www.producthunt.com/p/capacity/two-of-us-spent-weeks-building-an-ai-app-builder-with-no-credits-to-sell-smart-or-stupid"},
+      {"title": "Product Hunt: Capacity Desktop launch", "url": "https://www.producthunt.com/posts/1257407"}
+    ]
+  }
+}

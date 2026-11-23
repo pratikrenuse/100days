@@ -1,0 +1,247 @@
+{
+  "n": 9,
+  "name": "Arvid Kahl",
+  "short": "Arvid",
+  "wisdom": "Build for a pain you watch someone you love go through every day.",
+  "email": {
+    "subject": "He built it for his partner. 5,000 teachers followed.",
+    "hook": "Arvid Kahl dropped out of two degrees and never launched with an ad. One Facebook comment from his partner brought more than 100 signups on day one, and two years later they sold the business for seven figures.",
+    "lead": [
+      "Arvid matters to us for a reason that has nothing to do with code. His first business didn't start with a market report or a brainstorm. It started in a one-bedroom flat in Berlin, watching his partner lose two to three hours every day to the same boring task. If you want to know where good product ideas come from, this is the cleanest example in the series.",
+      "Let's be clear on the solo part. FeedbackPanda was built by two people, Arvid and his partner Danielle Simpson, with no employees. His later company, Podscan, was solo for a long time but took an investment from Calm Fund in 2024 and was sold in 2026. He now works for the company that bought it."
+    ],
+    "stats": [
+      {"value": "100+", "label": "signups on launch day, from one comment"},
+      {"value": "$55K", "label": "a month when they sold, 2019"},
+      {"value": "5,000", "label": "customers, with zero employees"}
+    ],
+    "chart": {
+      "title": "Podcast episodes Podscan had transcribed, by Arvid's own numbers",
+      "points": [
+        {"label": "Apr 2025", "value": 27, "display": "27M"},
+        {"label": "Nov 2025", "value": 45, "display": "45M"},
+        {"label": "Mar 2026", "value": 50, "display": "50M"}
+      ],
+      "note": "This pile of data, not the code, is what he now says was the real asset."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "In August 2026 an audio ad company called Audiohook bought Podscan, the podcast monitoring tool Arvid built. The price wasn't disclosed. Arvid joined Audiohook to look after Podscan's technical side, and Audiohook is now giving much of Podscan's data away free to the podcast industry.",
+          "He still hosts his weekly podcast, The Bootstrapped Founder, and his books (Zero to Sold, The Embedded Entrepreneur and The Bootstrapped Founder) keep selling. In March 2026 he argued that software like Podscan is now something **any minimally instructed agentic system could build**. What can't be copied is the data."
+        ]
+      },
+      {
+        "title": "How the money came in",
+        "stats": true,
+        "paras": [
+          "FeedbackPanda was a monthly subscription for online English teachers. It started at $5 a month for a limited plan and $10 for unlimited, with a 30-day free trial. They dropped the $5 tier and, about a year in, raised the price to $15, letting existing teachers keep the old price.",
+          "By the 2019 sale, he says it had about 5,000 customers, $55,000 a month in revenue and churn under 3%. Today his income is the exits, the books, the podcast and a salary from Audiohook. He hasn't shared what Podscan sold for."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "He built Danielle a prototype in about a week. The real first version took three to four weeks of nights and weekends, in Elixir and Phoenix, the same stack he used at his day job, with Stripe billing from day one. Danielle was customer number one and tested it for a couple of weeks.",
+          "The clever part was a browser extension. It added a button inside the online classroom that pulled in the student, the course and a feedback template, so writing feedback took one click. There was even a bit of machine learning to swap he and she in the templates automatically."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "The launch was a single Facebook comment. Danielle posted a link in a teacher community, and day one brought, in Arvid's words, “a hundred something signups”. After that, signups held around 30 a day, sometimes 50, for about two years.",
+          "There were no ads. Teachers shared feedback templates with each other (one teacher's 68 templates were downloaded nearly 4,000 times), they ran a weekly newsletter spotlighting customers, and **both founders answered every support message themselves**. The only money spent on media was one video with a teacher."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Two people doing everything for two years was hard, and he regrets not hiring. His line on it is painfully honest: “I thought I could deal with it.”",
+          "Podscan was harder still. By May 2024 he had spent about $10,000, all on GPU computing to transcribe podcasts, and was still unprofitable at about $1,000 a month. He had to raise money from Calm Fund. It reached profit in April 2025, but he wrote that keeping everything on his own shoulders wasn't good for fun, exploratory product work."
+        ]
+      }
+    ],
+    "tryToday": "Spend ten minutes watching one person near you, a teammate, a client or someone at home, do the most repetitive part of their job. Write down exactly what they click and type, and how long it takes.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Arvid Kahl is a self-taught German engineer who built FeedbackPanda with his partner Danielle after watching her lose hours every day to student feedback. With one Facebook comment, no ads and no employees, it grew to 5,000 teachers and was sold in 2019 for seven figures. His second company, Podscan, taught him that the code is easy to copy and the data isn't.",
+    "stats": [
+      {"value": "1 week", "num": 1, "prefix": "", "suffix": " week", "label": "to build the first prototype", "note": "for one teacher"},
+      {"value": "100+", "num": 100, "prefix": "", "suffix": "+", "label": "signups on day one", "note": "from a single Facebook comment"},
+      {"value": "$55,000", "num": 55000, "prefix": "$", "suffix": "", "label": "a month in revenue at the 2019 sale", "note": "his own figure"},
+      {"value": "50M", "num": 50, "prefix": "", "suffix": "M", "label": "podcast episodes transcribed by Podscan", "note": "March 2026"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Two dropped degrees and a long train ride",
+        "paras": [
+          "Arvid is a self-taught software engineer from Germany. He got his first programming job in the industry around 2003 or 2004. He started a computer science degree, then dropped out when a job at a web agency taught him more. Then he studied political science and philosophy, and dropped out of that too.",
+          "He went on to work for a Silicon Valley company for about a year and a half, which he calls the first job that paid real money, and later at a German software company working on internet of things devices and long-range sensors. Solid, ordinary engineering work.",
+          "In 2015 he lived in Berlin and worked in Hamburg. Three days a week he took the high-speed train, about two and a half hours each way. He filled those hours reading and listening to podcasts about software businesses, including The SaaS Podcast. Five hours a day, three days a week, of other founders explaining how they did it. **He was studying for a business he didn't have yet.**"
+        ]
+      },
+      {
+        "label": "The spark",
+        "title": "Watching Danielle lose three hours a day",
+        "paras": [
+          "This is the part of the story we love most. Arvid's partner, Danielle Simpson, is an opera singer with a Master's in Opera who also taught English as a second language. In 2017 she was put on four to six weeks of bed rest by her doctor. Stuck at home, she joined VIPKID, a company where teachers give online English lessons to students in China.",
+          "She ended up teaching about 95 classes a week, 18 to 20 students a day, from 5am to 3pm Berlin time. And after every single class, the company wanted written feedback for the student's parents. That added two to three hours to a ten-hour working day.",
+          "They lived together in a one-bedroom flat in central Berlin. So Arvid didn't have to research the problem. He watched it, every day, from across the room. In Danielle's own account of how it began, he built her a prototype in about a week.",
+          "Here's what made it more than a favour for his partner. Danielle wasn't one teacher with an odd problem. She was one of thousands of teachers on the same platform, writing the same kind of feedback, in the same online groups. The pain was identical across a whole community. That's the idea behind his later book The Embedded Entrepreneur: get inside a group, watch how they work, and build for what hurts."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "Three weeks of nights, and a button in the classroom",
+        "paras": [
+          "The prototype worked, so he built it properly. The first real version took three to four weeks of moonlighting, nights and weekends, while he kept his day job. He wrote it in Elixir and Phoenix, which was what he used at work, so there was nothing new to learn. He set up Stripe billing from the very first day.",
+          "The key feature was a browser extension. It put a button right inside the online classroom. Click it, and FeedbackPanda pulled in the student's details, the course and a template, so a teacher could write feedback in one click instead of from scratch. He even used a bit of machine learning to swap pronouns in templates automatically, so a template written for a boy would read correctly for a girl.",
+          "Danielle was customer number one. She tested it for a couple of weeks, and the early fixes were mundane: screens that confused people, and feedback generation that wasn't good enough yet. That's what a first version usually needs. Not more features, just fewer rough edges.",
+          "Pricing came from a book. Inspired by Nir Eyal's Hooked, he gave everyone a 30-day free trial, long enough to form a habit. After that it was $5 a month for a limited plan, about 100 students, or $10 for unlimited."
+        ]
+      },
+      {
+        "label": "The first 100 users",
+        "title": "One Facebook comment",
+        "paras": [
+          "Most of us imagine a launch as a big coordinated event: Product Hunt, a thread, an email blast. FeedbackPanda's launch was one comment. Danielle posted a link to it in a Facebook community for teachers.",
+          "Day one brought, as Arvid put it, “a hundred something signups.” And it didn't stop. Signups held steady at around 30 a day, sometimes 50, for about two years. **The community had the exact pain, so one honest message was enough.**",
+          "Then the product started spreading itself. Teachers could share their feedback templates with each other, and they did. A January 2018 post noted that one teacher's 68 shared templates had been downloaded nearly 4,000 times. Every shared template was a reason for another teacher to sign up.",
+          "Notice who did the launching. Not the engineer. The teacher. Danielle was a real member of that community, posting where she already talked to other teachers. Nobody saw it as an ad, because it wasn't one."
+        ],
+        "pull": {"text": "a hundred something signups", "cite": "Arvid Kahl on FeedbackPanda's launch day, SaaS Club podcast"}
+      },
+      {
+        "label": "Growing it",
+        "title": "No ads, every message answered",
+        "paras": [
+          "FeedbackPanda grew almost entirely through word of mouth in teacher Facebook groups. Arvid and Danielle watched for mentions on Twitter and Facebook and amplified them. They didn't run ads. The only media spend was one video made with a teacher.",
+          "They ran a weekly newsletter called Feedback Panda Stories that spotlighted customers, and in January and February 2018 their Medium publication ran interviews with what they called SuperStar Teachers. Their marketing was basically making their users famous to each other.",
+          "Support ran through Intercom, and both founders answered every message themselves. With thousands of customers, that's a lot of messages. But it meant they heard every complaint and every idea directly.",
+          "About a year in, they raised the price from $10 to $15 a month. They removed the $5 tier, and existing customers could keep their old price or extend it. Raising prices on a cheap tool for teachers sounds risky. It worked because the tool saved them hours every day."
+        ]
+      },
+      {
+        "label": "Finding the money",
+        "title": "Two people, 5,000 customers, one sale",
+        "paras": [
+          "The figures on this page are Arvid's own, from interviews and his blog, and none have been audited.",
+          "Within about two years, FeedbackPanda had about 5,000 customers, $55,000 a month in revenue and churn under 3%. It had zero employees. Arvid and Danielle did everything.",
+          "In 2019 they sold it to SureSwift Capital for what he calls a seven-figure sum. The exact price isn't public. He later wrote a book about the whole process, Zero to Sold.",
+          "The cost was the workload. Looking back, his biggest regret is not hiring help. “I thought I could deal with it.” Two people carrying 5,000 customers is impressive on paper and exhausting in real life. He calls himself a lazy, automation-focused “0.8x engineer”, which might be the reason it worked at all."
+        ],
+        "pull": {"text": "I thought I could deal with it.", "cite": "Arvid Kahl on not hiring at FeedbackPanda, SaaS Club podcast"}
+      },
+      {
+        "label": "The second company",
+        "title": "Podscan and a $10,000 GPU bill",
+        "paras": [
+          "After the sale, Arvid became a writer and podcaster: books, The Bootstrapped Founder podcast and building in public on Twitter. Then he built something again. It started with Podline, a voice message tool he made in about two weeks. That turned into an idea he described as Google Alerts for podcasts: tell me whenever someone mentions my brand, my name or my topic in any podcast. That became Podscan.",
+          "Podscan was the opposite of FeedbackPanda in one big way. It was expensive to run. To know what people say on podcasts, you have to transcribe them, and transcription needs GPUs. In May 2024, about two months in, he wrote that he'd spent about $10,000, all of it on GPU compute. He'd grown from about five cloud GPU servers to 16, plus big app and search servers, and expected $15,000 to $20,000 a month at peak before dropping under $2,000 once the backlog was done.",
+          "Revenue was small at first. He crossed $1,000 a month in late April 2024, adding one or two subscriptions a day, mostly on the cheapest plan, with no churn yet. He even skipped setting a month three revenue goal, to keep his anxiety down. To keep going he raised a six-figure investment from Calm Fund, which he estimated gave him a little over a year of runway.",
+          "Finding customers was hard work. He did more than 20 customer research calls, recorded with Otter.ai and Grain, and used them to define his ideal customer and filter feature requests. Early prospects were people who had mentioned SpeakPipe, and founders of podcast companies like Transistor and Riverside whom he reached through existing relationships and DMs. Cold email to podcast booking agencies was, in his word, underwhelming. Selling to PR and marketing teams was the hardest of all. He also made sure Podscan had a strong API so other people could build on it."
+        ]
+      },
+      {
+        "label": "Scaling it",
+        "title": "Profitable, then sold",
+        "paras": [
+          "By early April 2025 Podscan was profitable, before the investment ran out. He didn't share the revenue. At that point it had about 27 million transcribed episodes and 3.7 million tracked podcasts. He was still doing it alone and wrote that keeping it all on his shoulders wasn't good for exploratory and fun product work. His next goal was $15,000 to $20,000 a month, enough to pay an engineer.",
+          "He kept costs low by getting clever with infrastructure. By November 2025 the setup was a Laravel app, OpenSearch for search, a MySQL database on AWS, Whisper plus a local language model for transcription with OpenAI as a fallback, one web server and about 20 GPU servers at Hetzner. That GPU fleet cost about 180 euros a month. The database was actually the biggest cost. Podscan was indexing about 45 million episodes and adding about 50,000 transcripts a day.",
+          "He also used AI in his own workflow. He describes a 10-80-10 approach: he sets the direction and reviews at the end, and AI does the middle 80%. He had AI draft onboarding emails from each user's activity log, then edited them by hand, and ran an AI security sweep before pushing code. He says he never hired a developer, though Nick Grenfell helped with design.",
+          "On 24 August 2026, Audiohook, a pay-per-conversion audio advertising company, closed its purchase of Podscan, and announced it on 30 September. The price wasn't disclosed. Podscan was by then ingesting more than 70,000 episodes a day. Arvid joined Audiohook to oversee the technical transition. Audiohook's CEO, Jordan Bentley, said they were “making much of this data available to the industry for free.”"
+        ],
+        "chart": 0
+      },
+      {
+        "label": "How he thinks now",
+        "title": "Data is the only moat",
+        "paras": [
+          "In March 2026 Arvid recorded an episode called “Data Is the Only Moat”, and it's the most useful thing on this page for anyone building in the AI era.",
+          "His argument goes like this. Software that just takes input, transforms it and gives output is now easy to copy. The ingestion and API layer of Podscan, he said, is “something that any minimally instructed agentic system could build for me.” What an agent can't easily copy is the 50 million episodes already transcribed. Agents are bad at continuous, large-scale collection, and processing 50,000 episodes a day with one could cost tens of thousands of dollars a day. So the value is in the data you've piled up, and in making it reachable, through an API and MCP, so agents come to you.",
+          "He has also changed his mind about building in public, which made him famous. In another episode he argued that AI has made cloning cheap, so the old safe zone for sharing, roughly while you're under $20,000 to $30,000 a month, has, as one write-up reported, “collapsed to zero.” His new filter is to share what's interesting, not what's easy to clone.",
+          "For us, that's a real shift. The founder who taught a generation of bootstrappers to share everything now says to share carefully. And the founder whose first win came from a simple button now says the code is the easy part."
+        ],
+        "pull": {"text": "something that any minimally instructed agentic system could build for me", "cite": "Arvid Kahl, The Bootstrapped Founder episode 437, March 2026"}
+      }
+    ],
+    "failuresTitle": "No dead products, but real setbacks",
+    "failuresIntro": "Arvid is unusual in this series. There's no graveyard of failed apps. His setbacks are about workload, money and choices he'd make differently.",
+    "failures": [
+      {"year": "Early 2000s", "name": "Two abandoned degrees", "what": "He dropped out of computer science for a web agency job that taught him more, then dropped out of political science and philosophy as well.", "lesson": "A finished degree isn't the only route to real skill."},
+      {"year": "2017 to 2019", "name": "Not hiring at FeedbackPanda", "what": "Two people handled 5,000 customers, support, product and marketing. He regrets not getting help.", "lesson": "Hire before the workload breaks you, not after."},
+      {"year": "2024", "name": "Podscan's GPU burn", "what": "He spent about $10,000 on GPU compute in the first two months while making about $1,000 a month. He raised a six-figure investment from Calm Fund to survive.", "lesson": "Know your cost per customer before you scale a heavy product."},
+      {"year": "2024", "name": "Cold email to booking agencies", "what": "He tried cold email to podcast booking agencies to find Podscan customers. He called the results underwhelming.", "lesson": "Warm relationships beat cold lists for a new product."},
+      {"year": "2025", "name": "The weight of going solo", "what": "Even after Podscan turned profitable, he wrote that keeping it all on his shoulders wasn't good for exploratory and fun product work.", "lesson": "Solo is a choice with a cost. Plan for help early."}
+    ],
+    "playbookTitle": "How he got users without spending on ads",
+    "playbook": [
+      {"title": "Launch inside the community, through a real member", "text": "FeedbackPanda launched with one Facebook comment from Danielle in a teacher group. It brought 100+ signups on day one and 30 to 50 a day for two years."},
+      {"title": "Put the product where the work happens", "text": "The browser extension added a button inside the online classroom. Teachers didn't have to change how they worked, they just clicked."},
+      {"title": "Let users share what they make", "text": "Teachers shared feedback templates, and one teacher's 68 templates were downloaded nearly 4,000 times. Each share pulled in another teacher."},
+      {"title": "Make customers the stars", "text": "A weekly Feedback Panda Stories newsletter and SuperStar Teacher interviews on Medium spotlighted users. They amplified every mention on Twitter and Facebook instead of buying ads."},
+      {"title": "Answer every message yourself", "text": "Both founders answered every support message through Intercom. Churn stayed under 3%, and every request came straight to the people building the product."},
+      {"title": "Use a long trial, then raise the price", "text": "A 30-day trial inspired by Hooked, then $5 and $10 plans, later $15 with existing customers protected."},
+      {"title": "Talk to 20 customers before building more", "text": "For Podscan he ran 20+ recorded research calls and used them to define an ideal customer and filter feature requests."},
+      {"title": "Sell through people you already know", "text": "Podscan's early prospects were founders at Transistor and Riverside, reached through existing relationships and DMs, and people who had mentioned SpeakPipe."},
+      {"title": "Build in public, and a weekly show", "text": "His blog, Twitter and weekly podcast built the audience that followed Podscan. He now shares only what is interesting and hard to clone."}
+    ],
+    "charts": [
+      {
+        "title": "Podcast episodes Podscan had transcribed, in millions",
+        "points": [
+          {"label": "Apr 2025", "value": 27, "display": "27M"},
+          {"label": "Nov 2025", "value": 45, "display": "45M"},
+          {"label": "Mar 2026", "value": 50, "display": "50M"}
+        ],
+        "note": "By the 2026 sale it was taking in more than 70,000 episodes a day."
+      }
+    ],
+    "timeline": [
+      {"when": "2003 or 2004", "text": "Gets his first industry programming job, after dropping out of computer science."},
+      {"when": "2015", "text": "Commutes Berlin to Hamburg, five hours a day, listening to SaaS podcasts."},
+      {"when": "2017", "text": "Watches Danielle lose two to three hours a day to student feedback and builds her a prototype in about a week.", "big": true},
+      {"when": "2017", "text": "Ships the first real version of FeedbackPanda in three to four weeks. One Facebook comment brings 100+ signups on day one.", "big": true},
+      {"when": "Jan 2018", "text": "One teacher's 68 shared templates have been downloaded nearly 4,000 times."},
+      {"when": "About 2018", "text": "Raises the price from $10 to $15 a month, protecting existing customers."},
+      {"when": "2019", "text": "Sells FeedbackPanda to SureSwift Capital for seven figures, at about 5,000 customers and $55K a month.", "big": true},
+      {"when": "Apr 2024", "text": "Podscan crosses $1,000 a month after about $10,000 of GPU spending, and he raises from Calm Fund."},
+      {"when": "Apr 2025", "text": "Podscan turns profitable before the investment runs out."},
+      {"when": "Mar 2026", "text": "Records “Data Is the Only Moat” as Podscan passes 50 million transcribed episodes."},
+      {"when": "Aug 2026", "text": "Audiohook closes its purchase of Podscan. Arvid joins Audiohook.", "big": true}
+    ],
+    "quotes": [
+      {"text": "a hundred something signups", "cite": "Arvid on FeedbackPanda's launch day, SaaS Club podcast"},
+      {"text": "I thought I could deal with it.", "cite": "Arvid on not hiring at FeedbackPanda, SaaS Club podcast"},
+      {"text": "It's incredibly powerful to chat with people who have a problem and know it", "cite": "Arvid, The Bootstrapped Founder blog, May 2024"},
+      {"text": "Keeping it solo, keeping it all on my shoulders", "cite": "Arvid, The Bootstrapped Founder blog, April 2025"},
+      {"text": "something that any minimally instructed agentic system could build for me", "cite": "Arvid, The Bootstrapped Founder episode 437, March 2026"},
+      {"text": "Joining Audiohook gives us the resources and expertise to accelerate the roadmap.", "cite": "Arvid, Audiohook press release, September 2026"}
+    ],
+    "steal": [
+      "Look closely at the people around you. The best product idea in this series came from watching one person do one boring task every day.",
+      "Launch where your buyers already talk, through someone they trust. One real comment in the right group beat any ad.",
+      "Put your product inside the tool people already use, with a button or an extension, so they don't have to change habits.",
+      "Give users something to share with each other, like templates. Every share is a free invite.",
+      "If your product is heavy to run, work out the cost per customer before you grow. Podscan nearly ran out of money on GPUs.",
+      "In the AI era, build up something hard to copy, like a pile of data or a community, and be careful what you share publicly."
+    ],
+    "sources": [
+      {"title": "SaaS Club podcast ep. 259: Arvid Kahl", "url": "https://saasclub.io/259"},
+      {"title": "The FeedbackPanda Story, Medium (2017)", "url": "https://medium.com/feedbackpanda/the-feedbackpanda-story-3d719c1424ac"},
+      {"title": "Indie Hackers: How Arvid Kahl bootstrapped FeedbackPanda to $55K MRR and sold it", "url": "https://www.indiehackers.com/post/arvid-kahl-how-this-indie-hacker-bootstrapped-feedbackpanda-to-55k-mrr-and-sold-it-in-just-2-years-06ad0a81bf"},
+      {"title": "They Got Acquired: FeedbackPanda acquired by SureSwift Capital", "url": "https://theygotacquired.com/saas/feedback-panda-acquired-by-sureswift-capital/"},
+      {"title": "Elixir Forum: FeedbackPanda has been acquired", "url": "https://elixirforum.com/t/feedback-panda-built-with-phoenix-vue-and-bootstrapped-to-55k-mrr-has-now-been-acquired/26422"},
+      {"title": "The Bootstrapped Founder: Podscan, 2 months and $1K MRR in (May 2024)", "url": "https://thebootstrappedfounder.com/podscan-2-months-and-1k-mrr-in/"},
+      {"title": "The Bootstrapped Founder: Podscan's profitability milestone (Apr 2025)", "url": "https://thebootstrappedfounder.com/podscans-profitability-milestone-whats-next/"},
+      {"title": "Business of Laravel ep. 21: Arvid Kahl on Podscan (Nov 2025)", "url": "https://tighten.com/insights/bol-ep21-arvid-kahl-podscan/"},
+      {"title": "The Bootstrapped Founder ep. 437: Data Is the Only Moat (Mar 2026)", "url": "https://podscan.fm/podcasts/the-bootstrapped-founder/episodes/437-data-is-the-only-moat"},
+      {"title": "The VC Corner: Building in public and AI copycat risk (Jun 2026)", "url": "https://www.thevccorner.com/p/building-in-public-ai-copycat-risk"},
+      {"title": "Podnews: Audiohook acquires Podscan (Sep 2026)", "url": "https://podnews.net/press-release/audiohook-podscan"}
+    ]
+  }
+}

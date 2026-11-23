@@ -1,0 +1,261 @@
+{
+  "n": 38,
+  "name": "Caleb Porzio",
+  "short": "Caleb",
+  "wisdom": "Give the tool away free, then sell the lessons on how to use it.",
+  "email": {
+    "subject": "His income fell $70K. Then open source paid him $1M.",
+    "hook": "Caleb Porzio quit his job with no plan, earned about $70K less in his first year, and went on to make over $1M from free open-source code.",
+    "lead": [
+      "Caleb is a developer who left a salaried job at an agency called Tighten in January 2019. Four days later he started Livewire, a free tool for Laravel developers, and spent most of a year working on it for nothing. As far as anyone can see, he still works alone.",
+      "Here's why he matters to us. Everyone says you can't make money from free stuff. Caleb did, and the way he did it is a pattern any marketer can copy: give away the tool, then sell the thing that helps people get more out of it."
+    ],
+    "stats": [
+      {"value": "$1M+", "label": "lifetime from GitHub Sponsors, August 2024"},
+      {"value": "$725K", "label": "of it from paid screencasts"},
+      {"value": "90 days", "label": "to go from $40K to $100K+ a year"}
+    ],
+    "chart": {
+      "title": "Caleb's yearly income, by his own numbers",
+      "points": [
+        {"label": "2018 (salary)", "value": 90000, "display": "$90K"},
+        {"label": "2019 (on his own)", "value": 21000, "display": "$21K", "down": true},
+        {"label": "Jun 2020 (yearly rate)", "value": 112680, "display": "$112,680"}
+      ],
+      "note": "June 2020 is his yearly sponsor income at that point, not a full calendar year."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "In August 2025 he unveiled Livewire 4 at Laracon US, the big Laravel conference. It includes a new compiler called Blaze that renders components “up to 20x faster.” One test table of 29,000 components went from 1.6 seconds to 131 milliseconds.",
+          "He also sells Flux, a kit of ready-made interface components for Livewire. It's a one-time payment: $149 for one project, $299 for unlimited projects, or $799 for a team, with free updates forever. Flux 2 is already out."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "By August 2024 he had made over $1M through GitHub Sponsors. But here's the surprise: it was mostly not donations. About **$725K came from paid Livewire screencasts**, about $200K from companies paying to put their logo on his sites, $25K from consulting, $20K from early access to a tool called Sushi, and just $5K from small sponsors.",
+          "So the free code brings in the users, and the money comes from selling them education and shortcuts. His own rule, in capitals: “SELL THEM SOMETHING.”"
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "He left Tighten on 11 January 2019 for a sabbatical with no plan. He'd saved up first. About four days in, he read about a tool from another programming world called Phoenix LiveView and thought, why doesn't Laravel have this? “That weekend, Livewire was born.”",
+          "Then came the hard part. He earned about $21K in 2019 from small mentoring jobs, compared with about $90K the year before, and worked unpaid on open source for nearly a year."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "He didn't start from zero. He was already known in the Laravel world from conference talks, his job at a well-known agency and his own podcast. Those people tried Livewire first.",
+          "The money came from one idea he calls “sponsorware”: build a tool only for paying sponsors, and open-source it once enough people sponsor. It added about $11K a year within days. Then he made sponsor-only screencasts teaching Livewire, and went from about **$40K to over $100K a year in 90 days**."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Year one was a $70K pay cut. His first sponsor, in December 2019, paid $24 a month. He says his early sponsor tiers were far too cheap.",
+          "And platforms can take things away. When PayPal sponsorships were cut off he lost about $4K a month, roughly $50K that year. He also ran an Alpine.js conference that brought in about $20K and earned him $0. His lesson: “Platform risk is a real thing: DIVERSIFY!”"
+        ]
+      }
+    ],
+    "tryToday": "Think of one free thing you could give away in your field, a template, a tool or a guide. Then write down the paid lesson or shortcut that would help people get twice as much out of it.",
+    "button": "Read how he did it"
+  },
+  "page": {
+    "intro": "Caleb Porzio walked away from a steady developer job in January 2019 with no plan, built a free tool called Livewire four days later, and took a $70K pay cut in his first year. Then he worked out how to get paid for open source, and by August 2024 he had passed $1M. As far as anyone can tell publicly, he still does it alone.",
+    "stats": [
+      {"value": "$1,000,000+", "num": 1000000, "prefix": "$", "suffix": "+", "label": "lifetime through GitHub Sponsors", "note": "August 2024"},
+      {"value": "$725,000", "num": 725000, "prefix": "$", "suffix": "", "label": "from paid screencasts", "note": "the biggest slice of that $1M"},
+      {"value": "$112,680", "num": 112680, "prefix": "$", "suffix": "", "label": "a year from 535 sponsors", "note": "June 2020"},
+      {"value": "4 days", "num": 4, "prefix": "", "suffix": " days", "label": "from quitting to starting Livewire", "note": "January 2019"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A good job, and a sabbatical with no plan",
+        "paras": [
+          "Caleb was a salaried developer at Tighten, a well-known agency in the Laravel world. Laravel is a popular framework for building websites in PHP. In 2018, his last full year there, he earned about $90,000. Comfortable, steady, the kind of job you don't leave on a whim.",
+          "Quick note before we go on: almost every number on this page is Caleb's own, from two long posts on his blog in 2020 and 2024, and nobody has audited them.",
+          "He left anyway, on 11 January 2019. It wasn't to start a company. It was a sabbatical, a break, and he had no plan for what came next. He had saved money before quitting, which is the boring bit that made everything else possible.",
+          "Because of his time at Tighten, his conference talks and a podcast he made, he was already a familiar name to Laravel developers. He didn't think of it as an audience at the time, but it would turn out to be his biggest advantage."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "Four days in, Livewire was born",
+        "paras": [
+          "About four days into the sabbatical, he read about Phoenix LiveView. It's a tool from a different programming language that lets you build lively, interactive web pages without writing much JavaScript. Caleb had grown tired of how complicated big JavaScript frameworks had become, and this looked like a way out.",
+          "So he built a rough proof of concept for Laravel. In his own words: “That weekend, Livewire was born.” That rough weekend version became the project he'd spend the next several years on.",
+          "Within about a year he had also built Alpine.js, a small, lightweight JavaScript library that pairs nicely with Livewire. He hasn't shared an exact date for it. Later came Sushi, another small tool, and eventually Flux, a paid kit of interface components.",
+          "He has been honest that none of this happened easily. “Getting here took a lot of late nights,” he wrote."
+        ],
+        "pull": {"text": "That weekend, Livewire was born.", "cite": "Caleb, on Indie Hackers"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "A $70,000 pay cut",
+        "paras": [
+          "Livewire was free and open source. People liked it. But liking something free doesn't pay rent.",
+          "In 2019 Caleb paid his bills with small freelance mentoring jobs. He earned about **$21,000 that year, roughly $70,000 less** than the year before. He worked on open source unpaid for nearly a year.",
+          "Think about what that feels like: you've left a $90K job, your new thing is getting attention, and your income has collapsed by three quarters. Most people would go back to a job at this point. He didn't, partly because he had savings, and partly because he could see people really using what he'd made."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "The first users",
+        "title": "Starting with people who already trusted him",
+        "paras": [
+          "Caleb's first users came from the Laravel community. They already knew him from talks at Laravel conferences and from his work at a respected agency. When he said “try this,” they did.",
+          "His channels were simple and personal. He posted on Twitter. He went on podcasts and ran his own, called Notes On Work. He gave talks at Laravel conferences. He wrote engaging emails and kept up real relationships with people. One of his firm rules today is: “Relationships are everything. Build them. Keep them.”",
+          "He also treats his documentation site as a marketing asset, not an afterthought. For an open-source tool, the docs are where a curious developer decides whether to use it. Good docs turn a visitor into a user, and later into a buyer.",
+          "This is the bit we often skip when we admire someone's launch. Caleb's early users didn't come from a clever trick. They came from years of being helpful and visible in one community before Livewire existed."
+        ]
+      },
+      {
+        "label": "Finding the money",
+        "title": "A $24 sponsor, then one big idea",
+        "paras": [
+          "GitHub accepted him into its Sponsors programme on 12 December 2019. Sponsors lets people pay open-source developers a monthly amount. His first sponsor paid $24 a month. A start, but nowhere near a salary.",
+          "Then he heard an idea on a podcast called No Plans To Merge, and tried it. He calls it “sponsorware.” You build a new tool and make it available only to sponsors. Once you reach a set number of sponsors, you open-source it for everyone. People who want it early, or who want to help release it to everyone, pay.",
+          "It worked fast. Sponsorware added about $11,000 a year in sponsorships within days. He later called it “the single most impactful idea I have EVER had,” talking about his income.",
+          "He also learned that his early tiers were too cheap. His words: “the biggest mistake people make with GitHub sponsors” is offering too small a first tier. If your lowest option is tiny, most people pick the tiny one."
+        ],
+        "pull": {"text": "the single most impactful idea I have EVER had", "cite": "Caleb, on sponsorware, June 2020"}
+      },
+      {
+        "label": "Scaling it",
+        "title": "Screencasts took him past $100K in 90 days",
+        "paras": [
+          "The next move was the one that changed everything. Caleb started making screencasts, short videos teaching people how to use Livewire properly, and made them available only to sponsors.",
+          "That took his sponsor income from **about $40,000 a year to over $100,000 a year in 90 days**. By June 2020 he was at $112,680 a year, from 535 sponsors paying $14 a month or more. Remember, eighteen months earlier he'd had no plan and no income.",
+          "Look at what actually happened there. People weren't paying to support him out of kindness. They were paying to learn a tool they already used at work, faster. The free tool created the need, and the screencasts filled it.",
+          "His blunt summary of the whole approach, from his 2024 playbook: “SELL THEM SOMETHING.” Donations alone stay small. Give people something worth paying for and the sponsorship becomes a sales channel."
+        ],
+        "pull": {"text": "SELL THEM SOMETHING.", "cite": "Caleb, his $1M playbook, August 2024"}
+      },
+      {
+        "label": "The million",
+        "title": "Where $1M actually came from",
+        "paras": [
+          "In August 2024 Caleb wrote that he had passed $1 million in lifetime earnings through GitHub Sponsors. He broke it down roughly, and the breakdown is the most useful part of the whole story.",
+          "About **$725,000 came from Livewire premium screencasts**. About $200,000 came from companies paying for their logo on his sites. About $25,000 was consulting. About $20,000 came from early access to Sushi. Small individual sponsors added about $5,000, and stickers another $5,000.",
+          "There were also costs and knocks. An Alpine.js conference brought in about $20,000 and, after costs, earned him $0. And when PayPal sponsorships were cut off, he lost about $4,000 a month, around $50,000 that year. It's a sharp reminder of his rule: “Platform risk is a real thing: DIVERSIFY!”",
+          "He has other strong opinions from those years too. He thinks your email list matters more than social followers: “Your email list is far more valuable.” And he has a famously spicy take on open-source maintenance: “TURN OFF GITHUB ISSUES. IT'S A BROKEN MODEL.”"
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Livewire 4 and a paid UI kit",
+        "paras": [
+          "Today the free projects are still the front door, and paid products do the earning. The biggest paid product now is Flux, a set of ready-made interface components built for Livewire.",
+          "Laravel community threads suggest Flux was demoed at Laracon US in late August 2024 and went live around 23 September 2024, though he hasn't confirmed those dates himself. The live pricing page in November 2026 shows one-time payments: $149 for a single project, $299 for unlimited projects for one developer, marked “Most popular,” and $799 for a team with seats you can reassign. All come with free updates forever and limited support. Flux 2 has since been released.",
+          "In August 2025 he unveiled Livewire 4 at Laracon US. It adds single-file components, a feature called Islands, and a compiler called Blaze that renders Blade components “up to 20x faster.” In one demo, a table of 29,000 components went from 1.6 seconds to 131 milliseconds. That kind of number gets shared, and it keeps the free project growing.",
+          "He has described his income in recent years as “five-figure MRR” across free tools, courses and screencasts, ebooks and Flux, without an exact figure or date. Flux's revenue isn't public. For context, GitHub Sponsors as a whole passed $100 million in payouts in 2026.",
+          "He has a wife and two kids, and no team is described publicly. Flux may have contributors, but he hasn't said."
+        ]
+      },
+      {
+        "label": "How he thinks",
+        "title": "Don't spend money, and ask what users need",
+        "paras": [
+          "Caleb's operating rules are refreshingly plain. Keep costs low and avoid lifestyle creep. Do as much as you can yourself, and hire slowly. Keep a cash cushion invested. In his words: “DON'T SPEND MONEY!”",
+          "The question he keeps coming back to is “What do my users need/want?” It's the same question that led him from free code to paid screencasts to a paid component kit.",
+          "He's also not preachy about open source. “I am not a code missionary,” he wrote. He's happy to give things away and equally happy to sell things. And for all the hard work, he's grateful: “I'm a lucky fella.”",
+          "He hasn't said much in public about AI and the future of solo developers. His 2024 playbook is about the present: sell something, own your email list, and don't depend on one platform."
+        ]
+      }
+    ],
+    "failuresTitle": "The setbacks on the way to $1M",
+    "failuresIntro": "Caleb hasn't had a product die publicly. His setbacks were about money, pricing and platforms, and he wrote about all of them.",
+    "failures": [
+      {"year": "2019", "name": "The income crash", "what": "After leaving a job paying about $90K, he earned about $21K in 2019 from small mentoring gigs. He worked unpaid on open source for nearly a year.", "lesson": "Save before you jump, because the gap between free and paid can be a year."},
+      {"year": "2019 to 2020", "name": "Sponsor tiers that were too cheap", "what": "His early GitHub Sponsors tiers were too small, and he now calls that the biggest mistake people make with Sponsors.", "lesson": "Your lowest price sets what most people pay, so don't make it tiny."},
+      {"year": "Not dated", "name": "The PayPal cut-off", "what": "When PayPal sponsorships were cut off he lost about $4K a month, about $50K that year.", "lesson": "Never let one platform hold most of your income."},
+      {"year": "Not dated", "name": "A conference that paid nothing", "what": "His Alpine.js conference brought in about $20K and, after costs, earned him $0.", "lesson": "Revenue isn't profit; price events for what they really cost."}
+    ],
+    "playbookTitle": "How he turned free code into $1M",
+    "playbook": [
+      {"title": "Start in a community that already knows you", "text": "His first Livewire users were Laravel developers who knew him from conference talks, his agency job and his podcast. Years of being visible in one place gave the launch a ready audience."},
+      {"title": "Ship a rough version fast", "text": "He built the first Livewire proof of concept over a weekend, about four days after quitting. Then he improved it in public."},
+      {"title": "Sponsorware", "text": "Build a tool for sponsors only, then open-source it once a set number of people sponsor. It added about $11K a year within days."},
+      {"title": "Sell education about your free tool", "text": "Sponsor-only screencasts teaching Livewire took him from about $40K to over $100K a year in 90 days, and made about $725K over time."},
+      {"title": "Sell logo spots to companies", "text": "Companies paid about $200K in total to put their logos on his sites. If your free project has traffic, the companies selling to that audience will pay to be seen."},
+      {"title": "Treat docs as marketing", "text": "He sees the documentation site as a marketing asset, the place where a visitor becomes a user and a user meets the paid products."},
+      {"title": "Price your first tier properly", "text": "Too-cheap first tiers held him back early. Raise the floor so the default choice is a meaningful amount."},
+      {"title": "Own the relationship", "text": "He says your email list is far more valuable than other channels, and that relationships are everything. After losing PayPal sponsorships, diversifying became a rule."},
+      {"title": "Add a paid product next to the free one", "text": "Flux, a paid component kit at $149, $299 or $799 one-time, sits right next to free Livewire. Free users who want to build faster have an obvious thing to buy."}
+    ],
+    "charts": [
+      {
+        "title": "Caleb's yearly income, by his own numbers",
+        "points": [
+          {"label": "2018 (salary)", "value": 90000, "display": "$90K"},
+          {"label": "2019 (on his own)", "value": 21000, "display": "$21K", "down": true},
+          {"label": "Early 2020 (yearly rate)", "value": 40000, "display": "$40K"},
+          {"label": "Jun 2020 (yearly rate)", "value": 112680, "display": "$112,680"}
+        ],
+        "note": "The 2020 bars are his yearly sponsor income at that moment, before and after screencasts."
+      },
+      {
+        "title": "Where his first $1M came from, August 2024",
+        "points": [
+          {"label": "Livewire screencasts", "value": 725000, "display": "$725K"},
+          {"label": "Company logo spots", "value": 200000, "display": "$200K"},
+          {"label": "Consulting", "value": 25000, "display": "$25K"},
+          {"label": "Sushi early access", "value": 20000, "display": "$20K"},
+          {"label": "Small sponsors", "value": 5000, "display": "$5K"},
+          {"label": "Stickers", "value": 5000, "display": "$5K"}
+        ],
+        "note": "His approximate split. The Alpine conference brought in about $20K but earned him $0 net."
+      }
+    ],
+    "timeline": [
+      {"when": "2018", "text": "Last full year as a salaried developer at Tighten, earning about $90K.", "big": false},
+      {"when": "11 Jan 2019", "text": "Leaves Tighten for a sabbatical with no plan.", "big": true},
+      {"when": "Jan 2019", "text": "About four days later, builds the first Livewire proof of concept over a weekend.", "big": true},
+      {"when": "2019", "text": "Earns about $21K from mentoring and works unpaid on open source for nearly a year.", "big": false},
+      {"when": "12 Dec 2019", "text": "Accepted into GitHub Sponsors. First sponsor pays $24 a month.", "big": false},
+      {"when": "Early 2020", "text": "Tries sponsorware, adding about $11K a year within days, then sponsor-only screencasts.", "big": true},
+      {"when": "Jun 2020", "text": "Reaches $112,680 a year from 535 sponsors.", "big": true},
+      {"when": "Aug 2024", "text": "Passes $1M lifetime through GitHub Sponsors and publishes his playbook.", "big": true},
+      {"when": "Sep 2024", "text": "Flux, the paid UI kit, appears to go live after a Laracon demo in August.", "big": false},
+      {"when": "Aug 2025", "text": "Unveils Livewire 4 at Laracon US, with the Blaze compiler.", "big": false}
+    ],
+    "quotes": [
+      {"text": "That weekend, Livewire was born.", "cite": "Indie Hackers"},
+      {"text": "the single most impactful idea I have EVER had", "cite": "calebporzio.com, June 2020"},
+      {"text": "SELL THEM SOMETHING.", "cite": "calebporzio.com, August 2024"},
+      {"text": "Platform risk is a real thing: DIVERSIFY!", "cite": "calebporzio.com, August 2024"},
+      {"text": "Your email list is far more valuable.", "cite": "calebporzio.com, August 2024"},
+      {"text": "Relationships are everything. Build them. Keep them.", "cite": "calebporzio.com, August 2024"},
+      {"text": "I am not a code missionary.", "cite": "calebporzio.com, June 2020"},
+      {"text": "DON'T SPEND MONEY!", "cite": "Indie Hackers"}
+    ],
+    "steal": [
+      "Give away something genuinely useful, then sell the lesson or shortcut that helps people get more from it. For Caleb, screencasts made about $725K out of $1M.",
+      "Before launching anything, spend time being helpful in one community. His first users came from Laravel people who already trusted him.",
+      "Try a sponsorware-style launch: make the new thing available early to paying supporters, and release it to everyone once enough people back it.",
+      "Set your cheapest price higher than feels comfortable. He says too-small first tiers are the biggest mistake on GitHub Sponsors.",
+      "Collect emails, not just followers, and spread your income across more than one platform so a single cut-off can't hurt you.",
+      "Save before you quit. His first year on his own paid about $70K less than his job."
+    ],
+    "sources": [
+      {"title": "calebporzio.com: I just hit $100,000 a year on GitHub Sponsors (June 2020)", "url": "https://calebporzio.com/i-just-hit-dollar-100000yr-on-github-sponsors-heres-how-i-did-it"},
+      {"title": "calebporzio.com: I just cracked $1 million on GitHub Sponsors, here's my playbook (August 2024)", "url": "https://calebporzio.com/i-just-cracked-1-million-on-github-sponsors-heres-my-playbook"},
+      {"title": "Indie Hackers: Hitting a 5-figure MRR with an open-source portfolio", "url": "https://www.indiehackers.com/post/tech/hitting-a-5-figure-mrr-with-an-open-source-portfolio-ehAiGujGzBkd4BhnPoIS"},
+      {"title": "Changelog podcast #381", "url": "https://changelog.com/podcast/381"},
+      {"title": "Notes On Work podcast", "url": "https://share.transistor.fm/s/ee336c4f"},
+      {"title": "Laravel blog: Livewire 4 is here (August 2025)", "url": "https://laravel.com/blog/livewire-4-is-here-the-artisan-of-the-day-is-caleb-porzio"},
+      {"title": "Flux UI", "url": "https://fluxui.dev/"},
+      {"title": "Flux UI pricing", "url": "https://fluxui.dev/pricing"},
+      {"title": "Laravel News: Flux 2, the Livewire UI kit", "url": "https://laravel-news.com/flux-2-livewire-ui-kit"},
+      {"title": "Help Net Security: GitHub Sponsors passes $100 million (July 2026)", "url": "https://www.helpnetsecurity.com/2026/07/21/open-source-github-sponsors-100-million/"}
+    ]
+  }
+}

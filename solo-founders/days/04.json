@@ -1,0 +1,267 @@
+{
+  "n": 4,
+  "name": "Tony Dinh",
+  "short": "Tony",
+  "wisdom": "Build the audience before the product, then ship fast when the moment comes.",
+  "email": {
+    "subject": "Seven months of work, zero visitors",
+    "hook": "Tony Dinh spent six or seven months building an app and then realised nobody had visited the website. Less than three years later, by his own numbers, his next product had made $1 million in twelve months.",
+    "lead": [
+      "Tony is a developer from Vietnam, and his story matters to us because he fixed the exact problem most builders have. He could make things. He couldn't get anyone to see them. So he went and built an audience on Twitter, in a very playful way, before he needed one.",
+      "To be fair about the solo part: by 2023 he had a business assistant and a freelance developer, and in 2026 he talks about “my team.” He still calls himself a solopreneur because he doesn't want to be a manager."
+    ],
+    "stats": [
+      {"value": "$1M", "label": "revenue in the 12 months to November 2024"},
+      {"value": "$9", "label": "TypingMind's launch price"},
+      {"value": "4 hrs", "label": "how long he says he works a day"}
+    ],
+    "chart": {
+      "title": "Black Magic monthly revenue, by his own numbers",
+      "points": [
+        {"label": "Oct 2021", "value": 350, "display": "$350"},
+        {"label": "2022", "value": 5000, "display": "$5K"},
+        {"label": "Mid 2023", "value": 14000, "display": "$14K"}
+      ],
+      "note": "He sold it in 2023 for $128,000, under one year of revenue, after Twitter's API pricing scare."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Tony runs TypingMind, a better chat interface for AI models where you bring your own API key. In June 2026 he launched its new Agent Skills on Product Hunt, his first launch there in about three years, and said he should really launch every six months.",
+          "He's also playing with AI agents. He bought a Mac Mini to run one, and it built two iOS apps for him that Apple approved for the App Store. His view: **“AI can do so much these days with enough tools and context.”**"
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "Users bring their own OpenAI or other API keys, so he doesn't pay for the AI. It started with lifetime licences and has moved towards team subscriptions. By October 2025 the business team version was more than half of revenue, and he put the total at $130,000 to $160,000 a month.",
+          "He has closed one 3,000-seat deal and several 1,000-seat ones, and spent more than $20,000 on SOC 2, HIPAA and GDPR compliance so big companies would buy. Most sales come from word of mouth."
+        ]
+      },
+      {
+        "title": "How he built TypingMind",
+        "paras": [
+          "OpenAI released its chat API on what he remembers as 1 March 2023. He registered the domain about a day later and had a first version a few days after that. It wasn't clever AI. It just added what ChatGPT was missing at the time: folders and search.",
+          "In those early weeks he coded in the mornings and talked to users in the afternoons, and he'd “deploy in production like 10 times, 20 times a day.”"
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "He shared it on Twitter, to about 70,000 followers he'd spent two years earning, first as a free beta and then at $9 for early buyers. In a 2023 interview he described about $1,000 on day one and $10,000 within about ten days, and then about $14,000 more from a Product Hunt launch a few weeks later. A later post of his says $22,000 in the first seven days, so his own numbers differ a little.",
+          "The audience came from play. A banner on his profile showing his newest followers brought 4,000 new followers in under 48 hours, and he once ran a snake game through tweet replies that got 600+ comments."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "His Twitter tool, Black Magic, was at about $14,000 a month in 2023 when rumours spread that Twitter's API would cost about $42,000 a month. He sold it to Hypefury for $128,000. A month later Twitter announced a $5,000 tier. He'd built on someone else's platform and it cost him.",
+          "And paid ads never worked for him. A $600 test in 2025 brought two sales. “The results were terrible, so I stopped.”"
+        ]
+      }
+    ],
+    "tryToday": "Make one small, playful thing on your profile today, like a live counter, a poll or a game in the replies, that gives people a reason to follow you. Tony's follower banner is the model.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Tony Dinh is a Vietnamese developer who quit a well-paid job in 2021, built an app nobody saw, and then learned distribution on Twitter by turning his profile into a toy. When OpenAI opened its chat API, he shipped TypingMind within days and it went on to make more than $1 million a year. Almost every figure here is Tony's own, mostly from his newsletter and interviews.",
+    "stats": [
+      {"value": "$1,000,000", "num": 1000000, "prefix": "$", "suffix": "", "label": "revenue in the 12 months to November 2024", "note": "his own P&L"},
+      {"value": "70,000", "num": 70000, "prefix": "", "suffix": "", "label": "Twitter followers when TypingMind launched", "note": "March 2023"},
+      {"value": "$278,000", "num": 278000, "prefix": "$", "suffix": "", "label": "from selling two products", "note": "Black Magic and Xnapper"},
+      {"value": "4", "num": 4, "prefix": "", "suffix": " hours", "label": "how long he says he works a day", "note": "November 2024"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Seven years as a salaried developer",
+        "paras": [
+          "Tony started coding at about 15, making little Windows apps in Visual Basic in high school. He went to engineering school and then worked about seven years as a professional developer, first on the front end and then on the back end. He describes it as a high paying job.",
+          "He quit around the middle of 2021. A few months later he told Indie Hackers that he was earning less than he had in his job, but having more fun. His reason is the one a lot of us feel: “The most valuable thing for me is to be independent,” and to choose what he works on and when.",
+          "So he didn't leave because he'd already made it. He left with a small income and a belief that being his own boss was worth the pay cut."
+        ],
+        "pull": {"text": "The most valuable thing for me is to be independent", "cite": "Tony to Indie Hackers, October 2021"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "He built for months and nobody came",
+        "paras": [
+          "His first serious product was DevUtils, a Mac app full of small tools developers use every day. He worked on it for six to seven months.",
+          "Then he looked at the numbers and realised the website had basically no visitors. Not a slow launch. Zero. All that work, and nobody even knew it existed.",
+          "This is the moment the whole story turns on. Instead of building more features, he went to where developers already hang out, which was Twitter, and started learning distribution from scratch.",
+          "DevUtils did eventually earn about $1,500 a month by October 2021, from one-time sales rather than subscriptions, which was enough to cover his bills. He priced it like JetBrains does: you buy a licence and get a year of updates. But the real lesson from DevUtils was the empty analytics page, not the revenue."
+        ]
+      },
+      {
+        "label": "Building the audience",
+        "title": "He turned his Twitter profile into a toy",
+        "paras": [
+          "Tony didn't grow on Twitter by posting threads of advice. He grew by playing. He added a banner to his profile that showed his latest followers, updating live. People followed him just to see their own face appear on it. That one banner brought about 4,000 new followers “in less than 48 hours.”",
+          "He kept making his account fun. He once ran a snake game that people played by replying to a tweet, and that single tweet got more than 600 comments.",
+          "The Indie Hackers interviewer said he went from about 1,000 followers to 10,000 in a couple of months after quitting his job. By March 2023 he had about 70,000. Two years of playful posting had built him a launch channel.",
+          "Notice what he did here. He used his developer skill as the marketing. The banner and the game were small bits of code that made people curious. For us, the version of that is using our marketing skill as the content."
+        ],
+        "pull": {"text": "in less than 48 hours", "cite": "Tony on the 4,000 followers his banner brought, Indie Hackers, 2021"}
+      },
+      {
+        "label": "The first win",
+        "title": "A progress bar that turned into a business",
+        "paras": [
+          "When he got close to 1,000 followers, Tony made a little progress bar on his profile to celebrate it. Other people saw it and asked if they could have one on theirs.",
+          "So he turned it into a product, Black Magic, which he founded in May 2021. It grew into a Twitter analytics and CRM tool. He charged a monthly subscription because it had real server and API costs to cover. In October 2021 it was making about $350 a month. By 2022 it had reached about $5,000 a month, and by mid-2023 about $14,000.",
+          "This is the classic path: the thing you build for yourself, in public, becomes the thing others ask to buy. He didn't do market research. His followers did it for him by asking.",
+          "But Black Magic was built on top of Twitter's API, and he wasn't comfortable with it. He said he really hated using “private API and unofficial thing” because he was trying to build a legitimate business. That worry turned out to be right."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "The first version",
+        "title": "A domain the next day, a product in a few days",
+        "paras": [
+          "OpenAI released its chat API in early 2023. Tony remembers the date as 1 March. He registered the TypingMind domain about a day later, and had a first version working a few days after that.",
+          "He didn't try to build a new AI. He looked at what ChatGPT's own interface was missing and built that. At the time it had no folders and no search, so you couldn't organise or find old chats. TypingMind added both, in a nicer interface.",
+          "The business model was simple and clever. Users brought their own OpenAI API key. That meant he paid nothing for the AI itself, so every sale was almost pure margin.",
+          "His routine in those weeks was tight. He coded in the mornings, then spent the afternoons sharing progress and talking to users. He'd deploy to production “like 10 times, 20 times a day.” Payments ran through Lemon Squeezy."
+        ],
+        "pull": {"text": "deploy in production like 10 times, 20 times a day", "cite": "Tony on The Bootstrapped Founder, July 2023"}
+      },
+      {
+        "label": "The first buyers",
+        "title": "$1,000 on day one, then Product Hunt",
+        "paras": [
+          "He first shared TypingMind on Twitter with his roughly 70,000 followers. It started as a free beta, and then early buyers could get it for $9.",
+          "In a July 2023 interview he described the first days like this: about $1,000 on day one, then roughly $2,000, $4,000 and $8,000, reaching $10,000 in about ten days. A Product Hunt launch a few weeks later brought about $14,000 more. In a November 2024 post he says it made $22,000 in its first seven days, and an Indie Hackers headline says $22,000 in 11 days. His own figures don't line up exactly, but the shape is clear: thousands of dollars in the first week from a product built in days.",
+          "It wasn't smooth. There were payment problems on Lemon Squeezy. And lots of buyers didn't understand they needed their own API key, so support emails piled up.",
+          "The real reason it worked is simple. The day OpenAI's API dropped, thousands of people wanted a better way to use it, and Tony had both the skill to ship in days and an audience to tell. Most people had one or the other."
+        ]
+      },
+      {
+        "label": "The setback",
+        "title": "Twitter's API scare forced a cheap sale",
+        "paras": [
+          "In 2023, rumours spread that Twitter's API would cost about $42,000 a month. For Black Magic, which ran on that API and made about $14,000 a month, that would have been the end.",
+          "So Tony sold it to Hypefury for a total deal value of $128,000. At about $168,000 a year in revenue, that's less than one year of revenue, when a healthy software business can sell for several times that. Arvid Kahl says Tony had earlier turned down offers of about $40,000 and $500,000, the bigger one partly upfront.",
+          "About a month after the sale, Twitter announced a $5,000 a month tier. The worst case never came. He'd sold in a panic that turned out to be unnecessary.",
+          "The lesson he took is about owning things. He now advises registering business assets under business accounts and documenting your processes, so a business can be sold cleanly if you ever need to. And he's careful about products that live on someone else's platform."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Scaling it",
+        "title": "From lifetime deals to 3,000-seat contracts",
+        "paras": [
+          "By March 2024 TypingMind was making more than $40,000 a month. That month, on 19 March, he sold his Mac screenshot app Xnapper to a buyer named Brian for $150,000: $100,000 upfront and $50,000 through a monthly revenue share. It was making about $4,000 a month as a one-time purchase app with no server licence checks, which he called low maintenance. A higher $169,000 offer came in on Acquire.com, but he'd already said yes to Brian, so he kept his word. The deal went through Escrow.com for an $890 fee. Why sell? “I feel like I'm wasting its potential.”",
+          "In 2023 he was spending about 80% of his time on TypingMind, with one business assistant handling support, content and social media, and a freelance developer he'd worked with for about a year. He got only 10 to 12 customer emails a week.",
+          "By November 2024 TypingMind had made $1 million over the previous 12 months, about 20 months after launch, from his own profit and loss statement. Lifetime licences were about half of monthly revenue and team subscriptions the rest. He'd closed a 3,000-seat deal and several 1,000-seat ones, and spent more than $20,000 on SOC 2 Type II, HIPAA and GDPR compliance so large companies could say yes.",
+          "He was honest about what wasn't working. Paid ads and sponsorships: “The results were terrible, so I stopped.” Business leads who left their phone numbers were never called back. And Vietnamese enterprises he pitched a custom version to were slow to take up new tech. He also said he still only worked about four hours a day.",
+          "By October 2025 he put TypingMind at $130,000 to $160,000 a month, more than $1 million a year, with the business team version now over half of revenue. He'd added multi-model chat, a background mode, a thinking mode and a knowledge base. A $600 ad test that year brought exactly two sales. Most customers came from word of mouth."
+        ],
+        "chart": 2
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Agents, an email app and a villa full of builders",
+        "paras": [
+          "Tony says TypingMind has given him financial independence for about two years. In October 2025 he was on a round-the-world trip with his wife through Korea, Taiwan, France, Switzerland, Spain, Australia and Bali. He also wrote, “I enjoy making money from my creations much more than from my investments.”",
+          "In November 2025 he announced Midday, an AI email client, with a prototype ready and a public beta planned for December 2025. Whether it has shipped publicly isn't clear yet. That same month he co-hosted a residency in a villa in Da Nang with 10 indie hackers, and in May 2026 another hacker residency group.",
+          "On 10 June 2026 he launched TypingMind's new Agent Skills on Product Hunt. It was his first Product Hunt launch in about three years, and he said he should be launching about every six months. He also bought a Mac Mini for agent experiments, and an AI agent on it built two iOS apps, Pulse, a revenue tracker for Paddle, and Make A Website. Both were approved for the App Store.",
+          "His take on where this goes: “AI can do so much these days with enough tools and context.” Most people, he added, have no idea. He thinks giving AI agents enough tools and context will be the biggest upgrade in how useful these models are.",
+          "He also has a very practical streak about all of it. As he put it, “I'm a developer, and I'm a businessman, you know, everything has a price.” He's sold two products already and has said he thinks about one day selling everything and starting over."
+        ],
+        "pull": {"text": "AI can do so much these days with enough tools and context.", "cite": "Tony's newsletter, June 2026"}
+      }
+    ],
+    "failuresTitle": "The launch nobody saw, and the sale he didn't need",
+    "failuresIntro": "Tony doesn't have a long graveyard of dead products. His misses are a silent launch, a platform scare and marketing that didn't work.",
+    "failures": [
+      {"year": "2021", "name": "DevUtils launch", "what": "Six to seven months into building it, the website had zero visitors. It later earned about $1,500 a month, but only after he went and found an audience.", "lesson": "Start building your audience on day one, not on launch day."},
+      {"year": "2023", "name": "Black Magic forced sale", "what": "At about $14,000 a month, rumours of $42,000 a month Twitter API pricing pushed him to sell for $128,000, under one year of revenue. Twitter launched a $5,000 tier a month later.", "lesson": "If your product depends on one platform, have a plan before the platform changes the rules."},
+      {"year": "2024 and 2025", "name": "Paid ads and sponsorships", "what": "He tried them and the results were terrible, so he stopped. A $600 test in 2025 brought two sales.", "lesson": "A great product with word of mouth can beat paid ads, so test small before you spend big."},
+      {"year": "2024", "name": "B2B follow-up", "what": "Business leads who left their phone numbers were never called. He also found Vietnamese enterprises slow to adopt a custom version.", "lesson": "Big deals need a sales process, and someone has to pick up the phone."}
+    ],
+    "playbookTitle": "How he got users without ads",
+    "playbook": [
+      {"title": "Make your profile a toy", "text": "A live banner showing his newest followers brought about 4,000 followers in under 48 hours. People followed just to see themselves on it."},
+      {"title": "Run games in the replies", "text": "He ran a snake game played through tweet replies, and one tweet drew more than 600 comments. Interaction beats broadcasting."},
+      {"title": "Productise what followers ask for", "text": "His 1,000 follower progress bar became Black Magic when people asked for one on their own profiles. It grew to about $14,000 a month."},
+      {"title": "Ship the missing basics within days", "text": "When OpenAI's chat API came out, he registered the domain a day later and shipped folders and search, the features ChatGPT lacked, within days."},
+      {"title": "Launch to your own audience first", "text": "TypingMind went to about 70,000 Twitter followers as a free beta and then a $9 early price. He had thousands of dollars in sales in the first week."},
+      {"title": "Follow up with Product Hunt", "text": "A few weeks after the Twitter launch, a Product Hunt launch brought about $14,000 more. In June 2026 he went back with Agent Skills after three years away."},
+      {"title": "Get compliant to sell to big teams", "text": "He spent more than $20,000 on SOC 2, HIPAA and GDPR. That opened 1,000 and 3,000-seat deals, and teams became over half of revenue by October 2025."},
+      {"title": "Let customers market it", "text": "He says most sales come from word of mouth. His focus is on improving the product so users tell others, not on buying attention."}
+    ],
+    "charts": [
+      {
+        "title": "Black Magic monthly revenue, by his own numbers",
+        "points": [
+          {"label": "Oct 2021", "value": 350, "display": "$350"},
+          {"label": "2022", "value": 5000, "display": "$5K"},
+          {"label": "Mid 2023", "value": 14000, "display": "$14K"}
+        ],
+        "note": "Sold to Hypefury for $128,000 in 2023."
+      },
+      {
+        "title": "Tony's Twitter followers, by his own account",
+        "points": [
+          {"label": "When he quit", "value": 1000, "display": "about 1K"},
+          {"label": "Months later", "value": 10000, "display": "about 10K"},
+          {"label": "Mar 2023", "value": 70000, "display": "about 70K"}
+        ],
+        "note": "The jump to 10K came within a couple of months of quitting his job."
+      },
+      {
+        "title": "TypingMind revenue per month, by his own numbers",
+        "points": [
+          {"label": "Mar 2024", "value": 40000, "display": "$40K+"},
+          {"label": "Oct 2025", "value": 130000, "display": "$130K to $160K"}
+        ],
+        "note": "It passed $1M in trailing 12 month revenue in November 2024. He hasn't shared a 2026 figure."
+      }
+    ],
+    "timeline": [
+      {"when": "High school", "text": "Starts coding at about 15, making Windows apps in Visual Basic."},
+      {"when": "Mid 2021", "text": "Quits his developer job after about seven years.", "big": true},
+      {"when": "2021", "text": "DevUtils has zero visitors after six to seven months of work, so he turns to Twitter."},
+      {"when": "May 2021", "text": "Founds Black Magic from a follower progress bar people asked to use."},
+      {"when": "2021", "text": "A live follower banner brings 4,000 followers in under 48 hours. He reaches about 10,000."},
+      {"when": "March 2023", "text": "Ships TypingMind within days of OpenAI's chat API release.", "big": true},
+      {"when": "2023", "text": "Sells Black Magic to Hypefury for $128,000 during the Twitter API scare."},
+      {"when": "March 2024", "text": "Sells Xnapper for $150,000. TypingMind is at $40,000+ a month."},
+      {"when": "November 2024", "text": "TypingMind passes $1M in revenue over 12 months.", "big": true},
+      {"when": "October 2025", "text": "TypingMind is at $130,000 to $160,000 a month, with teams over half of revenue."},
+      {"when": "June 2026", "text": "Launches Agent Skills on Product Hunt, his first launch there in about three years."}
+    ],
+    "quotes": [
+      {"text": "The most valuable thing for me is to be independent", "cite": "Indie Hackers, October 2021"},
+      {"text": "deploy in production like 10 times, 20 times a day", "cite": "The Bootstrapped Founder, July 2023"},
+      {"text": "I feel like I'm wasting its potential", "cite": "On selling Xnapper, his newsletter, March 2024"},
+      {"text": "The results were terrible, so I stopped.", "cite": "On paid ads, his newsletter, November 2024"},
+      {"text": "I enjoy making money from my creations much more than from my investments.", "cite": "His newsletter, October 2025"},
+      {"text": "I'm a developer, and I'm a businessman, you know, everything has a price.", "cite": "The Bootstrapped Founder, 2023"},
+      {"text": "AI can do so much these days with enough tools and context.", "cite": "His newsletter, June 2026"}
+    ],
+    "steal": [
+      "Start building an audience now, before the product exists. Tony's 70,000 followers are why TypingMind made money in its first week.",
+      "Make your marketing playful. A live banner, a game or a counter gives people a reason to follow you that advice threads don't.",
+      "When a big platform launches something, list what its default interface is missing and ship that within days. Speed is the whole advantage.",
+      "Keep your AI costs on the customer where you can. Bring-your-own-key meant every TypingMind sale was almost all margin.",
+      "Don't build your only business on a platform that can change its prices overnight, and keep your assets in business accounts so you can sell cleanly.",
+      "Before you pay for ads, try making the product so good that customers bring the next customer."
+    ],
+    "sources": [
+      {"title": "Tony Dinh: ups and downs of an indie hacker (The Bootstrapped Founder, July 2023)", "url": "https://thebootstrappedfounder.com/tony-dinh-ups-and-downs-of-an-indie-hacker-journey/"},
+      {"title": "Interview with Tony Dinh: Twitter, Black Magic and 10K followers (Indie Hackers, 2021)", "url": "https://www.indiehackers.com/post/interview-with-tony-dinh-twitter-black-magic-100-to-10k-twitter-followers-in-6-months-8538468cfd"},
+      {"title": "Nov 2024: my first million (Tony Dinh newsletter)", "url": "https://news.tonydinh.com/p/nov-2024-my-first-million"},
+      {"title": "Oct 2025 updates: code, money and travel (Tony Dinh newsletter)", "url": "https://news.tonydinh.com/p/oct-2025-updates-code-money-and-travel"},
+      {"title": "Another 6-figure exit and the future (Tony Dinh newsletter, March 2024)", "url": "https://news.tonydinh.com/p/another-6-figure-exit-and-the-future"},
+      {"title": "I'm on Product Hunt, updates June 2026 (Tony Dinh newsletter)", "url": "https://news.tonydinh.com/p/im-on-product-hunt-updates-jun-2026"},
+      {"title": "I'm building a new email client (Tony Dinh newsletter, November 2025)", "url": "https://news.tonydinh.com/p/im-building-a-new-email-client"},
+      {"title": "He sold his SaaS for $128,000 (Startups.email)", "url": "https://startupsemail.substack.com/p/he-sold-his-saas-for-128000-startupsemail"},
+      {"title": "Black Magic has joined Hypefury", "url": "https://blackmagicso.substack.com/p/black-magic-has-joined-hypefury"},
+      {"title": "Tony Dinh hit $22K in 11 days (Indie Hackers)", "url": "https://www.indiehackers.com/post/tony-dinh-hit-22k-in-11-days-by-decoupling-input-from-output-e07829fe23"}
+    ]
+  }
+}

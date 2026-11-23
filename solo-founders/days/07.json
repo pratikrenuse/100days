@@ -1,0 +1,260 @@
+{
+  "n": 7,
+  "name": "Jon Yongfook",
+  "short": "Jon",
+  "wisdom": "Strip the interface and sell the engine to the tools people already use.",
+  "email": {
+    "subject": "Three #1 launches on Product Hunt. Zero businesses.",
+    "hook": "Jon Yongfook hit #1 on Product Hunt three times in four months and none of those products became a business. Then he deleted the interface from a small $9 app, sold the engine as an API, and by July 2023 he says it made $50,000 a month.",
+    "lead": [
+      "Jon is the one for anyone who feels a bit late. He quit his corporate job at 41, telling himself it was probably the last one he'd ever get, and he had about $200,000 of savings to make it work. He's a designer who codes, not a whizz-kid, and the idea that finally worked came from a boring chore he'd watched his own team do by hand for years.",
+      "To be clear up front: Bannerbear is not a one-man company any more. A profile site describes a remote team of about seven, and LinkedIn lists two to ten people. He bootstrapped it, though, with no outside money."
+    ],
+    "stats": [
+      {"value": "$200K", "label": "of savings when he quit at 41"},
+      {"value": "$50K", "label": "a month by July 2023, his number"},
+      {"value": "$49", "label": "a month, his cheapest plan"}
+    ],
+    "chart": {
+      "title": "Bannerbear's monthly revenue, by Jon's own milestones",
+      "points": [
+        {"label": "Early 2020", "value": 500, "display": "$500"},
+        {"label": "Jan 2021", "value": 10000, "display": "$10K"},
+        {"label": "May 2021", "value": 16000, "display": "$16K"},
+        {"label": "Dec 2021", "value": 27000, "display": "$27K"},
+        {"label": "Jun 2022", "value": 40000, "display": "$40K"},
+        {"label": "Jul 2023", "value": 50000, "display": "$50K"}
+      ],
+      "note": "His X bio has shown about $81K a month, but it's not clear when that was written."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Over the past year Jon rebuilt Bannerbear from the ground up, version 5, leaning heavily on AI coding agents. It now does image, PDF, animation and video generation through APIs, plus a workflow API, integrations and an MCP server so AI agents can use it directly. He's steering it toward being one all-in-one platform.",
+          "His line on why is worth reading twice: “Features that would have taken me a week in 2022 take an afternoon now.” He thinks competing on features is finished, and that **your audience is now worth more than your codebase**."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "It's plain subscriptions. Plans start at $49 a month and you get 30 free API credits without a card. A profile site lists the tiers as $49, $149 and $299. The customers are businesses: social media managers making a few images, and agencies making tens of thousands of ad variants.",
+          "His last firm public number was $50K a month in July 2023. Bannerbear used to publish every metric on an open page, and now says it shares only selected ones, so nobody outside knows today's figure for sure."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "The first version was a little app that turned a website's content into Instagram posts, priced at $9 a month. He calls that “the classic indie hacker mistake”. It grew slowly, so he raised prices and revenue went up.",
+          "Then in March 2020 he made the big move: he took the interface away and sold the image engine as a REST API, the way Stripe sells payments. He likes APIs for solo builders because the scope stays small. It ran on a Rails app hosted on Heroku and AWS for a few hundred dollars a month."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "Two integrations did the heavy lifting: Zapier and Airtable. They opened Bannerbear to the no-code crowd, a channel he hadn't even planned for, and he doubled down on documentation. After the API pivot, revenue went from about $500 to about $5,000 a month.",
+          "Then he set a rhythm he still recommends: one week coding, one week marketing. He kept it for about seven months while going from $1K to $10K a month. The marketing weeks meant a biweekly newsletter, lots of tweets, an open metrics page, free tools for search traffic, and a striking $10K timeline post that spread on Hacker News."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "It took him about two years on Indie Hackers to get from zero to $10K a month, and he says “it was fricking hard to get to $1k MRR”. Before that came roughly ten attempts, a 12 startups in 12 months challenge that ended in burnout after seven launches, and a video tool he priced that nobody paid for.",
+          "Even the winning move had a cost: a profile site says the API pivot put off some early customers. In 2022 Bannerbear got hit by a DDoS attack and had to migrate to Cloudflare. The chart looks like a smooth line. Living it wasn't."
+        ]
+      }
+    ],
+    "tryToday": "Write down one thing your team makes by hand in lots of versions, like ad sizes, report formats or email variants. Then sketch it as a single Zapier step: what goes in, what comes out.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Jon Yongfook is a designer and programmer who quit his corporate job at 41, burned through a 12 startups in 12 months challenge, and then found his business by deleting the interface from a small app. Bannerbear, the API he built from a chore he'd watched for years, grew to $50,000 a month by July 2023 by his own numbers. It's bootstrapped, but it now has a small team.",
+    "stats": [
+      {"value": "41", "num": 41, "prefix": "", "suffix": "", "label": "his age when he quit his last corporate job", "note": "July 2018"},
+      {"value": "$200,000", "num": 200000, "prefix": "$", "suffix": "", "label": "of savings, about three years of runway", "note": "his estimate"},
+      {"value": "$10,000", "num": 10000, "prefix": "$", "suffix": "", "label": "a month by January 2021", "note": "two years after starting at zero"},
+      {"value": "$50,000", "num": 50000, "prefix": "$", "suffix": "", "label": "a month by July 2023", "note": "his last firm public figure"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "The banner ads nobody wanted to make",
+        "paras": [
+          "Jon was born in Britain and raised in Tokyo. By his own description he has about 20 years of experience as a designer and programmer. He worked at Japanese agencies, including Dentsu, on digital marketing for big brands.",
+          "One job planted the seed for everything that came later. He ran the design team at an e-commerce company, and every day the team made banner ads by hand. Not one banner, but the same ad in many sizes and many copy variants. Resize, retype, export, repeat. If you've ever worked in a marketing team, you've seen this exact chore, and you've probably done it yourself.",
+          "Later he worked on the digital team at Aviva, the British insurer with around 30,000 staff, running mobile apps and websites in Asia. A profile site gives his title as head of digital product and design. It was a good, senior, well-paid job. That's what makes the next part interesting."
+        ]
+      },
+      {
+        "label": "The first try",
+        "title": "Beatrix, the nomad years and a Buffer problem",
+        "paras": [
+          "Jon had already tried the indie life once. Between 2013 and 2015 he lived as a digital nomad and built Beatrix, a social media scheduling app with a content library. He says it took about six months for its revenue to cover his lifestyle.",
+          "Beatrix grew to about $3,000 a month. Then Buffer, a much bigger company, shipped similar features, and Beatrix stalled. He moved it into maintenance mode.",
+          "So he went back to corporate work. Keep that in mind when we get to the end of this story. His first real product didn't fail because he was lazy or because the idea was bad. It hit a ceiling because a bigger player could copy it. Ten years later, that same worry is exactly what he writes about."
+        ]
+      },
+      {
+        "label": "The jump",
+        "title": "At 41, the last corporate job",
+        "paras": [
+          "In July 2018, at 41, Jon quit. In an Indie Hackers podcast he said he told himself this was “probably the last corporate job I'm ever going to be able to get.” That's a heavy thing to say out loud. There was no safety net of youth. If it didn't work, the road back might be closed.",
+          "What he did have was money. About $200,000 in savings, which he reckoned was roughly three years of runway. One profile says he felt his ability to ship products had “atrophied” during the corporate years, so part of the plan was just to get his hands moving again.",
+          "The plan was public and bold: 12 startups in 12 months. Build fast, launch every month, see what sticks."
+        ],
+        "pull": {"text": "probably the last corporate job I'm ever going to be able to get", "cite": "Jon Yongfook, Indie Hackers Podcast #208"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "Three #1s on Product Hunt, and no business",
+        "paras": [
+          "The first four launches came in four months. Zipsell, an open-source store for digital downloads. Promomatic, which made app store assets. Montage, a wireframing and component library. And Tech Jobs Asia, a job board that went out just before New Year 2019. Three of the four debuted as #1 Product of the Day on Product Hunt.",
+          "Here's the uncomfortable bit. **Being #1 on Product Hunt did not turn any of them into a business.** On 7 January 2019 he wrote a blog post “realigning” the challenge. His conclusion was that the maker community gives you fast validation but limited revenue. So he'd switch to eight SaaS products, each with real ongoing marketing, aiming to make just one sustainable.",
+          "The post has some lines we love. He wrote that the job was to build something useful, with a business model, and “market the shit out of it.” He looked back at Beatrix and said, “I should be doing Beatrix 12 times!” And he finished with: “I'm not quitting, not pausing, I'm upping my game.”",
+          "It still didn't go to plan. A profile site names two later products, Hyperjump (a form builder for finance) and Tropic (a collaboration app for remote teams). He also built a video conferencing tool for remote companies, put a price on it, and nobody paid. In total he launched seven of the twelve and then burned out. His own words: “I didn't launch 12.”"
+        ],
+        "pull": {"text": "I'm not quitting, not pausing, I'm upping my game.", "cite": "Jon Yongfook, on his blog, January 2019"}
+      },
+      {
+        "label": "The first version",
+        "title": "A $9 app that was almost right",
+        "paras": [
+          "The product that became Bannerbear started as something modest: a tool that took a website's content and generated Instagram posts from it. He priced it at $9 a month. Looking back he says, “I made the classic indie hacker mistake of charging $9 a month for it.”",
+          "A profile site calls this version Previewmojo, a basic Open Graph image generator with limited templates. The same site says it reached #2 Product of the Day and about $400 a month in revenue. Growth was slow, so Jon raised the price, and revenue went up. That's a small lesson that keeps coming up in this series: cheap prices didn't bring more customers, they just brought less money.",
+          "Then he built a Shopify app version. It underperformed, a profile site says, because shop owners had to add code to their stores to use it. Asking a busy merchant to paste code is asking a lot.",
+          "If you squint, you can see the problem. The engine was useful. Turning content into images automatically is the same chore his old design team did by hand. But every interface he wrapped around it, the $9 app, the Shopify app, put a wall between the engine and the people who needed it."
+        ]
+      },
+      {
+        "label": "The turning point",
+        "title": "He deleted the interface",
+        "paras": [
+          "In March 2020 he relaunched as a REST API. No dashboard to learn, no store app to install. You send a template and some data, and you get images back. He pointed to Stripe as the model: Stripe doesn't make you use its app to take payments, it gives you an API. He also says APIs suit indie hackers because the scope stays small.",
+          "A profile site says the first $49 subscription came within seven days. By June 2020 Jon wrote that Bannerbear had “around 40 paying customers now”.",
+          "What really moved things was two integrations: Zapier and Airtable. In January 2021 he wrote that those two alone cover a lot of use cases and have tons of users, and that he hadn't built any others yet. Suddenly people who couldn't code could hook Bannerbear into their spreadsheets and automations. No-code platforms became a big channel he hadn't planned for. He also doubled down on documentation, because for an API, the docs are the product page.",
+          "After the pivot, revenue went from about $500 a month to about $5,000, according to a commenter's summary on Indie Hackers that Jon didn't dispute. There was a cost: a profile site says the switch put off some of his early customers. His customers settled into two groups, social media managers who make a few images, and agencies who generate tens of thousands of ad variants. That second group is basically his old job, automated."
+        ]
+      },
+      {
+        "label": "The first $10K",
+        "title": "Code one week, market the next",
+        "paras": [
+          "Jon's rhythm from this period is the most copyable thing on this page. He alternated weeks: one week coding, the next week marketing. He kept that up for about seven months while going from $1K to $10K a month. He worked roughly 8am to 6 or 7pm. Later he wrote a whole post arguing that 50% coding and 50% marketing is best for solo founders.",
+          "Marketing weeks meant a biweekly newsletter with original writing, frequent tweets in a punchy short-line style, and an open startup page where anyone could see the numbers. One Indie Hackers commenter said Jon's open metrics were what pulled them into his funnel.",
+          "He also made what he calls flagship content: pieces designed to be shared. The best example was a striking timeline post about his road to $10K a month, which spread on Hacker News. He was honest about the goal: “The fundamental goal was I want it to look cool.”",
+          "That post went up on 27 January 2021, saying he'd passed $10K a month earlier that month, two years after he started at zero on Indie Hackers. The lines from it are the ones every founder should hear: “it was fricking hard to get to $1k MRR”, and after that, “everything became a lot easier.”",
+          "Under the hood it was still simple. Bannerbear started as a monolith Rails app and by then was about 80% monolith and 20% serverless, for the parts that needed to scale. Hosting on Heroku and AWS cost a few hundred dollars a month."
+        ],
+        "pull": {"text": "it was fricking hard to get to $1k MRR", "cite": "Jon Yongfook, Indie Hackers, January 2021"},
+        "chart": 0
+      },
+      {
+        "label": "Scaling it",
+        "title": "From $16K to $50K, with a yellow bear",
+        "paras": [
+          "The figures here are mostly Jon's own, from his blog and interviews, and they haven't been audited. In April 2021 he was at about $15K a month, and by May he said, “It's currently on $16K MRR.” That's roughly $200,000 a year. His goals for 2021 were $1M a year in revenue and a fully remote team of about ten.",
+          "He kept publishing milestones in blog titles: $27K a month in December 2021, $40K in June 2022 and $50K in July 2023. In between he wrote about why he chose to bootstrap instead of raising money (August 2022), surviving a DDoS attack (November 2022) and a 700% increase in his conversion rate (August 2023).",
+          "The DDoS taught him something unglamorous. They migrated to Cloudflare, and he now says you should put infrastructure migrations on the dev calendar, expecting one or two a year. Nobody posts that on launch day.",
+          "In 2022 he rebranded around a yellow bear and even made teddy bear merch. He built free tools like a Free Certificate Generator and Tweetagram for steady traffic and backlinks, while admitting they may not convert into paying users. And his hiring rule was to hire only when it hurts. He tried a few hires because they seemed like a good idea and says those didn't work.",
+          "His July 2023 lessons post is basically a summary of this whole story: make something you personally care about, don't sell for $5 or $10 because low prices attract low value customers, alternate code and marketing, make things worth retweeting, and hire when it hurts. A profile site also lists two sister products, ClipCat for video rendering and RoboRabbit for data extraction."
+        ]
+      },
+      {
+        "label": "Where he stands now",
+        "title": "Version 5, built for agents",
+        "paras": [
+          "In September 2026 Jon published a long post about pivoting a SaaS company in the age of AI. He spent the past year rebuilding Bannerbear from the ground up, with a large chunk of the work done by AI coding agents. One write-up of the post says he did it on a $200 Claude subscription, but that detail is shaky, so hold it loosely.",
+          "Bannerbear now covers image, PDF, animation and video APIs, a workflow API, integrations and an MCP server, which lets AI agents use it directly. Plans still start at $49 a month with 30 free credits. A competitor used to market itself as having “10x more features”, and Jon says that claim doesn't hold after V5.",
+          "His view of the market is sharp. “It has never been easier to build software.” Anyone can build any feature in a weekend now, so competing on features is over. More and more work will be done by agents on behalf of humans, and if your product can't be reached by an agent, he says, it will slowly stop being reachable at all. And on writing code by hand: “I don't miss it. It was never the interesting part anyway.”",
+          "He lays out seven routes a SaaS founder can take now: unglamorous infrastructure, building where you already have distribution, building for agents, industries that haven't gone digital, hardware (which he's only watching), lower prices with add-ons, or becoming all-in-one. Bannerbear chose all-in-one.",
+          "On money, there's no fresh public number. His X bio has shown about $81K a month, but it's not clear when that was written, and profile sites floating $1.7M a year are just estimates. The open metrics page now says they only share selected metrics. Which, given what he says about features being easy to copy, makes sense."
+        ],
+        "pull": {"text": "your audience is now worth more than your codebase", "cite": "Jon Yongfook, Bannerbear blog, September 2026"}
+      }
+    ],
+    "failuresTitle": "About ten tries before the API worked",
+    "failuresIntro": "Counting only what Jon has said himself, it was Beatrix, seven challenge launches, a video tool nobody paid for, and two versions of the product before the API. Here's the list.",
+    "failures": [
+      {"year": "2013 to 2018", "name": "Beatrix", "what": "A social media scheduling app with a content library, built during his nomad years. It reached about $3,000 a month, then stalled when Buffer shipped similar features, and went into maintenance mode.", "lesson": "If a bigger company can add your product as a feature, you need a moat they can't copy."},
+      {"year": "2018", "name": "Zipsell, Promomatic and Montage", "what": "Three of the first launches in his 12 startups in 12 months challenge: a digital download store, an app store asset maker and a wireframing library. Launches went well on Product Hunt, but none became a business.", "lesson": "Applause from makers is not the same as customers with budgets."},
+      {"year": "2018 to 2019", "name": "Tech Jobs Asia", "what": "A job board launched just before New Year 2019. Like the others, it got attention and didn't turn into a sustainable business.", "lesson": "Launch day is the start of marketing, not the end of it."},
+      {"year": "2019", "name": "Hyperjump and Tropic", "what": "A form builder for finance and a collaboration app for remote teams, named by a profile site as later challenge products. They didn't stick.", "lesson": "More launches won't fix a missing distribution plan."},
+      {"year": "2019", "name": "Remote video conferencing tool", "what": "He built it for remote companies and put a price on it. Nobody paid.", "lesson": "A price tag is the fastest honest test of an idea."},
+      {"year": "2019", "name": "Previewmojo", "what": "The website-to-Instagram image tool at $9 a month. A profile site says it reached about $400 a month. He calls the pricing the classic indie hacker mistake.", "lesson": "Charge businesses business prices."},
+      {"year": "2019 to 2020", "name": "The Shopify app", "what": "A Shopify version of the same engine. It underperformed because shop owners had to add code to their stores.", "lesson": "Every step you ask of a busy user cuts your audience."},
+      {"year": "2018 to 2019", "name": "The challenge itself", "what": "He planned 12 startups in 12 months, launched seven and burned out.", "lesson": "Fewer bets with real marketing beat many bets with none."}
+    ],
+    "playbookTitle": "How he grew it without ads",
+    "playbook": [
+      {"title": "Turn the product into an API", "text": "In March 2020 he removed the interface and sold the engine as a REST API, modelled on Stripe. The scope stayed small, and the product could live inside other people's tools."},
+      {"title": "Ride Zapier and Airtable", "text": "Two integrations, Zapier and Airtable, opened Bannerbear to the no-code crowd. He built no others at first, because those two alone had tons of users. Revenue went from about $500 to about $5,000 a month after the pivot."},
+      {"title": "Alternate code weeks and marketing weeks", "text": "One week building, one week marketing, for about seven months while going from $1K to $10K a month. He later wrote that 50% coding and 50% marketing is best for solo founders."},
+      {"title": "Write a newsletter with real opinions", "text": "He sent a biweekly newsletter with original writing, alongside frequent short-line tweets. It kept his name in front of the same people week after week."},
+      {"title": "Make flagship content to be shared", "text": "His $10K a month timeline post was designed to look cool and spread on Hacker News. He treated a few big pieces as launches in their own right."},
+      {"title": "Show the numbers", "text": "Bannerbear ran an open startup page with public metrics. At least one reader said it drew them into the funnel. He has since scaled it back to selected metrics."},
+      {"title": "Build free tools for search", "text": "Free tools like a Free Certificate Generator and Tweetagram brought steady traffic and backlinks. He's honest that they may not convert, but they keep people arriving."},
+      {"title": "Charge business prices", "text": "He moved from $9 a month to plans from $49, with 30 free credits and no card needed. His rule is never to sell for $5 or $10."},
+      {"title": "Be reachable by agents", "text": "In 2026 Bannerbear added an MCP server alongside its APIs and integrations, so AI agents can use it directly. He thinks unreachable products will slowly fade."}
+    ],
+    "charts": [
+      {
+        "title": "Bannerbear's monthly revenue, by Jon's own milestones",
+        "points": [
+          {"label": "Early 2020", "value": 500, "display": "$500"},
+          {"label": "2020", "value": 5000, "display": "$5K"},
+          {"label": "Jan 2021", "value": 10000, "display": "$10K"},
+          {"label": "May 2021", "value": 16000, "display": "$16K"},
+          {"label": "Dec 2021", "value": 27000, "display": "$27K"},
+          {"label": "Jun 2022", "value": 40000, "display": "$40K"},
+          {"label": "Jul 2023", "value": 50000, "display": "$50K"}
+        ],
+        "note": "The $500 and $5K points come from a commenter's summary that Jon didn't dispute. The rest are his own."
+      }
+    ],
+    "timeline": [
+      {"when": "2013 to 2015", "text": "Lives as a digital nomad and builds Beatrix, which reaches about $3,000 a month before Buffer catches up."},
+      {"when": "Jul 2018", "text": "Quits his corporate job at 41 with about $200,000 in savings and starts 12 startups in 12 months.", "big": true},
+      {"when": "Late 2018", "text": "Launches Zipsell, Promomatic, Montage and Tech Jobs Asia. Three hit #1 Product of the Day."},
+      {"when": "7 Jan 2019", "text": "Publicly realigns the challenge toward fewer SaaS products with real marketing."},
+      {"when": "2019", "text": "Launches seven products in total, burns out, and builds the $9 a month image tool that becomes Bannerbear."},
+      {"when": "Mar 2020", "text": "Relaunches as a REST API. Zapier and Airtable integrations bring in the no-code crowd.", "big": true},
+      {"when": "Jun 2020", "text": "Has around 40 paying customers."},
+      {"when": "Jan 2021", "text": "Passes $10,000 a month, two years after starting at zero.", "big": true},
+      {"when": "May 2021", "text": "At about $16,000 a month, aiming for $1M a year and a remote team of about ten."},
+      {"when": "2022", "text": "Reaches $40K a month in June, rebrands with a yellow bear, and survives a DDoS attack."},
+      {"when": "Jul 2023", "text": "Publishes his lessons from growing to $50,000 a month.", "big": true},
+      {"when": "Sep 2026", "text": "Ships Bannerbear V5, rebuilt with AI coding agents, with an MCP server for agents.", "big": true}
+    ],
+    "quotes": [
+      {"text": "probably the last corporate job I'm ever going to be able to get", "cite": "Jon, on quitting Aviva at 41, Indie Hackers Podcast #208"},
+      {"text": "I should be doing Beatrix 12 times!", "cite": "Jon, on his blog, January 2019"},
+      {"text": "I made the classic indie hacker mistake of charging $9 a month for it.", "cite": "Jon, Indie Hackers Podcast #208"},
+      {"text": "it was fricking hard to get to $1k MRR", "cite": "Jon, Indie Hackers, January 2021"},
+      {"text": "The fundamental goal was I want it to look cool.", "cite": "Jon, on his $10K timeline post, Indie Hackers Podcast #208"},
+      {"text": "Features that would have taken me a week in 2022 take an afternoon now.", "cite": "Jon, Bannerbear blog, September 2026"},
+      {"text": "your audience is now worth more than your codebase", "cite": "Jon, Bannerbear blog, September 2026"},
+      {"text": "I don't miss it. It was never the interesting part anyway.", "cite": "Jon, on writing code by hand, Bannerbear blog, September 2026"}
+    ],
+    "steal": [
+      "Look for the chore you've watched a team do by hand for years. Bannerbear is just his old design team's banner resizing, turned into software.",
+      "If your tool has an engine people need, try selling the engine on its own. An API or a Zapier step can reach people your dashboard never will.",
+      "Pick one or two big integrations where your users already live, and go deep on docs before building more.",
+      "Split your time on purpose. A week of building, then a week of marketing, stops you from hiding in the product.",
+      "Never price for consumers if you sell to businesses. He went from $9 to $49 a month and revenue went up.",
+      "Make your product usable by AI agents now, through an API or MCP, while most competitors are still thinking about it."
+    ],
+    "sources": [
+      {"title": "Indie Hackers Podcast #208: Jon Yongfook", "url": "https://www.indiehackers.com/podcast/208-jon-yongfook"},
+      {"title": "Jon Yongfook: Realigning my 12 startups challenge (Jan 2019)", "url": "https://blog.yongfook.com/realigning-my-12-startups-challenge.html"},
+      {"title": "Indie Hackers: My 2 year journey to $10K MRR (Jan 2021)", "url": "https://www.indiehackers.com/post/my-2-year-journey-to-10k-mrr-7396529cab"},
+      {"title": "Bannerbear: 7 lessons growing a bootstrapped SaaS to $50K MRR (Jul 2023)", "url": "https://bannerbear.com/blog/7-lessons-growing-a-bootstrapped-saas-to-50k-mrr/"},
+      {"title": "Bannerbear: Journey to $1M ARR", "url": "https://bannerbear.com/journey-to-1-million-arr"},
+      {"title": "Bannerbear: How to pivot your SaaS company in the age of AI (Sep 2026)", "url": "https://www.bannerbear.com/blog/how-to-pivot-your-saas-company-in-the-age-of-ai/"},
+      {"title": "Bannerbear open metrics page", "url": "https://www.bannerbear.com/open"},
+      {"title": "Starter Story: Bannerbear breakdown (profile site)", "url": "https://www.starterstory.com/stories/bannerbear-breakdown"},
+      {"title": "SupaBird on Jon Yongfook (profile site)", "url": "https://supabird.io/articles/jon-yongfook-s-wild-ride-from-corporate-burnout-to-75k-mrr"}
+    ]
+  }
+}

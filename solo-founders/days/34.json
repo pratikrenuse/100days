@@ -1,0 +1,254 @@
+{
+  "n": 34,
+  "name": "Kitze",
+  "short": "Kitze",
+  "wisdom": "Ask first, build version one in a day, then stay free.",
+  "email": {
+    "subject": "He said no to Facebook and to investors.",
+    "hook": "Kitze grew up in Macedonia with almost no tech jobs around him, and later turned down job offers from Facebook, and investors too, just to keep building his own little tools.",
+    "lead": [
+      "Kitze, real name Kristijan Ristovski, is the builder behind Sizzy, a browser for developers that shows your website on many screen sizes at once. He's also made Benji, a personal life app, a React teaching business, a starter kit and a paid community.",
+      "Here's the honest catch before we start: he has never shared revenue numbers. Not for Sizzy, not for anything. So today isn't a money story. It's a story about independence, building from your own frustration, and what happens when a great builder hates marketing."
+    ],
+    "stats": [
+      {"value": "1 day", "label": "to build the first Sizzy"},
+      {"value": "$15", "label": "a month for Sizzy today"},
+      {"value": "0", "label": "investors, by choice"}
+    ],
+    "chart": {
+      "title": "What Sizzy costs today, November 2026",
+      "points": [
+        {"label": "Monthly", "value": 15, "display": "$15 a month"},
+        {"label": "Yearly", "value": 144, "display": "$144 a year"},
+        {"label": "Lifetime", "value": 499, "display": "$499 once"}
+      ],
+      "note": "From Sizzy's pricing page. Developers pushed back when it moved from free to a subscription."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "These days Kitze is mostly working on Benji, an app for running your personal life, and the Tinkerer Club, a paid community for people building their own personal software and AI agents. Its tagline is \"own everything\".",
+          "He's also become a voice on AI coding. At the AI Engineer World's Fair in 2025 he spoke on \"From Vibe Coding to Vibe Engineering\", about guiding coding agents with real architecture knowledge. In 2026, in Europe, he gave a talk called \"The End of Apps\", about assistants that build the interface you need on the spot. Quite a thought from someone who sells apps."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "He earns from a few places: Sizzy as paid desktop software, React Academy workshops and courses, a starter kit called Zero To Shipped, the Tinkerer Club, and Benji, which has no free plan, just a trial. Sizzy costs $15 a month, $144 a year or $499 for life.",
+          "How much any of it makes isn't public. He has said Sizzy **\"exploded in MRR and revenue\"** after one tweet, but gave no figure. He once listed it for sale and said he'd only sell for at least about $1M while keeping a say. No sale has been confirmed. Benji he says he'd never sell."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "In 2017 he was working at a startup and kept resizing his browser to check how websites looked on phones and tablets. It drove him mad. So before writing any code, he asked people whether they'd want a tool that showed many devices at once. They said yes.",
+          "Then he built the first version in one day. In his words, \"I created it in one day.\" It started as a free Chrome extension. In 2019 he relaunched it as a full standalone browser that people paid for, because, as he put it, \"GitHub stars won't pay your rent.\""
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "Sizzy got a burst of hype right after that first one-day version, and then it faded. Later, one tweet sent revenue up, he says. He was well known on Twitter, with more than 29,000 followers in 2022, but one 2022 article noted that this hadn't really turned into Sizzy sales.",
+          "His teaching business grew in a more old-school way. He quit his job with little savings, sent cold messages to companies offering React workshops, and one or two said yes. Then referrals carried it across Europe."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Kitze describes his habits as **\"99% product development, 1% marketing.\"** He finds self-promotion \"icky\". That's honest, and it's probably why his products are loved by a few and unknown to many.",
+          "When Sizzy moved from free to a monthly price, developers pushed back, and one Reddit thread said developers prefer to pay once. Some reviews on AppSumo even call it \"abandoned\". He also had 2 or 3 full-time staff at one point and says he was \"horrible\" at managing. Now it's him, with his wife helping on support, testing and docs."
+        ]
+      }
+    ],
+    "tryToday": "Write down the one thing at work that annoys you every single day. Ask five people today if it annoys them too, before you think about building anything.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Kitze, born Kristijan Ristovski in Macedonia, is a developer who built Sizzy, a browser for testing websites on many screens at once, in a single day in 2017. He turned down Facebook and investors to stay independent, and has since built a teaching business, a personal life app and a community, without ever sharing what any of it earns.",
+    "stats": [
+      {"value": "1 day", "num": 1, "prefix": "", "suffix": " day", "label": "to build the first version of Sizzy", "note": "2017, his own account"},
+      {"value": "70K", "num": 70, "prefix": "", "suffix": "K", "label": "Facebook fans for his student meme site", "note": "his own figure"},
+      {"value": "$499", "num": 499, "prefix": "$", "suffix": "", "label": "for a lifetime Sizzy licence", "note": "Sizzy pricing page, November 2026"},
+      {"value": "$1M", "num": 1, "prefix": "$", "suffix": "M", "label": "the least he'd sell Sizzy for", "note": "his own words, no sale confirmed"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A quiz app, a meme site and bad grades",
+        "paras": [
+          "Kitze grew up in Macedonia. He has said that outside the capital there were very few tech opportunities. If you grew up in a smaller Indian town and watched all the good jobs sit in Bengaluru or Pune, you'll know the feeling.",
+          "He found programming in high school through a quiz app. Then he went to an IT university, where his grades fell, because he'd much rather build things than study for exams.",
+          "One of the things he built there was a meme site for his university. It got big. By his account it reached the top 5 in Macedonia, with **about 70K Facebook fans who arrived on their own**. That's a real audience for a student. But it never became a business, and he counts it as one of his failed starts.",
+          "Before we go on, one honest note. Kitze has never published revenue numbers for any of his products, so this page has very few dollar figures, and the ones it has are prices or things he said, not earnings. Where we don't know something, we'll just say so."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "Watching courses instead of building",
+        "paras": [
+          "After university came a stretch that a lot of us will recognise. He spent a long time watching programming courses without actually building anything. Learning felt like progress. It wasn't.",
+          "It ended when his father pushed him to go and get a job. He went to the capital for an interview and, by his own description, bluffed his way through it. He got the job.",
+          "Around the same time he had his second failed start. At a Startup Weekend event, he and a team pitched a food-delivery startup. They won first place. They got offices and even funding. And then the team lost interest, and it faded away.",
+          "That one is worth remembering. Winning a pitch event and getting money felt like a big start. But nobody on the team really wanted to keep going, and that mattered more than the prize."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "Tired of resizing his browser",
+        "paras": [
+          "In 2017 Kitze was working at a startup, building websites that had to work on phones, tablets and laptops. That meant resizing his browser window over and over, all day, to check every screen size. It was the kind of small, constant irritation that most people just put up with.",
+          "He didn't. But he also didn't rush off to build. First, he asked people whether they would want a browser that showed many devices at once. When the answer was yes, he built the first version. **He built it in one day.** As he said later, \"I created it in one day.\"",
+          "That first version came out in April 2017 as a Chrome extension. Its pitch was that it was for \"developing responsive websites crazy-fast.\" It was open source and free, a preview tool that showed your page on lots of screen sizes side by side.",
+          "The technical details of that first build, like what it was written with or how many people starred it on GitHub, aren't public. What we know is the shape: real frustration, a quick check with people, one day of building, and out the door.",
+          "Around then, Facebook came calling with job offers. He turned them down to go independent. For a developer from Macedonia, that's a big thing to say no to."
+        ],
+        "pull": {"text": "I created it in one day.", "cite": "Kitze, Indie Hackers interview, December 2021"}
+      },
+      {
+        "label": "Finding the money",
+        "title": "Teaching React, door to door",
+        "paras": [
+          "Sizzy was free, so it didn't pay the bills. What did, at first, was teaching.",
+          "Kitze ran a workshop on React, the popular web framework, using a teaching app he'd built himself called Labs. Then he made a brave move: he quit his job with little savings and started React Academy.",
+          "For a month he worked every day from a university library. He pitched companies directly, sending cold messages offering to run React workshops for their teams. One or two said yes. Then those companies told others, and **referrals carried the workshops across Europe.**",
+          "This is the least glamorous and most copyable part of his story. No launch, no viral post. Just direct messages to companies with a clear offer, a good first workshop, and word of mouth doing the rest.",
+          "He also built a string of small products on the side. By 2021 he listed Twizzle, JSUI, Fungarzione, OK Google and Lucky Retweet as profitable. How profitable isn't public, but it shows he was always shipping little things alongside the big ones."
+        ]
+      },
+      {
+        "label": "Going paid",
+        "title": "GitHub stars won't pay your rent",
+        "paras": [
+          "Sizzy stayed a free, open-source tool for about two years. It got a wave of hype after the first launch, and then the excitement faded.",
+          "In July 2019 he relaunched it as something much bigger: a standalone browser built on Chromium, the same base as Google Chrome. And this time it cost money. His reason, as reported, was blunt: \"GitHub stars won't pay your rent.\"",
+          "Not everyone liked that. When Sizzy moved from free to a subscription, users pushed back. One Reddit thread argued that developers prefer to pay once rather than every month. By October 2022 it was $15 a month with a 14-day free trial. Today it's $15 a month, $144 a year, or $499 for a lifetime licence. That lifetime option looks like a direct answer to the people who hated subscriptions.",
+          "Selling to developers is hard in a specific way. A 2022 article on Sizzy pointed out that the real challenge is getting developers to change their browser habits, when the browsers they already use are free.",
+          "At some point Sizzy was also sold as a deal on AppSumo. When that happened isn't public. Some of the reviews there call it \"abandoned\", which tells you how quickly customers notice when a solo builder's attention moves elsewhere."
+        ],
+        "chart": 0,
+        "pull": {"text": "GitHub stars won't pay your rent.", "cite": "Kitze, as reported by The New Stack, October 2022"}
+      },
+      {
+        "label": "The audience problem",
+        "title": "29,000 followers, few sales",
+        "paras": [
+          "Here's the part that should make every marketer sit up. Kitze was well known on Twitter. In 2022 he had more than 29,000 followers, gave conference keynotes and had a big stage persona. And yet the same 2022 article said that following hadn't really turned into Sizzy sales.",
+          "He has one moment he points to. He says Sizzy \"exploded in MRR and revenue\" after a single tweet. How big that explosion was, and when it happened, he hasn't said.",
+          "Part of the reason may be in how he describes his own habits: \"99% product development, 1% marketing.\" He finds self-promotion \"icky\". Lots of builders feel this way. It's honest, but it costs.",
+          "So here's a useful contrast with Day 31. Tibo said distribution is everything and became the distribution guy. Kitze is the opposite: a builder's builder who'd rather polish the product than sell it. Both are valid. Only one of them shares a revenue number."
+        ]
+      },
+      {
+        "label": "More products, more lessons",
+        "title": "Comeback Later, Glink and Benji",
+        "paras": [
+          "Kitze kept building. One product was Comeback Later, a desktop app that limited your Twitter use to 5 minutes an hour. It didn't work out, and he refunded every buyer.",
+          "Another was Glink. It started when Sizzy's changelog drafting tool crashed and lost a draft he'd written. He was so annoyed that he paused other work for months to build a better tool. Commercially, in his words, \"nothing has come out of it.\"",
+          "Then came Benji, an app for managing your whole personal life. He built it around his own forgetfulness. He has since been diagnosed with ADHD, which he describes as \"manageable\", and he had panic attacks during COVID. Benji is very much a tool for himself first. It has no free plan, a trial based on 7 check-ins, and a planned Pro tier.",
+          "Building your own life app has a funny downside. Once, a database query in Benji deleted his future calendar events, including his baby's vaccination appointments. That's the kind of bug you only find when you are your own most important user.",
+          "He says he would \"never sell Benji to anyone\". Sizzy is different. He listed it on acquire.com, a site for selling small software businesses, but said he'd only sell for at least about $1M and only if he kept a say. No sale has been confirmed."
+        ]
+      },
+      {
+        "label": "Staying independent",
+        "title": "No investors, no boss, no team",
+        "paras": [
+          "If there's one thread running through Kitze's whole story, it's independence. He turned down Facebook. He turned down investors. His reason is clear: \"I don't want anyone having control telling me how many hours to work\".",
+          "He did try having a team. At one point he had 2 or 3 full-time staff. He says he was \"horrible\" at managing them. In 2021 he hired a technical writer and said, \"The one lesson that I'm learning is I need to delegate way more.\"",
+          "Today he has no employees. His wife left her job at Amazon to help with support, testing and documentation. It's a family business in the most literal sense.",
+          "Independence has had a personal cost too. He moved countries at some point (Poland comes up) and says he lost most of his friends during years of grinding. His advice to others is pointed: \"Don't be the person in your, I don't know, thirties, forties abandoning your family.\" He also says, \"You cannot satisfy everyone at the same time.\""
+        ],
+        "pull": {"text": "I don't want anyone having control telling me how many hours to work", "cite": "Kitze, The Bootstrapped Founder podcast"}
+      },
+      {
+        "label": "Where he stands now",
+        "title": "The app builder talking about the end of apps",
+        "paras": [
+          "In 2025 and 2026 Kitze became a known voice on AI and coding. At the AI Engineer World's Fair in 2025 he gave a talk called \"From Vibe Coding to Vibe Engineering\". The idea: let AI agents write code, but supervise them with real knowledge of how software should be built, give them good context, and review their work all the time.",
+          "At AI Engineer Europe in 2026 he went further with a talk called \"The End of Apps\". It's about what he calls task-oriented personal computing: assistants that gather context, use tools and generate the interface you need on demand, instead of you opening a fixed app.",
+          "That's a striking thing to argue when your whole career is selling apps. But it fits with his newest project, the Tinkerer Club, a paid community for people building their own personal software and agents. Its tagline is \"own everything\", and it's sold through Polar. There's also Zero To Shipped, a starter kit for getting products out the door. He's also released open-source libraries over the years, like react-hanger, react-genie and mobx-router.",
+          "What he earns from all of this isn't public. What we can see is a person who has spent almost ten years building exactly what he wants, for himself first, without anyone telling him what to do. For some of us, that freedom is the whole point."
+        ]
+      }
+    ],
+    "failuresTitle": "The starts that didn't make it",
+    "failuresIntro": "Kitze has never given a total failure count. These are the ones he has talked about. Exact years aren't public for most of them.",
+    "failures": [
+      {"year": "University years", "name": "The meme site", "what": "A university meme site that reached the top 5 in Macedonia with about 70K Facebook fans. It had a big audience but never became a business.", "lesson": "Attention isn't a business until you decide what you'll sell to it."},
+      {"year": "Year not public", "name": "A food-delivery startup", "what": "It won first place at a Startup Weekend and got offices and funding. Then the team lost interest and it died.", "lesson": "A prize and money can't replace a team that actually wants to keep going."},
+      {"year": "Year not public", "name": "Comeback Later", "what": "A desktop app that limited Twitter to 5 minutes an hour. It didn't work out, and he refunded all the buyers.", "lesson": "Refunding cleanly protects your name for the next launch."},
+      {"year": "Year not public", "name": "Glink", "what": "He built it after Sizzy's changelog tool crashed and lost his draft, and paused other work for months on it. Commercially, he says nothing came of it.", "lesson": "Anger at a broken tool is a good spark, but check others share it before spending months."},
+      {"year": "2019 onwards", "name": "Sizzy's move to paid", "what": "When Sizzy went from free to a subscription, developers pushed back and said they'd rather pay once. Some AppSumo reviews now call it abandoned.", "lesson": "Know how your buyers like to pay before you pick a pricing model."}
+    ],
+    "playbookTitle": "How he found customers",
+    "playbook": [
+      {"title": "Ask before you build", "text": "Before writing any code for Sizzy, he asked people whether they'd want a browser showing many devices at once. Only then did he build it, in one day."},
+      {"title": "Ship a free version first", "text": "Sizzy started in April 2017 as a free, open-source Chrome extension. It got hype and users before he ever asked for money, then relaunched as a paid browser in July 2019."},
+      {"title": "Cold messages to companies", "text": "For React Academy he contacted companies directly offering React workshops for their teams. One or two said yes, and referrals took it across Europe."},
+      {"title": "Teach with your own tool", "text": "He ran his workshops using Labs, a teaching app he built himself. The workshop showed off his skills and his product at the same time."},
+      {"title": "One well-timed tweet", "text": "He says one tweet made Sizzy's revenue explode. He had more than 29,000 Twitter followers in 2022, so the audience was there when he chose to use it."},
+      {"title": "Talks and keynotes", "text": "He has spoken at conferences for years, most recently at AI Engineer events in 2025 and 2026. Talks build reputation, though he admits they didn't always turn into Sizzy sales."},
+      {"title": "Offer a lifetime price", "text": "After developers pushed back on a subscription, Sizzy added a $499 lifetime option next to $15 a month and $144 a year."}
+    ],
+    "charts": [
+      {
+        "title": "Sizzy pricing, November 2026",
+        "points": [
+          {"label": "Monthly", "value": 15, "display": "$15 a month"},
+          {"label": "Yearly", "value": 144, "display": "$144 a year"},
+          {"label": "Lifetime", "value": 499, "display": "$499 once"}
+        ],
+        "note": "From Sizzy's pricing page. In October 2022 it was $15 a month with a 14-day trial."
+      },
+      {
+        "title": "His audiences, by his own counts",
+        "points": [
+          {"label": "Meme site Facebook fans, university years", "value": 70000, "display": "About 70K"},
+          {"label": "Twitter followers, 2022", "value": 29000, "display": "29K+"}
+        ],
+        "note": "A big audience didn't automatically mean sales, in either case."
+      }
+    ],
+    "timeline": [
+      {"when": "High school", "text": "Discovers programming through a quiz app, in Macedonia."},
+      {"when": "University", "text": "Grades fall. His meme site reaches the top 5 in Macedonia with about 70K Facebook fans."},
+      {"when": "After university", "text": "A long stretch of watching courses without building, until his father pushes him to get a job."},
+      {"when": "Year not public", "text": "A food-delivery startup wins Startup Weekend, gets offices and funding, then fizzles."},
+      {"when": "Apr 2017", "text": "Builds the first Sizzy in a day, as a free Chrome extension. Turns down Facebook offers to go independent.", "big": true},
+      {"when": "About 2017 onwards", "text": "Quits his job with little savings and starts React Academy, pitching companies directly."},
+      {"when": "Jul 2019", "text": "Relaunches Sizzy as a paid standalone browser.", "big": true},
+      {"when": "Dec 2021", "text": "Lists several small products as profitable and says he needs to delegate more."},
+      {"when": "Oct 2022", "text": "Sizzy costs $15 a month. His 29,000+ Twitter followers haven't turned into many sales, one article notes."},
+      {"when": "2025", "text": "Speaks on \"From Vibe Coding to Vibe Engineering\" at the AI Engineer World's Fair.", "big": true},
+      {"when": "2026", "text": "Speaks on \"The End of Apps\" at AI Engineer Europe, while building Benji and the Tinkerer Club."}
+    ],
+    "quotes": [
+      {"text": "I created it in one day.", "cite": "On Sizzy, Indie Hackers interview, December 2021"},
+      {"text": "GitHub stars won't pay your rent.", "cite": "As reported by The New Stack, October 2022"},
+      {"text": "99% product development, 1% marketing.", "cite": "On his habits, The Bootstrapped Founder podcast"},
+      {"text": "I don't want anyone having control telling me how many hours to work", "cite": "On investors, The Bootstrapped Founder podcast"},
+      {"text": "The one lesson that I'm learning is I need to delegate way more.", "cite": "Indie Hackers interview, December 2021"},
+      {"text": "You cannot satisfy everyone at the same time.", "cite": "The Bootstrapped Founder podcast"},
+      {"text": "Don't be the person in your, I don't know, thirties, forties abandoning your family.", "cite": "The Bootstrapped Founder podcast"}
+    ],
+    "steal": [
+      "Before building your next idea, ask ten people if they'd use it. Then shrink it until you can build the first version in one day.",
+      "If nobody knows your product yet, sell your skill directly. Kitze's cold messages to companies offering workshops paid the bills while Sizzy was free.",
+      "Talk to your buyers about how they like to pay. Developers hated Sizzy's subscription, and a lifetime option came later.",
+      "Don't assume followers will buy. Kitze had 29,000+ on Twitter and it didn't turn into many Sizzy sales. Ask for the sale clearly and often.",
+      "Decide early how much control you want. Kitze said no to Facebook and investors, and his freedom is the thing he values most."
+    ],
+    "sources": [
+      {"title": "Indie Hackers: the Kitze interview (December 2021)", "url": "https://www.indiehackers.com/post/the-kitze-interview-founding-glink-sizzy-and-other-saas-tools-db2e9560dd"},
+      {"title": "The Bootstrapped Founder, episode 333 transcript", "url": "https://share.transistor.fm/s/8825a332/transcription"},
+      {"title": "AI Engineer: Kitze speaker page", "url": "https://www.ai.engineer/speakers/kitze"},
+      {"title": "The New Stack: the challenges of marketing software tools to developers (October 2022)", "url": "https://thenewstack.io/the-challenges-of-marketing-software-tools-to-developers/"},
+      {"title": "Sizzy pricing page", "url": "https://sizzy.co/pricing"},
+      {"title": "Sizzy reviews on AppSumo", "url": "https://appsumo.com/products/sizzy/reviews"},
+      {"title": "Tinkerer Club on Product Hunt", "url": "https://www.producthunt.com/products/tinkerer-club-own-everything"}
+    ]
+  }
+}

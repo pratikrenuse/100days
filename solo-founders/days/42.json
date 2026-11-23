@@ -1,0 +1,235 @@
+{
+  "n": 42,
+  "name": "Steven Tey",
+  "short": "Steven",
+  "wisdom": "Put your code in public and let the big customers find you.",
+  "email": {
+    "subject": "A weekend side project at his day job. Now $20M a year flows through it.",
+    "hook": "Steven Tey built Dub on nights and weekends to fix a small annoyance at his day job, and by 2026 its affiliate platform was paying out more than $20 million to partners.",
+    "lead": [
+      "Let's be upfront: Steven isn't a solo founder any more. Dub raised a $2 million seed round, announced in January 2025, and its About page shows a team of six, including him. We're including him anyway because the first two years of Dub are one of the cleanest examples of a single builder growing a product with zero ad spend, and that's the part we can copy.",
+      "Also, if you search for this, don't mix it up with \"dub\", an unrelated copy-trading app that raised $30 million. Steven's company is Dub at dub.co, an open-source link shortener that grew into a tool for tracking which links bring in sign-ups and sales."
+    ],
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Dub has moved well beyond short links. Its big push today is **Dub Partners**, a platform that lets companies run affiliate and referral programmes and pay their partners through Dub. By the company's own account, it paid out more than $10 million to partners in six months of 2025, and payouts more than doubled to over $20 million in 2026. That's money flowing to partners, not Dub's revenue, but it shows how much is now running through the product.",
+          "In November 2026 the blog was publishing comparison and migration posts aimed squarely at the affiliate market, like a guide to PartnerStack alternatives and a guide to moving Lemon Squeezy affiliate programmes onto Dub before that programme closes on 31 March 2027. That's a classic move: when a competitor shuts something down, write the guide for the people who have to leave."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "Dub sells subscriptions. As of November 2026 the Business plan is $90 a month, with 10,000 new links, 250,000 tracked events and 100 custom domains. The Advanced plan is $300 a month, with 50,000 links, a million events and 250 domains. Both take a 5% fee on partner payouts, and Enterprise is custom with a 3% fee. Paying yearly gives 10% off.",
+          "Dub reported passing 1,000 paying customers without any paid marketing by February 2025, with names like Twilio and Huberman Lab on the list. There's no verified revenue figure. One outside site claimed it crossed $1 million a year in April 2026, but that same page got Dub's funding wrong, so we're not leaning on it."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "Steven was a Senior Developer Advocate at Vercel, the company behind Next.js. The original itch was small: people at Vercel wanted to share links on X with good-looking preview images. He built Dub on nights and weekends while playing with edge functions, and it was open source from the very first day.",
+          "He launched it on 22 September 2022 as \"an open-source link-management tool with built-in analytics and free custom domains\". It ran on Next.js on Vercel, and used Vercel's Domains API so a user could plug in their own domain in one step, with SSL handled for them. He left Vercel in late 2023 and turned Dub into a company in 2024."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "Open source did the selling. Dub reached number one on Hacker News, and its GitHub repo grew past 10,000 stars by the 2023 rebrand, 14,000 by January 2024 and almost 18,000 by October 2024. He even put a live star count on the homepage, refreshed every 60 seconds, so every visitor could see the crowd.",
+          "Big customers came through the code. **Twilio found Dub on GitHub.** He also shipped in public relentlessly: nine major updates in 30 days around the rebrand, including tools to move links over from Bitly, Rebrandly and Short.io. And he built small free spin-offs, like oss.gallery, that pointed developers back to Dub."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Dub became a real business partly because users bent it into something he didn't plan. People started using the link shortener to track affiliate links, and that pushed Dub from short links toward attribution: proving which links bring in sign-ups and sales. That's a much more valuable job, and it's why prices moved up to $90 and $300 a month plus a cut of payouts.",
+          "The other honest bit: the solo chapter ended. Once Dub had traction, Steven took $2 million from OSS Capital, Vercel's founder Guillermo Rauch, Balaji Srinivasan, Framer's founders and others, and built a team. His wife, Anzhelika Tey, is Chief of Staff and helps tell Dub's story. A solo start doesn't have to mean a solo finish."
+        ]
+      }
+    ],
+    "stats": [
+      {"value": "1,000+", "label": "paying customers, no paid ads"},
+      {"value": "18K", "label": "GitHub stars by October 2024"},
+      {"value": "$20M+", "label": "paid out to partners in 2026"}
+    ],
+    "chart": {
+      "title": "Dub's GitHub stars, by its own counts",
+      "points": [
+        {"label": "2023 rebrand", "value": 10000, "display": "10K+"},
+        {"label": "Jan 2024", "value": 14000, "display": "14K"},
+        {"label": "Oct 2024", "value": 18000, "display": "About 18K"}
+      ],
+      "note": "The live count sits on Dub's homepage, which is part of the point."
+    },
+    "tryToday": "Think of one small annoyance your own team has at work, the kind everyone grumbles about. Write down what the smallest free, public version of a fix would look like, and who outside your company might have the same problem.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Steven Tey built Dub as a nights-and-weekends side project while working at Vercel, gave the code away from day one, and let open source, Hacker News and fast public shipping bring in more than 1,000 paying customers without ads. Dub is now a funded company with a team of six, so this is the story of a solo start, not a solo business.",
+    "stats": [
+      {"value": "1,000+", "num": 1000, "prefix": "", "suffix": "+", "label": "paying customers without paid marketing", "note": "reported February 2025"},
+      {"value": "18,000", "num": 18000, "prefix": "", "suffix": "", "label": "GitHub stars by October 2024", "note": "about, per a podcast summary"},
+      {"value": "$2M", "num": 2, "prefix": "$", "suffix": "M", "label": "seed round", "note": "reported by TechCrunch, January 2025"},
+      {"value": "6", "num": 6, "prefix": "", "suffix": "", "label": "people on the team", "note": "per Dub's About page"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A developer advocate who kept shipping side projects",
+        "paras": [
+          "Before Dub, Steven was a Senior Developer Advocate at Vercel, the company behind the Next.js framework. A big part of that job was building open-source starter projects that showed developers what they could do with Vercel's tools. In other words, he was paid to ship small public things and get developers excited about them. That turned out to be perfect training for what came next.",
+          "He'd also run an earlier business that made money from affiliate revenue, according to a 2025 interview on the Mintlify blog. We don't know much about it, but it's worth remembering, because affiliate tracking is exactly where Dub ended up years later.",
+          "And he was a serial side-project builder. His list includes Novel, a writing editor that picked up 2,600 GitHub stars in three days; ShareGPT, which he built with a partner called Dom; git.new and fig.page; DomainsGPT; and One Word Domains, a database of one-word domain names. Starter Story's headline for One Word Domains says it reached more than 35,000 users.",
+          "None of these are described anywhere as failures. They read more like reps at the gym. Each one was a small launch, a small audience and a small lesson in how developers find and share tools. Where he grew up and studied isn't public."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "A fix for ugly link previews",
+        "paras": [
+          "Dub started with a tiny internal problem at Vercel. People wanted to share links on X with good-looking preview images, the OG images that show up when you paste a link. Steven, who was experimenting with Vercel's new edge functions at the time, built a link shortener to solve it, on nights and weekends.",
+          "From the very first commit, it was open source. Anyone could read the code, run their own copy or contribute. For a developer audience, that's a huge trust signal. It also meant the project lived on GitHub, where developers already spend their days.",
+          "On 22 September 2022 he published \"Introducing Dub\", describing it as \"an open-source link-management tool with built-in analytics and free custom domains\". That sentence is basically a pitch against Bitly: the same core job, but open, with analytics included and your own domain for free.",
+          "The tech was the stack he knew best. Dub was built with Next.js and hosted on Vercel. The clever bit was using Vercel's Domains API, which let a user add their own custom domain in one call, with SSL certificates and the routing handled behind the scenes. In a Vercel customer story he explains the choice simply: \"We needed a solution that was straightforward.\"",
+          "We don't know exactly how long the first version took to build, and there's no public count of how many people signed up in the first month. What we do know is how the word got out."
+        ],
+        "pull": {"text": "We needed a solution that was straightforward", "cite": "Steven, in a Vercel customer story, May 2024"}
+      },
+      {
+        "label": "The first users",
+        "title": "Hacker News, GitHub stars and a live counter",
+        "paras": [
+          "Dub's early momentum came from a top Hacker News post. In a January 2024 thread Steven says it reached number one on Hacker News. The exact date and score of that post aren't public, but everything after it points back to that moment.",
+          "GitHub became the scoreboard. The repo passed 10,000 stars around the time of the 2023 rebrand, reached 14,000 by January 2024 and was at almost 18,000 by October 2024, according to a podcast summary. Each star is a developer who found the project and wanted to remember it.",
+          "Here's a small trick worth noting. Dub's homepage shows the live GitHub star count, refreshed every 60 seconds. It's social proof that updates itself. A new visitor doesn't have to take Dub's word that developers like it; they can watch the number.",
+          "And the code itself became a sales channel. According to the Mintlify interview, **Twilio found Dub through GitHub**. Think about that: a large public company discovered a side project by browsing open-source code, no sales calls, no ads. Huberman Lab became a customer too, and TechCrunch reported that the Malaysian government uses the open-source version.",
+          "By February 2025, Dub had passed 1,000 paying customers without any paid marketing. For a product that started as a fix for link previews, that's remarkable, and it's almost entirely down to building in the open where the buyers already were."
+        ]
+      },
+      {
+        "label": "Shipping as marketing",
+        "title": "Nine updates in thirty days",
+        "paras": [
+          "In 2023 Dub moved from dub.sh to dub.co, and Steven marked it with a rebrand post. His own numbers at that point were 10,000+ users, 1,000+ connected custom domains, 7.7 million link clicks redirected and 10,000+ GitHub stars. He also pointed out that the team had shipped nine major updates in 30 days.",
+          "That pace was itself the marketing. Between 26 July and 20 August 2023, Dub published a run of changelog launches: a help centre, link stats, custom QR codes, link cloaking, an Unsplash integration and, cleverly, migration tools to move your links over from Bitly, Rebrandly and Short.io. Every update was a reason to post, and the migration tools removed the main excuse people have for not switching.",
+          "Earlier that year, on 27 April 2023, he'd announced unlimited custom domains per project, \"improved pricing with higher limits\" and project-level billing. The price of the old Pro plan isn't public, so the full price history isn't either.",
+          "In May 2023 he moved Dub onto the new Next.js App Router. A year later, in May 2024, Vercel published a customer story saying Dub had about 3,000 active domains, growing 25% month over month, and more than 5 million redirects a month, growing 40% month over month. Those numbers come from Vercel, not an independent audit, but the growth rate is striking either way.",
+          "His rebrand post had a line that captures the mood: \"Dub is here to stay.\" It was a signal to users that this side project was becoming something they could build on."
+        ],
+        "pull": {"text": "Dub is here to stay", "cite": "Steven, in Dub's rebrand post, 2023"}
+      },
+      {
+        "label": "The turn",
+        "title": "Users bent a link shortener into something bigger",
+        "paras": [
+          "Here's the part of the story that matters most for us as marketers. Steven didn't plan for Dub to become an attribution company. His users did.",
+          "According to the Mintlify interview, people started using Dub to track affiliate links. If you're paying partners for referrals, you need to know which links actually bring in sign-ups and sales. A link shortener with analytics was halfway there already. So Dub moved from simply shortening links toward attribution: showing which links drive real results.",
+          "That shift changed the value of the product. Shortening a link is a commodity. Proving which link made you money is something businesses will pay real subscriptions for. A podcast in October 2024 talked about exactly this, analytics leading to higher contract values.",
+          "Remember his old affiliate-revenue business? It's hard not to see the connection. He understood the affiliate world from the inside, so when users started bending Dub that way, he recognised it as an opportunity rather than a weird edge case.",
+          "TechCrunch quoted him in January 2025 on where he wanted to take it: \"We want to make attribution much more transparent to creators as well as businesses.\""
+        ],
+        "pull": {"text": "We want to make attribution much more transparent to creators", "cite": "Steven, to TechCrunch, January 2025"}
+      },
+      {
+        "label": "Going full-time",
+        "title": "Leaving Vercel, raising money, building a team",
+        "paras": [
+          "Steven left Vercel in late 2023, and in January 2024 he started a company around Dub. Up to that point it had been a solo side project in every way that matters. From here, it wasn't.",
+          "In January 2025 TechCrunch reported that Dub had raised a **$2 million seed round** from OSS Capital, Vercel's founder Guillermo Rauch, Balaji Srinivasan, the founders of Framer, the designer Soleio and Peer Richelsen. You'll see a $30 million figure floating around online. That belongs to a different company called dub, a copy-trading app, and has nothing to do with Steven.",
+          "Dub's About page now shows six people: Steven as CEO, Anzhelika Tey as Chief of Staff, three engineers and a founding designer, working remotely around the world. Anzhelika is his wife. In the Mintlify interview he says it helps to have someone you trust to test go-to-market ideas with, and that she helps tell Dub's story.",
+          "He also talks about protecting his time. He blocks separate time for go-to-market work and for development, instead of mixing them all day. For anyone who both builds and markets, that's a small habit with a big effect.",
+          "And he's serious about design. \"While I'm not a designer by trade, I believe that exceptional design is critical for your product,\" he told Mintlify. One of his early hires was a founding designer, which tells you he meant it."
+        ],
+        "pull": {"text": "exceptional design is critical for your product.", "cite": "Steven, on the Mintlify blog, February 2025"}
+      },
+      {
+        "label": "Where it stands now",
+        "title": "From short links to paying partners",
+        "paras": [
+          "Today Dub sells subscriptions for link management and attribution, plus Dub Partners, its affiliate programme platform. As of November 2026 the Business plan is $90 a month, with 10,000 new links and 250,000 tracked events a month and 100 domains. Advanced is $300 a month, with 50,000 links, a million events and 250 domains. Both charge a 5% fee on partner payouts, and Enterprise is custom with a 3% fee. Annual billing saves 10%.",
+          "That pricing tells the story of the turn. A cheap tier for shortening links has become serious plans for marketing teams, plus a cut of the money that flows to partners. Most of the numbers on this page come from Dub and Steven themselves, so read them as the company's own account.",
+          "By that account, Dub Partners paid out more than $10 million to partners in six months of 2025, and payouts more than doubled to more than $20 million in 2026. Again, those are payouts to partners, not Dub's own revenue. There is no verified revenue figure. An outside site, ARR Club, claimed in April 2026 that Dub crossed $1 million a year, but it cited no source and got the funding wrong, so we treat it as a guess.",
+          "The product has picked up AI features too, like custom reports, suggested titles and auto-tagging, according to TechCrunch. And the content machine is pointed at the affiliate market: in November 2026 Dub published a guide to PartnerStack alternatives on 16 November and a guide to moving Lemon Squeezy affiliate programmes to Dub on 19 November, noting that Lemon Squeezy's programme closes on 31 March 2027.",
+          "That last move is worth stealing outright. When a competitor or platform shuts down a feature, the people affected are suddenly searching for a new home. Writing the migration guide puts you right in their path."
+        ]
+      }
+    ],
+    "failuresTitle": "No public failures, which is unusual",
+    "failuresIntro": "Steven hasn't talked publicly about a single failure. His side projects like Novel, ShareGPT, git.new and fig.page are all listed as launches, and nobody has written about any of them going wrong. That doesn't mean nothing failed, only that he hasn't shared it.",
+    "failures": [],
+    "playbookTitle": "How Dub grew without paying for ads",
+    "playbook": [
+      {"title": "Open-source the whole product from day one", "text": "Dub's code was public from the first commit. Developers could read it, run it and trust it, and the repo grew past 10,000 stars by 2023 and almost 18,000 by October 2024."},
+      {"title": "Let GitHub be the sales team", "text": "Twilio found Dub through GitHub, and Dub passed 1,000 paying customers by February 2025 without paid marketing. If your buyers are developers, public code puts you where they already look."},
+      {"title": "Win Hacker News once, then build on it", "text": "Dub reached number one on Hacker News, which gave it early momentum. Everything that followed built on the developer attention from that post."},
+      {"title": "Show the proof live on the homepage", "text": "The homepage displays Dub's live GitHub star count, refreshed every 60 seconds. It's social proof that updates itself without anyone writing a testimonial."},
+      {"title": "Ship in public, fast", "text": "Around the 2023 rebrand Dub shipped nine major updates in 30 days, with a run of changelog launches between 26 July and 20 August 2023. Each update gave him something new to post."},
+      {"title": "Build migration tools for your rivals' users", "text": "Dub shipped tools to import links from Bitly, Rebrandly and Short.io. It removed the biggest reason people stay on an old tool: the pain of moving."},
+      {"title": "Release free spin-off projects", "text": "He launched side tools like oss.gallery in April 2024, a crowdsourced list of open-source projects built on Dub's API. Earlier side projects like One Word Domains and ShareGPT built his reputation with developers."},
+      {"title": "Write the guide when a competitor closes a door", "text": "In November 2026 Dub published guides to PartnerStack alternatives and to moving Lemon Squeezy affiliate programmes before that programme closes on 31 March 2027."},
+      {"title": "Watch how users bend the product", "text": "Users started tracking affiliate links with Dub, which pushed it into attribution and then affiliate payouts. Following that behaviour is what moved the prices up to $90 and $300 a month."}
+    ],
+    "charts": [
+      {
+        "title": "Dub's GitHub stars, by its own counts",
+        "points": [
+          {"label": "2023 rebrand", "value": 10000, "display": "10K+"},
+          {"label": "Jan 2024", "value": 14000, "display": "14K"},
+          {"label": "Oct 2024", "value": 18000, "display": "About 18K"}
+        ],
+        "note": "The October 2024 figure comes from a podcast summary."
+      },
+      {
+        "title": "Money Dub Partners paid out to partners",
+        "points": [
+          {"label": "6 months of 2025", "value": 10000000, "display": "$10M+"},
+          {"label": "2026", "value": 20000000, "display": "$20M+"}
+        ],
+        "note": "These are payouts to partners, by Dub's own account, not Dub's revenue."
+      }
+    ],
+    "timeline": [
+      {"when": "Before 2022", "text": "Works as a Senior Developer Advocate at Vercel, building open-source starters. Has run an affiliate-revenue business on the side.", "big": false},
+      {"when": "22 Sep 2022", "text": "Launches Dub as an open-source link-management tool with analytics and free custom domains.", "big": true},
+      {"when": "27 Apr 2023", "text": "Unlimited custom domains per project and higher plan limits.", "big": false},
+      {"when": "May 2023", "text": "Moves Dub onto the Next.js App Router.", "big": false},
+      {"when": "Jul to Aug 2023", "text": "Ships a run of updates, including migration tools from Bitly, Rebrandly and Short.io.", "big": false},
+      {"when": "2023", "text": "Rebrands from dub.sh to dub.co with 10,000+ users and 10,000+ GitHub stars.", "big": true},
+      {"when": "Late 2023", "text": "Leaves Vercel to work on Dub full-time.", "big": true},
+      {"when": "Jan 2024", "text": "Starts a company around Dub. The repo has 14,000 stars.", "big": false},
+      {"when": "May 2024", "text": "Vercel reports about 3,000 active domains and 5 million+ redirects a month.", "big": false},
+      {"when": "Jan 2025", "text": "TechCrunch reports a $2 million seed round.", "big": true},
+      {"when": "Feb 2025", "text": "Passes 1,000 paying customers without paid marketing.", "big": false},
+      {"when": "2026", "text": "Dub Partners payouts pass $20 million.", "big": false}
+    ],
+    "quotes": [
+      {"text": "exceptional design is critical for your product.", "cite": "Mintlify blog, February 2025"},
+      {"text": "We want to make attribution much more transparent to creators", "cite": "TechCrunch, January 2025"},
+      {"text": "Dub is here to stay", "cite": "Dub rebrand post, 2023"},
+      {"text": "We needed a solution that was straightforward", "cite": "Vercel customer story, May 2024"}
+    ],
+    "steal": [
+      "If your buyers are technical, put your work where they already browse. Steven's code on GitHub brought in Twilio without a single sales call.",
+      "Make your social proof live. A real-time counter of stars, users or links on your homepage does more than a static testimonial.",
+      "Turn every update into a post. Nine updates in 30 days gave Dub a steady stream of reasons to show up in people's feeds.",
+      "Build the migration tool or write the migration guide for your competitor's customers. The pain of moving is often the only thing keeping them there.",
+      "Watch for users using your product in a way you didn't plan. Affiliate tracking turned a link shortener into a business that charges $90 to $300 a month.",
+      "Start with an itch from your own day job. Dub began as a fix for ugly link previews at Vercel."
+    ],
+    "sources": [
+      {"title": "Dub: About", "url": "https://dub.co/about"},
+      {"title": "Dub blog: rebrand and launch posts", "url": "https://dub.co/blog/rebrand"},
+      {"title": "Dub pricing", "url": "https://dub.co/pricing"},
+      {"title": "TechCrunch: Dub.co is an open-source URL shortener and link attribution engine (January 2025)", "url": "https://techcrunch.com/2025/01/16/dub-co-is-an-open-source-url-shortener-and-link-attribution-engine-packed-into-one"},
+      {"title": "Mintlify blog: Founder mode at Dub (February 2025)", "url": "https://www.mintlify.com/blog/founder-mode-dub"},
+      {"title": "Vercel customer story: How Dub grew to 3,000 active domains", "url": "https://vercel.com/customers/how-dub-grew-to-3000-active-domains-with-vercels-multi-tenant-saas-toolkit"},
+      {"title": "Steven Tey's X threads (Thread Reader)", "url": "https://threadreaderapp.com/user/steventey"},
+      {"title": "OSS Startup Podcast #152: Taking on Bitly", "url": "https://ossstartuppodcast.substack.com/p/episode-152-taking-on-bitly-with"},
+      {"title": "Steven Tey on read.cv", "url": "https://read.cv/steven"},
+      {"title": "Starter Story: One Word Domains", "url": "https://www.starterstory.com/one-word-domains"},
+      {"title": "TechCrunch: the unrelated copy-trading app dub raises $30M (May 2025)", "url": "https://techcrunch.com/2025/05/01/buzzy-investing-app-dub-lands-30m-series-a"}
+    ]
+  }
+}

@@ -1,0 +1,533 @@
+{
+  "n": 5,
+  "name": "Justin Welsh",
+  "short": "Justin",
+  "wisdom": "Price low to earn trust, then raise it as you prove results.",
+  "email": {
+    "subject": "A $50 course, then $15 million",
+    "hook": "In December 2018 Justin Welsh spent an hour screaming and hallucinating while paramedics worked on him, at the top of his corporate career. Seven years later, by his own numbers, he'd built a $15 million business without hiring a single employee.",
+    "lead": [
+      "Justin is the one for us because he isn't a coder at all. He was a sales leader who started posting on LinkedIn every day, and everything he sells grew out of those posts. If you're a marketer with things you've learned the hard way, his path is the most direct one on this list.",
+      "He really is solo, too. No employees. His wife helps, a virtual assistant handles support tickets, and freelancers do bits like SEO research."
+    ],
+    "stats": [
+      {
+        "value": "$15M",
+        "label": "earned in total, by his About page"
+      },
+      {
+        "value": "0",
+        "label": "employees, ever"
+      },
+      {
+        "value": "200,000+",
+        "label": "newsletter readers"
+      }
+    ],
+    "chart": {
+      "title": "How many months each million took, by his own numbers",
+      "points": [
+        {
+          "label": "1st $1M",
+          "value": 29,
+          "display": "29 months"
+        },
+        {
+          "label": "2nd $1M",
+          "value": 9,
+          "display": "9 months"
+        },
+        {
+          "label": "3rd $1M",
+          "value": 6,
+          "display": "6 months"
+        },
+        {
+          "label": "4th $1M",
+          "value": 5,
+          "display": "5 months"
+        },
+        {
+          "label": "7th $1M",
+          "value": 3,
+          "display": "3 months"
+        }
+      ],
+      "note": "His fifth and sixth million came in the same week, in January 2024."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "He's pulling back. His About page says that for 2027 he's “taking a step back from social media,” with mornings for his health and afternoons for finishing his first book. The free Saturday newsletter keeps going.",
+          "Since 2025 he's been moving towards community and in-person events, what he calls “depth rather than scale.” He's both excited and scared about AI, and thinks that as AI gets better, real human connection will be worth more."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "By June 2025 he'd passed $10 million in total, and he broke it down himself: $6.75M from products like courses, $1.17M from consulting, $795K from sponsorships, $695K from subscriptions and $630K from community, at about 89% margin. His 2026 About page says $15 million.",
+          "He sells two newsletter sponsor slots at $2,500 each. And here's a sneaky good one: affiliate prompts sit halfway through and at the end of his courses, and 3,247 affiliates have brought in $600,000. No paid ads, no webinars, no complicated funnels."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "His first product was The LinkedIn Playbook, a $50 course on Gumroad launched on 16 April 2020. He recorded it “as if I were chatting with a friend over a beer.” It made $10,482 in its first month.",
+          "Then he rebuilt it as the LinkedIn Operating System and tested a price three to four times higher. It made $186,000 in three months, more than the $50 version made in 15 months. He calls the cheap first price a **“trust tripwire.”**"
+        ]
+      },
+      {
+        "title": "How he got the customers",
+        "paras": [
+          "It started with daily LinkedIn posts about what he was learning as a sales executive at a healthcare software company: “No strategy or plan, just consistent posting.” Founders sent him DMs with questions. He answered every one, then offered consulting.",
+          "He narrowed down to early-stage healthcare software founders, doubled his rates and turned away everyone else, so he earned the same in half the time. Then every new product was sold to the people the last one had brought in. The Saturday Solopreneur newsletter launched in January 2022 by emailing his 10,000+ existing students."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "The first million took 29 months. That's nearly two and a half years of daily posting before the big number. After that it sped up, with some millions coming in three months.",
+          "He also shut down a paid community at $15,000 a month after 15 months, because it needed him on Slack all the time. Profitable isn't the same as worth it."
+        ]
+      }
+    ],
+    "tryToday": "Write one LinkedIn post today about one specific thing you learned at work this month, for one specific type of reader. Then reply to every comment and DM it gets.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Justin Welsh was fired from three jobs, climbed to Chief Revenue Officer, burned out in a panic attack so bad his wife called 911, and then built a one-person business from LinkedIn posts. He has never hired an employee. Nearly every number on this page comes from Justin himself, mostly his own essay on reaching $10 million and his About page.",
+    "stats": [
+      {
+        "value": "$15,000,000",
+        "num": 15000000,
+        "prefix": "$",
+        "suffix": "",
+        "label": "earned without an employee",
+        "note": "his About page, 2026"
+      },
+      {
+        "value": "$10,482",
+        "num": 10482,
+        "prefix": "$",
+        "suffix": "",
+        "label": "first month of his $50 course",
+        "note": "April 2020"
+      },
+      {
+        "value": "$1,600,000",
+        "num": 1600000,
+        "prefix": "$",
+        "suffix": "",
+        "label": "from one course launch in six days",
+        "note": "January 2024"
+      },
+      {
+        "value": "89",
+        "num": 89,
+        "prefix": "",
+        "suffix": "%",
+        "label": "profit margin",
+        "note": "June 2025"
+      }
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Fired three times and sleeping on a couch",
+        "paras": [
+          "From 2003 to 2009 Justin sold pharmaceuticals, and in his own words he was “fired from three jobs.” By 28 he describes himself as having failed at everything: “Broke, in debt, and totally lost.”",
+          "In 2009 he took an entry-level door-to-door sales job at a startup in New York City. He couldn't afford his own place, so he slept on a friend's couch in Brooklyn for seven months.",
+          "That's where his real career started. Not with a plan, but with a job nobody wanted, knocking on doors. It's worth remembering when we look at the $15 million later. He started from below zero."
+        ],
+        "pull": {
+          "text": "Broke, in debt, and totally lost.",
+          "cite": "Justin on his About page, on himself at 28"
+        }
+      },
+      {
+        "label": "The climb",
+        "title": "From door-to-door to Chief Revenue Officer",
+        "paras": [
+          "Over the next ten years Justin rose from door-to-door salesman to Chief Revenue Officer. He helped build two companies, one in New York and one in Los Angeles, to valuations of more than $1 billion. Indie Hackers adds that they raised over $300 million in venture capital.",
+          "At one point he was VP of Sales with 150 people reporting directly to him. He told Peter Yang, “I loved being VP of Sales,” but the team was big, the targets were big, and it got more nerve-wracking over time.",
+          "His life looked like a lot of senior jobs look. Seventy-hour weeks, constant travel, overeating, heavy drinking and very little sleep. He's said he was neglecting his marriage and family.",
+          "So by every outside measure he'd made it. And inside, it was falling apart."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "An hour with the paramedics",
+        "paras": [
+          "On 15 December 2018 Justin had a severe panic attack. His wife Jennifer called 911. For about an hour, while paramedics worked on him, he was “screaming and hallucinating.”",
+          "His About page says he gave notice the following Monday. Peter Yang's interview says he stayed about eight more months after telling his bosses he needed a change. His own accounts don't quite match on the timing, but the decision was made that night.",
+          "Leaving wasn't safe. He still had a large mortgage in Los Angeles. And soon after he started on his own, COVID hit, and he wondered whether starting had been a mistake.",
+          "Later he summed up what he'd learned about burnout in one line: “burnout isn't about working too hard. It's about loss of control.” Everything he built afterwards was designed around keeping control of his own time."
+        ],
+        "pull": {
+          "text": "burnout isn't about working too hard. It's about loss of control.",
+          "cite": "Justin to Indie Hackers"
+        }
+      },
+      {
+        "label": "The first version",
+        "title": "Daily LinkedIn posts with no plan",
+        "paras": [
+          "In late 2018 Justin started writing on LinkedIn every day about building a healthcare software company as its revenue chief. He's very honest that there was no master plan: “No strategy or plan, just consistent posting about what I knew and learned.”",
+          "His own essay says he grew from 2,000 followers to “just crossing 15,000,” then past 21,000. Indie Hackers says he went from zero to more than 20,000 in six months. The figures differ, but either way it was fast, and later he passed 750,000 on LinkedIn.",
+          "The posts brought DMs. Founders asked him questions, and he answered every single one. Then he offered them consulting. That's the first business: not a course, not a product, just paid help for people who'd already seen him being useful for free.",
+          "Then he did the thing most consultants are scared to do. He narrowed to one niche, early-stage small healthcare software founders, doubled his rates and turned down work outside that niche. He ended up working half the time for the same income. In his words, “The riches are in the niches,” and “Higher rates = better clients = better results = even higher rates.”",
+          "LinkedIn wasn't his only channel in these early days. He networked with venture capital investors, went to the SaaStr conference and wrote guest posts on consultants' blogs. Consulting eventually made him $1.17 million."
+        ],
+        "pull": {
+          "text": "No strategy or plan, just consistent posting about what I knew and learned.",
+          "cite": "Justin's $10M essay, June 2025"
+        }
+      },
+      {
+        "label": "The first product",
+        "title": "A $50 course recorded like a chat over beer",
+        "paras": [
+          "On 16 April 2020, just as COVID was starting, Justin launched The LinkedIn Playbook on Gumroad for $50. He didn't make a slick production of it. He recorded it “as if I were chatting with a friend over a beer.”",
+          "It made $10,482 in its first month, and about $75,000 over 15 months.",
+          "He's clear that $50 wasn't the real goal. He calls that price a “trust tripwire.” A low price gets people who like your posts to take a small risk on you. If the course delivers, they trust you, and they'll buy the next, bigger thing.",
+          "Indie Hackers reports one more detail that shows how direct his selling was. A single LinkedIn post that linked to an article, which then linked to a product, made $4,000 in 24 hours."
+        ]
+      },
+      {
+        "label": "Finding the money",
+        "title": "Same course, three to four times the price",
+        "paras": [
+          "Instead of building something brand new, Justin rebuilt the Playbook into a fuller system, the LinkedIn Operating System, and tested a price three to four times higher. He doesn't give the exact price.",
+          "It grossed $186,000 in three months. That's far more than the $50 version made in 15 months. An earlier Indie Hackers snapshot puts the LinkedIn Operating System's lifetime sales at $2.571 million. His rule from this: “Price low to build trust, then raise prices as you deliver results.”",
+          "He then stacked small recurring products on top. Monthly Templates was a $9 upsell offered to course buyers. After eight months it had 2,584 subscribers and $23,200 a month in recurring revenue. A podcast conversation with Dickie Bush and Nicolas Cole led to his second course.",
+          "And he built his sales force into the product. Affiliate prompts appear halfway through the course and at the end, when buyers are happiest. 3,247 affiliates have brought in $600,000. Every happy customer is offered a reason to sell it to a friend.",
+          "His other line here: “Your customers will tell you what to build next.” Each product came from what the last group of buyers asked for."
+        ],
+        "chart": 2,
+        "pull": {
+          "text": "Price low to build trust, then raise prices as you deliver results.",
+          "cite": "Justin's $10M essay, June 2025"
+        }
+      },
+      {
+        "label": "Scaling it",
+        "title": "A newsletter launched to his own buyers",
+        "paras": [
+          "In January 2022 he launched The Saturday Solopreneur by emailing the 10,000+ people who'd already bought a course or a template subscription. So it didn't start at zero. It started with buyers.",
+          "The format is tight. One actionable idea every Saturday, readable in four minutes or less. It reached 185,000 subscribers after 40 months, even though he regularly prunes inactive readers, and the signup page now says 200,000 or more. He sells two sponsor slots per issue at $2,500 each.",
+          "He also started on X in 2021 and reached 480,000 followers in under two and a half years. His total audience is now about 1.5 million.",
+          "Not everything stuck. A paid community at $199 a year reached about $15,000 a month in recurring revenue, and he shut it down after 15 months because it needed him on Slack all the time. That was the old loss of control coming back, and he chose his time over the money. Later, an Unsubscribe Membership reached $19,000 a month in about one month.",
+          "On 16 January 2024 he launched The Creator MBA, a course with 111 lessons and 19 hours of video. It made $1.6 million in six days. That week, his lifetime total went past both $5 million and $6 million."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "How he runs it",
+        "title": "One form, one lead magnet, one offer",
+        "paras": [
+          "Justin's system is deliberately simple. His routine is publish, engage, write the newsletter, then stop. His sales setup is one form, one lead magnet, one email sequence and one offer. He runs no paid ads, no webinars and no complicated funnels. All his traffic is organic: LinkedIn, X, Instagram, the newsletter and search.",
+          "He still writes his own articles, while freelancers do keyword research and briefs for SEO. A virtual assistant handles customer service tickets, his wife helps, and partners such as Brennan Dunn help on launches. No employees.",
+          "His margins started near 99% and slipped to about 89% as he paid for software, contractors, an outsourced redesign and travel. By June 2025, his $10 million broke down as $6.75M products, $1.17M consulting, $795K sponsorships, $695K subscriptions and $630K community.",
+          "For anyone with a job, his advice is to go slowly. He suggests going full time only once side income reaches about 60 to 70% of your take-home pay, and spending about 15 extra minutes a day sharing what you know. “Think of it as a phased, gradual approach over many years.”",
+          "He also admits, in that same essay, to products he's “not proud of” and early confusion with a product in a different niche, though he doesn't name them."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Stepping back from the thing that built him",
+        "paras": [
+          "His About page now says: “I built a business that earned $15 million without ever hiring a single employee.” That's up from $10 million in June 2025.",
+          "And for 2027 he's “taking a step back from social media.” Mornings are for his health. Afternoons are for finishing his first book, which is still marked as coming soon. The free Saturday essay continues. Since May 2025 he's been leaning into community and in-person events, “depth rather than scale.”",
+          "On AI he's honest about both sides: “I'm excited about AI. And I'm terrified of AI.” He thinks AI gives businesses 80% of the quality for 5% of the cost, which is a real threat to people who sell information. But he also believes, “As AI gets better, I think the value of authentic connection will increase.” And he thinks the people who win next “certainly aren't going to do it alone.”",
+          "That's a striking thing to hear from the poster boy of the one-person business. His bet for the next chapter is people, trust and being in the room, which are exactly the things AI can't fake."
+        ],
+        "pull": {
+          "text": "As AI gets better, I think the value of authentic connection will increase.",
+          "cite": "Justin's newsletter, May 2025"
+        }
+      }
+    ],
+    "failuresTitle": "Fired three times, and one community he closed",
+    "failuresIntro": "Most of Justin's public failures happened before his business existed. After it started, the big one was a profitable product he chose to close.",
+    "failures": [
+      {
+        "year": "2003 to 2009",
+        "name": "Three firings",
+        "what": "He was fired from three jobs in pharmaceutical sales.",
+        "lesson": "Being bad at one job says little about what you'll be good at later."
+      },
+      {
+        "year": "Around 2009",
+        "name": "Broke at 28",
+        "what": "Broke, in debt and with no plan, he took an entry-level door-to-door sales job and slept on a friend's couch in Brooklyn for seven months.",
+        "lesson": "A humble job that teaches a real skill can be the start of everything."
+      },
+      {
+        "year": "2018",
+        "name": "Burnout at the top",
+        "what": "As a senior sales executive working 70-hour weeks, he had a panic attack on 15 December 2018 that needed paramedics. He left corporate life soon after.",
+        "lesson": "Design the business around control of your time from the start."
+      },
+      {
+        "year": "Around 2020 to 2022",
+        "name": "The paid community",
+        "what": "At $199 a year it reached about $15,000 a month, but needed him on Slack constantly. He shut it down after 15 months.",
+        "lesson": "If a product eats your time, it's okay to close it even when it makes money."
+      },
+      {
+        "year": "Unnamed",
+        "name": "Products he's not proud of",
+        "what": "He admits to products he isn't proud of and early confusion with a product in a different niche, without naming them.",
+        "lesson": "Even the cleanest-looking businesses have quiet misses behind them."
+      }
+    ],
+    "playbookTitle": "How he got customers with no ads",
+    "playbook": [
+      {
+        "title": "Post every day about what you actually do",
+        "text": "From late 2018 he wrote daily on LinkedIn about building a healthcare software company as its revenue chief. He grew past 20,000 followers within months and later past 750,000."
+      },
+      {
+        "title": "Answer every DM, then offer help",
+        "text": "Founders messaged him questions. He answered every one, then offered paid consulting, which went on to earn $1.17 million."
+      },
+      {
+        "title": "Niche down and double your rates",
+        "text": "He focused on early-stage small healthcare software founders, doubled his prices and turned away other work. He earned the same income in half the time."
+      },
+      {
+        "title": "Start with a $50 tripwire",
+        "text": "The LinkedIn Playbook launched on Gumroad on 16 April 2020 at $50 and made $10,482 in month one. The low price built trust for bigger offers."
+      },
+      {
+        "title": "Relaunch it as a system at a higher price",
+        "text": "The rebuilt LinkedIn Operating System, tested at three to four times the price, made $186,000 in three months."
+      },
+      {
+        "title": "Put affiliate asks inside the product",
+        "text": "Prompts at the halfway point and the end of his courses turned buyers into sellers. 3,247 affiliates have generated $600,000."
+      },
+      {
+        "title": "Launch each new thing to the last list",
+        "text": "The Saturday Solopreneur launched in January 2022 by emailing 10,000+ existing students and template subscribers, and grew to 200,000+ readers."
+      },
+      {
+        "title": "Use the offline channels too",
+        "text": "Early on he also networked with venture investors, went to SaaStr and wrote guest posts on consultants' blogs, alongside LinkedIn."
+      }
+    ],
+    "charts": [
+      {
+        "title": "How many months each million took, by his own numbers",
+        "points": [
+          {
+            "label": "1st $1M",
+            "value": 29,
+            "display": "29 months"
+          },
+          {
+            "label": "2nd $1M",
+            "value": 9,
+            "display": "9 months"
+          },
+          {
+            "label": "3rd $1M",
+            "value": 6,
+            "display": "6 months"
+          },
+          {
+            "label": "4th $1M",
+            "value": 5,
+            "display": "5 months"
+          },
+          {
+            "label": "5th and 6th",
+            "value": 4,
+            "display": "4 months, same week"
+          },
+          {
+            "label": "7th $1M",
+            "value": 3,
+            "display": "3 months"
+          },
+          {
+            "label": "8th $1M",
+            "value": 3,
+            "display": "3 months"
+          },
+          {
+            "label": "9th $1M",
+            "value": 5,
+            "display": "5 months"
+          },
+          {
+            "label": "10th $1M",
+            "value": 6,
+            "display": "6 months"
+          }
+        ],
+        "note": "He reached $10M about 5 years and 9 months after his first revenue, in June 2025."
+      },
+      {
+        "title": "Where his first $10 million came from, by his own numbers",
+        "points": [
+          {
+            "label": "Products",
+            "value": 6750000,
+            "display": "$6.75M"
+          },
+          {
+            "label": "Consulting",
+            "value": 1170000,
+            "display": "$1.17M"
+          },
+          {
+            "label": "Sponsorships",
+            "value": 795000,
+            "display": "$795K"
+          },
+          {
+            "label": "Subscriptions",
+            "value": 695000,
+            "display": "$695K"
+          },
+          {
+            "label": "Community",
+            "value": 630000,
+            "display": "$630K"
+          }
+        ],
+        "note": "As of June 2025, at about 89% margin."
+      },
+      {
+        "title": "Same knowledge, higher price",
+        "points": [
+          {
+            "label": "$50 Playbook, 15 months",
+            "value": 75000,
+            "display": "about $75K"
+          },
+          {
+            "label": "Operating System, 3 months",
+            "value": 186000,
+            "display": "$186K"
+          }
+        ],
+        "note": "The Operating System was tested at three to four times the Playbook's price."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "2003 to 2009",
+        "text": "Sells pharmaceuticals and is fired from three jobs."
+      },
+      {
+        "when": "2009",
+        "text": "Takes a door-to-door sales job in New York and sleeps on a friend's couch for seven months."
+      },
+      {
+        "when": "2009 to 2018",
+        "text": "Rises to Chief Revenue Officer and helps build two companies to $1B+ valuations."
+      },
+      {
+        "when": "December 2018",
+        "text": "A severe panic attack on the 15th makes him decide to leave. He starts posting daily on LinkedIn.",
+        "big": true
+      },
+      {
+        "when": "April 2020",
+        "text": "Launches The LinkedIn Playbook at $50. It makes $10,482 in month one.",
+        "big": true
+      },
+      {
+        "when": "January 2022",
+        "text": "Launches The Saturday Solopreneur to 10,000+ existing customers."
+      },
+      {
+        "when": "Month 29",
+        "text": "Reaches his first $1 million in total revenue."
+      },
+      {
+        "when": "January 2024",
+        "text": "The Creator MBA makes $1.6M in six days.",
+        "big": true
+      },
+      {
+        "when": "June 2025",
+        "text": "Passes $10M lifetime at about 89% margin."
+      },
+      {
+        "when": "2026",
+        "text": "His About page says $15M, and he plans to step back from social media in 2027."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "No strategy or plan, just consistent posting about what I knew and learned.",
+        "cite": "His $10M essay, June 2025"
+      },
+      {
+        "text": "Price low to build trust, then raise prices as you deliver results.",
+        "cite": "His $10M essay, June 2025"
+      },
+      {
+        "text": "Your customers will tell you what to build next.",
+        "cite": "His $10M essay, June 2025"
+      },
+      {
+        "text": "Higher rates = better clients = better results = even higher rates.",
+        "cite": "His $10M essay, June 2025"
+      },
+      {
+        "text": "burnout isn't about working too hard. It's about loss of control.",
+        "cite": "Indie Hackers"
+      },
+      {
+        "text": "I'm excited about AI. And I'm terrified of AI.",
+        "cite": "His newsletter, May 2025"
+      },
+      {
+        "text": "I built a business that earned $15 million without ever hiring a single employee.",
+        "cite": "His About page, 2026"
+      }
+    ],
+    "steal": [
+      "Post every day for a few months about the work you actually do, for one specific type of reader, with no fancy strategy. The DMs that come back are your first customers.",
+      "Answer every question someone sends you, then offer paid help. Consulting is the fastest way to find out what people will pay for.",
+      "Launch a cheap first product to build trust, then rebuild your best one as a fuller system at three to four times the price before inventing something new.",
+      "Put an affiliate ask inside your product at the moments buyers are happiest, so customers bring the next customers.",
+      "Launch every new product to the list the last one built. Never start from zero twice.",
+      "Close anything that takes away control of your time, even if it's profitable."
+    ],
+    "sources": [
+      {
+        "title": "My $10M story (Justin Welsh essay, June 2025)",
+        "url": "https://justinwelsh.me/essays/my-10m-journey"
+      },
+      {
+        "title": "About Justin Welsh",
+        "url": "https://justinwelsh.me/about"
+      },
+      {
+        "title": "AI is coming (Justin Welsh newsletter, May 2025)",
+        "url": "https://justinwelsh.me/newsletter/ai-is-coming"
+      },
+      {
+        "title": "Justin Welsh profile (Indie Hackers)",
+        "url": "https://indiehackers.com/post/FzLRweGZuhK45W82J7Rt"
+      },
+      {
+        "title": "How I built an $8M solo business (Behind the Craft, September 2024)",
+        "url": "https://creatoreconomy.so/p/how-i-built-an-8m-solo-business-justin-welsh"
+      },
+      {
+        "title": "Hero story: Justin Welsh (Kajabi)",
+        "url": "https://www.kajabi.com/blog/hero-story-justin-welsh"
+      }
+    ]
+  }
+}

@@ -1,0 +1,522 @@
+{
+  "n": 29,
+  "name": "Nat Eliason",
+  "short": "Nat",
+  "wisdom": "Learn the new tool early and properly, then teach it to everyone else.",
+  "email": {
+    "subject": "He got a C in coding. Then an AI agent made him $177K.",
+    "hook": "Nat Eliason got a C in a programming class and “hated every minute of it”. In 2026 an AI agent he set up earned, by its own count, $177,000 in about two months.",
+    "lead": [
+      "Nat is the most marketer-shaped founder we've met so far. He learned SEO inside two startups, used it to build an agency to nearly $3M a year, then walked away from it and reinvented himself around one new tool after another: Roam, crypto, and now AI.",
+      "Two things to know up front. During the agency years he was not solo at all, the team grew past 15 people. And he didn't sell Growth Machine. He turned down a sale and handed it to his CEO instead."
+    ],
+    "stats": [
+      {
+        "value": "$13K",
+        "label": "a month on Growth Machine's first day"
+      },
+      {
+        "value": "Under $3M",
+        "label": "Growth Machine revenue in 2019"
+      },
+      {
+        "value": "$200K",
+        "label": "AI course presales in one week, 2025"
+      }
+    ],
+    "chart": {
+      "title": "Growth Machine's monthly revenue in its first year, by Nat's own numbers",
+      "points": [
+        {
+          "label": "Day one",
+          "value": 13000,
+          "display": "$13K"
+        },
+        {
+          "label": "December",
+          "value": 38000,
+          "display": "$38K"
+        },
+        {
+          "label": "About month 9",
+          "value": 85000,
+          "display": "$85K"
+        }
+      ],
+      "note": "He started it in late 2017, by his Indie Hackers account. One of his own posts dates it to 2018."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "In 2026 Nat set up an AI agent called Felix and gave it a strange brief: “come up with a product that you can entirely make on your own” and sell it. In March 2026 he said Felix had made nearly $200,000 in about two months. Felix's own count was $177,000. There's no public breakdown.",
+          "Around that, he's building Claw Mart, Sodex and Agent Letters, all tools for AI agents doing paid work. He's also involved with Alpha School, and he's writing fiction, starting with a novel called Husk in 2025."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "His pattern, as Dan Shipper describes it, is simple: spot a new tool, master it, build a business around it, move on. His course on the note-taking app Roam made $600,000, according to Shipper. His course Build Your Own Apps with AI took $200,000 in presales in a single week in February 2025, with 800+ students.",
+          "**Both were presold to people who already read him**: his newsletter and his following on X. The content he'd been writing for years was the sales channel."
+        ]
+      },
+      {
+        "title": "How he built the agency",
+        "paras": [
+          "In 2017 a friend, Justin Mares of Kettle & Fire, asked him for SEO help at $4,000 a month. Patreon and Spire followed, and his price went to $8,000. But consulting clients kept not doing what he told them.",
+          "So when two more friends asked for consulting, he offered to do the work himself for the same money. They paid $6K and $7K a month. He moved $5,000 from his personal account to pay freelancers, worked alone with contractors for about four months, and reached about $85K a month within a year."
+        ]
+      },
+      {
+        "title": "How he got the clients",
+        "chart": true,
+        "paras": [
+          "Content, always. His blog had already reached about 200,000 visitors a month. One post about a five-day water fast pulled about 2,000 visitors a day with no SEO work. That blog was his portfolio, and Kettle & Fire, whose traffic went from about 20,000 to 150,000 a month in eight or nine months, was his proof.",
+          "He also priced high on purpose. Most SEO agencies charged $2K to $5K a month. Growth Machine's minimum was $8K."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "In 2019 a client paying $50,000 a month cancelled a six-month contract without warning and took a quarter of the revenue with it. Then in early 2020 Covid cost the agency half its clients in three weeks. They came back within two months.",
+          "And of his 2021 goals, he wrote, “Almost none of them happened.” The man who looks like he always knows the next thing has a long list of things that didn't work."
+        ]
+      }
+    ],
+    "tryToday": "Name the tool everyone in your field has started talking about but almost nobody uses well yet. Spend 30 minutes today using it properly, and write down three things you learned that a beginner would pay to know.",
+    "button": "Read the full story"
+  },
+  "page": {
+    "intro": "A philosophy student whose first startup died, Nat Eliason learned marketing inside Zapier and Sumo, built a blog to 200,000 readers a month, and turned it into Growth Machine, an SEO agency that did just under $3M in 2019. Then he handed it to his CEO and started over, teaching Roam, crypto and AI as each one arrived.",
+    "stats": [
+      {
+        "value": "Under $3M",
+        "label": "Growth Machine revenue, 2019",
+        "note": "his own number"
+      },
+      {
+        "value": "$600,000",
+        "num": 600000,
+        "prefix": "$",
+        "suffix": "",
+        "label": "from his Roam course",
+        "note": "reported by Dan Shipper, Feb 2025"
+      },
+      {
+        "value": "$200,000",
+        "num": 200000,
+        "prefix": "$",
+        "suffix": "",
+        "label": "AI course presales in one week",
+        "note": "February 2025"
+      },
+      {
+        "value": "$177,000",
+        "num": 177000,
+        "prefix": "$",
+        "suffix": "",
+        "label": "earned by his AI agent Felix",
+        "note": "in about two months, by Felix's count, Mar 2026"
+      }
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A failed startup, then a skill learned on the job",
+        "paras": [
+          "Nat Eliason studied philosophy in college. He says himself it didn't lead to a useful job. So while he was still a student he started a blog under his own name, mainly to teach himself marketing.",
+          "He also tried a startup in college. It shut down after about a year, and he puts part of the blame on the fact that he didn't know how to market it. That stuck with him. The rest of his career is, in a way, the story of making sure he never lacked that skill again.",
+          "Coding was the other thing that didn't take. He took a programming class at Carnegie Mellon, “got a C” and “hated every minute of it”. Over the following years he gave programming several more tries and dropped it each time “in favor of making money faster”. Remember that, because it comes back in a big way later.",
+          "In the spring of his senior year Nat interned at Zapier, where he learned SEO and content marketing.",
+          "After that he spent about eight or nine months as the first in-house marketer at SumoMe, working under Noah Kagan. In that time he grew the Sumo blog from about 5,000 visitors a month to about 170,000.",
+          "That number is his real CV. **He'd shown he could take a company's blog and multiply its traffic more than thirty times**, and he'd learned exactly how: find what people search for, write the best answer, and push it out.",
+          "This is the part that should feel close to home for any growth marketer. Nat didn't start with a product idea. He started with a skill he'd been paid to learn by someone else, and he got very, very good at it. Most of the numbers on this page are Nat's own, from his blog and his interviews, and none of them has been audited, so read them as his account."
+        ],
+        "pull": {
+          "text": "got a C",
+          "cite": "Nat, on his college programming class, 2021 year in review"
+        },
+        "chart": 2
+      },
+      {
+        "label": "The blog",
+        "title": "200,000 readers and a few thousand dollars",
+        "paras": [
+          "He'd started his own blog properly in September 2014, and he used it as a lab. A post about doing a five-day water fast pulled in about 2,000 visitors a day without any SEO work at all, just because people were curious.",
+          "Another post hit the front page of Reddit and brought about 40,000 visitors in 24 hours. Afterwards the blog settled at about 3,000 to 3,500 visitors a day. His book notes, short summaries of books he'd read, drew about 50,000 visits a month on their own.",
+          "At its peak the blog reached about 200,000 visitors a month, and its income let him live as a travelling digital nomad for about a year and a half.",
+          "But here's the catch, and it's an important one. In 2017, working full time on the site, he says it “earned only a few thousand dollars a month”. Big traffic, small money. Lots of us have been in exactly that spot.",
+          "He did have a few small earners. A reader from his email list built him an app called Stamina for about $4,100, in exchange for learning marketing from Nat. It made about $3,000 to $7,500 a month off one popular article of his. And a product called The Brain sold “a couple hundred copies a week”. Nice side income, not a business."
+        ]
+      },
+      {
+        "label": "The first client",
+        "title": "A friend with a bone broth company",
+        "paras": [
+          "The turn came through a friend. In 2017 Justin Mares, one of the co-founders of Kettle & Fire, a bone broth brand, asked Nat to help with SEO around bone broth and gut health. Nat quoted $4,000 a month for three months.",
+          "It worked. After a content hire, Kettle & Fire's traffic grew from about 20,000 visitors a month to about 150,000 in eight or nine months. That became his proof case for everything that followed.",
+          "Patreon became his second client and Spire his third. With each one his price went up, until he was charging $8,000 a month.",
+          "But consulting had a problem. He'd hand over advice and clients wouldn't act on it. That frustration is what pushed him toward doing the work himself."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "Same price, but he does the work",
+        "paras": [
+          "In late 2017 two friends in his network asked him for consulting. Instead, Nat offered them a done-for-you agency at the same price. They said yes. One paid about $6,000 a month and the other about $7,000. **Growth Machine had $13,000 a month on its first day.**",
+          "He didn't raise money. He moved $5,000 from his personal account into the business to pay freelancers. Cash was tight, because clients paid about 45 days after each invoice while the writers needed paying now.",
+          "For about four months he worked alone with contractors. By December he was at about $38,000 a month. The following January he hired his first full-time employee, Nora. About nine or ten months in, Growth Machine was making about $85,000 a month.",
+          "A small warning on dates. In his Indie Hackers interview he dates the start to September 2017. In his later post about leaving, he says consulting ended in May 2018 and he named it Growth Machine that September, while also saying Nora joined in January 2018. His own accounts don't fully agree, and the 2017 timeline holds together better.",
+          "His advice from this period is short: “Try to make money as early as possible.” Two paying clients before there was even a name."
+        ],
+        "pull": {
+          "text": "Try to make money as early as possible.",
+          "cite": "Nat, on the Indie Hackers podcast"
+        },
+        "chart": 0
+      },
+      {
+        "label": "Scaling it",
+        "title": "Thirty articles a week",
+        "paras": [
+          "The process built on what he'd learned at Zapier and Sumo. Do keyword research in Ahrefs or Google Keyword Planner. Write “the best or most useful article on a given topic”. Then promote it through social, email and outreach for backlinks.",
+          "Each client got about three articles a week, so with ten clients the team was producing about 30 a week. For sites that already had some search traffic, the typical result was 50 to 200% traffic growth in three months.",
+          "He priced it well above the market. Most SEO agencies charged $2,000 to $5,000 a month. Growth Machine's minimum was $8,000, and clients paid $8,000 to $10,000. Kettle & Fire's numbers did a lot of the selling.",
+          "Hiring was its own machine. Job posts on WeWorkRemotely drew more than 200 applicants each. One editor post drew about 500, with about 70 making it to the second round. About nine months in, the team was three full-timers plus 40 to 50 contractors, 30-something of them writers.",
+          "By 2019 Growth Machine had revenue of “just under $3 million” and a team of ten. By December 2020 it had 15+ people. This is the point where we should say clearly that **this was not a solo business**, whatever it started as."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "A quarter of the revenue, gone in one email",
+        "paras": [
+          "In 2019 Growth Machine took on a huge project: 100 to 150 articles a month for $50,000 a month. Then the client cancelled a six-month contract without warning. About a quarter of monthly revenue vanished overnight. Some of the hires made in 2019 also turned out to be poor fits.",
+          "Early in 2020 Covid hit, and Growth Machine lost half its clients within three weeks. If you've ever run an agency, you'll feel that sentence in your stomach.",
+          "But they came back. Within two months the agency had regained all of them, and four months after that it had its best month ever.",
+          "One more frustration from those years: an agency client in a very competitive niche got weak results despite the work. Not every client can be a Kettle & Fire, and he's honest about that."
+        ]
+      },
+      {
+        "label": "Walking away",
+        "title": "He didn't sell it. He gave it a CEO.",
+        "paras": [
+          "Here's the part people often get wrong about Nat. **Growth Machine was not sold.** He had the chance, but he turned down a sale because a buyer would probably have laid off staff.",
+          "Instead, on 17 December 2020, Nora Schlesinger became CEO, and Nat stepped back to helping about one day a month. Whether he still owns part of it isn't public.",
+          "He wrote about the move in a post called “My Last Day at Growth Machine”. He quoted the book The E-Myth: if your business depends on you, “you don't own a business, you have a job.” He also left some practical advice from running it: hire before you need someone, be selective about clients, and “just pick something” when you're stuck choosing.",
+          "For us this is worth noticing. He built something that worked without him, and then chose people over the bigger cheque."
+        ],
+        "pull": {
+          "text": "you don't own a business, you have a job.",
+          "cite": "Nat, quoting The E-Myth, December 2020"
+        }
+      },
+      {
+        "label": "Starting over",
+        "title": "Back to code, through crypto",
+        "paras": [
+          "In 2021 Nat finally learned to program. He spent about 75% of his work time coding, and more than 75% of it on crypto. His days were a game, some writing and a lot of Discord. He also quit drinking in June 2021.",
+          "The game was Crypto Raiders. He joined as a Solidity developer for its token launch that August, and the team grew from “five or six” people to more than 20. By early 2022 he said it had done “millions” in NFT sales and “tens of millions” in token trading volume. He called Solidity “probably the highest leverage skillset” you could build.",
+          "Not everything worked. Of his 2021 goals, he wrote, “Almost none of them happened.” A project called Creator Towns was dropped. He later wrote a book, Crypto Confidential, published by Penguin Random House, about winning and losing money in crypto, including the rise and fall of a project called Titan.",
+          "His advice from that year is worth pinning above a desk: “Don't worry about whether or not anyone is going to use the stuff” you're building. Just build, and learn."
+        ]
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Teaching each new tool, then handing work to an agent",
+        "paras": [
+          "Dan Shipper of Every describes Nat's pattern this way: he spots a new tool, masters it, builds a business around it, and moves on. Shipper says, “I think he knows where the puck is headed better than anyone.”",
+          "The first big one was Roam, a note-taking app. Nat's course on it, Effortless Output, made $600,000, according to Shipper. In February 2025 he launched Build Your Own Apps with AI and took $200,000 in presales in a single week, with more than 800 students. Both were sold to his newsletter and his following on X. The guy who got a C in programming was now teaching people to build apps.",
+          "In May 2025 he published a novel, Husk, and called it “the best thing I've written”. He describes it as the start of a fiction effort planned over several decades.",
+          "Then came Felix. In 2026 he set up an AI agent and told it to “come up with a product that you can entirely make on your own” and put it up for sale. By March 2026 he said Felix had earned nearly $200,000 in about two months, with Felix's own count at $177,000. There's no breakdown of what sold.",
+          "He's now building Claw Mart, Sodex and Agent Letters, all aimed at helping AI agents do paid work, and he's involved with Alpha School. From a philosophy student who couldn't market his startup to someone building marketplaces for AI workers. Not a straight line, but every step used the skill before it."
+        ],
+        "chart": 1
+      }
+    ],
+    "failuresTitle": "A failed startup, a C, and a lot of missed goals",
+    "failuresIntro": "Nat writes openly about what didn't work, usually in his yearly reviews.",
+    "failures": [
+      {
+        "year": "College",
+        "name": "The college startup",
+        "what": "It shut down after about a year. He says part of the reason was that he didn't know marketing.",
+        "lesson": "If you can't get attention for what you build, learn that skill first, because everything else depends on it."
+      },
+      {
+        "year": "College onward",
+        "name": "Giving up on code, again and again",
+        "what": "He “got a C” in a programming class and “hated every minute of it”. He dropped programming several times in favour of making money faster, before finally learning it in 2021.",
+        "lesson": "A skill you failed at once can still be the one that changes everything later."
+      },
+      {
+        "year": "2017",
+        "name": "Advice nobody used",
+        "what": "His consulting clients often didn't implement what he recommended. That frustration is what pushed him to build an agency that does the work.",
+        "lesson": "If customers don't use your advice, sell the result instead of the advice."
+      },
+      {
+        "year": "2019",
+        "name": "The $50,000 client who left",
+        "what": "A client paying $50,000 a month for 100 to 150 articles cancelled a six-month contract without warning, taking about a quarter of revenue. Some hires that year were also poor fits.",
+        "lesson": "Don't let one client grow so big that their exit can break you."
+      },
+      {
+        "year": "2020",
+        "name": "Half the clients in three weeks",
+        "what": "Covid cost Growth Machine half its clients in three weeks. All of them came back within two months, and four months later it had its best month ever.",
+        "lesson": "A sudden drop isn't always permanent, so hold steady before you cut deep."
+      },
+      {
+        "year": "2021",
+        "name": "Creator Towns and the missed goals",
+        "what": "Of his goals for 2021 he wrote, “Almost none of them happened.” The Creator Towns project was abandoned.",
+        "lesson": "A year of missed goals can still be the year you learn the skill that pays for the next five."
+      },
+      {
+        "year": "2021 to 2022",
+        "name": "Losses in crypto",
+        "what": "His book Crypto Confidential covers losing money in crypto and the rise and fall of a project called Titan. The amounts aren't public.",
+        "lesson": "Being early to a new tool cuts both ways, so only risk what you can lose."
+      }
+    ],
+    "playbookTitle": "How the readers, clients and students came",
+    "playbook": [
+      {
+        "title": "Learn growth on someone else's payroll",
+        "text": "An internship at Zapier taught him SEO and content. At SumoMe he grew the blog from about 5,000 to about 170,000 visitors a month in eight or nine months."
+      },
+      {
+        "title": "Use your own blog as a lab and a portfolio",
+        "text": "His blog reached about 200,000 visitors a month. A five-day water fast post drew about 2,000 visitors a day with no SEO, and a Reddit front page post brought about 40,000 in 24 hours."
+      },
+      {
+        "title": "Start with friends who already trust you",
+        "text": "His first agency clients were two friends paying $6K and $7K a month. His first consulting client was a friend at Kettle & Fire."
+      },
+      {
+        "title": "Write the best article on the topic, then push it",
+        "text": "Keyword research in Ahrefs or Google Keyword Planner, “the best or most useful article on a given topic”, then promotion through social, email and backlink outreach. About three articles a week per client."
+      },
+      {
+        "title": "Price well above the market",
+        "text": "Most SEO agencies charged $2K to $5K a month. Growth Machine's minimum was $8K, and the Kettle & Fire results backed it up."
+      },
+      {
+        "title": "Hire from a job board that draws hundreds",
+        "text": "WeWorkRemotely posts drew 200+ applicants each, and one editor post drew about 500. That's how he staffed 40 to 50 contractors."
+      },
+      {
+        "title": "Presell courses on new tools to your readers",
+        "text": "His Roam course made $600,000 and his AI apps course took $200,000 in presales in one week, both sold to his newsletter and X following."
+      },
+      {
+        "title": "Let an agent run the shop",
+        "text": "In 2026 he asked his agent Felix to make and sell a product on its own. It earned nearly $200,000 in about two months, by his account."
+      }
+    ],
+    "charts": [
+      {
+        "title": "Growth Machine's monthly revenue in year one",
+        "points": [
+          {
+            "label": "Day one",
+            "value": 13000,
+            "display": "$13K"
+          },
+          {
+            "label": "December",
+            "value": 38000,
+            "display": "$38K"
+          },
+          {
+            "label": "About month 9",
+            "value": 85000,
+            "display": "$85K"
+          }
+        ],
+        "note": "Nat's own numbers from the Indie Hackers podcast. In 2019 the agency did just under $3M for the year."
+      },
+      {
+        "title": "What his post-agency products brought in",
+        "points": [
+          {
+            "label": "Roam course",
+            "value": 600000,
+            "display": "$600K"
+          },
+          {
+            "label": "AI course, week 1",
+            "value": 200000,
+            "display": "$200K"
+          },
+          {
+            "label": "Felix, 2 months",
+            "value": 177000,
+            "display": "$177K"
+          }
+        ],
+        "note": "Roam course total as reported by Dan Shipper. AI course presales in February 2025. Felix's own count, March 2026."
+      },
+      {
+        "title": "Sumo's blog traffic under Nat",
+        "points": [
+          {
+            "label": "When he joined",
+            "value": 5000,
+            "display": "5K a month"
+          },
+          {
+            "label": "8 to 9 months later",
+            "value": 170000,
+            "display": "170K a month"
+          }
+        ],
+        "note": "His own figures, from the Indie Hackers podcast."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "College",
+        "text": "Studies philosophy, starts a blog to learn marketing, and watches his first startup shut after about a year.",
+        "big": false
+      },
+      {
+        "when": "Senior year",
+        "text": "Interns at Zapier, then becomes SumoMe's first in-house marketer and grows its blog from about 5K to 170K visitors a month.",
+        "big": false
+      },
+      {
+        "when": "Sep 2014",
+        "text": "Starts his own blog, which later reaches about 200,000 visitors a month.",
+        "big": false
+      },
+      {
+        "when": "2017",
+        "text": "Takes on Kettle & Fire as an SEO client at $4,000 a month, then Patreon and Spire at $8,000.",
+        "big": true
+      },
+      {
+        "when": "Late 2017",
+        "text": "Starts Growth Machine with two friends as clients, $13K a month on day one, funded by $5,000 of his own money.",
+        "big": true
+      },
+      {
+        "when": "About 2018",
+        "text": "Hires Nora, his first full-timer, and reaches about $85K a month within ten months.",
+        "big": false
+      },
+      {
+        "when": "2019",
+        "text": "Revenue just under $3M with ten people. A $50K a month client cancels without warning.",
+        "big": false
+      },
+      {
+        "when": "Early 2020",
+        "text": "Covid takes half the clients in three weeks. They all return within two months.",
+        "big": false
+      },
+      {
+        "when": "17 Dec 2020",
+        "text": "Hands Growth Machine to Nora Schlesinger as CEO instead of selling it.",
+        "big": true
+      },
+      {
+        "when": "2021",
+        "text": "Learns to code, joins Crypto Raiders as a Solidity developer, and quits drinking in June.",
+        "big": false
+      },
+      {
+        "when": "Feb 2025",
+        "text": "Takes $200,000 in presales in a week for Build Your Own Apps with AI.",
+        "big": true
+      },
+      {
+        "when": "May 2025",
+        "text": "Publishes his novel Husk.",
+        "big": false
+      },
+      {
+        "when": "Mar 2026",
+        "text": "Says his AI agent Felix has earned nearly $200,000 in about two months.",
+        "big": true
+      }
+    ],
+    "quotes": [
+      {
+        "text": "hated every minute of it",
+        "cite": "on his programming class, 2021 year in review"
+      },
+      {
+        "text": "Try to make money as early as possible.",
+        "cite": "Indie Hackers podcast"
+      },
+      {
+        "text": "the best or most useful article on a given topic",
+        "cite": "on Growth Machine's process, Indie Hackers podcast"
+      },
+      {
+        "text": "you don't own a business, you have a job.",
+        "cite": "quoting The E-Myth on businesses that depend on you, My Last Day at Growth Machine, December 2020"
+      },
+      {
+        "text": "Almost none of them happened.",
+        "cite": "on his 2021 goals, 2021 year in review"
+      },
+      {
+        "text": "Don't worry about whether or not anyone is going to use the stuff",
+        "cite": "2021 year in review"
+      },
+      {
+        "text": "I believe it's the best thing I've written",
+        "cite": "on his novel Husk, May 2025"
+      }
+    ],
+    "steal": [
+      "Get paid to learn the skill first. Nat learned SEO at Zapier and Sumo, and every business he built after that ran on it.",
+      "If clients don't act on your advice, sell the doing. He charged the same price as his consulting and delivered the result instead.",
+      "Price for the results you can show, not the market average. One strong case study let him charge $8K when others charged $2K to $5K.",
+      "Use your own blog as proof. His water fast post and book notes showed he could drive traffic long before he had an agency.",
+      "When a new tool shows up, be the first person to learn it properly and teach it. His Roam and AI courses both sold because he got there before most people.",
+      "Build a business that can run without you, then decide what to do with it. He chose a CEO over a sale, and kept his freedom either way."
+    ],
+    "sources": [
+      {
+        "title": "Indie Hackers podcast #065, Nat Eliason of Growth Machine",
+        "url": "https://www.indiehackers.com/podcast/065-nat-eliason-of-growth-machine"
+      },
+      {
+        "title": "Nat Eliason, My Last Day at Growth Machine (Dec 2020)",
+        "url": "https://nateliason.com/blog/last-day"
+      },
+      {
+        "title": "Nat Eliason, 2021 Year in Review (Feb 2022)",
+        "url": "https://www.nateliason.com/blog/2021-year-in-review"
+      },
+      {
+        "title": "Every, how Nat Eliason made $200,000 in a week teaching AI (Feb 2025)",
+        "url": "https://every.to/podcast/how-nat-eliason-made-200-000-in-a-week-teaching-ai"
+      },
+      {
+        "title": "Mixergy, how Nat Eliason's OpenClaw agent earned $177K (Mar 2026)",
+        "url": "https://mixergy.com/interviews/how-nat-eliasons-openclaw-earned-177417/amp/"
+      },
+      {
+        "title": "Nat Eliason, Husk launch (May 2025)",
+        "url": "https://nateliason.com/blog/husk-launch"
+      },
+      {
+        "title": "Penguin Random House, Crypto Confidential",
+        "url": "https://penguinrandomhouse.ca/books/730882/crypto-confidential-by-nathaniel-eliason"
+      },
+      {
+        "title": "Tropical MBA, Winning and losing with Nathaniel Eliason",
+        "url": "https://tropicalmba.com/episodes/winning-and-losing-nathaniel-eliason"
+      },
+      {
+        "title": "Nat Eliason, courses",
+        "url": "https://nateliason.com/courses"
+      }
+    ]
+  }
+}

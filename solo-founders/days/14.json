@@ -1,0 +1,578 @@
+{
+ "n": 14,
+ "name": "Sahil Lavingia",
+ "short": "Sahil",
+ "wisdom": "Design the company so one person could run the whole thing.",
+ "email": {
+  "subject": "From 20 people to one. Then $10M a year.",
+  "hook": "Sahil Lavingia raised $8 million to build a billion-dollar company, ended up the last person left after his team of 20 was cut, and now runs Gumroad at about $10 million a year with one full-time employee: himself.",
+  "lead": [
+   "Sahil isn't a bootstrapper, and we should say that first. Gumroad raised more than $16 million over the years, starting with a $1.1 million seed and a $7 million Series A led by Kleiner Perkins in 2012. His is a venture-capital story that failed before it turned into a solo one.",
+   "That's exactly why he matters to us. He's lived both versions, the hire-fast startup and the tiny profitable one, and he's very clear about which he'd pick. Today Gumroad runs with him as the only full-timer, plus three or four part-time contractors and open-source contributors."
+  ],
+  "stats": [
+   {
+    "value": "$10M",
+    "label": "a year in revenue, he said in 2025"
+   },
+   {
+    "value": "1",
+    "label": "full-time employee: him"
+   },
+   {
+    "value": "$2M",
+    "label": "paid to him in dividends the year before"
+   }
+  ],
+  "chart": {
+   "title": "Gumroad's yearly revenue, Sacra's estimates",
+   "points": [
+    {
+     "label": "2021",
+     "value": 10970000,
+     "display": "$10.97M"
+    },
+    {
+     "label": "2022",
+     "value": 11000000,
+     "display": "$11M"
+    },
+    {
+     "label": "2023",
+     "value": 21000000,
+     "display": "$21M"
+    },
+    {
+     "label": "2024",
+     "value": 12180000,
+     "display": "$12.18M",
+     "down": true
+    }
+   ],
+   "note": "Third-party estimates by the analyst firm Sacra, not Gumroad's own figures. This is Gumroad's revenue, not creator sales."
+  },
+  "sections": [
+   {
+    "title": "What he's doing right now",
+    "paras": [
+     "He runs Gumroad and Flexile, a payroll and equity tool for contractors, under a banner called Antiwork. Both are open source. Gumroad's code went public in April 2025, under a licence that's free only for companies under $1 million in revenue and $10 million in sales, which is why critics call it source-available rather than truly open.",
+     "He builds with AI tools every day: Devin, v0, Codex, Cursor and GPT-5 Pro. In a 2025 interview he said AI is \"sort of like 99th percentile at many things\" and that \"the PRD is dying\". **His real question for every part of the company is whether one person could ship the entire product.**"
+    ]
+   },
+   {
+    "title": "How the money comes in",
+    "stats": true,
+    "paras": [
+     "Gumroad takes a cut of what creators sell. Since early 2023 that's a flat 10% plus card processing, up to 30% on sales through its Discover marketplace and 40% on mobile in-app sales. Before that it had a sliding fee from 3.5% to 8.5%. Sacra, an analyst firm, estimates monthly revenue jumped from about $1 million to $1.8 million after the switch.",
+     "In October 2025 he said Gumroad was at about $10 million a year in revenue, with \"seven, seven or eight million\" in EBITDA, a kind of operating profit, toward a goal of $10 million. He also said he'd paid himself about $2 million in dividends the year before."
+    ]
+   },
+   {
+    "title": "How he built it and got the first users",
+    "paras": [
+     "He built the first Gumroad in one weekend in April 2011, about 22 hours of work including design. \"The whole of Gumroad was a single main.py\", one Python file on Google App Engine, with Stripe for payments through a beta invite from a friend. He posted it on Hacker News early on a Monday and more than 52,000 people visited on day one.",
+     "Very few of them paid, though. What actually brought sellers was slower: he found creators online and cold-emailed them one by one. **He puts cold outreach plus word of mouth at about 99% of Gumroad's growth.** No paid ads, no SEO, and content marketing, in his words, \"worked okay, not great.\""
+    ]
+   },
+   {
+    "title": "The part nobody talks about",
+    "chart": true,
+    "paras": [
+     "Getting to one person wasn't a strategy at first. Gumroad's sales volume stalled after November 2014, he couldn't raise a Series B, and in 2015 he laid off 75% of the company, including close friends. People kept leaving until it was just him. In June 2015 Gumroad made $89,000 in revenue and lost $351,000. \"I considered myself a failure,\" he wrote later.",
+     "And even the good years wobble. Sacra estimates revenue nearly doubled to about $21 million in 2023 after the price change, then fell 41% to about $12 million in 2024. A small team keeps you alive through drops like that. A team of 20 might not have."
+    ]
+   }
+  ],
+  "tryToday": "List every recurring task in your work or side project, and next to each write whether a contractor, a bounty, a script or an AI agent could do it instead of a hire.",
+  "button": "Read how Gumroad shrank and survived"
+ },
+ "page": {
+  "intro": "Pinterest's second employee built Gumroad in a weekend, raised millions chasing a billion-dollar company, and watched it shrink to just him. Then he rebuilt it into a profitable business that one full-timer and a few contractors can run.",
+  "stats": [
+   {
+    "value": "$10M",
+    "num": 10,
+    "prefix": "$",
+    "suffix": "M",
+    "label": "a year in revenue",
+    "note": "his own figure, Oct 2025"
+   },
+   {
+    "value": "22",
+    "num": 22,
+    "prefix": "",
+    "suffix": "",
+    "label": "hours to build the first version",
+    "note": "one weekend, April 2011"
+   },
+   {
+    "value": "52,000+",
+    "num": 52000,
+    "prefix": "",
+    "suffix": "+",
+    "label": "visitors on launch day",
+    "note": "from Hacker News"
+   },
+   {
+    "value": "1",
+    "num": 1,
+    "prefix": "",
+    "suffix": "",
+    "label": "full-time employee",
+    "note": "him, plus part-time contractors"
+   }
+  ],
+  "chapters": [
+   {
+    "label": "Before it worked",
+    "title": "He walked away from Pinterest stock",
+    "paras": [
+     "Sahil was the second employee at Pinterest. He left in 2011, before any of his stock had vested. Think about that for a second. Pinterest went on to become a huge company, and he walked out with nothing from it.",
+     "Before that, Wikipedia says, he was a designer at Turntable.fm. At Pinterest he had picked up Python, and that turned out to be the one skill he needed for what came next.",
+     "Let's be clear about what kind of story this is. Gumroad is not bootstrapped. It raised money from venture capitalists, grew to about 20 people, and then shrank. Today it runs with one full-time employee, Sahil, plus three or four part-time contractors and open-source contributors. That's as close to solo as a $10 million business gets, but it isn't a one-person garage story.",
+     "One honest note before the numbers start: most of the figures on this page come from Sahil himself, from his essay and interviews, and the rest are estimates by an analyst firm called Sacra, which we'll flag each time."
+    ]
+   },
+   {
+    "label": "The first version",
+    "title": "One weekend, one Python file",
+    "paras": [
+     "On 2 April 2011 he tweeted a simple line: \"Tomorrow, I start building it.\" The idea was a simple way for creators to sell their work online. He built it the same weekend he thought of it.",
+     "The whole thing took about 22 hours, including design. It was a basic app in a single Python file. In his words, \"The whole of Gumroad was a single main.py\". He put it on Google App Engine so he didn't have to manage any servers, and used Stripe for payments, which was still in beta then. He got in through an invite from a friend.",
+     "His advice from that weekend is short: \"Just make sure the idea is simple.\" There's no story of features he cut, because he didn't build many to begin with. **The product was small enough to finish in a weekend, and that was the point.**",
+     "He launched on Hacker News early on a Monday morning. More than 52,000 people checked it out on the first day. It's the kind of launch day most of us dream about. And yet, as he later told Indie Hackers, very few of those visitors actually paid for anything."
+    ],
+    "pull": {
+     "text": "The whole of Gumroad was a single main.py",
+     "cite": "Sahil, Indie Hackers interview"
+    }
+   },
+   {
+    "label": "The first sellers",
+    "title": "52,000 visitors, then cold email",
+    "paras": [
+     "A big launch gets you attention. It doesn't get you customers who stay. So Sahil did the unglamorous thing. He went looking for people online who were already creating things and might want to sell them, and he cold-emailed them himself.",
+     "He calls that the most effective thing he did. He estimates that personal outreach plus word of mouth drove about 99% of Gumroad's growth. He even gives a benchmark: expect about 1 to 2% of cold emails to convert. Content marketing, he says, \"worked okay, not great.\" There were no paid ads and no SEO.",
+     "In the first year he focused on entertainment creators: musicians, filmmakers, people in publishing. Around 2013 a different group showed up and became a major source of revenue, people selling \"make money online\" products. **Your best customers aren't always the ones you planned for**, and he followed the money.",
+     "The early pricing moved around. The Indie Hackers interview says Gumroad launched at 7.5% plus 25 cents a sale, then moved to 5% plus 30 cents. Another interview says it was 5% plus card fees from the start, so the two disagree on the exact launch fee."
+    ],
+    "pull": {
+     "text": "Just make sure the idea is simple.",
+     "cite": "Sahil, Indie Hackers interview"
+    }
+   },
+   {
+    "label": "The rocket",
+    "title": "$8 million and a billion-dollar goal",
+    "paras": [
+     "Investors loved it. In February 2012 Gumroad raised a $1.1 million seed round from angels and VCs. Three months later, in May 2012, Kleiner Perkins led a $7 million Series A. Over the years its investors came to include names like Naval Ravikant, Max Levchin, SV Angel and Jason Fried.",
+     "So within about a year of a weekend project, he had more than $8 million in the bank. His goal was to build a billion-dollar company. Years later he called that a terrible goal, because it had nothing to do with the real impact he wanted to have.",
+     "For a while, the numbers looked like they were heading there. Gumroad's monthly creator sales went from about $12,000 in April 2012 to about $168,000 in April 2013 and nearly $900,000 in April 2014. That's money flowing through Gumroad to creators, not Gumroad's own revenue, but the curve was steep and the team grew to match it."
+    ],
+    "chart": 0
+   },
+   {
+    "label": "The lowest point",
+    "title": "Twenty people, then one",
+    "paras": [
+     "In November 2014 the monthly volume peaked and stopped growing. Headcount peaked at about 20 in January 2015. Then came the problem every VC-funded startup fears: he couldn't raise a Series B.",
+     "So he cut. He laid off 75% of the company, including many close friends. And people kept leaving after that, until the team went from five to one. Sahil, alone, running a company built for twenty.",
+     "The numbers from June 2015 are brutal. Revenue that month was $89,000. Net profit was minus $351,000. One interviewer later described it as burning $350,000 a month. **That's the point where most founders shut it down.**",
+     "He wrote about this time years later in an essay called Reflecting. One line stands out: \"I considered myself a failure.\" He kept going anyway."
+    ],
+    "pull": {
+     "text": "I considered myself a failure.",
+     "cite": "Sahil, in his essay Reflecting"
+    }
+   },
+   {
+    "label": "Alone",
+    "title": "No marketing budget, no sales team",
+    "paras": [
+     "With no money for marketing and nobody to sell, the plan got very simple. \"We're going to have to rely purely on word of mouth,\" he said later. And: \"We're just going to focus on building an amazing product.\"",
+     "He also changed how Gumroad made money. He added a premium paid plan, and worked out he'd need about $30,000 a month in premium revenue to break even. The pricing became a free plan at 8.5% plus 30 cents a sale, or a $10 a month plan at 3.5% plus 30 cents. Somewhere between October and March after that change, the company became profitable.",
+     "By June 2016, a year after the worst month, revenue had doubled to $176,000 and the company made $10,000 in profit. Small, but positive, and with almost nobody on payroll.",
+     "His life changed shape too. After Trump won the 2016 election he left San Francisco for good, and later moved to Provo, Utah. There he took Brandon Sanderson's writing course at BYU and worked on a fantasy novel. A normal day meant waking up, handling support and fixing bugs, trying to get to the gym, and then writing the novel if he had the energy. Some months were 16-hour days. Others, he says, were about four hours a week."
+    ],
+    "chart": 1,
+    "pull": {
+     "text": "we're going to have to rely purely on word of mouth",
+     "cite": "Sahil, Baremetrics Founder Chats"
+    }
+   },
+   {
+    "label": "Going public",
+    "title": "He published the numbers every month",
+    "paras": [
+     "On 27 November 2017 Kleiner Perkins offered to sell its ownership back to Gumroad for $1. That move dropped Gumroad's liquidation preferences, the money investors get back first if the company is sold, from about $16.5 million to $2.5 million. In plain words, a big weight came off the company.",
+     "In April 2018 he started publishing Gumroad's monthly financials in public. That first month showed $4.2 million in creator sales and $273,000 in revenue. That year Gumroad also donated $23,775, about 8% of its profits. **Showing the real numbers became its own marketing**, the same way it did for other founders in this series.",
+     "By 2019 he could sum it up neatly: about $10 million of investor money had turned into $178 million paid out to creators. And he wrote the line that frames the whole essay: \"I failed, but I also succeeded at many other things.\"",
+     "In 2020 he launched a seed fund with AngelList. And in March 2021 he did something unusual for a once-VC-backed company. He raised $5 million through equity crowdfunding on Republic, letting Gumroad's own users and fans buy shares. Republic says it sold out in 12 hours, while Indie Hackers reported 24. Sacra puts Gumroad's 2021 valuation at $100 million."
+    ],
+    "pull": {
+     "text": "I failed, but I also succeeded at many other things.",
+     "cite": "Sahil, in his essay Reflecting"
+    }
+   },
+   {
+    "label": "Finding the money",
+    "title": "One flat fee changed everything",
+    "paras": [
+     "In early 2023 Gumroad dropped its sliding fee of 3.5% to 8.5% and moved to a flat 10% plus card processing. Simpler for creators to understand, and better for Gumroad. Sacra estimates monthly revenue rose from about $1 million to $1.8 million after the change.",
+     "Sacra's yearly estimates tell the story: about $11 million in revenue in 2021 and 2022, with roughly a $1 million loss in 2022. Then about $21 million in 2023, with about $9 million in profit. Then 2024 came in at about $12.18 million, down 41%. Again, those are an analyst's estimates, not Sahil's figures.",
+     "There were rule changes too. In March 2024 Gumroad banned sexually explicit content, reportedly under pressure from Stripe and PayPal. Sales through Gumroad's Discover marketplace now carry a fee of at least 30%, and mobile in-app sales 40%.",
+     "In October 2025 Sahil gave his own numbers in an interview: about $10 million in annual revenue, \"seven, seven or eight million\" in EBITDA toward a goal of $10 million, and about $2 million in dividends paid to him the year before. **A company that once burned $350,000 a month now pays its founder millions.**"
+    ],
+    "chart": 2
+   },
+   {
+    "label": "Where it stands",
+    "title": "Open source, AI, and one full-timer",
+    "paras": [
+     "In early April 2025 he put Gumroad's code on GitHub under an organisation called Antiwork. The licence lets companies use it for free only if they're under $1 million in revenue and $10 million in sales, or are non-profits or governments. Critics say that makes it source-available, not truly open source. Flexile, his tool for paying contractors and managing their equity, is open source too.",
+     "The team is tiny on purpose. One full-time employee, him. A core group of \"maybe three or four people\" working about 30 hours a week as hourly, remote contractors. And open-source bounties, where outside developers get paid to fix specific things. Wired reported that he got Gumroad stable by replacing nearly all its employees with automation.",
+     "He builds with Devin, v0, Codex, Cursor and GPT-5 Pro, and says he tried Claude Code but didn't stick with it. His big ideas from 2025: AI is \"sort of like 99th percentile at many things\", \"the PRD is dying\", and the most valuable skill in software engineering is now architecting the codebase. The question he keeps asking is how to set things up \"such that one person could ship the entire product\".",
+     "In between, he took a strange detour. In mid-March 2025 he joined DOGE as an unpaid software engineer at the Department of Veterans Affairs. He worked on tools that used AI to analyse contracts and scan internal documents, an org chart tool and the VA chatbot. On day 55, after he spoke to Fast Company, his access was revoked. \"I was never able to get approval to ship anything to production,\" he said. Afterwards he said government was more efficient than he expected and isn't recruiting enough tech talent.",
+     "He also teaches his way of building, through his book The Minimalist Entrepreneur and a course of the same name that has run in cohorts. His themes are steady: profit and longevity over hypergrowth, publish your numbers, crowdfund from your community, and automate instead of hiring."
+    ],
+    "pull": {
+     "text": "It's sort of like 99th percentile at many things.",
+     "cite": "Sahil on AI, Aakash Gupta interview, 2025"
+    }
+   }
+  ],
+  "failuresTitle": "Every way it nearly ended",
+  "failuresIntro": "Sahil has written openly about failing, and he's one of the few founders who put exact numbers on his worst months.",
+  "failures": [
+   {
+    "year": "2012",
+    "name": "The billion-dollar goal",
+    "what": "After raising more than $8 million in about a year, he set out to build a billion-dollar company. He later called it a terrible goal because it didn't reflect real impact.",
+    "lesson": "Pick a goal that measures what you actually care about, not what investors want."
+   },
+   {
+    "year": "Nov 2014",
+    "name": "The stall",
+    "what": "Monthly sales volume peaked in November 2014 and stopped growing. With a team built for growth, that was the start of the trouble.",
+    "lesson": "A plateau is the moment to cut costs, not hire."
+   },
+   {
+    "year": "2015",
+    "name": "No Series B, and the layoffs",
+    "what": "He couldn't raise a Series B, laid off 75% of about 20 people, including close friends, and kept losing people until it was just him. June 2015: $89,000 in revenue and a $351,000 loss.",
+    "lesson": "If your business only works with the next round of funding, it isn't working yet."
+   },
+   {
+    "year": "2017",
+    "name": "Investors walked away",
+    "what": "Kleiner Perkins offered to sell its stake back for $1 in November 2017. It took a weight off Gumroad, but it was a clear sign the VC dream was over.",
+    "lesson": "A business can be a failure for investors and still be a good business for you."
+   },
+   {
+    "year": "2024",
+    "name": "The content ban and the revenue drop",
+    "what": "In March 2024 Gumroad banned sexually explicit content, reportedly under pressure from Stripe and PayPal. Sacra estimates 2024 revenue fell 41% to about $12.18 million.",
+    "lesson": "When you rely on payment companies, their rules become your rules."
+   },
+   {
+    "year": "2025",
+    "name": "Removed from DOGE on day 55",
+    "what": "He worked unpaid at the Department of Veterans Affairs and was removed after speaking to the press. He said he never got approval to ship anything to production.",
+    "lesson": "Before you join anything, check whether you'll actually be allowed to ship."
+   }
+  ],
+  "playbookTitle": "How Gumroad got its creators",
+  "playbook": [
+   {
+    "title": "Launch on Hacker News",
+    "text": "He posted the weekend-built version early on a Monday morning and got more than 52,000 visitors on day one. It brought attention and investors, though very few paying users."
+   },
+   {
+    "title": "Cold email the sellers yourself",
+    "text": "He found creators online and emailed them one by one, and calls it the most effective thing he did. He suggests expecting about 1 to 2% of cold emails to convert."
+   },
+   {
+    "title": "Let word of mouth carry it",
+    "text": "He puts outreach plus word of mouth at about 99% of growth. After the 2015 layoffs, with no marketing budget, word of mouth was the whole plan."
+   },
+   {
+    "title": "Follow the customers who show up",
+    "text": "The first year targeted musicians, filmmakers and publishers. Around 2013, people selling \"make money online\" products became a major revenue source, and Gumroad leaned in."
+   },
+   {
+    "title": "Publish your numbers every month",
+    "text": "From April 2018 he shared Gumroad's monthly financials in public, starting with $4.2 million in creator sales and $273,000 in revenue. Transparency drew attention and trust."
+   },
+   {
+    "title": "Let your users become owners",
+    "text": "In March 2021 he raised $5 million on Republic from Gumroad's community. Republic says it sold out in 12 hours."
+   },
+   {
+    "title": "Make the price simple",
+    "text": "The 2023 switch to a flat 10% plus processing replaced a confusing sliding scale. Sacra estimates monthly revenue rose from about $1 million to $1.8 million."
+   },
+   {
+    "title": "Open the code and pay bounties",
+    "text": "Gumroad's code went public in April 2025, and outside developers get paid bounties for specific work. It's how one full-timer and a few contractors keep a $10 million business shipping."
+   }
+  ],
+  "charts": [
+   {
+    "title": "Monthly creator sales through Gumroad (GMV), his own figures",
+    "points": [
+     {
+      "label": "Apr 2012",
+      "value": 12009,
+      "display": "$12K"
+     },
+     {
+      "label": "Apr 2013",
+      "value": 167775,
+      "display": "$168K"
+     },
+     {
+      "label": "Apr 2014",
+      "value": 895899,
+      "display": "$896K"
+     },
+     {
+      "label": "Apr 2015",
+      "value": 1584734,
+      "display": "$1.58M"
+     },
+     {
+      "label": "Apr 2016",
+      "value": 2900184,
+      "display": "$2.9M"
+     },
+     {
+      "label": "Apr 2017",
+      "value": 3192912,
+      "display": "$3.19M"
+     },
+     {
+      "label": "Apr 2018",
+      "value": 3956820,
+      "display": "$3.96M"
+     },
+     {
+      "label": "Dec 2018",
+      "value": 5146240,
+      "display": "$5.15M"
+     }
+    ],
+    "note": "This is money creators made through Gumroad (gross merchandise volume), not Gumroad's own revenue. Gumroad keeps a small share of it."
+   },
+   {
+    "title": "Gumroad's own monthly revenue, his own figures",
+    "points": [
+     {
+      "label": "Jun 2015",
+      "value": 89000,
+      "display": "$89K"
+     },
+     {
+      "label": "Jun 2016",
+      "value": 176000,
+      "display": "$176K"
+     },
+     {
+      "label": "Apr 2018",
+      "value": 273000,
+      "display": "$273K"
+     }
+    ],
+    "note": "June 2015 came with a net loss of $351,000. June 2016 was the first profitable point after the cuts, at $10,000."
+   },
+   {
+    "title": "Gumroad's yearly revenue, Sacra's estimates",
+    "points": [
+     {
+      "label": "2021",
+      "value": 10970000,
+      "display": "$10.97M"
+     },
+     {
+      "label": "2022",
+      "value": 11000000,
+      "display": "$11M"
+     },
+     {
+      "label": "2023",
+      "value": 21000000,
+      "display": "$21M"
+     },
+     {
+      "label": "2024",
+      "value": 12180000,
+      "display": "$12.18M",
+      "down": true
+     }
+    ],
+    "note": "Third-party estimates by the analyst firm Sacra. This is Gumroad's revenue, not creator sales."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "2011",
+    "text": "Leaves Pinterest, where he was the second employee, before any stock vests."
+   },
+   {
+    "when": "Apr 2011",
+    "text": "Tweets \"Tomorrow, I start building it,\" builds Gumroad in about 22 hours, and gets 52,000+ visitors from Hacker News on day one.",
+    "big": true
+   },
+   {
+    "when": "Feb 2012",
+    "text": "Raises a $1.1 million seed round."
+   },
+   {
+    "when": "May 2012",
+    "text": "Raises a $7 million Series A led by Kleiner Perkins."
+   },
+   {
+    "when": "Nov 2014",
+    "text": "Monthly sales volume peaks and stalls."
+   },
+   {
+    "when": "2015",
+    "text": "Fails to raise a Series B, cuts 75% of the team, and ends up as the only person left. June revenue: $89,000, with a $351,000 loss.",
+    "big": true
+   },
+   {
+    "when": "Jun 2016",
+    "text": "Revenue doubles to $176,000 a month with $10,000 profit."
+   },
+   {
+    "when": "Nov 2017",
+    "text": "Kleiner Perkins offers to sell its stake back for $1."
+   },
+   {
+    "when": "Apr 2018",
+    "text": "Starts publishing monthly financials in public.",
+    "big": true
+   },
+   {
+    "when": "Mar 2021",
+    "text": "Raises $5 million from the community on Republic."
+   },
+   {
+    "when": "Early 2023",
+    "text": "Switches to a flat 10% fee. Sacra estimates revenue nearly doubles that year.",
+    "big": true
+   },
+   {
+    "when": "Apr 2025",
+    "text": "Puts Gumroad's code on GitHub under Antiwork."
+   },
+   {
+    "when": "May 2025",
+    "text": "Removed from DOGE on day 55."
+   },
+   {
+    "when": "Oct 2025",
+    "text": "Says Gumroad is at about $10 million a year with one full-time employee."
+   }
+  ],
+  "quotes": [
+   {
+    "text": "Tomorrow, I start building it.",
+    "cite": "Tweet, 2 April 2011"
+   },
+   {
+    "text": "The whole of Gumroad was a single main.py",
+    "cite": "Indie Hackers interview"
+   },
+   {
+    "text": "Just make sure the idea is simple.",
+    "cite": "Indie Hackers interview"
+   },
+   {
+    "text": "I considered myself a failure.",
+    "cite": "His essay Reflecting, 2019"
+   },
+   {
+    "text": "We're just going to focus on building an amazing product.",
+    "cite": "Baremetrics Founder Chats"
+   },
+   {
+    "text": "I failed, but I also succeeded at many other things.",
+    "cite": "His essay Reflecting, 2019"
+   },
+   {
+    "text": "the PRD is dying",
+    "cite": "Aakash Gupta interview, 2025"
+   },
+   {
+    "text": "I was never able to get approval to ship anything to production",
+    "cite": "TechCrunch, May 2025, on DOGE"
+   }
+  ],
+  "steal": [
+   "Build the first version small enough to finish in a weekend. Gumroad was one Python file and 22 hours of work.",
+   "Don't confuse a big launch with customers. 52,000 visitors bought very little, and cold email to the right creators did the real work.",
+   "Treat a stall as a warning to shrink, not a reason to raise more. Sahil's company survived because it got small enough to be profitable.",
+   "Make pricing simple enough to say in one breath. A flat 10% beat a sliding scale for creators and for Gumroad.",
+   "Before every hire, ask whether a contractor, a bounty or an AI tool could do the job. That question is how one full-timer runs a $10 million business.",
+   "Publish your real numbers once you have them. It builds trust and gets people talking about you for free."
+  ],
+  "sources": [
+   {
+    "title": "Sahil Lavingia: Reflecting on my failure to build a billion-dollar company",
+    "url": "https://sahillavingia.com/reflecting"
+   },
+   {
+    "title": "Indie Hackers interview with Sahil Lavingia",
+    "url": "https://www.indiehackers.com/interview/4fc6cbc0e8"
+   },
+   {
+    "title": "Baremetrics Founder Chats: Sahil Lavingia",
+    "url": "https://baremetrics.com/founder-chats/sahil-lavingia"
+   },
+   {
+    "title": "Aakash Gupta: how to run a $10M company with AI, with Sahil Lavingia",
+    "url": "https://www.aakashg.com/how-to-run-a-10m-company-with-ai-complete-masterclass-with-sahil-lavingia/"
+   },
+   {
+    "title": "Sacra research on Gumroad",
+    "url": "https://sacra.com/research/gumroad/"
+   },
+   {
+    "title": "Wikipedia: Gumroad",
+    "url": "https://en.wikipedia.org/wiki/Gumroad"
+   },
+   {
+    "title": "Republic case study: Gumroad",
+    "url": "https://republic.com/case-studies/gumroad-case-study"
+   },
+   {
+    "title": "Indie Hackers: Gumroad's crowdfunding raised $5M in 24 hours",
+    "url": "https://www.indiehackers.com/post/whats-new-gumroad-s-crowdfunding-campaign-raised-5m-in-24-hours-08fd5086e4"
+   },
+   {
+    "title": "Tedium: Gumroad, open source and DOGE",
+    "url": "https://tedium.co/2025/04/06/gumroad-open-source-doge-drama"
+   },
+   {
+    "title": "TechCrunch: Sahil Lavingia says he was booted from DOGE after 55 days",
+    "url": "https://techcrunch.com/2025/05/28/founder-sahil-lavingia-says-he-was-booted-from-doge-after-just-55-days"
+   },
+   {
+    "title": "NPR: former DOGE engineer shares his experience",
+    "url": "https://www.npr.org/2025/06/02/nx-s1-5417994/former-doge-engineer-shares-his-experience-working-for-the-cost-cutting-unit"
+   },
+   {
+    "title": "Federal News Network: government isn't recruiting enough tech talent",
+    "url": "https://federalnewsnetwork.com/it-modernization/2025/08/ex-doge-official-says-government-isnt-recruiting-enough-tech-talent/"
+   },
+   {
+    "title": "Mixergy interview: Gumroad with Sahil Lavingia",
+    "url": "https://mixergy.com/interviews/gumroad-with-sahil-lavingia/"
+   },
+   {
+    "title": "The Minimalist Entrepreneur course on Gumroad",
+    "url": "https://sahil.gumroad.com/p/the-minimalist-entrepreneur-course-cohort-3-applications-open"
+   }
+  ]
+ }
+}

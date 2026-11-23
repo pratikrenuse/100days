@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /daily-fuel/
+Disallow: /solo-founders/
 
 Sitemap: https://www.pratikrenuse.com/sitemap.xml
 

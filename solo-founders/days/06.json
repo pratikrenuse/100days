@@ -1,0 +1,266 @@
+{
+  "n": 6,
+  "name": "Dan Koe",
+  "short": "Dan",
+  "wisdom": "Start selling at 500 followers, and let them tell you what to make next.",
+  "email": {
+    "subject": "A maxed credit card, six dead side projects, then Twitter",
+    "hook": "Dan Koe killed six little businesses and lost his dad's $3,000 before he ever tweeted. About three years after his first tweet, he says he made around $800,000 in a single year.",
+    "lead": [
+      "Dan is probably the founder in this series who looks most like us. No startup, no big tech salary to fall back on, not really a coder. He had a maxed credit card, some design and funnel skills, and a habit of writing on Twitter every day. What makes him worth a morning is how early he started selling: his first paid product went out when he had 500 followers. Most of us are still waiting for 10,000.",
+      "One thing to say plainly before we start. His personal business is basically him plus a few contractors, but his software company, Eden, has named co-founders and a team, and it recently had to cut more than half of them. So Dan is solo as a writer, not as a software founder."
+    ],
+    "stats": [
+      {"value": "500", "label": "followers when he sold his first product"},
+      {"value": "$800K", "label": "made in 2022, by his own account"},
+      {"value": "2 hours", "label": "of writing every morning"}
+    ],
+    "chart": {
+      "title": "What Dan says he made each year",
+      "points": [
+        {"label": "2022", "value": 800000, "display": "$800K"},
+        {"label": "2023", "value": 2500000, "display": "$2.5M"},
+        {"label": "2024", "value": 4000000, "display": "$4M+"}
+      ],
+      "note": "The 2024 number comes from a beehiiv interview. beehiiv's own case study a few months later said $2M a year, so hold that last bar loosely."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Dan's big project is Eden, which calls itself an all-in-one platform for creators. You save what you read into a library, it finds outlier posts across seven platforms (it says 3M+ indexed posts), an AI strategist called Eve helps you plan, and you can schedule to eight platforms. Plans are $9 and $29 a month. He's listed as a co-founder, not the sole owner.",
+          "Meanwhile the writing keeps working. In January 2026 he posted a long X article called “How to fix your entire life in 1 day”, and news sites reported about 150 million views in a week. That's the same engine he's run since 2019, just much bigger."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "Today it's a paid newsletter, two books (The Art of Focus and Purpose & Profit) and Eden subscriptions. The old courses and membership that made him rich are no longer listed on his site. Everything is sold to an audience of about 4 million followers across platforms and a newsletter of 175,000+ people.",
+          "The numbers are messy, so let's be straight. He said $2.5M for 2023 in his own X post. For 2024 one interview says “over $4 million”, while beehiiv's case study says **$2 million a year**. He hasn't shared a number for 2025 or 2026."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "His first product wasn't software. In December 2019, with 500 followers, he launched Web Design Wealth: an ebook plus a Discord, teaching the web design and funnel work he was already doing for clients. It made about $3,000 a month on top of his client income.",
+          "After that he kept stacking small products, each one something followers had asked for: a planner, a Twitter course priced at $17, $35 and $287, a membership from $9.99 a month, and The 2-Hour Writer at $150, which sold to 8,500+ students. His first $50K month came from the membership plus five advising clients paying $8,000 each."
+        ]
+      },
+      {
+        "title": "How he got the people",
+        "paras": [
+          "He sent his first tweet around 1 November 2019 and posted about three times a day. He had 4,000 followers after four months and 10,000 after eight.",
+          "Later the system became simple: write for two hours first thing every morning, publish one long newsletter a week, then cut it into tweets, posts and a YouTube script. beehiiv describes his long pieces as buying 15 to 20 minutes of a reader's attention, which a tweet never gets."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "The software side has been rough. His first app, Kortex, ran from 2023 to 2025, and his own podcast titled an episode about it “Kortex: The $3 Million Dollar Mistake”. He hasn't said what was actually spent.",
+          "Then Eden itself hit a wall. In a note on its site in 2026, the team wrote that AI credits were costing about $1,000 every 30 minutes, far above revenue, with “maybe two weeks of runway left”. They let more than half the team go and rebuilt the product in a few weeks. **A huge audience did not make the software easy.** The writing business is the part that has always paid."
+        ]
+      }
+    ],
+    "tryToday": "Scroll back through the last month of questions people asked you about marketing, on WhatsApp, LinkedIn or at work. Pick the one that came up most and write a one-page answer you'd be comfortable charging the price of a coffee for.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Dan Koe failed at six small businesses, maxed a credit card and lost a loan from his dad before he found Twitter in late 2019. He started selling at 500 followers and built a writing business that he says made $800,000 in 2022. His newer software company, Eden, is a team effort and has had a much harder time.",
+    "stats": [
+      {"value": "500", "num": 500, "prefix": "", "suffix": "", "label": "followers when he launched his first product", "note": "December 2019"},
+      {"value": "$800,000", "num": 800000, "prefix": "$", "suffix": "", "label": "made in 2022", "note": "his own number"},
+      {"value": "8,500+", "num": 8500, "prefix": "", "suffix": "+", "label": "students in The 2-Hour Writer", "note": "a $150 course"},
+      {"value": "175,000+", "num": 175000, "prefix": "", "suffix": "+", "label": "newsletter subscribers", "note": "April 2025"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Five majors and no plan",
+        "paras": [
+          "Most of Dan's early story comes from one newsletter that pieced it together from his own telling, so read this part as his version of events. He grew up in a religious family and later became an atheist. He was into fitness early, his parents gave him P90X, and he hated the idea of a nine to five long before he had any alternative.",
+          "College didn't fit him either. He switched majors five times. At one point he went through a web development curriculum that was supposed to take a year on Udemy, and finished it in about two weeks. He says he attended about 5% of his classes and was still the top student.",
+          "Look at the courses he collected along the way, though: web design, graphic design, film, copywriting, marketing, branding. At the time it looked like a guy who couldn't pick a lane. Looking back, it's almost exactly the skill stack he'd later sell to other people.",
+          "There was also a bad moment. He was arrested on campus with friends for smoking weed, and was offered a choice of jail or a $10,000 fine plus three to six months of random drug tests. He was broke and didn't tell his parents. Around this time he read The Power of Now, which he describes as an early shift in how he saw the world."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "Six side projects, all dead",
+        "paras": [
+          "Here's the part we should read slowly, because it's the part people skip. Before Twitter, Dan tried a lot of things, and none of them worked.",
+          "In early college he started a fitness YouTube channel with a friend and quit after a few months, burned out. Then a spirituality YouTube channel, which also went nowhere. Then Instagram photography and editing, which actually grew to 2,500 followers in two months, but each photo took him three to six hours, so he burned out again and stopped.",
+          "In his senior year he tried dropshipping rave clothing. It didn't work. Around 2018 he ran a Facebook ad agency, got a few clients through friends and family, and made about $500 in total. Then came an e-commerce store selling blue light glasses and minimalist wallets. He paid for influencer promos and ads, and it still failed. He had borrowed $3,000 from his dad for it, lost all of it, and later apologised.",
+          "Add it up and you get a young guy with a maxed $8,000 credit card, about $20,000 in student loans, and a $3,000 hole in his dad's savings. **That's where the story really starts.** Not with a clever idea, but with a pile of debt and a lot of practice at things that didn't work."
+        ],
+        "pull": {"text": "I was about $8000+ in credit card debt", "cite": "Dan Koe, quoted in My First $10K"}
+      },
+      {
+        "label": "The detour",
+        "title": "His dad said get a job, so he did",
+        "paras": [
+          "After the e-commerce store died, his dad suggested he get a job. Dan took a web design job and kept freelancing on the side. That's an unglamorous move, and it's the one that saved him.",
+          "On the side he moved from websites to simple funnels: a landing page, an opt-in and an email sequence, sold to contractors and lawyers. The same newsletter gives two price ranges for this work, $2,200 to $5,000 per funnel, and two or three clients a month at $1,500 to $2,500. Either way, it added up to six figures from freelancing.",
+          "He quit the web design job after about seven months. So by the time he showed up on Twitter, he wasn't a beginner selling dreams. He had a real, paid skill, and real clients, and a story of exactly how he'd got them. That matters for what came next."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "An ebook and a Discord at 500 followers",
+        "paras": [
+          "Dan sent his first tweet around 31 October or 1 November 2019. About a month later, in December 2019, with roughly **500 followers**, he launched his first product. It was called Web Design Wealth, and it was an ebook plus a Discord community.",
+          "Think about how small that is. No app, no course platform, no funnel he had to build for himself. A document, a chat server, and a name that says what it's for: how to make money from web design, which was the thing he was already doing for contractors and lawyers.",
+          "It made about $3,000 a month, on top of his client work. That's not life-changing money, but it's proof. Somebody you've never met paid you for what you know, and you only had 500 people listening.",
+          "This is the bit we keep coming back to in this series. Dan didn't wait to feel ready, or for some follower count that would make it respectable. He sold early, small and cheap, and let the product teach him what people wanted."
+        ]
+      },
+      {
+        "label": "The first 10,000",
+        "title": "Three posts a day, and listening",
+        "paras": [
+          "In the early growth phase he posted about three times a day on X. He had 4,000 followers after four months and 10,000 after eight. One outlet puts it differently, saying he posted for about two years before he had real traction, so the fast part may have been the follower count more than the money.",
+          "The most useful habit from this period is how he picked products. According to one write-up, his offers were built from what followers asked him for. He'd answer the same question in public again and again, and then package the answer.",
+          "So the product line grew one request at a time. The Power Planner in 2020, which he says made six figures in digital sales in about a year. Twitter Followers and Dollars Simplified in June 2020, sold in three tiers at $17, $35 and $287. Modern Money in January 2021. Then Modern Mastery HQ in April 2021, a membership that started at $9.99 a month and later moved to $27 a month plus a $150 fee.",
+          "Notice the pricing ladder. A cheap tier for someone curious, a middle one, and a $287 tier for someone serious. And then a membership, which turns one-time buyers into monthly income."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "Finding the money",
+        "title": "The year he made $800,000",
+        "paras": [
+          "Most of the numbers on this page are Dan's own, shared in interviews and posts, and nobody has audited them.",
+          "In 2022 everything stacked up. In April he put out a free mini course, 7 Days to Genius Ideas. In June came Digital Economics. In August he launched The 2-Hour Writer at $150, which went on to sell to more than 8,500 students. By his account, 2022 brought in about $800,000.",
+          "His first $50,000 month is worth looking at closely, because it wasn't all products. It came from the Modern Mastery membership plus five brand advising clients at $8,000 each. That's $40,000 of the month from advising alone. The audience made the advising possible, and the advising paid the bills while the products grew.",
+          "At the end of 2022 he stopped client work completely. In a February 2023 conversation with Noah Kagan he projected $2.5M for the year, and at that point his help was a video editor roommate and one other contractor. Later, in an X post, he put 2023 at $2.5M. In February 2023 he also launched Solopreneur Sprint, another $150 course."
+        ]
+      },
+      {
+        "label": "Scaling it",
+        "title": "Two hours of writing, and everything else downstream",
+        "paras": [
+          "If you strip Dan's business down, it's one habit. He writes first thing every morning, for about two hours. That writing becomes one long newsletter a week. The newsletter becomes the script for a YouTube video, then tweets and posts, and the best ideas become products.",
+          "beehiiv, which he moved his newsletter to in late 2024, wrote a case study on him in April 2025. They called this his content flywheel, and made the point that a long newsletter earns 15 to 20 minutes of time under attention, which no short post can. At that point he had 175,000+ subscribers and about 4 million followers across platforms.",
+          "The platform spread is interesting for marketers. In January 2024 one count had him at 1.6M on Instagram, 541K on YouTube, 414K on X, 341K on TikTok, 140K on email and 115K on LinkedIn. He didn't pick one channel. He wrote once and spread it everywhere.",
+          "In January 2024 he published a book, The Art of Focus, and later Purpose & Profit. The revenue story gets confusing here. One interview with beehiiv is reported as saying he made “over $4 million” in 2024, while beehiiv's own case study says “$2 million per year writing 2 hours per day.” Another newsletter's headline says $4.2M without a clear year. We'd say: somewhere between $2M and $4M a year at the peak, by his own telling, and nobody outside knows exactly.",
+          "His one line that sums up this period is a good one to keep: “Start digging a well before you are thirsty.” He built the audience and the habit long before he needed either."
+        ],
+        "pull": {"text": "Start digging a well before you are thirsty.", "cite": "Dan Koe, quoted in Beginner Creator's Newsletter"},
+        "chart": 1
+      },
+      {
+        "label": "The expensive lesson",
+        "title": "Kortex, and a note from Eden",
+        "paras": [
+          "Around 2023 Dan announced Kortex, a second brain app for creators. This was a different kind of business. It had co-builders (one newsletter names Joey Justice and Mathew Ao), developers and real costs. In January 2025 the Kortex blog announced a price increase.",
+          "In November 2025 his podcast put out an episode titled “Kortex: The $3 Million Dollar Mistake”. Beyond the title, the details going around come from AI-made summaries of that episode and a related video, so treat them as unverified. Those summaries say the team got stuck on features like manual tagging, built login, hosting and sync themselves, and then rebuilt the whole thing from scratch as Eden in about three weeks. One of them claims Kortex reached about 80,000 users. Dan hasn't confirmed any of that himself in writing.",
+          "What is on the record, from Eden's own site, is a frank note from the team in 2026. AI credits were being billed at about $1,000 every 30 minutes, far more than the product earned. They wrote that they had “maybe two weeks of runway left”. They let go of more than half the team, staff took pay cuts, and they rebuilt the product over a few weeks around four ideas: Boards, Discover, Creators and the Eve strategist. Existing subscriptions carried over, and the old app moved to beta.eden.so.",
+          "Their own diagnosis was that they tried to be a general-purpose app for too long. That's a lesson for anyone, but especially for people like Dan, and like us, who have an audience. **Distribution got Eden users. It didn't fix the costs or the focus.**"
+        ],
+        "pull": {"text": "We went broke and had to let go of more than half the team.", "cite": "The Eden team, on eden.so, 2026"}
+      },
+      {
+        "label": "Where he stands now",
+        "title": "150 million views and a smaller, sharper Eden",
+        "paras": [
+          "In January 2026 Dan published a long X article called “How to fix your entire life in 1 day”. Crypto news sites that covered it reported about 150 million views in a week. One of them also showed a screenshot of his X creator payout, $4,495 in 14 days.",
+          "His audience counts that month, as one outlet reported them, were about 750K on X, 1.2M on YouTube, and somewhere between 170K and 200K on email (the source wasn't consistent). He now sells a paid newsletter, his two books and Eden. The older courses and the membership aren't listed any more.",
+          "Eden today pitches itself as the all-in-one platform for creators: a library that imports your Kindle highlights, Readwise, X bookmarks and Instagram saves, a Discover tool for outlier posts, a research section for academic papers, Eve the AI strategist, a custom AI trained on your writing, scheduling to eight platforms, and a store for courses and coaching. Plans are $9 and $29 a month, with a $5 trial, and a referral program pays 30% of every payment for the life of the subscription, no application needed.",
+          "On the future, he hasn't said anything quotable about AI that can be pinned down. His 2026 podcast titles tell you where his head is: “A New Creator Economy is Emerging in 2026” and “How To Build A $1M One-Person Business Faster With AI”. He uses AI to interview him and help structure his ideas, and he's argued that the internet can swing back toward long-form writing. Given that his biggest hit ever was a long article, that's not a surprising bet."
+        ]
+      }
+    ],
+    "failuresTitle": "Six failures before Twitter, and two hard lessons after",
+    "failuresIntro": "Dan's early failures were small, cheap and fast. The expensive ones came later, when he moved into software with a team.",
+    "failures": [
+      {"year": "College", "name": "Fitness YouTube channel", "what": "He started it with a friend early in college. He quit after a few months because he burned out.", "lesson": "A channel that depends on a pace you can't sustain is a channel you'll quit."},
+      {"year": "College", "name": "Spirituality YouTube channel", "what": "A second YouTube attempt on a topic he cared about. It failed, and no reason is given.", "lesson": "Caring about a topic isn't the same as having something to sell around it."},
+      {"year": "College", "name": "Instagram photography", "what": "He reached 2,500 followers in two months, which is real traction. But each photo took him three to six hours, so he burned out and stopped.", "lesson": "Pick a format you can produce fast, or growth will eat you."},
+      {"year": "Senior year", "name": "Rave clothing dropshipping", "what": "An online store reselling rave clothes. It didn't work.", "lesson": "Selling other people's products with no audience is the hardest version of business."},
+      {"year": "About 2018", "name": "Facebook ad agency", "what": "He found a few clients through friends and family. It made about $500 in total.", "lesson": "Clients from favours don't tell you if strangers would pay."},
+      {"year": "2018 to 2019", "name": "Blue light glasses and wallets", "what": "An e-commerce store with influencer promos and paid ads. It failed, and he lost the $3,000 he had borrowed from his dad, which he later apologised for.", "lesson": "Paying for attention before you've earned any is how small savings disappear."},
+      {"year": "2023 to 2025", "name": "Kortex", "what": "A second brain app for creators, built with co-builders. His podcast called it “The $3 Million Dollar Mistake”, and AI summaries of that episode say it was over-built and then rebuilt from scratch as Eden. Only the title is certain.", "lesson": "Building everything yourself feels serious, but it's slow and expensive."},
+      {"year": "2026", "name": "Eden's cash crisis", "what": "AI credits cost about $1,000 every 30 minutes, far above revenue, with maybe two weeks of runway. More than half the team was let go and the product was rebuilt in a few weeks.", "lesson": "Check what each AI feature costs per user before you give it to everyone."}
+    ],
+    "playbookTitle": "How he got an audience of millions without ads",
+    "playbook": [
+      {"title": "Sell at 500 followers", "text": "His first product, an ebook plus Discord called Web Design Wealth, launched in December 2019 when he had about 500 followers. It made about $3,000 a month on top of client work. The point was proof, not scale."},
+      {"title": "Post three times a day at the start", "text": "In the early growth phase he posted about three times a day on X. That got him to 4,000 followers in four months and 10,000 in eight. Volume early on gave him lots of chances to find out what landed."},
+      {"title": "Build what followers ask for", "text": "His offers came from follower requests. The planner, the Twitter course, Modern Money, Digital Economics and The 2-Hour Writer were each an answer to questions he kept getting."},
+      {"title": "Use a price ladder", "text": "His Twitter course came in three tiers at $17, $35 and $287. He had free mini courses at the bottom, $150 courses in the middle and a monthly membership from $9.99 that later moved to $27 plus a $150 fee. Every kind of buyer had a door."},
+      {"title": "Bridge with high-ticket advising", "text": "His first $50K month included five brand advising clients at $8,000 each. Advising paid well while products grew, and he only dropped client work at the end of 2022, once products could carry him."},
+      {"title": "One long newsletter a week, cut into everything", "text": "He writes one long newsletter a week and repurposes it into posts, tweets and a YouTube script. beehiiv calls it his content flywheel. One piece of thinking feeds every platform he's on."},
+      {"title": "Write first, every morning", "text": "He writes first thing each morning for about two hours, and beehiiv framed his business as $2 million a year from that habit. The rest of the day is downstream of those two hours."},
+      {"title": "Go long when everyone goes short", "text": "Long-form, beehiiv says, earns 15 to 20 minutes of time under attention. His January 2026 X article was reported at about 150 million views in a week."},
+      {"title": "Pay referrers for life", "text": "Eden's 2026 referral program pays 30% of every payment for the life of the subscription, with no application. Anyone with an audience can start sending people immediately."}
+    ],
+    "charts": [
+      {
+        "title": "Dan's X followers in his first eight months",
+        "points": [
+          {"label": "Dec 2019", "value": 500, "display": "500"},
+          {"label": "4 months in", "value": 4000, "display": "4,000"},
+          {"label": "8 months in", "value": 10000, "display": "10,000"}
+        ],
+        "note": "He launched his first paid product at the 500 mark."
+      },
+      {
+        "title": "What Dan says he made each year",
+        "points": [
+          {"label": "2022", "value": 800000, "display": "$800K"},
+          {"label": "2023", "value": 2500000, "display": "$2.5M"},
+          {"label": "2024", "value": 4000000, "display": "$4M+"}
+        ],
+        "note": "The 2024 figure is from a beehiiv interview. beehiiv's own April 2025 case study says $2M a year, so sources conflict."
+      }
+    ],
+    "timeline": [
+      {"when": "College", "text": "Switches majors five times, finishes a year of web development on Udemy in about two weeks, and starts and quits several YouTube and Instagram projects."},
+      {"when": "About 2018", "text": "Runs a Facebook ad agency that makes about $500, then an e-commerce store that loses his dad's $3,000."},
+      {"when": "2018 to 2019", "text": "Takes a web design job, sells funnels to contractors and lawyers on the side, and quits the job after about seven months."},
+      {"when": "Nov 2019", "text": "Sends his first tweet and starts posting about three times a day.", "big": true},
+      {"when": "Dec 2019", "text": "Launches Web Design Wealth, an ebook plus Discord, at about 500 followers. It makes about $3,000 a month.", "big": true},
+      {"when": "Mid 2020", "text": "Reaches 10,000 followers about eight months after his first tweet, and sells a Twitter course at $17, $35 and $287."},
+      {"when": "Apr 2021", "text": "Starts the Modern Mastery HQ membership from $9.99 a month."},
+      {"when": "Aug 2022", "text": "Launches The 2-Hour Writer at $150. It goes on to sell to 8,500+ students."},
+      {"when": "End of 2022", "text": "Stops client work after a year he puts at about $800,000.", "big": true},
+      {"when": "2023", "text": "Says he made $2.5M and announces Kortex, a second brain app built with co-builders."},
+      {"when": "Late 2024", "text": "Moves his newsletter to beehiiv, which reports 175,000+ subscribers by April 2025."},
+      {"when": "Nov 2025", "text": "His podcast titles an episode about Kortex “The $3 Million Dollar Mistake”. Kortex has been rebuilt as Eden."},
+      {"when": "Jan 2026", "text": "His X article “How to fix your entire life in 1 day” is reported at about 150 million views in a week.", "big": true},
+      {"when": "2026", "text": "Eden runs short of cash, lets more than half the team go and rebuilds the product in a few weeks."}
+    ],
+    "quotes": [
+      {"text": "Start digging a well before you are thirsty.", "cite": "Dan Koe, quoted in Beginner Creator's Newsletter, January 2024"},
+      {"text": "I was about $8000+ in credit card debt", "cite": "Dan Koe, quoted in My First $10K"},
+      {"text": "Kortex: The $3 Million Dollar Mistake", "cite": "Title of his podcast episode, November 2025"},
+      {"text": "A New Creator Economy is Emerging in 2026", "cite": "Title of his podcast episode, 2026"},
+      {"text": "We went broke and had to let go of more than half the team.", "cite": "The Eden team, “A note from the Eden team”, 2026"},
+      {"text": "Because we made the mistake of being a general-purpose app for too long.", "cite": "The Eden team, “A note from the Eden team”, 2026"}
+    ],
+    "steal": [
+      "Launch something tiny now, at whatever follower count you have. Dan's first product was an ebook and a Discord at 500 followers, and it made about $3,000 a month.",
+      "Keep a running list of the questions people ask you about marketing. When one shows up three times, that's your next product, and you already know how to describe it.",
+      "Price in tiers. A $17, $35 and $287 version of the same thing lets the curious and the serious both buy, and tells you who your best customers are.",
+      "Don't drop your client work too early. Dan kept advising at $8,000 a client until the end of 2022, long after his products took off.",
+      "Write one long piece a week and cut it into everything else. Two focused hours in the morning can feed LinkedIn, a newsletter and a video.",
+      "If you build software, watch the costs like a hawk, especially AI costs. Eden's audience was huge and it still nearly ran out of money in weeks."
+    ],
+    "sources": [
+      {"title": "Beginner Creator's Newsletter: How Dan Koe built a one-person business (Jan 2024)", "url": "https://beginnercreator.beehiiv.com/p/dan-koe-built-42-million-oneperson-business-running-money-failed-businesses"},
+      {"title": "My First $10K: How Dan Koe built a $10K/month solo business", "url": "https://myfirst10k.beehiiv.com/p/how-dan-koe-built-a-10k-month-solo-business-and-beyond"},
+      {"title": "beehiiv case study: Dan Koe (Apr 2025)", "url": "https://www.beehiiv.com/case-studies/dankoe"},
+      {"title": "OkDork: Noah Kagan with Dan Koe (Feb 2023)", "url": "https://okdork.com/dan-koe/"},
+      {"title": "TechFlow on Dan Koe (Jan 2026)", "url": "https://www.techflowpost.com/en-US/article/29995"},
+      {"title": "KuCoin News: Dan Koe's X article hits 150M views", "url": "https://www.kucoin.com/news/flash/dan-koe-s-article-on-x-hits-150m-views-sparks-discussion-on-solo-creator-earnings"},
+      {"title": "Eden", "url": "https://eden.so/"},
+      {"title": "Eden: A note from the Eden team", "url": "https://eden.so/the-new-eden"},
+      {"title": "Kortex blog: January releases and price increase", "url": "https://kortex.co/blog/january-releases-price-increase"},
+      {"title": "Podwise summary of the Kortex episode (AI-generated, Nov 2025)", "url": "https://podwise.ai/episodes/6117653"},
+      {"title": "gist.ly summary of the Kortex video (AI-generated)", "url": "https://gist.ly/youtube-summarizer/why-cortex-failed-3m-mistakes-the-birth-of-eden"},
+      {"title": "Audible: A New Creator Economy is Emerging in 2026", "url": "https://www.audible.com.au/podcast/Dan-Koe-A-New-Creator-Economy-is-Emerging-in-2026/B0GJG1QXJZ"},
+      {"title": "Pocket Casts: How I'd build a one-person business if I started over in 2026", "url": "https://pocketcasts.com/podcast/the-koe-cast/45f95490-82f5-0139-34c5-0acc26574db2/how-id-build-a-one-person-business-if-i-started-over-in-2026/ac664fd5-0c1f-4503-9510-6a4c222f5a82"}
+    ]
+  }
+}

@@ -13,6 +13,11 @@ module.exports = async function handler(req, res) {
     try { return await dailyFuel(req, res); }
     catch (e) { console.error('daily fuel error:', e.message); return res.status(500).json({ error: String(e.message || e) }); }
   }
+  // Solo Founders email (Vercel cron, GET /api/tool?solo=1), 7:00 am IST.
+  if (req.method === 'GET' && req.query && req.query.solo) {
+    try { return await soloFounders(req, res); }
+    catch (e) { console.error('solo founders error:', e.message); return res.status(500).json({ error: String(e.message || e) }); }
+  }
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
   if (!process.env.ANTHROPIC_API_KEY) return res.status(500).json({ error: 'Engine not configured (missing API key).' });
 
@@ -392,6 +397,104 @@ async function dailyFuel(req, res) {
   const out = await r.json().catch(() => ({}));
   if (!r.ok) return res.status(502).json({ error: 'resend', detail: out });
   return res.status(200).json({ status: scheduled_at ? 'scheduled' : 'sent', day, at: scheduled_at || now.toISOString(), id: out.id, recipients: recipients.length });
+}
+
+// ── Solo Founders: one founder a day, emailed at 7:00 am IST ──
+// Private list: recipients come only from the Vercel env var SOLO_TO (comma-separated), first address in To,
+// the rest in BCC. Each day's content lives in /solo-founders/days/NN.json on this site.
+// Env: RESEND_API_KEY (or GMAT_RESEND_KEY), SOLO_TO. Optional: CRON_SECRET.
+const SOLO_SITE = 'https://www.pratikrenuse.com/solo-founders/';
+const SOLO_START = Date.UTC(2026, 10, 24); // Day 1 = Tuesday 24 November 2026 (IST date)
+
+async function soloFounders(req, res) {
+  const secret = process.env.CRON_SECRET;
+  const fromCron = /^vercel-cron\//.test(req.headers['user-agent'] || '');
+  if (secret ? req.headers.authorization !== `Bearer ${secret}` : !fromCron) return res.status(401).json({ error: 'unauthorized' });
+  const key = process.env.RESEND_API_KEY || process.env.GMAT_RESEND_KEY;
+  if (!key) return res.status(500).json({ error: 'RESEND_API_KEY is not set' });
+  // Recipients: the 'solo_to' row in the private Supabase table private_settings (RLS on, service key only).
+  // The Vercel env var SOLO_TO, if set, overrides it.
+  let list = process.env.SOLO_TO || '';
+  if (!list && process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_KEY) {
+    const sr = await fetch(`${process.env.SUPABASE_URL}/rest/v1/private_settings?key=eq.solo_to&select=value`, {
+      headers: { apikey: process.env.SUPABASE_SERVICE_KEY, Authorization: 'Bearer ' + process.env.SUPABASE_SERVICE_KEY }
+    });
+    const rows = sr.ok ? await sr.json() : [];
+    list = (rows[0] && rows[0].value) || '';
+  }
+  const recipients = list.split(',').map(s => s.trim()).filter(s => s.includes('@'));
+  if (!recipients.length) return res.status(500).json({ error: 'no Solo Founders recipients found' });
+
+  // The cron runs at 5:30 am IST (00:00 UTC); the email is scheduled for 7:00 am IST (01:30 UTC) the same day.
+  const now = new Date(), ist = new Date(now.getTime() + 330 * 60000);
+  const istMidnight = Date.UTC(ist.getUTCFullYear(), ist.getUTCMonth(), ist.getUTCDate());
+  const day = Math.round((istMidnight - SOLO_START) / 864e5) + 1;
+  if (day < 1) return res.status(200).json({ status: 'not started yet', day });
+
+  const idxRes = await fetch(SOLO_SITE + 'days/index.json', { cache: 'no-store' });
+  if (!idxRes.ok) throw new Error('index.json ' + idxRes.status);
+  const total = (await idxRes.json()).length;
+  if (day > total) return res.status(200).json({ status: 'series finished', day, total });
+  const nn = String(day).padStart(2, '0');
+  const dRes = await fetch(SOLO_SITE + `days/${nn}.json`, { cache: 'no-store' });
+  if (!dRes.ok) throw new Error(`day ${nn} ` + dRes.status);
+  const d = await dRes.json();
+
+  const target = new Date(Date.UTC(ist.getUTCFullYear(), ist.getUTCMonth(), ist.getUTCDate(), 1, 30));
+  const scheduled_at = target > now ? target.toISOString() : undefined;
+  const html = soloEmailHtml(d, day, total);
+
+  const r = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + key, 'Idempotency-Key': `solo-founders-v1-${day}` },
+    body: JSON.stringify(Object.assign({ from: FUEL_FROM, to: [recipients[0]], bcc: recipients.slice(1), reply_to: recipients[0], subject: d.email.subject, html }, scheduled_at ? { scheduled_at } : {}))
+  });
+  const out = await r.json().catch(() => ({}));
+  if (!r.ok) return res.status(502).json({ error: 'resend', detail: out });
+  return res.status(200).json({ status: scheduled_at ? 'scheduled' : 'sent', day, at: scheduled_at || now.toISOString(), id: out.id, recipients: recipients.length });
+}
+
+// Email-safe HTML: tables and inline styles only, so it renders the same in Gmail, Apple Mail and Outlook.
+function soloEmailHtml(d, day, total) {
+  const e = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  const rich = (s) => e(s).replace(/\*\*(.+?)\*\*/g, '<strong style="color:#1A1512;font-weight:600">$1</strong>');
+  const em = d.email || {};
+  const link = `${SOLO_SITE}?d=${day}`;
+  const sans = "font-family:Arial,Helvetica,sans-serif";
+  const serif = "font-family:Georgia,'Times New Roman',serif";
+  const p = (t) => `<p style="${sans};font-size:16px;line-height:1.65;color:#38302A;margin:0 0 14px">${rich(t)}</p>`;
+  const h = (t) => `<p style="${serif};font-size:20px;line-height:1.3;color:#1A1512;margin:30px 0 10px">${e(t)}</p>`;
+
+  const stats = (em.stats || []).length ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:6px 0 16px;border-collapse:separate;border-spacing:6px 0"><tr>${em.stats.map(s => `<td valign="top" style="background:#EEE8E4;padding:14px 12px;width:${Math.floor(100 / em.stats.length)}%"><div style="${serif};font-size:22px;color:#1A1512;line-height:1.2">${e(s.value)}</div><div style="${sans};font-size:12px;color:#504840;margin-top:4px;line-height:1.4">${e(s.label)}</div></td>`).join('')}</tr></table>` : '';
+
+  const chart = (c) => {
+    if (!c || !c.points || !c.points.length) return '';
+    const max = Math.max(...c.points.map(x => Math.abs(x.value) || 0)) || 1;
+    const rows = c.points.map(x => {
+      const w = Math.max(2, Math.round((Math.abs(x.value) / max) * 100));
+      return `<tr><td style="${sans};font-size:13px;color:#504840;padding:5px 10px 5px 0;white-space:nowrap;width:80px">${e(x.label)}</td><td style="padding:5px 0"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td width="${w}%" style="background:${x.down ? '#BCB3AA' : '#B8903A'};height:16px;font-size:1px;line-height:1px">&nbsp;</td><td style="font-size:1px;line-height:1px">&nbsp;</td></tr></table></td><td style="${sans};font-size:13px;color:#1A1512;font-weight:bold;padding:5px 0 5px 10px;white-space:nowrap;text-align:right;width:70px">${e(x.display || x.value)}</td></tr>`;
+    }).join('');
+    return `<div style="background:#EEE8E4;padding:16px 16px 10px;margin:8px 0 6px"><p style="${sans};font-size:13px;color:#1A1512;font-weight:bold;margin:0 0 8px">${e(c.title)}</p><table role="presentation" width="100%" cellpadding="0" cellspacing="0">${rows}</table>${c.note ? `<p style="${sans};font-size:12px;color:#786E66;margin:8px 0 0">${e(c.note)}</p>` : ''}</div>`;
+  };
+
+  const sections = (em.sections || []).map(s => h(s.title) + (s.stats ? stats : '') + (s.paras || []).map(p).join('') + (s.chart ? chart(em.chart) : '')).join('');
+
+  return `<div style="background:#F6F2F1;padding:32px 16px">
+  <div style="max-width:560px;margin:0 auto">
+    <p style="${sans};font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8C6A18;margin:0 0 14px">Solo founders &middot; Day ${day} of ${total}</p>
+    <p style="${serif};font-size:26px;line-height:1.3;color:#1A1512;margin:0 0 16px">${e(em.hook)}</p>
+    ${(em.lead || []).map(p).join('')}
+    <div style="background:#0F0E0C;padding:22px 22px;margin:20px 0 6px">
+      <p style="${sans};font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#C8C0B8;margin:0 0 8px">If you remember one thing</p>
+      <p style="${serif};font-size:20px;line-height:1.45;color:#F6F2F1;margin:0">${e(d.wisdom)}</p>
+    </div>
+    ${sections}
+    ${em.tryToday ? h('Try this today') + p(em.tryToday) : ''}
+    <p style="margin:26px 0 0"><a href="${link}" style="display:inline-block;background:#1A1512;color:#F6F2F1;${sans};font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:14px 24px;text-decoration:none">${e(em.button || 'Read the full story')}</a></p>
+    <p style="${sans};font-size:13px;color:#786E66;margin:14px 0 0">The page has everything: how it started, every failure, the full playbook and the sources.</p>
+    <p style="${sans};font-size:16px;color:#38302A;margin:28px 0 0">Pratik</p>
+  </div>
+</div>`;
 }
 
 // ════════════════ SHARED HELPERS ════════════════

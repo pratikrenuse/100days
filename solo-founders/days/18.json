@@ -1,0 +1,285 @@
+{
+  "n": 18,
+  "name": "Josh Pigford",
+  "short": "Josh",
+  "wisdom": "Ship in days, not in private for 18 months.",
+  "email": {
+    "subject": "Built in eight days. Sold for $4 million.",
+    "hook": "Josh Pigford built Baremetrics in about eight days and sold it for $4 million in cash, and then his next company raised $1.45 million and got about 50 paying customers.",
+    "lead": [
+      "Josh is the clearest lesson in this whole series about speed versus polish. The scrappy thing he built for himself in a month spread purely by people tweeting about it. The careful thing he built with a team for 18 months barely sold.",
+      "Let's be plain about the money, because it matters to the story. Baremetrics took outside investment, including $500,000 from the Stripe Platform Fund in 2014 and an $800,000 seed from General Catalyst and Bessemer, and it was bought in 2020 by a private-equity firm, Xenon Partners. Maybe, his next company, was crowdfunded. Today he calls himself a solo builder again, making small products alone with AI."
+    ],
+    "stats": [
+      {"value": "$4M", "label": "cash sale of Baremetrics, November 2020"},
+      {"value": "8 days", "label": "to build the first version"},
+      {"value": "100", "label": "customers in about four months, no free plan"}
+    ],
+    "chart": {
+      "title": "Paying customers: fast and scrappy vs slow and careful",
+      "points": [
+        {"label": "Baremetrics, 4 months in (2014)", "value": 100, "display": "100"},
+        {"label": "Maybe v1, 18 months in (2023)", "value": 50, "display": "about 50", "down": true}
+      ],
+      "note": "Maybe had a waitlist of more than 10,000 people, but only about 50 paid, at about $15 a month."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "In May 2026 Josh described himself as building five products solo with AI agents. His site lists things like Knockoff, which finds copycat listings of Shopify stores and files takedowns, plus Granite, KeptWell, a toy company and a builder community called Initial Commit. None of them publish revenue.",
+          "His Claude Code setup is worth stealing. One skill has GPT review the code Claude writes. Another, called /but-for-real, digs up three to five bugs every time it runs. A third updates its own instructions file with what it learned. And he's honest about how it feels: **\"It's terrifying launching something.\"** Every time, he wonders if zero people will care."
+        ]
+      },
+      {
+        "title": "How the money came in",
+        "stats": true,
+        "paras": [
+          "His big payday was Baremetrics. On 10 November 2020 he sold it to Xenon Partners for $4 million in cash, paid in three parts over 18 months, with no earnout. He took home $3.7 million and gave $300,000 to his employees. His investors agreed to write off their $800,000 so the deal could happen. Going by the 2.65 times multiple he mentioned, it was doing about $1.5 million a year.",
+          "Why sell? He'd thought about Baremetrics every single day for seven years, and **\"I just wasn't enjoying myself anymore.\"** Today's income isn't public. One weak profile says he's been building and selling small AI-era products for about $3,500 to $25,000 each."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "In October 2013 Josh had two small SaaS products running on Stripe and couldn't get trustworthy numbers on revenue, churn and lifetime value without a lot of setup. On 15 October he tweeted that he'd build a fix \"TONIGHT\". It actually took about eight days of work, spread over a month of client work and travel.",
+          "It launched in November 2013 as \"Zero-setup SaaS analytics for Stripe users.\" He calls that first version raw and rough around the edges, full of manual work that wouldn't scale. About two months later he threw it out and rebuilt it, and **within a month of the rebuild, monthly revenue doubled**."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "Here's the wild part. He got his first 100 customers in about four months, each paying close to $70 a month, with no free plan and no free trial. No blog, no email list, no landing pages, no beta, no coupons, no press releases, no influencer outreach.",
+          "It spread on Twitter. By his rough count, about 4,000 tweets mentioned it in six months. Why? You connected Stripe and instantly saw a full dashboard built from your whole history, with no code. **The product itself was the tweet.** One founder wrote \"do you use @Stripe? go get this, now\". Another called it one of the most useful tools he paid for."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "In 2019 a buyer offered $4.95 million for Baremetrics. Josh accepted. Six months and about $20,000 in legal fees later, the buyer went silent days before closing, because they didn't actually have the money. \"I was depressed, anxious and the most stressed I've ever been,\" he wrote.",
+          "Then came Maybe, a personal-finance app. It raised $1.45 million from about 1,300 crowdfunding investors, and a team of eight built it for about 18 months mostly in private. The waitlist passed 10,000. About 50 people paid. An open-source revival in 2024 drew a huge following on GitHub, then pivoted and was archived in 2025. In 2026 he wrote that he'd been **\"slinging so much at the wall for the past 5 years.\"**"
+        ]
+      }
+    ],
+    "tryToday": "Think of the report we rebuild by hand every week at work. Build the ugliest version that does it automatically this week, use it ourselves, and post one screenshot of it.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Josh Pigford has been making things on the internet since 2003. His best-known product, Baremetrics, took about eight days to build, found 100 paying customers on Twitter alone, and sold for $4 million in cash, and his story after that is just as useful because of how hard it got.",
+    "stats": [
+      {"value": "$4,000,000", "num": 4000000, "prefix": "$", "suffix": "", "label": "cash sale of Baremetrics", "note": "November 2020, $3.7M to him"},
+      {"value": "8", "num": 8, "prefix": "", "suffix": " days", "label": "to build the first version", "note": "spread over about a month"},
+      {"value": "$20,000", "num": 20000, "prefix": "$", "suffix": "", "label": "a month within about ten months", "note": "his own number, September 2014"},
+      {"value": "50", "num": 50, "prefix": "", "suffix": "", "label": "paying customers for Maybe after 18 months", "note": "from a waitlist of 10,000+"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Ten years of small flips",
+        "paras": [
+          "Josh started in 2003 by building link directories with names like ReallyDumbStuff and ReallyFunArcade. One profile, a weak one, says ReallyFunArcade sold about a year later for $4,500. He describes himself as a design major, and he did web design consulting, later through a little studio called Sabotage Media.",
+          "In 2004 he started TheAppleBlog. In 2008 he sold it to the tech publisher GigaOm and stayed on for a couple of years. The same weak profile puts the price at about $75,000, plus a salaried job. That was his first real exit, and it taught him that a small thing on the internet could be worth real money.",
+          "Then came PopSurvey, which started as a client project for the co-founders of Grasshopper, and Temper, a tool for customer happiness surveys that he launched in 2013. Both were sold in 2014, and that profile says **he made nothing from either sale**.",
+          "So by 2013 Josh had been at it for a decade. Lots of small products, one decent exit, nothing that had really taken off. And he had a very specific problem sitting on his own desk."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "The tool he needed in his own home office",
+        "paras": [
+          "In October 2013 Josh was running two SaaS products that took payments through Stripe. He needed the basic numbers every SaaS founder needs: monthly recurring revenue, lifetime value, churn and annual revenue. The tools that existed needed what he called \"significant setup\", and even then he \"had a hard time trusting the data.\" He was working the numbers out by hand in his home office.",
+          "On 15 October 2013 he tweeted that he was going to build it \"TONIGHT\". It didn't take one night. It took about eight days of actual work, squeezed into a month that also had client work, his two existing products and international travel.",
+          "In November 2013 it went live with a one-line pitch: \"Zero-setup SaaS analytics for Stripe users.\" Josh is very honest about what that first version was like. He calls it raw and rough around the edges, full of manual processes that wouldn't scale. He was doing things by hand behind the scenes that customers thought the software did.",
+          "Looking back a year later, he wrote a line that sums up why it existed at all."
+        ],
+        "pull": {"text": "the gap between idea and action is a chasm most people never get past", "cite": "Josh, on the Baremetrics blog, October 2014"}
+      },
+      {
+        "label": "The first 100 users",
+        "title": "No free plan, no trial, no blog",
+        "paras": [
+          "On 23 April 2014 Josh wrote a post about how he got Baremetrics' first 100 customers. It took about four months, and the average customer was paying nearly $70 a month. He didn't offer a free plan. He didn't offer a free trial. You paid from day one.",
+          "Then he listed everything he didn't do, and it's a long list: no blogging, no email capture, no landing pages, no private beta, no free accounts, no coupons, no influencer outreach and no press releases. **Almost every launch tactic we're taught, skipped.**",
+          "What did he do? Nothing, really, except make a product people wanted to talk about. By his rough estimate, about 4,000 tweets mentioned Baremetrics in its first six months. On 10 December 2013 a founder named Kyle Bragger tweeted \"do you use @Stripe? go get this, now\". On 14 February 2014 Alex Hillman wrote \"Baremetrics is one of the most useful tools I pay for.\"",
+          "The reason it spread was the design. You connected your Stripe account, wrote no code, and immediately saw a full dashboard built from your entire payment history. The first login was the wow moment, and people screenshotted it and shared it. In April 2014 Buffer, the social media company, made its own Baremetrics dashboard public for anyone to see, an early moment of what people started calling open startups.",
+          "For us as marketers, this is the humbling bit. The distribution was built into the product."
+        ]
+      },
+      {
+        "label": "Tearing it up",
+        "title": "He threw away version one after two months",
+        "paras": [
+          "About two months after launch, Josh scrapped the first version and rebuilt Baremetrics from scratch. It relaunched in January 2014, with a public demo in February. Within a month of version two going live, **monthly revenue doubled**.",
+          "He was at about $2,000 a month after around eight weeks. In a June 2014 interview with Intercom, he said it was making $14,000 a month within six months.",
+          "His way of working was simple. Pick the next thing. Ship the smallest version of it. Watch how people use it. Keep what works and drop what doesn't. He aimed for features that would move things by 10 to 20%, and he talked about Marc Andreessen's idea of cycle time compression: the faster you go round the loop, the faster you learn.",
+          "Every number on this page about Baremetrics' growth is Josh's own, from his blog posts and interviews, and nobody has checked them against company accounts."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "Taking the money",
+        "title": "From one man to a funded team",
+        "paras": [
+          "In May 2014 Baremetrics crossed $10,000 a month, and Josh made his first hire. In September 2014 it crossed $20,000 a month. That same month it took $500,000 from the Stripe Platform Fund. By October 2014, a year after the first tweet, it had 250 customers and a team of five.",
+          "There was more outside money. Josh has also written about an $800,000 seed round from the venture firms General Catalyst and Bessemer. How that relates to the Stripe money isn't clear from what he has published, so we won't add them together. What matters is that **Baremetrics was a venture-backed company**, not a bootstrapped one.",
+          "It grew to about 10 people. But over the years growth slowed, and Josh says it was running near breakeven. In February 2019 he wrote openly about his mental health, describing a level of anxiety that started in the morning and lasted through the night. He usually felt a lot of joy in his work, he said, and this was different. He credited his wife, after 15 years together, for knowing his state better than anyone.",
+          "There's no public month-by-month revenue history for Baremetrics between 2015 and 2020, so the middle years are mostly a blank."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "The $4.95 million deal that vanished",
+        "paras": [
+          "In April 2019 buyers started calling. By mid-May Josh had four letters of intent, offers between $3 million and $5 million. He accepted one at $4.95 million, about 3.75 times revenue. Closing was planned for mid-August.",
+          "The buyer said they had the money. They didn't. They actually needed to raise it. Days before the close, they went silent. The deal died after about six months of work and roughly $20,000 in legal fees.",
+          "Josh wrote about it in December 2019, and he didn't hide how bad it was. He called it crushing. Imagine planning your life around a number that big and then watching it disappear in a week of unanswered emails.",
+          "**Then he did something brave.** He published all of it, on the Baremetrics blog, for anyone to read."
+        ],
+        "pull": {"text": "I was depressed, anxious and the most stressed I've ever been", "cite": "Josh, on the Baremetrics blog, December 2019"}
+      },
+      {
+        "label": "The exit",
+        "title": "$4 million, six weeks, no earnout",
+        "paras": [
+          "A year later he tried again, and this time it worked. On 10 November 2020 he announced that Baremetrics had been sold to Xenon Partners, a private-equity firm. People often assume the buyer was ProfitWell. It wasn't.",
+          "The price was $4 million in cash. Josh took home $3.7 million. It was paid in three parts: at closing, at 12 months and at 18 months. There was no earnout, which he'd learned to avoid; he calls earnouts soul-crushing. From letter of intent to closing took just six weeks. The team of about 10 stayed, and he gave $300,000 of the sale to employees. General Catalyst and Bessemer agreed to write off their $800,000 so the deal could go through.",
+          "He mentioned a multiple of about 2.65 times annual revenue, which works out to about $1.5 million a year. That's arithmetic from his multiple, not a figure he stated.",
+          "His reasons were about himself, not the business. \"I'm at my most fulfilled when I'm creating,\" he wrote. Running a 10-person company wasn't creating. **\"I just wasn't enjoying myself anymore.\"** And: \"I've thought about Baremetrics literally every single day for seven years.\""
+        ],
+        "chart": 2
+      },
+      {
+        "label": "The second act",
+        "title": "Maybe, twice",
+        "paras": [
+          "In 2021 Josh co-founded Maybe, a personal-finance app, with Travis Woods, a certified financial planner. They raised $1.45 million on Republic, a crowdfunding platform, from about 1,300 investors, some putting in as little as $20.",
+          "A team of eight built it for about 18 months. In Josh's words, \"we spent the better part of 18ish months building that not in public really.\" Because Maybe gave regulated financial advice, they had to keep an unchangeable copy of every interaction for about seven years. The complexity piled up.",
+          "The waitlist passed 10,000 people. But when it launched, **only about 50 customers paid**, at about $15 a month. The team was cut to three. When it shut down they had about $240,000 left, and they pivoted to Detangle, an AI tool for legal documents. Josh later posted about it under the line \"Here's what $1,000,000 worth of fintech software looks like\".",
+          "His three reasons, as summarised by the Failory newsletter in January 2024: they launched just after the crypto and NFT boom crashed; 18 months of building and financial-data integrations \"promised a lot but didn't deliver\"; and they built for edge cases with very little feedback from real users.",
+          "Then came a second life. In January 2024 he open-sourced Maybe's code. A weak profile says the repository passed 54,000 stars on GitHub, and another summary says the revival raised more than $1.1 million within ten days. In July 2025 Maybe announced a pivot to forecasting for businesses, and its final release was described as a working, as-is version, with no further maintenance. The project is now archived."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Five products, one man, a lot of agents",
+        "paras": [
+          "Today Josh is back to working alone. In May 2026 Peter Yang described him as building five products solo with agents, and called him a solo builder for 25 years. His site calls him a dabbler, and lists FirstIndex and Knockoff among others. Knockoff, his main project in 2026, finds copycat listings for Shopify stores and files takedown requests. Others include Granite, a document vault, KeptWell, a toy company called Super Fantastic, and Initial Commit, a community for builders. These details come from his site and a weak profile, and none of them publish revenue.",
+          "His AI workflow is very practical. He has a Claude Code skill called /build. He has /adversarial-code-review, where GPT reviews the code that Claude's Opus model wrote. He has /but-for-real, which surfaces three to five bugs every time it runs. And /learnings, which updates its own CLAUDE.md file with what it learned. He also writes a Substack about AI coding called Every Day Is a Year.",
+          "He's honest that it's been hard. In 2026 he wrote that he'd been slinging stuff at the wall for five years, always feeling on the cusp of something, but finding it so hard to turn anything into a real business. One weak profile says he's built and sold a run of small AI-era products for about $3,500 to $25,000 each.",
+          "And he still gets nervous. \"It's terrifying launching something,\" he told Peter Yang. **Every single time, he wonders if zero people will care.** That's from a man who has done it for 23 years."
+        ],
+        "pull": {"text": "I've been slinging so much at the wall for the past 5 years.", "cite": "Josh, on X, 2026"}
+      },
+      {
+        "label": "The future",
+        "title": "Constraints, honesty and a blurry line",
+        "paras": [
+          "Josh's lessons now are mostly about what not to do. Building in private for months is, in his words, \"a real bad idea\". Ship early, let people see it, and let real users tell you what matters.",
+          "He likes constraints. He says they \"breed creativity for me\", which is exactly what Baremetrics was: eight days, a month of distractions, and a product that couldn't afford to be anything but simple.",
+          "On AI and the internet he's torn. He wrote that he desperately wants to preach about how AI is killing the internet, but he's aware of his own urge to optimise and automate, and that **\"the line is increasingly blurry.\"**",
+          "And on the human side, his advice from the Baremetrics years still stands: talk to someone when things are bad, and have hobbies outside the business."
+        ]
+      }
+    ],
+    "failuresTitle": "A vanished deal, two Maybes and five lean years",
+    "failuresIntro": "Josh has written about his failures more openly than almost anyone in this series. Here they are in order.",
+    "failures": [
+      {"year": "2014", "name": "PopSurvey and Temper", "what": "Two products he co-founded or launched were both sold in 2014. A weak profile says he made nothing from either sale.", "lesson": "Selling something isn't the same as making money from it."},
+      {"year": "2014", "name": "Baremetrics version one", "what": "The first version was raw and full of manual work. About two months after launch he scrapped it and rebuilt it, and revenue doubled within a month of the rebuild.", "lesson": "Shipping something rough and rebuilding it beats waiting to get it right."},
+      {"year": "2019", "name": "The $4.95M sale that collapsed", "what": "He accepted a $4.95 million offer, but the buyer didn't actually have the money and went silent days before closing. It cost him six months, about $20,000 in legal fees and a lot of his mental health.", "lesson": "Check that a buyer has the money before you start planning your life around the deal."},
+      {"year": "2021 to 2023", "name": "Maybe, version one", "what": "A crowdfunded team of eight built it mostly in private for about 18 months. A waitlist of 10,000 turned into about 50 paying customers at about $15 a month.", "lesson": "A waitlist is a list of maybes; only payments tell you the truth."},
+      {"year": "2024 to 2025", "name": "Maybe's open-source revival", "what": "The code was open-sourced in January 2024 and drew a huge following, raised money again, then pivoted in July 2025 and was archived with a final as-is release.", "lesson": "Attention on GitHub is not the same as customers."},
+      {"year": "2021 to 2026", "name": "Five lean years", "what": "He describes years of throwing ideas at the wall and finding it very hard to turn any of them into a real business.", "lesson": "Even a big exit doesn't make the next one easy, so keep your costs and your ego small."}
+    ],
+    "playbookTitle": "How Baremetrics spread with zero marketing",
+    "playbook": [
+      {"title": "Build the tool you need yourself", "text": "He had two Stripe products and couldn't trust his numbers. Baremetrics was the fix for his own home office, so he knew exactly what the first screen had to show."},
+      {"title": "Tweet the build out loud", "text": "On 15 October 2013 he tweeted that he'd build it tonight. Saying it in public made people curious and kept him honest."},
+      {"title": "Make the first login the wow", "text": "No setup, no code, and a full dashboard from your whole Stripe history the moment you connected. People couldn't help screenshotting it."},
+      {"title": "Charge from day one", "text": "No free plan, no free trial, nearly $70 a month on average. He still got 100 customers in about four months."},
+      {"title": "Let customers do the talking", "text": "About 4,000 tweets mentioned it in six months, by his rough count. He skipped blogs, email capture, landing pages, betas, coupons, press releases and influencer outreach entirely."},
+      {"title": "Get a famous customer to show it off", "text": "In April 2014 Buffer made its Baremetrics dashboard public. Every visitor to that dashboard saw what Baremetrics could do."},
+      {"title": "Rebuild fast, then keep looping", "text": "He rebuilt it two months in and revenue doubled. After that he shipped small features aiming for 10 to 20% impact and dropped whatever didn't work."},
+      {"title": "Write honestly about the hard parts", "text": "He published the failed sale, his mental health struggles and the exact sale terms on the company blog. That kind of honesty makes people remember the founder, not just the tool."}
+    ],
+    "charts": [
+      {
+        "title": "Baremetrics monthly revenue in its first year",
+        "points": [
+          {"label": "Jan 2014", "value": 2000, "display": "about $2K"},
+          {"label": "May 2014", "value": 10000, "display": "$10K"},
+          {"label": "Jun 2014", "value": 14000, "display": "about $14K"},
+          {"label": "Sep 2014", "value": 20000, "display": "$20K"}
+        ],
+        "note": "Josh's own numbers, from his blog and an Intercom interview."
+      },
+      {
+        "title": "Paying customers: Baremetrics vs Maybe",
+        "points": [
+          {"label": "Baremetrics after 4 months", "value": 100, "display": "100"},
+          {"label": "Maybe after 18 months", "value": 50, "display": "about 50", "down": true}
+        ],
+        "note": "Baremetrics: no free plan, about $70 a month. Maybe: a 10,000+ waitlist and about $15 a month."
+      },
+      {
+        "title": "What the buyers offered",
+        "points": [
+          {"label": "2019 deal (collapsed)", "value": 4950000, "display": "$4.95M", "down": true},
+          {"label": "2020 sale (closed)", "value": 4000000, "display": "$4M"}
+        ],
+        "note": "The 2019 buyer never had the money. The 2020 sale closed in six weeks, in cash."
+      }
+    ],
+    "timeline": [
+      {"when": "2003", "text": "Starts building link directories and doing web design work.", "big": false},
+      {"when": "2004 to 2008", "text": "Starts TheAppleBlog and sells it to GigaOm, staying on for a couple of years.", "big": false},
+      {"when": "October 2013", "text": "Tweets that he'll build a Stripe metrics tool tonight. It takes about eight days over a month.", "big": true},
+      {"when": "November 2013", "text": "Baremetrics launches as zero-setup SaaS analytics for Stripe users.", "big": true},
+      {"when": "January 2014", "text": "Relaunches a rebuilt version. Revenue doubles within a month.", "big": false},
+      {"when": "April 2014", "text": "100 customers in about four months, all through Twitter word of mouth.", "big": true},
+      {"when": "September 2014", "text": "Crosses $20K a month and takes $500,000 from the Stripe Platform Fund.", "big": false},
+      {"when": "2019", "text": "Accepts a $4.95 million offer that collapses after six months.", "big": false},
+      {"when": "10 November 2020", "text": "Sells Baremetrics to Xenon Partners for $4 million in cash.", "big": true},
+      {"when": "2021", "text": "Co-founds Maybe and raises $1.45 million from about 1,300 crowdfunding investors.", "big": false},
+      {"when": "January 2024", "text": "Open-sources Maybe after version one gets only about 50 paying customers.", "big": false},
+      {"when": "July 2025", "text": "Maybe pivots and is later archived.", "big": false},
+      {"when": "May 2026", "text": "Building five products solo with AI agents.", "big": false}
+    ],
+    "quotes": [
+      {"text": "the gap between idea and action is a chasm most people never get past", "cite": "Baremetrics blog, October 2014"},
+      {"text": "I was depressed, anxious and the most stressed I've ever been", "cite": "Baremetrics blog, December 2019, on the failed sale"},
+      {"text": "I just wasn't enjoying myself anymore.", "cite": "Baremetrics blog, November 2020, on selling"},
+      {"text": "I'm at my most fulfilled when I'm creating", "cite": "Baremetrics blog, November 2020"},
+      {"text": "I've thought about Baremetrics literally every single day for seven years.", "cite": "Baremetrics blog, November 2020"},
+      {"text": "It's terrifying launching something.", "cite": "Behind the Craft, May 2026"},
+      {"text": "I've been slinging so much at the wall for the past 5 years.", "cite": "Josh on X, 2026"},
+      {"text": "the line is increasingly blurry", "cite": "Josh on X, 2026, on AI and the internet"}
+    ],
+    "steal": [
+      "Look for the thing we already do by hand every week in a spreadsheet. If it annoys us, it annoys thousands of other people with our job.",
+      "Design the first five minutes so well that a new user wants to screenshot it. That screenshot is our marketing.",
+      "Charge from day one. Josh got 100 customers without a free plan or trial, which told him far more than a 10,000-person waitlist ever told Maybe.",
+      "Put a time limit on the first version, days not months, and plan to throw it away once real users show us what matters.",
+      "If we ever sell something, ask for proof of funds early and avoid earnouts. Josh lost six months to a buyer who never had the money.",
+      "Use a second AI model to attack the code the first one wrote, like his adversarial review skill, before customers find the bugs."
+    ],
+    "sources": [
+      {"title": "Intercom blog, how Baremetrics went from 0 to $14,000 a month (June 2014)", "url": "https://www.intercom.com/blog/how-baremetrics-went-from-0-to-14000-per-month/"},
+      {"title": "Baremetrics blog, first 100 customers (April 2014)", "url": "https://baremetrics.com/blog/first-100-customers"},
+      {"title": "Baremetrics blog, one year later (October 2014)", "url": "https://baremetrics.com/blog/one-year-later"},
+      {"title": "Baremetrics blog, founder mental health (February 2019)", "url": "https://baremetrics.com/blog/founder-mental-health"},
+      {"title": "Baremetrics blog, I almost sold Baremetrics for $5m (December 2019)", "url": "https://baremetrics.com/blog/i-almost-sold-baremetrics-for-5m"},
+      {"title": "Baremetrics blog, I sold Baremetrics (November 2020)", "url": "https://baremetrics.com/blog/i-sold-baremetrics"},
+      {"title": "Failory, 3 reasons Maybe failed (January 2024)", "url": "https://newsletter.failory.com/p/3-reasons-maybe-failed"},
+      {"title": "BetterLaunch, Josh Pigford on Maybe going open source", "url": "https://www.betterlaunch.co/playbooks/episodes/josh-pigford-maybe-open-source"},
+      {"title": "Maybe archive on GitHub", "url": "https://github.com/maybe-finance/maybe-archive"},
+      {"title": "Founded.org, Josh Pigford (aggregator, weak)", "url": "https://www.founded.org/founders/josh-pigford/"},
+      {"title": "Josh Pigford, projects", "url": "https://joshpigford.com/projects"},
+      {"title": "Behind the Craft, the exact AI skills Josh Pigford uses (May 2026)", "url": "https://creatoreconomy.so/p/the-exact-ai-skills-this-solo-founder-uses-josh-pigford"},
+      {"title": "Josh Pigford on X, five years of slinging", "url": "https://x.com/Shpigford/status/2084243773580611990"},
+      {"title": "Josh Pigford on X, AI and the internet", "url": "https://x.com/Shpigford/status/2060520218259046438"}
+    ]
+  }
+}

@@ -1,0 +1,510 @@
+{
+ "n": 50,
+ "name": "Tyler Tringas",
+ "short": "Tyler",
+ "wisdom": "The best time to sell is when you don't need to.",
+ "email": {
+  "subject": "Day 50: he built it on a plane and sold it for life-changing money",
+  "hook": "Tyler Tringas built a $5 a month app on a 30-hour flight with no logo and no cancel button, sold it five years later for what he calls life-changing money, and in 2024 shut down the investment fund he built afterwards.",
+  "lead": [
+   "It feels right to end the series with Tyler, because his story has almost every lesson from the last 49 days in one person. A tiny first version. Customers on day one. Prices raised until it hurt. Growth with zero ad spend. A calm exit. And then a failure big enough to make him start over, building alone with AI.",
+   "He was truly solo on Storemapper. His fund had no employees either. Today he's back to building software on his own, and opening a climbing gym in Brooklyn with his partner Emily."
+  ],
+  "stats": [
+   {
+    "value": "$5 to $20",
+    "label": "his monthly price in the first year"
+   },
+   {
+    "value": "$25K+",
+    "label": "a month by about 2017"
+   },
+   {
+    "value": "$0",
+    "label": "spent on growth, 2012 to 2014"
+   }
+  ],
+  "chart": {
+   "title": "Storemapper's revenue, by his own numbers",
+   "points": [
+    {
+     "label": "Dec 2013",
+     "value": 2000,
+     "display": "$2K a month"
+    },
+    {
+     "label": "Mid 2014",
+     "value": 4500,
+     "display": "$54K a year"
+    },
+    {
+     "label": "Q1 2016",
+     "value": 16667,
+     "display": "$200K a year"
+    },
+    {
+     "label": "Aug 2016",
+     "value": 21000,
+     "display": "$21K a month"
+    },
+    {
+     "label": "About 2017",
+     "value": 25000,
+     "display": "$25K+ a month"
+    }
+   ],
+   "note": "Bars are sized by monthly revenue. He sold it in 2017 and never disclosed the price."
+  },
+  "sections": [
+   {
+    "title": "What he's doing right now",
+    "paras": [
+     "In December 2024 he wrote that his fund, Calm Fund, “is not coming back”, and that he was switching to building his own products. He builds alone with AI tools like Cursor and v0. His first app, Sparks, took about two to three days.",
+     "He's also building a climbing gym in DUMBO, Brooklyn, with his partner Emily, and writes about both at Code and Concrete. In June 2025 he wrote that AI helped his firm resolve a two-year lawsuit on very favourable terms. Whether the gym has opened, he hasn't said publicly."
+    ]
+   },
+   {
+    "title": "How the money came in",
+    "stats": true,
+    "paras": [
+     "Storemapper was a store-locator app for online shops, sold as a monthly subscription. He launched at $5 a month in August 2012, went to $9 about six months later, then $20 three months after that, and signups kept rising. “Lesson learned: always test higher prices.”",
+     "By his own numbers it was about $2K a month in December 2013, $200K a year in early 2016 and over $25K a month by about 2017, with nearly 2,000 paying customers and churn under 1% a month. In 2017 he sold it to SureSwift Capital. He never disclosed the price."
+    ]
+   },
+   {
+    "title": "How he built it",
+    "paras": [
+     "On one flight from San Francisco to Buenos Aires, via New York, about 30 hours. A Ruby on Rails app to upload store addresses, plus a little JavaScript widget for shop owners to paste on their sites. “We didn't have a logo, I didn't have an email address,” he said. You couldn't cancel or change your password.",
+     "A year earlier he couldn't code. He learned by bidding on freelance jobs he couldn't yet do. That's where the idea came from too: his Shopify clients kept asking for store locators that would cost them thousands as custom work."
+    ]
+   },
+   {
+    "title": "How he got the users",
+    "paras": [
+     "He emailed his past freelance clients on launch day and had paying customers that same day. Then he answered questions on Shopify and BigCommerce forums with a quiet signature, and pitched Storemapper to people posting store-locator jobs on oDesk and Elance.",
+     "Then three things took over: listings in the Shopify, BigCommerce and Magento app stores, a “powered by Storemapper” link in every widget, and search. He did no real SEO work. “We basically won the SEO game just by being the only viable result.”"
+    ]
+   },
+   {
+    "title": "The part nobody talks about",
+    "chart": true,
+    "paras": [
+     "After the sale he started Earnest Capital, later Calm Company Fund, to invest in bootstrapped companies like his. Four small funds, about 80 companies. In June 2024 he paused it: the idea worked, he said, but the fee model didn't, and a lawsuit with SureSwift, the company that had bought Storemapper, was draining it. In December 2024 he closed it for good.",
+     "So the man who sold calmly ended up in a long fight with his buyer, and the business he built on that win failed. He's now back where he started: one person, building software."
+    ]
+   },
+   {
+    "title": "Fifty days, and what they add up to",
+    "paras": [
+     "That's the end of the series. Fifty people, and almost none of them had it work the first time. Pieter, Marc, Anne-Laure, Rob, Kyle, Monica, Tyler: a lot of failed projects, a lot of tiny first versions, and the same few moves over and over. Ship something small. Show it to people who already know you. Charge more than feels comfortable. Keep going for longer than seems reasonable.",
+     "Thank you for reading every morning. The best way to honour fifty stories is to start the fifty-first. **Let it be ours.**"
+    ]
+   }
+  ],
+  "tryToday": "Tyler built his first version in one flight. Pick a 30-hour window this month, block it in your calendar, and decide now what the smallest version you could take payments for would be.",
+  "button": "Read the last story"
+ },
+ "page": {
+  "intro": "Tyler taught himself to code by taking freelance jobs he couldn't do yet. Then, on one long flight, he built Storemapper, a little store-locator app that grew for five years with no ad spend and sold for what he calls a life-changing amount. What came after is a story about failure, too.",
+  "stats": [
+   {
+    "value": "30 hours",
+    "num": 30,
+    "prefix": "",
+    "suffix": " hours",
+    "label": "to build the first version",
+    "note": "one flight, Aug 2012"
+   },
+   {
+    "value": "$25K+",
+    "num": 25,
+    "prefix": "$",
+    "suffix": "K+",
+    "label": "a month",
+    "note": "his own number, about 2017"
+   },
+   {
+    "value": "2,000",
+    "num": 2000,
+    "prefix": "",
+    "suffix": "",
+    "label": "paying customers",
+    "note": "nearly, about 2017"
+   },
+   {
+    "value": "80",
+    "num": 80,
+    "prefix": "",
+    "suffix": "",
+    "label": "companies his fund backed",
+    "note": "2019 to 2024"
+   }
+  ],
+  "chapters": [
+   {
+    "label": "Before it worked",
+    "title": "Learning to code by taking jobs he couldn't do",
+    "paras": [
+     "Before Storemapper, Tyler had a solar startup. It didn't work out, and it left him with about $60K of debt. We don't know much more about it than that, but it's the hole he was climbing out of.",
+     "About a year before Storemapper launched, he had no real coding background. His way of learning was bold: he bid on freelance jobs he couldn't yet do, then figured them out. A lot of those jobs were for shops on Shopify.",
+     "That's where he noticed the pattern. His Shopify clients kept asking for the same thing: a store locator, the little map on a brand's website that shows you which shops carry their products. Built as custom work, that would cost them a few thousand dollars. Every time.",
+     "If you've read this series from the start, you know what happens next. The thing people keep asking you for, again and again, is the product."
+    ]
+   },
+   {
+    "label": "The first version",
+    "title": "Built on a 30-hour flight",
+    "paras": [
+     "In August 2012 he got on a plane from San Francisco to Buenos Aires, with a stop at JFK in New York. By the time he got off, Storemapper was live. In his words, he went “from nothing to live-and-accepting-payments in one 30-hour flight.” On the Indie Hackers podcast he remembered it as about 36 hours, and a first-class flight, so the exact length depends on which time he told it.",
+     "What did he build? A Ruby on Rails app where a shop owner could upload their store data, addresses and map coordinates, and an embeddable JavaScript widget they could paste onto their own site to show the map.",
+     "It was rough, and he loves telling that part. “We didn't have a logo, I didn't have an email address,” he said, and the landing page was, in his word, hilarious. There was no way to cancel your subscription. There was no way to change your password.",
+     "It cost him nothing up front. He never invested money in it and it was cash-flow positive from the start. He built on SaaS tools with free or cheap plans, used LegalZoom to set up the company and Bench for bookkeeping.",
+     "His early toolkit is a nice list for us: Stripe for payments, Baremetrics to watch revenue, Keen for analytics, bit.ly for links, a separate Gmail account for support that he checked in batches, and screencasts he recorded himself.",
+     "There was one risk he could never get rid of. The whole product sat on Google Maps. “My heart stops every time Google Maps updates their terms of service,” he admitted. Every tool built on someone else's platform carries that fear."
+    ],
+    "pull": {
+     "text": "we didn't have a logo, I didn't have an email address",
+     "cite": "Tyler, Indie Hackers Podcast #012"
+    }
+   },
+   {
+    "label": "The first customers",
+    "title": "Paying customers on day one",
+    "paras": [
+     "On launch day he emailed his past freelance clients, the same Shopify shops that had asked him for store locators. Some of them signed up right away. His 2014 post says three paying subscribers on day one, and an Indie Hackers interview says his first five came from those emails. Either way, “we had paying customers that day basically.”",
+     "Next he went where shop owners asked for help. He answered questions on the Shopify and BigCommerce forums, with a discreet signature mentioning Storemapper. He wasn't spamming. He was being useful in exactly the places his customers were.",
+     "He also went to the freelance sites, oDesk and Elance, and later Upwork, and found people posting jobs to have a custom store locator built. He pitched them Storemapper instead. Why pay thousands for custom code when a $5 app does it?",
+     "Early on that meant 5 to 10 new paying customers a month. By spring 2013 he had about 50 customers and a few hundred dollars a month. Small, but real and growing.",
+     "Then, around customer number 50, something changed. Someone found Storemapper on Google and signed up without ever talking to him. That's the moment a product starts to sell itself."
+    ]
+   },
+   {
+    "label": "Finding the money",
+    "title": "He raised prices and watched what happened",
+    "paras": [
+     "He launched at $5 a month, which was cheap even for a bare-bones tool. His goal back then wasn't to get rich. It was to keep his time on it to 10 to 15 hours a month in total, support emails included.",
+     "About six months in, early 2013, he added features and raised the price for new customers to $9, an 80% jump. Signups kept rising. Three months later he raised it again, to $20. Signups still kept rising.",
+     "His summary is the most useful sentence on pricing in this series: “I just raised prices and watched what happened.” And the lesson he took: “Lesson learned: always test higher prices.”",
+     "He also added a yearly plan at $99 to help cash flow, and by 2014 he had six plans: Micro, Pro and Premium, each monthly or yearly. Monthly churn stayed under 1%. Once a shop puts a store map on its site, it rarely takes it down.",
+     "The numbers he shared publicly, often with live Baremetrics dashboards, tell the story. About $2K a month in December 2013. About $54K a year by mid-2014. He wrote a post titled, in effect, bootstrapped to $50,000+ a year in two years. $200K a year in the first quarter of 2016. $21K a month in August 2016. And $25K+ a month by about 2017. Nearly all of these are his own numbers, shared in public posts and interviews, not audited figures.",
+     "He also kept his life cheap. He moved from New York to Southeast Asia to cut costs and paid off the roughly $60K of debt from the solar startup. Around 2016 he was working 10 to 15 hours a week on it while travelling with his girlfriend."
+    ],
+    "chart": 0,
+    "pull": {
+     "text": "I just raised prices and watched what happened.",
+     "cite": "Tyler, Medium, 2014"
+    }
+   },
+   {
+    "label": "Growing it",
+    "title": "Zero dollars on growth",
+    "paras": [
+     "From 2012 to 2014, he says he spent “literally zero dollars, on any growth strategies.” So how did it grow more than 20 times in the four years after 2013?",
+     "First, app stores. He got Storemapper listed in the Shopify, BigCommerce and Magento app stores, where shop owners go looking for exactly this kind of add-on. That made pure inbound possible. He now tells first-time founders to look at B2B app stores for this reason.",
+     "Second, the widget itself. Every Storemapper map carried a “powered by Storemapper” link. Every shop that used it advertised it to every visitor. That drove thousands of clicks a month.",
+     "Third, search, almost by accident. He did “zero” deliberate SEO. He just happened to be the only real product for people searching for a store locator app. “We basically won the SEO game just by being the only viable result.”",
+     "Plenty of things didn't work, and he's refreshingly honest about them. He set up a referral programme that got zero signups: “I do not have a clue why.” He tried a growth partner paid on results, which went nowhere. He spent about $100 on oDesk lead generators. And he tried having a virtual assistant do cold outreach, then dropped it because he knew he wouldn't enjoy running it.",
+     "By August 2014 he had about 500 brands. By about 2017 it was nearly 2,000 active paying customers, and the number of support tickets had barely changed. He called it “set it and forget it”. His hours did creep up for a while, to 15 to 20 a week from February 2014, but by the sale it was back to about 10."
+    ],
+    "pull": {
+     "text": "we basically won the SEO game just by being the only viable result",
+     "cite": "Tyler, Indie Hackers Podcast #012"
+    }
+   },
+   {
+    "label": "The exit",
+    "title": "Selling before he needed to",
+    "paras": [
+     "In March 2017 he went to MicroConf in Las Vegas, a conference for self-funded software founders, and met the team from SureSwift Capital, which buys small software companies.",
+     "He sold Storemapper to them later that year as an asset purchase, about five years after launch. He never disclosed the price or the final monthly revenue. He only said it was “a life-changing amount of money”.",
+     "What's unusual is why he sold. He wasn't burned out. The business took about 10 hours a week. But 100% of his income came from one product, and he wanted to put his energy into Maptia. He called himself an “opportunistic seller”.",
+     "His advice from that sale is the line we've chosen for today: “Run your business to sell it, before you want to sell it.” The point is that the strongest position in any sale is **not having to sell**. Keep the books clean and the hours low, and when a good offer comes, you're choosing it, not grabbing it."
+    ],
+    "pull": {
+     "text": "Run your business to sell it, before you want to sell it",
+     "cite": "Tyler, tylertringas.com, 2017"
+    }
+   },
+   {
+    "label": "The second act",
+    "title": "A fund for calm companies",
+    "paras": [
+     "After the sale he wanted to help people like him. In 2019 he started Earnest Capital, later renamed Calm Company Fund, to invest in bootstrapped businesses that would never fit the venture capital model.",
+     "Over five years it raised four small funds and backed about 80 companies. In 2021 it even raised about $1.3M from 746 people through Wefunder, so ordinary investors could take part.",
+     "In March 2023 he launched Calm Company Catalyst, a way to do bigger deals of $500K to $1.5M one at a time, while the main fund wrote cheques of $200K to $350K into companies with up to $1M in revenue. In that same post he named “generative AI disruption” as something making bets harder.",
+     "On paper it was the perfect next step for him. In practice, it's where the story turns."
+    ]
+   },
+   {
+    "label": "The lowest point",
+    "title": "The thesis worked. The business didn't.",
+    "paras": [
+     "In June 2024 he paused the fund and said he was going on sabbatical. His explanation was honest and a little painful: the investing idea worked, but the fee model didn't. A small fund just couldn't earn enough in fees to run itself.",
+     "There was something worse. The fund was in a lawsuit with SureSwift, the very company that had bought Storemapper, and the litigation was draining its resources. The calm, friendly exit had turned into a legal fight years later.",
+     "On 23 December 2024 he made it final: “Calm Fund is not coming back.” Fund IV gave back the capital it had called. The management company had no employees, so there was nobody to let go except himself.",
+     "There's a small coda. In June 2025 he wrote a post called How AI Saved My Company From a 2-Year Litigation Nightmare. His firm, he wrote, resolved the lawsuit on very favourable terms, and he called the experience a masterclass in using AI against well-funded opponents."
+    ]
+   },
+   {
+    "label": "Where he stands now",
+    "title": "Back to one person and a laptop",
+    "paras": [
+     "In the same December 2024 post he set out what's next: “I'm switching my primary focus to building my own products.” He wants to own and operate businesses and let the cash flow compound, instead of investing in other people's.",
+     "He's building software alone now, with AI tools like Cursor and v0. His first app, Sparks, at getsparks.co, took him about two to three days. That's the 30-hour flight all over again, just with a much better co-pilot. He believes “AI-assisted development is fundamentally changing the market”.",
+     "And he's building something physical: a rock climbing gym in DUMBO, Brooklyn, with his partner Emily, which was aimed to open in autumn 2025. He writes about all of it at Code and Concrete, a Substack about relearning to code, building software in the age of AI and building climbing gyms in New York. As of November 2026 it has hundreds of subscribers.",
+     "We don't know if the gym has opened, or how Sparks is doing. He hasn't shared that. But there's something lovely about the shape of it. After the sale, the fund, the lawsuit and the shutdown, he's back to exactly what worked in 2012: one person, building a small thing, and seeing who'll pay for it."
+    ]
+   }
+  ],
+  "failuresTitle": "A solar startup, a fund and a fight with his buyer",
+  "failuresIntro": "Storemapper is the win everyone remembers. Around it are some real losses.",
+  "failures": [
+   {
+    "year": "Before 2012",
+    "name": "The solar startup",
+    "what": "His earlier startup in solar left him with about $60K of debt. He paid it off after moving from New York to Southeast Asia to cut costs.",
+    "lesson": "A cheap life buys time for a small product to grow."
+   },
+   {
+    "year": "2012 to 2014",
+    "name": "Growth experiments that flopped",
+    "what": "A referral programme with zero signups, a performance-based growth partner, about $100 on oDesk lead generators, and virtual-assistant cold outreach he dropped because he wouldn't enjoy running it.",
+    "lesson": "Drop channels that don't fit how you want to work, even if they work for others."
+   },
+   {
+    "year": "2019 to 2024",
+    "name": "Calm Company Fund",
+    "what": "Four small funds and about 80 companies. In June 2024 he paused it, saying the thesis worked but the fee model did not. In December 2024 he closed it for good.",
+    "lesson": "A good idea still needs a business model that pays for itself."
+   },
+   {
+    "year": "By 2024",
+    "name": "The SureSwift lawsuit",
+    "what": "A lawsuit with the company that bought Storemapper drained the fund's resources. He later wrote that AI helped resolve it on favourable terms in 2025.",
+    "lesson": "An exit isn't always the end of the relationship; choose buyers carefully."
+   }
+  ],
+  "playbookTitle": "How Storemapper grew with zero ad spend",
+  "playbook": [
+   {
+    "title": "Email your old clients on launch day",
+    "text": "His past Shopify freelance clients were the people asking for store locators. He emailed them on day one and had paying customers that same day."
+   },
+   {
+    "title": "Be useful on platform forums",
+    "text": "He answered questions on the Shopify and BigCommerce forums with a discreet signature. That brought a steady 5 to 10 new customers a month early on."
+   },
+   {
+    "title": "Pitch people who post the job",
+    "text": "On oDesk, Elance and Upwork he found people hiring developers to build custom store locators and offered them a $5 app instead."
+   },
+   {
+    "title": "Get into the app stores",
+    "text": "Listings in the Shopify, BigCommerce and Magento app stores made pure inbound possible. He recommends B2B app stores to first-time founders."
+   },
+   {
+    "title": "Put a link in the product",
+    "text": "A powered-by link in every widget drove thousands of clicks a month. Every customer's site became an ad."
+   },
+   {
+    "title": "Be the only real result",
+    "text": "He did no deliberate SEO, but as the only real store locator app he won the searches anyway. Around customer 50, people started finding him on Google."
+   },
+   {
+    "title": "Raise prices and watch",
+    "text": "$5 to $9 to $20 within about a year, then annual and tiered plans. Signups kept rising and churn stayed under 1% a month."
+   },
+   {
+    "title": "Share live numbers",
+    "text": "He posted revenue publicly with live Baremetrics dashboards, so anyone could see the real numbers behind his posts."
+   }
+  ],
+  "charts": [
+   {
+    "title": "Storemapper's revenue, by his own numbers",
+    "points": [
+     {
+      "label": "Dec 2013",
+      "value": 2000,
+      "display": "$2K a month"
+     },
+     {
+      "label": "Mid 2014",
+      "value": 4500,
+      "display": "$54K a year"
+     },
+     {
+      "label": "Q1 2016",
+      "value": 16667,
+      "display": "$200K a year"
+     },
+     {
+      "label": "Aug 2016",
+      "value": 21000,
+      "display": "$21K a month"
+     },
+     {
+      "label": "About 2017",
+      "value": 25000,
+      "display": "$25K+ a month"
+     }
+    ],
+    "note": "Bars are sized by monthly revenue. Sold in 2017, price not disclosed."
+   },
+   {
+    "title": "Storemapper's monthly price in year one",
+    "points": [
+     {
+      "label": "Aug 2012",
+      "value": 5,
+      "display": "$5"
+     },
+     {
+      "label": "Early 2013",
+      "value": 9,
+      "display": "$9"
+     },
+     {
+      "label": "Mid 2013",
+      "value": 20,
+      "display": "$20"
+     }
+    ],
+    "note": "Signups kept rising after each increase."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "Before 2012",
+    "text": "A solar startup leaves him about $60K in debt. He learns to code by taking freelance jobs."
+   },
+   {
+    "when": "Aug 2012",
+    "text": "Builds Storemapper on a flight from San Francisco to Buenos Aires. Paying customers on day one at $5 a month.",
+    "big": true
+   },
+   {
+    "when": "2013",
+    "text": "Price goes to $9, then $20. About 50 customers by spring. About $2K a month by December."
+   },
+   {
+    "when": "2014",
+    "text": "About $54K a year and about 500 brands, with zero spent on growth."
+   },
+   {
+    "when": "2016",
+    "text": "$200K a year in the first quarter. $21K a month by August."
+   },
+   {
+    "when": "Mar 2017",
+    "text": "Meets SureSwift Capital at MicroConf in Las Vegas."
+   },
+   {
+    "when": "2017",
+    "text": "Sells Storemapper for an undisclosed life-changing amount.",
+    "big": true
+   },
+   {
+    "when": "2019",
+    "text": "Starts Earnest Capital, later Calm Company Fund."
+   },
+   {
+    "when": "2021",
+    "text": "Raises about $1.3M from 746 investors on Wefunder."
+   },
+   {
+    "when": "Jun 2024",
+    "text": "Pauses the fund. The fee model doesn't work and the SureSwift lawsuit is draining it."
+   },
+   {
+    "when": "Dec 2024",
+    "text": "Closes Calm Fund for good and starts building his own products with AI.",
+    "big": true
+   },
+   {
+    "when": "2025",
+    "text": "The lawsuit is resolved. Builds Sparks in two to three days and works on a climbing gym in Brooklyn."
+   }
+  ],
+  "quotes": [
+   {
+    "text": "I just raised prices and watched what happened.",
+    "cite": "Medium, 2014"
+   },
+   {
+    "text": "Lesson learned: always test higher prices.",
+    "cite": "Medium, 2014"
+   },
+   {
+    "text": "we didn't have a logo, I didn't have an email address",
+    "cite": "Indie Hackers Podcast #012"
+   },
+   {
+    "text": "we basically won the SEO game just by being the only viable result",
+    "cite": "Indie Hackers Podcast #012"
+   },
+   {
+    "text": "Run your business to sell it, before you want to sell it",
+    "cite": "tylertringas.com, 2017"
+   },
+   {
+    "text": "Calm Fund is not coming back.",
+    "cite": "tylertringas.com, Dec 2024"
+   },
+   {
+    "text": "AI-assisted development is fundamentally changing the market",
+    "cite": "tylertringas.com, Dec 2024"
+   },
+   {
+    "text": "I'm switching my primary focus to building my own products",
+    "cite": "tylertringas.com, Dec 2024"
+   }
+  ],
+  "steal": [
+   "Listen for the request you keep getting from clients. Tyler's product was the store locator his Shopify clients kept asking him to build.",
+   "Give yourself one fixed block, like his 30-hour flight, to get from nothing to taking payments. No logo needed.",
+   "Go where your buyers already look: platform forums, app stores, and the job boards where they post the exact job your product replaces.",
+   "Put a small powered-by link in anything your customers show to their own customers.",
+   "Start cheap if you must, but raise the price every few months and watch what happens. His went from $5 to $20 in a year and signups still rose.",
+   "Run the business as if you'll sell it tomorrow: low hours, clean books, no dependence on you. Then you can say yes to a good offer, or no."
+  ],
+  "sources": [
+   {
+    "title": "Tyler Tringas on Medium, Storemapper to $50K a year (Aug 2014)",
+    "url": "https://medium.com/@tylertringas/e8b74209ef9b"
+   },
+   {
+    "title": "Indie Hackers interview, how I grew to $21K a month",
+    "url": "https://www.indiehackers.com/interview/how-i-grew-to-21k-mo-by-targeting-the-right-niche-47941ae09d"
+   },
+   {
+    "title": "Indie Hackers Podcast #012, Tyler Tringas of Storemapper",
+    "url": "https://www.indiehackers.com/podcast/012-tyler-tringas-of-storemapper"
+   },
+   {
+    "title": "tylertringas.com, selling my bootstrapped SaaS business (Oct 2017)",
+    "url": "https://tylertringas.com/selling-my-bootstrapped-saas-business/"
+   },
+   {
+    "title": "Calm Fund, Catalyst (Mar 2023)",
+    "url": "https://calmfund.com/writing/catalyst"
+   },
+   {
+    "title": "Calm Fund, going on sabbatical (Jun 2024)",
+    "url": "https://calmfund.com/writing/pause"
+   },
+   {
+    "title": "tylertringas.com, Code and Concrete (Dec 2024)",
+    "url": "https://tylertringas.com/code-concrete/"
+   },
+   {
+    "title": "tylertringas.com, home page and posts",
+    "url": "https://tylertringas.com/"
+   },
+   {
+    "title": "Code and Concrete on Substack",
+    "url": "https://codeandconcrete.com/"
+   }
+  ]
+ }
+}

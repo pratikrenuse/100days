@@ -1,0 +1,254 @@
+{
+  "n": 3,
+  "name": "Danny Postma",
+  "short": "Danny",
+  "wisdom": "Check what people search for before you write a line of code.",
+  "email": {
+    "subject": "He couldn't code. Then he sold to Google searchers.",
+    "hook": "Danny Postma ran a website with 1,000 visitors a day for four years and made almost nothing from it. Today his company says HeadshotPro has made more than $10 million since it launched in 2023.",
+    "lead": [
+      "Danny is the marketer on this list, which makes him the closest to us. He started as a freelance conversion-optimisation person who couldn't program, and his real edge has always been knowing what people type into Google.",
+      "One honest thing up front: he's not strictly solo any more. By February 2024 he was running a small team of contractors and part-timers, and he says he wishes he'd hired sooner."
+    ],
+    "stats": [
+      {"value": "$10M+", "label": "HeadshotPro revenue since launch, company claim"},
+      {"value": "200+", "label": "city pages built for Google"},
+      {"value": "$3,000", "label": "what he paid for the domain"}
+    ],
+    "chart": {
+      "title": "Headlime monthly recurring revenue, by his own numbers",
+      "points": [
+        {"label": "Dec 2020", "value": 1000, "display": "$1K"},
+        {"label": "Feb 2021", "value": 20000, "display": "$20K"}
+      ],
+      "note": "He sold Headlime a month later, in March 2021, for what he calls seven figures."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Danny has put almost everything into HeadshotPro, which turns your selfies into professional AI headshots. He sold off most of his other small AI products by 2024 so he could focus. The company's About page says quality became “good enough for everyday professional use” by early 2025, and it's now pushing hard into business teams, with HubSpot's sales team among its customers.",
+          "While rivals spread into dating photos and avatars, he's going the other way. In his words, “Our sole focus is creating the highest quality, professional AI headshots.”"
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "HeadshotPro sells one-time packages, not subscriptions, to individuals and to whole teams. Around 2023 he priced it at about $39, against roughly $300 for a studio shoot. A later Starter Story page lists $29 per session or $69 for three, so the price has moved around.",
+          "He stopped sharing revenue publicly around 2023. The company now claims $10 million or more since launch, and Starter Story estimates about $300,000 a month, though that's their guess, not his."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "chart": true,
+        "paras": [
+          "His pattern is speed plus timing. In 2020 he asked OpenAI's Greg Brockman directly for GPT-3 access, got into the first batch, and rebuilt his headline tool Headlime on it. It went from $1,000 a month to $20,000 a month in about two months, and he sold it.",
+          "When Stable Diffusion came out in 2022 he did the same. He built ProfilePicture.AI with Pieter Levels in about 30 hours, then HeadshotPro with a developer friend in 2023. The first version was rough and the servers kept going down. He then spent about a year making the headshots look like real photos."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "Google, almost entirely. He picks a product by looking at keyword data first. In Ahrefs he hunts for search terms with lots of volume and a low difficulty score, and he says with difficulty under 10 or 20, **“you're guaranteed to go to the front page”** with a few backlinks.",
+          "He paid $3,000 for headshotpro.com because he believes the keyword in the domain helps. He built 200+ city pages like “professional headshots San Francisco,” and bought an old domain, profilepicturemaker.com, just to put a banner on it pointing to HeadshotPro. When the Remini app went viral with AI headshots, his sales tripled, because he ranked #1 for “AI headshots.”"
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "Most of his AI products died. Deep Agency, launched right next to HeadshotPro, got lots of press and converted at about 0.3%. ProfilePicture.AI made roughly six figures in its first week and then faded to “barely any revenue.” He dropped Stock AI over quality and a fear of Getty Images, after paying $1,500 to lease a domain he gave back.",
+          "And running Headlime alone wore him out. Churn, angry feedback and well-funded copycats made it exhausting. In 2023 his wife was handling two to three hours of support a day, and he's since said plainly, “I should have started a team way earlier.”"
+        ]
+      }
+    ],
+    "tryToday": "Open any keyword tool and look up five problems your clients search for. Write down the one with the most searches and the weakest pages ranking for it. That's a product idea with distribution built in.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Danny Postma is a Dutch marketer who taught himself to code, sold an AI writing tool for seven figures in 2021, and then built HeadshotPro, which his company says has made more than $10 million since 2023. He isn't strictly solo now: he works with a small team of contractors and part-timers. Most numbers on this page are Danny's own or his company's, and the ones from outside estimates say so.",
+    "stats": [
+      {"value": "$10,000,000+", "num": 10000000, "prefix": "$", "suffix": "+", "label": "HeadshotPro revenue since launch", "note": "company claim, November 2026"},
+      {"value": "$20,000", "num": 20000, "prefix": "$", "suffix": "", "label": "Headlime monthly revenue at its peak", "note": "February 2021"},
+      {"value": "17,000,000", "num": 17000000, "prefix": "", "suffix": "", "label": "headshots made", "note": "company claim"},
+      {"value": "200", "num": 200, "prefix": "", "suffix": "+", "label": "programmatic city pages", "note": "Starter Story"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A gallery with 1,000 visitors a day and no money",
+        "paras": [
+          "Danny started out as a freelance conversion-optimisation specialist in the Netherlands. He was the person companies hired to make their landing pages sell better. He had never worked in a team, and he couldn't program.",
+          "In 2015, at 21, he started Landingfolio, a gallery of good landing page designs. He told Unite.AI he didn't know how to code then, “so I built it using WordPress.” Here's the part that should sound familiar to any marketer: it worked as traffic. It got more than 1,000 visitors a day.",
+          "And it made almost no money for about four years. Inspiration sites are hard to charge for, because people come to look, not to buy. Even in 2024 it still got thousands of visitors and was still hard to monetise.",
+          "Somewhere in there he cut back his client work and spent about eight months travelling full time while he learned to code. He later lived in Bali for about four years. So the skill came late, and it came from wanting to build his own things instead of fixing other people's pages."
+        ],
+        "pull": {"text": "so I built it using WordPress", "cite": "Danny on Landingfolio, Unite.AI, 2024"}
+      },
+      {
+        "label": "The first small win",
+        "title": "A book of headlines that became software",
+        "paras": [
+          "Before he had software that sold, Danny co-wrote a book with a friend called Headline Formulas. It sold “a few hundred copies.” Not much, but it held an idea: good headlines follow patterns, and patterns can be turned into a tool.",
+          "In June 2020 he launched Inspireframe, and he was planning a component marketplace called Rareblocks. There's no sign either one worked.",
+          "During the 2020 lockdown he built the first version of Headlime: basically a content spinner with 200 headline formulas inside. It made more than $60,000 in its first weeks, mostly from lifetime deals. That's when a book that sold a few hundred copies turned into real money, because the same knowledge was now something you could use, not just read.",
+          "His advice from that time is very simple, and very marketer: **“Make something you'd like to use yourself.”** He also said the only way to know if there's demand is to put the product in front of customers."
+        ]
+      },
+      {
+        "label": "The first turning point",
+        "title": "He emailed OpenAI and got in early",
+        "paras": [
+          "A friend showed Danny GPT-3. Instead of waiting for access like everyone else, he asked OpenAI's CTO Greg Brockman directly. He got into the first batch, and he and Copy.ai were among the very first to put GPT-3 into a live product.",
+          "He relaunched Headlime on GPT-3 in December 2020. It was at about $1,000 a month in recurring revenue that December and about $20,000 a month by February 2021. He priced it at $29 a month, then $59. TechCrunch covered it on 17 March 2021.",
+          "It wasn't easy. People copied his code and his content. Churn, negative feedback and competitors with big funding put him under heavy stress, and he found running the company alone exhausting.",
+          "In February 2021 two buyers made offers. He sold to Jarvis, which later became Jasper, in March 2021 for what he calls “seven figures.” An Indie Hackers headline says $1M in eight months. He had three choices: raise money, bootstrap with a team, or sell. He sold, because he didn't want to build a team. Remember that, because it comes back later."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "The lowest point",
+        "title": "A run of AI products that faded",
+        "paras": [
+          "When Stable Diffusion came out in September 2022, Danny jumped in again. His first idea was Stock AI, AI stock photos. The quality wasn't good enough to charge for, people wouldn't pay, and he worried about legal trouble from Getty Images. He'd also leased the domain stockyai.com for about $500 a month because the owner wanted $25,000 to $30,000 to sell it. He paid three months, $1,500, and gave it back.",
+          "Then came ProfilePicture.AI, which he built with Pieter Levels in about 30 hours. By his telling, Pieter launched his own version on a Friday night and Danny launched his the next morning. It went viral on Twitter and made roughly six figures in its first week. Then it faded to “barely any revenue.”",
+          "There were more: HairstyleAI, Photoshed, Tattoos AI (which he turned into Stock AI), Alice and Meme Morph. Most of them he later sold off.",
+          "And in 2023 he launched Deep Agency, AI fashion models for brands. It got a lot of press. It converted at about 0.3%. As he put it, the attention “didn't translate into sales.” If you're a marketer, this is the painful lesson: press is not demand."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "HeadshotPro, rushed out and often offline",
+        "paras": [
+          "HeadshotPro started as a proof of concept in 2022 and launched in 2023, built with a developer friend at the same time as Deep Agency. The friend later parted ways with him.",
+          "How long the first version took isn't clear. A Starter Story breakdown says both “30 days” and “within 30 hours” in different places, so the two don't agree. What everyone agrees on is that it was rushed. The servers went offline often after launch.",
+          "But it converted, about 10 times better than Deep Agency by his account. Unite.AI called it an immediate success, and Danny did the thing most of us struggle with. He stopped working on everything else.",
+          "Then he spent about a year making the photos good enough to pass as real. Under the hood it's Python, Stable Diffusion fine-tuned with DreamBooth, LLaVA to check the quality of uploaded selfies and CodeFormer to clean up faces. He added dozens of other open-source and custom models, built a Python model for generating different poses, and found that 15 to 17 uploaded photos was the “magic number” for good results."
+        ]
+      },
+      {
+        "label": "The first users",
+        "title": "He picked the keyword before the product",
+        "paras": [
+          "This is the chapter for us. Danny says, “I only build products where there's SEO.” He doesn't start with an idea and then look for marketing. He starts with search data.",
+          "His method: open Ahrefs' Keyword Finder, look for terms with high search volume and low keyword difficulty. If the difficulty is under 10 or 20, he says “you're guaranteed to go to the front page” with a handful of backlinks. In his words, the easiest thing is to “pick a product that has a lot of searches with no competition.”",
+          "He paid $3,000 for headshotpro.com because he believes having the keyword in the domain helps. He bought profilepicturemaker.com, a 12-year-old domain, just to put a banner on it that sends people to HeadshotPro. Every old domain with traffic becomes a funnel.",
+          "Then he scaled the pages. Starter Story counts 200+ programmatic city and county pages, like “professional headshots San Francisco,” plus keyword-led blog posts and backlinks from his Product Hunt launches. HeadshotPro got into the top 10 for “professional headshots.”",
+          "And then luck met preparation. When the Remini app went viral on iPhones for AI headshots, people started searching. Danny ranked #1 for “AI headshots,” and his sales tripled. Someone else paid for the awareness and he caught the searches.",
+          "Building in public on Twitter got him about 15,000 followers, and he says that helps with launch spikes but doesn't sell products that aren't novel. Google does the selling."
+        ],
+        "pull": {"text": "I only build products where there's SEO.", "cite": "Danny on The Bootstrapped Founder"}
+      },
+      {
+        "label": "Finding the money",
+        "title": "$39 against a $300 studio shoot",
+        "paras": [
+          "The pricing pitch is easy to understand. Around 2023 he charged about $39, when a studio shoot cost roughly $300. A Starter Story page from December 2024 lists $29 per session or $69 for three, so the tiers have changed over time. Either way, it's a one-time purchase, not a subscription.",
+          "He also sells team packages to companies, with a dashboard to manage everyone's headshots. The company says Fortune 500 teams use it, including HubSpot's sales team.",
+          "Danny stopped sharing revenue publicly around 2023. What's out there now: the company's About page, live in November 2026, claims “$10,000,000+ in revenue since launch,” 17 million headshots, more than 200,000 shoots and a 4.7 rating on Trustpilot from 3,648 reviews. Starter Story estimates about $300,000 a month, 222,000 visits a month and $1.35 of revenue per visitor, but those are their estimates.",
+          "He also bought a small company, Hesti AI, from its founder through acquisition.com. He rebuilt its landing page, which is his old CRO skill, and conversion went up about six times. He expected to earn back the price in about nine months.",
+          "He's thought about selling HeadshotPro too. He reckons a normal buyer would pay about three times profit, against eight to ten times from a strategic buyer, and there aren't obvious strategic buyers yet."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Running it",
+        "title": "Mornings only, and his wife on support",
+        "paras": [
+          "Danny works in the mornings and is mostly unreachable after about 3 pm. In 2023 his wife handled two to three hours of customer support a day. Refunds were automated, and when he took a two-week holiday he simply switched on automatic refunds so nothing needed him.",
+          "He deliberately avoids products that need him to be there all the time. He also prefers selling to consumers through search over business software that needs lots of hand-holding, even though teams are now a big push for HeadshotPro.",
+          "Copycats are constant in AI. He says he's grown a thick skin, and Pieter Levels told him to stop engaging with them.",
+          "Then he changed his mind about the thing he sold Headlime to avoid. In 2023 he posted his first job for a machine learning engineer, planned to hire in Asian time zones, and shadowed the remote teams at Gumroad and Notion to learn how they work. By February 2024 he had a small team of contractors and part-timers. He told Unite.AI, “They do things I could have never ever done myself,” and that sharing wins with a team is “way less lonely and much more fun.”"
+        ],
+        "pull": {"text": "I should have started a team way earlier.", "cite": "Danny to Unite.AI, February 2024"}
+      },
+      {
+        "label": "Where it stands now",
+        "title": "One product, one niche, done well",
+        "paras": [
+          "By 2024 Danny had sold off most of his other products so he could put everything into HeadshotPro. The About page shows side-by-side examples from 2022, 2023 and 2025 to prove how much better the photos have got, and says quality was “good enough for everyday professional use” by early 2025.",
+          "His bet is focus and quality. Competitors are spreading into dating photos and avatars, and he's staying with professional headshots. He has said open-source models alone “simply aren't good enough,” which is why he spent a year on custom models.",
+          "He hasn't shared much in public about where he thinks AI and solo businesses are heading in 2025 and 2026. What he has shown is a clear pattern: wait for a new model, test fast, keep only what converts, and pick markets where people are already searching.",
+          "For a marketer, his story is the most usable one this week. You don't need to be the best engineer. You need to know where demand already exists, and be quick when a new tool makes a cheaper answer possible."
+        ],
+        "pull": {"text": "Our sole focus is creating the highest quality, professional AI headshots.", "cite": "Danny to Unite.AI, 2024"}
+      }
+    ],
+    "failuresTitle": "A dozen products, and most of them missed",
+    "failuresIntro": "Danny has named more than 12 products, at least six of them clear misses, and one seven-figure exit. Here are the misses.",
+    "failures": [
+      {"year": "2015 to 2019", "name": "Landingfolio", "what": "A landing page gallery built on WordPress with more than 1,000 daily visitors. It made almost no money for about four years because people browse inspiration sites, they don't buy from them.", "lesson": "Traffic only matters if the visitors have a problem they'll pay to fix."},
+      {"year": "Before 2020", "name": "Headline Formulas", "what": "A book co-written with a friend that sold a few hundred copies. It later became the seed of Headlime.", "lesson": "A small product can be a draft of a bigger one."},
+      {"year": "2020", "name": "Inspireframe and Rareblocks", "what": "Inspireframe launched in June 2020 and Rareblocks was a planned component marketplace. Neither shows any sign of working.", "lesson": "Not every side project needs a post-mortem; drop it and move on."},
+      {"year": "2022", "name": "Stock AI", "what": "AI stock photos that weren't good enough to charge for, with a fear of legal action from Getty Images. He also lost $1,500 leasing the domain.", "lesson": "Don't pay for a fancy domain before the product proves itself."},
+      {"year": "2022", "name": "ProfilePicture.AI", "what": "Built with Pieter Levels in about 30 hours, it made roughly six figures in its first week, then faded to barely any revenue.", "lesson": "A viral first week tells you about curiosity, not lasting demand."},
+      {"year": "2023", "name": "Deep Agency", "what": "AI fashion models with a lot of press and about 0.3% conversion. The attention didn't turn into sales.", "lesson": "Press coverage is not proof that anyone will pay."},
+      {"year": "2022 to 2024", "name": "HairstyleAI, Photoshed, Tattoos AI, Alice, Meme Morph", "what": "Side products from the AI rush. By 2024 he was selling most of them to focus on HeadshotPro.", "lesson": "Selling your side projects buys you focus and a little cash."}
+    ],
+    "playbookTitle": "How he gets users from Google",
+    "playbook": [
+      {"title": "Choose the product from keyword data", "text": "He searches Ahrefs' Keyword Finder for terms with high volume and difficulty under 10 or 20. If the demand is there and the competition is weak, he builds."},
+      {"title": "Buy the exact-match domain", "text": "He paid $3,000 for headshotpro.com because he believes the keyword in the domain helps rankings. For a marketer, that's a cheap bet next to a year of content."},
+      {"title": "Build programmatic city pages", "text": "HeadshotPro has 200+ city and county pages like “professional headshots San Francisco.” Each one targets a local search people actually make."},
+      {"title": "Turn old domains into funnels", "text": "He bought the 12-year-old profilepicturemaker.com and put a banner on it pointing to HeadshotPro. An aged domain with traffic becomes a free referral source."},
+      {"title": "Rank before the wave hits", "text": "Because he already ranked #1 for “AI headshots,” Remini's viral moment tripled his sales. Be on page one for the term before the market wakes up to it."},
+      {"title": "Use Product Hunt for backlinks", "text": "His Product Hunt launches gave him links back to his sites, which helped the pages rank. Launches feed the SEO, not the other way round."},
+      {"title": "Fix the landing page before buying traffic", "text": "When he bought Hesti AI, he rebuilt the landing page and conversion went up about six times. His CRO background pays off on every product."}
+    ],
+    "charts": [
+      {
+        "title": "Headlime monthly recurring revenue, by his own numbers",
+        "points": [
+          {"label": "Dec 2020", "value": 1000, "display": "$1K"},
+          {"label": "Feb 2021", "value": 20000, "display": "$20K"}
+        ],
+        "note": "After he rebuilt it on GPT-3. He sold it in March 2021."
+      },
+      {
+        "title": "HeadshotPro against a studio shoot, around 2023",
+        "points": [
+          {"label": "Studio shoot", "value": 300, "display": "about $300"},
+          {"label": "HeadshotPro", "value": 39, "display": "about $39"}
+        ],
+        "note": "Danny's own comparison. A December 2024 Starter Story page lists $29 per session or $69 for three."
+      }
+    ],
+    "timeline": [
+      {"when": "2015", "text": "Starts Landingfolio on WordPress at 21, while freelancing in conversion optimisation."},
+      {"when": "2015 to 2019", "text": "Landingfolio gets 1,000+ visitors a day and almost no revenue. He travels for eight months learning to code."},
+      {"when": "2020", "text": "Launches Headlime v1, a headline tool built from his book. It makes $60,000+ in its first weeks."},
+      {"when": "December 2020", "text": "Relaunches Headlime on GPT-3 after asking OpenAI directly for access.", "big": true},
+      {"when": "March 2021", "text": "Sells Headlime to Jarvis, later Jasper, for seven figures.", "big": true},
+      {"when": "September 2022", "text": "Stable Diffusion arrives. Tries Stock AI, then builds ProfilePicture.AI with Pieter Levels."},
+      {"when": "2023", "text": "Launches HeadshotPro next to Deep Agency. HeadshotPro converts about 10 times better, so he drops everything else.", "big": true},
+      {"when": "2023", "text": "Remini goes viral with AI headshots and his sales triple."},
+      {"when": "February 2024", "text": "Runs a small team of contractors and part-timers and says he should have hired earlier."},
+      {"when": "2025", "text": "HeadshotPro's quality is good enough for everyday professional use, and the team push grows."},
+      {"when": "November 2026", "text": "The company claims more than $10 million in revenue since launch.", "big": true}
+    ],
+    "quotes": [
+      {"text": "I only build products where there's SEO.", "cite": "The Bootstrapped Founder podcast"},
+      {"text": "you're guaranteed to go to the front page", "cite": "On low-difficulty keywords, The Bootstrapped Founder"},
+      {"text": "pick a product that has a lot of searches with no competition", "cite": "The Bootstrapped Founder"},
+      {"text": "Make something you'd like to use yourself.", "cite": "Failory interview"},
+      {"text": "I should have started a team way earlier.", "cite": "Unite.AI, February 2024"},
+      {"text": "They do things I could have never ever done myself.", "cite": "On his team, Unite.AI, February 2024"},
+      {"text": "Our sole focus is creating the highest quality, professional AI headshots.", "cite": "Unite.AI, 2024"}
+    ],
+    "steal": [
+      "Start with search data, not an idea. Look up the problems your clients have and only build where lots of people search and the ranking pages are weak.",
+      "When a new AI model comes out, ship small tests in days, watch the conversion rate, and keep only the one that converts. Kill the rest even if they got press.",
+      "Use your marketing skill as the edge. Danny's CRO background is why a rebuilt landing page lifted Hesti AI's conversion about six times.",
+      "Build pages for every city or variation people search for, and buy old domains in your niche to send traffic to your main product.",
+      "Automate support and refunds early so the business runs while you're away, and hire help before you burn out, not after."
+    ],
+    "sources": [
+      {"title": "Danny Postma on The Bootstrapped Founder", "url": "https://www.thebootstrappedfounder.com/danny-postma/"},
+      {"title": "HeadshotPro breakdown (Starter Story)", "url": "https://www.starterstory.com/stories/headshotpro-breakdown"},
+      {"title": "Headlime interview (Failory)", "url": "https://failory.com/interview/headlime"},
+      {"title": "Danny Postma interview (Unite.AI, February 2024)", "url": "https://www.unite.ai/?p=335787"},
+      {"title": "About HeadshotPro", "url": "https://www.headshotpro.com/about"},
+      {"title": "Danny Postma built and sold an AI writing tool in 8 months (Indie Hackers)", "url": "https://www.indiehackers.com/post/danny-postma-built-and-sold-ai-writing-tool-for-1m-in-8-months-full-story-7da7a7edf7"}
+    ]
+  }
+}

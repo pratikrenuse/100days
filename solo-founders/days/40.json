@@ -1,0 +1,248 @@
+{
+  "n": 40,
+  "name": "Wes Bos",
+  "short": "Wes",
+  "wisdom": "Ask people what they're struggling with, then sell them the answer in their words.",
+  "email": {
+    "subject": "300 people bought his first book. Then 100,000 took his free course.",
+    "hook": "Wes Bos spent more than a year writing a book about a text editor, sold it to a list of just 2,000 people, and turned that into a solo course business with about 30,000 paying students.",
+    "lead": [
+      "Wes is a Canadian developer from the Toronto area who grew up designing merch for hardcore bands. For years his course business was just him. In 2017 he also started the Syntax podcast with Scott Tolinski, and in April 2023 Syntax joined the company Sentry, so today he's part course creator, part podcast host inside a bigger company.",
+      "He's never published his revenue. But he has shared, in detail, how he gets people onto his email list and how he turns them into buyers. For marketers, that's the gold."
+    ],
+    "stats": [
+      {"value": "30K", "label": "paying students, about 2017"},
+      {"value": "165K", "label": "people on his email list then"},
+      {"value": "108,201", "label": "signups for his free JavaScript30 course"}
+    ],
+    "chart": {
+      "title": "His email list, by his own numbers",
+      "points": [
+        {"label": "Before Oct 2014", "value": 2000, "display": "About 2K"},
+        {"label": "About 2017", "value": 165000, "display": "About 165K"}
+      ],
+      "note": "The later figure comes from an Indie Hackers interview that seems to date from about 2017."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Syntax, the podcast he co-hosts with Scott Tolinski, is still going inside Sentry. In April 2025 they recorded episode 892, a look back at the show's history. Wes says the Sentry deal made Syntax “much more formal,” with a producer, a video creator and marketing staff around them.",
+          "He hasn't said much publicly about which new courses he's working on in 2026."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "Two ways. First, self-published video courses that he sells one at a time, on his own platform, with no client work. Around 2017 he had about 30,000 paying users across courses like React for Beginners, which alone had about 14,000 buyers. **His free course, JavaScript30, sits in front of them all**, with 108,201 signups.",
+          "Second, Syntax is paid for by sponsors. The first one, Delicious Brains, paid “like, $700 or something like that.” He has never shared totals for either."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "His first product was Sublime Text Power User, a book with 25 chapters and 20 videos about a popular code editor. He wrote it for more than a year, with plenty of self-doubt, and launched on 7 October 2014. He self-published it because, in his words, “writing a book with a tech publisher is a bum deal.”",
+          "Later he built his own course platform with Node, Express and MongoDB. One app serves seven or eight course websites, with affiliates, country-based discounts and tax reporting built in."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "chart": true,
+        "paras": [
+          "Before the book, he wrote blog posts and made YouTube videos about Sublime Text. About 2,000 people signed up for email. When he launched, **about 300 of them bought within a day or two**, and he soon posted that he'd sold almost 500 copies.",
+          "Then he kept going. He emails his list short notes asking “what are you struggling with?”, gets hundreds of replies, and uses readers' own words in his sales pages. On Twitter he posted about 10 times a day, mostly replies to people asking for help, plus “Hot Tips” twice a week."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "Wes is the most private of this week's founders about money. No revenue numbers, no price for the Sentry deal. So we can copy his methods, but we can't see exactly how well they paid.",
+          "And one bit of his advice looks like a contradiction: “don't ask people what they want.” Yet he constantly asks what people are struggling with. The difference is the lesson. People are bad at designing products, but very good at describing their pain."
+        ]
+      }
+    ],
+    "tryToday": "Send a two-line email or message to ten people in your field asking what they're struggling with right now. Save the exact words they use.",
+    "button": "Read how he built it"
+  },
+  "page": {
+    "intro": "Wes Bos went from designing T-shirts for hardcore bands to running one of the best-known solo course businesses in web development. His first product was a book about a code editor, sold to about 2,000 email subscribers. A free course with over 100,000 signups and a podcast called Syntax came later, and in 2023 Syntax joined the company Sentry.",
+    "stats": [
+      {"value": "30,000", "num": 30000, "prefix": "", "suffix": "", "label": "paying students", "note": "about 2017"},
+      {"value": "165,000", "num": 165000, "prefix": "", "suffix": "", "label": "email subscribers", "note": "about 2017, up from about 2,000"},
+      {"value": "108,201", "num": 108201, "prefix": "", "suffix": "", "label": "signups for free JavaScript30", "note": "about 2017"},
+      {"value": "300", "num": 300, "prefix": "", "suffix": "", "label": "book sales in a day or two", "note": "his first product, October 2014"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Band merch, MySpace pages and a lot of teaching",
+        "paras": [
+          "Wes is a Canadian developer from the Toronto area. As a teenager he was making websites, starting with MySpace page designs. He also designed T-shirts and CD art for bands. In his words, he “grew up doing merch for hardcore bands.”",
+          "First, a quick honesty note: every number on this page comes from Wes himself, mostly from a long Indie Hackers podcast interview, which seems to date from around 2017, and from Syntax episodes.",
+          "He freelanced all through high school and university, and by the time he left university he had a consulting business. Then came teaching, which turned out to be the thread that ran through everything. He taught WordPress for Ladies Learning Code in Toronto, and evening classes at HackerU. For years before that he'd been helping people one on one in IRC chat rooms.",
+          "So when he finally made a product, he had two unfair advantages: he knew how to design things that looked good, and he'd spent years answering beginners' questions. He knew exactly where people got stuck."
+        ],
+        "pull": {"text": "grew up doing merch for hardcore bands", "cite": "Wes, Syntax episode 892, April 2025"}
+      },
+      {
+        "label": "Building the list",
+        "title": "Blog posts about a text editor",
+        "paras": [
+          "Sublime Text was a code editor many developers loved, and Wes knew lots of tricks for it. He started writing blog posts about those tricks and making YouTube videos showing them.",
+          "Readers loved them. He wrote that “my readers loved the tips and were always asking for more!” He added an email signup, and over time about 2,000 people joined.",
+          "Two thousand isn't a big number. But it was the right 2,000: developers who used this exact editor and had already asked him for more. That's the whole idea of a warm list, and it's the part of the story we should study most."
+        ],
+        "pull": {"text": "my readers loved the tips and were always asking for more!", "cite": "Wes, launch post on wesbos.com, 2014"}
+      },
+      {
+        "label": "The first version",
+        "title": "More than a year of writing, then 300 sales",
+        "paras": [
+          "He decided to turn the tips into a proper product: Sublime Text Power User, a book with 25 chapters and 20 videos. It took him more than a year of writing, about a year and a half by his telling, and he talks openly about the self-doubt along the way.",
+          "He thought about going with a tech publisher and decided against it. His verdict: “writing a book with a tech publisher is a bum deal.” By self-publishing, he kept the customer relationship and the money.",
+          "He launched on 7 October 2014. Within the first day or two, **about 300 of his roughly 2,000 subscribers bought it**. That's about 15% of the list, which is a very high rate for any launch.",
+          "He also announced it on the Sublime Text forum, offering $10 off with the code LAUNCHDAY, and posted there that he'd sold almost 500 copies. In December 2014 the blogger Brett Terpstra wrote up a holiday deal on the book. Small, specific places where Sublime fans already gathered.",
+          "What that first launch showed him was simple: a small, warm list can pay. Everything he built afterwards repeats that pattern at a bigger scale."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "Finding the money",
+        "title": "From one book to a course business",
+        "paras": [
+          "After the book, Wes kept making courses. Sublime Text Power User was followed by React for Beginners, Learn Node, ES6 for Everyone and others. React for Beginners alone had about 14,000 buyers at the time of the Indie Hackers interview.",
+          "Across all of them he had about **30,000 paying users** by then. He sold each course one at a time, as a one-off purchase, and did no client work. He'd been fully on courses for about eight months at that point, after years of splitting his time with client projects.",
+          "He also brought in regional pricing very early. He calls them purchasing power discounts. His site reads the buyer's country, using a header that Cloudflare adds, and shows a coupon that only works in that country. His reasoning is human: in some countries, a course costs a week's or even a month's income.",
+          "He hasn't shared his revenue, ever. So we can't tell you what those 30,000 users added up to. What we can tell you is exactly how he found them."
+        ]
+      },
+      {
+        "label": "The platform",
+        "title": "He built his own shop",
+        "paras": [
+          "Instead of using a course marketplace, Wes built his own platform. The back end is Node.js and Express with a MongoDB database, hosted on DigitalOcean behind Cloudflare. The pages used Jade templates and Stylus for styling, with the video player built in React. Payments run through Stripe and PayPal.",
+          "One custom app serves seven or eight different course websites. He described it as “a couple thousand lines of code, maybe more.” It handles affiliates, the country-based discounts, tax reporting, and it even sold stickers.",
+          "For us, the lesson isn't that everyone should build their own platform. It's that owning the shop meant he owned the customer list, the pricing and the data. Every buyer became someone he could email directly."
+        ]
+      },
+      {
+        "label": "Scaling it",
+        "title": "A free course that 108,201 people signed up for",
+        "paras": [
+          "Wes's most famous move is giving away a complete course. JavaScript30 is 30 small projects in plain JavaScript, one a day, completely free.",
+          "He built it carefully. For about a year and a half he kept a folder of exercise ideas. He cut about 50 ideas down to 30. Then it took about three to four months of full-time work from idea list to launch.",
+          "Before launch he sent one or two emails and posted screenshots and GIFs on Twitter, keeping the code hidden until the whole thing was ready. At launch he made what he called a “hard ask”: please share this. He even suggested people find an “accountabilibuddy” to do the 30 days with.",
+          "By the time of the Indie Hackers interview, **JavaScript30 had 108,201 signups**. Even his smallest free course had about 10,000. He calls the strategy reciprocity. You give someone a full, finished, useful thing for free. Later, when they need more, they already trust you and they're already on your list.",
+          "That's very different from a free sample or a teaser. A free course that people finish and talk about works as a funnel all by itself."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "The habits",
+        "title": "Hundreds of replies and ten tweets a day",
+        "paras": [
+          "By about 2017 his email list had grown to about 165,000 people over four to five years, with open rates between 30% and as high as 60 or 70%. Those are remarkable numbers, and they come from how he uses email.",
+          "He sends short emails asking people what they're struggling with. Hundreds reply. He reads them, and then uses the readers' own words in his sales copy, and to decide what to teach next. He gets about 50 to 60 real emails a day. When someone buys, a text-expander shortcut lets him send one of 40 to 50 different thank-you notes, to start a real conversation rather than a robotic receipt.",
+          "On Twitter he had about 100,000 followers, built over about 11 years. He posted about 10 times a day, mostly replies. He ran TweetDeck searches to find people asking for help with the topics he taught, and answered them. About twice a week he posted “Hot Tips,” screenshots of code with a short explanation.",
+          "And he kept sane hours. “I only work 9:00 to 5:00,” he said. He has two kids. At the time he was planning to hand off graphic design and Facebook ads to others."
+        ],
+        "pull": {"text": "I only work 9:00 to 5:00.", "cite": "Wes, Indie Hackers podcast"}
+      },
+      {
+        "label": "Syntax",
+        "title": "Two courses with the same name, and a podcast",
+        "paras": [
+          "In April 2016 Wes started planning a podcast with Scott Tolinski, another course creator. They'd met in a funny way: both of them had a course called “React for Beginners,” and Scott renamed his.",
+          "The first episode of Syntax came out on 5 July 2017. Their first sponsor was Delicious Brains, and Wes remembers it paying “like, $700 or something like that.” Syntax became one of the best-known podcasts for web developers, paid for by sponsors.",
+          "In April 2023 Syntax and Scott's business, Level Up Tutorials, joined Sentry, a company that makes error-monitoring software for developers. Sentry acquired Level Up Tutorials and its content, which became free. The announcement said “Syntax is staying Syntax.” The price was never disclosed.",
+          "Wes said the deal made Syntax “much more formal.” Scott had been burned out running Level Up Tutorials, and the show now has a producer, a video creator and marketing staff. It isn't public whether Wes himself is a Sentry employee. Either way, from 2023 he's no longer purely solo."
+        ]
+      },
+      {
+        "label": "How he thinks",
+        "title": "Make things, and listen to pain",
+        "paras": [
+          "Wes's most repeated advice is short: “Just start producing stuff and get it out there.” His whole career is that sentence. Blog posts led to a list, the list led to a book, the book led to courses, and the courses led to a podcast.",
+          "His other line sounds strange at first: “don't ask people what they want.” Yet he asks his readers questions all the time. Look closely and there's no contradiction. He doesn't ask people to design his product. He asks what they're struggling with, and then he designs the answer himself.",
+          "He hasn't said much in public about AI or where he sees solo course businesses going, and his 2026 course plans aren't public. What he has shown, over more than a decade, is a way of working that doesn't depend on any one platform: own the list, own the shop, and keep teaching."
+        ],
+        "pull": {"text": "Just start producing stuff and get it out there.", "cite": "Wes, Indie Hackers podcast"}
+      }
+    ],
+    "failuresTitle": "No public failures, just a long apprenticeship",
+    "failuresIntro": "Wes hasn't talked about failed products, and there's no count of them. The closest things to setbacks are the slow start and the self-doubt.",
+    "failures": [
+      {"year": "2013 to 2014", "name": "More than a year of self-doubt", "what": "His first book took more than a year of writing, about a year and a half by his telling, and he talks about many moments of doubt. It still sold about 300 copies in a day or two.", "lesson": "A long build isn't a failure if a warm list is waiting at the end."},
+      {"year": "Before 2014", "name": "Years of client work first", "what": "He freelanced and consulted for years before products, and was still splitting time with client work until about eight months before the Indie Hackers interview.", "lesson": "It's fine to keep the client work while the product side grows."}
+    ],
+    "playbookTitle": "How he grew a list of 165,000",
+    "playbook": [
+      {"title": "Write about one narrow tool", "text": "He wrote blog posts and made YouTube videos about Sublime Text tricks. Readers kept asking for more, and about 2,000 joined his email list."},
+      {"title": "Sell to the small, warm list first", "text": "His first book sold about 300 copies in a day or two to those 2,000 subscribers, about 15%. He added a $10-off launch code on the Sublime forum and passed almost 500 copies."},
+      {"title": "Self-publish and own the customer", "text": "He skipped tech publishers, calling it a bum deal, and later built his own platform so every buyer landed on his own list."},
+      {"title": "Give away a complete course", "text": "JavaScript30, 30 free projects, got 108,201 signups. He teased it with GIFs and screenshots, then made a hard ask for shares at launch and suggested an accountabilibuddy."},
+      {"title": "Ask what people are struggling with", "text": "Short emails asking about struggles get hundreds of replies. He uses those exact words in his sales copy and to pick what to teach next."},
+      {"title": "Reply your way to 100,000 followers", "text": "About 10 tweets a day, mostly replies, found through TweetDeck searches for people asking for help, plus twice-weekly Hot Tips with code screenshots."},
+      {"title": "Price by country", "text": "Purchasing power discounts use Cloudflare's country header to show a coupon that only works in that country, so a course doesn't cost a month's income anywhere."},
+      {"title": "Say thank you like a person", "text": "A text-expander lets him send one of 40 to 50 different personal thank-you notes to buyers, which starts real conversations."}
+    ],
+    "charts": [
+      {
+        "title": "His first book launch, by his own numbers",
+        "points": [
+          {"label": "Email list before launch", "value": 2000, "display": "About 2,000"},
+          {"label": "Bought in a day or two", "value": 300, "display": "About 300"},
+          {"label": "Sold soon after", "value": 500, "display": "Almost 500"}
+        ],
+        "note": "Sublime Text Power User, launched 7 October 2014."
+      },
+      {
+        "title": "Free versus paid, about 2017, by his own numbers",
+        "points": [
+          {"label": "JavaScript30 signups (free)", "value": 108201, "display": "108,201"},
+          {"label": "Paying users, all courses", "value": 30000, "display": "About 30,000"},
+          {"label": "React for Beginners buyers", "value": 14000, "display": "About 14,000"}
+        ],
+        "note": "From the Indie Hackers podcast interview, which seems to date from about 2017."
+      }
+    ],
+    "timeline": [
+      {"when": "Teens", "text": "Designs MySpace pages and band T-shirts and CD art, then freelances through school and university.", "big": false},
+      {"when": "Before 2014", "text": "Teaches WordPress for Ladies Learning Code and evening classes at HackerU in Toronto.", "big": false},
+      {"when": "2013 to 2014", "text": "Writes Sublime Text blog posts and videos, growing a list of about 2,000.", "big": false},
+      {"when": "7 Oct 2014", "text": "Launches Sublime Text Power User. About 300 buy in a day or two.", "big": true},
+      {"when": "Dec 2014", "text": "Brett Terpstra writes up a holiday deal on the book.", "big": false},
+      {"when": "Apr 2016", "text": "Starts planning the Syntax podcast with Scott Tolinski.", "big": false},
+      {"when": "About 2017", "text": "About 30,000 paying users, a 165,000-person list and 108,201 JavaScript30 signups.", "big": true},
+      {"when": "5 Jul 2017", "text": "First episode of Syntax. First sponsor pays about $700.", "big": true},
+      {"when": "Apr 2023", "text": "Syntax and Level Up Tutorials join Sentry, for an undisclosed price.", "big": true},
+      {"when": "Apr 2025", "text": "Syntax episode 892 looks back at the history of the show.", "big": false}
+    ],
+    "quotes": [
+      {"text": "Just start producing stuff and get it out there.", "cite": "Indie Hackers podcast #028"},
+      {"text": "don't ask people what they want.", "cite": "Indie Hackers podcast #028"},
+      {"text": "writing a book with a tech publisher is a bum deal", "cite": "Indie Hackers podcast #028"},
+      {"text": "I only work 9:00 to 5:00.", "cite": "Indie Hackers podcast #028"},
+      {"text": "grew up doing merch for hardcore bands", "cite": "Syntax #892, April 2025"},
+      {"text": "Syntax is staying Syntax", "cite": "Level Up Tutorials FAQ on the Sentry deal, 2023"}
+    ],
+    "steal": [
+      "Start by writing about one narrow tool or topic you know better than most. Wes's whole business began with Sublime Text tips.",
+      "Launch to a small, warm list before you try to reach strangers. About 15% of his 2,000 subscribers bought on day one or two.",
+      "Give away one complete, finished thing, not a teaser. JavaScript30's 108,201 signups became the front door to his paid courses.",
+      "Ask people what they're struggling with, not what they want, and use their exact words in your sales page.",
+      "Find people asking for help in public and answer them, every day. Most of his tweets were replies.",
+      "Own your shop and your list, and price by country so people everywhere can afford what you sell."
+    ],
+    "sources": [
+      {"title": "Indie Hackers podcast #028: Wes Bos", "url": "https://www.indiehackers.com/podcast/028-wes-bos"},
+      {"title": "Syntax #892: The history of Syntax (April 2025)", "url": "https://syntax.fm/show/892/the-history-of-syntax/transcript"},
+      {"title": "wesbos.com: Sublime Text book launch post (October 2014)", "url": "https://wesbos.com/sublime-text-book"},
+      {"title": "Sublime Text forum: I've released my book and video series on Sublime Text", "url": "https://forum.sublimetext.com/t/ive-released-my-book-video-series-on-sublime-text/13964"},
+      {"title": "Brett Terpstra: A Sublime deal from Wes Bos (December 2014)", "url": "https://brettterpstra.com/2014/12/02/a-sublime-deal-from-wes-bos/"},
+      {"title": "Sentry blog: Syntax joins Sentry (April 2023)", "url": "https://blog.sentry.io/syntax-sentry-mmxxiii/"},
+      {"title": "Level Up Tutorials: FAQ on the Syntax and Sentry news (June 2023)", "url": "https://levelup.video/posts/faq-syntax-x-sentry-news"}
+    ]
+  }
+}

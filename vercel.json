@@ -30,6 +30,10 @@
     {
       "path": "/api/tool?fuel=1",
       "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/tool?solo=1",
+      "schedule": "0 0 * * *"
     }
   ]
 }

@@ -1,0 +1,517 @@
+{
+  "n": 31,
+  "name": "Tibo Louis-Lucas",
+  "short": "Tibo",
+  "wisdom": "Build fast, but pay the people who already own the audience.",
+  "email": {
+    "subject": "Two startups went to zero. Then he sold one for $8M.",
+    "hook": "Tibo Louis-Lucas burned through two funded startups and ended up with about €250K of personal debt, and a few years later his portfolio was making over $1M a month.",
+    "lead": [
+      "Before we go further, an honest note: Tibo is not a solo founder. He built Tweet Hunter with his co-founder Tom Jacquesson, they split it 50/50, and today his holding company TMAKER has a team of 10. We're including him anyway, because his story is the clearest example we have of one idea: building is getting cheap, and distribution is the thing that wins.",
+      "And he's a growth guy at heart. He calls himself the distribution partner, not the maker. That should feel very familiar to us."
+    ],
+    "stats": [
+      {
+        "value": "$8M",
+        "label": "collected from the sale"
+      },
+      {
+        "value": "$1M+",
+        "label": "a month across the portfolio in 2026"
+      },
+      {
+        "value": "10",
+        "label": "people on the team"
+      }
+    ],
+    "chart": {
+      "title": "Tweet Hunter monthly revenue in its first year, by the founders' numbers",
+      "points": [
+        {
+          "label": "Jun 2021",
+          "value": 600,
+          "display": "$600"
+        },
+        {
+          "label": "Aug 2021",
+          "value": 3500,
+          "display": "$3.5K"
+        },
+        {
+          "label": "Oct 2021",
+          "value": 12500,
+          "display": "$12.5K"
+        },
+        {
+          "label": "Apr 2022",
+          "value": 60000,
+          "display": "$60K"
+        }
+      ],
+      "note": "The big jump between August and October is the influencer deal."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Tibo runs TMAKER, a bootstrapped holding company with five live products and two more in stealth. The big ones are Revid, a video tool he bought as TypeFrame and rebuilt, and Outrank, an SEO tool. There's also SuperX, a Chrome extension for growing on X, plus Feather and Post Syncer.",
+          "His role is specific. On each product he pairs with a developer co-founder, and he handles distribution. He's said it straight out: **\"Instead of being the maker, I'm now the distribution guy.\"**"
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "Everything is subscription software. In 2026 he said the portfolio had passed $1M a month, about $12M a year. Revid alone was doing over $600K a month and Outrank about $200K a month, by his own numbers.",
+          "His personal share of the profits was over $100K a month in June 2026, and he says he spends about $6K to $8K a month. He also says he will never sell another company, because he doesn't want to become afraid of shipping new things."
+        ]
+      },
+      {
+        "title": "How they built it",
+        "paras": [
+          "In 2021 Tibo and Tom were running a little product studio and shipping roughly one new tool a month. They noticed their sales kept coming from Tibo's Twitter followers, so they built something for Twitter: a searchable library of viral tweets. Tibo says the first version took two weeks. Tom remembers it as about one. One write-up puts the cost at about $50, domain included.",
+          "There was no scheduling, no help docs, just a search box and a grid of tweets, with access by request. And they asked for money straight away, because, as Tibo put it, \"payment is the ultimate form of validation\"."
+        ]
+      },
+      {
+        "title": "How they got the users",
+        "paras": [
+          "They launched in May 2021 with $0 spent: posts from their own Twitter accounts, a few subreddits, and an email list left over from earlier products. One Reddit post alone brought about 300 access requests. They had about 10 paying customers within days, then 50, then 100.",
+          "The real jump came from one deal. They gave the ghostwriter JK Molina up to 25% of monthly profit and of any exit, and he pushed the tool to his audience. Revenue went from about $3K a month to somewhere between $15K and $20K within a few weeks (the exact figure differs between interviews). After that came a 30% affiliate program with 450+ affiliates, free side tools, and a Twitter growth challenge with 1,200+ people in it."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "The exit looks like a fairy tale. lempire, the company behind lemlist, bought Tweet Hunter and its LinkedIn twin Taplio for $2M upfront plus an earn-out of up to $8M. The buyer's founder had been Tibo's middle-school classmate. Five of six milestones were hit, so about $8M was paid in total.",
+          "But by the end of the earn-out the products were doing about $8M a year. So they sold the business for roughly one year of its revenue. Tibo calls it \"a bad decision financially\". After tax and the 50/50 split, he took home a little under $3M. And six months in, X changed its API and nearly broke a product making about $200K a month. He describes 18 months of stress."
+        ]
+      }
+    ],
+    "tryToday": "Make a list of three people who already talk to the exact audience you want. Write down what real share of the upside you could offer one of them, not a one-off fee.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Tibo Louis-Lucas spent six years on startups that failed, then shipped about ten products in four months while living on unemployment benefits. One of them, Tweet Hunter, became an $8M exit, and today he runs a 10-person portfolio of software products that he says makes over $1M a month.",
+    "stats": [
+      {
+        "value": "$8M",
+        "num": 8,
+        "prefix": "$",
+        "suffix": "M",
+        "label": "collected from the Tweet Hunter and Taplio sale",
+        "note": "his own figure, 2026"
+      },
+      {
+        "value": "$1M+",
+        "num": 1,
+        "prefix": "$",
+        "suffix": "M+",
+        "label": "a month across his portfolio",
+        "note": "his own figure, 2026"
+      },
+      {
+        "value": "€250K",
+        "num": 250,
+        "prefix": "€",
+        "suffix": "K",
+        "label": "personal debt after his second startup",
+        "note": "his own figure"
+      },
+      {
+        "value": "10",
+        "num": 10,
+        "prefix": "",
+        "suffix": "",
+        "label": "people on the TMAKER team",
+        "note": "not a solo operation"
+      }
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Six years, two startups, both gone",
+        "paras": [
+          "Thibault Louis-Lucas is French. Most people know him as Tibo Maker on X. Today he lives in rural Brittany, but he has also lived in Thailand and spent six weeks at a hacker residency in Da Nang, Vietnam. That gives you a sense of the man: someone who likes to build, and likes to move.",
+          "His first real attempt was a startup in 2015. He raised about €200K for it, and it went to zero. Two years later, in 2017, he tried again and raised about €500K. That one went to zero too, and it left him personally owing about €250K. One newsletter later described it as going from raising money to declaring bankruptcy, but the longer interview he gave in 2026 doesn't mention a bankruptcy, so the honest version is simply that both companies died.",
+          "Across those years he raised around $1M from investors, and he has said he will never do that again. Every big number on this page, by the way, comes from Tibo, Tom or the buyer themselves. None of it is audited, so read it as their own account.",
+          "After six years of this he did what a lot of us would do. He took a stable job as CTO at a scale-up. A salary, a team, no more personal debt growing every month."
+        ],
+        "pull": {
+          "text": "Instead of being the maker, I'm now the distribution guy.",
+          "cite": "Tibo, SaaS Club podcast, 2026"
+        }
+      },
+      {
+        "label": "The lowest point",
+        "title": "A hospital, a plan to travel, then COVID",
+        "paras": [
+          "Then life turned upside down. His first daughter became critically ill at two months old and spent a month in hospital. After something like that, a lot of priorities rearrange themselves.",
+          "In February 2020 Tibo and his wife both quit their jobs. The plan was to travel. It was a very human decision: we've been through something awful, let's go and live a bit.",
+          "A few weeks later COVID arrived and they were stuck in Paris. No travel, no jobs, a young family. He went on unemployment benefits, and that is where the next chapter starts. Not in a garage with a big vision, but in a locked-down flat with a small safety net and a lot of time.",
+          "It's worth sitting with that for a second. The person who later sold a company for $8M was, at this point, a twice-failed founder with debt, no job and a government allowance. If you ever feel late, remember this part."
+        ]
+      },
+      {
+        "label": "Shipping on repeat",
+        "title": "About ten products in four months",
+        "paras": [
+          "While on benefits, Tibo started building again, fast. In one interview he says he shipped 11 products in four months and that 10 of them got no traction. In another, Tweet Hunter is the 8th product, not the 11th. So the exact count differs, but the shape is the same: lots of small launches, most of them dead within weeks.",
+          "The only failed product he names is a search engine for online communities on Slack, Discord and Telegram. The rest are not public.",
+          "In January 2021 he teamed up properly with Tom Jacquesson. They called their little product studio Pony Express. The buyer later described their method like this: build a new SaaS roughly every month, share each one on Twitter, and double down on whatever got traction.",
+          "Tibo had a simple recipe for each idea. Make a landing page on Carrd with a **\"request access\" button and post it on Reddit**. If people sign up, build a one-feature version in about a week. Ask for payment immediately. Then share it on Twitter and with the waiting list. If nobody pays, move on.",
+          "One pattern kept showing up in their sales. Whatever they launched, the customers seemed to come from Tibo's own Twitter followers. So they asked the obvious question: why not build something for Twitter itself?"
+        ],
+        "pull": {
+          "text": "payment is the ultimate form of validation",
+          "cite": "Tibo, Indie Hackers AMA, October 2021"
+        }
+      },
+      {
+        "label": "The first version",
+        "title": "A search box full of viral tweets",
+        "paras": [
+          "The idea came from something they already had lying around. For an earlier project they had built a database of tweets. And Tom had a personal problem: his own tweets got almost no engagement. A library of tweets that actually worked, searchable by topic, would help people like Tom write better ones.",
+          "So that's what they built. The first Tweet Hunter was a basic search field and a grid of tweet tiles. Tibo says he built the first version in two weeks. Tom remembers it as about a week from idea to launch, with \"a few days\" to build the library plus sign-up and payment. One profile puts the total cost at about $50, including the domain. We'll call it one to two weeks.",
+          "The stack was chosen for speed: Next.js and React on Vercel, Firestore as the database, NextAuth for logins and Chakra UI for the interface. Tibo's rule was to pay for any service or API that saved time. The one choice he regretted was Firestore, mostly because of cost as it grew.",
+          "Just as interesting is what they left out. No scheduling, which users asked for within a month or two and which Tom later said should have been there from day one. No support system, no help articles. And no open sign-up either: you had to request access, which made it feel a little exclusive.",
+          "Pricing was where they were a bit timid at first. The target at launch was $9 a month. By October 2021 they had moved to $29 a month for inspiration and scheduling and $49 a month for the AI features, with no free plan. Tom's advice afterwards was blunt: \"Start with a higher price point (always do that).\""
+        ]
+      },
+      {
+        "label": "The first 100 users",
+        "title": "One Reddit post, 300 requests",
+        "paras": [
+          "Tweet Hunter launched in May 2021. They spent nothing on ads. The launch was posts from their own Twitter accounts and a handful of subreddits, plus the email list they had collected from all those earlier, failed products. That list is a nice reminder that dead products still leave something behind.",
+          "**One Reddit post brought in about 300 access requests.** Within days they had about 10 paying customers, then 50, then 100. They also put small free tools on Product Hunt, which sent people back to the main product.",
+          "The money started small. By their numbers it was about $150 of monthly revenue after the first week, about $600 a month by June 2021 and about $3,500 a month by August. Another interview from 2022 says about $5K at three months, so the figures shift a little depending on who is telling it.",
+          "Tibo's early growth tactics on Twitter were simple and a bit unglamorous. Instead of firing generic replies at huge accounts, he wrote meaningful replies to accounts with 1K to 5K followers, where a thoughtful comment actually gets seen. And new users got a mini Twitter course when they signed up, so they learned to use the product well and stayed."
+        ]
+      },
+      {
+        "label": "Finding the money",
+        "title": "The deal that changed the curve",
+        "paras": [
+          "Here's the move that makes Tibo worth studying. In 2021 the ghostwriter JK Molina had a big audience of exactly the people Tweet Hunter was for. Instead of paying him a sponsorship fee, Tibo and Tom gave him a real stake: up to 25% of the monthly profit, and a share of any exit.",
+          "Molina promoted it to his followers in September 2021, and the numbers jumped. One account says monthly revenue went from about $3K to about $18K to $20K within roughly three weeks. Another says it reached about $15K within 30 days. Either way, one partner with the right audience did more in a month than everything before.",
+          "By October 2021 Tweet Hunter was at about $12.5K a month, which Tibo announced as $150K a year. By April 2022 it was at about $60K a month with more than 1,200 paying customers.",
+          "They kept stretching the same idea. One write-up says they gave 1% of the company to micro-influencers and asked for nothing in return. Later Tibo set up a profit pool where 17 creators each got 0.1% of the profits. The thinking is consistent: the people who own the audience should own a piece of the result.",
+          "Then they cloned the whole thing for LinkedIn. Taplio was basically Tweet Hunter rebuilt for a different network, and it launched with a LinkedIn influencer on a similar deal. Same playbook, new audience."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "Selling it",
+        "title": "A school friend, a tweet, and an earn-out",
+        "paras": [
+          "The buyer came from Tibo's childhood. Guillaume, the founder of lempire (the company behind lemlist), had been his middle-school classmate. About 15 years later they reconnected through a tweet.",
+          "At one point Guillaume asked why Tweet Hunter wasn't on LinkedIn. About a week later, Tibo sent him the Taplio beta link. That's the kind of speed that makes a buyer want you.",
+          "The deal closed about 22 months after that first tweet. lempire paid **$2M upfront plus an earn-out of up to $8M**, split across six revenue milestones. The buyer's side describes a structure mixing a revenue earn-out, a limit on operating margin, short-vesting stock options and a time-based earn-out. A competing buyer had made a multi-million dollar offer, but it required the founders to stay at least two years. The exact sale date isn't public, though it was probably 2022.",
+          "Five of the six milestones were hit, so about $8M was collected in total. Revenue was about $1.5M a year at the moment of sale and about $8M a year when the earn-out ended. The split with Tom was 50/50, and Tibo says his personal take was \"a little bit less than three million\" after French tax."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "The regret",
+        "title": "Sold for one year of revenue",
+        "paras": [
+          "Most founders would frame an $8M exit as a win and leave it there. Tibo doesn't. Do the maths with him: they collected about $8M for products that were doing about $8M a year by the end. He calls it \"a bad decision financially\".",
+          "The earn-out itself was hard. About six months after the sale, X changed its API in a way that threatened Tweet Hunter, which by then was making about $200K a month. A workaround was found, but he describes 18 months of stress, chasing milestones on a platform he didn't control.",
+          "That is the quiet risk in building on someone else's platform. Tweet Hunter's whole value sat on top of Twitter, and Twitter could change the rules on a Tuesday. It worked out, but it was close.",
+          "He took two lessons from it. First, he will not sell another company. In his words, he doesn't want to become \"afraid about shipping anything new\". Second, keep building after an exit. He did not retire. He went straight back to work."
+        ]
+      },
+      {
+        "label": "Where he stands now",
+        "title": "The distribution guy with a portfolio",
+        "paras": [
+          "Today Tibo runs TMAKER, a bootstrapped holding company with no outside money, five live products, two more in stealth and a team of 10. On each product he pairs with a developer co-founder. They build. He handles distribution.",
+          "The biggest product is Revid, a video tool that started as an acquisition called TypeFrame and was rebuilt. In 2026 he said it was doing over $600K a month. (One interview spells it Revvit, the other Revid, so the name is worth double-checking.) Outrank, an SEO tool, was at about $200K a month. There's also SuperX, a Chrome extension for growing on X, Feather, which was bought and which he calls the least successful, and Post Syncer. In 2026 he said the whole portfolio had passed $1M a month, roughly $12M a year.",
+          "His personal profit share was over $100K a month in June 2026. He says his net worth is $5M to $10M outside the businesses, that he spends about $6K to $8K a month, and that he bought a chalet in the French Alps for about $2M without a loan. Not bad for someone on unemployment benefits five years earlier.",
+          "His view of the future is short and sharp. He believes \"the success of products is going to be based mostly on distribution.\" With AI making building so easy, he deliberately moved into the distribution side. He argues that things like SEO, an audience and a network of partners last longer than code does, and that strong SEO is also how you get mentioned by AI chat tools.",
+          "His most repeated advice is to validate with revenue, meaning people still paying in month two or later, not sign-ups or nice feedback. Ship many small products instead of one for years. Build for yourself. Watch your ego. And he recommends the book The Mom Test for learning how to talk to customers without fooling yourself."
+        ],
+        "chart": 2,
+        "pull": {
+          "text": "the success of products is going to be based mostly on distribution.",
+          "cite": "Tibo, SaaS Club podcast, 2026"
+        }
+      }
+    ],
+    "failuresTitle": "Two dead startups and a pile of small launches",
+    "failuresIntro": "Tibo's failures are bigger than most in this series, because the first two used other people's money. Then came a long run of tiny launches, most of them gone within weeks.",
+    "failures": [
+      {
+        "year": "2015",
+        "name": "First startup",
+        "what": "He raised about €200K from investors. The company went to zero. Why it failed has not been made public.",
+        "lesson": "Raising money doesn't prove anyone wants the product; only customers do."
+      },
+      {
+        "year": "2017",
+        "name": "Second startup",
+        "what": "He raised about €500K this time. It also went to zero and left him with about €250K of personal debt. Afterwards he took a CTO job for stability.",
+        "lesson": "Funded failure can follow you home, so keep your early bets small and cheap."
+      },
+      {
+        "year": "2020 to 2021",
+        "name": "About ten products in four months",
+        "what": "On unemployment benefits during COVID, he shipped product after product. By one account 10 of 11 failed; by another, Tweet Hunter was the 8th. The only one named is a search engine for Slack, Discord and Telegram communities.",
+        "lesson": "Small, fast launches turn failure into cheap information instead of a two-year wound."
+      },
+      {
+        "year": "Probably 2022",
+        "name": "Selling too early",
+        "what": "Tweet Hunter and Taplio sold for about $8M in total, about one year of the revenue they reached by the end of the earn-out. He then spent 18 months under earn-out pressure, including an X API change that nearly broke the product.",
+        "lesson": "Before you sell, price in what the business will be worth in two years, not what it earns today."
+      }
+    ],
+    "playbookTitle": "How he got users without a marketing budget",
+    "playbook": [
+      {
+        "title": "Give influencers equity, not a fee",
+        "text": "JK Molina got up to 25% of monthly profit and a share of the exit. Revenue went from about $3K a month to somewhere between $15K and $20K within weeks. Taplio launched with a LinkedIn influencer on a similar deal, and later 17 creators shared a profit pool at 0.1% each."
+      },
+      {
+        "title": "Test with a Carrd page on Reddit",
+        "text": "Before building, he put up a Carrd landing page with a request-access button and posted it to Reddit. For Tweet Hunter, one Reddit post brought about 300 access requests before the product was open to everyone."
+      },
+      {
+        "title": "Charge from day one",
+        "text": "No free plan. Tweet Hunter asked for payment right away, and by October 2021 it cost $29 or $49 a month. Tibo's rule is that real validation means people still paying in month two."
+      },
+      {
+        "title": "Reply where you'll be seen",
+        "text": "Instead of generic replies under giant accounts, he wrote thoughtful replies to accounts with 1K to 5K followers. It's slower, but each reply actually gets read and builds a relationship."
+      },
+      {
+        "title": "Pay affiliates 30%, forever",
+        "text": "Tweet Hunter offered 30% recurring commission to affiliates. By April 2022 it had more than 450 of them, which is basically a sales team that only gets paid when it works."
+      },
+      {
+        "title": "Free tools and free content",
+        "text": "They launched small free tools, like an unretweet tool and a best-time-to-tweet tool, and free collections of tweets. These went on Product Hunt and pointed people back to the paid product."
+      },
+      {
+        "title": "Run a public challenge",
+        "text": "In early 2022 they ran a Twitter growth challenge with more than 1,200 participants and 200+ in a Discord group. They also ran a growth contest and a conference, turning customers into a community."
+      },
+      {
+        "title": "Teach users at sign-up",
+        "text": "New users got a mini Twitter course when they joined. People who learn to get results with a tool are far less likely to cancel it."
+      }
+    ],
+    "charts": [
+      {
+        "title": "Tweet Hunter monthly revenue, first year",
+        "points": [
+          {
+            "label": "Jun 2021",
+            "value": 600,
+            "display": "$600"
+          },
+          {
+            "label": "Aug 2021",
+            "value": 3500,
+            "display": "$3.5K"
+          },
+          {
+            "label": "Oct 2021",
+            "value": 12500,
+            "display": "$12.5K"
+          },
+          {
+            "label": "Apr 2022",
+            "value": 60000,
+            "display": "$60K"
+          }
+        ],
+        "note": "Founders' own numbers. A 2022 interview gives slightly different figures."
+      },
+      {
+        "title": "The sale to lempire, in dollars",
+        "points": [
+          {
+            "label": "Paid upfront",
+            "value": 2000000,
+            "display": "$2M"
+          },
+          {
+            "label": "Total collected",
+            "value": 8000000,
+            "display": "$8M"
+          },
+          {
+            "label": "Yearly revenue at the end",
+            "value": 8000000,
+            "display": "$8M"
+          },
+          {
+            "label": "Tibo's take after tax",
+            "value": 2900000,
+            "display": "Just under $3M"
+          }
+        ],
+        "note": "His own figures, 2026. Collected price equal to one year of revenue is why he regrets it."
+      },
+      {
+        "title": "Monthly revenue in 2026",
+        "points": [
+          {
+            "label": "Whole portfolio",
+            "value": 1000000,
+            "display": "$1M+"
+          },
+          {
+            "label": "Revid",
+            "value": 600000,
+            "display": "$600K+"
+          },
+          {
+            "label": "Outrank",
+            "value": 200000,
+            "display": "$200K"
+          },
+          {
+            "label": "Tibo's profit share",
+            "value": 100000,
+            "display": "$100K+"
+          }
+        ],
+        "note": "His own figures, 2026."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "2015",
+        "text": "Raises about €200K for his first startup. It goes to zero."
+      },
+      {
+        "when": "2017",
+        "text": "Raises about €500K for a second startup. It also goes to zero and leaves about €250K of personal debt.",
+        "big": true
+      },
+      {
+        "when": "Feb 2020",
+        "text": "After his baby daughter's month in hospital, he and his wife quit their jobs to travel. COVID strands them in Paris."
+      },
+      {
+        "when": "2020",
+        "text": "On unemployment benefits, he starts shipping small products, about ten in four months."
+      },
+      {
+        "when": "Jan 2021",
+        "text": "Teams up with Tom Jacquesson in a product studio called Pony Express."
+      },
+      {
+        "when": "May 2021",
+        "text": "Tweet Hunter launches with $0 spent. One Reddit post brings about 300 access requests.",
+        "big": true
+      },
+      {
+        "when": "Sep 2021",
+        "text": "The JK Molina profit-share deal. Monthly revenue jumps to somewhere between $15K and $20K within weeks.",
+        "big": true
+      },
+      {
+        "when": "Apr 2022",
+        "text": "About $60K a month and 1,200+ paying customers."
+      },
+      {
+        "when": "Probably 2022",
+        "text": "Tweet Hunter and Taplio sold to lempire for $2M upfront plus an earn-out of up to $8M.",
+        "big": true
+      },
+      {
+        "when": "After the sale",
+        "text": "X changes its API about six months in. A workaround is found, but the earn-out years are stressful. About $8M is collected in the end."
+      },
+      {
+        "when": "2026",
+        "text": "His TMAKER portfolio passes $1M a month with a team of 10, by his own account.",
+        "big": true
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Instead of being the maker, I'm now the distribution guy.",
+        "cite": "SaaS Club podcast, episode 482, 2026"
+      },
+      {
+        "text": "the success of products is going to be based mostly on distribution.",
+        "cite": "SaaS Club podcast, episode 482, 2026"
+      },
+      {
+        "text": "with AI making building so easy, I wanted to go into the distribution space.",
+        "cite": "SaaS Club podcast, episode 482, 2026"
+      },
+      {
+        "text": "payment is the ultimate form of validation",
+        "cite": "Indie Hackers AMA, October 2021"
+      },
+      {
+        "text": "a bad decision financially",
+        "cite": "On the sale, Hampton interview, June 2026"
+      },
+      {
+        "text": "the only way to validate a product is through revenue",
+        "cite": "Tom Jacquesson, Starter Story, 2022"
+      },
+      {
+        "text": "Start with a higher price point (always do that).",
+        "cite": "Tom Jacquesson, Failory interview, May 2022"
+      }
+    ],
+    "steal": [
+      "Find one person who already owns your audience and offer them a real share of profit, not a one-time fee. It worked better for Tweet Hunter than everything else combined.",
+      "Before building anything, put up a one-page site with a request-access button and post it in the subreddit where your buyers hang out. Count the sign-ups.",
+      "Keep your first version to one feature you can ship in a week or two, and charge for it from day one.",
+      "Watch where your sales actually come from. Tibo's customers kept arriving from his own Twitter, and building for that channel is what finally worked.",
+      "If you ever get an offer, compare the price with what the business will earn in two years. Tibo sold for one year of future revenue and regrets it.",
+      "Count your dead products as assets. Their email lists gave Tweet Hunter its first customers."
+    ],
+    "sources": [
+      {
+        "title": "SaaS Club podcast, episode 482 (2026)",
+        "url": "https://saasclub.io/482"
+      },
+      {
+        "title": "Hampton: Tibo sold for $8M and regrets it (June 2026)",
+        "url": "https://joinhampton.com/blog/thibault-tibo-sold-8m-regrets-indie-hacker-portfolio"
+      },
+      {
+        "title": "lempire blog: how I turned my middle school mate into a multi-millionaire",
+        "url": "https://blog.lempire.com/how-i-turn-my-middle-school-mate-into-a-multi-millionaire"
+      },
+      {
+        "title": "Indie Hackers AMA: I built Tweet Hunter's MVP in 2 weeks (October 2021)",
+        "url": "https://www.indiehackers.com/post/i-built-tweet-hunters-mvp-in-2-weeks-4-months-later-it-grew-to-150k-arr-ama-a6ae1ee850"
+      },
+      {
+        "title": "Starter Story: Tweet Hunter (April 2022)",
+        "url": "https://www.starterstory.com/stories/my-marketing-experience-helped-me-create-my-business-and-now-make-492k-year"
+      },
+      {
+        "title": "Failory interview with Tom Jacquesson (May 2022)",
+        "url": "https://failory.com/interview/tweet-hunter"
+      },
+      {
+        "title": "Juicy Ideas: from startup bankruptcy to a $10M exit (December 2023)",
+        "url": "https://juicyideas.substack.com/p/from-startup-bankruptcy-to-10m-exit"
+      },
+      {
+        "title": "Indie Hackers: Tweet Hunter acquired for $2M plus earn-out",
+        "url": "https://www.indiehackers.com/post/tweet-hunter-acquired-for-2m-earn-out-0709cae13a"
+      },
+      {
+        "title": "Product-Led podcast: from 10 failed products to a $1M a month portfolio",
+        "url": "https://productled.com/blog/from-10-failed-products-to-a-1m-month-saas-portfolio"
+      },
+      {
+        "title": "SuperX on Product Hunt",
+        "url": "https://www.producthunt.com/products/superx/launches"
+      }
+    ]
+  }
+}

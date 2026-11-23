@@ -1,0 +1,275 @@
+{
+  "n": 17,
+  "name": "Simon Høiberg",
+  "short": "Simon",
+  "wisdom": "The audience you build before launch decides how launch day goes.",
+  "email": {
+    "subject": "His first SaaS got nothing. His second sold in hours.",
+    "hook": "In June 2020 Simon Høiberg launched a software product to close to zero traction, and eight months later his next one had 50 paying users within a few hours.",
+    "lead": [
+      "The difference wasn't the code. It was the 11 months in between, when a Danish engineer with about 250 Twitter followers posted four or five times a day without missing a single day. By the time he launched FeedHive he had 32,000 followers waiting.",
+      "One honest note before we start: Simon isn't a one-man company. By November 2021 FeedHive had four people with Simon the only full-timer, and by 2023 he had a team of five plus support staff. He's bootstrapped, though, with no outside money. For us as marketers, his story is the cleanest proof there is that distribution comes first."
+    ],
+    "stats": [
+      {"value": "$400K", "label": "a year across his products, November 2022"},
+      {"value": "50", "label": "paying users in the first few hours"},
+      {"value": "250 to 32K", "label": "followers in 11 months"}
+    ],
+    "chart": {
+      "title": "Simon's Twitter followers, by his own numbers",
+      "points": [
+        {"label": "Feb 2020", "value": 250, "display": "250"},
+        {"label": "Jan 2021", "value": 32000, "display": "32,000"},
+        {"label": "Early 2021", "value": 40000, "display": "40,000"}
+      ],
+      "note": "Counting LinkedIn, Instagram and YouTube too, he was at about 50,000 in early 2021."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Simon runs a small family of tools that all sell to the same kind of founder: FeedHive for posting everywhere, Aidbase for AI customer support, LinkDrip for tracking which links drive sales, and SignupGate for blocking fake signups. Since November 2024 he also sells them together as a lifetime bundle called FounderStack.",
+          "He's rebuilding it all for AI agents. FeedHive now plugs into AI tools directly, and in 2026 he wrote that **\"I now let AI make all kinds of critical business decisions for my SaaS.\"** He called it highly experimental. His September 2026 prediction for 2028 is blunt: either you work for \"the AI Cartel\", or you're not in business."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "His last public number is $400K a year in revenue across his products, from November 2022. It isn't clear whether that's FeedHive alone. He hasn't shared a figure since.",
+          "The model is what's worth studying. In a November 2025 post he mapped each pain to a product: drowning in support tickets, use Aidbase; fake users, use SignupGate; posting on every platform, use FeedHive; which posts drive sales, use LinkDrip. **Every video sells four products at once.** He also reportedly pre-sold $75K of LinkDrip through a lifetime deal before it launched, though that figure comes from Starter Story, not from Simon himself. He warns that lifetime deals can break when AI costs keep running every month."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "FeedHive took about two months, built while he still worked as a senior engineer at LEGO. He tested it privately with about 30 users in a Twitter group chat. The stack was an AWS serverless back end and a React front end. He picked an established market, social media scheduling, and won on one difference: **a calendar view instead of a queue**.",
+          "In March 2021 he posted the real numbers. Total revenue so far: $3,650. Costs: $3,500 to a contractor for the marketing site, $90 for chat software, about $300 a year for GitHub, and AWS at about $1.60 a month. The real cost was the roughly $13,000 of consulting income he gave up. Net, he was about $13,245 down."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "chart": true,
+        "paras": [
+          "In February 2020 he had about 250 followers. He started posting four to five times a day on Twitter, twice a day on LinkedIn and once or twice on Instagram, and didn't miss a Twitter day in over 300 days. Every Sunday he spent three to four hours batching the whole week in a scheduler.",
+          "His rules were simple. Reply early to big accounts, then give time to small accounts once your own replies pile up. No hashtags. No politics. Recycle old posts for new followers. Keep a bank of drafts. And never pitch before people trust you. His line: \"Give, give, give! Relentlessly! Without asking for anything in return.\" On 3 January 2021 he announced FeedHive to 32,000 followers and the tweets drew almost 3,000 likes. The paid beta opened on 6 February, and **50 people paid within a few hours**."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "Before FeedHive there was Sigmetic, a tool that used GitHub data to track engineers' performance. He calls it a \"Horrible idea!\" that failed. And his first SaaS of 2020, launched with no audience, got close to nothing.",
+          "After FeedHive took off, one profile says he hired a five-person team when it was at about $300 a month, which he's called a mistake (that source is weak and undated). In November 2021 he aimed for $50K a month entering 2023. If his $400K a year figure is right, he entered 2023 at about $33K a month. That's our arithmetic, not his words, but it suggests he fell short."
+        ]
+      }
+    ],
+    "tryToday": "This Sunday, block three hours and schedule a full week of posts in one go, one useful idea each and no pitch. Then reply to five small accounts in our space every day this week.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Simon Høiberg is a Danish software engineer who spent 11 months posting every single day before he launched anything that sold. When FeedHive opened its paid beta in February 2021, 50 people paid within hours, and he built a small family of bootstrapped tools on top of that audience.",
+    "stats": [
+      {"value": "$400K", "num": 400000, "prefix": "$", "suffix": "", "label": "a year across his products", "note": "his own figure, November 2022"},
+      {"value": "32,000", "num": 32000, "prefix": "", "suffix": "", "label": "followers on launch announcement day", "note": "up from about 250 eleven months earlier"},
+      {"value": "50", "num": 50, "prefix": "", "suffix": "", "label": "paying users within a few hours of the beta", "note": "his own number, February 2021"},
+      {"value": "$8,500", "num": 8500, "prefix": "$", "suffix": "", "label": "a month, nine months after launch", "note": "his own number, November 2021"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A consultant with a sales brain",
+        "paras": [
+          "Simon is Danish. He did a bachelor's degree in software development at the IT University of Copenhagen, worked as a software engineer at TV 2, the Danish broadcaster, and spent years as a freelance consultant. He also came from a sales background, which matters more than it sounds. He understood selling before he understood audiences.",
+          "Consulting paid well. He says he normally invoiced $20,000 to $25,000 a month. From September 2020 to March 2021 he was a senior software engineer at LEGO. He's now based in Zurich. We don't know much about his childhood or money before that, and he doesn't talk about it.",
+          "Before FeedHive he tried a product called Sigmetic. It used GitHub data to track how well software engineers were performing. You can imagine how engineers felt about that. He doesn't soften it at all: he calls it a \"Horrible idea!\" that \"failed epically\".",
+          "So here's the starting position: a well-paid engineer, good at selling, with a failed product behind him and **almost nobody following him online**."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "250 followers and a launch nobody saw",
+        "paras": [
+          "In February 2020 Simon started building his first SaaS product. At that point he had about 250 Twitter followers. He launched it in June 2020 and, in his words, it got close to zero traction. Nothing. The product existed and nobody knew.",
+          "This is the moment most of us would blame the product. Simon blamed the distribution. He'd built something, put it out, and there was simply no one there to see it.",
+          "He went looking for how others had done it. He names Rework, Brendan Kane's book One Million Followers, and two people who were building in public on Twitter at the time, Daniel Vassallo and Catalin Pit. He decided to build the audience first and the next product second. **That decision is the whole story.**"
+        ]
+      },
+      {
+        "label": "Building the audience",
+        "title": "Four tweets a day for 300 days",
+        "paras": [
+          "The system he built is so specific you could copy it tomorrow. On Twitter he posted four to five times a day. On LinkedIn, twice a day. On Instagram, once or twice. He didn't miss a single day on Twitter for more than 300 days.",
+          "He didn't do that by sitting on his phone. Every Sunday he spent three to four hours writing and scheduling the entire week ahead. His advice is just as plain: \"Use a scheduling tool. Schedule a whole week ahead.\" He kept a bank of drafts so he never had to start from a blank page, and he recycled older posts, because new followers had never seen them.",
+          "He was thoughtful about replies too. Early on he replied quickly to big accounts, so his reply would sit near the top where thousands of people read it. As his own posts started getting more replies, he switched to giving time to smaller accounts. He used no hashtags and stayed away from political call-outs.",
+          "And the rule underneath it all: never pitch before people trust you. He'd give useful things away for months before asking for anything.",
+          "About nine months in, he had about 40,000 followers on Twitter, 7,000 on LinkedIn, 3,000 on Instagram and 3,500 on YouTube, about **50,000 people in total**, from 250."
+        ],
+        "pull": {"text": "Give, give, give! Relentlessly! Without asking for anything in return.", "cite": "Simon, on Indie Hackers, early 2021"},
+        "chart": 0
+      },
+      {
+        "label": "The first version",
+        "title": "A scheduling tool, built by a man who lived in one",
+        "paras": [
+          "Look at what he was doing every Sunday: batching posts in a scheduler. So when he picked his next product, he picked the market he knew from the inside. FeedHive is a social media scheduling tool.",
+          "That market was crowded. He chose it on purpose, because an established market means people already pay for the thing. He just needed one clear reason to switch. His was **a calendar view instead of a queue**. Most schedulers showed you a list of upcoming posts. FeedHive showed you your week.",
+          "He built it in about two months while still working his day job, and tested it privately with about 30 users in a Twitter group chat. He later wrote it up on Indie Hackers as launching a SaaS in 63 days while working full time.",
+          "The tech was simple and cheap: an AWS serverless back end and a React front end. \"Our entire app is built on AWS,\" he wrote, and he ran the infrastructure from Slack, which he called SlackOps. In February 2021 his AWS bill was $3.74. A month later it was about $1.60."
+        ]
+      },
+      {
+        "label": "The first 100 users",
+        "title": "50 people paid before lunch",
+        "paras": [
+          "On 3 January 2021, Simon tweeted the public announcement of FeedHive to about 32,000 followers. His tweets about it drew almost 3,000 likes. Then came two months of closed beta.",
+          "On 6 February 2021 he tweeted the launch of the paid beta. Within a few hours, **50 people were paying**. Within 48 hours FeedHive was at $250 a month in recurring revenue. Compare that with June 2020, when his first product launched to an empty room.",
+          "On 10 March 2021 he went full time on FeedHive and left LEGO. By ten weeks after launch he had more than 120 paying users and almost $4,000 in gross revenue.",
+          "In April 2021 he planned two changes: a seven-day trial of the paid plan for new users, and a free plan with no expiry. He was already thinking about how to turn the people who heard about FeedHive, but weren't ready to pay, into users."
+        ]
+      },
+      {
+        "label": "The honest numbers",
+        "title": "Revenue $3,650, real cost $13,000",
+        "paras": [
+          "On 26 March 2021 Simon posted a thread asking how profitable FeedHive really was, and he answered it with every number. It's one of the most useful things he ever wrote, because it shows the cost that nobody puts in their launch posts.",
+          "Total revenue so far: $3,650. Costs: $3,500 to Dan Spratling, a contractor who built the marketing site. $90 for Crisp chat over three months. About $300 a year for GitHub for four members. AWS at about $1.60 a month.",
+          "Then the big one. Working on FeedHive instead of consulting had cost him about $13,000 in income he would normally have invoiced. Put it all together and he was about **$13,245 down**.",
+          "The software was almost free to run. The expensive thing was his time. For anyone of us thinking about leaving a salary for a product, that's the number to calculate first."
+        ]
+      },
+      {
+        "label": "Scaling it",
+        "title": "Nine months, $65K, and a team too soon",
+        "paras": [
+          "On 12 November 2021, nine months after launch, Simon posted an update on Indie Hackers. FeedHive had made $65,000 in total revenue and was at $8,500 a month, growing about 20% a month. It had more than 3,000 users, about 600 of them paying.",
+          "By then it was a team of four, with Simon the only full-timer. He'd tried three channels: social media, SEO and content, and paid ads. His verdict was clear: \"By far, the most efficient channel has been social media.\" He set himself a goal of $50,000 a month by the start of 2023.",
+          "One profile says he hired a five-person team when FeedHive was at about $300 a month, and that he's since called it a mistake. That source is weak and undated, so take it carefully. But it fits a pattern we've seen in this series: **people ahead of revenue is the classic way to hurt yourself**.",
+          "In November 2022, a podcast about him used the figure $400K a year across his products. It's not clear if that's FeedHive alone. Divide by 12 and you get about $33,000 a month, short of his $50K goal. That's our arithmetic, not something he has said."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "More products",
+        "title": "One audience, a ladder of tools",
+        "paras": [
+          "Rather than make FeedHive bigger and bigger, Simon started adding tools for the same customer. The launch dates here come from an aggregator site, so treat them as approximate. LinkDrip, for tracking which links drive sales, came in October 2022. Starter Story reports that it pre-sold $75,000 through a lifetime deal before launch, a figure that comes from them, not from Simon himself. In January 2023 he acquired a small SaaS called TinyKiwi.",
+          "Aidbase has the best origin story. In 2023 FeedHive was struggling with customer support. Simon built an internal AI support tool to cope, and it worked so well he turned it into its own product in November 2023. To market it, he made YouTube videos that didn't sell anything, then ran paid YouTube ads aimed only at people who'd watched them. An Indie Hackers headline from January 2024 says Aidbase reached $5,000 a month, though the figure only appears in the headline.",
+          "FounderStack followed in November 2024, a lifetime bundle of FeedHive, Aidbase, LinkDrip and SignupGate. SignupGate, which blocks fake signups, came in September 2025. In November 2025 he wrote a post that lays out the whole strategy: if you're drowning in support tickets, use Aidbase; if you have fake users, use SignupGate; if you post on all platforms, use FeedHive; if you want to know which posts drive sales, use LinkDrip.",
+          "**Each product solves the next problem the same founder hits.** So every video and every post can sell all of them."
+        ]
+      },
+      {
+        "label": "How he works",
+        "title": "Ten hours of YouTube and an empty calendar",
+        "paras": [
+          "YouTube became his main engine. In a May 2023 podcast he said he spends about 10 hours a week on it. He batches five scripts at a time and schedules videos about three months ahead. The same Sunday-batching habit from his Twitter days, just bigger.",
+          "The company runs asynchronously, on Slack, with almost no meetings and a near-empty calendar. He had just become a dad at the time of that recording. He talks about joy more than discipline: make sure that passion and joy sit on top of everything else, and let flow do the work.",
+          "He also has a contrarian view on burnout, and it's worth hearing even if you disagree."
+        ],
+        "pull": {"text": "I think people don't burn out from working a lot.", "cite": "Simon, on The Bootstrapped Founder podcast, May 2023"}
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Letting AI make the calls",
+        "paras": [
+          "Most of the numbers on this page are Simon's own, from his posts and interviews, and he hasn't published a revenue figure since 2022.",
+          "Today he runs FeedHive, Aidbase, LinkDrip and SignupGate, and he's rebuilding them so AI agents can use them too. FeedHive has an integration that lets AI tools post through it. He makes a weekly YouTube show and newsletter about running SaaS in the age of AI agents, with videos like the AI stack he'd use to run a one-person SaaS in 2026.",
+          "In 2026 he went further than most founders would admit to: \"I now let AI make all kinds of critical business decisions for my SaaS.\" He called it highly experimental. On 13 September 2026 he posted a prediction for 2028: you work for \"the AI Cartel\", or you're not in business.",
+          "Through all of it he's stayed bootstrapped. \"You don't have to take VC money,\" he says, and you don't have to go chasing investors. His one warning about his own favourite tactic: lifetime deals sell fast, but when AI API costs keep running every month, **lifetime can get very expensive**. In his view, lifetime means as long as the product lives."
+        ]
+      }
+    ],
+    "failuresTitle": "A horrible idea, an empty launch and a team too early",
+    "failuresIntro": "Simon is open about what went wrong. Here's everything on the record.",
+    "failures": [
+      {"year": "Before 2021", "name": "Sigmetic", "what": "A tool that used GitHub data to measure software engineers' performance. He calls it a horrible idea that failed epically.", "lesson": "If the people being measured would hate the product, it's going to be a hard sell."},
+      {"year": "June 2020", "name": "His first SaaS of 2020", "what": "He started it in February 2020 with about 250 followers and launched in June to close to zero traction. Nobody was there to see it.", "lesson": "A product without an audience is a secret, so build the audience at the same time."},
+      {"year": "2021", "name": "Hiring too early", "what": "One profile says he hired a five-person team when FeedHive was at about $300 a month, and that he later called it a mistake. The source is weak and undated.", "lesson": "Hire after the revenue arrives, not in hope of it."},
+      {"year": "2022", "name": "A missed target (our reading)", "what": "In November 2021 he aimed for $50K a month entering 2023. His $400K a year figure from November 2022 works out to about $33K a month. That's our arithmetic, not his statement.", "lesson": "Public targets are useful, but a 20% monthly growth rate rarely holds for long."}
+    ],
+    "playbookTitle": "How he turned posting into a launch",
+    "playbook": [
+      {"title": "Post every day, batched on Sunday", "text": "Four to five tweets a day, two LinkedIn posts and one or two on Instagram, with no missed Twitter day in more than 300 days. He wrote and scheduled it all in three to four hours every Sunday."},
+      {"title": "Reply smart", "text": "Reply early to big accounts so your reply sits near the top. Once your own posts get busy, spend that time on small accounts instead. No hashtags, no political call-outs."},
+      {"title": "Give before you ask", "text": "He never pitched before people trusted him. Months of free, useful posts came before a single product link."},
+      {"title": "Validate in a group chat", "text": "He tested FeedHive privately with about 30 users in a Twitter group chat for two months before charging anyone."},
+      {"title": "Announce early, sell later", "text": "He announced FeedHive on 3 January 2021 to 32,000 followers, then opened the paid beta on 6 February. 50 people paid within hours and he hit $250 a month in 48 hours."},
+      {"title": "Pick a crowded market, win on one thing", "text": "Social scheduling already had paying customers. FeedHive's calendar view, instead of a queue, gave them a clear reason to switch."},
+      {"title": "Share the real numbers", "text": "His March 2021 thread laid out revenue of $3,650 against a net loss of about $13,245 once lost consulting was counted. Posts like that keep building trust with the same audience."},
+      {"title": "Sell a ladder to one audience", "text": "FeedHive, LinkDrip, Aidbase and SignupGate each solve the next problem the same founder hits, and FounderStack bundles them. One video can sell all four."},
+      {"title": "Teach on YouTube, then retarget", "text": "For Aidbase he made non-promotional YouTube videos, then ran paid YouTube ads only to people who had watched them."}
+    ],
+    "charts": [
+      {
+        "title": "Twitter followers before FeedHive",
+        "points": [
+          {"label": "Feb 2020", "value": 250, "display": "250"},
+          {"label": "Jan 2021", "value": 32000, "display": "32,000"},
+          {"label": "Early 2021", "value": 40000, "display": "40,000"}
+        ],
+        "note": "His own numbers. Across all platforms he was at about 50,000 by early 2021."
+      },
+      {
+        "title": "FeedHive monthly recurring revenue",
+        "points": [
+          {"label": "Feb 2021", "value": 250, "display": "$250"},
+          {"label": "Nov 2021", "value": 8500, "display": "$8,500"},
+          {"label": "Nov 2022", "value": 33000, "display": "about $33K"}
+        ],
+        "note": "2021 figures are Simon's own. The 2022 bar is $400K a year divided by 12, our arithmetic, and may include products other than FeedHive."
+      },
+      {
+        "title": "FeedHive total revenue so far",
+        "points": [
+          {"label": "Mar 2021", "value": 3650, "display": "$3,650"},
+          {"label": "Apr 2021", "value": 4000, "display": "about $4,000"},
+          {"label": "Nov 2021", "value": 65000, "display": "$65,000"}
+        ],
+        "note": "His own numbers, from his Indie Hackers posts and a March 2021 thread."
+      }
+    ],
+    "timeline": [
+      {"when": "February 2020", "text": "Starts his first SaaS of the year with about 250 Twitter followers.", "big": false},
+      {"when": "June 2020", "text": "Launches it to close to zero traction and decides to build an audience first.", "big": true},
+      {"when": "September 2020", "text": "Joins LEGO as a senior software engineer while posting every day.", "big": false},
+      {"when": "3 January 2021", "text": "Announces FeedHive to about 32,000 followers. The tweets draw almost 3,000 likes.", "big": true},
+      {"when": "6 February 2021", "text": "Opens the paid beta. 50 paying users within hours and $250 a month within 48 hours.", "big": true},
+      {"when": "10 March 2021", "text": "Goes full time on FeedHive and leaves LEGO.", "big": false},
+      {"when": "26 March 2021", "text": "Posts his honest numbers: $3,650 in revenue, about $13,245 down once lost consulting is counted.", "big": false},
+      {"when": "November 2021", "text": "$65K total revenue, $8,500 a month, 600 paying users, a team of four.", "big": true},
+      {"when": "November 2022", "text": "$400K a year across his products, the last number he has shared. LinkDrip launches around October.", "big": false},
+      {"when": "November 2023", "text": "Aidbase launches, born from an internal AI support tool.", "big": false},
+      {"when": "November 2024", "text": "FounderStack bundles his tools as a lifetime deal.", "big": false},
+      {"when": "2026", "text": "Lets AI make critical business decisions and predicts that by 2028 you work for the AI Cartel or you're out.", "big": false}
+    ],
+    "quotes": [
+      {"text": "Give, give, give! Relentlessly! Without asking for anything in return.", "cite": "Indie Hackers, early 2021"},
+      {"text": "Use a scheduling tool. Schedule a whole week ahead.", "cite": "Indie Hackers, early 2021"},
+      {"text": "By far, the most efficient channel has been social media", "cite": "Indie Hackers, November 2021"},
+      {"text": "Our entire app is built on AWS", "cite": "Indie Hackers, November 2021"},
+      {"text": "Horrible idea!", "cite": "The Bootstrapped Founder podcast, May 2023, on Sigmetic"},
+      {"text": "I think people don't burn out from working a lot.", "cite": "The Bootstrapped Founder podcast, May 2023"},
+      {"text": "I now let AI make all kinds of critical business decisions for my SaaS.", "cite": "Simon on X, 2026"}
+    ],
+    "steal": [
+      "Build the audience before the product. Simon's 2020 launch with 250 followers got nothing; his 2021 launch with 32,000 sold in hours. Same founder, different audience.",
+      "Copy his Sunday batch exactly: three hours, one week of posts scheduled, a bank of drafts, and old posts recycled for new followers.",
+      "Pick a market where people already pay, and win on one visible difference you can explain in four words, like his calendar view.",
+      "Before quitting anything, count the salary or client income you'd give up. For Simon, that was the only cost that really mattered.",
+      "When the first product works, build the next one for the same buyer's next problem, so every piece of content sells the whole ladder.",
+      "Be careful with lifetime deals on anything that has running AI costs. They feel like free money at launch and can hurt for years."
+    ],
+    "sources": [
+      {"title": "Indie Hackers, I built a 50K following in 9 months", "url": "https://www.indiehackers.com/post/i-built-a-50k-following-in-9-months-and-it-changed-my-game-completely-this-is-how-i-did-it-7e51c338a0"},
+      {"title": "Indie Hackers, FeedHive crossed $65K revenue (November 2021)", "url": "https://www.indiehackers.com/post/feedhive-crossed-65k-revenue-a7816b5fe4"},
+      {"title": "Simon on X via Threadreader, how profitable is FeedHive (March 2021)", "url": "https://threadreaderapp.com/thread/1375444678619885568.html"},
+      {"title": "Indie Hackers, how I launched a SaaS in 63 days while working full time", "url": "https://www.indiehackers.com/post/how-i-launched-a-saas-product-in-63-days-while-working-full-time-617faf613a"},
+      {"title": "Indie Hackers, how Simon Høiberg made $5,000 MRR with his new AI SaaS (January 2024)", "url": "https://www.indiehackers.com/post/how-simon-hoiberg-made-5-000-mrr-with-his-new-ai-saas-9d2ab1eefc"},
+      {"title": "The Bootstrapped Founder, Simon Høiberg (May 2023)", "url": "https://thebootstrappedfounder.com/simon-hoiberg-building-a-saas-that-works-for-you"},
+      {"title": "IndieMakerList, Simon Høiberg (aggregator, weak)", "url": "https://indiemakerlist.com/p/simon-hoiberg/"},
+      {"title": "Starter Story, LinkDrip breakdown", "url": "https://www.starterstory.com/link-drip-breakdown"},
+      {"title": "Simon on X, the product ladder (November 2025)", "url": "https://x.com/SimonHoiberg/status/1989295757912854920"},
+      {"title": "Simon on X, letting AI make business decisions (2026)", "url": "https://x.com/SimonHoiberg/status/2077013318913359954"}
+    ]
+  }
+}

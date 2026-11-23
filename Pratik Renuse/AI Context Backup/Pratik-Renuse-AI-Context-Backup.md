@@ -2,13 +2,13 @@
 
 **Owner:** Pratik Renuse, growth marketing leader, TEDx speaker and startup mentor, based in Pune, India (pratikrenuse.com).
 **Purpose:** everything Claude knows about the "Pratik Renuse" project in one place, so ChatGPT, Gemini, Claude or any other AI can pick up the full context. This covers the (now stopped) 100 Days of Building products, his personal brand and career, his agents and automation stack, GMAT prep, Pune Vipassana Samiti (PVS) work, and every rule and preference for working with him. Bueno and 24/7 Spain have their own separate backup (see Part D3).
-**Last refreshed:** 15 November 2026. Refreshed weekly by a scheduled task (Sundays).
+**Last refreshed:** 22 November 2026. Refreshed weekly by a scheduled task (Sundays).
 **Where this lives:** the master file is Pratik Renuse/AI Context Backup/Pratik-Renuse-AI-Context-Backup.md in the 100days repo, and the same content is mirrored in Notion at https://app.notion.com/p/411ec28c2b74811eb4b0ffb5e46b584d ("Pratik Renuse AI Context Backup (for ChatGPT and other LLMs)").
 
 ## How to read this backup
 
 1. Part A is the live memory: the newest state of every workstream, rule and preference. When Part A and any other part disagree, Part A wins unless the other doc is dated later.
-2. Part B is the Claude project's own instructions and uploaded docs (C.L.E.A.R. reference, design reference, May 2026 resume).
+2. Part B is the Claude project's own instructions and uploaded docs (C.L.E.A.R. reference, design reference, May 2026 resume, Screen Time email renderer).
 3. Part C is the key context files from the project folder on his Mac, copied verbatim (CLAUDE.md, voice files, past-account export, bio bank, Futures Brain and Content Engine playbooks, setup docs, PRDs, skills).
 4. Part D lists scheduled tasks, connected tools, other backup and artifact locations, and a map of the whole folder.
 5. Secrets (API keys, tokens, passwords) are REDACTED. Variable names, account IDs and URLs are kept.
@@ -16,7 +16,7 @@
 
 ## One-paragraph summary
 
-Pratik Renuse is a growth marketing leader who has built three consumer startups from zero as a founding team member (Bueno, a fintech for foreign property owners in Spain, since 2022; VU, a Swiss ski and snowboard goggle brand used by Olympians; Infento, a STEM ride-on maker with the #1 STEM Kickstarter of 2018), mentors at Techstars, EBRD, Seedstars and Founder Institute, teaches at Masters' Union, Tetr and SP Jain, and has given 3 TEDx talks and 50+ keynotes. Since 13 Nov 2026 this project is about him and pratikrenuse.com (personal brand, SEO, organic growth, speaking hub at /speaking, planned programmatic SEO); he has stopped "100 Days of Building", which shipped one marketer-focused tool per day at pratikrenuse.com/100days/, built as static HTML plus Vercel serverless functions in root /api/ and Supabase, with a fixed cream, gold and IBM Plex design system, readable-web typography rules and the C.L.E.A.R. UX framework. Alongside it: an agents stack on a Hetzner server (n8n, Hermes agent, Slack gateway), the on-demand Future Brief (Claude, Telegram), the Futures Brain and Content Engine for LinkedIn and HeyGen content, a GMAT Focus mock at pratikrenuse.com/gmat-test (exam about 20 Dec 2026), a Europe Head of Growth job search with weekly ADPList mentors, MarketerHire freelance work, and his role as Secretary of Pune Vipassana Samiti. Hard working rules: propose before building and build only when he says so; once he says go, edit the real files directly and never ask him to touch code; never overwrite or delete existing files, create new ones; no em dashes, no emojis, no hype; short, complete, human sentences; give drafts as clean copy-paste text only; never mention 100 Days of Building in his bios; meetings must end by 7 PM IST.
+Pratik Renuse is a growth marketing leader who has built three consumer startups from zero as a founding team member (Bueno, a fintech for foreign property owners in Spain, since 2022; VU, a Swiss ski and snowboard goggle brand used by Olympians; Infento, a STEM ride-on maker with the #1 STEM Kickstarter of 2018), mentors at Techstars, EBRD, Seedstars and Founder Institute, teaches at Masters' Union, Tetr and SP Jain, and has given 3 TEDx talks and 50+ keynotes. Since 13 Nov 2026 this project is about him and pratikrenuse.com (personal brand, SEO, organic growth, speaking hub at /speaking, planned programmatic SEO); he has stopped "100 Days of Building", which shipped one marketer-focused tool per day at pratikrenuse.com/100days/, built as static HTML plus Vercel serverless functions in root /api/ and Supabase, with a fixed cream, gold and IBM Plex design system, readable-web typography rules and the C.L.E.A.R. UX framework. Alongside it: an agents stack on a Hetzner server (n8n, Hermes agent, Slack gateway), the on-demand Future Brief (Claude, Telegram), the Futures Brain and Content Engine for LinkedIn and HeyGen content, a GMAT Focus mock at pratikrenuse.com/gmat-test (now referred to as Sidhant's GMAT, exam possibly 23 Dec 2026), a Europe Head of Growth job search with weekly ADPList mentors, MarketerHire freelance work, and his role as Secretary of Pune Vipassana Samiti. Hard working rules: propose before building and build only when he says so; once he says go, edit the real files directly and never ask him to touch code; never overwrite or delete existing files, create new ones; no em dashes, no emojis, no hype; short, complete, human sentences; give drafts as clean copy-paste text only; never mention 100 Days of Building in his bios; meetings must end by 7 PM IST.
 
 ## Contents
 
@@ -123,7 +123,7 @@ Non-negotiables:
 - Serverless functions live in root /api/ with unique filenames. Day 01 is the reference.
 - Deliver final, ready-to-deploy files. Do not ask Pratik to edit code himself.
 
-### Memory file: project/preferences.md (updated 2026-11-13)
+### Memory file: project/preferences.md (updated 2026-11-19)
 description: How Pratik wants Claude to deliver drafts (emails, WhatsApp messages) and to treat files in his connected folders, read before any drafting or file task
 - [stated] When asked for an email or WhatsApp message, give ONLY the message itself, in a single copyable block. No intro, no commentary before or after ("this is written in X voice", tips, notes). He has said this many times. This includes no language labels ("English", "मराठी"), no separators, and no closing notes explaining what was changed or assumed (e.g. "I took X to mean Y", "I removed Z"). Just the copy-paste text, nothing else.
 - [stated] Never change or delete anything that already exists in the folders he has given Claude access to. Create new files instead, in a new subfolder, and leave the originals untouched even if they look wrong.
@@ -136,6 +136,7 @@ description: How Pratik wants Claude to deliver drafts (emails, WhatsApp message
 - [stated] Don't add a subject line to a draft email unless asked; no inline HTML; for text he'll paste elsewhere use bold headings, not markdown heading levels
 - [stated] Requests to others use a requesting tone ("Could you please...", "I would be grateful...")
 - [stated] Spreadsheet data as TSV by default unless an .xlsx is asked for
+- [stated] Study schedules and day-by-day plans: always put them into a Google Sheet
 - [stated] Job and client documents: every bullet framed as a completed achievement
 - [stated] Professional emails sign "Pratik"; PVS sign-offs vary by audience, see [[pvs]]
 - [stated] Public-facing email is pratik.y.renuse@gmail.com; pratik@pratikrenuse.com only when he asks
@@ -312,20 +313,20 @@ Compliance flag: India TRAI/DLT rules tightened in 2025 (DLT registration, regis
 
 Note: this is separate from the 100 Days marketer-product project and the pratikrenuse.com repo.
 
-### Memory file: project/gmat-vedic-project.md (updated 2026-11-07)
-description: Pratik's GMAT Focus prep (exam ~20 Dec 2026): CJ course, Vedic Maths videos, pratikrenuse.com/gmat-test mock, report emails to Sidhant
+### Memory file: project/gmat-vedic-project.md (updated 2026-11-19)
+description: GMAT Focus prep, now referred to as Sidhant's GMAT (exam possibly 23 Dec 2026): CJ course, Vedic Maths videos, pratikrenuse.com/gmat-test mock (emails switched off)
 
-Pratik is preparing for GMAT Focus Edition, targeting a top (99th percentile) score, exam originally booked roughly 30 days out from 2026-06-01.
+Pratik is preparing for GMAT Focus Edition, targeting a top (99th percentile) score, exam booked roughly 30 days out from 2026-06-01 (so end of June / early July 2026).
 
-The GMAT/ folder was left out when the project folder moved into the 100days repo on 12 Oct 2026; ask Pratik where it is before using it. GMAT/ThinkVidya/ holds Gaurav Tekriwal's "Complete High Speed Vedic Mathematics Workshop" 8-DVD set (37 .mp4 files, ~14.9 hrs). GMAT/GMAT_Focus_Edition_Reference.xlsx has his topic + fundamental-skills breakdown.
+The GMAT/ folder was left out when the project folder moved into the 100days repo on 12 Oct 2026 (see [[project-folder-location]]); ask Pratik where it is before using it. GMAT/ThinkVidya/ holds Gaurav Tekriwal's "Complete High Speed Vedic Mathematics Workshop" 8-DVD set (37 .mp4 files, ~14.9 hrs). GMAT/GMAT_Focus_Edition_Reference.xlsx has his topic + fundamental-skills breakdown.
 
-Constraint discovered: the sandbox firewalls all speech-to-text model hosts (HuggingFace etc., 403), so real audio transcription is not possible. Workaround used: extract video frames with ffmpeg (fast keyframe seeks) into tiled contact sheets and read the on-screen board work directly. Pipeline scripts in outputs: proc_one.sh.
+Constraint discovered: this sandbox firewalls all speech-to-text model hosts (HuggingFace etc., 403), so real audio transcription is not possible. Workaround used: extract video frames with ffmpeg (fast keyframe seeks) into tiled contact sheets and read the on-screen board work directly. Pipeline scripts in outputs: proc_one.sh.
 
 GMAT Focus Quant facts: 21 Problem-Solving questions, 45 min (~2.1 min each), NO calculator, NO geometry. Data Sufficiency now lives in the Data Insights section. So Vedic math is a speed/verification aid, not a strategy by itself; only arithmetic-fluency techniques are worth drilling.
 
 Deliverables built (GMAT-relevant scope): per-DVD notes, a Vedic-for-GMAT study guide, a 30-day plan, and an Excel methods matrix.
 
-#### Course and mock exams (Oct to Nov 2026)
+#### Course and mock exams (Oct 2026)
 - [stated] Still preparing for GMAT in Oct 2026; following the "GMAT intensive course of CJ"
 - [stated] Quant modules completed as of 2026-10-08: Ratios and Percents, Number Properties 1, Number Properties 2, Mental Math; Word Problems 1 mostly done (translation, work, time-speed-distance). Rest of Quant not completed yet
 - [stated] Mock must be adaptive, with an on-screen scratch board and real-exam timing; wants it live at pratikrenuse.com/gmat-test via GitHub
@@ -340,7 +341,10 @@ Deliverables built (GMAT-relevant scope): per-DVD notes, a Vedic-for-GMAT study 
 - [stated] 7 Nov 2026: wants pratikrenuse.com/gmat-test to open in any browser with no password; chose to remove the password gate even though the question bank becomes publicly readable
 - [stated] 7 Nov 2026: only he ever takes the mock (no name field); wants the full exam plus each section sittable on its own, no question repeated across tests, and after every test an analysis against all earlier tests: score improvement, still-strong areas, areas gone weak, and what to focus on
 - [stated] 7 Nov 2026: GMAT exam now planned for about 20 December 2026; wants the analysis to include a suggested plan to reach 700+ (with a disclaimer that it is a suggestion only)
-- [stated] 7 Nov 2026: wants each test's analysis emailed from pratik@spanishpropertyinsights.com to sidhant@sidhantrenuse.com with himself cc'd, plus a 6 am Quant-test reminder email every Monday, Wednesday and Saturday
+- [stated] 7 Nov 2026: wants each test's analysis emailed from pratik@spanishpropertyinsights.com, plus a 6 am Quant-test reminder email every Monday, Wednesday and Saturday
+- [stated] 19 Nov 2026: had all GMAT emails switched off completely (per-test analysis emails and the Mon/Wed/Sat 6 am Quant reminders, which had gone to Sidhant); test results still save to the database
+- [stated] 19 Nov 2026: refers to it as Sidhant's GMAT; exam could be on 23 Dec 2026. In CJ's GMAT Intensive, numbers is done and arithmetic is underway; sessions with CJ planned every alternate day or with a 2-day gap
+- [stated] 19 Nov 2026: CJ course has 20 sessions in total; session 6 is on 20 Nov; wants one session on Mon 21 Dec; mocks must not sit between two CJ sessions
 
 ### Memory file: project/bueno-assets-and-access.md (updated 2026-09-29)
 #### Check these before making anything new
@@ -385,11 +389,23 @@ Deliverables built (GMAT-relevant scope): per-DVD notes, a Vedic-for-GMAT study 
 - [stated] Has run Google paid search for 10 years; used it to build three companies from zero
 - [stated] Wants match replies written in human, direct language addressed to the person, not salesy headers like "why I'm a fit", and focused on past record rather than unrequested plans
 
-### Memory file: project/areas/europe-job-search.md (updated 2026-09-29)
+### Memory file: project/areas/europe-job-search.md (updated 2026-11-18)
+description: Pratik's goal of getting a job in Europe again and his weekly ADPList mentorship plan to upskill toward it. aliases: europe job, career in europe, adplist mentorship
 - [stated] Wants to upskill and grow his career with the intention of getting a job again in Europe
 - [stated] Wants a weekly ADPList mentor session booked automatically; focus areas: landing a Europe role, growth marketing craft, leadership / Head-of roles
-- [stated] Preferred session window: any time 12 PM to 9 PM IST, not mornings (later tightened: meetings must end by 7 PM IST, see preferences)
+- [stated] Preferred session window: any time 12 PM to 9 PM IST, not mornings
 - [stated] Wants one ADPList session per week, and it must be confirmed by the mentor, not just a pending request; doesn't want to be asked anything beyond that
+- [stated] (Nov 2026) Wants one ADPList session every weekday (Mon to Fri), not weekends
+- [stated] ADPList booking notes should be about learning, not sound needy or job-seeking
+- [stated] ADPList session topics should be about his own career: scaling and growing rapidly in his career; less about Bueno or Bueno work problems
+- [stated] Nov 2026: now wants one ADPList session every weekday (Mon to Fri, never Sat/Sun)
+- [stated] ADPList booking notes should be about learning, not sound needy or job-focused
+- [stated] Wants Claude to choose each mentor's discussion topic, drawing on his Wispr Flow meetings and memory, picking what helps his career scale
+- [stated] Not available from 21 Dec 2026 for 3 weeks (no mentor sessions then)
+- [stated] Wants a different ADPList mentor each day, spread across many people
+- [stated] After each ADPList session, wants a draft mentor review (from the Wispr Flow transcript) emailed only to himself, so he can edit and send it
+- [stated] ADPList mentors can be from any country (EU, US, India, Australia, etc.), not only Europe
+- [stated] Don't book too many ADPList sessions at once; after rate limiting, wait 4 to 5 days before retrying so his profile isn't blocked
 
 ### Memory file: project/areas/dant-chikitsak.md (updated 2026-10-24)
 - [stated] Dr. Srishti Rathore's dental clinic inside Ericare Hospital, DLF Hyde Park, Mullanpur Garibdass, New Chandigarh
@@ -470,14 +486,27 @@ description: Site Pratik is making for a friend at srishtirathor.com, a separate
 - [stated] wants it as another Vercel project on his same Vercel account (does not want to make another Vercel account); GitHub account stays the same
 - [stated] decided to go ahead; will develop the site in a new, separate Claude project (not this one), starting once he has purchased the domain
 
-### Memory file: project/areas/motivation-video-email.md (added 15 Nov 2026, updated 2026-11-14)
-description: Pratik's planned daily motivational YouTube video email tool (inspired by a Raj Shamani short on Travis Kalanick). aliases: daily motivation video, motivating video email, motivation tool
+### Memory file: project/areas/motivation-video-email.md (added 15 Nov 2026, updated 2026-11-21)
+description: Daily Fuel, Pratik's daily motivation video email (pratikrenuse.com/daily-fuel), sent to him, Sidhant and Priyanka; inspired by a Raj Shamani short. aliases: daily motivation video, motivating video email, motivation tool, daily fuel
 - [stated] Wants a new tool that emails him one super motivating YouTube video every day (sparked by a Raj Shamani short where Travis Kalanick talks about bearing more pain than others)
-- [stated] Asked for the video list first, no build yet
+- [stated] Now Daily Fuel: 50 short branded clips (sacrifice, hard work, success; includes Shah Rukh Khan) hosted on pratikrenuse.com so they play on his site, not YouTube; one email a day at 6:30 AM IST from 21 Nov 2026
+- [stated] Private list: only Pratik, Sidhant and Priyanka get the email, no one else
+- [stated] Wants at least 100 clips eventually so it runs about 3 months
+- [stated] Sender must clearly be Pratik (his name), never a generic "Daily Fuel" sender or an odd To address, so Sidhant and Priyanka know it's from him and don't mark it as spam; he doesn't want test emails, just the real ones
+- [stated] Email copy rules: the other two in BCC; personal "we/us" tone for just the three of them, not corporate; never a greeting like "morning, you two"; a different short intro line each day
+
+### Memory file: project/topics/screen-time.md (added 22 Nov 2026, updated 2026-11-18)
+description: How Pratik wants his screen time judged and reported (tiers, daily email); check before judging screen time or building the time log
+- [stated] Terminal is not EUR 1k work; Terminal counts as wasted.
+- [stated] Only AI tools (Claude, ChatGPT and similar) can count as EUR 1k work.
+- [stated] Vipassana and seva are a separate category, not work and not waste.
+- [stated] Wants the daily time log by email, subject naming him (e.g. "Pratik Renuse time log").
+- [stated] Wants the email to show context switches, longest focus, what was opened most and top time sinks.
+- [stated] Wants the email less text and highly visual: beautiful, pleasant charts he can understand at a glance.
 
 ## A3. Vipassana, personal and account-level files
 
-### Memory file: project/areas/pvs.md (updated 2026-11-09)
+### Memory file: project/areas/pvs.md (updated 2026-11-21)
 description: Pune Vipassana Samiti, where Pratik is Secretary: centres, capacity ceilings, server terms, office team, and the wording and format rules for PVS emails, broadcasts and notices. Read before any PVS draft.
 #### Role and naming
 - [stated] Pratik is Secretary of PVS, coordinating across centres. Always "PVS"; if he types or dictates "PBS" he means PVS
@@ -495,11 +524,16 @@ description: Pune Vipassana Samiti, where Pratik is Secretary: centres, capacity
 #### Office
 - [stated] Admissions portal is Dipi. Office team: Pratik, Sangram, Siddhi, Suhasini, Vaishali. Girija is CAT with Dipi access to all 4 centres
 - [stated] External servers come for seva only when the office invites them
+- [stated] Nov 2026: new WhatsApp group with all Centre Teachers and Jitendra Mule sir; before every course the office calls Dhamma servers to confirm arrival time (servers report by 11 am) and whether anyone needs a chowki, and posts it in that group (chowki issues raised by Jitendra sir)
 - [stated] Nov 2026: PVS is testing a multilingual WhatsApp bot for common student queries, modelled on Dhamma Pala (Bhopal), whose team is helping; test only, calls, emails and WhatsApp continue unchanged, decision after results
+- [stated] Nov 2026: Igatpuri (Dhamma Giri) is implementing the Maharashtra FDA food-safety order and shared it with Vijay ji and PVS; Pratik is emailing trustees and the four centre teachers and wants PVS to run its own mock FDA kitchen inspection for preparedness
+- [stated] FSSAI licence in place for Dhamma Punna, Dhammananda and Mahad; Dhamma Akkhara (Jambhe) licence in process (Nov 2026)
+- [stated] As of Nov 2026 no PVS centre has done water testing, pest control or kitchen staff medical fitness certificates; Pratik wants these done within about two weeks
 - [stated] "VJG" / "Vijay G" is Vijay ji, a senior at PVS; Pratik avoids calling seniors out directly in committee emails
 - [stated] Kadbane sir (Marathi spelling काडबाने, with the aa) is who residential servers contact for urgent needs to leave the centre during a course
 #### Standard wording
 - [stated] Routing: "Pregnant women, applicants with health problems that need special care, and applicants above 65 years of age are requested to apply only to Dhamma Punna (Swargate City Center)." Marathi/Hindi versions softer, framed as a centre constraint
+- [stated] Mahad 10-day courses alternate Hindi-English and Hindi-Marathi
 - [stated] Mahad centre takes male students only; its course dates usually match Dhamma Punna's; waitlisted applicants can reply to the email and PVS transfers their application to Mahad internally. If he dictates "Mahar" he means Mahad
 - [stated] Waitlist email (Nov 2026): three options: 1) last-minute cancellation list (reply to email), 2) Mahad (male only, reply for internal transfer, no link), 3) other Maharashtra centres: Dhamma Siddhapuri (Solapur), Dhamma Sugandha (Sangli), Dhamma Udak (Dapoli), Dhamma Vasumati (Baramati), Dhamma Pathara (Parner). Say "Confirmation is usually given promptly."; never "instant", "short notice" or a time. "Please reconfirm by clicking on the button below and not by email."
 - [stated] Teenager age: 15 complete to 19 complete on course start date, always state the reference date and birthdate window (start minus 19 years plus one day, to start minus 15 years)
@@ -642,11 +676,12 @@ description: Pune Vipassana Samiti, where Pratik is Secretary: centres, capacity
 - [stated] Each is a key contact in Pratik's Dhamma Punna / PVS data analysis work
 
 
-### Memory file: project/topics/schedule.md (added 15 Nov 2026, updated 2026-11-10)
+### Memory file: project/topics/schedule.md (added 15 Nov 2026, updated 2026-11-17)
 description: How Pratik logs and colour-codes his day in Google Calendar; read before planning his day or reading his calendar
 - [stated] Logs his day himself in Google Calendar (primary "TO DO Cal"); says the log is not always accurate and he sometimes fakes entries
 - [stated] Colour code: grape = million-euro work, blue = thousand-euro work, red = wasted time
 - [stated] Also marks meditation and writing in the calendar
+- [stated] Not available for 3 weeks from 21 Dec 2026 (no meetings or mentor sessions then)
 
 ### Memory file: project/topics/time-tracking.md (added 15 Nov 2026, updated 2026-11-11)
 description: How Pratik tracks his time (calendar use, screen time); read before reviewing his day or interpreting his calendar
@@ -842,6 +877,120 @@ S.P. Jain Institute of Management and Research | Master's in International Busin
 **CORE SKILLS**
 Performance Marketing (Meta, Google, Programmatic) | DTC Growth Systems | Email and CRM Strategy | Funnel Design and CRO | CAC / LTV / MER Modelling | A/B Testing and Experimentation | Multi-Channel Attribution | Revenue Forecasting | SEO and Content Marketing | Team Development and Training | Influencer and Affiliate Marketing | AOV and Pricing Optimisation
 
+
+## Project doc: claude/screentime-email-render.py (added 2026-11-18)
+
+Renderer for the daily "Pratik Renuse time log" email. The "Screen Time morning judgement and email" scheduled task writes data.json from Supabase Personal and runs this script to produce the HTML and plain-text email. Copied verbatim.
+
+```python
+import json, sys, html
+d = json.load(open(sys.argv[1]))
+E = html.escape
+T = {"m1": ("EUR 1M", "#1F5F4A"), "k100": ("EUR 100k", "#3E9A84"), "k1": ("EUR 1k", "#C9A24A"),
+     "life": ("Seva", "#8E84C4"), "chill": ("Wasted", "#E07F63")}
+ORDER = ["m1", "k100", "k1", "life", "chill"]
+INK, INK3, INK4, BG, CARD, LINE = "#1A1512", "#504840", "#8A8078", "#F6F2F1", "#FFFFFF", "#EAE3DD"
+SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+SERIF = "Georgia,'Times New Roman',serif"
+def hm(m):
+    m = int(round(float(m))); return f"{m // 60}h {m % 60:02d}m" if m >= 60 else f"{m}m"
+def card(inner, pad=22):
+    return (f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{CARD};'
+            f'border-radius:14px;margin:0 0 14px;"><tr><td style="padding:{pad}px;">{inner}</td></tr></table>')
+def label(t):
+    return (f'<div style="font:600 10px/1 {SANS};letter-spacing:2px;text-transform:uppercase;color:#8C6A18;'
+            f'margin:0 0 12px;">{E(t)}</div>')
+tiers = d["tiers"]; tot = sum(float(tiers.get(k, 0)) for k in ORDER) or 1
+waste_pct = round(100 * float(tiers.get("chill", 0)) / tot)
+good = float(tiers.get("m1", 0)) + float(tiers.get("k100", 0))
+seg = "".join(f'<td width="{max(float(tiers.get(k,0))/tot*100,0.0001):.2f}%" style="background:{T[k][1]};height:18px;font-size:0;line-height:0;">&nbsp;</td>'
+              for k in ORDER if float(tiers.get(k, 0)) > 0)
+legend = "".join(
+    f'<td valign="top" style="padding:0 6px 0 0;"><div style="width:10px;height:10px;border-radius:5px;background:{T[k][1]};display:inline-block;"></div>'
+    f'<div style="font:600 18px/1.2 {SERIF};color:{INK};margin-top:6px;">{round(100*float(tiers.get(k,0))/tot)}%</div>'
+    f'<div style="font:400 11px/1.3 {SANS};color:{INK4};">{T[k][0]}<br>{hm(tiers.get(k,0))}</div></td>' for k in ORDER)
+hero = (label("Pratik Renuse time log") +
+        f'<div style="font:400 26px/1.2 {SERIF};color:{INK};">{E(d["date_label"])}</div>'
+        f'<table role="presentation" cellpadding="0" cellspacing="0" style="margin:18px 0 6px;"><tr>'
+        f'<td style="font:400 64px/1 {SERIF};color:{T["chill"][1]};padding-right:14px;">{waste_pct}%</td>'
+        f'<td style="font:400 14px/1.4 {SANS};color:{INK3};">of judged time wasted<br><b style="color:{INK};">{hm(good)}</b> of EUR 100k+ work</td></tr></table>'
+        f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-radius:9px;overflow:hidden;margin:14px 0 14px;"><tr>{seg}</tr></table>'
+        f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>{legend}</tr></table>')
+lf = d["longest_focus"]
+tiles = [("Screen time", hm(d["screen_m"]), f'{d["first_use"]} to {d["last_use"]}'),
+         ("Context switches", f'{int(d["switches"]):,}', f'{d["switches_per_h"]} per hour'),
+         ("Longest focus", hm(lf["m"]), f'{lf["start"]} to {lf["end"]}'),
+         ("Visits under 30s", f'{int(d["short_visits"]):,}', "glances, not work")]
+def tile(t):
+    return (f'<td width="50%" valign="top" style="padding:5px;"><div style="background:{BG};border-radius:12px;padding:16px;">'
+            f'<div style="font:400 11px/1 {SANS};color:{INK4};text-transform:uppercase;letter-spacing:1px;">{t[0]}</div>'
+            f'<div style="font:400 30px/1.15 {SERIF};color:{INK};margin:8px 0 4px;">{t[1]}</div>'
+            f'<div style="font:400 12px/1.3 {SANS};color:{INK3};">{E(t[2])}</div></div></td>')
+kpis = label("Attention") + ('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0;">'
+        f'<tr>{tile(tiles[0])}{tile(tiles[1])}</tr><tr>{tile(tiles[2])}{tile(tiles[3])}</tr></table>'
+        f'<div style="font:400 13px/1.5 {SANS};color:{INK3};margin-top:12px;">Longest focus: {E(lf["what"])}</div>')
+hours = d["hours"]; H = 110
+cols = ""
+for h in hours:
+    sc = H / max(60.0, sum(float(h.get(k, 0)) for k in ORDER))
+    stack = "".join(f'<tr><td style="background:{T[k][1]};height:{max(int(round(float(h.get(k,0))*sc)),2)}px;font-size:0;line-height:0;">&nbsp;</td></tr>'
+                    for k in ["chill", "life", "k1", "k100", "m1"] if float(h.get(k, 0)) > 0)
+    used = sum(max(int(round(float(h.get(k,0))*sc)),2) for k in ORDER if float(h.get(k,0))>0)
+    pad = f'<tr><td style="height:{max(H-used,0)}px;font-size:0;line-height:0;">&nbsp;</td></tr>' if H - used > 0 else ""
+    cols += (f'<td valign="bottom" align="center" style="padding:0 2px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+             f'style="border-radius:4px;overflow:hidden;">{pad}{stack}</table>'
+             f'<div style="font:400 10px/1 {SANS};color:{INK4};margin-top:6px;">{h["h"]}</div></td>')
+timeline = (label("Your day, hour by hour") +
+            f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid {LINE};"><tr>{cols}</tr></table>'
+            f'<div style="font:400 11px/1.4 {SANS};color:{INK4};margin-top:8px;">Each column is one hour (full column = 60 minutes).</div>')
+def bars(rows, val_key, fmt, color_fn, sub_fn):
+    mxv = max([float(r[val_key]) for r in rows] + [1]); out = ""
+    for r in rows:
+        w = max(float(r[val_key]) / mxv * 100, 3)
+        out += (f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 11px;"><tr>'
+                f'<td style="font:500 13px/1.3 {SANS};color:{INK};">{E(r["label"])}</td>'
+                f'<td align="right" style="font:600 13px/1.3 {SANS};color:{INK};white-space:nowrap;">{fmt(r[val_key])}'
+                f'<span style="font-weight:400;color:{INK4};"> {E(sub_fn(r))}</span></td></tr>'
+                f'<tr><td colspan="2" style="padding-top:5px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+                f'style="background:{BG};border-radius:6px;"><tr><td width="{w:.1f}%" style="background:{color_fn(r)};height:10px;border-radius:6px;'
+                f'font-size:0;line-height:0;">&nbsp;</td><td style="font-size:0;">&nbsp;</td></tr></table></td></tr></table>')
+    return out
+top = label("Where the time went") + bars(d["top_time"], "m", hm, lambda r: T[r["tier"]][1],
+                                          lambda r: f'· {r["visits"]} visits · {T[r["tier"]][0]}')
+opened = label("What you opened most") + bars(
+    [dict(r, label=r["item"]) for r in d["most_opened"]], "opens", lambda v: f"{int(v)}x",
+    lambda r: "#6F8FB8", lambda r: f'· {hm(r["m"])} · {round(float(r["m"])*60/max(int(r["opens"]),1))}s each')
+ins = ""
+for i in d["insights"]:
+    c = T.get(i.get("tier", "chill"), T["chill"])[1]
+    ins += (f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 10px;"><tr>'
+            f'<td width="6" style="background:{c};border-radius:3px;font-size:0;">&nbsp;</td>'
+            f'<td width="92" valign="middle" style="padding:10px 0 10px 14px;font:400 26px/1 {SERIF};color:{INK};white-space:nowrap;">{E(i["big"])}</td>'
+            f'<td valign="middle" style="padding:10px 0 10px 8px;font:400 13px/1.45 {SANS};color:{INK3};">{E(i["text"])}</td></tr></table>')
+insights = label("Insights") + ins
+todo = "".join(f'<tr><td valign="top" width="26" style="padding:6px 0;"><div style="width:16px;height:16px;border:2px solid #1A1512;border-radius:5px;"></div></td>'
+               f'<td style="padding:6px 0;font:500 14px/1.45 {SANS};color:{INK};">{E(t)}</td></tr>' for t in d["today"])
+today = (f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{INK};border-radius:14px;margin:0 0 14px;"><tr><td style="padding:22px;">'
+         f'<div style="font:600 10px/1 {SANS};letter-spacing:2px;text-transform:uppercase;color:#E2C27A;margin:0 0 12px;">For today</div>'
+         f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F6F2F1;border-radius:10px;"><tr><td style="padding:10px 14px;">'
+         f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{todo}</table></td></tr></table></td></tr></table>')
+out = (f'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>'
+       f'<body style="margin:0;padding:0;background:{BG};"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{BG};">'
+       f'<tr><td align="center" style="padding:20px 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;">'
+       f'<tr><td>{card(hero)}{card(kpis)}{card(timeline)}{card(top)}{card(opened)}{card(insights)}{today}'
+       f'<div style="font:400 11px/1.5 {SANS};color:{INK4};text-align:center;padding:6px 0 20px;">Tiers are judged from {hm(tot)} of named activity blocks. '
+       f'Screen time counts every second the Mac was in use.</div></td></tr></table></td></tr></table></body></html>')
+open(sys.argv[2], "w").write(out)
+txt = [f'Pratik Renuse time log: {d["date_label"]}', "",
+       f'{waste_pct}% wasted. {hm(good)} of EUR 100k+ work.',
+       " | ".join(f'{T[k][0]} {hm(tiers.get(k,0))}' for k in ORDER), "",
+       f'Screen time {hm(d["screen_m"])} ({d["first_use"]} to {d["last_use"]}). Switches {d["switches"]} ({d["switches_per_h"]}/h). '
+       f'Longest focus {hm(lf["m"])} ({lf["start"]} to {lf["end"]}). Visits under 30s: {d["short_visits"]}.', "",
+       "Where the time went:"] + [f'- {r["label"]}: {hm(r["m"])}, {r["visits"]} visits ({T[r["tier"]][0]})' for r in d["top_time"]] + \
+      ["", "Opened most:"] + [f'- {r["item"]}: {r["opens"]}x, {hm(r["m"])}' for r in d["most_opened"]] + \
+      ["", "Insights:"] + [f'- {i["big"]}: {i["text"]}' for i in d["insights"]] + ["", "For today:"] + [f'- {t}' for t in d["today"]]
+open(sys.argv[3], "w").write("\n".join(txt))
+```
 
 # PART C. KEY CONTEXT FILES FROM THE PROJECT FOLDER (verbatim, secrets redacted)
 
@@ -2969,20 +3118,21 @@ In the Vercel project → **Settings → Domains** → add `pratikrenuse.com`, t
 
 # PART D. SYSTEMS, SCHEDULED TASKS, CONNECTED TOOLS AND FOLDER MAP
 
-## D1. Scheduled tasks on Pratik's Claude account (as of 15 Nov 2026)
+## D1. Scheduled tasks on Pratik's Claude account (as of 22 Nov 2026)
 
-- Weekly ADPList mentor booking: enabled; Monday and Thursday 10:45 IST. Keeps two live mentor requests per week, window 12:00 to 19:00 IST (must end by 7 PM), weekdays only; Europe-role, growth-craft and leadership themes rotate; fixed generic booking note; never mentions 100 Days, Pune or a Bueno ARR figure. Paused for the weeks of 2 Nov and 9 Nov 2026; resumes Monday 16 Nov 2026.
+- Weekly ADPList mentor booking: enabled; Monday and Thursday 10:45 IST. Keeps two live mentor requests per week, window 12:00 to 19:00 IST (must end by 7 PM), weekdays only; Europe-role, growth-craft and leadership themes rotate; fixed generic booking note; never mentions 100 Days, Pune or a Bueno ARR figure. The Nov 2 and Nov 9 pause has ended; it ran again on 19 Nov 2026.
+- Resume ADPList bookings slowly (added 18 Nov 2026): one-off, fires Mon 23 Nov 2026 11:15 IST. After ADPList rate limiting, books at most 3 sessions per day, several minutes apart, stopping at the first rate-limit error. Plan for 7 to 18 Dec, one new mentor per weekday, 12 PM to 7 PM IST, career-growth topic, learning-focused note (Adrian Pratama, Jiri Mocicka, Dave Thackeray, Atit Mehta, Komal Puri, Michael Henning, Xenia Sapanidi, Saurabh Srivastava, plus mentors to find for 15 and 16 Dec). Rebooks declined days, checks Neill Furmston's duplicate listings, adds each booking to Google Calendar, schedules a review-draft email 1 hour after each start, and messages Pratik the schedule. Nothing from 21 Dec for 3 weeks.
+- Review draft: <mentor> session (added 17 Nov 2026): ten one-off tasks, one per booked ADPList session, each firing about an hour after the session: Neill Furmston (23 Nov), Erwan Gauthier (24 Nov), Bengi Erguven (25 Nov), Giuliano A. (26 Nov), Magdalena Olszewska (27 Nov), Mudit Srivastava (30 Nov), Vivek Goel (1 Dec), Claudia Pace (2 Dec), Paul Pushparaj (3 Dec), Niall O'Kelly (4 Dec). Each checks the session was not declined or cancelled, reads the Wispr Flow transcript, drafts a warm 3 to 5 sentence ADPList review plus key takeaways and action items, and emails it via Resend from "Mentor Notes <pratik@spanishpropertyinsights.com>" to pratik.y.renuse@gmail.com only. Retries twice at 60 minutes if no transcript yet.
 - Weekly Bueno AI backup refresh: enabled; Sunday 11:14 IST. Refreshes the Notion page "Bueno AI Context Backup (for ChatGPT and other LLMs)" under Work / Consulting / Bueno.
 - Weekly Pratik Renuse AI backup refresh: enabled; Sunday 11:44 IST. Refreshes this backup, both the Notion page tree and the master doc in the folder.
 - Futures Brain weekly: disabled. Weekly maintenance of the Futures Brain folder (sources, theses, players, changelog) and then up to 5 LinkedIn posts plus HeyGen scripts into Content Engine/Ready to Ship. Folder rules and the full playbook live in Futures Brain/Weekly Playbook.md (Part C).
 - Monday meeting task sweep: disabled. Reads Wispr Flow meetings, updates the "What I Said I'd Do" task artifact, produces drafts into Claude outputs/Task sweep YYYY-MM-DD/, never acts on the outside world.
 - One-off reminder "Check idealista summary arrived" (Bueno, Nov 2026): already fired, disabled.
-- Screen Time morning judgement (added 10 Nov 2026): enabled; daily 05:43 IST. Reads yesterday's Mac screen-time blocks from Supabase Personal (st_blocks) and saves a tier verdict per block (m1 EUR 1M, k100, k1, chill, life) into st_judgements, which his Mac app shows in the morning summary. SELECT and INSERT only; sends nothing.
+- Screen Time morning judgement and email (added 10 Nov 2026, renamed and extended 18 Nov 2026): enabled; daily 05:43 IST. Reads yesterday's Mac screen-time blocks from Supabase Personal (st_blocks), saves a tier verdict per block (m1 EUR 1M, k100 EUR 100k, k1 EUR 1k, life Seva, chill wasted) into st_judgements, then emails a highly visual daily time log via Resend from "Pratik Renuse Time Log <pratik@spanishpropertyinsights.com>" to pratik.y.renuse@gmail.com only, subject "Pratik Renuse time log, <day>: <wasted %> wasted, <switches> switches, <longest focus> best focus". Strict tiers: Terminal always wasted, AI tools always EUR 1k, Vipassana and PVS seva their own category. The email is rendered by claude/screentime-email-render.py (Part B). SELECT and INSERT only.
 - Screen Time nudges (added 11 Nov 2026): disabled. Hourly 09:52 to 23:52 IST check of the last 60 minutes of Mac screen time; at most one push nudge (waste, inbox, loop, scattered, break, late), logged to st_nudges. Pratik prefers nudges inside the Mac app instead.
 - Screen Time weekly pattern analysis (added 11 Nov 2026): disabled. Monday 08:41 IST email "Your week: ..." via Resend with patterns, best and danger hours, focus breakers and three experiments.
 - Bueno Newsletter: fortnightly Monday send (added 10 Nov 2026): enabled; Mondays 08:00 IST, acts only on send days (every 14 days from 23 Nov 2026). Picks three idealista stories, writes EN/NO/SV, renders via newsletter_render in Supabase, sends via Resend from "Bueno Newsletter", marks the edition sent and pushes a notification.
 - Bueno Newsletter fortnightly edition (added 10 Nov 2026): disabled. Earlier Monday-build, Tuesday-send version of the same newsletter (builds a new guide PDF, region spotlight and reader question).
-- Weekly ADPList mentor booking: resumes Monday 16 Nov 2026 after the two-week pause.
 
 ## D2. Connected tools on Claude
 

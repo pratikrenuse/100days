@@ -1,0 +1,269 @@
+{
+  "n": 43,
+  "name": "Corey Haines",
+  "short": "Corey",
+  "wisdom": "Let a service pay the bills while you build the products.",
+  "email": {
+    "subject": "He didn't want an agency. It made $1M a year.",
+    "hook": "Corey Haines was laid off with a couple of months of savings and swore he didn't want to run a marketing agency, and two years later that agency was doing more than $1 million a year.",
+    "lead": [
+      "Corey is the closest person in this whole series to us. He's a marketer, not a developer. He couldn't code and couldn't find a technical cofounder, so he did the thing marketers can do on day one: sell a service. Then he used that cash to build software, a newsletter and, this year, one of the most starred marketing projects on GitHub.",
+      "Let's say it plainly though: he's not solo. Conversion Factory, his agency, has three cofounders and had grown to 16 people by the end of 2025, and his software product SwipeWell has a cofounder too. What we can learn from him is the order he did things in."
+    ],
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "On 15 January 2026 Corey created a GitHub repo called **marketingskills**. It's a free, open library of 53 marketing \"skills\" that AI agents like Claude Code, Codex, Cursor and Windsurf can use for things like conversion, copywriting, SEO, analytics and growth plans. By 11 June 2026 it had 32,921 stars, and by November 2026 about 60,200 stars and 8,800 forks.",
+          "It's free, but it's not charity. Sponsors pay to be listed as partners, the README promises they never influence what the skills recommend, and the whole thing promotes Magister, which he describes as \"an autonomous AI agent\" built to act as a company's CMO. It's the same move his newsletter always made: give first, then offer something."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "The agency is the engine. Conversion Factory sells an async, productized marketing subscription for B2B SaaS companies. By his own numbers, plans start at $6,000 a month and clients pay between $6,000 and $20,000. The front door is a **$1,000 audit**, and custom projects have a $25,000 minimum.",
+          "It hit $36,000 a month about two months after launch in July 2023, passed $1 million a year about two years in, and grew about 35% in 2025. On top of that he owns small software products: at the end of 2025 one was making $19,000 a month and others $800, $300 and $100. He hasn't said which product is the $19,000 one."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "Conversion Factory started in July 2023 with two friends as cofounders. The landing page took about a week, and the first client signed within two weeks. That's it. No software, no funding, just a clear offer for a clear buyer.",
+          "He credits the idea to Rob Walling's stair-step approach: start with something small and reliable, then climb to bigger products. In his words, it's \"very underrated to go all in on a productized service or agency\". The agency's steady cash is what pays for his software experiments."
+        ]
+      },
+      {
+        "title": "How he got the clients",
+        "paras": [
+          "Nothing magic, just steady and physical. In one year the agency went to 13 meetups and conferences. It sponsored newsletters and podcasts, sent outbound email, and worked on SEO. The team also uses ChatGPT heavily for copy.",
+          "Underneath all of that sits his own audience, built over years: the Swipe Files newsletter, which he describes as having 30,000+ subscribers, and more than 20,000 followers on X. His content rule is about **90% giving and 10% asking**, and you can feel that in everything he puts out."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Corey's 2025 year in review is refreshingly honest. About five mobile apps stalled half-finished on bugs that AI couldn't fix. He paid a developer about $10,000 over six months and got little shipped. An accountant's mistake in his business structure cost him an estimated $30,000 in overpaid tax. His book, Founding Marketing, missed its 2025 launch.",
+          "And yet the same year, AI turned him into someone who \"actually understands how software works\". He says Claude Code is \"a step up from anything else before it\". His summary of the lesson is one we should tape to the wall: \"Shipping begets shipping.\""
+        ]
+      }
+    ],
+    "stats": [
+      {"value": "$36K", "label": "a month, two months after launch"},
+      {"value": "$1M+", "label": "a year, about two years in"},
+      {"value": "$1,000", "label": "audit as the front door"}
+    ],
+    "chart": {
+      "title": "Stars on his free marketingskills library",
+      "points": [
+        {"label": "15 Jan 2026", "value": 0, "display": "0"},
+        {"label": "11 Jun 2026", "value": 32921, "display": "32,921"},
+        {"label": "Nov 2026", "value": 60200, "display": "About 60K"}
+      ],
+      "note": "A free GitHub repo, funded by sponsors, that points people to his paid work."
+    },
+    "tryToday": "Write a one-line offer for a paid audit of the thing you're best at, with a fixed price and a fixed deliverable. Send it to three people who might need it this week.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Corey Haines is a marketer who couldn't code, got laid off with a couple of months of savings, and reluctantly started an agency that passed $1 million a year in about two years. He used that agency to fund software, a 30,000-reader newsletter and a free AI marketing library that collected about 60,000 GitHub stars in 2026. He has cofounders and a team, so this is a story about sequencing, not about doing it alone.",
+    "stats": [
+      {"value": "$1,000,000+", "num": 1000000, "prefix": "$", "suffix": "+", "label": "a year at Conversion Factory", "note": "his own numbers, 2025"},
+      {"value": "$36,000", "num": 36000, "prefix": "$", "suffix": "", "label": "a month, two months after launch", "note": "his own numbers, about September 2023"},
+      {"value": "60,200", "num": 60200, "prefix": "", "suffix": "", "label": "GitHub stars on marketingskills", "note": "November 2026"},
+      {"value": "16", "num": 16, "prefix": "", "suffix": "", "label": "people at the agency", "note": "end of 2025, three of them cofounders"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A marketer who wanted to be a founder since 19",
+        "paras": [
+          "Corey has wanted to be an entrepreneur since he was 19. Instead of jumping straight in, he spent years building skills in startup marketing roles and consulting. He's been making his own products since 2018: ebooks, courses, software and consulting offers.",
+          "There's a podcast episode whose title connects him to Baremetrics and SavvyCal, and another titled \"Leaving a full-time head of growth role to be a full-time indie hacker\". His exact titles and dates there aren't public, so let's keep it simple: he was a growth marketer inside software startups before he went out on his own. Where he's from and where he studied isn't public.",
+          "His early products were the kind marketers can make without code. There's an ebook called SaaS Marketing Ideas, a product called Learn Copywriting, and, most importantly, a newsletter called Swipe Files. Over the years he's also had his hands in Truelist, Scriptive, Safehold, Commenze and SwipeWell.",
+          "If you've ever felt that being a non-developer locks you out of building products, Corey's background is the answer. He built for years with the tools he had, words and offers, and picked up the technical side much later."
+        ]
+      },
+      {
+        "label": "Giving first",
+        "title": "Swipe Files and the habit of giving before you get",
+        "paras": [
+          "Swipe Files is Corey's newsletter about marketing, and it became the base of everything he did later. The site today says \"Join 27286+ subscribers\", and he describes it as 30,000+. The oldest dated testimonials on the site go back to May 2020, so it was well established by then.",
+          "It wasn't only free. In August 2020 there was mention of a seven-day free trial, and in November 2020 he wrote that the paid community was \"about to hit 100 members\". There was a pro account too, though the price isn't shown on the site anymore.",
+          "One sample issue he still shows off is about engineering as marketing, the idea of building free tools that bring people to your paid product. His advice there was \"give before you get\" and \"Keep it small and low maintenance\". Hold on to that, because six years later he did exactly this at a huge scale.",
+          "His rule for content is that it should be about 90% giving and 10% asking. That's not just a nice idea, it's how he built an audience that later trusted him enough to hire his agency and star his projects."
+        ],
+        "pull": {"text": "give before you get", "cite": "Corey, in a Swipe Files issue on engineering as marketing"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "Laid off with a couple of months of savings",
+        "paras": [
+          "The turning point started with bad news. Corey was laid off, with \"only a couple months of savings\", as he wrote on Indie Hackers. When the safety net is that thin, you don't have time for a long product build. You need money coming in soon.",
+          "He had a problem though. He wanted to build software, but he couldn't code, and he couldn't find a technical cofounder. So the classic indie hacker path, build a SaaS and grow it, was closed to him at that moment.",
+          "What he could do was marketing, for software companies, at a very high level. So he did the thing he swore he didn't want to do. In his own words: \"I did not want to start a marketing agency.\"",
+          "This is worth sitting with for a minute. A lot of us have a picture of the \"right\" way to build, usually a product that runs while we sleep. Corey's story says that the right first business is the one that pays you next month, using the skill you already have."
+        ],
+        "pull": {"text": "I did not want to start a marketing agency", "cite": "Corey, on Indie Hackers, 2025"}
+      },
+      {
+        "label": "The first version",
+        "title": "A landing page in a week, a client in two",
+        "paras": [
+          "In July 2023 Corey started Conversion Factory with two friends as cofounders. They didn't build an app or a fancy brand first. The landing page took about a week. **The first client signed within two weeks.**",
+          "The shape of the offer was the clever part. It wasn't a traditional agency with endless calls and custom proposals. It was an async, productized subscription: B2B SaaS companies pay a monthly fee and get marketing work delivered without lots of meetings. That's easier to sell, easier to deliver and easier to grow than custom agency work.",
+          "By his own numbers, Conversion Factory hit $36,000 a month within about two months, around September 2023. For a business that started with a week-old landing page and three people, that's a very fast start, and it came largely from the reputation Corey had already built through Swipe Files and years of working in SaaS marketing.",
+          "Pricing was set high and clear. Plans start at $6,000 a month, and clients pay anywhere from $6,000 to $20,000. Custom work has a $25,000 minimum. And the front door is a **$1,000 audit**, a small paid diagnosis that lets a client test the team before committing to a big monthly plan.",
+          "That audit is a quietly brilliant piece of offer design. It filters out people who aren't serious, it proves the agency's value on a real problem, and it makes the monthly plan the obvious next step for the clients who liked what they saw."
+        ]
+      },
+      {
+        "label": "Getting clients",
+        "title": "Thirteen meetups and a lot of showing up",
+        "paras": [
+          "So where did the clients come from after the first wave? Corey has been specific. In one year the agency attended 13 meetups and conferences. In person, shaking hands, talking to founders.",
+          "Alongside that, they sponsored newsletters and podcasts that SaaS founders read and listen to, sent outbound email, and invested in SEO. The team also uses ChatGPT heavily to help with copy, which makes sense for a marketing shop trying to deliver a lot of work for a fixed fee.",
+          "And all the while, his own channels kept doing their thing: the Swipe Files newsletter, with about 30,000 readers by his count, and more than 20,000 followers on X. When a founder met someone from Conversion Factory at a conference, there's a good chance they'd already read something Corey wrote.",
+          "The mix is almost boring, and that's the point. No single viral moment, just a steady set of channels, used consistently, pointed at a very specific buyer: B2B SaaS companies that need marketing done well."
+        ]
+      },
+      {
+        "label": "Scaling it",
+        "title": "$1 million a year, and a team of sixteen",
+        "paras": [
+          "About two years after launch, in a post on Indie Hackers in 2025, Corey wrote that Conversion Factory had passed $1 million in annualised run rate. Most of the numbers on this page are his own, shared in his posts, so read them as his account rather than audited figures.",
+          "In his 2025 year in review, published on 1 January 2026, he said agency revenue grew about 35% that year. The team grew to 16 people: the three cofounders plus 13 more. The agency also bought a newsletter called H1 Gallery during 2025.",
+          "That growth came with a lesson he states bluntly: \"Hiring and delegation aren't optional if you want to grow.\" It's a useful counterweight to the solo-founder dream. Corey chose a business model that needs people, and he leaned into it.",
+          "The agency also did what he always planned it to do: fund his products. This is Rob Walling's stair-step approach, which Corey credits directly. Start with something that pays reliably, then use that cash and time to climb to products that scale. By the end of 2025, his own software products were making $19,000 a month from one product and $800, $300 and $100 from others. He hasn't named which one is the $19,000 product."
+        ],
+        "pull": {"text": "Hiring and delegation aren't optional if you want to grow", "cite": "Corey, 2025 year in review"}
+      },
+      {
+        "label": "The messy year",
+        "title": "Five stalled apps, a $10,000 developer and a $30,000 tax mistake",
+        "paras": [
+          "Corey's 2025 review is worth reading for the failures alone, because he lists them without spin.",
+          "He started about five mobile apps that all stalled half-finished, stuck on bugs that AI tools couldn't fix. He hired a developer who didn't use AI and paid about $10,000 over roughly six months, and got little shipped. He then found a new cofounder for SwipeWell and planned SwipeWell 2.0, with lots of AI features, for January 2026.",
+          "An accountant made an error in how his business was structured, which he estimates led to about $30,000 in overpaid tax. His book, Founding Marketing, was supposed to launch in 2025 and didn't. He also tried a handful of small experiments, Conlang, Invoice Command and a Chrome extension called TestDummy, without sharing how they did.",
+          "And yet, in that same messy year, something important changed. AI turned him into someone who \"actually understands how software works\". He says he no longer writes the code himself, and that Claude Code is his main tool now, \"a step up from anything else before it\". The non-coder who couldn't find a technical cofounder had found one, of a sort.",
+          "His takeaways from the year are short and sharp: \"Shipping begets shipping\" and \"People who ship beat people who endlessly plan.\""
+        ],
+        "pull": {"text": "People who ship beat people who endlessly plan.", "cite": "Corey, 2025 year in review"}
+      },
+      {
+        "label": "Where it stands now",
+        "title": "A free AI library with 60,000 stars",
+        "paras": [
+          "On 15 January 2026 Corey created marketingskills on GitHub. It started as a library of marketing skills for Claude Code covering five areas. Version 2.0 reorganised it into eight categories, and version 2.3.0 added a skill for writing a full AARRR marketing plan. It now works with Codex, Cursor, Windsurf and the Agent Skills standard, and you can install it with npx skills, the Claude Code plugin marketplace, a git submodule or SkillKit.",
+          "The launch was not an overnight hit everywhere. A Hacker News submission in January 2026 got no discussion at all. But GitHub picked it up. By 11 June 2026 the repo had 32,921 stars and 5,401 forks. By November 2026 it had about 60,200 stars, 8,800 forks, 1,463 commits and 53 skills. That's roughly doubling in five months.",
+          "It's MIT licensed, so anyone can use it for free. It's funded by sponsors listed as Verified Partners, in November 2026 those were Converly, Ploy, AIsa, Omnia and Livestorm, with a page at marketing-skills.com inviting more. The README promises that partners never influence what the core skills recommend.",
+          "And it's a funnel. The library points people toward Conversion Factory, Swipe Files, AI marketing training and Magister, which he describes as \"an autonomous AI agent\" meant to act as a company's CMO. Pricing and launch date for Magister aren't public.",
+          "Look at the shape of it. In 2020 his newsletter told readers to build free tools and \"give before you get\". In 2026 he built the biggest free tool of his career, for AI agents instead of people, and gave it away. **Same playbook, new audience.**",
+          "He also planned a soft launch of Founding Marketing for April 2026. Whether that and SwipeWell 2.0 shipped on time, he hasn't said publicly."
+        ]
+      },
+      {
+        "label": "How he works",
+        "title": "No alarm, a long Duolingo streak and Claude Code",
+        "paras": [
+          "Corey's routine is the opposite of hustle culture. He almost never sets an alarm. He sleeps in after late nights and says he's more productive when he's rested.",
+          "He keeps small daily habits going for a long time: at the start of 2026 he had a 620-day Duolingo streak and a daily prayer practice.",
+          "On tools, he's been clear: \"Claude Code is my go-to now.\" He uses it more than Cursor. For a marketer who couldn't code a few years ago, that's a big shift, and it's what made marketingskills possible.",
+          "His core belief about marketing is a nice one to end on. If you built something that genuinely solves a real problem, then marketing it is a service to the people who have that problem. He also believes in learning in public, which, if you look back at Swipe Files, is exactly how all of this began."
+        ],
+        "pull": {"text": "Claude Code is my go-to now.", "cite": "Corey, 2025 year in review"}
+      }
+    ],
+    "failuresTitle": "What went wrong in 2025 alone",
+    "failuresIntro": "Corey hasn't given a lifetime count of failures, but his 2025 year in review lists these openly.",
+    "failures": [
+      {"year": "2025", "name": "About five mobile apps", "what": "He started about five mobile apps and all of them stalled half-finished. Each got stuck on bugs that AI tools couldn't fix.", "lesson": "Finish one small thing before starting the next, especially when you're leaning on AI to build."},
+      {"year": "2025", "name": "The developer who didn't use AI", "what": "He paid a developer about $10,000 over roughly six months and got little shipped. He then found a new cofounder for SwipeWell.", "lesson": "Check early and often whether a hire is actually shipping, and cut losses quickly."},
+      {"year": "2025", "name": "The tax mistake", "what": "An accountant made an error in his business structure. He estimates it caused about $30,000 in overpaid tax.", "lesson": "Get a second opinion on your business structure once real money is flowing."},
+      {"year": "2025", "name": "Founding Marketing, delayed", "what": "His book was planned for 2025 and didn't launch. He moved a soft launch to April 2026.", "lesson": "Big creative projects slip, so give them their own protected time."},
+      {"year": "2025", "name": "Small experiments", "what": "He tried Conlang, Invoice Command and TestDummy, a Chrome extension. He hasn't shared how they did.", "lesson": "Small bets are fine to drop, as long as you learn something from each."}
+    ],
+    "playbookTitle": "How he gets clients and users",
+    "playbook": [
+      {"title": "Sell a service first", "text": "Laid off and unable to code, he started a productized agency instead of a SaaS. It hit $36,000 a month in about two months and funds his products, following Rob Walling's stair-step idea."},
+      {"title": "Productize the offer", "text": "Conversion Factory is an async monthly subscription for B2B SaaS companies, from $6,000 to $20,000 a month. A fixed offer is easier to sell and deliver than custom work."},
+      {"title": "Use a paid audit as the front door", "text": "New clients start with a $1,000 audit. It filters out tyre-kickers, proves value on a real problem and makes the monthly plan the obvious next step."},
+      {"title": "Show up in person", "text": "In one year the agency attended 13 meetups and conferences. Face to face is still one of the best ways to sell a high-ticket service."},
+      {"title": "Sponsor the newsletters and podcasts your buyers use", "text": "The agency pays for newsletter and podcast sponsorships aimed at SaaS founders, alongside outbound email and SEO."},
+      {"title": "Build an audience by giving 90%", "text": "Swipe Files grew to about 30,000 readers by his count, and he has 20,000+ followers on X. His rule is 90% giving and 10% asking."},
+      {"title": "Give away a big free tool", "text": "marketingskills, a free MIT-licensed library of 53 AI marketing skills, went from zero on 15 January 2026 to about 60,200 GitHub stars by November 2026. It points people to his agency, newsletter and Magister."},
+      {"title": "Get sponsors to pay for the free thing", "text": "Verified Partners like Converly, Ploy, AIsa, Omnia and Livestorm sponsor marketingskills. The README promises they never influence the core skills, which keeps the trust intact."}
+    ],
+    "charts": [
+      {
+        "title": "Conversion Factory's growth, by his own numbers",
+        "points": [
+          {"label": "Sep 2023", "value": 36000, "display": "$36K a month"},
+          {"label": "Mid 2025", "value": 83333, "display": "$1M+ a year"}
+        ],
+        "note": "$1 million a year works out to about $83,000 a month. Revenue then grew about 35% in 2025."
+      },
+      {
+        "title": "Stars on marketingskills",
+        "points": [
+          {"label": "15 Jan 2026", "value": 0, "display": "0"},
+          {"label": "11 Jun 2026", "value": 32921, "display": "32,921"},
+          {"label": "Nov 2026", "value": 60200, "display": "About 60,200"}
+        ],
+        "note": "The June figure was recorded by an outside reviewer, the November one from the GitHub page."
+      },
+      {
+        "title": "His own software products, monthly revenue at end of 2025",
+        "points": [
+          {"label": "Product A", "value": 19000, "display": "$19,000"},
+          {"label": "Product B", "value": 800, "display": "$800"},
+          {"label": "Product C", "value": 300, "display": "$300"},
+          {"label": "Product D", "value": 100, "display": "$100"}
+        ],
+        "note": "He hasn't said which product is which."
+      }
+    ],
+    "timeline": [
+      {"when": "Age 19", "text": "Decides he wants to be an entrepreneur, then spends years in startup marketing roles and consulting.", "big": false},
+      {"when": "2018", "text": "Starts making his own products: ebooks, courses, software and consulting.", "big": false},
+      {"when": "2020", "text": "Swipe Files is established, with a paid community about to hit 100 members in November.", "big": false},
+      {"when": "Before Jul 2023", "text": "Laid off with only a couple of months of savings. He can't code and can't find a technical cofounder.", "big": true},
+      {"when": "Jul 2023", "text": "Starts Conversion Factory with two friends. Landing page in a week, first client within two weeks.", "big": true},
+      {"when": "Sep 2023", "text": "About $36,000 a month, by his own numbers.", "big": false},
+      {"when": "2025", "text": "Passes $1 million a year in run rate. Buys the H1 Gallery newsletter.", "big": true},
+      {"when": "End of 2025", "text": "Team of 16, revenue up about 35% for the year. Five stalled apps, a $30,000 tax mistake.", "big": false},
+      {"when": "15 Jan 2026", "text": "Creates marketingskills on GitHub.", "big": true},
+      {"when": "11 Jun 2026", "text": "marketingskills reaches 32,921 stars.", "big": false},
+      {"when": "Nov 2026", "text": "About 60,200 stars, 8,800 forks and 53 skills.", "big": false}
+    ],
+    "quotes": [
+      {"text": "I did not want to start a marketing agency", "cite": "Indie Hackers, 2025"},
+      {"text": "very underrated to go all in on a productized service or agency", "cite": "Indie Hackers, 2025"},
+      {"text": "Shipping begets shipping.", "cite": "2025 year in review, January 2026"},
+      {"text": "People who ship beat people who endlessly plan.", "cite": "2025 year in review, January 2026"},
+      {"text": "Hiring and delegation aren't optional if you want to grow", "cite": "2025 year in review, January 2026"},
+      {"text": "Claude Code is my go-to now.", "cite": "2025 year in review, January 2026"},
+      {"text": "give before you get", "cite": "Swipe Files issue on engineering as marketing"}
+    ],
+    "steal": [
+      "If you can't build a product yet, sell the skill you already have as a fixed monthly service. Corey's agency went from a week-old landing page to $36,000 a month in about two months.",
+      "Put a small paid audit at the front of any big offer. It lets the buyer test you cheaply and makes the bigger plan an easy yes.",
+      "Use the service income to fund product experiments, rather than waiting until a product can pay your rent.",
+      "Give away something genuinely useful that your audience searches for, and let sponsors pay for it. marketingskills is free and still points straight to his paid work.",
+      "Write down your failures each year as plainly as Corey does. A public review keeps you honest and shows people you're serious.",
+      "As marketers, we can now build with AI tools like Claude Code. Corey went from \"can't code\" to shipping a 60,000-star repo, so the excuse is gone."
+    ],
+    "sources": [
+      {"title": "Indie Hackers: Reluctantly building a productized agency and hitting $1M a year in two years", "url": "https://www.indiehackers.com/post/reluctantly-building-a-productized-agency-and-hitting-1m-yr-in-two-years-jyU3Rf1v7Bkvl69p9iCv"},
+      {"title": "corey.co: 2025 year in review", "url": "https://corey.co/blog/2025"},
+      {"title": "corey.co: About", "url": "https://corey.co/about"},
+      {"title": "marketingskills on GitHub", "url": "https://github.com/coreyhaines31/marketingskills"},
+      {"title": "marketingskills README", "url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/main/README.md"},
+      {"title": "Ry Walker: marketingskills review (June 2026)", "url": "https://rywalker.com/research/marketingskills"},
+      {"title": "Swipe Files", "url": "https://swipefiles.com/1000"},
+      {"title": "IndieBites: Leaving a full-time head of growth role to be a full-time indie hacker", "url": "https://indiebites.transistor.fm/episodes/leaving-a-full-time-head-of-growth-role-to-be-a-full-time-indie-hacker-corey-haines-swipe-files-and-more"},
+      {"title": "Saasology podcast: Corey Haines on SaaS growth", "url": "https://saasology.castos.com/episodes/unlocking-the-secrets-of-saas-growth-corey-haines-swipewell-baremetrics-savvycal"}
+    ]
+  }
+}

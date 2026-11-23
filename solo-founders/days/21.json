@@ -1,0 +1,260 @@
+{
+  "n": 21,
+  "name": "Ankur Warikoo",
+  "short": "Ankur",
+  "wisdom": "Sell a live session to the audience you already have, then package it.",
+  "email": {
+    "subject": "Five months of cash, then ₹100 crore",
+    "hook": "In March 2020 Ankur Warikoo was 39, had five months of cash in the bank and a backup plan to sell his house, and six years later his courses had sold about ₹100 crore.",
+    "lead": [
+      "Quick honesty first: Ankur is not a solo founder. He has run a content team since early 2020 and today runs a company with staff and interns. We are including him anyway, because the way he made his first rupee online is the most copyable thing an Indian creator has ever written down.",
+      "He did it with a Razorpay link, a Zoom account and a LinkedIn post. No product, no course, no website worth talking about. For anyone of us sitting on an audience, even a small one, this is the playbook."
+    ],
+    "stats": [
+      {"value": "₹100 crore", "label": "course sales, 2020 to May 2026"},
+      {"value": "₹25 crore", "label": "profit over the same years"},
+      {"value": "5 lakh", "label": "learners by May 2026"}
+    ],
+    "chart": {
+      "title": "His YouTube subscribers, by his own and press numbers",
+      "points": [
+        {"label": "Mar 2020", "value": 7517, "display": "7.5K"},
+        {"label": "Oct 2020", "value": 34326, "display": "34K"},
+        {"label": "2022", "value": 2170000, "display": "2.17M"},
+        {"label": "Aug 2026", "value": 7100000, "display": "7.1M"}
+    ],
+      "note": "In March 2020 YouTube was his smallest channel. LinkedIn, with 765,078 followers, was where the money started."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "On 15 May 2026 he did something most of us would never dare. He stopped selling his courses one by one, even though every one of them was profitable, and turned WebVeda into a single membership. You now pay **the price of one course and get all of them**, plus every future course, a members' community and job recommendations.",
+          "All 5 lakh existing learners got upgraded for free, and the 100% refund policy stayed. His words on the old model: it “makes no sense to continue it.” Asked how big a role AI played in that decision, he gave a one-word answer: “huge.”"
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "Courses were always the engine. In 2021 alone, by his own numbers, they sold ₹7.8 crore after refunds to 114,972 students. The whole company made ₹12.68 crore that year, adding brand deals, affiliate income, talks and courses sold to companies, and kept ₹3.9 crore as profit. Around FY22 the company made ₹17 crore and paid corporate tax for the first time.",
+          "Brand deals are big too, with one report putting them at ₹10.58 crore in 2022. Then there are the books, starting with Do Epic Shit in 2021. Over the whole run from 2020 to May 2026 he says the courses did about ₹100 crore in sales and ₹25 crore in profit. What the new membership costs and how many people pay for it is not public yet. Most of these numbers are his own, shared in his posts and interviews, and nobody has checked them against filings."
+        ]
+      },
+      {
+        "title": "How he built the first version",
+        "paras": [
+          "On 22 April 2020 he signed up for Razorpay and announced a Zoom talk for 30 April. The price was “pay whatever you want.” **900 people registered in three days.** Half of them paid ₹1. The average was ₹187.",
+          "Over the next three months he ran 13 of these sessions for 4,700 people and made about ₹20 lakh. Then he ran an eight-session online conference for founders at ₹999, got 400 sign-ups, and sold the recordings afterwards as a course at ₹1,499. In August 2020 he put half his savings into seven courses, and a team of five recorded 26 hours of content in one week."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "LinkedIn was, in his words, “all I had.” He had 765,078 followers there in March 2020, and his posts announcing each session drove the biggest spikes. He took the fear out of paying with anonymous feedback forms, instant refunds for anyone unhappy and a 100% no-questions refund policy.",
+          "In October 2020 he paired up with an agency called Insane Marketers for paid promotion and made ₹36 lakh that month, about a year of runway. His rule underneath all of it: “Ship out content every single day!” And he kept the free content separate from the selling."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "He did not start from zero. He had spent years as the CEO of Nearbuy (Groupon India before that), had 765K LinkedIn followers and a paid speaking career before he sold anything online. **The audience was already built.** What Covid took away was the stage, not the audience.",
+          "And the road had real potholes. At Nearbuy he ignored the product and 80 of 400 people were laid off. In 2021 he promoted the crypto platform Vauld, which later collapsed, and he took heavy criticism for it. Today a court has had to protect him from deepfake videos using his face to push fake stock tips. Big audience, big target."
+        ]
+      }
+    ],
+    "tryToday": "Pick one thing you could teach in an hour, set up a Razorpay payment page with “pay what you want” pricing, and post about it on LinkedIn tonight. Even ten sign-ups tell you something real.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Ankur Warikoo left a funded astrophysics PhD, ran Groupon India and Nearbuy, and at 39 found himself with five months of cash and no income. What he did next, with a Zoom link and a LinkedIn post, became one of India's biggest creator businesses. He is not a solo founder, and he would tell you so himself.",
+    "stats": [
+      {"value": "₹100 crore", "num": 100, "prefix": "₹", "suffix": " crore", "label": "course sales, 2020 to May 2026", "note": "his own numbers"},
+      {"value": "₹25 crore", "num": 25, "prefix": "₹", "suffix": " crore", "label": "profit over the same years", "note": "his own numbers"},
+      {"value": "900", "num": 900, "prefix": "", "suffix": "", "label": "sign-ups for his first paid Zoom talk, in 3 days", "note": "April 2020"},
+      {"value": "7.1M", "num": 7.1, "prefix": "", "suffix": "M", "label": "YouTube subscribers", "note": "August 2026"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "He wanted to be a NASA scientist",
+        "paras": [
+          "Before any of the business stuff, Ankur Warikoo was a physics kid with one dream. “My ultimate dream was to become a NASA scientist,” he has said, and he worked toward it for eight years. At 24 he won a fully funded place to do a PhD in astrophysics at Michigan State University in the US.",
+          "About two years in, he realised he would be good at it but not happy doing it for the rest of his life. So he walked away and came back to India with no fixed plan. He has been blunt about what his physics master's was worth back home: it “mostly made me unemployable in this country.”",
+          "He ended up at the Indian School of Business, and in 2005, as a student there, he started a blog. Here's the part worth noticing: **he still updates that blog every day.** On his 25th birthday he wrote a post listing his goals, his failures and his hopes. Writing in public about what went wrong was a habit for fifteen years before it paid him a rupee.",
+          "Years later he would also start keeping a public “failure resume”, an idea he borrowed from a Princeton professor who published a CV of everything he had been rejected for. The man was building his brand on honesty about failure long before brands like that were fashionable."
+        ],
+        "pull": {"text": "My ultimate dream was to become a NASA scientist", "cite": "Ankur, to Outlook Business, 2022"}
+      },
+      {
+        "label": "The company years",
+        "title": "Groupon India, and the hangover that never left",
+        "paras": [
+          "Nearbuy was his third venture as a founder. It started life as Groupon India in 2011, with Ankur as co-founder and CEO, and was renamed Nearbuy in 2015. The rename did not fix how people saw it. “And then we became Nearbuy but the hangover still remained,” he said in 2017. Users still thought of it as a deals site.",
+          "He has been honest about his own blind spot there. He believed marketing was the only problem. “I refused to think of our product offering as something that needed work,” he said. Without a clear roadmap the company ended up laying off 80 of its 400 people.",
+          "Nearbuy did turn profitable over four years, and it ended up owned by Paytm. But Ankur had put his life savings into Nearbuy and other startups and had taken a below-market salary for years. On 27 September 2019 he announced he would step down as CEO. He stayed on as a shareholder and board member.",
+          "After that, his income came from paid corporate talks. In January 2020 he started looking for a content team, and by March he had six people. He was getting ready to take content seriously. Then the world shut down."
+        ],
+        "pull": {"text": "I refused to think of our product offering as something that needed work.", "cite": "Ankur, to Outlook Business, 2022"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "Five months of cash and a plan to sell the house",
+        "paras": [
+          "India went into lockdown on 23 March 2020. Overnight, every corporate talk on his calendar disappeared, and with them his only income. He was 39, with a family and a new content team on payroll, and he was, in his words, staring at five months of cash in the bank.",
+          "In April he wrote down his worst-case plan. Sell the house, which would bring in about ₹50 lakh. Move to the mountains. Homeschool the kids. It's worth sitting with that for a second, because this is a former CEO with three-quarters of a million LinkedIn followers, and he was seriously planning his exit from city life.",
+          "What he had, though, was an audience. On 29 March 2020 he had 765,078 followers on LinkedIn, 14,596 on Instagram, 7,517 on YouTube and 16,675 on Twitter. **LinkedIn was the only one that really counted.** Later he would describe it simply as “all I had.”"
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "A Zoom link, a Razorpay page, and ₹1 payments",
+        "paras": [
+          "On 22 April 2020 he signed up for Razorpay. That's it, that's the tech stack. He set up an online talk for 30 April, to run on a Zoom Pro account, and he priced it “pay whatever you want.”",
+          "He posted it on LinkedIn. In three days, more than 900 people registered. About half of them paid ₹1. The average payment came out at ₹187. It's not a fortune, but think about what it proved: people would hand over money to hear him live, and the cost of finding that out was a Zoom subscription.",
+          "He kept going. Over the next three months he ran 13 online sessions for more than 4,700 people and made about ₹20 lakh. He used anonymous feedback forms after each one, and anyone unhappy got their money back instantly. Pay-what-you-want brought people in, the refunds took away the risk, and the feedback told him what to make next.",
+          "One thing to keep in mind about his numbers: **most of the figures on this page come from Ankur himself**, mainly from a long thread he posted on 31 December 2021 and from interviews since, and none have been checked against company filings."
+        ],
+        "pull": {"text": "I was betting on myself!", "cite": "Ankur, X thread, December 2021"}
+      },
+      {
+        "label": "Finding the money",
+        "title": "Turning recordings into courses",
+        "paras": [
+          "The next step was the clever one. In mid-2020 he ran “The Future Founders Conference”, eight live sessions for ₹999, and got more than 400 sign-ups. Then he took the recordings and sold them as a self-paced course called “Complete Guide to Starting Up” at ₹1,499. **The live event paid for the content, and the content kept selling after the event ended.**",
+          "By August 2020 he had nine months of money in the bank, which for him felt like breathing room. So he bet half his savings on producing seven courses. A team of five recorded 26 hours of content in a single week. That's the kind of sprint you can only do when you already know people want it.",
+          "In October 2020 he partnered with an agency called Insane Marketers for paid promotion. That month he made ₹36 lakh, which he counted as about twelve months of runway. From November 2020 he started promoting the courses online himself as well. The terms with the agency, his ad spend and his cost per customer have never been made public.",
+          "His principle through all this was simple: “Do not lose money, ever!” He spent on courses only once the talks had proved the demand, and on ads only once the courses existed."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "How the audience grew",
+        "title": "Seven months that changed every number",
+        "paras": [
+          "Look at what happened to his followers between 29 March and 26 October 2020. LinkedIn went from 765,078 to 878,105. Instagram went from 14,596 to 54,795. YouTube went from 7,517 to 34,326. Twitter went from 16,675 to 44,614. The paid sessions and the free content were feeding each other.",
+          "His rule was “Ship out content every single day!” He also kept a line between giving and selling. The free content was free and stayed free, and the selling happened in its own posts. Announcement posts for sessions drove the biggest spikes, both in sign-ups and in followers.",
+          "By 2021 the machine was running. In that calendar year, by his own count, the courses had 114,972 students and sold ₹7.8 crore after refunds. The refund rate was just 3.58%, which tells you the 100% refund policy cost him very little. Average completion was 43%, which is high for online courses. The company as a whole made ₹12.68 crore, with ₹3.9 crore profit. And here's the line that should make us jealous: **the course operations took him about three hours a month.**"
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Scaling it",
+        "title": "Six hours every Monday",
+        "paras": [
+          "By 2022 YouTube had become the big channel. He had 2.17 million subscribers and about 7 million followers across platforms. He was spending about 10 hours a week on content: six hours of filming every Monday, and videos going out every Tuesday, Thursday and Saturday. One batch day fed the whole week.",
+          "Around FY22 the company made ₹17 crore from courses, brand endorsements, corporate gigs and subscriptions, and he set a target of ₹30 crore for the year after. It was the first year the company paid corporate tax. Interns were being paid ₹8 lakh a year. One report puts his brand-deal income at ₹10.58 crore in 2022 alone, though that hasn't been checked against filings.",
+          "The books came alongside: Do Epic Shit in 2021, Get Epic Shit Done in 2022, Make Epic Money in 2024, and Winning People Without Losing Yourself, which was reviewed in early 2026. Do Epic Shit is built around his own mistakes. A fun detail from 2022: about 70% of his audience was male, yet about 80% of his fan emails came from women.",
+          "By August 2026 he had 7.1 million subscribers on YouTube, 4 million on Instagram, about 570K on X and about 525K on Facebook, and he describes his community as “16 million+” in total."
+        ]
+      },
+      {
+        "label": "Where it stands now",
+        "title": "He shut down a profitable ₹100 crore business",
+        "paras": [
+          "On 15 May 2026 he posted a video on X announcing that he was ending one-off course sales. Over about five and a half years, he said, the courses had made about ₹100 crore in sales and ₹25 crore in profit, all of them profitable. It “makes no sense to continue it,” he said.",
+          "In its place, WebVeda became a membership. One payment, “the price of one course”, gets you every current and future course, a members-only community and personalised job recommendations. The 100% refund policy stayed. All 5 lakh existing learners were upgraded for free. The membership price itself hasn't been made public.",
+          "He framed it as a choice between making more money and helping more people, and said the choice was “super clear.” His mission now is to make education, networking and jobs available to everyone, so that where you were born, what you earn or what language you speak “should never matter.” When someone asked whether AI played a role, his answer was one word: “huge.”",
+          "Read between the lines and it's a smart business move too. **If AI makes a ₹499 course easy to copy, a membership with a community and job links is much harder to copy.** He changed the packaging while the old model was still making money, not after it broke.",
+          "He also runs ventures called Monzy and the India Genius Challenge, but what they are and how they're doing hasn't been made public."
+        ]
+      },
+      {
+        "label": "How he thinks",
+        "title": "Less than 10% survive",
+        "paras": [
+          "Ankur is not a cheerleader for starting up. Back in 2017 he put the odds of a startup surviving at less than 10%, and the odds of it reaching meaningful scale at under 1%. He has said solo founding is very hard. He thinks a founder's first real job is setting the hiring culture, and he prefers a professional team over a “family.”",
+          "His other habits are the ones we've already seen: define success for yourself, keep a public record of your failures, and write in public every single day. The daily blog he started in 2005 is still running.",
+          "The thing to take from his story isn't the ₹100 crore. It's the order of moves. He had an audience, so he sold a live session to it at whatever price people wanted to pay. When that worked, he recorded the sessions and sold the recordings. When those sold, he spent on making more and on ads. **Every step was paid for by the step before it.**"
+        ]
+      }
+    ],
+    "failuresTitle": "A PhD, a hangover and a crypto mistake",
+    "failuresIntro": "He keeps a public failure resume, so he would want this list here. No total count exists, but these are the documented ones.",
+    "failures": [
+      {"year": "Mid 2000s", "name": "Leaving the astrophysics PhD", "what": "He had worked eight years toward being a NASA scientist and won a fully funded PhD place at Michigan State. After about two years he left, knowing he would not be happy doing it for life, and came back to India with no plan and a degree he called unemployable here.", "lesson": "Walking away from the wrong path early is cheaper than finishing it."},
+      {"year": "After 2015", "name": "Nearbuy's product blind spot", "what": "He believed Nearbuy's problems were all marketing and refused to see the product as something that needed work. The Groupon image stuck, and without a clear roadmap the company laid off 80 of its 400 people.", "lesson": "If marketing isn't working, check the product before you spend more on marketing."},
+      {"year": "2019", "name": "Stepping down as CEO", "what": "After years of a below-market salary and his life savings tied up in startups, he announced on 27 September 2019 that he would step down as CEO of the Paytm-owned Nearbuy. He stayed on the board as a shareholder.", "lesson": "A big title can hide a thin personal balance sheet."},
+      {"year": "2020", "name": "Losing all his income in a week", "what": "His income came almost entirely from corporate talks. The March 2020 lockdown wiped them out, and he was left with five months of cash and a plan to sell his house.", "lesson": "One income stream, however good, is one bad week away from zero."},
+      {"year": "2021", "name": "Promoting Vauld", "what": "He promoted the crypto platform Vauld. When it collapsed, he was criticised over what it had claimed about returns and risk.", "lesson": "Every paid promotion borrows your trust, so check what you are lending it to."}
+    ],
+    "playbookTitle": "How he turned an audience into a business",
+    "playbook": [
+      {"title": "Sell a live session at pay-what-you-want", "text": "His very first product was a Zoom talk on 30 April 2020 with a Razorpay page and “pay whatever you want” pricing. It got 900+ registrations in three days, with half paying ₹1 and an average of ₹187. It tested demand for the cost of a Zoom Pro account."},
+      {"title": "Announce on the channel where you're already big", "text": "LinkedIn, with 765,078 followers, was “all I had.” His posts announcing each session drove the biggest sign-up spikes. He didn't try to win a new platform first; he used the one he already had."},
+      {"title": "Record the live event and sell the recordings", "text": "The Future Founders Conference ran as eight sessions at ₹999 with 400+ sign-ups. The recordings became “Complete Guide to Starting Up” at ₹1,499. The live cohort paid for the content, and the content kept earning after."},
+      {"title": "Make refunds the reason to buy", "text": "Instant refunds for unhappy attendees, anonymous feedback forms and a 100% no-questions refund policy. In 2021 the refund rate was only 3.58%, so the promise cost very little and removed the fear of paying."},
+      {"title": "Spend on ads only after the product is proven", "text": "He waited until October 2020, when the courses existed and were selling, before partnering with Insane Marketers for paid promotion. That month brought in ₹36 lakh, about twelve months of runway."},
+      {"title": "Ship free content daily and keep selling separate", "text": "“Ship out content every single day!” was his rule, and the free content stayed free. Between March and October 2020 his YouTube grew from 7,517 to 34,326 and Instagram from 14,596 to 54,795."},
+      {"title": "Batch your creation into one day", "text": "By 2022 he filmed for six hours every Monday and released on Tuesday, Thursday and Saturday, about 10 hours a week in all. That rhythm took him to 2.17 million YouTube subscribers by 2022 and 7.1 million by August 2026."},
+      {"title": "Repackage before the market forces you to", "text": "In May 2026 he swapped one-off course sales for a single membership at the price of one course, while the old model was still profitable. He said AI played a “huge” role."}
+    ],
+    "charts": [
+      {
+        "title": "Money in the first 21 months, by his own numbers",
+        "points": [
+          {"label": "Apr to Jul 2020, 13 talks", "value": 20, "display": "₹20 lakh"},
+          {"label": "Oct 2020, one month", "value": 36, "display": "₹36 lakh"},
+          {"label": "2021 course sales", "value": 780, "display": "₹7.8 crore"},
+          {"label": "2021 whole company", "value": 1268, "display": "₹12.68 crore"},
+          {"label": "About FY22 whole company", "value": 1700, "display": "₹17 crore"}
+        ],
+        "note": "Different time periods, so read this as a sense of scale, not a smooth curve. Bars are in lakh."
+      },
+      {
+        "title": "Followers, 29 March to 26 October 2020",
+        "points": [
+          {"label": "LinkedIn, Mar", "value": 765078, "display": "765K"},
+          {"label": "LinkedIn, Oct", "value": 878105, "display": "878K"},
+          {"label": "Instagram, Mar", "value": 14596, "display": "15K"},
+          {"label": "Instagram, Oct", "value": 54795, "display": "55K"},
+          {"label": "YouTube, Mar", "value": 7517, "display": "7.5K"},
+          {"label": "YouTube, Oct", "value": 34326, "display": "34K"}
+        ],
+        "note": "From his December 2021 thread. YouTube later grew to 7.1M by August 2026."
+      }
+    ],
+    "timeline": [
+      {"when": "2005", "text": "Starts a blog as a student at the Indian School of Business. He still writes it every day.", "big": false},
+      {"when": "Mid 2000s", "text": "Leaves a fully funded astrophysics PhD at Michigan State after about two years.", "big": false},
+      {"when": "2011", "text": "Groupon India launches with him as co-founder and CEO. It becomes Nearbuy in 2015.", "big": false},
+      {"when": "Sep 2019", "text": "Announces he will step down as CEO of Paytm-owned Nearbuy.", "big": false},
+      {"when": "Mar 2020", "text": "Lockdown kills his talk income. He has five months of cash and 765K LinkedIn followers.", "big": true},
+      {"when": "22 Apr 2020", "text": "Signs up for Razorpay. His pay-what-you-want Zoom talk gets 900+ sign-ups in three days.", "big": true},
+      {"when": "Aug 2020", "text": "Puts half his savings into seven courses, 26 hours recorded in one week.", "big": false},
+      {"when": "Oct 2020", "text": "Paid promotion with Insane Marketers brings ₹36 lakh in one month.", "big": false},
+      {"when": "2021", "text": "Courses sell ₹7.8 crore to 114,972 students. Do Epic Shit is published.", "big": false},
+      {"when": "2022", "text": "Company revenue about ₹17 crore, 2.17M YouTube subscribers, first year of corporate tax.", "big": false},
+      {"when": "15 May 2026", "text": "Ends one-off course sales and turns WebVeda into a membership for 5 lakh learners.", "big": true},
+      {"when": "Aug 2026", "text": "7.1M YouTube subscribers and a community he puts at 16 million+.", "big": false}
+    ],
+    "quotes": [
+      {"text": "My ultimate dream was to become a NASA scientist", "cite": "Outlook Business, 2022"},
+      {"text": "And then we became Nearbuy but the hangover still remained.", "cite": "Inc42 AMA, 2017"},
+      {"text": "I refused to think of our product offering as something that needed work.", "cite": "Outlook Business, 2022"},
+      {"text": "I was betting on myself!", "cite": "His X thread, 31 December 2021"},
+      {"text": "Ship out content every single day!", "cite": "His X thread, 31 December 2021"},
+      {"text": "Do not lose money, ever!", "cite": "His X thread, 31 December 2021"},
+      {"text": "makes no sense to continue it", "cite": "On his course business, Business Today, May 2026"}
+    ],
+    "steal": [
+      "Before building a product, sell a live hour on the platform where you already have followers. Pay-what-you-want pricing tells you who cares, and even ₹1 payments are a signal.",
+      "Record every live session. The recording is a course you have already been paid to make.",
+      "Offer a no-questions refund. His refund rate was 3.58%, which means the promise was nearly free and it took away the main reason people hesitate.",
+      "Don't pay for ads until something is already selling on its own. He waited six months, and the first month of paid promotion brought ₹36 lakh.",
+      "Batch your content into one fixed day each week so posting never depends on mood.",
+      "Ask every year whether AI could make your bestseller cheap to copy, and change the packaging while it still makes money."
+    ],
+    "sources": [
+      {"title": "Ankur Warikoo, thread on the first 18 months of the courses business (31 Dec 2021)", "url": "https://threadreaderapp.com/thread/1476846574802141185.html"},
+      {"title": "Outlook Business: Mistakes maketh a Warikoo", "url": "https://www.outlookbusiness.com/the-big-story/lead-story/mistakes-maketh-a-warikoo-6639"},
+      {"title": "Business Today: Warikoo shuts down profitable ₹100 crore courses business (May 2026)", "url": "https://www.businesstoday.in/latest/trends/story/makes-no-sense-to-continue-ankur-warikoo-shuts-down-profitable-rs100-crore-courses-business-531869-2026-05-17"},
+      {"title": "Analytics Insight: Warikoo shuts online learning platform, AI impact", "url": "https://www.analyticsinsight.net/news/ankur-warikoo-shuts-online-learning-platform-after-rs-100-crore-revenue-rs-25-crore-profit-ai-impact"},
+      {"title": "exchange4media: How Warikoo built a business around content (Aug 2026)", "url": "https://www.exchange4media.com/influence-zone-news/ankur-warikoo-birthday-how-the-entrepreneur-creator-built-a-business-around-content-157598.html"},
+      {"title": "Inc42: Ankur Warikoo AMA (2017)", "url": "https://inc42.com/buzz/ankur-warikoo-nearbuy-ama/"},
+      {"title": "YourStory: Nearbuy CEO Ankur Warikoo to step down (Sep 2019)", "url": "https://yourstory.com/2019/09/paytm-nearbuy-ceo-ankur-warikoo-ravi-shankar"},
+      {"title": "Wikipedia: Ankur Warikoo", "url": "https://en.wikipedia.org/wiki/Ankur_Warikoo"}
+    ]
+  }
+}

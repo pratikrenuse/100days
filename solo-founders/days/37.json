@@ -1,0 +1,236 @@
+{
+  "n": 37,
+  "name": "Dagobert Renouf",
+  "short": "Dagobert",
+  "wisdom": "Before you build, count how many new buyers a month your model needs.",
+  "email": {
+    "subject": "Memes grew his sales 8x. He still shut it down.",
+    "hook": "Dagobert Renouf found the one channel that worked, grew his logo shop from $300 to $3,000 a month with Twitter memes, and still had to close it.",
+    "lead": [
+      "Today is a different kind of story, and it might be the most useful one this month. Dagobert is French, he quit a well-paid software job at 29, and he built Logology with his wife, Lucie Baratte. So this was never a solo company: it was a couple, living on their savings.",
+      "He did the distribution part brilliantly. What he got wrong was the model underneath it. That's exactly the mistake a growth marketer like us is most likely to make, because we trust our ability to bring traffic."
+    ],
+    "stats": [
+      {"value": "$40K", "label": "total from Logology in 36 months"},
+      {"value": "$70", "label": "lifetime value of a customer"},
+      {"value": "100+", "label": "new customers needed every month"}
+    ],
+    "chart": {
+      "title": "Logology sales in January and February, by his own numbers",
+      "points": [
+        {"label": "Jan to Feb 2021", "value": 673, "display": "$673"},
+        {"label": "Jan to Feb 2022", "value": 5430, "display": "$5,430"}
+      ],
+      "note": "The difference was one year of posting on Twitter every day."
+    },
+    "sections": [
+      {
+        "title": "Where he is now",
+        "paras": [
+          "Logology shut down on 14 June 2023. In his goodbye post he wrote that he had “no motivation” for startups for now, but “someday I'll come back to building startups.”",
+          "After that, he hasn't written much publicly about his own story. A third-party profile says he has since run a Product Hunt alternative called LaunchDay, sold a Twitter course and now works in sales at an AI company. None of that comes from him, so treat it as unconfirmed."
+        ]
+      },
+      {
+        "title": "How the money came in",
+        "stats": true,
+        "paras": [
+          "Logology sold ready-made logos for about $100 each, against roughly $3,000 for a freelance designer. They had a catalogue of about 750 logos made in-house, plus custom logos at $599 that made up only about 1% of sales. Most buyers were in the USA, the UK and Canada.",
+          "Here's the problem in one number. By his own figures, **a customer was worth about $70** over their lifetime. People buy a logo once. So every single month they had to find more than 100 brand-new customers just to stand still. In three years the whole thing brought in about $40K."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "chart": true,
+        "paras": [
+          "Paid channels did nothing. He spent $500 on Google Ads and $200 on newsletter sponsorships, and both brought zero sales. In January and February 2021 the site made $673 in total, and he was about to quit.",
+          "Then he went all in on Twitter and only Twitter. He posted memes and honest stories about the startup struggling, encouraged other founders, and built real relationships. The same two months a year later brought in $5,430, and he became known as “the startup memes guy.” His audience was exactly the people who need logos: founders."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "His shutdown post is painfully honest. “We never found a way to grow beyond survival profitability.” He had severe burnout in February 2023, with heart-rate problems and eye strain. They had spent almost all of their savings. And AI made the future of selling logos, and of finding customers for them, very uncertain.",
+          "His own hindsight is the lesson: they should have pivoted just enough to offer a subscription. Brilliant marketing on top of a one-time, low-value sale is a treadmill."
+        ]
+      }
+    ],
+    "tryToday": "Take any product idea you have and do the maths: price, how often someone buys, and how many new customers a month you'd need to pay yourself. If that number scares you, add something people pay for every month.",
+    "button": "Read the whole story"
+  },
+  "page": {
+    "intro": "Dagobert Renouf quit a well-paid software job in France at 29 and, with his wife Lucie Baratte, spent five years trying to make Logology, a shop for ready-made logos, work. Twitter memes made him famous among founders and multiplied his sales, but the business never earned more than a survival wage, and they shut it down in June 2023. This is the story of a product that never fully worked, and why.",
+    "stats": [
+      {"value": "$40,000", "num": 40000, "prefix": "$", "suffix": "", "label": "total from Logology", "note": "over 36 months, to September 2022"},
+      {"value": "$3,000", "num": 3000, "prefix": "$", "suffix": "", "label": "a month after the memes", "note": "up from about $300, 2022"},
+      {"value": "$70", "num": 70, "prefix": "$", "suffix": "", "label": "lifetime value per customer", "note": "September 2021"},
+      {"value": "5 years", "num": 5, "prefix": "", "suffix": " years", "label": "from quitting to shutting down", "note": "about 2018 to June 2023"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "He quit at 29 to build something with his wife",
+        "paras": [
+          "Dagobert is French and a developer. Around 2018, when he was 29, he left what he called a “high-paid” software job to bootstrap a startup with his wife, Lucie Baratte. So let's be clear from the start: this was not a solo business. It was two founders, a married couple, betting their household on one idea.",
+          "A quick honesty note: nearly every number on this page comes from Dagobert's own Indie Hackers posts, so they're his figures, not audited ones.",
+          "They funded it with their life savings. Later an unexpected inheritance helped them keep going. Once things settled a bit, they paid themselves what he called a “survival salary” of €4,300 a month. He worked about seven hours a day, six days a week.",
+          "Not everyone around them believed in it. Family and friends doubted the plan, and he says one close friendship ended over it. In his September 2021 AMA he wrote a line that anyone who has bootstrapped will feel in their stomach."
+        ],
+        "pull": {"text": "Watching our savings get lower by the month is a scary feeling.", "cite": "Dagobert, Indie Hackers AMA, September 2021"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "Two years, and paid ads that sold nothing",
+        "paras": [
+          "The first two years, roughly 2018 to 2020, brought very little success. By 2022 he said he had tried two SaaS products, a community, a newsletter and two info products along the way. He hasn't named most of them or said why each one stopped.",
+          "He also tried the obvious thing: paying for attention. He spent **$500 on Google Ads and got zero sales**. He spent $200 on newsletter sponsorships and also got zero sales. For a product sold to founders, those are painful results, and cheap lessons compared to what came later.",
+          "By January and February 2021, Logology had brought in $673 across those two months. He says he was about to quit. That's the moment to remember, because what happened next is the part everyone talks about."
+        ]
+      },
+      {
+        "label": "The product",
+        "title": "A $100 logo instead of a $3,000 designer",
+        "paras": [
+          "Logology was a simple idea. Instead of paying a freelance designer around $3,000 for a logo, a founder could buy a ready-made one for about $100. Dagobert and Lucie made the logos themselves, building a catalogue of about 750 designs in-house.",
+          "There was also a custom option at $599. Hardly anyone took it: custom logos were about 1% of sales. People came for the cheap, fast option.",
+          "In September 2021 he shared the shape of the customer base. The USA made up about 36% of buyers, the UK 15% and Canada 12%. And he shared the number that, looking back, explains everything: the lifetime value of a customer was about $70.",
+          "A logo is something you buy once. There's no reason to come back next month. That means the only way to grow is to find more and more new buyers, forever. He hasn't shared how the site itself was built or how long the first version took."
+        ]
+      },
+      {
+        "label": "Finding the channel",
+        "title": "Memes, stories and a lot of replies",
+        "paras": [
+          "After the paid ads failed, he made a decision: one channel only, and that channel would be Twitter. Not Twitter plus Instagram plus SEO. Just Twitter, every day.",
+          "He described the method in a March 2022 Indie Hackers post. Show up consistently. Build new relationships. Encourage other founders. And be funny. He used two kinds of content: **memes and stories**. The memes were about startup life. The stories were honest posts about Logology struggling and about the day he quit his job.",
+          "He also paid attention to the craft: keywords, and the timing of tweets. And he kept repeating one core message to himself, that marketing matters more than adding product features.",
+          "There's an Indie Hackers post whose title credits him with replying to 500 tweets a day and growing to 70,000 followers. Those two numbers come from a headline, so treat them as rough. What his own March 2022 post does confirm is a big rise in traffic, much of it from exactly the right people: founders who need a logo.",
+          "When a reader asked him how long he would keep tweeting about struggling, his answer was three words: “As long as it takes.”"
+        ],
+        "pull": {"text": "As long as it takes.", "cite": "Dagobert, replying on Indie Hackers, March 2022"}
+      },
+      {
+        "label": "The first real money",
+        "title": "From $673 to $5,430",
+        "paras": [
+          "A year of daily posting changed the numbers. January and February 2021 had brought in $673. January and February 2022 brought in $5,430. That's about eight times more, around 700% growth year on year, from one free channel.",
+          "By September 2022 he said the memes had taken Logology from about **$300 a month to about $3,000 a month**. He'd become known as “the startup memes guy,” and he even ran a side project called Memelogy. In total, Logology had made about $40,000 over 36 months.",
+          "A third-party profile puts the peak at about $4,600 a month with about 100 customers. He hasn't said that himself, so $3,000 is the number we trust.",
+          "Now do the maths with him. $3,000 a month, for two founders, with savings already spent, and a customer worth $70. It was a real business in the sense that people paid. It was not a business that could pay two people properly."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "The end",
+        "title": "Shutting down after five years",
+        "paras": [
+          "On 14 June 2023 he posted on Indie Hackers that they were shutting Logology down. The post is one of the most honest things in this whole series.",
+          "The first reason was the model. “We never found a way to grow beyond survival profitability.” Because there was no recurring revenue, he wrote, “we have to find 100+ new customers each month.” Every month started from zero.",
+          "The second was his health. In February 2023 he had severe burnout, with heart-rate problems and eye strain. The third was money: they had spent almost all of their savings. And the fourth was AI. He pointed to “the uncertainty caused by A.I,” both for finding customers and for designing logos.",
+          "He's careful in the post, and so should we be. AI was part of it, but the main causes he lists first are the lack of recurring revenue and burnout. In hindsight, he says, it would have been wiser to pivot just enough to offer a subscription.",
+          "He went back to a job. “I think someday I'll come back to building startups,” he wrote, but for now he had no motivation for it."
+        ],
+        "pull": {"text": "we never found a way to grow beyond survival profitability", "cite": "Dagobert, shutdown post, June 2023"},
+        "chart": 1
+      },
+      {
+        "label": "After Logology",
+        "title": "What came next, as far as we can tell",
+        "paras": [
+          "This is where the story goes quiet, and we'd rather tell you that than fill it in. Dagobert hasn't written much publicly since June 2023. What follows comes from a third-party profile, not from him, so treat all of it as unconfirmed.",
+          "That profile says he co-hosted a podcast called This Indie Life, ran LaunchDay, a Product Hunt alternative with its own founder podcast, and sold a Twitter course that it says made $8,073 in its first 24 hours. LaunchDay does exist at itslaunchday.com and has a podcast, but we have no launch date, user numbers or revenue from a primary source.",
+          "The same profile describes a stunt in October 2025 where he sold ad space on his wedding suit to 26 startups, for about €10,000 gross and about €2,000 net, and says he has worked as an Account Executive at Comp AI, an AI compliance company, since November 2025. Again, none of this is from him. If any of it matters to you, check his X account, @dagorenouf, first.",
+          "That same profile dates Logology's shutdown to early 2024, which clashes with his own post from June 2023. We go with his post."
+        ]
+      },
+      {
+        "label": "What we take from it",
+        "title": "Great distribution can't fix a weak model",
+        "paras": [
+          "It would be easy to read this as a sad story, and parts of it are. But it's also a gift, because Dagobert wrote down the whole thing, numbers included, so we don't have to learn it the hard way.",
+          "The marketing lesson is real: one channel, done every day with humour and honesty, beat paid ads completely. $700 of ads brought nothing. A year of memes brought eight times the sales.",
+          "The bigger lesson sits underneath. **A one-time product with a $70 customer** means your marketing has to win from scratch every month, forever. Before we build anything, we should work out how many new buyers a month the model needs, and whether we could ever reach that number. If the answer frightens you, add something people pay for again and again.",
+          "And the human lesson. Two people, their savings and his health went into this. Know in advance what you're willing to spend, in money and in body, before you start."
+        ]
+      }
+    ],
+    "failuresTitle": "Five years, several attempts, one shutdown",
+    "failuresIntro": "Dagobert is unusually open about what didn't work. Here's what went wrong, in order.",
+    "failures": [
+      {"year": "2018 to 2020", "name": "Two years with little success", "what": "After quitting at 29, he and Lucie spent about two years without much traction, living on savings. Family and friends doubted them, and one close friendship ended.", "lesson": "Decide in advance how long your savings let you try."},
+      {"year": "Before 2022", "name": "Earlier products", "what": "By September 2022 he had tried two SaaS products, a community, a newsletter and two info products. Their names and why each stopped are not public.", "lesson": "Lots of attempts are normal, but write down why each one stopped."},
+      {"year": "2018 to 2021", "name": "Paid ads and sponsorships", "what": "He spent $500 on Google Ads and $200 on newsletter sponsorships. Both brought zero sales.", "lesson": "Test paid channels small, and stop fast when they show nothing."},
+      {"year": "Until 2023", "name": "A model with no repeat buyers", "what": "Logos sold for about $100 with a lifetime value of about $70, so he needed 100+ new customers every month. Even after the memes, revenue stayed around survival level.", "lesson": "Do the churn maths before you choose what to sell."},
+      {"year": "Feb 2023", "name": "Burnout", "what": "He had severe burnout with heart-rate problems and eye strain. It was one of the reasons they stopped.", "lesson": "Your health is part of the runway."},
+      {"year": "Jun 2023", "name": "Logology shuts down", "what": "After five years they closed it, having spent almost all of their savings, and with AI adding uncertainty to both design and customer acquisition. He says a small pivot to a subscription would have been wiser.", "lesson": "If a model only survives, change the model, not just the marketing."}
+    ],
+    "playbookTitle": "How he grew sales 8x with memes",
+    "playbook": [
+      {"title": "Kill the channels that don't work", "text": "$500 on Google Ads and $200 on newsletter sponsorships brought zero sales. He stopped and put everything into one free channel."},
+      {"title": "One channel only", "text": "He chose Twitter and nothing else, and showed up every day. Focusing on one place is what let the habit compound."},
+      {"title": "Memes for reach", "text": "He posted startup memes that founders, his exact buyers, wanted to share. It earned him the nickname “the startup memes guy” and a side project called Memelogy."},
+      {"title": "Honest stories for trust", "text": "Alongside the memes he told the real story: the startup struggling, the day he quit his job. People buy from someone whose story they've followed."},
+      {"title": "Build relationships and cheer others on", "text": "He made a point of encouraging other founders and building new relationships, not just broadcasting. An Indie Hackers post title links him to replying to 500 tweets a day, though that figure comes only from a headline."},
+      {"title": "Mind the craft", "text": "He paid attention to keywords and the timing of tweets. Small things, done every day for a year."},
+      {"title": "Keep going while it's still small", "text": "Asked how long he'd keep tweeting about struggling, he said “As long as it takes.” January and February sales went from $673 in 2021 to $5,430 in 2022."}
+    ],
+    "charts": [
+      {
+        "title": "January plus February sales, a year apart, by his own numbers",
+        "points": [
+          {"label": "Jan to Feb 2021", "value": 673, "display": "$673"},
+          {"label": "Jan to Feb 2022", "value": 5430, "display": "$5,430"}
+        ],
+        "note": "About 700% growth year on year, after a year of daily Twitter."
+      },
+      {
+        "title": "What each paid channel and Twitter brought, by his own numbers",
+        "points": [
+          {"label": "Google Ads ($500 spent)", "value": 0, "display": "0 sales", "down": true},
+          {"label": "Newsletter ads ($200 spent)", "value": 0, "display": "0 sales", "down": true},
+          {"label": "Monthly sales before memes", "value": 300, "display": "$300 a month"},
+          {"label": "Monthly sales after memes", "value": 3000, "display": "$3,000 a month"}
+        ],
+        "note": "Ad results from his September 2021 AMA, monthly sales from September 2022."
+      }
+    ],
+    "timeline": [
+      {"when": "About 2018", "text": "At 29, quits a high-paid software job to bootstrap a startup with his wife, Lucie Baratte.", "big": true},
+      {"when": "2018 to 2020", "text": "About two years of little success. Paid ads and newsletter sponsorships bring zero sales.", "big": false},
+      {"when": "Early 2021", "text": "January and February bring in $673 in total. He is close to quitting.", "big": false},
+      {"when": "2021", "text": "Goes all in on Twitter with memes and honest stories, every day.", "big": true},
+      {"when": "Sep 2021", "text": "AMA on Indie Hackers: logos at about $100, lifetime value about $70.", "big": false},
+      {"when": "Early 2022", "text": "January and February bring in $5,430, about 700% up on the year before.", "big": true},
+      {"when": "Sep 2022", "text": "About $3,000 a month and $40,000 in total over 36 months.", "big": false},
+      {"when": "Feb 2023", "text": "Severe burnout, with heart-rate problems and eye strain.", "big": false},
+      {"when": "14 Jun 2023", "text": "Announces the shutdown of Logology after five years.", "big": true}
+    ],
+    "quotes": [
+      {"text": "Watching our savings get lower by the month is a scary feeling.", "cite": "Indie Hackers AMA, September 2021"},
+      {"text": "As long as it takes.", "cite": "Indie Hackers, March 2022"},
+      {"text": "we never found a way to grow beyond survival profitability", "cite": "Shutdown post, Indie Hackers, June 2023"},
+      {"text": "we have to find 100+ new customers each month", "cite": "Shutdown post, Indie Hackers, June 2023"},
+      {"text": "the uncertainty caused by A.I", "cite": "Shutdown post, Indie Hackers, June 2023"},
+      {"text": "I think someday I'll come back to building startups", "cite": "Shutdown post, Indie Hackers, June 2023"}
+    ],
+    "steal": [
+      "Before building, write down price, how often people buy, and how many new customers a month you'd need. Dagobert needed 100+ every month with a $70 customer, and that number decided everything.",
+      "If your product is a one-time purchase, look for a small recurring piece people would happily pay for monthly. He says this is what he should have done.",
+      "Test paid ads with a small, fixed budget and walk away fast if they show nothing, like his $700 that brought zero sales.",
+      "Pick one channel where your buyers already hang out and post there every day for a year, mixing humour with honest stories.",
+      "Set your limits before you start: how much savings, how many months, and what warning signs from your body mean stop."
+    ],
+    "sources": [
+      {"title": "Indie Hackers AMA: Left my full-time job to bootstrap a startup with my wife (September 2021)", "url": "https://www.indiehackers.com/post/left-my-full-time-job-to-bootstrap-a-startup-with-my-wife-ama-a6c5e5c13a"},
+      {"title": "Indie Hackers: How Dagobert Renouf grew Logology revenue 700% year on year using Twitter (March 2022)", "url": "https://www.indiehackers.com/post/how-dagobert-renouf-grew-logology-revenue-700-y-o-y-using-twitter-5e18ba8d2d"},
+      {"title": "Indie Hackers: Dagobert Renouf made $40K from Logology in 36 months (September 2022)", "url": "https://www.indiehackers.com/post/dagobert-renouf-made-40k-from-logology-in-36-months-eb818a76a6"},
+      {"title": "Indie Hackers: Shutting down our startup after 5 years (June 2023)", "url": "https://www.indiehackers.com/post/shutting-down-our-startup-after-5-years-b12228c020"},
+      {"title": "Indie Hackers: Replying to 500 tweets a day and other tips ", "url": "https://www.indiehackers.com/post/replying-to-500-tweets-day-and-other-tips-for-growing-to-70k-twitter-followers-3e57d8ca53"},
+      {"title": "Indie Bites ep. 51", "url": "https://indiebites.transistor.fm/51"},
+      {"title": "How to Sell Advice #185: Twitter growth strategies and memes as marketing", "url": "https://metacast.app/podcast/how-to-sell-advice/IyNuPmNv/185-twitter-growth-strategies-and-memes-as-marketing-with-dagobert-renouf/SShY60Ib"},
+      {"title": "Product Hunt discussion with Dagobert Renouf", "url": "https://www.producthunt.com/discussions/twitter-growth-business-with-logology-founder-dagobert-renouf"},
+      {"title": "LaunchDay podcast", "url": "https://share.transistor.fm/s/986a0a74"},
+      {"title": "yespress.io profile of Dagobert Renouf", "url": "https://yespress.io/dagobert-renouf"}
+    ]
+  }
+}

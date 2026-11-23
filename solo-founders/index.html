@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Solo Founders</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5BP5TE71L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K5BP5TE71L');</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtfjq58y0n");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#F6F2F1; --surface:#EEE8E4; --raised:#E5DDD7; --border:#D0C8C0; --border2:#BCB3AA;
+  --ink:#1A1512; --ink2:#38302A; --ink3:#504840; --ink4:#786E66;
+  --gold:#8C6A18; --gold-mid:#B8903A; --gold-bg:#F0E4C4; --dark:#0F0E0C;
+  --serif:'IBM Plex Serif', Georgia, serif; --sans:'IBM Plex Sans', system-ui, sans-serif;
+  font-size:18px;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--ink2); font-family:var(--sans); font-weight:400; line-height:1.65; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+p { max-width:65ch; margin:0 0 1.15rem; }
+a { color:var(--gold); }
+
+nav { display:flex; align-items:center; justify-content:space-between; padding:1.1rem 4rem; border-bottom:1px solid var(--border); background:rgba(246,242,241,0.95); backdrop-filter:blur(20px); position:sticky; top:0; z-index:100; }
+.nav-logo { font-family:var(--serif); font-size:0.9rem; font-weight:400; color:var(--ink); text-decoration:none; }
+.nav-logo span { color:var(--gold); }
+.nav-left { display:flex; align-items:center; gap:1.25rem; }
+.nav-div { color:var(--border); }
+.nav-title { font-size:0.78rem; color:var(--ink3); }
+.nav-badge { font-size:0.58rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); background:var(--gold-bg); padding:0.2rem 0.6rem; border:1px solid #D4B870; }
+.nav-jump { font-size:0.65rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink4); text-decoration:none; }
+.nav-jump:hover { color:var(--gold); }
+.bar-progress { position:fixed; top:0; left:0; height:3px; width:0; background:var(--gold); z-index:200; }
+
+main { max-width:1080px; margin:0 auto; padding:0 2rem 4rem; }
+section { padding:4rem 0; border-bottom:1px solid var(--border); }
+section:last-child { border-bottom:none; }
+.label { display:flex; align-items:center; gap:0.75rem; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:1.25rem; }
+.label::before { content:''; width:28px; height:1px; background:var(--gold); }
+h1 { font-family:var(--serif); font-weight:300; font-size:3.2rem; line-height:1.12; color:var(--ink); margin:0 0 1rem; max-width:18ch; }
+h2 { font-family:var(--serif); font-weight:300; font-size:2rem; line-height:1.2; color:var(--ink); margin:0 0 1.5rem; max-width:24ch; }
+h3 { font-family:var(--serif); font-weight:400; font-size:1.2rem; line-height:1.3; color:var(--ink); margin:0 0 0.5rem; }
+.lead { font-size:1.15rem; color:var(--ink3); max-width:38rem; }
+
+.hero { padding:5rem 0 3.5rem; }
+.stats { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; margin-top:2.5rem; }
+.stat { background:var(--surface); padding:1.5rem 1.5rem 1.25rem; }
+.stat b { display:block; font-family:var(--serif); font-weight:300; font-size:2.4rem; line-height:1.1; color:var(--ink); }
+.stat span { display:block; font-size:0.85rem; color:var(--ink3); margin-top:0.4rem; }
+.stat small { display:block; font-size:0.72rem; color:var(--ink4); margin-top:0.35rem; }
+
+.wisdom { background:var(--dark); color:#E5DDD7; padding:3.5rem; margin:3rem 0 0; }
+.wisdom .label { color:var(--gold-mid); }
+.wisdom .label::before { background:var(--gold-mid); }
+.wisdom blockquote { margin:0; font-family:var(--serif); font-weight:300; font-size:2rem; line-height:1.3; color:#F6F2F1; max-width:26ch; }
+
+.chart { margin:2rem 0 0; background:var(--surface); padding:2rem; }
+.chart h3 { margin-bottom:1.5rem; }
+.row { display:grid; grid-template-columns:120px minmax(0,1fr) 110px; gap:1rem; align-items:center; margin-bottom:0.85rem; font-size:0.9rem; }
+.row .track { height:22px; background:var(--raised); position:relative; overflow:hidden; }
+.row .fill { position:absolute; inset:0 auto 0 0; width:0; background:var(--gold-mid); transition:width 1.4s cubic-bezier(.2,.7,.2,1); }
+.row .fill.down { background:var(--border2); }
+.row .val { font-weight:500; color:var(--ink); text-align:right; }
+.chart .note { font-size:0.8rem; color:var(--ink4); margin:1rem 0 0; }
+
+.chapter { display:grid; grid-template-columns:220px minmax(0,1fr); gap:3rem; }
+.chapter .side { position:sticky; top:6rem; align-self:start; }
+.chapter .side .num { font-family:var(--serif); font-weight:300; font-size:3rem; color:var(--border2); line-height:1; }
+.pull { border-left:3px solid var(--gold); border-radius:0; padding:0.5rem 0 0.5rem 1.5rem; margin:2rem 0; font-family:var(--serif); font-size:1.35rem; line-height:1.45; color:var(--ink); max-width:34ch; }
+.pull cite { display:block; font-family:var(--sans); font-style:normal; font-size:0.75rem; color:var(--ink4); margin-top:0.5rem; }
+
+.fails { display:grid; gap:1rem; }
+.fail { display:grid; grid-template-columns:70px minmax(0,1fr); gap:1.5rem; background:var(--surface); padding:2rem; }
+.fail .yr { font-family:var(--serif); font-size:1.1rem; color:var(--gold); }
+.fail .lesson { font-size:0.9rem; color:var(--ink3); margin:0; border-top:1px solid var(--border); padding-top:0.75rem; }
+
+.timeline { position:relative; padding-left:2rem; }
+.timeline::before { content:''; position:absolute; left:6px; top:0; bottom:0; width:1px; background:var(--border2); }
+.tl { position:relative; padding:0 0 2rem; }
+.tl::before { content:''; position:absolute; left:-2rem; top:0.45rem; width:13px; height:13px; border-radius:50%; background:var(--bg); border:2px solid var(--gold); }
+.tl.big::before { background:var(--gold); }
+.tl .when { font-size:0.7rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); }
+.tl p { margin:0.25rem 0 0; }
+
+.plays { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1rem; }
+.play { background:var(--surface); padding:2rem; }
+.play .n { font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:0.75rem; }
+.play p { margin:0; font-size:0.95rem; }
+
+.quotes { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; }
+.quote { font-family:var(--serif); font-size:1.2rem; line-height:1.45; color:var(--ink); }
+.quote cite { display:block; font-family:var(--sans); font-style:normal; font-size:0.75rem; color:var(--ink4); margin-top:0.5rem; }
+
+.steal { counter-reset:s; list-style:none; padding:0; margin:0; display:grid; gap:1rem; }
+.steal li { counter-increment:s; display:grid; grid-template-columns:48px minmax(0,1fr); gap:1rem; align-items:start; font-size:1.05rem; color:var(--ink); max-width:65ch; }
+.steal li::before { content:counter(s); display:flex; align-items:center; justify-content:center; width:40px; height:40px; background:var(--gold-bg); color:var(--gold); font-family:var(--serif); }
+
+.sources { font-size:0.85rem; color:var(--ink3); columns:2; column-gap:3rem; padding-left:1.1rem; }
+.sources li { margin-bottom:0.4rem; break-inside:avoid; }
+
+.next { display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:2rem; }
+.btn { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:0 1.5rem; font-family:var(--sans); font-size:0.7rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; text-decoration:none; border:1px solid var(--ink); cursor:pointer; }
+.btn-primary { background:var(--ink); color:var(--bg); }
+.btn-primary:hover { background:var(--gold); border-color:var(--gold); }
+.btn-ghost { background:transparent; color:var(--ink); border-color:var(--border2); }
+.btn-ghost:hover { border-color:var(--gold); color:var(--gold); }
+.btn[aria-disabled="true"] { opacity:0.35; pointer-events:none; }
+.done { margin-top:2rem; padding:1.25rem 1.5rem; background:var(--gold-bg); border-left:3px solid var(--gold); border-radius:0; font-family:var(--serif); color:var(--ink); max-width:65ch; display:none; }
+.done.show { display:block; }
+
+.grid { display:grid; grid-template-columns:repeat(10, 1fr); gap:0.5rem; }
+.cell { display:flex; align-items:center; justify-content:center; aspect-ratio:1; min-height:44px; font-size:0.8rem; text-decoration:none; color:var(--ink3); background:var(--surface); border:1px solid transparent; }
+a.cell:hover { border-color:var(--gold); color:var(--gold); }
+.cell.read { background:var(--gold-bg); color:var(--gold); }
+.cell.current { border-color:var(--ink); color:var(--ink); font-weight:500; }
+.cell.future { color:var(--border2); background:transparent; border:1px dashed var(--border); }
+.locked { text-align:center; padding:6rem 1rem; }
+.locked h1, .locked p { margin-left:auto; margin-right:auto; }
+
+.reveal { opacity:0; transform:translateY(24px); transition:opacity 0.8s ease, transform 0.8s ease; }
+.reveal.in { opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity:1; transform:none; transition:none; } .row .fill { transition:none; } html { scroll-behavior:auto; } }
+
+footer { padding:1.1rem 4rem; border-top:1px solid var(--border); display:flex; justify-content:space-between; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink4); background:var(--surface); }
+footer a { color:var(--ink4); text-decoration:none; }
+footer a:hover { color:var(--gold); }
+
+@media (max-width:960px) {
+  :root { font-size:17px; }
+  nav { padding:1rem 1.25rem; }
+  .nav-jump { display:none; }
+  main { padding:0 1.25rem 3rem; }
+  section { padding:2.5rem 0; }
+  .hero { padding:3rem 0 2.5rem; }
+  h1 { font-size:2.4rem; }
+  h2 { font-size:1.6rem; }
+  .chapter { grid-template-columns:1fr; gap:1rem; }
+  .chapter .side { position:static; }
+  .wisdom { padding:2.25rem 1.5rem; }
+  .wisdom blockquote { font-size:1.55rem; }
+  .row { grid-template-columns:84px minmax(0,1fr) 84px; gap:0.6rem; font-size:0.82rem; }
+  .fail { grid-template-columns:1fr; gap:0.5rem; padding:1.5rem; }
+  .sources { columns:1; }
+  .grid { grid-template-columns:repeat(5, 1fr); }
+  footer { flex-direction:column; gap:0.5rem; text-align:center; padding:1rem; }
+}
+@media (max-width:480px) {
+  :root { font-size:16px; }
+  h1 { font-size:2rem; }
+  .chart { padding:1.25rem; }
+  .next .btn { flex:1; }
+}
+</style>
+</head>
+<body>
+<div class="bar-progress" id="readbar"></div>
+<nav>
+  <div class="nav-left">
+    <a href="/" class="nav-logo">Pratik <span>Renuse</span></a>
+    <span class="nav-div">/</span>
+    <span class="nav-title">Solo Founders</span>
+    <span class="nav-badge" id="badge">Day 1</span>
+  </div>
+  <a href="#days" class="nav-jump">All 50 days</a>
+</nav>
+
+<main id="story"></main>
+
+<main>
+  <section class="locked" id="locked" style="display:none">
+    <div class="label" style="justify-content:center">Not unlocked yet</div>
+    <h1 id="lockedTitle">This one is still on its way.</h1>
+    <p id="lockedText"></p>
+    <a class="btn btn-primary" href="./">Read today's founder</a>
+  </section>
+  <section id="days">
+    <div class="label">All 50 days</div>
+    <h2 id="progress">Every founder so far</h2>
+    <div class="grid" id="grid"></div>
+  </section>
+</main>
+
+<footer>
+  <span>Solo Founders · Private list</span>
+  <a href="/">pratikrenuse.com</a>
+</footer>
+
+<script>
+(function () {
+  var START = Date.UTC(2026, 10, 24); // Day 1 = 24 November 2026, IST
+  var now = new Date(), ist = new Date(now.getTime() + 330 * 60000);
+  var istMidnight = Date.UTC(ist.getUTCFullYear(), ist.getUTCMonth(), ist.getUTCDate());
+  var today = Math.max(1, Math.round((istMidnight - START) / 864e5) + 1);
+  var asked = parseInt(new URLSearchParams(location.search).get('d'), 10);
+  var preview = new URLSearchParams(location.search).get('preview') === 'pr50';
+
+  var read = {};
+  try { read = JSON.parse(localStorage.getItem('soloFoundersRead') || '{}') || {}; } catch (e) { read = {}; }
+  function saveRead() { try { localStorage.setItem('soloFoundersRead', JSON.stringify(read)); } catch (e) {} }
+
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+  function rich(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
+  function paras(arr) { return (arr || []).map(function (p) { return '<p>' + rich(p) + '</p>'; }).join(''); }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function dateFor(n) { return new Date(START + (n - 1) * 864e5).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' }); }
+
+  function chartHTML(c) {
+    if (!c || !c.points || !c.points.length) return '';
+    var max = Math.max.apply(null, c.points.map(function (p) { return Math.abs(p.value) || 0; })) || 1;
+    var rows = c.points.map(function (p) {
+      var w = Math.max(1.5, (Math.abs(p.value) / max) * 100);
+      return '<div class="row"><span>' + esc(p.label) + '</span><div class="track"><div class="fill' + (p.down ? ' down' : '') + '" data-w="' + w.toFixed(1) + '"></div></div><span class="val">' + esc(p.display || p.value) + '</span></div>';
+    }).join('');
+    return '<div class="chart reveal"><h3>' + esc(c.title) + '</h3>' + rows + (c.note ? '<p class="note">' + esc(c.note) + '</p>' : '') + '</div>';
+  }
+
+  function statHTML(s) {
+    var count = typeof s.num === 'number' ? ' data-num="' + s.num + '" data-pre="' + esc(s.prefix || '') + '" data-suf="' + esc(s.suffix || '') + '"' : '';
+    return '<div class="stat"><b' + count + '>' + esc(s.value) + '</b><span>' + esc(s.label) + '</span>' + (s.note ? '<small>' + esc(s.note) + '</small>' : '') + '</div>';
+  }
+
+  function render(d, n, total, isToday) {
+    var p = d.page;
+    var h = '';
+    h += '<section class="hero"><div class="label">Day ' + n + ' of ' + total + (isToday ? ' · Today' : '') + '</div>';
+    h += '<h1>' + esc(d.name) + '</h1><p class="lead">' + rich(p.intro) + '</p>';
+    h += '<div class="stats">' + (p.stats || []).map(statHTML).join('') + '</div>';
+    h += '<div class="wisdom reveal"><div class="label">If you remember one thing</div><blockquote>' + esc(d.wisdom) + '</blockquote></div></section>';
+
+    var chartsLeft = (p.charts || []).slice();
+    (p.chapters || []).forEach(function (c, i) {
+      h += '<section class="chapter"><div class="side"><div class="num">' + pad(i + 1) + '</div><div class="label" style="margin-top:0.75rem">' + esc(c.label) + '</div></div><div class="reveal">';
+      h += '<h2>' + esc(c.title) + '</h2>' + paras(c.paras);
+      if (c.pull) h += '<div class="pull">' + esc(c.pull.text) + (c.pull.cite ? '<cite>' + esc(c.pull.cite) + '</cite>' : '') + '</div>';
+      if (typeof c.chart === 'number' && p.charts && p.charts[c.chart]) { h += chartHTML(p.charts[c.chart]); chartsLeft[c.chart] = null; }
+      h += '</div></section>';
+    });
+
+    if (p.failures && p.failures.length) {
+      h += '<section><div class="label">What went wrong first</div><h2>' + esc(p.failuresTitle || 'The failures') + '</h2>';
+      if (p.failuresIntro) h += '<p>' + rich(p.failuresIntro) + '</p>';
+      h += '<div class="fails">' + p.failures.map(function (f) {
+        return '<div class="fail reveal"><div class="yr">' + esc(f.year) + '</div><div><h3>' + esc(f.name) + '</h3><p>' + rich(f.what) + '</p>' + (f.lesson ? '<p class="lesson">' + rich(f.lesson) + '</p>' : '') + '</div></div>';
+      }).join('') + '</div></section>';
+    }
+
+    if (p.playbook && p.playbook.length) {
+      h += '<section><div class="label">How the users came</div><h2>' + esc(p.playbookTitle || 'The distribution playbook') + '</h2><div class="plays">' + p.playbook.map(function (x, i) {
+        return '<div class="play reveal"><div class="n">Move ' + (i + 1) + '</div><h3>' + esc(x.title) + '</h3><p>' + rich(x.text) + '</p></div>';
+      }).join('') + '</div></section>';
+    }
+
+    chartsLeft.forEach(function (c) { if (c) h += '<section>' + chartHTML(c) + '</section>'; });
+
+    if (p.timeline && p.timeline.length) {
+      h += '<section><div class="label">The road</div><h2>Year by year</h2><div class="timeline">' + p.timeline.map(function (t) {
+        return '<div class="tl reveal' + (t.big ? ' big' : '') + '"><div class="when">' + esc(t.when) + '</div><p>' + rich(t.text) + '</p></div>';
+      }).join('') + '</div></section>';
+    }
+
+    if (p.quotes && p.quotes.length) {
+      h += '<section><div class="label">In their own words</div><h2>What ' + esc(d.short || d.name) + ' says</h2><div class="quotes">' + p.quotes.map(function (q) {
+        return '<div class="quote reveal">"' + esc(q.text) + '"' + (q.cite ? '<cite>' + esc(q.cite) + '</cite>' : '') + '</div>';
+      }).join('') + '</div></section>';
+    }
+
+    if (p.steal && p.steal.length) {
+      h += '<section><div class="label">For us</div><h2>What we can take from this</h2><ol class="steal">' + p.steal.map(function (s) { return '<li class="reveal">' + rich(s) + '</li>'; }).join('') + '</ol>';
+      h += '<div class="next">' + (n < total ? '<span class="btn btn-ghost" aria-disabled="' + (n + 1 > today && !preview ? 'true' : 'false') + '">' + (n + 1 > today && !preview ? 'Day ' + (n + 1) + ' unlocks ' + esc(dateFor(n + 1)) : '<a href="?d=' + (n + 1) + (preview ? '&preview=pr50' : '') + '" style="color:inherit;text-decoration:none">Next founder</a>') + '</span>' : '') + (n > 1 ? '<a class="btn btn-ghost" href="?d=' + (n - 1) + (preview ? '&preview=pr50' : '') + '">Previous founder</a>' : '') + '<button class="btn btn-primary" id="markRead" type="button">Mark as read</button></div><div class="done" id="done"></div></section>';
+    }
+
+    if (p.sources && p.sources.length) {
+      h += '<section><div class="label">Where this comes from</div><h2>Sources</h2><p style="font-size:0.9rem;color:var(--ink3)">Most numbers here are what the founder said publicly, and they are labelled that way. Treat them as their own account.</p><ul class="sources">' + p.sources.map(function (s) {
+        return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.title) + '</a></li>';
+      }).join('') + '</ul></section>';
+    }
+    document.getElementById('story').innerHTML = h;
+  }
+
+  function animateCount(el) {
+    var target = parseFloat(el.dataset.num), pre = el.dataset.pre || '', suf = el.dataset.suf || '';
+    var dec = (String(target).split('.')[1] || '').length, start = performance.now(), dur = 1600;
+    function f(t) {
+      var k = Math.min((t - start) / dur, 1), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = pre + (target * e).toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec }) + suf;
+      if (k < 1) requestAnimationFrame(f);
+    }
+    requestAnimationFrame(f);
+  }
+
+  function wireMotion() {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var el = en.target; el.classList.add('in');
+        el.querySelectorAll('.fill').forEach(function (b) { b.style.width = b.dataset.w + '%'; });
+        io.unobserve(el);
+      });
+    }, { threshold: 0.15 }) : null;
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      if (io && !reduce) io.observe(el); else { el.classList.add('in'); el.querySelectorAll('.fill').forEach(function (b) { b.style.width = b.dataset.w + '%'; }); }
+    });
+    document.querySelectorAll('.stat b[data-num]').forEach(function (el) { if (!reduce) animateCount(el); });
+    var bar = document.getElementById('readbar');
+    window.addEventListener('scroll', function () {
+      var s = document.documentElement, max = s.scrollHeight - s.clientHeight;
+      bar.style.width = (max > 0 ? (s.scrollTop / max) * 100 : 0) + '%';
+    }, { passive: true });
+  }
+
+  fetch('days/index.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (list) {
+    var total = list.length;
+    var unlocked = preview ? total : Math.min(today, total);
+    var day = isNaN(asked) ? Math.min(Math.max(today, 1), total) : asked;
+    var meta = list.find(function (v) { return v.n === day; });
+
+    function grid() {
+      var g = document.getElementById('grid'); g.innerHTML = '';
+      for (var n = 1; n <= total; n++) {
+        var el;
+        if (n <= unlocked) { el = document.createElement('a'); el.href = '?d=' + n + (preview ? '&preview=pr50' : ''); el.title = 'Day ' + n + ': ' + list[n - 1].name; el.setAttribute('aria-label', el.title); }
+        else { el = document.createElement('span'); el.className = 'future'; el.setAttribute('aria-label', 'Day ' + n + ', unlocks ' + dateFor(n)); }
+        el.classList.add('cell');
+        if (read[n]) el.classList.add('read');
+        if (n === day) el.classList.add('current');
+        el.textContent = n; g.appendChild(el);
+      }
+      var c = Object.keys(read).length;
+      document.getElementById('progress').textContent = c ? c + ' of ' + Math.min(unlocked, total) + ' founders read' : 'Every founder so far';
+    }
+
+    if (!meta || day > unlocked) {
+      document.getElementById('locked').style.display = 'block';
+      document.getElementById('lockedText').textContent = meta ? 'Day ' + day + ' lands in your inbox at 7:00 am on ' + dateFor(day) + '.' : 'There are ' + total + ' founders in this run.';
+      grid(); return;
+    }
+
+    fetch('days/' + pad(day) + '.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (d) {
+      var isToday = day === Math.min(today, total);
+      document.title = 'Day ' + day + ': ' + d.name + ' | Solo Founders';
+      document.getElementById('badge').textContent = 'Day ' + day;
+      render(d, day, total, isToday);
+      wireMotion();
+      var btn = document.getElementById('markRead');
+      if (btn) {
+        if (read[day]) btn.textContent = 'Read';
+        btn.addEventListener('click', function () {
+          read[day] = 1; saveRead(); grid(); btn.textContent = 'Read';
+          var c = Object.keys(read).length, box = document.getElementById('done');
+          box.textContent = 'Day ' + day + ' done. That is ' + c + ' of ' + total + ' founders. ' + (day < total ? 'The next one lands at 7:00 am on ' + dateFor(day + 1) + '.' : 'That was the last one in this run.');
+          box.classList.add('show');
+          gtag('event', 'solo_read', { day: day });
+        });
+      }
+      gtag('event', 'solo_open', { day: day });
+      grid();
+    });
+  });
+})();
+</script>
+</body>
+</html>

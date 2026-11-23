@@ -1,0 +1,551 @@
+{
+  "n": 2,
+  "name": "Marc Lou",
+  "short": "Marc",
+  "wisdom": "Whatever you keep rebuilding over and over is probably your product.",
+  "email": {
+    "subject": "He made $4 from a PDF. Then $1M.",
+    "hook": "In early 2021 Marc Lou's PDF product made $4 in two months, and that June he punched four holes in his parents' wall. In 2025, by his own numbers, he made $1,032,000 with zero employees.",
+    "lead": [
+      "Marc is the one to study if you've ever felt you've failed too many times to start again. He has launched somewhere between 36 and 43 startups, depending on which of his own posts you read, and he says 90% of them failed.",
+      "What finally worked was boring. It was code he had already written for himself, again and again, packed into a folder and sold."
+    ],
+    "stats": [
+      {
+        "value": "$1.03M",
+        "label": "made in 2025"
+      },
+      {
+        "value": "15",
+        "label": "income streams"
+      },
+      {
+        "value": "91%",
+        "label": "margin"
+      }
+    ],
+    "chart": {
+      "title": "ShipFast revenue per month, by his own numbers",
+      "points": [
+        {
+          "label": "Nov 2023",
+          "value": 65400,
+          "display": "$65K"
+        },
+        {
+          "label": "Apr 2024",
+          "value": 133000,
+          "display": "$133K"
+        },
+        {
+          "label": "2025",
+          "value": 25000,
+          "display": "$25K",
+          "down": true
+        },
+        {
+          "label": "2026",
+          "value": 2000,
+          "display": "$2K",
+          "down": true
+        }
+      ],
+      "note": "The 2025 and 2026 figures come from his X post as reported by a weak aggregator site."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "His main earner today is TrustMRR, a site where founders prove their startup revenue by connecting Stripe with a read-only key, and where people buy and sell those startups. He built the first version in about six hours with Cursor and launched it on 30 October 2025.",
+          "It made $301,198 in its first nine months, plus about $30,000 in finder fees, by his own September 2026 post. He turned down an offer of $1M for it, then another of $1.2M. Next to it he runs DataFast, an analytics tool, and he's testing a tiny new one called Stalkr.AI."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "In 2025 he made $1,032,000 from 15 different income streams, at about 91% margin, with no employees. That was about 20% less than 2024, and he says he wouldn't change anything.",
+          "The mix has moved away from one-time sales. DataFast was at $30,831 a month in recurring revenue by September 2026. TrustMRR sells sponsor slots from $299 up to $1,499 a month and takes a 3% fee when a startup gets sold through it. He has two rules worth stealing: **no free plan**, and ship free tools that send people to the paid ones."
+        ]
+      },
+      {
+        "title": "How he built ShipFast",
+        "paras": [
+          "ShipFast is a Next.js starter kit: login, payments, emails and the boring setup every new app needs. Marc had set this up himself for every one of his earlier products. In his words, “I packed 2 years of shipping knowledge in a GitHub repo.” Pulling the code together took him, he thinks, about a week, plus the documentation.",
+          "He launched it on 1 September 2023 and told his wife they'd be lucky to make $100. It made about $40,000 in its first month."
+        ]
+      },
+      {
+        "title": "How he got the buyers",
+        "paras": [
+          "He kept adding features while tweeting about them. He live-streamed himself building on YouTube most mornings, for anywhere from two to eight hours. The landing page showed a live feed of his GitHub commits, so buyers could see it was being looked after, and the top tier came with a private Discord.",
+          "His biggest month, $133,000 in April 2024, he puts down to his YouTube videos, not his tweets. His week was simple: five weekdays building, Saturday for YouTube, Sunday for the newsletter."
+        ]
+      },
+      {
+        "title": "The part nobody posts about",
+        "chart": true,
+        "paras": [
+          "ShipFast collapsed. By a post of his that a weak aggregator reported, it went from about $126,000 a month in 2024 to about $25,000 in 2025 and about $2,000 in 2026. He blames it “primarily” on AI, because anyone can now ask an AI tool to write the same setup code.",
+          "He saw it coming early enough to build recurring businesses on top. That's the real lesson: a one-time product built on a pain AI can remove will not last, so use the cash it throws off to build the next thing."
+        ]
+      }
+    ],
+    "tryToday": "Write down one thing you've set up from scratch three or more times at work: a campaign template, a reporting sheet, a landing page structure. That's your ShipFast.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Marc Lou is a French developer who failed for seven straight years, lost $36,000 on Tesla stock in two weeks, and was fired from the job he took to survive. Then a folder of his own setup code made him a million dollars. Nearly every number here is Marc's own, from his blog and his posts, and the few that come from elsewhere are marked as such.",
+    "stats": [
+      {
+        "value": "$1,032,000",
+        "num": 1032000,
+        "prefix": "$",
+        "suffix": "",
+        "label": "made in 2025",
+        "note": "his own numbers"
+      },
+      {
+        "value": "36",
+        "num": 36,
+        "prefix": "",
+        "suffix": "",
+        "label": "startups by September 2026",
+        "note": "his bio now says 43"
+      },
+      {
+        "value": "$133,000",
+        "num": 133000,
+        "prefix": "$",
+        "suffix": "",
+        "label": "ShipFast's best month, April 2024",
+        "note": "his own post"
+      },
+      {
+        "value": "0",
+        "num": 0,
+        "prefix": "",
+        "suffix": "",
+        "label": "employees",
+        "note": "in 2023 and in 2025"
+      }
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A degree, a waiter's apron, and cockroaches in Seoul",
+        "paras": [
+          "Marc graduated in computer science in 2016 from the Université de Technologie de Troyes in France. A year earlier he'd done an exchange semester in Hong Kong, and he says it transformed him. When his friends went off to jobs in Paris, he didn't want to follow them.",
+          "So he spent a year building a “Tinder for sports lovers” app. A whole year. He abandoned it. To pay for life he waited tables in Paris at about $10 an hour, and by his own account he'd been a smoker for seven years through university.",
+          "None of this is dramatic yet. It's just a young developer with a degree, a lot of ambition and no plan. But it matters, because the next seven years are all small attempts, and every one of them taught him a piece of what ShipFast later became.",
+          "On 10 March 2017 he quit everything and moved to Seoul. With his friend Sacha he co-founded a startup that used AI to predict flight prices, and they raised $100,000 from angel investors. This is the only outside money Marc has ever taken.",
+          "It didn't work. By his own timeline, after about nine months they had no product-market fit and no income. A newspaper profile later said it was six months with zero customers. Either way, it was over.",
+          "The living conditions tell you how thin things were. He had no salary and no savings, and he shared a 12 square metre flat with his girlfriend, with cockroaches in the bathroom. By December 2017 he was broke, smoking again, and in his words had “zero self-confidence.”",
+          "It's worth noticing that his one funded startup was also one of his biggest failures. Money didn't fix the lack of customers. It just delayed finding out."
+        ],
+        "pull": {
+          "text": "I was fired everywhere, so I built 43 startups.",
+          "cite": "Marc's site bio"
+        }
+      },
+      {
+        "label": "Small bets",
+        "title": "Gloves for lovers, acting gigs and an escape room bot",
+        "paras": [
+          "In January 2018 he tried Glovers, “gloves for lovers.” He had 50 pairs hand-knitted, spent a few hundred dollars on Facebook ads, and sold nothing. So he went out and sold them on the street for $20 each. Through 2018 he also took acting gigs at about $200 each to get by.",
+          "Then came his first real software business. VirallyBot was a lead-generation tool for escape rooms, priced at $199 a month. His first customer was an escape room in Australia called Time's Up, on 13 July 2018. It grew to about $3,000 a month and made about $100,000 in total over its life.",
+          "During this stretch he worked from Bali, and his routine is the bit to copy: marketing in the mornings, chasing leads and sending cold emails, and product work in the afternoons. He got married in the summer of 2020.",
+          "But that same year, in March 2020, COVID closed every escape room in the world. **His revenue went to zero in one week.** He had found a niche and served it well, and it vanished anyway."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "$4 from a PDF, $36,000 gone, and a wall with holes in it",
+        "paras": [
+          "In January 2021 he tried an info product: a two-page PDF called The Golden Plumber. It made $4 in two months. He was 27, broke, and living with his parents.",
+          "In March 2021 he put $100,000 that he'd inherited from his parents into Tesla stock and lost $36,000 in two weeks.",
+          "On the morning of 9 June 2021 it all came out. He cried, then got angry, and in his own words he “dug 4 holes in the wall.” The thought on loop was “I am a failure.” A news profile later described it as punching through his parents' wall four times, but his own post is the version to trust.",
+          "That same month he took a job, reportedly with Tai Lopez, at $9,000 a month. He was fired in November 2021.",
+          "What pulled him back wasn't a business idea. It was habits. He read Why We Sleep and fixed his sleep, exercised every day, and studied Korean for an hour a day, six days a week. He got his body and his head working again before he got his business working."
+        ],
+        "pull": {
+          "text": "Each failure is not a failure if you don't give up.",
+          "cite": "Marc, quoted by IBTimes UK, 2026"
+        }
+      },
+      {
+        "label": "Learning to ship",
+        "title": "Lots of tiny products, a few small sales",
+        "paras": [
+          "From late 2021 Marc changed how he worked. Instead of one big bet, he shipped lots of small things quickly. In December 2021 he launched Mood2Movie, a free app that suggested movies based on your mood. It got more than 20,000 visitors from Hacker News and made no money at all. Traffic is not revenue, and he learned it the hard way.",
+          "In August 2022 he launched Habits Garden, a habit tracker that felt like a game. It made about $200 a month, then about $700 a month once it went to mobile, and he sold it in 2023 for $10,000.",
+          "By July 2023 he was running “8 startups in 8 months,” and together they made about $3,000 a month. One of them, MakeLanding, brought in 60% of that, and he sold it for $35,000 in 2023. A tiny 2021 product making $80 a month sold for $4,300 in early 2023.",
+          "A friend named Andrey gave him a line that stuck: “Why don't you sell it before you make it?” Marc started capping every new idea at one month. And he noticed that every time he started a new product, he spent days on the same setup: login, payments, emails, domain settings. That repeated chore was about to become the product."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "A week of packing up old code",
+        "paras": [
+          "ShipFast is a Next.js boilerplate, a ready-made starting point so you can launch a web app without redoing the plumbing. He described it as “a NextJS boilerplate to ship startups fast.” Everything in it was code he'd already written for his own products.",
+          "He said gathering the code took “probably a week,” plus writing the documentation. That's it. No new technology, no research phase. Just packaging what he already knew, or as he put it, two years of shipping knowledge in one GitHub repo.",
+          "The pricing was clever. He offered two tiers, $169 and $199, with only a small gap in features between them. He said the lower one was really the anchor, and he went with a one-time payment, not a subscription. Buyers saw two close prices and most picked the better deal.",
+          "He launched on 1 September 2023 (one news report says it went on Product Hunt on 31 August). He told his wife they'd be lucky to make $100. One summary of an interview says he pushed it live before a trip to Hong Kong and woke up to about $3,000 in sales within two hours, which was roughly what he used to make in a whole month. His own timeline says $6,000 in the first 48 hours."
+        ],
+        "pull": {
+          "text": "I packed 2 years of shipping knowledge in a GitHub repo.",
+          "cite": "Marc on his blog, 2026"
+        }
+      },
+      {
+        "label": "The first buyers",
+        "title": "Tweets, live streams and a commit feed",
+        "paras": [
+          "Marc didn't run ads. He kept adding features to ShipFast while tweeting about each one, so every update was also a piece of marketing. Developers watched it get better in public.",
+          "He started live-streaming his building sessions on YouTube most mornings, for anywhere between two and six or eight hours. He put a live feed of his GitHub commits on the landing page, which quietly answered the biggest fear with any boilerplate: will this be abandoned next month? The top tier included a private Discord, so buyers got a community too, and he ran a newsletter alongside.",
+          "His week settled into a rhythm. Monday to Friday he built. Saturday was for YouTube. Sunday was for the newsletter.",
+          "The numbers came fast. About $40,000 in September 2023. $65,400 in November 2023 at 91% margin, with zero employees. Almost $200,000 for 2023 in total. He was named Product Hunt's Maker of the Year for 2023, and a news profile says more than 7,200 developers bought ShipFast.",
+          "Then in April 2024 it made $133,000 in one month, and he credits his YouTube videos for that. His peak figures vary a bit, though: a later post of his says $126,000 a month in 2024, and one paper says $135,000. For the whole of 2024 he made about $1.2 million."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "The fall",
+        "title": "AI ate the boilerplate",
+        "paras": [
+          "Here's what most success stories leave out. By a post of Marc's from October 2026, as reported by a weak aggregator site, ShipFast went from about $126,000 a month in 2024 to about $25,000 a month in 2025 and about $2,000 a month in 2026. TrustMRR's own Stripe-linked page showed lifetime ShipFast revenue of $1,272,892 and about $1,993 in the last 30 days, as of 21 October 2026. Remember that Marc owns TrustMRR, so that's not an independent check.",
+          "In September 2026 he reportedly shut down the affiliate programs for ShipFast and his coding course CodeFast, and said revenue had fallen “primarily because of AI.” It makes sense. A boilerplate saves you setup time, and now an AI assistant writes that setup for you in minutes.",
+          "His 2025 year still came in at $1,032,000 from 15 income streams at about 91% margin. It was about 20% down on 2024, and he says he wouldn't change anything. He even earned $14,339 from X creator payouts that year.",
+          "Some of his 2025 launches flopped outright. BioAge and ClipMarc both failed, and he wrote a line every creator should pin up: “A good reminder that having an audience doesn't guarantee a successful startup!”"
+        ],
+        "chart": 1,
+        "pull": {
+          "text": "having an audience doesn't guarantee a successful startup!",
+          "cite": "Marc on his blog, January 2026"
+        }
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Six hours of vibe-coding, then nine dead ends",
+        "paras": [
+          "Before ShipFast faded, Marc had already started building recurring businesses. DataFast launched in October 2024 as web analytics connected to Stripe, so you can see which marketing channel actually brings paying customers. It hit $300 a month in two weeks, $15,800 a month with about 1,000 paying customers by January 2026, and $30,831 a month by September 2026, with about 7% monthly churn and more than 20,000 users.",
+          "TrustMRR is the newer and bigger one. He vibe-coded the first version in about six hours with Cursor and launched it on 30 October 2025. Founders connect Stripe with a read-only key, so their revenue is verified, not just claimed. His launch post got 2.9 million views. He sold sponsor slots on the site starting at $299 a month and rising to $1,499, and they sold out in three days for $20,378. Within 24 hours of launch the ad placements were bringing in about $20,000 a month.",
+          "Then the hype wore off. Visitors fell 38% in December 2025 and another 35% in April 2026. He tried ten different directions for the site and nine failed. The one that stuck was the marketplace for buying and selling startups, which he added from 30 November 2025, with a 3% finder fee from 15 January 2026.",
+          "By September 2026 it had about 200,000 visitors a month, more than 5,000 pages indexed by Google, and between 154 and 164 founders acquired, depending on which of his posts you read. Its best month was July 2026 at $44,000 and 90% margin. Over nine months it made $301,198 plus about $30,000 in fees, and he said no to offers of $1M and then $1.2M.",
+          "In August 2026 he built Stalkr.AI, a tool that finds people online who are talking about TrustMRR. It was at $223 a month. A tool built first for his own marketing, then sold. That's the ShipFast pattern again, on a small scale.",
+          "If you add up his recent numbers, a rough estimate puts him at somewhere between $55,000 and $80,000 a month in autumn 2026. That's a rough sum of his own figures, not a number he has posted."
+        ]
+      },
+      {
+        "label": "How he thinks",
+        "title": "He thinks in weeks, not years",
+        "paras": [
+          "Marc doesn't do grand visions. He says, “I don't think in years. I don't dream big.” He thinks in weeks, caps each idea at a month, and moves on quickly when there's no sign of product-market fit.",
+          "His other principles are simple. Focus on problems, not products. Build painkillers, not vitamins. Sell before you build. No free plan. Ship free tools that promote the paid ones. Listen to your power users. Spread your income across several streams.",
+          "On the future, he has said very little in long form. What he has done says more: he took the money from a product AI was about to kill and put it into products where the value is data and trust, verified revenue and real buyers, which are much harder for AI to copy.",
+          "And on the days it doesn't work, his line is the one he signs off with: “Ship fast, ship often, and don't quit!”"
+        ],
+        "pull": {
+          "text": "It's hard to describe product-market fit, but when it hits, it's clear",
+          "cite": "Marc on his blog, September 2026"
+        }
+      }
+    ],
+    "failuresTitle": "36 startups, 90% failed",
+    "failuresIntro": "Marc keeps a public timeline of everything he has tried. By his own count, 90% of his 36 startups failed. Here are the ones he names.",
+    "failures": [
+      {
+        "year": "2016 to 2017",
+        "name": "Tinder for sports lovers",
+        "what": "He spent a year after graduating on a dating app for sports fans. He abandoned it.",
+        "lesson": "A year without a single paying user is a year too long."
+      },
+      {
+        "year": "2017",
+        "name": "AI flight pricing startup, Seoul",
+        "what": "He raised $100,000 from angels with his friend Sacha. After about nine months there was no product-market fit and no income.",
+        "lesson": "Funding does not create customers; it only buys time to find them."
+      },
+      {
+        "year": "2018",
+        "name": "Glovers",
+        "what": "Fifty pairs of hand-knitted gloves for couples. A few hundred dollars of Facebook ads sold none, so he sold them on the street for $20 each.",
+        "lesson": "When ads fail, going out and selling by hand at least teaches you what people say no to."
+      },
+      {
+        "year": "2018 to 2020",
+        "name": "VirallyBot",
+        "what": "Lead generation software for escape rooms at $199 a month. It reached about $3,000 a month and $100,000 in total, then COVID closed escape rooms and revenue went to zero in a week.",
+        "lesson": "A business that depends on one small industry can disappear overnight."
+      },
+      {
+        "year": "2021",
+        "name": "The Golden Plumber",
+        "what": "A two-page PDF info product. It made $4 in two months.",
+        "lesson": "An info product needs an audience before it needs a PDF."
+      },
+      {
+        "year": "2021",
+        "name": "Tesla bet",
+        "what": "He put $100,000 of inheritance into Tesla stock and lost $36,000 in two weeks.",
+        "lesson": "Gambling with savings is not a strategy for buying time."
+      },
+      {
+        "year": "2021",
+        "name": "Mood2Movie",
+        "what": "A free app recommending films by mood. More than 20,000 visitors came from Hacker News, and it made no money.",
+        "lesson": "Traffic without a price tag is a hobby."
+      },
+      {
+        "year": "2025",
+        "name": "BioAge and ClipMarc",
+        "what": "Two launches to his large audience that went nowhere.",
+        "lesson": "Having followers does not make a weak product work."
+      },
+      {
+        "year": "2025 to 2026",
+        "name": "TrustMRR's first nine directions",
+        "what": "Nine of the ten verticals he tried on TrustMRR failed before the startup marketplace took off.",
+        "lesson": "Keep the product and keep changing the angle until one sticks."
+      }
+    ],
+    "playbookTitle": "How he gets buyers without paying for ads",
+    "playbook": [
+      {
+        "title": "Sell the thing you keep rebuilding",
+        "text": "ShipFast was setup code he'd written for every earlier product. It took about a week to package. Look for the chore you repeat, because other people in your field repeat it too."
+      },
+      {
+        "title": "Two close prices, one-time payment",
+        "text": "He launched at $169 and $199 with a small feature gap, using the lower price as an anchor. One-time pricing made the decision easy for developers who hate subscriptions."
+      },
+      {
+        "title": "Tweet every feature as you ship it",
+        "text": "He kept adding features while tweeting about each one. The product's changelog became his content calendar."
+      },
+      {
+        "title": "Live-stream the work on YouTube",
+        "text": "He streamed his building sessions most mornings for two to eight hours. He credits YouTube for ShipFast's $133,000 month in April 2024."
+      },
+      {
+        "title": "Show proof it's maintained",
+        "text": "A live GitHub commit feed on the ShipFast landing page showed buyers the product was being updated, which removed the main fear about buying a boilerplate."
+      },
+      {
+        "title": "Bundle a community into the top tier",
+        "text": "The higher ShipFast price included a private Discord. It made the upgrade feel worth it and kept buyers around."
+      },
+      {
+        "title": "Launch big to your own audience",
+        "text": "TrustMRR's launch post got 2.9 million views, and sponsor slots priced from $299 to $1,499 a month sold out in three days for $20,378."
+      },
+      {
+        "title": "Build free tools that point to paid ones",
+        "text": "It's one of his stated rules. Along with no free plan, it means every free thing he ships is a doorway to something he charges for."
+      },
+      {
+        "title": "Let Google take over once the hype fades",
+        "text": "By February 2026 TrustMRR had more than 5,000 pages indexed, and by March 2026 about a million impressions. When launch traffic dropped, search traffic kept coming."
+      }
+    ],
+    "charts": [
+      {
+        "title": "ShipFast revenue per month, by his own numbers",
+        "points": [
+          {
+            "label": "Sep 2023",
+            "value": 40000,
+            "display": "$40K"
+          },
+          {
+            "label": "Nov 2023",
+            "value": 65400,
+            "display": "$65.4K"
+          },
+          {
+            "label": "Apr 2024",
+            "value": 133000,
+            "display": "$133K"
+          },
+          {
+            "label": "2025",
+            "value": 25000,
+            "display": "$25K",
+            "down": true
+          },
+          {
+            "label": "2026",
+            "value": 2000,
+            "display": "$2K",
+            "down": true
+          }
+        ],
+        "note": "2025 and 2026 come from his October 2026 X post as reported by a weak aggregator. His own peak figures for 2024 range from $126K to $133K."
+      },
+      {
+        "title": "What Marc made each year, by his own numbers",
+        "points": [
+          {
+            "label": "2023",
+            "value": 200000,
+            "display": "$200K"
+          },
+          {
+            "label": "2024",
+            "value": 1200000,
+            "display": "$1.2M"
+          },
+          {
+            "label": "2025",
+            "value": 1032000,
+            "display": "$1.03M",
+            "down": true
+          }
+        ],
+        "note": "2023 and 2024 are approximate. He says 2025 was about 20% less than 2024."
+      },
+      {
+        "title": "DataFast monthly recurring revenue, by his own numbers",
+        "points": [
+          {
+            "label": "Oct 2024",
+            "value": 300,
+            "display": "$300"
+          },
+          {
+            "label": "Jan 2026",
+            "value": 15800,
+            "display": "$15.8K"
+          },
+          {
+            "label": "Sep 2026",
+            "value": 30831,
+            "display": "$30.8K"
+          }
+        ],
+        "note": "The October 2024 figure is from two weeks after launch."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "2016",
+        "text": "Graduates in computer science and spends a year on a sports dating app."
+      },
+      {
+        "when": "March 2017",
+        "text": "Moves to Seoul and raises $100,000 for an AI flight pricing startup. It fails within about nine months."
+      },
+      {
+        "when": "July 2018",
+        "text": "Gets the first customer for VirallyBot, his escape room software."
+      },
+      {
+        "when": "March 2020",
+        "text": "COVID takes VirallyBot's revenue to zero in a week."
+      },
+      {
+        "when": "June 2021",
+        "text": "Breaks down at his parents' home, then takes a $9,000 a month job. He's fired that November.",
+        "big": true
+      },
+      {
+        "when": "2022",
+        "text": "Ships small products fast: Habits Garden, then 8 startups in 8 months."
+      },
+      {
+        "when": "September 2023",
+        "text": "Launches ShipFast. About $40,000 in month one.",
+        "big": true
+      },
+      {
+        "when": "April 2024",
+        "text": "ShipFast's best month, $133,000, which he credits to YouTube."
+      },
+      {
+        "when": "October 2024",
+        "text": "Launches DataFast, his first big recurring product."
+      },
+      {
+        "when": "October 2025",
+        "text": "Vibe-codes TrustMRR in about six hours and launches it.",
+        "big": true
+      },
+      {
+        "when": "2025",
+        "text": "Makes $1,032,000 from 15 income streams with no employees."
+      },
+      {
+        "when": "September 2026",
+        "text": "TrustMRR passes $300,000. He turns down $1M and $1.2M offers. ShipFast is down to about $2,000 a month."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "I packed 2 years of shipping knowledge in a GitHub repo.",
+        "cite": "Marc's blog, September 2026"
+      },
+      {
+        "text": "we'd be lucky if we made $100 with it",
+        "cite": "What he told his wife on ShipFast's launch day"
+      },
+      {
+        "text": "Why don't you sell it before you make it?",
+        "cite": "Advice from his friend Andrey, on Marc's blog"
+      },
+      {
+        "text": "I don't think in years. I don't dream big.",
+        "cite": "Marc's blog, September 2026"
+      },
+      {
+        "text": "A good reminder that having an audience doesn't guarantee a successful startup!",
+        "cite": "Marc's 2025 review, January 2026"
+      },
+      {
+        "text": "It's hard to describe product-market fit, but when it hits, it's clear",
+        "cite": "Marc's blog, September 2026"
+      },
+      {
+        "text": "Ship fast, ship often, and don't quit!",
+        "cite": "Marc's blog, September 2026"
+      }
+    ],
+    "steal": [
+      "List the setups you repeat at work, like campaign launch checklists, reporting dashboards or landing page templates. The one you've built three times is the one to package and sell.",
+      "Price with two close tiers and let the cheaper one act as the anchor. Most people will pick the slightly better deal.",
+      "Make the building itself the marketing. Tweet each feature, stream a session, and show a public changelog so people watch the product grow.",
+      "Cap every new idea at one month. If it hasn't found paying users by then, kill it and start the next one without guilt.",
+      "Use the cash from a one-time product to build something recurring, before AI or a competitor makes the one-time product free.",
+      "Fix your sleep, your body and your routine before you try to fix the business. Marc's comeback started with habits, not ideas."
+    ],
+    "sources": [
+      {
+        "title": "I've made $3M with my 36 startups (marclou.com, September 2026)",
+        "url": "https://marclou.com/p/i-ve-made-3m-with-my-36-startups"
+      },
+      {
+        "title": "I made $1,032,000 in 2025 (marclou.com, January 2026)",
+        "url": "https://marclou.com/p/i-made-1-032-000-in-2025"
+      },
+      {
+        "title": "I vibe-coded $330K in 9 months (marclou.com, September 2026)",
+        "url": "https://marclou.com/p/i-vibe-coded-330k-in-9-months"
+      },
+      {
+        "title": "Marc Lou newsletter archive",
+        "url": "https://marclou.com/newsletter"
+      },
+      {
+        "title": "Marc Louvion's million dollar success story (IBTimes UK, May 2026)",
+        "url": "https://www.ibtimes.co.uk/marc-louvion-million-dollar-success-journey-1799070"
+      },
+      {
+        "title": "Marc Louvion on $50K from a one-time product (betterlaunch.co summary)",
+        "url": "https://www.betterlaunch.co/playbooks/episodes/marc-louvion-50k-onetime"
+      },
+      {
+        "title": "ShipFast revenue collapse (aiidelist, weak aggregator)",
+        "url": "https://aiidelist.com/blog/shipfast-revenue-collapse-marc-lou-2026.md"
+      }
+    ]
+  }
+}

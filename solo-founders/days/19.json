@@ -1,0 +1,279 @@
+{
+  "n": 19,
+  "name": "Ali Abdaal",
+  "short": "Ali",
+  "wisdom": "Count the inputs you control, like videos made, not views.",
+  "email": {
+    "subject": "52 videos for his first 1,000 subscribers.",
+    "hook": "Ali Abdaal needed 52 videos and six months to get his first 1,000 YouTube subscribers, and by his own numbers his business made over $5.5 million in 2023.",
+    "lead": [
+      "Let's say the important thing first: Ali is not a solopreneur any more. He has more than 20 employees, co-founded an app studio, and talks about running a small holding company. But he started exactly where we are: one person with a day job, in his case as a junior doctor, making things in his spare time.",
+      "That's why he's on our list. He's the best example in this series of building something big part time, without quitting first, and then having to learn the hard way what a team costs."
+    ],
+    "stats": [
+      {"value": "$5.5M+", "label": "revenue in 2023, his own number"},
+      {"value": "$3.5M", "label": "of that from courses"},
+      {"value": "20+", "label": "people on his team"}
+    ],
+    "chart": {
+      "title": "Ali's business revenue by year",
+      "points": [
+        {"label": "2020", "value": 1300000, "display": "$1.3M+"},
+        {"label": "2022", "value": 4000000, "display": "$4M+"},
+        {"label": "2023", "value": 5500000, "display": "$5.5M+"}
+      ],
+      "note": "2020 and 2023 are Ali's own figures. The 2022 figure is from a newsletter profile. Profit fell in 2022 even though revenue held up."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "In 2024 Ali married Izzy and moved from London to Hong Kong. His current projects are his book Feel-Good Productivity, a community called Productivity Lab, the YouTuber Academy courses, and Sparkle Studios, an app studio he co-founded. Its first app, VoicePal, is an AI ghostwriter that turns your voice notes into posts.",
+          "In March 2026 he released an episode on how he'd create content in 2026 if he had to start over, drawing on nine years of making content. It promotes a course on building **a $100k a year lifestyle business without quitting your day job**. That's the exact thing he did himself."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "He has about a dozen streams: YouTube ads, affiliate links, sponsorships, Skillshare classes, his own courses, a podcast, the book, and now apps. Courses are by far the biggest. In December 2023 he wrote that the business made over $5.5 million that year, and $3.5 million came from courses.",
+          "The Part-Time YouTuber Academy was the engine. One profile puts its price at $1,495 to $4,995. In 2021 he said **\"The course makes significantly more money than anything.\"** By about September 2025, a podcast summary by Sam Parr described him as running a $5m+ creator business."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "In summer 2017 Ali was a Cambridge medical student who co-ran a company called 6med, which helped students get into medical school. He started making YouTube videos about medical school and the admissions tests to market it. He set himself an input goal of one to three videos a week.",
+          "His words on why that works: \"Whether I make one, two, or three videos weekly is completely within my control.\" Views weren't. It took 52 videos and six months to reach 1,000 subscribers. Then a video about his desk setup took off, and he had 5,000 by March 2018. He kept his job as a junior doctor until 2020, and the channel kept growing while he worked shifts."
+        ]
+      },
+      {
+        "title": "How he got the buyers",
+        "paras": [
+          "YouTube brought the viewers, but email brought the buyers. Kit, his email provider, published a case study (promotional, and the figures are his own) on how it works. He moved more than 100,000 subscribers to Kit. A giveaway to celebrate 4 million YouTube subscribers added about 80,000 people. A free Google Sheet for planning your time, linked in a video description, added more.",
+          "Everyone gets a weekly Sunday newsletter, with any pitch tucked into a PS at the bottom. Sales emails go only to people who joined a waitlist. One Black Friday sequence sold $528,000 of the course in four days. His line: **\"I would rather have a 500,000 email list than 5 million YouTube subscribers.\"**"
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "2022 was the year he grew the team too fast. He rented a London studio, hired more people, bought more equipment and paid for coaching, about $1 million of new costs. Revenue stayed flat. He admitted his sales and marketing \"broadly sucked.\" Ali says profit fell by about $1 million; one commentator worked it out as about $450,000 lower, at just over $2 million. Either way, it hurt.",
+          "And in December 2023 he admitted the courses, his biggest earner by far, sat on a platform he'd \"systematically ignored for 4 years\" because he didn't think it moved the needle. His lesson came from Derek Sivers: **\"Are you profitable? Isn't that enough?\"**"
+        ]
+      }
+    ],
+    "tryToday": "Pick one input goal we fully control for the next 30 days, like two posts a week, and track only that number. Ignore likes and views until the 30 days are up.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Ali Abdaal started making YouTube videos as a medical student to market a tutoring company, and kept making them through two years as a junior doctor. By 2023 it was a business making over $5.5 million a year, with a team of more than 20, so this is the story of how one part-time creator turned into a small company.",
+    "stats": [
+      {"value": "$5,500,000", "num": 5500000, "prefix": "$", "suffix": "+", "label": "revenue in 2023", "note": "his own number, December 2023"},
+      {"value": "52", "num": 52, "prefix": "", "suffix": "", "label": "videos to reach his first 1,000 subscribers", "note": "over about six months"},
+      {"value": "$528,000", "num": 528000, "prefix": "$", "suffix": "", "label": "of course sales in four days", "note": "one Black Friday email sequence, via Kit's case study"},
+      {"value": "20", "num": 20, "prefix": "", "suffix": "+", "label": "employees", "note": "from his own site"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "He was never broke",
+        "paras": [
+          "This isn't a rags-to-riches story, and Ali would be the first to say so. He was born in Karachi in 1994 and grew up in Lesotho, in southern Africa. In 2003 he moved to the UK with his mother, his brother and his grandmother.",
+          "He was earning early. He taught himself to code and started freelancing as a web designer at 12. From 13 he worked part time as an after-school teaching assistant. He also did magic shows, getting paid up to £150 an hour. **Making money from things he enjoyed was a habit before it was a business.**",
+          "In 2012 he went to Emmanuel College, Cambridge, to study medicine. That's the path everyone around him expected: become a doctor, have a safe career. And for a while, he did exactly that."
+        ]
+      },
+      {
+        "label": "The first company",
+        "title": "6med, a first company with mixed success",
+        "paras": [
+          "Around 2013, when he was 19, Ali and some friends started 6med. The idea was simple: medical-school admissions courses were expensive, so they'd offer a cheaper one. They helped students with personal statements, interview skills, and the UKCAT and BMAT entrance tests, with a question bank and a little piece of software to track progress.",
+          "One detail shows how quickly it could make money. A BMAT crash course priced at £69 took about $2,200 in a single day from 30 students. They ran five sold-out courses.",
+          "How much 6med made overall isn't clear. One profile says a million dollars over six years in one place and $50,000 a year in another, so we're not using either. Ali himself describes 6med as his first company, with **\"mixed success\"**.",
+          "But 6med gave him something more valuable than revenue. It gave him a reason to start a YouTube channel."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "Videos as marketing for a tutoring company",
+        "paras": [
+          "In summer 2017 Ali started posting videos about life as a medical student and about the BMAT and interviews. They were marketing for 6med. Students applying to medicine would find the videos, and some of them would buy the course.",
+          "He made one decision at the start that shaped everything: he'd measure only what he controlled. His goal was one to three videos a week. Not views, not subscribers. Just videos.",
+          "It was slow. He needed 52 videos over about six months to reach 1,000 subscribers. Then one video changed the curve. He made a video about his desk setup, and it pulled in viewers far beyond medical students. By March 2018 he had 5,000 subscribers. About 95 videos in, he had 15,000. After about a year, 50,000. The video counts in these profiles don't quite line up with each other, so treat them as rough.",
+          "He admits there was a mental block too. At 20,000 subscribers he thought 100,000 was out of reach. **He hit 100,000 in 2018.**",
+          "One profile says his doctor vlog started on 1 August 2018 with 47 subscribers, which clashes with the 2017 start on his own site. The likeliest reading is that the doctor vlog was a new series on a channel that already existed."
+        ],
+        "pull": {"text": "Whether I make one, two, or three videos weekly is completely within my control.", "cite": "Ali, in The Hustlers, February 2023"},
+        "chart": 1
+      },
+      {
+        "label": "Doctor by day",
+        "title": "Ward rounds, then editing at night",
+        "paras": [
+          "From 2018 to 2020 Ali worked full time as a junior doctor in the NHS, at Addenbrooke's and West Suffolk Hospital, including during COVID. The channel was a side project, squeezed around shifts. The doctor's salary was his safety net, and it meant he never had to rush the channel into making money.",
+          "In 2018 the first money came in from YouTube ads and Amazon affiliate links. At about 80,000 subscribers he got his first sponsorship. He spent about £2,000 on early camera gear, according to one profile.",
+          "2019 is the year it got interesting. His affiliate income was about $37,000, by his own account, and most of it came from one product: a paper-like screen protector for the iPad that he used and recommended. That one gadget made him **about as much as his NHS salary**. Another source puts his 2019 total at $130,000, which may be counting other streams too.",
+          "That year he also launched a video-editing class on Skillshare and hired a freelance editor, his first step towards a team. One profile says his Skillshare classes have been watched for more than 9 million minutes by 100,000 students and earned $475,700 in total. That figure is undated and from a secondary source."
+        ]
+      },
+      {
+        "label": "Finding the money",
+        "title": "The course that changed the maths",
+        "paras": [
+          "In August 2020 an Australian work placement fell through, so Ali took a break from medicine. In October 2020 the channel passed 1 million subscribers. At the end of 2020 he launched the Part-Time YouTuber Academy, his first cohort-based course, teaching people to build a channel alongside a job, exactly as he had.",
+          "One profile says it was priced at $1,495 to $4,995, and that the first launch had 350 sign-ups and $250,000 banked. Those figures are undated and secondary, so hold them loosely. What we know from Ali himself is that the business crossed $1 million in revenue in 2020, when he was 26. In a May 2021 interview, the figure for his maker business was over $1.3 million.",
+          "Most of the numbers on this page are Ali's own, from his site, his videos and his posts, and a few come from people writing about him, which we've pointed out as we go.",
+          "The course made the difference. He told Digiday that if about 400 people joined a cohort, he could make a million dollars in a few days. Compare that with years of ad revenue and affiliate links.",
+          "In 2021 he officially left medicine. From then on the academy ran three cohorts a year, he started a podcast, and made more Skillshare classes. He made fewer videos, but the business grew faster."
+        ],
+        "pull": {"text": "The course makes significantly more money than anything.", "cite": "Ali, to Digiday, May 2021"},
+        "chart": 0
+      },
+      {
+        "label": "The real engine",
+        "title": "The list, not the channel",
+        "paras": [
+          "Here's the part every marketer should read twice. Ali's big course launches weren't really driven by YouTube. They were driven by email. This comes from a case study published by Kit, his email provider, so it's promotional, and the numbers are his own.",
+          "He moved more than 100,000 subscribers over to Kit. When he hit 4 million YouTube subscribers, he ran a giveaway that added about 80,000 people to his list. He also put a free Google Sheet template for managing your time in a video description, and people joined the list to get it.",
+          "The rules for the list are strict. Everyone gets a weekly Sunday newsletter that's useful on its own. Any pitch goes in a PS at the bottom, after the value. **Sales emails only go to people who joined a waitlist**, so nobody else gets hammered.",
+          "The results: one Black Friday and Cyber Monday email sequence sold $528,000 of the course, about half a million dollars in four days. The final cohort of the Part-Time YouTuber Academy made about $2 million.",
+          "No wonder he says he'd swap a giant channel for a smaller list."
+        ],
+        "pull": {"text": "I would rather have a 500,000 email list than 5 million YouTube subscribers.", "cite": "Ali, in Kit's case study"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "The year he lost a million dollars",
+        "paras": [
+          "In 2022 Ali did what a lot of successful creators do. He went big. He rented a studio in London, hired a bigger team, bought more filming equipment and paid for coaching. All in, about $1 million of new costs.",
+          "Revenue didn't grow to match. It stayed flat against 2021. He blamed lower demand for cohort courses after the pandemic, and he was frank about his own part: his sales and marketing \"broadly sucked.\" In his newsletter he titled it as losing a million dollars.",
+          "The numbers here depend on who's counting. Ali says profit fell by about $1 million. A commentator, writing about his January 2023 earnings video, said profit was still just over $2 million, about $450,000 below 2021, with a team of well over 20 people and a studio he remembered costing about £11,000 a month. They may simply be measuring different things. The commentator said Ali looked deflated and admitted poor decisions.",
+          "His fix was to slow down and learn. He planned to hire an experienced business coach or CEO in London and to study Russell Brunson's book Dotcom Secrets. And he borrowed a question from Derek Sivers that's worth sticking on any founder's wall: \"Are you profitable? Isn't that enough?\"",
+          "Then, in December 2023, came another honest admission. His courses had made $3.5 million that year, but they sat on a platform he'd \"systematically ignored for 4 years\" because he thought it wasn't needle-moving. **His biggest earner had been his most ignored product.** (That tweet was a paid ad for the course platform, which is worth knowing.)"
+        ],
+        "chart": 2
+      },
+      {
+        "label": "Scaling it",
+        "title": "From creator to small company",
+        "paras": [
+          "In 2023 his book, Feel-Good Productivity, came out. It became a New York Times and Sunday Times bestseller, sold hundreds of thousands of copies, and has been translated into more than 35 languages. The idea is in the title: enjoyment drives output, not grinding.",
+          "By 2024 he was talking openly about running the business as a company, not a channel. On Nathan Barry's podcast in June 2024, they discussed scaling it to $10 million a year with a mini holding company structure. That same year he married Izzy and moved from London to Hong Kong.",
+          "There are a few more 2024 details, but they come from AI-written summaries of his videos, so treat them as rough. Those summaries say he documented building Productivity Lab into a business he called worth $1 million in 12 months, that a keyboard called Light Mode lost money in May 2024, and that by November 2024 he was simplifying to focus on his personal brand. They also describe his routine: a weekly review, quarterly goals he calls quests, and advice to make one video a week within four hours, with editing outsourced. A video titled My Biggest Failure So Far exists, which one summary site says is about a keyboard launch.",
+          "In about September 2025, Sam Parr summarised a podcast with him as running a $5m+ creator business, with $11,000 a month rent in Hong Kong. The same summary mentioned $70K a month from courses, sponsorships and apps, which doesn't add up to $5 million a year, so it's unclear which figure to trust. **He hasn't published a clear 2024 or 2025 number himself.**"
+        ]
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Apps, courses and the day-job crowd",
+        "paras": [
+          "Ali's site lists four current projects: the book, Productivity Lab, the YouTuber Academy, and Sparkle Studios, an app studio he co-founded. Sparkle's first app is VoicePal, which describes itself on the App Store as your AI ghostwriter. You talk, and it turns your voice notes into posts.",
+          "One newsletter in April 2026 described Sparkle as being in quasi-stealth mode, building productivity apps for his YouTube audience, and framed software as more scalable than coaching. That same piece said he had shut down a high-ticket coaching business, which the writer read as a sign his audience wanted results more than access to him. We don't know when it closed or what it made.",
+          "In March 2026 he put out an episode called How I'd Create Content in 2026 (If I Had To Start Over), drawing on nine years of making content. It sells a course on building a $100k a year lifestyle business without quitting your day job. Other recent episode titles include If You Have a Job, Start Selling Your Skills ASAP.",
+          "His team reportedly uses AI to grow the channel, but Ali hasn't said much about AI directly on the record. What he keeps coming back to are simple principles. Focus on inputs, not outcomes. Start part time and keep the job. Make money from what you enjoy. And **know when enough is enough**."
+        ],
+        "pull": {"text": "I will often try and find a way to make money from it.", "cite": "Ali, in The Hustlers, February 2023, on things he enjoys"}
+      }
+    ],
+    "failuresTitle": "A million in costs and a product he ignored",
+    "failuresIntro": "Ali has been unusually open about his money mistakes, which makes them easy to learn from.",
+    "failures": [
+      {"year": "2013 onward", "name": "6med", "what": "His first company, a cheaper medical admissions course he co-founded at 19. It sold out courses, but he describes it as having mixed success, and its revenue figures are inconsistent.", "lesson": "A first company can be worth it for what it leads to, not what it earns."},
+      {"year": "2022", "name": "The cost blowout", "what": "A London studio, a bigger team, more equipment and coaching added about $1 million in costs while revenue stayed flat. He says profit fell about $1 million; a commentator says about $450,000.", "lesson": "Add fixed costs only after the revenue to pay for them shows up."},
+      {"year": "2019 to 2023", "name": "Ignoring his best product", "what": "His courses made $3.5 million in 2023, on a platform he says he ignored for four years because he thought it didn't move the needle.", "lesson": "Check where the money really comes from, then spend your time there."},
+      {"year": "Unknown", "name": "The coaching business", "what": "He closed a high-ticket coaching business. One writer reads this as his audience wanting results more than personal access.", "lesson": "Selling your time doesn't scale, even with a huge audience."},
+      {"year": "2024", "name": "A keyboard launch", "what": "AI summaries of his videos say a keyboard called Light Mode lost money in May 2024, and he has a video titled My Biggest Failure So Far. The details aren't confirmed.", "lesson": "Physical products carry risks that digital ones don't."}
+    ],
+    "playbookTitle": "How a part-time channel became a course business",
+    "playbook": [
+      {"title": "Start with a niche you already serve", "text": "His first videos were about medical school and the BMAT, made to market his tutoring company. The audience was small but exactly right."},
+      {"title": "Set an input goal", "text": "One to three videos a week, whatever happened to views. It took 52 videos to reach 1,000 subscribers, and he kept going anyway."},
+      {"title": "Make one video for a wider crowd", "text": "His desk setup video reached people who'd never apply to medical school and took him to 5,000 subscribers by March 2018."},
+      {"title": "Recommend the gadget you actually use", "text": "An affiliate link to a paper-like iPad screen protector made most of his roughly $37,000 in affiliate income in 2019, about his NHS salary."},
+      {"title": "Teach what you just did", "text": "The Part-Time YouTuber Academy taught people with jobs to build a channel, which was his own story. By 2023 courses made $3.5 million of his $5.5 million."},
+      {"title": "Grow the list with free tools", "text": "A free Google Sheet time template linked in a video description, and a giveaway at 4 million YouTube subscribers that added about 80,000 emails."},
+      {"title": "Value first, pitch in the PS", "text": "A weekly Sunday newsletter for everyone, with any pitch tucked at the bottom. Sales emails go only to the waitlist."},
+      {"title": "Run a time-boxed sale", "text": "One Black Friday and Cyber Monday email sequence sold $528,000 of the course in four days."}
+    ],
+    "charts": [
+      {
+        "title": "Revenue by year",
+        "points": [
+          {"label": "2019", "value": 37000, "display": "about $37K (affiliates)"},
+          {"label": "2020", "value": 1300000, "display": "$1.3M+"},
+          {"label": "2022", "value": 4000000, "display": "$4M+"},
+          {"label": "2023", "value": 5500000, "display": "$5.5M+"}
+        ],
+        "note": "2019 counts affiliate income only; another source says $130K in total. 2020 and 2023 are Ali's figures, 2022 is from a newsletter profile."
+      },
+      {
+        "title": "YouTube subscribers, the slow start",
+        "points": [
+          {"label": "About 6 months in", "value": 1000, "display": "1,000"},
+          {"label": "March 2018", "value": 5000, "display": "5,000"},
+          {"label": "About 1 year in", "value": 50000, "display": "50,000"},
+          {"label": "2018", "value": 100000, "display": "100,000"},
+          {"label": "October 2020", "value": 1000000, "display": "1 million"}
+        ],
+        "note": "His own milestones. Dates for the early ones are approximate."
+      },
+      {
+        "title": "Where the 2023 money came from",
+        "points": [
+          {"label": "Courses", "value": 3500000, "display": "$3.5M"},
+          {"label": "Everything else", "value": 2000000, "display": "about $2M"}
+        ],
+        "note": "From Ali's December 2023 post: over $5.5M total, $3.5M from courses. The second bar is the difference."
+      }
+    ],
+    "timeline": [
+      {"when": "1994", "text": "Born in Karachi. Grows up in Lesotho and moves to the UK in 2003.", "big": false},
+      {"when": "2012", "text": "Starts medicine at Emmanuel College, Cambridge.", "big": false},
+      {"when": "About 2013", "text": "Co-founds 6med, a cheaper medical admissions course, at 19.", "big": false},
+      {"when": "Summer 2017", "text": "Starts YouTube to market 6med, with a goal of one to three videos a week.", "big": true},
+      {"when": "2018", "text": "Starts work as an NHS junior doctor. Passes 100,000 subscribers. First ad and affiliate income.", "big": false},
+      {"when": "2019", "text": "About $37,000 from affiliates, mostly one iPad screen protector. Launches on Skillshare and hires an editor.", "big": false},
+      {"when": "October 2020", "text": "Passes 1 million subscribers after taking a break from medicine in August.", "big": false},
+      {"when": "End of 2020", "text": "Launches the Part-Time YouTuber Academy. The business passes $1 million in revenue that year.", "big": true},
+      {"when": "2021", "text": "Leaves medicine officially. Three cohorts a year and a podcast.", "big": false},
+      {"when": "2022", "text": "About $1 million of new costs with flat revenue. Profit falls.", "big": true},
+      {"when": "2023", "text": "Over $5.5 million in revenue, $3.5 million from courses. Feel-Good Productivity becomes a bestseller.", "big": true},
+      {"when": "2024", "text": "Marries Izzy and moves to Hong Kong. Talks about scaling to $10 million with a mini holding company.", "big": false},
+      {"when": "2026", "text": "Runs Sparkle Studios with its VoicePal app, and sells a course on building a lifestyle business without quitting your job.", "big": false}
+    ],
+    "quotes": [
+      {"text": "Whether I make one, two, or three videos weekly is completely within my control.", "cite": "The Hustlers, February 2023"},
+      {"text": "The course makes significantly more money than anything.", "cite": "Digiday, May 2021"},
+      {"text": "I would rather have a 500,000 email list than 5 million YouTube subscribers.", "cite": "Kit's case study"},
+      {"text": "Are you profitable? Isn't that enough?", "cite": "Ali quoting Derek Sivers, in his newsletter after 2022"},
+      {"text": "broadly sucked", "cite": "Ali's newsletter, on his 2022 sales and marketing"},
+      {"text": "mixed success", "cite": "Ali's newsletter, on 6med"},
+      {"text": "I will often try and find a way to make money from it.", "cite": "The Hustlers, February 2023"}
+    ],
+    "steal": [
+      "Keep the day job while the side project grows. Ali's doctor's salary meant he never had to force the channel to pay before it was ready.",
+      "Set a weekly output goal we control, like two posts, and judge ourselves only on that for the first six months.",
+      "Sell what we just did. His best product taught people with jobs to build a channel, which was his own life two years earlier.",
+      "Build an email list from day one with one free, genuinely useful template. Ali says the list matters more than the followers.",
+      "Once a quarter, rank every product by profit and check where our time goes. Ali ignored his biggest earner for four years.",
+      "Before adding a studio, a hire or a big monthly cost, ask Sivers' question: are we profitable, and isn't that enough?"
+    ],
+    "sources": [
+      {"title": "Ali Abdaal, About", "url": "https://aliabdaal.com/about"},
+      {"title": "Ali Abdaal newsletter, I lost 1 million dollars", "url": "https://aliabdaal.com/newsletter/i-lost-1-million-dollars/"},
+      {"title": "Ali Abdaal on X, 2023 revenue (December 2023)", "url": "https://x.com/AliAbdaal/status/1737432508516401169"},
+      {"title": "The Hustlers, Ali Abdaal special edition (February 2023)", "url": "https://thehustlers.substack.com/p/special-edition-turning-a-side-hustle"},
+      {"title": "Digiday, influencers creating million-dollar incomes from courses (May 2021)", "url": "https://digiday.com/marketing/influencers-are-creating-million-dollar-incomes-selling-their-expertise-via-online-courses"},
+      {"title": "Kit, Ali Abdaal case study", "url": "https://kit.com/resources/blog/ali-abdaal-case-study"},
+      {"title": "Mark Ellis, Ali Abdaal's $2million disaster (January 2023)", "url": "https://markellis.substack.com/p/ali-abdaals-2million-disaster"},
+      {"title": "Starter Story, Ali Abdaal breakdown", "url": "https://www.starterstory.com/ali-abdaal-breakdown"},
+      {"title": "Nathan Barry Show E35, scaling Ali Abdaal's business (June 2024)", "url": "https://thenathanbarryshow.transistor.fm/episodes/were-scaling-ali-abdaal-s-business-to-10-million-here-s-how-035"},
+      {"title": "Dauntless, YouTubers are founding tech companies (April 2026)", "url": "https://dauntless.beehiiv.com/p/youtubers-are-founding-tech-companies"},
+      {"title": "Rosetta, AI summaries of Ali's 2024 videos (weak)", "url": "https://rosetta.to/u/aliabdaal/2024"},
+      {"title": "Sam Parr on X, podcast summary (about September 2025)", "url": "https://x.com/thesamparr/status/1963271812021616805"},
+      {"title": "Podwise, How I'd Create Content in 2026 (March 2026)", "url": "https://podwise.ai/episodes/7636718"},
+      {"title": "App Store, VoicePal", "url": "https://apps.apple.com/app/id6471552007"}
+    ]
+  }
+}

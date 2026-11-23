@@ -1,0 +1,261 @@
+{
+  "n": 20,
+  "name": "Paul Jarvis",
+  "short": "Paul",
+  "wisdom": "Test the idea with one tweet or one essay before building anything.",
+  "email": {
+    "subject": "He wrote Company of One, then built a company of two.",
+    "hook": "Paul Jarvis wrote the most famous book about staying small, then co-founded a software company with a partner and a team, and retired from it on his own terms at the end of 2024.",
+    "lead": [
+      "We should be clear about the irony up front. Fathom Analytics, the business Paul is best known for, was never a one-man show. His first developer partner was Danny van Kooten, and when Danny left, Jack Ellis became his co-founder. They had a small team, and in 2024 Jack bought Paul out.",
+      "So why is he in our series? Because Paul is the best example we've got of testing ideas cheaply before spending months on them. A tweet and three hours of work started Fathom. One email essay to his list, and the replies it got, started his book."
+    ],
+    "stats": [
+      {"value": "3 hours", "label": "to build Fathom's first landing page"},
+      {"value": "1,200", "label": "replies to one newsletter essay"},
+      {"value": "$14", "label": "a month, the entry price kept from launch to 2020"}
+    ],
+    "chart": {
+      "title": "How long Fathom's first test took, April 2018",
+      "points": [
+        {"label": "Domain, landing page and signup form", "value": 3, "display": "about 3 hours"},
+        {"label": "Dashboard mockups", "value": 2.5, "display": "about 2.5 hours"}
+      ],
+      "note": "By Fathom's own account. Signups took off right after his tweet."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Not much, by choice. Paul and Jack agreed on the buyout on 25 October 2024, and Jack became the sole owner of Fathom on 1 December 2024. The price wasn't disclosed. Jack wrote that **\"it became clear that Paul was ready to retire.\"** Paul stayed on as a part-time freelance designer.",
+          "He has gone fully offline. Fathom's page about him says he no longer exists on social media and has no online presence, and politely asks people not to email their support team trying to reach him. For a man who once built an audience of 30,000 newsletter readers, that's a striking way to finish."
+        ]
+      },
+      {
+        "title": "How the money came in",
+        "stats": true,
+        "paras": [
+          "Before Fathom, Paul ran a shelf of small products: courses called Creative Class and Chimp Essentials, ofCourseBooks software for course creators, several podcasts and a newsletter called Sunday Dispatches. Fathom then sold privacy-first, cookie-free website analytics by subscription, from $14 a month.",
+          "Fathom never published revenue. After its second version in November 2019, it said monthly revenue had **tripled**, without giving the actual numbers. Every plan covered up to 50 sites, and only pageview volume changed the price. Affiliates earned 25% of a customer's payments for life. The founders turned down acquisition offers before Jack's buyout."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "chart": true,
+        "paras": [
+          "On 16 April 2018 Paul tweeted a question: \"What if website analytics software didn't take your users data\" to profit from advertising? He said he'd build it if people cared. Signups instantly took off. He spent about three hours registering a domain and making a plain HTML and CSS landing page with a Mailchimp signup form, and about two and a half more mocking up the dashboard.",
+          "Paul did the design and marketing. Danny van Kooten, who'd made a popular WordPress plugin for Mailchimp, wrote the code in Go. They released it **as free, open-source software first**, on 12 June 2018, just to see who'd care. It trended on GitHub, collected more than 6,000 stars and was Product Hunt's fifth product of the week. Then came the paid, hosted version for people who didn't want to run servers."
+        ]
+      },
+      {
+        "title": "How they got the customers",
+        "paras": [
+          "No ad budget in the early years. They had their own podcast, Above Board, with no sponsors. A blog where Jack wrote the technical posts and Paul the broader ones. Daily, community-first tweeting. A public changelog. By July 2020 they said word of mouth was the main thing driving growth.",
+          "Some of the best moves came from Jack. His course on serverless Laravel made $46,000 in its first week in March 2020. A free tool called Phantom Analyzer, which scanned websites for hidden trackers, **did far better than they expected** in October 2020. An article in November 2020 was read by more than 50,000 people and doubled trial signups for a week."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "Fathom nearly died before it got going. In December 2018 Danny privately stepped down, and it was announced in March 2019. Paul wrote: \"I honestly wasn't sure if I would continue the project.\" There were days he was sure he'd shut it down for paying customers.",
+          "What saved it was Jack Ellis, Paul's partner on another product, a publishing platform called Pico. Jack offered to become technical co-founder and rebuilt the whole thing. So the author of Company of One only kept going because **he stopped being one**. In his own book's terms, that's fine: the question he always asked was \"Who are you running your business for?\""
+        ]
+      }
+    ],
+    "tryToday": "Write one tweet or one email describing a tool we wish existed, ask people to reply if they'd use it, and count the replies by Friday before writing any code.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Paul Jarvis spent more than 25 years working for himself as a designer and writer, wrote Company of One, and co-founded Fathom Analytics with a tweet and three hours of work. He never chased growth for its own sake, and at the end of 2024 he sold his share to his co-founder and quietly retired.",
+    "stats": [
+      {"value": "3", "num": 3, "prefix": "", "suffix": " hours", "label": "to build Fathom's first landing page", "note": "April 2018, by Fathom's own account"},
+      {"value": "6,000+", "num": 6000, "prefix": "", "suffix": "+", "label": "GitHub stars for the open-source version", "note": "plus over 1 million Docker pulls"},
+      {"value": "1,200", "num": 1200, "prefix": "", "suffix": "", "label": "replies to the essay that became his book", "note": "from Forbes, January 2019"},
+      {"value": "30,000+", "num": 30000, "prefix": "", "suffix": "+", "label": "newsletter subscribers", "note": "January 2019"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Twenty-five years of working for himself",
+        "paras": [
+          "Paul has worked for himself since the 1990s, first as a web designer and then as a writer too. Over more than 25 years his clients included Microsoft, Yahoo, Mercedes-Benz, Warner Music and Shaquille O'Neal. That's a serious client list for a freelancer.",
+          "He lives on Vancouver Island, in Canada, with his wife. You might have read a popular story that he was a burned-out agency designer who fled the city for Tofino. That story gets repeated a lot, but it isn't confirmed anywhere reliable, so we're leaving it out. His upbringing and early money situation aren't public.",
+          "What we do know is the shape of his career: **two decades of freelancing, then products**. He didn't jump from a job into a startup. He slowly built a set of small things that paid him while he kept doing client work."
+        ]
+      },
+      {
+        "label": "The small products",
+        "title": "A shelf of courses, podcasts and a newsletter",
+        "paras": [
+          "By January 2019, when Forbes interviewed him, Paul was running a whole little portfolio. There was Creative Class, a course on the business basics of freelancing: pitching, pricing and finances. There was Chimp Essentials, a course on using Mailchimp. There was ofCourseBooks, software that let course creators make branded workbooks.",
+          "He hosted podcasts too: one called The Freelancer, one called Invisible Office Hours, and later the Company of One podcast. And with Jack Ellis he worked on Pico, a publishing platform. That partnership would matter a lot later.",
+          "At the centre of it all was his newsletter, Sunday Dispatches, with **more than 30,000 subscribers** in January 2019. He had a simple view of why newsletters work so well for one person: writing to one reader takes exactly as long as writing to your whole list.",
+          "What happened to Pico, ofCourseBooks and Creative Class later isn't public, so we can't tell you whether they were closed, sold or just left to run."
+        ]
+      },
+      {
+        "label": "The turning point",
+        "title": "An essay that got 1,200 replies",
+        "paras": [
+          "One day Paul sent his list an essay about why he didn't care about growth. In a world where every founder was trying to get bigger, he argued that bigger wasn't automatically better.",
+          "About 1,200 people replied. Not opened, not clicked: replied. **That's how he knew he had a book.** The essay became Company of One, published in 2019, and it has since come out in more than 20 languages, with coverage in Bloomberg, the Financial Times, Inc., Forbes, CNBC and Fast Company.",
+          "The book's ideas are simple and still useful. Every business is a lifestyle business, because it shapes your life either way. A company of one should support the owner's life, not the reverse. He isn't against growth, but growth needs a reason, and enough is never meant to be stagnant. The four themes he kept returning to were autonomy, resilience, simplicity and speed.",
+          "In a September 2019 interview he put the core of it in one line: \"Resources are finite, so focusing on rapid growth without end seems unwise.\""
+        ],
+        "pull": {"text": "Who are you running your business for?", "cite": "Paul, to Forbes, January 2019"},
+        "chart": 1
+      },
+      {
+        "label": "The first version",
+        "title": "A tweet and three hours",
+        "paras": [
+          "Around the same time, Paul had another idea. On 16 April 2018 he tweeted: \"What if website analytics software didn't take your users data\" to line their pockets from advertising? Google Analytics was free precisely because your visitors' data was the product. He said he'd build an alternative if the idea got traction.",
+          "It did, instantly. Fathom's own account says signups took off straight away.",
+          "Here's what he built to test it, and it's almost nothing. He registered a domain. He made a static landing page in plain HTML and CSS, with a Mailchimp form to collect emails. That took about three hours. Then he spent about two and a half more hours mocking up what the dashboard would look like. **Five and a half hours, and he knew people wanted it.**",
+          "The work was split cleanly. Paul handled design and marketing. Danny van Kooten, the developer who made MC4WP, a popular plugin that connects WordPress to Mailchimp, built it in the Go programming language."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "The first users",
+        "title": "Give it away first",
+        "paras": [
+          "On 12 June 2018 they released Fathom as free, open-source software, so developers could run it on their own servers. They did it to gauge interest before asking anyone to pay.",
+          "It worked better than they could have hoped. It trended on GitHub and passed **6,000 stars**. It was Product Hunt's number five product of the week. Its Docker image, the package developers download to run it, was pulled more than a million times.",
+          "Then came the paid version, Fathom PRO, hosted for people who didn't want to run their own server. It reached number four on Product Hunt. Pricing started at $14 a month.",
+          "This is a very different launch from most in this series. Instead of tweeting a product and hoping, they gave the core thing away to developers, who are loud and share things. Those developers spread the name, and the people who didn't want to manage servers paid for the hosted version."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "The partner leaves",
+        "paras": [
+          "In December 2018, just months in, Danny privately stepped down. It was announced publicly in March 2019. Paul was left with a product, paying customers and nobody to write the code.",
+          "He was honest about how close it came: \"I honestly wasn't sure if I would continue the project.\" He wrote that there were definitely a few days when he thought he'd shut Fathom down for paying customers. Then he added that he was glad he didn't.",
+          "What changed his mind was Jack Ellis, his partner on Pico. Jack offered to become Fathom's technical co-founder. That, along with the energy Paul was getting from working on Pico, brought his motivation back.",
+          "Jack rebuilt Fathom PRO from scratch in Laravel, a PHP framework. He moved it from dedicated servers to Heroku, split it into three parts (an API, a data collector and billing) and added a Redis queue so it could handle traffic spikes. Paul and Jack incorporated as **Conva Ventures, in Canada**. The rebuild took about six months."
+        ],
+        "pull": {"text": "I honestly wasn't sure if I would continue the project.", "cite": "Paul, on the Fathom blog, November 2019"}
+      },
+      {
+        "label": "Scaling it",
+        "title": "Version two, and monthly revenue tripled",
+        "paras": [
+          "From summer 2019 they planned a second version, built from what customers and people on Twitter had been asking for. Paul redesigned the website and the dashboard several times over.",
+          "They joined the first wave of Laravel Vapor, a new way of running Laravel apps serverlessly on AWS, and moved more than 60 million pageviews of customer data across. Alpha testing with a few customers turned up almost no bugs.",
+          "In November 2019 they published a post called From almost shutting down to tripling our MRR. Monthly recurring revenue had **tripled** after the launch. They didn't say from what to what, and Fathom has never published revenue, so that's as precise as anyone can be.",
+          "Nearly everything on this page comes from Fathom's own blog posts and from interviews Paul gave, so these are the company's own numbers."
+        ]
+      },
+      {
+        "label": "Finding customers",
+        "title": "How a quiet company kept growing",
+        "paras": [
+          "In July 2020 Fathom wrote up its SaaS lessons, and the approach was refreshingly calm. The base price hadn't changed since launch. Every plan included up to 50 sites and unlimited email reports, and only the number of pageviews changed what you paid. Affiliates earned 25% commission for the whole life of a customer.",
+          "The channels were all owned and slow-burning. Their podcast, Above Board, had no sponsors. On the blog, Jack wrote technical posts and Paul wrote broader ones. They tweeted daily, community first. They kept a public changelog. And by then, word of mouth was the main driver.",
+          "Jack's review of 2020 shows where the bigger jumps came from, and **most of them were Jack's work**. His course on serverless Laravel made $46,000 in its first week in March 2020 and about $120,000 overall. In June 2020 they added free uptime monitoring (later removed in November 2023). In August a viral customer sent millions of visitors to the site. In October they released Phantom Analyzer, a free tool that scanned sites for hidden trackers, which did much better than they expected. In November an article read by more than 50,000 people doubled trial signups for a week.",
+          "Paul's part in 2021 was design and listening. He designed the API documentation, built the new website, and interviewed customers to shape a feature for agencies managing many clients. Version 3 that year brought lots of new customers, and in November 2021 they launched EU Isolation, running on Hetzner servers in Europe, for customers worried about privacy law.",
+          "Jack also wrote something kind about Paul in that 2020 review: that unlike most people, Paul had never struggled with focus."
+        ],
+        "chart": 2
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Leaving on his own terms",
+        "paras": [
+          "Fathom had turned down acquisition offers before. In the end, the buyer was the person sitting next to Paul. On 25 October 2024 Paul and Jack agreed that Jack would buy him out, and on 1 December 2024 Jack became the sole owner. The price was not disclosed.",
+          "Jack's post put it simply: \"It became clear that Paul was ready to retire.\" Paul stayed on part time as a freelancer for design. Jack's plans for the next stage included more enterprise sales, paid ads and sponsorships, keeping the same team. Fathom says it handles billions of pageviews for thousands of customers.",
+          "There's an episode of their podcast called Paul Has Retired. And Fathom's page about him now says he no longer exists on social media and has no online presence, and asks people not to contact support to reach him.",
+          "You may see a January 2026 blog post calling him a man who built a million-dollar business with zero employees. That claim has no source, and it doesn't fit the facts: Fathom had a co-founder and a team. **The real story is better anyway.**",
+          "He has said nothing public about AI, which fits a man who has logged off. His ideas from 2019 are what he left behind. \"Sometimes all we need is what we've already got,\" he said. And on why growth isn't a law of nature: \"Capitalism isn't an immutable law, but simply something we collectively believe in.\""
+        ],
+        "pull": {"text": "Resources are finite, so focusing on rapid growth without end seems unwise.", "cite": "Paul, to Dan Pontefract, September 2019"}
+      }
+    ],
+    "failuresTitle": "Only one failure on the record",
+    "failuresIntro": "Paul's public history has one near-death moment. What happened to his older products isn't public, so we're not counting them as failures.",
+    "failures": [
+      {"year": "December 2018 to March 2019", "name": "Fathom nearly shuts down", "what": "His developer partner stepped down a few months after launch, leaving Paul with paying customers and no one to build the product. He came close to shutting it down until Jack Ellis offered to become co-founder and rebuilt it.", "lesson": "If you can't code, your product is only as safe as your relationship with whoever does, so pick partners carefully and early."}
+    ],
+    "playbookTitle": "How he tested ideas before betting on them",
+    "playbook": [
+      {"title": "Ask the question in public", "text": "His 16 April 2018 tweet asked what if analytics didn't take your users' data, and said he'd build it if people cared. The replies and signups were the validation."},
+      {"title": "Build a three-hour landing page", "text": "A domain, a plain HTML and CSS page and a Mailchimp form, done in about three hours. Then about two and a half hours of dashboard mockups so people could picture it."},
+      {"title": "Test the thesis with one essay", "text": "Before writing Company of One, he sent the core idea to his 30,000-person list. About 1,200 people replied, and that told him the book was worth writing."},
+      {"title": "Launch as open source first", "text": "Fathom's free version came out on 12 June 2018, trended on GitHub with 6,000+ stars and was Product Hunt's fifth product of the week. The hosted paid version then reached number four."},
+      {"title": "Keep pricing boringly simple", "text": "From $14 a month, unchanged from launch to at least July 2020, with up to 50 sites on every plan and only pageviews changing the price."},
+      {"title": "Pay affiliates for life", "text": "Anyone who referred a customer earned 25% of what that customer paid, for as long as they stayed."},
+      {"title": "Give away a useful free tool", "text": "Phantom Analyzer, a free tracker scanner released in October 2020, did much better than they expected at bringing people to Fathom."},
+      {"title": "Teach your audience something", "text": "Jack's serverless Laravel course made $46,000 in its first week and about $120,000 overall, and put Fathom in front of developers."},
+      {"title": "Own your channels", "text": "A podcast with no sponsors, a blog, daily tweets and a public changelog. By 2020 word of mouth was their main driver."}
+    ],
+    "charts": [
+      {
+        "title": "Time spent on the first Fathom test, April 2018",
+        "points": [
+          {"label": "Landing page and signup form", "value": 3, "display": "about 3 hours"},
+          {"label": "Dashboard mockups", "value": 2.5, "display": "about 2.5 hours"}
+        ],
+        "note": "From Fathom's own blog, November 2019."
+      },
+      {
+        "title": "The essay test, January 2019",
+        "points": [
+          {"label": "Newsletter subscribers", "value": 30000, "display": "30,000+"},
+          {"label": "People who replied to one essay", "value": 1200, "display": "about 1,200"}
+        ],
+        "note": "From Forbes. About 4% of his list wrote back, which is a lot for a newsletter."
+      },
+      {
+        "title": "Jack's serverless Laravel course, 2020",
+        "points": [
+          {"label": "First week", "value": 46000, "display": "$46K"},
+          {"label": "Overall", "value": 120000, "display": "about $120K"}
+        ],
+        "note": "From Jack Ellis's 2020 review on the Fathom blog."
+      }
+    ],
+    "timeline": [
+      {"when": "1990s", "text": "Starts working for himself as a web designer, later adding writing.", "big": false},
+      {"when": "16 April 2018", "text": "Tweets the idea for analytics that don't sell your users' data, and builds a landing page in about three hours.", "big": true},
+      {"when": "12 June 2018", "text": "Fathom launches as open-source software, later passing 6,000 GitHub stars.", "big": true},
+      {"when": "December 2018", "text": "Developer partner Danny van Kooten privately steps down. Paul nearly shuts Fathom down.", "big": false},
+      {"when": "January 2019", "text": "Sunday Dispatches has more than 30,000 subscribers. Company of One comes out in 2019, after an essay drew about 1,200 replies.", "big": true},
+      {"when": "March 2019", "text": "Danny's exit is made public. Jack Ellis becomes co-founder and rebuilds Fathom in Laravel.", "big": true},
+      {"when": "November 2019", "text": "Version 2 launches on Laravel Vapor. Monthly revenue triples.", "big": false},
+      {"when": "2020", "text": "Jack's course, a free tracker scanner and a viral article bring big waves of new users.", "big": false},
+      {"when": "November 2021", "text": "EU Isolation launches, hosted on Hetzner in Europe.", "big": false},
+      {"when": "25 October 2024", "text": "Paul and Jack agree that Jack will buy Paul out.", "big": false},
+      {"when": "1 December 2024", "text": "Jack becomes sole owner. Paul retires, stays on as a part-time designer and leaves social media.", "big": true}
+    ],
+    "quotes": [
+      {"text": "Who are you running your business for?", "cite": "Forbes, January 2019"},
+      {"text": "Resources are finite, so focusing on rapid growth without end seems unwise.", "cite": "Interview with Dan Pontefract, September 2019"},
+      {"text": "sometimes all we need is what we've already got.", "cite": "Interview with Dan Pontefract, September 2019"},
+      {"text": "Capitalism isn't an immutable law, but simply something we collectively believe in.", "cite": "Interview with Dan Pontefract, September 2019"},
+      {"text": "I honestly wasn't sure if I would continue the project.", "cite": "Fathom blog, November 2019"},
+      {"text": "What if website analytics software didn't take your users data", "cite": "Paul's tweet, 16 April 2018"},
+      {"text": "It became clear that Paul was ready to retire.", "cite": "Jack Ellis, Fathom blog, December 2024"}
+    ],
+    "steal": [
+      "Before building anything, post the idea as a question and say we'll build it if people want it. Count signups, not likes.",
+      "Give ourselves a three-hour limit for the first landing page. If it takes longer, we're building a product instead of testing an idea.",
+      "Test a big idea, like a course or a book, by sending the core argument as one email and counting the replies.",
+      "If we can't code, choose a technical partner as carefully as a business partner, and talk early about what happens if one of us leaves.",
+      "Think about giving a free version or a free tool to a loud audience, like developers or marketers, and charge for the version that saves them work.",
+      "Decide what enough looks like before we start. Paul knew, and he got to retire on his own terms."
+    ],
+    "sources": [
+      {"title": "Fathom blog, from almost shutting down to tripling our MRR (November 2019)", "url": "https://usefathom.com/news/v2"},
+      {"title": "Fathom blog, SaaS lessons (July 2020)", "url": "https://usefathom.com/blog/saas-lessons"},
+      {"title": "Fathom blog, 2020 review", "url": "https://usefathom.com/blog/2020review"},
+      {"title": "Fathom blog, 2021 review", "url": "https://usefathom.com/blog/2021review"},
+      {"title": "Fathom blog, Fathom Analytics has been acquired (December 2024)", "url": "https://usefathom.com/blog/acquired"},
+      {"title": "Fathom, Paul Jarvis author page", "url": "https://usefathom.com/pjrvs"},
+      {"title": "Forbes, Want to keep your business small? Paul Jarvis is your man (January 2019)", "url": "https://www.forbes.com/sites/elainepofeldt/2019/01/17/want-to-keep-your-business-small-paul-jarvis-is-your-man/"},
+      {"title": "Dan Pontefract, interview with Paul Jarvis (September 2019)", "url": "https://www.danpontefract.com/my-interview-with-paul-jarvis-author-of-company-of-one/"},
+      {"title": "Above Board podcast, Paul has retired", "url": "https://metacast.app/podcast/above-board/Eqo4ZfBx/paul-has-retired/DYfEE3lh"},
+      {"title": "Beancount blog on Paul Jarvis (January 2026, unsourced claim)", "url": "https://beancount.io/blog/2026/01/24/paul-jarvis-company-of-one-staying-small-business-success"}
+    ]
+  }
+}

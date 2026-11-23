@@ -1,0 +1,267 @@
+{
+  "n": 8,
+  "name": "Damon Chen",
+  "short": "Damon",
+  "wisdom": "Pick a product your customers show off, and put your logo on it.",
+  "email": {
+    "subject": "He made $0 from four products. Then he made a deal with his wife.",
+    "hook": "In 2020 Damon Chen built five side products and most of them earned exactly $0. The fifth one, built in about a week from leftover code, passed $1M in yearly revenue four years later.",
+    "lead": [
+      "Damon is the one for anyone with a family, a salary and a mortgage. He was an infrastructure engineer at Cisco in the Bay Area with a one-year-old at home. He calls himself an engineer who doesn't know much about marketing or sales, which is the opposite of us, and that's exactly why his growth tricks are worth stealing. They're simple enough that he figured them out while answering support tickets at the playground.",
+      "Let's be plain about the solo label. He took a small investment from Calm Fund when Testimonial was at about $2K a month, made his first hire (in marketing) at $400K a year, and by October 2024 LinkedIn showed about seven people. He started alone. He isn't alone now."
+    ],
+    "stats": [
+      {"value": "1 week", "label": "to build the first version"},
+      {"value": "$100K", "label": "a year in revenue within 9 months"},
+      {"value": "$1.3M+", "label": "a year across two products, Nov 2023"}
+    ],
+    "chart": {
+      "title": "Testimonial's yearly revenue run rate, by Damon's and interview numbers",
+      "points": [
+        {"label": "Sep 2021", "value": 100000, "display": "$100K"},
+        {"label": "Nov 2022", "value": 400000, "display": "$400K"},
+        {"label": "Nov 2023", "value": 800000, "display": "$800K+"},
+        {"label": "Oct 2024", "value": 1000000, "display": "About $1M"}
+      ],
+      "note": "The October 2024 figure is from an Indie Hackers article, not Damon himself."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Damon runs Testimonial.to, a tool for collecting video and text testimonials and showing them on your site, and PDF.ai, a chat with your PDF tool he bought and relaunched in 2023. A profile site lists two newer products as well, PDFgen for generating documents and StreetInterview.ai for AI street interview videos.",
+          "That same site says he set up an AI support flow where a customer's bug report in Intercom triggers Cursor to look at the code and open a fix on GitHub. It's thinly sourced, so take it as a rumour, not a fact. He hasn't shared fresh revenue for 2025 or 2026."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "Testimonial is a subscription with a free start: you get two free video testimonials and pay from the third. About seven in ten paying customers were on the Premium plan and three in ten on Ultimate. Affiliates earn 30% of every monthly payment, and they bring in 10 to 15% of revenue.",
+          "In November 2023 he told an interviewer Testimonial was at $800K+ a year and PDF.ai at $500K+, so **more than $1.3M a year combined**. PDF.ai has a free plan, $15 a month paid and $50 a month for enterprise. A data site guesses Testimonial at $2.4M, but that's an estimate, not something he said."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "He learned web development from a $9.99 Udemy course at the end of 2019, after a year of lurking on Indie Hackers without building anything. In 2020 he took six months of unpaid leave and shipped five products, mostly for $0.",
+          "Testimonial reused about 80% of the code from one of those failures, a vlog community for makers called Indielog. He added a landing page and Stripe, and says “The MVP of it was made within a week.” The stack was React, Firebase and Tailwind UI templates. Running costs were about 15 to 20% of revenue."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "He launched on Product Hunt in December 2020 with fewer than 1,000 Twitter followers and a $199 lifetime deal. His first paying customer came from Twitter. Product Hunt and a MarTech Facebook group brought the rest: 30 lifetime deals, $6,000 in two weeks.",
+          "The engine after that was built into the product. Customers put a wall of love on their own websites with a small Testimonial logo on it. Visitors click the logo and sign up, and customers pay to remove it. **Every happy customer becomes a billboard.** On top of that came building in public on Twitter, SEO blog posts, and a $35,000 typo domain he says has earned him $80K."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "The deal at home was real pressure. Quitting Cisco would cut the family income in half, so he promised his wife he'd go back to a tech job if he didn't reach $100K a year within a year. He fixed bugs during the kids' naps, built features after bedtime, and says “It was a mess in the beginning.”",
+          "And the lifetime deal, the thing that made his first $6,000, was easy to sell but didn't pay the bills. He dropped it for subscriptions within a month. Later he admitted there's a point where you hit saturation and need help, which is why he hired."
+        ]
+      }
+    ],
+    "tryToday": "Look at whatever you make for clients or your company: reports, pages, emails. Ask which piece they'd proudly show their own customers, and write down how a small “made with” link on it could bring you the next client.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Damon Chen was a Cisco engineer with a toddler and a mortgage who gave himself one year to make his side project pay. He built Testimonial.to in about a week from the code of a failed product, met his deadline in nine months, and later bought and grew PDF.ai. He started alone, then took a small investment and built a small team.",
+    "stats": [
+      {"value": "80%", "num": 80, "prefix": "", "suffix": "%", "label": "of Testimonial's first code reused from a failed project", "note": "Indielog"},
+      {"value": "$6,000", "num": 6000, "prefix": "$", "suffix": "", "label": "from 30 lifetime deals in two weeks", "note": "December 2020"},
+      {"value": "$100,000", "num": 100000, "prefix": "$", "suffix": "", "label": "a year in revenue by September 2021", "note": "his deadline was one year"},
+      {"value": "$1.3M+", "num": 1300000, "prefix": "$", "suffix": "+", "label": "a year across Testimonial and PDF.ai", "note": "November 2023"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "An engineer who didn't know marketing",
+        "paras": [
+          "Damon spent about eight years as an infrastructure software engineer at Cisco. He applied to the big tech companies and failed the interviews. When the pandemic hit in 2020, he was working from home in the Bay Area with his wife and a one-year-old, and the work-life balance had fallen apart.",
+          "He's refreshingly modest about himself. In one interview he put it like this: “I'm an engineer who doesn't know much about marketing or sales.” He had been earning a six-figure salary as a senior engineer, and the skills he needed for building websites were different from the ones he used at work.",
+          "So in late 2019 he did the cheapest possible thing. He bought a $9.99 Udemy course and started learning web development. He'd spent most of 2019 lurking on Indie Hackers, reading other people's stories, without building anything himself. Arvid Kahl, who interviewed him later, called him a family man who built his business alone in one of the most expensive places on earth to do it."
+        ],
+        "pull": {"text": "I'm an engineer who doesn't know much about marketing or sales.", "cite": "Damon Chen, Behind the Craft, November 2023"}
+      },
+      {
+        "label": "The deal",
+        "title": "Six months off, and a promise",
+        "paras": [
+          "In 2020 Damon took six months of unpaid leave from Cisco to work on side projects. That alone is a big call with a small child at home. Quitting for good was bigger: it would cut the household income by half.",
+          "His wife agreed to cover the mortgage and bills while he tried. In return he made her a promise. If he couldn't reach $100,000 a year in revenue within a year, he would go back to a tech job. No vague dream, just a number and a date.",
+          "His days were chaos. He fixed bugs and answered support in short breaks while the kids napped. He built features at night after they went to bed. He answered support tickets on his phone at the playground. In his words, “It was a mess in the beginning.”",
+          "He also worked in tiny pieces. He's said he tried to finish each small task in 30 minutes to an hour, and that he time-boxed each project: if things didn't work, just move to the next one. That rule is how he got through so many failures so quickly."
+        ],
+        "pull": {"text": "It was a mess in the beginning.", "cite": "Damon Chen, Behind the Craft, November 2023"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "Five products, mostly $0",
+        "paras": [
+          "In 2020 Damon built five products. Most of them made nothing at all. An Indie Hackers article later said his hope was fading as side project after side project made $0.",
+          "The first was a community he started for his own problem: building alone is lonely. It began as LonelyDev and became Indielog.com, a place where indie makers could vlog their progress. It didn't make money. He then built Backlogs.co, a feature and bug tracker, originally for Indielog. Then he tried to pivot Indielog into Influenswer.com, in his words, “to make money”. That didn't work either.",
+          "He dropped each one for the same three reasons: no users, no revenue, or no engagement. A profile site adds a smaller lesson from an earlier project that lost traffic because people misspelled its name. After that he preferred short domains that are hard to get wrong. Remember that, because it comes back in a big way.",
+          "Here's the thing about this pile of failures. It wasn't wasted. Indielog had video recording, user accounts and pages already built. **That code was about to become his business.**"
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "Built in a week, from leftovers",
+        "paras": [
+          "Testimonial.to is simple to explain. It helps businesses collect testimonials from happy customers, in text or video, and show them on their websites. Damon realised that a lot of what he'd built for Indielog, especially recording and hosting videos, was exactly what this needed.",
+          "About 80% of Testimonial's code came from Indielog. He added a landing page and Stripe payments. His own summary: “The MVP of it was made within a week.” The stack was React on the front, Firebase on the back, Tailwind UI and templates from cruip.com for the design, and an open-source video tool he didn't name.",
+          "Running costs were low. He's said infrastructure and third-party tools came to about 15 to 20% of revenue. There was no team, no designer, no office. Just a week of putting old pieces together in a new shape.",
+          "He launched it on Product Hunt at the end of his unpaid leave. A profile site gives the date as 22 December 2020."
+        ],
+        "pull": {"text": "The MVP of it was made within a week.", "cite": "Damon Chen, Indie Hackers AMA, 2021"}
+      },
+      {
+        "label": "The first customers",
+        "title": "A $199 deal, and a tweet that landed",
+        "paras": [
+          "He had fewer than 1,000 Twitter followers before launch. So he did what a lot of first-time founders do and sold a lifetime deal: pay $199 once, use it forever. He sold it directly, not through a marketplace like AppSumo, so he kept all the money.",
+          "His very first paying customer came from Twitter and bought the lifetime deal. Most of the other early buyers came from the Product Hunt launch and from a MarTech Facebook group, which is a lovely detail for us, because that's a group of marketers, the exact people who need testimonials. Others came from Indie Hackers and from his own Indielog community. In two weeks he sold 30 deals and made about $6,000.",
+          "Then he did something that's harder than it sounds. In January 2021, about a month after launch, he dropped the lifetime deal and went subscription only. One of his Indie Hackers posts from that time was titled, more or less, easy to sell lifetime deals, hard to get recurring revenue. He's also said: “Sell a product after building it is always painful.”",
+          "Building in public paid off in a surprising way. When he tweeted that he was close to $1,000 a month, Andrew Gazdecki, the founder of Acquire.com, saw it and signed up for the top plan. One tweet, one well-known customer, and a lot more credibility."
+        ]
+      },
+      {
+        "label": "Keeping the promise",
+        "title": "He quit at $1K and hit $100K in nine months",
+        "paras": [
+          "The numbers in this story are almost all Damon's own, from interviews and his own posts, and none are audited.",
+          "Here the sources disagree a little. A 2023 interview says he went back to Cisco and reached $2K a month about four months later. His own AMA from 2021, written at the time, says he quit Cisco in March 2021 when Testimonial hit $1,000 a month. We'll go with his own account. He put it simply in a newsletter: “When Testimonial hit $1k MRR, I quit my 6-figure job.”",
+          "When it was at about $2K a month, around May 2021, he took money from Calm Fund (then called Earnest Capital). It was under $100,000 for 6% of the company, and the share was expected to fall to 2% through a revenue share. He said he took it mostly for their help and advice. So Testimonial is often called bootstrapped, but that's not quite right.",
+          "By June 2021 he told an interviewer he'd just crossed $4K a month with a little over 100 customers, still a team of one. And then in September 2021, he hit $100,000 a year. That was nine months after launch, and inside the one year he'd promised his wife.",
+          "He also kept raising prices. In October 2021 he wrote, “Price was doubled twice in the past 6 months.” Twice, in half a year, while growing. That's the confidence of someone who's watched customers stick."
+        ],
+        "pull": {"text": "When Testimonial hit $1k MRR, I quit my 6-figure job.", "cite": "Damon Chen, Maker of Habit, November 2021"},
+        "chart": 0
+      },
+      {
+        "label": "The growth engine",
+        "title": "Every customer becomes a billboard",
+        "paras": [
+          "The cleverest thing about Testimonial is how it markets itself. Customers collect their testimonials and show them on their own websites, on a page Damon calls a wall of love. That wall carries a small Testimonial logo. Visitors see it, click, and sign up. And the customer can pay to upgrade and remove the logo. The product's output is public, so every customer is advertising it to their own audience.",
+          "He also made the free plan nudge people up. You get two video testimonials free, and from the third you need to pay. New users got product tours and onboarding emails through Mailchimp. Paying customers split roughly seven Premium to three Ultimate.",
+          "In 2021 he ranked his channels himself. First, Twitter, by building in public and shipping features in the open. Second, SEO through blog posts, which he was just starting. Third, an affiliate program that he promoted inside his onboarding emails. Affiliates earn 30% of every monthly payment, and referred customers get 15% off for the first year. Affiliates bring in about 10 to 15% of revenue, and an Indie Hackers article in 2024 put affiliate revenue at more than $100,000. His tip: existing customers, especially influential ones, made better affiliates than strangers.",
+          "Then there's the domain trick. Remember that lesson about misspellings? He paid $35,000 for the typo version of his own domain, to catch people who mistype it. Sources spell it as testimonial.io and testimonials.io. He says it has earned him about $80,000. Most of us would never spend that on a domain. He did the maths and it paid back more than twice."
+        ]
+      },
+      {
+        "label": "The second bet",
+        "title": "Buying PDF.ai instead of starting from zero",
+        "paras": [
+          "In 2021 Damon was running four products at once: Testimonial, Channel.so, Embed.so and Supportman.io. Testimonial was the one that grew. By November 2022 it was at about $400,000 a year, about $30K a month. He made his first hire, in marketing, at $400K a year. A data site lists Guillaume Bardet as CMO.",
+          "In 2023 he made his smartest move after Testimonial. Two stories exist about how PDF.ai started, and they might both be true. One interview says it grew out of Testimonial, because many of his e-commerce customers' buyers struggled with product manuals, which are usually PDFs. A profile site says he bought Looseleaf.ai, a weekend chat with your PDF project by a builder named Josh, in May 2023, and rebranded it.",
+          "Either way, he bought the domain PDF.ai. One source says $9,899, another says $10,000. A profile site says he made it back within six days of relaunching on Product Hunt, and that a three-month $99 lifetime deal sold to more than 300 buyers and paid for a full-time engineer. PDF.ai launched publicly on 6 June 2023.",
+          "The growth was fast. By September 2023, about four months in, an Indie Hackers post said it had more than 1,250 paying users and over 350,000 total users, $25,070 in monthly revenue and $17,600 in profit. It got about 1,047,000 visitors a month, about 350,000 from search, and more than half of that search traffic came from people typing things like “PDF AI”. That's the domain doing its job.",
+          "The marketing was different from Testimonial's, too. A viral post got PDF.ai covered by the Spanish newspaper La Vanguardia, with a backlink. He paid a full-time influencer to post every day on Instagram, where the account passed 20,000 followers and one reel got 115,000 likes. He partnered with the TikTok team of Jenni AI's founder. And affiliates earned 30% for 12 months. One affiliate even built a site, AskPDF.xyz, that sent more than 14,000 visits a month. **This is the only story in this group with real paid distribution.**"
+        ]
+      },
+      {
+        "label": "Where he stands now",
+        "title": "Past $1M, and a quieter feed",
+        "paras": [
+          "In November 2023 Damon told Peter Yang's Behind the Craft that Testimonial was at $800K+ a year and PDF.ai at $500K+, more than $1.3M combined. In October 2024 an Indie Hackers article said Testimonial had reached about $1M in yearly revenue after four years. Back in 2021 he'd set a goal of $1M a year by October 2024. He hit it right around the deadline.",
+          "Not every number agrees. A data site called GetLatka says someone at the company reported $350K for 2023, which clashes with the $800K+ in the interview, and it estimates $2.4M for 2024 without a source. Those are guesses from outside. His X bio has mentioned $2M in total revenue, but that's not confirmed anywhere else. By October 2024 the team was about seven people on LinkedIn, and he had about 79,000 followers across Twitter and LinkedIn.",
+          "What's he doing now? A profile site from October 2026 lists Testimonial, PDF.ai, PDFgen (AI document generation and a PDF API) and StreetInterview.ai (AI-made street interview videos). The same site says that in August 2026 he described a support setup where Intercom bug reports trigger Cursor to investigate the code and open pull requests on GitHub. It's interesting, but thinly sourced.",
+          "He hasn't said much publicly about AI's future. His recurring themes are simpler and more human. “The key is to start doing it, learn by doing.” And on growing beyond one person: “There is a point where you reach saturation and you need help.”"
+        ],
+        "pull": {"text": "There is a point where you reach saturation and you need help.", "cite": "Damon Chen, The Bootstrapped Founder, November 2022"},
+        "chart": 1
+      }
+    ],
+    "failuresTitle": "Four products that made $0 first",
+    "failuresIntro": "Damon's failures were fast and cheap, and the best part of one of them became Testimonial. He dropped each for no users, no revenue or no engagement.",
+    "failures": [
+      {"year": "2020", "name": "LonelyDev and Indielog.com", "what": "A community where indie makers could vlog their progress, started because building alone felt lonely. It made no money. But about 80% of its code later became Testimonial.", "lesson": "Keep the code from your failures. The next idea might need it."},
+      {"year": "2020", "name": "Backlogs.co", "what": "A feature and bug tracker he built for Indielog. It didn't take off on its own.", "lesson": "A tool you built for yourself isn't automatically a product for others."},
+      {"year": "2020", "name": "Influenswer.com", "what": "A pivot from Indielog, made, in his words, to make money. It didn't.", "lesson": "Pivoting for money without a clear buyer is just another guess."},
+      {"year": "2020", "name": "The other $0 products", "what": "Of the five products he built in 2020, most earned nothing. He time-boxed each one and moved on when it didn't work.", "lesson": "Set a time box for each idea so failures stay cheap."},
+      {"year": "Undated", "name": "The misspelled domain", "what": "A profile site says an earlier project lost traffic because people misspelled its name. He started preferring short, memorable domains, and later paid $35,000 for a typo domain of Testimonial.", "lesson": "Your name is part of your distribution."},
+      {"year": "Dec 2020", "name": "The lifetime deal", "what": "It sold 30 copies and made $6,000 in two weeks, but it didn't build recurring revenue. He dropped it for subscriptions a month later.", "lesson": "Easy early money can hide the fact that you have no business yet."}
+    ],
+    "playbookTitle": "How he gets customers, mostly without ads",
+    "playbook": [
+      {"title": "Put your logo on what customers show off", "text": "Every wall of love on a customer's site carries a Testimonial logo. Visitors click through and sign up, and customers pay to remove the logo. The product spreads every time it's used."},
+      {"title": "Launch with a lifetime deal, then switch", "text": "He launched on Product Hunt in December 2020 with a $199 lifetime deal sold directly, making $6,000 from 30 buyers in two weeks. Then he moved to subscriptions in January 2021."},
+      {"title": "Go where your buyers already gather", "text": "Early buyers came from Product Hunt, Indie Hackers, his own Indielog community and a MarTech Facebook group. His first paying customer came from Twitter."},
+      {"title": "Build in public, and tweet milestones", "text": "Twitter was his number one channel in 2021. A tweet about being close to $1K a month got Andrew Gazdecki of Acquire.com to sign up for the top plan."},
+      {"title": "Make the free plan point upward", "text": "Two video testimonials free, pay from the third. Product tours and Mailchimp onboarding emails push people toward the upgrade."},
+      {"title": "Pay affiliates for as long as customers stay", "text": "Testimonial affiliates get 30% recurring, and their referrals get 15% off the first year. They bring 10 to 15% of revenue. He found existing, influential customers made the best affiliates."},
+      {"title": "Buy the domain people type", "text": "He paid $35,000 for a typo domain and says it returned $80,000. For PDF.ai he bought the exact match domain for about $10,000, and over half its search traffic came from PDF AI keywords."},
+      {"title": "Buy a working project instead of starting over", "text": "He bought Looseleaf.ai, a weekend project, and relaunched it as PDF.ai with a $99 lifetime deal that sold to 300+ buyers. It reached $500K+ a year within months."},
+      {"title": "Pay a creator to post every day", "text": "For PDF.ai he hired a full-time influencer who posted daily on Instagram, reaching 20,000+ followers and a 115,000-like reel, plus a TikTok partnership and a 30% affiliate program."}
+    ],
+    "charts": [
+      {
+        "title": "Testimonial's first year, by Damon's own numbers",
+        "points": [
+          {"label": "Mar 2021", "value": 12000, "display": "$1K a month"},
+          {"label": "Jun 2021", "value": 48000, "display": "$4K a month"},
+          {"label": "Sep 2021", "value": 100000, "display": "$100K a year"}
+        ],
+        "note": "Monthly figures are drawn as a yearly run rate so the bars compare fairly. He made $6,000 in his first two weeks."
+      },
+      {
+        "title": "Testimonial's yearly revenue run rate",
+        "points": [
+          {"label": "Sep 2021", "value": 100000, "display": "$100K"},
+          {"label": "Nov 2022", "value": 400000, "display": "$400K"},
+          {"label": "Nov 2023", "value": 800000, "display": "$800K+"},
+          {"label": "Oct 2024", "value": 1000000, "display": "About $1M"}
+        ],
+        "note": "PDF.ai added $500K+ a year on top by November 2023. The 2024 figure is from an Indie Hackers article."
+      }
+    ],
+    "timeline": [
+      {"when": "2019", "text": "Lurks on Indie Hackers all year and starts learning web development from a $9.99 Udemy course."},
+      {"when": "2020", "text": "Takes six months of unpaid leave from Cisco, promises his wife $100K a year within a year, and builds five products, most earning $0.", "big": true},
+      {"when": "Dec 2020", "text": "Launches Testimonial on Product Hunt, built in about a week from Indielog's code, and sells 30 lifetime deals for $6,000.", "big": true},
+      {"when": "Jan 2021", "text": "Drops the lifetime deal and switches to subscriptions."},
+      {"when": "Mar 2021", "text": "Quits Cisco when Testimonial hits $1,000 a month.", "big": true},
+      {"when": "May 2021", "text": "Takes under $100,000 from Calm Fund at about $2K a month."},
+      {"when": "Sep 2021", "text": "Reaches $100,000 a year, inside his one-year deadline, after doubling prices twice.", "big": true},
+      {"when": "Nov 2022", "text": "Testimonial is at about $400,000 a year. His first hire, in marketing, comes around this level."},
+      {"when": "May to Jun 2023", "text": "Buys Looseleaf.ai and the PDF.ai domain, and launches PDF.ai."},
+      {"when": "Sep 2023", "text": "PDF.ai makes $25,070 in a month with 1,250+ paying users."},
+      {"when": "Nov 2023", "text": "Says the two products are at $1.3M+ a year combined.", "big": true},
+      {"when": "Oct 2024", "text": "Indie Hackers reports Testimonial at about $1M a year, his goal for that exact month."}
+    ],
+    "quotes": [
+      {"text": "I'm an engineer who doesn't know much about marketing or sales.", "cite": "Damon, Behind the Craft, November 2023"},
+      {"text": "It was a mess in the beginning.", "cite": "Damon, on working around his kids' naps, Behind the Craft"},
+      {"text": "The MVP of it was made within a week.", "cite": "Damon, Indie Hackers AMA, October 2021"},
+      {"text": "Sell a product after building it is always painful.", "cite": "Damon, Indie Hackers AMA, October 2021"},
+      {"text": "Price was doubled twice in the past 6 months.", "cite": "Damon, Indie Hackers AMA, October 2021"},
+      {"text": "When Testimonial hit $1k MRR, I quit my 6-figure job.", "cite": "Damon, Maker of Habit, November 2021"},
+      {"text": "The key is to start doing it, learn by doing.", "cite": "Damon, Indie Hackers AMA, 2021"},
+      {"text": "There is a point where you reach saturation and you need help.", "cite": "Damon, The Bootstrapped Founder, November 2022"}
+    ],
+    "steal": [
+      "Give yourself a number and a date, and tell someone you love. His $100K in a year promise is why he shipped instead of polishing.",
+      "Go through your old projects and files before starting something new. His winner was 80% leftovers.",
+      "Choose products whose output your customers display publicly, and add a small “made with” link. That's free distribution forever.",
+      "Find the Facebook or WhatsApp groups where your exact buyers hang out, and launch there, not just on Product Hunt.",
+      "Raise prices while you're growing. He doubled them twice in six months and still hit his target.",
+      "Consider buying a small working project and a great domain instead of building from scratch. PDF.ai paid back its domain within days."
+    ],
+    "sources": [
+      {"title": "Indie Hackers AMA: Hit $100K ARR after 9 months grinding as a solo founder (Oct 2021)", "url": "https://www.indiehackers.com/post/hit-100k-arr-after-9-months-grinding-as-a-solo-founder-ama-584379b1f6"},
+      {"title": "Indie Hackers AMA: 2 months into SaaS, easy to sell LTD, hard to get recurring revenue", "url": "https://www.indiehackers.com/post/2-months-into-saas-easy-to-sell-ltd-hard-to-get-recurring-revenue-ama-531670ebf5"},
+      {"title": "Behind the Craft: Damon Chen, engineer to one million (Nov 2023)", "url": "https://creatoreconomy.so/p/damon-chen-engineer-to-one-million"},
+      {"title": "Maker of Habit #006: Damon Chen (Nov 2021)", "url": "https://maker-of-habit.beehiiv.com/p/006-damon-chen-solo-founder-way-1m-arr-2024"},
+      {"title": "The Bootstrapped Founder: A conversation with Damon Chen (Nov 2022)", "url": "https://thebootstrappedfounder.com/a-conversation-with-damon-chen/amp/"},
+      {"title": "Indie Hackers Podcast #265: From full-time job to $30K a month", "url": "https://dev.to/theindiehackerspodcast/265-from-full-time-job-to-30kmonth-with-damon-chen-of-testimonial"},
+      {"title": "Indie Hackers: Testimonial reached $1M in annual revenue (Oct 2024)", "url": "https://www.indiehackers.com/post/in-just-four-years-this-video-testimonial-platform-reached-1m-in-annual-revenue-totally-bootstrapped-5e7135b643"},
+      {"title": "Indie Hackers: PDF AI tool made $25K in MRR last month (2023)", "url": "https://www.indiehackers.com/post/pdf-ai-tool-made-25k-in-mrr-last-month-07148fa17d"},
+      {"title": "Starter Story: PDF.ai breakdown (profile site)", "url": "https://www.starterstory.com/pdf-ai-breakdown"},
+      {"title": "GetLatka: Testimonial.to (estimates)", "url": "https://getlatka.com/companies/testimonial.to"},
+      {"title": "aiidelist: Damon Chen (profile site, Oct 2026)", "url": "https://aiidelist.com/indie-developers/damon-chen"}
+    ]
+  }
+}

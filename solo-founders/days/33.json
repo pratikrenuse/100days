@@ -1,0 +1,496 @@
+{
+  "n": 33,
+  "name": "Thomas Sanlis",
+  "short": "Thomas",
+  "wisdom": "Your forgotten side project might just need a better moment.",
+  "email": {
+    "subject": "30 failed projects. The 31st was an old one.",
+    "hook": "Thomas Sanlis launched more than 30 projects that mostly failed, and the one that finally paid his rent was a little directory he'd left running on autopilot for four years.",
+    "lead": [
+      "Thomas is a French developer and designer from Nantes. He runs Uneed, a launch platform where makers post their products, a smaller and fairer alternative to Product Hunt. He's solo on it, and it makes about $10K a month by his own numbers.",
+      "He's not a giant. That's exactly why he's useful to us. His story is what a realistic, slow, honest win looks like, and almost all of it is about distribution: SEO, a newsletter, daily posts, and catching a moment when people were angry at a big platform."
+    ],
+    "stats": [
+      {
+        "value": "$10K",
+        "label": "a month from Uneed"
+      },
+      {
+        "value": "30+",
+        "label": "projects launched, most failed"
+      },
+      {
+        "value": "2K",
+        "label": "paying customers in August 2025"
+      }
+    ],
+    "chart": {
+      "title": "Uneed monthly revenue, by his own numbers",
+      "points": [
+        {
+          "label": "Jan 2024",
+          "value": 1917,
+          "display": "$1.9K"
+        },
+        {
+          "label": "Mar 2024",
+          "value": 870,
+          "display": "$870",
+          "down": true
+        },
+        {
+          "label": "Oct 2024",
+          "value": 6738,
+          "display": "$6.7K"
+        },
+        {
+          "label": "Jul 2025",
+          "value": 10000,
+          "display": "$10K"
+        }
+      ],
+      "note": "The March 2024 dip came right after he pivoted to a launch platform."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Uneed is still his main thing. He's added Uneed Community, and he has a second product, Writizzy, a blogging platform he built with a co-founder that launched on Product Hunt.",
+          "He has lived off his own projects since January 2025. His long-term plan is to sell projects someday, retire early, and pick his work without money pressure. He hit about $10K a month in July 2025 and says it has plateaued there."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "Listing a product on Uneed is free, but there's a queue. Makers pay to skip it: $30 for a launch on a date they choose, or $4.99 for a waiting-list entry, in 2025. On top of that he sells featured spots, two sidebar ad spots, sponsorships in his newsletter of about 11K subscribers, paid product reviews and a service that submits your product to 100+ directories.",
+          "In August 2025 he said Uneed had about 40K users, 2K paying customers, 30K unique visitors a month, and sent 10K clicks to listed products in a month. **The free queue is the business model.** It keeps makers coming back, and some of them pay to jump ahead."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "Uneed started in 2019 during his web development studies. It was a directory of front-end tools, and the real reason he built it was to learn a framework called NuxtJS. He added one tool a day, and people submitted tools through a Google Form. It cost under $50 a month to run.",
+          "Then it sat there for about four years, running on roughly two hours a week. When the Google Form submissions piled up, he added a paid \"skip the line\" option. That was the moment he realised he could live off products."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "Early on it was a Product Hunt launch, a few tweets and some Reddit posts. It took nearly three years to get real traction. What did build up quietly was SEO.",
+          "In early 2024, people online were complaining that Product Hunt favoured big products and was full of bots. Thomas turned his directory into a launch platform right then, with a Product Hunt launch of his own, which is a nice bit of irony. Since then: \"alternatives\" pages for SEO, embeddable winner badges that bring backlinks, a weekly newsletter, daily posts on X, LinkedIn and Bluesky, and a rule that he only builds features tagged \"growth\"."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "When he pivoted, revenue fell first. From $1,917 in January 2024 to $870 in March. A month in, he wrote that revenue was still down. That's scary when it's your rent.",
+          "And now it's flat. He reached about $10K a month in July 2025 and says it plateaued. He's also clear that this took a long time: **\"Prepare yourself for a marathon, not a sprint.\"** He tells people not to quit their job without real savings."
+        ]
+      }
+    ],
+    "tryToday": "Open the list of your old side projects, even the dead ones. For each, write one line: what big platform are people complaining about right now that this could be the small, fair alternative to?",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Thomas Sanlis is a French developer and designer who has launched more than 30 projects, most of which failed. The one that worked was Uneed, a tiny directory he built in 2019 to learn a framework, which he turned into a Product Hunt alternative in 2024 and grew to about $10K a month, on his own.",
+    "stats": [
+      {
+        "value": "$10K",
+        "num": 10,
+        "prefix": "$",
+        "suffix": "K",
+        "label": "a month from Uneed",
+        "note": "his own figure, July 2025"
+      },
+      {
+        "value": "30+",
+        "num": 30,
+        "prefix": "",
+        "suffix": "+",
+        "label": "projects launched",
+        "note": "most of them failed"
+      },
+      {
+        "value": "40K",
+        "num": 40,
+        "prefix": "",
+        "suffix": "K",
+        "label": "Uneed users",
+        "note": "his own figure, August 2025"
+      },
+      {
+        "value": "2K",
+        "num": 2,
+        "prefix": "",
+        "suffix": "K",
+        "label": "paying customers",
+        "note": "his own figure, August 2025"
+      }
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Three months in a job was enough",
+        "paras": [
+          "Thomas is from Nantes, in France. He was 29 in 2024. He has been building side projects since his teens, the way some people doodle in notebooks.",
+          "He did his final year of study as an apprentice at a company, and they hired him afterwards. He lasted three months. He has said he hates constraints, things like fixed hours and meetings. So he left.",
+          "He moved to a new city and started freelancing in development and design. Not because freelancing was the dream, but because it freed up time for his own products. That's a very practical move, and one a lot of us could copy: earn just enough from your skills to buy back hours for building.",
+          "He has been living off his own projects since January 2025. Before that, it was freelance work paying for the experiments. One note before we go further: almost every number on this page is Thomas's own, from his interviews and posts, not checked by anyone else."
+        ]
+      },
+      {
+        "label": "The failures",
+        "title": "More than 30 launches, most of them dead",
+        "paras": [
+          "Thomas has said he has launched more than 30 projects and that most of them failed. He puts it simply: **\"I failed way more often than I ever succeeded.\"**",
+          "A few of them have names. There was Gum affiliates, a marketplace connecting Gumroad sellers with affiliates who would promote their products. It made about $500 in two years before he gave up. There was Frisbee, a platform for exchanging feedback, which he built in a single day and never even published.",
+          "There was a simple website builder, a tool for Twitter feeds, a web app for managing plans that he used himself for a year or two, and a bookmark manager. He mentioned most of these in passing in a video interview, so the exact names may be a little off, and none of them has a public year.",
+          "What's striking is how ordinary these ideas are. Bookmark managers, feedback tools, website builders. Every indie maker builds one of these. They're the kind of projects you make to learn, and that's mostly what they were.",
+          "If you're keeping score at home, that's a long list of projects that taught him Nuxt, design, payments and launching, and paid him almost nothing. Then one of the oldest and most boring of them, the directory, turned out to be the one that worked. It wasn't the best idea. It was the one that had been quietly collecting search traffic the whole time."
+        ],
+        "pull": {
+          "text": "I failed way more often than I ever succeeded.",
+          "cite": "Thomas, Starter Story video, August 2025"
+        }
+      },
+      {
+        "label": "The first version",
+        "title": "A directory he built to learn a framework",
+        "paras": [
+          "Uneed began in 2019 while Thomas was studying web development. It was a directory of front-end tools, a list of useful things for people who build websites. But the honest reason it existed was that he wanted to learn NuxtJS, a web framework. The product was the homework.",
+          "He kept it simple. He added one tool to the directory every day. When other people wanted to add their tools, they filled in a Google Form. No fancy submission system, no accounts.",
+          "It cost almost nothing. He says running costs were under $50 a month, and the startup cost was $0. He rebuilt it several times over the years as he learned more.",
+          "Then something unusual happened: nothing. For about four years it just ran, on autopilot, with him spending about two hours a week on it. Most of us would have shut it down or forgotten it. He left it alone, and **while it sat there, it quietly built up search traffic.**",
+          "In one video he says the directory made about $200 a month at best. In a written interview, the directory-era figure is closer to $2K a month, and his January 2024 revenue was $1,917. These are probably different points in time, but the sources don't say, so treat the early numbers as rough."
+        ]
+      },
+      {
+        "label": "The first money",
+        "title": "When the Google Form overflowed",
+        "paras": [
+          "The first real money came from a problem. The Google Form got popular. So many people were submitting tools that there was a long waiting line before Thomas could add them all.",
+          "So he added a paid option to skip the line. One write-up says it was $50. People paid it. That was the moment, he says, when he realised he could actually live off his products.",
+          "Notice what happened there. He didn't invent a pricing model in a meeting. The demand created a queue, and the queue created the thing to sell. A free listing with a long wait, and a paid shortcut for anyone in a hurry, is still the heart of Uneed today.",
+          "Getting early visitors was slow. A Product Hunt launch, occasional tweets, a few Reddit posts. It took nearly three years for Uneed to get real traction and revenue. Not three months. Three years."
+        ]
+      },
+      {
+        "label": "The turning point",
+        "title": "When everyone got angry at Product Hunt",
+        "paras": [
+          "In early 2024, makers on social media were getting frustrated with Product Hunt. The complaints were that it favoured big products from big companies, and that it was, in Thomas's summary of the mood, \"mostly bots + the uncertainty about being featured\". If you were a small maker, launching there felt like a lottery.",
+          "Thomas saw the opening. Around early February 2024, he turned his directory into a launch platform: a place where makers launch their product on a given day, and the community votes. In other words, a Product Hunt alternative. He said it directly: \"I really want to shake Product Hunt.\"",
+          "Here's the funny part. To launch his Product Hunt alternative, he launched it on Product Hunt, that February. He says it \"brought a good amount of traffic.\"",
+          "He credits the timing more than anything. And the years of quiet SEO from the directory meant he wasn't starting from zero. When the mood shifted, he already had search traffic and a list of makers who knew his name.",
+          "He also has a line about competition that fits this moment well: \"If you don't have competitors, you don't have a market\". Product Hunt being big was the proof that people wanted a launch platform. He just had to be the fairer, smaller one."
+        ],
+        "pull": {
+          "text": "I really want to shake Product Hunt.",
+          "cite": "Thomas, interview with Aditya Kumar Saroj, March 2024"
+        }
+      },
+      {
+        "label": "The dip",
+        "title": "Revenue fell before it grew",
+        "paras": [
+          "Pivots look clean in hindsight. This one didn't feel clean. Revenue was $1,917 in January 2024. After the pivot, in March 2024, it was $870. A month after launching, he wrote publicly that revenue was still down.",
+          "That's the moment where most people panic and go back. His mood at the time comes through in one short line: \"This HAS to work.\"",
+          "He kept going. He focused on one thing above everything else. In March 2024 he wrote that \"Uneed's success is down to one thing: traffic.\" Makers would pay to launch only if launching on Uneed actually sent them visitors.",
+          "By October 2024 revenue was $6,738 a month. In July 2025 it reached about $10K a month. One headline says the pivot tripled his revenue. Starter Story ran a story about a $6,400 month, and another about growing to 42K monthly visitors with a $0 budget.",
+          "What helped was that the queue grew fast. By March 2024, a free listing meant waiting more than three months for your launch day. For a maker excited about a new product, three months feels like forever, and that is exactly what makes paying to skip it an easy yes. He then improved the form itself: adding a simple checklist to the submission page raised conversion to the paid option by about 30%."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "How it runs",
+        "title": "Cron jobs at midnight, and a $600 bill",
+        "paras": [
+          "The tech behind Uneed is simple and cheap. It's built with Nuxt, Tailwind and Nuxt UI. Supabase handles logins, the database and file storage. Payments went through Lemon Squeezy. Emails go through Bento, and support through a tool called Fernand. Analytics are self-hosted, first Plausible and later Umami.",
+          "It used to run on Vercel. Then he got a $600 bill. So he moved to a cheap Hetzner server managed with Coolify, which he runs himself.",
+          "The daily rhythm is automated. Every night at midnight, Pacific time, scheduled jobs publish that day's launches, pay out the previous winners, send the emails and schedule the tweets. The product runs itself while he sleeps in France.",
+          "He organises his work in a simple Todoist board with three columns: bucket, to do, doing. And from around May or June 2024 he made a strict rule: **he only builds features tagged \"growth\".** If it doesn't bring traffic or revenue, it waits.",
+          "None of this is clever engineering for its own sake. It's the opposite. Cheap hosting, boring tools he already knew, and automation for anything that happens every day. That's what lets one person run a site with tens of thousands of users and still have time to write a newsletter, post daily and go on podcasts."
+        ]
+      },
+      {
+        "label": "Where he stands now",
+        "title": "$10K a month, and flat",
+        "paras": [
+          "In August 2025 Thomas shared Uneed's numbers: about 40K users, 2K paying customers, 30K unique visitors a month, and 10K clicks a month sent to the products listed on it. He gave revenue as somewhere between $8K and $10K a month.",
+          "The menu of things to buy has grown. In 2025, a launch on a date you choose cost $30, and a waiting-list entry $4.99. Earlier, in late 2024, a product review cost $217. There are featured spots, two sidebar ad spots, sponsorships in a newsletter of about 11K subscribers, and a service that submits your product to more than 100 other directories. Prices have changed over time, so the sources don't all agree.",
+          "He reached about $10K a month in July 2025, and he says it has plateaued since. No 2026 figure is public. He's honest that this is the stage he's at: comfortable, not exploding.",
+          "Meanwhile he's spreading out. He launched Uneed Community, and he built Writizzy, a blogging platform, with a co-founder. Writizzy launched on Product Hunt. His goal is to sell projects one day, retire early and choose his work without money pressure.",
+          "His advice is gentle and realistic. \"Statistically, if you want to make a living from your projects, it's going to take time.\" Don't quit your job without significant savings. Don't give up after a week or two. Make your headline say exactly what you offer. Keep posting. And protect your personal life, because \"Success isn't just about hustle, it's about sustainability.\""
+        ],
+        "pull": {
+          "text": "Prepare yourself for a marathon, not a sprint.",
+          "cite": "Thomas, Indie Hackers, 2024"
+        }
+      }
+    ],
+    "failuresTitle": "More than 30 launches before one worked",
+    "failuresIntro": "Thomas says he has launched over 30 projects. These are the ones he has named, mostly in passing in a video, so exact names may be slightly off. None has a public year.",
+    "failures": [
+      {
+        "year": "Year not public",
+        "name": "Gum affiliates",
+        "what": "A marketplace linking Gumroad sellers with affiliates who would promote their products. It made about $500 in two years before he quit.",
+        "lesson": "Two years for $500 is a clear signal to stop, so set your kill line before you start."
+      },
+      {
+        "year": "Year not public",
+        "name": "Frisbee",
+        "what": "A platform for makers to exchange feedback. He built it in a single day and never published it.",
+        "lesson": "A one-day build is cheap enough to throw away without regret."
+      },
+      {
+        "year": "Year not public",
+        "name": "A simple website builder",
+        "what": "Its name is garbled in the captions. Why it failed isn't public.",
+        "lesson": "Crowded categories need a sharp reason to exist."
+      },
+      {
+        "year": "Year not public",
+        "name": "A Twitter feed tool",
+        "what": "A tool built around Twitter feeds. The reason it failed isn't public.",
+        "lesson": "Tools built on someone else's platform live at their mercy."
+      },
+      {
+        "year": "Year not public",
+        "name": "A plans-management app",
+        "what": "A web app for managing plans. He used it himself for a year or two, but it never became a business.",
+        "lesson": "Solving your own problem is a start, not proof that others will pay."
+      },
+      {
+        "year": "Year not public",
+        "name": "A bookmark manager",
+        "what": "Another useful tool that didn't take off. Details aren't public.",
+        "lesson": "Practice projects still teach you to ship."
+      },
+      {
+        "year": "2019 to 2024",
+        "name": "Uneed, version one",
+        "what": "A directory of front-end tools built to learn NuxtJS. It ran on autopilot for about four years and earned little, about $200 a month at best by one account.",
+        "lesson": "A small project with steady SEO can be waiting for its moment."
+      }
+    ],
+    "playbookTitle": "How he got traffic with a $0 budget",
+    "playbook": [
+      {
+        "title": "Ride the complaints about a giant",
+        "text": "In early 2024 makers were complaining that Product Hunt favoured big products and was full of bots. He pivoted Uneed into a launch platform right then and launched it on Product Hunt itself, which brought a good amount of traffic."
+      },
+      {
+        "title": "Make the queue the product",
+        "text": "Listing is free, but there's a waiting line, over three months long in March 2024. Makers who don't want to wait pay to skip it. The queue also keeps people coming back to the site again and again."
+      },
+      {
+        "title": "Programmatic \"alternatives\" pages",
+        "text": "He built SEO pages around searches like alternatives to well-known tools. Years of SEO from the old directory gave him a base to build on."
+      },
+      {
+        "title": "Winner badges that bring backlinks",
+        "text": "Daily winners get an embeddable badge for their own site. Every badge is a link back to Uneed, which raises its search ranking."
+      },
+      {
+        "title": "Fix the checkout form",
+        "text": "He added a checklist to the submission form, and conversion to the paid skip-the-line option went up by about 30%."
+      },
+      {
+        "title": "A weekly newsletter",
+        "text": "His newsletter had about 8K subscribers in late 2024 and about 11K in 2025. It's both a traffic source for launches and something he sells sponsorships in."
+      },
+      {
+        "title": "Build in public, every day",
+        "text": "He posts daily on X and shares progress on LinkedIn and Bluesky. He also cross-promotes with DevHunt, watches Reddit for relevant threads with a tool called RedReach, and goes on podcasts."
+      },
+      {
+        "title": "Only build for growth",
+        "text": "From around mid-2024, he only built features tagged \"growth\" on his Todoist board. Everything else waited."
+      }
+    ],
+    "charts": [
+      {
+        "title": "Uneed monthly revenue",
+        "points": [
+          {
+            "label": "Jan 2024",
+            "value": 1917,
+            "display": "$1.9K"
+          },
+          {
+            "label": "Mar 2024",
+            "value": 870,
+            "display": "$870",
+            "down": true
+          },
+          {
+            "label": "Oct 2024",
+            "value": 6738,
+            "display": "$6.7K"
+          },
+          {
+            "label": "Jul 2025",
+            "value": 10000,
+            "display": "$10K"
+          }
+        ],
+        "note": "His own figures. The pivot happened in early February 2024. Flat since July 2025, he says."
+      },
+      {
+        "title": "Uneed in one month, August 2025",
+        "points": [
+          {
+            "label": "Total users",
+            "value": 40000,
+            "display": "40K"
+          },
+          {
+            "label": "Unique visitors",
+            "value": 30000,
+            "display": "30K"
+          },
+          {
+            "label": "Clicks to listed products",
+            "value": 10000,
+            "display": "10K"
+          },
+          {
+            "label": "Paying customers",
+            "value": 2000,
+            "display": "2K"
+          }
+        ],
+        "note": "His own figures from a Starter Story video."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "Teens",
+        "text": "Starts building side projects."
+      },
+      {
+        "when": "Student years",
+        "text": "Final year as an apprentice, gets hired, leaves after three months. Moves city and freelances in development and design."
+      },
+      {
+        "when": "2019",
+        "text": "Builds Uneed as a front-end tools directory to learn NuxtJS, adding one tool a day.",
+        "big": true
+      },
+      {
+        "when": "2019 to 2023",
+        "text": "Uneed runs on autopilot at about two hours a week. A paid skip-the-line option appears when submissions overflow."
+      },
+      {
+        "when": "Years not public",
+        "text": "Launches more than 30 other projects. Most fail, including Gum affiliates and Frisbee."
+      },
+      {
+        "when": "Feb 2024",
+        "text": "Pivots Uneed into a Product Hunt alternative and launches it on Product Hunt.",
+        "big": true
+      },
+      {
+        "when": "Mar 2024",
+        "text": "Revenue dips to $870 from $1,917 in January."
+      },
+      {
+        "when": "Mid 2024",
+        "text": "Starts building only features tagged \"growth\". Moves off Vercel after a $600 bill."
+      },
+      {
+        "when": "Oct 2024",
+        "text": "Revenue reaches $6,738 a month."
+      },
+      {
+        "when": "Jan 2025",
+        "text": "Starts living fully off his projects.",
+        "big": true
+      },
+      {
+        "when": "Jul 2025",
+        "text": "Reaches about $10K a month, then plateaus.",
+        "big": true
+      },
+      {
+        "when": "Aug 2025",
+        "text": "About 40K users and 2K paying customers."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "I failed way more often than I ever succeeded.",
+        "cite": "Starter Story video, August 2025"
+      },
+      {
+        "text": "I really want to shake Product Hunt.",
+        "cite": "Interview with Aditya Kumar Saroj, March 2024"
+      },
+      {
+        "text": "Uneed's success is down to one thing: traffic.",
+        "cite": "Indie Hackers, March 2024"
+      },
+      {
+        "text": "This HAS to work.",
+        "cite": "Indie Hackers, 2024"
+      },
+      {
+        "text": "Prepare yourself for a marathon, not a sprint.",
+        "cite": "Indie Hackers, 2024"
+      },
+      {
+        "text": "If you don't have competitors, you don't have a market",
+        "cite": "Starter Story video, August 2025"
+      },
+      {
+        "text": "Success isn't just about hustle, it's about sustainability.",
+        "cite": "Indie Hackers interview, 2025"
+      }
+    ],
+    "steal": [
+      "Don't delete your old side projects. Leave the cheap ones running and check which ones still collect search traffic. One of them might be your Uneed.",
+      "Watch what people publicly complain about in a big platform in your space, and build the small, fair version while the frustration is loud.",
+      "Look for a natural queue in your product. If demand piles up, a paid way to skip the line is a simple, honest thing to sell.",
+      "Give winners or users something embeddable for their own site. Every badge is a free backlink.",
+      "Tag every task on your list as growth or not growth, and for one month only do the growth ones.",
+      "Keep your day job or freelance income until the project pays your rent. Thomas only went full-time in January 2025, six years after he started Uneed."
+    ],
+    "sources": [
+      {
+        "title": "Starter Story video: how I finally built a $10K a month SaaS after 30 failures (August 2025)",
+        "url": "https://rosetta.to/u/starterstory/how-i-finally-built-a-10k-month-saas-30-failures?t=0"
+      },
+      {
+        "title": "Indie Hackers: from employee to freelancer to $10K a month founder",
+        "url": "https://www.indiehackers.com/post/from-employee-to-freelancer-to-10k-mo-founder-dhhAxKFhZwZyDCmmJA5m"
+      },
+      {
+        "title": "Indie Hackers: pivoting a directory into a Product Hunt alternative",
+        "url": "https://www.indiehackers.com/post/E4c93HRVYcCQl3GMvvhN"
+      },
+      {
+        "title": "Indie Hackers: competing with Product Hunt, a month later (March 2024)",
+        "url": "https://www.indiehackers.com/post/competing-with-product-hunt-a-month-later-4f692745ee"
+      },
+      {
+        "title": "Aditya Kumar Saroj: interview with Thomas Sanlis (March 2024)",
+        "url": "https://adityakumarsaroj.beehiiv.com/p/thomas-sanlis-uneed-interview-product-hunt"
+      },
+      {
+        "title": "Starter Story: Uneed breakdown (November 2024)",
+        "url": "https://www.starterstory.com/uneed-breakdown"
+      },
+      {
+        "title": "Starter Story headline: $6,400 last month from his Product Hunt alternative",
+        "url": "https://www.goodreads.com/author_blog_posts/25518293-6400-last-month-from-his-product-hunt-alternative?tab=author"
+      },
+      {
+        "title": "Writizzy on Product Hunt",
+        "url": "https://www.producthunt.com/posts/writizzy"
+      }
+    ]
+  }
+}

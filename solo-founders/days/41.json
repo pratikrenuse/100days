@@ -1,0 +1,270 @@
+{
+  "n": 41,
+  "name": "Bhanu Teja P",
+  "short": "Bhanu",
+  "wisdom": "Coding is the easy part. Distribution is the whole game.",
+  "email": {
+    "subject": "A $10K bill killed his product. The next one made $10K a month.",
+    "hook": "Bhanu Teja's first real product was killed by a hosting bill of about $10,000 in a single month, and the one he built after it reached $10,000 a month in revenue within 30 days.",
+    "lead": [
+      "Bhanu works from Nellore in Andhra Pradesh, not Bangalore and not San Francisco. He quit a well paid software job before he even had an idea, spent about three years on things that didn't work, and then launched SiteGPT with one tweet in March 2023. For anyone in India sitting on a salary and wondering whether it's possible from here, he's proof that it is.",
+      "One honest note before we start. Sources don't agree on whether he's fully solo. Two interviews call him a solo, bootstrapped founder, but Starter Story's profile lists two founders, and he says he hired one person during the chaos of launch month. So think of him as a one-man show with some help, not a pure solo act."
+    ],
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "The most interesting thing about Bhanu today isn't a launch, it's a machine. He has built **more than 50 small free tools**, things like a PDF-to-Markdown converter, an AI chatbot name generator, a sitemap validator and an FAQ generator. Each one solves a tiny problem and has a button pointing back to SiteGPT. According to a January 2026 case study by Superframeworks, these tools bring in about 90% of SiteGPT's Google traffic, and he can spin up a new one in under five minutes by pointing Cursor at an existing tool as a template.",
+          "The same case study says SiteGPT sits at about $13,000 a month, has made over $500,000 in total, and that he sold his other product, Feather, for $250,000. Treat those carefully. They come from one secondary source that cites his X account without linking a specific post, and Bhanu hasn't confirmed them publicly. Nothing public tells us what new thing he's building in 2025 or 2026."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "SiteGPT has charged from day one. No free plan, no free trial, and prices set \"a little higher\" on purpose so that the OpenAI bills never eat the business. He explained the logic in his Indie Hackers AMA: launch traffic alone could have cost him several thousand dollars in AI usage if he'd let people in for free.",
+          "By his own numbers, he had about 200 paying customers and $10,000 a month within the first month, then $13,000 to $15,000 a month by August 2023. Running costs for SiteGPT and Feather together were about $3,000 to $5,000 a month, with roughly $1,000 of that going to OpenAI. The Superframeworks piece adds that the average customer pays about $100 a month and stays long enough to be worth about $1,700 to $1,800. His rule for the roadmap is simple: build what enterprise customers ask for and pay for, then roll it out to everyone."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "SiteGPT started life as a feature inside Feather, his Notion-to-blog tool. He trained a chatbot on Feather's own docs, saw that every one of his roughly 100 Feather customers had a blog that could use the same thing, and pulled it out into its own product. He says it took two to three weeks; in another interview he says he built it over a weekend.",
+          "The stack was Remix, Cloudflare Workers, Fauna, Pinecone, OpenAI and Paddle for payments and tax. He skipped LangChain entirely. The first version was full of bugs and he spent about a week stabilising it after launch. His philosophy in one line: \"I just launch what I think is the minimum usable version.\""
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "It looks like overnight luck, but it wasn't. Bhanu had been building in public on Twitter for more than three years, starting from zero followers, so by launch day he had about 10,000 people watching. On 30 March 2023 his launch tweet went viral and brought about 15,000 visitors that day and about 40,000 that week.",
+          "Then the dominoes fell. On 2 April it hit the Hacker News front page as a Show HN. On 5 April it was Product Hunt's number one product of the day, and he did zero prep for that: no video, no launch email, no DMs, he \"just submitted the form\". When he ranked the channels afterwards, Twitter was miles ahead, then Hacker News, then Product Hunt. One thing that flopped: a paid newsletter sponsorship sent about 500 visits and not one signup."
+        ]
+      },
+      {
+        "title": "The part nobody posts about",
+        "chart": true,
+        "paras": [
+          "The famous screenshot is $10,000 a month in 30 days. The part people skip is what came next. About $5,000 of that monthly revenue churned the following month, and almost half of the first customers left after month one. Churn ran about 20% a month at one point before settling around 10%.",
+          "Launch month also brought DDoS attacks almost every day, which he describes as \"many sleepless nights\". And remember the product before all this, MDX1, which had 25 customers paying a total of $250 a month when a single month's hosting bill of about $10,000 forced him to shut it down. **The win came after the bill, not instead of it.**"
+        ]
+      }
+    ],
+    "stats": [
+      {"value": "$10K", "label": "a month, 30 days after launch"},
+      {"value": "200", "label": "paying customers in month one"},
+      {"value": "50+", "label": "free tools pulling in search traffic"}
+    ],
+    "chart": {
+      "title": "SiteGPT revenue per month, by his own numbers",
+      "points": [
+        {"label": "Day 3", "value": 750, "display": "$750"},
+        {"label": "Month 1", "value": 10000, "display": "$10K"},
+        {"label": "After churn", "value": 5000, "display": "$5K", "down": true},
+        {"label": "Aug 2023", "value": 14000, "display": "$13K to $15K"},
+        {"label": "Oct 2023", "value": 15000, "display": "$15K"}
+      ],
+      "note": "A January 2026 case study puts it at about $13K a month, but Bhanu hasn't confirmed that figure himself."
+    },
+    "tryToday": "Open any free keyword tool and look for one \"generator\" or \"checker\" search in your field with low difficulty and a thousand or more searches a month. Sketch the tiny free tool you'd build for it, with one button that points to the thing you actually want to sell.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Bhanu Teja P quit a well paid software job in India with no idea what to build, lost a product to a hosting bill, and then turned a small chatbot feature into SiteGPT, which reached $10,000 a month within its first month. This is the story of how one tweet, a lot of patience and fifty little free tools did the marketing for him.",
+    "stats": [
+      {"value": "$10,000", "num": 10000, "prefix": "$", "suffix": "", "label": "a month, one month after launch", "note": "his own numbers, spring 2023"},
+      {"value": "15,000", "num": 15000, "prefix": "", "suffix": "", "label": "visitors on launch day", "note": "30 March 2023"},
+      {"value": "50+", "num": 50, "prefix": "", "suffix": "+", "label": "free tools built for search traffic", "note": "per a January 2026 case study"},
+      {"value": "3 years", "num": 3, "prefix": "", "suffix": " years", "label": "of trying before it worked", "note": "his own words"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "He quit a good job without an idea",
+        "paras": [
+          "Bhanu lives in Nellore, a town in Andhra Pradesh that most people outside India have never heard of. He wrote his first line of code in 2015 and got into web development about a year later. Over the next few years he went through Django, Rails and Laravel before settling on JavaScript and TypeScript, and eventually on Remix, which he now uses \"for everything\".",
+          "He had a job as a software engineer at a company he doesn't name. In his Mixergy interview he describes the pay as \"a very high salary here in India.\" A January 2026 case study by Superframeworks says he stayed only about eight months before quitting and moving back into his parents' house. That detail comes from a secondary source, but it fits with everything he says himself.",
+          "Here's the part that makes most of us nervous. He didn't quit because he had a product making money. He didn't even have a plan. In his words: \"I even didn't have a proper idea before I quit.\" He says it then took about three years to get to a good place.",
+          "During those three years he did one thing consistently: he built in public on Twitter. He started with zero followers and simply posted what he was working on, what broke and what he learned. That habit would turn out to be the single biggest reason his later launch worked, but nobody, including him, could have known that at the time.",
+          "Before we go further, one honest note about the word solo. Mixergy in August 2023 and Superframeworks in April 2024 both describe him as a solo, bootstrapped founder. Starter Story's profile of SiteGPT lists \"2 founders, 0 employees\". And in his own AMA he mentions hiring one person when launch month got out of hand. So we're not going to pretend we know for sure. He's clearly the builder and the face, and he has had at least some help."
+        ],
+        "pull": {"text": "I even didn't have a proper idea before I quit.", "cite": "Bhanu, on Mixergy, August 2023"}
+      },
+      {
+        "label": "The first tries",
+        "title": "A year spent on someone else's idea",
+        "paras": [
+          "The first serious project after quitting was an education platform he worked on with a partner. They put about a year into it. It didn't take off, and when Bhanu looks back, the lesson he draws isn't about the market or the code. It's about whose idea it was.",
+          "Because it was his partner's idea and not his own, he says, \"I can't work on it.\" He simply couldn't bring the energy a solo-style builder needs to something he hadn't dreamed up himself. Ever since, he has had a firm rule: \"I only work on things that I'm willing to work on.\"",
+          "That sounds obvious, but think about how many of us take on side projects because a friend is excited, or because the idea looks good on paper. Bhanu lost a year finding out that motivation is not something you can borrow. For someone working alone, with no boss and no salary, it's the fuel for everything else.",
+          "Superframeworks sums up this period by saying most of his early products didn't succeed. Nobody has published a full list or a count, so we only know the two that he has talked about in detail: the education platform and the one that came next."
+        ],
+        "pull": {"text": "I only work on things that I'm willing to work on", "cite": "Bhanu, on Mixergy, August 2023"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "$250 a month coming in, $10,000 going out",
+        "paras": [
+          "The next product was called MDX1. It turned a Notion workspace into a blog, so people could write in Notion and publish a proper website without touching code. It found real customers, about 25 of them, paying a combined $250 a month.",
+          "Then the hosting bill arrived. In one month MDX1 ran up roughly **$10,000 in hosting costs**, forty times what it was earning. For a bootstrapped founder in Nellore living on savings, there was no way to absorb that. He shut it down.",
+          "Most people would have walked away from the idea at that point. Bhanu didn't. He rebuilt the same product from scratch, this time designed to be cheap to run, and called it Feather. Feather grew to about $5,000 a month by his own account. The Superframeworks case study says it peaked at about $6,000 a month and had roughly 100 customers.",
+          "Look at what actually failed here. Not the idea, not the customers, but the architecture. The second version kept the customers' problem and fixed the cost structure. That's a useful thing to remember the next time a project looks dead: sometimes it's one part that's broken, not the whole thing.",
+          "Feather also mattered for a less obvious reason. Every one of those roughly 100 customers had a blog. That meant Bhanu had a small, steady window into what bloggers and small businesses needed next, and in early 2023, that window showed him something big."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "A Feather feature that wanted to be its own product",
+        "paras": [
+          "Early 2023 was the moment ChatGPT took over every conversation online. Superframeworks says Bhanu spent a weekend learning the new AI tools. His first experiment was practical: a chatbot trained on Feather's own documentation, so Feather customers could ask questions and get answers without emailing him.",
+          "It worked, and he had a realisation. If his own docs could use a chatbot, so could every one of his customers' blogs and websites, and so could thousands of other businesses. Instead of keeping it as a Feather feature, he gave it a separate name and a separate home. That was SiteGPT: you point it at your website, it learns your content, and it answers your visitors' questions.",
+          "How long did it take? He has told it two ways. In his Indie Hackers AMA and to Starter Story he says the first version was built \"within 2-3 weeks\". On Mixergy he says he built it over a weekend. Superframeworks puts it at about two weeks from idea to launch. Either way, it was fast, and it was rough.",
+          "The stack was simple and cheap: Remix for the app, Cloudflare Workers, Fauna as the database, Pinecone for the AI search, OpenAI for the answers and Paddle for payments. He chose Paddle because it \"handles everything\" for payments and tax, which matters a lot when you're one person in India selling to customers around the world. Interestingly, he didn't use LangChain, the popular AI framework of the time. He just wrote what he needed.",
+          "The first version had plenty of bugs. He spent about a week after launch just stabilising it. He's relaxed about that. His approach is to ship the smallest thing that a real customer can actually use and let them pull the product forward.",
+          "One decision from this stage is worth copying exactly. He launched with **paid plans only**: no free tier and no free trial. He even priced it \"a little higher\" than he might have, to cover the AI costs. His reasoning was pure survival. If launch traffic came in and he let everyone use it for free, the OpenAI bill alone could have run to several thousand dollars. He had already lost one product to a surprise bill, and he wasn't going to lose another."
+        ],
+        "pull": {"text": "I just launch what I think is the minimum usable version.", "cite": "Bhanu, Indie Hackers AMA, 2023"}
+      },
+      {
+        "label": "The first 100 users",
+        "title": "One tweet, then Hacker News, then Product Hunt",
+        "paras": [
+          "On 30 March 2023 Bhanu posted his launch tweet. By then his three years of posting had grown his following from zero to about 10,000 people. The tweet went viral. That single day brought about 15,000 visitors to SiteGPT, and the first week brought about 40,000.",
+          "The next day, as he tells it in his AMA, SiteGPT was on the front page of Hacker News for several hours. Starter Story dates the Show HN front page to 2 April. Then on 5 April it was the number one product of the day on Product Hunt.",
+          "Here's the bit that surprises people. He did no Product Hunt preparation at all. No launch video, no email to his list, no messages asking friends to upvote. He \"just submitted the form\". When he looked at where the traffic actually came from, the ranking was clear: Twitter, by a huge margin, then Hacker News, then Product Hunt.",
+          "The money followed quickly. Within two to three days SiteGPT was making about $750 to $780 a month. Within a month it had about 200 paying customers and about $10,000 a month in revenue, by his own numbers. He later wrote that there's nothing quite like a launch month, and you can see why.",
+          "Everything in that first wave was organic. He didn't buy ads. He did try one paid newsletter sponsorship, which sent about 500 visits and no signups at all. After launch, word of mouth became one of his biggest sources of new customers, which makes sense for a product that sits on other people's websites where their visitors can see it.",
+          "Notice the order of things. The tweet worked because of three years of posting. Hacker News and Product Hunt worked partly because the tweet had already created a buzz. **The launch was the last step of a long build-up, not the first step.**"
+        ],
+        "pull": {"text": "There is nothing like a launch month.", "cite": "Bhanu, Indie Hackers AMA, 2023"}
+      },
+      {
+        "label": "The hard month",
+        "title": "Half the customers left, and the servers were under attack",
+        "paras": [
+          "The headline was $10,000 a month in 30 days. What followed was much less glamorous. About $5,000 of that monthly revenue churned the next month. Almost half of the first customers cancelled after month one. At one point churn ran about 20% a month, and later it settled at about 10%.",
+          "Why would that happen? A launch spike brings in a lot of curious people who want to try the new AI thing. Some of them were never going to stay. Bhanu's paid-only model meant at least they paid for their curiosity, but the drop was still a shock to the numbers.",
+          "At the same time, SiteGPT was being hit by DDoS attacks almost daily in those first weeks. He describes \"many sleepless nights\" keeping it online. This is the point where he hired one person to help, which is part of why it's hard to call him purely solo.",
+          "Costs were real too. In his AMA he puts the combined running costs of SiteGPT and Feather at about $3,000 to $5,000 a month. On Mixergy in August 2023 he says $4,000 to $5,000, with about $1,000 of that going to OpenAI. That's why the pricing decision from the first version mattered so much.",
+          "And yet he got through it. By August 2023 SiteGPT was back up to $13,000 to $15,000 a month, by his own account, and about $15,000 by around October. The customers who stayed were the ones who actually needed it."
+        ]
+      },
+      {
+        "label": "Finding the engine",
+        "title": "Fifty little tools that never stop working",
+        "paras": [
+          "Launches fade. Bhanu's answer to life after launch month was something marketers call engineering as marketing: build small, useful, free tools that people search for, and put a gentle button on each one pointing to your paid product.",
+          "According to the Superframeworks case study from January 2026, he now has more than 50 of these. They include a PDF-to-Markdown converter, an AI chatbot name generator, a sitemap validator and an FAQ generator. Each tool solves one small, specific job, and each has a call to action back to SiteGPT. The case study says these free tools bring in about **90% of SiteGPT's Google traffic**.",
+          "The way he picks them is very repeatable. He opens a blank search in Ahrefs Keywords Explorer and filters for words like \"AI\" or \"generator\". He keeps only keywords with a difficulty under 10 and a search volume of 1,000 or more a month. He logs those in Notion, decides what the call to action will be for each tool, and then ranks them by volume, difficulty, how hard the tool is to build and how close it is to SiteGPT's world.",
+          "Then he builds them absurdly fast. As quoted by Superframeworks, he says a new tool takes him less than five minutes, because he points Cursor at one of his existing tools and uses it as a template. Each new page is a new door into the business that never needs another tweet.",
+          "Superframeworks also shared a funnel: about 50,000 monthly visitors, turning into about 200 leads, then about 60 trials, with 25% to 40% of trials becoming paying customers. Be a little careful with that one, because the same page's header says \"1M+ visitors\", which doesn't match. Still, the shape of it is useful: lots of free traffic, a small share of leads, and a good conversion rate at the end.",
+          "On the product side, his rule stayed simple. He builds the features that enterprise customers ask for and are willing to pay for, then rolls those features out to everyone. The biggest customers fund the roadmap and the smaller ones get the benefit."
+        ],
+        "pull": {"text": "Everything is about distribution.", "cite": "Bhanu, Indie Hackers AMA, 2023"}
+      },
+      {
+        "label": "Where it stands now",
+        "title": "The newer numbers nobody has confirmed",
+        "paras": [
+          "Most of the numbers on this page are Bhanu's own, shared in interviews and his AMA, and nobody has audited them. The newer ones are shakier still, so let's be clear about where each comes from.",
+          "A 2023 tweet, cited by Superframeworks, said he had made $175,000 in one year. In April 2024 Superframeworks reported about $250,000 in total revenue and more than $20,000 a month across SiteGPT and Feather together. Starter Story's sidebar lists $20,833 a month for SiteGPT, but without a date, and it doesn't match the article text, so we're leaving it aside.",
+          "Then in January 2026 the same Superframeworks site published a case study saying SiteGPT makes about $13,000 a month, has passed $500,000 in total revenue and serves more than 130 business customers. It also says he **sold Feather for $250,000**, and a paywalled newsletter excerpt says the same, without a date or a buyer. Bhanu himself hasn't confirmed any of this publicly, and the case study cites his X account without linking the posts.",
+          "If those 2026 figures are right, SiteGPT has been roughly flat at $13,000 to $15,000 a month since August 2023. That's still a very good income for one builder in Nellore, but it's a plateau, not a rocket. You'll also see a 2026 article online claiming he hit $100,000 a month. It's an unsourced SEO piece, so we're ignoring it.",
+          "As for what he's working on in 2025 and 2026, there's nothing public. No new product announcement and no new interview. He hasn't shared it. The story that's solid ends with a working business, a free-tool engine and a reported sale of Feather that he hasn't confirmed."
+        ]
+      },
+      {
+        "label": "How he thinks",
+        "title": "Build the thing, then spend your life on distribution",
+        "paras": [
+          "If you strip Bhanu's story down to the principles, you get three or four ideas he keeps repeating in different words.",
+          "First, building is the easy bit. He says it plainly: \"Coding would be the easiest part among everything else.\" For a developer to say that is striking. It's also good news for marketers like us, because the hard part is the part we already know.",
+          "Second, distribution beats everything. \"Everything is about distribution\" is the line from his AMA, and his whole story backs it up. The launch worked because of three years of posting. The business survives because of fifty free tools.",
+          "Third, effort stacks up over time. He told Starter Story that \"the efforts eventually get compounded\", and that there's \"no one right way to do things\". The followers he gathered while MDX1 and Feather were struggling were the same followers who made SiteGPT's launch tweet go viral.",
+          "And fourth, only build what genuinely excites you. He lost a year on someone else's idea and won't do it again. When you're alone, interest is the engine, so choose projects that come from your own head."
+        ],
+        "pull": {"text": "Coding would be the easiest part among everything else.", "cite": "Bhanu, Indie Hackers AMA, 2023"}
+      }
+    ],
+    "failuresTitle": "What went wrong before it went right",
+    "failuresIntro": "Bhanu hasn't given a count of his failed products, but he has talked openly about these.",
+    "failures": [
+      {"year": "Before 2023", "name": "The education platform", "what": "He spent about a year building an education platform with a partner. It was his partner's idea, and he found he couldn't put his heart into it. The project didn't succeed.", "lesson": "If you're working alone, only pick ideas you genuinely want to spend years on."},
+      {"year": "Before 2023", "name": "MDX1", "what": "A Notion-to-blog tool that reached about 25 customers and $250 a month. Then one month's hosting bill came to about $10,000 and he had to shut it down.", "lesson": "Check what your product costs to run at scale before it scales, not after."},
+      {"year": "Spring 2023", "name": "SiteGPT's first-month churn", "what": "After a huge launch month, about $5,000 of monthly revenue churned and almost half of the first customers left after month one. Churn ran about 20% before settling at about 10%.", "lesson": "Launch-day customers include tourists, so judge the business on month three, not week one."},
+      {"year": "2023", "name": "The newsletter sponsorship", "what": "He paid for a newsletter sponsorship to promote SiteGPT. It sent about 500 visits and not a single signup.", "lesson": "Test paid channels small before trusting them, even ones that look like a perfect audience."}
+    ],
+    "playbookTitle": "How he got customers without ads",
+    "playbook": [
+      {"title": "Build in public for years before you need it", "text": "He posted about his work on Twitter for more than three years, starting from zero followers. By the SiteGPT launch he had about 10,000 people watching, and that audience is what made the launch tweet go viral."},
+      {"title": "Launch with one tweet", "text": "On 30 March 2023 he launched SiteGPT with a single tweet. It brought about 15,000 visitors that day and about 40,000 that week, and Twitter stayed his best launch channel by a wide margin."},
+      {"title": "Stack Hacker News and Product Hunt on top", "text": "SiteGPT reached the Hacker News front page as a Show HN on 2 April 2023 and was Product Hunt's number one product of the day on 5 April. He did no prep for Product Hunt at all and just submitted the form."},
+      {"title": "Charge from day one", "text": "No free plan and no trial, with prices set a little higher to cover AI costs. It protected him from a surprise OpenAI bill during the launch spike and meant every visitor who stayed was a paying customer."},
+      {"title": "Turn a feature into a product", "text": "SiteGPT was a chatbot he'd built for Feather's docs. He noticed that his roughly 100 Feather customers all had blogs that could use the same thing, and spun it out right as ChatGPT made the category hot."},
+      {"title": "Build free tools for search", "text": "He has over 50 free tools, like a sitemap validator and an FAQ generator, each linking to SiteGPT. A January 2026 case study says they bring in about 90% of his Google traffic."},
+      {"title": "Pick tool keywords with a filter", "text": "He searches Ahrefs for terms like \"AI\" or \"generator\", keeps those with difficulty under 10 and 1,000 or more monthly searches, logs them in Notion and ranks them by volume, difficulty, effort and relevance."},
+      {"title": "Clone tools in minutes with AI", "text": "He builds each new free tool in under five minutes by pointing Cursor at an existing tool as a template, so adding another search page costs him almost nothing."},
+      {"title": "Let big customers fund the roadmap", "text": "He builds the features enterprise customers request and pay for, then rolls them out to every customer. Word of mouth from happy users became one of his main sources of growth."}
+    ],
+    "charts": [
+      {
+        "title": "SiteGPT revenue per month, by his own numbers",
+        "points": [
+          {"label": "Day 3", "value": 750, "display": "$750"},
+          {"label": "Month 1", "value": 10000, "display": "$10K"},
+          {"label": "After churn", "value": 5000, "display": "$5K", "down": true},
+          {"label": "Aug 2023", "value": 14000, "display": "$13K to $15K"},
+          {"label": "Oct 2023", "value": 15000, "display": "$15K"},
+          {"label": "Jan 2026", "value": 13000, "display": "$13K", "down": true}
+        ],
+        "note": "The January 2026 figure comes from a secondary case study and hasn't been confirmed by Bhanu."
+      },
+      {
+        "title": "SiteGPT launch traffic, spring 2023",
+        "points": [
+          {"label": "Launch day", "value": 15000, "display": "15,000 visitors"},
+          {"label": "First week", "value": 40000, "display": "40,000 visitors"}
+        ],
+        "note": "Most of it came from one tweet, with Hacker News and Product Hunt adding the rest."
+      }
+    ],
+    "timeline": [
+      {"when": "2015", "text": "Writes his first line of code.", "big": false},
+      {"when": "2016", "text": "Starts web development, moving through Django, Rails and Laravel before settling on Remix.", "big": false},
+      {"when": "About 2020", "text": "Starts building in public on Twitter with zero followers. He keeps it up for more than three years before SiteGPT.", "big": true},
+      {"when": "Before 2023", "text": "Spends about a year on a partner's education platform, which doesn't work out.", "big": false},
+      {"when": "Before 2023", "text": "MDX1 reaches 25 customers and $250 a month, then a $10,000 hosting bill shuts it down. He rebuilds it cheaply as Feather.", "big": false},
+      {"when": "Early 2023", "text": "Builds a chatbot for Feather's docs and decides to spin it out as SiteGPT.", "big": false},
+      {"when": "30 Mar 2023", "text": "Launches SiteGPT with one tweet. About 15,000 visitors that day.", "big": true},
+      {"when": "2 Apr 2023", "text": "SiteGPT hits the Hacker News front page.", "big": false},
+      {"when": "5 Apr 2023", "text": "Number one product of the day on Product Hunt, with no preparation.", "big": false},
+      {"when": "Spring 2023", "text": "About 200 paying customers and $10,000 a month within the first month, then heavy churn.", "big": true},
+      {"when": "Aug 2023", "text": "Back up to $13,000 to $15,000 a month, by his own account.", "big": false},
+      {"when": "Jan 2026", "text": "A case study reports about $13,000 a month, over $500,000 total and a $250,000 sale of Feather. Not confirmed by Bhanu.", "big": false}
+    ],
+    "quotes": [
+      {"text": "Everything is about distribution.", "cite": "Indie Hackers AMA, 2023"},
+      {"text": "Coding would be the easiest part among everything else.", "cite": "Indie Hackers AMA, 2023"},
+      {"text": "I just launch what I think is the minimum usable version.", "cite": "Indie Hackers AMA, 2023"},
+      {"text": "There is nothing like a launch month.", "cite": "Indie Hackers AMA, 2023"},
+      {"text": "I even didn't have a proper idea before I quit.", "cite": "Mixergy interview, August 2023"},
+      {"text": "the efforts eventually get compounded", "cite": "Starter Story interview, 2023"},
+      {"text": "no one right way to do things", "cite": "Starter Story interview, 2023"}
+    ],
+    "steal": [
+      "Start posting about your work now, long before you have something to launch. Bhanu's viral launch tweet was really three years of posting paying off on one day.",
+      "Look inside whatever you already run for one small feature that could stand alone in a hot category. SiteGPT was a docs chatbot inside Feather before it was a business.",
+      "Charge from the first day and price a little higher if your costs scale with usage. A free tier during a launch spike can bankrupt a one-person business.",
+      "Build small free tools around low-difficulty searches, each with one clear button to your paid product. Use AI to clone them from a template so each one takes minutes.",
+      "Expect a launch-month crash and plan for it. Judge the business on the customers still paying in month three.",
+      "Before you scale anything, estimate the hosting or API bill at ten times today's usage. MDX1 died of exactly that surprise."
+    ],
+    "sources": [
+      {"title": "Indie Hackers AMA: I reached $10K MRR with my AI SaaS product in 1 month", "url": "https://www.indiehackers.com/post/i-reached-10k-mrr-with-my-ai-saas-product-in-1-month-ama-b9006cc5ca"},
+      {"title": "Mixergy interview: SiteGPT with Bhanu Teja P (August 2023)", "url": "https://mixergy.com/interviews/sitegpt-with-bhanu-teja-p/"},
+      {"title": "Starter Story: SiteGPT", "url": "https://www.starterstory.com/stories/sitegpt"},
+      {"title": "Superframeworks blog: SiteGPT (April 2024)", "url": "https://superframeworks.com/blog/sitegpt"},
+      {"title": "Superframeworks case study: SiteGPT (January 2026)", "url": "https://superframeworks.com/case-study/sitegpt"},
+      {"title": "Prohance: on selling Feather for $250K (paywalled excerpt)", "url": "https://prohance.substack.com/p/on-selling-featherso-for-250k-and-7f5"}
+    ]
+  }
+}

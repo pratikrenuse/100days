@@ -1,0 +1,254 @@
+{
+  "n": 16,
+  "name": "Ben Thompson",
+  "short": "Ben",
+  "wisdom": "Give the essay away for free, and charge for the habit.",
+  "email": {
+    "subject": "His paywall was broken for the first 24 hours.",
+    "hook": "When Ben Thompson finally put a paywall on his blog, nobody could buy for the first 24 hours, and outside estimates now say that same blog makes over $5 million a year.",
+    "lead": [
+      "Ben is the man who made the paid newsletter a real business, years before Substack existed. Its founders cite him as the inspiration. He writes every word of Stratechery himself, but let's be honest about the setup: he has podcast co-hosts, an assistant, and since 2026 a presenting sponsor in Stripe. So he's a solo writer, not a one-man company.",
+      "Why he matters to us: he started with about 400 Twitter followers and a day job at Microsoft. No team, no funding, no famous name. Just a clear point of view and a stubborn rhythm."
+    ],
+    "stats": [
+      {"value": "$5M+", "label": "a year, an outside estimate for 2023"},
+      {"value": "$120", "label": "a year per subscriber"},
+      {"value": "70%", "label": "of subscribers pay annually"}
+    ],
+    "chart": {
+      "title": "Stratechery paid subscribers over time",
+      "points": [
+        {"label": "Summer 2014", "value": 200, "display": "a few hundred"},
+        {"label": "Nov 2014", "value": 1000, "display": "1,000"},
+        {"label": "Early 2015", "value": 2000, "display": "2,000"},
+        {"label": "2023", "value": 40000, "display": "40,000+"}
+      ],
+      "note": "The 2014 and 2015 numbers are Ben's own. The 2023 number is an outside estimate, because he stopped sharing counts after 2015."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "On 1 August 2025 Ben moved his family from Taiwan back to the US, mostly for his kids' future. He's using the move to test a new rhythm: Daily Updates on Tuesday to Thursday, and \"more video\". By October 2026 his About page also says Stratechery is \"presented by Stripe\", with **total editorial independence** written into the contract.",
+          "He's careful with AI. He calls it \"much more efficient Googling\" and uses ChatGPT for research and to critique his drafts, but he says plainly that he does not use it to write. And here's a detail worth sitting with: by early 2026, more than half his readers were listening to Stratechery rather than reading it."
+        ]
+      },
+      {
+        "title": "How the money comes in now",
+        "stats": true,
+        "paras": [
+          "It's almost boringly simple. His weekly essays are free. Paying subscribers get three Daily Updates a week, interviews, and a bundle of podcasts (Dithering with John Gruber, Sharp Tech, Sharp China) for **$12 a month or $120 a year**. About 70% pick the annual plan.",
+          "He doesn't publish revenue. Outside analysts put it at over $3 million in 2020 with about a 90% margin, and over $5 million by 2023 with more than 40,000 paying readers. He also lists a speaking fee of $400K to $1M a talk. He tried sponsored posts for about six months early on and dropped them because \"the ROI wasn't there.\""
+        ]
+      },
+      {
+        "title": "How he got his first readers",
+        "paras": [
+          "In 2013 he capped himself at two free posts a week on purpose. He was already planning a paid daily product, and he wanted paying to feel like getting more, not like losing access. That's a pricing decision dressed up as a schedule.",
+          "Then he emailed John Gruber of Daring Fireball, the writer he most admired. Gruber's first reply only pointed out a word he'd used wrong. But later Gruber linked a full piece and called Stratechery \"the best news site I've encountered in years\". Ben's followers went from about **500 to 1,500 in 12 hours**. When he went paid in April 2014, he gave Kara Swisher at Recode the scoop in advance, which forced him to hit a public date."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "The paid launch was a mess. A security certificate fault stopped anyone from buying for a full day. The paid site confused people, so over one weekend he tore it out and just emailed the extras instead. He double-charged some subscribers and had to refund them. He missed his day one, week one and month one targets.",
+          "Behind the scenes he stopped paying his credit cards to save cash, slept badly, and thought about going back to teaching English. His wife was upset he'd left a six-figure job. That summer in Paris he woke at 4 am and wrote in the bathroom so he wouldn't wake her. Then in November 2014 he cut everything down to **one price and one product**, crossed 1,000 subscribers, and got 250 more the next day."
+        ]
+      }
+    ],
+    "tryToday": "Pick the one topic you'd write about even if nobody paid, and set a public rhythm you can keep for a month, like two posts a week. Don't think about charging until you've held it.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Ben Thompson writes Stratechery, a daily analysis of tech and business that people pay $120 a year for. He started it in 2013 with about 400 Twitter followers while working at Microsoft, botched his paid launch, and still became the model the whole paid-newsletter world copied.",
+    "stats": [
+      {"value": "$5M+", "num": 5, "prefix": "$", "suffix": "M+", "label": "a year in 2023", "note": "an outside estimate"},
+      {"value": "40,000+", "num": 40000, "prefix": "", "suffix": "+", "label": "paying readers in 2023", "note": "an outside estimate"},
+      {"value": "1,000", "num": 1000, "prefix": "", "suffix": "", "label": "subscribers by November 2014", "note": "his own number, about six months after going paid"},
+      {"value": "200", "num": 200, "prefix": "", "suffix": "", "label": "countries his readers live in", "note": "his own number, February 2026"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A ministers' son from a town of 2,000",
+        "paras": [
+          "Ben grew up in a small town in Wisconsin, about 2,000 people, in a blue-collar area. His parents were ministers. He got onto the internet by pestering them until they signed up for a Juno account that only did email. That's the starting point: not Silicon Valley, not a tech family, just a curious kid with a dial-up inbox.",
+          "He studied political science at the University of Wisconsin and wrote editorials for the student paper. He says his grades could have got him into a fancier school, but he never applied to an Ivy. After college he went to Taiwan to teach English, and while he was there he built a presentation system for a group of schools. He also met his wife there. Taiwan would end up being home for most of the next two decades.",
+          "Then came the expensive part. He did an MBA at Kellogg in strategy and marketing, plus a design and innovation degree at McCormick, and business school **left him in debt**. He interned at Apple University and came away feeling it wasn't the right fit. After that he joined Microsoft, working on Windows 8 and the dynamics of the app store, publishing, and social apps.",
+          "The catch at Microsoft was simple: he couldn't write publicly about the industry while he worked there. And writing about the industry was the thing he most wanted to do. On a holiday in Hawaii over the winter of 2012 to 2013, he and his wife talked seriously about him leaving."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "He started with about 400 followers and two posts a week",
+        "paras": [
+          "Ben started Stratechery in 2013 while he was still at Microsoft. He had about 400 Twitter followers. Microsoft's head of strategy, Charlie Songhurst, offered him a strategy job, and he turned it down. His welcome post framed the whole idea in one question: \"What is the historical angle on today's news?\" He wasn't going to break news. He was going to explain it.",
+          "He thought hard about how it looked. He used a custom font, an orange colour scheme, and hand-drawn illustrations, which he says were rare on blogs at the time. Years later he'd say \"nothing visually about Substack is memorable\", and you can see he meant it from day one. **He wanted the site to be recognisable at a glance.**",
+          "Here's the clever bit, and it's the thing we should copy. Through 2013 he only wrote free posts, and he deliberately limited himself to two a week. He was already planning a paid daily product. If he'd been writing every day for free, a paywall would have felt like something being taken away. By keeping the free rhythm low, the paid rhythm could feel like more.",
+          "Meanwhile he left Microsoft and joined Automattic, the company behind WordPress, as a growth engineer. He moved back to Taiwan and worked mostly with Matt Mullenweg. But he admits he felt guilty taking Automattic's salary while pouring his real energy into the blog, and he didn't tell his wife the full picture of how he felt."
+        ]
+      },
+      {
+        "label": "The first readers",
+        "title": "The email to John Gruber",
+        "paras": [
+          "About a month after launching, Ben emailed John Gruber, who writes Daring Fireball and was the writer Ben modelled himself on. You'd hope for a warm welcome. Instead Gruber's first reply just pointed out that Ben had used a word wrongly. That's it. A correction.",
+          "But Ben kept writing, and Gruber kept reading. Later, Gruber posted a full piece about Stratechery and called it \"the best news site I've encountered in years.\" Ben's Twitter following jumped from about 500 to about 1,500 in 12 hours. He calls it the first of two big step changes in Stratechery's growth.",
+          "Notice what he didn't do. Hacker News doesn't come up at all when he tells the story. There was no growth hack and no ad budget. **One respected reader, sharing one piece, to exactly the right crowd.** For us, the lesson is that the person whose audience overlaps most with ours is worth more than a thousand random followers."
+        ],
+        "pull": {"text": "the best news site I've encountered in years.", "cite": "John Gruber, on Daring Fireball, 2013"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "The launch where nobody could pay",
+        "paras": [
+          "After he left Automattic, a consulting job in Asia-Pacific that he'd lined up fell through. So by April 2014 Stratechery was the plan, full time, with a freemium model. He gave Kara Swisher at Recode an announcement of the paywall in advance. He calls it an artificial deadline: once it was promised in public, he had to ship.",
+          "He launched with three tiers, according to The Tilt: $50 a year for the community, $100 for the community plus the paid posts, and $300 for all of that plus calls with him. The tech was WordPress subscription plugins stitched together with Stripe. It was the best he could do with what existed.",
+          "Then it broke. A security certificate fault meant nobody could buy anything for the first 24 hours. When people could get in, the paid site confused them. So over one weekend he ripped it out, went back to the old site, and simply emailed the paid extras every day. In the first month he double-charged some customers and had to refund them. He missed his one-day, one-week and one-month subscriber targets.",
+          "The money side was worse. He stopped paying his credit cards to keep cash in the bank. He slept badly. He thought about going back to teaching English. Friends and venture capitalists told him online subscriptions wouldn't work. He says **pride is what kept him going**. His wife was upset that he'd walked away from a six-figure job, and before a family trip to Paris that summer he kept the weak numbers from her.",
+          "In Paris he'd wake at 4 am and write the Daily Update in the bathroom, so he wouldn't wake her. Looking back in 2026, his bar for success was simple, and honestly quite moving."
+        ],
+        "pull": {"text": "As long as I could feed my family, I was fine.", "cite": "Ben, on the Cheeky Pint podcast, February 2026"}
+      },
+      {
+        "label": "Finding the money",
+        "title": "1,000 subscribers, then 250 more the next day",
+        "paras": [
+          "By June and July 2014, Ben had \"a couple of hundred\" paying subscribers, and the number grew every month. That summer he paid off the credit cards. It wasn't a rocket, but it was moving in the right direction.",
+          "His goal for the first year was 1,000 subscribers. He hit it in November 2014, about six months in. Around the same time he made the decision that mattered most: he dropped the tiers, killed the $300 level and the community, and went to **one price and one product**. He'd realised he preferred writing to running a community.",
+          "The day after he announced the 1,000 milestone, 250 more people subscribed, a jump of about 25% in a single day and his biggest day ever. His read is that many readers had been waiting to see whether he'd survive before they paid. A milestone is proof, and proof sells.",
+          "At about $100 a year, 1,000 subscribers is about $100,000 a year. One part of the Acquired transcript says \"$200,000 run rate\", but the arithmetic only supports $100,000, so that's the figure to trust. By early 2015 he had 2,000 subscribers. Sources disagree on whether that was January or April.",
+          "About a year after his launch, a tool called Memberful came out that did subscriptions properly, and he moved onto it. The duct tape could finally come off."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "Scaling it",
+        "title": "Building his own pipes",
+        "paras": [
+          "As Stratechery grew, Ben kept hitting walls with other people's software. He wanted paid podcasts, and nobody would offer them the way he needed. So he built his own system, called Passport. It runs his subscriptions and email. One small feature shows how carefully he thinks: every link in a Stratechery email is tokenised, so it works one link deep even when a subscriber forwards it. A friend gets a taste, not the whole thing. He describes Passport modestly as \"just my stuff for now\".",
+          "The podcasts became a bundle. Dithering, a short show with John Gruber, the same man who once corrected his grammar, started as an add-on and reached about 10,000 subscribers early on before levelling off. Later he folded it into Stratechery Plus alongside Sharp Tech with Andrew Sharp, Sharp China with Bill Bishop, Sharp Text, and a member forum. **One subscription, everything included.**",
+          "He was strict about what didn't work. For about six months after going independent he ran sponsored posts. He stopped because \"the ROI wasn't there.\" He raised his price once, a couple of years before a 2023 interview, and says he still mildly regrets it. When he did it, he warned annual subscribers in advance so they could lock in the old price. That's how you raise prices without burning trust.",
+          "He's also firm that the site is the product, not the inbox. \"Stratechery is a website first and foremost,\" he said. He owns the address, the design, the software and the relationship with every reader."
+        ]
+      },
+      {
+        "label": "The numbers",
+        "title": "What it makes, as far as anyone knows",
+        "paras": [
+          "Most of the numbers on this page are Ben's own, told in interviews, and the big recent ones are outside estimates because he stopped sharing counts after 2015.",
+          "In May 2020 an analyst named Stegmann pieced together public data points and estimated about 26,000 paying readers, about $3.29 million in revenue and about $2.97 million in profit, a margin of about 90%. Fortune used a figure of \"over $3 million\" for 2020 when it ranked Ben third on its Creator 25 list in 2021. By 2023, another analysis cited by The Tilt put Stratechery at **over $5 million a year and more than 40,000 paying readers**.",
+          "Subscriptions are the bulk of his income on purpose. He wants his incentives to match his readers' incentives. He owns no individual stocks in the companies he covers, pays his own travel, doesn't do consulting, and since 2016 hasn't given talks for companies he writes about. He lists a speaking fee of $400K to $1M per engagement, which tells you how he values his time. He has made one angel investment.",
+          "By February 2026 he said his readers were spread across about 200 countries, and more than half of them now listen rather than read. Recode credited him back in 2017 with pioneering the paid newsletter, and the Substack founders have named him as an inspiration."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Boutique, small and artisan",
+        "paras": [
+          "His weekly output today is three written Daily Updates, one interview, two episodes of Sharp Tech and two of Dithering. That's a lot. His trick for not burning out is to skip topics he doesn't enjoy, like congressional hearings, even if everyone else is covering them. He runs his tasks in OmniFocus with help from an assistant.",
+          "He describes the business as \"boutique and small and artisan\", and for years it really was just him. Today there are co-hosts and an assistant, but the writing is still his alone.",
+          "After 22 years in Taiwan, 12 of them continuous, Ben moved his family back to the US on 1 August 2025. He says \"the future of both of our children is in the U.S.\" and that security concerns were not the main reason. He kept a home in Taiwan, and he's honest about what it gave him: \"the biggest advantage Taiwan afforded me was the time zone.\" Writing while America slept meant his analysis was waiting in inboxes every morning.",
+          "With the move, he started testing Daily Updates on Tuesday to Thursday, interviews possibly on Mondays, and \"more video\". In January 2026 Stripe's co-founder John Collison interviewed him on the Cheeky Pint podcast, and by October 2026 Stratechery's About page says it is \"presented by Stripe\", with **total editorial independence** written into the deal."
+        ]
+      },
+      {
+        "label": "The future",
+        "title": "Why he won't let AI write for him",
+        "paras": [
+          "Ben uses AI every day, just not the way you might expect. \"It's much more efficient Googling,\" he says. He uses ChatGPT for research and to critique his drafts. But he is clear: \"I do not use it to actually generate any exact content.\"",
+          "He has a theory about where this goes. As AI produces endless personalised content, he thinks shared things, the essay everyone at work read this morning, the live event, could become more valuable, not less. He's also wary of bundles where creators team up, because once a participant can go direct to readers, they tend to leave. His advice to writers is to build your own pond.",
+          "He's honest that growth is harder now. He blames Twitter for showing links to fewer people, and the shift to audio, because \"audio content is not shared.\" Listeners don't forward a podcast the way readers forward a great paragraph.",
+          "And yet his view of the opportunity is huge. Sitting in Taiwan, writing in English, with no sales team and no ads, he could reach anyone. **That's the real lesson for us in Pune**: a one-person business built on writing has no borders."
+        ],
+        "pull": {"text": "Literally, the whole world is my market.", "cite": "Ben, on the Cheeky Pint podcast, February 2026"}
+      }
+    ],
+    "failuresTitle": "The launch that broke, and three other things he dropped",
+    "failuresIntro": "Ben doesn't hide the messy parts. Almost every failure here ended with him making things simpler.",
+    "failures": [
+      {"year": "2014", "name": "The consulting job that vanished", "what": "After leaving Automattic, Ben had a consulting job lined up in Asia-Pacific. It fell through, which left Stratechery as the only plan and put real pressure on his savings.", "lesson": "Assume the backup plan might disappear, and keep costs low enough to survive if it does."},
+      {"year": "April 2014", "name": "The paid launch", "what": "A security certificate fault meant nobody could buy for about 24 hours. The paid site was confusing, so he reverted to plain email over a weekend. He double-charged some subscribers in the first month and missed every early target he'd set.", "lesson": "A broken launch is survivable if you fix it fast and keep shipping the actual work."},
+      {"year": "2014", "name": "Three price tiers", "what": "He launched with $50, $100 and $300 a year tiers, with a community and calls at the top. He removed the $300 tier around November 2014, then collapsed everything to one price and dropped the community, because he'd rather write.", "lesson": "Complexity in pricing usually costs more than it earns; start with one price."},
+      {"year": "Early years", "name": "Sponsored posts", "what": "For about six months after going independent he ran sponsored posts. He stopped because the return was too low compared to subscriptions.", "lesson": "Try a revenue stream for a fixed time, then cut it without guilt if the numbers say no."},
+      {"year": "2020s", "name": "Slowing growth", "what": "Growth got harder as Twitter showed links to fewer people and more readers switched to audio, which people rarely share. He now has to work harder for each new reader.", "lesson": "Your growth channel can weaken under you, so own the reader relationship directly."}
+    ],
+    "playbookTitle": "How he found readers without ads",
+    "playbook": [
+      {"title": "Borrow one perfect audience", "text": "He emailed John Gruber, the writer whose readers were exactly his readers. Even after a first reply that only corrected his grammar, he kept writing, and Gruber's later link took him from about 500 to 1,500 followers in 12 hours."},
+      {"title": "Cap the free rhythm", "text": "In 2013 he wrote only two free posts a week on purpose. That way the paid daily product felt like more, not like a wall going up."},
+      {"title": "Make a public deadline", "text": "He gave Kara Swisher at Recode an announcement of the paywall ahead of time. Once the date was public, he couldn't slip it."},
+      {"title": "One price, one product", "text": "In November 2014 he cut three tiers down to one. He crossed 1,000 subscribers and announced it, and 250 more joined the next day, his biggest day ever."},
+      {"title": "Look different", "text": "A custom font, an orange colour scheme and hand-drawn illustrations made the site instantly recognisable. He still thinks most newsletter platforms look forgettable."},
+      {"title": "Nudge people to pay yearly", "text": "About 70% of subscribers are on the $120 annual plan. When he raised prices once, he warned annual subscribers first so they could lock in the old rate."},
+      {"title": "Let forwarding work for you", "text": "His own software, Passport, makes every link in an email work one level deep even when forwarded. A friend gets a real taste of the paid product without getting the whole thing."},
+      {"title": "Bundle co-hosted shows", "text": "Podcasts with Gruber, Andrew Sharp and Bill Bishop went into one Stratechery Plus subscription. Each co-host brings their own fans into the same bundle."}
+    ],
+    "charts": [
+      {
+        "title": "Paid subscribers in the first year",
+        "points": [
+          {"label": "Apr 2014", "value": 1, "display": "launch"},
+          {"label": "Jun to Jul 2014", "value": 200, "display": "a couple of hundred"},
+          {"label": "Nov 2014", "value": 1000, "display": "1,000"},
+          {"label": "Next day", "value": 1250, "display": "1,250"},
+          {"label": "Early 2015", "value": 2000, "display": "2,000"}
+        ],
+        "note": "Ben's own numbers. Sources disagree on whether 2,000 came in January or April 2015."
+      },
+      {
+        "title": "Estimated yearly revenue",
+        "points": [
+          {"label": "Nov 2014", "value": 100000, "display": "$100K run rate"},
+          {"label": "2020", "value": 3290000, "display": "$3.29M"},
+          {"label": "2023", "value": 5000000, "display": "$5M+"}
+        ],
+        "note": "2014 is from Ben's own subscriber count. 2020 and 2023 are outside estimates (Stegmann, and an analysis cited by The Tilt)."
+      }
+    ],
+    "timeline": [
+      {"when": "Winter 2012 to 2013", "text": "On a trip to Hawaii, Ben and his wife discuss him leaving Microsoft.", "big": false},
+      {"when": "2013", "text": "Starts Stratechery while still at Microsoft, with about 400 Twitter followers and a cap of two free posts a week.", "big": true},
+      {"when": "2013", "text": "John Gruber links to a piece and his following goes from about 500 to 1,500 in 12 hours.", "big": true},
+      {"when": "2013 to 2014", "text": "Joins Automattic as a growth engineer, moves back to Taiwan, then a planned consulting job falls through.", "big": false},
+      {"when": "April 2014", "text": "Goes paid and full time. The launch is broken for 24 hours and he double-charges some customers.", "big": true},
+      {"when": "Summer 2014", "text": "A couple of hundred subscribers. Pays off his credit cards. Writes at 4 am in a Paris bathroom.", "big": false},
+      {"when": "November 2014", "text": "Hits 1,000 subscribers, his one-year goal, moves to one price, and gains 250 more the next day.", "big": true},
+      {"when": "Early 2015", "text": "Reaches 2,000 paying subscribers.", "big": false},
+      {"when": "2020", "text": "Outside estimates put Stratechery above $3 million a year at about a 90% margin.", "big": false},
+      {"when": "2023", "text": "Estimates put it above $5 million a year with more than 40,000 paying readers.", "big": false},
+      {"when": "1 August 2025", "text": "Moves his family from Taiwan back to the US and starts testing a Tuesday to Thursday schedule and more video.", "big": false},
+      {"when": "October 2026", "text": "Stratechery's About page says it is presented by Stripe, with total editorial independence.", "big": false}
+    ],
+    "quotes": [
+      {"text": "As long as I could feed my family, I was fine.", "cite": "Cheeky Pint podcast, February 2026"},
+      {"text": "Stratechery is a website first and foremost", "cite": "Acquired podcast, 2023"},
+      {"text": "nothing visually about Substack is memorable", "cite": "Acquired podcast, 2023"},
+      {"text": "the ROI wasn't there", "cite": "Acquired podcast, on sponsored posts"},
+      {"text": "It's much more efficient Googling.", "cite": "Cheeky Pint podcast, February 2026, on AI"},
+      {"text": "I do not use it to actually generate any exact content.", "cite": "Cheeky Pint podcast, February 2026"},
+      {"text": "audio content is not shared.", "cite": "Cheeky Pint podcast, February 2026"},
+      {"text": "Literally, the whole world is my market.", "cite": "Cheeky Pint podcast, February 2026"}
+    ],
+    "steal": [
+      "Keep your free output deliberately smaller than your paid output. If we ever charge for a newsletter, the paid version should be a rhythm people can't get anywhere else, not the same posts behind a wall.",
+      "Find the one writer or creator whose audience is exactly ours and send them our best piece. Expect a cold first reply and keep going anyway.",
+      "Announce a launch date somewhere public before we're ready. Ben's deadline with Recode is the only reason his paywall shipped.",
+      "Start with one price. Ben's biggest day came right after he deleted his tiers.",
+      "When we hit a milestone, say it out loud. Readers who are waiting to see if we'll survive will join when they see proof.",
+      "Own the address and the reader list. Platforms change their rules, and Ben's growth slowed exactly where he depended on someone else's feed."
+    ],
+    "sources": [
+      {"title": "Acquired, Stratechery with Ben Thompson", "url": "https://acquired.fm/episodes/stratechery-with-ben-thompson"},
+      {"title": "Stratechery, Cheeky Pint interview with John Collison (February 2026)", "url": "https://stratechery.com/2026/an-interview-with-ben-thompson-by-john-collison-on-the-cheeky-pint-podcast/"},
+      {"title": "Stratechery, About", "url": "https://stratechery.com/about/"},
+      {"title": "Stratechery, A Personal Update and Vacation Break (2025)", "url": "https://stratechery.com/2025/a-personal-update-and-vacation-break/"},
+      {"title": "Wikipedia, Ben Thompson (analyst)", "url": "https://en.wikipedia.org/wiki/Ben_Thompson_(analyst)"},
+      {"title": "The Tilt on Ben Thompson and Stratechery", "url": "https://www.thetilt.com/content-entrepreneur/ben-thompson-stratechery"},
+      {"title": "Fortune Creator 25, Ben Thompson (2021)", "url": "https://fortune.com/ranking/creator-25/2021/ben-thompson-stratechery"},
+      {"title": "Stegmann on Medium, Stratechery profit estimate (May 2020)", "url": "https://medium.com/@ysamjo/ben-thompsons-stratechery-should-be-crossing-3-million-in-profits-this-year-c146433f0458"}
+    ]
+  }
+}

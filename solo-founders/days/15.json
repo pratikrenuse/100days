@@ -1,0 +1,528 @@
+{
+ "n": 15,
+ "name": "Lenny Rachitsky",
+ "short": "Lenny",
+ "wisdom": "Publish something genuinely useful every single week, and keep going for years.",
+ "email": {
+  "subject": "He quit mid-sabbatical. Now 1M+ subscribers.",
+  "hook": "Lenny Rachitsky quit Airbnb halfway through a sabbatical with no plan, wrote 40 free newsletters in a row without missing a week, and now has more than a million subscribers and a business he says makes over $1 million a year.",
+  "lead": [
+   "Lenny is the cleanest example in this series of the slow, boring, compounding way to win. No launch hack, no viral product. Just one very good post a week, for years, about a topic he knew from the inside.",
+   "He isn't a one-man band, though, and we should say so. He has no full-time employees, but about 10 contractors around the world help him. His podcast is produced by an agency, and one of his shows, How I AI, is hosted by Claire Vo. It's his name and his writing, with a small network behind it."
+  ],
+  "stats": [
+   {
+    "value": "1M+",
+    "label": "newsletter subscribers, 2025"
+   },
+   {
+    "value": "$1M+",
+    "label": "a year from newsletter and podcast, Jan 2024"
+   },
+   {
+    "value": "0",
+    "label": "full-time employees, about 10 contractors"
+   }
+  ],
+  "chart": {
+   "title": "Lenny's newsletter subscribers in the first year and a bit, by his own numbers",
+   "points": [
+    {
+     "label": "Jul 2019",
+     "value": 1000,
+     "display": "1,000"
+    },
+    {
+     "label": "Nov 2019",
+     "value": 5000,
+     "display": "5,000"
+    },
+    {
+     "label": "Early 2020",
+     "value": 9000,
+     "display": "9,000"
+    },
+    {
+     "label": "May 2020",
+     "value": 13000,
+     "display": "13,000"
+    },
+    {
+     "label": "Aug 2020",
+     "value": 15000,
+     "display": "15,000"
+    }
+   ],
+   "note": "The 2019 months are approximate, matched to his July guest posts and his late-November spike."
+  },
+  "sections": [
+   {
+    "title": "What he's doing right now",
+    "paras": [
+     "Lenny now runs a newsletter, Lenny's Podcast, a second show called How I AI, another called The Skip, a community, a Summit and something called Lenny's Product Pass. That's about 25 pieces of content a month. He also has Lennybot, an AI trained on everything he's published.",
+     "His 2026 goals are telling: higher quality, maybe fewer posts, a new newsletter or podcast vertical, more community and a bigger Summit. In 2025 he had planned to launch a product, and then decided \"it wasn't the right year for this.\" **He says no far more than he says yes.**"
+    ]
+   },
+   {
+    "title": "How the money comes in",
+    "stats": true,
+    "paras": [
+     "Three engines. A paid Substack newsletter, podcasts paid for by sponsors (in March 2026 those were WorkOS, Metaview and DX), and community. In January 2024 he told CNBC he was making more than $500,000 a year from the newsletter and more than $500,000 from the podcast. A third-party estimate puts paid newsletter revenue alone at over $2 million. He hasn't shared a newer figure.",
+     "The clever part is Product Pass. If you pay for a year, you get a year of more than 20 premium tools for free, from companies happy to hand out trials. When Perplexity's offer went in, it gave the newsletter its biggest growth day ever. **Other companies are paying for his growth.**"
+    ]
+   },
+   {
+    "title": "How he got his first readers",
+    "chart": true,
+    "paras": [
+     "It started with one Medium post in April 2019 about what seven years at Airbnb taught him. It hit Medium's front page, and Airbnb's CEO Brian Chesky shared it with the whole company. That post grew his Twitter, and a launch tweet got him his first 100 subscribers.",
+     "The next jumps came from writing for bigger audiences. Two early tweets and a guest post took him to about 1,000. Guest posts on First Round Review and Andrew Chen's blog in July 2019 pushed him further. Then an eight-part series on marketplaces, which took him hundreds of hours, took him to about 5,000 in late November. He says two posts drove about half of all his growth in that first stretch."
+    ]
+   },
+   {
+    "title": "The part nobody talks about",
+    "paras": [
+     "Even after it worked, he wasn't sure. On his $15 a month price he said, \"I don't know if that was the right decision. It feels fine.\" In August 2020 he was making about $65,000 a year before fees and kept about 60% of it after fees and taxes.",
+     "And now that it's huge, he has a different worry. He's been out of product management for years and worries about staying current. \"I don't know the off-ramp for this life,\" he said. A weekly habit that built a business is also a weekly habit you can't easily stop."
+    ]
+   }
+  ],
+  "tryToday": "Write down the one topic you know from the inside better than almost anyone (for Lenny it was being an early product manager at Airbnb), and outline the first post you'd publish about it this week.",
+  "button": "Read how Lenny built it"
+ },
+ "page": {
+  "intro": "A refugee kid from Ukraine who became one of Airbnb's first product managers, quit with no plan, and started writing one post a week. Seven years later his newsletter has more than a million subscribers, and it's built on almost nothing but consistency.",
+  "stats": [
+   {
+    "value": "1.2M",
+    "num": 1.2,
+    "prefix": "",
+    "suffix": "M",
+    "label": "newsletter subscribers",
+    "note": "2026"
+   },
+   {
+    "value": "$1M+",
+    "num": 1,
+    "prefix": "$",
+    "suffix": "M+",
+    "label": "a year",
+    "note": "newsletter plus podcast, Jan 2024"
+   },
+   {
+    "value": "40",
+    "num": 40,
+    "prefix": "",
+    "suffix": "",
+    "label": "free issues before charging",
+    "note": "10 months, no week missed"
+   },
+   {
+    "value": "450",
+    "num": 450,
+    "prefix": "",
+    "suffix": "",
+    "label": "paid subscribers in six weeks",
+    "note": "after the April 2020 launch"
+   }
+  ],
+  "chapters": [
+   {
+    "label": "Before it worked",
+    "title": "A taxi-driving engineer's son",
+    "paras": [
+     "Lenny was born in Ukraine to Jewish \"refusenik\" parents, people the Soviet Union had refused permission to emigrate. When he was six, the family finally left, travelling through Italy to Los Angeles with help from the US Jewish Federation. He has two younger sisters.",
+     "His mother was an economist who became a CPA in the US. His father was a mechanical engineer who drove taxis and limos while he worked his way back into engineering.",
+     "Lenny studied computer science at UC San Diego, then spent nine years as an engineer at a company called Webmetrics, staying on through its acquisition by NeuStar. Not exactly a founder's origin story. Nine years in one engineering job is a long time.",
+     "A few things to know before we go on. Lenny isn't entirely solo: he has no full-time employees, but about 10 contractors help him, his podcast is produced by an agency called penname.co, and one of his shows is hosted by Claire Vo. And most of the numbers on this page are Lenny's own, from his posts, talks and interviews, with a couple of outside estimates that we'll flag as we go."
+    ]
+   },
+   {
+    "label": "The first startup",
+    "title": "A \"terrible business idea\" that got him into Airbnb",
+    "paras": [
+     "Lenny's first startup was Localmind, which he co-founded with Beau Haugh. The idea came out of Alistair Croll's Year One Labs incubator in Montreal. They launched at SXSW in 2011 and raised $600,000.",
+     "He's honest about it now. He calls Localmind a \"terrible business idea\", because the need it served came up about once a quarter. You can't build a habit around something people want four times a year.",
+     "Airbnb offered to buy it in an all-stock deal. One investor tried to block the sale. Lenny says he and his co-founder threatened to quit and join Airbnb anyway, and the deal went through.",
+     "He planned to stay at Airbnb for a short time. He stayed about seven years and became one of its first product managers. In an April 2020 Q&A, asked whether he'd meant to stay seven years, he answered with a cheerful \"Hells no\". **Those seven years became the raw material for everything he wrote next.**"
+    ],
+    "pull": {
+     "text": "Did I intend to stay there for seven years? Hells no",
+     "cite": "Lenny, in a Q&A with Hunter Walk, April 2020"
+    }
+   },
+   {
+    "label": "The leap",
+    "title": "He quit 45 days into a sabbatical",
+    "paras": [
+     "In 2019 Lenny took a three-month sabbatical from Airbnb, which included a 10-day silent retreat. About 45 days in, he realised the work no longer mattered to him the way it used to. So he quit.",
+     "There was no plan. No newsletter business waiting, no product, no investors. He had taken time off and wanted to avoid going back to a traditional job if he could. That was about it.",
+     "Whether he had savings or Airbnb stock to fall back on, he hasn't said."
+    ]
+   },
+   {
+    "label": "The first version",
+    "title": "One Medium post, no website, no logo",
+    "paras": [
+     "His first \"product\" was a free Medium post: \"What Seven Years At Airbnb Taught Me About Building a Business\". It hit Medium's front page. And then Brian Chesky, Airbnb's CEO, shared it with the whole company. **That's a launch you can't buy.**",
+     "He kept writing on Medium, seven posts between April 2019 and February 2020. He also ran a sprint process with an advisory board, which grew from 7 to about 30 people over six months.",
+     "In June 2019, on Andrew Chen's advice, he moved the newsletter to Substack. Here's what he didn't do: he didn't spend time on design, branding, a website or a growth strategy. Later he warned other writers that those exact things had slowed people down. Substack handled the hosting and email signups, and later its recommendations brought him readers too.",
+     "His running costs were basically Substack and Stripe fees, plus taxes. Everything else was his time."
+    ]
+   },
+   {
+    "label": "The first readers",
+    "title": "From 100 subscribers to 9,000, one big post at a time",
+    "paras": [
+     "The first 100 came from that Airbnb post. It grew his Twitter following, and a launch tweet for the newsletter brought the first subscribers in.",
+     "The way he got to about 1,000 was \"two early tweets and a guest post\". The guest posts went out in July 2019, on First Round Review and on Andrew Chen's blog, both places where his exact readers already spent time. Another guest post took him to about 3,000.",
+     "Then came the big one. He wrote an eight-part series about marketplaces, which he'd learned inside out at Airbnb. It took \"hundreds of hours\", and it brought in about 2,000 subscribers, causing a spike in late November 2019 that took him to about 5,000. Three more months of weekly posts got him to about 9,000.",
+     "He later said two posts accounted for about half of all his growth up to August 2020. **One giant, genuinely useful post can do more than months of normal ones.** And he did all of it while writing 40 free issues in 10 months without missing a single week.",
+     "He didn't touch ads. \"Running Facebook or X ads are worthless,\" he said later."
+    ],
+    "chart": 0,
+    "pull": {
+     "text": "Running Facebook or X ads are worthless.",
+     "cite": "Lenny, to First Round Review"
+    }
+   },
+   {
+    "label": "Finding the money",
+    "title": "$15 a month, and 200 people paid in two days",
+    "paras": [
+     "He hadn't planned to charge at first. He went paid once he was sure he could keep it going, and the goal he set was $100,000 a year.",
+     "He did his homework on price. He looked at the top 20 paid Substacks, which charged between $5 and $50 a month. News newsletters sat at $5 to $10, insight newsletters at $10 to $50. Because his readers were tech employees, he went higher, at $15 a month or $150 a year. Before launching he checked that at least three people would actually pay. His advice now is to price slightly above your comfort level.",
+     "The launch was planned day by day. He gave champions with big followings a preview, told them in advance, and gave them simple ways to share. The launch email had six points with a TL;DR at the top. On 7 April 2020 he tweeted, \"Life alert: I'm adding a paid plan to my newsletter\", with 33% off for the first 48 hours.",
+     "About 200 people paid in the first couple of days. A reminder a week later, with 20% off, took it to about 250. About half of all his paid subscribers in those first months came in that first week. Launch day also brought a few hundred new free signups, and one free post later on brought in 39 paid subscribers by itself. He hand-picked the first 30 members of a private Slack community that came with the paid plan.",
+     "Six weeks after launch he had about 13,000 free subscribers, about 450 paying, and about $56,000 a year in recurring revenue. \"I finally had the confidence I could do this,\" he said. By August 2020 it was about 15,000 free and 500 paid, and about $65,000 a year before fees. He kept about 60% after fees and taxes. That same year he turned down an offer to be Head of Product at Miro, to protect the newsletter."
+    ],
+    "chart": 2,
+    "pull": {
+     "text": "I finally had the confidence I could do this.",
+     "cite": "Lenny, in a Substack talk, August 2020"
+    }
+   },
+   {
+    "label": "Scaling it",
+    "title": "Weekly posts to 100,000, recommendations to a million",
+    "paras": [
+     "After the launch, the recipe didn't change much. Weekly posts, tweets and word of mouth took him to 100,000 subscribers. For the final stretch to 500,000, which he reached on 11 September 2023, Substack's recommendations helped a lot. More than 9,000 other newsletters recommend his.",
+     "He passed 1,000,000 on 4 March 2025, and was at 1.2 million in 2026, the top business newsletter on Substack.",
+     "His writing rules are simple and hard. \"Pick a cadence, share it publicly, and stick to it for years.\" A typical post takes about 10 to 15 hours, some take about 100. He reviews each piece about 50 times and cuts 30 to 50% of the words. His best posts are original research. Over time he went from four posts a month to two to four.",
+     "The community grew alongside. The Slack went from 5,000 to 10,000 members in 2022, with 193 meetups across 30 countries that year. It's now about 40,000 members, and his 2024 Summit drew 1,200 people."
+    ],
+    "chart": 1,
+    "pull": {
+     "text": "Growth comes from publishing something valuable, that people want to share",
+     "cite": "Lenny, on hitting 500,000 subscribers, 2023"
+    }
+   },
+   {
+    "label": "The podcast",
+    "title": "The only thing that brought new people in",
+    "paras": [
+     "In 2022 he started Lenny's Podcast, and added video a couple of months in. He's clear about why it matters: \"It's the only place that drives new viewers outside of my newsletter.\" The newsletter mostly reaches people who already know him. The podcast finds new ones.",
+     "He spends about two hours preparing for a typical guest, and five to ten for guests who've already said a lot in public. The show now has more than 500,000 YouTube subscribers and gets 100,000 to 200,000 downloads an episode. Recent guests in late 2026 included people from OpenAI, Google Labs, Anthropic and Google's Gemini team.",
+     "In January 2024 he told CNBC he was making more than $500,000 a year from the newsletter and more than $500,000 from the podcast. He was 42. A third-party estimate puts paid newsletter revenue alone at over $2 million, with more than 18,000 paid subscribers. By 2026 he declined to share revenue at all.",
+     "Then, in late 2025, he added Lenny's Product Pass. Annual subscribers get a year of more than 20 premium tools for free. Perplexity came to him first, and its offer produced the newsletter's biggest growth day ever. **The tools get customers, the readers get value, and Lenny gets annual subscribers.**"
+    ],
+    "pull": {
+     "text": "all that really matters is quality and consistency.",
+     "cite": "Lenny, to CNBC, January 2024"
+    }
+   },
+   {
+    "label": "Where it stands",
+    "title": "No meetings before 3pm",
+    "paras": [
+     "Lenny works from home in Marin County. \"I have a rule: no meetings before 3pm.\" He takes four weeks off a year, goes on walks with his family and does school pickups. About 200 people ask him for something every week, and he says no to 99.9% of them.",
+     "The output is still huge: about 25 pieces a month across the newsletter, Lenny's Podcast, How I AI and The Skip. How I AI, hosted by Claire Vo, has been a big hit. He also runs Lennybot, trained on everything he's made.",
+     "Not everything happens. His 2025 goal was to launch a product, and he decided against it. Summit 2.0 slipped into 2026. His 2026 list is about raising quality, maybe publishing less, adding a new newsletter or podcast vertical, more community, the Summit and refreshing Product Pass.",
+     "On the future, he sees a split forming between people who understand how AI is changing work and people who don't. His mission, he says, is \"making sure you're in the first group\". And about his own life, he's honest: he worries about staying current after years away from product work, and admits, \"I don't know the off-ramp for this life.\""
+    ],
+    "pull": {
+     "text": "I don't know the off-ramp for this life.",
+     "cite": "Lenny, to First Round Review"
+    }
+   }
+  ],
+  "failuresTitle": "What didn't go to plan",
+  "failuresIntro": "Lenny doesn't have a long list of failed products. His failures are an early startup that didn't really work, a lot of doubt, and things he chose not to do.",
+  "failures": [
+   {
+    "year": "2011",
+    "name": "Localmind",
+    "what": "He co-founded Localmind, launched it at SXSW 2011 and raised $600,000. He now calls it a terrible business idea, because people needed it about once a quarter. It sold to Airbnb in an all-stock deal after a fight with an investor.",
+    "lesson": "If people only need your product a few times a year, it's very hard to build a business on it."
+   },
+   {
+    "year": "2020",
+    "name": "Doubting the price",
+    "what": "Even after his paid launch worked, he wasn't sure $15 a month was right, and said it just felt fine. He was keeping about 60% of about $65,000 a year after fees and taxes.",
+    "lesson": "You won't feel sure about your price at the start, so pick one and learn from real buyers."
+   },
+   {
+    "year": "2025",
+    "name": "The product that didn't launch",
+    "what": "His goal for 2025 was to launch a product. He decided it wasn't the right year, and his Summit 2.0 also slipped into 2026.",
+    "lesson": "Dropping a goal on purpose is better than half-doing it."
+   }
+  ],
+  "playbookTitle": "How Lenny grew to a million subscribers",
+  "playbook": [
+   {
+    "title": "Write from the inside",
+    "text": "His first post was about what seven years at Airbnb taught him. It hit Medium's front page and Airbnb's CEO shared it with the company, which got him his first 100 subscribers."
+   },
+   {
+    "title": "Borrow bigger audiences with guest posts",
+    "text": "In July 2019 he wrote guest posts for First Round Review and Andrew Chen's blog. Two early tweets and a guest post took him to about 1,000, and another guest post to about 3,000."
+   },
+   {
+    "title": "Make one giant, genuinely useful piece",
+    "text": "His eight-part marketplace series took hundreds of hours and brought about 2,000 subscribers in late 2019. Two posts drove about half his growth in the first stretch."
+   },
+   {
+    "title": "Never miss a week",
+    "text": "40 free issues in 10 months without missing one. He tells writers to pick a cadence, say it publicly and stick to it for years."
+   },
+   {
+    "title": "Plan the paid launch day by day",
+    "text": "He previewed it with champions, wrote a six-point email with a TL;DR, gave 33% off for 48 hours and sent a reminder with 20% off a week later. About 250 people paid in the first week or so."
+   },
+   {
+    "title": "Let the platform recommend you",
+    "text": "Substack's recommendations helped take him from 100,000 to 500,000. More than 9,000 newsletters recommend his."
+   },
+   {
+    "title": "Start a podcast to reach new people",
+    "text": "He says the podcast is the only thing that brings in new viewers outside the newsletter. It now gets 100,000 to 200,000 downloads an episode."
+   },
+   {
+    "title": "Get partners to pay for your perks",
+    "text": "Product Pass gives annual subscribers a year of more than 20 premium tools for free. Perplexity's offer gave him his biggest growth day ever."
+   },
+   {
+    "title": "Skip the ads",
+    "text": "He calls Facebook and X ads worthless for this. All of his growth came from content, sharing and partners."
+   }
+  ],
+  "charts": [
+   {
+    "title": "Lenny's newsletter subscribers in the first year and a bit, by his own numbers",
+    "points": [
+     {
+      "label": "Jul 2019",
+      "value": 1000,
+      "display": "1,000"
+     },
+     {
+      "label": "Nov 2019",
+      "value": 5000,
+      "display": "5,000"
+     },
+     {
+      "label": "Early 2020",
+      "value": 9000,
+      "display": "9,000"
+     },
+     {
+      "label": "May 2020",
+      "value": 13000,
+      "display": "13,000"
+     },
+     {
+      "label": "Aug 2020",
+      "value": 15000,
+      "display": "15,000"
+     }
+    ],
+    "note": "The 2019 months are approximate, matched to his July guest posts and his late-November spike."
+   },
+   {
+    "title": "Lenny's newsletter subscribers since, by his own numbers",
+    "points": [
+     {
+      "label": "Sep 2023",
+      "value": 500000,
+      "display": "500,000"
+     },
+     {
+      "label": "Mar 2025",
+      "value": 1000000,
+      "display": "1,000,000"
+     },
+     {
+      "label": "2026",
+      "value": 1200000,
+      "display": "1.2M"
+     }
+    ],
+    "note": "The 2026 figure is from a First Round Review profile."
+   },
+   {
+    "title": "What Lenny made in a year, by his own numbers",
+    "points": [
+     {
+      "label": "May 2020",
+      "value": 56000,
+      "display": "$56K"
+     },
+     {
+      "label": "Aug 2020",
+      "value": 65000,
+      "display": "$65K"
+     },
+     {
+      "label": "Jan 2024",
+      "value": 1000000,
+      "display": "$1M+"
+     }
+    ],
+    "note": "2020 figures are newsletter only, before fees. The 2024 figure is newsletter plus podcast."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "Age 6",
+    "text": "Leaves Ukraine with his family, through Italy, for Los Angeles."
+   },
+   {
+    "when": "2011",
+    "text": "Launches Localmind at SXSW and raises $600,000. It's later sold to Airbnb in an all-stock deal."
+   },
+   {
+    "when": "About 7 years",
+    "text": "Works at Airbnb and becomes one of its first product managers."
+   },
+   {
+    "when": "2019",
+    "text": "Quits about 45 days into a three-month sabbatical, with no plan.",
+    "big": true
+   },
+   {
+    "when": "Apr 2019",
+    "text": "First Medium post about seven years at Airbnb hits the front page and Brian Chesky shares it."
+   },
+   {
+    "when": "Jun 2019",
+    "text": "Moves the newsletter to Substack on Andrew Chen's advice."
+   },
+   {
+    "when": "Jul 2019",
+    "text": "Guest posts on First Round Review and Andrew Chen's blog. About 1,000 subscribers."
+   },
+   {
+    "when": "Nov 2019",
+    "text": "Eight-part marketplace series causes a spike to about 5,000.",
+    "big": true
+   },
+   {
+    "when": "7 Apr 2020",
+    "text": "Adds a paid plan at $15 a month. About 200 pay in two days, about 450 after six weeks.",
+    "big": true
+   },
+   {
+    "when": "2022",
+    "text": "Starts Lenny's Podcast, adding video a couple of months in."
+   },
+   {
+    "when": "Sep 2023",
+    "text": "Reaches 500,000 subscribers, helped by Substack recommendations."
+   },
+   {
+    "when": "Jan 2024",
+    "text": "Tells CNBC he makes over $1 million a year from the newsletter and podcast."
+   },
+   {
+    "when": "Mar 2025",
+    "text": "Passes 1,000,000 subscribers.",
+    "big": true
+   },
+   {
+    "when": "Late 2025",
+    "text": "Launches Lenny's Product Pass. Perplexity's offer brings his biggest growth day."
+   }
+  ],
+  "quotes": [
+   {
+    "text": "Create value, and good things will happen.",
+    "cite": "Lenny, on his 2019 philosophy, First Round Review"
+   },
+   {
+    "text": "Make sure every post is very actionable and concrete.",
+    "cite": "Substack talk, August 2020"
+   },
+   {
+    "text": "I finally had the confidence I could do this.",
+    "cite": "Substack talk, August 2020"
+   },
+   {
+    "text": "I don't know if that was the right decision. It feels fine.",
+    "cite": "Substack talk, August 2020, on his price"
+   },
+   {
+    "text": "Growth comes from publishing something valuable, that people want to share",
+    "cite": "Lenny's Newsletter, September 2023"
+   },
+   {
+    "text": "all that really matters is quality and consistency.",
+    "cite": "CNBC, January 2024"
+   },
+   {
+    "text": "I have a rule: no meetings before 3pm.",
+    "cite": "First Round Review"
+   },
+   {
+    "text": "I don't know the off-ramp for this life.",
+    "cite": "First Round Review"
+   }
+  ],
+  "steal": [
+   "Write about the thing you know from the inside. Lenny's edge was seven years as an early PM at Airbnb, and every early post drew on it.",
+   "Pick a cadence, say it publicly and don't miss. Forty weekly issues in a row is what made the rest possible.",
+   "Once in a while, make one huge, genuinely useful piece. His marketplace series took hundreds of hours and brought in a big share of his early readers.",
+   "Get in front of bigger audiences with guest posts before you have your own. Two guest posts did more than months of tweeting.",
+   "Plan your paid launch like a campaign: champions, a short clear email, a time-limited discount and a reminder a week later.",
+   "Look for partners who'd happily give your readers something for free. Product Pass turned other companies' free trials into Lenny's biggest growth day."
+  ],
+  "sources": [
+   {
+    "title": "First Round Review: Reluctantly influential, inside Lenny Rachitsky's demandingly chill life",
+    "url": "https://review.firstround.com/reluctantly-influential-inside-lenny-rachitskys-demandingly-chill-life/"
+   },
+   {
+    "title": "Substack: how Lenny Rachitsky earned $65,000",
+    "url": "https://on.substack.com/p/how-lenny-rachitsky-earned-65000"
+   },
+   {
+    "title": "Lenny's Newsletter: 500,000",
+    "url": "https://www.lennysnewsletter.com/p/500000"
+   },
+   {
+    "title": "Lenny's Newsletter: 1,000,000, the early growth curve",
+    "url": "https://www.lennysnewsletter.com/i/157838246/what-did-the-growth-curve-look-like-in-the-early-days-how-did-you-sustain-momentum-when-you-were-under-5k"
+   },
+   {
+    "title": "Lenny's Newsletter: best of 2025 and goals for 2026",
+    "url": "https://www.lennysnewsletter.com/p/best-of-lennys-newsletter-2026"
+   },
+   {
+    "title": "Lenny's Newsletter: how I built a 1M+ subscriber newsletter",
+    "url": "https://www.lennysnewsletter.com/p/how-i-built-a-1m-subscriber-newsletter"
+   },
+   {
+    "title": "CNBC: the key to success is quality and consistency",
+    "url": "https://www.cnbc.com/2024/01/20/lenny-rachitsky-the-key-to-success-is-quality-and-consistency.html"
+   },
+   {
+    "title": "Growth In Reverse: Lenny's paid newsletter",
+    "url": "https://growthinreverse.com/lennys-paid-newsletter/"
+   },
+   {
+    "title": "Hunter Walk: five questions with Lenny Rachitsky",
+    "url": "https://hunterwalk.com/2020/04/17/did-i-intend-to-stay-there-for-seven-years-hells-no-but-man-its-a-tough-place-to-leave-five-questions-on-startups-newsletters-life-post-airbnb-w-lenny-rachitsky/"
+   }
+  ]
+ }
+}

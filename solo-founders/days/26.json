@@ -1,0 +1,257 @@
+{
+  "n": 26,
+  "name": "Ruben Hassid",
+  "short": "Ruben",
+  "wisdom": "The tool you build for your own daily posts can become the product.",
+  "email": {
+    "subject": "From 8,000 followers to a million readers",
+    "hook": "Just before ChatGPT launched, Ruben Hassid was a ghostwriter with about 8,000 LinkedIn followers. In November 2026 his newsletter shows more than 1,037,000 subscribers.",
+    "lead": [
+      "Ruben matters to us because he isn't a coder who learned marketing. He's a content person who learned AI, which is much closer to where we're standing. He picked one topic the week the world changed, posted every single day for three years, and then built software out of the way he writes his own posts.",
+      "One thing to say up front: he isn't fully solo. EasyGen, his AI writing tool, has two founders and a small team. The audience, though, is all him."
+    ],
+    "stats": [
+      {"value": "1.037M", "label": "newsletter subscribers, Nov 2026"},
+      {"value": "770K", "label": "LinkedIn followers, Feb 2026"},
+      {"value": "$200", "label": "a year for the paid plan"}
+    ],
+    "chart": {
+      "title": "Ruben's LinkedIn followers, by his own and interview numbers",
+      "points": [
+        {"label": "Nov 2022", "value": 8000, "display": "8K"},
+        {"label": "Jan 2025", "value": 460000, "display": "460K"},
+        {"label": "Feb 2026", "value": 770000, "display": "770K"}
+      ],
+      "note": "He made his first LinkedIn post in April 2022, starting from nothing."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Every Tuesday and Friday his newsletter, How to AI, does one simple thing: he “opens Claude and shows his screen step by step”. No theory, just a screen recording in words. The tagline is “Stop feeling behind on AI.”",
+          "On the side he consults for Fortune 500 companies on AI, running assessments and workshops. In February 2026 he wrote that he had “1 spot left for Q2”. His advice to readers is to master one tool properly, “most likely Claude”, instead of hopping between all of them."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "The whole thing is one funnel. **LinkedIn brings the people, the free Substack keeps them**, and the Substack sells everything else: a paid plan at $200 a year (annual only) with a private Slack and a bundle of tools, EasyGen, and his consulting.",
+          "He doesn't publish revenue, so all we have are outside guesses. Starter Story estimated EasyGen at about $33K a month within five months of launch in 2024. GetLatka guessed about $880K a year with eight staff in July 2025. Treat both as estimates, not facts.",
+          "Before any of that, his first real product was a Gumroad course, How To Prompt ChatGPT in 2024. He says it sold more than 3,500 copies and calls it six figures, without giving the exact number."
+        ]
+      },
+      {
+        "title": "How he built EasyGen",
+        "paras": [
+          "ChatGPT frustrated him when he tried to write his own posts with it. So he built an “agent workflow” for himself, where several language models talk to each other and you act as the manager. It took several months, and he puts its accuracy at about 80%.",
+          "Here's the clever part. Before selling it, he had two employees with no following of their own use it. In 35 days, with no ads, they reached 1.4M people on LinkedIn, by his account. That became the proof. The software went public around 19 May 2024, pitched as a “$2-a-day ghostwriter” against the $2,000 to $3,000 a month a human one costs."
+        ]
+      },
+      {
+        "title": "How he got the readers",
+        "chart": true,
+        "paras": [
+          "One post a day, about 30 minutes each, planned in a Notion calendar. He says he has “never missed a day in 3 years”. The format is strict: the hook sits in the first two lines at about 55 characters each, and every post carries one plain 1080x1350 image, because text-only posts do badly for him.",
+          "He also lets about 20% of his posts be experiments, testing new ideas to see what sticks. In 2025 alone he says one account gained 344,258 followers, roughly 1,000 a day."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "There's no public failure in Ruben's story, and that's actually a gap, not a sign there were none. Sources can't even agree on whether EasyGen was founded in 2022, 2023 or 2024, and none of his revenue has been confirmed.",
+          "And nearly everything sits on one platform he doesn't own. The newsletter is clearly his answer to that: a million email addresses are much harder to take away than a feed."
+        ]
+      }
+    ],
+    "tryToday": "Write down, step by step, how you make one LinkedIn post from blank page to published. Circle the step you hate most. That's the first thing to automate, and maybe the first thing someone would pay you for.",
+    "button": "Read how he built it"
+  },
+  "page": {
+    "intro": "A French ghostwriter in Tel Aviv who made his first LinkedIn post in April 2022, picked “how to use AI” as his only topic seven months later, and hasn't missed a day since. Out of his own posting routine came EasyGen, and out of his audience came a newsletter with more than a million subscribers.",
+    "stats": [
+      {"value": "1,037,000+", "num": 1037000, "prefix": "", "suffix": "+", "label": "newsletter subscribers", "note": "shown on his Substack, Nov 2026"},
+      {"value": "770K", "num": 770, "prefix": "", "suffix": "K", "label": "LinkedIn followers", "note": "his own count, Feb 2026"},
+      {"value": "1.4M", "num": 1.4, "prefix": "", "suffix": "M", "label": "people reached in 35 days", "note": "by two staff using EasyGen, no ads"},
+      {"value": "3 years", "num": 3, "prefix": "", "suffix": " years", "label": "of daily posts", "note": "without missing a day, he says"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A ghostwriter nobody had heard of",
+        "paras": [
+          "Ruben Hassid is French and lives in Tel Aviv. Before any of this, his job was writing other people's posts. He was a ghostwriter for financial analysts, the kind of work where you get good at making someone else sound smart and nobody knows your name.",
+          "He says he has about a decade of experience in social media, so he wasn't new to how feeds work. But on his own account he was nobody. In an interview in January 2025 he said that before April 2022, when he made his first LinkedIn post, he was “no one” on social media.",
+          "That's a detail worth sitting with. He didn't have a big following waiting for him when AI showed up. He had about seven months of posting behind him and roughly 8,000 followers. That's a decent start for a ghostwriter, but nothing you'd build a company on.",
+          "To be honest, Ruben's early life, his education and his money situation before 2022 aren't public. A few blogs tell bigger stories about his past, but none of them is solid, so we're leaving them out. What we know for sure is the job (ghostwriting), the place (Tel Aviv) and the starting number (about 8,000)."
+        ]
+      },
+      {
+        "label": "The turn",
+        "title": "ChatGPT arrived and he picked one lane",
+        "paras": [
+          "ChatGPT launched in November 2022. Lots of people posted about it that month. The difference with Ruben is that **he turned his whole account into a daily “how to use AI” channel** and then simply never stopped.",
+          "He wrote about this in a February 2026 post called “1,000,000.” He went from about 8,000 followers before ChatGPT to about 770,000 three years later, and he says he has “never missed a day in 3 years”. Most of the numbers on this page come from Ruben himself or from interviews with him, and nobody has audited them, so read them as his story told in his own figures.",
+          "What made the topic work is the gap he saw. In July 2024 he put it simply: “Everyone wants to use AI. No one knows how to use it.” He wasn't trying to be the smartest AI person on LinkedIn. He was trying to be the most useful one for normal people at work.",
+          "He also has a view on what LinkedIn is for. He calls it “a place for education learning”. So his posts teach. One trick, one prompt, one tool, explained step by step. That fits the platform's mood, where people are scrolling between meetings and want to look a little sharper by lunch.",
+          "By January 2025 he had passed 460,000 followers. By his own count he was gaining around 1,000 a day in 2025, and one account picked up 344,258 followers in that year alone."
+        ],
+        "pull": {"text": "Consistency beats quantity & quality.", "cite": "Ruben, to Net Influencer, July 2024"},
+        "chart": 0
+      },
+      {
+        "label": "The first money",
+        "title": "A prompting course on Gumroad",
+        "paras": [
+          "Before there was any software, there was a course. Ruben sold a masterclass on Gumroad called How To Prompt ChatGPT in 2024. It became a Gumroad bestseller, and by January 2025 he said it had sold more than 3,500 copies.",
+          "He describes it as a six-figure product but hasn't given the exact number. We don't know the price either, so we can't work it out. What matters for us is the order of things. He had an audience asking “how do I use this?”, and the first thing he sold was a direct answer to that question, in the simplest format there is.",
+          "That's the cheapest possible test of whether people will pay you. No code, no team, just the thing you already explain every day in posts, packaged up and given a price."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "He built a writing team out of AI models",
+        "paras": [
+          "EasyGen started because ChatGPT annoyed him. He was writing a post every day, and the plain chatbot wasn't good enough for his own posts. So he built something for himself.",
+          "He describes it as an “agent workflow”. Several language models are “talking to each other”, passing the draft back and forth, and the person using it acts as the manager who approves and steers. He hasn't said which models it uses. He says it took several months to build, and in July 2024 he put the accuracy of its output at about 80%, meaning most posts came out usable without heavy editing.",
+          "There's a small mystery about who built it with him. The same article that tells the origin story names one person, Pete Sena, as involved, and says another, Peter Skinner, was the one who suggested turning the tool into a proper SaaS product. Nobody has cleared that up in public, so we'll just say the idea to sell it came from someone else, and Ruben listened.",
+          "Then came the bit we love. Before launching, he wanted proof that the tool worked without his famous name behind it. So two employees with no following of their own used EasyGen to post on LinkedIn. **In 35 days, with no ads, they reached 1.4M people**, by his account. That's the kind of proof a marketer dreams of: not “trust me”, but “here are two nobodies, and look what happened”.",
+          "The software went public around 19 May 2024. That date comes from a Reddit post cited by Starter Story. Sources disagree on when EasyGen was actually founded, with different write-ups saying 2022, 2023 and 2024, so the honest answer is that the public launch was May 2024 and the start is fuzzy."
+        ],
+        "pull": {"text": "Everyone wants to use AI. No one knows how to use it.", "cite": "Ruben, to Net Influencer, July 2024"}
+      },
+      {
+        "label": "Finding the money",
+        "title": "A ghostwriter for $2 a day",
+        "paras": [
+          "Ruben knew exactly what EasyGen was replacing, because it was his old job. A human ghostwriter on LinkedIn costs $2,000 to $3,000 a month. So he pitched EasyGen as a “$2-a-day ghostwriter”. That's a price anchor anyone can understand in one second.",
+          "He also turned the people who used it into salespeople. According to Starter Story, EasyGen's employees became affiliates, which makes sense when those same employees are the proof that the tool works.",
+          "How big did it get? Nobody outside knows for sure. Starter Story estimated EasyGen hit about $33K a month within five months of launch, which would be about $396K a year, and said it had two founders, about six employees, and was profitable. GetLatka later estimated about $880K a year with eight employees, in July 2025. Both are third-party guesses, and EasyGen has never confirmed either.",
+          "In January 2025 Ruben said EasyGen had more than 32,000 users in under two years. That's his number, and it doesn't say how many of them pay.",
+          "So the shape is clear even if the totals aren't. The posts built the audience, the audience bought a course, and then the same audience was offered software that does what Ruben does for himself."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "The machine",
+        "title": "How he writes one post a day in 30 minutes",
+        "paras": [
+          "This is the most copyable part of the whole story, so let's slow down. In his February 2026 post he laid out the rules he follows, and they are almost boringly specific.",
+          "Each post takes about 30 minutes. He plans them in a Notion calendar so he never sits down to a blank screen wondering what to write. He has done this every day for three years.",
+          "The hook goes in the first two lines, and each of those lines is about 55 characters. The whole job of those two short lines is to make you stop and read the rest.",
+          "Every post carries one image, sized 1080x1350, with no branding on it. He says text-only posts perform poorly for him. One clean picture, a hook, and the teaching underneath.",
+          "And about 20% of his posts are experiments. Starter Story calls this his “spaghetti theory”: throw new ideas at the wall and see what sticks, while the other 80% stays on the formats that already work.",
+          "Back in July 2024 he claimed his posts had reached an average of 120M people organically over two years. Whatever the exact figure, the method behind it is something any of us could start tomorrow morning."
+        ],
+        "pull": {"text": "never missed a day in 3 years", "cite": "Ruben, in “1,000,000.”, February 2026"}
+      },
+      {
+        "label": "Scaling it",
+        "title": "A newsletter that asks you to reply",
+        "paras": [
+          "LinkedIn gave him reach, but a feed isn't something you own. The Substack, called How to AI, is where he keeps the people.",
+          "The growth is easy to see even through messy numbers. One write-up counted 442,000 subscribers, a later breakdown counted 610,000 and said it was the number one Education newsletter on Substack, and by November 2026 the homepage says “Over 1,037,000 subscribers”. Those first two figures aren't dated, so we can't draw a clean line, but the direction is obvious.",
+          "In February 2026 he said he emails about 300,000 readers every week. That's a lot smaller than a million, and it probably means the people who actually open, which is the more honest number to care about.",
+          "The free plan gives you his prompt library and two emails a week. The paid plan is $200 a year, annual only, and comes with a private Slack and a bundle of tools worth $219, according to a copywriting breakdown of his newsletter. That breakdown counted 1,293 people in the Slack. Ruben himself said 1,108 in February 2026, so the numbers differ depending on when they were counted.",
+          "There's a neat trick in how he welcomes people. The welcome email, written from Tel Aviv, asks you to reply to get the prompt library. It's a deliverability trick: **a reply tells the inbox his emails are wanted**, so they're more likely to land where people see them. His subject lines are often just one word.",
+          "The paid plan is pitched with a line that speaks straight to office workers: “Be the one everyone at work asks.” That's not a promise about AI. It's a promise about how you'll look to your colleagues, which is a much stronger reason to pay."
+        ]
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Claude on screen, twice a week",
+        "paras": [
+          "In 2026 the newsletter has a simple rhythm. Every Tuesday and Friday he “opens Claude and shows his screen step by step”. Recent pieces carry titles like “Claude + LinkedIn” and “I Am Just a Text File”.",
+          "His own tools have moved over time, from ChatGPT to Claude, Grok and Gemini. But his advice is to stop hopping and master one, “most likely Claude”. That's a nice signal for us, because it's the opposite of the usual creator move of chasing every new launch.",
+          "He's also built more than one account. He says he has grown five other accounts to a combined 1.56M followers, on top of his own.",
+          "And there's consulting. He works with US Fortune 500 companies on AI assessments and workshops, and in February 2026 he wrote that he had “1 spot left for Q2”. Scarcity, said plainly, to an audience of a few hundred thousand people at work.",
+          "What we don't know is how EasyGen is doing in 2026. There's no report of a sale or a shutdown, and no fresh numbers. It's still live, and that's all anyone has said publicly."
+        ]
+      },
+      {
+        "label": "How he thinks",
+        "title": "What's left when starting is easy",
+        "paras": [
+          "Ruben's clearest idea about the future came in that February 2026 post. He wrote: “AI made what was valuable terribly easy: the effort to start & a reasonable strategy.” And then: “What's left is taste & consistency.”",
+          "Read that twice, because it explains his whole career. Anyone can now get a decent post or a decent plan out of a chatbot. What a machine can't do for you is show up every day for three years, and know which of a hundred decent drafts is actually good.",
+          "The same post has a list of blunt rules that sound like a coach shouting from the side of the pitch: “No one cares about you.” “Action produces information.” “Your media sucks.” “Don't stand still.” Back in 2024 he put the same idea more gently: “Kill your ego.” and “It's not about you. It's about them.”",
+          "His LinkedIn bio sums up his mission as “Master AI before it masters you.” And in 2024 he said he wanted to help grow LinkedIn's creator base from about 150,000 people to 1 million. Whether or not that happens, you can see why he'd want it. Every new creator on LinkedIn is a potential EasyGen customer and a potential newsletter reader.",
+          "For us, the lesson is less about AI and more about lanes. He picked one topic the month it became hot, committed to it daily, and every product he sells is just that same topic in a different shape."
+        ],
+        "pull": {"text": "What's left is taste & consistency.", "cite": "Ruben, in “1,000,000.”, February 2026"}
+      }
+    ],
+    "failuresTitle": "No public failures",
+    "failuresIntro": "",
+    "failures": [],
+    "playbookTitle": "How he grew without paying for ads",
+    "playbook": [
+      {"title": "One post a day, planned in Notion", "text": "About 30 minutes a post, every day for three years, planned ahead in a Notion calendar. His own summary is “Consistency beats quantity & quality.”"},
+      {"title": "Two short lines for the hook", "text": "The first two lines carry the hook, each about 55 characters. Everything below them is the teaching."},
+      {"title": "One plain image on every post", "text": "Each post gets a single 1080x1350 image with no branding. He says text-only posts perform poorly for him, so he doesn't publish them."},
+      {"title": "Keep 20% for experiments", "text": "About a fifth of his posts test new ideas, which Starter Story calls his “spaghetti theory”. The rest stay on formats he knows work, so the experiments never put the streak at risk."},
+      {"title": "Prove it with people who have no audience", "text": "Before selling EasyGen, he had two employees with no following use it. They reached 1.4M people in 35 days with no ads, by his account, and that became the sales story."},
+      {"title": "Anchor the price against a human", "text": "EasyGen is a “$2-a-day ghostwriter”, set against $2,000 to $3,000 a month for a human one. He used to be that human, so he knew the comparison by heart."},
+      {"title": "Move followers into email", "text": "LinkedIn feeds the free How to AI Substack, which then sells the $200 a year paid plan, EasyGen and consulting. The welcome email asks readers to reply to claim a prompt library, a small trick to help his emails get delivered."},
+      {"title": "Turn users into sellers", "text": "According to Starter Story, EasyGen's employees became affiliates. The people who proved the product also earned from recommending it."}
+    ],
+    "charts": [
+      {
+        "title": "Ruben's LinkedIn followers",
+        "points": [
+          {"label": "Nov 2022", "value": 8000, "display": "8K"},
+          {"label": "Jan 2025", "value": 460000, "display": "460K"},
+          {"label": "Feb 2026", "value": 770000, "display": "770K"}
+        ],
+        "note": "November 2022 and February 2026 are his own figures. January 2025 is from an interview with him."
+      },
+      {
+        "title": "Outside guesses at EasyGen's yearly revenue",
+        "points": [
+          {"label": "2024", "value": 396000, "display": "$396K"},
+          {"label": "Jul 2025", "value": 880000, "display": "$880K"}
+        ],
+        "note": "Third-party estimates from Starter Story (2024) and GetLatka (July 2025). EasyGen has not confirmed either."
+      }
+    ],
+    "timeline": [
+      {"when": "Before 2022", "text": "Works as a ghostwriter for financial analysts. Says he has about a decade of social media experience.", "big": false},
+      {"when": "Apr 2022", "text": "Makes his first LinkedIn post. Before this, he says, he was “no one” on social media.", "big": false},
+      {"when": "Nov 2022", "text": "ChatGPT launches. He has about 8,000 followers and turns his account into a daily “how to use AI” channel.", "big": true},
+      {"when": "19 May 2024", "text": "EasyGen goes public as a SaaS, after two employees with no following reach 1.4M people in 35 days using it.", "big": true},
+      {"when": "2024", "text": "Starter Story estimates EasyGen at about $33K a month within five months. Not confirmed by the company.", "big": false},
+      {"when": "Jan 2025", "text": "Passes 460,000 followers. Says EasyGen has 32,000+ users and his Gumroad prompting course has sold 3,500+ copies.", "big": false},
+      {"when": "Jul 2025", "text": "GetLatka estimates EasyGen at about $880K a year with eight staff.", "big": false},
+      {"when": "2025", "text": "One account gains 344,258 followers in the year, by his count.", "big": false},
+      {"when": "Feb 2026", "text": "Publishes “1,000,000.”: about 770K followers, about 300,000 weekly readers, a Slack of 1,108 people and Fortune 500 consulting.", "big": true},
+      {"when": "Nov 2026", "text": "The How to AI homepage shows more than 1,037,000 subscribers, with Claude tutorials every Tuesday and Friday.", "big": false}
+    ],
+    "quotes": [
+      {"text": "Consistency beats quantity & quality.", "cite": "Net Influencer interview, July 2024"},
+      {"text": "Everyone wants to use AI. No one knows how to use it.", "cite": "Net Influencer interview, July 2024"},
+      {"text": "never missed a day in 3 years", "cite": "“1,000,000.”, his Substack, February 2026"},
+      {"text": "What's left is taste & consistency.", "cite": "“1,000,000.”, February 2026"},
+      {"text": "Action produces information.", "cite": "“1,000,000.”, February 2026"},
+      {"text": "It's not about you. It's about them.", "cite": "Net Influencer interview, July 2024"},
+      {"text": "Master AI before it masters you.", "cite": "his LinkedIn bio, January 2025"}
+    ],
+    "steal": [
+      "Pick one lane the month it gets hot and stay in it. Ruben didn't post about AI and marketing and life. He posted “how to use AI” every day, so people knew exactly why to follow him.",
+      "Write your own posting rules down as specifically as he does: how long it takes, where the hook goes, how many characters, what image size. Rules turn a daily post from a mood into a 30 minute job.",
+      "Sell the answer first in the simplest shape. His first product was a Gumroad course on the thing he already explained every day. Software came later, once the audience had proved it would pay.",
+      "When you build a tool for yourself, test it on someone with no audience before you sell it. “Two nobodies reached 1.4M people” is a far better pitch than “it works for me”.",
+      "Price against the thing you replace. “$2 a day” next to “$2,000 a month” does the selling for you.",
+      "Move people off the platform into email as early as you can, and ask new subscribers to reply. A reply is a tiny action that keeps you out of the promotions tab."
+    ],
+    "sources": [
+      {"title": "Ruben Hassid, “1,000,000.” (Feb 2026)", "url": "https://ruben.substack.com/p/1000000"},
+      {"title": "How to AI, Ruben Hassid's Substack homepage", "url": "https://ruben.substack.com/"},
+      {"title": "Net Influencer, Ruben Hassid and EasyGen (Jul 2024)", "url": "https://www.netinfluencer.com/ruben-hassid-easygen-ai-meets-linkedin/"},
+      {"title": "Starter Story, EasyGen breakdown (estimates)", "url": "https://www.starterstory.com/easy-gen-breakdown"},
+      {"title": "Veronica Llorca-Smith, interview with Ruben Hassid (Jan 2025)", "url": "https://veronicallorcasmith.substack.com/p/he-went-from-zero-to-450k-followers"},
+      {"title": "David Szabo, copywriting breakdown of Ruben's newsletter", "url": "https://davidmszabo.substack.com/p/copywriting-breakdown-200k-ruben"},
+      {"title": "GetLatka, EasyGen company estimate (Jul 2025)", "url": "https://getlatka.com/companies/easygen.io"},
+      {"title": "eChai, Ruben Hassid's recent writing", "url": "https://echai.ventures/explore/voices/ruben-hassid"}
+    ]
+  }
+}

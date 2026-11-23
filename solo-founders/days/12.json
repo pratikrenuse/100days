@@ -1,0 +1,516 @@
+{
+ "n": 12,
+ "name": "Akshay Saini",
+ "short": "Akshay",
+ "wisdom": "Give away the foundation for free, then sell the next step up.",
+ "email": {
+  "subject": "He gave his best course away for free",
+  "hook": "Akshay Saini gave away his JavaScript course for free on YouTube, and the day he started charging for the next one, the same students who had praised him began cursing him. That paid course, he says, changed his life.",
+  "lead": [
+   "Akshay is the non-IIT version of the Indian creator story. A frontend engineer from Dehradun who worked at companies like Paytm and Uber, he built NamasteDev into one of the biggest names in Indian developer education, mostly on free YouTube videos and word of mouth.",
+   "To be clear from the start, he's not doing this alone. NamasteDev runs through a company, Akshay EdTech Pvt Ltd, and on his biggest launch day he thanked \"the team behind all of it\". No funding has been found. So think of him as a creator who built a small education company, not a one-person shop."
+  ],
+  "stats": [
+   {
+    "value": "2M+",
+    "label": "YouTube subscribers, passed in 2025"
+   },
+   {
+    "value": "₹8,156",
+    "label": "price of Namaste AI, Nov 2026"
+   },
+   {
+    "value": "2x",
+    "label": "growth in students in 2025, he says"
+   }
+  ],
+  "chart": {
+   "title": "List price against what you actually pay, NamasteDev site, Nov 2026",
+   "points": [
+    {
+     "label": "Namaste React, list",
+     "value": 5427,
+     "display": "₹5,427"
+    },
+    {
+     "label": "Namaste React, you pay",
+     "value": 2633,
+     "display": "₹2,633",
+     "down": true
+    },
+    {
+     "label": "Namaste AI, list",
+     "value": 17109,
+     "display": "₹17,109"
+    },
+    {
+     "label": "Namaste AI, you pay",
+     "value": 8156,
+     "display": "₹8,156",
+     "down": true
+    }
+   ],
+   "note": "Prices include GST as shown on his course pages in November 2026."
+  },
+  "sections": [
+   {
+    "title": "What he's doing right now",
+    "paras": [
+     "His newest course, Namaste AI, launched on 15 August 2026. It isn't released all at once. It comes out monthly in five seasons: LLM foundations, AI-native software engineering, LLM APIs, RAG, and finally agents and MCP. It's built for software engineers, and he says you don't need any machine learning or advanced maths to start.",
+     "The line we liked most is about the hard part. He says it isn't recording the videos, it's **deciding what not to teach**, because every week there's a new model or framework. That's a good filter for anyone making a course in a fast-moving field."
+    ]
+   },
+   {
+    "title": "How the money comes in",
+    "stats": true,
+    "paras": [
+     "Self-paced courses with projects, assignments, a certificate and a closed community. Namaste JavaScript is free. The paid ladder goes Namaste React, Namaste Frontend System Design, Node, DSA, and now Namaste AI at ₹8,156 including GST. He also sells bundles and has a \"Gift a Course\" option.",
+     "He has never published revenue. A \"₹2 to 3 crore a month\" figure floats around online, but it sits on an unsourced bio site, so we're ignoring it. Even his own student count wobbles: his homepage says 12 lakh+ students, while the Namaste AI page says over 20 lakh. What he did say about 2025 is that Namaste DSA turned into a blockbuster, his channel crossed 2 million subscribers, and the platform saw 2x growth in students."
+    ]
+   },
+   {
+    "title": "How he got the students",
+    "paras": [
+     "Free first. Namaste JavaScript went out on YouTube for nothing, and that built the trust. In a 2024 post he admitted he originally wanted it to be a paid course. Giving it away turned out to be the best marketing he ever did.",
+     "Then word of mouth. In July 2024 he wrote that the main reason for the success of his courses was word of mouth, and that most students come through referrals from friends and colleagues. He launched a referral feature that month to lean into it. **He didn't fight his best channel, he built a button for it.**"
+    ]
+   },
+   {
+    "title": "The part nobody talks about",
+    "chart": true,
+    "paras": [
+     "The hate. When he left Uber, people said he'd been fired and was pretending he resigned, and he later wrote, \"I won't lie, it hurt.\" When he started charging for Namaste React, students cursed him. Namaste DSA was called a scam before it even came out. Every step up came with a wave of anger.",
+     "And the price on the page is rarely the price you pay. In November 2026 Namaste React showed ₹2,633 against a list price of ₹5,427, with extra platform discounts and coupons stacked on top. Namaste AI showed ₹8,156 against ₹17,109. Indian buyers expect a deal, and he gives them one every time."
+    ]
+   }
+  ],
+  "tryToday": "Pick the most useful thing you know and write it up properly for free this week. Then write one line about what the paid next step after it would be.",
+  "button": "Read how he built NamasteDev"
+ },
+ "page": {
+  "intro": "A frontend engineer from Dehradun who worked his way through Indian product companies, gave away a JavaScript course on YouTube, and then built NamasteDev on the trust that course earned. His story is short on public numbers, so this page sticks to what he has actually said and shown.",
+  "stats": [
+   {
+    "value": "2M+",
+    "num": 2,
+    "prefix": "",
+    "suffix": "M+",
+    "label": "YouTube subscribers",
+    "note": "crossed in 2025"
+   },
+   {
+    "value": "12 lakh+",
+    "num": 12,
+    "prefix": "",
+    "suffix": " lakh+",
+    "label": "students taught",
+    "note": "his homepage, 2026"
+   },
+   {
+    "value": "40K+",
+    "num": 40,
+    "prefix": "",
+    "suffix": "K+",
+    "label": "reviews on Namaste React",
+    "note": "4.7 average, his site"
+   },
+   {
+    "value": "₹8,156",
+    "num": 8156,
+    "prefix": "₹",
+    "suffix": "",
+    "label": "Namaste AI price",
+    "note": "Nov 2026, incl. GST"
+   }
+  ],
+  "chapters": [
+   {
+    "label": "Before it worked",
+    "title": "A college blog and a run through Indian tech",
+    "paras": [
+     "Akshay is the counterpart to yesterday's Harkirat. No IIT, no Goldman. A bio site that cites nothing for its claims says he grew up in Dehradun, went to St. Jude's School there and studied at Manipal University Jaipur.",
+     "The same site says that in college he ran a blog called Boiling News, and that's where he learned SEO and web development. It also says he built something called Animation Walk for the Skill India portal. Nobody else confirms those details, but they fit the person he became: someone who learned by building in public.",
+     "His own site is on firmer ground. It says he was a software engineer at Uber and Paytm, with over eight years of industry experience. A 2020 LinkedIn post shows he also spent time at Walmart, and the bio site adds Lendingkart. So by the time he went full time on teaching, he had worked inside some of the biggest consumer tech companies in India.",
+     "One honest note before we go on: nearly every number on this page comes from Akshay himself, his course pages or his posts, and he has never published revenue, so treat them as his claims rather than audited facts."
+    ]
+   },
+   {
+    "label": "The free course",
+    "title": "He wanted to charge for it, then gave it away",
+    "paras": [
+     "The thing that made Akshay was Namaste JavaScript, a free series on YouTube. It is the course that made his name, and it is still free today.",
+     "Here's the part we didn't expect. In a January 2024 LinkedIn post he wrote that when he built Namaste JavaScript, he wanted it to be a paid course. It went out free instead, and **that free course became the trust that every later course cashed in on.**",
+     "He hasn't shared how long he spent recording it, what he used, how the first videos did or even when the first episode went up. What we know is the result: it became his calling card, and everything that came after was sold to people who had already learned from him for free."
+    ],
+    "pull": {
+     "text": "When I built Namaste JavaScript, I wanted it to be a paid course",
+     "cite": "Akshay on LinkedIn, January 2024"
+    }
+   },
+   {
+    "label": "Leaving the job",
+    "title": "They said he was fired",
+    "paras": [
+     "Akshay left Uber, and the bio site dates it to around May 2022. Most people would think of that as the brave bit. For him, the hard bit came after.",
+     "Some people on social media started saying he had been fired and was pretending he'd resigned. Years later, in early 2026, he wrote about it openly: \"I won't lie, it hurt.\" It's a small line, but it's the kind of thing creators rarely admit. When you leave a big name to go out on your own, people will invent a story about why.",
+     "We don't know what he earned at Uber, or how much runway he had when he left. Those details aren't public. What we do know is what he did next, and that it worked."
+    ],
+    "pull": {
+     "text": "I won't lie, it hurt.",
+     "cite": "Akshay on X, early 2026, on the rumours after Uber"
+    }
+   },
+   {
+    "label": "The first paid course",
+    "title": "Namaste React changed his life",
+    "paras": [
+     "Around December 2022 he launched Namaste React, his first big paid course. A year later, on 24 December 2023, he looked back and wrote that launching it \"just changed my life!\" He said he'd put his heart and soul into it, and poured in everything he had learned in about seven years.",
+     "The weak bio site says it was priced at about ₹5,000 and had a batch of more than 5,000 students. Akshay himself hasn't confirmed either number, so hold them loosely.",
+     "Today the course is recorded and self-paced: 16 episodes plus 2 extras, more than 50 hours, and four projects. The projects are named after things students already know, like NetflixGPT, Namaste YouTube and Namaste Food, with a DevTinder bonus project. Every session has assignments. It's built on React 18, with React 19 marked as coming soon. His site shows a 4.7 rating from more than 40,000 reviews.",
+     "**Naming projects after famous apps is a quiet bit of marketing.** A student can put \"I built a NetflixGPT\" on a resume, and a friend who sees it wants to know where they learned it."
+    ],
+    "pull": {
+     "text": "it just changed my life!",
+     "cite": "Akshay on X, December 2023, on launching Namaste React"
+    }
+   },
+   {
+    "label": "The backlash",
+    "title": "The same students started cursing him",
+    "paras": [
+     "Charging money changed how some people saw him. In September 2023 he wrote that when Namaste JavaScript came out on YouTube, everyone appreciated him. When he started charging for Namaste React, he said, \"the same students started cursing me.\"",
+     "The post goes on to explain his side, starting with the fact that he had earlier been a software engineer, but the rest of that post isn't publicly readable now. The shape of the point is clear enough: he had left a salary, and the free content had to be paid for somehow.",
+     "This is the part to remember if you ever build a free audience in India. **The day you put a price on something, a slice of the people who loved you will feel betrayed.** He kept charging anyway, and kept the free course free."
+    ],
+    "pull": {
+     "text": "the same students started cursing me.",
+     "cite": "Akshay on X, September 2023"
+    }
+   },
+   {
+    "label": "Growth",
+    "title": "Most students came from a friend",
+    "paras": [
+     "Akshay has been unusually clear about where his students come from. In July 2024 he wrote that the major reason for the success of Namaste JS, Namaste React and Namaste Frontend System Design was word of mouth marketing. Most students, he said, come via referrals through friends and colleagues.",
+     "So he built for it. That same month he launched a referral feature on the platform. There's also a \"Gift a Course\" option, which turns a happy student into someone who pays for a friend's seat.",
+     "The ladder of courses grew. Namaste Frontend System Design is co-taught with Chirag Goel. Then came Node, and bundles with names like MERN, Frontend Master and Advanced Fullstack. Students also get extras like a free AI resume reviewer and bonus sessions on personal branding. Each course is a step up from the last, so a happy student has somewhere to go next."
+    ],
+    "pull": {
+     "text": "Most of the students who enroll on our platform comes via referrals",
+     "cite": "Akshay on X, July 2024"
+    }
+   },
+   {
+    "label": "The big year",
+    "title": "Called a scam before launch, then a blockbuster",
+    "paras": [
+     "In May 2025, before Namaste DSA was even released, people were already calling it a scam and calling him an \"Educated Scammer\". He posted about it: the course wasn't out yet and it was already labelled a scam. \"Why so much hate?\" he asked.",
+     "Then it launched, and by his own year-end review on 31 December 2025, Namaste DSA \"turned into a blockbuster\". He also listed the other things 2025 gave him. He became a father. His channel crossed 2 million subscribers on YouTube. The platform got 2x growth in students. And he said he'd found the best people for his team.",
+     "That last line matters for us. By 2025 this was clearly not a one-man operation any more, even though he is the one people see."
+    ],
+    "pull": {
+     "text": "Launched Namaste DSA and it turned into a blockbuster",
+     "cite": "Akshay on X, 31 December 2025"
+    }
+   },
+   {
+    "label": "Where it stands",
+    "title": "Namaste AI, five seasons, one month at a time",
+    "paras": [
+     "On 15 August 2026, a public holiday, he launched Namaste AI. He used the moment to thank the people nobody sees: everyone sees the course, the website and the videos, he wrote, but not the team behind all of it.",
+     "The course comes out monthly in five seasons: LLM foundations, AI-native software engineering, LLM APIs, RAG, and agents and MCP. It's aimed at software engineers who want to build with AI, and he says you don't need prior knowledge of machine learning, deep learning or advanced maths. The page says it's personally taught by Akshay Saini.",
+     "In November 2026 it was priced at ₹8,156 including GST, shown as 52% off ₹17,109, with a seven-day refund. And it carries a line most Indian course pages would never print: it's **not a placement-preparation or job-guarantee course.** After watching what happened with job promises elsewhere, that line looks wise.",
+     "On the money, we have to be honest: there's no real figure. A \"₹2 to 3 crore a month\" number appears only on an unsourced bio site, so we're not using it. His own site says 12 lakh+ students on the homepage and over 20 lakh on the Namaste AI page, both in 2026. The business is run through Akshay EdTech Pvt Ltd, registered in Dehradun."
+    ],
+    "chart": 0
+   },
+   {
+    "label": "The future",
+    "title": "AI will expose bad engineers",
+    "paras": [
+     "Akshay has said more about AI than most Indian teachers. In January 2026 he wrote, \"AI will not replace good engineers. It will expose bad ones.\" He added that AI is making smart people smarter and lazy people more dependent.",
+     "He's not a doom person either. Later in 2026 he said he'd become pretty bullish on AI, not in a hype way, just from using it every day at work. And he admitted that what worked for his generation of engineers five or ten years ago may not be the best approach for students now.",
+     "His steady theme is fundamentals. If you don't understand the basics, he argues, AI answers won't save you. He's also written about \"pseudo-learning\", the trap where students feel satisfied from watching content without really learning. For someone who sells video courses, that's an honest thing to warn people about."
+    ],
+    "pull": {
+     "text": "AI will not replace good engineers. It will expose bad ones.",
+     "cite": "Akshay on X, January 2026"
+    },
+    "chart": 1
+   }
+  ],
+  "failuresTitle": "No failed products, but plenty of hate",
+  "failuresIntro": "Akshay has no named failed products and has never shared a failure count. His setbacks were about reputation, and each one came right when he moved up a step.",
+  "failures": [
+   {
+    "year": "2022",
+    "name": "The \"he was fired\" rumours",
+    "what": "After he left Uber, people online claimed he'd been fired and was pretending to have resigned. He wrote about it years later and admitted it hurt.",
+    "lesson": "When you leave a big job to go solo, expect people to make up a reason, and don't let it slow you down."
+   },
+   {
+    "year": "2023",
+    "name": "The backlash for charging",
+    "what": "Students who loved the free Namaste JavaScript started cursing him when Namaste React came with a fee. He kept the free course up and kept charging for the new one.",
+    "lesson": "The first price you put on your work will upset some fans, and that's normal."
+   },
+   {
+    "year": "May 2025",
+    "name": "\"Scam\" before it launched",
+    "what": "Namaste DSA was labelled a scam before it was even released, and he was called an \"Educated Scammer\". By the end of the year he said it was a blockbuster.",
+    "lesson": "Noise before a launch is not the same as a verdict after it."
+   }
+  ],
+  "playbookTitle": "How NamasteDev grows without ads",
+  "playbook": [
+   {
+    "title": "Give the flagship away",
+    "text": "Namaste JavaScript was free on YouTube even though he first wanted to charge for it. It built the trust that every paid course sold into."
+   },
+   {
+    "title": "Sell the next rung, not the same thing",
+    "text": "The free course taught JavaScript. The paid ones taught React, frontend system design, Node, DSA and AI. Each one is the natural next step for someone who finished the last."
+   },
+   {
+    "title": "Build a button for word of mouth",
+    "text": "He says most students come via referrals from friends and colleagues, so in July 2024 he added a referral feature. A \"Gift a Course\" option does the same job from the other side."
+   },
+   {
+    "title": "Name projects after apps people know",
+    "text": "Namaste React's projects are NetflixGPT, Namaste YouTube, Namaste Food and a DevTinder bonus. They look good on a resume and make people ask where you learned it."
+   },
+   {
+    "title": "Stack the discounts",
+    "text": "In November 2026 Namaste React showed 51% off a ₹5,427 list price, plus a ₹1,500 platform discount and a ₹868 coupon called winterarc. Bundles like MERN and Frontend Master sit on top."
+   },
+   {
+    "title": "Throw in useful extras",
+    "text": "Students get a free AI resume reviewer and bonus sessions on personal branding. Cheap to give, and they push a student toward a job, which is what they really want."
+   },
+   {
+    "title": "Be honest about what it isn't",
+    "text": "Namaste AI says plainly it's not a placement or job-guarantee course, and offers a seven-day refund. Honesty like that makes the rest of the page easier to believe."
+   }
+  ],
+  "charts": [
+   {
+    "title": "List price against what you actually pay, NamasteDev site, Nov 2026",
+    "points": [
+     {
+      "label": "Namaste React, list",
+      "value": 5427,
+      "display": "₹5,427"
+     },
+     {
+      "label": "Namaste React, you pay",
+      "value": 2633,
+      "display": "₹2,633",
+      "down": true
+     },
+     {
+      "label": "Namaste AI, list",
+      "value": 17109,
+      "display": "₹17,109"
+     },
+     {
+      "label": "Namaste AI, you pay",
+      "value": 8156,
+      "display": "₹8,156",
+      "down": true
+     }
+    ],
+    "note": "Prices include GST as shown on his course pages in November 2026."
+   },
+   {
+    "title": "Students taught, as claimed on two pages of his own site, 2026",
+    "points": [
+     {
+      "label": "Homepage",
+      "value": 12,
+      "display": "12 lakh+"
+     },
+     {
+      "label": "Namaste AI page",
+      "value": 20,
+      "display": "20 lakh+"
+     }
+    ],
+    "note": "Both are his own claims and they don't match, so the real figure isn't public."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "College",
+    "text": "Runs a blog called Boiling News and learns SEO and web development, according to a weak bio site."
+   },
+   {
+    "when": "2020",
+    "text": "A LinkedIn post shows him working at Walmart, after time at Paytm."
+   },
+   {
+    "when": "Before Dec 2022",
+    "text": "Puts out Namaste JavaScript free on YouTube, a course he first wanted to charge for.",
+    "big": true
+   },
+   {
+    "when": "May 2022",
+    "text": "Leaves Uber, by the bio site's date, and faces rumours that he was fired."
+   },
+   {
+    "when": "Dec 2022",
+    "text": "Launches Namaste React, the paid course he says changed his life.",
+    "big": true
+   },
+   {
+    "when": "Sep 2023",
+    "text": "Writes that students who praised the free course started cursing him once he charged."
+   },
+   {
+    "when": "Jul 2024",
+    "text": "Says most students come from referrals, and launches a referral feature.",
+    "big": true
+   },
+   {
+    "when": "May 2025",
+    "text": "Namaste DSA is called a scam before it's released."
+   },
+   {
+    "when": "Dec 2025",
+    "text": "Year-end review: Namaste DSA a blockbuster, 2 million YouTube subscribers, 2x growth in students, and he becomes a father.",
+    "big": true
+   },
+   {
+    "when": "Jan 2026",
+    "text": "Writes that AI will not replace good engineers, it will expose bad ones."
+   },
+   {
+    "when": "15 Aug 2026",
+    "text": "Launches Namaste AI, released monthly in five seasons, and thanks his team.",
+    "big": true
+   }
+  ],
+  "quotes": [
+   {
+    "text": "it just changed my life!",
+    "cite": "X, December 2023, on Namaste React"
+   },
+   {
+    "text": "the same students started cursing me.",
+    "cite": "X, September 2023"
+   },
+   {
+    "text": "Most of the students who enroll on our platform comes via referrals",
+    "cite": "X, July 2024"
+   },
+   {
+    "text": "Why so much hate?",
+    "cite": "X, May 2025, before Namaste DSA launched"
+   },
+   {
+    "text": "I won't lie, it hurt.",
+    "cite": "X, early 2026, on the rumours after Uber"
+   },
+   {
+    "text": "AI will not replace good engineers. It will expose bad ones.",
+    "cite": "X, January 2026"
+   },
+   {
+    "text": "What people don't see is the team behind all of it.",
+    "cite": "X, 15 August 2026, Namaste AI launch"
+   },
+   {
+    "text": "I've become pretty bullish on AI lately. Not in a hype way.",
+    "cite": "X, 2026"
+   }
+  ],
+  "steal": [
+   "Make one genuinely great free thing in your area, the way Namaste JavaScript was, and let it do your marketing for years.",
+   "Plan the paid ladder in advance. Each paid product should be the obvious next step for someone who finished the free one.",
+   "Watch where your buyers really come from, and build for it. When Akshay saw referrals were his channel, he added a referral feature and a gift option.",
+   "Expect anger the first time you charge, and keep going. Keep the free thing free so the anger has less to stand on.",
+   "Write down what your product is not. His \"not a job-guarantee course\" line builds more trust than another testimonial would."
+  ],
+  "sources": [
+   {
+    "title": "NamasteDev homepage",
+    "url": "https://namastedev.com/"
+   },
+   {
+    "title": "Namaste React course page",
+    "url": "https://namastedev.com/learn/namaste-react"
+   },
+   {
+    "title": "Namaste AI course page",
+    "url": "https://namastedev.com/learn/namaste-ai"
+   },
+   {
+    "title": "NamasteDev llms.txt (company and course details)",
+    "url": "https://namastedev.com/llms.txt"
+   },
+   {
+    "title": "NamasteDev blog: students are falling into a satisfaction trap",
+    "url": "https://namastedev.com/blog/pseudo-learning-students-are-falling-into-a-satisfaction-trap/"
+   },
+   {
+    "title": "Bio site on Akshay Saini (weak, unsourced)",
+    "url": "https://coderharsh.in/biography/akshay-saini-namaste-javascript/"
+   },
+   {
+    "title": "Akshay on LinkedIn, 2020 (Walmart)",
+    "url": "https://www.linkedin.com/posts/akshaymarch7_sharingknowledge-helpingothers-goodkarma-activity-6680350264353984512-hBUD"
+   },
+   {
+    "title": "Akshay on LinkedIn: when I built Namaste JavaScript",
+    "url": "https://www.linkedin.com/posts/akshaymarch7_when-i-built-namaste-javascript-i-wanted-activity-7157992070039707648-Es1x"
+   },
+   {
+    "title": "Akshay on X: Namaste React changed my life",
+    "url": "https://x.com/akshaymarch7/status/1739208033350418690"
+   },
+   {
+    "title": "Akshay on X: students started cursing me",
+    "url": "https://x.com/akshaymarch7/status/1700021743610696175"
+   },
+   {
+    "title": "Akshay on X: referrals and word of mouth",
+    "url": "https://x.com/akshaymarch7/status/1817856925654212704"
+   },
+   {
+    "title": "Akshay on X: Namaste DSA called a scam",
+    "url": "https://x.com/akshaymarch7/status/1927665056835420472"
+   },
+   {
+    "title": "Akshay on X: 2025 year review",
+    "url": "https://x.com/akshaymarch7/status/2006583664482857413"
+   },
+   {
+    "title": "Akshay on X: rumours after leaving Uber",
+    "url": "https://x.com/akshaymarch7/status/2025849407325770235"
+   },
+   {
+    "title": "Akshay on X: AI will expose bad engineers",
+    "url": "https://x.com/akshaymarch7/status/2009122894228672959"
+   },
+   {
+    "title": "Akshay on X: bullish on AI",
+    "url": "https://x.com/akshaymarch7/status/2046239489270419894"
+   },
+   {
+    "title": "Akshay on X: what worked 5 or 10 years ago",
+    "url": "https://x.com/akshaymarch7/status/2102302764621865118"
+   },
+   {
+    "title": "Akshay on X: deciding what not to teach",
+    "url": "https://x.com/akshaymarch7/status/2072985199634235685"
+   },
+   {
+    "title": "Akshay on X: who Namaste AI is for",
+    "url": "https://x.com/akshaymarch7/status/2074188350580494591"
+   },
+   {
+    "title": "Akshay on X: Namaste AI launch and the team",
+    "url": "https://x.com/akshaymarch7/status/2089008151022432380"
+   }
+  ]
+ }
+}

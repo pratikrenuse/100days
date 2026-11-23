@@ -1,0 +1,471 @@
+{
+ "n": 47,
+ "name": "Rob Fitzpatrick",
+ "short": "Rob",
+ "wisdom": "Write the most useful short answer to the question your field keeps asking.",
+ "email": {
+  "subject": "His startups failed. A short book paid him $160K a year.",
+  "hook": "Rob Fitzpatrick went through Y Combinator, watched his startup die slowly, lost his last $10K on software, and then a short self-published book started paying him about $160K a year.",
+  "lead": [
+   "Rob matters to us because he's proof that the product doesn't have to be software. If you know one painful skill really well, a small, practical book can earn for a decade with almost no marketing. You've probably already heard of his: The Mom Test, the book founders keep handing to each other.",
+   "To be clear about the setup: Rob isn't a lone wolf. He likes working with one or two friends, and by March 2023 his publishing and community business, Useful Books, had five people. The books themselves, though, are his."
+  ],
+  "stats": [
+   {
+    "value": "$160K",
+    "label": "a year in book royalties, Jan 2021"
+   },
+   {
+    "value": "1,500",
+    "label": "copies of The Mom Test a month, Jan 2021"
+   },
+   {
+    "value": "3+ years",
+    "label": "before royalties passed $3K a month"
+   }
+  ],
+  "chart": {
+   "title": "The Mom Test's monthly royalties, by his own numbers",
+   "points": [
+    {
+     "label": "2013 launch",
+     "value": 0,
+     "display": "Self-published"
+    },
+    {
+     "label": "About 2016",
+     "value": 3000,
+     "display": "Finally past $3K"
+    },
+    {
+     "label": "Jan 2021",
+     "value": 10000,
+     "display": "About $10K"
+    }
+   ],
+   "note": "It took more than three years for monthly royalties to convincingly pass $3,000."
+  },
+  "sections": [
+   {
+    "title": "What he's doing right now",
+    "paras": [
+     "The latest he's said publicly was in March 2023. He spent about 20 hours a week on the business and the other half of his time writing books, every morning. He was giving all his books away free on the web, planning audio versions, and had paused his newsletter to do slower, deeper writing.",
+     "He was also expecting a baby around May 2023 and planning paternity leave. Since then he's been quiet in public, so we don't know what he's working on in 2026. A Simon and Schuster retail listing for The Mom Test with new ISBNs hints at a new edition or distribution deal, but the details aren't public."
+    ]
+   },
+   {
+    "title": "How the money comes in",
+    "stats": true,
+    "paras": [
+     "Books, mostly through Amazon. In January 2021, by his own numbers, The Mom Test sold about 1,500 copies a month for about $10K in royalties, and his second book, The Workshop Survival Guide, sold about 500 a month for about $5K. Together that's **about $160K a year**. A direct PDF edition added about $1K a month, and there's an audiobook and a Udemy course on top.",
+     "He then used those royalties to fund Useful Books, a community and publishing business for authors. In March 2023 it brought in about $10K a month, about $5K of which went to freelancers and staff. He called it “just barely profitable”."
+    ]
+   },
+   {
+    "title": "How the book found its readers",
+    "paras": [
+     "This is the strange, wonderful part. He says it all happened “with nearly zero hands-on marketing.” The engine is word of mouth. The book is short (Courtland Allen of Indie Hackers said it took him two hours to read) and so useful that founders recommend it to other founders. Tibo Louis-Lucas, from Day 31, names it as his book pick.",
+     "His writing process explains why. As soon as he starts writing, he's “also starting to talk to my future potential readers.” He tests drafts on real people, and he's willing to throw work away. He once deleted the fifth draft of a dating book after beta readers saw it."
+    ]
+   },
+   {
+    "title": "The part nobody talks about",
+    "chart": true,
+    "paras": [
+     "Before the book, nearly everything failed. His YC company signed Sony Music, MTV and the BBC and was still “quietly dying in year four.” Every SaaS he tried after that failed. He once bet his last $10K that he could build profitable software before the money ran out, and lost.",
+     "And the book wasn't an overnight hit either. Published in 2013, it took more than three years before monthly royalties convincingly passed $3,000. Rob points out that about 70% of traditionally published titles never earn any royalties at all. The quiet win here is patience: a useful book keeps selling while most products fade."
+    ]
+   }
+  ],
+  "tryToday": "Write down the one question people in your field ask you over and over. Then talk to three of them this week about it, before you write a single page.",
+  "button": "Read how he got here"
+ },
+ "page": {
+  "intro": "Rob went through Y Combinator in 2007, and after that a long string of things failed. Then he wrote a short, practical book about how to talk to customers. The Mom Test has been passed from founder to founder ever since, and by 2021 his books were paying him about $160K a year.",
+  "stats": [
+   {
+    "value": "$160K",
+    "num": 160,
+    "prefix": "$",
+    "suffix": "K",
+    "label": "a year in royalties",
+    "note": "his own number, Jan 2021"
+   },
+   {
+    "value": "1,500",
+    "num": 1500,
+    "prefix": "",
+    "suffix": "",
+    "label": "Mom Test copies a month",
+    "note": "Jan 2021"
+   },
+   {
+    "value": "$7,144.56",
+    "num": 7144,
+    "prefix": "$",
+    "suffix": "",
+    "label": "royalties in two weeks",
+    "note": "1 to 15 January, from two books"
+   },
+   {
+    "value": "3",
+    "num": 3,
+    "prefix": "",
+    "suffix": "",
+    "label": "books published",
+    "note": "2013, 2019 and 2021"
+   }
+  ],
+  "chapters": [
+   {
+    "label": "Before it worked",
+    "title": "Pitching Paul Graham, and pivoting in the room",
+    "paras": [
+     "Rob went through Y Combinator in the summer of 2007. The way he tells it in a 2019 Indie Hackers AMA, the team walked in to pitch a music-video-style game.",
+     "Paul Graham didn't like it. He said it was an agency, not a scalable product. So right there in the meeting, they pivoted to something else: an animation toy for kids. That's a very YC story, and the kind of moment most of us will never have.",
+     "For a while it looked like the right call. They had top-tier investors. They signed Sony Music, MTV and the BBC as customers. Those are names you put on a pitch deck in big letters.",
+     "But it never reached mass adoption. Rob's description of how it ended is one of the most honest lines in this whole series: it was “quietly dying in year four.” Not a crash. Just a slow fade, with big logos on the website.",
+     "We don't know the company's name, where Rob grew up, or what he studied. He hasn't put those in the posts and interviews where he tells this story."
+    ],
+    "pull": {
+     "text": "quietly dying in year four.",
+     "cite": "Rob, Indie Hackers AMA, 2019"
+    }
+   },
+   {
+    "label": "The lowest point",
+    "title": "He bet his last $10K, and lost",
+    "paras": [
+     "After the YC company, Rob kept trying. He ran a card game on Kickstarter. He helped grow a small education agency to about $1M a year. And he built software, again and again.",
+     "Every SaaS attempt failed. He says so flatly. No count, no list of names, just that they all failed.",
+     "The worst moment is the one he describes most simply. He bet his last $10K that he could build profitable software before the money ran out. He lost the bet.",
+     "Out of that came a view on software that a lot of indie hackers don't like hearing: “Passive income [from software] isn't passive.” That's not theory for him. He'd watched it happen to his own products.",
+     "He also came out of it with firm opinions about how he wanted to work. He bootstrapped everything after his first company and avoids investors. He prefers small projects with one or two friends. And he thinks the idea you pick matters far more than people admit, because it decides both your financial risk and whether you're happy day to day."
+    ],
+    "pull": {
+     "text": "Passive income [from software] isn't passive.",
+     "cite": "Rob, Indie Hackers AMA, 2019"
+    }
+   },
+   {
+    "label": "The first version",
+    "title": "A short book about not getting lied to",
+    "paras": [
+     "All those failed products taught him one thing very well: how founders fool themselves when they talk to customers. People say nice things to be polite. You walk away thinking you have a business. You don't. The Mom Test is about asking questions in a way that even your mum can't lie to you.",
+     "He self-published it through Amazon's Kindle Direct Publishing in 2013. That sounds normal now, but he remembers that back then people at dinner parties were sceptical when he said he'd self-published. It wasn't a respectable thing to do yet.",
+     "He kept it short on purpose. Courtland Allen, who runs Indie Hackers, said on the podcast that it took him two hours to read. A busy founder can finish it on a flight, which is exactly why they finish it, and then recommend it.",
+     "How did he write it? Here's his process in his own words: as soon as he has an idea and starts writing, he's “also starting to talk to my future potential readers.” That's the Mom Test applied to the Mom Test. He doesn't write in a cave and then hope.",
+     "He's also ruthless with drafts. On a different book, about dating, he deleted the fifth full draft after beta readers saw it. It never came out. That tells you how much he cares about the book being useful, not just finished.",
+     "We'd love to tell you how long The Mom Test took to write, what it cost, and what the launch post said. He hasn't shared those details anywhere public. What we do know is what happened after."
+    ],
+    "pull": {
+     "text": "a book is not a pile of words",
+     "cite": "Rob, The Bootstrapped Founder, 2023"
+    }
+   },
+   {
+    "label": "The slow years",
+    "title": "Three years to reach $3K a month",
+    "paras": [
+     "Here's the part that should give us all some patience. The Mom Test was not an overnight hit. Rob says it took more than three years before monthly royalties convincingly passed $3,000.",
+     "Think about that. Three years of a book sitting on Amazon, earning a bit, then a bit more. Most people would have moved on. He didn't have to do much to keep it going, because books don't need servers or support, so it just kept selling while he did other things.",
+     "And slowly the word of mouth built. That's the only engine he names. No ad campaign, no launch tour, just readers telling other founders it was worth two hours.",
+     "He has numbers on why this is unusual. He cites research showing about 70% of traditionally published titles earn no royalties at all. And for a set of 1,699 nonfiction bestsellers, 94% of sales happened in the first year. Most books spike and die. His went the other way.",
+     "He has a lovely phrase for that kind of business: “it's nice if something's default growing instead of default dying.” His first startup was default dying. His book was default growing."
+    ],
+    "chart": 0,
+    "pull": {
+     "text": "it's nice if something's default growing instead of default dying.",
+     "cite": "Rob, The Bootstrapped Founder, 2023"
+    }
+   },
+   {
+    "label": "Finding the money",
+    "title": "$7,144.56 in two weeks, without doing anything",
+    "paras": [
+     "By January 2021 the numbers were properly good. By his own count The Mom Test was selling about 1,500 copies a month, for about $10K in royalties. That one book was 60 to 70% of his sales and profit.",
+     "His second book, The Workshop Survival Guide, came out in 2019. It was selling about 500 copies a month for about $5K. Together the two books came to **about $160K a year in royalties**.",
+     "On top of Amazon print and ebook, there was an audiobook, a direct PDF edition that brought in about $1K a month, and a Udemy course. Several formats of the same knowledge, each catching a different kind of reader.",
+     "In April 2021 he posted about earning $7,144.56 in Amazon royalties in two weeks, from 1 to 15 January, from those first two books. That's the kind of post that makes you stop scrolling.",
+     "And the line that makes it so attractive: “All with nearly zero hands-on marketing.” Compare that with his software years. He said it himself: “The royalties are reliable, hands-off passive income.”"
+    ],
+    "chart": 1,
+    "pull": {
+     "text": "All with nearly zero hands-on marketing.",
+     "cite": "Rob, Indie Hackers, Jan 2021"
+    }
+   },
+   {
+    "label": "Scaling it",
+    "title": "Teaching other people to write useful books",
+    "paras": [
+     "Once you've worked out why a book sells for years, the obvious next step is to teach it. In January 2021 he launched his third book, Write Useful Books, while it was still only partly finished. The whole thesis is recommendability: write something so useful that readers sell it for you.",
+     "Alongside it he started a paid community on Slack for authors. At launch it had about 80 members, a weekly email and two live events a week. By March 2023 about 30% of the authors in it were traditionally published and 70% self-published.",
+     "That grew into Useful Books, a small publishing and community business. He's clear that the book royalties were its seed money. No investors, just his own books paying for the next thing.",
+     "In March 2023 he gave real numbers on a podcast. Useful Books brought in about $10K a month. About $5K a month went to freelancers and staff. There were five people involved. He called it “just barely profitable”, and he was spending about 20 hours a week on it.",
+     "That's a useful reality check. The books were close to pure profit. The business built around them was a lot more work for a lot less margin. He seemed fine with that trade, and he had a name for it."
+    ],
+    "chart": 2
+   },
+   {
+    "label": "How he works",
+    "title": "The passion discount",
+    "paras": [
+     "Rob calls it “the passion discount”. He's happy to accept slower or smaller returns for work he actually enjoys. Running a small community of authors isn't the most profitable thing he could do, but it's the thing he likes doing.",
+     "His ideal day, as he described it in 2023, is reading, writing, thinking and time with friends. Half his time went to the business, and the other half to writing books, every morning.",
+     "His life has a bit of that too. He used to live in London. Then he spent a couple of years fixing up a small sailing boat, an 8 metre Westerly Centaur, and sailed it to Barcelona, where he lives now. That's not a hustle story. It's a story of someone who built income that let him choose.",
+     "In 2023 he made some unusual moves. He started giving all his books away free on the web and planned audio versions. He paused his newsletter for slower, deeper writing. And he was exploring an agent model with a publisher called Holloway. He was also updating Write Useful Books to a 1.1 version, and expecting a baby around May 2023, with paternity leave planned."
+    ]
+   },
+   {
+    "label": "Where he stands now",
+    "title": "Quiet since 2023",
+    "paras": [
+     "After March 2023 Rob went quiet in public. We don't have any revenue numbers for 2024 to 2026, and we don't know whether Useful Books still runs in the same form. He hasn't said.",
+     "There's one small clue. Simon and Schuster retail listings now carry The Mom Test under new ISBNs, which suggests a new edition or a trade distribution deal. The details and the date aren't public, so treat it as a hint, not a fact.",
+     "What is clear is that the book is still everywhere. It shows up on founder reading lists and in interviews years after it came out. Tibo Louis-Lucas, whom we met on Day 31, names it as his book pick. A 2013 self-published book is still doing its job without him.",
+     "It's worth pausing on what that means for people like us. A book written once in 2013 was still earning in 2021 and still being recommended after that. Most products in this series need their founders every single day. His needed a good idea, a few drafts tested on real readers, and then mostly patience.",
+     "A note on the numbers in this story: almost all of them are Rob's own, from his posts and interviews, and nobody else has checked them."
+    ]
+   },
+   {
+    "label": "How he thinks",
+    "title": "AI can help with style, not with knowing things",
+    "paras": [
+     "In March 2023, early in the AI wave, he shared a clear view. He saw mass AI-generated content as a short-term trick that would stop working. AI could help with style, grammar and summaries, he said, but the structure of the knowledge has to come from the author.",
+     "That fits everything else he believes. A useful book isn't the words, it's the thinking behind them. Or as he puts it, “a book is not a pile of words.”",
+     "His advice to people starting out is simple and slightly unfashionable. Pick your idea carefully, because it decides your risk and your daily happiness. Do customer conversations face to face. Build an audience early.",
+     "He carries the book's own lesson into how he builds. He launched Write Useful Books half finished, with a community of authors around it, so it was in readers' hands before it was done. The method that made The Mom Test is the method he keeps using: put the work in front of real people early, and listen.",
+     "There's a nice irony in it. He failed at software for years, and the thing that worked was writing down what all those failures taught him about talking to customers. Those failures were the raw material for his product."
+    ]
+   }
+  ],
+  "failuresTitle": "A YC startup and every SaaS after it",
+  "failuresIntro": "Rob doesn't give a total count, but he's honest about the shape of it: one slow-dying startup and a run of software that never worked.",
+  "failures": [
+   {
+    "year": "2007 to about 2011",
+    "name": "The YC startup",
+    "what": "They pitched a music-video game, Paul Graham called it an agency, and they pivoted in the meeting to a kids' animation toy. It signed Sony Music, MTV and the BBC and had top-tier investors, but never reached mass adoption and was quietly dying by year four.",
+    "lesson": "Big logos aren't the same as a market; watch whether ordinary users keep coming."
+   },
+   {
+    "year": "Years not public",
+    "name": "Every SaaS attempt",
+    "what": "After YC he built several software products. He says they all failed, and he came away believing that software income isn't passive at all.",
+    "lesson": "If you want calm income, check how much upkeep the product will need before you build it."
+   },
+   {
+    "year": "Year not public",
+    "name": "The last $10K",
+    "what": "He bet his last $10K that he could build profitable software before the money ran out. It ran out first.",
+    "lesson": "Don't put your last runway on one bet with no early sign of demand."
+   },
+   {
+    "year": "Year not public",
+    "name": "The dating book",
+    "what": "He wrote a book about dating and got to a fifth draft. After beta readers saw it, he deleted it. It never came out.",
+    "lesson": "Testing a draft on real readers is cheaper than publishing a book nobody recommends."
+   }
+  ],
+  "playbookTitle": "How a book sold for years with nearly zero marketing",
+  "playbook": [
+   {
+    "title": "Solve one painful problem",
+    "text": "The Mom Test covers one skill, how to talk to customers without being lied to. Founders hit that problem constantly, so they recommend the book to each other. By January 2021 it sold about 1,500 copies a month."
+   },
+   {
+    "title": "Talk to readers while writing",
+    "text": "As soon as he starts a book he starts talking to the people who'd read it. He tests drafts with beta readers and throws away what doesn't work, even a fifth draft."
+   },
+   {
+    "title": "Keep it short",
+    "text": "The Mom Test can be read in about two hours. A short book gets finished, and a finished book gets recommended."
+   },
+   {
+    "title": "Self-publish on Amazon",
+    "text": "He used Kindle Direct Publishing in 2013, when self-publishing was still looked down on. He kept the royalties and control, and the book sold through Amazon for years."
+   },
+   {
+    "title": "Sell the same knowledge in many formats",
+    "text": "Print, ebook, audiobook, a direct PDF (about $1K a month in 2021) and a Udemy course. Each format reaches a different kind of buyer without new writing."
+   },
+   {
+    "title": "Launch the next book with a community",
+    "text": "Write Useful Books launched in January 2021 while still partly done, together with a paid Slack community of about 80 authors, a weekly email and two live events a week."
+   },
+   {
+    "title": "Let royalties fund the next business",
+    "text": "Useful Books was seeded by his royalties, not investors. In March 2023 it brought in about $10K a month with five people."
+   }
+  ],
+  "charts": [
+   {
+    "title": "The Mom Test's monthly royalties, by his own numbers",
+    "points": [
+     {
+      "label": "2013 launch",
+      "value": 0,
+      "display": "Self-published"
+     },
+     {
+      "label": "About 2016",
+      "value": 3000,
+      "display": "Past $3K"
+     },
+     {
+      "label": "Jan 2021",
+      "value": 10000,
+      "display": "About $10K"
+     }
+    ],
+    "note": "More than three years to convincingly pass $3,000 a month."
+   },
+   {
+    "title": "Where his monthly book income came from, Jan 2021",
+    "points": [
+     {
+      "label": "The Mom Test",
+      "value": 10000,
+      "display": "About $10K"
+     },
+     {
+      "label": "Workshop Survival Guide",
+      "value": 5000,
+      "display": "About $5K"
+     },
+     {
+      "label": "Direct PDF",
+      "value": 1000,
+      "display": "About $1K"
+     }
+    ],
+    "note": "His own numbers. Audiobook and Udemy course not broken out."
+   },
+   {
+    "title": "Useful Books, a month in March 2023",
+    "points": [
+     {
+      "label": "Revenue",
+      "value": 10000,
+      "display": "About $10K"
+     },
+     {
+      "label": "Paid to freelancers and staff",
+      "value": 5000,
+      "display": "About $5K"
+     }
+    ],
+    "note": "He called it just barely profitable."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "Summer 2007",
+    "text": "Goes through Y Combinator and pivots in the pitch meeting to a kids' animation toy."
+   },
+   {
+    "when": "About 2011",
+    "text": "The startup, with big media customers, is quietly dying in year four."
+   },
+   {
+    "when": "After YC",
+    "text": "A Kickstarted card game, a small education agency at about $1M a year, and several SaaS products that all fail."
+   },
+   {
+    "when": "2013",
+    "text": "Self-publishes The Mom Test through Amazon KDP.",
+    "big": true
+   },
+   {
+    "when": "About 2016",
+    "text": "More than three years in, monthly royalties finally pass $3,000."
+   },
+   {
+    "when": "2019",
+    "text": "Publishes The Workshop Survival Guide. Does an Indie Hackers AMA from Barcelona."
+   },
+   {
+    "when": "Jan 2021",
+    "text": "Two books at about $160K a year in royalties. Launches Write Useful Books and a paid author community.",
+    "big": true
+   },
+   {
+    "when": "Apr 2021",
+    "text": "Posts about $7,144.56 in royalties in two weeks."
+   },
+   {
+    "when": "Mar 2023",
+    "text": "Useful Books at about $10K a month with five people. Books given away free on the web."
+   },
+   {
+    "when": "Later",
+    "text": "Simon and Schuster listings show The Mom Test under new ISBNs. Details not public."
+   }
+  ],
+  "quotes": [
+   {
+    "text": "quietly dying in year four.",
+    "cite": "Indie Hackers AMA, 2019"
+   },
+   {
+    "text": "Passive income [from software] isn't passive.",
+    "cite": "Indie Hackers AMA, 2019"
+   },
+   {
+    "text": "All with nearly zero hands-on marketing.",
+    "cite": "Indie Hackers, Jan 2021"
+   },
+   {
+    "text": "The royalties are reliable, hands-off passive income.",
+    "cite": "Indie Hackers, Jan 2021"
+   },
+   {
+    "text": "it's nice if something's default growing instead of default dying.",
+    "cite": "The Bootstrapped Founder, 2023"
+   },
+   {
+    "text": "a book is not a pile of words",
+    "cite": "The Bootstrapped Founder, 2023"
+   }
+  ],
+  "steal": [
+   "Look at your own failures for the product. Rob's years of bad customer conversations became the book that paid him. The mistakes you've made in your own work are the same kind of raw material.",
+   "Pick one painful, recurring problem and write the shortest truly useful answer to it. Short books get finished and recommended.",
+   "Talk to readers before and while you write, not after. Treat the draft like a product and be willing to delete it.",
+   "Sell the same knowledge in several formats: book, PDF, audio, course. It's the same work earning in more places.",
+   "Judge a book on years, not weeks. His took more than three years to pass $3K a month and then kept growing.",
+   "Use income from one quiet product to fund the next idea, instead of raising money for it."
+  ],
+  "sources": [
+   {
+    "title": "Indie Hackers AMA, Rob Fitzpatrick (Sep 2019)",
+    "url": "https://www.indiehackers.com/post/im-rob-fitzpatrick-i-wrote-the-mom-test-book-went-through-yc-s07-learned-how-to-do-sales-as-a-techie-and-live-off-full-passive-income-ama-4989966b85"
+   },
+   {
+    "title": "Indie Hackers, new book and community (Jan 2021)",
+    "url": "https://www.indiehackers.com/post/the-mom-test-author-rob-fitzpatrick-has-launched-a-new-book-and-community-5c8550d9c8"
+   },
+   {
+    "title": "Indie Hackers, $7,144.56 in royalties in two weeks (Apr 2021)",
+    "url": "https://www.indiehackers.com/post/7-144-56-in-royalties-in-two-weeks-from-books-0a45203604"
+   },
+   {
+    "title": "The Bootstrapped Founder, tinkerers, thinkers and teachers (Mar 2023)",
+    "url": "https://thebootstrappedfounder.com/rob-fitzpatrick-tinkerers-thinkers-and-teachers/"
+   },
+   {
+    "title": "Indie Hackers Podcast #154, Rob Fitzpatrick",
+    "url": "https://www.indiehackers.com/podcast/154-rob-fitzpatrick-of-the-mom-test"
+   },
+   {
+    "title": "Simon and Schuster UK, The Mom Test listing",
+    "url": "https://www.simonandschuster.co.uk/books/The-Mom-Test/Rob-Fitzpatrick/9798893312560"
+   },
+   {
+    "title": "SaaS Club ep. 482, Tibo Louis-Lucas",
+    "url": "https://saasclub.io/482"
+   }
+  ]
+ }
+}

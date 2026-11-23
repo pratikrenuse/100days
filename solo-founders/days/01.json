@@ -1,0 +1,281 @@
+{
+  "n": 1,
+  "name": "Pieter Levels",
+  "short": "Pieter",
+  "wisdom": "Ship it rough, charge from day one, and let the money decide.",
+  "email": {
+    "subject": "It started as a Google Sheet",
+    "hook": "In 2014 Pieter Levels was lonely, low and watching his only income dry up. Ten years later, by his own numbers, he made $420,000 in a single month with no team and no investors.",
+    "lead": [
+      "We're starting this series with Pieter because almost everyone else on the list learned something from him. Danny Postma, who's on day 3, even built a product with him in about 30 hours.",
+      "And the thing that got him going wasn't a clever idea. It was a public spreadsheet and one tweet asking strangers to help fill it in."
+    ],
+    "stats": [
+      {"value": "$420K", "label": "his best month, September 2024"},
+      {"value": "113", "label": "projects on his own list"},
+      {"value": "$0", "label": "raised from investors"}
+    ],
+    "chart": {
+      "title": "Pieter's total revenue per month, by his own numbers",
+      "points": [
+        {"label": "Feb 2018", "value": 52843, "display": "$52.8K"},
+        {"label": "Sep 2024", "value": 420000, "display": "$420K"},
+        {"label": "Aug 2026", "value": 199000, "display": "$199K", "down": true}
+      ],
+      "note": "The 2026 figure is his, as reported by a secondary article. His own X bio around mid-2026 added up closer to $245K."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Pieter still runs Photo AI, Remote OK, Interior AI, Nomads.com and a newer thing called Vibe Jam. In November 2026 he was rebuilding a web version of Battlefield 1942 with multiplayer and designing furniture with Claude Code, just because he could.",
+          "In July 2026 he reportedly cancelled every SaaS subscription he paid for and rebuilt those tools himself with AI. Then he cut his total business expenses to about $300 a month. And on 17 November 2026 he posted something that should make all of us sit up: **“There is no real way for most SaaS companies to survive AI.”** This is one of the best-known indie hackers in the world saying the old playbook is breaking."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "It's almost all subscriptions. Around mid-2026 his X bio reportedly listed Photo AI at $100K a month, Remote OK at $44K, Vibe Jam at $39K and Interior AI at $35K. A different report puts his August 2026 total at $199K a month, so the numbers don't quite agree, but either way it's roughly half his September 2024 peak of $420K.",
+          "Margins sat near 80% even at the peak, when his GPU bill was around $60K a month. His view on pricing is blunt: he says he **“would ask more than $10 per month”** for anything. No funding, and one employee on Photo AI as of September 2025."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "Everything runs on PHP, jQuery and SQLite on a cheap server. By July 2023, Photo AI was, in his words, “almost 14,000 lines of raw PHP.” The first login on Photo AI was just a static link, and proper Google login came about a year later.",
+          "Nomad List itself began on 24 June 2014 as a Google Spreadsheet he tweeted out, asking people to add cost of living and internet speed for cities. The website came after people had already shown they cared."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "The first big spike was an accident. On 29 July 2014 a server reboot exposed the site before he was ready, a friend posted it to Product Hunt without telling him, and it went to #1. He then posted it to Hacker News himself and hit #1 there too. That one day brought about 50,000 visitors from Hacker News and 12,000 from Product Hunt.",
+          "He collected about 2,500 emails in two weeks. Remote OK in February 2015 got the same treatment: #1 on Product Hunt with 1,000 upvotes, and he added the email box about five minutes after launch. Since 2022 his own X audience has replaced Product Hunt, and one podcast, Lex Fridman in August 2024, gave his sites a big jump."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Of the 113 projects on his own list, 19 are tagged “Failed,” and one analyst who read all his posts reckons the true hit rate is under 10%. His flight game fly.pieter.com claimed $1M a year in 17 days in early 2025, and by mid-2026 his bio reportedly listed it at $0 a month.",
+          "So the man who proved you can do this alone is also showing us how fast it can shrink. That's not a reason to stop. It's a reason to ship more things, and faster."
+        ]
+      }
+    ],
+    "tryToday": "Pick one question you and your friends keep asking (best cafes to work from in Pune, say), put the answers in a public Google Sheet, and post it asking people to add to it. Count how many strangers do.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Pieter Levels studied in Rotterdam, builds everything himself, from the code to the logo, and has never raised a rupee of outside money. He went from a dying YouTube channel to $420,000 in one month, and the honest part is that most of what he built failed along the way. Almost every number on this page is Pieter's own, posted by him on his blog or on X, and nobody has audited them.",
+    "stats": [
+      {"value": "$420,000", "num": 420000, "prefix": "$", "suffix": "", "label": "his best month, September 2024", "note": "his own numbers"},
+      {"value": "113", "num": 113, "prefix": "", "suffix": "", "label": "projects on his own list", "note": "19 tagged failed"},
+      {"value": "50,000", "num": 50000, "prefix": "", "suffix": "", "label": "visitors from one Hacker News post", "note": "July 2014"},
+      {"value": "$300", "num": 300, "prefix": "$", "suffix": "", "label": "total business costs a month", "note": "November 2026"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "His first business was a music channel",
+        "paras": [
+          "Pieter studied at Rotterdam School of Management, and when he finished, as he told Lex Fridman years later, he simply didn't want a normal job. So he did what a lot of us have thought about and never done. He tried to make money on the internet instead.",
+          "His first real income came from a YouTube music channel called Panda Mix Show, which he ran from 2008. At its best it earned about $8,000 a month, which is serious money for a student project. Then the copyright claims started piling up. It fell to about $5,000, and then to somewhere between $500 and $900 a month. The thing paying his bills was dying slowly in front of him.",
+          "Around 2010 he and a friend pitched an Uber-style idea for the Netherlands to some wealthy investors. He later wrote that it was a massive waste of time, that they never invested in anyone, and that it was “quite humiliating.” You can see where his lifelong suspicion of investors comes from.",
+          "Then came Tubelytics in 2013, a YouTube analytics dashboard he worked on for about a year. **Nobody paid for it.** That year of building something nobody wanted gave him the rule he still follows: don't build until you know there are customers."
+        ],
+        "pull": {"text": "I'm very suspicious of money.", "cite": "Pieter on the Lex Fridman podcast, 2024"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "Twelve startups in twelve months",
+        "paras": [
+          "He spent a year travelling as a digital nomad, which sounds like the dream, and it made him feel worse. On Lex's podcast he remembered asking himself, “What am I doing with my life?” He also said, a little darkly, that travel can make you insane. By 2014 his income was falling and he was in a depressive stretch.",
+          "His answer was a public challenge: 12 startups in 12 months. One month per product, and each one had to charge money from launch, with Stripe in place on day one. Wired wrote about him in August 2014 under the headline “This Guy Is Launching 12 Startups in 12 Months.”",
+          "The first one, Play My Inbox, was used by tens of thousands of people. Most of the rest went nowhere. He said it plainly on Lex: “most ideas don't work... most fail.” But the challenge did one important thing. It forced him to ship small and often, instead of polishing one thing for a year like he had with Tubelytics.",
+          "And one of those twelve was the thing that changed his life. It came out of loneliness more than strategy."
+        ],
+        "pull": {"text": "So I built this website and I stopped feeling lonely.", "cite": "Pieter on Nomad List, Lex Fridman podcast, 2024"}
+      },
+      {
+        "label": "The first version",
+        "title": "A spreadsheet and one tweet",
+        "paras": [
+          "On 24 June 2014, Pieter didn't write code. He made a public Google Spreadsheet with a list of cities and columns for the things a remote worker cares about, and he tweeted it out: “Help me build the definitive list of locations for digital nomads+remote workers.”",
+          "Strangers started filling it in. That's the whole validation step, and it cost him nothing. He didn't need to guess whether nomads wanted this information, because they were typing it in for free.",
+          "Then he built the website on top. His 2014 post about it describes a Linode server running nginx, with a JSON API wrapping the city data. He doesn't name any framework. Later he became famous for a stack most developers laugh at: PHP, jQuery and SQLite. As he put it on Lex, he is the designer, the developer, and he makes the logo.",
+          "Here's what we should notice. The spreadsheet was the product before the product existed. If people hadn't filled it in, he'd have lost a weekend, not a year."
+        ],
+        "pull": {"text": "Help me build the definitive list of locations for digital nomads+remote workers.", "cite": "Pieter's tweet, 24 June 2014"}
+      },
+      {
+        "label": "The first 100 users",
+        "title": "He launched by accident, and it went to #1 twice",
+        "paras": [
+          "On 29 July 2014, Pieter uploaded an nginx.conf file by mistake, the server rebooted, and the site was suddenly live for anyone to see. On the very same day, TechInAsia published a feature about it. And his friend Emiel Janson, without telling him, submitted Nomad List to Product Hunt.",
+          "So imagine it. You haven't launched, your site is exposed, there's a press piece out, and you look at Product Hunt and your own product is sitting at #1. It went on to become the fifth most-voted Product Hunt launch ever at that time.",
+          "Pieter didn't panic and pull it down. He leaned in. He submitted it to Hacker News himself, and it went to #1 there as well, on the same day. Hacker News sent about 50,000 unique visitors and Product Hunt about 12,000. Over the first two weeks the site averaged about 3,000 unique visitors and 5,000 page views a day.",
+          "The smart move came next. He collected about 2,500 email addresses in those two weeks. Then he emailed 2,000 of them a survey and got over 400 answers and 50 personal email replies. That's how you turn a traffic spike into something you can build on: you capture the people, then you ask them what they want.",
+          "Two big launches in his career went out before he felt ready, and both did well. That's worth sitting with, because most of us wait until things are perfect."
+        ]
+      },
+      {
+        "label": "Finding the money",
+        "title": "A sponsor first, then Remote OK",
+        "paras": [
+          "Nomad List's first money came from a sponsorship by Automattic, the company behind WordPress, paid per view. Pieter wrote that this made the site “profitable from day one,” though he never said how much it was. In the same 2014 post he sketched out paid products he planned to sell: a NomadGuide at $10 or $25, and a NomadKit at about $50, or $75 to $100 with a hotel stay included. He hasn't shared exactly when the paid membership started.",
+          "In February 2015 he ran the same playbook again with Remote OK, a remote jobs board. He submitted it to Product Hunt on Sunday 22 February at 1:44 in the morning Pacific time. It became #1 Product of the Day and the 15th highest-voted product ever, with 1,000 upvotes. It also hit #1 on the r/digitalnomad subreddit and briefly made the Hacker News front page.",
+          "The build was gloriously simple. He wrote one PHP script per job source, pulling jobs in from RSS feeds or JSON APIs and dropping them into a SQLite database. Nginx turned filtered addresses like /remote-reactjs+css+python-jobs into a single PHP file that showed the right jobs. MailChimp sent the emails, posting to Twitter was automated, and the background was NASA footage from the International Space Station.",
+          "The hard bit wasn't the code. It was cleaning up job data from all those different feeds so it looked the same. He said that part “by far took the most time. Like weeks.” He added the email signup box about five minutes after launch, and an email robot about a month later.",
+          "He hadn't even installed Google Analytics, so he guessed day one at about 28,000 unique visitors. Day two was 14,179, measured. He estimated about 100,000 uniques in the first month, and 3,723 people signed up for email, about 3.5% of visitors.",
+          "Here's the part I like. At launch he refused to charge employers, because he felt it was unethical for a site that just collected other people's job posts. He planned to earn from sponsors instead, guessing $3,000 to $7,500 a month once he had 10,000 subscribers. He noted that a job ad elsewhere went for $250 to $500. He hasn't said exactly when Remote OK started charging for job posts, but in 2026 it was still bringing in about $44,000 a month by his bio."
+        ],
+        "pull": {"text": "by far took the most time. Like weeks.", "cite": "Pieter on cleaning job data for Remote OK, 2015"}
+      },
+      {
+        "label": "Scaling it",
+        "title": "Four years to a million a year",
+        "paras": [
+          "By his own figures, his products made $202,785 in 2015, from one server and one MacBook, with zero dollars raised. By February 2018 he was making $52,843 a month.",
+          "On 30 May 2019 he wrote a post with a title that tells the real story: “It took 4 years to reach $1m annual revenue with Nomad List and Remote OK.” Four years. Not four weeks. An aggregator that read all his posts says he had 11,996 customers at that point, paying $115 on average.",
+          "He kept Nomad List alive through relaunches, an email list and a Telegram channel. He relaunched it on Product Hunt as Nomad List 3.0 on 11 December 2017. By July 2019 it had over a million data points and 300,000 places to work, thanks to partnerships with Foursquare, Coworker.com and Workfrom.co. Instead of collecting all that data himself, he plugged in other people's.",
+          "Not everything worked in this stretch. Hoodmaps, launched in 2017, is tagged “Failed” on his own list. He simply left it running because it costs almost nothing to keep online."
+        ]
+      },
+      {
+        "label": "The second turning point",
+        "title": "He jumped on AI images within weeks",
+        "paras": [
+          "When Stable Diffusion came out in 2022, Pieter moved fast. Avatar AI launched in October 2022, and his launch tweet claimed $10,000 on the first day. How much it made after that depends on who you ask: one aggregator says about $100,000 in its first 10 days, and on Lex he guessed it made “like 150K in a week or something.” The numbers differ, but it was clearly big. Interior AI hit $10,000 to $20,000 a month within a week.",
+          "Then Lensa arrived and took the avatar market. Pieter said on Lex that he was a little sad, because all his products had worked and he'd never faced fierce competition before. Avatar AI faded.",
+          "Photo AI launched on 10 February 2023, with a tweet to his own followers. There was no Product Hunt launch this time, according to one case study. A third party puts his following then at about 350,000 people, and that audience did the job Product Hunt used to do.",
+          "The growth, by his own tweets, went like this: $5,400 in monthly recurring revenue in week one, $28,700 by April 2023, and $61,800 by 3 July 2023 with 1,872 customers. Under the hood it was vanilla HTML, CSS, JavaScript and jQuery on the front, and raw PHP with SQLite behind it.",
+          "In August 2024 he went on the Lex Fridman podcast for hours, and his sites got a big jump in sign-ups afterwards. A month later, in September 2024, he posted his best month ever: $420,000 across his products, at about 80% margin, with GPU costs around $60,000 a month. One case study puts the GPU bill much lower, at about $12,000 a month, so treat the cost figures loosely.",
+          "Photo AI's own record came in September 2025: $150,000 in a month, 2,573 active subscribers and 87% margin. That's also when we learn he has one employee on Photo AI, so he's not quite as solo as the legend says."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "Where it stands now",
+        "title": "A flight game, a crash, and a $300 cost base",
+        "paras": [
+          "In February 2025 he typed a prompt into Cursor, “Make a 3d flying game in browser with skyscrapers,” and had a working game in about three hours. That became fly.pieter.com. It was free to play and made money from in-game ad slots, branded blimps and a $29.99 F-16 upgrade.",
+          "By his own post, it reached $1 million in annual run rate in 17 days, with $87,000 in monthly revenue on day 17. He was honest about it at the time: “Whether the MRR is truly sustainable for a year we can only guess.” It wasn't. By mid-2026 his bio reportedly listed it at $0 a month, once the ad slots ran out and the hype faded.",
+          "His overall total has roughly halved from the 2024 peak. Photo AI went from $150,000 a month in 2025 to about $100,000 by mid-2026. His bio around then reportedly showed Photo AI $100K, Remote OK $44K, Vibe Jam $39K and Interior AI $35K a month. A report from August 2026 says $199,000 a month across six products. The two don't match, and neither has been checked by anyone outside.",
+          "What he's doing about it is very Pieter. In July 2026 he reportedly cancelled all his SaaS subscriptions and rebuilt the tools himself with AI. On 3 November 2026 he said he'd dropped his total business expenses to just $300 a month, and a week later he argued that renting your own server is 100 to 1,000 times cheaper than the fancy hosting platforms."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "The future",
+        "title": "He thinks most SaaS won't survive AI",
+        "paras": [
+          "This is the bit that matters most for us. In November 2026 Pieter wrote that building software is now easy but making money from it is hard. On 17 November he went further and said there is no real way for most SaaS companies to survive AI. One secondary write-up says he now sees building in public as a risk, because AI makes copying a product so quick.",
+          "He's not giving up on making things. He's still shipping experiments every week, and he's betting on Europe. He was one of the people consulted for Mario Draghi's 2024 report on EU competitiveness, where he pushed ideas like one EU-wide company form and 0% corporate tax for a new business's first three years. In November 2026 he wrote that Europeans are “by far the most prepared for post-AGI.”",
+          "Underneath all of it, his philosophy is small. He lives with few possessions. He told Lex he thinks constraints probably make you happy. And for anyone struggling, his advice was three words: “Just get through it.”",
+          "For us, the lesson is that the simple-tool business he made famous is getting harder. The habits that got him there, shipping fast, charging early and testing in public, still work. What we build with them has to be harder to copy."
+        ],
+        "pull": {"text": "There is no real way for most SaaS companies to survive AI", "cite": "Pieter on X, 17 November 2026"}
+      }
+    ],
+    "failuresTitle": "113 projects, and most of them didn't work",
+    "failuresIntro": "Pieter's own project list has 113 entries, with 19 tagged as failed. One analyst who read all 751 of his blog posts thinks the real hit rate is under 10%, because many dead projects simply aren't tagged.",
+    "failures": [
+      {"year": "2008 to 2014", "name": "Panda Mix Show", "what": "His YouTube music channel peaked at about $8,000 a month. Copyright claims kept coming, and income slid to $500 to $900 a month before it died.", "lesson": "If your business sits on someone else's platform and content, it can be taken away without warning."},
+      {"year": "2010", "name": "The Uber-clone pitch", "what": "He and a friend pitched an Uber-style idea for the Netherlands to wealthy investors. They never invested in anyone, and he called the whole thing a massive waste of time and quite humiliating.", "lesson": "Time spent chasing permission is time not spent shipping."},
+      {"year": "2013 to 2014", "name": "Tubelytics", "what": "He spent about a year building a YouTube analytics dashboard. Nobody paid for it.", "lesson": "Find the paying customer before the year of building, not after."},
+      {"year": "2014", "name": "Most of the 12 startups", "what": "Of the 12 products in 12 months, Play My Inbox got tens of thousands of users and Nomad List took off. Most of the others went nowhere.", "lesson": "Expect most launches to fail and plan for volume."},
+      {"year": "2017", "name": "Hoodmaps", "what": "Tagged “Failed” on his own list. It's still online because it costs almost nothing to run.", "lesson": "A cheap failure can stay up quietly while you move on."},
+      {"year": "2022 to 2023", "name": "Avatar AI", "what": "It made a lot of money fast, then Lensa arrived and took the market. It was the first time he faced fierce competition.", "lesson": "A first-mover lead in a hot category lasts weeks, not years."},
+      {"year": "2025", "name": "fly.pieter.com", "what": "A browser flight game built in about three hours hit a claimed $1M annual run rate in 17 days. By mid-2026 his bio reportedly showed it at $0 a month.", "lesson": "A viral spike paid by sponsors is not the same as recurring revenue."}
+    ],
+    "playbookTitle": "How he gets users without paying for ads",
+    "playbook": [
+      {"title": "Validate in a public spreadsheet", "text": "Before Nomad List had a site, he tweeted a public Google Sheet on 24 June 2014 and asked people to add city data. Strangers filling it in for free was all the proof he needed to build."},
+      {"title": "Hit Product Hunt and Hacker News on the same day", "text": "On 29 July 2014 Nomad List went to #1 on both. Hacker News sent about 50,000 visitors and Product Hunt about 12,000. He submitted to Hacker News himself once the Product Hunt post was climbing."},
+      {"title": "Put the email box up within minutes", "text": "On Remote OK he added email capture about five minutes after launch, and 3,723 people signed up in the first stretch, about 3.5% of visitors. Nomad List got about 2,500 emails in its first two weeks."},
+      {"title": "Ask your list what it wants", "text": "He emailed a survey to 2,000 Nomad List subscribers and got over 400 answers and 50 personal replies. That told him what to build and what to sell next."},
+      {"title": "Relaunch the same product", "text": "He took Nomad List back to Product Hunt as version 3.0 on 11 December 2017, years after the first launch. A big update is a fresh reason to show up again."},
+      {"title": "Turn your own audience into the launch channel", "text": "From 2022 he stopped relying on Product Hunt. Photo AI launched with a tweet to his own followers, and X is estimated to bring over half its traffic."},
+      {"title": "Go long on a big podcast", "text": "His hours-long Lex Fridman episode in August 2024 gave his sites a big jump in sign-ups. One long, honest conversation reached people his tweets never did."},
+      {"title": "Borrow other people's data", "text": "Nomad List reached over a million data points by July 2019 through partnerships with Foursquare, Coworker.com and Workfrom.co, instead of collecting everything himself."}
+    ],
+    "charts": [
+      {
+        "title": "Photo AI monthly recurring revenue, by his own tweets",
+        "points": [
+          {"label": "Feb 2023", "value": 5400, "display": "$5.4K"},
+          {"label": "Apr 2023", "value": 28700, "display": "$28.7K"},
+          {"label": "Jul 2023", "value": 61800, "display": "$61.8K"},
+          {"label": "Sep 2025", "value": 150000, "display": "$150K"},
+          {"label": "Mid-2026", "value": 100000, "display": "$100K", "down": true}
+        ],
+        "note": "Early figures from his tweets via an Indie Hackers case study. The mid-2026 figure is from his X bio as reported by a secondary source."
+      },
+      {
+        "title": "Pieter's total revenue per month, by his own numbers",
+        "points": [
+          {"label": "Feb 2018", "value": 52843, "display": "$52.8K"},
+          {"label": "Sep 2024", "value": 420000, "display": "$420K"},
+          {"label": "Aug 2026", "value": 199000, "display": "$199K", "down": true}
+        ],
+        "note": "His mid-2026 X bio reportedly added up to about $245K, so 2026 figures vary by source."
+      },
+      {
+        "title": "Where Nomad List's launch day visitors came from, July 2014",
+        "points": [
+          {"label": "Hacker News", "value": 50000, "display": "50,000"},
+          {"label": "Product Hunt", "value": 12000, "display": "12,000"}
+        ],
+        "note": "Unique visitors, from his own post in August 2014."
+      }
+    ],
+    "timeline": [
+      {"when": "2008", "text": "Starts Panda Mix Show on YouTube. It peaks at about $8,000 a month before copyright claims kill it."},
+      {"when": "2010", "text": "Pitches an Uber-style idea to investors with a friend. Nothing comes of it."},
+      {"when": "2013", "text": "Spends a year on Tubelytics. Nobody pays."},
+      {"when": "June 2014", "text": "Starts 12 startups in 12 months and tweets the Google Sheet that becomes Nomad List.", "big": true},
+      {"when": "July 2014", "text": "An accidental launch puts Nomad List at #1 on Product Hunt and Hacker News on the same day.", "big": true},
+      {"when": "February 2015", "text": "Launches Remote OK. It hits #1 on Product Hunt with 1,000 upvotes."},
+      {"when": "May 2019", "text": "Writes that it took four years to reach $1M a year with Nomad List and Remote OK.", "big": true},
+      {"when": "October 2022", "text": "Jumps on Stable Diffusion with Avatar AI, then Interior AI."},
+      {"when": "February 2023", "text": "Launches Photo AI to his X audience. It reaches $61.8K a month by July."},
+      {"when": "September 2024", "text": "Best month ever: $420,000 across his products.", "big": true},
+      {"when": "February 2025", "text": "Builds fly.pieter.com in about three hours. It spikes, then goes to $0 by mid-2026."},
+      {"when": "November 2026", "text": "Cuts costs to $300 a month and says most SaaS companies can't survive AI."}
+    ],
+    "quotes": [
+      {"text": "So I built this website and I stopped feeling lonely.", "cite": "Lex Fridman podcast, August 2024"},
+      {"text": "What am I doing with my life?", "cite": "On his year of nomading, Lex Fridman podcast"},
+      {"text": "I'm very suspicious of money.", "cite": "On venture capital, Lex Fridman podcast"},
+      {"text": "PhotoAI.com is now almost 14,000 lines of raw PHP", "cite": "Pieter on X, July 2023"},
+      {"text": "Whether the MRR is truly sustainable for a year we can only guess.", "cite": "On fly.pieter.com, X, March 2025"},
+      {"text": "I think constraints probably make you happy.", "cite": "Lex Fridman podcast"},
+      {"text": "There is no real way for most SaaS companies to survive AI", "cite": "Pieter on X, 17 November 2026"}
+    ],
+    "steal": [
+      "Test the idea in a free tool first. A public Google Sheet or a Notion page that strangers fill in tells you more than a month of building.",
+      "Put an email signup on anything you launch, on day one, within the first hour. A traffic spike you can't contact again is wasted.",
+      "Give yourself one month per product and charge from launch. If it doesn't earn in a month, move on to the next one.",
+      "Keep the stack boring and the costs tiny. Pieter runs a big business on PHP, SQLite and cheap servers, so a failed product costs him almost nothing.",
+      "Build an audience before you need it. After 2022, his own followers replaced Product Hunt, and that's why Photo AI could start making money in its first week.",
+      "Assume simple software will get copied by AI. Pick problems where data, community or trust are part of the product, the way Nomad List's crowdsourced data is."
+    ],
+    "sources": [
+      {"title": "How Nomad List hit #1 on Product Hunt and Hacker News (levels.io, 2014)", "url": "https://levels.io/product-hunt-hacker-news-number-one"},
+      {"title": "How I built Remote OK (levels.io, 2015)", "url": "https://levels.io/remote-ok"},
+      {"title": "Nomad List 5 (levels.io, 2019)", "url": "https://levels.io/nomad-list-5"},
+      {"title": "Pieter Levels on the Lex Fridman podcast #440 (transcript)", "url": "https://lexfridman.com/pieter-levels-transcript"},
+      {"title": "levels.io, latest posts (llms.txt, November 2026)", "url": "https://levels.io/llms.txt"},
+      {"title": "Photo AI deep dive case study (Indie Hackers)", "url": "https://www.indiehackers.com/post/photo-ai-by-pieter-levels-complete-deep-dive-case-study-0-to-182k-mrr-in-18-months-3a9a2b1579"},
+      {"title": "Failures behind a $420K a month solo founder (dev.to)", "url": "https://dev.to/idonthaveapen/failures-behind-a-420kmonth-solo-founder-i-read-all-751-of-pieter-levels-blog-posts-1h3b"},
+      {"title": "He built a flight simulator in three hours (dev.to)", "url": "https://dev.to/promptway/he-built-a-flight-simulator-in-three-hours-and-hit-1m-a-year-in-17-days-then-it-went-to-zero-1b1l"},
+      {"title": "fly.pieter.com hits $1M ARR in 17 days (Pieter on X)", "url": "https://x.com/levelsio/status/1899596115210891751"},
+      {"title": "Pieter's record month post (X, September 2024)", "url": "https://x.com/levelsio/status/1837707857372106992"},
+      {"title": "Photo AI record month (X, September 2025)", "url": "https://x.com/levelsio/status/1970858876212756506"},
+      {"title": "One of the most successful indie hackers says AI killed the playbook (Level Up Coding)", "url": "https://levelup.gitconnected.com/one-of-the-most-successful-indie-hackers-says-ai-killed-the-playbook-716f27f995ec"},
+      {"title": "Pieter Levels on European competitiveness (Indie Hackers, 2024)", "url": "https://www.indiehackers.com/post/whats-new-pieter-levels-on-increasing-european-competitiveness-d3666a6b97"},
+      {"title": "This guy is launching 12 startups in 12 months (RSM press page)", "url": "https://rsm.nl/information-for/journalists/in-the-media/detail/5622-this-guy-is-launching-12-startups-in-12-months"}
+    ]
+  }
+}

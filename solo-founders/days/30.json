@@ -1,0 +1,259 @@
+{
+  "n": 30,
+  "name": "Steph Smith",
+  "short": "Steph",
+  "wisdom": "Presell it with one tweet, then let the deadline drag you to the finish.",
+  "email": {
+    "subject": "Four projects made $0. The fifth made $100K.",
+    "hook": "Steph Smith shipped four side projects that made nothing. Then one tweet asking whether people would buy a book turned into nearly $100,000 in eight months, and she never quit her job.",
+    "lead": [
+      "Steph is not a solopreneur, so let's say that first. She has always had a full-time job, and right now she works at Nvidia. Everything she built for herself, she built in the evenings.",
+      "That's exactly why she's on this list. Most of us reading this have day jobs too. Steph is the clearest proof that you can test, launch and make real money on the side, if you're ruthless about deadlines."
+    ],
+    "stats": [
+      {"value": "7K", "label": "Twitter followers when she presold the book"},
+      {"value": "$100K", "label": "from the ebook in about 8 months"},
+      {"value": "$150K", "label": "side income in 2021, next to a full-time job"}
+    ],
+    "chart": {
+      "title": "Doing Content Right sales over time, by Steph's own numbers",
+      "points": [
+        {"label": "Presales", "value": 10000, "display": "$5K to $10K"},
+        {"label": "8 months", "value": 100000, "display": "nearly $100K"},
+        {"label": "By Oct 2021", "value": 130000, "display": "$130K+"},
+        {"label": "Lifetime", "value": 250000, "display": "over $250K"}
+      ],
+      "note": "The lifetime figure is from her website and isn't dated."
+    },
+    "sections": [
+      {
+        "title": "What she's doing right now",
+        "paras": [
+          "Her day job is at Nvidia, after leading growth at Groq. Before that she hosted the a16z Podcast, led HubSpot's creator programme and ran Trends at The Hustle. On the side, her latest project is Internet Pipes, which she lists as a community of about 3,000 people.",
+          "She keeps the job on purpose. She's said it lets her “only pursue the things that I light up about”. She also told a16z that eventually she wants to work on her own stuff, timeline to be decided."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "The salary pays the bills, and the side income is a bonus she doesn't need to survive on. In 2021 her creator revenue was $150K. Her ebook, Doing Content Right, has sold “over $250k” in its life, by her own count.",
+          "She sells on Gumroad, and **the price went up as more people bought**. Early buyers got the cheapest copies, a LAUNCH code gave 50% off for a short window, and affiliates and Black Friday added extra spikes. Her next product, a course built in 20 days, made about $45K from a list of about 3,000 book buyers."
+        ]
+      },
+      {
+        "title": "How she built it",
+        "paras": [
+          "She had about 7,000 Twitter followers when she tweeted to ask if people would pay for a book on content. Presales brought in $5K to $10K, and suddenly she owed people a book. That's the trick: the presale set a deadline she couldn't wriggle out of.",
+          "She wrote it in a couple of months, often until about 3 AM after work. It was planned for 50 days and came in a week late. She made it like a textbook, with a how-to-use page, video sessions for busy readers and a community."
+        ]
+      },
+      {
+        "title": "How she got the buyers",
+        "chart": true,
+        "paras": [
+          "She built it in public, presold it, and held back the Product Hunt launch until her audience was ready to push it. She thinks that launch brought in $10K to $15K. She also made quotes and infographics people wanted to share.",
+          "Sales came in five spikes: the presale, the launch, the week Trends featured the book, Black Friday and Product Hunt. Her best day was $8,200. Only 9 of 225 days had zero sales, and half of everything came in the quiet long tail after launch."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "Before all this she paid her own way through college, carried tens of thousands in student debt, commuted two hours a day and supported her parents. At one point she held four jobs at once.",
+          "And her own list of mistakes is refreshingly blunt: too much faith in Product Hunt, too many projects at once, and waiting too long to charge, then charging too little."
+        ]
+      }
+    ],
+    "tryToday": "Write one tweet or LinkedIn post today asking whether people would pay for the thing you know best. If even a handful say yes, give yourself a 50 day deadline and take their money upfront.",
+    "button": "Read how she did it"
+  },
+  "page": {
+    "intro": "Steph Smith has never been a full-time founder. She's held a job the whole way through, and today she works at Nvidia. But in her evenings she shipped about ten side projects in two years, then presold an ebook with one tweet and turned it into more than $250,000 over its life.",
+    "stats": [
+      {"value": "$5K to $10K", "label": "in presales from one tweet", "note": "with about 7K followers"},
+      {"value": "$100,000", "num": 100000, "prefix": "$", "suffix": "", "label": "from the ebook in about 8 months", "note": "her own number"},
+      {"value": "216 of 225", "label": "days with at least one sale", "note": "only 9 days had none"},
+      {"value": "$150,000", "num": 150000, "prefix": "$", "suffix": "", "label": "side income in 2021", "note": "earned alongside a full-time job"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "Two hours of commuting and four jobs at once",
+        "paras": [
+          "Steph's early years weren't the comfortable kind. She paid her own way through college and came out with “tens of thousands” in student debt. She commuted two hours a day. She supported her parents financially. She was working in an industry and a city she didn't want to be in.",
+          "She has a chemical engineering degree, and she isn't originally from the US. She applied to hundreds of jobs, and at one point she was holding four jobs at the same time.",
+          "It's worth holding that picture in mind when you read the rest. **The person who later wrote about doing more with your time started with almost none of it.** Every project in this story was squeezed into hours she had to fight for.",
+          "Most of the numbers on this page come from Steph herself, in her Indie Hackers posts, interviews and website, and none of them has been audited, so read them as her own account."
+        ]
+      },
+      {
+        "label": "The gamble",
+        "title": "Ten months to find a remote job",
+        "paras": [
+          "Before she found her footing she worked as a consultant. Leaving consulting was, as she tells it, her first big career gamble.",
+          "She wanted a remote job, and it took ten months and more than 100 applications to land one. It was a growth role at Toptal. That's where she learned growth and marketing properly, and where she eventually learned to code.",
+          "The remote job changed her life. She paid off her loans and lived as a digital nomad for about four years. Her favourite places were Canggu, Chiang Mai and Kyoto, and she's been to more than 50 countries. When the pandemic hit, she moved to California.",
+          "For us there's a quiet lesson here. Steph didn't escape her job to build things. She found a job that gave her the freedom and the skills to build things on the side, and then she used both."
+        ]
+      },
+      {
+        "label": "The year of sponge",
+        "title": "Years of failing to code, then a $20 course",
+        "paras": [
+          "Steph tried to learn to code for years and kept failing. What finally worked was 2018, which she called her “Year of Sponge”. She started with a $20 online course and tracked her progress every single day.",
+          "It took eight months before she shipped her first project. Two months after that first launch, she won an award at Product Hunt's Maker's Fest. She hasn't said which project it was.",
+          "The daily tracking is the bit to copy. She didn't rely on motivation. She made the learning visible to herself, every day, until it stuck.",
+          "When she talks about research for projects, she names the tools she uses: Wolfram Alpha, Ahrefs, Jungle Scout, Keywords Everywhere and a browser plugin that shows a site's traffic. Very much a growth marketer's toolkit."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "Ten projects in two years, and four made nothing",
+        "paras": [
+          "Between 2018 and early 2020 Steph launched about ten projects. Four of the ones she shipped made $0. At the time she said her ebook was her “first and only profitable project”.",
+          "Her website still lists many of them. Eunoia, a collection of words that don't translate into other languages, which she calls her favourite. FeMake, which gathered data on female makers. Make Yourself Great Again, or MYGA, a calculator for wasted time. nomad(hubb), for coworking retreats. 50 Days of Fun. And 12 Scholarships in 12 Months, called AMPLIFY. For most of them she hasn't said how they did.",
+          "Looking back, she lists her own mistakes plainly. She compared herself to other creators too much. She put too much weight on Product Hunt launches. She worked on too many things at once. She waited too long to charge money, and when she did, she charged too little. And she over-optimised for short-term results.",
+          "That's a list almost every side project builder could sign. The good news is what came next: she fixed nearly every one of those mistakes in the very next project."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "One tweet, a presale and a lot of 3 AM nights",
+        "paras": [
+          "In about spring 2020 Steph had about 7,000 Twitter followers. She tweeted a simple question: would people pay for a book about doing content well? Enough said yes. **The presales brought in $5,000 to $10,000 before the book existed.**",
+          "Now she owed people a book, and that was the point. The presale set the deadline. She'd been learning about content for more than five years, but the actual writing was squeezed into “a couple of months”, often until about 3 AM, alongside her full-time job. She planned it for 50 days and finished a week late. Her website now describes it as written in seven weeks.",
+          "She believes in this kind of pressure. In her words, “Parkinson's Law is a strong force.” Work expands to fill the time you give it, so she gives it very little. She also said: “Once I commit to a timeline, I go all in.”",
+          "She didn't just write a PDF. She built Doing Content Right like a textbook. The first page explains how to use the book. There are video sessions for people too busy to read, MOBI files for Kindle and a community. After launch she kept adding to it: an audio chapter, an AMA for buyers and one-to-one matches between creators."
+        ],
+        "pull": {"text": "Parkinson's Law is a strong force.", "cite": "Steph, Indie Hackers AMA"}
+      },
+      {
+        "label": "The first buyers",
+        "title": "A price that rose with every batch",
+        "paras": [
+          "Her pricing is the cleverest thing in the launch. It was tiered by time: **the price rose as more people bought**. Early buyers paid less, which rewarded them for trusting her and gave everyone else a reason to buy now rather than later. One early buyer remembers paying $50. At one point the landing page showed $100, with a LAUNCH code for 50% off until 16 April. She also tested other discounts.",
+          "She sold on Gumroad and used Gumroad's affiliate programme, so readers could earn by recommending it. She made quotes and infographics from the book that were designed to be shared, so every share was a small advert.",
+          "And she was patient with Product Hunt. Instead of launching there on day one, she held it back until her audience was ready to support it. By her estimate, the Product Hunt launch brought in $10,000 to $15,000. Her single best day was $8,200.",
+          "Her sales came in five spikes: the presale, the launch, the week Trends featured the book, Black Friday and Product Hunt. Between those spikes it never really stopped. Only 9 of 225 days had zero sales, and half of all sales came in the long tail after launch.",
+          "The book made nearly $100,000 in about eight months. A later write-up put it at $130,000 by October 2021, and her website says it has “sold over $250k” in total. Those numbers come from different points in time, which is why they keep growing."
+        ],
+        "pull": {"text": "Don't wait until launch day to build hype around your product.", "cite": "Steph, Indie Hackers, October 2021"},
+        "chart": 0
+      },
+      {
+        "label": "Doing it again",
+        "title": "A course built in 20 days",
+        "paras": [
+          "Once she had buyers, she had a list. About 3,000 people had bought the book, and they became the audience for her next product.",
+          "That product was a course called Doing Time Right, and she built it in 20 days. Same deadline trick, even tighter. About 750 people took it, which brought in about $45,000, by her October 2021 numbers.",
+          "Add it all up and her creator revenue in 2021 was $150,000. That's on top of a full-time salary, earned in evenings and weekends.",
+          "She has a phrase for how she works in these sprints: “like a lion”. Intense bursts, then rest. She also pursues one major goal at a time, and does a regular check-in where she asks herself what she'd be happy to have finished by the end of the week. That's the opposite of the ten-projects-at-once years, and you can see the difference in the results."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "The day job",
+        "title": "What running Trends taught her about distribution",
+        "paras": [
+          "While all this was happening, her day job was at The Hustle, running Trends, The Hustle's paid product. As Senior Manager she grew its paying subscribers by more than 400% in under a year, according to her show bio. The Hustle and Trends were bought by HubSpot in February 2021.",
+          "Trends cost $299 a year, billed annually from the start, and she said annual churn was low. The top of the funnel was The Hustle's free daily newsletter, which had more than a million readers.",
+          "That's where her advice about free first comes from. She tells people to start free and build “an awareness engine” before adding a paywall. She described Trends as a painkiller and The Hustle as a vitamin: one solves an urgent problem people will pay for, the other is a nice daily habit that brings them in.",
+          "After HubSpot she led its creator programme. Then she became host of the a16z Podcast, led growth at Groq, and now works at Nvidia. Her start dates at Groq and Nvidia haven't been confirmed publicly. When she joined a16z as a full-time employee, she told them “eventually I definitely do want to work on my own stuff”, with the timeline still open.",
+          "She keeps the job because it lets her “only pursue the things that I light up about”. She even wrote an essay on it, called You Don't Need to Quit Your Job to Make."
+        ],
+        "pull": {"text": "eventually I definitely do want to work on my own stuff", "cite": "Steph, on the AI & I podcast from Every"}
+      },
+      {
+        "label": "How she thinks",
+        "title": "Hallucination is a feature",
+        "paras": [
+          "Her latest side project, Internet Pipes, is listed on her site as a community of about 3,000 people. She's described running a course for it with a “generation station” and an “evaluation station”, and art made with Midjourney. Whether she's still running it actively in late 2026 isn't public.",
+          "On AI she's curious rather than scared. “Hallucination is a feature,” she said on the AI & I podcast. She likes to ask “what can AI not do?”, and she says, “I'm very excited about whatever us humans figure out there.”",
+          "She applies the idea to herself too: “I absolutely should be training my brain with better data over time.” That's a very Steph way of putting it. If models get better with better data, so do people.",
+          "Her bigger beliefs are about ownership. She says we have “way more control over your life than you think”, and that “Choosing not to take responsibility for your life hurts one person the most: you.” She also says, “Life is a competition with yourself, not others.” Her advice for picking projects is to lean into what people already ask you for help with, and to find a small way to be 1% different.",
+          "One of her signature essays has the most Steph title possible: How to be Great? Just be Good, Repeatably."
+        ],
+        "pull": {"text": "Hallucination is a feature.", "cite": "Steph, on the AI & I podcast from Every"}
+      }
+    ],
+    "failuresTitle": "Four projects made $0, and she lists her own mistakes",
+    "failuresIntro": "Steph is unusually honest about what didn't work, and she wrote most of this list herself.",
+    "failures": [
+      {"year": "Before 2018", "name": "Years of failing to learn to code", "what": "She tried to learn programming for years and kept stopping. It finally worked in 2018, her “Year of Sponge”, when she started with a $20 course and tracked progress every day.", "lesson": "If a skill keeps not sticking, change the system for learning it, not just the effort."},
+      {"year": "2018 to early 2020", "name": "Four projects that made nothing", "what": "Of about ten projects she launched in two years, four of the ones she shipped earned $0. At the time, the ebook was her “first and only profitable project”.", "lesson": "Free projects build skill and audience, but charge something early so you learn what people will pay for."},
+      {"year": "2018 to 2020", "name": "Too much faith in Product Hunt", "what": "She says she put too much weight on Product Hunt launches. With the ebook she held Product Hunt back until her own audience was ready.", "lesson": "A launch site amplifies an audience you already have, it doesn't replace one."},
+      {"year": "2018 to 2020", "name": "Too many things at once", "what": "She worked on too many projects at the same time and over-optimised for short-term results. She later moved to one major goal at a time.", "lesson": "Pick one project per sprint and give it a hard deadline."},
+      {"year": "2018 to 2020", "name": "Charging too late and too little", "what": "She waited too long to ask for money and then priced too low. With the ebook she fixed both, with presales and a price that rose as people bought.", "lesson": "Ask for money before you build, and let the price climb as demand proves itself."},
+      {"year": "2020", "name": "The book came in a week late", "what": "She planned Doing Content Right for 50 days and finished a week late, while working full time and writing until about 3 AM.", "lesson": "A tight deadline you slightly miss still beats a loose one you never hit."}
+    ],
+    "playbookTitle": "How she sold a book and a course without quitting her job",
+    "playbook": [
+      {"title": "Presell with one tweet", "text": "With about 7,000 followers she asked if people would pay for a book on content. Presales brought in $5,000 to $10,000 before she'd written it."},
+      {"title": "Let the presale set the deadline", "text": "Once people had paid, she had to deliver. She planned 50 days, wrote late into the night after work, and finished a week late."},
+      {"title": "Raise the price as people buy", "text": "Tiered pricing rose with each batch of buyers. One early buyer paid $50, the page later showed $100 with a LAUNCH code for 50% off until 16 April."},
+      {"title": "Build in public and make it shareable", "text": "She shared the process openly and made quotes and infographics from the book designed to be passed around. Gumroad affiliates added more people selling it."},
+      {"title": "Hold Product Hunt until you're ready", "text": "She delayed the Product Hunt launch until her audience could support it. By her estimate it brought $10,000 to $15,000."},
+      {"title": "Keep adding value after launch", "text": "She added an audio chapter, a buyers' AMA and one-to-one creator matching after launch. Sales kept coming on 216 of 225 days."},
+      {"title": "Sell the next thing to your buyers", "text": "Her course, built in 20 days, went to about 3,000 book buyers. About 750 took it, for about $45,000."},
+      {"title": "Start free, then charge", "text": "At Trends, The Hustle's free newsletter with over a million readers fed a $299 a year paid product. Her advice is to build “an awareness engine” first."}
+    ],
+    "charts": [
+      {
+        "title": "Doing Content Right sales over time",
+        "points": [
+          {"label": "Presales, 2020", "value": 10000, "display": "$5K to $10K"},
+          {"label": "8 months", "value": 100000, "display": "nearly $100K"},
+          {"label": "By Oct 2021", "value": 130000, "display": "$130K+"},
+          {"label": "Lifetime", "value": 250000, "display": "over $250K"}
+        ],
+        "note": "Her own numbers. The lifetime figure is from her website and isn't dated."
+      },
+      {
+        "title": "From book buyers to course students",
+        "points": [
+          {"label": "Book buyers on her list", "value": 3000, "display": "about 3,000"},
+          {"label": "Took the course", "value": 750, "display": "about 750"}
+        ],
+        "note": "The Doing Time Right course, built in 20 days, made about $45,000, by her October 2021 numbers."
+      }
+    ],
+    "timeline": [
+      {"when": "College years", "text": "Pays her own way, carries tens of thousands in student debt, commutes two hours a day and supports her parents.", "big": false},
+      {"when": "Before Toptal", "text": "Works as a consultant, then spends ten months and 100+ applications finding a remote growth role at Toptal.", "big": true},
+      {"when": "About four years", "text": "Pays off her loans and lives as a nomad, with favourites in Canggu, Chiang Mai and Kyoto.", "big": false},
+      {"when": "2018", "text": "Her “Year of Sponge”: finally learns to code, starting with a $20 course. Ships her first project eight months in.", "big": true},
+      {"when": "2018 to early 2020", "text": "Launches about ten projects. Four of the ones she ships make $0.", "big": false},
+      {"when": "Spring 2020", "text": "Tweets to about 7,000 followers asking if they'd pay for a book. Presales bring in $5K to $10K.", "big": true},
+      {"when": "2020", "text": "Leads Trends at The Hustle and grows paying subscribers by more than 400% in under a year.", "big": false},
+      {"when": "About 8 months after launch", "text": "Doing Content Right passes nearly $100,000.", "big": true},
+      {"when": "Feb 2021", "text": "HubSpot buys The Hustle and Trends.", "big": false},
+      {"when": "2021", "text": "Builds the Doing Time Right course in 20 days. Creator revenue for the year is $150K.", "big": false},
+      {"when": "Later", "text": "Leads HubSpot's creator programme, hosts the a16z Podcast, then leads growth at Groq.", "big": false},
+      {"when": "2026", "text": "Works at Nvidia, with Internet Pipes as her latest side project.", "big": true}
+    ],
+    "quotes": [
+      {"text": "Parkinson's Law is a strong force.", "cite": "Indie Hackers AMA"},
+      {"text": "Once I commit to a timeline, I go all in.", "cite": "Indie Hackers, October 2021"},
+      {"text": "Don't wait until launch day to build hype around your product.", "cite": "Indie Hackers, October 2021"},
+      {"text": "Life is a competition with yourself, not others.", "cite": "Indie Hackers, October 2021"},
+      {"text": "Choosing not to take responsibility for your life hurts one person the most: you.", "cite": "Indie Hackers AMA"},
+      {"text": "Hallucination is a feature.", "cite": "AI & I podcast, Every"},
+      {"text": "I absolutely should be training my brain with better data over time.", "cite": "AI & I podcast, Every"}
+    ],
+    "steal": [
+      "Before you build, post the question publicly: would you pay for this? Steph did it with 7,000 followers, which is a number most of us already have somewhere.",
+      "Take the money upfront and let it set your deadline. Paying customers waiting for you is a far stronger push than any personal goal.",
+      "Price in rising batches. Early buyers get the best deal, latecomers pay more, and there's honest urgency without fake countdown timers.",
+      "Hold the big launch platform back until your own audience is ready to cheer. Product Hunt worked for her only once she stopped treating it as the plan.",
+      "Every product builds the list for the next one. Her 3,000 book buyers became the audience for her course.",
+      "Keep the job if it gives you skills and freedom. She built $150K of side income in a year without risking her rent."
+    ],
+    "sources": [
+      {"title": "Indie Hackers AMA, Steph Smith on nearly $100K from her ebook", "url": "https://indiehackers.com/post/i-sold-nearly-100k-of-my-ebook-in-8-months-while-growing-trends-to-millions-in-arr-ama-ef811b73b7"},
+      {"title": "Indie Hackers, Steph Smith on $130K from an ebook and a course in 20 days (Oct 2021)", "url": "https://www.indiehackers.com/post/steph-smith-on-making-130k-w-an-ebook-creating-a-course-in-20-days-and-the-latest-trends-b1eed16421"},
+      {"title": "The Nathan Barry Show 038, Steph Smith (May 2021)", "url": "https://nathanbarry.com/038-steph-smith-turn-newsletter-seven-figure-business/"},
+      {"title": "Steph Smith, personal site", "url": "https://stephsmith.io"},
+      {"title": "Every, AI & I transcript with Steph Smith", "url": "https://api.every.to/podcast/transcript-the-internet-creator-s-guide-to-the-future"}
+    ]
+  }
+}

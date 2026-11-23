@@ -1,0 +1,265 @@
+{
+  "n": 36,
+  "name": "Justin Duke",
+  "short": "Justin",
+  "wisdom": "Charge from day one, then raise the price before guilt makes it permanent.",
+  "email": {
+    "subject": "He charged $5 as a joke. Now it's $1M a year.",
+    "hook": "Justin Duke put a $5 price on his newsletter tool mostly as a joke, and years later it passed $1M a year without a single viral launch.",
+    "lead": [
+      "One thing first, so we're honest with ourselves: Buttondown is not a one-person company any more. It has about six full-time people. But it started as Justin alone, building at night while he held a full-time job at Stripe, and the way he grew it is the slowest, steadiest kind of growth there is. No launch spike, no ads we know of, no VC.",
+      "That's why he matters to us. Most of us won't get a viral moment. Justin shows what happens if you just keep a small, useful product alive for years and treat every customer like a friend."
+    ],
+    "stats": [
+      {"value": "$1M+", "label": "a year in revenue, by his own count"},
+      {"value": "$5", "label": "his first price, a month"},
+      {"value": "5 years", "label": "from launch to quitting his job"}
+    ],
+    "chart": {
+      "title": "Buttondown's monthly revenue over the years, by his own numbers",
+      "points": [
+        {"label": "End 2018", "value": 1000, "display": "Four figures"},
+        {"label": "Dec 2019", "value": 5000, "display": "$5K (all projects)"},
+        {"label": "About 2021", "value": 15000, "display": "$15K"},
+        {"label": "Later", "value": 83333, "display": "$1M+ a year"}
+      ],
+      "note": "The last bar is $1M a year shown as a monthly figure. He hasn't said exactly when he crossed it."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Buttondown keeps growing, just more slowly. In his 2025 review he wrote that topline growth “has flagged but we're still growing at a healthy clip.” He gave no figure.",
+          "His goals for 2026 are lovely and very human: launch a small side project called Shovel, run his first marathon, open a speakeasy with his wife, and keep growing Third South, a separate company where his first full-time hire is now a partner. These are aims he wrote down, not things that have happened yet."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "It's a plain subscription newsletter tool, aimed at technical people who want their newsletter to live on their own site. He says it passed **$1M in annual revenue**, and it pays his salary and his team's. He even publishes his running costs online: about $94,000 a year in November 2026, with AWS and the email sender Postmark as the biggest lines.",
+          "One line in his Indie Hackers post jumped out at us: “recent growth from LLM-based acquisition.” In plain words, people are asking ChatGPT and friends for a newsletter tool, and getting told about Buttondown. For a marketer, that's a channel worth thinking about today."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "He tweeted the idea in January 2017, tweeted it again in February, decided to build it in late April, had it sending emails by the end of May and launched at the end of June. About two months from deciding to launching, on nights and weekends, with a Django back end.",
+          "By July 2017 he had a few paying customers. The first price was $5 a month, “mostly as a joke.” A stranger paid, and in his words it “stopped being a toy.”"
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "No Product Hunt spike, no viral thread. Growth came from word of mouth, very fast personal support, his own writing on his blog, and the fact that every email sent through Buttondown and every public archive quietly advertises it.",
+          "He also caught switchers. By 2024, three competitors had raised prices and two had PR trouble, and people came looking for somewhere calmer. He says they found success “selling customers on what we don't have.”"
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "It was slow. Four-figure monthly revenue at the end of 2018, about $15K a month around 2021, and he only left Stripe around April 2022, five years after launch. He reckons Buttondown paid him less over those two years than a job worth about $750K in total pay would have.",
+          "His biggest regret is pricing. He undercharged for years out of guilt. His line on it is the one to pin on the wall: “Under-pricing doesn't make you generous. It makes you fragile.”"
+        ]
+      }
+    ],
+    "tryToday": "Look at whatever you sell or plan to sell, and write down the price you'd charge if you weren't scared. If it's higher than today's, that gap is the guilt Justin talks about.",
+    "button": "Read how he built it"
+  },
+  "page": {
+    "intro": "Justin Duke was an engineer at Stripe when he built a small newsletter tool for himself and his friends. He put a $5 price on it as a joke, someone paid, and Buttondown slowly became a business doing more than $1M a year. It is not solo any more, it has about six full-time staff, but the story of how it got there is pure patience.",
+    "stats": [
+      {"value": "$1M+", "num": 1, "prefix": "$", "suffix": "M+", "label": "annual revenue", "note": "his own figure, date not given"},
+      {"value": "$5", "num": 5, "prefix": "$", "suffix": "", "label": "first price, per month", "note": "set mostly as a joke, 2017"},
+      {"value": "2 months", "num": 2, "prefix": "", "suffix": " months", "label": "from deciding to build to launch", "note": "April to June 2017"},
+      {"value": "6", "num": 6, "prefix": "", "suffix": "", "label": "full-time staff", "note": "July 2025, no VC"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "An engineer at Stripe who wanted a better newsletter tool",
+        "paras": [
+          "Justin studied computer science and worked as an engineer, and then an engineering manager, at Amazon and at Stripe. In other words, he had the kind of job most people in tech would be very happy to keep. That matters for this story, because he did keep it, for a long time.",
+          "Before we go on, one honest note: almost every number on this page comes from Justin himself, in his blog posts, his Indie Hackers post and interviews, and nobody has audited them.",
+          "In 2017 he was using TinyLetter, a simple newsletter tool that had stopped being looked after. The other options annoyed him. Mailchimp and ConvertKit felt, in his words, “super-heavy.” Medium and Substack wanted to own your whole blogging presence. He wanted something small that let you drop a form onto your own blog and send good emails. Nothing like that existed in quite the way he wanted.",
+          "So in January 2017 he did the cheapest kind of market research there is. He tweeted that he wanted a better version of the tool he was using. In February he tweeted it again. No code, no landing page, just saying the idea out loud in public and seeing whether anyone else felt the same itch."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "Two months of nights and weekends",
+        "paras": [
+          "In late April 2017 he decided to actually build it. By the end of May it was “functional enough to send emails.” At the end of June he launched it officially. From the decision to a working sender took about five weeks, and to launch about two months, all of it around his day job.",
+          "He built it with Django, the Python web framework, which he still loves and has written about at length. The front end used Vue. Early on it ran on Heroku, with HelpScout for support and Stripe for payments. Nothing fancy. These are the tools a working engineer would reach for on a weeknight because he already knew them.",
+          "He also built it first for the people around him, family and friends who wanted to send newsletters. That gave him real users to watch from the very first week, without needing any marketing at all.",
+          "By December 2017, six months after launch, he wrote that “thousands of users reach tens of thousands of subscribers every week.” By then it had custom domains, analytics, subscriber events, JSON data access and the start of an API. That's a lot of product for one person's spare time in half a year."
+        ]
+      },
+      {
+        "label": "The first money",
+        "title": "A $5 joke that a stranger took seriously",
+        "paras": [
+          "Here's the moment the whole story turns on. Justin put a price on Buttondown of $5 a month, “mostly as a joke.” He didn't really expect anyone to pay. Then a stranger did, someone who wasn't a friend or a relative doing him a favour, and in his words the project “stopped being a toy.”",
+          "By July 2017, a month after launch, he had a few paying customers. Not many. But a stranger paying $5 tells you more than a hundred friends saying “nice work.”",
+          "He then set himself a clear line: when Buttondown made **$10,000 a month**, he could go full-time. Having that number in his head meant every month was a step toward something, not just a side project drifting along.",
+          "It's worth pausing on how small the bet was. He didn't quit, he didn't raise money, he didn't even do a big launch. He built a thing he wanted, charged a little, and waited to see if strangers cared."
+        ],
+        "pull": {"text": "Under-pricing doesn't make you generous. It makes you fragile.", "cite": "Justin, on Indie Hackers"}
+      },
+      {
+        "label": "The hard middle",
+        "title": "When growth started to hurt",
+        "paras": [
+          "By the end of 2018 Buttondown had “crossed the vaunted four-digit MRR mark” and was sending hundreds of thousands of emails a month. That sounds like a happy milestone, and it was. But he also wrote that from around April 2018 the growth had become “a net negative” for his well-being.",
+          "The early sending and analytics code had been written fast, for a small tool, and it would not scale. He had to rewrite it more than once. He calls email deliverability, getting emails to land in inboxes and not spam, the hardest technical problem he has faced. Doing all of that around a Stripe job wore him down until he cleared the technical debt and took some time off.",
+          "He also had a little side project called Spoonbill, which cost him about $150 a month to run in 2018. Like many of us, he couldn't resist building more than one thing.",
+          "At the end of 2019 he wrote that he was at “5k MRR across all my various projects,” so that's Buttondown plus the rest. He had 400 open issues on GitHub, and free users were creating a heavy support load. His plan was to drop the free tier and move to a “purely premium model.” That's a big call for a small product: fewer users, but every one of them paying and worth looking after."
+        ]
+      },
+      {
+        "label": "Slow and steady",
+        "title": "Five years with a day job",
+        "paras": [
+          "Around 2021 he went on the Indie Bites podcast for an episode about building a $15K MRR side project while working at Stripe. Fifteen thousand dollars a month, and he still hadn't quit. He was past his own $10K line, but he stayed.",
+          "He finally left Stripe around April 2022. We know this because in April 2024 he wrote a post called “Two years,” looking back. That's about five years from launch to going full-time, the slowest jump in this whole series so far.",
+          "In that post he's honest about the money. He estimates Buttondown paid him less over those two years than a job worth about $750,000 in total pay would have. So by pure maths, leaving was a bad trade. He did it anyway, and called it “the most deeply creatively fulfilled I have been in my entire life.” His reason was simple: “if not now, when?”",
+          "That's a useful thing for us to hear. The salary you give up is real, and you should count it. But it isn't the only thing worth counting."
+        ],
+        "pull": {"text": "if not now, when?", "cite": "Justin, on leaving Stripe, 2024"},
+        "chart": 0
+      },
+      {
+        "label": "Finding the users",
+        "title": "No launch, just a thousand small moments",
+        "paras": [
+          "If you're hoping for a viral thread or a Product Hunt day, there isn't one. Justin says Buttondown has never had a viral launch, and there's no big press moment he points to either.",
+          "What it had instead was a stack of quiet channels. Word of mouth from happy users. Support that answered fast and personally, which he treats as marketing, not a cost. His own writing at jmduke.com, where he shares how he thinks and works. And the product itself: every email sent through Buttondown and every public newsletter archive carries its name to new readers.",
+          "Then luck helped, the kind you only catch if you're still around. By mid-2024 he told Starter Story that revenue had more than tripled over the past year. Three competitors had raised their prices and two had public controversies, and people went looking for a calmer home. He also made one strategic acquisition. He described the growth as “slow, steady progress week by week.”",
+          "His positioning is clever too. He doesn't try to beat the big platforms on features. He says the team found success “selling customers on what we don't have.” No bloat, no lock-in, no trying to own your blog. For the technical people he serves, what's missing is the point.",
+          "And the newest channel is the one marketers should study. He mentions “recent growth from LLM-based acquisition.” He doesn't spell out the details, but the obvious reading is that when someone asks an AI assistant for a simple newsletter tool, Buttondown now comes up. Years of honest writing, docs and public archives are exactly the kind of thing those assistants read."
+        ]
+      },
+      {
+        "label": "From one to six",
+        "title": "The hardest part wasn't the code",
+        "paras": [
+          "In mid-2024 the team was Justin plus one employee, and he was hiring part-time support people who could debug DNS and email problems. By July 2025 Buttondown had about six full-time staff. It has never taken venture money, and that is a choice.",
+          "He says going from solo founder to running a team is his biggest challenge. Harder than deliverability, harder than the rewrites. That's worth remembering if our dream is to stay small: even a quiet, profitable product will eventually ask you to become a manager.",
+          "The company is also quite generous. Buttondown was an early member of the Open Source Pledge, committing at least $2,000 per developer per year to open source. Its public running costs page says 10% of profits go to open source, and it lists monthly sponsorships of Django, Python and Vue, the tools it's built on.",
+          "That running costs page is a marketing move in its own right. In November 2026 it showed about $94,038 a year in costs, line by line. The biggest monthly items were AWS at $1,700, Postmark at $1,670, Planetscale at $815, Plain for support at $615 and Mailgun at $485. Stripe is “redacted because it scales with revenue.” There's even a line for Anthropic at $350. Showing your costs like that builds the kind of trust a newsletter tool lives on."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Over $1M a year, and still building small things",
+        "paras": [
+          "On Indie Hackers he says Buttondown has passed **$1M in annual revenue**. He hasn't given the exact date he crossed it. It pays his salary and his team's, and he wrote that it was still growing month on month.",
+          "His 2025 year-end review is more careful. He wrote that “our overall topline growth has flagged but we're still growing at a healthy clip.” No number. We like that he says it plainly instead of pretending every year is a rocket.",
+          "He also has a sense of humour about the competition: “every day, someone churns from a billion-dollar valuation company in favor of Buttondown.” A tiny team with no VC, taking customers from giants, one at a time.",
+          "For 2026 he wrote down goals rather than plans: launch Shovel, a new side project; run his first marathon; open a speakeasy with his wife, Haley; and keep growing Third South, a separate company whose first full-time hire, Myles, is now a partner. He also says he wants to put employees, customers and family first. He has a daughter. None of these are confirmed results yet."
+        ]
+      },
+      {
+        "label": "How he thinks",
+        "title": "Build for one person, and price like you mean it",
+        "paras": [
+          "His most repeated advice is simple. Build for a specific person, ideally yourself. Buttondown was born because he personally wanted a better tool, and he's still the kind of user it's for.",
+          "Second, support is the product. Fast, personal replies were his marketing when he had no budget, and they still are.",
+          "Third, and this is the one he feels most strongly about: price. He undercharged for years because he felt guilty asking for more. If he started again, he says he would charge more, sooner, and apologise for it less.",
+          "He hasn't said much publicly about AI and the future of solo products. The nearest thing is that one line about growth from LLM-based acquisition, which tells us he's watching where new customers come from, even if he hasn't written an essay about it."
+        ]
+      }
+    ],
+    "failuresTitle": "No dead products, but plenty of mistakes",
+    "failuresIntro": "Justin hasn't written about failed startups. His mistakes are all inside Buttondown, and he's open about them. None has an exact year except where shown.",
+    "failures": [
+      {"year": "2017 onwards", "name": "Underpricing for years", "what": "He started at $5 a month as a joke and kept prices low for a long time out of guilt. He now says that made the business weaker, not kinder.", "lesson": "A price you're embarrassed to raise is a price you'll regret."},
+      {"year": "2018", "name": "Code that couldn't keep up", "what": "The early sending and analytics code was not built to scale and needed several rewrites. From around April 2018, he says, the growth was a net negative for his well-being until he cleared the debt and took time off.", "lesson": "Fast first versions are right, but budget time to rebuild once people actually use them."},
+      {"year": "2019", "name": "A free tier that ate his time", "what": "Free users created a heavy support load and he had 400 open GitHub issues. He planned to drop freemium for a purely paid model.", "lesson": "Free users cost something, usually your hours."},
+      {"year": "Ongoing", "name": "Email deliverability", "what": "Getting emails into inboxes and out of spam is, he says, his hardest technical problem. For a newsletter tool, that's the whole job.", "lesson": "Know which unglamorous problem your product lives or dies on."},
+      {"year": "2022 to 2025", "name": "Going from solo to a team", "what": "He calls the move from solo founder to running about six people his biggest challenge. In 2024 he was still hiring his first support people.", "lesson": "If it works, you'll become a manager, so decide early how big you want to get."}
+    ],
+    "playbookTitle": "How Buttondown grew without a launch",
+    "playbook": [
+      {"title": "Test the idea with a tweet", "text": "In January and February 2017 he tweeted that he wanted a better version of the newsletter tool he used, before writing any code. It cost nothing and told him whether the itch was shared."},
+      {"title": "Build for yourself and the people around you", "text": "He built Buttondown first for himself, family and friends. That gave him real users from week one and a product shaped by real needs, not guesses."},
+      {"title": "Charge from day one", "text": "He put a $5 price on it at the start. A stranger paying was the signal that it was a business, and having revenue from month one let him set a clear $10K a month line for going full-time."},
+      {"title": "Make the product its own advert", "text": "Every newsletter sent through Buttondown, and every public archive page, shows its name to new readers. Each customer's audience becomes a small stream of new leads."},
+      {"title": "Treat support as marketing", "text": "Fast, personal support is one of the main reasons people recommend it. In 2024 he was hiring support staff who could debug DNS and email, because good support is a technical job for this product."},
+      {"title": "Write in public, for years", "text": "His blog at jmduke.com and Buttondown's blog share how he builds, what he loves about Django and how the business runs. That writing earns trust and, it seems, also feeds the AI assistants that now recommend the product."},
+      {"title": "Be the calm option when rivals stumble", "text": "When three competitors raised prices and two had PR trouble, switchers came to Buttondown. He positions it on what it doesn't do, which made it the obvious place to land."},
+      {"title": "Publish your costs", "text": "Buttondown has public pages listing its stack and its running costs, about $94,038 a year in November 2026. Radical transparency is a trust signal for a tool people hand their audience to."}
+    ],
+    "charts": [
+      {
+        "title": "Monthly revenue milestones, by his own numbers",
+        "points": [
+          {"label": "End 2018", "value": 1000, "display": "Four figures"},
+          {"label": "Dec 2019", "value": 5000, "display": "$5K (all projects)"},
+          {"label": "About 2021", "value": 15000, "display": "$15K"},
+          {"label": "Later", "value": 83333, "display": "$1M+ a year"}
+        ],
+        "note": "End 2018 is shown at the bottom of the four-figure range. The last bar is his $1M annual figure divided by twelve; he hasn't said when he crossed it."
+      },
+      {
+        "title": "Buttondown's biggest monthly costs, November 2026",
+        "points": [
+          {"label": "AWS", "value": 1700, "display": "$1,700"},
+          {"label": "Postmark", "value": 1670, "display": "$1,670"},
+          {"label": "Planetscale", "value": 815, "display": "$815"},
+          {"label": "Plain (support)", "value": 615, "display": "$615"},
+          {"label": "Mailgun", "value": 485, "display": "$485"}
+        ],
+        "note": "From Buttondown's public running costs page. Total costs were about $94,038 a year."
+      }
+    ],
+    "timeline": [
+      {"when": "Jan 2017", "text": "Tweets that he wants a better version of the newsletter tool he uses, and tweets it again in February.", "big": false},
+      {"when": "Apr 2017", "text": "Decides to build Buttondown, while working full-time at Stripe.", "big": false},
+      {"when": "Jun 2017", "text": "Official launch, after it became able to send emails at the end of May.", "big": true},
+      {"when": "Jul 2017", "text": "A few paying customers at $5 a month, a price set mostly as a joke.", "big": true},
+      {"when": "Dec 2017", "text": "Thousands of users reaching tens of thousands of subscribers every week.", "big": false},
+      {"when": "End 2018", "text": "Crosses four-figure monthly revenue, after a hard year of rewrites.", "big": false},
+      {"when": "Dec 2019", "text": "About $5K a month across all his projects. Plans to drop the free tier.", "big": false},
+      {"when": "About 2021", "text": "About $15K a month, still as a side project next to Stripe.", "big": false},
+      {"when": "Apr 2022", "text": "Leaves Stripe to work on Buttondown full-time, about five years after launch.", "big": true},
+      {"when": "2024", "text": "Revenue more than triples in a year as switchers arrive from competitors.", "big": false},
+      {"when": "Jul 2025", "text": "About six full-time staff, no VC. Later reports passing $1M a year.", "big": true},
+      {"when": "2026", "text": "Goals include launching Shovel and running his first marathon.", "big": false}
+    ],
+    "quotes": [
+      {"text": "Under-pricing doesn't make you generous. It makes you fragile.", "cite": "Indie Hackers"},
+      {"text": "every day, someone churns from a billion-dollar valuation company in favor of Buttondown.", "cite": "Indie Hackers"},
+      {"text": "We found a lot of success in selling customers on what we don't have.", "cite": "Open Source Pledge profile, July 2025"},
+      {"text": "the most deeply creatively fulfilled I have been in my entire life", "cite": "Two years, jmduke.com, April 2024"},
+      {"text": "our overall topline growth has flagged but we're still growing at a healthy clip", "cite": "2025 review, jmduke.com"},
+      {"text": "Recent growth from LLM-based acquisition.", "cite": "Indie Hackers"}
+    ],
+    "steal": [
+      "Say your idea out loud in public before you build it. Two tweets were Justin's whole market research, and they cost him nothing.",
+      "Put a price on your first version, even a silly one. A stranger paying $5 will tell you more than any amount of friendly feedback.",
+      "Pick your full-time number in advance, like his $10K a month, so you know what you're working toward and when to stop waiting.",
+      "Make every use of your product show your name to someone new, the way each Buttondown newsletter does.",
+      "Write publicly and clearly about what you make. It wins trust today and it's what AI assistants read when they recommend tools tomorrow.",
+      "Raise your prices before guilt sets in. His biggest regret is charging too little for too long."
+    ],
+    "sources": [
+      {"title": "Indie Hackers: Justin Duke on Buttondown passing $1M ARR", "url": "https://www.indiehackers.com/post/eL15KZvm2ax20BtiM5i8"},
+      {"title": "Open Source Pledge: The story of Buttondown (July 2025)", "url": "https://opensourcepledge.com/blog/story-of-buttondown/"},
+      {"title": "Buttondown blog: 2017 in review", "url": "https://buttondown.com/blog/2017-in-review"},
+      {"title": "jmduke.com: 2018 review", "url": "https://jmduke.com/posts/post/2018"},
+      {"title": "jmduke.com: 2019 review", "url": "https://jmduke.com/posts/2019.html"},
+      {"title": "jmduke.com: Two years (April 2024)", "url": "https://jmduke.com/posts/two-years/"},
+      {"title": "jmduke.com: 2025 review", "url": "https://jmduke.com/posts/2025"},
+      {"title": "Indie Bites ep. 82: a $15K MRR side project while working at Stripe", "url": "https://indiebites.transistor.fm/82"},
+      {"title": "Starter Story: Buttondown (July 2024 update)", "url": "https://www.starterstory.com/stories/buttondown-3c56dbd3-7447-409e-9259-12a87b275dbb"},
+      {"title": "Buttondown: running costs", "url": "https://buttondown.com/running-costs"},
+      {"title": "Buttondown: stack", "url": "https://buttondown.com/stack"},
+      {"title": "Buttondown blog: how the Django apps are organised", "url": "https://buttondown.com/blog/2022-06-08-apps"},
+      {"title": "Buttondown blog: what I love about Django", "url": "https://buttondown.com/blog/what-i-love-about-django"},
+      {"title": "Buttondown blog: the open source pledge", "url": "https://buttondown.com/blog/oss-pledge"}
+    ]
+  }
+}

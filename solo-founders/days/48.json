@@ -1,0 +1,505 @@
+{
+ "n": 48,
+ "name": "Kyle Gawley",
+ "short": "Kyle",
+ "wisdom": "If buyers bet their business on your product, a cheap price scares them off.",
+ "email": {
+  "subject": "He raised his price 800%. Sales went up.",
+  "hook": "Kyle Gawley left his first startup after it nearly killed him, then sold his code at $99 and barely made a sale, until he raised the price about 800% and sales went up.",
+  "lead": [
+   "Kyle matters to us because he's the clearest pricing lesson in this whole series. He sells Gravity, a starter kit of code that developers use to build their own software businesses. Same product, much higher price, more sales. As marketers we talk about positioning all the time; Kyle shows what it looks like in actual numbers.",
+   "And he really is solo. In his own words: “no employees, no investors, no funding, no fixed location.” He uses contractors and spent years working from Thailand."
+  ],
+  "stats": [
+   {
+    "value": "$99 to $895",
+    "label": "his price, 2018 to 2020"
+   },
+   {
+    "value": "$100K",
+    "label": "total revenue by May 2021"
+   },
+   {
+    "value": "$25K",
+    "label": "a month, 2022 podcast title"
+   }
+  ],
+  "chart": {
+   "title": "What Gravity cost, by his own posts",
+   "points": [
+    {
+     "label": "Oct 2018",
+     "value": 99,
+     "display": "$99"
+    },
+    {
+     "label": "Apr 2019",
+     "value": 397,
+     "display": "$397"
+    },
+    {
+     "label": "Jun 2019",
+     "value": 497,
+     "display": "$497"
+    },
+    {
+     "label": "2020",
+     "value": 895,
+     "display": "$895"
+    },
+    {
+     "label": "Nov 2026",
+     "value": 199,
+     "display": "From $199",
+     "down": true
+    }
+   ],
+   "note": "The 2026 figure is the cheapest list tier on his pricing page today. He hasn't said why prices came down."
+  },
+  "sections": [
+   {
+    "title": "What he's doing right now",
+    "paras": [
+     "Gravity is still going, sold from Belfast by his company Gravity Zero Ltd. It's now on its eighth major version and ships with a Node.js server, a React web app, a React Native mobile app, an admin app called Mission Control and a website template.",
+     "The newest bit is very 2026. The docs include ready-made rule files for AI coding tools like Cursor, Claude, Copilot and Windsurf, so the AI knows how his codebase works. And the price has changed: tiers now list at $199, $299 and $499, shown at half off. He hasn't explained the drop. It may be pressure from AI tools that write boilerplate code, but that's a guess, not something he's said."
+    ]
+   },
+   {
+    "title": "How the money comes in",
+    "stats": true,
+    "paras": [
+     "One product, sold as a licence. In 2020 and 2021 it was $895 plus $97 a year for updates. By May 2021, by his own numbers, it had made about $100K in total. He thinks at $99 he'd have made about $12K instead.",
+     "He stopped sharing figures at around $8K to $10K a month, after more than $120K in total revenue at a 98% profit margin from 330 customers. A 2022 podcast title says $25K a month, and a February 2025 estimate from Starter Story says about the same, roughly $300K a year. Treat that last one as a guess from outside."
+    ]
+   },
+   {
+    "title": "How he raised the price",
+    "paras": [
+     "He did it in small steps, about $100 at a time. He'd hold each price for a few months, then compare sales with the previous quarter and the same time the year before. $99 became $397 in April 2019, then $497 in June 2019, then $895 by 2020.",
+     "What he found surprised him: “The more I increased my prices, the more sales I made!” His explanation is perfect: customers won't build their whole company on “a boilerplate that costs the same price as a sandwich.” A low price made it look unsafe."
+    ]
+   },
+   {
+    "title": "How he got the users",
+    "paras": [
+     "Indie Hackers, every day. He'd log in, answer questions, post milestone updates on his product page and reshare them on Twitter. In November 2019 over half his customers came from there.",
+     "The rest was SEO. Nobody else was making a Node.js SaaS boilerplate, so picking the right keywords put him at the top. The mix went from about half Indie Hackers and half SEO to roughly 40% each, plus 20% ads. “My buyers are all inbound,” he says."
+    ]
+   },
+   {
+    "title": "The part nobody talks about",
+    "chart": true,
+    "paras": [
+     "His first startup, a venture-backed ticketing company called Get Invited, ended with him in an emergency room. An undiagnosed stomach infection, made worse by stress, had him vomiting three or four times a day. Four of his front teeth disintegrated. He wasn't sure he'd survive, and he left the company.",
+     "Then, when Gravity did work, copycats lifted his metadata, FAQs, licence text and landing page to copy his search rankings. That's why he stopped sharing revenue. Building in public helped him find buyers, and it also handed competitors his playbook."
+    ]
+   }
+  ],
+  "tryToday": "Look at the price of the thing you sell, or want to sell, and ask what your buyer is risking if it fails. If the risk is big and the price is small, write down a new price and test it for one month.",
+  "button": "Read how he got here"
+ },
+ "page": {
+  "intro": "Kyle is from Northern Ireland. His first startup nearly cost him his health, so he walked away, travelled, and ended up in Chiang Mai turning his own reusable code into a product. Gravity started at $99 and barely sold. Then he kept raising the price.",
+  "stats": [
+   {
+    "value": "800%",
+    "num": 800,
+    "prefix": "",
+    "suffix": "%",
+    "label": "price increase",
+    "note": "from $99 to $895"
+   },
+   {
+    "value": "$100K",
+    "num": 100,
+    "prefix": "$",
+    "suffix": "K",
+    "label": "total revenue",
+    "note": "his own number, May 2021"
+   },
+   {
+    "value": "98%",
+    "num": 98,
+    "prefix": "",
+    "suffix": "%",
+    "label": "profit margin",
+    "note": "when he stopped sharing numbers"
+   },
+   {
+    "value": "0",
+    "num": 0,
+    "prefix": "",
+    "suffix": "",
+    "label": "employees or investors",
+    "note": "contractors only"
+   }
+  ],
+  "chapters": [
+   {
+    "label": "Before it worked",
+    "title": "A ticketing startup and an emergency room",
+    "paras": [
+     "Kyle Gawley is from Northern Ireland. While he was still at university he co-founded Get Invited, an event ticketing startup. It raised venture money and hired a team. Different write-ups put the start in 2012 or 2013, so we'll just say early 2010s.",
+     "Then his body gave out. He had a bacterial stomach infection that nobody had diagnosed, and the stress of the startup made it worse. He was vomiting three or four times a day. Four of his front teeth disintegrated. One day he vomited clotted blood and ended up in the emergency room, honestly unsure whether he'd survive.",
+     "He left Get Invited because of the stress and his health. We tend to tell startup stories as if the only cost is money or time. Kyle's is a reminder that sometimes the cost is you.",
+     "After that he did something sensible. He took a year to travel, through Thailand, Vietnam, Bali and Japan, and then settled in Chiang Mai in northern Thailand. That's where Gravity began."
+    ]
+   },
+   {
+    "label": "The first version",
+    "title": "Code he wrote for himself",
+    "paras": [
+     "Like a lot of developers, Kyle kept rebuilding the same things for every new project: user login, Stripe payments, a basic interface. So around October 2018 he packaged them into a template he could reuse.",
+     "He didn't think it was a product. He assumed other developers would just build those pieces themselves. It took a conversation at a coworking space in Thailand to change his mind. Someone there convinced him people would happily pay to skip that work.",
+     "The first version was rushed. He's honest about it: the code worked and it was robust, but “It just wasn't as elegant as it is now.” He cleaned it up only after people started buying. That's the right order.",
+     "What it actually is: about 15,000 lines of plumbing, the login, payments and interface that every software business needs before it can build its real features. He reckons it saves a developer about three months. The back end was Node.js, and a React front end came later with version 3.0 in June 2019.",
+     "We don't know how long that first version took him to build or what it cost. He hasn't shared it. But the starting point is the most copyable part of the whole story: he didn't invent a product, he noticed the thing he kept writing over and over."
+    ],
+    "pull": {
+     "text": "It just wasn't as elegant as it is now.",
+     "cite": "Kyle, Indie Hackers Podcast #217"
+    }
+   },
+   {
+    "label": "The first customers",
+    "title": "$396 in the first year",
+    "paras": [
+     "He launched version 1.0 on Indie Hackers at $99, with a money-back guarantee to take the fear out of buying from a stranger. By his own milestone posts that was October 2018. Some later write-ups say January or September 2019, so the exact date depends on who you ask.",
+     "Three people bought in the first month, all from his first posts on Indie Hackers. His total revenue for 2018 was $396. At $99 each, that's about four sales.",
+     "One outside source says he made five more sales over the following quarter. Another mentions him crossing 30 users in an update in early 2019. The timeline is messy, but the picture is clear: slow, small and very cheap.",
+     "It's worth noticing what he didn't do here. He didn't spend months polishing before launch, and he didn't wait for a big audience. He posted a rough but working product on Indie Hackers, a community full of the exact people who'd use it, offered a refund if it didn't help, and watched what happened.",
+     "And he was starting to realise the problem. “Charging $99 wasn't sustainable,” he said later. There's only so many $99 sales one person can support, and at that price he couldn't build a living."
+    ],
+    "pull": {
+     "text": "Charging $99 wasn't sustainable.",
+     "cite": "Kyle, Indie Hackers AMA, 2021"
+    }
+   },
+   {
+    "label": "The turning point",
+    "title": "Nobody trusts a sandwich-priced foundation",
+    "paras": [
+     "So he started raising the price. Not in one scary jump, but step by step, roughly $100 at a time. He'd keep a price for a few months, then compare sales against the previous quarter and the same period a year before.",
+     "In his own posts the steps look like this: $99 in October 2018, $397 in April 2019, $497 in June 2019 when version 3.0 added React, and $895 from 2020, plus $97 a year for updates. He mentions a $297 step in 2019 too. He was planning to go to $999 next, and an Indie Hackers feature shows the web version at $995 around 2021.",
+     "Here's the surprise. Sales didn't fall. They rose. “The more I increased my prices, the more sales I made!” Revenue tripled during Covid.",
+     "His explanation is the bit to underline. His customers build their whole business on top of his code. In his words, they “don't want to entrust their entire business on a boilerplate that costs the same price as a sandwich.” **A low price looked like a risk.** A serious price looked like a serious product.",
+     "He also says, “Usually I'm underpricing to their expectations.” And his broader belief: once you find a problem that's really painful, “the customer has enough money to pay a reasonable fee for it.”",
+     "Look at it from the buyer's side for a second, using his own numbers. Gravity saves a developer about three months of work. Even at $895, that's a tiny fraction of what three months of a developer costs. At $99 the price didn't match the value, and buyers noticed the gap. At $895 the price finally told the truth about what they were getting.",
+     "He did the maths afterwards. At $99, he thinks he'd have made about $12K. At the higher prices he made about $100K. Same code, same founder, same channels."
+    ],
+    "chart": 0,
+    "pull": {
+     "text": "The more I increased my prices, the more sales I made!",
+     "cite": "Kyle, Indie Hackers AMA, 2021"
+    }
+   },
+   {
+    "label": "Getting users",
+    "title": "Indie Hackers every day, and SEO nobody else wanted",
+    "paras": [
+     "Kyle's distribution was almost boring in how steady it was. He logged into Indie Hackers every day. He answered other people's questions. He posted milestone updates on his Gravity product page, and then reshared each one on Twitter.",
+     "It worked. In November 2019, when he hit $4K a month, he said over half his customers came from Indie Hackers. Those milestone posts were doing double duty, as honest updates and as ads that didn't feel like ads.",
+     "The other half was search. Nobody else was building a Node.js SaaS boilerplate at the time, so he had very few competitors in JavaScript. Picking the right keywords put him first. Later the mix shifted to about 40% Indie Hackers, 40% SEO and 20% ads, and Twitter started producing sales too.",
+     "He tried ads, but says organic channels did better. “My buyers are all inbound.” He also built smaller things around it: a Slack community, content, a YouTube channel, and a little side product called Firelab that did automated user testing. Later versions, Gravity 8 and 8.2, launched on Product Hunt.",
+     "One small, practical detail from those early days: in 2019 he didn't charge VAT, because he was under the UK threshold. Small businesses get to skip some paperwork early on, and he used that."
+    ]
+   },
+   {
+    "label": "Scaling it",
+    "title": "From $4K a month to $25K",
+    "paras": [
+     "The milestones came in a steady line. $4K a month in November 2019. A $10K month not long after the price passed $500, celebrated in an Indie Hackers post with a new website. About $100K in total revenue by May 2021, which he wrote up in an AMA titled, more or less, I increased my prices 800% and made $100K.",
+     "At some point he passed 300 customers. One feature gives 330 customers, more than $120K in total revenue and a 98% profit margin, which is what happens when your product is code you sell over and over.",
+     "A 2022 podcast titled its episode with him as bootstrapping a SaaS boilerplate to $25K a month. In February 2025 Starter Story estimated Gravity at about $25K a month, about $300K a year, with about 13,000 monthly visitors. That's an outside estimate, not his number.",
+     "Most of the numbers in this story are Kyle's own, from his posts and interviews, and nobody has audited them."
+    ],
+    "chart": 1
+   },
+   {
+    "label": "The cost of sharing",
+    "title": "Copycats took his landing page",
+    "paras": [
+     "Building in public was a big part of how he found customers. It also made him a target.",
+     "Other people copied his metadata, his FAQs, his licence text and his landing page, and tried to copy his search rankings. So at around $8K to $10K a month, he stopped publishing his revenue.",
+     "It's worth sitting with that trade-off. Sharing numbers on Indie Hackers got him attention and trust. But in a niche where the product is code and the main channel is search, every detail you share is a map for someone else.",
+     "He kept posting product updates, just not the money. That seems like a fair middle ground for us too: share the lessons, keep the exact recipe."
+    ]
+   },
+   {
+    "label": "Where he stands now",
+    "title": "Version 8, AI rule files and lower prices",
+    "paras": [
+     "In November 2026 Gravity is sold by Gravity Zero Ltd, a company registered in Belfast. The pricing page shows eight testimonials and a 4.6-star Trustpilot rating, but no customer count.",
+     "Every tier includes a Node.js server, a React web app, a React Native mobile app, the Mission Control admin app, an Astro website template, the full source code and a year of updates.",
+     "The docs now include pre-configured rule files for AI coding tools: Cursor, Claude, Copilot and Windsurf, plus an agents file. The idea is that when you open Gravity in an AI editor, the AI already understands how it's put together. It now supports Next.js as well as Node.js.",
+     "And the price has moved again, downward. The list tiers are $199, $299 and $499, each shown at 50% off. That's a long way from $895. He hasn't said why. It might be AI tools making boilerplate code cheaper to produce, but that's our guess, not his statement.",
+     "Kyle hasn't posted or given an interview in 2026. So the current revenue is unknown."
+    ]
+   },
+   {
+    "label": "How he thinks",
+    "title": "Price for the buyer's risk, not your effort",
+    "paras": [
+     "Kyle's whole philosophy fits on a sticky note. Find a problem that's painful. Then charge a fair price for it, because people with painful problems can afford to pay.",
+     "The deeper idea is about trust. When someone is betting their company on your product, the price is a signal. Too cheap and they wonder what's wrong with it.",
+     "He also built the life he wanted around it. No employees, no investors, no funding, no fixed location. Given how his first company ended, it's easy to see why that kind of freedom is part of the design, not an accident.",
+     "For us as marketers, this is the most familiar lesson in the series wearing developer clothes. Price is part of positioning. A product that sits under a whole business has to look solid, and the price tag is the first thing people read. Kyle didn't change the code to sell more. He changed the signal.",
+     "There's also a quieter lesson in how he picked the product at all. He didn't brainstorm ideas or survey a market. He noticed what he kept writing, doubted anyone would pay, and let a stranger at a coworking space talk him into trying. Plenty of good products start that way: as something you assume is too obvious to sell.",
+     "If there's one thing to take from him, it's to test your price upward in small steps and actually measure what happens. He didn't guess. He compared quarter against quarter and year against year."
+    ]
+   }
+  ],
+  "failuresTitle": "A startup that nearly killed him, and a launch that barely sold",
+  "failuresIntro": "No long list here, but both of these shaped everything after.",
+  "failures": [
+   {
+    "year": "Early 2010s",
+    "name": "Get Invited",
+    "what": "A venture-backed event ticketing startup he co-founded at university. An undiagnosed stomach infection made worse by stress ended in the emergency room. He left the company because of his health.",
+    "lesson": "No product is worth your health, and a calmer business model is a real choice."
+   },
+   {
+    "year": "2018 to 2019",
+    "name": "The $99 launch",
+    "what": "Gravity launched on Indie Hackers at $99. It made three sales in the first month and $396 in 2018. He later said that price wasn't sustainable.",
+    "lesson": "If sales are slow, test a higher price before you assume nobody wants it."
+   },
+   {
+    "year": "About 2020 to 2021",
+    "name": "Copycats",
+    "what": "Competitors copied his metadata, FAQs, licence text and landing page and tried to replicate his SEO. He stopped sharing revenue at around $8K to $10K a month.",
+    "lesson": "Share lessons in public, but think twice before sharing the exact recipe."
+   },
+   {
+    "year": "Tried, years not given",
+    "name": "Ads",
+    "what": "He tried paid ads, and at one point they made up about 20% of his channel mix. He says organic channels did better.",
+    "lesson": "For a niche developer product, being findable beats paying to interrupt people."
+   }
+  ],
+  "playbookTitle": "How he sells code without a sales team",
+  "playbook": [
+   {
+    "title": "A daily Indie Hackers habit",
+    "text": "He logged in every day, answered questions, posted milestone updates on his product page and reshared them on Twitter. In November 2019 over half his customers came from Indie Hackers."
+   },
+   {
+    "title": "Own an empty keyword",
+    "text": "Nobody else was building a Node.js SaaS boilerplate, so the right keywords put him first in search. SEO was about half his sales early on and about 40% later."
+   },
+   {
+    "title": "A money-back guarantee",
+    "text": "Version 1.0 launched with a guarantee to lower the risk of buying from a stranger. It made a $99 purchase easier to say yes to."
+   },
+   {
+    "title": "Raise the price in steps",
+    "text": "Roughly $100 at a time, held for a few months, then compared with the previous quarter and year. $99 became $397, $497 and then $895, and sales went up."
+   },
+   {
+    "title": "Price for trust",
+    "text": "His buyers build their company on his code, so a sandwich price looked unsafe. A serious price became part of the marketing."
+   },
+   {
+    "title": "Annual updates fee",
+    "text": "On top of the licence he charged for updates, $97 a year in 2020 and 2021. It turned one-time buyers into a steady stream."
+   },
+   {
+    "title": "Small satellite products and launches",
+    "text": "A Slack community, a YouTube channel, content, a side product called Firelab, and Product Hunt launches for Gravity 8 and 8.2. Each one was another doorway to the main product."
+   }
+  ],
+  "charts": [
+   {
+    "title": "What Gravity cost, by his own posts",
+    "points": [
+     {
+      "label": "Oct 2018",
+      "value": 99,
+      "display": "$99"
+     },
+     {
+      "label": "Apr 2019",
+      "value": 397,
+      "display": "$397"
+     },
+     {
+      "label": "Jun 2019",
+      "value": 497,
+      "display": "$497"
+     },
+     {
+      "label": "2020",
+      "value": 895,
+      "display": "$895"
+     },
+     {
+      "label": "About 2021",
+      "value": 995,
+      "display": "$995 web version"
+     },
+     {
+      "label": "Nov 2026",
+      "value": 199,
+      "display": "From $199",
+      "down": true
+     }
+    ],
+    "note": "The 2026 figure is the cheapest list tier, before the 50% discount shown."
+   },
+   {
+    "title": "Gravity's monthly revenue",
+    "points": [
+     {
+      "label": "Nov 2019",
+      "value": 4000,
+      "display": "$4K"
+     },
+     {
+      "label": "About 2020",
+      "value": 10000,
+      "display": "$10K month"
+     },
+     {
+      "label": "2022",
+      "value": 25000,
+      "display": "$25K, podcast title"
+     },
+     {
+      "label": "Feb 2025",
+      "value": 25000,
+      "display": "About $25K, estimate"
+     }
+    ],
+    "note": "2019 and 2020 are his own numbers. 2025 is a Starter Story estimate."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "Early 2010s",
+    "text": "Co-founds Get Invited, a venture-backed ticketing startup, while at university."
+   },
+   {
+    "when": "Afterwards",
+    "text": "A health crisis lands him in the emergency room and he leaves the company.",
+    "big": true
+   },
+   {
+    "when": "Next year",
+    "text": "Travels through Thailand, Vietnam, Bali and Japan, and settles in Chiang Mai."
+   },
+   {
+    "when": "Oct 2018",
+    "text": "Launches Gravity version 1.0 on Indie Hackers at $99 with a money-back guarantee. Three sales in month one."
+   },
+   {
+    "when": "Apr 2019",
+    "text": "Price goes to $397."
+   },
+   {
+    "when": "Jun 2019",
+    "text": "Version 3.0 adds React. Price goes to $497."
+   },
+   {
+    "when": "Nov 2019",
+    "text": "Hits $4K a month, over half from Indie Hackers."
+   },
+   {
+    "when": "2020",
+    "text": "Price reaches $895. Revenue triples during Covid.",
+    "big": true
+   },
+   {
+    "when": "May 2021",
+    "text": "About $100K in total revenue."
+   },
+   {
+    "when": "2022",
+    "text": "A podcast title puts Gravity at $25K a month."
+   },
+   {
+    "when": "Nov 2026",
+    "text": "Gravity 8, AI rule files, and list tiers from $199."
+   }
+  ],
+  "quotes": [
+   {
+    "text": "The more I increased my prices, the more sales I made!",
+    "cite": "Indie Hackers AMA, 2021"
+   },
+   {
+    "text": "Charging $99 wasn't sustainable.",
+    "cite": "Indie Hackers AMA, 2021"
+   },
+   {
+    "text": "My buyers are all inbound.",
+    "cite": "Indie Hackers AMA, 2021"
+   },
+   {
+    "text": "Usually I'm underpricing to their expectations.",
+    "cite": "Indie Hackers AMA, 2021"
+   },
+   {
+    "text": "a boilerplate that costs the same price as a sandwich.",
+    "cite": "Indie Hackers feature"
+   },
+   {
+    "text": "no employees, no investors, no funding, no fixed location",
+    "cite": "Indie Hackers feature"
+   }
+  ],
+  "steal": [
+   "Look for the thing you keep rebuilding at work. Kyle's product was code he wrote for himself on every project.",
+   "Ask what your buyer is risking, and price for that. If they're betting their business on you, a tiny price is a warning sign to them.",
+   "Raise prices in small steps and measure each one against the previous quarter and year. Don't guess, test.",
+   "Pick one community and show up there every day with useful answers and honest milestones, the way he used Indie Hackers.",
+   "Find a search term nobody owns yet. Being the only real result is worth more than any ad budget.",
+   "Share what you learn in public, but be careful with numbers and pages that make you easy to copy."
+  ],
+  "sources": [
+   {
+    "title": "Indie Hackers feature, Kyle Gawley of Gravity",
+    "url": "https://www.indiehackers.com/post/escaping-death-to-find-his-destiny-kyle-gawley-of-gravity-fc8c33dc4a"
+   },
+   {
+    "title": "Indie Hackers AMA, I increased my prices 800% and made $100K (May 2021)",
+    "url": "https://www.indiehackers.com/post/i-increased-my-prices-800-and-made-100k-in-revenue-ama-9ddfb4ee05"
+   },
+   {
+    "title": "Indie Hackers Podcast #217, Kyle Gawley",
+    "url": "https://www.indiehackers.com/podcast/217-kyle-gawley"
+   },
+   {
+    "title": "Indie Hackers milestone, reached $4K a month (Nov 2019)",
+    "url": "https://www.indiehackers.com/product/gravity/reached-4k-mo--LtEs9H6q1_4if5gNILb"
+   },
+   {
+    "title": "Indie Hackers milestone, $10K month and new website",
+    "url": "https://www.indiehackers.com/product/gravity/10k-month-new-website-json-statham-loves-it--M9rO0RWew04qWoTcwDN"
+   },
+   {
+    "title": "Indie Hackers milestone, 300 Gravity customers",
+    "url": "https://www.indiehackers.com/product/gravity/300-gravity-customers--MXVrGOm0LzSqrwchN0K"
+   },
+   {
+    "title": "Scaling DevTools, bootstrapping a SaaS boilerplate to $25K MRR (2022)",
+    "url": "https://dev.to/scaling-devtools/bootstrapping-a-saas-boilerplate-to-25k-mrr-with-kyle-gawley-from-gravity"
+   },
+   {
+    "title": "Starter Story, Gravity breakdown (Feb 2025, estimates)",
+    "url": "https://www.starterstory.com/gravity-breakdown"
+   },
+   {
+    "title": "Gravity pricing page",
+    "url": "https://usegravity.app/pricing"
+   },
+   {
+    "title": "Gravity docs, rules for AI",
+    "url": "https://docs.usegravity.app/rules-for-ai"
+   },
+   {
+    "title": "Product Hunt, Gravity 8",
+    "url": "https://www.producthunt.com/p/gravity-6/gravity-8"
+   }
+  ]
+ }
+}

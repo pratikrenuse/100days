@@ -1,0 +1,264 @@
+{
+  "n": 45,
+  "name": "Peter Askew",
+  "short": "Peter",
+  "wisdom": "Buy the name first, then build the business it implies.",
+  "email": {
+    "subject": "He paid $2,200 for a name and now sells onions",
+    "hook": "Peter Askew admits he was never any good at flipping domain names, yet a $2,200 domain he won at auction turned into a business that shipped 64,000 pounds of onions in one year.",
+    "lead": [
+      "Peter is the gentlest kind of founder in this series. No app, no AI, no funding. He buys domain names that describe a whole category, like VidaliaOnions.com or DudeRanch.com, and then builds a small, calm business that fits the name. For us marketers it's a great reminder that **a name people already type into Google is free traffic for life**.",
+      "He works essentially alone, with partners doing the parts he can't, like the farm that grows and packs the onions. He hasn't shared revenue figures himself, so today is more about the method than the money."
+    ],
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Peter lives in Savannah, Georgia, which his site cheekily calls \"slowvannah\". During onion season, from late April or May, Vidalia onions take 60% to 70% of his time, and his two other businesses, DudeRanch.com and RanchWork.com, take about 10% to 20% each. He's also documenting a full Vidalia season on YouTube, from seed to packing.",
+          "His site lists newer domains too: a set of wedding-venue sites for Savannah, Dallas and Highlands, plus seojobs.com and packtrip.com. A January 2024 podcast titled \"Weddings, onions and dude ranches\" suggests weddings are an active line. And every morning, and again at lunch, he spends five to ten minutes scanning lists of expiring domains, \"almost like my morning newspaper\"."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "Each business makes money simply. VidaliaOnions.com sells one product in four box sizes, at about $2.50 to $7 a pound. He runs the website, the shipping software and the UPS account, and the farm packs the boxes. He hasn't shared revenue, though a podcast host once estimated it at \"multiple six-figure revenue\".",
+          "DudeRanch.com charges ranches a flat yearly fee to be listed, about $500 to $1,000 for a basic listing and $2,000 to $4,000 for several, with no commission on bookings. He calls it \"nice and simple\". By his own numbers DudeRanch.com and its sister site GuestRanches.com make about $50,000 a year together. RanchWork.com, a ranch job board, gets about 90,000 to 100,000 visits a month."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "In 2014 he won VidaliaOnions.com in a NameJet auction for $2,200. The person who bid against him wrote about it later. He had no onions, so he asked the Vidalia Onion Business Committee for help. They introduced him to three farmers, and he partnered with the third, M&T Farms, run by Aries Haygood.",
+          "Competitors were still asking customers to print a PDF order form and mail it in with their card number. Peter built a WordPress homepage, Shopify checkout and UPS tracking. That's it. It sounds basic, but next to a mailed paper form, it was years ahead."
+        ]
+      },
+      {
+        "title": "How he got the customers",
+        "paras": [
+          "The domain did a lot of the work, because people search for \"Vidalia onions\" every spring. On top of that he used what he knew from his earlier career in software: paid search and SEO. He also posted on Twitter and Facebook, built an email list, sponsored a kids' basketball team and relied on word of mouth. Year one sold 600 boxes, and it roughly doubled every year after.",
+          "For DudeRanch.com he did something wonderfully old-school. He set up a booth at a dude ranch conference in Tucson with a tablecloth printed with the domain name. A rancher, Mary Miller of Elkhorn Ranch, signed up right there. He has since visited 51 or 52 of the roughly 100 to 125 dude ranches in person."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Not everything worked. Domain flipping, buying names just to resell, didn't work for him: he says he was \"not good at it\". A call-tracking project failed, so did a restaurant health-inspection search tool, and BirthdayParties.com \"went absolutely nowhere\". In 2020 heavy rains cut the crop and he sold out of onions in June.",
+          "And the onion business is a lot of work by hand. He personally answered the phone order line for nine years before a friend started helping. Shipping, he says, has always been the hardest part. Calm doesn't mean easy."
+        ]
+      }
+    ],
+    "stats": [
+      {"value": "$2,200", "label": "paid for VidaliaOnions.com"},
+      {"value": "64,000 lb", "label": "of onions shipped in 2020"},
+      {"value": "52", "label": "dude ranches visited in person"}
+    ],
+    "chart": {
+      "title": "Vidalia onions shipped per year, by his own numbers",
+      "points": [
+        {"label": "2020", "value": 64000, "display": "64,000 lb"},
+        {"label": "2021 goal", "value": 100000, "display": "100,000+ lb"},
+        {"label": "A later year", "value": 80000, "display": "About 80,000 lb"},
+        {"label": "The year after", "value": 60000, "display": "About 60,000 lb", "down": true}
+      ],
+      "note": "The last two come from an undated interview, so the exact years aren't known. Year one, around 2014, was 600 boxes."
+    },
+    "tryToday": "Spend ten minutes on an expiring-domains list or a domain auction site and look for one name that describes a whole category. Ask yourself what simple business that name could support, the way Peter does, before you think about what it's worth.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Peter Askew buys domain names that describe a whole category, then builds small, simple businesses to fit them. A $2,200 auction win became VidaliaOnions.com, which shipped 64,000 pounds of onions in 2020, and a $17,949 credit-card purchase became DudeRanch.com, sold to ranchers at a conference booth with a printed tablecloth.",
+    "stats": [
+      {"value": "$2,200", "num": 2200, "prefix": "$", "suffix": "", "label": "paid for VidaliaOnions.com", "note": "NameJet auction, 2014"},
+      {"value": "64,000 lb", "num": 64000, "prefix": "", "suffix": " lb", "label": "of onions shipped in 2020", "note": "his own numbers"},
+      {"value": "$17,949", "num": 17949, "prefix": "$", "suffix": "", "label": "paid for DudeRanch.com", "note": "mostly on a credit card"},
+      {"value": "52", "num": 52, "prefix": "", "suffix": "", "label": "dude ranches visited in person", "note": "51 or 52, by his count"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A product manager who was bad at flipping domains",
+        "paras": [
+          "Peter is a Georgia native. He got into domain names in 2006. When he bought DudeRanch.com he was a product manager at a software startup in Atlanta, and that earlier career gave him two skills he'd use for the rest of his life: paid search and SEO.",
+          "Like many people in the domain world, he started by trying to flip names: buy them cheap, sell them for more. It didn't work. In his words, he was \"not good at it\".",
+          "So he changed the question. Instead of asking what a domain might sell for, he started asking what business it could support. If he could picture a real business living on that name, he could justify a bid, even a high one, because the value was in what he'd build, not in what another investor might pay.",
+          "It's a small shift with big consequences. He summed it up in a comment years later: \"Buy a domain first, figure out the business second.\" He also calls domains \"my co founder\", and scanning expiring lists a \"treasure hunt\".",
+          "His education isn't spelled out publicly. His site has an image linking to the University of Mississippi's Southern Studies programme, with no explanation, so we'll leave it there."
+        ],
+        "pull": {"text": "Buy a domain first, figure out the business second.", "cite": "Peter, in a comment on DomainInvesting, 2017"}
+      },
+      {
+        "label": "The daily habit",
+        "title": "Reading expiring domains like the morning paper",
+        "paras": [
+          "Every morning, and again at lunch, Peter spends five to ten minutes going through lists of expiring domains. These lists can carry 50,000 to 100,000 names dropping every single day. He describes it as \"almost like my morning newspaper\".",
+          "He shops at the usual places: GoDaddy Auctions, NameJet, SnapNames and DropCatch. For a sense of what similar names have sold for, he checks NameBio. But he bids based on the business a name could support, not just on past sales.",
+          "He also shares the hunt. On X, under the handle @searchbound, he posts interesting expiring domains for others to see.",
+          "Why does an expired domain matter so much? It often comes with history: links from other sites, a place in search results, people who still type it in. He calls it \"a small unfair advantage\". DudeRanch.com, for example, got about 50 visits a day just from people typing the name straight into their browser."
+        ],
+        "pull": {"text": "almost like my morning newspaper", "cite": "Peter, on Niche Pursuits"}
+      },
+      {
+        "label": "The first version",
+        "title": "Winning VidaliaOnions.com, and finding a farmer",
+        "paras": [
+          "Vidalia onions are a famous sweet onion from Georgia, grown only in one region and sold for a short season each year. In 2014 the domain VidaliaOnions.com expired and went to auction on NameJet. Peter won it for $2,200. We know the price well because the person who bid against him wrote an article about it.",
+          "In one later interview Peter tells it differently, saying he won it \"by accident\" with a bid of about $200 when he expected it to go for about $5,000. The underbidder's own article backs up $2,200, so that's the number we'll use, but the two accounts don't match.",
+          "Here was his problem: he had a great name and no onions. He went to the Vidalia Onion Business Committee and asked for help. They introduced him to three farmers. He partnered with the third, M&T Farms, whose general manager is Aries Haygood. He even trained the farm staff himself.",
+          "Then he looked at the competition and found a gift. Other sellers were still asking customers to print a PDF order form, fill in their card number and mail it in. Peter built a WordPress homepage, used Shopify for checkout and added UPS tracking. He started on Big Cartel for the shop and later moved to Shopify, with ShipStation handling the shipping.",
+          "The roles were clean. Peter runs the website, Shopify, ShipStation and the UPS account. The farm grows and packs the onions. There's one product in four box sizes. **He sells; they grow.**",
+          "In March 2017 he was still living in Atlanta, about three hours from the farm, and shipping that season started on 1 May. These days he calls himself the \"Chief Technical Onion Officer\"."
+        ],
+        "pull": {"text": "a small unfair advantage", "cite": "Peter, on Side Hustle Nation, December 2020"}
+      },
+      {
+        "label": "The first customers",
+        "title": "Six hundred boxes, a phone line and a kids' basketball team",
+        "paras": [
+          "The first season sold about 600 boxes. After that, by his own account, sales roughly doubled every year.",
+          "A lot of the early demand came from the name itself. People search for \"Vidalia onions\" every spring, and his domain was the obvious answer. He put it nicely: he could \"Leverage the domain authority to compete against folks 50x my size\".",
+          "But he didn't leave it to the name alone. In a 2017 comment he listed everything he was doing: pay-per-click ads, SEO, Twitter, Facebook, an email list, sponsoring a kids' basketball team and word of mouth. That basketball sponsorship is a lovely detail. It's local, cheap and human, and it fits the business perfectly.",
+          "He also kept a phone order line. Peter answered that phone himself for nine years. Only recently, in a later interview, did he mention a friend starting to help with it.",
+          "The season itself does some marketing. Vidalia onions are only available for a short window, so there's built-in scarcity. When the season opens, people who love them order quickly, because they know it won't last."
+        ],
+        "pull": {"text": "Leverage the domain authority to compete against folks 50x my size", "cite": "Peter, in a comment on DomainInvesting, 2017"}
+      },
+      {
+        "label": "Scaling it",
+        "title": "Sixty-four thousand pounds, and a viral post",
+        "paras": [
+          "By 2020 the onion business was shipping 64,000 pounds a year, by his own numbers. Prices ran from about $2.50 to $7 a pound depending on the box size. He was on track for more than 100,000 pounds in 2021.",
+          "Peter has never shared revenue. On a podcast in December 2020 the host estimated it at \"multiple six-figure revenue\", but that's the host's guess, not his. Most of the numbers on this page are Peter's own, from interviews and podcasts, so read them as his account.",
+          "At some point he wrote a post called \"I Sell Onions on the Internet\". It went viral, and suddenly a guy selling onions from a domain name was a famous internet story. For a business built on a name, that kind of attention is fuel.",
+          "Not every year went up. In 2020 heavy rains cut the crop and he sold out in June. And in a later, undated interview he mentioned shipping about 80,000 pounds \"two years ago\" and about 60,000 pounds \"last year\". So it looks like volumes peaked and then dipped, which is what happens when your supply depends on the weather.",
+          "Shipping, he says, has always been the hardest part. Onions are heavy, perishable and seasonal. The domain brings customers. Getting the boxes there in good shape is the daily grind."
+        ]
+      },
+      {
+        "label": "The second business",
+        "title": "DudeRanch.com, a tablecloth and a handshake industry",
+        "paras": [
+          "DudeRanch.com came earlier and cost far more. He waited about a year and a half for the name to drop, then won it for $17,949, putting most of it on a credit card. For someone working a product manager job, that's a real bet.",
+          "He did the SEO and some paid search himself. But the first customers didn't come from Google. They came from a booth at a dude ranch industry conference in Tucson. He covered the table with a tablecloth printed with the domain name. A rancher named Mary Miller from Elkhorn Ranch walked up and **signed up on the spot**.",
+          "He understood early that this is a \"handshake\" industry. Ranchers want to know who they're dealing with. So he went to them. He has visited 51 or 52 of the roughly 100 to 125 dude ranches, spending four or five days on the road once or twice a year. When one ranch had a fire, he gave them a free listing for a year.",
+          "The pricing was kept deliberately simple. Early listings were about $250 to $500 a year, which he called a \"no-brainer\" for ranchers. Later he described $500 to $1,000 a year for a basic listing, $2,000 to $4,000 for several listings, and banners for a few hundred dollars more. Flat fees, no commission on bookings. In his words, \"nice and simple\".",
+          "He also tried print. He placed ads in cattle and farm magazines and ran small, careful bets, like a $1,000 ad test, to see what worked. He uploaded 360-degree photos of ranches to Google Maps. All of it was cheap, specific and aimed at one tiny industry."
+        ]
+      },
+      {
+        "label": "Selling and buying back",
+        "title": "He sold DudeRanch.com, then bought it back with its rival",
+        "paras": [
+          "After running DudeRanch.com for about ten years, Peter sold it to a friendly competitor, the owner of GuestRanches.com. He talked about this on a podcast in March 2023.",
+          "Later, he went back the other way. In a more recent interview he says he spent \"around 200 grand\" buying both DudeRanch.com and GuestRanches.com, and rebuilt them on WordPress. By his numbers, DudeRanch.com gets about 10,000 visits a month and GuestRanches.com about 6,000 to 8,000, and together they make about $50,000 a year.",
+          "Then there's RanchWork.com, a ranch job board. It started on a domain a friend had abandoned, and they split the revenue 75/25 in Peter's favour. At launch, job posts were about $25 each, alongside free listings, and he curates every one personally. It now gets about 90,000 to 100,000 visits a month, by his count.",
+          "The pattern is consistent. Each business is small, specific, tied to a name people search for, and run with partners or friends rather than employees."
+        ]
+      },
+      {
+        "label": "Where it stands now",
+        "title": "Onions, ranches and wedding venues from Savannah",
+        "paras": [
+          "Around 2023 Peter moved to Savannah. His site gives his location as \"slowvannah, georgia\", which tells you a lot about the life he's built.",
+          "During onion season, from late April or May, Vidalia takes about 60% to 70% of his time, DudeRanch.com 10% to 20% and RanchWork.com 10% to 20%. He says he values projects that get him out from behind the computer, which explains the ranch visits, the farm and the YouTube series he's making about a full Vidalia season, from seed to packing.",
+          "The portfolio keeps growing. Onions.com is a landing page that points to the Vidalia store, and he recently bought OrganicOnions.com. SavannahWedding.com cost him about $1,000 and he calls it a \"marathon\" project. His site also lists DallasWedding.com, HighlandsWedding.com, SEOJobs.com, PackTrip.com and ForsythPark.com, which is a personal project. A January 2024 Domain Name Wire podcast was titled \"Weddings, onions and dude ranches\", which suggests the wedding sites are an active line.",
+          "He links to calmcompanies.club on his site too, which fits. This isn't a man trying to build a unicorn. It's a man building a handful of calm, small businesses on great names, and spending his days outdoors as much as he can.",
+          "What he's planning next, and what he thinks about AI, he hasn't said publicly."
+        ]
+      }
+    ],
+    "failuresTitle": "\"Some work, some don't\"",
+    "failuresIntro": "Peter is relaxed about the misses. He hasn't given a count, but these are the ones he's mentioned.",
+    "failures": [
+      {"year": "From 2006", "name": "Domain flipping", "what": "He started out buying domains to resell for a profit. He says he was \"not good at it\". It pushed him to his real method: bid on the business a name could support.", "lesson": "If the obvious way doesn't suit you, change the question rather than quitting the field."},
+      {"year": "Not public", "name": "The call-tracking project", "what": "CallTracking.com and a call-tracking app both failed. He also mentions a call-tracking domain, linked to CallRail, that he bought for about $20,000 and sold for about $120,000 even though the project on it failed.", "lesson": "A great name can hold its value even when the business on it doesn't work."},
+      {"year": "Not public", "name": "Restaurant health-inspection search", "what": "He built a search tool for restaurant health-inspection results. It failed.", "lesson": "Not every useful idea has a buyer."},
+      {"year": "2019", "name": "BirthdayParties.com", "what": "He bought it for about $5,000 and focused on the Southeast US. He says it \"went absolutely nowhere\".", "lesson": "A big category name still needs a clear first customer you can actually reach."},
+      {"year": "2020", "name": "The rained-out season", "what": "Heavy rains cut the onion crop, and he sold out by June. It was a setback rather than a failure.", "lesson": "When your supply depends on weather or partners, plan for bad years."}
+    ],
+    "playbookTitle": "How he finds customers for a name",
+    "playbook": [
+      {"title": "Scan expiring domains every day", "text": "He spends five to ten minutes each morning and at lunch on lists of 50,000 to 100,000 drops a day, from GoDaddy Auctions, NameJet, SnapNames and DropCatch, and checks NameBio for comparable sales."},
+      {"title": "Bid on the business, not the resale", "text": "He prices a name by the business it could support. That's how he justified $17,949 on a credit card for DudeRanch.com."},
+      {"title": "Partner for the part you can't do", "text": "The Vidalia Onion Business Committee introduced him to three farmers and he partnered with the third. He runs the site and shipping; the farm grows and packs."},
+      {"title": "Beat old-fashioned competitors on ease", "text": "Rivals used a printed PDF order form mailed in with card numbers. He used a WordPress homepage, Shopify checkout and UPS tracking."},
+      {"title": "Use search, paid and organic", "text": "He brought paid search and SEO skills from his software career, and the domain itself brought type-in traffic, about 50 visits a day for DudeRanch.com."},
+      {"title": "Show up in person", "text": "A booth at the Tucson dude ranch conference, with a tablecloth printed with the domain, signed his first ranch on the spot. He has visited 51 or 52 ranches since."},
+      {"title": "Keep pricing flat and simple", "text": "Ranch listings started at about $250 to $500 a year and later $500 to $1,000, with no booking commission. He calls it \"nice and simple\"."},
+      {"title": "Go local and niche with ads", "text": "He sponsored a kids' basketball team for the onion business, placed print ads in cattle and farm magazines and ran small tests like a $1,000 ad."},
+      {"title": "Tell the story publicly", "text": "His post \"I Sell Onions on the Internet\" went viral, he posts expiring domains on X as @searchbound, and he's filming a full Vidalia season on YouTube."}
+    ],
+    "charts": [
+      {
+        "title": "Vidalia onions shipped per year, by his own numbers",
+        "points": [
+          {"label": "2020", "value": 64000, "display": "64,000 lb"},
+          {"label": "2021 goal", "value": 100000, "display": "100,000+ lb"},
+          {"label": "A later year", "value": 80000, "display": "About 80,000 lb"},
+          {"label": "The year after", "value": 60000, "display": "About 60,000 lb", "down": true}
+        ],
+        "note": "The last two come from an undated interview, so the exact years aren't known. Year one, around 2014, was 600 boxes."
+      },
+      {
+        "title": "What he paid for some of his names",
+        "points": [
+          {"label": "SavannahWedding.com", "value": 1000, "display": "About $1,000"},
+          {"label": "VidaliaOnions.com", "value": 2200, "display": "$2,200"},
+          {"label": "BirthdayParties.com", "value": 5000, "display": "About $5,000"},
+          {"label": "DudeRanch.com", "value": 17949, "display": "$17,949"},
+          {"label": "Call-tracking domain", "value": 20000, "display": "About $20,000"}
+        ],
+        "note": "Later he spent about $200,000 buying DudeRanch.com and GuestRanches.com together."
+      },
+      {
+        "title": "Monthly visits to his ranch sites, by his own count",
+        "points": [
+          {"label": "RanchWork.com", "value": 95000, "display": "90K to 100K"},
+          {"label": "DudeRanch.com", "value": 10000, "display": "About 10K"},
+          {"label": "GuestRanches.com", "value": 7000, "display": "6K to 8K"}
+        ],
+        "note": "From an undated recent interview."
+      }
+    ],
+    "timeline": [
+      {"when": "2006", "text": "Gets into domain names. Tries flipping and finds he's not good at it.", "big": false},
+      {"when": "Before 2014", "text": "As a product manager in Atlanta, buys DudeRanch.com for $17,949, mostly on a credit card, and signs his first ranch at a Tucson conference.", "big": true},
+      {"when": "2014", "text": "Wins VidaliaOnions.com in a NameJet auction for $2,200 and partners with M&T Farms.", "big": true},
+      {"when": "First season", "text": "Sells about 600 boxes of onions. Sales roughly double every year after.", "big": false},
+      {"when": "May 2017", "text": "Still living in Atlanta, three hours from the farm, he starts the season's shipping on 1 May.", "big": false},
+      {"when": "2019", "text": "Buys BirthdayParties.com for about $5,000. It goes nowhere.", "big": false},
+      {"when": "2020", "text": "Ships 64,000 pounds of onions and sells out in June after heavy rains.", "big": true},
+      {"when": "Mar 2023", "text": "Has sold DudeRanch.com to the owner of GuestRanches.com after about ten years.", "big": false},
+      {"when": "About 2023", "text": "Moves to Savannah, Georgia.", "big": false},
+      {"when": "Later", "text": "Spends about $200,000 buying back DudeRanch.com along with GuestRanches.com.", "big": true},
+      {"when": "Jan 2024", "text": "A podcast titled \"Weddings, onions and dude ranches\" points to a new wedding-venue line.", "big": false}
+    ],
+    "quotes": [
+      {"text": "Buy a domain first, figure out the business second.", "cite": "Comment on DomainInvesting, 2017"},
+      {"text": "Leverage the domain authority to compete against folks 50x my size", "cite": "Comment on DomainInvesting, 2017"},
+      {"text": "a small unfair advantage", "cite": "Side Hustle Nation podcast, December 2020"},
+      {"text": "almost like my morning newspaper", "cite": "Niche Pursuits interview"},
+      {"text": "my co founder", "cite": "On domains, Bootstrapped Founder podcast, March 2023"},
+      {"text": "nice and simple", "cite": "On DudeRanch.com pricing, Niche Pursuits interview"},
+      {"text": "Some work, some don't.", "cite": "Practical Ecommerce, about 2021"}
+    ],
+    "steal": [
+      "Before you build anything, look at the words your customers already type into Google. A name or page that matches them is traffic you don't have to pay for again.",
+      "Price an opportunity by what you could build on it, not by what someone else might pay. That's how Peter justified bids others wouldn't make.",
+      "Look for competitors who are still doing things the old way, like a mailed PDF form, and win simply by being easier to buy from.",
+      "In a small, trust-based industry, show up in person. A tablecloth with your name on it at the right conference can beat a year of ads.",
+      "Partner for the part you can't do well, and keep the roles clean. Peter sells and ships; the farm grows and packs.",
+      "Keep your pricing flat and easy to say out loud. Ranchers said yes because it was a no-brainer."
+    ],
+    "sources": [
+      {"title": "Practical Ecommerce: Online onion seller rises from domain name auction", "url": "https://www.practicalecommerce.com/online-onion-seller-rises-from-domain-name-auction"},
+      {"title": "Side Hustle Nation #424: How I sold 64,000 pounds of onions online (December 2020)", "url": "https://sidehustlenation.libsyn.com/424-how-i-sold-64000-pounds-of-onions-online-a-creative-drop-shipping-case-study"},
+      {"title": "DomainInvesting: VidaliaOnions.com is growing (March 2017)", "url": "https://domaininvesting.com/vidaliaonions-com-growing"},
+      {"title": "Niche Pursuits: Peter Askew interview", "url": "https://www.nichepursuits.com/peter-askew/"},
+      {"title": "The Bootstrapped Founder #202 (March 2023)", "url": "https://share.transistor.fm/s/da30dbce"},
+      {"title": "Domain Name Wire #469: Weddings, onions and dude ranches (January 2024)", "url": "https://domainnamewire.com/2024/01/15/weddings-onions-and-dude-ranches-dnw-podcast-469/"},
+      {"title": "Peter Askew's site", "url": "https://peteraskew.com"}
+    ]
+  }
+}

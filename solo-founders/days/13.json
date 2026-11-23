@@ -1,0 +1,402 @@
+{
+ "n": 13,
+ "name": "Arpit Bhayani",
+ "short": "Arpit",
+ "wisdom": "Charge properly for depth, and fit the teaching around your day job.",
+ "email": {
+  "subject": "His side business cost him Google",
+  "hook": "Arpit Bhayani's weekend teaching business got big enough that it cost him a job at Google he says he dearly loved, and he still runs it every Saturday and Sunday morning, from 9 to 12.",
+  "lead": [
+   "Let's say it plainly first: Arpit is not a solo founder. He works full time at Razorpay as a Principal Engineer II. His courses are a side business, run through a company called Relog Deeptech Pvt. Ltd. So he's not in this series because he quit, he's here because he didn't.",
+   "That makes him the most useful person for anyone still holding a job. He shows you can build a serious, premium course business on weekends, priced at about ₹50,000 a seat. He also shows the cost: read your employment contract before the side thing gets big."
+  ],
+  "stats": [
+   {
+    "value": "₹49,999",
+    "label": "per seat, January 2027 cohort"
+   },
+   {
+    "value": "37",
+    "label": "cohorts run so far"
+   },
+   {
+    "value": "28",
+    "label": "countries his students come from"
+   }
+  ],
+  "chart": {
+   "title": "Where his audience follows him, by his own site, Nov 2026",
+   "points": [
+    {
+     "label": "LinkedIn",
+     "value": 280000,
+     "display": "280K+"
+    },
+    {
+     "label": "YouTube",
+     "value": 210000,
+     "display": "210K+"
+    },
+    {
+     "label": "X",
+     "value": 120000,
+     "display": "120K+"
+    },
+    {
+     "label": "GitHub",
+     "value": 7000,
+     "display": "7K+"
+    }
+   ],
+   "note": "Follower counts as listed on arpitbhayani.me."
+  },
+  "sections": [
+   {
+    "title": "What he's doing right now",
+    "paras": [
+     "By day, at Razorpay, he builds Agent Studio, which lets merchants create their own AI agents, and he leads the Customer Data Platform and Merchant Developer Experience. On the side he's building px0.ai, an open-source tool for reviewing AI-written code, maintaining DiceDB, publishing on arXiv, and running his System Design Masterclass and a newer Applied AI Masterclass.",
+     "If that sounds like a lot, it is. But notice the pattern: **his day job and his teaching feed each other.** What he learns building systems at work becomes what he teaches on the weekend."
+    ]
+   },
+   {
+    "title": "How the money comes in",
+    "stats": true,
+    "paras": [
+     "One premium live cohort, sold off a big free library. The January 2027 System Design Masterclass costs ₹49,999 including taxes, about $699. It runs six weeks, 12 sessions and more than 40 live hours, on Saturdays and Sundays from 9am to 12pm IST. Recordings of the June 2026 cohort sell separately for ₹49,998. There's a two-day refund window.",
+     "He has never disclosed revenue. His page says the masterclass has run 37 cohorts with engineers from 28 countries, and it gives both 2,000+ and 3,000+ as the number of engineers taught. If you multiply that by the current price you get a lifetime figure in the ₹10 to 15 crore range, but that's our rough maths, not his, and discounts mean it's probably high."
+    ]
+   },
+   {
+    "title": "How he gets the students",
+    "chart": true,
+    "paras": [
+     "Free content, and a lot of it. His site lists 268 videos, 112 blogs and 673 notes on things like system design, database internals and Redis internals. He's followed by 210,000+ people on YouTube, 120,000+ on X and 280,000+ on LinkedIn.",
+     "The proof is in the logos. His masterclass page shows alumni from Netflix, Google, Stripe, Flipkart and more. Even the assignments are public on GitHub. **When engineers at those companies pay ₹50,000 to learn from you, the price itself becomes a signal.**"
+    ]
+   },
+   {
+    "title": "The part nobody talks about",
+    "paras": [
+     "In January 2026 he announced he had left Google, and that it wasn't his choice. The exit came from a conflict between the job and his courses and YouTube work. \"I had no plans of leaving, but I had no choice left,\" he wrote, and added that once legal gets involved, there isn't much you can do.",
+     "He was gracious about it, saying he'd forever be grateful to Google for two stints. But the lesson for anyone building on the side is sharp. Your contract matters as much as your content."
+    ]
+   }
+  ],
+  "tryToday": "Open your employment contract tonight and read the sections on outside work and intellectual property. Then write down one deep topic from your job you could teach without crossing that line.",
+  "button": "Read how he built the masterclass"
+ },
+ "page": {
+  "intro": "A backend engineer with more than 12 years at places like Amazon, Unacademy and Google, who built a premium system design course on weekends. He still has a full-time job, now at Razorpay, and his story is the honest version of building on the side.",
+  "stats": [
+   {
+    "value": "₹49,999",
+    "num": 49999,
+    "prefix": "₹",
+    "suffix": "",
+    "label": "per seat",
+    "note": "January 2027 cohort"
+   },
+   {
+    "value": "37",
+    "num": 37,
+    "prefix": "",
+    "suffix": "",
+    "label": "cohorts run",
+    "note": "his masterclass page, Nov 2026"
+   },
+   {
+    "value": "2,000+",
+    "num": 2000,
+    "prefix": "",
+    "suffix": "+",
+    "label": "engineers taught",
+    "note": "the page also says 3,000+"
+   },
+   {
+    "value": "28",
+    "num": 28,
+    "prefix": "",
+    "suffix": "",
+    "label": "countries",
+    "note": "where his students come from"
+   }
+  ],
+  "chapters": [
+   {
+    "label": "Who he is",
+    "title": "A full-time engineer first",
+    "paras": [
+     "Arpit is different from almost everyone else in this series, so let's say it straight away. He is not a solo founder. As of November 2026 he works full time at Razorpay as a Principal Engineer II in Data and AI. His courses are a side business, run through his company, Relog Deeptech Pvt. Ltd. We don't know whether he has teaching assistants or anyone else helping with the cohorts.",
+     "His site says he has more than 12 years of experience scaling backend systems. He worked on Amazon's Fast Data team, on moving cold data off hot storage and building a query interface across storage tiers. At Unacademy he was in engineering leadership, both as an individual contributor and a manager, and he built and led the Search, SRE and Data Engineering teams. And he did two separate stints at Google as a Staff Engineer, on GCP Memorystore and GCP Dataproc.",
+     "He's based in Bengaluru. That's about where the public record ends. His site doesn't give dates for those jobs, and where he studied, where he grew up or what money looked like early on isn't public. One honest note: almost every number on this page comes from Arpit's own site, and he has never disclosed revenue, so the figures are his claims and the money maths is ours.",
+     "Why put him in a series about solo founders at all? Because most of us reading this have a job too. **Arpit is proof of what you can build without quitting, and of what it can cost.**"
+    ]
+   },
+   {
+    "label": "Learning in public",
+    "title": "Hundreds of notes nobody asked him to write",
+    "paras": [
+     "Long before the course, there was the free stuff. Arpit learns in public through blogs, notes, videos and social posts about system design, database internals and Redis internals. His stated aim is to \"spark engineering curiosity\".",
+     "The volume is the thing. In November 2026 his site counted 268 videos, 112 blogs and 673 notes. Another page rounds it to \"100+ blogs\", \"600+ notes\" and \"250+ no-fluff engineering videos\". Either way, that's years of work given away.",
+     "That library built a following across platforms. By his own site: more than 210,000 subscribers on YouTube, more than 120,000 followers on X, more than 280,000 on LinkedIn and more than 7,000 on GitHub. LinkedIn being the biggest is interesting for us. His buyers are working engineers, and that's where working engineers scroll.",
+     "When he started writing, what the first post was, and how the first readers found him: he hasn't told that story publicly."
+    ],
+    "chart": 0,
+    "pull": {
+     "text": "spark engineering curiosity",
+     "cite": "Arpit, on his own site"
+    }
+   },
+   {
+    "label": "The product",
+    "title": "A ₹50,000 course that runs on weekend mornings",
+    "paras": [
+     "His main product is the System Design Masterclass, a live cohort. We don't know when the first one ran or what it cost then. What we can see is how it works today, and it's a design worth studying.",
+     "The January 2027 cohort runs for six weeks: 12 sessions and more than 40 live hours. Classes are on Saturdays and Sundays from 9am to 12pm IST. **That schedule fits around a full-time job, his and his students'.** Nobody has to take leave to attend, and he doesn't either.",
+     "It costs ₹49,999 including taxes, about $699. If you miss the live cohort, recordings of the June 2026 batch cost ₹49,998, which tells you the price is about the content, not just the live access. There's a two-day, no-questions-asked refund, though the page says a discounted price can't be refunded.",
+     "Even the homework is out in the open. The masterclass assignments sit in a public GitHub repository under an org called relogX. Anyone can see what students are asked to build, which is a quiet way of saying: this is real work, have a look.",
+     "Next to it sit two other courses: the Applied AI Masterclass and System Design for Beginners, which is self-paced. Prices for those aren't shown on the main course page."
+    ]
+   },
+   {
+    "label": "Scale",
+    "title": "37 cohorts and logos you know",
+    "paras": [
+     "Here is what scale looks like for him. By November 2026 the masterclass page said 37 cohorts had run, with engineers from 28 countries. The same page gives the number of engineers as both \"3000+\" and \"2000+\", so the honest figure is somewhere from 2,000 to more than 3,000.",
+     "The alumni logos do the selling: Netflix, Tesla, Google, Microsoft, Amazon, Atlassian, Stripe, GitHub, Flipkart, PayPal, Yelp and Gojek. If you're a backend engineer in Bengaluru and you see that wall, ₹50,000 starts to feel like an investment, not an expense.",
+     "What does it earn? He's never said. If you take 2,000 to 3,000 learners and multiply by about ₹50,000, you get a gross figure somewhere around ₹10 to 15 crore over the life of the course. **That's our rough maths, not his number**, and it's probably high, because prices changed over the years and discounts apply. But even a fraction of that is a serious business to run on weekend mornings.",
+     "No turning point is documented, no launch-day story, no first ten students. The growth seems to have come the slow way, cohort after cohort, with the free library pulling people in."
+    ]
+   },
+   {
+    "label": "Side projects",
+    "title": "Some take off, some don't",
+    "paras": [
+     "Arpit builds things for fun, and he says so. \"Some take off, some don't, but building them is always fun,\" his site says. He doesn't name the ones that didn't.",
+     "The ones we know about are serious. DiceDB is a fork of Valkey, the open-source Redis alternative, with multi-tiering and query subscriptions. In 2024 he co-founded Profile.fyi, which was later acquired by Mercor, though the terms weren't disclosed. He also publishes research on arXiv.",
+     "His newest one is px0.ai, an open-source review workbench for AI-generated code. It says a lot about where he thinks things are going. If AI writes more of our code, someone still has to review it properly, and that takes tools and deep systems knowledge."
+    ],
+    "pull": {
+     "text": "Some take off, some don't, but building them is always fun.",
+     "cite": "Arpit, on his own site"
+    }
+   },
+   {
+    "label": "The cost",
+    "title": "The day it cost him Google",
+    "paras": [
+     "In January 2026 Arpit announced on X that he had left Google, and that it was not voluntary. The cause was a conflict between his job and his outside work, the courses and the YouTube channel.",
+     "His words were plain. \"I had no plans of leaving, but I had no choice left.\" And then: \"once legal gets involved, there is not much you can do.\" He said he was bummed about leaving a domain he dearly loved.",
+     "He didn't go out angry. \"I will forever be grateful to Google for giving me two stints,\" he wrote. That's a classy line, and it's also a reminder that he went back to them once already, so this wasn't a job he wanted out of.",
+     "A commenter replied that it's wild that big tech still treats side projects as a bug and not a feature. That wasn't Arpit's line, but it's what a lot of people thought. **For anyone building on the side, this is the chapter to remember.** The content can be brilliant and the business can be working, and a clause in a contract can still end the job."
+    ],
+    "pull": {
+     "text": "I had no plans of leaving, but I had no choice left.",
+     "cite": "Arpit on X, January 2026"
+    }
+   },
+   {
+    "label": "Where it stands",
+    "title": "Razorpay by day, AI on the weekend",
+    "paras": [
+     "After Google he moved to Razorpay, which apparently allows the side business. We don't know his exact start date. It's presumably early 2026, but that isn't confirmed.",
+     "At Razorpay he builds Agent Studio, a tool that lets merchants create AI agents, and he leads the Customer Data Platform and Merchant Developer Experience. On weekends he still teaches, and his course list has grown to include the Applied AI Masterclass.",
+     "Arpit hasn't said much in public about the future of AI or engineering careers. His work speaks for him though. He's building agents at his job, teaching applied AI on the side, and making a tool for reviewing AI-written code. The bet seems to be that AI makes deep systems knowledge more valuable, not less."
+    ],
+    "chart": 1
+   }
+  ],
+  "failuresTitle": "What went wrong",
+  "failuresIntro": "Arpit hasn't shared a failure count or named failed products. The one big public setback is the one that matters most for anyone building on the side.",
+  "failures": [
+   {
+    "year": "Jan 2026",
+    "name": "Forced out of Google",
+    "what": "He announced that his exit from Google was not voluntary and came from a conflict with his courses and YouTube work. He said once legal gets involved there isn't much you can do. He had done two stints there and loved the work.",
+    "lesson": "Before your side business grows, read your contract's outside-work and IP clauses, and get clarity in writing."
+   },
+   {
+    "year": "Undated",
+    "name": "Side projects that didn't take off",
+    "what": "He says plainly that some of his side projects take off and some don't, but he doesn't name the ones that didn't. He keeps building anyway because he enjoys it.",
+    "lesson": "If you build for fun as well as for money, the misses cost you less."
+   }
+  ],
+  "playbookTitle": "How he fills a ₹50,000 cohort",
+  "playbook": [
+   {
+    "title": "Give away a huge library",
+    "text": "268 videos, 112 blogs and 673 notes by November 2026, on system design, database internals and Redis internals. The free stuff is so deep that the paid course feels like the obvious next step."
+   },
+   {
+    "title": "Be where working engineers are",
+    "text": "His biggest following is LinkedIn at 280,000+, then YouTube at 210,000+ and X at 120,000+. His buyers have jobs, so he shows up where people with jobs scroll."
+   },
+   {
+    "title": "Schedule for the employed",
+    "text": "Saturdays and Sundays, 9am to 12pm IST, for six weeks. Neither he nor his students need to take a day off."
+   },
+   {
+    "title": "Price for depth, not for volume",
+    "text": "₹49,999, about $699, for 12 sessions and 40+ live hours. Few people can teach database internals well, so he doesn't compete on price."
+   },
+   {
+    "title": "Sell the recordings too",
+    "text": "Recordings of the June 2026 cohort cost ₹49,998. People who can't make the live dates still buy, and the content earns twice."
+   },
+   {
+    "title": "Let the logos speak",
+    "text": "His page shows alumni from Netflix, Google, Stripe, Flipkart and more, with engineers from 28 countries. That wall of logos is the testimonial."
+   },
+   {
+    "title": "Make the homework public",
+    "text": "The assignments are on GitHub under relogX. Anyone thinking about buying can see the real work before paying."
+   },
+   {
+    "title": "Offer a lower step",
+    "text": "System Design for Beginners is self-paced, sitting below the masterclass. It catches people who aren't ready for the full cohort yet."
+   }
+  ],
+  "charts": [
+   {
+    "title": "Where his audience follows him, by his own site, Nov 2026",
+    "points": [
+     {
+      "label": "LinkedIn",
+      "value": 280000,
+      "display": "280K+"
+     },
+     {
+      "label": "YouTube",
+      "value": 210000,
+      "display": "210K+"
+     },
+     {
+      "label": "X",
+      "value": 120000,
+      "display": "120K+"
+     },
+     {
+      "label": "GitHub",
+      "value": 7000,
+      "display": "7K+"
+     }
+    ],
+    "note": "Follower counts as listed on arpitbhayani.me."
+   },
+   {
+    "title": "What he has given away for free, by his own site, Nov 2026",
+    "points": [
+     {
+      "label": "Notes",
+      "value": 673,
+      "display": "673"
+     },
+     {
+      "label": "Videos",
+      "value": 268,
+      "display": "268"
+     },
+     {
+      "label": "Blogs",
+      "value": 112,
+      "display": "112"
+     }
+    ],
+    "note": "Counts shown on arpitbhayani.me."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "Before 2024",
+    "text": "Works at Amazon on the Fast Data team, leads Search, SRE and Data Engineering at Unacademy, and does the first of two stints at Google. His site gives no dates."
+   },
+   {
+    "when": "Over the years",
+    "text": "Builds a free library of videos, blogs and notes on system design and database internals.",
+    "big": true
+   },
+   {
+    "when": "Over the years",
+    "text": "Runs the System Design Masterclass cohort after cohort, on weekend mornings."
+   },
+   {
+    "when": "2024",
+    "text": "Co-founds Profile.fyi, later acquired by Mercor on undisclosed terms."
+   },
+   {
+    "when": "Jan 2026",
+    "text": "Announces he has left Google, not by choice, after a conflict with his courses and YouTube work.",
+    "big": true
+   },
+   {
+    "when": "2026",
+    "text": "Joins Razorpay as Principal Engineer II, building Agent Studio. The exact start date isn't public."
+   },
+   {
+    "when": "Jun 2026",
+    "text": "Runs the cohort whose recordings later sell for ₹49,998."
+   },
+   {
+    "when": "Nov 2026",
+    "text": "Masterclass page shows 37 cohorts and engineers from 28 countries.",
+    "big": true
+   },
+   {
+    "when": "Jan 2027",
+    "text": "Next live cohort, priced at ₹49,999 including taxes."
+   }
+  ],
+  "quotes": [
+   {
+    "text": "I had no plans of leaving, but I had no choice left.",
+    "cite": "X, January 2026, on leaving Google"
+   },
+   {
+    "text": "once legal gets involved, there is not much you can do.",
+    "cite": "X, January 2026"
+   },
+   {
+    "text": "I am bummed about leaving a domain that I dearly love.",
+    "cite": "X, January 2026"
+   },
+   {
+    "text": "I will forever be grateful to Google for giving me two stints.",
+    "cite": "X, January 2026"
+   },
+   {
+    "text": "Some take off, some don't, but building them is always fun.",
+    "cite": "arpitbhayani.me, on side projects"
+   }
+  ],
+  "steal": [
+   "You don't have to quit to start. A weekend cohort, Saturday and Sunday mornings, can grow into a real business while you keep your salary.",
+   "Teach the hard thing. Database internals and system design are rare skills, which is why he can charge about ₹50,000 and fill 37 cohorts.",
+   "Build the free library first and keep adding to it. His hundreds of notes and videos are what make the paid course an easy yes.",
+   "Read your employment contract now, not later. Arpit's exit from Google shows that a side business can cost you the job if the rules aren't clear.",
+   "Show the work in public, from free notes to the course assignments on GitHub. It lets buyers judge the quality before they pay."
+  ],
+  "sources": [
+   {
+    "title": "Arpit Bhayani's site",
+    "url": "https://arpitbhayani.me/"
+   },
+   {
+    "title": "Arpit Bhayani's courses page",
+    "url": "https://arpitbhayani.me/courses"
+   },
+   {
+    "title": "System Design Masterclass page",
+    "url": "https://arpitbhayani.me/masterclass"
+   },
+   {
+    "title": "Masterclass assignments on GitHub (relogX)",
+    "url": "https://github.com/relogX/system-design-assignments"
+   },
+   {
+    "title": "Indiablooms: why this Google engineer says he had no choice but to quit",
+    "url": "https://www.indiablooms.com/finance/why-this-google-engineer-says-he-had-no-choice-but-to-quit/details"
+   }
+  ]
+ }
+}

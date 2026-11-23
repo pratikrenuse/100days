@@ -1,0 +1,233 @@
+{
+  "n": 28,
+  "name": "Sahil Bloom",
+  "short": "Sahil",
+  "wisdom": "Turn the services you pay for into companies you own.",
+  "email": {
+    "subject": "He'd never written a thing. Then $10M.",
+    "hook": "Sahil Bloom had never written anything before 2020, when he started spending four to eight hours on each Twitter thread. By his own count, the business around his newsletter did $10M in 2023.",
+    "lead": [
+      "Sahil is interesting for us for one reason above all: he figured out how to make the cost of growing an audience pay for itself. Most creators pay agencies to grow. He co-founded the agencies.",
+      "Just so we're clear from the start, he's not solo. Those agencies are run by partners with their own staff, and he owns a holding company with several businesses in it. What's solo is the writing."
+    ],
+    "stats": [
+      {"value": "5K to 700K", "label": "Twitter followers, Jul 2020 to Sep 2022"},
+      {"value": "$70K+", "label": "a month from the newsletter, early 2024"},
+      {"value": "$10M", "label": "the whole business in 2023, he says"}
+    ],
+    "chart": {
+      "title": "Sahil's Twitter followers",
+      "points": [
+        {"label": "Jul 2020", "value": 5000, "display": "5K"},
+        {"label": "Sep 2022", "value": 700000, "display": "700K"}
+      ],
+      "note": "In the year before September 2022 he averaged about 50,000 new followers a month."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Sahil writes his newsletter, The Curiosity Chronicle, and runs SRB Holdings, which he says owns “ten cash-flowing business assets”. He also has a venture fund, SRB Ventures, whose size isn't public.",
+          "The big project of the last two years is his book, The 5 Types of Wealth, published in February 2025. It became a New York Times and Sunday Times bestseller, and he's building it into a franchise, starting with a Life Planner."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "In January 2024 he said the newsletter alone made “upwards of $70,000 per month”, and that he put it all back into the business. The wider business did $10M in 2023, by his account. Nobody has audited either number.",
+          "The clever bit is where that $10M comes from. **He co-founded the agencies he would otherwise have paid**: Paperboy grows newsletters, HeyFriends! grows YouTube channels and Viralcuts edits short videos. He's their famous first client, and they sell the same service to other creators."
+        ]
+      },
+      {
+        "title": "How he got the readers",
+        "chart": true,
+        "paras": [
+          "Long Twitter threads, written at home during the pandemic in 2020. Each one took him four to eight hours. He had never written before. He went from about 5,000 followers in July 2020 to just under 700,000 in September 2022.",
+          "The newsletter rode on that. It started in 2020 with about 100 followers and had 118,000 subscribers by September 2022."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "paras": [
+          "Before any of this he was a Stanford pitcher whose pro career ended with a shoulder injury, and then a private equity investor who says he “didn't get a lot of energy out of the work”. He was also drinking six or seven nights a week.",
+          "The real turn wasn't a viral thread. In May 2021 a friend told him he'd see his parents only 15 more times before they died. Within 45 days he'd left his job, sold his California house and moved about 3,000 miles to be near both sets of parents."
+        ]
+      }
+    ],
+    "tryToday": "List the three things you'd pay someone else to do if your audience or product started growing tomorrow, like design, video editing or ads. Pick one and ask: who's the best person I know at this, and would they want to build it as a business with me as their first client?",
+    "button": "Read how he built it"
+  },
+  "page": {
+    "intro": "A Stanford pitcher turned private equity investor, Sahil Bloom started writing long Twitter threads at home in 2020 with no writing experience at all. Two years later he had about 700,000 followers. What makes him worth studying is what he did next: he turned the cost of growing into businesses he co-owns.",
+    "stats": [
+      {"value": "700K", "num": 700, "prefix": "", "suffix": "K", "label": "Twitter followers by Sep 2022", "note": "up from about 5K in Jul 2020"},
+      {"value": "$70,000+", "num": 70000, "prefix": "$", "suffix": "+", "label": "a month from the newsletter", "note": "his own number, Jan 2024"},
+      {"value": "$10M", "num": 10, "prefix": "$", "suffix": "M", "label": "the business in 2023", "note": "his own number"},
+      {"value": "10", "num": 10, "prefix": "", "suffix": "", "label": "cash-flowing businesses", "note": "inside SRB Holdings, per his site"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A pitcher whose arm gave out",
+        "paras": [
+          "Sahil Bloom was born on 5 January 1991. His mother grew up in Bangalore and his father grew up in the Bronx. He met his wife, Elizabeth, in 2007 in a high school computer lab, which is about as sweet a detail as you'll find in any founder story.",
+          "From 2009 to 2013 he pitched for Stanford's Division I baseball team. The team made two NCAA Super Regionals while he was there, and he picked up two PAC-12 All-Academic awards, so he was doing the books as well as the bullpen. He graduated with a BA in Economics and Sociology in 2013 and an MA in Public Policy in 2014.",
+          "He wanted to play professionally. Then a shoulder injury at the end of his junior season, in his words, “derailed those aspirations”. That same 2012 season he also gave up a grand slam in an NCAA Super Regional against Florida State, a moment he brought up himself in a 2025 interview.",
+          "It's worth noticing how he tells this. He doesn't skip the embarrassing bit. The grand slam is part of his story because it's the kind of public failure most of us would hide."
+        ]
+      },
+      {
+        "label": "The day job",
+        "title": "Seven years in private equity",
+        "paras": [
+          "Right after school, in 2014, he joined Altamont Capital Partners as an analyst. Altamont is a private equity fund in the Bay Area that spun out of Golden Gate Capital, described as managing $3.5B. He rose to Vice President and sat on the boards of companies the fund owned.",
+          "He calls it the “first seven years of my career in high finance.” It was a good job by any normal standard. But looking back, he said he learned a ton, and then: “I didn't get a lot of energy out of the work.”",
+          "That line matters for anyone with a decent job and a restless mind. Sahil wasn't escaping a bad career. He was in a good one that didn't light him up. And he didn't quit to find out what would. **He kept the job and started writing on the side.**",
+          "Most of the figures on this page are Sahil's own, from his site and his interviews, and none of them has been audited, so read them as his account."
+        ],
+        "pull": {"text": "I didn't get a lot of energy out of the work.", "cite": "Sahil on private equity, to Entrepreneur, January 2024"}
+      },
+      {
+        "label": "The first version",
+        "title": "Four to eight hours a thread",
+        "paras": [
+          "In 2020 the pandemic sent everyone home, and Sahil started posting long threads on Twitter. He had no writing experience before this. None.",
+          "Each thread took him four to eight hours. That's a whole evening, or a big chunk of a weekend, for one post. Think about what that means next to a full-time private equity job. He wasn't dashing off hot takes. He was building small, careful explainers, one at a time.",
+          "At the same time he started a newsletter, The Curiosity Chronicle. It began, by his own account, with about 100 followers. So the starting position was a few thousand people on Twitter and a hundred on email.",
+          "We'd love to tell you what his first thread said and how it did, but he hasn't shared that publicly, and it hasn't come up in interviews. Same with which platform the newsletter started on. What we do know is the effort per post, and it's the thing most people skip."
+        ]
+      },
+      {
+        "label": "The first 100,000",
+        "title": "From 5,000 followers to 700,000 in two years",
+        "paras": [
+          "In July 2020 Sahil had about 5,000 Twitter followers. By September 2022 he had just under 700,000. Over the twelve months before that, he was averaging about 50,000 new followers a month.",
+          "The newsletter followed the threads. By September 2022 it had 118,000 subscribers, up from about 100 when it started. The threads were the top of the funnel and the newsletter was where people stayed.",
+          "Interestingly, Creator Science, which studied his growth, came away with a humble conclusion. Its writer's take was that there was nothing special about him or his approach. That's not an insult. It's the most hopeful thing you can say about someone's growth, because it means the method was repeatable: long, useful threads, many hours each, posted over and over.",
+          "What isn't public is his posting rhythm, whether he paid for any growth in those years, and whether he ran a referral programme. So we can't tell you his weekly schedule. We can tell you the threads were long and slow to make, and that they worked."
+        ],
+        "chart": 0
+      },
+      {
+        "label": "The lowest point",
+        "title": "Fifteen more visits",
+        "paras": [
+          "Sahil is open about the years before the turn. He has said he was drinking “six or seven nights a week”. He has also spoken publicly about going through infertility.",
+          "Then, in May 2021, a friend said something that stopped him: “you're going to see your parents 15 more times before they die.”",
+          "Sahil acted fast. Within 45 days he had stepped away from his full-time job, sold his California house and moved about 3,000 miles to live near both his and his wife's parents. His son, Roman, was born a year later, on 16 May 2022.",
+          "Notice the order. The audience was already growing when he left. He didn't quit to become a creator. He quit because of his parents, and the writing was already strong enough to carry him."
+        ],
+        "pull": {"text": "you're going to see your parents 15 more times before they die.", "cite": "a friend to Sahil, May 2021, as he told Barry Ritholtz"}
+      },
+      {
+        "label": "Finding the money",
+        "title": "He co-founded the agencies he'd have paid",
+        "paras": [
+          "Here's the part of Sahil's story that's genuinely new in this series. Once you have a big audience, growing it further costs money. You pay someone to grow your newsletter, someone to grow your YouTube channel, someone to edit your short videos.",
+          "Sahil looked at those bills and asked himself: “How can I flip those cost centers into profit centers?”",
+          "So he co-founded three businesses with operators who run them day to day. **Paperboy grows newsletters. HeyFriends! grows YouTube channels. Viralcuts edits short-form video.** He is, in the words of an Entrepreneur profile, their “high-profile client”. They do his growth work, his results become their case study, and they sell the same service to other creators.",
+          "That changes the maths on the newsletter. In January 2024 he said the newsletter made “upwards of $70,000 per month”, all reinvested. Because the agencies make money too, he doesn't have to squeeze the newsletter for every advertising dollar. He can run less advertising and, as he put it, “grow my newsletter and my social platforms much faster.” He called this “the really big unlock.”",
+          "The total, by his account, was $10M for the business in 2023. That's the whole thing, not the newsletter alone, and it's built mostly on the agencies."
+        ],
+        "pull": {"text": "How can I flip those cost centers into profit centers?", "cite": "Sahil, to Entrepreneur, January 2024"}
+      },
+      {
+        "label": "Scaling it",
+        "title": "A holding company, a fund and a book",
+        "paras": [
+          "Today the businesses sit under SRB Holdings, which he describes as owning “ten cash-flowing business assets”. He also runs SRB Ventures, a venture fund. The fund's size isn't public, and neither is the total headcount across the companies.",
+          "On 4 February 2025 he published The 5 Types of Wealth, with Ballantine in the US and William Collins in the UK. It hit the New York Times Business bestseller list and the Sunday Times bestseller list, and carries a blurb from Tim Cook. A spin-off, The 5 Types of Wealth Life Planner, followed. Sales figures for the book aren't public.",
+          "His subscriber count is a bit of a puzzle, even on his own site. The About text says “over 800,000”, while the signup banner on the same page says “225,000+”. So the honest answer is that we don't know which is current.",
+          "There was a bump in the road too. In mid 2022 he got a wave of public criticism for suggesting teenagers knock on doors and offer to buy coffee for potential employers. It made the business press for weeks, and he kept writing."
+        ],
+        "chart": 1
+      },
+      {
+        "label": "How he thinks",
+        "title": "Money is an incomplete scoreboard",
+        "paras": [
+          "Sahil's book is built on one idea: there are five kinds of wealth, financial, time, social, mental and physical, and money is only one of them. He calls money an “incomplete” scoreboard. His advice is to define what “enough” means for you before you chase more.",
+          "He talks about the difference between status you earn and status you buy, and about treating relationships as investments. For graduates, his advice is plain: create value and be reliable. His stated mission is “To positively impact one billion lives”.",
+          "On AI, he's an optimist. In March 2026 he wrote: “I'm optimistic about the future.” He also made a point every marketer should remember: “The existence of a technology is very different than the widespread adoption” of it. In other words, the fact that a tool exists doesn't mean your customers are using it yet, which leaves room for people who teach them.",
+          "And his line about the moment we're in is a nice one to read at 7 am: we may be entering “the best time in history for the curious mind”. For someone who named his newsletter The Curiosity Chronicle, that's not a surprise."
+        ],
+        "pull": {"text": "I'm optimistic about the future.", "cite": "Sahil, in his newsletter, March 2026"}
+      }
+    ],
+    "failuresTitle": "His setbacks were personal, not business",
+    "failuresIntro": "Sahil hasn't shared a single failed business. What he has shared is more personal.",
+    "failures": [
+      {"year": "2012", "name": "The shoulder injury", "what": "A shoulder injury at the end of his junior season at Stanford ended his hopes of pitching professionally. He says it “derailed those aspirations”.", "lesson": "The first plan ending can be what frees you for the second one."},
+      {"year": "2012", "name": "The grand slam", "what": "He gave up a grand slam in an NCAA Super Regional against Florida State. He brought it up himself in a 2025 interview.", "lesson": "Telling your most public failure yourself takes away its power and makes people trust you."},
+      {"year": "Before 2021", "name": "Six or seven nights a week", "what": "He has said he was drinking “six or seven nights a week” in the years before his move. He has also talked openly about infertility.", "lesson": "Results online don't fix how you're living offline, so look after both."},
+      {"year": "2022", "name": "The coffee backlash", "what": "He was widely criticised for suggesting teenagers knock on doors and offer to buy coffee for potential employers. It ran in the business press from June to August 2022.", "lesson": "The bigger the audience, the more carefully advice for beginners needs to be worded."}
+    ],
+    "playbookTitle": "How he grew the audience and paid for the growth",
+    "playbook": [
+      {"title": "Long threads, built slowly", "text": "In 2020 he spent four to eight hours on each Twitter thread, while still working in private equity. He went from about 5,000 followers in July 2020 to just under 700,000 by September 2022."},
+      {"title": "Point the threads at a newsletter", "text": "The Curiosity Chronicle started in 2020 with about 100 followers and had 118,000 subscribers by September 2022. Twitter brought people in and email kept them."},
+      {"title": "Reinvest the newsletter money", "text": "In January 2024 he said the newsletter made upwards of $70,000 a month and he put it all back in. Putting it back in is part of how everything else grew."},
+      {"title": "Co-found the agency instead of hiring one", "text": "Paperboy (newsletter growth), HeyFriends! (YouTube growth) and Viralcuts (short-form editing) are run by operator partners. They do his work and sell the same service to other creators."},
+      {"title": "Be the famous first client", "text": "He acts as the agencies' high-profile client rather than running them. His growth is their best advert, and their profits mean he can sell less advertising and grow faster."},
+      {"title": "Turn the big idea into a franchise", "text": "The 5 Types of Wealth (February 2025) became a bestseller in the US and UK, and is now a series of products starting with a Life Planner."}
+    ],
+    "charts": [
+      {
+        "title": "Sahil's Twitter followers",
+        "points": [
+          {"label": "Jul 2020", "value": 5000, "display": "5K"},
+          {"label": "Sep 2022", "value": 700000, "display": "700K"}
+        ],
+        "note": "From Creator Science. He averaged about 50,000 new followers a month in the year before September 2022."
+      },
+      {
+        "title": "The Curiosity Chronicle's subscribers",
+        "points": [
+          {"label": "2020", "value": 100, "display": "about 100"},
+          {"label": "Sep 2022", "value": 118000, "display": "118K"}
+        ],
+        "note": "His site now shows both “over 800,000” and “225,000+”, so the current figure isn't clear."
+      }
+    ],
+    "timeline": [
+      {"when": "1991", "text": "Born on 5 January. His mother grew up in Bangalore and his father in the Bronx.", "big": false},
+      {"when": "2009 to 2013", "text": "Pitches for Stanford's Division I baseball team.", "big": false},
+      {"when": "2012", "text": "A shoulder injury ends his pro hopes. He gives up a grand slam against Florida State.", "big": true},
+      {"when": "2014", "text": "Finishes an MA in Public Policy and joins Altamont Capital Partners as an analyst.", "big": false},
+      {"when": "2020", "text": "Starts writing long Twitter threads at home, four to eight hours each, and launches The Curiosity Chronicle with about 100 followers.", "big": true},
+      {"when": "Jul 2020", "text": "About 5,000 Twitter followers.", "big": false},
+      {"when": "May 2021", "text": "A friend tells him he'll see his parents 15 more times. Within 45 days he leaves his job, sells his house and moves about 3,000 miles.", "big": true},
+      {"when": "May 2022", "text": "His son Roman is born.", "big": false},
+      {"when": "Sep 2022", "text": "Just under 700,000 Twitter followers and 118,000 newsletter subscribers.", "big": false},
+      {"when": "2023", "text": "The business around the newsletter does $10M, by his account, mostly through the agencies he co-owns.", "big": true},
+      {"when": "Feb 2025", "text": "Publishes The 5 Types of Wealth. It becomes a New York Times and Sunday Times bestseller.", "big": true},
+      {"when": "Mar 2026", "text": "Writes that he's optimistic about AI and the future.", "big": false}
+    ],
+    "quotes": [
+      {"text": "I didn't get a lot of energy out of the work.", "cite": "on private equity, Entrepreneur, January 2024"},
+      {"text": "How can I flip those cost centers into profit centers?", "cite": "Entrepreneur, January 2024"},
+      {"text": "the really big unlock", "cite": "on owning his growth agencies, Entrepreneur, January 2024"},
+      {"text": "you're going to see your parents 15 more times before they die.", "cite": "a friend's words, as Sahil told Barry Ritholtz, February 2025"},
+      {"text": "I'm optimistic about the future.", "cite": "his newsletter, March 2026"},
+      {"text": "the best time in history for the curious mind", "cite": "his newsletter, March 2026"}
+    ],
+    "steal": [
+      "Keep the good job while you write. Sahil built a 700,000 audience while working in private equity, and only left for family reasons once the writing could carry him.",
+      "Spend real hours on each post. Four to eight hours a thread sounds slow, but slow, careful posts are what people save and share.",
+      "Look at your growth costs as business ideas. The thing you're about to pay an agency for might be a business you could co-own with the right operator.",
+      "If you have an audience, you can be a partner's best case study. Your results become their pitch, and that's worth equity, not just a fee.",
+      "Tell your most embarrassing failure yourself, early. Sahil's grand slam and injury make the later success feel earned, not lucky."
+    ],
+    "sources": [
+      {"title": "Ritholtz, transcript with Sahil Bloom (Feb 2025)", "url": "https://ritholtz.com/2025/02/transcript-sahil-bloom/"},
+      {"title": "Entrepreneur, how Sahil Bloom built a newsletter making $70,000 a month (Jan 2024)", "url": "https://www.entrepreneur.com/starting-a-business/how-sahil-bloom-built-a-newsletter-that-makes-70000-a/467228"},
+      {"title": "Sahil Bloom, About", "url": "https://sahilbloom.com/about"},
+      {"title": "Creator Science, how Sahil Bloom grew to 700K followers (Sep 2022)", "url": "https://go.creatorscience.com/posts/how-sahil-bloom-grew-to-700k-follower"},
+      {"title": "Sahil Bloom, AI negativity bias (Mar 2026)", "url": "https://www.sahilbloom.com/newsletter/ai-negativity-bias-why-you-only-hear-about-ai-doom"},
+      {"title": "Wikipedia, Sahil Bloom", "url": "https://en.wikipedia.org/wiki/Sahil_Bloom"},
+      {"title": "Penguin Random House, The 5 Types of Wealth", "url": "https://www.penguinrandomhouse.com/books/731381/the-5-types-of-wealth-by-sahil-bloom/9780593723180"},
+      {"title": "Penguin Random House, The 5 Types of Wealth Life Planner", "url": "https://www.penguinrandomhouse.com/books/812900/the-5-types-of-wealth-life-planner-by-sahil-bloom/9798217298570/"}
+    ]
+  }
+}

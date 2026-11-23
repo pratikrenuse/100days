@@ -1,0 +1,265 @@
+{
+  "n": 44,
+  "name": "Pat Walls",
+  "short": "Pat",
+  "wisdom": "Post the whole thing where your readers already are.",
+  "email": {
+    "subject": "300 visits in month one. Then HubSpot bought it.",
+    "hook": "Pat Walls launched Starter Story with three interviews from friends and got about 300 visits in its first month, and in February 2026 HubSpot Media bought it.",
+    "lead": [
+      "Pat started this as a solo side project from a Starbucks, before work, carrying about $60,000 of debt and a failed startup behind him. He had under 100 Twitter followers. If anyone ever tells you that you need an audience to start, Pat is the counterexample.",
+      "To be clear about the ending: by the time of the sale Starter Story wasn't a one-man show. It had three full-time people, Pat, his sister Sam as COO and a producer, Gus Tiffer, and all three joined HubSpot Media. The price wasn't disclosed."
+    ],
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "Pat now works inside HubSpot Media with his two teammates. The deal has a lovely origin: it started with a public tweet on 23 September 2025 suggesting HubSpot should buy Starter Story. Five months later, in February 2026, it did.",
+          "At the sale, by his own account, Starter Story had **more than 800,000 YouTube subscribers**, about 275,000 newsletter readers, about 1.6 million followers in total and more than 10,000 paid members. He described the business as profitable, with \"seven-figure\" revenue. His title at HubSpot isn't public. On the team, he said: \"It became a real team.\""
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "For the first few months it made nothing. Then Pat started cold-emailing possible sponsors, 10 to 20 a week, and invoicing them by PayPal. By November 2018 that was $1,700 a month. Klaviyo signed a one-year sponsorship, and in the early years more than half of revenue came from Klaviyo alone.",
+          "By August 2019 the mix was about 80% sponsors, 10% premium memberships and 10% affiliates. He much preferred a long sponsor deal at a lower monthly rate to a short expensive one, because it made the income predictable. Later came $500,000+ a year by March 2022, over $1 million a year in 2023, and the YouTube-driven business HubSpot bought."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "He fought WordPress for about four hours and gave up. Then he used create-react-app on Netlify, with the stories hard-coded into the JavaScript. Later he moved to Ruby on Rails and wrote his own simple CMS. Costs were about $85 a month in total.",
+          "He'd planned to launch with ten interviews and launched with three: a college friend, an old roommate and a friend of a friend. Phone interviews took him about a month to turn into three articles. **Three was enough to start.**"
+        ]
+      },
+      {
+        "title": "How he got the readers",
+        "paras": [
+          "Month one brought about 300 visits, and sharing with friends got \"crickets\". So he tested 12 channels in his first 90 days. Only one worked: posting the full interviews on Reddit, especially r/Entrepreneur, with a single link back. Good posts got up to 100,000 views and about 1,000 visitors, and about 10% of those joined the newsletter.",
+          "Then he turned it into a machine. He sent more than 6,000 cold emails to find founders to interview, about 80% of his interviews came that way, and he eventually automated Reddit posting to about 120 posts a month. The hook that made it all work: every featured founder had to share exact revenue numbers."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "Pat's first startup, a B2B tool for small brands selling to retailers, got rejected by Y Combinator and shut down. Product Hunt was \"not a breakout success\". A Hacker News hit brought 35,000 visitors in a day but they were poor quality and didn't stick.",
+          "And in 2019, when Reddit was the business, an anonymous petition to ban him from Reddit reached the front page. That's the danger of one channel. It's part of why the move to YouTube mattered so much later."
+        ]
+      }
+    ],
+    "stats": [
+      {"value": "300", "label": "visits in the first month"},
+      {"value": "6,000+", "label": "cold emails to find founders"},
+      {"value": "800K+", "label": "YouTube subscribers at the sale"}
+    ],
+    "chart": {
+      "title": "Starter Story revenue, by his own numbers",
+      "points": [
+        {"label": "First months", "value": 0, "display": "$0"},
+        {"label": "Nov 2018", "value": 1700, "display": "$1.7K a month"},
+        {"label": "2019", "value": 8000, "display": "About $8K a month"},
+        {"label": "Mar 2022", "value": 41667, "display": "$500K+ a year"},
+        {"label": "2023", "value": 83333, "display": "$1M+ a year"}
+      ],
+      "note": "Yearly figures are shown as a monthly average so the bars compare. At the 2026 sale he described revenue as seven figures."
+    },
+    "tryToday": "Pick one online community where the people you want to reach already hang out. Write one genuinely useful post that gives away the whole idea there, with a single link at the end, and see who follows it back.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Pat Walls was a software engineer with a failed startup and about $60,000 of debt when he started Starter Story before work in a Starbucks. He grew it with cold email, Reddit and founder interviews that shared real revenue numbers, then YouTube, and sold it to HubSpot Media in February 2026 as a three-person team.",
+    "stats": [
+      {"value": "300", "num": 300, "prefix": "", "suffix": "", "label": "visits in the first month", "note": "October 2017"},
+      {"value": "$1,700", "num": 1700, "prefix": "$", "suffix": "", "label": "a month after a year", "note": "his own numbers, November 2018"},
+      {"value": "800,000+", "num": 800000, "prefix": "", "suffix": "+", "label": "YouTube subscribers at the sale", "note": "February 2026"},
+      {"value": "10,000+", "num": 10000, "prefix": "", "suffix": "+", "label": "paid members at the sale", "note": "February 2026"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A YC rejection and a pets blog that lasted weeks",
+        "paras": [
+          "Pat was a software engineer with a full-time job. A Starter Story page about him, which isn't the strongest source, says he studied at UC Santa Barbara and comes from Tampa, Florida.",
+          "In 2016 he co-founded a B2B software tool to help small brands sell to retailers. He spent about four months on the first version. They got an interview with Y Combinator, and then a rejection. After months without traction they shut it down. Looking back, he told the journalist Simon Owens: \"We realized how hard it is to build a B2B SaaS app\" while also holding down a full-time job.",
+          "Next he tried a pets affiliate blog. He dropped it within weeks. It's a tiny detail, but it matters: he didn't love the topic, and that showed fast.",
+          "What he did love was Indie Hackers, the community and site full of founder interviews. Reading it gave him a clear idea of what he wanted next: a side project he could run alone, with no cofounders, on a topic he actually cared about. Entrepreneurship itself.",
+          "His situation wasn't glamorous. In his own threads he describes working in a Starbucks before his job, a job he disliked, carrying about $60,000 in debt and waking up at 6am to build."
+        ],
+        "pull": {"text": "We realized how hard it is to build a B2B SaaS app", "cite": "Pat, to Simon Owens, March 2022"}
+      },
+      {
+        "label": "The first version",
+        "title": "Four hours of WordPress, then stories hard-coded in JavaScript",
+        "paras": [
+          "Pat's first technical decision was a funny one. He tried WordPress, struggled with it for about four hours and gave up. So, being an engineer, he reached for what he knew.",
+          "The first Starter Story was a create-react-app site hosted on Netlify. The interviews themselves weren't in a database. They were stored in a JavaScript object, hard-coded straight into the page. It's the kind of shortcut that would make a senior engineer wince, and it was exactly right for a site with three articles.",
+          "Later, once there was something worth investing in, he moved it to Ruby on Rails and built his own simple CMS. The running costs stayed tiny: about $60 a month for servers and about $25 a month for tools, Boomerang for email follow-ups, Email Hunter for finding addresses and WIP.chat.",
+          "The content was the harder part. He'd planned to launch with ten interviews. He launched with three. The first three founders were a college friend, an old roommate and a friend of a friend. He interviewed them by phone and it took about a month to turn those calls into three finished articles.",
+          "He launched in October 2017. His advice from this stage is simple and true: \"Getting started really is the hardest part.\""
+        ],
+        "pull": {"text": "Getting started really is the hardest part.", "cite": "Pat, HackerNoon interview, November 2018"}
+      },
+      {
+        "label": "The lowest point",
+        "title": "Three hundred visits and crickets",
+        "paras": [
+          "The first month brought about 300 visits. When he shared it with friends, he says the response was \"crickets\". He had under 100 Twitter followers, so there was no audience to fall back on. As he put it later: \"I had no audience when I started!\"",
+          "This is the point where most side projects quietly die. Pat did something more useful instead. He gave himself 90 days and tested 12 different channels to see which, if any, would bring readers.",
+          "Eleven of them didn't work. One did: **reposting the full interviews on Reddit.** That one discovery shaped the next two years of the business."
+        ],
+        "pull": {"text": "I had no audience when I started!", "cite": "Pat, Indie Hackers AMA, August 2019"}
+      },
+      {
+        "label": "The first readers",
+        "title": "Giving the whole story away on Reddit",
+        "paras": [
+          "The trick wasn't posting a teaser with a link. It was posting the entire interview on Reddit, mostly r/Entrepreneur, with just one link back to Starter Story at the end. Redditors hate being sent off-site, so he didn't make them leave. He gave them the full value right there.",
+          "It worked. According to Simon Owens, a good post could get up to 100,000 views and send about 1,000 visitors to the site. About 10% of those visitors signed up for the newsletter. So one strong Reddit post could mean about 100 new subscribers who had already read a full interview and wanted more.",
+          "He also had an \"X factor\", in his own words: every business featured had to share its exact revenue. That made each interview feel concrete and a little bit juicy. People don't just want to read that a business is \"doing well\", they want the number.",
+          "He tried the usual launch channels too. About two or three months in, with about 15 interviews live, he launched on Product Hunt. It was \"not a breakout success\". One interview made it onto Hacker News and brought 35,000 visitors in a single day, plus an inquiry from someone wanting to buy the site, but the traffic was poor quality and didn't stick around.",
+          "Meanwhile, Google started noticing. Organic search grew to about 400 visitors a day. After about a year he had interviewed more than 120 founders and had more than 300,000 visitors. Simon Owens puts the first year at 439,856 pageviews."
+        ]
+      },
+      {
+        "label": "The supply side",
+        "title": "Six thousand cold emails",
+        "paras": [
+          "A site of founder interviews needs a steady supply of founders. Pat didn't wait for them to find him. He went looking.",
+          "He sent more than 6,000 cold emails to businesses. He scraped leads from websites and directories and used the Email Hunter API to find the right addresses. In his Indie Hackers AMA in August 2019 he said about **80% of his interviews came from outbound email**. The rest came in on their own once the site was known.",
+          "His attitude to all that rejection is worth borrowing: \"Lose the ego and embrace rejection, because it's a numbers game.\" Most cold emails get ignored. A few get a yes. Send enough and the few add up to a publication.",
+          "Output grew in steps. In the early days it was one interview a week. By November 2018 it was six or seven pieces a week, with a goal of 15 to 20. In the month of his AMA, August 2019, Starter Story published about 60 pieces, with a small outsourced team helping."
+        ],
+        "pull": {"text": "Lose the ego and embrace rejection, because it's a numbers game.", "cite": "Pat, HackerNoon interview, November 2018"}
+      },
+      {
+        "label": "Finding the money",
+        "title": "Cold-emailing sponsors and the Klaviyo deal",
+        "paras": [
+          "For the first few months Starter Story made $0. Then Pat used the same method for revenue that he used for interviews: cold email. He emailed 10 to 20 possible sponsors a week and invoiced the ones who said yes through PayPal.",
+          "The big break was Klaviyo, the email marketing company. A few months after launch it became the exclusive sponsor, and it signed a one-year deal. Starter Story's own page quotes him saying \"more than half of our revenue can be directly attributed to Klaviyo\" in the early years.",
+          "He learned to love long contracts. In August 2019 he said he'd much rather sign a year-long deal at $1,000 than a single month at $200, because the long deal gives you something steady to build on. By November 2018 sponsorship revenue was about $1,700 a month.",
+          "By August 2019 the mix was about 80% sponsors, 10% premium memberships and 10% affiliates. Later a paid membership started from $9 a month, according to a Starter Story page, and affiliates stayed at about 5%. He also launched an SEO course that made $20,000 in about two weeks, according to a podcast episode title.",
+          "When exactly did he quit his job? The accounts don't line up. A November 2018 interview says he had quit about a month earlier. His own thread later says he quit at about $8,000 a month in 2019, and his August 2019 AMA title says he got to profitability and then quit. Either way, he left once the side project could carry him."
+        ]
+      },
+      {
+        "label": "Scaling it",
+        "title": "The Reddit machine, and the petition to ban him",
+        "paras": [
+          "Pat didn't keep posting to Reddit by hand forever. Over about a year he automated it step by step: first manual posting, then reminders, then code that wrote the intros, then the Reddit API, then a button, and finally a background worker that did it all.",
+          "By August 2019 the machine shared about 120 posts a month. One story a day went out to four subreddits, spaced 15 minutes apart. It tagged the featured founder's own Reddit account and stripped out blacklisted links and affiliate parameters. He says he'd \"hit the top of Reddit hundreds of times\", with about 35,000 karma, and his own subreddit had about 600 members.",
+          "Then came the scare. In 2019 an anonymous petition to ban him from Reddit made it to the front page. At that point Reddit was the heart of his distribution. **One channel had become a single point of failure.**",
+          "Interestingly, by the time of his AMA in August 2019, most traffic was already coming from organic search and direct visits. The newsletter, with 8,000+ subscribers, drove about 4% of traffic and Reddit about 3%. Reddit had done its job: it built the early audience and the brand, and Google took over.",
+          "His routine at this stage was disciplined. He worked in the mornings, exercised for a couple of hours at midday, set monthly and weekly goals and time-blocked each day. In 2018 he admitted he wanted to stop checking Reddit, Google Analytics, subscriber counts and email every few minutes. In 2023 he talked about doing just two hours of deep work every day."
+        ]
+      },
+      {
+        "label": "The big numbers",
+        "title": "From $500,000 a year to YouTube",
+        "paras": [
+          "In March 2022 Simon Owens reported that Starter Story had 1.4 million monthly visitors and more than $500,000 a year in revenue. On 5 June 2023, after 1,981 days, Pat said it had made $1.5 million in total. In 2023 he described it as making over $1 million a year. By October 2023 it had about 31 million visitors in total.",
+          "Most of the numbers on this page are Pat's own, shared in his threads, AMAs and interviews, so take them as his account. Some outside estimates for 2024 put the business at $4.5 million or $6 million a year, but they contradict each other, so we're not using them.",
+          "Somewhere in these years YouTube became the main engine. It grew into the biggest channel Starter Story had. The exact start date and early subscriber curve aren't public, but the end point is: more than 800,000 subscribers by February 2026.",
+          "The team grew too. A 2022 post mentioned eight people, which probably included contractors. By the sale there were three full-time staff: Pat, his sister Sam as COO and the producer Gus Tiffer.",
+          "He's also been honest that a small income isn't freedom. One line he posted on X, in capitals: \"$10K MRR IS NOT FINANCIAL FREEDOM\"."
+        ]
+      },
+      {
+        "label": "Where it stands now",
+        "title": "A tweet to HubSpot, and a sale five months later",
+        "paras": [
+          "On 23 September 2025 a public tweet suggested that HubSpot should buy Starter Story. It wasn't a joke that went nowhere. In February 2026 HubSpot Media acquired the business. The price wasn't disclosed.",
+          "At the sale Pat described Starter Story as profitable, with \"seven-figure revenue\" and \"multi-million-dollar revenue\". It had more than 800,000 YouTube subscribers, about 275,000 newsletter readers, about 1.6 million followers across channels and more than 10,000 paid members.",
+          "All three full-time people joined HubSpot Media. Pat was generous about it: \"It became a real team.\" And: \"This outcome belongs to them, too.\" His exact title inside HubSpot isn't public, and neither is what he's personally building in late 2026.",
+          "Step back and look at the whole arc. A side project with three friend interviews, 300 visits and crickets became a media business a public company wanted to own. Nothing in it was a single lucky break. It was a few channels, tested quickly, then pushed hard and automated."
+        ],
+        "pull": {"text": "This outcome belongs to them, too.", "cite": "Pat, on the HubSpot sale, February 2026"}
+      }
+    ],
+    "failuresTitle": "What didn't work",
+    "failuresIntro": "Pat has talked openly about these misses, and most of them happened before Starter Story found its feet.",
+    "failures": [
+      {"year": "2016", "name": "The B2B SaaS tool", "what": "He co-founded a tool to help small brands sell to retailers and spent about four months on the first version. Y Combinator interviewed and rejected them, and it shut down after months without traction.", "lesson": "Building B2B software on the side of a full-time job is harder than it looks, so pick something you can run alone."},
+      {"year": "Before Oct 2017", "name": "The pets affiliate blog", "what": "Before Starter Story he started an affiliate blog about pets. He dropped it within weeks.", "lesson": "If you don't care about the topic, you'll find out fast, so pick one you'd read yourself."},
+      {"year": "2017", "name": "Eleven channels out of twelve", "what": "In his first 90 days he tested 12 channels. Only reposting full interviews on Reddit worked.", "lesson": "Test many channels quickly and cheaply, then put everything into the one that works."},
+      {"year": "Late 2017", "name": "Product Hunt", "what": "He launched on Product Hunt after two or three months with about 15 interviews. It was not a breakout success.", "lesson": "Launch sites are a bonus, not a strategy."},
+      {"year": "First year", "name": "The Hacker News spike", "what": "One interview brought 35,000 visitors in a day from Hacker News, plus an acquisition inquiry. The traffic was poor quality and didn't stay.", "lesson": "Judge a channel by who sticks around, not by the size of the spike."},
+      {"year": "2019", "name": "The petition to ban him", "what": "An anonymous petition to ban him from Reddit reached the front page while Reddit was his main channel.", "lesson": "Never let one platform you don't own be your only way to reach people."}
+    ],
+    "playbookTitle": "How he grew it without ads",
+    "playbook": [
+      {"title": "Start with three, not ten", "text": "He launched in October 2017 with three interviews from a college friend, an old roommate and a friend of a friend, instead of the ten he planned."},
+      {"title": "Test twelve channels in ninety days", "text": "After 300 visits and crickets in month one, he tested 12 channels in 90 days and kept only the one that worked, Reddit reposting."},
+      {"title": "Give the full post away on Reddit", "text": "He posted entire interviews to r/Entrepreneur with one link home. Good posts got up to 100,000 views and about 1,000 visitors, and about 10% of visitors joined the newsletter."},
+      {"title": "Make the content specific", "text": "Every featured founder had to share exact revenue. He calls that the X factor, because real numbers made the stories worth reading and sharing."},
+      {"title": "Cold-email for supply", "text": "He sent more than 6,000 cold emails, using scraped leads and the Email Hunter API, and about 80% of interviews came from outbound."},
+      {"title": "Cold-email for sponsors", "text": "He pitched 10 to 20 sponsors a week and invoiced by PayPal. Klaviyo signed a one-year exclusive deal, and he preferred long contracts at lower rates for steady income."},
+      {"title": "Automate the channel that works", "text": "Over a year he went from manual Reddit posts to a background worker posting about 120 a month, one story a day to four subreddits, 15 minutes apart."},
+      {"title": "Let search take over", "text": "Organic search grew to about 400 visitors a day within the first year, and by August 2019 most traffic came from search and direct visits, not Reddit."},
+      {"title": "Move the stories to video", "text": "YouTube became the main engine later, reaching more than 800,000 subscribers by the February 2026 sale."}
+    ],
+    "charts": [
+      {
+        "title": "Starter Story revenue, by his own numbers",
+        "points": [
+          {"label": "First months", "value": 0, "display": "$0"},
+          {"label": "Nov 2018", "value": 1700, "display": "$1.7K a month"},
+          {"label": "2019", "value": 8000, "display": "About $8K a month"},
+          {"label": "Mar 2022", "value": 41667, "display": "$500K+ a year"},
+          {"label": "2023", "value": 83333, "display": "$1M+ a year"}
+        ],
+        "note": "Yearly figures are shown as a monthly average so the bars compare. At the 2026 sale he described revenue as seven figures."
+      },
+      {
+        "title": "Starter Story's audience at the HubSpot sale, February 2026",
+        "points": [
+          {"label": "YouTube", "value": 800000, "display": "800K+"},
+          {"label": "Newsletter", "value": 275000, "display": "About 275K"},
+          {"label": "Paid members", "value": 10000, "display": "10K+"}
+        ],
+        "note": "About 1.6 million followers across all channels."
+      }
+    ],
+    "timeline": [
+      {"when": "2016", "text": "Co-founds a B2B SaaS tool. Rejected by Y Combinator, it shuts down after months without traction.", "big": false},
+      {"when": "Before Oct 2017", "text": "Tries a pets affiliate blog and drops it within weeks.", "big": false},
+      {"when": "Oct 2017", "text": "Launches Starter Story with three interviews. About 300 visits in month one.", "big": true},
+      {"when": "Late 2017", "text": "Tests 12 channels in 90 days. Reddit reposting is the one that works.", "big": true},
+      {"when": "Early 2018", "text": "Klaviyo becomes the exclusive sponsor on a one-year deal.", "big": false},
+      {"when": "Nov 2018", "text": "120+ founders interviewed, 300,000+ visitors, $1,700 a month.", "big": false},
+      {"when": "2018 to 2019", "text": "Quits his job, though accounts differ on exactly when. Reddit posting is automated, and a petition to ban him reaches Reddit's front page.", "big": true},
+      {"when": "Mar 2022", "text": "1.4 million monthly visitors and $500,000+ a year.", "big": false},
+      {"when": "Jun 2023", "text": "$1.5 million in total revenue after 1,981 days.", "big": false},
+      {"when": "23 Sep 2025", "text": "A public tweet suggests HubSpot should buy Starter Story.", "big": false},
+      {"when": "Feb 2026", "text": "HubSpot Media acquires Starter Story. Pat, Sam and Gus join HubSpot Media.", "big": true}
+    ],
+    "quotes": [
+      {"text": "Getting started really is the hardest part.", "cite": "HackerNoon interview, November 2018"},
+      {"text": "Lose the ego and embrace rejection, because it's a numbers game.", "cite": "HackerNoon interview, November 2018"},
+      {"text": "I had no audience when I started!", "cite": "Indie Hackers AMA, August 2019"},
+      {"text": "We realized how hard it is to build a B2B SaaS app", "cite": "To Simon Owens, March 2022"},
+      {"text": "It became a real team.", "cite": "On the HubSpot sale, February 2026"},
+      {"text": "This outcome belongs to them, too.", "cite": "On the HubSpot sale, February 2026"},
+      {"text": "$10K MRR IS NOT FINANCIAL FREEDOM", "cite": "On X, as quoted on a Starter Story page"}
+    ],
+    "steal": [
+      "Launch with less than you planned. Three interviews were enough for Pat to start learning what worked.",
+      "Give yourself a fixed window, like 90 days, to test a dozen channels. Then drop the losers without guilt.",
+      "When you post in a community, give the whole thing away there and add one link at the end. People follow you home when you didn't make them leave.",
+      "Use cold email for everything that needs supply: guests, interviewees, sponsors. It's a numbers game, so send more.",
+      "Put one sharp, specific rule into your content, like Pat's exact-revenue rule. It makes your work instantly different from everyone else's.",
+      "Once a channel works, automate it in small steps, and start building the next channel before the first one gets taken away."
+    ],
+    "sources": [
+      {"title": "HackerNoon: Founder interviews, Pat Walls of Starter Story (November 2018)", "url": "https://hackernoon.com/founder-interviews-pat-walls-of-starter-story-a3f9a1f61df9"},
+      {"title": "Indie Hackers AMA: I built my side project Starter Story to profitability and quit my job (August 2019)", "url": "https://www.indiehackers.com/post/im-pat-walls-i-built-my-side-project-starterstory-to-profitability-and-quit-my-full-time-engineering-job-441d4cd5fe/"},
+      {"title": "Pat Walls's X threads (Thread Reader)", "url": "https://threadreaderapp.com/thread/1164334265468768256"},
+      {"title": "Simon Owens: How Starter Story grew to 1.4 million monthly visitors (March 2022)", "url": "https://simonowens.substack.com/p/how-starter-story-grew-to-14-million"},
+      {"title": "Techstartups: HubSpot acquires Starter Story (February 2026)", "url": "https://techstartups.com/2026/02/23/hubspot-acquires-starter-story-in-bet-on-youtube-driven-customer-acquisition/"},
+      {"title": "Starter Story: the Starter Story breakdown", "url": "https://starterstory.com/stories/starter-story-breakdown"},
+      {"title": "IndieBites: How Pat Walls made $20K in 2 weeks from his SEO course", "url": "https://indiebites.transistor.fm/episodes/how-pat-walls-made-20k-in-2-weeks-from-his-seo-course-pat-walls-starter-story"}
+    ]
+  }
+}

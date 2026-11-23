@@ -1,0 +1,284 @@
+{
+  "n": 24,
+  "name": "Dmytro Krasun",
+  "short": "Dmytro",
+  "wisdom": "Divide your new monthly revenue by your churn rate. That's your ceiling.",
+  "email": {
+    "subject": "$515 on ads, zero customers. Now $32K a month.",
+    "hook": "In his first month Dmytro Krasun spent $515 on Google Ads and got zero customers, and four years later his screenshot API makes $32K a month with one full-time person: him.",
+    "lead": [
+      "This one is close to truly solo. Dmytro is the only full-timer at ScreenshotOne, with a contract designer and a part-time front-end developer. No funding, no co-founder, a wife and two kids, and a family budget that needed $5K to $7K a month.",
+      "He's also the most honest founder we've covered about the boring middle. Two years of slow growth, then a jump, then a wall he could calculate in advance. If you want to build one small useful product and live off it, this is the story to read twice."
+    ],
+    "stats": [
+      {"value": "$32K", "label": "monthly recurring revenue, July 2026"},
+      {"value": "1,000+", "label": "paying customers"},
+      {"value": "9%", "label": "monthly revenue churn"}
+    ],
+    "chart": {
+      "title": "ScreenshotOne monthly revenue, by his own numbers",
+      "points": [
+        {"label": "Jul 2022", "value": 7, "display": "$7"},
+        {"label": "Late 2022", "value": 800, "display": "$800"},
+        {"label": "Feb 2024", "value": 3700, "display": "$3.7K"},
+        {"label": "Sep 2024", "value": 10000, "display": "$10K"},
+        {"label": "Jun 2025", "value": 20000, "display": "$20K"},
+        {"label": "Jul 2026", "value": 32000, "display": "$32K"}
+      ],
+      "note": "Look at the gap between February and September 2024. That's when he repositioned and raised prices."
+    },
+    "sections": [
+      {
+        "title": "What he's doing right now",
+        "paras": [
+          "In July 2026 he was at $32K a month and stuck. He sat down and wrote out four options: keep tuning toward $50K, build a regression-testing product for marketers, sell or step back, or **sell to AI agents** through an MCP server, a command-line tool and SDKs with usage-based pricing.",
+          "He preferred the last one and planned to test it for four to six weeks. Which way he went hasn't been made public. His goals are simple and very human: $50K a month, and enough automation to go on a week-long hike with no internet."
+        ]
+      },
+      {
+        "title": "How the money comes in",
+        "stats": true,
+        "paras": [
+          "ScreenshotOne is an API that takes screenshots of web pages. Developers pay a monthly subscription, plus pay-as-you-go fees if they go over their limit. His very first customer paid $7 a month.",
+          "These numbers are his own, shared on his blog and in interviews. He hit $10K a month in September 2024, $200K a year in April 2025 with 400+ paying customers, $20K a month in June 2025 and $32K by July 2026 with more than 1,000 customers. One outside site put it at $269K a year in October 2025, so figures differ a little depending on who you ask."
+        ]
+      },
+      {
+        "title": "How he built it",
+        "paras": [
+          "He bought the domain on 5 January 2022 and started writing SEO articles before the product existed. He had just accepted a new job, then took paternity leave from it and spent that time building instead.",
+          "He chose an API because, after ten years as a back-end developer, it needed no design work. The first version was **one Go server rendering a plain HTML, CSS and JavaScript dashboard** on a DigitalOcean droplet, because he didn't know modern JavaScript frameworks. It took about five months, with two lost to personal reasons."
+        ]
+      },
+      {
+        "title": "How he got the users",
+        "paras": [
+          "Launch month, June 2022, was a wipeout on paper. Google Ads: “I paid $515 for 2144 clicks,” and zero customers. Twitter outreach to four screenshot-tool owners: no sales. Reddit's r/SideProject gave him upvotes and kind comments. He wrote it all up, and the post went viral on Indie Hackers.",
+          "His first customer came on 4 July 2022: a friend's directory, at $7 a month. A Product Hunt launch, which wasn't even in his plan, hit number one of the day and took him from about $200 to $800 a month. After that it was SEO. **It took nearly two years to rank second on Google for “screenshot API”**, and Google brought about 70% of his early traffic."
+        ]
+      },
+      {
+        "title": "The part nobody talks about",
+        "chart": true,
+        "paras": [
+          "His churn is high, 9% of revenue a month, because lots of people need screenshots for one project and then cancel. He brings in about $3K of new revenue a month. Divide $3K by 9% and you get about $33K. He stalled at $32K. **The wall was in the spreadsheet before he hit it.**",
+          "And the human side: he has had no real holiday in three years, an uptime alert once woke him at 2 am, and he burned out trying to reply to every tweet. In July 2026 he said it plainly: “I'm tired.”"
+        ]
+      }
+    ],
+    "tryToday": "Take any product you run or plan to run. Write down new monthly revenue and monthly churn, divide the first by the second, and see where your ceiling sits before you spend another rupee on marketing.",
+    "button": "Read how he got here"
+  },
+  "page": {
+    "intro": "Dmytro Krasun was a happy, well-paid back-end developer for about ten years. In January 2022 he bought a domain for a screenshot API, and four years later it makes $32K a month with him as the only full-time person. This is the full story, including the $515 that bought him nothing and the ceiling he could have predicted.",
+    "stats": [
+      {"value": "$32K", "num": 32, "prefix": "$", "suffix": "K", "label": "monthly recurring revenue", "note": "July 2026, his own number"},
+      {"value": "1,000+", "num": 1000, "prefix": "", "suffix": "+", "label": "paying customers", "note": "July 2026"},
+      {"value": "$7", "num": 7, "prefix": "$", "suffix": "", "label": "his first customer's monthly plan", "note": "4 July 2022"},
+      {"value": "1", "num": 1, "prefix": "", "suffix": "", "label": "full-time person", "note": "plus a contract designer and a part-time developer"}
+    ],
+    "chapters": [
+      {
+        "label": "Before it worked",
+        "title": "A happy developer with a decent salary",
+        "paras": [
+          "“I was a pretty happy server-side developer for around 10 years with a decent salary,” Dmytro says. He has a computer science degree and spent more than a decade building back-end systems: high-load, distributed, the plumbing that keeps big websites standing. All in, he had about 15 years of coding behind him.",
+          "He wasn't a natural employee, though. He quit several jobs because he wanted the freedom to, as he put it, “take decision, take responsibility and do it.” And he had already tried to build his own things. “Tried to start several things and failed each time,” he said later. His diagnosis was blunt: “My goals were too big.”",
+          "One of those attempts was a Twitter analytics tool. “A few people used it. But I wasn't passionate about it,” he said. On a podcast he added that everybody was building that kind of tool at the time.",
+          "And he had real stakes. He has a wife and kids, and his family of four needed somewhere between $5K and $7K a month to live. This was not a student playing with side projects. **This was a dad betting the household savings.**"
+        ],
+        "pull": {"text": "My goals were too big", "cite": "Dmytro, to Indie Hackers"}
+      },
+      {
+        "label": "Choosing the idea",
+        "title": "Picked somewhat at random",
+        "paras": [
+          "The way he found the idea is almost funny. He made a list of problems he'd run into as an API developer, and picked a screenshot API “somewhat at random.”",
+          "Then he looked at the market and found loads of competitors, 30 to 50 of them by about a month in. Most people would take that as a reason to stop. He took it as proof. **If that many companies sell screenshot APIs, people must be buying them.**",
+          "He chose an API on purpose, too. With ten years of back-end work behind him, an API meant he could skip almost all design and user interface work and play to his strength. He framed ScreenshotOne as project number two of what he called a “1001 projects” journey, which tells you how small he was trying to keep his ambitions this time.",
+          "The timing was personal. He had just found a new job shortly before launch. He took paternity leave from it and used that time to build the product instead. He lived on savings, some of which were sitting in a falling stock market, and he gave himself six months to find paying customers. If it didn't work, he'd go back to a job."
+        ]
+      },
+      {
+        "label": "The first version",
+        "title": "One Go server and plain HTML",
+        "paras": [
+          "On 5 January 2022 he bought the domain and put up a basic site. Then, before the product even existed, **he started writing SEO articles** about the problems it would solve. That one decision paid him back for years.",
+          "The build took about five months, with roughly two of those lost to private reasons. He says it was “very hard” in those days before AI coding agents. The first version was a single server written in Go, with JavaScript to drive the browser that took the screenshots.",
+          "The dashboard was plain HTML, CSS and JavaScript rendered by Go, because he didn't know any modern JavaScript framework. It ran on one DigitalOcean droplet. He didn't even register a company until money started coming in.",
+          "Later all of this got rebuilt. The dashboard moved to Next.js. Hosting went from the droplet to Render, then to Google Cloud with autoscaling, then to a Kubernetes cluster to cut costs. The stack today includes Next.js, Astro, Go, TypeScript and Cloudflare, with MySQL as the database. But none of that was needed to get the first customer.",
+          "The first version was ready at the end of May 2022."
+        ]
+      },
+      {
+        "label": "The lowest point",
+        "title": "June 2022: every channel, zero sales",
+        "paras": [
+          "June was his launch month, and he spent it trying every channel he could think of. Then he wrote up the results honestly, channel by channel, and that write-up is one of the most useful things in this whole series.",
+          "Google Search Ads: “I paid $515 for 2144 clicks,” he wrote, which is 25 cents a click. Zero paying customers. And he'd done it carefully, with exact-match keywords, negative keywords, a handful of countries and limited hours.",
+          "Reddit's r/SideProject gave him “a lot of positive feedback, upvotes, and comments.” A post on another subreddit got no reply at all. BetaList looked “promising” but he gave no numbers. AlternativeTo and SideProjectors sent two or three visitors a day. He messaged four owners of screenshot-editing tools on Twitter directly: no sales. The #BuildInPublic hashtag brought in at least one active user.",
+          "The bright spot was SEO. His content, led by a guide to taking screenshots with Puppeteer, got some keywords onto page one, and by the last week of June he was getting organic visits every day. He even made his website analytics public for anyone to see.",
+          "His lessons: polish the product and the positioning before paying for traffic, start SEO and backlinks from day one, and talk to customers early. **He posted this post-mortem on Indie Hackers, and it went viral.** A failed launch month became his best piece of marketing."
+        ],
+        "pull": {"text": "I paid $515 for 2144 clicks", "cite": "Dmytro, on his blog, July 2022"}
+      },
+      {
+        "label": "The first 10 customers",
+        "title": "$7 a month and a moment of immense joy",
+        "paras": [
+          "On 4 July 2022, about six months after buying the domain, he got his first payment. His Indie Hackers post about it was about going from 0 to 1 in roughly six months, and he wrote: “It is unbelievable and unforgettable.” Later he said: “It was a moment of immense joy.”",
+          "Customer number one was a friend's directory of creator tools, someone he knew from Twitter, on a $7 a month plan. Customer number two came from Google Ads, the same channel that had given him nothing in June. Still, the lesson he took was to double down on SEO.",
+          "He had 5 customers by August 2022 and 10 by September. Then he launched on Product Hunt, which he says wasn't in his original plan. It came in at number one for the day, took his monthly revenue from about $200 to about $800, and gave him a valuable backlink for SEO.",
+          "A word on the numbers in this story: **almost every figure here is Dmytro's own**, from his blog, interviews and a podcast, and none of them are audited."
+        ]
+      },
+      {
+        "label": "The slow middle",
+        "title": "Two years to understand who he was selling to",
+        "paras": [
+          "Then came the long, slow part that most founder stories skip. Around 2023 he was at about $2.2K to $2.5K a month with about 85 customers. His servers cost $600 to $800 a month, and cutting that bill was his top priority.",
+          "In March 2023 he took on consulting work for stability. It's worth saying out loud: the solo founder with a $32K a month business today was doing client work on the side a year into it.",
+          "He also got distracted, in a way most of us would. He built a bundle of AI side tools, including a chat-with-PDF app, called Damn Good Tools. It took two to four weeks to build and about four months overall. It made about $500 in its first two weeks of payments. Then he sold it on Acquire.com for $9,500, because “I simply didn't have the time to manage two projects.”",
+          "He burned out for a while trying to reply to every single tweet. By February 2024 he was at about $3.7K a month, growing about 10% a month. It had been nearly two years. As he later put it, **it took him two years to understand who he was selling to.**"
+        ],
+        "chart": 0
+      },
+      {
+        "label": "Finding the money",
+        "title": "The repositioning that doubled everything",
+        "paras": [
+          "Here's what he figured out. He sorted his customers into groups and looked at who stayed and who paid. The best customers were small agencies of 10 to 20 people with two or three developers. Indie hackers, people like him, signed up and churned.",
+          "So he rewrote his landing page for developers, with code examples front and centre. He stopped trying to appeal to marketers and no-code users. Signups went from about 20 a month to about 30.",
+          "Then he raised prices. Early customers had been paying “5, 10 per month,” as he put it. When he started repositioning he was at about $4K a month, then $4.3K in early March, then about $5K after the price rise, and close to $6K by the time he recorded a podcast about it. He was getting 30 to 40 new customers a month.",
+          "He changed how he used X too. He stopped aggressive self-promotion and started helping people, which led to recommendations. He posted about twice a week and spent the rest of his time replying. His summary, borrowed from April Dunford and Jason Cohen: **“positioning is everything.”**",
+          "The dates tell the story. $3.7K in February 2024. $10K in September 2024. Something clicked in between, and it lines up with when he got clear about who he was for."
+        ],
+        "pull": {"text": "positioning is everything", "cite": "Dmytro, on a podcast"}
+      },
+      {
+        "label": "Scaling it",
+        "title": "$200K a year, and no holiday in three years",
+        "paras": [
+          "On 10 April 2025, almost three years after launch, he wrote on his blog that ScreenshotOne had hit $200K in annual revenue and 400+ paying customers. “Fully bootstrapped and funded by lovely ScreenshotOne customers,” he wrote. He was still the only full-time person, with a contract designer and a part-time front-end developer. (One outside site later put the figure at $269K a year, in an update from October 2025, so you'll see both.)",
+          "Distribution by then went well beyond search. He had SDKs in seven languages: C#, Go, Java, Node, PHP, Python and Ruby. He had integrations with MCP, Clay, Make, n8n and Zapier, a playground to try the API, customer case studies, and sibling pages for things like PDF generation, HTML to image and screenshots for AI agents. GitHub and Indie Hackers helped. He says Reddit was his most effective channel at one point. He refused to do cold email for a developer audience. In his words: “I try to dominate every marketing channel.”",
+          "He used PostHog to track how visitors from each source turned into users and then into payers, and fixed whichever step was weakest. And on Google Search Console, he says “the impressions data you get from Google search console is pure gold,” even for articles ranking on page 50.",
+          "He also made a quiet, brave product choice: **no major new API features for about two years**, on purpose, so he could polish the core. His mantra: “Make it work, make it simple and make it lovable.”",
+          "The cost was personal. He works every day. He'd had no real vacation in three years. An uptime alert once woke him at 2 am. When support got heavy he took off on a mountain hike in Bulgaria. His daily work is UX fixes, answering support straight away, refunds on request, and marketing. He enters his monthly numbers into Google Sheets by hand and keeps payment notifications switched off."
+        ]
+      },
+      {
+        "label": "Where it stands now",
+        "title": "A ceiling you can calculate",
+        "paras": [
+          "He reached $20K a month in June 2025 and $32K by July 2026, with more than 1,000 paying customers and over 100 million API requests served. And then he stopped growing.",
+          "The maths is simple and brutal. He was bringing in about $3K of new monthly revenue a month from marketing, and losing 9% of revenue a month to churn. $3K divided by 0.09 is about $33K. **That's exactly where he stalled.** Most cancellations come from people who need screenshots for one project and then leave.",
+          "In July 2026 he told a case-study interviewer, “I'm tired.” He laid out four options. Keep optimising toward $50K a month, at about $30K a month of profit. Build a regression-testing product for marketers. Sell or step back. Or distribute through AI agents, using his MCP server, command-line tool and SDKs with usage pricing, tested for four to six weeks with a skeleton crew. He preferred the last one. Which he chose hasn't been made public.",
+          "In 2025 he had also launched a separate product that tracks how visible brands are inside AI models, with no plans for full-time hires. ScreenshotOne itself now renders screenshots, PDFs and videos, and is used by what it calls “AI agents that need to view web pages.”"
+        ],
+        "chart": 1
+      },
+      {
+        "label": "How he thinks about the future",
+        "title": "Get rich by focus",
+        "paras": [
+          "He's honest about the fear every small SaaS founder has now. He worries that one day someone will say “this new AI developer came out and it will destroy your business,” and that an AI tool “will build a screenshot API in one day.”",
+          "He's also realistic about size. “The market you are in is everything,” he wrote. His niche, he says, “can't absorb an extra $5 million ARR in one year.” He calls it a category with little money and harsh competition. That's why AI agents as customers interest him so much: it's a way out of the ceiling.",
+          "His rules are worth writing on a sticky note. Make your goals smaller. Pick one ideal customer. A simple product that works sells itself. Build processes so the business doesn't need you every day. Don't feel you have to reply to every tweet. And on spreading yourself thin, his line is: “You focus. Once you're rich, you diversify.”",
+          "His last piece of advice is the most him: “Don't listen to any advice.” **Then he tells you to read the classics in economics, history and biology instead.**"
+        ],
+        "pull": {"text": "The market you are in is everything.", "cite": "Dmytro, on the ScreenshotOne blog, April 2025"}
+      }
+    ],
+    "failuresTitle": "Too-big goals, a $515 lesson and a calculable wall",
+    "failuresIntro": "He's documented his failures more openly than most. Here they are.",
+    "failures": [
+      {"year": "Before 2022", "name": "Several attempts with goals too big", "what": "He tried to start several things while employed and failed each time. His own diagnosis was that his goals were too big, and results only came when he switched to small, reachable steps.", "lesson": "Shrink the goal until you can actually hit it this quarter."},
+      {"year": "Before 2022", "name": "The Twitter analytics tool", "what": "A few people used it, but he wasn't passionate about it, and everyone else was building the same thing.", "lesson": "If you don't care about the problem and it's crowded with copycats, move on early."},
+      {"year": "Jun 2022", "name": "$515 of Google Ads, zero customers", "what": "His launch month bought 2,144 clicks at 25 cents each and not one sale. Twitter outreach to four tool owners also produced nothing.", "lesson": "Get the product and positioning right before you pay for traffic."},
+      {"year": "Before 2024", "name": "The side-tool distraction", "what": "He built Damn Good Tools, a bundle of AI apps including chat-with-PDF. It made about $500 early, but running two products was too much, so he sold it for $9,500.", "lesson": "A second product halves your attention long before it doubles your income."},
+      {"year": "Undated", "name": "Burning out on replies", "what": "He tried to reply to every tweet and burned out. He later cut posting to about twice a week and focused on helping people.", "lesson": "Being everywhere online is not a strategy, just a way to get tired."},
+      {"year": "Jul 2026", "name": "The churn ceiling", "what": "With 9% monthly revenue churn and about $3K of new monthly revenue, growth stalled at $32K against a ceiling of about $33K. He said he was tired.", "lesson": "Work out your churn ceiling before you push marketing harder."}
+    ],
+    "playbookTitle": "How a developer got 1,000 customers without cold email",
+    "playbook": [
+      {"title": "Write SEO content before the product exists", "text": "He bought the domain on 5 January 2022 and started publishing articles about the problems the API would solve straight away. By the end of his launch month some keywords were on page one, and Google later brought about 70% of early traffic."},
+      {"title": "Own the main keyword, slowly", "text": "It took nearly two years to rank second for “screenshot API”. Guides like his Puppeteer screenshot tutorial pulled in developers searching for how-tos."},
+      {"title": "Turn your launch numbers into content", "text": "His honest post-mortem of the June 2022 launch, including $515 on ads for zero customers, went viral on Indie Hackers and brought attention he couldn't buy."},
+      {"title": "Launch on Product Hunt even if it's not the plan", "text": "His launch hit number one of the day, took monthly revenue from about $200 to $800, and earned a lasting backlink."},
+      {"title": "Reposition for the customer who stays", "text": "He found his best customers were small agencies of 10 to 20 people with two or three developers, rewrote the landing page for developers with code examples, and stopped targeting marketers and no-code users. Signups rose from about 20 to about 30 a month."},
+      {"title": "Raise prices once the positioning is right", "text": "From early plans of $5 to $10 a month, a price rise took him from about $4.3K to about $5K and then near $6K a month."},
+      {"title": "Help on X instead of promoting", "text": "He cut back to about two posts a week, spent the rest replying, and stopped aggressive self-promotion. Recommendations followed."},
+      {"title": "Go where developers already build", "text": "SDKs in seven languages, integrations with Zapier, Make, n8n, Clay and MCP, a playground, case studies and sibling API pages. Each one is another door from a place developers already are."},
+      {"title": "Measure each source to paid", "text": "He uses PostHog to track visitor to user to paying customer by source, then fixes the weakest step, and mines Search Console impressions even for pages ranking far down."}
+    ],
+    "charts": [
+      {
+        "title": "Monthly revenue, the slow first two years",
+        "points": [
+          {"label": "Jun 2022", "value": 0, "display": "$0"},
+          {"label": "Jul 2022", "value": 7, "display": "$7"},
+          {"label": "Late 2022", "value": 800, "display": "about $800"},
+          {"label": "About 2023", "value": 2500, "display": "about $2.5K"},
+          {"label": "Feb 2024", "value": 3700, "display": "about $3.7K"},
+          {"label": "Sep 2024", "value": 10000, "display": "$10K"}
+        ],
+        "note": "All his own figures. The jump after February 2024 follows his repositioning and price rise."
+      },
+      {
+        "title": "Paying customers over time",
+        "points": [
+          {"label": "Sep 2022", "value": 10, "display": "10"},
+          {"label": "About 2023", "value": 85, "display": "about 85"},
+          {"label": "Apr 2025", "value": 400, "display": "400+"},
+          {"label": "Jul 2026", "value": 1000, "display": "1,000+"}
+        ],
+        "note": "His own figures, from interviews, his blog and a July 2026 case study."
+      }
+    ],
+    "timeline": [
+      {"when": "Before 2022", "text": "About ten years as a back-end developer. Several failed side attempts, including a Twitter analytics tool.", "big": false},
+      {"when": "5 Jan 2022", "text": "Buys the ScreenshotOne domain and starts writing SEO articles.", "big": true},
+      {"when": "End of May 2022", "text": "First version ready: a Go server and a plain HTML dashboard on one droplet.", "big": false},
+      {"when": "Jun 2022", "text": "Launch month. $515 on Google Ads, 2,144 clicks, zero customers.", "big": false},
+      {"when": "4 Jul 2022", "text": "First paying customer, at $7 a month.", "big": true},
+      {"when": "Late 2022", "text": "Number one on Product Hunt. Revenue goes from about $200 to $800 a month.", "big": false},
+      {"when": "Mar 2023", "text": "Takes on consulting work for stability.", "big": false},
+      {"when": "Feb 2024", "text": "About $3.7K a month. Repositions for developers at small agencies and raises prices.", "big": true},
+      {"when": "Sep 2024", "text": "$10K a month.", "big": false},
+      {"when": "Apr 2025", "text": "$200K a year in revenue and 400+ paying customers.", "big": false},
+      {"when": "Jun 2025", "text": "$20K a month.", "big": false},
+      {"when": "Jul 2026", "text": "$32K a month, 1,000+ customers, and a churn ceiling of about $33K. Weighs selling to AI agents.", "big": true}
+    ],
+    "quotes": [
+      {"text": "I was a pretty happy server-side developer for around 10 years", "cite": "Starter Story interview"},
+      {"text": "My goals were too big", "cite": "Indie Hackers interview"},
+      {"text": "I paid $515 for 2144 clicks", "cite": "His blog, on the first marketing month, 2022"},
+      {"text": "It was a moment of immense joy", "cite": "On his first $7 sale, SaaStrappers, February 2024"},
+      {"text": "positioning is everything", "cite": "Podcast interview"},
+      {"text": "Make it work, make it simple and make it lovable", "cite": "ScreenshotOne blog, April 2025"},
+      {"text": "The market you are in is everything.", "cite": "ScreenshotOne blog, April 2025"},
+      {"text": "I'm tired.", "cite": "Superframeworks case study, July 2026"}
+    ],
+    "steal": [
+      "Pick an idea in a market that already has lots of competitors. Thirty to fifty rivals told him people were paying.",
+      "Start writing search content the day you buy the domain, months before launch. It's the slowest channel and the one that compounds.",
+      "If your launch flops, write up exactly what you tried and what each channel did. His failed month became his most-read post.",
+      "Sort your customers by who stays and who pays, then rewrite your landing page only for the group that stays.",
+      "Calculate your ceiling: new monthly revenue divided by monthly churn. If it's lower than your goal, fix retention before you buy more traffic.",
+      "Pick a product that plays to the skill you already have. He chose an API so he could skip design entirely."
+    ],
+    "sources": [
+      {"title": "Starter Story: ScreenshotOne", "url": "https://www.starterstory.com/stories/screenshotone"},
+      {"title": "Indie Hackers: Hitting $25K+ MRR by making his goals less ambitious", "url": "https://www.indiehackers.com/post/hitting-25k-mrr-by-making-his-goals-less-ambitious-jQRZDnzwm8DFAaS4Xrq0"},
+      {"title": "Dmytro Krasun: Lessons learned from the first marketing month", "url": "https://dmytrokrasun.pages.dev/posts/lessons-learned-from-the-first-marketing-month"},
+      {"title": "Indie Hackers: Lessons learned from the first marketing month", "url": "https://www.indiehackers.com/post/lessons-learned-from-the-first-marketing-month-aa1ce701eb"},
+      {"title": "Indie Hackers: The first paying customer (Jul 2022)", "url": "https://www.indiehackers.com/post/from-0-to-1-in-6-months-the-first-paying-customer-95b05b2e6c"},
+      {"title": "SaaStrappers #14: Interview with Dmytro Krasun (Feb 2024)", "url": "https://saastrappers.beehiiv.com/p/14-interviews-dmytro-krasun"},
+      {"title": "ScreenshotOne blog: $200,000 ARR and 400 paying customers (Apr 2025)", "url": "https://screenshotone.com/blog/200000-arr-and-400-paying-customers/"},
+      {"title": "ScreenshotOne: About", "url": "https://screenshotone.com/about/"},
+      {"title": "Superframeworks case study: ScreenshotOne (Jul 2026)", "url": "https://superframeworks.com/case-study/screenshotone"},
+      {"title": "Superframeworks blog: ScreenshotOne", "url": "https://superframeworks.com/blog/screenshot-one"},
+      {"title": "Podcast transcript with Dmytro Krasun", "url": "https://share.transistor.fm/s/d283b317/transcript.txt"}
+    ]
+  }
+}

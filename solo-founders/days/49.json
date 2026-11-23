@@ -1,0 +1,496 @@
+{
+ "n": 49,
+ "name": "Monica Lent",
+ "short": "Monica",
+ "wisdom": "Build the tool your own side income needs, then sell it to others.",
+ "email": {
+  "subject": "She quit tech lead for a travel blog. It paid half her income.",
+  "hook": "Monica Lent left a job leading web engineering at a Berlin fintech, watched Covid wipe out about 90% of her travel blog's traffic, and still grew her little portfolio of businesses from about $30K to over $100K.",
+  "lead": [
+   "She matters to us because she's a marketer's kind of builder. Her whole portfolio sits on SEO and email: a travel blog that earns from affiliate links, a newsletter and paid community teaching developers to blog, and Affilimate, software that helps publishers track affiliate revenue. Each one grew out of the one before.",
+   "Straight up: Affilimate isn't solo. It's co-founded with Lynda Mann, who used to run commerce at Wirecutter. Its very first version in 2019 was built with a different partner, Gernot. The travel blog and Blogging for Devs are hers alone."
+  ],
+  "stats": [
+   {
+    "value": "$30K to $100K+",
+    "label": "portfolio growth, Apr 2022"
+   },
+   {
+    "value": "3 weeks",
+    "label": "from idea to launch, May 2020"
+   },
+   {
+    "value": "$5K",
+    "label": "first week of her paid community"
+   }
+  ],
+  "chart": {
+   "title": "Not a Nomad's monthly income, by her own numbers",
+   "points": [
+    {
+     "label": "Dec 2019",
+     "value": 5000,
+     "display": "About $5K"
+    },
+    {
+     "label": "2020 (Covid)",
+     "value": 1000,
+     "display": "About $1K",
+     "down": true
+    },
+    {
+     "label": "Apr 2022",
+     "value": 10000,
+     "display": "About $10K"
+    }
+   ],
+   "note": "When Covid hit, traffic fell to about 10% of what it had been."
+  },
+  "sections": [
+   {
+    "title": "What she's doing right now",
+    "paras": [
+     "Affilimate, as far as anyone can tell. It now sells affiliate analytics to news and media publishers, newsletter publishers, shopping and loyalty platforms, and publisher finance teams. Lynda Mann runs operations and growth, and Monica runs product and engineering.",
+     "She hasn't posted public updates for 2025 or 2026, so we don't know Affilimate's revenue or team size. The travel blog, by 2022, was close to passive: she updated it about once a quarter."
+    ]
+   },
+   {
+    "title": "How the money comes in",
+    "stats": true,
+    "paras": [
+     "Three streams, by her April 2022 account. Not a Nomad, the travel blog, earns from affiliate links like GetYourGuide tours (about 8% commission), hotels and Amazon camera gear, plus display ads through Mediavine. It made almost half her income the year before, around $10K a month in spring 2022.",
+     "Blogging for Devs is a newsletter with a paid community. In June 2021 she reported 7,500+ subscribers, about 250 paying members, more than $25K in total revenue and over $2K a month. Affilimate is the third, and its numbers aren't public. Together, she says, the portfolio grew from about $30K to over $100K."
+    ]
+   },
+   {
+    "title": "How she built Blogging for Devs in three weeks",
+    "paras": [
+     "In May 2020 she went from idea to launch in under three weeks. The first version was just a nine-email course in ConvertKit: an intro, a 7-day challenge, and a wrap-up. She cut it to one outcome: “Create an optimized article for your developer blog, step by step, in 7 days.”",
+     "About eight friends beta-tested it and she revised it twice. Then she launched. It got 1,200+ subscribers in under two weeks and was the number one Product of the Day on Product Hunt. About three-quarters of sign-ups came from Twitter."
+    ]
+   },
+   {
+    "title": "How she got the paying members",
+    "paras": [
+     "She opened a free, invite-only community for the first 100 people to test the format. Then a closed beta in July 2020 and paid membership in October, at $12 a month, $96 a year or $180 for life, for the first 250 members.",
+     "The first week brought in 69 paying members and about $5K, including lifetime deals and one Bitcoin payment. Here's the key number: **66 of those 69 already knew her**, from the newsletter, the waitlist or Twitter. More than 20% of the waitlist bought in week one."
+    ]
+   },
+   {
+    "title": "The part nobody talks about",
+    "chart": true,
+    "paras": [
+     "In 2019 she built the first Affilimate with a partner named Gernot, for her own blog. It got about 70 test users. In 2020 it landed its biggest customer and its first $2K month. Then Covid hit travel, customers paused, profit fell under $500 a month and she lived on savings. At the same time her travel blog's traffic dropped to about 10% of normal.",
+     "She's honest about the mistakes: no plan to reach customers beyond “build it and they'll tell their friends”, too few kinds of customers, and relying only on SEO in a crowded niche. Her line is one to keep: “Channels die. Or at least, they become exhausted.”"
+    ]
+   }
+  ],
+  "tryToday": "Write down the one tool you wish existed for your own side project. Then message three people who run the same kind of project and ask if they'd want it too.",
+  "button": "Read how she got here"
+ },
+ "page": {
+  "intro": "Monica is an American engineer in Berlin who spent a decade writing code for other people, then went full time on her own things in late 2019. A hand-coded travel blog taught her SEO and affiliate money. That became a course, a community, and finally software for publishers.",
+  "stats": [
+   {
+    "value": "$100K+",
+    "num": 100,
+    "prefix": "$",
+    "suffix": "K+",
+    "label": "portfolio income",
+    "note": "up from about $30K, her own numbers, Apr 2022"
+   },
+   {
+    "value": "1,200+",
+    "num": 1200,
+    "prefix": "",
+    "suffix": "+",
+    "label": "subscribers in two weeks",
+    "note": "Blogging for Devs, 2020"
+   },
+   {
+    "value": "69",
+    "num": 69,
+    "prefix": "",
+    "suffix": "",
+    "label": "paying members in week one",
+    "note": "Nov 2020"
+   },
+   {
+    "value": "120",
+    "num": 120,
+    "prefix": "",
+    "suffix": "",
+    "label": "articles on her travel blog",
+    "note": "all her own words and photos"
+   }
+  ],
+  "chapters": [
+   {
+    "label": "Before it worked",
+    "title": "A research job in Leipzig, then five years of fintech",
+    "paras": [
+     "Monica Lent is from the US. In about 2013, when she was around 23, she moved to Germany for a research job in natural language processing at the university in Leipzig. After that she spent five years at a fast-growing Berlin fintech, SumUp, where she led web engineering.",
+     "By 2020 she'd been coding for more than 20 years, ten of them professionally. She'd been an individual engineer, a tech lead and an engineering manager. That's a solid, well-paid career that most people wouldn't walk away from.",
+     "She went full time on her own products around late 2019. In an AMA in August 2020 she said she'd been doing it for ten months. The things she taught and wrote about were a good map of her life: SEO, side projects, newsletters, speaking at conferences, becoming a tech lead, and moving abroad for tech jobs.",
+     "We don't know where in the US she grew up or what she studied. She hasn't put that in her public interviews. What we do know is that the most important project in her story started almost by accident, years before she quit."
+    ]
+   },
+   {
+    "label": "The first project",
+    "title": "A travel blog she never meant to monetise",
+    "paras": [
+     "Around 2016, a few years after moving to Germany, she started a personal travel blog called Not a Nomad. She's very clear about the motive: “I never started the site with the goal of monetizing it.”",
+     "Being an engineer, she built it herself. “I don't use WordPress for one,” she said. The site is hand-coded, and the only ongoing cost is hosting.",
+     "Then she noticed something. The blog was getting about 30,000 visitors a month. So she started adding affiliate links. Before she took it seriously, hotel bookings through those links made about $2,000 in a year. Pocket money, but proof.",
+     "Then came a lucky technical fix. Around 2018 or 2019 she switched her bold subheadings into proper H2 headings, the kind search engines read as structure. Traffic went up. She calls it “almost a little bit of luck.”",
+     "From there she got deliberate. She refreshes articles before each season's peak searches. She writes list posts, like things to do in a place, to test which affiliate offers people click. When a post wins, she adds supporting articles around it and links them together. She does very little link building and leans on her own photos and real experience. And she tracks how much each click earns, swapping out weak links for better ones.",
+     "Her affiliate partners are GetYourGuide and other tour providers at about 8% commission, hotels, Amazon for camera gear, and display ads through the Mediavine network. By December 2019, the blog was making **about $5K a month**. It was the side project that taught her an entire industry."
+    ],
+    "pull": {
+     "text": "I never started the site with the goal of monetizing it.",
+     "cite": "Monica, Niche Pursuits, 2022"
+    }
+   },
+   {
+    "label": "The first software",
+    "title": "Affilimate, built for her own blog",
+    "paras": [
+     "Once a blog makes real affiliate money, she needed to track it properly: which content and which links were actually earning. So in 2019, with a partner named Gernot, she built a tool to track it for her own travel blog. That was the first Affilimate.",
+     "It launched with about 70 test users, mostly other travel bloggers. People like her, with the same problem. In 2020 it landed its biggest customer and had its first $2K month.",
+     "Then Covid arrived, and travel stopped. Customers paused their accounts. Affilimate's profit dropped below $500 a month, and she lived on savings. At the same moment her own travel blog's traffic fell to about 10% of what it had been, and its income dropped to about $1K a month.",
+     "Think about that timing. Both her biggest income stream and her software product were tied to travel, and travel disappeared overnight. That's the lowest point in her story.",
+     "She later listed her mistakes plainly. There was no plan to reach customers beyond “build it and they'll tell their friends.” Her customers were all one type. And she relied on SEO alone in a crowded niche. Her summary of the lesson: without a reliable channel, “it's almost irrelevant how good the product is.”"
+    ],
+    "chart": 0,
+    "pull": {
+     "text": "it's almost irrelevant how good the product is.",
+     "cite": "Monica, Failory, 2021"
+    }
+   },
+   {
+    "label": "The pivot",
+    "title": "Three weeks from idea to launch",
+    "paras": [
+     "In May 2020, in the middle of all that, she started something new that didn't depend on travel. She knew SEO and she knew developers. So she'd teach developers how to blog.",
+     "She went from idea to launch in under three weeks. The first version of Blogging for Devs wasn't a website or an app. It was a sequence of nine emails in ConvertKit: an intro, a 7-day challenge, and a conclusion.",
+     "The scope was tiny on purpose. One outcome: “Create an optimized article for your developer blog, step by step, in 7 days.” Not “learn SEO”. One article.",
+     "About eight friends beta-tested the course, and she revised it about twice based on what they said. Then it went out to the world.",
+     "Her tool list for the whole thing is worth seeing, because it's so normal: ConvertKit, Circle, private Vimeo, Descript, Gatsby for the site, Firebase for logins, Figma, Zoom Pro with webinars, Ahrefs at $99 a month, Keywords Everywhere and Adobe. She even wrote a custom Circle theme in CSS and plain JavaScript with her own login connection. By November 2020 the community software alone cost over $300 a month, and all her projects together over $500."
+    ],
+    "pull": {
+     "text": "Create an optimized article for your developer blog, step by step, in 7 days.",
+     "cite": "Monica, Failory, 2021"
+    }
+   },
+   {
+    "label": "The first readers",
+    "title": "1,200 subscribers in under two weeks",
+    "paras": [
+     "It took off quickly. **1,200+ subscribers in under two weeks**, and number one Product of the Day on Product Hunt.",
+     "About six weeks after the end-of-May launch she had 1,500+ subscribers. Twitter was about 75% of where they came from, then word of mouth. And this, from July 2020: “I haven't done any additional marketing after the initial launch.”",
+     "Why did Twitter work so well? Because she'd spent years building an audience the slow way: blogging, speaking at conferences, viral tweets and posts, and friends resharing her. When she launched, people already trusted her.",
+     "She built sharing into the product. There were share prompts when people confirmed their email and when they finished the course. Developers she helped often wrote about the site, which earned her links from their blogs. On her homepage, Twitter visitors turned into subscribers at 20 to 30%, and at over 60% when a respected tech blogger recommended it. She kept popups off the site, because developers hate them.",
+     "Word of mouth kept it growing at about 5 to 10 new subscribers a day. At one point someone else posted it on Hacker News and it hit the front page. An Indie Hackers milestone marks 4,000 newsletter subscribers in five months."
+    ],
+    "chart": 1
+   },
+   {
+    "label": "Finding the money",
+    "title": "69 members and $5K in the first week",
+    "paras": [
+     "She didn't rush to charge. First she opened a free, invite-only community for the first 100 people, to test the format and set the culture.",
+     "Then in July 2020 she ran a closed beta, opened paid membership in October, and wrote up the first week in November. The early price, for the first 250 members, was $12 a month, $96 a year or $180 for lifetime access. She deliberately put lifetime below two years of membership, as a thank-you to people who'd stay.",
+     "The result: 69 paying members and about $5K in the first week, including lifetime deals and even one payment in Bitcoin. The recurring part was $516 a month, which grew to about $600. An editor's note later updated it to $6.9K and 91 paid members.",
+     "Here's the number every marketer should frame. **66 of the 69 buyers already knew her**, as newsletter subscribers, people on the waitlist, or Twitter followers. More than 20% of the waitlist bought in the first week. The launch wasn't about finding strangers. It was about asking people who'd been listening.",
+     "The last two emails in her free course did the selling: one announcement and one FAQ, both pointing at the community. And this was all part of a personal challenge she called 12 startups in 12 months. The paid community was built in under a month and made $10K in its first six weeks."
+    ],
+    "pull": {
+     "text": "Channels die. Or at least, they become exhausted.",
+     "cite": "Monica, Indie Hackers, Nov 2020"
+    }
+   },
+   {
+    "label": "Scaling it",
+    "title": "Three businesses that feed each other",
+    "paras": [
+     "By June 2021, Blogging for Devs had 7,500+ subscribers, about 250 paid members, more than $25K in total revenue and over $2K a month in recurring income. A later Kit case study describes it as 5,000+ subscribers and four-figure monthly revenue, without a date, so the numbers float a bit depending on when they were counted.",
+     "She checked in on the community at least once a day, even on holiday. “There aren't any days off for good behavior,” she said. In about May 2021 she brought in her first part-time helper, Stefanni Brasil.",
+     "Meanwhile the travel blog came back. By around April 2022 it was making about $10K over 30 days, with about 110,000 sessions over 28 days. She told the Indie Bites podcast it made almost 50% of her revenue the year before. By then it was close to passive: about 120 articles, all her own writing and photos, four new posts in 2021, none so far in 2022, and quarterly updates. “I'm not trying to make the website into a million dollar website,” she said.",
+     "She also published monthly income reports, which is part of why we know so much. Across all three businesses, she said in April 2022 that her portfolio grew from about $30K to over $100K. As with everyone in this series, these are her own numbers, shared in public, and nobody has checked them independently."
+    ],
+    "chart": 2
+   },
+   {
+    "label": "Where she stands now",
+    "title": "Affilimate, with a Wirecutter veteran",
+    "paras": [
+     "Affilimate didn't die in Covid. It grew up. Today it's co-founded by Monica and Lynda Mann. Lynda ran commerce at Wirecutter before and after the New York Times bought it, and was SVP of commerce at Digital Trends for four years. She handles operations and growth. Monica handles product and engineering.",
+     "That partnership is the answer to every mistake Monica listed from 2020. No distribution plan? Lynda brings growth. Too narrow a customer base? Affilimate now sells to news and media publishers, newsletter publishers, shopping and loyalty platforms, and publisher finance teams, not just travel bloggers.",
+     "What we don't know: Affilimate's revenue, its team size, its funding, and whether Blogging for Devs still runs the same way. She hasn't posted public updates for 2025 or 2026."
+    ]
+   },
+   {
+    "label": "How she thinks",
+    "title": "Channels die",
+    "paras": [
+     "Her sharpest idea is about distribution, which is why she belongs in a series read by marketers. “Channels die. Or at least, they become exhausted.” She learned it the hard way when Covid wiped out a channel overnight.",
+     "Her other big lesson is about order. Build the audience first, then sell to it. The paid community worked because 66 of 69 buyers already knew her. Affilimate struggled at first because she built it and hoped people would tell their friends.",
+     "And there's the quiet genius of the whole portfolio. Her blog gave her a real problem, tracking affiliate money. The problem became software. The knowledge became a course. Every business was research for the next one, done with her own money and her own site.",
+     "If you run a side project yourself, she's basically saying: you're already sitting on your next product idea. Look at what annoys you about running it."
+    ]
+   }
+  ],
+  "failuresTitle": "One bad year that hit everything at once",
+  "failuresIntro": "No product of hers has been shut down that we know of, but 2020 came close to breaking two of them.",
+  "failures": [
+   {
+    "year": "2019 to 2020",
+    "name": "The first Affilimate",
+    "what": "Built with a partner named Gernot for her own travel blog, with about 70 test users. It hit its first $2K month in 2020, then Covid pauses cut profit below $500 a month and she lived on savings.",
+    "lesson": "Plan how customers will find you before you build, not after."
+   },
+   {
+    "year": "2020",
+    "name": "Not a Nomad in Covid",
+    "what": "Travel traffic dropped to about 10% of normal and the blog fell from about $5K to about $1K a month. It recovered to about $10K a month by spring 2022.",
+    "lesson": "If all your income depends on one topic or one channel, one bad event can take it all at once."
+   },
+   {
+    "year": "2020",
+    "name": "One type of customer",
+    "what": "She later named her mistakes: no distribution plan beyond hoping people tell friends, a customer base that was all one kind, and relying only on SEO in a competitive niche.",
+    "lesson": "Spread your customers and your channels before you need to."
+   }
+  ],
+  "playbookTitle": "How she grew three businesses on SEO and email",
+  "playbook": [
+   {
+    "title": "Fix the SEO basics",
+    "text": "Turning bold subheadings into real H2 headings lifted her travel blog's traffic around 2018 to 2019. She refreshes posts before each seasonal peak and builds supporting articles around the winners."
+   },
+   {
+    "title": "Test offers with list posts",
+    "text": "She writes things-to-do list posts to see which affiliate offers get clicks, tracks earnings per click, and swaps weak links. Tours paid about 8% through GetYourGuide."
+   },
+   {
+    "title": "Launch a tiny email course",
+    "text": "Blogging for Devs started as nine ConvertKit emails with one promise: one optimized article in 7 days. It went from idea to launch in under three weeks."
+   },
+   {
+    "title": "Product Hunt plus Twitter",
+    "text": "The launch hit number one Product of the Day and 1,200+ subscribers in under two weeks. Twitter was about 75% of sign-ups, built on years of blogging and conference talks."
+   },
+   {
+    "title": "Build sharing into the product",
+    "text": "Share prompts at email confirmation and course completion, no popups, and readers who wrote about the site gave her links. Homepage conversion from Twitter was 20 to 30%, and over 60% with a respected recommendation."
+   },
+   {
+    "title": "Free first, then paid",
+    "text": "A free invite-only community for the first 100, a closed beta in July, then paid in October at $12 a month, $96 a year or $180 lifetime. Week one: 69 members and about $5K."
+   },
+   {
+    "title": "Let the course sell the community",
+    "text": "The last two emails of the free course were an announcement and an FAQ for the paid community. More than 20% of the waitlist bought in the first week."
+   },
+   {
+    "title": "Share income reports",
+    "text": "She published monthly income reports. That openness built trust with the developers she was teaching."
+   }
+  ],
+  "charts": [
+   {
+    "title": "Not a Nomad's monthly income, by her own numbers",
+    "points": [
+     {
+      "label": "Dec 2019",
+      "value": 5000,
+      "display": "About $5K"
+     },
+     {
+      "label": "2020 (Covid)",
+      "value": 1000,
+      "display": "About $1K",
+      "down": true
+     },
+     {
+      "label": "Apr 2022",
+      "value": 10000,
+      "display": "About $10K"
+     }
+    ],
+    "note": "Before she focused on it, hotel affiliate links made about $2,000 in a year."
+   },
+   {
+    "title": "Blogging for Devs subscribers, by her own numbers",
+    "points": [
+     {
+      "label": "Jun 2020",
+      "value": 1200,
+      "display": "1,200+"
+     },
+     {
+      "label": "Jul 2020",
+      "value": 1500,
+      "display": "1,500+"
+     },
+     {
+      "label": "Nov 2020",
+      "value": 4000,
+      "display": "4,000+"
+     },
+     {
+      "label": "Jun 2021",
+      "value": 7500,
+      "display": "7,500+"
+     }
+    ],
+    "note": "Launched at the end of May 2020."
+   },
+   {
+    "title": "Her whole portfolio, by her own numbers",
+    "points": [
+     {
+      "label": "Before",
+      "value": 30000,
+      "display": "About $30K"
+     },
+     {
+      "label": "Apr 2022",
+      "value": 100000,
+      "display": "Over $100K"
+     }
+    ],
+    "note": "She didn't say exactly which period each figure covers."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "About 2013",
+    "text": "Moves from the US to Germany for an NLP research job in Leipzig."
+   },
+   {
+    "when": "After",
+    "text": "Five years at Berlin fintech SumUp, where she leads web engineering."
+   },
+   {
+    "when": "About 2016",
+    "text": "Starts Not a Nomad as a personal, hand-coded travel blog."
+   },
+   {
+    "when": "2018 to 2019",
+    "text": "Switches to proper H2 headings and traffic rises. Affiliate income grows."
+   },
+   {
+    "when": "2019",
+    "text": "Builds the first Affilimate with partner Gernot. Goes full time on her own products late in the year.",
+    "big": true
+   },
+   {
+    "when": "Dec 2019",
+    "text": "Not a Nomad makes about $5K a month."
+   },
+   {
+    "when": "2020",
+    "text": "Covid cuts the blog to about $1K a month and Affilimate's profit below $500.",
+    "big": true
+   },
+   {
+    "when": "May 2020",
+    "text": "Launches Blogging for Devs in under three weeks. 1,200+ subscribers in two weeks."
+   },
+   {
+    "when": "Nov 2020",
+    "text": "Paid community launches: 69 members and about $5K in week one.",
+    "big": true
+   },
+   {
+    "when": "Jun 2021",
+    "text": "Blogging for Devs at 7,500+ subscribers and about 250 paid members."
+   },
+   {
+    "when": "Apr 2022",
+    "text": "Portfolio has grown from about $30K to over $100K. The blog is back at about $10K a month."
+   },
+   {
+    "when": "Now",
+    "text": "Runs Affilimate with co-founder Lynda Mann, ex-Wirecutter."
+   }
+  ],
+  "quotes": [
+   {
+    "text": "Channels die. Or at least, they become exhausted.",
+    "cite": "Indie Hackers, Nov 2020"
+   },
+   {
+    "text": "I never started the site with the goal of monetizing it.",
+    "cite": "Niche Pursuits, 2022"
+   },
+   {
+    "text": "I'm not trying to make the website into a million dollar website.",
+    "cite": "Niche Pursuits, 2022"
+   },
+   {
+    "text": "it's almost irrelevant how good the product is.",
+    "cite": "Failory, 2021"
+   },
+   {
+    "text": "I haven't done any additional marketing after the initial launch",
+    "cite": "RAD Letters, Jul 2020"
+   },
+   {
+    "text": "There aren't any days off for good behavior.",
+    "cite": "Failory, 2021"
+   }
+  ],
+  "steal": [
+   "Run a small content site yourself. It's the cheapest way to learn a market well enough to build software for it, the way her blog led to Affilimate.",
+   "Make the first version an email course with one promise. Hers was nine emails and one optimized article in 7 days, launched in under three weeks.",
+   "Build a free, small community first to set the culture, then open the paid version to the people already inside and on the waitlist.",
+   "Put share prompts at the moments people feel good: right after they sign up and right after they finish.",
+   "Never let one topic or one channel carry everything. Covid taught her that in a single month.",
+   "If you're weak on distribution, find a co-founder who isn't. Affilimate grew up once growth had an owner."
+  ],
+  "sources": [
+   {
+    "title": "Hashnode AMA, I quit my job as tech lead (Aug 2020)",
+    "url": "https://hashnode.com/post/i-quit-my-job-as-tech-lead-and-manager-to-become-a-full-time-founder-and-blogger-im-monica-lent-ama-cke2jm87s00t0abs18yca9qhe"
+   },
+   {
+    "title": "Failory interview, Blogging for Devs (Jun 2021)",
+    "url": "https://failory.com/interview/blogging-for-devs"
+   },
+   {
+    "title": "Indie Hackers, how my paid community made $5K in its first week (Nov 2020)",
+    "url": "https://www.indiehackers.com/post/how-my-paid-community-made-5k-in-its-first-week-08f10cf0d7"
+   },
+   {
+    "title": "RAD Letters, how Blogging for Devs reached 1K subscribers in under 2 weeks (Jul 2020)",
+    "url": "https://rad-letters.herokuapp.com/blog/how-blogging-for-devs-reached-1k-subscribers-in-under-2-weeks"
+   },
+   {
+    "title": "Indie Hackers, 4,000 newsletter subscribers in 5 months",
+    "url": "https://www.indiehackers.com/product/blogging-for-devs/4-000-newsletter-subscribers-in-5-months--MJg9j5CV75x-PVDYAol"
+   },
+   {
+    "title": "Niche Pursuits interview (Jun 2022)",
+    "url": "https://www.nichepursuits.com/?p=41940"
+   },
+   {
+    "title": "Indie Bites #56 (Apr 2022)",
+    "url": "https://indiebites.com/56"
+   },
+   {
+    "title": "Indie Hackers, my travel blog has already made $25K this year",
+    "url": "https://www.indiehackers.com/post/monica-lent-my-travel-blog-has-already-made-25k-this-year-c57a33f067"
+   },
+   {
+    "title": "Kit case study, Blogging for Devs",
+    "url": "https://www.casestudies.com/company/kit/case-study/how-monica-lent-built-a-thriving-paid-community-for-developers"
+   },
+   {
+    "title": "Affilimate, About",
+    "url": "https://affilimate.com/about/"
+   }
+  ]
+ }
+}
