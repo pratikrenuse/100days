@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from content_answers import ANSWERS, TOPICS
 from content_playbooks import PLAYBOOKS
 import glob, runpy
-CASES, TALKS = [], []
+CASES, TALKS, TESTIMONIALS, TESTIMONIAL_GROUPS = [], [], [], []
 _gen = sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gen", "*.py")))
 _rewrites = {}
 for _f in _gen:
@@ -20,6 +20,8 @@ for _f in _gen:
     PLAYBOOKS = PLAYBOOKS + list(_ns.get("PLAYBOOKS_EXTRA", []))
     CASES += list(_ns.get("CASES", []))
     TALKS += list(_ns.get("TALKS", []))
+    TESTIMONIALS += list(_ns.get("TESTIMONIALS", []))
+    TESTIMONIAL_GROUPS += list(_ns.get("TESTIMONIAL_GROUPS", []))
     for _r in _ns.get("ANSWERS_REWRITE", []): _rewrites[_r["slug"]] = _r
 DROP = {"how-to-test-a-startup-idea-before-scaling-marketing"}
 ANSWERS = [_rewrites.get(a["slug"], a) for a in ANSWERS if a["slug"] not in DROP]
@@ -144,7 +146,7 @@ form input:focus,form textarea:focus,form select:focus{outline:none;border-color
 .err.on{display:block}
 .ok{display:none;background:var(--bg);padding:2rem;border:1px solid var(--border)}
 .ok h3{font-size:1.5rem;font-weight:300;margin-bottom:0.6rem}
-.tq{background:var(--surface);padding:2rem;margin:2rem 0;max-width:44rem}.tq p{font-family:var(--serif);font-size:1.15rem;color:var(--ink)}.tq cite{font-style:normal;font-size:0.85rem;color:var(--ink3)}
+.tq{background:var(--surface);padding:2rem;margin:2rem 0;max-width:44rem}.tq p{font-family:var(--serif);font-size:1.15rem;color:var(--ink)}.tq cite{font-style:normal;font-size:0.85rem;color:var(--ink3)}.tq cite a{color:var(--ink3)}.tq .src{display:inline-block;margin-left:0.5rem;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold)}.tq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.tq-grid .tq{margin:0;max-width:none}
 footer{padding:1.25rem 4rem;border-top:1px solid #2A2522;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:#A89E94;background:var(--dark)}
 footer nav{display:flex;gap:1.5rem;flex-wrap:wrap}
 footer a{color:#C8C0B8;text-decoration:none;padding:0.5rem 0}
@@ -163,7 +165,7 @@ nav.top{padding:0.75rem 1.25rem;flex-wrap:wrap}
 .wrap{padding:0 1.25rem}
 .page{grid-template-columns:1fr;gap:2rem;padding-bottom:3rem}
 .page h1,.hub-hero h1{font-size:2.1rem}
-.grid,.cta-grid{grid-template-columns:1fr;gap:2rem}
+.grid,.cta-grid,.tq-grid{grid-template-columns:1fr;gap:2rem}
 .short{padding:1.5rem}
 footer{padding:1.25rem;flex-direction:column;align-items:flex-start}
 }
@@ -215,7 +217,7 @@ def nav(current):
 
 FOOTER = """<footer>
   <span>&copy; 2026 Pratik Renuse &middot; Pune, India</span>
-  <nav aria-label="Footer"><a href="/consulting/">Consulting</a><a href="/advising/">Advising</a><a href="/coaching/">Coaching</a><a href="/teaching/">Teaching</a><a href="/speaking/">Speaking</a><a href="/work/">Work</a><a href="/speaking/talks/">Talks</a><a href="/answers/">Answers</a><a href="/playbooks/">Playbooks</a><a href="/">Home</a></nav>
+  <nav aria-label="Footer"><a href="/consulting/">Consulting</a><a href="/advising/">Advising</a><a href="/coaching/">Coaching</a><a href="/teaching/">Teaching</a><a href="/speaking/">Speaking</a><a href="/work/">Work</a><a href="/speaking/talks/">Talks</a><a href="/testimonials/">Testimonials</a><a href="/answers/">Answers</a><a href="/playbooks/">Playbooks</a><a href="/">Home</a></nav>
 </footer>
 """
 
@@ -562,6 +564,33 @@ def build(root):
         talk_urls.insert(0, ("/speaking/talks/", "0.8"))
     urls += talk_urls
 
+    # ---------- testimonials (/testimonials/)
+    if TESTIMONIALS:
+        for t in TESTIMONIALS: check_text("testimonial " + t["person"], t["quote"], t["role"])
+        secs = ""
+        for key, label, intro in TESTIMONIAL_GROUPS:
+            items = [t for t in TESTIMONIALS if t["group"] == key]
+            if not items: continue
+            qs = ""
+            for t in items:
+                who = esc(t["person"]) + ", " + esc(t["role"])
+                if t.get("link"): who += f' &middot; <a href="{t["link"]}">see the work</a>'
+                src = '<span class="src">From a recorded video</span>' if t["source"] == "video" else ""
+                qs += f'<blockquote class="tq"><p>&ldquo;{esc(t["quote"])}&rdquo;</p><cite>{who}{src}</cite></blockquote>'
+            secs += f'<section class="topic"><h2>{esc(label)}</h2><p>{esc(intro)}</p><div class="tq-grid">{qs}</div></section>'
+        tdesc = "What founders, clients, event organisers and coachees say about working with Pratik Renuse, in their own words, including quotes from recorded video testimonials."
+        tschema = {"@context": "https://schema.org", "@graph": [
+            {"@type": "CollectionPage", "name": "Testimonials for Pratik Renuse", "url": SITE + "/testimonials/", "description": tdesc,
+             "about": {"@id": SITE + "/#person"},
+             "hasPart": [{"@type": "Quotation", "text": t["quote"], "creator": {"@type": "Person", "name": t["person"]}, "about": {"@id": SITE + "/#person"}} for t in TESTIMONIALS]},
+            PERSON, breadcrumb_schema([("Home", "/"), ("Testimonials", "/testimonials/")])]}
+        write(root, "/testimonials/", head("Testimonials: what founders, clients and coachees say · Pratik Renuse", tdesc, "/testimonials/", tschema, "website") + nav("") + f"""<main class="wrap">
+<div class="hub-hero"><div class="lbl">Testimonials</div><h1>In their words, not mine.</h1><p>Founders I mentored, companies I grew, the people who put me on stage and the graduates I coached. Some of these come from written reviews, others straight from recorded video calls.</p></div>
+{secs}
+</main>
+""" + cta("Testimonials") + FOOTER + "</body>\n</html>\n")
+        urls.append(("/testimonials/", "0.8"))
+
     # ---------- sitemap
     all_urls = STATIC_PAGES + urls
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -586,6 +615,7 @@ def build(root):
     L += ["", "## Playbooks"] + [f"- [{p['title']}]({SITE}/playbooks/{p['slug']}/): {p['desc']}" for p in PLAYBOOKS]
     L += ["", "## Case studies"] + [f"- [{c['title']}]({SITE}/work/{c['slug']}/): {c['desc']}" for c in CASES]
     L += ["", "## Talks archive"] + [f"- [{t['title']}, {t['event']}]({SITE}{t.get('existing_page') or '/speaking/talks/' + t['slug'] + '/'})" for t in TALKS]
+    if TESTIMONIALS: L += ["", "## Testimonials", f"- [What founders, clients, organisers and coachees say]({SITE}/testimonials/)"]
     L += ["", "## Talks", f"- [Claude 101 masterclass with GrowthX]({SITE}/speaking/claude-101/)",
           f"- [Deployed: AI showcase by Coditas]({SITE}/speaking/coditas-deployed/)",
           f"- [Builders Night Out, Pune]({SITE}/speaking/builders-night-out/)", ""]

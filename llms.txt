@@ -267,7 +267,7 @@
 - [Bayer: running a 250K euro global senior executive event](https://www.pratikrenuse.com/work/bayer-executive-event/): In 2017 I ran a 250K euro global senior executive event for Bayer in Germany, working directly with senior leaders across the company.
 
 ## Talks archive
-- [TEDx Tirgu Mures talk, TEDx Tirgu Mures](https://www.pratikrenuse.com/speaking/talks/tedx-tirgu-mures/)
+- [The entrepreneurship triangle: my TEDx Tirgu Mures talk, TEDx Tirgu Mures](https://www.pratikrenuse.com/speaking/talks/tedx-tirgu-mures/)
 - [TEDx talk in Bali, Indonesia, TEDx Indonesia](https://www.pratikrenuse.com/speaking/talks/tedx-indonesia-bali/)
 - [TEDx talk in the United Kingdom, Sheffield Hallam University, TEDx Sheffield Hallam University](https://www.pratikrenuse.com/speaking/talks/tedx-sheffield-hallam-university/)
 - [Talk at Digital Roots, Russia, Digital Roots](https://www.pratikrenuse.com/speaking/talks/digital-roots-russia/)
@@ -288,6 +288,9 @@
 - [Deploying AI tools for growth: Deployed by Coditas, Pune, Deployed: AI Showcase by Coditas](https://www.pratikrenuse.com/speaking/coditas-deployed/)
 - [Builders Night Out, Pune, Builders Night Out](https://www.pratikrenuse.com/speaking/builders-night-out/)
 - [Mentor at the Hermes Buildathon, Pune, Hermes Buildathon, Pune edition](https://www.pratikrenuse.com/speaking/talks/growthx-hermes-buildathon-pune/)
+
+## Testimonials
+- [What founders, clients, organisers and coachees say](https://www.pratikrenuse.com/testimonials/)
 
 ## Talks
 - [Claude 101 masterclass with GrowthX](https://www.pratikrenuse.com/speaking/claude-101/)

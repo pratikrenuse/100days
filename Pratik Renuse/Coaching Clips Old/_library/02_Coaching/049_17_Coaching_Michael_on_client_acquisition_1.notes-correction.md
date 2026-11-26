@@ -1,0 +1,2 @@
+# 049_17_Coaching_Michael_on_client_acquisition_1 · correction to notes
+Parts 4 and 7 of this series turned out to be about approaching people socially in nightlife settings, not business client acquisition, and the main voice seems to be Michael rather than Pratik. Part 1 is most likely the same topic. Treat the earlier notes as wrong on topic and set Publishable: no (personal dating and relationships content).

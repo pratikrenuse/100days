@@ -4,7 +4,7 @@
 TALKS = [
 {
 "slug": "tedx-tirgu-mures",
-"title": "TEDx Tirgu Mures talk",
+"title": "The entrepreneurship triangle: my TEDx Tirgu Mures talk",
 "event": "TEDx Tirgu Mures",
 "organiser": "TEDx Tirgu Mures",
 "kind": "TEDx talk",
@@ -13,22 +13,32 @@ TALKS = [
 "date": "", "date_label": "Before August 2021",
 "online": False,
 "audience": "General TEDx audience",
-"short": "One of my three TEDx talks, given at TEDx Tirgu Mures in Romania. It was part of the city's independently organised TEDx event, in front of a general audience rather than a room of marketers. The talk took place before August 2021 and I keep the full recording in my speaking archive.",
-"body": """## What this talk was part of
+"short": "My TEDx talk in Tirgu Mures, Romania, was about what I call the entrepreneurship triangle. It opens with the story of Edwin C. Barnes, the man who walked up to Thomas Edison's door and asked to become his partner, and uses it to argue that courage comes before strategy. Money, I said on that stage, is the byproduct of building something, not the point of it.",
+"body": """## The story I opened with
 
-TEDx events are local, independently organised conferences that follow the TED format: short talks, one idea each, for a general audience. Tirgu Mures, also spelled Targu Mures, is a university city in central Romania. Its TEDx event was one of the three TEDx stages I have spoken on. The other two were in the United Kingdom and in Bali, Indonesia.
+In 1906 a young man named Edwin C. Barnes, very poor and very driven, took a train to New Jersey with an address on a piece of paper. He found the house, knocked, and when the door opened he said: good morning, Mr Edison, I am here to become your partner and help grow your business.
 
-The talk took place before August 2021, when it already sat in my list of speaking engagements as TEDx Romania. The exact date and title are not in my written records, so I do not list them here. The full recording is in my archive.
+Edison's colleagues laughed. Edison looked him in the eye, invited him in and gave him a job. Not as a partner. As a floor sweeper. Barnes took it with both hands.
+
+Years passed and nothing changed, until Edison finished a new machine that recorded your voice and played it back. Edison's salespeople did not believe in it. Barnes did. He wrote a marketing proposal and a business plan, showed them to Edison, and was allowed to sell the machine. He sold it one unit at a time, so well that he had to set up his own company, and that company became Edison's official partner for the product.
+
+## Side one: courage
+
+The point of the story is not luck. It is the courage to ask for the thing you want, and the patience to keep showing up while nothing seems to move. I asked the room who among them would walk up to Elon Musk today, ask to be his partner and accept a job sweeping floors on the way there. That is the first side of the entrepreneurship triangle: the courage and the desire to build your dream company.
+
+## Side two: strategy
+
+Courage gets you through the door. Strategy is what you do once you are inside. A lot of people say entrepreneurship is about making money. I said then, and still believe, that money is the byproduct. Entrepreneurship is knowing what gifts you have and giving them to the world in a way that creates value for both sides.
+
+Starting a company has never been easier. A laptop, a phone, an internet connection and some thinking will get you going. I told the story of a client in Amsterdam with a physical product. When I asked whether they would also sell offline, they said they were a 21st century company and would sell only online. I was surprised at first and delighted later: they bet everything on online, and in the year we worked together the business reached seven figures in revenue.
 
 ## What a TEDx stage teaches you
 
-A TEDx talk forces you to cut. There is no time for a long setup, so you pick one idea, one story that carries it and one thing you want people to do next. Anything that does not serve that idea goes.
-
-I still prepare every session that way. A 15 minute talk at an AI showcase, a 90 minute Claude build for 100 people and a four hour build night all start from the same question: what is the one thing this room should leave with?
+A TEDx talk forces you to cut. There is no time for a long setup, so you pick one idea, one story that carries it and one thing you want people to do next. I still prepare every session that way, from a 15 minute AI showcase to a four hour build night: what is the one thing this room should leave with?
 
 ## Where this fits today
 
-My three TEDx talks covered personal growth themes and marketing, including one dedicated talk on the future of marketing. My speaking now focuses on AI and how it changes marketing and growth work, usually in a format where the audience builds something live. The TEDx years are where I learned to hold a room.""",
+This was one of my three TEDx talks, alongside Sheffield Hallam University in the United Kingdom and Bali in Indonesia. My speaking now focuses on AI and how it changes marketing and growth work, usually in a format where the audience builds something live. The courage side of the triangle has not changed: most founders I mentor today still need to ask for the meeting before they need a better plan.""",
 "media_url": "",
 "existing_page": "",
 },

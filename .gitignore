@@ -7,3 +7,6 @@ node_modules/
 
 # Contains a local API key: keep on this Mac only
 Pratik Renuse/taskboard-ext/newtab.js
+
+# Private recording library and clips (transcripts of coaching calls): keep on this Mac only, never push
+Pratik Renuse/Coaching Clips/
